@@ -1,0 +1,49 @@
+Use the new repository for the site.
+
+I want to direct efforts towards the standardization of the content design.
+
+* Implement the front controller pattern.
+
+(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)|( Topics )|(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)
+
+1. index file.
+
+(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)
+
+
+
+Last Release 7/11/2025
+━═━═━═━═━═━═━═━═━ CONTENT ━═━═━═━═━═━═━═━═━
+- * HARDWARE PAGES --Im considering a refactor already, I don't know why I don't want to keep churning content... let's just get it done!!!
+- * SOFTWARE PAGES
+- * Parables images
+- * Gallery
+
+━═━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━═━═━═━═━═━═━═━═━
+
+
+
+
+‿︵‿︵‿︵‿︵‿︵‿︵ FEATURES ‿︵‿︵‿︵‿︵‿︵‿︵
+
+- * Bread Crumbs ->->->-> I would like to have a nice breadcrumbs for every subindex page, say, for example SECURITY, inside the has backups and passwords, since we are in SECURITY, it would be a good idea to navigate to the root of this subdirectory. Users will be able to go elsewhere with the use of the main nav.
+- * Sermons and Discourses ->->->-> need a better navigation, where it does not show the top of the page,  so this section can be more engaging, immersive and interactive.
+-
+-
+-
+-
+‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵
+
+
+
+《•》《•》《•》《•》《•》《•》《•》《•》STRUCTURE《•》《•》《•》《•》《•》《•》《•》《•》
+
+I need to work on how the pages are structured, like when different tags are used, right now I feel it's a bit unclear because of the styles are called.
+The way the css files are called at the moment is very complex, and confusing. I need a better way to add extra css files for the single pages that need them. I like seeing different styles across the site, but I also need a more organized structure that will lead to a better site design.
+
+《•》《•》《•》《•》《•》《•》《•》《•》《•》《•》《•》《•》《•》《•》《•》《•》《•》《•》
+
+
+
+
+
