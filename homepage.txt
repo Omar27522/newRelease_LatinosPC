@@ -1,0 +1,53 @@
+Each section will take the user to a different page
+
+Jesus Christ
+	Father tell me about the web
+	Apostles
+	Parables
+	Sermons
+	Teachings
+
+Services
+	Cleanups
+	Computer protection
+	Consultations
+	Managed Services
+	Remote Support
+	Websites
+
+Security
+	Backups
+	Passwords
+	Best Practices
+
+Hardware
+	CPU
+	Storage
+	Power Supply Unit
+	Input
+	Output
+	Parts
+	Peripherals and Gear
+
+Software
+	Anti-Virus
+	Malware Cleaner
+	Web Browsers
+	Messaging
+	Media
+	Runtimes
+	Imaging`
+	Documents
+	File Sharing
+	Online Storage
+	Other
+	Utilities
+	Compression
+	Developer Tools
+
+About Us
+	Contact
+
+Reviews and Referals
+
+Tutorials / Blog
