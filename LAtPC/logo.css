@@ -1,0 +1,45 @@
+@font-face {
+    font-family: manuscript;
+    src: url(../anvil/font.ttf);
+}
+.logos {
+    color: #ecf0f1;
+    /* Light text color */
+    font-family: manuscript;
+    position: relative;
+    /* For potential absolute positioning of elements inside */
+    overflow: hidden;
+    /* To contain any potential animations */
+}
+
+.logos span {
+
+    font-weight: bold;
+    letter-spacing: 2px;
+    /* Add some letter spacing */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    /* Text shadow for depth */
+}
+
+.logos span:first-child {
+    color: #0d4164;
+    /* Highlight the "LA" part with a vibrant color */
+}
+
+.logos span:nth-child(2) {
+    color: #0d4164;
+    /* Highlight the "tinos" part with another color */
+}
+
+
+
+.logos small {
+    display: block;
+    /* Make the small text appear on a new line */
+    font-size: 0.5em;
+    color: #95a5a6;
+    /* Muted color for the small text */
+    font-style: italic;
+    padding-right: 10%;
+}
+

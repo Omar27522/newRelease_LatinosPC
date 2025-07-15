@@ -50,221 +50,84 @@ Built with user guidance and clarity in mind — because your time and tech matt
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LatinosPC - Tech Support & Computer Services in Pomona, CA</title>
+  <link rel="stylesheet" href="mainStyle.css">
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="terwanpop.css">
+  <link rel="stylesheet" href="logo.css">
 </head>
-<style>
-:root {
-  --primary-color: #0275d8;
-  --primary-dark: #025aa5;
-  --secondary-color: #5cb85c;
-  --secondary-dark: #449d44;
-  --text-color: #333;
-  --light-text: #666;
-  --background: #f8f9fa;
-  --card-bg: #ffffff;
-  --border-radius: 10px;
-  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  --transition: all 0.3s ease;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
-  color: var(--text-color);
-  background-color: var(--background);
-  padding-top: 20px;
-}
-
-header {
-  text-align: center;
-  padding: 2rem 1rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  color: var(--primary-color);
-  font-weight: 700;
-}
-
-header p {
-  font-size: 1.1rem;
-  color: var(--light-text);
-  margin-bottom: 1.5rem;
-}
-
-.language-toggle {
-  display: inline-block;
-  padding: 0.5rem 1.2rem;
-  background-color: var(--secondary-color);
-  color: white;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: 500;
-  text-align: center;
-  transition: var(--transition);
-  cursor: pointer;
-  font-size: 0.9rem;
-}
-
-.language-toggle:hover {
-  background-color: var(--secondary-dark);
-  transform: translateY(-2px);
-}
-
-.intro {
-  text-align: center;
-  padding: 1rem 2rem 3rem;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.intro h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: var(--primary-color);
-}
-
-.intro p {
-  font-size: 1.1rem;
-  color: var(--light-text);
-}
-
-.homepage-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.8rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem 2rem 3rem;
-}
-
-.grid-item {
-  background-color: var(--card-bg);
-  border-radius: var(--border-radius);
-  padding: 1.8rem;
-  box-shadow: var(--box-shadow);
-  transition: var(--transition);
-  display: flex;
-  flex-direction: column;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  height: 100%;
-}
-
-.grid-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
-}
-
-.grid-item h3 {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  color: var(--primary-color);
-  font-size: 1.4rem;
-  font-weight: 600;
-  position: relative;
-  padding-bottom: 0.5rem;
-}
-
-.grid-item h3::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 40px;
-  height: 3px;
-  background-color: var(--primary-color);
-  border-radius: 3px;
-}
-
-.grid-item p {
-  color: var(--light-text);
-  flex-grow: 1;
-  margin-bottom: 1.2rem;
-}
-
-.grid-item aside {
-  margin-top: auto;
-}
-
-.cta-button {
-  display: inline-block;
-  padding: 0.6rem 1.2rem;
-  background-color: var(--primary-color);
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 500;
-  text-align: center;
-  transition: var(--transition);
-  margin-bottom: 0.5rem;
-  margin-right: 0.5rem;
-  border: none;
-  cursor: pointer;
-  font-size: 0.9rem;
-}
-
-.cta-button:hover {
-  background-color: var(--primary-dark);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-  text-align: center;
-  padding: 2rem;
-  background-color: var(--primary-color);
-  color: white;
-  margin-top: 2rem;
-}
-
-footer p {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Responsive adjustments */
-@media (max-width: 900px) {
-  .homepage-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .homepage-grid {
-    grid-template-columns: 1fr;
-    padding: 1rem;
-  }
-
-  header, .intro {
-    padding: 1.5rem 1rem;
-  }
-
-  header h1 {
-    font-size: 2rem;
-  }
-}
-</style>
 <body>
 <header>
-  <h1>LatinosPC</h1>
-  <p>Your local tech support and computer services in Pomona, CA</p>
-  <div class="language-toggle">English / Español</div>
-</header>
+            <!-- <span class="crumbs">
+                <?php #$page->getCrumbs(); ?>
+                <hr>
+            </span> -->
+            <a href="#" class="phone">
+                909-276-7214
+            </a>
+            <div class="logo">
+            <div class="logos"><span>LA</span>tinos<span>PC</span>.com
+                <small class="rtl">
+                  PC is for Personal Computer
+                </small>
+            </div>
+            </div>
+            <nav class="sticky">
+                <!--    TerwanPOP    -->
+                <div role="navigation" class="burg">
+                    <div id="menuToggle"><input type="checkbox" />
+                        <span></span><span></span><span></span>
+                        
+<ul id="menu">
+    <li class="titleli">Our Lord and Savior Jesus Christ</li>
+    <a href="https://www.vatican.va/roman_curia/pontifical_councils/interelg/documents/rc_pc_interelg_doc_20030203_new-age_en.html"
+        target="_blank" alt="Jesus">
+        <img src="https://latinospc.com/images/artificialintelligence/our_lord_and_savior_jesus_christ/lamb9.webp"
+            width="100%" height="auto">
+    </a>
+    <a href="#">
+        <li>Heavenly Father Tell me about the Web</li>
+    </a><a href="#">
+        <!-- https://bibilium.com/38-parables-of-Jesus-parables-of-Jesus/ -->
+        <li>Parables</li>
+    </a><a href="#">
+        <li>Sermons/Discourses</li>
+    </a><a href="#">
+        <li>The Apostles</li>
+    </a><a href="#">
+        <li>His Teachings</li>
+    </a><a href="#">
+        <li>Computer Backup</li>
+    </a><a href="#">
+        <li>Hardware/Parts</li>
+    </a><a href="#">
+        <li>Software/Programs</li>
+    </a><a href="#">
+        <li>Websites</li>
+    </a><a href="#">
+        <li>Security</li>
+    </a><a href="#">
+        <li>Best Practices</li>
+    </a><a href="#">
+        <li>Passwords</li>
+    </a><a href="#">
+        <li>Gallery</li>
+    </a>
+</ul>
+                    </div>
+                </div>
+                <div class="navButtons">
+                <!--    TerwanPOP Made by Erik Terwan    -->
+                <button><a href="#">Home</a></button>
+                <button><a href="#">Español</a></button>
+                <button><a href="#">Services</a></button>
+                <button><a href="#">Contact Us</a></button>
+                <button><a href="#">Reviews</a></button>
+                </div>
+            </nav>
+            </header>
 
 <main>
-  <section class="intro">
-    <h2>🌐 Welcome to LatinosPC</h2>
-    <p>Your local hub for reliable tech support and computer services in Pomona, CA.</p>
-  </section>
+  
 
 
 <section class="homepage-grid">
@@ -300,8 +163,8 @@ footer p {
       <a href="#" class="cta-button">Backups</a>
       <a href="#" class="cta-button">Passwords</a>
       <a href="#" class="cta-button">Best Practices</a>
-
       <aside>
+        <hr>
       <h3>Tutorials / Blog</h3>
         <p>Visit our tutorials and blog page for more information</p>
         <a href="#" class="cta-button">Visit Page</a>
@@ -317,8 +180,8 @@ footer p {
       <a href="#" class="cta-button">Output</a>
       <a href="#" class="cta-button">Parts</a>
 
-
       <aside>
+        <hr>
         <div>
           <h3>Peripherals and Gear</h3>
           <p>Visit our computer peripherals and gear page for more information</p>
