@@ -1,8 +1,8 @@
 Use the new repository for the site.
 
-I want to direct efforts towards the standardization of the content design.
+*WORKING (7/15/2025)*   I want to direct efforts towards the standardization of the content design.
 
-* Implement the front controller pattern.
+*Next Step* Implement the front controller pattern.
 
 (╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)|( Topics )|(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)
 
