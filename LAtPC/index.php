@@ -1,49 +1,3 @@
-<!-- # 🌐 LatinosPC Homepage Overview
-
-Welcome to LatinosPC — your local hub for reliable tech support and computer services in Pomona, CA. Use the interactive sections below to quickly find what you need.
-
----
-
-## 🧭 Homepage Navigation Grid
-
-| 🔧 **Tech Support** | 🖥️ **Custom Builds** | 💡 **DIY Tips & Articles** |
-|--------------------|----------------------|-----------------------------|
-| Book repairs, diagnostics, virus removal | Browse builds: gaming, home lab, workstation | Learn how to fix screens, clean your PC, test components |
-
-| 🧑‍🏫 **Computer Classes** | 📦 **Recommended Products** | 📞 **Contact & Remote Help** |
-|--------------------------|-----------------------------|------------------------------|
-| Sign up for beginner & intermediate lessons | View trusted hardware & accessories | Quick-call, email, or remote session access |
-
-| 🧍‍♂️ **About Us** | 🗣️ **Bilingual Support** | 🏡 **Service Areas** |
-|------------------|-------------------------|---------------------|
-| Our story, team, and credentials | English / Español toggle or info section | Pomona & surrounding SoCal regions listed with a map |
-
----
-
-
-## 🎨 Design Tips for Implementation
-
-- **Responsive Grid Layout:** Use CSS grid or flexbox to ensure mobile friendliness
-- **Hover Effects:** Add interactivity with hover transitions or background highlights
-- **Iconography:** Use icons or emojis to make each tile visually distinct
-- **Calls-to-Action (CTAs):** Add short actions like “Book Now,” “Learn More,” “View Builds”
-- **Language Toggle:** Offer language selection clearly in the nav or hero section
-
----
-
-## ✨ Suggested Technologies
-
-- HTML/CSS for layout and styling
-- Optional: JavaScript for dynamic tooltips or hover effects
-- FontAwesome or similar library for icons
-
----
-
-Built with user guidance and clarity in mind — because your time and tech matter.
--->
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -51,10 +5,9 @@ Built with user guidance and clarity in mind — because your time and tech matt
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LatinosPC - Tech Support & Computer Services in Pomona, CA</title>
-    <link rel="stylesheet" href="mainStyle.css">
-    <link rel="stylesheet" href="homepage.css">
-    <link rel="stylesheet" href="terwanpop.css">
-    <link rel="stylesheet" href="logo.css">
+    <link rel="stylesheet" href="../anvil/mainStyle.css">
+    <link rel="stylesheet" href="../anvil/homepage.css">
+    <link rel="stylesheet" href="../anvil/navMenu.css">
 </head>
 
 <body>
@@ -67,9 +20,9 @@ Built with user guidance and clarity in mind — because your time and tech matt
             909-276-7214
         </a>
         <div class="logo">
-            <div class="logos"><span>LA</span>tinos<span>PC</span>.com
+            <div class="logos"><span>LAt</span>inos<span>PC</span>.com
                 <small class="rtl">
-                    PC is for Personal Computer
+                    PC, is for Personal Computer
                 </small>
             </div>
         </div>
@@ -126,14 +79,14 @@ Built with user guidance and clarity in mind — because your time and tech matt
                 <button><a href="#">Reviews</a></button>
             </div>
         </nav>
+        <span id="content"></span> <!-- Anchor point for direct content links, providing a cleaner user experience by bypassing the menu and reducing visual distractions -->
     </header>
 
     <main>
-
         <section class="homepage-grid">
             <div class="grid-item">
                 <h3>Jesus Christ</h3>
-                <a href="#" class="cta-button">Tell me about the web</a>
+                <a href="#content" class="cta-button">Tell me about the web</a>
                 <a href="#" class="cta-button">Apostles</a>
                 <a href="#" class="cta-button">Parables</a>
                 <a href="#" class="cta-button">Sermons</a>

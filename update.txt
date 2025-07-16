@@ -1,8 +1,15 @@
 Use the new repository for the site.
 
-*WORKING (7/15/2025)*   I want to direct efforts towards the standardization of the content design.
+In the Landing page, the subtitles should give a brief description before the user clicks on the link.
+    I will mke use of the dialogEngine.js file, and add it to the workflow.
+    This way there will be visual aid for future implementations.
 
 *Next Step* Implement the front controller pattern.
+
+
+
+
+*DONE (7/16/2025)*   I want to direct efforts towards the standardization of the content design.
 
 (╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)|( Topics )|(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)
 

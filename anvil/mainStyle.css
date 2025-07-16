@@ -1,0 +1,163 @@
+:root {
+  --primary-color: #0275d8;
+  --primary-dark: #0d4164;
+  --secondary-color: rgba(91, 206, 139, 0.568);
+  --secondary-dark: #449d44;
+  --text-color: #333;
+  --light-text: #657477;
+  --background: #f8f9fa;
+  --card-bg: whitesmoke;
+  --border-radius: 10px;
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background);
+  padding-top: 20px;
+}
+
+header {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  background-color: rgba(100, 148, 237, 0.137);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: var(--light-text);
+  margin-bottom: 1.5rem;
+}
+
+
+/* ===================================
+   6. Logo, phone, and banner STYLES
+                                    ~Refer to navMenu.css for nav menu~
+=================================== */
+@font-face {
+    font-family: manuscript;
+    src: url(../anvil/font.ttf);
+}
+.logos {
+    color: var(--light-text);
+    /* Light text color */
+    font-family: manuscript;
+    position: relative;
+    /* For potential absolute positioning of elements inside */
+    overflow: hidden;
+    /* To contain any potential animations */
+}
+
+.logos span {
+    font-weight: bold;
+    letter-spacing: 2px;
+    /* Add some letter spacing */
+    text-shadow: 1px 1px 2px (var(--secondary-dark));
+    /* Text shadow for depth */
+}
+
+.logos span:first-child {
+    color: var(--primary-dark);
+    /* Highlight the "LA" part with a vibrant color */
+}
+
+.logos span:nth-child(2) {
+    color: var(--primary-dark);
+    /* Highlight the "tinos" part with another color */
+}
+
+.logos small {
+    display: block;
+    /* Make the small text appear on a new line */
+    font-size: 0.5em;
+    color: var(--light-text);
+    /* Muted color for the small text */
+    font-style: italic;
+    padding-right: 10%;
+}
+
+header .logo {
+    font-size: calc(3vw + 3vh);
+    display: inline;
+    float: left;
+    width: 100%;
+}
+
+header small.rtl {
+    margin:4px 4px 16px 0;
+    float:right;
+    max-width: 100%;
+}
+
+.phone {
+    color: var(--secondary-dark);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    right: 5%
+}
+
+/* ===================================
+   12. FOOTER STYLES
+=================================== */
+footer p {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(13, 27, 27);
+    color: var(--secondary-color);
+}
+
+/* ===================================
+   13. ANIMATIONS
+=================================== */
+@keyframes changePosition {
+    0% {
+        position: absolute;
+    }
+
+    100% {
+        position: fixed;
+    }
+}
+/* ===================================
+   14. RESPONSIVE STYLES
+=================================== */
+@media (max-width: 900px) {
+  .homepage-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .homepage-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  header, .intro {
+    padding: 1.5rem 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+}

@@ -1,187 +1,210 @@
 /*
-* Improved Hamburger Menu
-* Based on Erik Terwan's design
-* Responsive without media queries
+* Made by Erik Terwan
+* 24th of November 2015
+* MIT License
+*
+*
+* If you are thinking of using this in
+* production code, beware of the browser
+* prefixes.
+*
+*   https://codepen.io/erikterwan/pen/EVzeRP
 */
 
-:root {
-  /* Colors */
-  --menu-bg: #ededed;
-  --text-color: #232323;
-  --text-hover: tomato;
-  --hamburger-color: #cdcdcd;
-  --cross-color: #232323;
-  --accent-color: goldenrod;
-
-  /* Sizes */
-  --hamburger-width: 28px;
-  --hamburger-height: 3px;
-  --hamburger-gap: 4px;
-  --menu-padding: max(2rem, 5vw);
-  --menu-top-padding: max(5rem, 12vh);
-}
-body.menu-open {
-  overflow: hidden;
-}
 #menuToggle {
-  display: inline-block;
-  position: relative; /* Positioned relative for proper stacking context */
-  z-index: 20; /* Increased to be above the menu */
-  user-select: none;
-  background-color: black;
-  color: white;
-  padding: 0.5rem;
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+    background-color: black;
+    color: white;
+
 }
 
 #menuToggle a {
-  text-decoration: none;
-  color: var(--text-color);
-  transition: color 0.3s ease;
+    text-decoration: none;
+    color: #232323;
+    transition: color .5s ease;
 }
 
 #menuToggle a:hover {
-  color: var(--text-hover);
+    color: tomato;
 }
 
-/* Make the checkbox cover the entire menuToggle area */
 #menuToggle input {
-  display: block;
-  width: 100%; /* Cover the entire width of menuToggle */
-  height: 100%; /* Cover the entire height of menuToggle */
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-  opacity: 0; /* hide this */
-  z-index: 21; /* Increased to ensure it stays on top */
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  user-select: none;
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none;
 }
 
-/* Container for the hamburger lines for better positioning */
-#menuToggle .hamburger-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-}
-
-/* Hamburger styling */
+/*
+* Just a quick hamburger
+*/
 #menuToggle span {
-  display: block;
-  width: var(--hamburger-width);
-  height: var(--hamburger-height);
-  margin-bottom: var(--hamburger-gap);
-  background: var(--hamburger-color);
-  border-radius: 2px;
-  position: relative;
-  z-index: 19; /* Keep below the checkbox but above other elements */
-  transform-origin: 6px 1px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-              background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:last-child {
-  margin-bottom: 0; /* Remove margin from last span */
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
 }
 
 #menuToggle span:first-child {
-  transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
 }
 
 #menuToggle span:nth-last-child(2) {
-  transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
 }
 
-/* Transform hamburger into crossmark */
-#menuToggle input:checked ~ span {
-  opacity: 1;
-  transform: rotate(45deg) translate(-1px, -1px);
-  background: var(--cross-color);
+/*
+* Transform all the slices of hamburger
+* into a crossmark.
+*/
+#menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
 }
 
-/* Hide the middle line */
-#menuToggle input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
+/*
+* But let's hide the middle one.
+*/
+#menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-/* Rotate last line */
-#menuToggle input:checked ~ span:nth-last-child(2) {
-  transform: rotate(-45deg) translate(0, -1px);
+/*
+* Ohyeah and the last one should go the other direction
+*/
+#menuToggle input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
 }
 
-/* Menu styling */
+/*
+* Make this absolute positioned
+* at the top left of the screen
+*/
 #menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  max-height: 100vh;
-  padding: var(--menu-padding);
-  padding-top: var(--menu-top-padding);
-  background: var(--menu-bg);
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  z-index: 10; /* Lower than the menuToggle to keep it behind */
-  /* Grid layout for menu items */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, auto));
-  grid-gap: 1rem;
-  align-content: start;
-  /* Transform for sliding in/out */
-  transform: translateX(-100%);
-  transition: transform 0.7s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-  /* Ensure menu is off-screen when closed */
-  pointer-events: none;
-  overflow-y: auto;
-  overscroll-behavior: contain; /* optional: prevent background scroll */
-  scrollbar-gutter: stable;     /* optional: prevent layout shift */
+    position: absolute;
+    left: -200%;
+    /* Initial position */
+    width: 95vw;
+    height: auto;
+    margin: -100px 0 0 0;
+    padding: 50px;
+    padding-top: 125px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.7s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    /* Entry transition */
 }
 
-/* Open menu styling */
-#menuToggle input:checked ~ #menu {
-  transform: translateX(0);
-  pointer-events: auto;
+#menuToggle input:not(:checked)~#menu {
+    position: fixed;
+    left: -200%;
+    /* Initial position */
+    width: 95vw;
+    height: auto;
+    margin: -100px 0 0 0;
+    padding: 50px;
+    padding-top: 125px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.7s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    animation: changePosition 1.9s forwards;
+    /* Entry transition */
+
 }
 
-/* Menu items */
+/*The menu does not push the page
+down while inactive.*/
+
+/* Define entry transition inside media query */
+@media (min-aspect-ratio: 1/1) {
+    #menu {
+        position: absolute;
+        display: inline;
+        padding: 5vh;
+        padding-top: 12vh;
+        width: 65vw;
+        height: auto;
+        margin: -45px 0 0 calc(-7vh + 7vw);
+        border: 1px solid red;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.7s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+
+    #menuToggle input:not(:checked)~#menu {
+        position: fixed;
+        display: inline;
+        padding: 5vh;
+        padding-top: 12vh;
+        width: 65vw;
+        height: auto;
+        margin: -45px 0 0 calc(-7vh + 7vw);
+        border: 1px solid red;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0%);
+        transition: transform 0.7s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+        animation: changePosition 1.9s forwards;
+    }
+}
+
+/* These aspect ratios will have to make the site work, on most standard aspect ratios.
+@media (min-aspect-ratio: 8/5) {
+    div {
+        /* background: #9af;
+         blue
+    }
+}
+
+/* Maximum aspect ratio
+@media (max-aspect-ratio: 3/2) {
+    div {
+        /* background: #9ff;
+         cyan
+    }
+}
+*/
 #menu li {
-  padding: 10px 0;
+    padding: 10px 0;
 }
 
-#menu a {
-  display: block;
-  padding: 10px 15px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-  text-align: center;
-}
-
-#menu a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-/* Title item styling */
 .titleli {
-  grid-column: 1 / -1;
-  text-align: center;
-  color: var(--accent-color);
-  font-size: clamp(1rem, 2vw, 1.5rem);
-  margin-bottom: 1rem;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    color: goldenrod
 }
 
-/* For images in the menu */
-#menu img {
-  max-width: 100%;
-  height: auto;
-  max-height: min(350px, 50vh);
-  display: block;
-  margin: 0 auto;
+/*
+* And let's slide it in from the left
+*/
+#menuToggle input:checked~ul {
+    transform: none;
 }
