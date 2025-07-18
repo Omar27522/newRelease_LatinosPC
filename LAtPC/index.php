@@ -119,6 +119,11 @@
             box-shadow: var(--box-shadow);
             z-index: 1000;
             max-width: 80%;
+            pointer-events: auto;
+            /* Isolate the dialog from parent container interactions */
+            isolation: isolate;
+            /* Ensure dialog stays in place */
+            will-change: transform;
         }
 
         .link-dialog.visible {
@@ -129,6 +134,7 @@
         .link-dialog p:focus {
             background: lightgray;
             color: black;
+            position: relative;
         }
 
         .dialog-backdrop {

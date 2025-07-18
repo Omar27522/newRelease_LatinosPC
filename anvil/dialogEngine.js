@@ -232,6 +232,15 @@ class DialogEngine {
       dialog.classList.add('visible');
       this.backdrop.classList.add('active');
 
+      // Ensure dialog is appended to body to avoid grid container issues
+      if (dialog.parentElement && dialog.parentElement.closest('.homepage-grid')) {
+        // Store original parent for when we close
+        dialog._originalParent = dialog.parentElement;
+        dialog._originalPosition = Array.from(dialog.parentElement.children).indexOf(dialog);
+        // Move to body temporarily
+        document.body.appendChild(dialog);
+      }
+
       // Handle carousel-specific behavior when opening
       if (dialog.hasAttribute('data-carousel')) {
         // Reset carousel loop count
@@ -273,6 +282,24 @@ class DialogEngine {
 
           // Don't reset the carousel position when closing
           // This allows the data-start-index to work properly when reopening
+        }
+        
+        // If dialog was moved to body, restore it to its original parent
+        if (this.currentlyOpenDialog._originalParent) {
+          const originalParent = this.currentlyOpenDialog._originalParent;
+          const originalPosition = this.currentlyOpenDialog._originalPosition;
+          
+          // If there are other children at the original position, insert before that child
+          if (originalPosition >= 0 && originalPosition < originalParent.children.length) {
+            originalParent.insertBefore(this.currentlyOpenDialog, originalParent.children[originalPosition]);
+          } else {
+            // Otherwise just append to the end
+            originalParent.appendChild(this.currentlyOpenDialog);
+          }
+          
+          // Clear the references
+          delete this.currentlyOpenDialog._originalParent;
+          delete this.currentlyOpenDialog._originalPosition;
         }
       }
 
