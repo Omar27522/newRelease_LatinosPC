@@ -138,8 +138,10 @@ footer p {
         position: fixed;
     }
 }
+
+
 /* ===================================
-   14. RESPONSIVE STYLES
+   15. RESPONSIVE STYLES
 =================================== */
 @media (max-width: 900px) {
   .homepage-grid {

@@ -12,10 +12,6 @@
 
 <body>
     <header>
-        <!-- <span class="crumbs">
-                <?php #$page->getCrumbs(); ?>
-                <hr>
-            </span> -->
         <a href="#" class="phone">
             909-276-7214
         </a>
@@ -79,10 +75,104 @@
                 <button><a href="#">Reviews</a></button>
             </div>
         </nav>
-        <span id="content"></span> <!-- Anchor point for direct content links, providing a cleaner user experience by bypassing the menu and reducing visual distractions -->
+        <span id="content"></span>
+        <!-- Anchor point for direct content links, providing a cleaner user experience by bypassing the menu and reducing visual distractions -->
     </header>
 
     <main>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Dialog Sample This block is being worked on, I will edit the css and will improve the text-dialog -->
+        <style>
+        /* Dialog styles */
+
+        .multi-link-container {
+            display: inline-block;
+            position: relative;
+        }
+
+        .linked-text {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .link-dialog {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            z-index: 1000;
+            max-width: 80%;
+        }
+
+        .link-dialog.visible {
+            display: block;
+        }
+
+        .link-dialog p:hover,
+        .link-dialog p:focus {
+            background: lightgray;
+            color: black;
+        }
+
+        .dialog-backdrop {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        .dialog-backdrop.active {
+            display: block;
+        }
+        </style>
+<!--
+        <div class="multi-link-container">
+            <span class="linked-text">Click me for more information</span>
+            <div class="link-dialog">
+                <p tabindex="0">This is an example of a text link dialog. When you click on the text, this dialog
+                    appears.</p>
+                <p tabindex="0">You can add any content here, including links, images, and other HTML elements.</p>
+            </div>
+        </div>
+    -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <section class="homepage-grid">
             <div class="grid-item">
                 <h3>Jesus Christ</h3>
@@ -94,7 +184,16 @@
             </div>
 
             <div class="grid-item">
-                <h3>About Us</h3>
+                <div class="multi-link-container">
+                    <span class="linked-text">
+                        About Us
+                    </span>
+                    <div class="link-dialog">
+                        <p tabindex="0">We
+                        want to bring families and individuals, the experience of a fully working computer system.</p>
+                    </div>
+                </div>
+
                 <p>we want to bring families and individuals, the experience of a fully working computer system; laptops
                     and desktops.</p>
                 <p>100% Satisfaction Guarantee | 90 Days Service Package -included</p>
@@ -167,7 +266,8 @@
     <footer>
         <p>&copy; 2025 LatinosPC - Your Trusted Tech Partner in Pomona, CA</p>
     </footer>
-
+    <script src="../anvil/dialogEngine.js">
+    </script>
 </body>
 
 </html>

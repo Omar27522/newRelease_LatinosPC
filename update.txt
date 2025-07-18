@@ -1,8 +1,11 @@
 Use the new repository for the site.
 
-In the Landing page, the subtitles should give a brief description before the user clicks on the link.
+*Working (7/17/2025)*   In the Landing page, the subtitles should give a brief description before the user clicks on the link.
     I will mke use of the dialogEngine.js file, and add it to the workflow.
     This way there will be visual aid for future implementations.
+~ Currently working on the implementation of teh text dialogs. I have added some css to mainStyle.css is still a work in progress,
+    essentially that is how the standard text dialog will look like.
+there is a problem when the dialog is inside a grid item, this is css related, maybe because of the <p> tag. most likely the tag is causing problems. so far so good.
 
 *Next Step* Implement the front controller pattern.
 
