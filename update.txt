@@ -1,12 +1,13 @@
 Use the new repository for the site.
 
-*Finish the homepage.
 
-*Next Step* Implement the front controller pattern.
-
-
+<WORKING>*Next Step* Implement the front controller pattern. first implement the Spanish page.
+The directory location should be /español/ as the Spanish homepage, other location should be inside the root directory.
 
 
+
+
+*DONE (7/19/2025)* Finish the homepage. I like how Services has a small image. for now this homepage is nice!
 * DONE (7/18/2025) <FIXED???>*Working (7/17/2025)*   In the Landing page, the subtitles should give a brief description before the user clicks on the link.
     I will mke use of the dialogEngine.js file, and add it to the workflow.
     This way there will be visual aid for future implementations.

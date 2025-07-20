@@ -161,10 +161,16 @@ header small.rtl {
   display: block;
 }
 
+.link-dialog p {
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
 .link-dialog p:hover,
 .link-dialog p:focus {
   background: var(--dialog-text-highlight);
   position: relative;
+  display: inline-block;
 }
 
 .dialog-backdrop {
