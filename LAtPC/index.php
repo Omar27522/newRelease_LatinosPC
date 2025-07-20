@@ -92,66 +92,7 @@
 
 
 
-        <!-- Dialog Sample This block is being worked on, I will edit the css and will improve the text-dialog -->
-        <style>
-        /* Dialog styles */
-
-        .multi-link-container {
-            display: inline-block;
-            position: relative;
-        }
-
-        .linked-text {
-            cursor: pointer;
-            color: blue;
-            text-decoration: underline;
-        }
-
-        .link-dialog {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: white;
-            padding: 20px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--box-shadow);
-            z-index: 1000;
-            max-width: 80%;
-            pointer-events: auto;
-            /* Isolate the dialog from parent container interactions */
-            isolation: isolate;
-            /* Ensure dialog stays in place */
-            will-change: transform;
-        }
-
-        .link-dialog.visible {
-            display: block;
-        }
-
-        .link-dialog p:hover,
-        .link-dialog p:focus {
-            background: lightgray;
-            color: black;
-            position: relative;
-        }
-
-        .dialog-backdrop {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 999;
-        }
-
-        .dialog-backdrop.active {
-            display: block;
-        }
-        </style>
+  
 <!--
         <div class="multi-link-container">
             <span class="linked-text">Click me for more information</span>
@@ -191,9 +132,7 @@
 
             <div class="grid-item">
                 <div class="multi-link-container">
-                    <span class="linked-text">
-                        About Us
-                    </span>
+                <h3 class="linked-text">About Us</h3>
                     <div class="link-dialog">
                         <p tabindex="0">We
                         want to bring families and individuals, the experience of a fully working computer system.</p>

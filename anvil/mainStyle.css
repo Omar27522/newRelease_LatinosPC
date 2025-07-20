@@ -1,15 +1,23 @@
 :root {
   --primary-color: #0275d8;
   --primary-dark: #0d4164;
+
   --secondary-color: rgba(91, 206, 139, 0.568);
   --secondary-dark: #449d44;
+
   --text-color: #333;
   --light-text: #657477;
+
+  --dialog-text-highlight: #bcd9df;
+  --dialog-background: #0a0c0ca7;
+
   --background: #f8f9fa;
   --card-bg: whitesmoke;
   --border-radius: 10px;
-  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --box-shadow: 0 4px 12px #00000153;
   --transition: all 0.3s ease;
+
+  --bannerAndFooter-bg: #6494ed23;
 }
 
 * {
@@ -31,7 +39,8 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
-  background-color: rgba(100, 148, 237, 0.137);
+  background-color: var(--bannerAndFooter-bg);
+  box-shadow: var(--box-shadow);
 }
 
 header h1 {
@@ -49,7 +58,7 @@ header p {
 
 
 /* ===================================
-   6. Logo, phone, and banner STYLES
+   Logo, phone, and banner STYLES
                                     ~Refer to navMenu.css for nav menu~
 =================================== */
 @font-face {
@@ -115,19 +124,80 @@ header small.rtl {
     right: 5%
 }
 
+
 /* ===================================
-   12. FOOTER STYLES
+   TEXT-DIALOG STYLES
+=================================== */
+
+.multi-link-container {
+  display: inline-block;
+  position: relative;
+}
+
+.linked-text {
+  cursor: pointer;
+}
+
+.link-dialog {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--background);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  z-index: 1000;
+  max-width: 80%;
+  pointer-events: auto;
+  /* Isolate the dialog from parent container interactions */
+  isolation: isolate;
+  /* Ensure dialog stays in place */
+  will-change: transform;
+}
+
+.link-dialog.visible {
+  display: block;
+}
+
+.link-dialog p:hover,
+.link-dialog p:focus {
+  background: var(--dialog-text-highlight);
+  position: relative;
+}
+
+.dialog-backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--dialog-background);
+  z-index: 999;
+}
+
+.dialog-backdrop.active {
+  display: block;
+}
+
+
+/* ===================================
+   FOOTER STYLES
 =================================== */
 footer p {
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: rgb(13, 27, 27);
-    color: var(--secondary-color);
+    background-color: var(--bannerAndFooter-bg);
+    color: var(--secondary-dark);
+    box-shadow: var(--box-shadow);
 }
 
+
 /* ===================================
-   13. ANIMATIONS
+   ANIMATIONS
 =================================== */
 @keyframes changePosition {
     0% {
@@ -141,7 +211,7 @@ footer p {
 
 
 /* ===================================
-   15. RESPONSIVE STYLES
+   RESPONSIVE STYLES
 =================================== */
 @media (max-width: 900px) {
   .homepage-grid {
