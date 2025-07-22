@@ -4,11 +4,14 @@ Use the new repository for the site.
 <WORKING (7/19/2025)>
     *Next Step* Implement the front controller pattern. first implement the Spanish page.
         The directory location should be /español/ as the Spanish homepage, other location should be inside the root directory.
-    {7/19/2025} Update, it seems that the page correctly indicates which page the user is on.
-        I guess, I will have to implement a simpler approach at text that repeats throughout the site such as the header and the footer.
+    {7/19/2025|Update} it seems that the site correctly indicates which page the user is on.
+        My guess is to implement a simpler approach at "text" that repeats throughout the site such as the header and the footer.
             I would not want to use so many arrays, the structure is looking good, and in good form.
                 I hope I can follow the implementation before the pasta turns into spaghetti.
-                    enough of me, tell me about you! all the pages have 2 versions, their English and their Spanish.
+                    enough of me, tell me about you! all the pages have 2 versions, English and Spanish.
+    {7/21/2025|Update} Okay, so I've hit a roadblock...
+        I won't be able to use that content() function to display different content for each page.
+            The homepage is super dependent on it, so I gotta figure out a new way to do things.
 
 *work on the services page.*
 *work on the contact page.*

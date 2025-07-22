@@ -1,6 +1,8 @@
 <?php
+$lang = "es";
 $titulo = "Inicio LatinosPC";
-$subtitulo = "PC, es Computadora Personal";
+
+
 include './anvil/structure.php';
 
 ?>
