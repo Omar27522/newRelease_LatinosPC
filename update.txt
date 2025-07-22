@@ -1,7 +1,16 @@
 Use the new repository for the site.
 
+*Jesus Christ related content.
 
-<WORKING (7/19/2025)>
+*Working Links and menus.
+*work on the services page.*
+*work on the contact page.*
+*work on the reviews page.*
+
+
+
+*Done (7/21/2025)*
+    <WORKING (7/19/2025)>
     *Next Step* Implement the front controller pattern. first implement the Spanish page.
         The directory location should be /español/ as the Spanish homepage, other location should be inside the root directory.
     {7/19/2025|Update} it seems that the site correctly indicates which page the user is on.
@@ -12,13 +21,6 @@ Use the new repository for the site.
     {7/21/2025|Update} Okay, so I've hit a roadblock...
         I won't be able to use that content() function to display different content for each page.
             The homepage is super dependent on it, so I gotta figure out a new way to do things.
-
-*work on the services page.*
-*work on the contact page.*
-*work on the reviews page.*
-
-
-
 *DONE (7/19/2025)* Finish the homepage. I like how Services has a small image. for now this homepage is nice!
 * DONE (7/18/2025) <FIXED???>*Working (7/17/2025)*   In the Landing page, the subtitles should give a brief description before the user clicks on the link.
     I will mke use of the dialogEngine.js file, and add it to the workflow.

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= !empty($title) ? $title : $titulo ?> </title>
+    <meta name="keywords" content="<?=$keywords?>">
+    <meta name="description" content="<?=$description?>">
     <!--LatinosPC - Tech Support & Computer Services in Pomona, CA-->
     <link rel="stylesheet" href="../LAtPC/anvil/mainStyle.css">
     <link rel="stylesheet" href="../LAtPC/anvil/homepage.css">
@@ -280,12 +282,27 @@
         </div>
         -->
 
-        <?php content(); ?>
-        
+        <?php if($lang == "en"): {content(); } elseif($lang == "es"): {contenido();} endif;?>
+
     </main>
 
     <footer>
-        <p>&copy; LatinosPC <?php echo date("F Y"); ?></p>
+        <p>&copy; LatinosPC <?php if($lang=="es"){$meses = [
+    'January' => 'Enero',
+    'February' => 'Febrero',
+    'March' => 'Marzo',
+    'April' => 'Abril',
+    'May' => 'Mayo',
+    'June' => 'Junio',
+    'July' => 'Julio',
+    'August' => 'Agosto',
+    'September' => 'Septiembre',
+    'October' => 'Octubre',
+    'November' => 'Noviembre',
+    'December' => 'Diciembre'
+];
+
+echo $meses[date("F")] . " " . date("Y");} else{ echo date("F Y"); }?></p>
     </footer>
     <script src="./anvil/dialogEngine.js">
     </script>
