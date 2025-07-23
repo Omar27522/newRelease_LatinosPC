@@ -1,12 +1,18 @@
 Use the new repository for the site.
 
-*Jesus Christ related content.
+    <WORKING (7/22/2025)>
+    *Jesus Christ related content.* A $subroute has been added that splits the route into segments for subdirectory support, it will work for all pages.
+        The issue is now: How to implement the content from each individual page. I was thinking that there could be 2 content classes one for English and one for Spanish.
+            (The index already picks between 2 functions depending on the $lang.)
+                a new method can be loaded instead of the current implementation, maybe content can load based on the given title?
+                    ~This way is too rigid, but it should work for now~.
 
-*Working Links and menus.
+*Working Links and menus.*
 *work on the services page.*
 *work on the contact page.*
 *work on the reviews page.*
 
+*Work on a 404 page.*
 
 
 *Done (7/21/2025)*

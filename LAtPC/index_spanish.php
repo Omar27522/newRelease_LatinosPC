@@ -3,7 +3,7 @@ $lang = "es";
 $titulo = "Inicio LatinosPC";
 $keywords="Keyword_test";
 $description="Description_test";
-function contenido (){
+function contenido_inicio (){
 
    ?>
    <section class="homepage-grid">

@@ -262,7 +262,8 @@
         <span id="content"></span>
     </header>
 
-    <main> <!-- this <main> will be part of the structure, everything inside will be the content,
+    <main>
+        <!-- this <main> will be part of the structure, everything inside will be the content,
         I have been posting content in a content() function, but Im not sure what would dbe best.
         Maybe a content object from different parts of teh site, for example this current one is the homepage.
         Creating a content() function is the easiest thing for me,
@@ -282,7 +283,7 @@
         </div>
         -->
 
-        <?php if($lang == "en"): {content(); } elseif($lang == "es"): {contenido();} endif;?>
+        <?php if($lang == "en"): {content_home(); } elseif($lang == "es"): {contenido_inicio();} endif;?>
 
     </main>
 
