@@ -6,8 +6,8 @@ Use the new repository for the site.
             (The index already picks between 2 functions depending on the $lang.)
                 a new method can be loaded instead of the current implementation, maybe content can load based on the given title?
                     ~This way is too rigid, but it should work for now~.
-    (7/24/2025|Update) fullPageTemplate: I'm not sure if this is the best way to display teh content functions,
-        I really wanted to have some sort of method with a much more simple approach and not relying on language or title page
+    (7/24/2025|Update) fullPageTemplate: I'm not sure if this is the best way to display the content functions,
+        I really wanted to have some sort of method with a much more simple approach, and rely entirely on language or a title page
 
 *Working Links and menus.*
 *work on the services page.*
