@@ -283,7 +283,11 @@
         </div>
         -->
 
-        <?php if($lang == "en"): {content_home(); } elseif($lang == "es"): {contenido_inicio();} endif;?>
+        <?php
+        if($lang == "en" && $title == "Home LatinosPC"): content_home();
+        elseif($lang == "es" && $titulo == "Inicio LatinosPC"): contenido_inicio();
+        elseif($lang == "en" && $title == "Template"): template();
+        endif;?>
 
     </main>
 

@@ -36,6 +36,13 @@ switch($main_route) {
         showSpanishContent();
         exit; // Important: stop execution here
         break;
+
+
+    case 'Template':
+        fullPageTemplate();
+        exit;
+        break;
+
     case 'JesusChrist':
         _JesusChrist($sub_route);
         exit;
@@ -56,6 +63,10 @@ function show404() {
     echo "<!DOCTYPE html>";
     echo "<html><head><title>404 - Page Not Found</title></head>";
     echo "<body><h1>Page not found</h1></body></html>";
+}
+
+function fullPageTemplate(){
+    include 'fullpageTemplate.php';
 }
 
 function _JesusChrist($sub_route){
