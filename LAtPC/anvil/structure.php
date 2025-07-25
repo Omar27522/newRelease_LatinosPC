@@ -58,9 +58,9 @@
 
                         <a href="<?php
                         if($lang == "en"):
-                           echo "#";
+                           echo "../LAtPC/JesusChrist/father_in_heaven_tell_me_about_web";
                         elseif($lang == "es"):
-                           echo "#";
+                           echo "../LAtPC/Jesucristo/padre_celestial_cuentame_sobre_el_internet";
                         endif; ?>">
                             <li><?php
                         if($lang == "en"):
@@ -286,9 +286,10 @@
         -->
 
         <?php
-        if($lang == "en" && $title == "Home LatinosPC"): content_home();
+        if    ($lang == "en" && $title == "Home LatinosPC"): content_home();
         elseif($lang == "es" && $titulo == "Inicio LatinosPC"): contenido_inicio();
-        elseif($lang == "en" && $title == "Jesus Christ"): fihtmatw();
+        elseif($lang == "en" && $title == "Heavenly Father"): fihtmatw();
+        elseif($lang == "es" && $titulo == "Padre Celestial"): qpccsei();
         elseif($lang == "en" && $title == "Template"): template();
         endif;?>
 

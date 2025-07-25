@@ -45,21 +45,17 @@ switch($main_route) {
         break;
 
 
-
-
-
-
     case 'Template':
         fullPageTemplate();
         exit;
         break;
 
 
-
-
-
-
     case 'JesusChrist':
+        _JesusChrist($sub_route);
+        exit;
+        break;
+	case 'Jesucristo':
         _JesusChrist($sub_route);
         exit;
         break;
@@ -90,9 +86,13 @@ function _JesusChrist($sub_route){
         case 'father_in_heaven_tell_me_about_web':
             include '_JesusChrist/fihtmatw.php';
             break;
+		case 'padre_celestial_cuentame_sobre_el_internet':
+            include '_JesusChrist/qpccsei.php';
+            break;
         case '':
             echo "Jesus Christ Main Page";
             break;
+
         default:
             show404();
             break;
