@@ -8,9 +8,11 @@
     <meta name="keywords" content="<?=$keywords?>">
     <meta name="description" content="<?=$description?>">
     <!--LatinosPC - Tech Support & Computer Services in Pomona, CA-->
-    <link rel="stylesheet" href="../LAtPC/anvil/mainStyle.css">
-    <link rel="stylesheet" href="../LAtPC/anvil/homepage.css">
-    <link rel="stylesheet" href="../LAtPC/anvil/navMenu.css">
+    <link rel="stylesheet" href="../../LAtPC/anvil/mainStyle.css">
+    <link rel="stylesheet" href="../../LAtPC/anvil/homepage.css">
+    <link rel="stylesheet" href="../../LAtPC/anvil/navMenu.css">
+    <!-- I have to make a better dir struct for each page and for the sub-directories, some will be 3 directories deep.
+            I am thinking this current approach will cause issues. -->
 </head>
 
 <body>
@@ -286,6 +288,7 @@
         <?php
         if($lang == "en" && $title == "Home LatinosPC"): content_home();
         elseif($lang == "es" && $titulo == "Inicio LatinosPC"): contenido_inicio();
+        elseif($lang == "en" && $title == "Jesus Christ"): fihtmatw();
         elseif($lang == "en" && $title == "Template"): template();
         endif;?>
 
