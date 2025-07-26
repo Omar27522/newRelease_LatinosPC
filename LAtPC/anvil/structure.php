@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="<?= $lang == 'es' ? 'es-419' : 'en' ?>">
+<html lang="<?php echo $page->getLang(); ?>">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= !empty($title) ? $title : $titulo ?> </title>
+    <title><?= !empty($page->getTitle()) ? $page->getTitle() : $page->getTitle() ?> </title>
     <meta name="keywords" content="<?=$keywords?>">
     <meta name="description" content="<?=$description?>">
     <!--LatinosPC - Tech Support & Computer Services in Pomona, CA-->
-    <link rel="stylesheet" href="../../LAtPC/anvil/mainStyle.css">
-    <link rel="stylesheet" href="../../LAtPC/anvil/homepage.css">
-    <link rel="stylesheet" href="../../LAtPC/anvil/navMenu.css">
+    <link rel="stylesheet" href="<?= $page->getDir(); ?>LAtPC/anvil/mainStyle.css">
+    <link rel="stylesheet" href="<?= $page->getDir(); ?>LAtPC/anvil/homepage.css">
+    <link rel="stylesheet" href="<?= $page->getDir(); ?>LAtPC/anvil/navMenu.css">
     <!-- I have to make a better dir struct for each page and for the sub-directories, some will be 3 directories deep.
             I am thinking this current approach will cause issues. -->
 </head>
@@ -24,9 +24,9 @@
             <div class="logos"><span>LAt</span>inos<span>PC</span>.com
                 <small class="rtl">
                     <?php
-                    if($lang == "en"):
+                    if($page->getLang() == "en"):
                        echo "PC, is for Personal Computer";
-                    elseif($lang == "es"):
+                    elseif($page->getLang() == "es-419"):
                        echo "PC, es Computadora Personal";
                     endif; ?>
                 </small>
@@ -40,16 +40,16 @@
 
                     <ul id="menu">
                         <li class="titleli"><?php
-                    if($lang == "en"):
+                    if($page->getLang() == "en"):
                        echo "Our Lord and Savior Jesus Christ";
-                    elseif($lang == "es"):
+                    elseif($page->getLang() == "es-419"):
                        echo "Nuestro Señor y Salvador Jesucristo";
                     endif; ?></li>
 
                         <a href="<?php
-                        if($lang == "en"):
+                        if($page ->getLang() == "en"):
                            echo "https://www.vatican.va/roman_curia/pontifical_councils/interelg/documents/rc_pc_interelg_doc_20030203_new-age_en.html";
-                        elseif($lang == "es"):
+                        elseif($page->getLang() == "es-419"):
                            echo "https://www.vatican.va/roman_curia/pontifical_councils/interelg/documents/rc_pc_interelg_doc_20030203_new-age_sp.html";
                         endif; ?>" target="_blank">
                             <img src="https://latinospc.com/images/artificialintelligence/our_lord_and_savior_jesus_christ/lamb9.webp"
@@ -57,184 +57,184 @@
                         </a>
 
                         <a href="<?php
-                        if($lang == "en"):
+                        if($page->getLang() == "en"):
                            echo "../LAtPC/JesusChrist/father_in_heaven_tell_me_about_web";
-                        elseif($lang == "es"):
+                        elseif($page->getLang() == "es-419"):
                            echo "../LAtPC/Jesucristo/padre_celestial_cuentame_sobre_el_internet";
                         endif; ?>">
                             <li><?php
-                        if($lang == "en"):
+                        if($page->getLang() == "en"):
                            echo "Heavenly Father tell me about the Web";
-                        elseif($lang == "es"):
+                        elseif($page->getLang() == "es-419"):
                            echo "Padre en el Cielo dime acerca de la red";
                         endif; ?></li>
                         </a>
 
                         <a href="<?php
-                        if($lang == "en"):
+                        if($page->getLang() == "en"):
                            echo "#";
-                        elseif($lang == "es"):
+                        elseif($page->getLang() == "es-419"):
                            echo "#";
                         endif;?>">
                             <!-- https://bibilium.com/38-parables-of-Jesus-parables-of-Jesus/ -->
                             <li><?php
-                        if($lang == "en"):
+                        if($page->getLang() == "en"):
                            echo "Parables";
-                        elseif($lang == "es"):
+                        elseif($page->getLang() == "es-419"):
                            echo "Parabolas";
                         endif;?></li>
                         </a>
 
                         <a href="<?php
-                        if($lang == "en"):
+                        if($page->getLang() == "en"):
                            echo "#";
-                        elseif($lang == "es"):
+                        elseif($page->getLang() == "es-419"):
                            echo "#";
                         endif;?>">
                             <li><?php
-                        if($lang == "en"):
+                        if($page->getLang() == "en"):
                            echo "Sermons/Discourses";
-                        elseif($lang == "es"):
+                        elseif($page->getLang() == "es-419"):
                            echo "Sermones/Discursos";
                         endif;?></li>
                         </a>
 
                         <a href="<?php
-                        if($lang == "en"):
+                        if($page->getLang() == "en"):
                            echo "#";
-                        elseif($lang == "es"):
+                        elseif($page->getLang() == "es-419"):
                            echo "#";
                         endif;?>">
                             <li><?php
-                        if($lang == "en"):
+                        if($page->getLang() == "en"):
                            echo "The Apostles";
-                        elseif($lang == "es"):
+                        elseif($page->getLang() == "es-419"):
                            echo "Los Apóstoles";
                         endif;?></li>
                         </a>
 
                         <a href="<?php
-                        if($lang == "en"):
+                        if($page->getLang() == "en"):
                            echo "#";
-                        elseif($lang == "es"):
+                        elseif($page->getLang() == "es-419"):
                            echo "#";
                         endif;?>">
                             <li><?php
-                        if($lang == "en"):
+                        if($page->getLang() == "en"):
                            echo "His Teachings";
-                        elseif($lang == "es"):
+                        elseif($page->getLang() == "es-419"):
                            echo "Las enseñanzas";
                         endif;?></li>
                         </a>
 
                         <a href="<?php
-                        if($lang == "en"):
+                        if($page->getLang() == "en"):
                            echo "#";
-                        elseif($lang == "es"):
+                        elseif($page->getLang() == "es-419"):
                            echo "#";
                         endif;?>">
                             <li><?php
-                        if($lang == "en"):
+                        if($page->getLang() == "en"):
                            echo "Computer Backup";
-                        elseif($lang == "es"):
+                        elseif($page->getLang() == "es-419"):
                            echo "Respaldos PC";
                         endif;?></li>
                         </a>
 
                         <a href="<?php
-                        if($lang == "en"):
+                        if($page->getLang() == "en"):
                            echo "#";
-                        elseif($lang == "es"):
+                        elseif($page->getLang() == "es-419"):
                            echo "#";
                         endif;?>">
                             <li><?php
-                        if($lang == "en"):
+                        if($page->getLang() == "en"):
                            echo "Hardware/Parts";
-                        elseif($lang == "es"):
+                        elseif($page->getLang() == "es-419"):
                            echo "Hardware/Partes";
                         endif;?></li>
                         </a>
 
                         <a href="<?php
-                        if($lang == "en"):
+                        if($page->getLang() == "en"):
                            echo "#";
-                        elseif($lang == "es"):
+                        elseif($page->getLang() == "es-419"):
                            echo "#";
                         endif;?>">
                             <li><?php
-                        if($lang == "en"):
+                        if($page->getLang() == "en"):
                            echo "Software/Programs";
-                        elseif($lang == "es"):
+                        elseif($page->getLang() == "es-419"):
                            echo "Software/Programas";
                         endif;?></li>
                         </a>
 
                         <a href="<?php
-                        if($lang == "en"):
+                        if($page->getLang() == "en"):
                            echo "#";
-                        elseif($lang == "es"):
+                        elseif($page->getLang() == "es-419"):
                            echo "#";
                         endif;?>">
                             <li><?php
-                        if($lang == "en"):
+                        if($page->getLang() == "en"):
                            echo "Websites";
-                        elseif($lang == "es"):
+                        elseif($page->getLang() == "es-419"):
                            echo "Sitios Web";
                         endif;?></li>
                         </a>
 
                         <a href="<?php
-                        if($lang == "en"):
+                        if($page->getLang() == "en"):
                            echo "#";
-                        elseif($lang == "es"):
+                        elseif($page->getLang() == "es-419"):
                            echo "#";
                         endif;?>">
                             <li><?php
-                        if($lang == "en"):
+                        if($page->getLang() == "en"):
                            echo "Security";
-                        elseif($lang == "es"):
+                        elseif($page->getLang() == "es-419"):
                            echo "Seguridad";
                         endif;?></li>
                         </a>
 
                         <a href="<?php
-                        if($lang == "en"):
+                        if($page->getLang() == "en"):
                            echo "#";
-                        elseif($lang == "es"):
+                        elseif($page->getLang() == "es-419"):
                            echo "#";
                         endif;?>">
                             <li><?php
-                        if($lang == "en"):
+                        if($page->getLang() == "en"):
                            echo "Best Practices";
-                        elseif($lang == "es"):
+                        elseif($page->getLang() == "es-419"):
                            echo "Mejores Prácticas";
                         endif;?></li>
                         </a>
 
                         <a href="<?php
-                        if($lang == "en"):
+                        if($page->getLang() == "en"):
                            echo "#";
-                        elseif($lang == "es"):
+                        elseif($page->getLang() == "es-419"):
                            echo "#";
                         endif;?>">
                             <li><?php
-                        if($lang == "en"):
+                        if($page->getLang() == "en"):
                            echo "Passwords";
-                        elseif($lang == "es"):
+                        elseif($page->getLang() == "es-419"):
                            echo "Contraseñas";
                         endif;?></li>
                         </a>
 
                         <a href="<?php
-                        if($lang == "en"):
+                        if($page->getLang() == "en"):
                            echo "#";
-                        elseif($lang == "es"):
+                        elseif($page->getLang() == "es-419"):
                            echo "#";
                         endif;?>">
                             <li><?php
-                        if($lang == "en"):
+                        if($page->getLang() == "en"):
                            echo "Gallery";
-                        elseif($lang == "es"):
+                        elseif($page->getLang() == "es-419"):
                            echo "Galería";
                         endif;?></li>
                         </a>
@@ -244,7 +244,7 @@
             </div>
             <div class="navButtons">
                 <?php /*On page.php from the last refactor there is a function called getNavButtons() that gets the correct place in the page I will need to use it for English and Spanish jumps.*/
-                if($lang == "en"):
+                if($page->getLang() == "en"):
                 ?>
                 <button><a href="../LAtPC/index.php">Home</a></button>
                 <button><a href="../LAtPC/español">Español</a></button>
@@ -252,7 +252,7 @@
                 <button><a href="#">Contact Us</a></button>
                 <button><a href="#">Reviews</a></button>
                 <?php
-                elseif($lang == "es"):
+                elseif($page->getLang() == "es-419"):
                 ?>
                 <button><a href="../LAtPC/español">inicio</a></button>
                 <button><a href="../LAtPC/index.php">Inglés</a></button>
@@ -286,17 +286,20 @@
         -->
 
         <?php
-        if    ($lang == "en" && $title == "Home LatinosPC"): content_home();
-        elseif($lang == "es" && $titulo == "Inicio LatinosPC"): contenido_inicio();
-        elseif($lang == "en" && $title == "Heavenly Father"): fihtmatw();
-        elseif($lang == "es" && $titulo == "Padre Celestial"): qpccsei();
-        elseif($lang == "en" && $title == "Template"): template();
+        if    ($page->getLang() == "en" && $page->getTitle() == "Home LatinosPC"): content_home();
+        elseif($page->getLang() == "es-419" && $page->getTitle() == "Inicio LatinosPC"): contenido_inicio();
+        elseif($page->getLang() == "en" && $page->getTitle() == "Heavenly Father"): fihtmatw();
+        elseif($page->getLang() == "es-419" && $page->getTitle() == "Padre Celestial"): qpccsei();
+
+
+
+        elseif($page->getLang() == "en" && $page->getTitle() == "Template"): template();
         endif;?>
 
     </main>
 
     <footer>
-        <p>&copy; LatinosPC <?php if($lang=="es"){$meses = [
+        <p>&copy; LatinosPC <?php if($page->getLang() == "es-419"){$meses = [
     'January' => 'Enero',
     'February' => 'Febrero',
     'March' => 'Marzo',

@@ -1,6 +1,5 @@
 <?php
-$lang = "es";
-$titulo = "Inicio LatinosPC";
+$page = new Structure ("../","español","Inicio LatinosPC");
 $keywords="Keyword_test";
 $description="Description_test";
 function contenido_inicio (){

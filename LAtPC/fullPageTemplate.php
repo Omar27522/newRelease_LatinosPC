@@ -1,6 +1,5 @@
 <?php
-$lang = "en";
-$title = "Template";
+$page = new Structure ("../","english","Template");
 $keywords = "test_Keywords";
 $description = "test_Description";
 

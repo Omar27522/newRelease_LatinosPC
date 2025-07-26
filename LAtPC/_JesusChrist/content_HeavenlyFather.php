@@ -61,9 +61,7 @@
     float: right;
 }
 
-.fullbar p {
-    font-size: calc(1.5vw + 2vh);
-}
+
 </style>
 <div class="fullbar hero4">
     <div class="title" style="text-align:center"><?= empty($titles) ? $titulos[0] : $titles[0]; ?></div>
