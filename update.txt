@@ -2,10 +2,11 @@ Use the new repository for the site.
 
     <WORKING (7/22/2025)>
     *Jesus Christ related content.* A $subroute has been added that splits the route into segments for subdirectory support, it will work for all pages.
-        The issue is now: How to implement the content from each individual page. I was thinking that there could be 2 content classes one for English and one for Spanish.
-            (The index already picks between 2 functions depending on the $lang.)
-                a new method can be loaded instead of the current implementation, maybe content can load based on the given title?
-                    ~This way is too rigid, but it should work for now~.
+        The issue is now: How to implement the content from each individual page.
+            I was thinking that there could be 2 content classes one for English and one for Spanish.
+                (The index already picks between 2 functions depending on the $lang.)
+                    a new method can be loaded instead of the current implementation, maybe content can load based on the given title?
+                        ~This way is too rigid, but it should work for now~.
     (7/24/2025|Update) fullPageTemplate: I'm not sure if this is the best way to display the content functions,
         I really wanted to have some sort of method with a much more simple approach, and rely entirely on language or a title page.
     (7/24/2025|Update) content_HeavenlyFather.php: pages will have a Spanish version and an English one, the content will have the prefix _content

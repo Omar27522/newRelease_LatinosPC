@@ -1,7 +1,6 @@
 <?php
 //fihtmatw ==> Father in Heaven Tell me about the web
-$lang = "en";
-$title = "Heavenly Father";
+$page = new Structure ("../../","english","Heavenly Father");
 $keywords="Keyword_test";
 $description="Description_test";
 

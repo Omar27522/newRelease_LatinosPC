@@ -1,7 +1,6 @@
 <?php
 //qpccsei ==> Querido Padre Celestial, cuéntame sobre el internet
-$lang ="es";
-$titulo ="Padre Celestial";
+$page = new Structure ("../../","español","Padre Celestial");
 $keywords="Keyword_test";
 $description="Description_test";
 
