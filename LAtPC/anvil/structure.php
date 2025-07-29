@@ -246,16 +246,16 @@
                 <?php /*On page.php from the last refactor there is a function called getNavButtons() that gets the correct place in the page I will need to use it for English and Spanish jumps.*/
                 if($page->getLang() == "en"):
                 ?>
-                <button><a href="../LAtPC/index.php">Home</a></button>
-                <button><a href="../LAtPC/español">Español</a></button>
+                <button><a href="<?= $page->getDir();?>LAtPC/index.php">Home</a></button>
+                <button><a href="<?= $page->getDir();?>LAtPC/español">Español</a></button>
                 <button><a href="#">Services</a></button>
                 <button><a href="#">Contact Us</a></button>
                 <button><a href="#">Reviews</a></button>
                 <?php
                 elseif($page->getLang() == "es-419"):
                 ?>
-                <button><a href="../LAtPC/español">inicio</a></button>
-                <button><a href="../LAtPC/index.php">Inglés</a></button>
+                <button><a href="<?= $page->getDir();?>LAtPC/español">inicio</a></button>
+                <button><a href="<?= $page->getDir();?>LAtPC/index.php">Inglés</a></button>
                 <button><a href="#">Servicios</a></button>
                 <button><a href="#">Contacto</a></button>
                 <button><a href="#">Reseñas</a></button><?php endif;?>
@@ -290,6 +290,8 @@
         elseif($page->getLang() == "es-419" && $page->getTitle() == "Inicio LatinosPC"): contenido_inicio();
         elseif($page->getLang() == "en" && $page->getTitle() == "Heavenly Father"): fihtmatw();
         elseif($page->getLang() == "es-419" && $page->getTitle() == "Padre Celestial"): qpccsei();
+        elseif($page->getLang() == "en" && $page->getTitle() == "The Apostles"): apostles();
+        elseif($page->getLang() == "es-419" && $page->getTitle() == "Los Apóstoles"): apostoles();
 
 
 

@@ -14,7 +14,7 @@ function contenido_inicio (){
             <p tabindex="0">¿Qué sabemos realmente acerca de Jesús? Explora su vida y enseñanzas y forma tu propio criterio.</p>
         </div>
     </div>
-    <a href="#content" class="cta-button">Háblame de la web</a>
+    <a href="Jesucristo/padre_celestial_cuentame_sobre_el_internet" class="cta-button">Háblame de la web</a>
     <a href="#" class="cta-button">Apóstoles</a>
     <a href="#" class="cta-button">Parábolas</a>
     <a href="#" class="cta-button">Sermones</a>

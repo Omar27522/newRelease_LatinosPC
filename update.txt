@@ -12,12 +12,17 @@ Use the new repository for the site.
     (7/24/2025|Update) content_HeavenlyFather.php: pages will have a Spanish version and an English one, the content will have the prefix _content
         All the _content pages must have a comment at the start of the file indicating which files are including it.
             I seriously need to consider a good method that will consolidate all 3 files into one.
-                For now this temporary solution will become temporarily permanent.
+                For now, this temporary solution will become temporarily permanent.
     (7/25/2025|Update) There is a new class called Structure, which has the directory of the page, the language and the title.
         This is a simpler approach, I just need to go back to _JesusChrist dir and make one file containing the content for the one page.
             In this case is Father in Heaven tell me about the Web.
+    (7/26/2025|Update) Tried making one file _JesusChrist, but I could not get it to work.
+        I will stay with 3 files per location.
+            The should be a total of 15 files when done with this Update.
+    (7/28/2025|Update) Apostles Page is done. I need to fact check it further. Also I would love to add dialogs when the names are clicked.
 
 *Working Links and menus.*
+*Switching between languages by pressing the Spanish or English button.*
 *work on the services page.*
 *work on the contact page.*
 *work on the reviews page.*

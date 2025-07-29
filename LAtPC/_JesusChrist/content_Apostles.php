@@ -1,0 +1,246 @@
+
+<style>
+    .container {
+      padding: .25rem 2rem .3rem;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1200px;
+    }
+
+    h1, h2 {
+      color: var(--primary-dark);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 3px solid var(--secondary-dark);
+      padding-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .apostles-intro {
+      background: linear-gradient(127deg,var(--secondary-dark), var(--primary-dark));
+      border-radius: 15px;
+      padding: 2rem;
+      margin: 2rem 0;
+      color: white;
+      text-align: center;
+      box-shadow: var(--box-shadow);
+    }
+
+    .apostles-intro h2 {
+      color: white;
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+
+    .apostles-lists {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    .apostles-list {
+      background: var(--background);
+      border-radius: var(--border-radius);
+      padding: 1.5rem;
+      box-shadow: var(--box-shadow);
+    }
+
+    .apostles-list h3 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+
+    .apostles-list ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .apostles-list li {
+      background: white;
+      margin: 0.5rem 0;
+      padding: 0.8rem 1rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--light-text);
+      box-shadow: var(--box-shadow);
+      transition: transform 0.2s ease;
+    }
+
+    .apostles-list li:hover {
+      transform: translateX(5px);
+    }
+
+    p {
+      line-height: 1.6;
+      margin: 1.2rem 0;
+      text-align: justify;
+    }
+
+    blockquote {
+      border-left: 4px solid var(--light-text);
+      padding-left: 1em;
+      margin: 1.5em 0;
+      font-style: italic;
+      background: var(--background);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+      background: var(--background);
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--box-shadow);
+    }
+
+    th, td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid var(--dialog-text-highlight);
+    }
+
+    th {
+      background: linear-gradient(135deg,#0275d8, var(--primary-dark));
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    tr:hover {
+      background-color: var(--card-bg);
+    }
+
+    .verse {
+      font-style: italic;
+      color: var(--light-text);
+      margin: 1.5rem 0;
+      padding: 1rem;
+      background: var(--background);
+      border-left: 4px solid var(--secondary-dark);
+      border-radius: var(--border-radius);
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    .total-count {
+      background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+      color: white;
+      padding: 2rem;
+      border-radius: var(--border-radius);
+      text-align: center;
+      margin: 2rem 0;
+      box-shadow: var(--box-shadow);
+    }
+
+    .total-count h2 {
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    .total-count p {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+
+    .highlight-number {
+      color: var(--dialog-text-highlight);
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        padding: .25rem;
+        margin: 0 .1rem;
+      }
+
+      .apostles-lists {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      th, td {
+        padding: 0.7rem 0.5rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+<div class="container">
+<div class="apostles-intro">
+    <h2><?= empty($titles) ? $titulos[0] : $titles[0]; ?></h2>
+    <h3><?= empty($titles) ? $titulos[1] : $titles[1]; ?></h3>
+</div>
+
+<div class="apostles-lists">
+    <div class="apostles-list">
+        <h3><?= empty($titles) ? $titulos[2] : $titles[2]; ?></h3>
+        <ul>
+            <li><?= empty($names) ? $nombres[0] : $names[0]; ?></li>
+            <li><?= empty($names) ? $nombres[1] : $names[1]; ?></li>
+            <li><?= empty($names) ? $nombres[2] : $names[2]; ?></li>
+            <li><?= empty($names) ? $nombres[3] : $names[3]; ?></li>
+            <li><?= empty($names) ? $nombres[4] : $names[4]; ?></li>
+            <li><?= empty($names) ? $nombres[5] : $names[5]; ?></li>
+            <li><?= empty($names) ? $nombres[6] : $names[6]; ?></li>
+            <li><?= empty($names) ? $nombres[7] : $names[7]; ?></li>
+        </ul>
+    </div>
+
+    <div class="apostles-list">
+        <h3><?= empty($titles) ? $titulos[3] : $titles[3]; ?></h3>
+        <ul>
+            <li><?= empty($names) ? $nombres[8] : $names[8]; ?></li>
+            <li><?= empty($names) ? $nombres[9] : $names[9]; ?></li>
+        </ul>
+    </div>
+</div>
+  </div>
+
+
+  <div class="container">
+
+    <p><?= empty($titles) ? $subTitulos[0] : $subTitles[0]; ?>
+      <span class="highlight-number"><?= empty($titles) ? $subTitulos[1] : $subTitles[1]; ?></span>.</p>
+
+    <p><?= empty($titles) ? $subTitulos[2] : $subTitles[2]; ?> <em>“<?= empty($titles) ? $subTitulos[3] : $subTitles[3]; ?>”</em> <?= empty($titles) ? $subTitulos[4] : $subTitles[4]; ?></p>
+
+    <h2><?= empty($titles) ? $titulos[4] : $titles[4]; ?></h2>
+    <table>
+      <tr><th><?= empty($titles) ? $titulos[5] : $titles[5]; ?></th><th><?= empty($titles) ? $titulos[6] : $titles[6]; ?></th></tr>
+      <tr><td><?= empty($adicionalNames) ? $nombresAdicionales[0][0] : $adicionalNames[0][0]; ?></td><td><?= empty($adicionalNames) ? $nombresAdicionales[0][1] : $adicionalNames[0][1]; ?></td></tr>
+      <tr><td><?= empty($adicionalNames) ? $nombresAdicionales[1][0] : $adicionalNames[1][0]; ?></td><td><?= empty($adicionalNames) ? $nombresAdicionales[1][1] : $adicionalNames[1][1]; ?></td></tr>
+      <tr><td><?= empty($adicionalNames) ? $nombresAdicionales[2][0] : $adicionalNames[2][0]; ?></td><td><?= empty($adicionalNames) ? $nombresAdicionales[2][1] : $adicionalNames[2][1]; ?></td></tr>
+      <tr><td><?= empty($adicionalNames) ? $nombresAdicionales[3][0] : $adicionalNames[3][0]; ?></td><td><?= empty($adicionalNames) ? $nombresAdicionales[3][1] : $adicionalNames[3][1]; ?></td></tr>
+      <tr><td><?= empty($adicionalNames) ? $nombresAdicionales[4][0] : $adicionalNames[4][0]; ?></td><td><?= empty($adicionalNames) ? $nombresAdicionales[4][1] : $adicionalNames[4][1]; ?></td></tr>
+      <tr><td><?= empty($adicionalNames) ? $nombresAdicionales[5][0] : $adicionalNames[5][0]; ?></td><td><?= empty($adicionalNames) ? $nombresAdicionales[5][1] : $adicionalNames[5][1]; ?></td></tr>
+      <tr><td><?= empty($adicionalNames) ? $nombresAdicionales[6][0] : $adicionalNames[6][0]; ?></td><td><?= empty($adicionalNames) ? $nombresAdicionales[6][1] : $adicionalNames[6][1]; ?></td></tr>
+      <tr><td><?= empty($adicionalNames) ? $nombresAdicionales[7][0] : $adicionalNames[7][0]; ?></td><td><?= empty($adicionalNames) ? $nombresAdicionales[7][1] : $adicionalNames[7][1]; ?></td></tr>
+      <tr><td><?= empty($adicionalNames) ? $nombresAdicionales[8][0] : $adicionalNames[8][0]; ?></td><td><?= empty($adicionalNames) ? $nombresAdicionales[8][1] : $adicionalNames[8][1]; ?></td></tr>
+    </table>
+
+    <p class="verse"><?php echo $_Jesus; ?></p>
+
+    <div class="total-count">
+      <h2><?= empty($titles) ? $titulos[7] : $titles[7]; ?></h2>
+      <p><?= empty($titles) ? $subTitulos[5] : $subTitles[5]; ?> <span class="highlight-number"><?= empty($titles) ? $subTitulos[6] : $subTitles[6]; ?></span> <?= empty($titles) ? $subTitulos[7] : $subTitles[7]; ?></p>
+    </div>
+  </div>

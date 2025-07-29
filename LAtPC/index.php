@@ -89,7 +89,7 @@ switch($main_route) {
         exit;
         break;
 	case 'Jesucristo':
-        _JesusChrist($sub_route);
+        _JesusChrist($sub_route); //this cannot work anywhere else the same; say when we start the services functions, there has to be a services(sub_route) function and a servicios(sub_route) function.
         exit;
         break;
     default:
@@ -122,6 +122,12 @@ function _JesusChrist($sub_route){
 		case 'padre_celestial_cuentame_sobre_el_internet':
             include '_JesusChrist/qpccsei.php';
             break;
+		case 'apostles':
+            include '_JesusChrist/apostles.php';
+            break;
+		case 'apostoles':
+            include '_JesusChrist/apostoles.php';
+            break;
         case '':
             echo "Jesus Christ Main Page";
             break;
@@ -147,7 +153,7 @@ function content_home(){	?>
 						own valid experience.</p>
 				</div>
 			</div>
-			<a href="#content" class="cta-button">Tell me about the web</a>
+			<a href="JesusChrist/father_in_heaven_tell_me_about_web" class="cta-button">Tell me about the web</a>
 			<a href="#" class="cta-button">Apostles</a>
 			<a href="#" class="cta-button">Parables</a>
 			<a href="#" class="cta-button">Sermons</a>
