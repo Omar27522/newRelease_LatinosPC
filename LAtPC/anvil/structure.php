@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--LatinosPC - Tech Support & Computer Services in Pomona, CA-->
 <html lang="<?php echo $page->getLang(); ?>">
 
 <head>
@@ -7,12 +8,9 @@
     <title><?= !empty($page->getTitle()) ? $page->getTitle() : $page->getTitle() ?> </title>
     <meta name="keywords" content="<?=$keywords?>">
     <meta name="description" content="<?=$description?>">
-    <!--LatinosPC - Tech Support & Computer Services in Pomona, CA-->
     <link rel="stylesheet" href="<?= $page->getDir(); ?>LAtPC/anvil/mainStyle.css">
     <link rel="stylesheet" href="<?= $page->getDir(); ?>LAtPC/anvil/homepage.css">
     <link rel="stylesheet" href="<?= $page->getDir(); ?>LAtPC/anvil/navMenu.css">
-    <!-- I have to make a better dir struct for each page and for the sub-directories, some will be 3 directories deep.
-            I am thinking this current approach will cause issues. -->
 </head>
 
 <body>
@@ -33,7 +31,7 @@
             </div>
         </div>
         <nav class="sticky">
-            <!--    TerwanPOP    -->
+            <!--    TerwanPOP   https://codepen.io/erikterwan/pen/EVzeRP -->
             <div role="navigation" class="burg">
                 <div id="menuToggle"><input type="checkbox" />
                     <span></span><span></span><span></span>
@@ -265,25 +263,14 @@
     </header>
 
     <main>
-        <!-- this <main> will be part of the structure, everything inside will be the content,
-        I have been posting content in a content() function, but Im not sure what would dbe best.
-        Maybe a content object from different parts of teh site, for example this current one is the homepage.
-        Creating a content() function is the easiest thing for me,
-        but IDK is a bit obtuse because it just loads whatever is presented as the  content function().
-        To he honest, I am not really sure what I am saying here.  -->
-
-        <!-- right now there is no full-page css, because a homepage-grid is being used,
-                but I would like to have this full-page css, on a CSS Wednesday.
-
-        <div class="multi-link-container">
+        <!-- <div class="multi-link-container">
             <span class="linked-text">Click me for more information</span>
             <div class="link-dialog">
                 <p tabindex="0">This is an example of a text link dialog. When you click on the text, this dialog
                     appears.</p>
                 <p tabindex="0">You can add any content here, including links, images, and other HTML elements.</p>
             </div>
-        </div>
-        -->
+        </div> -->
 
         <?php
         if    ($page->getLang() == "en" && $page->getTitle() == "Home LatinosPC"): content_home();
@@ -313,12 +300,10 @@
     'October' => 'Octubre',
     'November' => 'Noviembre',
     'December' => 'Diciembre'
-];
-
-echo $meses[date("F")] . " " . date("Y");} else{ echo date("F Y"); }?></p>
+   ];
+   echo $meses[date("F")] . " " . date("Y");} else{ echo date("F Y"); }?></p>
     </footer>
-    <script src="./anvil/dialogEngine.js">
-    </script>
-</body>
 
+    <script src="./anvil/dialogEngine.js"></script>
+</body>
 </html>
