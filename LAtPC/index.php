@@ -38,8 +38,6 @@ $script_name = $_SERVER['SCRIPT_NAME'];
 $path_info = $_SERVER['PATH_INFO'] ?? '';
 
 
-
-
 // Extract the route from the URL
 if (!empty($path_info)) {
     $route = ltrim($path_info, '/');
@@ -58,9 +56,6 @@ if (!empty($path_info)) {
 $route_segments = explode('/', $route);
 $main_route = $route_segments[0] ?? '';
 $sub_route = $route_segments[1] ?? '';
-
-
-
 
 
 //echo "DEBUG: Route = '" . $route . "'<br>";
@@ -89,7 +84,10 @@ switch($main_route) {
         exit;
         break;
 	case 'Jesucristo':
-        _JesusChrist($sub_route); //this cannot work anywhere else the same; say when we start the services functions, there has to be a services(sub_route) function and a servicios(sub_route) function.
+        _JesusChrist($sub_route); /*this cannot work anywhere else in the same way;
+										say: when we start services functions,
+											there has to be a services(sub_route) function
+												and a servicios(sub_route) function.*/
         exit;
         break;
     default:

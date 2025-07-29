@@ -52,24 +52,26 @@ Use the new repository for the site.
         <It looks like this implementation works. next step will be to test the image dialogs. >
 *DONE (7/16/2025)*   I want to direct efforts towards the standardization of the content design.
 
+
 (╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)|( Topics )|(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)
 
-1. index file.
+How does the site work? 7-29-2025
+    The index.php is the entry point of the site.
+        The method which decides where the user is gets called first.
+            The each page needs 3 parameters: directory, language and title.
+
+    The structure file is the actual HTML page.
+        The header and footer are essential and are standard.
+            The content of the site is inside the <main> tag.
+                If the page matches the language and the title, then the page's content will be displayed.
+
+    Finally each page content starts with a variable called $page.
+        $page holds the directory level for the content, its language and title.
+            Then there is a unique function that ideally has $variable arrays with the page's content.
+                At the end of the function there is an include statement that loads the HTML for the content.
+                    Lastly a final include statement loads the whole structure of the page.
 
 (╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)(╓╕╬↕╕)
-
-
-
-Last Release 7/11/2025
-━═━═━═━═━═━═━═━═━ CONTENT ━═━═━═━═━═━═━═━═━
-- * HARDWARE PAGES --Im considering a refactor already, I don't know why I don't want to keep churning content... let's just get it done!!!
-- * SOFTWARE PAGES
-- * Parables images
-- * Gallery
-
-━═━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━═━═━═━═━═━═━═━═━
-
-
 
 
 ‿︵‿︵‿︵‿︵‿︵‿︵ FEATURES ‿︵‿︵‿︵‿︵‿︵‿︵
@@ -83,7 +85,6 @@ Last Release 7/11/2025
 ‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵
 
 
-
 《•》《•》《•》《•》《•》《•》《•》《•》STRUCTURE《•》《•》《•》《•》《•》《•》《•》《•》
 
 I need to work on how the pages are structured, like when different tags are used, right now I feel it's a bit unclear because of the styles are called.
@@ -93,5 +94,11 @@ The way the css files are called at the moment is very complex, and confusing. I
 
 
 
+Last Release before current refactor 7/11/2025
+━═━═━═━═━═━═━═━═━ CONTENT ━═━═━═━═━═━═━═━═━
+- * HARDWARE PAGES --Im considering a refactor already, I don't know why I don't want to keep churning content... let's just get it done!!!
+- * SOFTWARE PAGES
+- * Parables images
+- * Gallery
 
-
+━═━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━═━═━═━═━═━═━═━═━

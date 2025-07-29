@@ -288,12 +288,11 @@
         <?php
         if    ($page->getLang() == "en" && $page->getTitle() == "Home LatinosPC"): content_home();
         elseif($page->getLang() == "es-419" && $page->getTitle() == "Inicio LatinosPC"): contenido_inicio();
+
         elseif($page->getLang() == "en" && $page->getTitle() == "Heavenly Father"): fihtmatw();
         elseif($page->getLang() == "es-419" && $page->getTitle() == "Padre Celestial"): qpccsei();
         elseif($page->getLang() == "en" && $page->getTitle() == "The Apostles"): apostles();
         elseif($page->getLang() == "es-419" && $page->getTitle() == "Los Apóstoles"): apostoles();
-
-
 
         elseif($page->getLang() == "en" && $page->getTitle() == "Template"): template();
         endif;?>
