@@ -1,7 +1,5 @@
 <?php
-$page = new Structure ("../","español","Inicio LatinosPC");
-$keywords="Keyword_test";
-$description="Description_test";
+
 function contenido_inicio (){
 
    ?>
@@ -15,7 +13,7 @@ function contenido_inicio (){
         </div>
     </div>
     <a href="Jesucristo/padre_celestial_cuentame_sobre_el_internet" class="cta-button">Háblame de la web</a>
-    <a href="#" class="cta-button">Apóstoles</a>
+    <a href="Jesucristo/apostoles" class="cta-button">Apóstoles</a>
     <a href="#" class="cta-button">Parábolas</a>
     <a href="#" class="cta-button">Sermones</a>
     <a href="#" class="cta-button">Enseñanzas</a>

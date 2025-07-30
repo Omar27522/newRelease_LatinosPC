@@ -56,9 +56,9 @@
 
                         <a href="<?php
                         if($page->getLang() == "en"):
-                           echo "../LAtPC/JesusChrist/father_in_heaven_tell_me_about_web";
+                           echo  $page->getDir(). "LAtPC/JesusChrist/father_in_heaven_tell_me_about_web";
                         elseif($page->getLang() == "es-419"):
-                           echo "../LAtPC/Jesucristo/padre_celestial_cuentame_sobre_el_internet";
+                           echo $page->getDir(). "LAtPC/Jesucristo/padre_celestial_cuentame_sobre_el_internet";
                         endif; ?>">
                             <li><?php
                         if($page->getLang() == "en"):
@@ -99,9 +99,9 @@
 
                         <a href="<?php
                         if($page->getLang() == "en"):
-                           echo "#";
+                           echo $page->getDir(). "LAtPC/JesusChrist/apostles";
                         elseif($page->getLang() == "es-419"):
-                           echo "#";
+                           echo $page->getDir(). "LAtPC/Jesucristo/apostoles";
                         endif;?>">
                             <li><?php
                         if($page->getLang() == "en"):

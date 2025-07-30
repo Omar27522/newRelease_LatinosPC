@@ -1,35 +1,40 @@
 <?php
-class Structure {
+class Structure
+{
 	// Declare properties to avoid dynamic property creation warnings
 	public string $dir;
 	public string $lang;
 	public string $title;
 
-
-	public function __construct($dir, $lang, $title){
+	public function __construct($dir, $lang, $title)
+	{
 		$this->dir = $dir;
 		$this->lang = $lang;
 		$this->title = $title;
 	}
 
-	public function getLang() {
+	public function getLang()
+	{
 		// Return the language code based on the object's lang property
-		if ($this->lang == "english") {
-			return "en";
-		} elseif ($this->lang == "español") {
-			return "es-419";
+		if ($this->lang == 'english') {
+			return 'en';
+		} elseif ($this->lang == 'español') {
+			return 'es-419';
 		} else {
 			// Default to English
-			return "en";
+			return 'en';
 		}
 	}
-	public function getDir() {
+
+	public function getDir()
+	{
 		return $this->dir;
 	}
-	public function getTitle() {
+
+	public function getTitle()
+	{
 		return $this->title;
 	}
-
 }
 
 // Get the requested path - this works even without .htaccess
@@ -37,19 +42,18 @@ $request_uri = $_SERVER['REQUEST_URI'];
 $script_name = $_SERVER['SCRIPT_NAME'];
 $path_info = $_SERVER['PATH_INFO'] ?? '';
 
-
 // Extract the route from the URL
 if (!empty($path_info)) {
-    $route = ltrim($path_info, '/');
+	$route = ltrim($path_info, '/');
 } else {
-    // Fallback: parse from REQUEST_URI
-    $route = str_replace(dirname($script_name), '', $request_uri);
-    $route = ltrim($route, '/');
-    $route = strtok($route, '?'); // Remove query string
-    $route = str_replace('LAtPC', '', $route);
-                                                    /* NOTE: in production $route str_replace 'LAtPC' will have to be deleted or something since the path will not be inside the LAtPC dir.
-                                                    but on the root of the public directory*/
-    $route = trim($route, '/');
+	// Fallback: parse from REQUEST_URI
+	$route = str_replace(dirname($script_name), '', $request_uri);
+	$route = ltrim($route, '/');
+	$route = strtok($route, '?');  // Remove query string
+	$route = str_replace('LAtPC', '', $route);
+	/* NOTE: in production $route str_replace 'LAtPC' will have to be deleted or something since the path will not be inside the LAtPC dir.
+	but on the root of the public directory*/
+	$route = trim($route, '/');
 }
 
 // Split the route into segments for subdirectory support
@@ -57,90 +61,113 @@ $route_segments = explode('/', $route);
 $main_route = $route_segments[0] ?? '';
 $sub_route = $route_segments[1] ?? '';
 
-
-//echo "DEBUG: Route = '" . $route . "'<br>";
-//echo $path_info;
+// echo "DEBUG: Route = '" . $route . "'<br>";
+// echo $path_info;
 // Route handling
-switch($main_route) {
-    case '':
-    case 'index.php':
-        // Show homepage - continue to HTML below
-        break;
-    case 'español':
-        // Show Spanish content and exit
-        showSpanishContent();
-        exit; // Important: stop execution here
-        break;
+switch ($main_route) {
+	case '':
+	case 'index.php':
+		// Show homepage - continue to HTML below
+		break;
+	case 'español':
+		// Show Spanish content and exit
+		showSpanishContent();
+		exit;  // Important: stop execution here
+		break;
 
+	case 'Template':
+		fullPageTemplate();
+		exit;
+		break;
 
-    case 'Template':
-        fullPageTemplate();
-        exit;
-        break;
-
-
-    case 'JesusChrist':
-        _JesusChrist($sub_route);
-        exit;
-        break;
+	case 'JesusChrist':
+		_JesusChrist($sub_route);
+		exit;
+		break;
 	case 'Jesucristo':
-        _JesusChrist($sub_route); /*this cannot work anywhere else in the same way;
-										say: when we start services functions,
-											there has to be a services(sub_route) function
-												and a servicios(sub_route) function.*/
-        exit;
-        break;
-    default:
-        // 404 page and exit
-        show404();
-        exit;
-        break;
+		_JesusChrist($sub_route);  /*this cannot work anywhere else in the same way;
+										 say: when we start services functions,
+											 there has to be a services(sub_route) function
+												 and a servicios(sub_route) function.*/
+		exit;
+		break;
+	default:
+		// 404 page and exit
+		show404();
+		exit;
+		break;
 }
 
-function showSpanishContent() {
-    include 'index_spanish.php';
+function showSpanishContent()
+{
+	$page = new Structure('../', 'español', 'Inicio LatinosPC');
+	$keywords = '~Palabras Clave~';
+	$description = '~Descripción~';
+	include 'index_spanish.php';
 }
 
-function show404() {
-    http_response_code(404);
-    echo "<!DOCTYPE html>";
-    echo "<html><head><title>404 - Page Not Found</title></head>";
-    echo "<body><h1>Page not found</h1></body></html>";
+function show404()
+{
+	http_response_code(404);
+	echo '<!DOCTYPE html>';
+	echo '<html><head><title>404 - Page Not Found</title></head>';
+	echo '<body><h1>Page not found</h1></body></html>';
 }
 
-function fullPageTemplate(){
-    include 'fullpageTemplate.php';
+function fullPageTemplate()
+{
+	$page = new Structure ("../","english","Template");
+	$keywords = "test_Keywords";
+	$description = "test_Description";
+	include 'fullpageTemplate.php';
 }
 
-function _JesusChrist($sub_route){
-    switch($sub_route) {
-        case 'father_in_heaven_tell_me_about_web':
-            include '_JesusChrist/fihtmatw.php';
-            break;
+function _JesusChrist($sub_route)
+{
+	switch ($sub_route) {
+		case 'father_in_heaven_tell_me_about_web':
+			$page = new Structure ("../../","english","Heavenly Father");
+			$keywords="Keyword_test";
+			$description="Description_test";
+			include '_JesusChrist/_HeavenlyFather.php';
+			break;
 		case 'padre_celestial_cuentame_sobre_el_internet':
-            include '_JesusChrist/qpccsei.php';
-            break;
+			$page = new Structure ("../../","español","Padre Celestial");
+			$keywords="Keyword_test";
+			$description="Description_test";
+			include '_JesusChrist/_HeavenlyFather.php';
+			break;
+
 		case 'apostles':
-            include '_JesusChrist/apostles.php';
-            break;
+			$page = new Structure('../../', 'english', 'The Apostles');
+			$keywords = 'Keyword_test';
+			$description = 'Description_test';
+			include '_JesusChrist/_Apostles.php';
+			break;
 		case 'apostoles':
-            include '_JesusChrist/apostoles.php';
-            break;
-        case '':
-            echo "Jesus Christ Main Page";
-            break;
+			$page = new Structure('../../', 'español', 'Los Apóstoles');
+			$keywords = 'Keyword_test';
+			$description = 'Description_test';
+			include '_JesusChrist/_Apostles.php';
+			break;
+		case '':
+			echo 'Jesus Christ Main Page';
+			break;
 
-        default:
-            show404();
-            break;
-    }
+		default:
+			show404();
+			break;
+	}
 }
-$page = new Structure ("../","english","Home LatinosPC");
 
-$keywords="test_Keywords";
-$description="test_Description";
+$page = new Structure('../', 'english', 'Home LatinosPC');
 
-function content_home(){	?>
+$keywords = 'test_Keywords';
+$description = 'test_Description';
+
+function content_home()
+{
+	?>
 	<section class="homepage-grid">
 		<div class="grid-item">
 			<div class="multi-link-container">
@@ -152,7 +179,7 @@ function content_home(){	?>
 				</div>
 			</div>
 			<a href="JesusChrist/father_in_heaven_tell_me_about_web" class="cta-button">Tell me about the web</a>
-			<a href="#" class="cta-button">Apostles</a>
+			<a href="JesusChrist/apostles" class="cta-button">Apostles</a>
 			<a href="#" class="cta-button">Parables</a>
 			<a href="#" class="cta-button">Sermons</a>
 			<a href="#" class="cta-button">Teachings</a>
@@ -292,6 +319,5 @@ function content_home(){	?>
 }
 
 include './anvil/structure.php';
-
 
 ?>

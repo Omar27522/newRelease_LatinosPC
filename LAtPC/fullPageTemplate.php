@@ -1,8 +1,4 @@
 <?php
-$page = new Structure ("../","english","Template");
-$keywords = "test_Keywords";
-$description = "test_Description";
-
 function template(){
     ?> <style>
     article{

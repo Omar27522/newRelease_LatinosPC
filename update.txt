@@ -1,4 +1,3 @@
-Use the new repository for the site.
 
     <WORKING (7/22/2025)>
     *Jesus Christ related content.* A $subroute has been added that splits the route into segments for subdirectory support, it will work for all pages.
@@ -19,7 +18,10 @@ Use the new repository for the site.
     (7/26/2025|Update) Tried making one file _JesusChrist, but I could not get it to work.
         I will stay with 3 files per location.
             The should be a total of 15 files when done with this Update.
-    (7/28/2025|Update) Apostles Page is done. I need to fact check it further. Also I would love to add dialogs when the names are clicked.
+    (7/28/2025|Update) Apostles Page is done. I need to fact check it further.
+        Also I would love to add dialogs when the names are clicked.
+    (7/29/2025|Update) Finally update from 7/24-7/26 was successful. merge all files into one file.
+        All I had to do was to move the $page method over to the index where the URL was being selected.
 
 *Working Links and menus.*
 *Switching between languages by pressing the Spanish or English button.*
