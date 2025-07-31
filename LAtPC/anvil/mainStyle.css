@@ -56,6 +56,13 @@ header p {
   margin-bottom: 1.5rem;
 }
 
+.fullbar {
+  padding: .25rem 2rem .3rem;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1200px;
+}
+
 
 /* ===================================
    Logo, phone, and banner STYLES
@@ -123,7 +130,18 @@ header small.rtl {
     z-index: 1;
     right: 5%
 }
+/* ===================================
+   IMAGES STYLES
+=================================== */
+.fl {
+  margin: 4px 16px 4px 0;
+  float: left;
+}
 
+.rtl {
+  margin: 4px 4px 16px 0;
+  float: right;
+}
 
 /* ===================================
    TEXT-DIALOG STYLES

@@ -291,13 +291,6 @@ function content()  {
         cursor: pointer;
     }
 
-    .fullbar {
-        padding: 1rem 2rem 3rem;
-        margin: 0 auto;
-        position: relative;
-        max-width: 1200px;
-    }
-
     .title {
         line-height: 1.2;
         text-align: justify;
@@ -314,28 +307,20 @@ function content()  {
     .sub_title2 {
         font-size: 24pt;
         font-weight: 2000;
-        color: rgb(255, 255, 255);
+        color: var(--background);
         background-color: rgb(109, 158, 235);
     }
 
     .browse {
         font-size: 1.3em;
-        color: rgb(35, 42, 60);
+        color: var(--primary-dark);
     }
 
-    .fl {
-        margin: 4px 16px 4px 0;
-        float: left;
-    }
-
-    .rtl {
-        margin: 4px 4px 16px 0;
-        float: right;
-    }
     </style>
-    <div class="fullbar hero4">
+    <div class="fullbar">
         <div class="title" style="text-align:center"><?= empty($titles) ? $titulos[0] : $titles[0]; ?></div>
-        <!--This is the image linked to--><a rel="example_group"
+        <!--This is the image linked to | OLD SYSTEM I NEED TO CHANGE IT TO THE NEW PICTURE DIALOG WITH FIG CAPTIONS-->
+        <a rel="example_group"
             href="https://latinospc.com/images/artificialintelligence/our_lord_and_savior_jesus_christ/lamb1.jpg"
             title="Jesus holding a lamb" alt="Jesus holding a lamb">
             <!--this is the image showing --><img
@@ -360,7 +345,7 @@ function content()  {
         <div class="spacer_mega"></div>
         <hr style="border: 3px dashed darkgray;width: 30%;">
         <h2 class="sub_title"><?= empty($titles) ? $titulos[9] : $titles[9]; ?></h2>
-        <!--This is the image linked to--><a rel="example_group"
+        <!--This is the image linked to | OLD SYSTEM I NEED TO CHANGE IT TO THE NEW PICTURE DIALOG WITH FIG CAPTIONS--><a rel="example_group"
             href="https://latinospc.com/images/artificialintelligence/our_lord_and_savior_jesus_christ/jesushrist3.jpg"
             title="Catholic Path to Salvation" alt="Catholic Path to Salvation">
             <!--this is the image showing --><img
@@ -425,7 +410,7 @@ function content()  {
         <p>
             <?= empty($browse) ? $navegar['finalmente'] : $browse['finally']; ?>
         </p>
-        <!--This is the image linked to--><a rel="example_group"
+        <!--This is the image link | OLD SYSTEM I NEED TO CHANGE IT TO THE NEW PICTURE DIALOG WITH FIG CAPTIONSed to--><a rel="example_group"
             href="https://latinospc.com/images/artificialintelligence/our_lord_and_savior_jesus_christ/jesushrist4.jpg"
             title="Browsing the Web" alt="Browsing the Web">
             <!--this is the image showing --><img
@@ -434,7 +419,7 @@ function content()  {
         </a>
         <p class="sub_title2"><?= empty($browse) ? $navegar['conclusion'] : $browse['conclusion']; ?></p>
     </div>
-    <div class="fullbar hero4">
+    <div class="fullbar">
         <div class="spacer_shape">
             <hr style="border: 3px dashed darkgray;">
             <h2 class="sub_title"><?= empty($titles) ? $titulos[10] : $titles[10]; ?></h2>
@@ -510,7 +495,7 @@ function content()  {
             </p>
         </div>
     </div>
-    <div class="fullbar hero4">
+    <div class="fullbar">
         <hr style="border: 3px dashed darkgray;width: 30%;">
         <ul>
             <h2 class="sub_title"><?= empty($titles) ? $titulos[12] : $titles[12]; ?></h2>
@@ -521,7 +506,7 @@ function content()  {
         <p class="spacer_shape"><a href="<?= empty($links) ? $ligas[0] : $links[0]; ?>"
                 title="<?= empty($links) ? $ligas[1] : $links[1]; /* here, Parable is used twice */ ?>"><?= empty($links) ? $ligas[1] : $links[1]; ?></a>
         </p>
-        <!--This is the image linked to--><a rel="example_group"
+        <!--This is the image linked to | OLD SYSTEM I NEED TO CHANGE IT TO THE NEW PICTURE DIALOG WITH FIG CAPTIONS--><a rel="example_group"
             href="https://latinospc.com/images/artificialintelligence/our_lord_and_savior_jesus_christ/lamb2.jpg"
             title="the one sheep brought back to a heard of 99" alt="the one sheep brought back to a heard of 99">
             <!--this is the image showing --><img
@@ -541,7 +526,7 @@ function content()  {
         <p>
             <?= empty($battle) ? $batalla[4] : $battle[4]; ?>
         </p>
-        <!--This is the image linked to--><a rel="example_group"
+        <!--This is the image linked to | OLD SYSTEM I NEED TO CHANGE IT TO THE NEW PICTURE DIALOG WITH FIG CAPTIONS--><a rel="example_group"
             href="https://latinospc.com/images/artificialintelligence/our_lord_and_savior_jesus_christ/jesushrist2.jpg"
             title="Holy Spirit" alt="Holy Spirit">
             <!--this is the image showing --><img
@@ -564,12 +549,12 @@ function content()  {
             <?= empty($battle) ? $batalla[9] : $battle[9]; ?>
         </p>
     </div>
-    <div class="fullbar hero4">
+    <div class="fullbar">
         <h2 class="sub_title2"><?= empty($titles) ? $titulos[13] : $titles[13]; ?></h2>
         <p>
             <?= empty($rejection) ? $rechazo[0] : $rejection[0]; ?>
         </p>
-        <!--This is the image linked to--><a rel="example_group"
+        <!--This is the image linked to | OLD SYSTEM I NEED TO CHANGE IT TO THE NEW PICTURE DIALOG WITH FIG CAPTIONS--><a rel="example_group"
             href="https://latinospc.com/images/artificialintelligence/our_lord_and_savior_jesus_christ/jesushrist5.jpg"
             title="Ascension into Heaven" alt="Ascension into Heaven">
             <!--this is the image showing --><img
@@ -589,12 +574,12 @@ function content()  {
             <?= empty($rejection) ? $rechazo[4] : $rejection[4]; ?>
         </p>
     </div>
-    <div class="fullbar hero4">
+    <div class="fullbar">
         <h2 class="sub_title2"><?= empty($titles) ? $titulos[14] : $titles[14]; ?></h2>
         <p>
             <?= empty($responsibility) ? $responsabilidad[0] : $responsibility[0]; ?>
         </p>
-        <!--This is the image linked to--><a rel="example_group"
+        <!--This is the image linked to | OLD SYSTEM I NEED TO CHANGE IT TO THE NEW PICTURE DIALOG WITH FIG CAPTIONS--><a rel="example_group"
             href="https://latinospc.com/images/artificialintelligence/our_lord_and_savior_jesus_christ/jesuschrist1.jpg"
             title="King of kings and Lord of lords" alt="King of kings and Lord of lords">
             <!--this is the image showing --><img
@@ -623,7 +608,7 @@ function content()  {
         <p>
             <?= empty($responsibility) ? $responsabilidad[7] : $responsibility[7]; ?>
         </p>
-        <table style="table-layout:fixed;width:468pt">
+        <table style="table-layout:fixed;width:468pt;padding-top:2%;">
             <colgroup>
                 <col />
                 <col />

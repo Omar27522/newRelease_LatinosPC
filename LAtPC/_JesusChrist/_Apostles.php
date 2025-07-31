@@ -103,12 +103,12 @@ function content()    {
   global $titulos, $nombres, $subTitulos, $nombresAdicionales, $_Jesus;
   ?>
   <style>
-    .container {
+     /*.container {
       padding: .25rem 2rem .3rem;
     margin: 0 auto;
     position: relative;
     max-width: 1200px;
-    }
+    }*/
 
     h1, h2 {
       color: var(--primary-dark);
@@ -287,7 +287,7 @@ function content()    {
       }
     }
   </style>
-  <div class="container">
+  <div class="fullbar">
     <div class="apostles-intro">
       <h2><?= empty($titles) ? $titulos[0] : $titles[0]; ?></h2>
       <h3><?= empty($titles) ? $titulos[1] : $titles[1]; ?></h3>
@@ -319,10 +319,10 @@ function content()    {
   </div>
 
 
-  <div class="container">
+  <div class="fullbar">
 
     <p><?= empty($titles) ? $subTitulos[0] : $subTitles[0]; ?>
-      <span class="highlight-number"><?= empty($titles) ? $subTitulos[1] : $subTitles[1]; ?></span>.</p>
+      <span class="highlight-number" style="background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); "><?= empty($titles) ? $subTitulos[1] : $subTitles[1]; ?></span>.</p>
 
     <p><?= empty($titles) ? $subTitulos[2] : $subTitles[2]; ?> <em>“<?= empty($titles) ? $subTitulos[3] : $subTitles[3]; ?>”</em> <?= empty($titles) ? $subTitulos[4] : $subTitles[4]; ?></p>
 

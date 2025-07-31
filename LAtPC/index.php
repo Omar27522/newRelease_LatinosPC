@@ -150,6 +150,20 @@ function _JesusChrist($sub_route)
 			$description = 'Description_test';
 			include '_JesusChrist/_Apostles.php';
 			break;
+
+		case 'parables':
+			$page = new Structure('../../','english', 'Parables');
+			$keywords = 'Keyword_test';
+			$description = 'Description_test';
+			include '_JesusChrist/parables.php';
+			break;
+		case 'parabolas':
+			$page = new Structure('../../','español','Parabolas');
+			$keywords ='Palabras Clave de Parabolas';
+			$description = 'Descripción de Parabolas';
+			include '_JesusChrist/parables.php';
+			break;
+
 		case '':
 			echo 'Jesus Christ Main Page';
 			break;
@@ -180,7 +194,7 @@ function content_home()
 			</div>
 			<a href="JesusChrist/father_in_heaven_tell_me_about_web" class="cta-button">Tell me about the web</a>
 			<a href="JesusChrist/apostles" class="cta-button">Apostles</a>
-			<a href="#" class="cta-button">Parables</a>
+			<a href="JesusChrist/parables" class="cta-button">Parables</a>
 			<a href="#" class="cta-button">Sermons</a>
 			<a href="#" class="cta-button">Teachings</a>
 		</div>

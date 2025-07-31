@@ -70,9 +70,9 @@
 
                         <a href="<?php
                         if($page->getLang() == "en"):
-                           echo "#";
+                           echo  $page->getDir(). "LAtPC/JesusChrist/parables";
                         elseif($page->getLang() == "es-419"):
-                           echo "#";
+                           echo $page->getDir(). "LAtPC/Jesucristo/parabolas";
                         endif;?>">
                             <!-- https://bibilium.com/38-parables-of-Jesus-parables-of-Jesus/ -->
                             <li><?php
@@ -280,6 +280,8 @@
         elseif($page->getLang() == "es-419" && $page->getTitle() == "Padre Celestial"): qpccsei();
         elseif($page->getLang() == "en" && $page->getTitle() == "The Apostles"): apostles();
         elseif($page->getLang() == "es-419" && $page->getTitle() == "Los Apóstoles"): apostoles();
+        elseif($page->getLang() == "en" && $page->getTitle() == "Parables"): parables();
+        elseif($page->getLang() == "es-419" && $page->getTitle() == "Parabolas"): parables();
 
         elseif($page->getLang() == "en" && $page->getTitle() == "Template"): template();
         endif;?>
