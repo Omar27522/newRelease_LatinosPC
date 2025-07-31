@@ -22,7 +22,12 @@
         Also I would love to add dialogs when the names are clicked.
     (7/29/2025|Update) Finally update from 7/24-7/26 was successful. merge all files into one file.
         All I had to do was to move the $page method over to the index where the URL was being selected.
+    (7/30/2025|Update) trying to make parables work.
+    (7/31/2025|Update) I am making progress with the parables page. I was able to get the template working. so I can move on from there.
+        Essentially when the user clicks on the parable an image will appear, and the user can click on the fig caption link to download it.
+            The end goal will be to make the image carrousel working so that when teh user navigates right or left the <figure> will update accordingly.
 
+*Work on getting the carousel to work, and implement it in parables, the current solution does not convince me.*
 *Working Links and menus.*
 *Switching between languages by pressing the Spanish or English button.*
 *work on the services page.*
