@@ -32,6 +32,14 @@
                 I still need to check the gospel links since https://ebible.org/ is now being used.
                     Also I want to make 3 functions like the _Apostles page, where one is content, one parables and another parabolas.
                         The css will become part of the content function for now until the next CSS update.
+    (8/2/2025|Update) The Dialog window is way better on mobile, also the content in the background does not scroll when the dialog is open.
+        Parables have 3 functions just as required per the standard structural design of the site.
+
+
+
+
+
+
 
 *Work on loading CSS files accordingly instead of using embedded CSS on each file.*
 *Work on getting the carousel to work, and implement it in parables, the current solution does not convince me.*

@@ -1,168 +1,210 @@
 <?php
+function content (){
+  global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gLP, $gospelLinks, $passage;
+ ?>
+  <style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+    }
+    th {
+        background-color:rgb(50, 58, 172);
+        color: white;
+        padding: 12px;
+        text-align: left;
+    }
+    td {
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    tr:hover {
+        background-color: #e9f5e9;
+    }
+    .parable-name {
+        font-weight: bold;
+    }
+    h1 {
+        color:rgb(148, 30, 30);
+        text-align: center;
+    }
+    figcaption {
+      font-size:1.7em;
+      text-align: center;
+      padding-right: 10%;
+    }
+    figcaption a {
+      text-decoration:none;
+      color:white;
+      background-color:black;
+      margin-top:2%;
+      padding-right:2%;
+      padding-left:2%;
+    }
+    figcaption a:hover{
+      text-decoration:underline;
+      color:royalblue;
+    }
+    .gospel{
+      display:inline-block;
+    }
+    .link-dialog p{
+      font-size:1.07em;
+    }
+    .link-dialog p:hover,.link-dialog p:focus{
+      background:black;
+      color:white;
+    }
+    .linked-text, .linked-text-img{
+      color:black;
+    }
+    .linked-text:active, .linked-text-img:active{
+      color:red;
+    }
+    .linked-text.focused, .linked-text-img.focused{
+      color:red;
+      transition: color 2s ease-out, border 2s ease-out;
+    }
+    figure {
+      padding-left: 10%;
+    }
+    figure img{
+      width:90%;
+      height:auto;
+    }
+    .intro-section {
+      background: linear-gradient(135deg, var(--card-bg), var(--background));
+      border-radius: var(--border-radius);
+      padding: 2rem;
+      margin: 2rem 0;
+      box-shadow: var(--box-shadow);
+      border-left: 4px solid var(--primary-color);
+    }
+    .intro-section h2 {
+      color: var(--primary-color);
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .intro-list {
+      list-style: none;
+      padding: 0;
+    }
+    .intro-list li {
+      background: var(--card-bg);
+      margin: 1rem 0;
+      padding: 1.2rem;
+      border-radius: 8px;
+      border-left: 3px solid var(--secondary-color);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: var(--transition);
+      position: relative;
+    }
+    .intro-list li:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      border-left-color: var(--primary-color);
+    }
+    .intro-list li::before {
+      content: "✓";
+      color: var(--secondary-dark);
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-right: 0.8rem;
+    }
+    .section-title {
+      font-size:2em;
+      color:var(--secondary-dark);
+      border-radius: var(--border-radius);
+      text-align: center;
+      box-shadow: var(--box-shadow);
+      font-weight: 600;
+    }
+  </style>
+
+  <article class="fullbar">
+    <div class="intro-section">
+      <h2>The Gospels use mental illustrations. Jesus actively interacts with a wide range of people, using parables as a
+          key tool to communicate His message in a way that everyone could understand.</h2>
+      <ul class="intro-list">
+          <li>They were Universally accessible by using every day scenarios, Jesus made complex spiritual concepts
+              understandable to both educated scholars and illiterate laborers.</li>
+          <li>The use of parables was culturally relevant by using the agricultural and domestic settings of these stories
+              resonated with his audience's daily experiences in the 1st century.</li>
+          <li>The multiple layers of meaning often contained surface-level stories that anyone could grasp, while offering
+              deeper theological insights to those willing to contemplate them further.</li>
+          <li>The narrative structure of parables made them easier to remember and share than abstract theological
+              concepts.</li>
+          <li>Rather than forcing interpretations, parables invited listeners to discover meaning for themselves, engaging
+              their minds and hearts in the process.</li>
+      </ul>
+    </div>
+
+    <h3 class="section-title">Jesus in the Gospels</h3>
+    <table>
+      <tr>
+        <th>Parable</th>
+        <th>Description</th>
+        <th>Scripture Reference
+          <span style="float:right;margin-right:10%;">
+            <a href="https://ebible.org/find/show.php?id=eng-web" title="World English Bible with Deuterocanon" style="color:white;"><ruby>
+              [1] <rt> Bible </rt></ruby>
+            </a>
+          </span>
+          </th>
+      </tr>
+        <?php
+  $parableFunctions = ['theSower', 'mustardSeed', 'leavenedFlour', 'hiddenTreasure', 'pearlOfGreatPrice', 'dragnet', 'goodSamaritan', 'prodigalSon', 'lostSheep', 'lostCoin', 'unmercifulServant', 'workersInVineyard', 'richManAndLazarus', 'phariseeAndTaxCollector', 'persistentWidow', 'tenVirgins', 'talents', 'parableSheepAndGoats', 'parableTwoDebtors', 'parableUnfruitfulFigTree', 'parableWickedTenants', 'parableWeddingFeast', 'parableRichFool', 'wiseAndFoolishBuilders', 'growingSeed', 'newClothOnOldGarment', 'newWineInOldWineskins', 'lampOnStand', 'twoSons', 'unjustSteward', 'friendAtMidnight', 'barrenFigTree', 'greatBanquet', 'buildingTowerAndKingGoingToWar', 'unprofitableServants', 'unjustJudge', 'blindLeadingTheBlind', 'faithfulAndWiseServant', 'watchfulServants', 'childrenInTheMarketplace', 'speckAndLog', 'fishNet', 'householder', 'dishonestManager', 'goodShepherd', 'vineAndBranches', 'masterAndServant'];
+  foreach ($parableFunctions as $functionTableRow) {
+    // Call the current function
+    $functionTableRow();
+    /* The code below is the Main Table row the loop will iterate over each function */
+    ?>
+        <tr>
+        <td>
+            <div class="multi-link-container" >
+              <span class="linked-text" ><?= $title; ?></span>
+                <div class="link-dialog" >
+                  <figure>
+                      <img src="<?= $image; ?>" alt="<?= $imageAlt; ?>">
+                      <figcaption><a href="<?= $linked_image; ?>"><?= $figCaption; ?></a></figcaption>
+                  </figure>
+                </div>
+            </div>
+            </td>
+
+              <td>
+            <div class="multi-link-container">
+              <span tabindex="0" class="linked-text"><?= $description; ?></span>
+              <div class="link-dialog">
+                <?php
+                foreach ($paragraphDialogs as $index) {
+                  echo '<p tabindex="0">' . $index . '</p>';
+                }
+                ?>
+                </div>
+            </div>
+            </td>
+            <td>
+            <?php foreach ($gospel as $index => $text): ?>
+              <div class="gospel"><?= $text ?> <a href="<?= $gLP . $gospelLinks[$index] ?>" target="_blank"><?= $passage[$index] ?></a></div>
+            <?php endforeach; ?>
+            </td>
+        </tr>
+    <?php
+  }
+  ?>
+    </table>
+  </article>
+  <?php
+}
+
 function parables()
 {
-  ?>
-<style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-family: Arial, sans-serif;
-        }
-        th {
-            background-color:rgb(50, 58, 172);
-            color: white;
-            padding: 12px;
-            text-align: left;
-        }
-        td {
-            padding: 8px;
-            border-bottom: 1px solid #ddd;
-        }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-        tr:hover {
-            background-color: #e9f5e9;
-        }
-        .parable-name {
-            font-weight: bold;
-        }
-        h1 {
-            color:rgb(148, 30, 30);
-            text-align: center;
-        }
-        figcaption {
-          font-size:1.7em;
-          text-align: center;
-          padding-right: 10%;
-        }
-        figcaption a {
-          text-decoration:none;
-          color:white;
-          background-color:black;
-          margin-top:2%;
-          padding-right:2%;
-          padding-left:2%;
-        }
-        figcaption a:hover{
-          text-decoration:underline;
-          color:royalblue;
-        }
-        .gospel{
-          display:inline-block;
-        }
-        .link-dialog p{
-          font-size:1.07em;
-        }
-        .link-dialog p:hover,.link-dialog p:focus{
-          background:black;
-          color:white;
-        }
-        .linked-text, .linked-text-img{
-          color:black;
-        }
-        .linked-text:active, .linked-text-img:active{
-          color:red;
-        }
-        .linked-text.focused, .linked-text-img.focused{
-          color:red;
-          transition: color 2s ease-out, border 2s ease-out;
-        }
-        figure {
-          padding-left: 10%;
-        }
-        figure img{
-          width:90%;
-          height:auto;
-        }
-
-        .intro-section {
-  background: linear-gradient(135deg, var(--card-bg), var(--background));
-  border-radius: var(--border-radius);
-  padding: 2rem;
-  margin: 2rem 0;
-  box-shadow: var(--box-shadow);
-  border-left: 4px solid var(--primary-color);
-}
-
-.intro-section h2 {
-  color: var(--primary-color);
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-  font-weight: 600;
-  line-height: 1.4;
-}
-
-.intro-list {
-  list-style: none;
-  padding: 0;
-}
-
-.intro-list li {
-  background: var(--card-bg);
-  margin: 1rem 0;
-  padding: 1.2rem;
-  border-radius: 8px;
-  border-left: 3px solid var(--secondary-color);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: var(--transition);
-  position: relative;
-}
-
-.intro-list li:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-  border-left-color: var(--primary-color);
-}
-
-.intro-list li::before {
-  content: "✓";
-  color: var(--secondary-dark);
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-right: 0.8rem;
-}
-
-.section-title {
-  font-size:2em;
-  color:var(--secondary-dark);
-  border-radius: var(--border-radius);
-  text-align: center;
-  box-shadow: var(--box-shadow);
-  font-weight: 600;
-}
-</style>
-
-<article class="fullbar">
-    <div class="intro-section">
-    <h2>The Gospels use mental illustrations. Jesus actively interacts with a wide range of people, using parables as a
-        key tool to communicate His message in a way that everyone could understand.</h2>
-    <ul class="intro-list">
-        <li>They were Universally accessible by using every day scenarios, Jesus made complex spiritual concepts
-            understandable to both educated scholars and illiterate laborers.</li>
-        <li>The use of parables was culturally relevant by using the agricultural and domestic settings of these stories
-            resonated with his audience's daily experiences in the 1st century.</li>
-        <li>The multiple layers of meaning often contained surface-level stories that anyone could grasp, while offering
-            deeper theological insights to those willing to contemplate them further.</li>
-        <li>The narrative structure of parables made them easier to remember and share than abstract theological
-            concepts.</li>
-        <li>Rather than forcing interpretations, parables invited listeners to discover meaning for themselves, engaging
-            their minds and hearts in the process.</li>
-    </ul>
-  </div>
-  <h3 class="section-title">Jesus in the Gospels</h3>
-    <table>
-        <tr>
-            <th>Parable</th>
-            <th>Description</th>
-            <th>Scripture Reference <span style="float:right;margin-right:10%;">
-                    <a href="https://ebible.org/find/show.php?id=eng-web" title="World English Bible with Deuterocanon" style="color:white;"><ruby>
-                            [1] <rt> Bible </rt></ruby>
-                    </a></span>
-            </th>
-        </tr>
-
-<?php
 
   global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gLP, $gospelLinks, $passage;
 
@@ -1385,52 +1427,7 @@ function parables()
     $gospelLinks = ['luke/17.htm#7'];
     $passage = ['17:7-10'];
   }
-
-  $parableFunctions = ['theSower', 'mustardSeed', 'leavenedFlour', 'hiddenTreasure', 'pearlOfGreatPrice', 'dragnet', 'goodSamaritan', 'prodigalSon', 'lostSheep', 'lostCoin', 'unmercifulServant', 'workersInVineyard', 'richManAndLazarus', 'phariseeAndTaxCollector', 'persistentWidow', 'tenVirgins', 'talents', 'parableSheepAndGoats', 'parableTwoDebtors', 'parableUnfruitfulFigTree', 'parableWickedTenants', 'parableWeddingFeast', 'parableRichFool', 'wiseAndFoolishBuilders', 'growingSeed', 'newClothOnOldGarment', 'newWineInOldWineskins', 'lampOnStand', 'twoSons', 'unjustSteward', 'friendAtMidnight', 'barrenFigTree', 'greatBanquet', 'buildingTowerAndKingGoingToWar', 'unprofitableServants', 'unjustJudge', 'blindLeadingTheBlind', 'faithfulAndWiseServant', 'watchfulServants', 'childrenInTheMarketplace', 'speckAndLog', 'fishNet', 'householder', 'dishonestManager', 'goodShepherd', 'vineAndBranches', 'masterAndServant'];
-
-  foreach ($parableFunctions as $functionTableRow) {
-    // Call the current function
-    $functionTableRow();
-    /* The code below is the Main Table row the loop will iterate over each function */
-    ?>
-
-        <tr>
-        <td>
-            <div class="multi-link-container" >
-              <span class="linked-text" ><?= $title; ?></span>
-                <div class="link-dialog" >
-                  <figure>
-                      <img src="<?= $image; ?>" alt="<?= $imageAlt; ?>">
-                      <figcaption><a href="<?= $linked_image; ?>"><?= $figCaption; ?></a></figcaption>
-                  </figure>
-                </div>
-            </div>
-            </td>
-
-              <td>
-            <div class="multi-link-container">
-              <span tabindex="0" class="linked-text"><?= $description; ?></span>
-              <div class="link-dialog">
-                <?php
-                foreach ($paragraphDialogs as $index) {
-                  echo '<p tabindex="0">' . $index . '</p>';
-                }
-                ?>
-                </div>
-            </div>
-            </td>
-            <td>
-            <?php foreach ($gospel as $index => $text): ?>
-              <div class="gospel"><?= $text ?> <a href="<?= $gLP . $gospelLinks[$index] ?>" target="_blank"><?= $passage[$index] ?></a></div>
-            <?php endforeach; ?>
-            </td>
-        </tr>
-    <?php
-  }
-  ?>
-    </table>
-</article>
-<?php
+    content();
   } // function parables() bracket
 
   function parabolas(){

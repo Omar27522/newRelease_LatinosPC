@@ -263,6 +263,10 @@ class DialogEngine {
 
       this.currentlyOpenDialog = dialog;
       this.currentlyOpenTextLink = trigger;
+
+      // Prevent body scroll when dialog is open
+      document.body.style.overflow = 'hidden';
+
     });
   }
 
@@ -305,6 +309,9 @@ class DialogEngine {
 
       // Hide backdrop
       this.backdrop.classList.remove('active');
+
+      // Restore body scroll when dialog is closed
+      document.body.style.overflow = '';
 
       // Reset state
       this.currentlyOpenDialog = null;

@@ -167,7 +167,13 @@ header small.rtl {
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   z-index: 1000;
-  max-width: 80%;
+  max-width: 95%;
+  overflow-y: auto;
+  /* Ensure smooth scrolling within dialog */
+  -webkit-overflow-scrolling: touch;
+  /* Prevent content from overflowing dialog bounds */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   pointer-events: auto;
   /* Isolate the dialog from parent container interactions */
   isolation: isolate;
@@ -255,5 +261,40 @@ footer p {
 
   header h1 {
     font-size: 2rem;
+  }
+}
+
+/* Mobile-specific styles for better dialog display */
+@media (max-width: 768px) {
+  .link-dialog {
+    min-width: 80%;
+    max-width: 95%;
+    max-height: 85vh;
+    padding: 15px;
+    top: 10%;
+    transform: translateX(-50%);
+    /* Remove vertical centering on mobile for better space usage */
+    /* Ensure content doesn't overflow on small screens */
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .link-dialog p {
+    margin-bottom: 0.8rem;
+  }
+
+  .link-dialog figcaption {
+    font-size: .9rem;
+    padding: 0;
+  }
+
+  .link-dialog img {
+    width: fit-content;
+    height: auto; 
+    max-width: 80vw;
+  }
+
+  .link-dialog figure {
+    padding: 0;
   }
 }
