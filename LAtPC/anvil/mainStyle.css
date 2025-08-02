@@ -265,7 +265,7 @@ footer p {
 }
 
 /* Mobile-specific styles for better dialog display */
-@media (max-width: 768px) {
+@media (max-width: 768px) or (max-height: 500px) {
   .link-dialog {
     min-width: 80%;
     max-width: 95%;
@@ -290,7 +290,7 @@ footer p {
 
   .link-dialog img {
     width: fit-content;
-    height: auto; 
+    height: auto;
     max-width: 80vw;
   }
 
