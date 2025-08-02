@@ -344,32 +344,14 @@ function parables()
     $passage = ['13:47-50'];
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//WE ARE HERE
   function goodSamaritan()
   {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gLP, $gospelLinks, $passage;
 
     $title = 'The Good Samaritan';
-    $image = '../images/goodSamaritan.webp';
+    $image = '../images/_JesusChrist/goodSamaritan.webp';
     $imageAlt = 'The Good Samaritan Parable';
-    $linked_image = '../images/goodSamaritan.png';
+    $linked_image = '../images/_JesusChrist/goodSamaritan.png';
     $figCaption = 'The Parable of the Good Samaritan';
     $description = "Teaches about loving one's neighbor through the story of an unlikely hero helping a wounded stranger";
 
@@ -379,12 +361,12 @@ function parables()
       'Then another religious leader called a Levite came by. He also saw the hurt man, but he did the same thing - he just walked on by without helping!',
       "Finally, a Samaritan man came down the road. Now, Samaritans and Jews usually didn't like each other at all. But when this Samaritan saw the hurt Jewish man, he felt sorry for him.",
       "The Samaritan cleaned and bandaged the man's wounds. Then he put the hurt man on his own donkey and took him to an inn, which is like a hotel. The Samaritan even paid the innkeeper to take care of the hurt man until he got better!",
-      'After telling this story, Jesus asked who was a real neighbor to the man who got hurt. The answer was the Samaritan - the one who showed kindness and mercy. Jesus told us to go and do the same thing - to show love to everyone, even people who might be different from us.'
+      'After telling this story, Jesus asked. Who was a real neighbor to the man who got hurt? The answer was the Samaritan - the one who showed kindness and mercy. Jesus told us to go and do the same thing - to show love to everyone, even people who might be different from us.'
     ];
 
     $gospel = ['Luke'];
-    $gLP = 'https://openbible.com/ylt/';
-    $gospelLinks = ['luke/10.htm#25'];
+    $gLP = 'https://ebible.org/study/';
+    $gospelLinks = ['?w1=bible&t1=local%3Aeng-web&v1=LK10_25'];
     $passage = ['10:25-37'];
   }
 
@@ -393,9 +375,9 @@ function parables()
     global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gLP, $gospelLinks, $passage;
 
     $title = 'The Prodigal Son';
-    $image = '../images/prodigalSon.webp';
+    $image = '../images/_JesusChrist/prodigalSon.webp';
     $imageAlt = 'The Prodigal Son Parable';
-    $linked_image = '../images/prodigalSon.png';
+    $linked_image = '../images/_JesusChrist/prodigalSon.png';
     $figCaption = 'The Parable of the Prodigal Son';
     $description = "Illustrates God's forgiveness and the joy of reconciliation through a father welcoming back his wayward son";
 
@@ -411,19 +393,18 @@ function parables()
     ];
 
     $gospel = ['Luke'];
-    $gLP = 'https://openbible.com/ylt/';
-    $gospelLinks = ['luke/15.htm#11'];
+    $gLP = 'https://ebible.org/study/';
+    $gospelLinks = ['?v1=LK15_11&t1=local%3Aeng-web&w1=bible'];
     $passage = ['15:11-32'];
   }
 
   function lostSheep()
   {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gLP, $gospelLinks, $passage;
-
     $title = 'The Lost Sheep';
-    $image = '../images/lostSheep.webp';
+    $image = '../images/_JesusChrist/lostSheep.webp';
     $imageAlt = 'The Lost Sheep Parable';
-    $linked_image = '../images/lostSheep.png';
+    $linked_image = '../images/_JesusChrist/lostSheep.png';
     $figCaption = 'The Parable of the Lost Sheep';
     $description = "Shows God's concern for each individual through a shepherd seeking one lost sheep";
 
@@ -437,11 +418,29 @@ function parables()
     ];
 
     $gospel = ['Matthew', 'Luke'];
-    $gLP = 'https://openbible.com/ylt/';
-    $gospelLinks = ['matthew/18.htm#12', 'luke/15.htm#1'];
+    $gLP = 'https://ebible.org/study/';
+    $gospelLinks = ['?w1=bible&t1=local%3Aeng-web&v1=MT18_12', '?w1=bible&t1=local%3Aeng-web&v1=LK15_1'];
     $passage = ['18:12-14,', '15:1-7'];
   }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //WE ARE HERE
   function lostCoin()
   {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gLP, $gospelLinks, $passage;
@@ -482,7 +481,7 @@ function parables()
       'Jesus told a story about a king who wanted to settle accounts with his servants. One servant was brought to him who owed the king millions of dollars - way more money than the servant could ever pay back!',
       'The king ordered that the servant and his whole family should be sold as slaves to pay back some of the debt. The servant fell on his knees and begged, "Please be patient with me, and I will pay back everything!"',
       'The king felt sorry for the servant and did something amazing - he canceled the whole debt! He let the servant go free without having to pay back anything at all!',
-      'But then that same servant went out and found a fellow servant who owed him just a few dollars. He grabbed him, started choking him, and demanded, "Pay back what you owe me!"',
+      'But then that same servant went out and found a fellow servant who owed him just several hundred dollars. He grabbed him, started choking him, and demanded, "Pay back what you owe me!"',
       'The fellow servant begged for patience, just like the first servant had done with the king. But the first servant refused to show mercy. He had the man thrown into prison until he could pay the debt.',
       'When the other servants saw what happened, they were really upset. They went and told the king everything. The king called the first servant back and said, "You wicked servant! I canceled all that debt because you begged me to. Shouldn\'t you have had mercy on your fellow servant just as I had on you?"',
       'The angry king then handed the unmerciful servant over to the jailers to be punished until he could pay back all he owed.',
@@ -1432,7 +1431,7 @@ function parables()
 
   function parabolas(){
     ?>
-    
+
 <style>
         table {
             width: 100%;
@@ -1508,7 +1507,7 @@ function parables()
         }
 </style>
  <article class="fullbar">
-    
+
 <h2>Los Evangelios usan ilustraciones mentales. Jesús interactúa activamente con una amplia variedad de personas,
     utilizando parábolas como una herramienta clave para comunicar Su mensaje de una manera que todos pudieran entender.
 </h2>

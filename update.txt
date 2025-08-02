@@ -51,6 +51,8 @@
 *Work on a 404 page.*
 
 
+
+
 *Done (7/21/2025)*
     <WORKING (7/19/2025)>
     *Next Step* Implement the front controller pattern. first implement the Spanish page.
@@ -101,8 +103,14 @@ How does the site work? 7-29-2025
 - * Sermons and Discourses ->->->-> need a better navigation, where it does not show the top of the page,  so this section can be more engaging, immersive and interactive.
 -
 -
--
--
+
+
+-―-―-―-―-―Small Bugs that are a feature at the moment, but will be put to work in due time.―-―-―-―-―
+
+ ―――PROBLEM ON TABLETS―――
+ The dialog media queries are a bit odd, when the text dialog is too long it does not overflow.
+    because of the rigid media query. This is a baby bug that only shows large mobile screens.
+
 ‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵
 
 
