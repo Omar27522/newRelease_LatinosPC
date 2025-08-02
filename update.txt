@@ -26,9 +26,15 @@
     (7/31/2025|Update) I am making progress with the parables page. I was able to get the template working. so I can move on from there.
         Essentially when the user clicks on the parable an image will appear, and the user can click on the fig caption link to download it.
             The end goal will be to make the image carrousel working so that when teh user navigates right or left the <figure> will update accordingly.
+    (8/1/2025|Update) The parables template is completed, now I am seeing that the dialog is very narrow on mobile.
+        I would like to make the dialog for the parables page wider, or compress the summary because there might be no space left for the user to tap off the dialog.
+            The way the functions are being called I feel like is too redundant, but also I do not have the Spanish parables up and ready.
+                I still need to check the gospel links since https://ebible.org/ is now being used.
+                    Also I want to make 3 functions like the _Apostles page, where one is content, one parables and another parabolas.
+                        The css will become part of the content function for now until the next CSS update.
 
+*Work on loading CSS files accordingly instead of using embedded CSS on each file.*
 *Work on getting the carousel to work, and implement it in parables, the current solution does not convince me.*
-*Working Links and menus.*
 *Switching between languages by pressing the Spanish or English button.*
 *work on the services page.*
 *work on the contact page.*

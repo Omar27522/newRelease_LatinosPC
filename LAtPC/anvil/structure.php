@@ -281,7 +281,7 @@
         elseif($page->getLang() == "en" && $page->getTitle() == "The Apostles"): apostles();
         elseif($page->getLang() == "es-419" && $page->getTitle() == "Los Apóstoles"): apostoles();
         elseif($page->getLang() == "en" && $page->getTitle() == "Parables"): parables();
-        elseif($page->getLang() == "es-419" && $page->getTitle() == "Parabolas"): parables();
+        elseif($page->getLang() == "es-419" && $page->getTitle() == "Parabolas"): parabolas();
 
         elseif($page->getLang() == "en" && $page->getTitle() == "Template"): template();
         endif;?>
