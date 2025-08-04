@@ -423,6 +423,166 @@ function parables()
     $passage = ['18:12-14,', '15:1-7'];
   }
 
+  function lostCoin()
+  {
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gLP, $gospelLinks, $passage;
+
+    $title = 'The Lost Coin';
+    $image = '../images/_JesusChrist/lostCoin.webp';
+    $imageAlt = 'The Lost Coin Parable';
+    $linked_image = '../images/_JesusChrist/lostCoin.png';
+    $figCaption = 'The Parable of the Lost Coin';
+    $description = 'Emphasizes the value God places on finding those who are lost';
+
+    $paragraphDialogs = [
+      'Jesus told a story about a woman who had ten silver coins. These coins were very important to her.',
+      'One day, she realized that one of her coins was missing! She was so worried about finding it that she lit a lamp, swept the whole house, and searched carefully everywhere until she found it.',
+      'When she finally found her lost coin, she was super happy! She called all her friends and neighbors together and said, "Come celebrate with me because I\'ve found my lost coin!"',
+      "Jesus explained that this is how God and the angels feel when one person who was doing wrong turns back to God. There's a big celebration in heaven!",
+      'This story teaches us that God values each person so much. Just like the woman searched hard for one coin, God seeks out people who are lost. And just like she celebrated finding her coin, God celebrates when someone comes back to Him!'
+    ];
+
+    $gospel = ['Luke'];
+    $gLP = 'https://ebible.org/study/';
+    $gospelLinks = ['?w1=bible&t1=local%3Aeng-web&v1=LK15_8'];
+    $passage = ['15:8-10'];
+  }
+
+  function unmercifulServant()
+  {
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gLP, $gospelLinks, $passage;
+
+    $title = 'The Unmerciful Servant';
+    $image = '../images/_JesusChrist/unmercifulServant.webp';
+    $imageAlt = 'The Unmerciful Servant Parable';
+    $linked_image = '../images/_JesusChrist/unmercifulServant.png';
+    $figCaption = 'The Parable of the Unmerciful Servant';
+    $description = "Teaches about forgiveness by contrasting a king's mercy with a servant's harshness";
+
+    $paragraphDialogs = [
+      'Jesus told a story about a king who wanted to settle accounts with his servants. One servant was brought to him who owed the king millions of dollars - way more money than the servant could ever pay back!',
+      'The king ordered that the servant and his whole family should be sold as slaves to pay back some of the debt. The servant fell on his knees and begged, "Please be patient with me, and I will pay back everything!"',
+      'The king felt sorry for the servant and did something amazing - he canceled the whole debt! He let the servant go free without having to pay back anything at all!',
+      'But then that same servant went out and found a fellow servant who owed him just several hundred dollars. He grabbed him, started choking him, and demanded, "Pay back what you owe me!"',
+      'The fellow servant begged for patience, just like the first servant had done with the king. But the first servant refused to show mercy. He had the man thrown into prison until he could pay the debt.',
+      'When the other servants saw what happened, they were really upset. They went and told the king everything. The king called the first servant back and said, "You wicked servant! I canceled all that debt because you begged me to. Shouldn\'t you have had mercy on your fellow servant just as I had on you?"',
+      'The angry king then handed the unmerciful servant over to the jailers to be punished until he could pay back all he owed.',
+      "Jesus ended by saying that this is how God will treat us if we don't forgive others from our heart. The story teaches us that since God has forgiven us so much, we should also be willing to forgive others when they do wrong to us."
+    ];
+
+    $gospel = ['Matthew'];
+    $gLP = 'https://ebible.org/study/';
+    $gospelLinks = ['?v1=MT18_21&t1=local%3Aeng-web&w1=bible'];
+    $passage = ['18:21-35'];
+  }
+
+  function workersInVineyard()
+  {
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gLP, $gospelLinks, $passage;
+
+    $title = 'The Workers in the Vineyard';
+    $image = '../images/_JesusChrist/workersInVineyard.webp';
+    $imageAlt = 'The Workers in the Vineyard Parable';
+    $linked_image = '../images/_JesusChrist/workersInVineyard.png';
+    $figCaption = 'The Parable of the Workers in the Vineyard';
+    $description = "Reveals God's generosity and grace that defies human expectations of fairness";
+
+    $paragraphDialogs = [
+      'Jesus told a story about a landowner who needed workers for his vineyard. Early in the morning, around 6 AM, he went out and hired some workers. He agreed to pay them a denarius for the day, which was the normal daily wage.',
+      'Later that morning, around 9 AM, the landowner saw more people standing in the marketplace with nothing to do. He told them, "You also go and work in my vineyard, and I will pay you whatever is right." So they went.',
+      'The landowner did the same thing at noon, at 3 PM, and even at 5 PM when the workday was almost over! Each time, he sent more workers into his vineyard.',
+      'When evening came, it was time to pay all the workers. The landowner told his manager to call the workers and pay them, starting with the ones who were hired last.',
+      "The workers who were hired at 5 PM came first. Surprisingly, each of them received a full denarius - a whole day's wage! When the workers who were hired first saw this, they got excited thinking they would get even more.",
+      'But when their turn came, they also received one denarius each - exactly what they had agreed to at the beginning of the day. They started complaining to the landowner, "These people who were hired last worked only one hour, but you\'ve paid them the same as us who worked all day in the hot sun!"',
+      "The landowner replied to one of them, \"Friend, I'm not being unfair to you. Didn't you agree to work for a denarius? Take your pay and go. I want to give the one who was hired last the same as I gave you. Don't I have the right to do what I want with my own money? Or are you envious because I am generous?\"",
+      "Jesus ended by saying, \"So the last will be first, and the first will be last.\" This story teaches us that God's way of rewarding people isn't based on how long or how much they work. Instead, God is generous and gives good gifts to everyone who follows Him, whether they've been following Him their whole life or just started recently."
+    ];
+
+    $gospel = ['Matthew'];
+    $gLP = 'https://ebible.org/study/';
+    $gospelLinks = ['?v1=MT20_1&t1=local%3Aeng-web&w1=bible'];
+    $passage = ['20:1-16'];
+  }
+
+  function richManAndLazarus()
+  {
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gLP, $gospelLinks, $passage;
+
+    $title = 'The Rich Man and Lazarus';
+    $image = '../images/_JesusChrist/richManAndLazarus.webp';
+    $imageAlt = 'The Rich Man and Lazarus Parable';
+    $linked_image = '../images/_JesusChrist/richManAndLazarus.png';
+    $figCaption = 'The Parable of the Rich Man and Lazarus';
+    $description = 'Warns about the dangers of wealth and ignoring those in need';
+
+    $paragraphDialogs = [
+      'Jesus told a story about a rich man who lived in luxury every day. He wore expensive purple clothes and fine linen, and he feasted on delicious food all the time.',
+      "At the rich man's gate was a poor beggar named Lazarus. His body was covered with sores, and he was so hungry that he wished he could eat just the crumbs that fell from the rich man's table. Even dogs came and licked his sores. The rich man didn't help Lazarus at all.",
+      "Eventually, both men died. Lazarus was carried by angels to Abraham's side in heaven. The rich man went to Hades, where he was in terrible pain.",
+      'The rich man looked up and saw Abraham far away with Lazarus by his side. He called out, "Father Abraham, have mercy on me! Send Lazarus to dip the tip of his finger in water and cool my tongue, because I\'m suffering in this fire."',
+      'But Abraham replied, "Son, remember that in your lifetime you received good things, while Lazarus received bad things. Now he is comforted here, and you are in agony. Besides, there\'s a huge gap between us that nobody can cross."',
+      'The rich man then begged Abraham to send Lazarus to warn his five brothers so they wouldn\'t end up in the same painful place. Abraham said, "They have Moses and the Prophets; let them listen to them."',
+      'The rich man argued, "No, father Abraham, but if someone from the dead goes to them, they will repent!" Abraham responded, "If they don\'t listen to Moses and the Prophets, they won\'t be convinced even if someone rises from the dead."',
+      'Jesus told this story to warn people about the dangers of focusing on wealth and comfort while ignoring those in need. The story teaches us that how we treat others, especially people who are poor or suffering, matters a lot to God.'
+    ];
+
+    $gospel = ['Luke'];
+    $gLP = 'https://ebible.org/study/';
+    $gospelLinks = ['?w1=bible&t1=local%3Aeng-web&v1=LK16_19'];
+    $passage = ['16:19-31'];
+  }
+
+  function phariseeAndTaxCollector()
+  {
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gLP, $gospelLinks, $passage;
+
+    $title = 'The Pharisee and the Tax Collector';
+    $image = '../images/_JesusChrist/phariseeAndTaxCollector.webp';
+    $imageAlt = 'The Pharisee and the Tax Collector Parable';
+    $linked_image = '../images/_JesusChrist/phariseeAndTaxCollector.png';
+    $figCaption = 'The Parable of the Pharisee and the Tax Collector';
+    $description = 'Contrasts self-righteous pride with humble repentance in prayer';
+
+    $paragraphDialogs = [
+      'Jesus told a story about two men who went to the temple to pray. One was a Pharisee, which is like a religious leader who followed all the rules really carefully. The other was a tax collector, which most people disliked because tax collectors often cheated people.',
+      'The Pharisee stood up by himself and prayed, "God, I thank you that I\'m not like other people—robbers, evildoers, adulterers—or even like this tax collector. I fast twice a week and give a tenth of all I get." He was basically bragging about how good he was!',
+      'But the tax collector stood at a distance. He wouldn\'t even look up to heaven. Instead, he beat his chest and said, "God, have mercy on me, a sinner." He knew he had done wrong things and was asking God to forgive him.',
+      'Jesus said that it was actually the tax collector, not the Pharisee, who went home right with God! Then Jesus explained, "For all those who make themselves important will become unimportant, and those who humble themselves will become important."',
+      "This story teaches us that God doesn't want us to be proud or to think we're better than other people. Instead, God wants us to be honest about our mistakes and to ask for His forgiveness with a humble heart."
+    ];
+
+    $gospel = ['Luke'];
+    $gLP = 'https://ebible.org/study/';
+    $gospelLinks = ['?w1=bible&t1=local%3Aeng-web&v1=LK18_9'];
+    $passage = ['18:9-14'];
+  }
+
+  function persistentWidow()
+  {
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gLP, $gospelLinks, $passage;
+
+    $title = 'The Persistent Widow';
+    $image = '../images/_JesusChrist/persistentWidow.webp';
+    $imageAlt = 'The Persistent Widow Parable';
+    $linked_image = '../images/_JesusChrist/persistentWidow.png';
+    $figCaption = 'The Parable of the Persistent Widow';
+    $description = 'Encourages persistent prayer through the story of a widow seeking justice';
+
+    $paragraphDialogs = [
+      "Jesus told a story to teach his followers that they should always pray and never give up. The story was about a judge who didn't care about God or what people thought about him.",
+      'In the same town was a widow who kept coming to this judge with the same request: "Grant me justice against my opponent." A widow is a woman whose husband has died, and in those days, widows often had a hard time taking care of themselves.',
+      "For a long time, the judge refused to help her. But the widow didn't give up! She kept coming back again and again, asking for justice.",
+      "Finally, the judge thought to himself, \"Even though I don't care about God or people, I will give this widow justice because she keeps bothering me. If I don't help her, she'll wear me out with her constant requests!\"",
+      'Then Jesus explained the point of the story. He said, "Listen to what the unfair judge said. And won\'t God bring justice for his chosen people, who cry out to him day and night? Will he keep putting them off? I tell you, he will give them justice quickly."',
+      'The story teaches us that if even an unfair judge will eventually respond to someone who keeps asking, how much more will God - who is perfectly good and who loves us - respond to our prayers when we keep bringing our needs to Him!'
+    ];
+
+    $gospel = ['Luke'];
+    $gLP = 'https://ebible.org/study/';
+    $gospelLinks = ['?w1=bible&t1=local%3Aeng-web&v1=LK18_1'];
+    $passage = ['18:1-8'];
+  }
+
 
 
 
@@ -441,166 +601,6 @@ function parables()
 
 
   //WE ARE HERE
-  function lostCoin()
-  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gLP, $gospelLinks, $passage;
-
-    $title = 'The Lost Coin';
-    $image = '../images/lostCoin.webp';
-    $imageAlt = 'The Lost Coin Parable';
-    $linked_image = '../images/lostCoin.png';
-    $figCaption = 'The Parable of the Lost Coin';
-    $description = 'Emphasizes the value God places on finding those who are lost';
-
-    $paragraphDialogs = [
-      'Jesus told a story about a woman who had ten silver coins. These coins were very important to her.',
-      'One day, she realized that one of her coins was missing! She was so worried about finding it that she lit a lamp, swept the whole house, and searched carefully everywhere until she found it.',
-      'When she finally found her lost coin, she was super happy! She called all her friends and neighbors together and said, "Come celebrate with me because I\'ve found my lost coin!"',
-      "Jesus explained that this is how God and the angels feel when one person who was doing wrong turns back to God. There's a big celebration in heaven!",
-      'This story teaches us that God values each person so much. Just like the woman searched hard for one coin, God seeks out people who are lost. And just like she celebrated finding her coin, God celebrates when someone comes back to Him!'
-    ];
-
-    $gospel = ['Luke'];
-    $gLP = 'https://openbible.com/ylt/';
-    $gospelLinks = ['luke/15.htm#8'];
-    $passage = ['15:8-10'];
-  }
-
-  function unmercifulServant()
-  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gLP, $gospelLinks, $passage;
-
-    $title = 'The Unmerciful Servant';
-    $image = '../images/unmercifulServant.webp';
-    $imageAlt = 'The Unmerciful Servant Parable';
-    $linked_image = '../images/unmercifulServant.png';
-    $figCaption = 'The Parable of the Unmerciful Servant';
-    $description = "Teaches about forgiveness by contrasting a king's mercy with a servant's harshness";
-
-    $paragraphDialogs = [
-      'Jesus told a story about a king who wanted to settle accounts with his servants. One servant was brought to him who owed the king millions of dollars - way more money than the servant could ever pay back!',
-      'The king ordered that the servant and his whole family should be sold as slaves to pay back some of the debt. The servant fell on his knees and begged, "Please be patient with me, and I will pay back everything!"',
-      'The king felt sorry for the servant and did something amazing - he canceled the whole debt! He let the servant go free without having to pay back anything at all!',
-      'But then that same servant went out and found a fellow servant who owed him just several hundred dollars. He grabbed him, started choking him, and demanded, "Pay back what you owe me!"',
-      'The fellow servant begged for patience, just like the first servant had done with the king. But the first servant refused to show mercy. He had the man thrown into prison until he could pay the debt.',
-      'When the other servants saw what happened, they were really upset. They went and told the king everything. The king called the first servant back and said, "You wicked servant! I canceled all that debt because you begged me to. Shouldn\'t you have had mercy on your fellow servant just as I had on you?"',
-      'The angry king then handed the unmerciful servant over to the jailers to be punished until he could pay back all he owed.',
-      "Jesus ended by saying that this is how God will treat us if we don't forgive others from our heart. The story teaches us that since God has forgiven us so much, we should also be willing to forgive others when they do wrong to us."
-    ];
-
-    $gospel = ['Matthew'];
-    $gLP = 'https://openbible.com/ylt/';
-    $gospelLinks = ['matthew/18.htm#21'];
-    $passage = ['18:21-35'];
-  }
-
-  function workersInVineyard()
-  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gLP, $gospelLinks, $passage;
-
-    $title = 'The Workers in the Vineyard';
-    $image = '../images/workersInVineyard.webp';
-    $imageAlt = 'The Workers in the Vineyard Parable';
-    $linked_image = '../images/workersInVineyard.png';
-    $figCaption = 'The Parable of the Workers in the Vineyard';
-    $description = "Reveals God's generosity and grace that defies human expectations of fairness";
-
-    $paragraphDialogs = [
-      'Jesus told a story about a landowner who needed workers for his vineyard. Early in the morning, around 6 AM, he went out and hired some workers. He agreed to pay them a denarius for the day, which was the normal daily wage.',
-      'Later that morning, around 9 AM, the landowner saw more people standing in the marketplace with nothing to do. He told them, "You also go and work in my vineyard, and I will pay you whatever is right." So they went.',
-      'The landowner did the same thing at noon, at 3 PM, and even at 5 PM when the workday was almost over! Each time, he sent more workers into his vineyard.',
-      'When evening came, it was time to pay all the workers. The landowner told his manager to call the workers and pay them, starting with the ones who were hired last.',
-      "The workers who were hired at 5 PM came first. Surprisingly, each of them received a full denarius - a whole day's wage! When the workers who were hired first saw this, they got excited thinking they would get even more.",
-      'But when their turn came, they also received one denarius each - exactly what they had agreed to at the beginning of the day. They started complaining to the landowner, "These people who were hired last worked only one hour, but you\'ve paid them the same as us who worked all day in the hot sun!"',
-      "The landowner replied to one of them, \"Friend, I'm not being unfair to you. Didn't you agree to work for a denarius? Take your pay and go. I want to give the one who was hired last the same as I gave you. Don't I have the right to do what I want with my own money? Or are you envious because I am generous?\"",
-      "Jesus ended by saying, \"So the last will be first, and the first will be last.\" This story teaches us that God's way of rewarding people isn't based on how long or how much they work. Instead, God is generous and gives good gifts to everyone who follows Him, whether they've been following Him their whole life or just started recently."
-    ];
-
-    $gospel = ['Matthew'];
-    $gLP = 'https://openbible.com/ylt/';
-    $gospelLinks = ['matthew/20.htm#1'];
-    $passage = ['20:1-16'];
-  }
-
-  function richManAndLazarus()
-  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gLP, $gospelLinks, $passage;
-
-    $title = 'The Rich Man and Lazarus';
-    $image = '../images/richManAndLazarus.webp';
-    $imageAlt = 'The Rich Man and Lazarus Parable';
-    $linked_image = '../images/richManAndLazarus.png';
-    $figCaption = 'The Parable of the Rich Man and Lazarus';
-    $description = 'Warns about the dangers of wealth and ignoring those in need';
-
-    $paragraphDialogs = [
-      'Jesus told a story about a rich man who lived in luxury every day. He wore expensive purple clothes and fine linen, and he feasted on delicious food all the time.',
-      "At the rich man's gate was a poor beggar named Lazarus. His body was covered with sores, and he was so hungry that he wished he could eat just the crumbs that fell from the rich man's table. Even dogs came and licked his sores. The rich man didn't help Lazarus at all.",
-      "Eventually, both men died. Lazarus was carried by angels to Abraham's side in heaven. The rich man went to Hades, where he was in terrible pain.",
-      'The rich man looked up and saw Abraham far away with Lazarus by his side. He called out, "Father Abraham, have mercy on me! Send Lazarus to dip the tip of his finger in water and cool my tongue, because I\'m suffering in this fire."',
-      'But Abraham replied, "Son, remember that in your lifetime you received good things, while Lazarus received bad things. Now he is comforted here, and you are in agony. Besides, there\'s a huge gap between us that nobody can cross."',
-      'The rich man then begged Abraham to send Lazarus to warn his five brothers so they wouldn\'t end up in the same painful place. Abraham said, "They have Moses and the Prophets; let them listen to them."',
-      'The rich man argued, "No, father Abraham, but if someone from the dead goes to them, they will repent!" Abraham responded, "If they don\'t listen to Moses and the Prophets, they won\'t be convinced even if someone rises from the dead."',
-      'Jesus told this story to warn people about the dangers of focusing on wealth and comfort while ignoring those in need. The story teaches us that how we treat others, especially people who are poor or suffering, matters a lot to God.'
-    ];
-
-    $gospel = ['Luke'];
-    $gLP = 'https://openbible.com/ylt/';
-    $gospelLinks = ['luke/16.htm#19'];
-    $passage = ['16:19-31'];
-  }
-
-  function phariseeAndTaxCollector()
-  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gLP, $gospelLinks, $passage;
-
-    $title = 'The Pharisee and the Tax Collector';
-    $image = '../images/phariseeAndTaxCollector.webp';
-    $imageAlt = 'The Pharisee and the Tax Collector Parable';
-    $linked_image = '../images/phariseeAndTaxCollector.png';
-    $figCaption = 'The Parable of the Pharisee and the Tax Collector';
-    $description = 'Contrasts self-righteous pride with humble repentance in prayer';
-
-    $paragraphDialogs = [
-      'Jesus told a story about two men who went to the temple to pray. One was a Pharisee, which is like a religious leader who followed all the rules really carefully. The other was a tax collector, which most people disliked because tax collectors often cheated people.',
-      'The Pharisee stood up by himself and prayed, "God, I thank you that I\'m not like other people—robbers, evildoers, adulterers—or even like this tax collector. I fast twice a week and give a tenth of all I get." He was basically bragging about how good he was!',
-      'But the tax collector stood at a distance. He wouldn\'t even look up to heaven. Instead, he beat his chest and said, "God, have mercy on me, a sinner." He knew he had done wrong things and was asking God to forgive him.',
-      'Jesus said that it was actually the tax collector, not the Pharisee, who went home right with God! Then Jesus explained, "For all those who make themselves important will become unimportant, and those who humble themselves will become important."',
-      "This story teaches us that God doesn't want us to be proud or to think we're better than other people. Instead, God wants us to be honest about our mistakes and to ask for His forgiveness with a humble heart."
-    ];
-
-    $gospel = ['Luke'];
-    $gLP = 'https://openbible.com/ylt/';
-    $gospelLinks = ['luke/18.htm#9'];
-    $passage = ['18:9-14'];
-  }
-
-  function persistentWidow()
-  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gLP, $gospelLinks, $passage;
-
-    $title = 'The Persistent Widow';
-    $image = '../images/persistentWidow.webp';
-    $imageAlt = 'The Persistent Widow Parable';
-    $linked_image = '../images/persistentWidow.png';
-    $figCaption = 'The Parable of the Persistent Widow';
-    $description = 'Encourages persistent prayer through the story of a widow seeking justice';
-
-    $paragraphDialogs = [
-      "Jesus told a story to teach his followers that they should always pray and never give up. The story was about a judge who didn't care about God or what people thought about him.",
-      'In the same town was a widow who kept coming to this judge with the same request: "Grant me justice against my opponent." A widow is a woman whose husband has died, and in those days, widows often had a hard time taking care of themselves.',
-      "For a long time, the judge refused to help her. But the widow didn't give up! She kept coming back again and again, asking for justice.",
-      "Finally, the judge thought to himself, \"Even though I don't care about God or people, I will give this widow justice because she keeps bothering me. If I don't help her, she'll wear me out with her constant requests!\"",
-      'Then Jesus explained the point of the story. He said, "Listen to what the unfair judge said. And won\'t God bring justice for his chosen people, who cry out to him day and night? Will he keep putting them off? I tell you, he will give them justice quickly."',
-      'The story teaches us that if even an unfair judge will eventually respond to someone who keeps asking, how much more will God - who is perfectly good and who loves us - respond to our prayers when we keep bringing our needs to Him!'
-    ];
-
-    $gospel = ['Luke'];
-    $gLP = 'https://openbible.com/ylt/';
-    $gospelLinks = ['luke/18.htm#1'];
-    $passage = ['18:1-8'];
-  }
-
   function tenVirgins()
   {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gLP, $gospelLinks, $passage;
