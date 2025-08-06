@@ -1,6 +1,12 @@
 <?php
-function content (){
+function content () {
   global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gLP, $gospelLinks, $passage;
+  global $introduction, $_JesusChrist, $list, $bible;
+  global $introducion, $_Jesucristo, $lista, $biblia;
+
+
+  // $gospelLinkPrefix = $gLP;
+  $gLP = 'https://ebible.org/study/';
  ?>
   <style>
     table {
@@ -9,20 +15,20 @@ function content (){
         font-family: Arial, sans-serif;
     }
     th {
-        background-color:rgb(50, 58, 172);
+        background-color:var(--primary-color);
         color: white;
         padding: 12px;
         text-align: left;
     }
     td {
         padding: 8px;
-        border-bottom: 1px solid #ddd;
+        border-bottom: 1px solid var(--dialog-text-highlight);
     }
     tr:nth-child(even) {
-        background-color: #f2f2f2;
+        background-color: var(--background);
     }
     tr:hover {
-        background-color: #e9f5e9;
+        background-color: var(--background);
     }
     .parable-name {
         font-weight: bold;
@@ -124,30 +130,24 @@ function content (){
 
   <article class="fullbar">
     <div class="intro-section">
-    <h1 class="section-title" style="box-shadow:none;">Jesus in the Gospels</h1>
+    <h1 class="section-title" style="box-shadow:none;"><?= !empty ($_JesusChrist) ? $_JesusChrist[0] : $_Jesucristo[0]; ?></h1>
       <ul class="intro-list">
-          <li>The parables were Universally accessible by using every day scenarios, Jesus made complex spiritual concepts
-              understandable to both educated scholars and illiterate laborers.</li>
-          <li>The use of parables was culturally relevant by using the agricultural and domestic settings of these stories
-              resonated with his audience's daily experiences in the 1st century.</li>
-          <li>The multiple layers of meaning often contained surface-level stories that anyone could grasp, while offering
-              deeper theological insights to those willing to contemplate them further.</li>
-          <li>The narrative structure of parables made them easier to remember and share than abstract theological
-              concepts.</li>
-          <li>Rather than forcing interpretations, parables invited listeners to discover meaning for themselves, engaging
-              their minds and hearts in the process.</li>
+          <li><?= $introduction[$list][0];?></li>
+          <li><?= $introduction[$list][1];?></li>
+          <li><?= $introduction[$list][2];?></li>
+          <li><?= $introduction[$list][3];?></li>
+          <li><?= $introduction[$list][4];?></li>
       </ul>
     </div>
-    <h2 class="section-title">Jesus actively interacts with a wide range of people, using parables as a
-          key tool to communicate His message in a way that everyone could understand by the use of mental illustrations.</h2>
+    <h2 class="section-title"><?= !empty ($_JesusChrist) ? $_JesusChrist[1] : $_Jesucristo[1]; ?></h2>
     <table>
       <tr>
-        <th>Parable</th>
-        <th>Description</th>
-        <th>Scripture Reference
+        <th><?= $introduction[0];?></th>
+        <th><?= $introduction[1];?></th>
+        <th><?= $introduction[2];?>
           <span style="float:right;margin-right:10%;">
-            <a href="https://ebible.org/find/show.php?id=eng-web" title="World English Bible with Deuterocanon" style="color:white;"><ruby>
-              [1] <rt> Bible </rt></ruby>
+            <a href="<?= $bible[0];?>" title="<?= $bible[1];?>" style="color:white;"><ruby>
+              [1] <rt> <?= $bible[2];?> </rt></ruby>
             </a>
           </span>
           </th>
@@ -199,12 +199,23 @@ function content (){
   <?php
 }
 
-function parables()
-{
+function parables() {
 
   global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gLP, $gospelLinks, $passage;
-  // $gospelLinkPrefix = $gLP;
-  $gLP = 'https://ebible.org/study/';
+  global $introduction, $_JesusChrist, $list, $bible;
+
+  $_JesusChrist = [ 'Jesus in the Gospels',
+                    'Jesus actively interacts with a wide range of people, using parables as a key tool to communicate His message in a way that everyone could understand by the use of mental illustrations.'];
+  $introduction =  [
+            $list => ['The parables were Universally accessible by using every day scenarios, Jesus made complex spiritual concepts understandable to both educated scholars and illiterate laborers.',
+                      'The use of parables was culturally relevant by using the agricultural and domestic settings of these stories resonated with his audience\'s daily experiences in the 1st century.',
+                      'The multiple layers of meaning often contained surface-level stories that anyone could grasp, while offering deeper theological insights to those willing to contemplate them further.',
+                      'The narrative structure of parables made them easier to remember and share than abstract theological concepts.',
+                      'Rather than forcing interpretations, parables invited listeners to discover meaning for themselves, engaging their minds and hearts in the process.',
+                     ], 'Parable', 'Description', 'Scripture Reference','Bible'
+          ];
+  $bible = ['https://ebible.org/find/show.php?id=eng-web', 'World English Bible with Deuterocanon', 'Bible'];
+
   function theSower()
   {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gLP, $gospelLinks, $passage;
@@ -616,7 +627,7 @@ function parables()
 
 
 
-//WE ARE HERE
+  //WE ARE HERE
   function parableTwoDebtors()
   {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gLP, $gospelLinks, $passage;
@@ -1349,128 +1360,65 @@ function parables()
     $passage = ['17:7-10'];
   }
     content();
-  } // function parables() bracket
+} // function parables() bracket
 
-  function parabolas(){
+function parabolas(){
+  global $introducion, $_Jesucristo, $lista, $biblia;
+  $_Jesucristo = [ 'Jesús en los Evangelios',
+                    'Jesús interactúa activamente con una amplia variedad de personas, utilizando parábolas como una herramienta clave para comunicar Su mensaje de una manera que todos pudieran entender con el uso de ilustraciones mentales.'];
+  $introducion =  [
+            $lista => ['Las parabolas eran universalmente accesibles: al usar escenarios cotidianos, Jesús hacía que conceptos espirituales complejos fueran comprensibles tanto para los eruditos educados como para los trabajadores analfabetos.',
+                      'El uso de parábolas era culturalmente relevante: al utilizar entornos agrícolas y domésticos, estas historias resonaban con las experiencias diarias de su audiencia en el siglo I.',
+                      'Las múltiples capas de significado a menudo contenían historias superficiales que cualquiera podía comprender, mientras ofrecían profundos conocimientos teológicos a quienes estaban dispuestos a reflexionarlas más a fondo.',
+                      'La estructura narrativa de las parábolas las hacía más fáciles de recordar y compartir que los conceptos teológicos abstractos.',
+                      'En lugar de imponer interpretaciones, las parábolas invitaban a los oyentes a descubrir el significado por sí mismos, involucrando sus mentes y corazones en el proceso.',
+                     ], 'Parable', 'Description', 'Scripture Reference','Bible'
+          ];
+  $biblia = ['https://ebible.org/find/details.php?id=spablm', 'Santa Biblia libre para el mundo', 'Biblia'];
+
     ?>
 
-<style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-family: Arial, sans-serif;
-        }
-        th {
-            background-color:rgb(50, 58, 172);
-            color: white;
-            padding: 12px;
-            text-align: left;
-        }
-        td {
-            padding: 8px;
-            border-bottom: 1px solid #ddd;
-        }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-        tr:hover {
-            background-color: #e9f5e9;
-        }
-        .parable-name {
-            font-weight: bold;
-        }
-        h1 {
-            color:rgb(148, 30, 30);
-            text-align: center;
-        }
-        figcaption {
-          font-size:1.7em;
-          text-align: center;
-          padding-right: 10%;
-        }
-        figcaption a {
-          text-decoration:none;
-          color:white;
-          background-color:black;
-          margin-top:2%;
-          padding-right:2%;
-          padding-left:2%;
-        }
-        figcaption a:hover{
-          text-decoration:underline;
-          color:royalblue;
-        }
-        .gospel{
-          display:inline-block;
-        }
-        .link-dialog p{
-          font-size:1.07em;
-        }
-        .link-dialog p:hover,.link-dialog p:focus{
-          background:black;
-          color:white;
-        }
-        .linked-text, .linked-text-img{
-          color:black;
-        }
-        .linked-text:active, .linked-text-img:active{
-          color:red;
-        }
-        .linked-text.focused, .linked-text-img.focused{
-          color:red;
-          transition: color 2s ease-out, border 2s ease-out;
-        }
-        figure {
-          padding-left: 10%;
-        }
-        figure img{
-          width:90%;
-          height:auto;
-        }
-</style>
- <article class="fullbar">
+   <article class="fullbar">
+     <h3 style="font-size:2em; margin:0;padding:1.3%;text-align:center;">Jesús en los Evangelios</h3>
 
-<h2>Los Evangelios usan ilustraciones mentales. Jesús interactúa activamente con una amplia variedad de personas,
-    utilizando parábolas como una herramienta clave para comunicar Su mensaje de una manera que todos pudieran entender.
-</h2>
-<ul>
-    <li>Eran universalmente accesibles: al usar escenarios cotidianos, Jesús hacía que conceptos espirituales complejos
-        fueran comprensibles tanto para los eruditos educados como para los trabajadores analfabetos.</li>
-    <li>El uso de parábolas era culturalmente relevante: al utilizar entornos agrícolas y domésticos, estas historias
-        resonaban con las experiencias diarias de su audiencia en el siglo I.</li>
-    <li>Las múltiples capas de significado a menudo contenían historias superficiales que cualquiera podía comprender,
-        mientras ofrecían profundos conocimientos teológicos a quienes estaban dispuestos a reflexionarlas más a fondo.
-    </li>
-    <li>La estructura narrativa de las parábolas las hacía más fáciles de recordar y compartir que los conceptos
-        teológicos abstractos.</li>
-    <li>En lugar de imponer interpretaciones, las parábolas invitaban a los oyentes a descubrir el significado por sí
-        mismos, involucrando sus mentes y corazones en el proceso.</li>
-</ul>
-<h3 style="font-size:2em; margin:0;padding:1.3%;text-align:center;">Jesús en los Evangelios</h3>
-    <table>
+     <ul>
+       <li>Las parabolas eran universalmente accesibles: al usar escenarios cotidianos, Jesús hacía que conceptos espirituales complejos
+         fueran comprensibles tanto para los eruditos educados como para los trabajadores analfabetos.</li>
+         <li>El uso de parábolas era culturalmente relevante: al utilizar entornos agrícolas y domésticos, estas historias resonaban con las experiencias diarias de su audiencia en el siglo I.</li>
+           <li>Las múltiples capas de significado a menudo contenían historias superficiales que cualquiera podía comprender, mientras ofrecían profundos conocimientos teológicos a quienes estaban dispuestos a reflexionarlas más a fondo.
+            </li>
+            <li>La estructura narrativa de las parábolas las hacía más fáciles de recordar y compartir que los conceptos
+              teológicos abstractos.</li>
+              <li>En lugar de imponer interpretaciones, las parábolas invitaban a los oyentes a descubrir el significado por sí
+                mismos, involucrando sus mentes y corazones en el proceso.</li>
+              </ul>
+              <h2>Jesús interactúa activamente con una amplia variedad de personas, utilizando parábolas como una herramienta clave para comunicar Su mensaje de una manera que todos pudieran entender con el uso de ilustraciones mentales.
+              </h2>
+      <table>
 
-        <tr>
-        <th>Parábola</th>
-          <th>Descripción</th>
-          <th>Referencia Bíblica <span style="float:right;margin-right:10%;">
-                              <a href="https://www.vatican.va/archive/ESL0506/_INDEX.HTM" title="EL LIBRO DEL PUEBLO DE DIOS
-                                                                                                  La Biblia
-                                                                                                  (Traducción argentina)
+          <tr>
+          <th>Parábola</th>
+            <th>Descripción</th>
+            <th>Referencia Bíblica <span style="float:right;margin-right:10%;">
+                                <a href="https://www.vatican.va/archive/ESL0506/_INDEX.HTM" title="EL LIBRO DEL PUEBLO DE DIOS
+                                                                                                    La Biblia
+                                                                                                    (Traducción argentina)
 
-                                                                                                  1990" style="color:white;"><ruby>
-                            [1] <rt> Biblia </rt></ruby>
-                    </a></span>
-            </th>
-        </tr>
-        <tr>
-          <td>El Sembrador</td>
-          <td>Jesús enseña a sus discípulos que el reino de Dios es como un sembrador que sembró semillas en un campo.</td>
-          <td>Mateo 13:1-23, Marcos 4:1-20, Lucas 8:4-15</td>
-        </tr>
-        </table>
+                                                                                                    1990" style="color:white;"><ruby>
+                              [1] <rt> Biblia </rt></ruby>
+                      </a></span>
+              </th>
+          </tr>
+          <tr>
+            <td>El Sembrador</td>
+            <td>Jesús enseña a sus discípulos que el reino de Dios es como un sembrador que sembró semillas en un campo.</td>
+            <td>Mateo 13:1-23, Marcos 4:1-20, Lucas 8:4-15</td>
+          </tr>
+          </table>
 
- </article>
+   </article>
     <?php
-  }
+    //content();
+}
 include './anvil/structure.php';
 ?>
