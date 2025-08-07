@@ -2,6 +2,8 @@
 function content () {
   global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
   global $introduction, $_JesusChrist, $list, $bible;
+
+  global $titulo, $imagen, $imagenAlt, $enlaceImagen, $figLeyenda, $descripcion, $dialogoParrafo, $evangelio, $enlaceEvangelio, $pasaje;
   global $introducion, $_Jesucristo, $lista, $biblia;
 
 
@@ -132,29 +134,34 @@ function content () {
     <div class="intro-section">
     <h1 class="section-title" style="box-shadow:none;"><?= !empty ($_JesusChrist) ? $_JesusChrist[0] : $_Jesucristo[0]; ?></h1>
       <ul class="intro-list">
-          <li><?= $introduction[$list][0];?></li>
-          <li><?= $introduction[$list][1];?></li>
-          <li><?= $introduction[$list][2];?></li>
-          <li><?= $introduction[$list][3];?></li>
-          <li><?= $introduction[$list][4];?></li>
+          <li><?= !empty ($introduction) ? $introduction[$list][0] : $introducion[$lista][0];?></li>
+          <li><?= !empty ($introduction) ? $introduction[$list][1] : $introducion[$lista][1];?></li>
+          <li><?= !empty ($introduction) ? $introduction[$list][2] : $introducion[$lista][2];?></li>
+          <li><?= !empty ($introduction) ? $introduction[$list][3] : $introducion[$lista][3];?></li>
+          <li><?= !empty ($introduction) ? $introduction[$list][4] : $introducion[$lista][4];?></li>
       </ul>
     </div>
     <h2 class="section-title"><?= !empty ($_JesusChrist) ? $_JesusChrist[1] : $_Jesucristo[1]; ?></h2>
     <table>
       <tr>
-        <th><?= $introduction[0];?></th>
-        <th><?= $introduction[1];?></th>
-        <th><?= $introduction[2];?>
+        <th><?= !empty ($introduction) ? $introduction[0] : $introducion[0];?></th>
+        <th><?= !empty ($introduction) ? $introduction[1] : $introducion[1];?></th>
+        <th><?= !empty ($introduction) ? $introduction[2] : $introducion[2];?>
           <span style="float:right;margin-right:10%;">
-            <a href="<?= $bible[0];?>" title="<?= $bible[1];?>" style="color:white;"><ruby>
-              [1] <rt> <?= $bible[2];?> </rt></ruby>
+            <a href="<?= !empty ($bible) ? $bible[0] : $biblia[0];?>" title="<?= !empty ($bible) ? $bible[1] : $biblia[1];?>" style="color:white;"><ruby>
+              [1] <rt> <?= !empty ($bible) ? $bible[2] : $biblia[2];?> </rt></ruby>
             </a>
           </span>
           </th>
       </tr>
         <?php
-  $parableFunctions = ['theSower', 'mustardSeed', 'leavenedFlour', 'hiddenTreasure', 'pearlOfGreatPrice', 'dragnet', 'goodSamaritan', 'prodigalSon', 'lostSheep', 'lostCoin', 'unmercifulServant', 'workersInVineyard', 'richManAndLazarus', 'phariseeAndTaxCollector', 'persistentWidow', 'tenVirgins', 'talents', 'sheepAndGoats', 'twoDebtors', 'wickedTenants', 'weddingFeast', 'richFool', 'wiseAndFoolishBuilders', 'growingSeed', 'newClothOnOldGarment', 'newWineInOldWineskins', 'lampOnStand', 'twoSons', 'unjustSteward', 'friendAtMidnight', 'barrenFigTree', 'greatBanquet', 'buildingTowerAndKingGoingToWar', 'unprofitableServants', 'unjustJudge', 'blindLeadingTheBlind', 'faithfulAndWiseServant', 'watchfulServants', 'childrenInTheMarketplace', 'speckAndLog', 'fishNet', 'householder', 'dishonestManager', 'goodShepherd', 'vineAndBranches', 'masterAndServant'];
-  foreach ($parableFunctions as $functionTableRow) {
+        if (!empty($introduction)) {
+          $parableFunctions = ['theSower', 'mustardSeed', 'leavenedFlour', 'hiddenTreasure', 'pearlOfGreatPrice', 'dragnet', 'goodSamaritan', 'prodigalSon', 'lostSheep', 'lostCoin', 'unmercifulServant', 'workersInVineyard', 'richManAndLazarus', 'phariseeAndTaxCollector', 'persistentWidow', 'tenVirgins', 'talents', 'sheepAndGoats', 'twoDebtors', 'wickedTenants', 'weddingFeast', 'richFool', 'wiseAndFoolishBuilders', 'growingSeed', 'newClothOnOldGarment', 'newWineInOldWineskins', 'lampOnStand', 'twoSons', 'unjustSteward', 'friendAtMidnight', 'barrenFigTree', 'greatBanquet', 'buildingTowerAndKingGoingToWar', 'unprofitableServants', 'unjustJudge', 'blindLeadingTheBlind', 'faithfulAndWiseServant', 'watchfulServants', 'childrenInTheMarketplace', 'speckAndLog', 'fishNet', 'householder', 'dishonestManager', 'goodShepherd', 'vineAndBranches', 'masterAndServant'];
+        }
+        if (!empty($introducion)) {
+          $parableFunctions = ['elSembrador', 'semillaDeMostaza', 'levaduraEnHarina', 'tesoroEscondido', 'perlaDeGranPrecio', 'red', 'buenSamaritano', 'hijoProdigo', 'ovejaPerdida', 'monedaPerdida', 'siervoSinPiedad', 'obrerosEnLaVinha', 'hombreRicoYLazaro', 'fariseoYPublicano', 'viudaPersistente', 'diezVirgenes', 'talentos', 'ovejasYCabritos', 'dosDeudores', 'labradoresMalvados', 'banqueteDeBodas', 'ricoInsensato', 'constructoresSabiosEInsensatos', 'semillaQueCrece', 'panhoNuevoEnVestidoViejo', 'vinoNuevoEnOdresViejos', 'lamparaEnLaMesa', 'dosHijos', 'mayordomoInjusto', 'amigoAVersion', 'higueraEsteril', 'granBanquete', 'torreElReyYLaGuerra', 'siervosInutiles', 'juezInjusto', 'ciegoGuiandoAlCiego', 'siervoFielYSabio', 'siervosVigilantes', 'ninhosEnLaPlaza', 'pajaYViga', 'redDePescar', 'amoDeLaCasa', 'mayordomoDeshonesto', 'buenPastor', 'vidYLosPampanos', 'amoYSiervo'];
+        }
+        foreach ($parableFunctions as $functionTableRow) {
     // Call the current function
     $functionTableRow();
     /* The code below is the Main Table row the loop will iterate over each function */
@@ -162,11 +169,11 @@ function content () {
         <tr>
         <td>
             <div class="multi-link-container" >
-              <span class="linked-text" ><?= $title; ?></span>
+              <span class="linked-text" ><?= !empty ($title) ? $title : $titulo; ?></span>
                 <div class="link-dialog" >
                   <figure>
-                      <img src="<?= $image; ?>" alt="<?= $imageAlt; ?>">
-                      <figcaption><a href="<?= $linked_image; ?>"><?= $figCaption; ?></a></figcaption>
+                      <img src="<?= !empty ($image) ? $image : $imagen; ?>" alt="<?= !empty ($imageAlt) ? $imageAlt : $imagenAlt; ?>">
+                      <figcaption><a href="<?= !empty ($linked_image) ? $linked_image : $enlaceImagen; ?>"><?= !empty ($figCaption) ? $figCaption : $figLeyenda; ?></a></figcaption>
                   </figure>
                 </div>
             </div>
@@ -174,30 +181,48 @@ function content () {
 
               <td>
             <div class="multi-link-container">
-              <span tabindex="0" class="linked-text"><?= $description; ?></span>
+              <span tabindex="0" class="linked-text"><?= !empty ($description) ? $description : $descripcion; ?></span>
               <div class="link-dialog">
                 <?php
-                echo '<h2 class="section-title" style="box-shadow:none;">'.$title.'</h2>';
+                echo '<h2 class="section-title" style="box-shadow:none;">'.(!empty ($title) ? $title : $titulo).'</h2>';
+
+                if (!empty($paragraphDialogs)) {
                 foreach ($paragraphDialogs as $index) {
                   echo '<p tabindex="0">' . $index . '</p>';
+                }
+                }
+                if (!empty($dialogoParrafo)) {
+                foreach ($dialogoParrafo as $index) {
+                  echo '<p tabindex="0">' . $index . '</p>';
+                }
                 }
                 ?>
                 </div>
             </div>
             </td>
             <td>
-            <?php foreach ($gospel as $index => $text): ?>
+            <?php if (!empty($gospel)) {
+            foreach ($gospel as $index => $text):
+              ?>
               <div class="gospel"><?= $text ?> <a href="<?= $gLP . $gospelLinks[$index] ?>" target="_blank"><?= $passage[$index] ?></a></div>
-            <?php endforeach; ?>
+              <?php endforeach; }?>
+
+              <?php if (!empty($evangelio)) {
+            foreach ($evangelio as $index => $text):
+              ?>
+              <div class="gospel"><?= $text ?> <a href="<?= $gLP . $enlaceEvangelio[$index] ?>" target="_blank"><?= $pasaje[$index] ?></a></div>
+              <?php endforeach; }?>
+
+
             </td>
         </tr>
     <?php
-  }
+  } //END LOOP foreach($parableFunctions as $functionTableRow);
   ?>
     </table>
   </article>
   <?php
-}
+} //END FUNCTION content();
 
 function parables() {
 
@@ -668,9 +693,9 @@ function parables() {
 
 
 
-  //WE ARE HERE
-  
 
+
+  //WE ARE HERE▬
   function weddingFeast()
   {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
@@ -908,7 +933,7 @@ function parables() {
       'We need to use the time He gives us to grow and become better people.'
     ];
     $gospel = ['Luke'];
-    
+
     $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=LK13_6'];
     $passage = ['13:6-9'];
   }
@@ -931,7 +956,7 @@ function parables() {
       "The point is that God's invitation is for everyone, but especially for those who recognize their need for Him."
     ];
     $gospel = ['Luke'];
-    
+
     $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=LK14_15'];
     $passage = ['14:15-24'];
   }
@@ -1165,7 +1190,7 @@ function parables() {
       'Jesus was teaching that we should be at least as clever about using our resources for eternal purposes as dishonest people are about using money for their temporary benefit on earth.'
     ];
     $gospel = ['Luke'];
-    
+
     $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=LK16_1'];
     $passage = ['16:1-9'];
   }
@@ -1250,8 +1275,93 @@ function parabolas(){
           ];
   $biblia = ['https://ebible.org/find/details.php?id=spablm', 'Santa Biblia libre para el mundo', 'Biblia'];
 
-    ?>
 
+  function elSembrador()
+  {
+    global $titulo, $imagen, $imagenAlt, $enlaceImagen, $figLeyenda, $descripcion, $dialogoParrafo, $evangelio, $enlaceEvangelio, $pasaje;
+    $titulo = 'El Sembrador';
+    $imagen = '../images/_JesusChrist/sower.webp';
+    $imagenAlt = 'Parabola de el Sembrador';
+    $enlaceImagen = '../images/_JesusChrist/sower.png';
+    $figLeyenda = 'La Parabola de el Sembrador';
+    $descripcion = 'Describe las diferentes reacciones ante el mensaje del evangelio usando la analogía de las semillas que caen en distintos tipos de tierra.';
+    $dialogoParrafo = [
+      "Imagina a un agricultor echando semillas al suelo. Es algo así como cuando alguien te habla de Jesús. Las semillas son el mensaje, y el suelo es como tu corazón.",
+      "Jesús contó una historia sobre esto. Dijo que algunas semillas cayeron en un camino donde los pájaros se las comieron. Eso es como la gente que escucha el mensaje, pero no lo entiende y lo olvida enseguida.",
+      "Otras semillas cayeron en terreno con piedras. Crecieron rápido al principio, pero como la tierra no era profunda, se secaron y se murieron. Eso es como la gente que se emociona con el mensaje al principio, pero cuando las cosas se ponen difíciles, se rinde.",
+      "Otras semillas cayeron entre espinos. Los espinos crecieron y ahogaron las semillas, impidiendo que se desarrollaran. Esto es como la gente que escucha el mensaje, pero se preocupa demasiado por otras cosas, como el dinero o los deseos materiales, y el mensaje no los cambia de verdad.",
+      "Pero algunas semillas cayeron en tierra buena. Crecieron muy bien y produjeron muchísimas más semillas. Eso es como la gente que realmente escucha el mensaje, lo entiende y deja que cambie su forma de vivir. Por eso, terminan haciendo cosas buenas.",
+      "Así que, la historia trata de cómo diferentes personas escuchan el mismo mensaje de distintas maneras, dependiendo de lo que hay en sus corazones. Solo las personas con un 'corazón bueno' permiten que el mensaje crezca y haga una diferencia."];
+    $evangelio = ['Mateo', 'Marcos', 'Lucas'];
+    $enlaceEvangelio = ['?v1=MT13_1&t1=local%3Aspablm&w1=bible', '?v1=MK4_1&t1=local%3Aspablm&w1=bible', '?v1=LK8_4&t1=local%3Aspablm&w1=bible'];
+    $pasaje = ['13:1-23,', '4:1-20,', '8:4-15'];
+  }
+
+  function semillaDeMostaza(){}
+  function levaduraEnHarina(){}
+  function tesoroEscondido(){}
+  function perlaDeGranPrecio(){}
+  function red(){}
+  function buenSamaritano(){}
+  function hijoProdigo(){}
+  function ovejaPerdida(){}
+  function monedaPerdida(){}
+  function siervoSinPiedad(){}
+  function obrerosEnLaVinha(){}
+  function hombreRicoYLazaro(){}
+  function fariseoYPublicano(){}
+  function viudaPersistente(){}
+  function diezVirgenes(){}
+  function talentos(){}
+
+
+
+  // 'elSembrador',
+  // 'semillaDeMostaza',
+  // 'levaduraEnHarina',
+  // 'tesoroEscondido',
+  // 'perlaDeGranPrecio',
+  // 'red',
+  // 'buenSamaritano',
+  // 'hijoProdigo',
+  // 'ovejaPerdida',
+  // 'monedaPerdida',
+  // 'siervoSinPiedad',
+  // 'obrerosEnLaVinha',
+  // 'hombreRicoYLazaro',
+  // 'fariseoYPublicano',
+  // 'viudaPersistente',
+  // 'diezVirgenes',
+  // 'talentos',
+  // 'ovejasYCabritos', 'dosDeudores', 'labradoresMalvados', 'banqueteDeBodas', 'ricoInsensato', 'constructoresSabiosEInsensatos', 'semillaQueCrece', 'panhoNuevoEnVestidoViejo', 'vinoNuevoEnOdresViejos', 'lamparaEnLaMesa', 'dosHijos', 'mayordomoInjusto', 'amigoAVersion', 'higueraEsteril', 'granBanquete', 'torreElReyYLaGuerra', 'siervosInutiles', 'juezInjusto', 'ciegoGuiandoAlCiego', 'siervoFielYSabio', 'siervosVigilantes', 'ninhosEnLaPlaza', 'pajaYViga', 'redDePescar', 'amoDeLaCasa', 'mayordomoDeshonesto', 'buenPastor', 'vidYLosPampanos', 'amoYSiervo'];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//BORRAR DESPUÉS DE LA PRUEBA
+echo'<script src="../anvil/dialogEngine.js"></script>';
+
+
+
+
+
+
+
+
+
+    ?>
+<!-- HTML Ejemplo
    <article class="fullbar">
      <h3 style="font-size:2em; margin:0;padding:1.3%;text-align:center;">Jesús en los Evangelios</h3>
 
@@ -1289,10 +1399,10 @@ function parabolas(){
             <td>Mateo 13:1-23, Marcos 4:1-20, Lucas 8:4-15</td>
           </tr>
           </table>
-
+-->
    </article>
     <?php
-    //content();
+    content();
 }
 include './anvil/structure.php';
 ?>
