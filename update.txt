@@ -34,6 +34,8 @@
                         The css will become part of the content function for now until the next CSS update.
     (8/2/2025|Update) The Dialog window is way better on mobile, also the content in the background does not scroll when the dialog is open.
         Parables have 3 functions just as required per the standard structural design of the site.
+    (8/11/2025|Update) The Parables page is finally finished, all there is to do is to finish up the images, and do a quick audit to the functions.
+        Also I would like to implement the Carousel, but I am guessing that will have to be done in a later update, for now it seems all is good.
 
 
 
