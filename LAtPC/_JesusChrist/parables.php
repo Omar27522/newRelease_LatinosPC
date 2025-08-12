@@ -1,12 +1,9 @@
 <?php
 function content () {
   global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
-  global $introduction, $_JesusChrist, $list, $bible;
-
+    global $introduction, $_JesusChrist, $list, $bible;
   global $titulo, $imagen, $imagenAlt, $enlaceImagen, $figLeyenda, $descripcion, $dialogoParrafo, $evangelio, $enlaceEvangelio, $pasaje;
-  global $introducion, $_Jesucristo, $lista, $biblia;
-
-
+    global $introducion, $_Jesucristo, $lista, $biblia;
   // $gospelLinkPrefix = $gLP;
   $gLP = 'https://ebible.org/study/';
  ?>
@@ -129,7 +126,6 @@ function content () {
       font-weight: 600;
     }
   </style>
-
   <article class="fullbar">
     <div class="intro-section">
     <h1 class="section-title" style="box-shadow:none;"><?= !empty ($_JesusChrist) ? $_JesusChrist[0] : $_Jesucristo[0]; ?></h1>
@@ -156,69 +152,64 @@ function content () {
       </tr>
         <?php
         if (!empty($introduction)) {
-          $parableFunctions = ['theSower', 'wheatAndTheWeeds', 'mustardSeed', 'leavenedFlour', 'hiddenTreasure', 'pearlOfGreatPrice', 'dragnet', 'goodSamaritan', 'prodigalSon', 'lostSheep', 'lostCoin', 'unmercifulServant', 'workersInVineyard', 'richManAndLazarus', 'phariseeAndTaxCollector', 'persistentWidow', 'tenVirgins', 'talents', 'sheepAndGoats', 'twoDebtors', 'wickedTenants', 'weddingFeast', 'richFool', 'wiseAndFoolishBuilders', 'growingSeed', 'newClothOnOldGarment', 'newWineInOldWineskins', 'lampOnStand', 'twoSons', 'unjustSteward', 'friendAtMidnight', 'barrenFigTree', 'greatBanquet', 'buildingTowerAndKingGoingToWar', 'unprofitableServants', 'unjustJudge', 'blindLeadingTheBlind', 'faithfulAndWiseServant', 'watchfulServants', 'childrenInTheMarketplace', 'speckAndLog', 'fishNet', 'householder', 'dishonestManager', 'goodShepherd', 'vineAndBranches', 'masterAndServant'];
+          $parableFunctions = ['theSower', 'wheatAndTheWeeds', 'mustardSeed', 'leavenedFlour', 'hiddenTreasure', 'pearlOfGreatPrice', 'dragnet', 'goodSamaritan', 'prodigalSon', 'lostSheep', 'lostCoin', 'unmercifulServant', 'workersInVineyard', 'richManAndLazarus', 'phariseeAndTaxCollector', 'persistentWidow', 'tenVirgins', 'talents', 'sheepAndGoats', 'twoDebtors', 'wickedTenants', 'weddingFeast', 'richFool', 'wiseAndFoolishBuilders', 'growingSeed', 'newClothOnOldGarment', 'newWineInOldWineskins', 'lampOnStand', 'twoSons', 'unjustSteward', 'dishonestManager', 'friendAtMidnight', 'barrenFigTree', 'greatBanquet', 'buildingTowerAndKingGoingToWar', 'unprofitableServants', 'masterAndServant', 'unjustJudge', 'blindLeadingTheBlind', 'faithfulAndWiseServant', 'watchfulServants', 'childrenInTheMarketplace', 'speckAndLog', 'fishNet', 'householder', 'goodShepherd', 'vineAndBranches'];
         }
         if (!empty($introducion)) {
-          $parableFunctions = ['elSembrador', 'trigoYHierbaMala', 'semillaDeMostaza', 'levaduraEnHarina', 'tesoroEscondido', 'perlaDeGranPrecio', 'red', 'buenSamaritano', 'hijoProdigo', 'ovejaPerdida', 'monedaPerdida', 'siervoSinPiedad', 'obrerosEnLaVinha', 'hombreRicoYLazaro', 'fariseoYPublicano', 'viudaPersistente', 'diezVirgenes', 'talentos', 'ovejasYCabritos', 'dosDeudores', 'labradoresMalvados', 'banqueteDeBodas', 'ricoInsensato', 'constructoresSabiosEInsensatos', 'semillaQueCrece', 'panhoNuevoEnVestidoViejo', 'vinoNuevoEnOdresViejos', 'lamparaEnLaMesa', 'dosHijos', 'mayordomoInjusto', 'amigoAmediaNoche', 'higueraEsteril', 'granBanquete', 'torreElReyYLaGuerra', 'siervosInutiles', 'juezInjusto', 'ciegoGuiandoAlCiego', 'siervoFielYSabio', 'siervosVeladores', 'ninhosEnLaPlaza', 'pajaYViga', 'redDePescar', 'amoDeLaCasa', 'mayordomoDeshonesto', 'buenPastor', 'vidYLosSarmientos', 'amoYSiervo'];
+          $parableFunctions = ['elSembrador', 'trigoYHierbaMala', 'semillaDeMostaza', 'levaduraEnHarina', 'tesoroEscondido', 'perlaDeGranPrecio', 'red', 'buenSamaritano', 'hijoProdigo', 'ovejaPerdida', 'monedaPerdida', 'siervoSinPiedad', 'obrerosEnLaVinha', 'hombreRicoYLazaro', 'fariseoYPublicano', 'viudaPersistente', 'diezVirgenes', 'talentos', 'ovejasYCabritos', 'dosDeudores', 'labradoresMalvados', 'banqueteDeBodas', 'ricoInsensato', 'constructoresSabiosEInsensatos', 'semillaQueCrece', 'panhoNuevoEnVestidoViejo', 'vinoNuevoEnOdresViejos', 'lamparaEnLaMesa', 'dosHijos', 'mayordomoInjusto','mayordomoDeshonesto', 'amigoAmediaNoche', 'higueraEsteril', 'granBanquete', 'torreElReyYLaGuerra', 'siervosInutiles', 'amoYSiervo', 'juezInjusto', 'ciegoGuiandoAlCiego', 'siervoFielYSabio', 'siervosVeladores', 'ninhosEnLaPlaza', 'pajaYViga', 'redDePescar', 'amoDeLaCasa', 'buenPastor', 'vidYLosSarmientos'];
         }
         foreach ($parableFunctions as $functionTableRow) {
-    // Call the current function
-    $functionTableRow();
-    /* The code below is the Main Table row the loop will iterate over each function */
-    ?>
-        <tr>
-        <td>
-            <div class="multi-link-container" >
-              <span class="linked-text" ><?= !empty ($title) ? $title : $titulo; ?></span>
-                <div class="link-dialog" >
-                  <figure>
+          // Call the current function
+          $functionTableRow();
+          /* The code below is the Main Table row the loop will iterate over each function */
+          ?>
+          <tr>
+            <td>
+                <div class="multi-link-container" >
+                  <span class="linked-text" ><?= !empty ($title) ? $title : $titulo; ?></span>
+                  <div class="link-dialog" >
+                    <figure>
                       <img src="<?= !empty ($image) ? $image : $imagen; ?>" alt="<?= !empty ($imageAlt) ? $imageAlt : $imagenAlt; ?>">
                       <figcaption><a href="<?= !empty ($linked_image) ? $linked_image : $enlaceImagen; ?>"><?= !empty ($figCaption) ? $figCaption : $figLeyenda; ?></a></figcaption>
-                  </figure>
+                    </figure>
+                  </div>
                 </div>
-            </div>
-            </td>
-
-              <td>
-            <div class="multi-link-container">
-              <span tabindex="0" class="linked-text"><?= !empty ($description) ? $description : $descripcion; ?></span>
-              <div class="link-dialog">
-                <?php
-                echo '<h2 class="section-title" style="box-shadow:none;">'.(!empty ($title) ? $title : $titulo).'</h2>';
-
-                if (!empty($paragraphDialogs)) {
-                foreach ($paragraphDialogs as $index) {
-                  echo '<p tabindex="0">' . $index . '</p>';
-                }
-                }
-                if (!empty($dialogoParrafo)) {
-                foreach ($dialogoParrafo as $index) {
-                  echo '<p tabindex="0">' . $index . '</p>';
-                }
-                }
-                ?>
-                </div>
-            </div>
             </td>
             <td>
-            <?php if (!empty($gospel)) {
-            foreach ($gospel as $index => $text):
-              ?>
-              <div class="gospel"><?= $text ?> <a href="<?= $gLP . $gospelLinks[$index] ?>" target="_blank"><?= $passage[$index] ?></a></div>
-              <?php endforeach; }?>
-
-              <?php if (!empty($evangelio)) {
-            foreach ($evangelio as $index => $text):
-              ?>
-              <div class="gospel"><?= $text ?> <a href="<?= $gLP . $enlaceEvangelio[$index] ?>" target="_blank"><?= $pasaje[$index] ?></a></div>
-              <?php endforeach; }?>
-
-
+                <div class="multi-link-container">
+                  <span tabindex="0" class="linked-text"><?= !empty ($description) ? $description : $descripcion; ?></span>
+                  <div class="link-dialog">
+                    <?php
+                    echo '<h2 class="section-title" style="box-shadow:none;">'.(!empty ($title) ? $title : $titulo).'</h2>';
+                    if (!empty($paragraphDialogs)) {
+                    foreach ($paragraphDialogs as $index) {
+                      echo '<p tabindex="0">' . $index . '</p>';
+                    }
+                    }
+                    if (!empty($dialogoParrafo)) {
+                    foreach ($dialogoParrafo as $index) {
+                      echo '<p tabindex="0">' . $index . '</p>';
+                    }
+                    }
+                    ?>
+                    </div>
+                </div>
             </td>
-        </tr>
-    <?php
-  } //END LOOP foreach($parableFunctions as $functionTableRow);
-  ?>
+            <td>
+                <?php if (!empty($gospel)) {
+                foreach ($gospel as $index => $text):
+                  ?>
+                  <div class="gospel"><?= $text ?> <a href="<?= $gLP . $gospelLinks[$index] ?>" target="_blank"><?= $passage[$index] ?></a></div>
+                  <?php endforeach; }?>
+                  <?php if (!empty($evangelio)) {
+                foreach ($evangelio as $index => $text):
+                  ?>
+                  <div class="gospel"><?= $text ?> <a href="<?= $gLP . $enlaceEvangelio[$index] ?>" target="_blank"><?= $pasaje[$index] ?></a></div>
+                  <?php endforeach; }?>
+            </td>
+          </tr>
+            <?php
+          } //END LOOP foreach($parableFunctions as $functionTableRow);
+        ?>
     </table>
   </article>
   <?php
@@ -332,8 +323,7 @@ function parables() {
     $linked_image = '../images/_JesusChrist/hiddenTreasure.png';
     $figCaption = 'The Parable of the Hidden Treasure';
     $description = "Reveals the supreme value of God's kingdom, worth sacrificing everything to obtain";
-    $paragraphDialogs = [
-      "Jesus told a story about a man who was walking through someone else's field. While he was walking, he found a treasure that was hidden in the ground!",
+    $paragraphDialogs = ["Jesus told a story about a man who was walking through someone else's field. While he was walking, he found a treasure that was hidden in the ground!",
       'The man was super excited about finding this treasure. He covered it back up really quick so nobody else would find it.',
       "Then he went and sold everything he owned - like all his stuff! That's how badly he wanted this treasure.",
       'With all the money he got from selling his things, he bought the field where the treasure was hidden. Now the treasure was all his!',
@@ -705,8 +695,7 @@ function parables() {
     $passage = ['7:24-27', '6:47-49'];
   }
 
-  function growingSeed()
-  {
+  function growingSeed()  {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Growing Seed';
     $image = '../images/_JesusChrist/growingSeed.webp';
@@ -725,8 +714,7 @@ function parables() {
     $passage = ['4:26-29'];
   }
 
-  function newClothOnOldGarment()
-  {
+  function newClothOnOldGarment() {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'New Cloth on Old Garment';
     $image = '../images/_JesusChrist/newClothOnOldGarment.webp';
@@ -745,8 +733,7 @@ function parables() {
     $passage = ['9:16', '2:21', '5:36'];
   }
 
-  function newWineInOldWineskins()
-  {
+  function newWineInOldWineskins()  {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'New Wine in Old Wineskins';
     $image = '../images/_JesusChrist/newWineInOldWineskins.webp';
@@ -766,8 +753,7 @@ function parables() {
     $passage = ['9:17', '2:22', '5:37-39'];
   }
 
-  function lampOnStand()
-  {
+  function lampOnStand()  {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Lamp on a Stand';
     $image = '../images/_JesusChrist/lampOnStand.webp';
@@ -786,8 +772,7 @@ function parables() {
     $passage = ['5:14-16', '4:21-22', '8:16-17', '11:33-36'];
   }
 
-  function twoSons()
-  {
+  function twoSons()  {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Two Sons';
     $image = '../images/_JesusChrist/twoSons.webp';
@@ -807,26 +792,7 @@ function parables() {
     $passage = ['21:28-32'];
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  //WE ARE HERE
-
-  function unjustSteward()
-  {
+  function unjustSteward()  {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Unjust Steward';
     $image = '../images/_JesusChrist/unjustSteward.webp';
@@ -847,256 +813,7 @@ function parables() {
     $passage = ['16:1-13'];
   }
 
-  function friendAtMidnight()
-  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
-    $title = 'The Friend at Midnight';
-    $image = '../images/_JesusChrist/friendAtMidnight.webp';
-    $imageAlt = 'Illustration of a person knocking on a door at night';
-    $linked_image = '../images/_JesusChrist/friendAtMidnight.png';
-    $figCaption = 'The Friend at Midnight';
-    $description = 'Teaches persistence in prayer through a story about borrowing bread at night';
-    $paragraphDialogs = ["In this parable, Jesus tells about a guy who had a friend come visit him late at night. The problem was, he didn't have any food to give his visitor! So he went to another friend's house at midnight to ask for some bread.",
-      "The friend was already in bed with his family and didn't want to get up. But the first guy kept knocking and asking, and wouldn't stop.",
-      'Finally, the friend got up and gave him what he needed - not because they were friends, but because the guy was so persistent!',
-      "Jesus used this story to teach us about prayer. God isn't like the grumpy friend who doesn't want to help. But Jesus wants us to understand that we should keep praying and not give up, even when it seems like no one is listening."];
-    $gospel = ['Luke'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=LK11_5'];
-    $passage = ['11:5-8'];
-  }
-
-  function barrenFigTree()
-  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
-    $title = 'The Barren Fig Tree';
-    $image = '../images/_JesusChrist/barrenFigTree.webp';
-    $imageAlt = 'Illustration of a fig tree without fruit';
-    $linked_image = '../images/_JesusChrist/barrenFigTree.png';
-    $figCaption = 'The Barren Fig Tree';
-    $description = "Warns about the consequences of unfruitfulness despite God's patience";
-    $paragraphDialogs = ["Jesus told a story about a man who had a fig tree in his garden that wasn't growing any figs. For three whole years, the man came looking for fruit but found nothing!",
-      'He told his gardener to just cut it down because it was wasting space and soil.',
-      'But the gardener asked for one more chance - he would dig around it and put fertilizer on it. If it grew fruit next year, great! If not, then they could cut it down.',
-      "This parable teaches us that God is patient with us, but He does expect us to grow and change. He gives us chances to become better and produce 'good fruit' in our lives, but His patience won't last forever.",
-      'We need to use the time He gives us to grow and become better people.'];
-    $gospel = ['Luke'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=LK13_6'];
-    $passage = ['13:6-9'];
-  }
-
-  function greatBanquet()
-  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
-    $title = 'The Great Banquet';
-    $image = '../images/_JesusChrist/greatBanquet.webp';
-    $imageAlt = 'Illustration of a grand feast with empty seats and servants inviting new guests';
-    $linked_image = '../images/_JesusChrist/greatBanquet.png';
-    $figCaption = 'The Great Banquet';
-    $description = "Shows how many reject God's invitation while the unlikely are welcomed";
-    $paragraphDialogs = ['Jesus told about a man who planned a huge dinner party and sent out invitations to lots of people. When everything was ready, he sent his servant to tell the guests it was time to come.',
-      "But they all started making excuses! One guy said he bought a field and had to go see it. Another said he bought some oxen and needed to try them out. Another said he just got married so he couldn't come.",
-      'The host got really upset and told his servant to go into the streets and bring in the poor, the disabled, the blind, and the lame instead.',
-      'After doing this, there was still room, so the host sent the servant to the roads and country lanes to invite even more people!',
-      "Jesus used this story to show how many people who should have accepted God's invitation to be part of His kingdom make excuses and miss out. So God welcomes those who society often ignores or looks down on.",
-      "The point is that God's invitation is for everyone, but especially for those who recognize their need for Him."];
-    $gospel = ['Luke'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=LK14_15'];
-    $passage = ['14:15-24'];
-  }
-
-  function buildingTowerAndKingGoingToWar()
-  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
-    $title = 'Building a Tower and King Going to War';
-    $image = '../images/_JesusChrist/buildingTower.webp';
-    $imageAlt = 'Illustration of a person planning a tower and a king planning for battle';
-    $linked_image = '../images/_JesusChrist/buildingTower.png';
-    $figCaption = 'Building a Tower and King Going to War';
-    $description = 'Emphasizes counting the cost of discipleship before committing';
-    $paragraphDialogs = ['Jesus shared two short stories to make people think carefully before deciding to follow Him.',
-      'First, He talked about someone who wants to build a tower. A smart builder would sit down first and figure out how much it would cost to make sure they have enough money to finish it. Otherwise, they might lay the foundation but run out of money, and everyone would laugh at them!',
-      "In the second story, Jesus described a king who's about to go to war against another king. Before fighting, he needs to figure out if his 10,000 soldiers can beat the other king's 20,000 soldiers. If not, he'd better send people to ask for peace terms!",
-      'Jesus used these examples to teach that following Him is a serious decision. We need to understand what it will cost us - like maybe losing friends or facing hard times - and be prepared to go all the way, not just start and then quit when things get tough.'];
-    $gospel = ['Luke'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=LK14_28'];
-    $passage = ['14:28-33'];
-  }
-
-  function unprofitableServants()
-  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
-    $title = 'The Unprofitable Servants';
-    $image = '../images/_JesusChrist/unprofitableServants.webp';
-    $imageAlt = 'Illustration of servants working in a field';
-    $linked_image = '../images/_JesusChrist/unprofitableServants.png';
-    $figCaption = 'The Unprofitable Servants';
-    $description = 'Teaches humility in service, showing we only do our duty before God';
-    $paragraphDialogs = ["Jesus asked His followers to imagine they had a servant who worked in their fields or took care of their sheep. When that servant comes in from working all day, would the master say, 'Hey, come sit down and eat'?",
-      "No way! Instead, the master would tell the servant to make dinner, serve it, and only after the master finished eating could the servant eat. And the master wouldn't thank the servant for doing these things because that's just what servants are supposed to do.",
-      "Jesus then told His disciples that they should have the same attitude. When they've done everything God has commanded them to do, they shouldn't expect special praise or rewards.",
-      "They should simply say, 'We are unprofitable servants; we have only done what was our duty to do.'",
-      "This teaches us to be humble when we serve God and others. We shouldn't serve to get attention or praise, but because it's the right thing to do."];
-    $gospel = ['Luke'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=LK17_7'];
-    $passage = ['17:7-10'];
-  }
-
-  function unjustJudge()
-  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
-    $title = 'The Unjust Judge';
-    $image = '../images/_JesusChrist/unjustJudge.webp';
-    $imageAlt = 'Illustration of a widow persistently appearing before a judge';
-    $linked_image = '../images/_JesusChrist/unjustJudge.png';
-    $figCaption = 'The Unjust Judge';
-    $description = 'Encourages persistent prayer and faith until Jesus returns';
-    $paragraphDialogs = ["Jesus told this story to teach His followers to keep praying and never give up. There was a judge in a certain city who didn't care about God or what people thought about him.",
-      "A widow in that city kept coming to him, asking for justice against someone who had wronged her. For a long time the judge ignored her. But she wouldn't stop asking!",
-      "Finally, the judge thought, 'Even though I don't care about God or people, this woman is driving me crazy with her constant requests. I'll give her justice just to get her to leave me alone!'",
-      'Jesus explained that if even an unfair judge eventually helps because of persistence, how much more will God - who is perfectly good and loves us - answer His people who pray day and night?',
-      "But then Jesus asked a sad question: 'When I come back, will I find people on earth who still have faith?' This reminds us to keep trusting God and praying even when it seems like He's not answering right away."];
-    $gospel = ['Luke'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=LK18_1'];
-    $passage = ['18:1-8'];
-  }
-
-  function blindLeadingTheBlind()
-  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
-    $title = 'Blind Leading the Blind';
-    $image = '../images/_JesusChrist/blindLeadingBlind.webp';
-    $imageAlt = 'Illustration of two blind people where one is trying to lead the other';
-    $linked_image = '../images/_JesusChrist/blindLeadingBlind.png';
-    $figCaption = 'Blind Leading the Blind';
-    $description = 'Warns against following spiritually blind teachers';
-    $paragraphDialogs = ["Jesus asked a really good question: 'Can a blind person lead another blind person?' Of course not! They'd both fall into a ditch!",
-      "This short parable has a simple but important message. If someone doesn't understand the truth about God themselves, they can't properly teach others about Him. It's like trying to give directions to a place you've never been.",
-      "Jesus was warning people to be careful about who they listen to and learn from. Some religious teachers act like they know everything about God, but if they don't really understand God's truth, following them will lead to trouble.",
-      "Jesus also taught that a student isn't better than their teacher - at best, they'll know what their teacher knows. So if we want to grow in our understanding of God, we need to make sure we're learning from people who truly know Him."];
-    $gospel = ['Matthew', 'Luke'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=MT15_14', '?t1=local%3Aeng-web&w1=bible&v1=LK6_39'];
-    $passage = ['15:14', '6:39'];
-  }
-
-  function faithfulAndWiseServant()
-  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
-    $title = 'The Faithful and Wise Servant';
-    $image = '../images/_JesusChrist/faithfulWiseServant.webp';
-    $imageAlt = 'Illustration of a servant managing a household while the master is away';
-    $linked_image = '../images/_JesusChrist/faithfulWiseServant.png';
-    $figCaption = 'The Faithful and Wise Servant';
-    $description = "Contrasts faithful and unfaithful stewardship while waiting for the master's return";
-    $paragraphDialogs = ['Jesus told about a master who put a servant in charge of his household while he went away on a trip. The servant had one main job - to make sure all the other servants were fed at the right time.',
-      "Jesus asked, 'Who is the faithful and wise servant that the master can trust to do this?' A good servant would be found doing his job when the master returned, and the master would reward him by giving him even more responsibility.",
-      "But what if the servant was bad and thought, 'My master is taking a long time to come back,' and started beating the other servants and partying with troublemakers?",
-      "When the master finally returned on a day when the servant wasn't expecting him, he would punish that servant severely!",
-      "Jesus was teaching about how we should live while we wait for Him to return. We shouldn't get lazy or do wrong things just because Jesus hasn't come back yet.",
-      "Instead, we should faithfully do what He's asked us to do, caring for others and living right, so we'll be ready whenever He returns."];
-    $gospel = ['Matthew', 'Luke'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=MT24_45', '?t1=local%3Aeng-web&w1=bible&v1=LK12_42'];
-    $passage = ['24:45-51', '12:42-48'];
-  }
-
-  function watchfulServants()
-  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
-    $title = 'The Watchful Servants';
-    $image = '../images/_JesusChrist/watchfulServants.webp';
-    $imageAlt = "Illustration of servants with lamps lit waiting for their master's return";
-    $linked_image = '../images/_JesusChrist/watchfulServants.png';
-    $figCaption = 'The Watchful Servants';
-    $description = "Emphasizes staying alert and ready for Christ's return";
-    $paragraphDialogs = ['Jesus told His followers to be like servants waiting for their master to return from a wedding feast. These good servants would be dressed and ready for action, with their lamps lit even late at night. When the master knocked, they could immediately open the door.',
-      'The master would be so happy with these watchful servants that he would do something amazing - he would have them sit down while he served them a meal!',
-      "Jesus also compared His return to a thief breaking into a house at night - you don't know exactly when it will happen, so you need to be ready all the time.",
-      'In another version of this teaching, Jesus described a man going on a journey who puts his servants in charge of his house, giving each one a job to do. The doorkeeper especially needs to stay awake and watch because no one knows when the master will return - evening, midnight, when the rooster crows, or at dawn.',
-      "Jesus was teaching us to live in a way that we'd be happy for Him to find us at any moment - not doing wrong things or being lazy, but actively doing what He's asked us to do."];
-    $gospel = ['Mark', 'Luke'];
-    $gospelLinks = ['?v1=MK13_34&w1=bible&t1=local%3Aeng-web', '?t1=local%3Aeng-web&w1=bible&v1=LK12_35'];
-    $passage = ['13:34-37', '12:35-40'];
-  }
-
-  function childrenInTheMarketplace()
-  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
-    $title = 'Children in the Marketplace';
-    $image = '../images/_JesusChrist/childrenMarketplace.webp';
-    $imageAlt = 'Illustration of children playing in a marketplace while others refuse to join';
-    $linked_image = '../images/_JesusChrist/childrenMarketplace.png';
-    $figCaption = 'Children in the Marketplace';
-    $description = 'Illustrates the inconsistent criticism Jesus and John the Baptist received';
-    $paragraphDialogs = ["Jesus noticed how people were never satisfied with God's messengers, no matter what they did. He compared them to kids sitting in the marketplace calling out to other kids: 'We played wedding music for you, but you wouldn't dance! We played funeral music, but you wouldn't cry!'",
-      "Then Jesus explained what He meant. John the Baptist came living super strictly - not drinking wine and barely eating - and people said, 'He's crazy! He has a demon!'",
-      "Then Jesus came, enjoying food and wine at parties with all kinds of people, and the same critics said, 'Look at him! He eats too much, drinks too much, and hangs out with tax collectors and sinners!'",
-      "Jesus was pointing out how some people were just determined to find fault no matter what. These critics weren't being honest or fair - they just didn't want to listen to God's message, so they made excuses about the messengers.",
-      "But Jesus said that wisdom is proved right by its results - both His way and John's way were part of God's plan and produced good fruit in the lives of those who actually listened."];
-    $gospel = ['Matthew', 'Luke'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=MT11_16', '?t1=local%3Aeng-web&w1=bible&v1=LK7_31'];
-    $passage = ['11:16-19', '7:31-35'];
-  }
-
-  function speckAndLog()
-  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
-    $title = 'The Speck and the Log';
-    $image = '../images/_JesusChrist/speckAndLog.webp';
-    $imageAlt = "Illustration of a person with a log in their eye trying to remove a speck from another's eye";
-    $linked_image = '../images/_JesusChrist/speckAndLog.png';
-    $figCaption = 'The Speck and the Log';
-    $description = 'Warns against hypocritical judgment of others';
-    $paragraphDialogs = ["Jesus used a funny picture to teach about judging others. He asked, 'Why do you notice the tiny speck of sawdust in your friend's eye, but completely ignore the massive log sticking out of your own eye?'",
-      'Imagine trying to help someone get a tiny dust particle out of their eye when you have a huge wooden beam sticking out of yours!',
-      "Jesus called people who do this 'hypocrites' - people who criticize others for small mistakes while ignoring their own big problems.",
-      "He said we should first take the log out of our own eye (fix our own major issues), and then we'll be able to see clearly enough to help others with their smaller problems.",
-      "This doesn't mean we should never help others improve - it means we need to be honest about our own faults first. We should deal with our own mistakes before pointing fingers at everyone else.",
-      'Jesus wants us to help each other grow, but with humility and self-awareness, not with a judgmental attitude.'];
-    $gospel = ['Matthew', 'Luke'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=MT7_3', '?t1=local%3Aeng-web&w1=bible&v1=LK6_41'];
-    $passage = ['7:3-5', '6:41-42'];
-  }
-
-  function fishNet()
-  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
-    $title = 'The Fish Net';
-    $image = '../images/_JesusChrist/fishNet.webp';
-    $imageAlt = 'Illustration of fishermen sorting good fish from bad after a catch';
-    $linked_image = '../images/_JesusChrist/fishNet.png';
-    $figCaption = 'The Fish Net';
-    $description = 'Describes the final separation of the righteous and wicked';
-    $paragraphDialogs = ["Jesus said God's kingdom is like a huge fishing net that was thrown into the lake and caught all kinds of fish. When it was full, the fishermen pulled it up on the shore.",
-      'Then they sat down and sorted the good fish into containers, but threw the bad ones away.',
-      'Jesus explained that this is how it will be at the end of the world. Angels will come and separate the wicked people from the righteous ones, and throw the wicked into a fiery furnace, where there will be weeping and gnashing of teeth.',
-      "This parable teaches that right now, both people who truly follow God and people who don't are mixed together in the world - just like different kinds of fish in the same net. But a time is coming when God will sort everyone out.",
-      "It's a serious reminder that our choices now about whether to follow Jesus or not have big consequences for our future. Jesus wants everyone to be counted among the 'good fish' by believing in Him and living according to His teachings."];
-    $gospel = ['Matthew'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=MT13_47'];
-    $passage = ['13:47-50'];
-  }
-
-  function householder()
-  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
-    $title = 'The Householder';
-    $image = '../images/_JesusChrist/householder.webp';
-    $imageAlt = 'Illustration of a homeowner bringing out treasures from storage';
-    $linked_image = '../images/_JesusChrist/householder.png';
-    $figCaption = 'The Householder';
-    $description = 'Compares a teacher of scripture to a homeowner bringing out treasures old and new';
-    $paragraphDialogs = ["After teaching several parables about God's kingdom, Jesus asked His disciples if they understood everything He said. When they answered yes, He gave them one more short comparison.",
-      'He said that every teacher of religious law who has become a disciple in the kingdom of heaven is like the owner of a house who brings out of his storeroom new treasures as well as old.',
-      "This mini-parable is about how Jesus' followers should teach others. A good teacher doesn't just stick to old familiar ideas or only chase after new trends.",
-      "Instead, they're like someone who has collected valuable things over time - some old, some new - and knows when to share each one.",
-      'Jesus was telling His disciples that they should use both the treasured wisdom from the Old Testament scriptures AND the new teachings He was giving them. Both are valuable!',
-      "This teaches us that we should appreciate traditional wisdom while also being open to fresh insights about God's truth."];
-    $gospel = ['Matthew'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=MT13_52'];
-    $passage = ['13:52'];
-  }
-
-  function dishonestManager()
-  {
+  function dishonestManager() {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Dishonest Manager';
     $image = '../images/_JesusChrist/dishonestManager.webp';
@@ -1115,8 +832,242 @@ function parables() {
     $passage = ['16:1-9'];
   }
 
-  function goodShepherd()
-  {
+  function friendAtMidnight() {
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    $title = 'The Friend at Midnight';
+    $image = '../images/_JesusChrist/friendAtMidnight.webp';
+    $imageAlt = 'Illustration of a person knocking on a door at night';
+    $linked_image = '../images/_JesusChrist/friendAtMidnight.png';
+    $figCaption = 'The Parable of the Friend at Midnight';
+    $description = 'Teaches persistence in prayer through a story about borrowing bread at night';
+    $paragraphDialogs = ["In this parable, Jesus tells about a guy who had a friend come visit him late at night. The problem was, he didn't have any food to give his visitor! So he went to another friend's house at midnight to ask for some bread.",
+      "The friend was already in bed with his family and didn't want to get up. But the first guy kept knocking and asking, and wouldn't stop.",
+      'Finally, the friend got up and gave him what he needed - not because they were friends, but because the guy was so persistent!',
+      "Jesus used this story to teach us about prayer. God isn't like the grumpy friend who doesn't want to help. But Jesus wants us to understand that we should keep praying and not give up, even when it seems like no one is listening."];
+    $gospel = ['Luke'];
+    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=LK11_5'];
+    $passage = ['11:5-8'];
+  }
+
+  function barrenFigTree()  {
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    $title = 'The Barren Fig Tree';
+    $image = '../images/_JesusChrist/barrenFigTree.webp';
+    $imageAlt = 'Illustration of a fig tree without fruit';
+    $linked_image = '../images/_JesusChrist/barrenFigTree.png';
+    $figCaption = 'The Parable of the Barren Fig Tree';
+    $description = "Warns about the consequences of unfruitfulness despite God's patience";
+    $paragraphDialogs = ["Jesus told a story about a man who had a fig tree in his garden that wasn't growing any figs. For three whole years, the man came looking for fruit but found nothing!",
+      'He told his gardener to just cut it down because it was wasting space and soil.',
+      'But the gardener asked for one more chance - he would dig around it and put fertilizer on it. If it grew fruit next year, great! If not, then they could cut it down.',
+      "This parable teaches us that God is patient with us, but He does expect us to grow and change. He gives us chances to become better and produce 'good fruit' in our lives, but His patience won't last forever.",
+      'We need to use the time He gives us to grow and become better people.'];
+    $gospel = ['Luke'];
+    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=LK13_6'];
+    $passage = ['13:6-9'];
+  }
+
+  function greatBanquet() {
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    $title = 'The Great Banquet';
+    $image = '../images/_JesusChrist/greatBanquet.webp';
+    $imageAlt = 'Illustration of a grand feast with empty seats and servants inviting new guests';
+    $linked_image = '../images/_JesusChrist/greatBanquet.png';
+    $figCaption = 'The Parable of the Great Banquet';
+    $description = "Shows how many reject God's invitation while the unlikely are welcomed";
+    $paragraphDialogs = ['Jesus told about a man who planned a huge dinner party and sent out invitations to lots of people. When everything was ready, he sent his servant to tell the guests it was time to come.',
+      "But they all started making excuses! One guy said he bought a field and had to go see it. Another said he bought some oxen and needed to try them out. Another said he just got married so he couldn't come.",
+      'The host got really upset and told his servant to go into the streets and bring in the poor, the disabled, the blind, and the lame instead.',
+      'After doing this, there was still room, so the host sent the servant to the roads and country lanes to invite even more people!',
+      "Jesus used this story to show how many people who should have accepted God's invitation to be part of His kingdom make excuses and miss out. So God welcomes those who society often ignores or looks down on.",
+      "The point is that God's invitation is for everyone, but especially for those who recognize their need for Him."];
+    $gospel = ['Luke'];
+    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=LK14_15'];
+    $passage = ['14:15-24'];
+  }
+
+  function buildingTowerAndKingGoingToWar() {
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    $title = 'Building a Tower and King Going to War';
+    $image = '../images/_JesusChrist/buildingTower.webp';
+    $imageAlt = 'Illustration of a person planning a tower and a king planning for battle';
+    $linked_image = '../images/_JesusChrist/buildingTower.png';
+    $figCaption = 'Building a Tower and King Going to War';
+    $description = 'Emphasizes counting the cost of discipleship before committing';
+    $paragraphDialogs = ['Jesus shared two short stories to make people think carefully before deciding to follow Him.',
+      'First, He talked about someone who wants to build a tower. A smart builder would sit down first and figure out how much it would cost to make sure they have enough money to finish it. Otherwise, they might lay the foundation but run out of money, and everyone would laugh at them!',
+      "In the second story, Jesus described a king who's about to go to war against another king. Before fighting, he needs to figure out if his 10,000 soldiers can beat the other king's 20,000 soldiers. If not, he'd better send people to ask for peace terms!",
+      'Jesus used these examples to teach that following Him is a serious decision. We need to understand what it will cost us - like maybe losing friends or facing hard times - and be prepared to go all the way, not just start and then quit when things get tough.'];
+    $gospel = ['Luke'];
+    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=LK14_28'];
+    $passage = ['14:28-33'];
+  }
+
+  function unprofitableServants() {
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    $title = 'The Unprofitable Servants';
+    $image = '../images/_JesusChrist/unprofitableServants.webp';
+    $imageAlt = 'Illustration of servants working in a field';
+    $linked_image = '../images/_JesusChrist/unprofitableServants.png';
+    $figCaption = 'The Unprofitable Servants';
+    $description = 'Teaches humility in service, showing we only do our duty before God';
+    $paragraphDialogs = ["Jesus asked His followers to imagine they had a servant who worked in their fields or took care of their sheep. When that servant comes in from working all day, would the master say, 'Hey, come sit down and eat'?",
+      "No way! Instead, the master would tell the servant to make dinner, serve it, and only after the master finished eating could the servant eat. And the master wouldn't thank the servant for doing these things because that's just what servants are supposed to do.",
+      "Jesus then told His disciples that they should have the same attitude. When they've done everything God has commanded them to do, they shouldn't expect special praise or rewards.",
+      "They should simply say, 'We are unprofitable servants; we have only done what was our duty to do.'",
+      "This teaches us to be humble when we serve God and others. We shouldn't serve to get attention or praise, but because it's the right thing to do."];
+    $gospel = ['Luke'];
+    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=LK17_7'];
+    $passage = ['17:7-10'];
+  }
+
+  function unjustJudge()  {
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    $title = 'The Unjust Judge';
+    $image = '../images/_JesusChrist/unjustJudge.webp';
+    $imageAlt = 'Illustration of a widow persistently appearing before a judge';
+    $linked_image = '../images/_JesusChrist/unjustJudge.png';
+    $figCaption = 'The Unjust Judge';
+    $description = 'Encourages persistent prayer and faith until Jesus returns';
+    $paragraphDialogs = ["Jesus told this story to teach His followers to keep praying and never give up. There was a judge in a certain city who didn't care about God or what people thought about him.",
+      "A widow in that city kept coming to him, asking for justice against someone who had wronged her. For a long time the judge ignored her. But she wouldn't stop asking!",
+      "Finally, the judge thought, 'Even though I don't care about God or people, this woman is driving me crazy with her constant requests. I'll give her justice just to get her to leave me alone!'",
+      'Jesus explained that if even an unfair judge eventually helps because of persistence, how much more will God - who is perfectly good and loves us - answer His people who pray day and night?',
+      "But then Jesus asked a sad question: 'When I come back, will I find people on earth who still have faith?' This reminds us to keep trusting God and praying even when it seems like He's not answering right away."];
+    $gospel = ['Luke'];
+    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=LK18_1'];
+    $passage = ['18:1-8'];
+  }
+
+  function blindLeadingTheBlind() {
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    $title = 'Blind Leading the Blind';
+    $image = '../images/_JesusChrist/blindLeadingBlind.webp';
+    $imageAlt = 'Illustration of two blind people where one is trying to lead the other';
+    $linked_image = '../images/_JesusChrist/blindLeadingBlind.png';
+    $figCaption = 'Blind Leading the Blind';
+    $description = 'Warns against following spiritually blind teachers';
+    $paragraphDialogs = ["Jesus asked a really good question: 'Can a blind person lead another blind person?' Of course not! They'd both fall into a ditch!",
+      "This short parable has a simple but important message. If someone doesn't understand the truth about God themselves, they can't properly teach others about Him. It's like trying to give directions to a place you've never been.",
+      "Jesus was warning people to be careful about who they listen to and learn from. Some religious teachers act like they know everything about God, but if they don't really understand God's truth, following them will lead to trouble.",
+      "Jesus also taught that a student isn't better than their teacher - at best, they'll know what their teacher knows. So if we want to grow in our understanding of God, we need to make sure we're learning from people who truly know Him."];
+    $gospel = ['Matthew', 'Luke'];
+    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=MT15_14', '?t1=local%3Aeng-web&w1=bible&v1=LK6_39'];
+    $passage = ['15:14', '6:39'];
+  }
+
+  function faithfulAndWiseServant() {
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    $title = 'The Faithful and Wise Servant';
+    $image = '../images/_JesusChrist/faithfulWiseServant.webp';
+    $imageAlt = 'Illustration of a servant managing a household while the master is away';
+    $linked_image = '../images/_JesusChrist/faithfulWiseServant.png';
+    $figCaption = 'The Faithful and Wise Servant';
+    $description = "Contrasts faithful and unfaithful stewardship while waiting for the master's return";
+    $paragraphDialogs = ['Jesus told about a master who put a servant in charge of his household while he went away on a trip. The servant had one main job - to make sure all the other servants were fed at the right time.',
+      "Jesus asked, 'Who is the faithful and wise servant that the master can trust to do this?' A good servant would be found doing his job when the master returned, and the master would reward him by giving him even more responsibility.",
+      "But what if the servant was bad and thought, 'My master is taking a long time to come back,' and started beating the other servants and partying with troublemakers?",
+      "When the master finally returned on a day when the servant wasn't expecting him, he would punish that servant severely!",
+      "Jesus was teaching about how we should live while we wait for Him to return. We shouldn't get lazy or do wrong things just because Jesus hasn't come back yet.",
+      "Instead, we should faithfully do what He's asked us to do, caring for others and living right, so we'll be ready whenever He returns."];
+    $gospel = ['Matthew', 'Luke'];
+    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=MT24_45', '?t1=local%3Aeng-web&w1=bible&v1=LK12_42'];
+    $passage = ['24:45-51', '12:42-48'];
+  }
+
+  function watchfulServants() {
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    $title = 'The Watchful Servants';
+    $image = '../images/_JesusChrist/watchfulServants.webp';
+    $imageAlt = "Illustration of servants with lamps lit waiting for their master's return";
+    $linked_image = '../images/_JesusChrist/watchfulServants.png';
+    $figCaption = 'The Watchful Servants';
+    $description = "Emphasizes staying alert and ready for Christ's return";
+    $paragraphDialogs = ['Jesus told His followers to be like servants waiting for their master to return from a wedding feast. These good servants would be dressed and ready for action, with their lamps lit even late at night. When the master knocked, they could immediately open the door.',
+      'The master would be so happy with these watchful servants that he would do something amazing - he would have them sit down while he served them a meal!',
+      "Jesus also compared His return to a thief breaking into a house at night - you don't know exactly when it will happen, so you need to be ready all the time.",
+      'In another version of this teaching, Jesus described a man going on a journey who puts his servants in charge of his house, giving each one a job to do. The doorkeeper especially needs to stay awake and watch because no one knows when the master will return - evening, midnight, when the rooster crows, or at dawn.',
+      "Jesus was teaching us to live in a way that we'd be happy for Him to find us at any moment - not doing wrong things or being lazy, but actively doing what He's asked us to do."];
+    $gospel = ['Mark', 'Luke'];
+    $gospelLinks = ['?v1=MK13_34&w1=bible&t1=local%3Aeng-web', '?t1=local%3Aeng-web&w1=bible&v1=LK12_35'];
+    $passage = ['13:34-37', '12:35-40'];
+  }
+
+  function childrenInTheMarketplace() {
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    $title = 'Children in the Marketplace';
+    $image = '../images/_JesusChrist/childrenMarketplace.webp';
+    $imageAlt = 'Illustration of children playing in a marketplace while others refuse to join';
+    $linked_image = '../images/_JesusChrist/childrenMarketplace.png';
+    $figCaption = 'Children in the Marketplace';
+    $description = 'Illustrates the inconsistent criticism Jesus and John the Baptist received';
+    $paragraphDialogs = ["Jesus noticed how people were never satisfied with God's messengers, no matter what they did. He compared them to kids sitting in the marketplace calling out to other kids: 'We played wedding music for you, but you wouldn't dance! We played funeral music, but you wouldn't cry!'",
+      "Then Jesus explained what He meant. John the Baptist came living super strictly - not drinking wine and barely eating - and people said, 'He's crazy! He has a demon!'",
+      "Then Jesus came, enjoying food and wine at parties with all kinds of people, and the same critics said, 'Look at him! He eats too much, drinks too much, and hangs out with tax collectors and sinners!'",
+      "Jesus was pointing out how some people were just determined to find fault no matter what. These critics weren't being honest or fair - they just didn't want to listen to God's message, so they made excuses about the messengers.",
+      "But Jesus said that wisdom is proved right by its results - both His way and John's way were part of God's plan and produced good fruit in the lives of those who actually listened."];
+    $gospel = ['Matthew', 'Luke'];
+    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=MT11_16', '?t1=local%3Aeng-web&w1=bible&v1=LK7_31'];
+    $passage = ['11:16-19', '7:31-35'];
+  }
+
+  function speckAndLog()  {
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    $title = 'The Speck and the Log';
+    $image = '../images/_JesusChrist/speckAndLog.webp';
+    $imageAlt = "Illustration of a person with a log in their eye trying to remove a speck from another's eye";
+    $linked_image = '../images/_JesusChrist/speckAndLog.png';
+    $figCaption = 'The Speck and the Log';
+    $description = 'Warns against hypocritical judgment of others';
+    $paragraphDialogs = ["Jesus used a funny picture to teach about judging others. He asked, 'Why do you notice the tiny speck of sawdust in your friend's eye, but completely ignore the massive log sticking out of your own eye?'",
+      'Imagine trying to help someone get a tiny dust particle out of their eye when you have a huge wooden beam sticking out of yours!',
+      "Jesus called people who do this 'hypocrites' - people who criticize others for small mistakes while ignoring their own big problems.",
+      "He said we should first take the log out of our own eye (fix our own major issues), and then we'll be able to see clearly enough to help others with their smaller problems.",
+      "This doesn't mean we should never help others improve - it means we need to be honest about our own faults first. We should deal with our own mistakes before pointing fingers at everyone else.",
+      'Jesus wants us to help each other grow, but with humility and self-awareness, not with a judgmental attitude.'];
+    $gospel = ['Matthew', 'Luke'];
+    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=MT7_3', '?t1=local%3Aeng-web&w1=bible&v1=LK6_41'];
+    $passage = ['7:3-5', '6:41-42'];
+  }
+
+  function fishNet()  {
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    $title = 'The Fish Net';
+    $image = '../images/_JesusChrist/fishNet.webp';
+    $imageAlt = 'Illustration of fishermen sorting good fish from bad after a catch';
+    $linked_image = '../images/_JesusChrist/fishNet.png';
+    $figCaption = 'The Fish Net';
+    $description = 'Describes the final separation of the righteous and wicked';
+    $paragraphDialogs = ["Jesus said God's kingdom is like a huge fishing net that was thrown into the lake and caught all kinds of fish. When it was full, the fishermen pulled it up on the shore.",
+      'Then they sat down and sorted the good fish into containers, but threw the bad ones away.',
+      'Jesus explained that this is how it will be at the end of the world. Angels will come and separate the wicked people from the righteous ones, and throw the wicked into a fiery furnace, where there will be weeping and gnashing of teeth.',
+      "This parable teaches that right now, both people who truly follow God and people who don't are mixed together in the world - just like different kinds of fish in the same net. But a time is coming when God will sort everyone out.",
+      "It's a serious reminder that our choices now about whether to follow Jesus or not have big consequences for our future. Jesus wants everyone to be counted among the 'good fish' by believing in Him and living according to His teachings."];
+    $gospel = ['Matthew'];
+    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=MT13_47'];
+    $passage = ['13:47-50'];
+  }
+
+  function householder()  {
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    $title = 'The Householder';
+    $image = '../images/_JesusChrist/householder.webp';
+    $imageAlt = 'Illustration of a homeowner bringing out treasures from storage';
+    $linked_image = '../images/_JesusChrist/householder.png';
+    $figCaption = 'The Householder';
+    $description = 'Compares a teacher of scripture to a homeowner bringing out treasures old and new';
+    $paragraphDialogs = ["After teaching several parables about God's kingdom, Jesus asked His disciples if they understood everything He said. When they answered yes, He gave them one more short comparison.",
+      'He said that every teacher of religious law who has become a disciple in the kingdom of heaven is like the owner of a house who brings out of his storeroom new treasures as well as old.',
+      "This mini-parable is about how Jesus' followers should teach others. A good teacher doesn't just stick to old familiar ideas or only chase after new trends.",
+      "Instead, they're like someone who has collected valuable things over time - some old, some new - and knows when to share each one.",
+      'Jesus was telling His disciples that they should use both the treasured wisdom from the Old Testament scriptures AND the new teachings He was giving them. Both are valuable!',
+      "This teaches us that we should appreciate traditional wisdom while also being open to fresh insights about God's truth."];
+    $gospel = ['Matthew'];
+    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=MT13_52'];
+    $passage = ['13:52'];
+  }
+
+  function goodShepherd() {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Good Shepherd';
     $image = '../images/_JesusChrist/goodShepherd.webp';
@@ -1135,8 +1086,7 @@ function parables() {
     $passage = ['10:1-18'];
   }
 
-  function vineAndBranches()
-  {
+  function vineAndBranches()  {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Vine and the Branches';
     $image = '../images/_JesusChrist/vineAndBranches.webp';
@@ -1154,8 +1104,7 @@ function parables() {
     $passage = ['15:1-8'];
   }
 
-  function masterAndServant()
-  {
+  function masterAndServant() {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Master and Servant';
     $image = '../images/_JesusChrist/masterAndServant.webp';
@@ -1226,8 +1175,7 @@ function parabolas(){
     $enlaceImagen = '../images/_JesusChrist/wheatAndTheWeeds.png';
     $figLeyenda = 'La Parabola de el Trigo y la Cizaña';
     $descripcion = 'Ilustra el reino de Dios como un agricultor que sembró buena semilla en su campo pero sus enemigos plantaron cizaña en su campo. Jesús separará el trigo de la cizaña al tiempo de la cosecha';
-    $dialogoParrafo = [
-      'El Reino de Dios es como un agricultor que sembró buena semilla en su campo. Pero una noche, mientras todos dormían, su enemigo vino y sembró hierba mala entre el trigo, y luego se fue.',
+    $dialogoParrafo = ['El Reino de Dios es como un agricultor que sembró buena semilla en su campo. Pero una noche, mientras todos dormían, su enemigo vino y sembró hierba mala entre el trigo, y luego se fue.',
       'Cuando los trigos crecieron y produjeron grano, también apareció la cizaña. Los trabajadores del agricultor le dijeron: "Señor, plantaste buena semilla, ¿De dónde vino toda esta cizaña?" Él les dijo: "Un enemigo lo hizo." Los trabajadores le preguntaron: "¿Quieres que vayamos y arranquemos la hierba mala?"',
       'Pero él respondió: "No, porque si arrancan la cizaña, también arrancarán el trigo. Dejaré crecer ambas hasta la cosecha. Cuando sea el tiempo de la cosecha, le diré a los segadores:<br /> \'Primero, junten la cizaña en manojos y quémenla. Luego, coloquen el trigo en mi granero.\'"',
       'Jesús explicó que esta historia nos enseña que las personas buenas y malas conviven juntas en el mundo, pero que Dios no va a separarlas antes de tiempo para no dañar a los que son suyos.',
