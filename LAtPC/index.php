@@ -164,6 +164,19 @@ function _JesusChrist($sub_route)
 			include '_JesusChrist/parables.php';
 			break;
 
+		case 'sermons':
+			$page = new Structure('../../','english','Sermons');
+			$keywords = 'Keyword_test';
+			$description = 'Description_test';
+			include '_JesusChrist/sermons.php';
+			break;
+		case 'sermones':
+			$page = new Structure('../../','español','Sermones');
+			$keywords = 'Keyword_test';
+			$description = 'Description_test';
+			include '_JesusChrist/sermons.php';
+			break;
+
 		case '':
 			echo 'Jesus Christ Main Page';
 			break;
@@ -179,8 +192,7 @@ $page = new Structure('../', 'english', 'Home LatinosPC');
 $keywords = 'test_Keywords';
 $description = 'test_Description';
 
-function content_home()
-{
+function content_home()	{
 	?>
 	<section class="homepage-grid">
 		<div class="grid-item">
@@ -195,7 +207,7 @@ function content_home()
 			<a href="JesusChrist/father_in_heaven_tell_me_about_web" class="cta-button">Tell me about the web</a>
 			<a href="JesusChrist/apostles" class="cta-button">Apostles</a>
 			<a href="JesusChrist/parables" class="cta-button">Parables</a>
-			<a href="#" class="cta-button">Sermons</a>
+			<a href="JesusChrist/sermons" class="cta-button">Sermons</a>
 			<a href="#" class="cta-button">Teachings</a>
 		</div>
 

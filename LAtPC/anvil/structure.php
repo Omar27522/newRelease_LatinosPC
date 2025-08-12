@@ -85,9 +85,9 @@
 
                         <a href="<?php
                         if($page->getLang() == "en"):
-                           echo "#";
+                           echo $page->getDir(). "LAtPC/JesusChrist/sermons";
                         elseif($page->getLang() == "es-419"):
-                           echo "#";
+                           echo $page->getDir(). "LAtPC/Jesucristo/sermones";
                         endif;?>">
                             <li><?php
                         if($page->getLang() == "en"):
@@ -282,6 +282,8 @@
         elseif($page->getLang() == "es-419" && $page->getTitle() == "Los Apóstoles"): apostoles();
         elseif($page->getLang() == "en" && $page->getTitle() == "Parables"): parables();
         elseif($page->getLang() == "es-419" && $page->getTitle() == "Parabolas"): parabolas();
+        elseif($page->getLang() == "en" && $page->getTitle() == "Sermons"): sermons();
+        elseif($page->getLang() == "es-419" && $page->getTitle() == "Sermones"): sermones();
 
         elseif($page->getLang() == "en" && $page->getTitle() == "Template"): template();
         endif;?>

@@ -15,7 +15,7 @@ function contenido_inicio (){
     <a href="Jesucristo/padre_celestial_cuentame_sobre_el_internet" class="cta-button">Háblame de la web</a>
     <a href="Jesucristo/apostoles" class="cta-button">Apóstoles</a>
     <a href="Jesucristo/parabolas" class="cta-button">Parábolas</a>
-    <a href="#" class="cta-button">Sermones</a>
+    <a href="Jesucristo/sermones" class="cta-button">Sermones</a>
     <a href="#" class="cta-button">Enseñanzas</a>
 </div>
 

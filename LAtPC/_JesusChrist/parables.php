@@ -137,7 +137,7 @@ function content () {
           <li><?= !empty ($introduction) ? $introduction[$list][4] : $introducion[$lista][4];?></li>
       </ul>
     </div>
-    <h2 class="section-title"><?= !empty ($_JesusChrist) ? $_JesusChrist[1] : $_Jesucristo[1]; ?></h2>
+    <h2 id="^" class="section-title"><?= !empty ($_JesusChrist) ? $_JesusChrist[1] : $_Jesucristo[1]; ?></h2>
     <table>
       <tr>
         <th><?= !empty ($introduction) ? $introduction[0] : $introducion[0];?></th>
