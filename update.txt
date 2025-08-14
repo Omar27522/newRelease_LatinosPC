@@ -38,7 +38,9 @@
         Also I would like to implement the Carousel, but I am guessing that will have to be done in a later update, for now it seems all is good.
     (8/12/2025|Update) Sermons Page has been integrated.
         Next step will be the translation of it.
-
+    (8/14/2025|Update) The Sermons and Discourses page and the teachings page go side by side.
+        Although the content is good, the way that is HTMLized is not the best.
+            There will be more editions and revisions to these two pages.
 
 
 

@@ -16,7 +16,7 @@ function contenido_inicio (){
     <a href="Jesucristo/apostoles" class="cta-button">Apóstoles</a>
     <a href="Jesucristo/parabolas" class="cta-button">Parábolas</a>
     <a href="Jesucristo/sermones" class="cta-button">Sermones</a>
-    <a href="#" class="cta-button">Enseñanzas</a>
+    <a href="Jesucristo/enseñanzas" class="cta-button">Enseñanzas</a>
 </div>
 
 <div class="grid-item">
