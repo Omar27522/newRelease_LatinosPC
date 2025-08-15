@@ -1,5 +1,5 @@
 <?php
-function sermons() {
+function content(){
     ?>
     <style>
         fieldset {
@@ -27,6 +27,11 @@ function sermons() {
             background: linear-gradient(45deg, var(--primary-color), var(--secondary-dark));
         }
     </style>
+    <?php
+}
+function sermons() {
+    ?>
+    
     <article class="fullbar">
         <fieldset><legend><h1>Sermons and Discourses</h1></legend>
     <a href="teachings?gospels#Olivet%20Discourse">Olivet Discourse</a>
@@ -43,8 +48,10 @@ function sermons() {
     </fieldset>
     </article>
     <?php
+    content();
 }
 function sermones() {
     echo ' <article class="fullbar">¡Hola!</article>';
+    content();
 }
 include './anvil/structure.php';

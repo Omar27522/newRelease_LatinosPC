@@ -109,6 +109,7 @@ function content(){
     font-size: 1.5em;
     margin: -2%;
 }
+
 .story-box:hover::before {
     transform: translateY(-2px);
     background-color: transparent;
@@ -126,27 +127,30 @@ function content(){
     cursor: grab;
 }
 
+details {
+    background-color: var(--card-bg);
+    gap: 15px;
+    padding: 20px;
+}
+
+details:open {
+    background-color: var(--dialog-text-highlight);
+    color: var(--primary-dark);
+}
+
 summary {
-    border: var(--primary-dark) solid 10px;
-    background-color: var(--secondary-dark);
+    border: var(--secondary-color) solid 10px;
+    background-color: var(--dialog-text-highlight);
     color: var(--primary-dark);
     list-style-type: '⬇ ';
     cursor: pointer;
-
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 summary::marker {
-    color: var(--card-bg);
-    font-size: 1.3rem;
-}
-
-details {
-    background-color: var(--primary-dark);
-    color: var(--dialog-text-highlight);
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
+    color: var(--primary-dark);
+    font-size: 1.7rem;
 }
 
 .references-list {
@@ -200,6 +204,12 @@ details {
 
     .nav-links {
         grid-template-columns: 1fr;
+    }
+    
+}
+@media (min-width: 768px) {
+    pre {
+        font-size: 1.5rem;
     }
 }
 </style>
@@ -262,45 +272,46 @@ function teachings()  {
             being ready for when He comes back.</p>
     </div>
 
-    <details>
-        <summary>Matthew</summary> Version (Matthew 23-25) provides the most comprehensive account of this
-        discourse. Matthew's presentation includes not only the prophetic elements found in the
-        other Gospels but also additional parables and teachings about judgment and
-        preparedness. The discourse begins with Jesus's denunciation of the scribes and
-        Pharisees in chapter 23, moves through prophecies about the destruction of Jerusalem
-        and signs of the end times in chapter 24, and concludes with parables about the final
-        judgment in chapter 25. This extended treatment reflects Matthew's systematic
-        approach to organizing Jesus's teachings and his emphasis on Jesus as the authoritative
-        teacher and judge.
-    </details>
+    <div class="highlight-box">
+        <details>
+            <summary>Matthew</summary> Version (Matthew 23-25) provides the most comprehensive account of this
+            discourse. Matthew's presentation includes not only the prophetic elements found in the
+            other Gospels but also additional parables and teachings about judgment and
+            preparedness. The discourse begins with Jesus's denunciation of the scribes and
+            Pharisees in chapter 23, moves through prophecies about the destruction of Jerusalem
+            and signs of the end times in chapter 24, and concludes with parables about the final
+            judgment in chapter 25. This extended treatment reflects Matthew's systematic
+            approach to organizing Jesus's teachings and his emphasis on Jesus as the authoritative
+            teacher and judge.
+        </details>
 
-    <details>
-        <summary>Mark</summary> (Mark 13:5-37) offers a more concise but equally powerful presentation
-        of the same material. Mark's account focuses primarily on the prophetic warnings and
-        signs, maintaining his characteristic emphasis on immediate action and urgency. The
-        use of the word "immediately" throughout Mark's Gospel creates a sense of pressing
-        concern that permeates his version of the Olivet Discourse. Mark's presentation serves
-        his overall theme of Jesus as the suffering servant whose followers must be prepared for
-        persecution and tribulation.
-    </details>
-    <details>
-        <summary>Luke</summary> (Luke 21:5-36) provides yet another perspective on this crucial teaching.
-        Luke's account includes unique elements that reflect his concern for Gentile readers and
-        his emphasis on the universal scope of Jesus's message. Luke's version contains specific
-        warnings about the destruction of Jerusalem that are more detailed than those found in
-        Matthew and Mark, possibly reflecting Luke's writing after the actual destruction of the
-        temple in 70 AD.
-    </details>
+        <details>
+            <summary>Mark</summary> (Mark 13:5-37) offers a more concise but equally powerful presentation
+            of the same material. Mark's account focuses primarily on the prophetic warnings and
+            signs, maintaining his characteristic emphasis on immediate action and urgency. The
+            use of the word "immediately" throughout Mark's Gospel creates a sense of pressing
+            concern that permeates his version of the Olivet Discourse. Mark's presentation serves
+            his overall theme of Jesus as the suffering servant whose followers must be prepared for
+            persecution and tribulation.
+        </details>
+        <details>
+            <summary>Luke</summary> (Luke 21:5-36) provides yet another perspective on this crucial teaching.
+            Luke's account includes unique elements that reflect his concern for Gentile readers and
+            his emphasis on the universal scope of Jesus's message. Luke's version contains specific
+            warnings about the destruction of Jerusalem that are more detailed than those found in
+            Matthew and Mark, possibly reflecting Luke's writing after the actual destruction of the
+            temple in 70 AD.
+        </details>
 
-    <details>
-        <summary>John</summary>
-        Rather than including a direct parallel to the Olivet Discourse, John incorporates
-        eschatological themes throughout his Gospel, particularly in the Farewell Discourse
-        (John 13-17). John's emphasis on eternal life as a present reality rather than merely a
-        future hope provides a different theological perspective on the same ultimate concerns
-        addressed in the Olivet Discourse.
-    </details>
-
+        <details>
+            <summary>John</summary>
+            Rather than including a direct parallel to the Olivet Discourse, John incorporates
+            eschatological themes throughout his Gospel, particularly in the Farewell Discourse
+            (John 13-17). John's emphasis on eternal life as a present reality rather than merely a
+            future hope provides a different theological perspective on the same ultimate concerns
+            addressed in the Olivet Discourse.
+        </details>
+    </div>
 
     <p>Think of it like this: if your parents told you they were going on a trip but would come back, they might
         give you instructions about what to do while they're gone. They'd want you to be good, and be ready for when
@@ -362,7 +373,8 @@ function teachings()  {
         </p>
     </fieldset>
 
-    <h3 id="Sermon on the Mount"><span class="emoji">⛰️</span>Lesson 1: The Sermon on the Mount (How to Live a Good Life)</h3>
+    <h3 id="Sermon on the Mount"><span class="emoji">⛰️</span>Lesson 1: The Sermon on the Mount (How to Live a Good
+        Life)</h3>
     <p>This is probably the most famous teaching Jesus ever gave. He went up on a mountain and taught a huge crowd
         of
         people about how to live in a way that makes God happy.</p>
@@ -421,7 +433,8 @@ function teachings()  {
 
     <div class="story-box">
         <h4>Teachings on Worry and Judgment (Matthew 6:25-7:6)</h4>
-        <p>address practical concerns of daily life while maintaining focus on spiritual priorities. Jesus's teaching about not
+        <p>address practical concerns of daily life while maintaining focus on spiritual priorities. Jesus's teaching
+            about not
             worrying about food and clothing, illustrated with references to birds and lilies, has
             provided comfort and guidance to countless believers throughout history. The famous
             teaching about not judging others (Matthew 7:1-6) establishes principles for community
@@ -444,7 +457,8 @@ function teachings()  {
     <p>In a different instance Jesus was preaching to a crowd and told them that it was better to pray in your room
         alone, than in the temple for everyone to see.</p>
 
-    <h3 id="The Mission Discourse"><span class="emoji">🔔</span>The Second Discourse: The Mission Discourse (Matthew 10)</h3>
+    <h3 id="The Mission Discourse"><span class="emoji">🔔</span>The Second Discourse: The Mission Discourse (Matthew 10)
+    </h3>
     <div class="highlight-box">
         <p>The Mission Discourse, also known as the Little Commission, provides detailed
             instructions for the Twelve Apostles as they embark on their first missionary journey.
@@ -488,7 +502,8 @@ function teachings()  {
             apparent loss leads to ultimate gain.</p>
     </div>
 
-    <h3 id="The Parabolic Discourse"><span class="emoji">🔔</span>The Third Discourse: The Parabolic Discourse (Matthew 13)</h3>
+    <h3 id="The Parabolic Discourse"><span class="emoji">🔔</span>The Third Discourse: The Parabolic Discourse (Matthew
+        13)</h3>
     <div class="highlight-box">
         <p>The Parabolic Discourse represents Jesus's most systematic presentation of Kingdom
             teaching through the use of parables. This discourse includes seven parables specifically
@@ -541,7 +556,8 @@ function teachings()  {
             using the familiar image of fishing to make the teaching accessible to Jesus's audience.</p>
     </div>
 
-    <h3 id="The Discourse on the Church"><span class="emoji">🔔</span>The Fourth Discourse: The Discourse on the Church (Matthew 18)</h3>
+    <h3 id="The Discourse on the Church"><span class="emoji">🔔</span>The Fourth Discourse: The Discourse on the Church
+        (Matthew 18)</h3>
     <div class="highlight-box">
         <p>The Discourse on the Church represents Matthew's unique contribution to
             understanding Christian community life and church governance. This discourse is
@@ -585,7 +601,8 @@ function teachings()  {
             extend the same grace to others, with serious consequences for those who fail to do so.</p>
     </div>
 
-    <h3 id="The Olivet Discourse"><span class="emoji">🔔</span>The Fifth Discourse: The Olivet Discourse (Matthew 23-25)</h3>
+    <h3 id="The Olivet Discourse"><span class="emoji">🔔</span>The Fifth Discourse: The Olivet Discourse (Matthew 23-25)
+    </h3>
     <div class="highlight-box">
         <p>The Olivet Discourse represents the culmination of Matthew's presentation of Jesus's
             teaching ministry, combining prophetic warnings, ethical instruction, and eschatological
@@ -845,23 +862,23 @@ function teachings()  {
         fountain of water springing up into everlasting life" (John 4:14). This metaphor of living
         water builds on Old Testament imagery of God as the source of living water (Jeremiah
         2:13, 17:13) while pointing to the spiritual satisfaction that comes through relationship
-    with Christ.</p>
+        with Christ.</p>
     <p class="story-box"><br />
         True Worship (John 4:16-24) shifts to a discussion of worship after Jesus
-    demonstrates
-    supernatural knowledge of the woman's marital history. When she raises the question of
-    the proper location for worship—Mount Gerizim for Samaritans or Jerusalem for Jews—
-    Jesus transcends the geographical dispute by declaring that "the hour is coming, and
-    now is, when the true worshipers will worship the Father in spirit and truth" (John 4:23).
-    This teaching establishes that authentic worship depends not on location but on the
-    worshiper's spiritual condition and relationship with God.</p>
+        demonstrates
+        supernatural knowledge of the woman's marital history. When she raises the question of
+        the proper location for worship—Mount Gerizim for Samaritans or Jerusalem for Jews—
+        Jesus transcends the geographical dispute by declaring that "the hour is coming, and
+        now is, when the true worshipers will worship the Father in spirit and truth" (John 4:23).
+        This teaching establishes that authentic worship depends not on location but on the
+        worshiper's spiritual condition and relationship with God.</p>
     <p class="story-box"><br />
         The Messiah's Self-Revelation (John 4:25-26) represents one of the clearest
-    declarations of Jesus's messianic identity in the Gospels. When the woman mentions the
-    coming Messiah who "will tell us all things," Jesus responds with the direct statement, "I
-    who speak to you am He" (John 4:26). This explicit self-identification as the Messiah
-    contrasts with the more guarded approach found in the Synoptic Gospels, where Jesus
-    often discourages public declarations of his messianic status.</p>
+        declarations of Jesus's messianic identity in the Gospels. When the woman mentions the
+        coming Messiah who "will tell us all things," Jesus responds with the direct statement, "I
+        who speak to you am He" (John 4:26). This explicit self-identification as the Messiah
+        contrasts with the more guarded approach found in the Synoptic Gospels, where Jesus
+        often discourages public declarations of his messianic status.</p>
     <p class="story-box"><br />
         The Harvest of Souls (John 4:27-42) extends the discourse to include Jesus's
         conversation with his disciples about spiritual harvest and the subsequent belief of
@@ -883,109 +900,109 @@ function teachings()  {
         some of the most explicit claims about Jesus's divine identity and authority found in the
         Gospels.</p>
 
-        <h3><span class="emoji">🏃</span>The Sabbath Controversy</h3>
-        <p class="story-box"><br />
-    The Sabbath Controversy (John 5:1-18) begins with Jesus
-    healing a man who had
-    been paralyzed for thirty-eight years. When the Jewish leaders object to the man
-    carrying his mat on the Sabbath and later to Jesus healing on the Sabbath, Jesus
-    responds with the statement, "My Father has been working until now, and I have been
-    working" (John 5:17). This claim to a unique relationship with God as Father and to
-    divine prerogative regarding the Sabbath provokes charges of blasphemy and intensifies
-    the conflict with religious authorities.</p>
+    <h3><span class="emoji">🏃</span>The Sabbath Controversy</h3>
+    <p class="story-box"><br />
+        The Sabbath Controversy (John 5:1-18) begins with Jesus
+        healing a man who had
+        been paralyzed for thirty-eight years. When the Jewish leaders object to the man
+        carrying his mat on the Sabbath and later to Jesus healing on the Sabbath, Jesus
+        responds with the statement, "My Father has been working until now, and I have been
+        working" (John 5:17). This claim to a unique relationship with God as Father and to
+        divine prerogative regarding the Sabbath provokes charges of blasphemy and intensifies
+        the conflict with religious authorities.</p>
     <p class="story-box"><br />
         The Son's Relationship with the Father (John 5:19-23) establishes the intimate
-    connection between Jesus's actions and the Father's will. Jesus's statement that "the
-    Son can do nothing of Himself, but what He sees the Father do" (John 5:19) emphasizes
-    his perfect alignment with the Father's purposes while his claim that "all should honor
-    the Son just as they honor the Father" (John 5:23) asserts his right to divine worship.
-    This teaching establishes Jesus's divine authority while maintaining the distinction
-    between the Father and the Son within the Godhead.</p>
+        connection between Jesus's actions and the Father's will. Jesus's statement that "the
+        Son can do nothing of Himself, but what He sees the Father do" (John 5:19) emphasizes
+        his perfect alignment with the Father's purposes while his claim that "all should honor
+        the Son just as they honor the Father" (John 5:23) asserts his right to divine worship.
+        This teaching establishes Jesus's divine authority while maintaining the distinction
+        between the Father and the Son within the Godhead.</p>
 
     <p class="story-box"><br />
         Life and Judgment (John 5:24-30) addresses Jesus's authority to give life and
-    execute
-    judgment. The promise that "he who hears My word and believes in Him who sent Me
-    has everlasting life" (John 5:24) establishes faith in Christ as the path to eternal life. The
-    declaration that "the hour is coming, and now is, when the dead will hear the voice of
-    the Son of God; and those who hear will live" (John 5:25) refers both to spiritual
-    resurrection in the present and physical resurrection in the future. Jesus's claim to be
-    the judge of all humanity based on the Father's delegation of "authority to execute
-    judgment" (John 5:27) represents one of the most explicit assertions of divine
-    prerogative in the Gospels.</p>
+        execute
+        judgment. The promise that "he who hears My word and believes in Him who sent Me
+        has everlasting life" (John 5:24) establishes faith in Christ as the path to eternal life. The
+        declaration that "the hour is coming, and now is, when the dead will hear the voice of
+        the Son of God; and those who hear will live" (John 5:25) refers both to spiritual
+        resurrection in the present and physical resurrection in the future. Jesus's claim to be
+        the judge of all humanity based on the Father's delegation of "authority to execute
+        judgment" (John 5:27) represents one of the most explicit assertions of divine
+        prerogative in the Gospels.</p>
 
     <p class="story-box"><br />
         Witnesses to Jesus (John 5:31-47) addresses the question of evidence for Jesus's
-    claims by citing four witnesses: John the Baptist, Jesus's miraculous works, the Father's
-    direct testimony, and the Scriptures, particularly the writings of Moses. This section
-    establishes the abundant evidence for Jesus's claims while exposing the underlying
-    spiritual resistance that prevents the religious leaders from accepting this evidence. The
-    indictment that "you are not willing to come to Me that you may have life" (John 5:40)
-    identifies the volitional rather than intellectual nature of their unbelief.
-    This discourse establishes Jesus's divine authority in terms of his relationship with the
-    Father, his power to give life and execute judgment, and his fulfillment of scriptural
-    prophecy. The teaching represents one of John's clearest presentations of high
-    Christology, establishing Jesus's divine nature and authority while maintaining the
-    distinction between the Father and the Son.</p>
+        claims by citing four witnesses: John the Baptist, Jesus's miraculous works, the Father's
+        direct testimony, and the Scriptures, particularly the writings of Moses. This section
+        establishes the abundant evidence for Jesus's claims while exposing the underlying
+        spiritual resistance that prevents the religious leaders from accepting this evidence. The
+        indictment that "you are not willing to come to Me that you may have life" (John 5:40)
+        identifies the volitional rather than intellectual nature of their unbelief.
+        This discourse establishes Jesus's divine authority in terms of his relationship with the
+        Father, his power to give life and execute judgment, and his fulfillment of scriptural
+        prophecy. The teaching represents one of John's clearest presentations of high
+        Christology, establishing Jesus's divine nature and authority while maintaining the
+        distinction between the Father and the Son.</p>
 
     <h3><span class="emoji">🏃</span>The Bread of Life Discourse (John 6:22-59)</h3>
     <p class="story-box"><br />
         Following the feeding of the five thousand, Jesus delivers the Bread of Life
-    discourse,
-    which develops the metaphor of spiritual nourishment and introduces the controversial
-    teaching about eating his flesh and drinking his blood. This discourse represents one of
-    the most challenging and divisive teachings in John's Gospel, leading many disciples to
-    abandon Jesus.</p>
+        discourse,
+        which develops the metaphor of spiritual nourishment and introduces the controversial
+        teaching about eating his flesh and drinking his blood. This discourse represents one of
+        the most challenging and divisive teachings in John's Gospel, leading many disciples to
+        abandon Jesus.</p>
 
     <p class="story-box"><br />
         The Search for Jesus (John 6:22-24) describes the crowds following Jesus to
-    Capernaum after the miraculous feeding, setting the stage for the discourse that follows.
-    Their pursuit of Jesus after receiving physical bread creates the opportunity for teaching
-    about spiritual nourishment and eternal life.</p>
+        Capernaum after the miraculous feeding, setting the stage for the discourse that follows.
+        Their pursuit of Jesus after receiving physical bread creates the opportunity for teaching
+        about spiritual nourishment and eternal life.</p>
 
     <p class="story-box"><br />
         The Work of God (John 6:25-29) begins with Jesus challenging the crowds'
-    motivation,
-    stating that they seek him "not because you saw the signs, but because you ate of the
-    loaves and were filled" (John 6:26). He redirects their focus from perishable food to
-    "food which endures to everlasting life" (John 6:27) and defines "the work of God" as
-    believing in the one God has sent. This establishes faith in Christ as the fundamental
-    requirement for receiving eternal life.
+        motivation,
+        stating that they seek him "not because you saw the signs, but because you ate of the
+        loaves and were filled" (John 6:26). He redirects their focus from perishable food to
+        "food which endures to everlasting life" (John 6:27) and defines "the work of God" as
+        believing in the one God has sent. This establishes faith in Christ as the fundamental
+        requirement for receiving eternal life.
 
     <p class="story-box"><br />
         The True Bread from Heaven (John 6:30-40) responds to the crowds' request for a
-    sign
-    comparable to the manna given through Moses. Jesus clarifies that it was not Moses but
-    God who gave the manna and that God "gives you the true bread from heaven" (John
-    6:32). His declaration "I am the bread of life" (John 6:35) represents the first of seven "I
-    am" statements in John's Gospel, each of which reveals an aspect of Jesus's identity and
-    mission. The promise that "everyone who sees the Son and believes in Him may have
-    everlasting life" (John 6:40) establishes faith in Christ as the path to eternal life.
-    Murmuring and Divine Drawing (John 6:41-51) addresses the Jews' objection to
-    Jesus's claim to have "come down from heaven" given their knowledge of his human
-    parentage. Jesus responds by emphasizing the necessity of divine drawing: "No one can
-    come to Me unless the Father who sent Me draws him" (John 6:44). This teaching
-    establishes the supernatural nature of faith and the essential role of divine initiative in
-    salvation. Jesus's statement that "he who believes in Me has everlasting life" (John 6:47)
-    reiterates the centrality of faith while his declaration that "the bread that I shall give is
-    My flesh, which I shall give for the life of the world" (John 6:51) introduces the sacrificial
-    aspect of his mission.</p>
+        sign
+        comparable to the manna given through Moses. Jesus clarifies that it was not Moses but
+        God who gave the manna and that God "gives you the true bread from heaven" (John
+        6:32). His declaration "I am the bread of life" (John 6:35) represents the first of seven "I
+        am" statements in John's Gospel, each of which reveals an aspect of Jesus's identity and
+        mission. The promise that "everyone who sees the Son and believes in Him may have
+        everlasting life" (John 6:40) establishes faith in Christ as the path to eternal life.
+        Murmuring and Divine Drawing (John 6:41-51) addresses the Jews' objection to
+        Jesus's claim to have "come down from heaven" given their knowledge of his human
+        parentage. Jesus responds by emphasizing the necessity of divine drawing: "No one can
+        come to Me unless the Father who sent Me draws him" (John 6:44). This teaching
+        establishes the supernatural nature of faith and the essential role of divine initiative in
+        salvation. Jesus's statement that "he who believes in Me has everlasting life" (John 6:47)
+        reiterates the centrality of faith while his declaration that "the bread that I shall give is
+        My flesh, which I shall give for the life of the world" (John 6:51) introduces the sacrificial
+        aspect of his mission.</p>
 
     <p class="story-box"><br />
         Eating Flesh and Drinking Blood (John 6:52-59) presents Jesus's most controversial
-    teaching in this discourse. His insistence that "unless you eat the flesh of the Son of Man
-    and drink His blood, you have no life in you" (John 6:53) provokes strong objections
-    from his hearers. The repeated emphasis on eating his flesh and drinking his blood,
-    coupled with the promise that "he who eats My flesh and drinks My blood abides in Me,
-    and I in him" (John 6:56), establishes the necessity of intimate spiritual union with
-    Christ. While Christians have interpreted this teaching in various ways—some seeing it as
-    a reference to the Eucharist, others as a metaphor for faith—the emphasis on complete
-    dependence on Christ's sacrificial death remains central to all interpretations.
-    This discourse establishes Jesus as the source of spiritual nourishment and eternal life
-    while emphasizing the necessity of faith in him. The challenging nature of the teaching,
-    which led many disciples to turn away, demonstrates Jesus's unwillingness to
-    compromise truth for popularity and establishes the dividing line between genuine
-    discipleship and superficial following.</p>
+        teaching in this discourse. His insistence that "unless you eat the flesh of the Son of Man
+        and drink His blood, you have no life in you" (John 6:53) provokes strong objections
+        from his hearers. The repeated emphasis on eating his flesh and drinking his blood,
+        coupled with the promise that "he who eats My flesh and drinks My blood abides in Me,
+        and I in him" (John 6:56), establishes the necessity of intimate spiritual union with
+        Christ. While Christians have interpreted this teaching in various ways—some seeing it as
+        a reference to the Eucharist, others as a metaphor for faith—the emphasis on complete
+        dependence on Christ's sacrificial death remains central to all interpretations.
+        This discourse establishes Jesus as the source of spiritual nourishment and eternal life
+        while emphasizing the necessity of faith in him. The challenging nature of the teaching,
+        which led many disciples to turn away, demonstrates Jesus's unwillingness to
+        compromise truth for popularity and establishes the dividing line between genuine
+        discipleship and superficial following.</p>
 
     <p class="story-box"><br />
         The Light of the World Discourse (John 8:12-30)
@@ -1019,226 +1036,226 @@ function teachings()  {
 
     <p class="highlight-box"><br />
         The Son's Relationship with the Father (John 8:25-30) responds to the direct
-    question
-    "Who are You?" with reference to Jesus's consistent teaching and his relationship with
-    the Father. The statement that "when you lift up the Son of Man, then you will know that
-    I am He" (John 8:28) points to the crucifixion as the ultimate revelation of Jesus's
-    identity. The affirmation that "I always do those things that please Him" (John 8:29)
-    establishes Jesus's perfect obedience to the Father's will as the foundation of their
-    relationship.</p>
+        question
+        "Who are You?" with reference to Jesus's consistent teaching and his relationship with
+        the Father. The statement that "when you lift up the Son of Man, then you will know that
+        I am He" (John 8:28) points to the crucifixion as the ultimate revelation of Jesus's
+        identity. The affirmation that "I always do those things that please Him" (John 8:29)
+        establishes Jesus's perfect obedience to the Father's will as the foundation of their
+        relationship.</p>
 
     <p class="highlight-box"><br />
         This discourse establishes Jesus as the divine light who reveals truth and
-    guides
-    believers out of darkness. The emphasis on Jesus's heavenly origin and perfect
-    alignment with the Father's will establishes his unique identity and authority while the
-    promise of light to those who follow him offers hope of spiritual illumination and
-    guidance.</p>
+        guides
+        believers out of darkness. The emphasis on Jesus's heavenly origin and perfect
+        alignment with the Father's will establishes his unique identity and authority while the
+        promise of light to those who follow him offers hope of spiritual illumination and
+        guidance.</p>
 
     <h2><span class="emoji">🏃</span>
-    The Good Shepherd Discourse (John 10:1-18)</h2>
+        The Good Shepherd Discourse (John 10:1-18)</h2>
     <p class="highlight-box"><br />
-    Following the healing of the man born blind and the subsequent controversy with the
-    Pharisees, Jesus delivers the Good Shepherd discourse, which uses pastoral imagery to
-    describe his relationship with his followers and his sacrificial mission. This teaching
-    develops the contrast between true and false spiritual leadership while establishing
-    Jesus's unique role as the divinely appointed savior.
+        Following the healing of the man born blind and the subsequent controversy with the
+        Pharisees, Jesus delivers the Good Shepherd discourse, which uses pastoral imagery to
+        describe his relationship with his followers and his sacrificial mission. This teaching
+        develops the contrast between true and false spiritual leadership while establishing
+        Jesus's unique role as the divinely appointed savior.
     </p>
 
     <h2><span class="emoji">🏃</span>The Sheepfold Analogy (John 10:1-6)</h2>
     <p class="highlight-box"><br />
-    The Sheepfold Analogy (John 10:1-6) begins with a distinction between the shepherd
-    who enters by the door and thieves and robbers who climb in another way. This analogy
-    establishes the legitimacy of Jesus's ministry in contrast to false leaders who lack divine
-    authorization. The description of the sheep recognizing the shepherd's voice and
-    following him establishes the intimate relationship between Jesus and his followers and
-    their ability to discern his authentic leadership.
+        The Sheepfold Analogy (John 10:1-6) begins with a distinction between the shepherd
+        who enters by the door and thieves and robbers who climb in another way. This analogy
+        establishes the legitimacy of Jesus's ministry in contrast to false leaders who lack divine
+        authorization. The description of the sheep recognizing the shepherd's voice and
+        following him establishes the intimate relationship between Jesus and his followers and
+        their ability to discern his authentic leadership.
     </p>
 
     <h2><span class="emoji">🏃</span>Jesus as the Door (John 10:7-10)</h2>
     <p class="highlight-box"><br />
-    Jesus as the Door (John 10:7-10) presents the third "I am" statement: "I am the door of
-    the sheep" (John 10:7). This metaphor establishes Jesus as the exclusive means of
-    entrance into God's flock and the source of salvation. The contrast between thieves who
-    "steal, and kill, and destroy" and Jesus who came "that they may have life, and that they
-    may have it more abundantly" (John 10:10) establishes the life-giving purpose of Jesus's
-    mission in contrast to the destructive influence of false leaders.
+        Jesus as the Door (John 10:7-10) presents the third "I am" statement: "I am the door of
+        the sheep" (John 10:7). This metaphor establishes Jesus as the exclusive means of
+        entrance into God's flock and the source of salvation. The contrast between thieves who
+        "steal, and kill, and destroy" and Jesus who came "that they may have life, and that they
+        may have it more abundantly" (John 10:10) establishes the life-giving purpose of Jesus's
+        mission in contrast to the destructive influence of false leaders.
     </p>
 
     <h2><span class="emoji">🏃</span>Jesus as the Good Shepherd (John 10:11-18)</h2>
     <p class="highlight-box"><br />
-    Jesus as the Good Shepherd (John 10:11-18) presents the fourth "I am" statement: "I
-    am the good shepherd" (John 10:11). This metaphor builds on Old Testament imagery of
-    God as the shepherd of Israel (Psalm 23, Ezekiel 34) while emphasizing Jesus's sacrificial
-    love: "The good shepherd gives His life for the sheep" (John 10:11). The contrast
-    between the good shepherd and the hireling who abandons the sheep in danger
-    establishes the depth of Jesus's commitment to his followers. The statement that "I lay
-    down My life for the sheep" (John 10:15) anticipates Jesus's sacrificial death while the
-    declaration that "I have power to lay it down, and I have power to take it again" (John
-    10:18) points to his resurrection and establishes his divine authority over life and death.
-    This discourse establishes Jesus as both the exclusive means of salvation (the door) and
-    the sacrificial protector of his people (the good shepherd). The emphasis on Jesus's
-    voluntary sacrifice, his intimate knowledge of his followers, and his divine commission
-    establishes the unique nature of his redemptive mission and the security of those who
-    belong to his flock.
+        Jesus as the Good Shepherd (John 10:11-18) presents the fourth "I am" statement: "I
+        am the good shepherd" (John 10:11). This metaphor builds on Old Testament imagery of
+        God as the shepherd of Israel (Psalm 23, Ezekiel 34) while emphasizing Jesus's sacrificial
+        love: "The good shepherd gives His life for the sheep" (John 10:11). The contrast
+        between the good shepherd and the hireling who abandons the sheep in danger
+        establishes the depth of Jesus's commitment to his followers. The statement that "I lay
+        down My life for the sheep" (John 10:15) anticipates Jesus's sacrificial death while the
+        declaration that "I have power to lay it down, and I have power to take it again" (John
+        10:18) points to his resurrection and establishes his divine authority over life and death.
+        This discourse establishes Jesus as both the exclusive means of salvation (the door) and
+        the sacrificial protector of his people (the good shepherd). The emphasis on Jesus's
+        voluntary sacrifice, his intimate knowledge of his followers, and his divine commission
+        establishes the unique nature of his redemptive mission and the security of those who
+        belong to his flock.
     </p>
 
     <h2><span class="emoji">🏃</span>The Farewell Discourse (John 13-17)</h2>
     <p class="highlight-box"><br />
-    The Farewell Discourse represents the longest and most comprehensive teaching section
-    in John's Gospel, spanning five chapters and addressing a wide range of topics related to
-    Jesus's departure, the coming of the Holy Spirit, and the future of the disciples. This
-    extended teaching, delivered on the night of Jesus's betrayal, provides essential
-    guidance for the disciples as they face the challenges of continuing Jesus's mission in his
-    physical absence.
+        The Farewell Discourse represents the longest and most comprehensive teaching section
+        in John's Gospel, spanning five chapters and addressing a wide range of topics related to
+        Jesus's departure, the coming of the Holy Spirit, and the future of the disciples. This
+        extended teaching, delivered on the night of Jesus's betrayal, provides essential
+        guidance for the disciples as they face the challenges of continuing Jesus's mission in his
+        physical absence.
     </p>
 
     <h2><span class="emoji">🏃</span>The Foot Washing and New Commandment (John 13:1-35)</h2>
     <p class="highlight-box"><br />
-    The Foot Washing and New Commandment (John 13:1-35) begins with Jesus's
-    symbolic act of washing the disciples' feet, demonstrating humble service as the model
-    for Christian leadership. Peter's resistance and Jesus's insistence establish the necessity
-    of receiving Jesus's cleansing ministry. The subsequent teaching about the betrayer
-    leads to Judas's departure, after which Jesus gives the new commandment: "Love one
-    another; as I have loved you" (John 13:34). This establishes sacrificial love as the
-    distinguishing mark of Christian community and the primary ethical imperative for
-    Jesus's followers.
+        The Foot Washing and New Commandment (John 13:1-35) begins with Jesus's
+        symbolic act of washing the disciples' feet, demonstrating humble service as the model
+        for Christian leadership. Peter's resistance and Jesus's insistence establish the necessity
+        of receiving Jesus's cleansing ministry. The subsequent teaching about the betrayer
+        leads to Judas's departure, after which Jesus gives the new commandment: "Love one
+        another; as I have loved you" (John 13:34). This establishes sacrificial love as the
+        distinguishing mark of Christian community and the primary ethical imperative for
+        Jesus's followers.
     </p>
 
     <h2><span class="emoji">🏃</span>The Way, the Truth, and the Life (John 14:1-14)</h2>
     <p class="highlight-box"><br />
-    The Way, the Truth, and the Life (John 14:1-14) addresses the disciples' anxiety about
-    Jesus's departure with promises of reunion and continued relationship. The assurance
-    that Jesus goes to prepare a place in the Father's house offers hope of ultimate reunion
-    while the declaration "I am the way, the truth, and the life. No one comes to the Father
-    except through Me" (John 14:6) establishes Jesus as the exclusive mediator between
-    God and humanity. The teaching about Jesus's unity with the Father—"He who has seen
-    Me has seen the Father" (John 14:9)—establishes Jesus as the definitive revelation of
-    God while the promise of greater works through prayer in Jesus's name establishes the
-    ongoing power available to his followers.
+        The Way, the Truth, and the Life (John 14:1-14) addresses the disciples' anxiety about
+        Jesus's departure with promises of reunion and continued relationship. The assurance
+        that Jesus goes to prepare a place in the Father's house offers hope of ultimate reunion
+        while the declaration "I am the way, the truth, and the life. No one comes to the Father
+        except through Me" (John 14:6) establishes Jesus as the exclusive mediator between
+        God and humanity. The teaching about Jesus's unity with the Father—"He who has seen
+        Me has seen the Father" (John 14:9)—establishes Jesus as the definitive revelation of
+        God while the promise of greater works through prayer in Jesus's name establishes the
+        ongoing power available to his followers.
     </p>
 
     <h2><span class="emoji">🏃</span>The Promise of the Holy Spirit (John 14:15-31)</h2>
     <p class="highlight-box"><br />
-    The Promise of the Holy Spirit (John 14:15-31) addresses the apparent abandonment
-    the disciples will experience at Jesus's departure by promising "another Helper" who
-    will "abide with you forever" (John 14:16). The identification of this Helper as "the Spirit
-    of truth" establishes the Holy Spirit's role in guiding believers into truth while the
-    promise that "I will not leave you orphans; I will come to you" (John 14:18) suggests
-    Jesus's continued presence through the Spirit. The teaching about the indwelling of the
-    Father, Son, and Spirit establishes the intimate communion between God and believers
-    while the promise of peace—"My peace I give to you" (John 14:27)—offers comfort in the
-    face of tribulation.
+        The Promise of the Holy Spirit (John 14:15-31) addresses the apparent abandonment
+        the disciples will experience at Jesus's departure by promising "another Helper" who
+        will "abide with you forever" (John 14:16). The identification of this Helper as "the Spirit
+        of truth" establishes the Holy Spirit's role in guiding believers into truth while the
+        promise that "I will not leave you orphans; I will come to you" (John 14:18) suggests
+        Jesus's continued presence through the Spirit. The teaching about the indwelling of the
+        Father, Son, and Spirit establishes the intimate communion between God and believers
+        while the promise of peace—"My peace I give to you" (John 14:27)—offers comfort in the
+        face of tribulation.
     </p>
 
     <h2><span class="emoji">🏃</span>The True Vine (John 15:1-17)</h2>
     <p class="highlight-box"><br />
-    The True Vine (John 15:1-17) presents the fifth "I am" statement: "I am the true
-    vine" (John 15:1). This metaphor establishes the organic connection between Jesus and
-    his followers and the necessity of "abiding" in him for spiritual fruitfulness. The repeated
-    emphasis on abiding—"He who abides in Me, and I in him, bears much fruit; for without
-    Me you can do nothing" (John 15:5)—establishes complete dependence on Christ as the
-    essential condition for spiritual productivity. The restatement of the love commandment
-    and the designation of the disciples as "friends" rather than servants establishes the
-    intimate nature of their relationship with Jesus and the privilege of sharing in his
-    mission.
+        The True Vine (John 15:1-17) presents the fifth "I am" statement: "I am the true
+        vine" (John 15:1). This metaphor establishes the organic connection between Jesus and
+        his followers and the necessity of "abiding" in him for spiritual fruitfulness. The repeated
+        emphasis on abiding—"He who abides in Me, and I in him, bears much fruit; for without
+        Me you can do nothing" (John 15:5)—establishes complete dependence on Christ as the
+        essential condition for spiritual productivity. The restatement of the love commandment
+        and the designation of the disciples as "friends" rather than servants establishes the
+        intimate nature of their relationship with Jesus and the privilege of sharing in his
+        mission.
     </p>
 
     <h2><span class="emoji">🏃</span>The World's Hatred and the Spirit's Witness (John 15:18-16:15)</h2>
     <p class="highlight-box"><br />
-    The World's Hatred and the Spirit's Witness (John 15:18-16:15) prepares the disciples
-    for the opposition they will face from a hostile world. The warning that "if they
-    persecuted Me, they will also persecute you" (John 15:20) establishes the inevitable
-    conflict between Christ's followers and the world system. The promise of the Holy
-    Spirit's coming to "convict the world of sin, and of righteousness, and of
-    judgment" (John 16:8) establishes the Spirit's role in confronting unbelief while the
-    promise to "guide you into all truth" (John 16:13) establishes the Spirit's role in
-    illuminating believers. The assurance that the Spirit "will glorify Me" (John 16:14)
-    establishes Christ-centeredness as the criterion for authentic spiritual ministry.
-    Sorrow Turned to Joy (John 16:16-33) addresses the disciples' confusion and grief
-    about Jesus's departure with promises of reunion and ultimate joy. The metaphor of a
-    woman in labor, whose pain is forgotten in the joy of new life, illustrates how the
-    disciples' temporary sorrow will be transformed into permanent joy. The promise of
-    direct access to the Father "in My name" (John 16:23) establishes a new relationship with
-    God based on Jesus's mediatorial work. The final assurance—"In the world you will have
-    tribulation; but be of good cheer, I have overcome the world" (John 16:33)—offers hope
-    based on Jesus's ultimate victory over all opposing forces.
+        The World's Hatred and the Spirit's Witness (John 15:18-16:15) prepares the disciples
+        for the opposition they will face from a hostile world. The warning that "if they
+        persecuted Me, they will also persecute you" (John 15:20) establishes the inevitable
+        conflict between Christ's followers and the world system. The promise of the Holy
+        Spirit's coming to "convict the world of sin, and of righteousness, and of
+        judgment" (John 16:8) establishes the Spirit's role in confronting unbelief while the
+        promise to "guide you into all truth" (John 16:13) establishes the Spirit's role in
+        illuminating believers. The assurance that the Spirit "will glorify Me" (John 16:14)
+        establishes Christ-centeredness as the criterion for authentic spiritual ministry.
+        Sorrow Turned to Joy (John 16:16-33) addresses the disciples' confusion and grief
+        about Jesus's departure with promises of reunion and ultimate joy. The metaphor of a
+        woman in labor, whose pain is forgotten in the joy of new life, illustrates how the
+        disciples' temporary sorrow will be transformed into permanent joy. The promise of
+        direct access to the Father "in My name" (John 16:23) establishes a new relationship with
+        God based on Jesus's mediatorial work. The final assurance—"In the world you will have
+        tribulation; but be of good cheer, I have overcome the world" (John 16:33)—offers hope
+        based on Jesus's ultimate victory over all opposing forces.
     </p>
 
     <h2><span class="emoji">🏃</span>The High Priestly Prayer (John 17)</h2>
     <p class="highlight-box"><br />
-    The High Priestly Prayer (John 17) concludes the Farewell Discourse with Jesus's
-    extended prayer for himself, his disciples, and all future believers. The prayer for
-    glorification—"Glorify Your Son, that Your Son also may glorify You" (John 17:1)—
-    establishes the mutual glorification of Father and Son through the work of redemption.
-    The definition of eternal life as knowing "the only true God, and Jesus Christ whom You
-    have sent" (John 17:3) establishes salvation in relational rather than merely temporal
-    terms. The prayer for the disciples' protection, sanctification, and unity establishes
-    Jesus's ongoing concern for his followers and his vision for the church's witness in the
-    world. The final prayer for all believers "that they may be one" and "that the love with
-    which You loved Me may be in them" (John 17:26) establishes unity and love as the
-    ultimate goals for the Christian community.
+        The High Priestly Prayer (John 17) concludes the Farewell Discourse with Jesus's
+        extended prayer for himself, his disciples, and all future believers. The prayer for
+        glorification—"Glorify Your Son, that Your Son also may glorify You" (John 17:1)—
+        establishes the mutual glorification of Father and Son through the work of redemption.
+        The definition of eternal life as knowing "the only true God, and Jesus Christ whom You
+        have sent" (John 17:3) establishes salvation in relational rather than merely temporal
+        terms. The prayer for the disciples' protection, sanctification, and unity establishes
+        Jesus's ongoing concern for his followers and his vision for the church's witness in the
+        world. The final prayer for all believers "that they may be one" and "that the love with
+        which You loved Me may be in them" (John 17:26) establishes unity and love as the
+        ultimate goals for the Christian community.
     </p>
 
     <h2><span class="emoji">🏃</span>The Farewell Discourse (John 13-17)</h2>
     <p class="highlight-box"><br />
-    The Farewell Discourse represents John's most comprehensive presentation of Jesus's
-    teaching about the Christian life, the Holy Spirit's ministry, and the nature of the church.
-    The emphasis on love, unity, truth, and abiding relationship with Christ establishes the
-    fundamental principles of Christian spirituality and community life. The promises of the
-    Spirit's presence, guidance, and power offer hope and assurance to believers facing the
-    challenges of living as Christ's representatives in a hostile world.
+        The Farewell Discourse represents John's most comprehensive presentation of Jesus's
+        teaching about the Christian life, the Holy Spirit's ministry, and the nature of the church.
+        The emphasis on love, unity, truth, and abiding relationship with Christ establishes the
+        fundamental principles of Christian spirituality and community life. The promises of the
+        Spirit's presence, guidance, and power offer hope and assurance to believers facing the
+        challenges of living as Christ's representatives in a hostile world.
     </p>
 
     <h2><span class="emoji">🏃</span>John's Theological Contribution</h2>
     <p class="highlight-box"><br />
-    John's presentation of Jesus's discourses makes a unique and essential contribution to
-    Christian theology and spirituality. The extended, theologically rich teachings recorded
-    in this Gospel provide the foundation for Christian understanding of Jesus's divine
-    nature, his relationship with the Father, the work of the Holy Spirit, and the nature of
-    salvation through faith in Christ.
+        John's presentation of Jesus's discourses makes a unique and essential contribution to
+        Christian theology and spirituality. The extended, theologically rich teachings recorded
+        in this Gospel provide the foundation for Christian understanding of Jesus's divine
+        nature, his relationship with the Father, the work of the Holy Spirit, and the nature of
+        salvation through faith in Christ.
     </p>
 
     <p class="highlight-box"><br />
-    The seven "I am" statements—"I am the bread of life," "I am the light of the world," "I am
-    the door," "I am the good shepherd," "I am the resurrection and the life," "I am the way,
-    the truth, and the life," and "I am the true vine"—provide a multifaceted revelation of
-    Jesus's identity and mission. Each metaphor illuminates a different aspect of Christ's
-    relationship with believers and his role in God's redemptive plan.
-    The emphasis on Jesus's divine origin and authority establishes high Christology as the
-    foundation for Christian faith. The repeated claims to have come from the Father, to
-    speak the Father's words, and to do the Father's works establish Jesus as the definitive
-    revelation of God and the exclusive mediator of salvation. The teaching about Jesus's
-    pre-existence, incarnation, and return to the Father creates a comprehensive
-    Christological framework that complements and deepens the presentation found in the
-    Synoptic Gospels.
+        The seven "I am" statements—"I am the bread of life," "I am the light of the world," "I am
+        the door," "I am the good shepherd," "I am the resurrection and the life," "I am the way,
+        the truth, and the life," and "I am the true vine"—provide a multifaceted revelation of
+        Jesus's identity and mission. Each metaphor illuminates a different aspect of Christ's
+        relationship with believers and his role in God's redemptive plan.
+        The emphasis on Jesus's divine origin and authority establishes high Christology as the
+        foundation for Christian faith. The repeated claims to have come from the Father, to
+        speak the Father's words, and to do the Father's works establish Jesus as the definitive
+        revelation of God and the exclusive mediator of salvation. The teaching about Jesus's
+        pre-existence, incarnation, and return to the Father creates a comprehensive
+        Christological framework that complements and deepens the presentation found in the
+        Synoptic Gospels.
     </p>
 
     <p class="highlight-box"><br />
-    The teaching about the Holy Spirit, particularly in the Farewell Discourse, provides the
-    most detailed pneumatology in the Gospels. The promises of the Spirit's coming as
-    "another Helper," his role in guiding believers into truth, and his work of glorifying Christ
-    establish the foundation for Christian understanding of the Spirit's ministry. The
-    emphasis on the Spirit's role in continuing Jesus's work and mediating his presence to
-    believers offers comfort and assurance to the church in every generation.
-    The emphasis on eternal life as a present reality, not merely a future hope, establishes
-    salvation as a transformative relationship with God through Christ. The teaching about
-    being "born again," drinking "living water," eating "the bread of life," and abiding in "the
-    true vine" provides rich metaphors for understanding the nature of spiritual life and
-    growth. The emphasis on faith as the means of receiving eternal life establishes the
-    fundamental principle of salvation by grace through faith that would become central to
-    Christian soteriology.
+        The teaching about the Holy Spirit, particularly in the Farewell Discourse, provides the
+        most detailed pneumatology in the Gospels. The promises of the Spirit's coming as
+        "another Helper," his role in guiding believers into truth, and his work of glorifying Christ
+        establish the foundation for Christian understanding of the Spirit's ministry. The
+        emphasis on the Spirit's role in continuing Jesus's work and mediating his presence to
+        believers offers comfort and assurance to the church in every generation.
+        The emphasis on eternal life as a present reality, not merely a future hope, establishes
+        salvation as a transformative relationship with God through Christ. The teaching about
+        being "born again," drinking "living water," eating "the bread of life," and abiding in "the
+        true vine" provides rich metaphors for understanding the nature of spiritual life and
+        growth. The emphasis on faith as the means of receiving eternal life establishes the
+        fundamental principle of salvation by grace through faith that would become central to
+        Christian soteriology.
     </p>
 
     <h2><span class="emoji">🏃</span>John's Presentation of Jesus's Discourses</h2>
     <p class="highlight-box"><br />
-    John's presentation of Jesus's discourses thus provides essential theological content
-    that complements the more practical and ethical focus of the Synoptic Gospels.
-    Together, these diverse presentations of Jesus's teaching create a comprehensive
-    portrait of Christ as both the authoritative teacher of God's will and the divine revealer of
-    God's nature. The theological depth and spiritual richness of John's discourses have
-    made this Gospel particularly beloved by those seeking to understand the mysteries of
-    faith and the nature of relationship with God through Christ.
+        John's presentation of Jesus's discourses thus provides essential theological content
+        that complements the more practical and ethical focus of the Synoptic Gospels.
+        Together, these diverse presentations of Jesus's teaching create a comprehensive
+        portrait of Christ as both the authoritative teacher of God's will and the divine revealer of
+        God's nature. The theological depth and spiritual richness of John's discourses have
+        made this Gospel particularly beloved by those seeking to understand the mysteries of
+        faith and the nature of relationship with God through Christ.
     </p>
 </section>
 
@@ -2030,7 +2047,7 @@ function teachings()  {
         puzzle.
         Each one shows us something special about Jesus and His teachings.</p>
 
-        <p>Jesus's teachings, as captured in the Sermon on the Mount and throughout His ministry, present a revolutionary
+    <p>Jesus's teachings, as captured in the Sermon on the Mount and throughout His ministry, present a revolutionary
         spiritual and ethical framework centered on the Kingdom of God. This Kingdom isn't merely a future hope but a
         present reality that transforms how we live now. From the Beatitudes to the parables, Jesus consistently
         emphasized that God's reign brings an inversion of worldly values.</p>
@@ -2406,110 +2423,159 @@ function teachings()  {
 
 
     else:
-
+        //This is the main introduction to the page, even before the introduction. maybe is some sort of prologue.
 
 
 
 
 ?>
 <section class="section fullbar">
-
-    <h2><span class="emoji">📚</span>What This Guide Is About</h2>
-    <p>Hi there! This guide is all about the amazing things Jesus taught when He lived on Earth about 2,000
-        years ago. Jesus was God's son, and He came to teach people how to live good lives and how to love
-        God
-        and each other.</p>
-
-    <p>The stories about Jesus are written in four special books called the Gospels. These books are named
-        Matthew, Mark, Luke, and John - after the people who wrote them. Each writer told the story of Jesus
-        in
-        their own way, kind of like how you and your friends might tell the same story but focus on
-        different
-        parts.</p>
-
-    <h2 ><span class="emoji">⭐</span>The Teachings of Jesus</h2>
+    <h2><span class="emoji">⭐</span>The Teachings of Jesus</h2>
 
     <p>Jesus Christ's teachings have profoundly influenced human history, offering wisdom that transcends time and
         culture. Below are some of His most important lessons that continue to inspire millions around the world.</p>
-    <h3>Peacemakers <small>Matthew 5:9, 38-42</small></h3>
-    <p>Going along with humility, in Matthew 5:9 Jesus says, "Blessed are the peacemakers, for they will be called
-        children of God." Yes, this means those who help to pacify conflicts between others, but it surely also includes
-        avoiding conflicts between oneself and others as well.</p>
 
-    <blockquote>
-        "You have heard that it was said, 'Eye for eye, and tooth for tooth.' But I say to you, do not show opposition
-        against an evil person; but whoever slaps you on your right cheek, turn the other toward him also. And if anyone
-        wants to sue you and take your tunic, let him have your cloak also. Whoever forces you to go one mile, go with
-        him two. Give to him who asks of you, and do not turn away from him who wants to borrow from you."
-    </blockquote>
+        <details class="highlight-box">
+            <summary>
+                Peacemakers
+            </summary>
+            <p>Going along with humility, in <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=MT5_9" title="https://ebible.org/study/">Matthew 5:9</a> Jesus says, "Blessed are the peacemakers, for they will be
+                called
+                children of God." Yes, this means those who help to pacify conflicts between others, but it surely also
+                includes
+                avoiding conflicts between oneself and others as well.</p>
 
-    <p>Why is it important to embrace peace rather than conflict? Jesus teaches that peacemaking reflects the very
-        character of God Himself. By choosing reconciliation over retaliation, we demonstrate we are truly children of
-        the divine Father who offers grace even to those who oppose Him. When we refuse to perpetuate cycles of
-        violence—even when justified by worldly standards—we participate in the revolutionary ethic of the Kingdom where
-        enemies become neighbors and hatred is overcomed by love.</p>
+            <blockquote class="story-box"><br />
+                "You have heard that it was said, 'Eye for eye, and tooth for tooth.' But I say to you, do not show
+                opposition
+                against an evil person; but whoever slaps you on your right cheek, turn the other toward him also. And
+                if anyone
+                wants to sue you and take your tunic, let him have your cloak also. Whoever forces you to go one mile,
+                go with
+                him two. Give to him who asks of you, and do not turn away from him who wants to borrow from you."
+                <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=MT5_38" title="Matthew 5:38"><small><ruby>Matthew<rt>5:38</rt></ruby></small></a>
+            </blockquote>
 
-    <p>Jesus concludes this teaching by embodying it perfectly at the cross, where He prays for His persecutors rather
-        than calling down heavenly vengeance. This ultimate demonstration of peaceful resistance transforms human
-        history and reveals that God's power operates not through domination but through self-giving love that absorbs
-        violence without returning it. In this way, peacemakers don't merely avoid conflict—they actively create new
-        possibilities for reconciliation that mirror God's own redemptive work in the world.</p>
+            <p>Why is it important to embrace peace rather than conflict? Jesus teaches that peacemaking reflects the
+                very
+                character of God Himself. By choosing reconciliation over retaliation, we demonstrate we are truly
+                children of
+                the divine Father who offers grace even to those who oppose Him. When we refuse to perpetuate cycles of
+                violence—even when justified by worldly standards—we participate in the revolutionary ethic of the
+                Kingdom where
+                enemies become neighbors and hatred is overcomed by love.</p>
 
-    <h3>Let your light shine <small>Matthew 5:14-16</small></h3>
-    <p>Jesus uses a powerful metaphor of light to explain the visible impact His followers should have:</p>
+            <p>Jesus concludes this teaching by embodying it perfectly at the cross, where He prays for His persecutors
+                rather
+                than calling down heavenly vengeance. This ultimate demonstration of peaceful resistance transforms
+                human
+                history and reveals that God's power operates not through domination but through self-giving love that
+                absorbs
+                violence without returning it. In this way, peacemakers don't merely avoid conflict—they actively create
+                new
+                possibilities for reconciliation that mirror God's own redemptive work in the world.</p>
+        </details>
 
-    <blockquote>
-        "You are the light of the world. A city built on a hill cannot be hid. People do not light a lamp and put it
-        under the bushel basket; rather, they put it on the lampstand, and it gives light to all in the house. In the
-        same way, let your light shine before others, so that they may see your good works and give glory to your Father
-        in heaven."
-    </blockquote>
 
-    <p>This teaching reveals the inherently public nature of authentic discipleship. Just as light naturally illuminates
-        darkness, genuine Kingdom living inevitably influences the surrounding culture. Jesus declares that His
-        followers possess transformative potential—not to attract attention to themselves, but to redirect that
-        attention toward God.</p>
+        <details class="highlight-box">
+            <summary>
+                Let your light shine
+            </summary>
+            <p>Jesus uses a powerful metaphor of light to explain the visible impact His followers should have:</p>
 
-    <p>The imagery of a city on a hill and a lamp on a stand emphasizes that Christian witness should be visible and
-        accessible. Disciples aren't called to isolation or to hide their Kingdom values, but rather to demonstrate them
-        openly through concrete actions of justice, mercy, and love. This visibility isn't self-promotion but divine
-        testimony—the ultimate purpose is that others "give glory to your Father in heaven."</p>
+            <blockquote class="story-box"><br />
+                "You are the light of the world. A city built on a hill cannot be hid. People do not light a lamp and
+                put it
+                under the bushel basket; rather, they put it on the lampstand, and it gives light to all in the house.
+                In the
+                same way, let your light shine before others, so that they may see your good works and give glory to
+                your Father
+                in heaven."
+                <a href="https://ebible.org/study/?v1=MT5_14&t1=local%3Aeng-web&w1=bible" title="Matthew 5:14"><small><ruby>Matthew<rt>5:14</rt></ruby></small></a>
+            </blockquote>
 
-    <p>This teaching connects to Jesus's broader mission of inaugurating God's Kingdom. As His followers embody Kingdom
-        ethics—generosity, reconciliation, truthfulness, and compassion—they provide glimpses of God's coming reign and
-        invite others to participate in this new reality. Their lives become living invitations to experience the
-        transformative power of God's presence in the world.</p>
+            <p>This teaching reveals the inherently public nature of authentic discipleship. Just as light naturally
+                illuminates
+                darkness, genuine Kingdom living inevitably influences the surrounding culture. Jesus declares that His
+                followers possess transformative potential—not to attract attention to themselves, but to redirect that
+                attention toward God.</p>
 
-    <h3>Love Your Enemies <small>Matthew 5:43-45</small></h3>
-    <blockquote>
-        "You have heard that it was said, 'Love your neighbor and hate your enemy.' But I tell you, love your enemies
-        and pray for those who persecute you, that you may be children of your Father in heaven. He causes his sun to
-        rise on the evil and the good, and sends rain on the righteous and the unrighteous. If you love those who love
-        you, what reward will you get? Are not even the tax collectors doing that? And if you greet only your own
-        people, what are you doing more than others? Do not even pagans do that? Be perfect, therefore, as your heavenly
-        Father is perfect."
-    </blockquote>
+            <p>The imagery of a city on a hill and a lamp on a stand emphasizes that Christian witness should be visible
+                and
+                accessible. Disciples aren't called to isolation or to hide their Kingdom values, but rather to
+                demonstrate them
+                openly through concrete actions of justice, mercy, and love. This visibility isn't self-promotion but
+                divine
+                testimony—the ultimate purpose is that others "give glory to your Father in heaven."</p>
 
-    <p>In this revolutionary teaching, Jesus challenges the conventional wisdom of His time. While the cultural norm
-        allowed for loving one's community while harboring hatred toward enemies, Jesus introduces a radical ethic of
-        universal love that extends even to those who persecute us. This teaching represents one of the most challenging
-        and distinctive aspects of Jesus's moral philosophy.</p>
+            <p>This teaching connects to Jesus's broader mission of inaugurating God's Kingdom. As His followers embody
+                Kingdom
+                ethics—generosity, reconciliation, truthfulness, and compassion—they provide glimpses of God's coming
+                reign and
+                invite others to participate in this new reality. Their lives become living invitations to experience
+                the
+                transformative power of God's presence in the world.</p>
+        </details>
+  
 
-    <p>This principle of unconditional love remains one of Jesus's most profound and difficult teachings. By calling us
-        to imitate God's impartial benevolence, Jesus establishes a standard that transcends natural human inclinations
-        and cultural boundaries. This teaching continues to challenge believers to rise above retribution and cultivate
-        a love that reflects the perfect love of the heavenly Father.</p>
+  
+        <details class="highlight-box">
+            <summary>
+                Love Your Enemies
+            </summary>
+            <blockquote class="story-box"><br />
+                "You have heard that it was said, 'Love your neighbor and hate your enemy.' But I tell you, love your
+                enemies
+                and pray for those who persecute you, that you may be children of your Father in heaven. He causes his
+                sun to
+                rise on the evil and the good, and sends rain on the righteous and the unrighteous. If you love those
+                who love
+                you, what reward will you get? Are not even the tax collectors doing that? And if you greet only your
+                own
+                people, what are you doing more than others? Do not even pagans do that? Be perfect, therefore, as your
+                heavenly
+                Father is perfect."
+            </blockquote>
 
-    <h3>Forgive <small>Matthew 6:5-15</small></h3>
-    <blockquote>
-        "And when you pray, you shall not be like the hypocrites. For they love to pray standing in the synagogues and
-        on the corners of the streets, that they may be seen by men. Assuredly, I say to you, they have their reward.
-        But you, when you pray, go into your room, and when you have shut your door, pray to your Father who is in the
-        secret place; and your Father who sees in secret will reward you openly. And when you pray, do not use vain
-        repetitions as the heathen do. For they think that they will be heard for their many words. Therefore do not be
-        like them. For your Father knows the things you have need of before you ask Him. In this manner, therefore,
-        pray:
-        <pre>
+            <p>In this revolutionary teaching, Jesus challenges the conventional wisdom of His time. While the cultural
+                norm
+                allowed for loving one's community while harboring hatred toward enemies, Jesus introduces a radical
+                ethic of
+                universal love that extends even to those who persecute us. This teaching represents one of the most
+                challenging
+                and distinctive aspects of Jesus's moral philosophy.</p>
+
+            <p>This principle of unconditional love remains one of Jesus's most profound and difficult teachings. By
+                calling us
+                to imitate God's impartial benevolence, Jesus establishes a standard that transcends natural human
+                inclinations
+                and cultural boundaries. This teaching continues to challenge believers to rise above retribution and
+                cultivate
+                a love that reflects the perfect love of the heavenly Father.</p>
+
+        </details>
+  
+
+
+        <details class="highlight-box">
+            <summary>
+                Forgive
+            </summary>
+            <blockquote class="story-box"><br />
+                "And when you pray, you shall not be like the hypocrites. For they love to pray standing in the
+                synagogues and
+                on the corners of the streets, that they may be seen by men. Assuredly, I say to you, they have their
+                reward.
+                But you, when you pray, go into your room, and when you have shut your door, pray to your Father who is
+                in the
+                secret place; and your Father who sees in secret will reward you openly. And when you pray, do not use
+                vain
+                repetitions as the heathen do. For they think that they will be heard for their many words. Therefore do
+                not be
+                like them. For your Father knows the things you have need of before you ask Him. In this manner,
+                therefore,
+                pray:<br />
+                <pre class="highlight-box" style="display: inline-block;font-weight: bold;">
     Our Father in heaven,
     Hallowed be Your name.
     Your kingdom come.
@@ -2523,30 +2589,45 @@ function teachings()  {
     For Yours is the kingdom
     And the power and the glory forever.
     Amen.
-    </pre>
+    </pre><br />
 
-        For if you forgive men their trespasses, your heavenly Father will also forgive you. But if you do not forgive
-        men their trespasses, neither will your Father forgive your trespasses."
-    </blockquote>
+                For if you forgive men their trespasses, your heavenly Father will also forgive you. But if you do not
+                forgive
+                men their trespasses, neither will your Father forgive your trespasses."
+            </blockquote>
 
-    <p>In Matthew 6:5-15, Jesus teaches about forgiveness as an essential spiritual practice. After instructing His
-        disciples on how to pray with sincerity rather than for public approval, He provides the Lord's Prayer as a
-        model. Central to this prayer is the concept of forgiveness—both receiving it from God and extending it to
-        others.</p>
+            <p>In Matthew 6:5-15, Jesus teaches about forgiveness as an essential spiritual practice. After instructing
+                His
+                disciples on how to pray with sincerity rather than for public approval, He provides the Lord's Prayer
+                as a
+                model. Central to this prayer is the concept of forgiveness—both receiving it from God and extending it
+                to
+                others.</p>
 
-    <p>Jesus deliberately places forgiveness at the heart of spiritual life, creating a direct connection between how we
-        treat others and how God treats us. The reciprocal nature of this teaching ("forgive us... as we forgive")
-        establishes forgiveness not as optional but as fundamental to Christian discipleship. By emphasizing this
-        principle immediately after the prayer itself, Jesus underscores that our relationship with God cannot be
-        separated from our relationships with others.</p>
+            <p>Jesus deliberately places forgiveness at the heart of spiritual life, creating a direct connection
+                between how we
+                treat others and how God treats us. The reciprocal nature of this teaching ("forgive us... as we
+                forgive")
+                establishes forgiveness not as optional but as fundamental to Christian discipleship. By emphasizing
+                this
+                principle immediately after the prayer itself, Jesus underscores that our relationship with God cannot
+                be
+                separated from our relationships with others.</p>
 
-    <p>This teaching reveals that forgiveness is not merely an emotional release but a spiritual imperative that
-        reflects God's character and determines our standing in His Kingdom. When we withhold forgiveness from others,
-        we essentially reject the very mercy we seek from God, creating a spiritual barrier that prevents us from fully
-        experiencing divine grace.</p>
+            <p>This teaching reveals that forgiveness is not merely an emotional release but a spiritual imperative that
+                reflects God's character and determines our standing in His Kingdom. When we withhold forgiveness from
+                others,
+                we essentially reject the very mercy we seek from God, creating a spiritual barrier that prevents us
+                from fully
+                experiencing divine grace.</p>
+        </details>
+    
 
-    <h3>Do Not Worry <small>Matthew 6:25–34</small></h3>
-    <blockquote>
+    <details class="highlight-box">
+    <summary>
+    Do Not Worry
+</summary>
+    <blockquote class="story-box"><br />
         "Therefore I tell you, do not worry about your life, what you will eat or drink; or about your body, what you
         will wear. Is not life more than food, and the body more than clothes? Look at the birds of the air; they do not
         sow or reap or store away in barns, and yet your heavenly Father feeds them. Are you not much more valuable than
@@ -2565,9 +2646,14 @@ function teachings()  {
         consumed by anxiety about material needs. By pointing to examples in nature, He reminds us that if God cares for
         the simplest creatures, He will certainly care for us. His children who are made in his image. <small>Genesis
             1:27</small></p>
+            </details>
+            
 
-    <h3>The Golden Rule <small>Matthew 7:12</small></h3>
-    <blockquote>
+    <details class="highlight-box">
+    <summary>
+    The Golden Rule
+</summary>
+    <blockquote class="story-box"><br />
         "Therefore, whatever you want men to do to you, do also to them, for this is the Law and the Prophets."
     </blockquote>
 
@@ -2586,10 +2672,15 @@ function teachings()  {
         explanation." By connecting this principle to "the Law and the Prophets," Jesus affirms that loving others as
         ourselves fulfills the essence of God's commandments.</p>
 
-    <h3>Eye of The Needle <small>Matthew 19:16-30</small></h3>
+    </details>
+    
+    <details class="highlight-box">
+    <summary>
+    Eye of The Needle
+</summary>
     <p>In this profound encounter, Jesus addresses the relationship between wealth and spiritual commitment:</p>
 
-    <blockquote>
+    <blockquote class="story-box"><br />
         "It is easier for a camel to go through the eye of a needle than for someone who is rich to enter the kingdom of
         God."
     </blockquote>
@@ -2609,12 +2700,16 @@ function teachings()  {
         examine their relationship with possessions and recognize that Kingdom citizenship demands radical generosity
         and detachment from material wealth. True discipleship may require significant sacrifice, but Jesus promises
         that whatever is surrendered for His sake will be restored "a hundredfold" in the economy of God's Kingdom.</p>
+    </details>
 
-    <h3>Humility and Service <small>Matthew 20:20-28</small></h3>
+    <details class="highlight-box">
+    <summary>
+    Humility and Service
+</summary>
     <p>Jesus teaches one of his most profound lessons on leadership and humility when responding to an ambitious
         request:</p>
 
-    <blockquote>
+    <blockquote class="story-box"><br />
         "You know that the rulers of the Gentiles lord it over them, and their high officials exercise authority over
         them. Not so with you. Instead, whoever wants to become great among you must be your servant, and whoever wants
         to be first must be your slave—just as the Son of Man did not come to be served, but to serve, and to give his
@@ -2633,10 +2728,14 @@ function teachings()  {
         enters human history not to be waited upon but to meet human needs, ultimately surrendering his very life. This
         teaching challenges believers to reject power-seeking and embrace Christ-like humility that places others' needs
         above personal ambition and status.</p>
+    </details>
 
-    <h3>Love God Above All <small>Matthew 22:37-38</small></h3>
+    <details class="highlight-box">
+    <summary>
+    Love God Above All
+</summary>
     <p>When challenged by religious leaders about which commandment was greatest, Jesus responded with clarity:</p>
-    <blockquote>
+    <blockquote class="story-box"><br />
         "You shall love the Lord your God with all your heart and with all your soul and with all your mind. This is the
         greatest and first commandment."
     </blockquote>
@@ -2645,10 +2744,14 @@ function teachings()  {
         legal expert tested Jesus by asking which commandment was supreme. Jesus's answer reaffirmed the central Jewish
         prayer known as the Shema (Deuteronomy 6:5), establishing that wholehearted devotion to God transcends all other
         religious obligations.</p>
+    </details>
 
-    <h3>Love Your Neighbor <small>Matthew 22:39-40</small></h3>
+    <details class="highlight-box">
+    <summary>
+    Love Your Neighbor
+</summary>
     <p>Immediately after stating the first commandment, Jesus added:</p>
-    <blockquote>
+    <blockquote class="story-box"><br />
         "And the second is like it: 'You shall love your neighbor as yourself.' On these two commandments hang all the
         Law and the Prophets."
     </blockquote>
@@ -2658,7 +2761,7 @@ function teachings()  {
         traditions that emphasized personal happiness or well-being, Jesus established selfless love as the defining
         characteristic of his followers—a radical standard that would require personal sacrifice and active compassion
         toward all people.</p>
-
+    </details>
     <?php
     endif;
     ?><nav class="nav fullbar">
