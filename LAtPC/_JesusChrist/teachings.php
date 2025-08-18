@@ -2435,204 +2435,142 @@ function teachings()  {
     <p>Jesus Christ's teachings have profoundly influenced human history, offering wisdom that transcends time and
         culture. Below are some of His most important lessons that continue to inspire millions around the world.</p>
 
-        <details class="highlight-box">
-            <summary>
-                Peacemakers
-            </summary>
-            <p>Going along with humility, in <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=MT5_9" title="https://ebible.org/study/">Matthew 5:9</a> Jesus says, "Blessed are the peacemakers, for they will be
-                called
-                children of God." Yes, this means those who help to pacify conflicts between others, but it surely also
-                includes
-                avoiding conflicts between oneself and others as well.</p>
-
-            <blockquote class="story-box"><br />
-                "You have heard that it was said, 'Eye for eye, and tooth for tooth.' But I say to you, do not show
-                opposition
-                against an evil person; but whoever slaps you on your right cheek, turn the other toward him also. And
-                if anyone
-                wants to sue you and take your tunic, let him have your cloak also. Whoever forces you to go one mile,
-                go with
-                him two. Give to him who asks of you, and do not turn away from him who wants to borrow from you."
-                <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=MT5_38" title="Matthew 5:38"><small><ruby>Matthew<rt>5:38</rt></ruby></small></a>
-            </blockquote>
-
-            <p>Why is it important to embrace peace rather than conflict? Jesus teaches that peacemaking reflects the
-                very
-                character of God Himself. By choosing reconciliation over retaliation, we demonstrate we are truly
-                children of
-                the divine Father who offers grace even to those who oppose Him. When we refuse to perpetuate cycles of
-                violence—even when justified by worldly standards—we participate in the revolutionary ethic of the
-                Kingdom where
-                enemies become neighbors and hatred is overcomed by love.</p>
-
-            <p>Jesus concludes this teaching by embodying it perfectly at the cross, where He prays for His persecutors
-                rather
-                than calling down heavenly vengeance. This ultimate demonstration of peaceful resistance transforms
-                human
-                history and reveals that God's power operates not through domination but through self-giving love that
-                absorbs
-                violence without returning it. In this way, peacemakers don't merely avoid conflict—they actively create
-                new
-                possibilities for reconciliation that mirror God's own redemptive work in the world.</p>
-        </details>
+    <details class="highlight-box">
+        <summary>
+            Peacemakers
+        </summary>
+        <p>Going along with humility, in <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=MT5_9" title="https://ebible.org/study/">
+            Matthew 5:9</a>Jesus says, "Blessed are the peacemakers, for they will be
+            called children of God." Yes, this means those who help to pacify conflicts between others, but it surely also
+            includes avoiding conflicts between oneself and others as well.</p>
+        <blockquote class="story-box"><br />
+            "You have heard that it was said, 'Eye for eye, and tooth for tooth.' But I say to you, do not show
+            opposition against an evil person; but whoever slaps you on your right cheek, turn the other toward him also. And
+            if anyone wants to sue you and take your tunic, let him have your cloak also. Whoever forces you to go one mile,
+            go with him two. Give to him who asks of you, and do not turn away from him who wants to borrow from you."
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=MT5_38" title="Matthew 5:38"><small><ruby>Matthew<rt>5:38</rt></ruby></small></a>
+        </blockquote>
+        <p>Why is it important to embrace peace rather than conflict? Jesus teaches that peacemaking reflects the
+            very character of God Himself. By choosing reconciliation over retaliation, we demonstrate we are truly
+            children of the divine Father who offers grace even to those who oppose Him. When we refuse to perpetuate
+            cycles of violence—even when justified by worldly standards—we participate in the revolutionary ethic of the
+            Kingdom where enemies become neighbors and hatred is overcome by love.</p>
+        <p>Jesus concludes this teaching by embodying it perfectly at the cross, where He prays for His persecutors
+            rather than calling down heavenly vengeance. This ultimate demonstration of peaceful resistance transforms
+            human history and reveals that God's power operates not through domination but through self-giving love that
+            absorbs violence without returning it. In this way, peacemakers don't merely avoid conflict—they actively create
+            new possibilities for reconciliation that mirror God's own redemptive work in the world.</p>
+    </details>
 
 
-        <details class="highlight-box">
-            <summary>
-                Let your light shine
-            </summary>
-            <p>Jesus uses a powerful metaphor of light to explain the visible impact His followers should have:</p>
-
-            <blockquote class="story-box"><br />
-                "You are the light of the world. A city built on a hill cannot be hid. People do not light a lamp and
-                put it
-                under the bushel basket; rather, they put it on the lampstand, and it gives light to all in the house.
-                In the
-                same way, let your light shine before others, so that they may see your good works and give glory to
-                your Father
-                in heaven."
-                <a href="https://ebible.org/study/?v1=MT5_14&t1=local%3Aeng-web&w1=bible" title="Matthew 5:14"><small><ruby>Matthew<rt>5:14</rt></ruby></small></a>
-            </blockquote>
-
-            <p>This teaching reveals the inherently public nature of authentic discipleship. Just as light naturally
-                illuminates
-                darkness, genuine Kingdom living inevitably influences the surrounding culture. Jesus declares that His
-                followers possess transformative potential—not to attract attention to themselves, but to redirect that
-                attention toward God.</p>
-
-            <p>The imagery of a city on a hill and a lamp on a stand emphasizes that Christian witness should be visible
-                and
-                accessible. Disciples aren't called to isolation or to hide their Kingdom values, but rather to
-                demonstrate them
-                openly through concrete actions of justice, mercy, and love. This visibility isn't self-promotion but
-                divine
-                testimony—the ultimate purpose is that others "give glory to your Father in heaven."</p>
-
-            <p>This teaching connects to Jesus's broader mission of inaugurating God's Kingdom. As His followers embody
-                Kingdom
-                ethics—generosity, reconciliation, truthfulness, and compassion—they provide glimpses of God's coming
-                reign and
-                invite others to participate in this new reality. Their lives become living invitations to experience
-                the
-                transformative power of God's presence in the world.</p>
-        </details>
-  
-
-  
-        <details class="highlight-box">
-            <summary>
-                Love Your Enemies
-            </summary>
-            <blockquote class="story-box"><br />
-                "You have heard that it was said, 'Love your neighbor and hate your enemy.' But I tell you, love your
-                enemies
-                and pray for those who persecute you, that you may be children of your Father in heaven. He causes his
-                sun to
-                rise on the evil and the good, and sends rain on the righteous and the unrighteous. If you love those
-                who love
-                you, what reward will you get? Are not even the tax collectors doing that? And if you greet only your
-                own
-                people, what are you doing more than others? Do not even pagans do that? Be perfect, therefore, as your
-                heavenly
-                Father is perfect."
-            </blockquote>
-
-            <p>In this revolutionary teaching, Jesus challenges the conventional wisdom of His time. While the cultural
-                norm
-                allowed for loving one's community while harboring hatred toward enemies, Jesus introduces a radical
-                ethic of
-                universal love that extends even to those who persecute us. This teaching represents one of the most
-                challenging
-                and distinctive aspects of Jesus's moral philosophy.</p>
-
-            <p>This principle of unconditional love remains one of Jesus's most profound and difficult teachings. By
-                calling us
-                to imitate God's impartial benevolence, Jesus establishes a standard that transcends natural human
-                inclinations
-                and cultural boundaries. This teaching continues to challenge believers to rise above retribution and
-                cultivate
-                a love that reflects the perfect love of the heavenly Father.</p>
-
-        </details>
-  
+    <details class="highlight-box">
+        <summary>
+            Let your light shine
+        </summary>
+        <p>Jesus uses a powerful metaphor of light to explain the visible impact His followers should have:</p>
+        <blockquote class="story-box"><br />
+            "You are the light of the world. A city built on a hill cannot be hid. People do not light a lamp and
+            put it under the bushel basket; rather, they put it on the lampstand, and it gives light to all in the house.
+            In the same way, let your light shine before others, so that they may see your good works and give glory to
+            your Father in heaven."
+            <a href="https://ebible.org/study/?v1=MT5_14&t1=local%3Aeng-web&w1=bible" title="Matthew 5:14"><small><ruby>Matthew<rt>5:14</rt></ruby></small></a>
+        </blockquote>
+        <p>This teaching reveals the inherently public nature of authentic discipleship. Just as light naturally
+            illuminates darkness, genuine Kingdom living inevitably influences the surrounding culture. Jesus declares that His
+            followers possess transformative potential—not to attract attention to themselves, but to redirect that
+            attention toward God.</p>
+        <p>The imagery of a city on a hill and a lamp on a stand emphasizes that Christian witness should be visible
+            and accessible. Disciples aren't called to isolation or to hide their Kingdom values, but rather to
+            demonstrate them openly through concrete actions of justice, mercy, and love. This visibility isn't self-promotion but
+            divine testimony—the ultimate purpose is that others "give glory to your Father in heaven."</p>
+        <p>This teaching connects to Jesus's broader mission of inaugurating God's Kingdom. As His followers embody
+            Kingdom ethics—generosity, reconciliation, truthfulness, and compassion—they provide glimpses of God's coming
+            reign and invite others to participate in this new reality. Their lives become living invitations to experience
+            the transformative power of God's presence in the world.</p>
+    </details>
 
 
-        <details class="highlight-box">
-            <summary>
-                Forgive
-            </summary>
-            <blockquote class="story-box"><br />
-                "And when you pray, you shall not be like the hypocrites. For they love to pray standing in the
-                synagogues and
-                on the corners of the streets, that they may be seen by men. Assuredly, I say to you, they have their
-                reward.
-                But you, when you pray, go into your room, and when you have shut your door, pray to your Father who is
-                in the
-                secret place; and your Father who sees in secret will reward you openly. And when you pray, do not use
-                vain
-                repetitions as the heathen do. For they think that they will be heard for their many words. Therefore do
-                not be
-                like them. For your Father knows the things you have need of before you ask Him. In this manner,
-                therefore,
-                pray:<br />
-                <pre class="highlight-box" style="display: inline-block;font-weight: bold;">
-    Our Father in heaven,
-    Hallowed be Your name.
-    Your kingdom come.
-    Your will be done
-    On earth as it is in heaven.
-    Give us this day our daily bread.
-    And forgive us our debts,
-    As we forgive our debtors.
-    And do not lead us into temptation,
-    But deliver us from the evil one.
-    For Yours is the kingdom
-    And the power and the glory forever.
-    Amen.
-    </pre><br />
+    <details class="highlight-box">
+        <summary>
+            Love Your Enemies
+        </summary>
+        <blockquote class="story-box"><br />
+            "You have heard that it was said, 'Love your neighbor and hate your enemy.' But I tell you, love your enemies
+            and pray for those who persecute you, that you may be children of your Father in heaven. He causes his sun to
+            rise on the evil and the good, and sends rain on the righteous and the unrighteous. If you love those who love
+            you, what reward will you get? Are not even the tax collectors doing that?
+            And if you greet only your own people, what are you doing more than others?
+            Do not even pagans do that? Be perfect, therefore, as your heavenly Father is perfect."
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=MT5_43" title="Matthew 5:43"><small><ruby>Matthew<rt>5:43</rt></ruby></small></a>
+        </blockquote>
+        <p>In this revolutionary teaching, Jesus challenges the conventional wisdom of His time. While the cultural
+            norm allowed for loving one's community while harboring hatred toward enemies, Jesus introduces a radical
+            ethic of universal love that extends even to those who persecute us. This teaching represents one of the most
+            challenging and distinctive aspects of Jesus's moral philosophy.</p>
+        <p>This principle of unconditional love remains one of Jesus's most profound and difficult teachings. By
+            calling us to imitate God's impartial benevolence, Jesus establishes a standard that transcends natural human
+            inclinations and cultural boundaries. This teaching continues to challenge believers to rise above retribution
+            and cultivate a love that reflects the perfect love of the heavenly Father.</p>
+    </details>
 
-                For if you forgive men their trespasses, your heavenly Father will also forgive you. But if you do not
-                forgive
-                men their trespasses, neither will your Father forgive your trespasses."
-            </blockquote>
 
-            <p>In Matthew 6:5-15, Jesus teaches about forgiveness as an essential spiritual practice. After instructing
-                His
-                disciples on how to pray with sincerity rather than for public approval, He provides the Lord's Prayer
-                as a
-                model. Central to this prayer is the concept of forgiveness—both receiving it from God and extending it
-                to
-                others.</p>
+    <details class="highlight-box">
+        <summary>
+            Forgive
+        </summary>
+        <blockquote class="story-box"><br />
+            "And when you pray, you shall not be like the hypocrites.
+            For they love to pray standing in the synagogues and on the corners of the streets, that they may be seen by men.
+            Assuredly, I say to you, they have their reward.
+            But you, when you pray, go into your room, and when you have shut your door, pray to your Father who is in the secret place;
+            and your Father who sees in secret will reward you openly. And when you pray, do not use vain repetitions as the heathen do.
+            For they think that they will be heard for their many words.
+            Therefore do not be like them. For your Father knows the things you have need of before you ask Him.
+            In this manner, therefore, pray:<br />
+        <pre class="highlight-box" style="display: inline-block;font-weight: bold;">
+            Our Father in heaven,
+            Hallowed be Your name.
+            Your kingdom come.
+            Your will be done
+            On earth as it is in heaven.
+            Give us this day our daily bread.
+            And forgive us our debts,
+            As we forgive our debtors.
+            And do not lead us into temptation,
+            But deliver us from the evil one.
+            For Yours is the kingdom
+            And the power and the glory forever.
+            Amen.<a href="https://www.vaticannews.va/en/prayers/our-father.html" title="Our Father Prayer"style="font-size:1rem;float:right;margin-right:1rem;"><small><ruby>Our Father<rt>Prayer</rt></ruby></small></a>
+        </pre><br />
+            For if you forgive men their trespasses, your heavenly Father will also forgive you. But if you do not
+            forgive men their trespasses, neither will your Father forgive your trespasses."
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=MT6_7" title="Matthew 6:7"><small><ruby>Matthew<rt>6:7</rt></ruby></small></a>
+        </blockquote>
+        <p>In <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=MT6_5" title="Matthew 6:5-15">Matthew 6:5-15</a>,
+            Jesus teaches about forgiveness as an essential spiritual practice. After instructing
+            His disciples on how to pray with sincerity rather than for public approval, He provides the Lord's Prayer
+            as a model. Central to this prayer is the concept of forgiveness—both receiving it from God and extending it to others.</p>
+        <p>Jesus deliberately places forgiveness at the heart of spiritual life, creating a direct connection
+            between how we treat others and how God treats us. The reciprocal nature of this teaching ("forgive us... as we forgive")
+            establishes forgiveness not as optional but as fundamental to Christian discipleship. By emphasizing
+            this principle immediately after the prayer itself, Jesus underscores that our relationship with God cannot
+            be separated from our relationships with others.</p>
+        <p>This teaching reveals that forgiveness is not merely an emotional release but a spiritual imperative that
+            reflects God's character and determines our standing in His Kingdom. When we withhold forgiveness from
+            others, we essentially reject the very mercy we seek from God, creating a spiritual barrier that prevents us
+            from fully experiencing divine grace.</p>
+    </details>
 
-            <p>Jesus deliberately places forgiveness at the heart of spiritual life, creating a direct connection
-                between how we
-                treat others and how God treats us. The reciprocal nature of this teaching ("forgive us... as we
-                forgive")
-                establishes forgiveness not as optional but as fundamental to Christian discipleship. By emphasizing
-                this
-                principle immediately after the prayer itself, Jesus underscores that our relationship with God cannot
-                be
-                separated from our relationships with others.</p>
-
-            <p>This teaching reveals that forgiveness is not merely an emotional release but a spiritual imperative that
-                reflects God's character and determines our standing in His Kingdom. When we withhold forgiveness from
-                others,
-                we essentially reject the very mercy we seek from God, creating a spiritual barrier that prevents us
-                from fully
-                experiencing divine grace.</p>
-        </details>
-    
 
     <details class="highlight-box">
     <summary>
-    Do Not Worry
-</summary>
+        Do Not Worry
+    </summary>
     <blockquote class="story-box"><br />
         "Therefore I tell you, do not worry about your life, what you will eat or drink; or about your body, what you
         will wear. Is not life more than food, and the body more than clothes? Look at the birds of the air; they do not
         sow or reap or store away in barns, and yet your heavenly Father feeds them. Are you not much more valuable than
         they? Can any one of you by worrying add a single hour to your life?
-
         And why do you worry about clothes? See how the flowers of the field grow. They do not labor or spin. Yet I tell
         you that not even Solomon in all his splendor was dressed like one of these. If that is how God clothes the
         grass of the field, which is here today and tomorrow is thrown into the fire, will he not much more clothe
@@ -2640,61 +2578,56 @@ function teachings()  {
         we wear?' For the pagans run after all these things, and your heavenly Father knows that you need them. But seek
         first his kingdom and his righteousness, and all these things will be given to you as well. Therefore do not
         worry about tomorrow, for tomorrow will worry about itself. Each day has enough trouble of its own."
+        <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=MT6_25" title="Matthew 6:25-34"><small><ruby>Matthew<rt>6:25-34</rt></ruby></small></a>
     </blockquote>
+    <p>In this teaching from <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=MT6_25"title="Matthew 6:25-34">Matthew 6:25-34</a>,
+    Jesus encourages us to trust in God's providence rather than being consumed by anxiety about material needs.
+    By pointing to examples in nature, He reminds us that if God cares for the simplest creatures, He will certainly care for us.
+    His children who are made in his image
+    <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=GN1_27"title="Genesis 1:27">Genesis 1:27</a></small></p>
+        </details>
 
-    <p>In this teaching from Matthew 6:25-34, Jesus encourages us to trust in God's providence rather than being
-        consumed by anxiety about material needs. By pointing to examples in nature, He reminds us that if God cares for
-        the simplest creatures, He will certainly care for us. His children who are made in his image. <small>Genesis
-            1:27</small></p>
-            </details>
-            
 
     <details class="highlight-box">
     <summary>
-    The Golden Rule
-</summary>
+        The Golden Rule
+    </summary>
     <blockquote class="story-box"><br />
         "Therefore, whatever you want men to do to you, do also to them, for this is the Law and the Prophets."
+        <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=MT7_12" title="Matthew 7:12"><small><ruby>Matthew<rt>7:12</rt></ruby></small></a>
     </blockquote>
-
     <p>This simple yet profound teaching appears in Jesus's Sermon on the Mount, embedded within a broader discourse
         about living righteously. The Golden Rule serves as a practical ethical framework that summarizes much of
         Jesus's moral teaching. It follows His instructions about prayer, judging others, and seeking God, and precedes
         His warnings about the narrow path to salvation.</p>
-
     <p>In context, Jesus presents this principle as the culmination of His teachings on how to treat others—after
         warning against harsh judgment, encouraging persistent prayer, and explaining God's generous nature. The rule
         isn't merely about reciprocity; it calls for proactive compassion and treating others with the same dignity,
         respect, and care we desire for ourselves.</p>
-
     <p>This teaching echoes throughout many religious traditions. Rabbi Hillel, a Jewish contemporary of Jesus,
         similarly taught: "What is hateful to you, do not do to your neighbor. That is the whole Torah; the rest is
         explanation." By connecting this principle to "the Law and the Prophets," Jesus affirms that loving others as
         ourselves fulfills the essence of God's commandments.</p>
-
     </details>
-    
+
+
     <details class="highlight-box">
     <summary>
-    Eye of The Needle
-</summary>
+        Eye of The Needle
+    </summary>
     <p>In this profound encounter, Jesus addresses the relationship between wealth and spiritual commitment:</p>
-
     <blockquote class="story-box"><br />
-        "It is easier for a camel to go through the eye of a needle than for someone who is rich to enter the kingdom of
-        God."
+        "It is easier for a camel to go through the eye of a needle than for someone who is rich to enter the kingdom of God."
+        <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=MT19_24" title="Matthew 19:24"><small><ruby>Matthew<rt>19:24</rt></ruby></small></a>
     </blockquote>
-
     <p>This teaching emerges from Jesus's interaction with a wealthy young man seeking eternal life. Despite his
         religious observance, the man's attachment to his possessions prevented him from following Jesus completely,
         although he was a devout follower of the law. When challenged to sell everything and give to the poor, the young
         ruler departed in sorrow, unable to relinquish his wealth.</p>
-
     <p>Jesus's statement about camels and needles isn't merely hyperbole—it reveals a fundamental spiritual principle
         about the incompatibility between material attachment and Kingdom values. The rich often face unique spiritual
         obstacles: self-sufficiency that diminishes reliance on God, attachment to worldly security, and the tendency to
         accumulate rather than distribute resources.</p>
-
     <p>However, Jesus balances this severe warning with hope: "With God all things are possible." While wealth creates
         significant spiritual barriers, divine grace can overcome even these obstacles. This teaching calls believers to
         examine their relationship with possessions and recognize that Kingdom citizenship demands radical generosity
@@ -2702,42 +2635,41 @@ function teachings()  {
         that whatever is surrendered for His sake will be restored "a hundredfold" in the economy of God's Kingdom.</p>
     </details>
 
+
     <details class="highlight-box">
     <summary>
-    Humility and Service
-</summary>
+        Humility and Service
+    </summary>
     <p>Jesus teaches one of his most profound lessons on leadership and humility when responding to an ambitious
         request:</p>
-
     <blockquote class="story-box"><br />
         "You know that the rulers of the Gentiles lord it over them, and their high officials exercise authority over
         them. Not so with you. Instead, whoever wants to become great among you must be your servant, and whoever wants
         to be first must be your slave—just as the Son of Man did not come to be served, but to serve, and to give his
-        life as a ransom for many."
+        life as a ransom for many." <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=MT20_25" title="Matthew 20:25"><small><ruby>Matthew<rt>20:25-28</rt></ruby></small></a>
     </blockquote>
-
     <p>This teaching emerges from a family's request for status and power. The mother of James and John approaches Jesus
         seeking privileged positions for her sons in his kingdom. When the other disciples become indignant at this
         attempt to secure special favor, Jesus transforms the moment into a revolutionary lesson on leadership.</p>
-
     <p>Jesus contrasts worldly leadership, characterized by dominance and authority, with Kingdom leadership, defined by
         service and self-sacrifice. In God's economy, greatness is measured not by how many serve you, but by how many
         you serve. This inverted hierarchy establishes servanthood as the path to spiritual significance.</p>
-
     <p>Most powerfully, Jesus presents himself as the ultimate example of this servant leadership. The incarnate God
         enters human history not to be waited upon but to meet human needs, ultimately surrendering his very life. This
         teaching challenges believers to reject power-seeking and embrace Christ-like humility that places others' needs
         above personal ambition and status.</p>
     </details>
 
+
     <details class="highlight-box">
     <summary>
-    Love God Above All
-</summary>
+        Love God Above All
+    </summary>
     <p>When challenged by religious leaders about which commandment was greatest, Jesus responded with clarity:</p>
     <blockquote class="story-box"><br />
         "You shall love the Lord your God with all your heart and with all your soul and with all your mind. This is the
         greatest and first commandment."
+        <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=MT22_37" title="Matthew 22:37"><small><ruby>Matthew<rt>22:37</rt></ruby></small></a>
     </blockquote>
     <p>This teaching emerged during a series of confrontations in Jerusalem, where various religious factions sought to
         trap Jesus with difficult questions. After silencing the Sadducees on the question of resurrection, a Pharisaic
@@ -2746,14 +2678,16 @@ function teachings()  {
         religious obligations.</p>
     </details>
 
+
     <details class="highlight-box">
     <summary>
-    Love Your Neighbor
-</summary>
+        Love Your Neighbor
+    </summary>
     <p>Immediately after stating the first commandment, Jesus added:</p>
     <blockquote class="story-box"><br />
         "And the second is like it: 'You shall love your neighbor as yourself.' On these two commandments hang all the
         Law and the Prophets."
+        <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=MT22_39" title="Matthew 22:39"><small><ruby>Matthew<rt>22:39</rt></ruby></small></a>
     </blockquote>
     <p>Jesus inseparably linked love for God with love for others, declaring that these twin commandments form the
         foundation of all scriptural teaching. This revolutionary ethical principle called believers to extend the same
@@ -2762,6 +2696,8 @@ function teachings()  {
         characteristic of his followers—a radical standard that would require personal sacrifice and active compassion
         toward all people.</p>
     </details>
+
+
     <?php
     endif;
     ?><nav class="nav fullbar">
