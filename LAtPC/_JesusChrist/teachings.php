@@ -2,6 +2,10 @@
 function content(){
     ?>
 <style>
+.fullbar .nav-links a{
+    color: var(--dialog-text-highlight);
+}
+
 .nav-links {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -44,6 +48,11 @@ function content(){
     box-shadow: var(--box-shadow);
 }
 
+.section h1 {
+    color: var(--primary-color);
+    font-size: 2em;
+    margin-bottom: 20px;
+}
 .section h2 {
     color: var(--primary-color);
     font-size: 2em;
@@ -205,7 +214,7 @@ summary::marker {
     .nav-links {
         grid-template-columns: 1fr;
     }
-    
+
 }
 @media (min-width: 768px) {
     pre {
@@ -222,36 +231,45 @@ function teachings()  {
         // Below is a <section> that ends after the <nav>.
         ?>
 
-<section id="^" class="section fullbar">
-    <h2><span class="emoji">📚</span>What This Guide Is About</h2>
+<section class="section fullbar">
+    <h1 id="^"><span class="emoji">📚</span>What This Guide Is About</h1>
     <p>Hi there! This guide is all about the amazing things Jesus taught when He lived on Earth about 2,000 years ago.
         Jesus was God's son, and He came to teach people how to live good lives and how to love God and each other.</p>
-
     <p>The stories about Jesus are written in four special books called the Gospels. These books are named Matthew,
         Mark, Luke, and John - after the people who wrote them. Each writer told the story of Jesus in their own way,
         kind of like how you and your friends might tell the same story but focus on different parts.</p>
-
     <div class="highlight-box">
         <p><strong>Think of it like this:</strong> if you went to an amazing birthday party, you might tell your mom
             about the games you played. Your sister might tell about the delicious cake. Your brother might talk about
             the funny clown. And your friend might describe the cool decorations. You all went to the same party, but
             you each noticed different things that were special to you.</p>
     </div>
-
     <p>That's exactly what happened with the four Gospel writers. They all knew about Jesus and His teachings, but each
         one wrote about the parts that were most important for the people they were writing to.</p>
-
     <h3><span class="emoji">💖</span>Why Jesus's Teachings Matter</h3>
     <p>Jesus taught people how to be kind, loving, and good. His teachings help us know how to treat our families,
         friends, and even people we don't know very well. He taught about being honest, helping others, and loving God
         with all our hearts.</p>
 </section>
-<?php
+<?php /*
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+*/
     elseif (isset($_GET['gospels'])):
+/*
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+*/
 ?>
 
 <section id="^" class="section fullbar">
-    <h2><span class="emoji">🌟</span>Teachings Found in Multiple Gospel Books</h2>
+    <h1><span class="emoji">🌟</span>Teachings Found in Multiple Gospel Books</h1>
     <p>When something appears in more than one Gospel book, it means it was really, really important. It's like when
         all your teachers at school tell you the same rule - you know it must be super important!
         The same goes for when at work, people get fired for breaking the rules.</p>
@@ -274,104 +292,102 @@ function teachings()  {
 
     <div class="highlight-box">
         <details>
-            <summary>Matthew</summary> Version (Matthew 23-25) provides the most comprehensive account of this
-            discourse. Matthew's presentation includes not only the prophetic elements found in the
-            other Gospels but also additional parables and teachings about judgment and
-            preparedness. The discourse begins with Jesus's denunciation of the scribes and
-            Pharisees in chapter 23, moves through prophecies about the destruction of Jerusalem
-            and signs of the end times in chapter 24, and concludes with parables about the final
-            judgment in chapter 25. This extended treatment reflects Matthew's systematic
-            approach to organizing Jesus's teachings and his emphasis on Jesus as the authoritative
-            teacher and judge.
+            <summary>Matthew</summary>In Matthew <a href="https://ebible.org/study/?v1=MT23_1&w1=bible&t1=local%3Aeng-web" title="Matthew 23:1">(23-25)</a>,
+            the author provides the most comprehensive account of this discourse. Matthew's presentation includes not only the prophetic elements found in the
+            other Gospels but also additional parables and teachings about judgment and preparedness.
+            The discourse begins with Jesus's denunciation of the scribes and Pharisees in chapter 23,
+            moves through prophecies about the destruction of Jerusalem and signs of the end times in chapter 24,
+            and concludes with parables about the final judgment in chapter 25. This extended treatment reflects Matthew's systematic
+            approach to organizing Jesus's teachings and his emphasis on Jesus as the authoritative teacher and judge.
         </details>
 
         <details>
-            <summary>Mark</summary> (Mark 13:5-37) offers a more concise but equally powerful presentation
-            of the same material. Mark's account focuses primarily on the prophetic warnings and
-            signs, maintaining his characteristic emphasis on immediate action and urgency. The
-            use of the word "immediately" throughout Mark's Gospel creates a sense of pressing
-            concern that permeates his version of the Olivet Discourse. Mark's presentation serves
-            his overall theme of Jesus as the suffering servant whose followers must be prepared for
-            persecution and tribulation.
+            <summary>Mark</summary>In Mark <a href="https://ebible.org/study/?v1=MK13_5&w1=bible&t1=local%3Aeng-web" title="Mark 13:5">(13:5-37)</a>,
+            the author offers a more concise but equally powerful presentation of the same material.
+            Mark's account focuses primarily on the prophetic warnings and signs, maintaining his characteristic emphasis on immediate action and urgency.
+            The use of the word "immediately" throughout Mark's Gospel creates a sense of pressing concern that permeates his version of the Olivet Discourse.
+            Mark's presentation serves his overall theme of Jesus as the suffering servant whose followers must be prepared for persecution and tribulation.
         </details>
+
         <details>
-            <summary>Luke</summary> (Luke 21:5-36) provides yet another perspective on this crucial teaching.
-            Luke's account includes unique elements that reflect his concern for Gentile readers and
-            his emphasis on the universal scope of Jesus's message. Luke's version contains specific
-            warnings about the destruction of Jerusalem that are more detailed than those found in
-            Matthew and Mark, possibly reflecting Luke's writing after the actual destruction of the
-            temple in 70 AD.
+            <summary>Luke</summary>In Luke <a href="https://ebible.org/study/?v1=LK21_5&w1=bible&t1=local%3Aeng-web" title="Luke 21:5">(21:5-36)</a>,
+            the author provides yet another perspective on this crucial teaching.
+            Luke's account includes unique elements that reflect his concern for Gentile readers and his emphasis on the universal scope of Jesus's message.
+            Luke's version contains specific warnings about the destruction of Jerusalem that are more detailed than those found in
+            Matthew and Mark, possibly reflecting Luke's writing after the actual destruction of the temple in 70 AD.
         </details>
 
         <details>
             <summary>John</summary>
             Rather than including a direct parallel to the Olivet Discourse, John incorporates
             eschatological themes throughout his Gospel, particularly in the Farewell Discourse
-            (John 13-17). John's emphasis on eternal life as a present reality rather than merely a
-            future hope provides a different theological perspective on the same ultimate concerns
-            addressed in the Olivet Discourse.
+            <a href="https://ebible.org/study/?v1=JN13_1&w1=bible&t1=local%3Aeng-web" title="John 13">(John 13-17)</a>.
+            John's emphasis on eternal life as a present reality rather than merely a future hope provides
+            a different theological perspective on the same ultimate concerns addressed in the Olivet Discourse.
         </details>
-    </div>
 
-    <p>Think of it like this: if your parents told you they were going on a trip but would come back, they might
+        <p>Think of it like this: if your parents told you they were going on a trip but would come back, they might
         give you instructions about what to do while they're gone. They'd want you to be good, and be ready for when
         they return.
         That's kind of what Jesus was doing - giving His friends instructions for while He was away.</p>
+    </div>
 
     <h3><span class="emoji">📚</span>Jesus's Story-Lessons (<a href="../JesusChrist/parables#^">Parables</a>)</h3>
     <p>All four Gospel writers tell us that Jesus loved to teach using stories. These weren't just any stories -
         they were special stories with important meanings.</p>
-
     <div class="story-box">
         <h4>Why Jesus Used Stories</h4>
         <p>Jesus used stories because they help people remember important lessons. Just like how you might remember
             a story your grandma told you better than a list of rules for some task or project.
             Also people remembered Jesus's stories and the lessons they taught.</p>
     </div>
-
 </section>
 
-
-
-
-
-
-<?php
+<?php /*
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+*/
     elseif (isset($_GET['Matthew'])):
+/*
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+*/
 ?>
-
-
-
-
-
-
 <section id="^" class="section fullbar">
-    <h2><span class="emoji">📖</span>Matthew's Special Teachings</h2>
+    <h1><span class="emoji">📖</span>Matthew's Special Teachings</h1>
     <p>Matthew was really good at organizing things. If Matthew were your teacher, he would probably have the most
         organized classroom with everything in its proper place! Matthew collected Jesus's teachings and organized
-        them
-        into five big groups. Each group teaches us something different about how to follow Jesus.
-    </p>
-    <fieldset>
-        <legend>The Five Discourses: Structure and Significance</legend>
+        them into five big groups. Each group teaches us something different about how to follow Jesus.</p>
+
+        <h2><small>The Five Discourses: Structure and Significance</small></h2>
         <p>Matthew's organization of Jesus's teachings into five distinct discourses represents one
-            of the most sophisticated literary structures in the New Testament.
+            of the most sophisticated literary structures in the New Testament <sup>[<a href="?conclusion#[1]">1</a>]</sup>.
         </p>
-        <h3>Biblical scholars have
-            long recognized that these five discourses are marked by a distinctive closing formula:</h3>
-        <p>"when Jesus had finished speaking" or similar phrases that appear at 7:28, 11:1, 13:53,
-            19:1, and 26:1 [2]. This structural pattern creates a framework that some scholars have
-            compared to the five books of the Pentateuch, suggesting that Matthew intended to
-            present Jesus as a new Moses delivering a new law to God's people.</p>
-        <p>The Circe Institute's analysis of these discourses reveals an even more sophisticated
+        <h3>Biblical scholars have long recognized that these five discourses are marked by a distinctive closing formula:</h3>
+        <p>"when Jesus had finished speaking" or similar phrases that appear at
+            <a href="https://ebible.org/study/?v1=MT7_28&w1=bible&t1=local%3Aeng-web"   title="Matthew 7:28">7:28</a>,
+            <a href="https://ebible.org/study/?v1=MT11_1&w1=bible&t1=local%3Aeng-web"   title="Matthew 11:1">11:1</a>,
+            <a href="https://ebible.org/study/?v1=MT13_53&w1=bible&t1=local%3Aeng-web"  title="Matthew 13:53">13:53</a>,
+            <a href="https://ebible.org/study/?v1=MT19_1&w1=bible&t1=local%3Aeng-web"   title="Matthew 19:1">19:1</a>,
+            <a href="https://ebible.org/study/?v1=MT26_1&w1=bible&t1=local%3Aeng-web"   title="Matthew 26:1">26:1</a>
+            <sup>[<a href="?conclusion#[2]">2</a>]</sup>.
+         This structural pattern creates a framework that some scholars have compared to the five books of the Pentateuch,
+         suggesting that Matthew intended to present Jesus as a new Moses delivering a new law to God's people.</p>
+        <p><a href="https://circeinstitute.org/blog/author/brian-phillips/">Brian Phillips</a>'s analysis of these discourses reveals an even more sophisticated
             structure, demonstrating how Matthew uses these five blocks of teaching to retell the
             entire Old Testament narrative, showing Jesus as the fulfillment of all previous
-            revelation [3]. Each discourse corresponds to a different period of Old Testament history,
+            revelation <sup>[<a href="?conclusion#[1]">1</a>]</sup>.
+            Each discourse corresponds to a different period of Old Testament history,
             from the giving of the law at Sinai through the prophetic warnings of judgment and
             restoration. This structure serves Matthew's overarching theological purpose of
             demonstrating Jesus's role as the culmination of Jewish history and prophecy.
         </p>
-    </fieldset>
 
     <h3 id="Sermon on the Mount"><span class="emoji">⛰️</span>Lesson 1: The Sermon on the Mount (How to Live a Good
         Life)</h3>
@@ -380,7 +396,8 @@ function teachings()  {
         people about how to live in a way that makes God happy.</p>
 
     <div class="highlight-box">
-        <h4>The Beatitudes (The "Blessed Are" Sayings Matthew 5:3-12)</h4>
+        <h4>The Beatitudes (The "Blessed Are" Sayings
+            <a href="https://ebible.org/study/?v1=MT5_3&w1=bible&t1=local%3Aeng-web" title="Matthew 5:3">Matthew 5:3-12</a>)</h4>
         <p>Jesus started by telling people about different kinds of people who are blessed (which means God is
             especially happy with them and will take care of them). Here are some examples in simple words:</p>
         <ul style="margin-left: 20px; margin-top: 10px;">
@@ -391,20 +408,14 @@ function teachings()  {
             <li>Blessed are the merciful: for they shall obtain mercy.</li>
             <li>Blessed are the pure in heart: for they shall see God.</li>
             <li>Blessed are the peacemakers: for they shall be called the children of God.</li>
-            <li>Blessed are they which are persecuted for righteousness' sake: for theirs is the kingdom of heaven.
-            </li>
-            <li>Blessed are ye, when men shall revile you, and persecute you, and shall say all manner of evil
-                against
-                you falsely, for my sake.
-            <li>Rejoice, and be exceeding glad: for great is your reward in heaven: for so persecuted they the
-                prophets
-                which were before you.</li>
+            <li>Blessed are they which are persecuted for righteousness' sake: for theirs is the kingdom of heaven.</li>
+            <li>Blessed are ye, when men shall revile you, and persecute you, and shall say all manner of evil against you falsely, for my sake.</li>
+            <li>Rejoice, and be exceeding glad: for great is your reward in heaven: for so persecuted they the prophets which were before you.</li>
         </ul>
     </div>
 
-
     <div class="story-box">
-        <h4>The Antitheses (Matthew 5:21-48)</h4>
+        <h4>The Antitheses (<a href="https://ebible.org/study/?v1=MT5_21&w1=bible&t1=local%3Aeng-web" title="Matthew 5:21">Matthew 5:21-48</a>)</h4>
         <p>Represent Jesus's most direct engagement with
             Jewish law and tradition. Six times Jesus uses the formula "You have heard that it was
             said... but I say to you," demonstrating his authority to interpret and even supersede
@@ -415,7 +426,7 @@ function teachings()  {
 
     <h4><span class="emoji">🙏</span><a href="https://www.vaticannews.va/en/prayers/our-father.html">The Lord's
             Prayer
-            (Matthew 6:9-13)</a></h4>
+            </a>(<a href="https://ebible.org/study/?v1=MT6_9&w1=bible&t1=local%3Aeng-web" title="Matthew 6:9">Matthew 6:9-13</a>)</h4>
     <p>Jesus taught His followers how to pray.
     <ul style="margin-left: 20px;">
         <li>Our Father who art in heaven,</li>
@@ -432,30 +443,29 @@ function teachings()  {
     </ul>
 
     <div class="story-box">
-        <h4>Teachings on Worry and Judgment (Matthew 6:25-7:6)</h4>
-        <p>address practical concerns of daily life while maintaining focus on spiritual priorities. Jesus's teaching
-            about not
-            worrying about food and clothing, illustrated with references to birds and lilies, has
-            provided comfort and guidance to countless believers throughout history. The famous
-            teaching about not judging others (Matthew 7:1-6) establishes principles for community
-            life and interpersonal relationships.</p>
+        <h4>Teachings on Worry and Judgment
+            (Matthew <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT6_25" title="Matthew 6:25">6:25</a> &
+            <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT7_1" title="Matthew 7:1">7:1</a>)</h4>
+        <p>This teaching addresses practical concerns of daily life while maintaining focus on spiritual priorities. Jesus's teaching
+            about not worrying about food and clothing, illustrated with references to birds and lilies, has
+            provided comfort and guidance to countless believers throughout history.
+            The famous teaching about not judging others establishes principles for community life and interpersonal relationships.</p>
     </div>
 
     <div class="story-box">
-        <h4>The Golden Rule and Narrow Gate (Matthew 7:7-14)</h4>
-        <p>provide both positive guidance
+        <h4>The Golden Rule and Narrow Gate (Matthew <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT7_7" title="Matthew 7:7">7:7-14</a>)</h4>
+        <p>This teaching provides both positive guidance
             for ethical behavior and warnings about the difficulty of the Christian path. The Golden
-            Rule, "Therefore, whatever you want men to do to you, do also to them" (Matthew 7:12),
+            Rule, <b>"Therefore, whatever you want men to do to you, do also to them"</b> (
+            <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT7_12" title="Matthew 7:12">Matthew 7:12</a>),
             has become one of the most widely recognized ethical principles in human history,
             transcending religious boundaries to influence secular ethics and law.
-            The Sermon on the Mount concludes with the Parable of the Two Builders (Matthew
-            7:24-27), which emphasizes the importance of not merely hearing Jesus's words but
+            The Sermon on the Mount concludes with the <a href="parables#:~:text=The%20Wise%20and%20Foolish%20Builders">Parable of the Two Builders</a> (
+            <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT7_24" title="Matthew 7:24">Matthew 7:24-27</a>),
+            which emphasizes the importance of not merely hearing Jesus's words but
             putting them into practice. This conclusion reinforces the practical nature of Jesus's
             teaching and the necessity of obedience for those who would be his disciples.</p>
     </div>
-
-    <p>In a different instance Jesus was preaching to a crowd and told them that it was better to pray in your room
-        alone, than in the temple for everyone to see.</p>
 
     <h3 id="The Mission Discourse"><span class="emoji">🔔</span>The Second Discourse: The Mission Discourse (Matthew 10)
     </h3>
@@ -2332,7 +2342,7 @@ function teachings()  {
 
     <div class="references-list">
 
-        <div class="reference">
+        <div class="reference" id="[1]">
             <strong>[1]</strong>
             <span>Circe Institute. "The 5 Discourses of Jesus." Circe Institute
                 Blog. Accessed June 7, 2025.</span>
@@ -2340,7 +2350,7 @@ function teachings()  {
                 https://circeinstitute.org/blog/blog-5-discourses-jesus/</a>
         </div>
 
-        <div class="reference">
+        <div class="reference" id="[2]">
             <strong>[2]</strong>
             <span>Wikipedia. "Five Discourses of Matthew." Wikipedia, The Free
                 Encyclopedia. Accessed June 7, 2025.</span>
@@ -2348,16 +2358,8 @@ function teachings()  {
                 https://en.wikipedia.org/wiki/Five_Discourses_of_Matthew</a>
         </div>
 
-        <div class="reference">
+        <div class="reference" id="[3]">
             <strong>[3]</strong>
-            <span>Circe Institute. "The 5 Discourses of Jesus." Circe Institute
-                Blog. Accessed June 7, 2025.</span>
-            <br /><a href="https://circeinstitute.org/blog/blog-5-discourses-jesus/">
-                https://circeinstitute.org/blog/blog-5-discourses-jesus/</a>
-        </div>
-
-        <div class="reference">
-            <strong>[4]</strong>
             <span>Campbell United Methodist Church. "Jesus in the Gospel of John:
                 The Discourses of Jesus." Campbell United. March 18, 2018.</span>
             <br /><a
@@ -2365,8 +2367,8 @@ function teachings()  {
                 https://www.campbellunited.org/documents/sermons/20180318_Jesus-In-Gospel-of-John_The-Discourses-of-Jesus.pdf</a>
         </div>
 
-        <div class="reference">
-            <strong>[5]</strong>
+        <div class="reference" id="[4]">
+            <strong>[4]</strong>
             <span>Christianity Applied. "The Discourses of Christ in
                 Chronological Order." Christianity Applied. January 2025.</span>
             <br /><a
@@ -2374,23 +2376,23 @@ function teachings()  {
                 https://www.christianityapplied.org/wp-content/uploads/2025/01/The-Discourses-of-Christ-in-Chronological-Order.pdf</a>
         </div>
 
-        <div class="reference">
-            <strong>[6]</strong>
+        <div class="reference" id="[5]">
+            <strong>[5]</strong>
             <span>BibleHub. "John: Jesus' Discourses Upon." Nave's Topical Bible. Accessed June 7, 2025.</span>
             <br /><a href="https://biblehub.com/topical/naves/j/john--jesus_discourses_upon.htm">
                 https://biblehub.com/topical/naves/j/john--jesus_discourses_upon.htm</a>
         </div>
 
-        <div class="reference">
-            <strong>[7]</strong>
+        <div class="reference" id="[6]">
+            <strong>[6]</strong>
             <span>Reinstorf, D. H. "Mark's Unique Contribution." Religious Studies Center, Brigham Young University.
                 Vol. 17, No. 2, 2016.</span>
             <br /><a href="https://rsc.byu.edu/vol-17-no-2-2016/marks-unique-contribution">
                 https://rsc.byu.edu/vol-17-no-2-2016/marks-unique-contribution</a>
         </div>
 
-        <div class="reference">
-            <strong>[8]</strong>
+        <div class="reference" id="[7]">
+            <strong>[7]</strong>
             <span>Public Square Magazine. "Unearthing the Overlooked Gems of Luke's Sermon on the Plain." Public Square
                 Magazine. Accessed June 7, 2025.</span>
             <br /><a
@@ -2398,8 +2400,8 @@ function teachings()  {
                 https://publicsquaremag.org/faith/gospel-fare/unearthing-the-overlooked-gems-of-lukes-sermon-on-the-plain/</a>
         </div>
 
-        <div class="reference">
-            <strong>[9]</strong>
+        <div class="reference" id="[8]">
+            <strong>[8]</strong>
             <span>Quora. "Is it accurate that the gospel of Luke contains 17 unique parables of Jesus?" Quora. Accessed
                 June 7, 2025.</span>
             <br /><a
@@ -2407,8 +2409,8 @@ function teachings()  {
                 https://www.quora.com/Is-it-accurate-that-the-gospel-of-Luke-contains-17-unique-parables-of-Jesus</a>
         </div>
 
-        <div class="reference">
-            <strong>[10]</strong>
+        <div class="reference" id="[9]">
+            <strong>[9]</strong>
             <span>"The Sermons and Discourses of Jesus Christ: A Comprehensive Guide Organized by Gospel" By Manus AI.
                 Created Access June 11, 2025.</span>
             <br /><a href="../_JesusChrist/Jesus_Christ_Sermons_and_Discourses_Guide.pdf">

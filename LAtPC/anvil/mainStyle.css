@@ -1,6 +1,6 @@
 :root {
   --primary-color: #0275d8;
-  --primary-dark: #0d4164;
+  --primary-dark: rgba(13, 65, 100);
 
   --secondary-color: #5bce8b91;
   --secondary-dark: #449d44;
@@ -16,6 +16,7 @@
   --border-radius: 10px;
   --box-shadow: 0 4px 12px #00000153;
   --transition: all 0.3s ease;
+  --link-bg: rgba(13, 65, 100, 0.3);
 
   --bannerAndFooter-bg: #6494ed23;
 }
@@ -63,7 +64,28 @@ header p {
   max-width: 1200px;
 }
 
-
+.fullbar a {
+  color: var(--primary-dark);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.fullbar a:link {
+  color: var(--primary-dark);
+}
+.fullbar a:visited {
+  color: var(--primary-color);
+}
+.fullbar a:hover {
+  color: var(--secondary-dark);
+  background-color: var(--link-bg);
+  border-radius: 25%;
+}
+.fullbar a:active {
+  color: var(--secondary-dark);
+}
+.fullbar a:focus {
+  color: var(--secondary-color);
+}
 /* ===================================
    Logo, phone, and banner STYLES
                                     ~Refer to navMenu.css for nav menu~

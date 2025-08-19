@@ -31,7 +31,7 @@ function content(){
 }
 function sermons() {
     ?>
-    
+
     <article class="fullbar">
         <fieldset><legend><h1>Sermons and Discourses</h1></legend>
     <a href="teachings?gospels#Olivet%20Discourse">Olivet Discourse</a>
