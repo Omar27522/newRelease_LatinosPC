@@ -5,6 +5,13 @@ function content(){
 .fullbar .nav-links a{
     color: var(--dialog-text-highlight);
 }
+.fullbar a:hover {
+    border-radius:25px;
+}
+.fullbar p a, h3 a, h4 a{
+    padding-left: .5%;
+    padding-right: .5%;
+}
 
 .nav-links {
     display: grid;
@@ -389,17 +396,15 @@ function teachings()  {
             demonstrating Jesus's role as the culmination of Jewish history and prophecy.
         </p>
 
-    <h3 id="Sermon on the Mount"><span class="emoji">⛰️</span>Lesson 1: The Sermon on the Mount (How to Live a Good
-        Life)</h3>
-    <p>This is probably the most famous teaching Jesus ever gave. He went up on a mountain and taught a huge crowd
-        of
-        people about how to live in a way that makes God happy.</p>
+    <h3 id="Sermon on the Mount"><span class="emoji">⛰️</span>Lesson 1: The Sermon on the Mount (How to Live a Good Life)</h3>
+    <p>This is probably the most famous teaching Jesus ever gave.
+        He went up on a mountain and taught a huge crowd of people about how to live in a way that makes God happy.</p>
 
     <div class="highlight-box">
         <h4>The Beatitudes (The "Blessed Are" Sayings
             <a href="https://ebible.org/study/?v1=MT5_3&w1=bible&t1=local%3Aeng-web" title="Matthew 5:3">Matthew 5:3-12</a>)</h4>
-        <p>Jesus started by telling people about different kinds of people who are blessed (which means God is
-            especially happy with them and will take care of them). Here are some examples in simple words:</p>
+        <p>Jesus started by telling people about different kinds of people who are blessed
+            (which means God is especially happy with them and will take care of them). Here are some examples in simple words:</p>
         <ul style="margin-left: 20px; margin-top: 10px;">
             <li>Blessed are the poor in spirit: for theirs is the kingdom of heaven.</li>
             <li>Blessed are they that mourn: for they shall be comforted.</li>
@@ -424,10 +429,9 @@ function teachings()  {
             righteousness that goes beyond external compliance to internal transformation.</p>
     </div>
 
-    <h4><span class="emoji">🙏</span><a href="https://www.vaticannews.va/en/prayers/our-father.html">The Lord's
-            Prayer
+    <h4><span class="emoji">🙏</span><a href="https://www.vaticannews.va/en/prayers/our-father.html">The Lord's Prayer
             </a>(<a href="https://ebible.org/study/?v1=MT6_9&w1=bible&t1=local%3Aeng-web" title="Matthew 6:9">Matthew 6:9-13</a>)</h4>
-    <p>Jesus taught His followers how to pray.
+    <p>Jesus taught His followers how to pray.</p>
     <ul style="margin-left: 20px;">
         <li>Our Father who art in heaven,</li>
         <li>hallowed be thy name.</li>
@@ -444,7 +448,7 @@ function teachings()  {
 
     <div class="story-box">
         <h4>Teachings on Worry and Judgment
-            (Matthew <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT6_25" title="Matthew 6:25">6:25</a> &
+            (<a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT6_25" title="Matthew 6:25">6:25</a> &
             <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT7_1" title="Matthew 7:1">7:1</a>)</h4>
         <p>This teaching addresses practical concerns of daily life while maintaining focus on spiritual priorities. Jesus's teaching
             about not worrying about food and clothing, illustrated with references to birds and lilies, has
@@ -453,157 +457,156 @@ function teachings()  {
     </div>
 
     <div class="story-box">
-        <h4>The Golden Rule and Narrow Gate (Matthew <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT7_7" title="Matthew 7:7">7:7-14</a>)</h4>
-        <p>This teaching provides both positive guidance
-            for ethical behavior and warnings about the difficulty of the Christian path. The Golden
-            Rule, <b>"Therefore, whatever you want men to do to you, do also to them"</b> (
-            <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT7_12" title="Matthew 7:12">Matthew 7:12</a>),
-            has become one of the most widely recognized ethical principles in human history,
-            transcending religious boundaries to influence secular ethics and law.
-            The Sermon on the Mount concludes with the <a href="parables#:~:text=The%20Wise%20and%20Foolish%20Builders">Parable of the Two Builders</a> (
-            <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT7_24" title="Matthew 7:24">Matthew 7:24-27</a>),
-            which emphasizes the importance of not merely hearing Jesus's words but
-            putting them into practice. This conclusion reinforces the practical nature of Jesus's
-            teaching and the necessity of obedience for those who would be his disciples.</p>
+        <h4>The Golden Rule and Narrow Gate (<a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT7_7" title="Matthew 7:7">Matthew 7:7-14</a>)</h4>
+        <p>This teaching provides both positive guidance for ethical behavior and warnings about the difficulty of the Christian path.
+            The Golden Rule, <b>"Therefore, whatever you want men to do to you, do also to them"</b> (<a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT7_12" title="Matthew 7:12">Matthew 7:12</a>),
+            has become one of the most widely recognized ethical principles in human history, transcending religious boundaries to influence secular ethics and law.
+            The Sermon on the Mount concludes with the <a href="parables#:~:text=The%20Wise%20and%20Foolish%20Builders">Parable of the Two Builders</a>
+            (<a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT7_24" title="Matthew 7:24">Matthew 7:24-27</a>),
+            which emphasizes the importance of not merely hearing Jesus's words but putting them into practice.
+            This conclusion reinforces the practical nature of Jesus's teaching and the necessity of obedience for those who would be his disciples.</p>
     </div>
 
-    <h3 id="The Mission Discourse"><span class="emoji">🔔</span>The Second Discourse: The Mission Discourse (Matthew 10)
+    <h3 id="The Mission Discourse"><span class="emoji">🔔</span>The Mission Discourse
     </h3>
     <div class="highlight-box">
-        <p>The Mission Discourse, also known as the Little Commission, provides detailed
+        <p>This Second Discourse: The Mission Discourse (<a href="https://ebible.org/study/?v1=MT10_1&w1=bible&t1=local%3Aeng-web" title="Matthew 10">Matthew 10</a>), also known as the Little Commission, provides detailed
             instructions for the Twelve Apostles as they embark on their first missionary journey.
             This discourse reveals Jesus's understanding of the challenges facing his followers and
             his expectations for their ministry approach.</p>
-        <h4>The Commissioning (Matthew 10:1-4)</h4>
+        <h4>The Commissioning (<a href="https://ebible.org/study/?v1=MT10_1&w1=bible&t1=local%3Aeng-web" title="Matthew 10:1-4">Matthew 10:1-4</a>)</h4>
         <p>begins with Jesus giving the twelve disciples
             authority over unclean spirits and power to heal diseases. The naming of the twelve
             apostles establishes the foundation of Jesus's earthly ministry and foreshadows the
             leadership structure of the early church. This delegation of authority demonstrates
             Jesus's intention to extend his ministry through his followers rather than limiting it to his
             personal presence.</p>
-        <h4>Instructions for Ministry (Matthew 10:5-15)</h4>
+        <h4>Instructions for Ministry (<a href="https://ebible.org/study/?v1=MT10_5&w1=bible&t1=local%3Aeng-web" title="Matthew 10:5-15">Matthew 10:5-15</a>)</h4>
         <p>provide specific guidance for the apostles'
             mission strategy. Jesus's instruction to go "only to the lost sheep of the house of Israel"
             reflects the initial focus of his earthly ministry on the Jewish people, though this
             limitation would later be expanded to include all nations. The instructions about
             traveling light, accepting hospitality, and responding to rejection establish principles for
             Christian ministry that continue to guide missionary work today.</p>
-        <h4>Warnings About Persecution (Matthew 10:16-25)</h4>
+        <h4>Warnings About Persecution (<a href="https://ebible.org/study/?v1=MT10_16&w1=bible&t1=local%3Aeng-web" title="Matthew 10:16-25">Matthew 10:16-25</a>)</h4>
         <p>prepare the disciples for the
             opposition they will face. Jesus's famous instruction to be "wise as serpents and
-            harmless as doves" (Matthew 10:16) provides a model for navigating hostile
+            harmless as doves" (<a href="https://ebible.org/study/?v1=MT10_16&w1=bible&t1=local%3Aeng-web" title="Matthew 10:16">Matthew 10:16</a>) provides a model for navigating hostile
             environments while maintaining Christian integrity. The warnings about family division
             and persecution before governors and kings proved prophetic as the early church faced
             systematic opposition from both religious and political authorities.</p>
-        <h4>Teachings on Fear and Confession (Matthew 10:26-33)</h4>
+        <h4>Teachings on Fear and Confession (<a href="https://ebible.org/study/?v1=MT10_26&w1=bible&t1=local%3Aeng-web" title="Matthew 10:26-33">Matthew 10:26-33</a>)</h4>
         <p>address the psychological and
             spiritual challenges of discipleship under persecution. Jesus's repeated exhortation "do
             not fear" acknowledges the natural human response to danger while calling for
             supernatural courage based on trust in God's care and protection. The teaching about
             confessing Christ before men establishes the public nature of Christian faith and the
             importance of bold witness even in difficult circumstances.</p>
-        <h4>The Cost of Discipleship (Matthew 10:34-42)</h4>
+        <h4>The Cost of Discipleship (<a href="https://ebible.org/study/?v1=MT10_34&w1=bible&t1=local%3Aeng-web" title="Matthew 10:34-42">Matthew 10:34-42</a>)</h4>
         <p>presents some of Jesus's most
             challenging teachings about the demands of following him. The statement "I did not
-            come to bring peace but a sword" (Matthew 10:34) has often been misunderstood, but in
+            come to bring peace but a sword" (<a href="https://ebible.org/study/?v1=MT10_34&w1=bible&t1=local%3Aeng-web" title="Matthew 10:34">Matthew 10:34</a>) has often been misunderstood, but in
             context it refers to the inevitable conflict that arises when the Gospel challenges existing
             social and religious structures. The teaching about taking up one's cross and losing
             one's life to find it establishes the paradoxical nature of Christian discipleship, where
             apparent loss leads to ultimate gain.</p>
     </div>
 
-    <h3 id="The Parabolic Discourse"><span class="emoji">🔔</span>The Third Discourse: The Parabolic Discourse (Matthew
-        13)</h3>
+    <h3 id="The Parabolic Discourse"><span class="emoji">🔔</span>The Parabolic Discourse</h3>
     <div class="highlight-box">
-        <p>The Parabolic Discourse represents Jesus's most systematic presentation of Kingdom
+        <p>In this third Discourse: The Parabolic Discourse represents Jesus's most systematic presentation of Kingdom
             teaching through the use of parables. This discourse includes seven parables specifically
             about the Kingdom of Heaven, each revealing different aspects of God's reign and its
             impact on human life and society.</p>
-        <h4>The Setting and Method (Matthew 13:1-3)</h4>
-        <p>establishes the context for Jesus's parabolic
+        <h4>The Setting and Method </h4>
+        <p><a href="https://ebible.org/study/?v1=MT13_1&w1=bible&t1=local%3Aeng-web" title="Matthew 13:1-3">Matthew 13:1-3</a>
+            establishes the context for Jesus's parabolic
             teaching. The movement from the house to the seaside, where Jesus teaches from a
             boat to crowds on the shore, creates a natural amphitheater that allows his voice to
             carry to large numbers of people. The introduction of parabolic teaching at this point in
             Matthew's Gospel marks a significant shift in Jesus's pedagogical approach, moving
             from direct instruction to indirect revelation through stories and metaphors.</p>
-        <h4>The Parable of the Sower (Matthew 13:3-9, 18-23)</h4>
-        <p>serves as both the first parable and
+        <h4><a href="parables#:~:text=The%20Sower">The Parable of the Sower</a></h4>
+        <p><a href="https://ebible.org/study/?v1=MT13_3&w1=bible&t1=local%3Aeng-web" title="Matthew 13:3-9">Matthew 13:3-9</a>,
+            and <a href="https://ebible.org/study/?v1=MT13_18&w1=bible&t1=local%3Aeng-web" title="Matthew 13:18-23">Matthew 13:18-23</a>
+            serves as both the first parable and
             the interpretive key for understanding Jesus's parabolic method. The detailed
             explanation that Jesus provides to his disciples reveals the allegorical nature of many
             parables and establishes the principle that spiritual understanding requires divine
             illumination. The four types of soil represent different responses to the Gospel message,
             from immediate rejection to fruitful acceptance.</p>
-        <h4>The Purpose of Parables (Matthew 13:10-17)</h4>
-        <p>addresses the disciples' question about
-            why Jesus speaks in parables. Jesus's explanation that parables both reveal and conceal
-            truth, depending on the spiritual condition of the hearer, demonstrates the selective
+        <h4>The Purpose of Parables</h4>
+        <p><a href="https://ebible.org/study/?v1=MT13_10&w1=bible&t1=local%3Aeng-web" title="Matthew 13:10-17">Matthew 13:10-17</a>
+            addresses the disciples' question why Jesus speaks in parables.
+            Jesus's explanation that parables both reveal and conceal truth,
+            depending on the spiritual condition of the hearer, demonstrates the selective
             nature of divine revelation. This teaching establishes the principle that spiritual
             understanding is a gift from God rather than merely the result of human intelligence or
             effort.</p>
-        <h4>The Parable of the Tares (Matthew 13:24-30, 36-43)</h4>
-        <p>addresses the problem of evil in
-            the world and God's ultimate plan for dealing with it. The image of wheat and tares
-            growing together until harvest provides comfort for believers who struggle with the
-            presence of evil in the world while warning of ultimate judgment for those who reject
-            God's rule. The detailed explanation emphasizes the role of angels in the final judgment
-            and the eternal consequences of human choices.</p>
-        <h4>The Parables of Growth (Matthew 13:31-33)</h4>
-        <p>use the images of mustard seed and
-            leaven to illustrate the Kingdom's surprising growth from small beginnings to great
+        <h4><a href="parables#:~:text=The%20Parable%20of%20the%20Wheat%20and%20the%20Weeds">The Parable of the Tares</a></h4>
+        <p><a href="https://ebible.org/study/?v1=MT13_24&w1=bible&t1=local%3Aeng-web" title="Matthew 13:24-30">Matthew 13:24-30</a>
+            and <a href="https://ebible.org/study/?v1=MT13_36&w1=bible&t1=local%3Aeng-web" title="Matthew 13:36-43">Matthew 13:36-43</a>
+            addresses the problem of evil in the world and God's ultimate plan for dealing with it.
+            The image of wheat and tares growing together until harvest provides comfort for believers
+            who struggle with the presence of evil in the world while warning of ultimate judgment for
+            those who reject God's rule. The detailed explanation emphasizes the role of angels in the
+            final judgment and the eternal consequences of human choices.</p>
+        <h4><a href="parables#:~:text=Illustrates%20how%20God's%20kingdom%20starts%20small%20but%20grows%20enormously">The Parables of Growth</a></h4>
+        <p><a href="https://ebible.org/study/?v1=MT13_31&w1=bible&t1=local%3Aeng-web">Matthew 13:31-33</a>
+            By the use of the images of <a href="parables#:~:text=The%20Mustard%20Seed">mustard seed</a> and <a href="parables#:~:text=The%20Leaven">leaven</a> to illustrate the Kingdom's surprising growth from small beginnings to great
             influence. These parables encourage believers who might be discouraged by the
             apparent insignificance of the Kingdom's early manifestations while warning opponents
             not to underestimate its ultimate power and scope.</p>
-        <h4>The Parables of Value (Matthew 13:44-46)</h4>
-        <p>employ the images of hidden treasure and a
-            pearl of great price to illustrate the supreme worth of the Kingdom of Heaven. These
-            parables emphasize the joy and sacrifice involved in obtaining the Kingdom, suggesting
-            that those who truly understand its value will gladly give up everything else to possess it.</p>
-        <h4>The Parable of the Net (Matthew 13:47-50)</h4>
-        <p>concludes the public portion of the
-            discourse with another judgment parable, emphasizing the mixed nature of the
+        <h4><a href="parables#:~:text=Reveals%20the%20supreme%20value%20of%20God's%20kingdom,%20worth%20sacrificing%20everything%20to%20obtain">The Parables of Value</a></h4>
+        <p><a href="https://ebible.org/study/?v1=MT13_44&w1=bible&t1=local%3Aeng-web">Matthew 13:44-46</a>
+            employ the images of <a href="parables#:~:text=The%20Hidden%20Treasure">hidden treasure</a> and
+            <a href="parables#:~:text=The%20Pearl%20of%20Great%20Price">pearl of great price</a> to illustrate the supreme worth of the Kingdom of Heaven.
+            These parables emphasize the joy and sacrifice involved in obtaining the Kingdom,
+            suggesting that those who truly understand its value will gladly give up everything else to possess it.</p>
+        <h4><a href="parables#:~:text=The%20Fish%20Net">The Parable of the Net</a></h4>
+        <p><a href="https://ebible.org/study/?v1=MT13_47&w1=bible&t1=local%3Aeng-web">Matthew 13:47-50</a>
+            concludes the public portion of the discourse with another judgment parable, emphasizing the mixed nature of the
             Kingdom's earthly manifestation and the certainty of final separation between the
-            righteous and the wicked. This parable reinforces the themes of the Tares parable while
+            righteous and the wicked. This parable reinforces the themes of the <a href="parables#:~:text=The%20Parable%20of%20the%20Wheat%20and%20the%20Weeds">Tares parable</a>while
             using the familiar image of fishing to make the teaching accessible to Jesus's audience.</p>
     </div>
 
-    <h3 id="The Discourse on the Church"><span class="emoji">🔔</span>The Fourth Discourse: The Discourse on the Church
-        (Matthew 18)</h3>
+    <h3 id="The Discourse on the Church"><span class="emoji">🔔</span>The Discourse on the Church</h3>
     <div class="highlight-box">
-        <p>The Discourse on the Church represents Matthew's unique contribution to
+        <p>The Fourth Discourse: The Discourse on the Church represents Matthew's unique contribution to
             understanding Christian community life and church governance. This discourse is
             particularly significant because Matthew is the only Gospel to use the word
-            "church" (ekklesia), appearing twice in this section (16:18 and 18:17) [5]. The teachings
+            "church" (<b><a href="https://www.google.com/search?q=Ekklesia" title="Google Definition">Ekklesia</a></b> in Greek, <b><a href="https://www.google.com/search?q=Ecclesiam">Ecclesiam</a></b> in Latin), appearing twice in this section (<a href="https://ebible.org/study/?v1=MT16_18&w1=bible&t1=local%3Aeng-kjv">Matthew 16:18</a> and <a href="https://ebible.org/study/?v1=MT18_17&w1=bible&t1=local%3Aeng-kjv">Matthew 18:17</a>) <sup>[<a href="?conclusion#:~:text=Christianity%20Applied.%20&quot;The%20Discourses%20of%20Christ%20in%20Chronological%20Order.&quot;%20Christianity%20Applied.%20January%202025.">4</a>]</sup>. The teachings
             in this discourse have profoundly influenced Christian understanding of church
             discipline, forgiveness, and community relationships.</p>
-        <h4>The Question of Greatness (Matthew 18:1-5)</h4>
-        <p>begins the discourse with the disciples'
-            question about who is greatest in the Kingdom of Heaven. Jesus's response, using a
-            child as an object lesson, overturns conventional notions of greatness and establishes
+        <h4>The Question of Greatness</h4>
+        <p><a href="https://ebible.org/study/?v1=MT18_5&w1=bible&t1=local%3Aeng-web">Matthew 18:1-5</a> begins the discourse with the disciples' question about who is greatest in the Kingdom of Heaven.
+            Jesus's response, using a child as an object lesson, overturns conventional notions of greatness and establishes
             humility as the fundamental virtue for Kingdom citizens. This teaching sets the tone for
             the entire discourse, emphasizing that Christian community operates according to
             different principles than worldly organizations.</p>
-        <h4>Warnings Against Causing Sin (Matthew 18:6-9)</h4>
-        <p>address the serious responsibility that
+        <h4>Warnings Against Causing Sin</h4>
+        <p><a href="https://ebible.org/study/?v1=MT18_6&w1=bible&t1=local%3Aeng-web">Matthew 18:6-9</a> address the serious responsibility that
             comes with influence over others, particularly those who are vulnerable or new in faith.
             The severe language about millstones and cutting off hands and feet emphasizes the
             gravity of leading others into sin and the lengths to which believers should go to avoid
             such behavior. These teachings establish the principle of corporate responsibility within
             the Christian community.</p>
-        <h4>The Parable of the Lost Sheep (Matthew 18:10-14)</h4>
-        <p>illustrates God's concern for every
-            individual believer and establishes the responsibility of church leaders to seek out and
+        <h4><a href="parables#:~:text=The%20Lost%20Sheep">The Parable of the Lost Sheep</a></h4>
+        <p><a href="https://ebible.org/study/?v1=MT18_10&w1=bible&t1=local%3Aeng-web">Matthew 18:10-14</a>
+            illustrates God's concern for every individual believer and establishes the responsibility of church leaders to seek out and
             restore those who have wandered from the faith. This parable emphasizes the value that
             God places on each person and the joy that results from restoration and reconciliation.</p>
-        <h4>Church Discipline (Matthew 18:15-20)</h4>
-        <p>provides the most detailed instructions in the
+        <h4>Church Discipline</h4>
+        <p><a href="https://ebible.org/study/?v1=MT18_15&w1=bible&t1=local%3Aeng-web">Matthew 18:15-20</a> provides the most detailed instructions in the
             New Testament for handling conflicts and sin within the Christian community. The four-
             step process of private confrontation, witnesses, church involvement, and ultimate
             exclusion establishes principles for maintaining both truth and love in community
-            relationships. The promise that "where two or three are gathered together in My name, I
-            am there in the midst of them" (Matthew 18:20) has become one of the most beloved
-            assurances in Christian worship and fellowship.</p>
-        <h4>The Parable of the Unforgiving Servant (Matthew 18:21-35)</h4>
-        <p>concludes the discourse
+            relationships. The promise that "where two or three are gathered together in My name,
+            I am there in the midst of them" (<a href="https://ebible.org/study/?v1=MT18_20&w1=bible&t1=local%3Aeng-web">Matthew 18:20</a>)
+            has become one of the most beloved assurances in Christian worship and fellowship.</p>
+        <h4><a href="parables#:~:text=The%20Unmerciful%20Servant">The Parable of the Unforgiving Servant</a></h4>
+        <p><a href="https://ebible.org/study/?v1=MT18_21&w1=bible&t1=local%3Aeng-web">Matthew 18:21-35</a> concludes the discourse
             with a powerful illustration of the relationship between divine forgiveness and human
             forgiveness. Peter's question about forgiving "up to seven times" receives Jesus's
             response of "seventy times seven," indicating that forgiveness should be unlimited. The
@@ -611,8 +614,7 @@ function teachings()  {
             extend the same grace to others, with serious consequences for those who fail to do so.</p>
     </div>
 
-    <h3 id="The Olivet Discourse"><span class="emoji">🔔</span>The Fifth Discourse: The Olivet Discourse (Matthew 23-25)
-    </h3>
+    <h3 id="The Olivet Discourse"><span class="emoji">🔔</span>The Fifth Discourse: The Olivet Discourse</h3>
     <div class="highlight-box">
         <p>The Olivet Discourse represents the culmination of Matthew's presentation of Jesus's
             teaching ministry, combining prophetic warnings, ethical instruction, and eschatological

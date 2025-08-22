@@ -47,6 +47,11 @@
 
 
 
+**_JesusChrist |to-do:| (8/22/2025)
+    _heavenlyFather ---> I would like to change the way this is presented (CSS), and perhaps make a new revision.
+    _Apostles       ---> Add links and text dialogs, the reader needs to have a better understanding of the Apostles, and perhaps invite teh reader to a life of servitude, like a saint.
+    parables        ---> Organize the Parables, I guess Matthew will lead the organization of the page, followed by Mark, Luke and John at last. perhaps find more parables in case they are any, or maybe add the explanations Jesus gave to some of them.
+
 
 *Work on loading CSS files accordingly instead of using embedded CSS on each file.*
 *Work on getting the carousel to work, and implement it in parables, the current solution does not convince me.*
