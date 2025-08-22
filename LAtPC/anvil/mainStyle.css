@@ -65,7 +65,7 @@ header p {
 }
 
 .fullbar a {
-  color: var(--primary-dark);
+  color: var(--primary-color);
   text-decoration: none;
   transition: color 0.3s ease;
 }

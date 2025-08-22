@@ -448,8 +448,8 @@ function teachings()  {
 
     <div class="story-box">
         <h4>Teachings on Worry and Judgment
-            (<a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT6_25" title="Matthew 6:25">6:25</a> &
-            <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT7_1" title="Matthew 7:1">7:1</a>)</h4>
+            (<a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT6_25" title="Matthew 6:25">Matthew 6:25</a> &
+            <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT7_1" title="Matthew 7:1">Matthew 7:1</a>)</h4>
         <p>This teaching addresses practical concerns of daily life while maintaining focus on spiritual priorities. Jesus's teaching
             about not worrying about food and clothing, illustrated with references to birds and lilies, has
             provided comfort and guidance to countless believers throughout history.
