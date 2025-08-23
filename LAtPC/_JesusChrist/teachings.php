@@ -132,6 +132,10 @@ function content(){
     cursor: grab;
 }
 
+.pargraphStoryBox{
+    margin-top: 1%;
+}
+
 .emoji {
     font-size: 1.5em;
     margin-right: 10px;
@@ -221,7 +225,9 @@ summary::marker {
     .nav-links {
         grid-template-columns: 1fr;
     }
-
+    .pargraphStoryBox{
+        margin-top: 5%;
+    }
 }
 @media (min-width: 768px) {
     pre {
@@ -230,6 +236,8 @@ summary::marker {
 }
 </style>
 <?php
+        //when Translating make an array for the Ids of the sections,
+        //they are used in the conclusion I noticed this on Matthew's Gosple section.
 }
 
 function teachings()  {
@@ -614,71 +622,70 @@ function teachings()  {
             extend the same grace to others, with serious consequences for those who fail to do so.</p>
     </div>
 
-    <h3 id="The Olivet Discourse"><span class="emoji">🔔</span>The Fifth Discourse: The Olivet Discourse</h3>
+    <h3 id="The Olivet Discourse"><span class="emoji">🔔</span>The Olivet Discourse</h3>
     <div class="highlight-box">
-        <p>The Olivet Discourse represents the culmination of Matthew's presentation of Jesus's
+        <p>The Fifth Discourse: The Olivet Discourse represents the culmination of Matthew's presentation of Jesus's
             teaching ministry, combining prophetic warnings, ethical instruction, and eschatological
             revelation. This discourse is the longest single block of teaching in Matthew's Gospel and
             addresses some of the most challenging questions about God's justice, human
             responsibility, and the ultimate destiny of the world.</p>
-        <h4>Woes Against the Pharisees (Matthew 23:1-36)</h4>
-        <p>begin the discourse with a scathing
-            denunciation of religious hypocrisy and false leadership. The seven woes pronounced
-            against the scribes and Pharisees serve as both specific criticism of first-century Jewish
+        <h4>Woes Against the Pharisees</h4>
+        <p><a href="https://ebible.org/study/?v1=MT23_1&w1=bible&t1=local%3Aeng-web">Matthew 23:1-36</a>
+            begins the discourse with a scathing denunciation of religious hypocrisy and false leadership.
+            The seven woes pronounced against the scribes and Pharisees serve as both specific criticism of first-century Jewish
             leadership and timeless warnings against religious pride and corruption. These
             teachings establish Jesus's authority to judge religious institutions and leaders while
             warning against the dangers of external religiosity without internal transformation.</p>
-        <h4>Lament Over Jerusalem (Matthew 23:37-39)</h4>
-        <p>reveals Jesus's heart for his people
+        <h4>Lament Over Jerusalem</h4>
+        <p><a href="https://ebible.org/study/?v1=MT23_37&w1=bible&t1=local%3Aeng-web">Matthew 23:37-39</a>
+            reveals Jesus's heart for his people
             despite their rejection of his message. The image of gathering Jerusalem's children "as a
             hen gathers her chicks under her wings" demonstrates the tender love that motivates
             even the harshest prophetic warnings. The prediction that Jerusalem will not see Jesus
             again "till you say, 'Blessed is He who comes in the name of the Lord'" points forward to
             his second coming and ultimate vindication.</p>
-        <h4>Prophecies of Destruction (Matthew 24:1-35)</h4>
-        <p>address the disciples' questions about
-            the destruction of the temple and the signs of Jesus's coming. These prophecies have
-            been the subject of extensive interpretation throughout Christian history, with some
-            seeing fulfillment in the destruction of Jerusalem in 70 AD and others looking for future
+        <h4>Prophecies of Destruction</h4>
+        <p><a href="https://ebible.org/study/?v1=MT24_1&w1=bible&t1=local%3Aeng-web">Matthew 24:1-35</a>
+            address the disciples' questions about the destruction of the temple and the signs of Jesus's coming.
+            These prophecies have been the subject of extensive interpretation throughout Christian history,
+            with some seeing fulfillment in the destruction of Jerusalem in 70 AD and others looking for future
             fulfillment. The warnings about false messiahs, wars, famines, and persecution provide
             guidance for believers living in times of crisis and uncertainty.</p>
-        <h4>Parables of Preparedness (Matthew 24:36-25:30)</h4>
-        <p>emphasize the importance of
-            readiness for Jesus's return, since the exact timing remains unknown. The Parable of the
-            Faithful Servant, the Ten Virgins, and the Talents all stress the need for vigilance,
-            wisdom, and faithful stewardship during the period of waiting. These parables have
-            provided comfort and motivation for believers throughout the centuries who have
-            looked forward to Christ's return.</p>
-        <h4>The Final Judgment (Matthew 25:31-46)</h4>
-        <p>concludes the discourse with Jesus's most
-            detailed description of the last judgment. The separation of sheep and goats based on
-            acts of mercy toward "the least of these" has profoundly influenced Christian
-            understanding of social responsibility and the relationship between faith and works.
+        <h4>Parables of Preparedness</h4>
+        <p><a href="https://ebible.org/study/?v1=MT24_36&w1=bible&t1=local%3Aeng-web">Matthew 24:36-25:30</a>
+            emphasize the importance of readiness for Jesus's return, since the exact timing remains unknown.
+            The Parable of the Faithful Servant, the Ten Virgins, and the Talents all stress the need for vigilance,
+            wisdom, and faithful stewardship during the period of waiting.
+            These parables have provided comfort and motivation for believers throughout
+            the centuries who have looked forward to Christ's return.</p>
+        <h4>The Final Judgment</h4>
+        <p><a href="https://ebible.org/study/?v1=MT25_31&w1=bible&t1=local%3Aeng-web">Matthew 25:31-46</a>
+            concludes the discourse with Jesus's most detailed description of the last judgment.
+            The separation of sheep and goats based on acts of mercy toward "the least of these"
+            has profoundly influenced Christian understanding of social responsibility and the relationship between faith and works.
             This passage establishes the principle that genuine faith necessarily expresses itself in
             love and service to others, particularly those who are most vulnerable and needy.</p>
     </div>
 
     <h3><span class="emoji">📖</span>Matthew's Theological Contribution</h3>
     <div class="highlight-box">
-        <p>Matthew's five discourses represent far more than a collection of Jesus's teachings; they
-            constitute a carefully crafted theological presentation of Jesus as the authoritative
+        <p>Matthew's five discourses represent far more than a collection of Jesus's teachings;
+            they constitute a carefully crafted theological presentation of Jesus as the authoritative
             teacher and interpreter of God's will. The systematic organization of these discourses
             reflects Matthew's concern to present Jesus's message in a way that would be accessible
             to Jewish readers while establishing the foundation for Christian doctrine and practice.</p>
-
-        <p>The progression from the Sermon on the Mount's establishment of Kingdom principles
-            through the Mission Discourse's instructions for ministry, the Parabolic Discourse's
-            revelation of Kingdom mysteries, the Church Discourse's guidance for community life,
-            and the Olivet Discourse's warnings about judgment creates a comprehensive
-            curriculum for Christian discipleship. Each discourse builds upon the previous ones
-            while addressing different aspects of the Christian life and mission.</p>
-
-        <p>Matthew's emphasis on Jesus's words rather than merely his actions reflects the
-            evangelist's understanding that Jesus came not only to demonstrate God's power but to
-            reveal God's will through authoritative teaching. The careful preservation and
-            organization of these discourses has made Matthew's Gospel the primary source for
-            Christian ethics, church governance, and eschatological understanding throughout the
-            history of the church.</p>
+        <p>The progression from the <a href="#Sermon%20on%20the%20Mount">Sermon on the Mount's</a>
+            establishment of Kingdom principles through the <a href="#The%20Mission%20Discourse">Mission Discourse's</a>
+            instructions for ministry, the <a href="#The%20Parabolic%20Discourse">Parabolic Discourse's</a>
+            revelation of Kingdom mysteries, the <a href="#The%20Discourse%20on%20the%20Church">Church Discourse's</a>
+            guidance for community life, and the <a href="#The%20Olivet%20Discourse">Olivet Discourse's</a>
+            warnings about judgment creates a comprehensive curriculum for Christian discipleship.
+            Each discourse builds upon the previous ones while addressing different aspects of the Christian life and mission.</p>
+        <p>Matthew's emphasis on Jesus's words rather than merely his actions reflects the evangelist's
+            understanding that Jesus came not only to demonstrate God's power but to reveal God's will
+            through authoritative teaching. The careful preservation and organization of these discourses
+            has made Matthew's Gospel the primary source for Christian ethics, church governance, and
+            eschatological understanding throughout the history of the church.</p>
     </div>
 </section>
 
@@ -695,50 +702,41 @@ function teachings()  {
 
 
 
-
 <section id="^" class="section fullbar">
-    <h2><span class="emoji">💫</span>Group 3: John's Special Teachings</h2>
-    <p>John was like the friend who always asked the deep questions. While the other Gospel writers focused on
-        what
-        Jesus did and said, John was really interested in helping people understand who Jesus really was and why
-        He came
-        to Earth.</p>
+    <h2><span class="emoji">💫</span>John's Special Teachings</h2>
+    <p>John was like the friend who always asked the deep questions.
+        While the other Gospel writers focused on what Jesus did and said,
+        John was really interested in helping people understand who Jesus really was and why He came to Earth.</p>
 
     <h3><span class="emoji">🍞</span>"I Am the Bread of Life"</h3>
     <div class="highlight-box">
         <p>After Jesus fed 5,000 people with just five loaves of bread and two fish, the people wanted more free
-            food.
-            But Jesus told them something more important: <strong>"I am the bread of life. Anyone who comes to
-                me will
-                never be hungry, and anyone who believes in me will never be thirsty."</strong></p>
+            food. But Jesus told them something more important: <strong>"I am the bread of life. Anyone who comes to
+            me will never be hungry, and anyone who believes in me will never be thirsty."</strong>
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_35" title="John 6:35">
+                <small><ruby>John<rt>6:35</rt></ruby></small></a></p>
         <p>Jesus wasn't talking about regular bread that fills your stomach. He was talking about spiritual food
-            that
-            fills your heart and soul. Just like your body needs food to grow strong, your spirit needs Jesus to
-            grow
-            strong.</p>
+            that fills your heart and soul. Just like your body needs food to grow strong, your spirit needs Jesus to grow strong.</p>
     </div>
 
     <h3><span class="emoji">💡</span>"I Am the Light of the World"</h3>
-    <p>Jesus said, "I am the light of the world. Whoever follows me will never walk in darkness but will have
-        the light
-        of life."</p>
-    <p>Think about what happens when you're in a dark room and someone turns on the light. Suddenly you can see
-        everything clearly! That's what Jesus does for our lives. Before we know Jesus, it's like we're walking
-        around
-        in the dark, not sure which way to go or what's right and wrong. But when Jesus comes into our lives,
-        it's like
-        someone turned on a bright light.</p>
+    <div class="story-box">
+        <p class="pargraphStoryBox">Jesus said, "I am the light of the world. Whoever follows me will never walk in darkness but will have
+        the light of life." <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN8_12" title="John 8:12">
+            <small><ruby>John<rt>8:12</rt></ruby></small></a> Think about what happens when you're in a dark room and someone turns on the light.
+        Suddenly you can see everything clearly! That's what Jesus does for our lives. Before we know Jesus, it's
+        like we're walking around in the dark, not sure which way to go or what's right and wrong. But when
+        Jesus comes into our lives, it's like someone turned on a bright light.</p>
+    </div>
 
     <h3><span class="emoji">🐑</span>"I Am the Good Shepherd"</h3>
     <div class="story-box">
-        <p>Jesus said, "I am the good shepherd. The good shepherd gives his life for the sheep."</p>
-        <p>In Jesus's time, shepherds took care of sheep. A good shepherd would protect the sheep from wolves
-            and other
-            dangerous animals, even if it meant getting hurt himself. Jesus was saying that He's like a good
-            shepherd,
-            and we're like His sheep. He loves us so much that He was willing to die on the cross to save us
-            from our
-            sins (the wrong things we do).</p>
+        <p class="pargraphStoryBox">Jesus said, "I am the good shepherd. The good shepherd gives his life for the sheep."<a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN10_11" title="John 10:11-18">
+            <small><ruby>John<rt>10:11</rt></ruby></small></a>
+            In Jesus's time, shepherds took care of sheep. A good shepherd would protect the sheep from wolves
+            and other dangerous animals, even if it meant getting hurt himself. Jesus was saying that He's like
+            a good shepherd, and we're like His sheep. He loves us so much that He was willing to die on the cross
+            to save us from our sins (the wrong things we do).</p>
     </div>
 
     <h3><span class="emoji">🌟</span>Jesus and Nicodemus: Being Born Again</h3>
