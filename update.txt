@@ -41,14 +41,16 @@
     (8/14/2025|Update) The Sermons and Discourses page and the teachings page go side by side.
         Although the content is good, the way that is HTMLized is not the best.
             There will be more editions and revisions to these two pages.
-
+    (8/23/2025|Update) There is a way to change the titles of the teachings page.
+        Currently John is the only one displaying the correct title.
+    (8/24/2025|Update) Breadcrumbs added, but they are a bit wordy, I would like to change them to some PHP code, but for now this is fine.
 
 
 
 
 
 **_JesusChrist |to-do:| (8/23/2025)
-    teachings       ---> The titles must change with every link, for example the intro, gospels, etc.
+    teachings       ---> The titles must change with every link, for example the intro, gospels, etc. -LOOK@(8/23/2025|Update)
     _heavenlyFather ---> I would like to change the way this is presented (CSS), and perhaps make a new revision.
     _Apostles       ---> Add links and text dialogs, the reader needs to have a better understanding of the Apostles, and perhaps invite teh reader to a life of servitude, like a saint.
     parables        ---> Organize the Parables, I guess Matthew will lead the organization of the page, followed by Mark, Luke and John at last. perhaps find more parables in case they are any, or maybe add the explanations Jesus gave to some of them.

@@ -285,6 +285,7 @@
         elseif($page->getLang() == "en" && $page->getTitle() == "Sermons"): sermons();
         elseif($page->getLang() == "es-419" && $page->getTitle() == "Sermones"): sermones();
         elseif($page->getLang() == "en" && $page->getTitle() == "Teachings"): teachings();
+        elseif($page->getLang() == "en" && $page->getTitle() == "Teachings: John"): teachings();
         elseif($page->getLang() == "es-419" && $page->getTitle() == "Enseñanzas"): ensenhanzas();
 
         elseif($page->getLang() == "en" && $page->getTitle() == "Template"): template();

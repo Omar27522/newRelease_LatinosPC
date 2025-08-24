@@ -178,10 +178,18 @@ function _JesusChrist($sub_route)
 			break;
 
 		case 'teachings':
-			$page = new Structure('../../','english','Teachings');
-			$keywords = 'Keyword_test';
-			$description = 'Description_test';
-			include '_JesusChrist/teachings.php';
+			if(isset($_GET['John'])){
+				$page = new Structure('../../','english','Teachings: John');
+				$keywords = 'Keyword_test';
+				$description = 'Description_test';
+				include '_JesusChrist/teachings.php';
+			}
+			else{
+				$page = new Structure('../../','english','Teachings');
+				$keywords = 'Keyword_test';
+				$description = 'Description_test';
+				include '_JesusChrist/teachings.php';
+			}
 			break;
 		case 'enseñanzas':
 			$page = new Structure('../../','español','Enseñanzas');

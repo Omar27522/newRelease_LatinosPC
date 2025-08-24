@@ -37,9 +37,7 @@ function content(){
     background: linear-gradient(45deg, var(--primary-color), var(--secondary-dark));
 }
 
-.content {
-    padding: 30px;
-}
+
 
 .section {
     margin-bottom: 40px;
@@ -47,6 +45,7 @@ function content(){
     background: var(--background-color);
     border-radius: 15px;
     border-left: 5px solid var(--bannerAndFooter-bg);
+    padding-top: 3px;
 
 }
 
@@ -213,11 +212,6 @@ summary::marker {
         margin: 10px;
         border-radius: 10px;
     }
-
-    .content {
-        padding: 20px;
-    }
-
     .section {
         padding: 20px;
     }
@@ -228,25 +222,66 @@ summary::marker {
     .pargraphStoryBox{
         margin-top: 5%;
     }
+    .bread-crumbs{
+        font-size: .7rem;
+        gap: 0;
+    }
 }
+/* Breadcrumb Navigation Styles */
+.crumbs {
+    border-radius: 7px;
+    border-right: 4px solid var(--primary-color);
+    padding-top:-20px;
+}
+.bread-crumbs{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+.crumb-link{
+ padding: 10px;
+}
+.crumb-link b {
+    text-decoration: underline;
+}
+
+
+
 @media (min-width: 768px) {
     pre {
         font-size: 1.5rem;
     }
 }
+
+
+
 </style>
+
 <?php
         //when Translating make an array for the Ids of the sections,
         //they are used in the conclusion I noticed this on Matthew's Gosple section.
 }
 
 function teachings()  {
-
+?>
+</section>
+<?php
     if (isset($_GET['intro'])):
         // Below is a <section> that ends after the <nav>.
         ?>
 
 <section class="section fullbar">
+<nav class="crumbs">
+<div class="bread-crumbs">
+    <a href="?intro#^" class="crumb-link">📚 <b>Introduction</b></a>
+    <a href="?gospels#^" class="crumb-link">🌟 All Gospels</a>
+    <a href="?Matthew#^" class="crumb-link">📖 Matthew</a>
+    <a href="?John#^" class="crumb-link">💫 John</a>
+    <a href="?Luke#^" class="crumb-link">❤️ Luke</a>
+    <a href="?Mark#^" class="crumb-link">⚡ Mark</a>
+    <a href="?conclusion#^" class="crumb-link">🎯 Conclusion</a>
+</div>
+</nav>
     <h1 id="^"><span class="emoji">📚</span>What This Guide Is About</h1>
     <p>Hi there! This guide is all about the amazing things Jesus taught when He lived on Earth about 2,000 years ago.
         Jesus was God's son, and He came to teach people how to live good lives and how to love God and each other.</p>
@@ -284,6 +319,17 @@ function teachings()  {
 ?>
 
 <section id="^" class="section fullbar">
+<nav class="crumbs">
+<div class="bread-crumbs">
+    <a href="?intro#^" class="crumb-link">📚 Introduction</a>
+    <a href="?gospels#^" class="crumb-link">🌟 <b>All Gospels</b></a>
+    <a href="?Matthew#^" class="crumb-link">📖 Matthew</a>
+    <a href="?John#^" class="crumb-link">💫 John</a>
+    <a href="?Luke#^" class="crumb-link">❤️ Luke</a>
+    <a href="?Mark#^" class="crumb-link">⚡ Mark</a>
+    <a href="?conclusion#^" class="crumb-link">🎯 Conclusion</a>
+</div>
+</nav>
     <h1><span class="emoji">🌟</span>Teachings Found in Multiple Gospel Books</h1>
     <p>When something appears in more than one Gospel book, it means it was really, really important. It's like when
         all your teachers at school tell you the same rule - you know it must be super important!
@@ -375,6 +421,17 @@ function teachings()  {
 */
 ?>
 <section id="^" class="section fullbar">
+<nav class="crumbs">
+<div class="bread-crumbs">
+    <a href="?intro#^" class="crumb-link">📚 Introduction</a>
+    <a href="?gospels#^" class="crumb-link">🌟 All Gospels</a>
+    <a href="?Matthew#^" class="crumb-link">📖 <b>Matthew</b></a>
+    <a href="?John#^" class="crumb-link">💫 John</a>
+    <a href="?Luke#^" class="crumb-link">❤️ Luke</a>
+    <a href="?Mark#^" class="crumb-link">⚡ Mark</a>
+    <a href="?conclusion#^" class="crumb-link">🎯 Conclusion</a>
+</div>
+</nav>
     <h1><span class="emoji">📖</span>Matthew's Special Teachings</h1>
     <p>Matthew was really good at organizing things. If Matthew were your teacher, he would probably have the most
         organized classroom with everything in its proper place! Matthew collected Jesus's teachings and organized
@@ -703,6 +760,17 @@ function teachings()  {
 
 
 <section id="^" class="section fullbar">
+<nav class="crumbs">
+<div class="bread-crumbs">
+    <a href="?intro#^" class="crumb-link">📚 Introduction</a>
+    <a href="?gospels#^" class="crumb-link">🌟 All Gospels</a>
+    <a href="?Matthew#^" class="crumb-link">📖 Matthew</a>
+    <a href="?John#^" class="crumb-link">💫 <b>John</b></a>
+    <a href="?Luke#^" class="crumb-link">❤️ Luke</a>
+    <a href="?Mark#^" class="crumb-link">⚡ Mark</a>
+    <a href="?conclusion#^" class="crumb-link">🎯 Conclusion</a>
+</div>
+</nav>
     <h2><span class="emoji">💫</span>John's Special Teachings</h2>
     <p>John was like the friend who always asked the deep questions.
         While the other Gospel writers focused on what Jesus did and said,
@@ -721,8 +789,9 @@ function teachings()  {
 
     <h3><span class="emoji">💡</span>"I Am the Light of the World"</h3>
     <div class="story-box">
-        <p class="pargraphStoryBox">Jesus said, "I am the light of the world. Whoever follows me will never walk in darkness but will have
-        the light of life." <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN8_12" title="John 8:12">
+        <p class="pargraphStoryBox">Jesus said, <strong>"I am the light of the world.
+            Whoever follows me will never walk in darkness but will have the light of life."</strong>
+        <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN8_12" title="John 8:12">
             <small><ruby>John<rt>8:12</rt></ruby></small></a> Think about what happens when you're in a dark room and someone turns on the light.
         Suddenly you can see everything clearly! That's what Jesus does for our lives. Before we know Jesus, it's
         like we're walking around in the dark, not sure which way to go or what's right and wrong. But when
@@ -731,96 +800,103 @@ function teachings()  {
 
     <h3><span class="emoji">🐑</span>"I Am the Good Shepherd"</h3>
     <div class="story-box">
-        <p class="pargraphStoryBox">Jesus said, "I am the good shepherd. The good shepherd gives his life for the sheep."<a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN10_11" title="John 10:11-18">
-            <small><ruby>John<rt>10:11</rt></ruby></small></a>
-            In Jesus's time, shepherds took care of sheep. A good shepherd would protect the sheep from wolves
-            and other dangerous animals, even if it meant getting hurt himself. Jesus was saying that He's like
-            a good shepherd, and we're like His sheep. He loves us so much that He was willing to die on the cross
+        <p class="pargraphStoryBox">Jesus said, <strong>"I am the good shepherd. The good shepherd gives his life for the sheep."</strong>
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN10_11" title="John 10:11-18">
+            <small><ruby>John<rt>10:11</rt></ruby></small></a> In Jesus's time, shepherds took care of sheep.
+            A good shepherd would protect the sheep from wolves and other dangerous animals,
+            even if it meant getting hurt himself. Jesus was saying that He's like a good shepherd,
+            and we're like His sheep. He loves us so much that He was willing to die on the cross
             to save us from our sins (the wrong things we do).</p>
     </div>
 
     <h3><span class="emoji">🌟</span>Jesus and Nicodemus: Being Born Again</h3>
-    <p>Nicodemus was a religious leader who came to talk to Jesus at night. Jesus told him something that
-        confused him:
-        "You must be born again." Nicodemus was confused because he thought Jesus was talking about being born
-        as a baby
-        again, which is impossible!</p>
-    <p>But Jesus explained that He wasn't talking about physical birth. He was talking about spiritual birth.
-        When we
-        believe in Jesus and ask Him to be our Savior, it's like being born again spiritually. God gives us a
-        new heart
-        that wants to love Him and do good things.</p>
+    <cite>Nicodemus was a religious leader who came to talk to Jesus at night.</cite>
+    <div class="story-box">
+    <p class="pargraphStoryBox"> Jesus told him something that confused him:
+        <strong>"You must be born again."</strong> <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_3" title="John 3:3">
+        <small><ruby>John<rt>3:3</rt></ruby></small></a>
+        Nicodemus was confused because he thought Jesus was talking about being born as a baby again, which is impossible!
+        But Jesus explained that He wasn't talking about physical birth. He was talking about spiritual birth.
+        When we believe in Jesus and ask Him to be our Savior, it's like being born again spiritually. God gives us a
+        new heart that wants to love Him and do good things.</p>
 
-    <div class="highlight-box">
-        <p>Jesus told Nicodemus the most famous verse in the Bible: <strong>"For God so loved the world that he
-                gave his
-                one and only Son, that whoever believes in him shall not perish but have eternal life."</strong>
-            This
-            means God loves everyone so much that He sent Jesus to die for our sins so we could live with God
-            forever.
+        <p>Jesus told Nicodemus the most famous verse in the Bible: <strong>"For God so loved the world that he gave his one and only Son,
+            that whoever believes in him shall not perish but have eternal life."</strong>
+                <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_16" title="John 3:16">
+            <small><ruby>John<rt>3:16</rt></ruby></small></a>
+            This means God loves everyone so much that He sent Jesus to die for our sins so we could live with God forever.
         </p>
     </div>
-    <h3><span class="emoji">🌟</span>John's Unique Sermons and Discourses</h3>
+    <h2><span class="emoji">🌟</span>John's Unique Sermons and Discourses</h2>
     <div class="highlight-box">
-        <p>The Gospel of John stands apart from the Synoptic Gospels (Matthew, Mark, and Luke) in
-            its presentation of Jesus's teachings. While the Synoptics often present Jesus speaking
+        <p>The Gospel of John stands apart from the <a href="https://en.wikipedia.org/wiki/Synoptic_Gospels" title="Wikipedia">Synoptic Gospels</a>
+            (<a href="?Matthew#^" title="Matthew's Special Teachings">Matthew</a>,
+            <a href="?Mark#^" title="Mark's Special Way of Telling the Story">Mark</a>, and
+            <a href="?Luke#^" title="Luke's Special Teachings">Luke</a>)
+            in its presentation of Jesus's teachings. While the Synoptics often present Jesus speaking
             in brief sayings and parables, John records extended theological discourses that explore
             profound questions about Jesus's identity, his relationship with the Father, and the
             nature of salvation. These discourses represent some of the most theologically rich
             material in the New Testament and have profoundly influenced Christian doctrine,
             particularly regarding Christology, pneumatology, and soteriology.</p>
+        <h3><span class="emoji">🌟</span>John's Distinctive Approach to Jesus's Teachings</h3>
+        <div class="story-box">
+            <p class="paragraphStoryBox">John's approach to Jesus's teachings differs significantly from the Synoptic Gospels in
+                several important ways. First, John presents Jesus's words in longer, more developed
+                discourses rather than the brief sayings and parables that characterize the Synoptics.
+                Second, John's Jesus speaks in a distinctive theological vocabulary, using terms like
+                <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN1_4" title="John 1:4">"life,"</a>
+                <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN1_7" title="John 1:7">"light,"</a>
+                <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN1_14" title="John 1:14">"truth,"</a>
+                and <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_35" title="John 3:35">"love"</a>
+                as central metaphors for his ministry and identity.
+                Third, John frequently presents Jesus's teachings as responses to specific encounters or
+                controversies, embedding them in narrative contexts that illuminate their meaning and significance.</p>
+            <p>The purpose of John's Gospel, as stated in <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN20_31" title="John 20:31">John 20:31</a>,
+                is <strong>"that you may believe that Jesus is the Christ, the Son of God, and that believing you may have life in His name."</strong>
+                This explicit evangelistic and theological purpose shapes John's presentation of Jesus's discourses,
+                focusing them on questions of Jesus's identity and the nature of salvation through faith in him.
+                In John's Gospel, Jesus consistently points to himself as the source of eternal life,
+                making claims about his divine nature and authority that are more explicit than those found in the Synoptic Gospels.</p>
+        </div>
     </div>
-    <h3><span class="emoji">🌟</span>John's Distinctive Approach to Jesus's Teachings</h3>
-    <div class="story-box"><br />
-        <p>John's approach to Jesus's teachings differs significantly from the Synoptic Gospels in
-            several important ways. First, John presents Jesus's words in longer, more developed
-            discourses rather than the brief sayings and parables that characterize the Synoptics.
-            Second, John's Jesus speaks in a distinctive theological vocabulary, using terms like
-            "light," "life," "truth," and "love" as central metaphors for his ministry and identity. Third,
-            John frequently presents Jesus's teachings as responses to specific encounters or
-            controversies, embedding them in narrative contexts that illuminate their meaning and
-            significance.</p>
-
-        <p>The purpose of John's Gospel, as stated in John 20:31, is "that you may believe that
-            Jesus is the Christ, the Son of God, and that believing you may have life in His name."
-            This explicit evangelistic and theological purpose shapes John's presentation of Jesus's
-            discourses, focusing them on questions of Jesus's identity and the nature of salvation
-            through faith in him. John's Jesus consistently points to himself as the source of eternal
-            life, making claims about his divine nature and authority that are more explicit than
-            those found in the Synoptic Gospels.</p>
-    </div>
-    <h3><span class="emoji">🌟</span>The Prologue: The Word Made Flesh (John 1:1-18)</h3>
-    <div class="story-box"><br />
-        <p>The Prologue to John's Gospel, while not a discourse of Jesus in the strict sense,
+    <h3><span class="emoji">🌟</span>The Word Made Flesh</h3>
+    <div class="story-box">
+        <p><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN1_1" title="John 1:1-18">John 1:1-18</a>
+            The Prologue to John's Gospel, while not a discourse of Jesus in the strict sense,
             establishes the theological framework for understanding all of Jesus's subsequent
             teachings in this Gospel. This poetic introduction presents Jesus as the eternal Word
-            (Logos) who was with God and was God from the beginning, through whom all things
-            were created, and who became flesh to dwell among humanity.</p>
-        <p>The Divine Word (John 1:1-5) establishes Jesus's pre-existence, divine nature, and role
-            in creation. The declaration that "the Word was God" (John 1:1) represents one of the
-            most explicit statements of Jesus's divinity in the New Testament. The identification of
-            Jesus as the source of "life" and "light" introduces key metaphors that will recur
-            throughout the Gospel, particularly in Jesus's own self-descriptions.</p>
-    </div>
-    <p class="story-box"><br />
-        The Witness of John the Baptist (John 1:6-8, 15) establishes the relationship between
-        John the Baptist and Jesus, emphasizing that John came as a witness to the light but
-        was not himself the light. This clarification addresses potential confusion about John's
-        role and establishes the proper relationship between the forerunner and the Messiah.
+            (<a href="https://en.wikipedia.org/wiki/Logos" title="Wikipedia">Logos</a>).
+            <strong>"In the beginning was the Word, and the Word was with God, and the Word was God."</strong>
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN1_1" title="John 1:1"><small><ruby>John<rt>1:1</rt></ruby></small></a></p>
+        <p>The Divine <b>Word</b> establishes Jesus's pre-existence, divine nature, and role
+            in creation. The declaration that <strong>"the Word was God"</strong>
+            represents one of the most explicit statements of Jesus's divinity in the New Testament.
+            The identification of Jesus as the source of <strong>"life"</strong> and <strong>"light"</strong>
+            introduces key metaphors that will recur throughout the Gospel, particularly in Jesus's own self-descriptions.</p>
+    <h3>The Witness of John the Baptist</h3>
+    <p>
+         <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN1_6" title="John 1:6-8">John 1:6-8</a>
+         & <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN1_15" title="John 1:15">John 1:15</a>
+         establishes the relationship between John the Baptist and Jesus, emphasizing that John came as a witness to the light but
+         was not himself the light. This clarification addresses potential confusion about John's
+         role and establishes the proper relationship between the forerunner and the Messiah.
     </p>
-    <p class="story-box"><br />
-        The Incarnation and Revelation (John 1:9-14, 16-18) describes the Word's entrance
+    <h4>The Incarnation and Revelation</h4>
+    <p>
+         (John 1:9-14, 16-18) describes the Word's entrance
         into the world and humanity's varied responses to him. The statement that "He came to
         His own, and His own did not receive Him" (John 1:11) anticipates the rejection that
         Jesus will face throughout the Gospel. The promise that those who receive him become
         "children of God" (John 1:12) introduces the theme of spiritual rebirth that will be
         developed in Jesus's discourse with Nicodemus.</p>
-    <p class="story-box"><br />
+    <p>
         The Prologue concludes with the declaration that "No one has seen God at any time. The
         only begotten Son, who is in the bosom of the Father, He has declared Him" (John 1:18).
         This statement establishes Jesus as the definitive revelation of God, a theme that will be
         central to his discourses throughout the Gospel. Jesus's claim to reveal the Father
         becomes one of the most distinctive aspects of his teaching in John's Gospel.</p>
+        </div>
     <h3><span class="emoji">🌟</span>The Discourse with Nicodemus: The New Birth (John 3:1-21)</h3>
     <p class="story-box"><br />
         Jesus's conversation with Nicodemus represents the first major discourse in John's
@@ -1286,6 +1362,17 @@ function teachings()  {
 
 
 <section id="^" class="section fullbar">
+<nav class="crumbs">
+<div class="bread-crumbs">
+    <a href="?intro#^" class="crumb-link">📚 Introduction</a>
+    <a href="?gospels#^" class="crumb-link">🌟 All Gospels</a>
+    <a href="?Matthew#^" class="crumb-link">📖 Matthew</a>
+    <a href="?John#^" class="crumb-link">💫 John</a>
+    <a href="?Luke#^" class="crumb-link">❤️ <b>Luke</b></a>
+    <a href="?Mark#^" class="crumb-link">⚡ Mark</a>
+    <a href="?conclusion#^" class="crumb-link">🎯 Conclusion</a>
+</div>
+</nav>
     <h2><span class="emoji">❤️</span>Group 4: Luke's Special Teachings</h2>
     <p>Luke was like the friend who always noticed when someone was left out and made sure to include them.
         Luke's Gospel is full of stories about Jesus caring for people that others might ignore - people who
@@ -1788,6 +1875,17 @@ function teachings()  {
 
 
 <section id="^" class="section fullbar">
+<nav class="crumbs">
+<div class="bread-crumbs">
+    <a href="?intro#^" class="crumb-link">📚 Introduction</a>
+    <a href="?gospels#^" class="crumb-link">🌟 All Gospels</a>
+    <a href="?Matthew#^" class="crumb-link">📖 Matthew</a>
+    <a href="?John#^" class="crumb-link">💫 John</a>
+    <a href="?Luke#^" class="crumb-link">❤️ Luke</a>
+    <a href="?Mark#^" class="crumb-link">⚡ <b>Mark</b></a>
+    <a href="?conclusion#^" class="crumb-link">🎯 Conclusion</a>
+</div>
+</nav>
     <h2><span class="emoji">⚡</span>Mark's Special Way of Telling the Story</h2>
     <p>Mark was like the friend who's always in a hurry and gets straight to the point. Mark's Gospel is the shortest of
         the four, and it's packed with action! Instead of writing down lots of long speeches that Jesus gave, Mark
@@ -2050,7 +2148,17 @@ function teachings()  {
 
 
 <section id="^" class="section fullbar">
-
+<nav class="crumbs">
+<div class="bread-crumbs">
+    <a href="?intro#^" class="crumb-link">📚 Introduction</a>
+    <a href="?gospels#^" class="crumb-link">🌟 All Gospels</a>
+    <a href="?Matthew#^" class="crumb-link">📖 Matthew</a>
+    <a href="?John#^" class="crumb-link">💫 John</a>
+    <a href="?Luke#^" class="crumb-link">❤️ Luke</a>
+    <a href="?Mark#^" class="crumb-link">⚡ Mark</a>
+    <a href="?conclusion#^" class="crumb-link">🎯 <b>Conclusion</b></a>
+</div>
+</nav>
     <h2 class="section-title"><span class="emoji">🎯</span>Conclusion: What We Learn from All Four Gospels
     </h2>
     <p>Now that we've looked at all four Gospel books, we can see how they work together like pieces of a
@@ -2432,6 +2540,17 @@ function teachings()  {
 
 ?>
 <section class="section fullbar">
+<nav class="crumbs">
+<div class="bread-crumbs">
+    <a href="?intro#^" class="crumb-link">📚 Introduction</a>
+    <a href="?gospels#^" class="crumb-link">🌟 All Gospels</a>
+    <a href="?Matthew#^" class="crumb-link">📖 Matthew</a>
+    <a href="?John#^" class="crumb-link">💫 John</a>
+    <a href="?Luke#^" class="crumb-link">❤️ Luke</a>
+    <a href="?Mark#^" class="crumb-link">⚡ Mark</a>
+    <a href="?conclusion#^" class="crumb-link">🎯 Conclusion</a>
+</div>
+</nav>
     <h2><span class="emoji">⭐</span>The Teachings of Jesus</h2>
 
     <p>Jesus Christ's teachings have profoundly influenced human history, offering wisdom that transcends time and
