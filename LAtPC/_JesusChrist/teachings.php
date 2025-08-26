@@ -18,7 +18,6 @@ function content(){
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
 }
-
 .nav-link {
     display: block;
     padding: 12px 15px;
@@ -30,14 +29,11 @@ function content(){
     transition: all 0.3s ease;
     font-weight: bold;
 }
-
 .nav-link:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     background: linear-gradient(45deg, var(--primary-color), var(--secondary-dark));
 }
-
-
 
 .section {
     margin-bottom: 40px;
@@ -48,12 +44,10 @@ function content(){
     padding-top: 3px;
 
 }
-
 .section:hover {
 
     box-shadow: var(--box-shadow);
 }
-
 .section h1 {
     color: var(--primary-color);
     font-size: 2em;
@@ -67,7 +61,6 @@ function content(){
     align-items: center;
     gap: 10px;
 }
-
 .section h3 {
     color: var(--primary-dark);
     font-size: 1.5em;
@@ -75,13 +68,11 @@ function content(){
     padding-left: 20px;
     border-left: 3px solid var(--secondary-dark);
 }
-
 .section h4 {
     color: var(--secondary-dark);
     font-size: 1.3em;
     margin: 20px 0 10px 0;
 }
-
 .section p {
     margin-bottom: 15px;
     font-size: 1.1em;
@@ -96,7 +87,6 @@ function content(){
     margin: 20px 0;
     position: relative;
 }
-
 .highlight-box::before {
     position: absolute;
     top: -10px;
@@ -114,7 +104,6 @@ function content(){
     margin: 20px 0;
     position: relative;
 }
-
 .story-box::before {
     content: '📖';
     position: absolute;
@@ -124,14 +113,13 @@ function content(){
     font-size: 1.5em;
     margin: -2%;
 }
-
 .story-box:hover::before {
     transform: translateY(-2px);
     background-color: transparent;
     cursor: grab;
 }
 
-.pargraphStoryBox{
+.paragraphStoryBox{
     margin-top: 1%;
 }
 
@@ -139,7 +127,6 @@ function content(){
     font-size: 1.5em;
     margin-right: 10px;
 }
-
 .emoji:hover {
     transform: translateY(-2px);
     background-color: transparent;
@@ -151,12 +138,10 @@ details {
     gap: 15px;
     padding: 20px;
 }
-
 details:open {
     background-color: var(--dialog-text-highlight);
     color: var(--primary-dark);
 }
-
 summary {
     border: var(--secondary-color) solid 10px;
     background-color: var(--dialog-text-highlight);
@@ -166,7 +151,6 @@ summary {
     text-align: center;
     font-size: 1.5rem;
 }
-
 summary::marker {
     color: var(--primary-dark);
     font-size: 1.7rem;
@@ -182,7 +166,6 @@ summary::marker {
     border-left: 4px solid var(--secondary-dark);
     margin: 20px 0;
 }
-
 .reference {
     padding: 12px;
     background: var(--background);
@@ -190,16 +173,13 @@ summary::marker {
     box-shadow: var(--box-shadow);
     border-left: 3px solid var(--secondary-color);
 }
-
 .reference:hover {
     box-shadow: var(--box-shadow);
 }
-
 .reference strong {
     color: var(--primary-dark);
     font-size: 0.9em;
 }
-
 .reference a {
     color: var(--secondary-dark);
     text-decoration: none;
@@ -207,26 +187,6 @@ summary::marker {
     word-break: break-all;
 }
 
-@media (max-width: 768px) {
-    .container {
-        margin: 10px;
-        border-radius: 10px;
-    }
-    .section {
-        padding: 20px;
-    }
-
-    .nav-links {
-        grid-template-columns: 1fr;
-    }
-    .pargraphStoryBox{
-        margin-top: 5%;
-    }
-    .bread-crumbs{
-        font-size: .7rem;
-        gap: 0;
-    }
-}
 /* Breadcrumb Navigation Styles */
 .crumbs {
     border-radius: 7px;
@@ -245,16 +205,31 @@ summary::marker {
     text-decoration: underline;
 }
 
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+        border-radius: 10px;
+    }
+    .section {
+        padding: 20px;
+    }
 
-
+    .nav-links {
+        grid-template-columns: 1fr;
+    }
+    .paragraphStoryBox{
+        margin-top: 5%;
+    }
+    .bread-crumbs{
+        font-size: .7rem;
+        gap: 0;
+    }
+}
 @media (min-width: 768px) {
     pre {
         font-size: 1.5rem;
     }
 }
-
-
-
 </style>
 
 <?php
@@ -789,7 +764,7 @@ function teachings()  {
 
     <h3><span class="emoji">💡</span>"I Am the Light of the World"</h3>
     <div class="story-box">
-        <p class="pargraphStoryBox">Jesus said, <strong>"I am the light of the world.
+        <p class="paragraphStoryBox">Jesus said, <strong>"I am the light of the world.
             Whoever follows me will never walk in darkness but will have the light of life."</strong>
         <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN8_12" title="John 8:12">
             <small><ruby>John<rt>8:12</rt></ruby></small></a> Think about what happens when you're in a dark room and someone turns on the light.
@@ -800,7 +775,7 @@ function teachings()  {
 
     <h3><span class="emoji">🐑</span>"I Am the Good Shepherd"</h3>
     <div class="story-box">
-        <p class="pargraphStoryBox">Jesus said, <strong>"I am the good shepherd. The good shepherd gives his life for the sheep."</strong>
+        <p class="paragraphStoryBox">Jesus said, <strong>"I am the good shepherd. The good shepherd gives his life for the sheep."</strong>
             <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN10_11" title="John 10:11-18">
             <small><ruby>John<rt>10:11</rt></ruby></small></a> In Jesus's time, shepherds took care of sheep.
             A good shepherd would protect the sheep from wolves and other dangerous animals,
@@ -812,7 +787,7 @@ function teachings()  {
     <h3><span class="emoji">🌟</span>Jesus and Nicodemus: Being Born Again</h3>
     <cite>Nicodemus was a religious leader who came to talk to Jesus at night.</cite>
     <div class="story-box">
-    <p class="pargraphStoryBox"> Jesus told him something that confused him:
+    <p class="paragraphStoryBox"> Jesus told him something that confused him:
         <strong>"You must be born again."</strong> <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_3" title="John 3:3">
         <small><ruby>John<rt>3:3</rt></ruby></small></a>
         Nicodemus was confused because he thought Jesus was talking about being born as a baby again, which is impossible!
@@ -827,6 +802,7 @@ function teachings()  {
             This means God loves everyone so much that He sent Jesus to die for our sins so we could live with God forever.
         </p>
     </div>
+
     <h2><span class="emoji">🌟</span>John's Unique Sermons and Discourses</h2>
     <div class="highlight-box">
         <p>The Gospel of John stands apart from the <a href="https://en.wikipedia.org/wiki/Synoptic_Gospels" title="Wikipedia">Synoptic Gospels</a>
@@ -860,9 +836,11 @@ function teachings()  {
                 making claims about his divine nature and authority that are more explicit than those found in the Synoptic Gospels.</p>
         </div>
     </div>
-    <h3><span class="emoji">🌟</span>The Word Made Flesh</h3>
+
+    <h3><span class="emoji">🌟</span>The Word Made Flesh <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN1_1" title="John 1:1-18">
+        John 1:1-18</a></small></h3>
     <div class="story-box">
-        <p><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN1_1" title="John 1:1-18">John 1:1-18</a>
+        <p class="paragraphStoryBox">
             The Prologue to John's Gospel, while not a discourse of Jesus in the strict sense,
             establishes the theological framework for understanding all of Jesus's subsequent
             teachings in this Gospel. This poetic introduction presents Jesus as the eternal Word
@@ -874,67 +852,80 @@ function teachings()  {
             represents one of the most explicit statements of Jesus's divinity in the New Testament.
             The identification of Jesus as the source of <strong>"life"</strong> and <strong>"light"</strong>
             introduces key metaphors that will recur throughout the Gospel, particularly in Jesus's own self-descriptions.</p>
-    <h3>The Witness of John the Baptist</h3>
-    <p>
-         <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN1_6" title="John 1:6-8">John 1:6-8</a>
-         & <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN1_15" title="John 1:15">John 1:15</a>
-         establishes the relationship between John the Baptist and Jesus, emphasizing that John came as a witness to the light but
-         was not himself the light. This clarification addresses potential confusion about John's
-         role and establishes the proper relationship between the forerunner and the Messiah.
-    </p>
-    <h4>The Incarnation and Revelation</h4>
-    <p>
-         (John 1:9-14, 16-18) describes the Word's entrance
-        into the world and humanity's varied responses to him. The statement that "He came to
-        His own, and His own did not receive Him" (John 1:11) anticipates the rejection that
-        Jesus will face throughout the Gospel. The promise that those who receive him become
-        "children of God" (John 1:12) introduces the theme of spiritual rebirth that will be
-        developed in Jesus's discourse with Nicodemus.</p>
-    <p>
-        The Prologue concludes with the declaration that "No one has seen God at any time. The
-        only begotten Son, who is in the bosom of the Father, He has declared Him" (John 1:18).
-        This statement establishes Jesus as the definitive revelation of God, a theme that will be
-        central to his discourses throughout the Gospel. Jesus's claim to reveal the Father
-        becomes one of the most distinctive aspects of his teaching in John's Gospel.</p>
-        </div>
-    <h3><span class="emoji">🌟</span>The Discourse with Nicodemus: The New Birth (John 3:1-21)</h3>
-    <p class="story-box"><br />
-        Jesus's conversation with Nicodemus represents the first major discourse in John's
-        Gospel and introduces several themes that will be developed throughout the narrative.
-        This nighttime encounter with a member of the Jewish ruling council addresses
-        fundamental questions about spiritual transformation and the nature of salvation.
-        The Necessity of Rebirth (John 3:1-8) begins with Nicodemus's acknowledgment of
-        Jesus as "a teacher come from God" based on the signs he has performed. Jesus's
-        response, "Most assuredly, I say to you, unless one is born again, he cannot see the
-        kingdom of God" (John 3:3), shifts the conversation from Jesus's identity to the radical
-        transformation required for entrance into God's kingdom. The subsequent discussion of
-        being "born of water and the Spirit" establishes the supernatural nature of this
-        transformation and its essential role in salvation.</p>
-    <p class="story-box"><br />
-        The Heavenly Witness (John 3:9-15) addresses Nicodemus's confusion about spiritual
-        rebirth with an assertion of Jesus's unique authority to speak about heavenly things.
-        The reference to the Son of Man who "came down from heaven" and who "must be lifted
-        up" introduces both the incarnation and the crucifixion as essential aspects of Jesus's
-        redemptive mission. The comparison to Moses lifting up the serpent in the wilderness
-        provides an Old Testament type for understanding Jesus's death as the source of healing
-        and salvation.</p>
-    <p class="story-box"><br />
-        God's Love and Judgment (John 3:16-21) contains what is perhaps the most famous
-        verse in the Bible: "For God so loved the world that He gave His only begotten Son, that
-        whoever believes in Him should not perish but have everlasting life" (John 3:16). This
-        statement encapsulates the Gospel message and establishes God's love as the
-        motivation for salvation. The subsequent discussion of judgment clarifies that
-        condemnation results not from God's desire but from human rejection of the light that
-        has come into the world.</p>
-    <p class="story-box"><br />
-        This discourse establishes several key themes that will recur throughout John's Gospel:
-        the necessity of spiritual transformation, Jesus's heavenly origin and authority, salvation
-        through faith in Christ, and the division of humanity based on their response to the light.
-        The conversation with Nicodemus also introduces John's characteristic technique of
-        using misunderstanding as a teaching opportunity, as Nicodemus's literal interpretation
-        of "born again" allows Jesus to clarify the spiritual nature of the rebirth he describes.</p>
+        <h3>The Witness of John the Baptist</h3>
+        <p>
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN1_6" title="John 1:6-8">John 1:6-8</a>
+            & <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN1_15" title="John 1:15">John 1:15</a>
+            establishes the relationship between
+            <a href="https://www.vaticannews.va/en/liturgical-holidays/memorial-of-the-passion-of-saint-john-the-baptist.html"title="Memorial of the Passion of Saint John the Baptist">
+                John the Baptist</a> and Jesus, <strong>"He was not the light, but was sent that he might testify about the light."</strong>
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN1_8"title="John 1:8"><small><ruby>John<rt>1:8</rt></ruby></small></a>
+            This clarification addresses potential confusion about John's role and establishes the proper relationship between the forerunner and the Messiah.
+        </p>
+        <h4>The Incarnation and Revelation</h4>
+        <p><a href="https://ebible.org/study/?v1=JN1_9&t1=local%3Aeng-web&w1=bible" title="John 1:9">John 1:9-14 & 16-18</a>
+            describes the Word's entrance into the world and humanity's varied responses to him.
+            The statement that <strong>"He came to His own, and His own did not receive Him"</strong>
+            <a href="https://ebible.org/study/?v1=JN1_11&t1=local%3Aeng-web&w1=bible" title="John 1:11"><small><ruby>John<rt>1:11</rt></ruby></small></a>
+            anticipates the rejection that Jesus will face throughout the Gospel. The promise that <strong>"those who receive him become 'children of God'"</strong>
+            <a href="https://ebible.org/study/?v1=JN1_12&t1=local%3Aeng-web&w1=bible" title="John 1:12"><small><ruby>John<rt>1:12</rt></ruby></small></a>
+            introduces the theme of spiritual rebirth that will be developed in Jesus's discourse with
+            <a href="https://www.vaticannews.va/en/pope/news/2025-03/pope-francis-nicodemus-finds-hope-in-encounter-with-jesus.html#:~:text=Jesus%20illuminates%20the%20darkness%20of%20the%20heart"title="Nicodemus finds hope in encounter with Jesus">
+                Nicodemus</a>.</p>
+        <p>The Prologue concludes with the declaration that <strong>"No one has seen God at any time.
+            The only begotten Son, who is in the bosom of the Father, He has declared Him"</strong>
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN1_18" title="John 1:18"><small><ruby>John<rt>1:18</rt></ruby></small></a>
+            This statement establishes Jesus as the definitive revelation of God, a theme that will be
+            central to his discourses throughout the Gospel. Jesus's claim to reveal the Father
+            becomes one of the most distinctive aspects of his teaching in John's Gospel.</p>
+    </div>
 
-    <p class="story-box"><br />
+    <h3><span class="emoji">🌟</span>The New Birth <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_1-21" title="John 3:1-21">
+        John 3:1-21</a></small></h3>
+    <div class="story-box">
+        <p class="paragraphStoryBox">
+            The Discourse with Nicodemus:  Jesus's conversation represents the first major discourse in John's
+            Gospel and introduces several themes that will be developed throughout the narrative.
+            This nighttime encounter with a member of the Jewish ruling council addresses
+            fundamental questions about spiritual transformation and the nature of salvation.</p>
+        <p><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_1" title="John 3:1-8">John 3:1-8</a>
+            The conversation begins with Nicodemus's acknowledgment of Jesus as <strong>"a teacher come from God"</strong>
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_2" title="John 3:2"><small><ruby>John<rt>3:2</rt></ruby></small></a>
+            based on the signs he has performed. Jesus's response, <strong>“Most certainly I tell you, unless one is born anew, he can’t see God’s Kingdom.”</strong>
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_3" title="John 3:3"><small><ruby>John<rt>3:3</rt></ruby></small></a>,
+            shifts the conversation from Jesus's identity to the radical transformation required for entrance into God's kingdom. The subsequent discussion of being
+            <strong>"born of water and the Spirit"</strong>
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_5" title="John 3:5"><small><ruby>John<rt>3:5</rt></ruby></small></a>
+            establishes the supernatural nature of this transformation and its essential role in salvation.</p>
+        <p><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_9" title="John 3:9-15">John 3:9-15</a>
+            The Heavenly Witness addresses Nicodemus's confusion about spiritual
+            rebirth with an assertion of Jesus's unique authority to speak about heavenly things. The reference:
+            <strong>"No one has ascended into heaven but he who descended out of heaven, the Son of Man, who is in heaven"</strong>
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_13" title="John 3:13"><small><ruby>John<rt>3:13</rt></ruby></small></a>
+            and <strong>"As Moses lifted up the serpent in the wilderness, even so must the Son of Man be lifted up,"</strong>
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_14" title="John 3:14"><small><ruby>John<rt>3:14</rt></ruby></small></a>
+            introduces both the incarnation and the crucifixion as essential aspects of Jesus's
+            redemptive mission. The comparison to Moses lifting up the serpent in the wilderness
+            provides an Old Testament type for understanding Jesus's death as the source of healing
+            and salvation.</p>
+        <p><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_16" title="John 3:16-21">John 3:16-21</a>
+            God's Love and Judgment contains what is perhaps the most famous verse in the Bible:
+            <strong>"For God so loved the world that He gave His only begotten Son, that whoever believes in Him should not perish but have everlasting life"</strong>
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_16" title="John 3:16"><small><ruby>John<rt>3:16</rt></ruby></small></a>
+            This statement encapsulates the Gospel message and establishes God's love as the motivation for salvation.
+            The subsequent discussion of judgment clarifies that condemnation results not from God's desire but from human rejection of the light that has come into the world.</p>
+        <p>This discourse establishes several key themes that will recur throughout John's Gospel:
+            the necessity of spiritual transformation, Jesus's heavenly origin and authority, salvation
+            through faith in Christ, and the division of humanity based on their response to the light.
+            The conversation with Nicodemus also introduces John's characteristic technique of
+            using misunderstanding as a teaching opportunity, as Nicodemus's literal interpretation
+            of <strong>"born again"</strong> <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_3" title="John 3:3"><small><ruby>John<rt>3:3</rt></ruby></small></a>
+            allows Jesus to clarify the spiritual nature of the rebirth he describes.</p>
+    </div>
+
+    <h3><span class="emoji">🌟</span>The Discourse with the Samaritan Woman: Living Water (John 4:1-42)</h3>
+    <div class="story-box">
+        <p class="paragraphStoryBox">
         The Discourse with the Samaritan Woman: Living Water (John 4:1-42)
         Jesus's conversation with the Samaritan woman at Jacob's well represents another
         significant discourse in John's Gospel, addressing themes of worship, spiritual thirst,
