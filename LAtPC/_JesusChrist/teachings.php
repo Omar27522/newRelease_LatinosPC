@@ -886,8 +886,7 @@ function teachings()  {
         <p class="paragraphStoryBox">
             The Discourse with Nicodemus:  Jesus's conversation represents the first major discourse in John's
             Gospel and introduces several themes that will be developed throughout the narrative.
-            This nighttime encounter with a member of the Jewish ruling council addresses
-            fundamental questions about spiritual transformation and the nature of salvation.</p>
+            This nighttime encounter with a member of the Jewish ruling council addresses fundamental questions about spiritual transformation and the nature of salvation.</p>
         <p><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_1" title="John 3:1-8">John 3:1-8</a>
             The conversation begins with Nicodemus's acknowledgment of Jesus as <strong>"a teacher come from God"</strong>
             <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_2" title="John 3:2"><small><ruby>John<rt>3:2</rt></ruby></small></a>
@@ -898,16 +897,13 @@ function teachings()  {
             <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_5" title="John 3:5"><small><ruby>John<rt>3:5</rt></ruby></small></a>
             establishes the supernatural nature of this transformation and its essential role in salvation.</p>
         <p><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_9" title="John 3:9-15">John 3:9-15</a>
-            The Heavenly Witness addresses Nicodemus's confusion about spiritual
-            rebirth with an assertion of Jesus's unique authority to speak about heavenly things. The reference:
+            The Heavenly Witness addresses Nicodemus's confusion about spiritual rebirth with an assertion of Jesus's unique authority to speak about heavenly things. The reference:
             <strong>"No one has ascended into heaven but he who descended out of heaven, the Son of Man, who is in heaven"</strong>
             <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_13" title="John 3:13"><small><ruby>John<rt>3:13</rt></ruby></small></a>
             and <strong>"As Moses lifted up the serpent in the wilderness, even so must the Son of Man be lifted up,"</strong>
             <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_14" title="John 3:14"><small><ruby>John<rt>3:14</rt></ruby></small></a>
-            introduces both the incarnation and the crucifixion as essential aspects of Jesus's
-            redemptive mission. The comparison to Moses lifting up the serpent in the wilderness
-            provides an Old Testament type for understanding Jesus's death as the source of healing
-            and salvation.</p>
+            introduces both the incarnation and the crucifixion as essential aspects of Jesus's redemptive mission.
+            The comparison to Moses lifting up the serpent in the wilderness provides an Old Testament type for understanding Jesus's death as the source of healing and salvation.</p>
         <p><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_16" title="John 3:16-21">John 3:16-21</a>
             God's Love and Judgment contains what is perhaps the most famous verse in the Bible:
             <strong>"For God so loved the world that He gave His only begotten Son, that whoever believes in Him should not perish but have everlasting life"</strong>
@@ -915,60 +911,58 @@ function teachings()  {
             This statement encapsulates the Gospel message and establishes God's love as the motivation for salvation.
             The subsequent discussion of judgment clarifies that condemnation results not from God's desire but from human rejection of the light that has come into the world.</p>
         <p>This discourse establishes several key themes that will recur throughout John's Gospel:
-            the necessity of spiritual transformation, Jesus's heavenly origin and authority, salvation
-            through faith in Christ, and the division of humanity based on their response to the light.
-            The conversation with Nicodemus also introduces John's characteristic technique of
-            using misunderstanding as a teaching opportunity, as Nicodemus's literal interpretation
-            of <strong>"born again"</strong> <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_3" title="John 3:3"><small><ruby>John<rt>3:3</rt></ruby></small></a>
+            the necessity of spiritual transformation, Jesus's heavenly origin and authority, salvation through faith in Christ,
+            and the division of humanity based on their response to the light.
+            The conversation with Nicodemus also introduces John's characteristic technique of using misunderstanding as a teaching opportunity, as Nicodemus's literal interpretation of
+            <strong>~born again~</strong> <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_4" title="John 3:4"><small><ruby>John<rt>3:4</rt></ruby></small></a>
             allows Jesus to clarify the spiritual nature of the rebirth he describes.</p>
     </div>
 
-    <h3><span class="emoji">🌟</span>The Discourse with the Samaritan Woman: Living Water (John 4:1-42)</h3>
+    <h3><span class="emoji">🌟</span>Living Water <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN4_1-42" title="John 4:1-42">John 4:1-42</a></small></h3>
     <div class="story-box">
         <p class="paragraphStoryBox">
-        The Discourse with the Samaritan Woman: Living Water (John 4:1-42)
-        Jesus's conversation with the Samaritan woman at Jacob's well represents another
-        significant discourse in John's Gospel, addressing themes of worship, spiritual thirst,
-        and Jesus's messianic identity. This encounter crosses multiple social boundaries—
-        gender, ethnicity, and moral status—demonstrating the universal scope of Jesus's
-        mission and message.</p>
-    <p class="story-box"><br />
-        The Request for Water (John 4:1-15) begins with Jesus's simple request for a drink,
-        which surprises the Samaritan woman because of the hostility between Jews and
-        Samaritans. Jesus redirects the conversation by offering "living water" that becomes "a
-        fountain of water springing up into everlasting life" (John 4:14). This metaphor of living
-        water builds on Old Testament imagery of God as the source of living water (Jeremiah
-        2:13, 17:13) while pointing to the spiritual satisfaction that comes through relationship
-        with Christ.</p>
-    <p class="story-box"><br />
-        True Worship (John 4:16-24) shifts to a discussion of worship after Jesus
-        demonstrates
-        supernatural knowledge of the woman's marital history. When she raises the question of
-        the proper location for worship—Mount Gerizim for Samaritans or Jerusalem for Jews—
-        Jesus transcends the geographical dispute by declaring that "the hour is coming, and
-        now is, when the true worshipers will worship the Father in spirit and truth" (John 4:23).
-        This teaching establishes that authentic worship depends not on location but on the
-        worshiper's spiritual condition and relationship with God.</p>
-    <p class="story-box"><br />
-        The Messiah's Self-Revelation (John 4:25-26) represents one of the clearest
-        declarations of Jesus's messianic identity in the Gospels. When the woman mentions the
-        coming Messiah who "will tell us all things," Jesus responds with the direct statement, "I
-        who speak to you am He" (John 4:26). This explicit self-identification as the Messiah
-        contrasts with the more guarded approach found in the Synoptic Gospels, where Jesus
-        often discourages public declarations of his messianic status.</p>
-    <p class="story-box"><br />
-        The Harvest of Souls (John 4:27-42) extends the discourse to include Jesus's
-        conversation with his disciples about spiritual harvest and the subsequent belief of
-        many Samaritans. Jesus's statement that "the fields... are already white for
-        harvest" (John 4:35) establishes the urgency of the evangelistic mission while his
-        discussion of sowers and reapers acknowledges the cooperative nature of spiritual
-        ministry. The Samaritans' confession that Jesus is "the Savior of the world" (John 4:42)
-        emphasizes the universal scope of his mission beyond the boundaries of Judaism.
-        This discourse demonstrates Jesus's concern for those marginalized by religious and
-        social structures while establishing principles for authentic worship that transcend
-        cultural and geographical limitations. The woman's transformation from skeptic to
-        evangelist illustrates the life-changing impact of encountering Jesus and recognizing his
-        true identity.</p>
+            Jesus's conversation with the Samaritan woman at Jacob's well represents another
+            significant discourse in John's Gospel, addressing themes of worship, spiritual thirst,
+            and Jesus's messianic identity. This encounter crosses multiple social boundaries—
+            gender, ethnicity, and moral status—demonstrating the universal scope of Jesus's
+            mission and message.</p>
+        <p><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN4_1" title="John 4:1-15">John 4:1-15</a> The Request for Water begins with Jesus's simple request for a drink,
+            which surprises the Samaritan woman because of the hostility between Jews and
+            Samaritans. Jesus redirects the conversation by offering living water.
+            <strong>“If you knew the gift of God, and who it is who says to you, ‘Give me a drink,’ you would have asked him, and he would have given you living water.”</strong>
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN4_10" title="John 4:10"><small><ruby>John<rt>4:10</rt></ruby></small></a><br />
+            <strong>"but whoever drinks of the water that I will give him will never thirst again;
+                but the water that I will give him will become in him a well of water springing up to eternal life."</strong>
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN4_14" title="John 4:14"><small><ruby>John<rt>4:14</rt></ruby></small></a>
+            This metaphor of living water builds on Old Testament imagery of God as the source of living water
+            (<a href="https://ebible.org/study/?v1=JR2_13&t1=local%3Aeng-web&w1=bible">Jeremiah 2:13 </a>, <a href="https://ebible.org/study/?v1=JR17_13&t1=local%3Aeng-web&w1=bible">Jeremiah 17:13</a>)
+            while pointing to the spiritual satisfaction that comes through relationship with Christ.</p>
+        <p><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN4_16" title="John 4:16-24">John 4:16-24</a> True Worship shifts to a discussion of worship after Jesus demonstrates supernatural knowledge of the woman's marital history.
+            When she raises the question of the proper location for worship—Mount Gerizim for Samaritans or Jerusalem for Jews— Jesus transcends the geographical dispute by declaring that
+            <strong>"the hour is coming, and now is, when the true worshipers will worship the Father in spirit and truth for the Father seeks such to be his worshipers."</strong>
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN4_23" title="John 4:23"><small><ruby>John<rt>4:23</rt></ruby></small></a>
+            This teaching establishes that authentic worship depends not on location but on the worshiper's spiritual condition and relationship with God.</p>
+        <p><a href="https://ebible.org/study/?v1=JN4_25&t1=local%3Aeng-web&w1=bible" title="John 4:25">John 4:25-26</a>
+            The Messiah's Self-Revelation represents one of the clearest declarations of Jesus's messianic identity in the Gospels.
+            When the woman mentions the coming Messiah who <strong>"will tell us all things,"</strong>
+            <a href="https://ebible.org/study/?v1=JN4_25&t1=local%3Aeng-web&w1=bible" title="John 4:25"><small><ruby>John<rt>4:25</rt></ruby></small></a>
+            Jesus responds with the direct statement, <strong>"I who speak to you am He"</strong>
+            <a href="https://ebible.org/study/?v1=JN4_26&t1=local%3Aeng-web&w1=bible" title="John 4:26"><small><ruby>John<rt>4:26</rt></ruby></small></a>. This explicit self-identification as the Messiah contrasts with the more
+            guarded approach found in the Synoptic Gospels, where Jesus often discourages public declarations of his messianic status.</p>
+        <p><a href="https://ebible.org/study/?v1=JN4_27&t1=local%3Aeng-web&w1=bible" title="John 4:27-42">John 4:27-42</a>
+            The discourse extends to include Jesus's conversation with his disciples about spiritual harvest and the subsequent belief of many Samaritans.
+            Jesus's statement that <strong>"the fields... are already white for harvest"</strong>
+            <a href="https://ebible.org/study/?v1=JN4_35&t1=local%3Aeng-web&w1=bible" title="John 4:35"><small><ruby>John<rt>4:35</rt></ruby></small></a>
+            establishes the urgency of the evangelistic mission while his discussion of sowers and reapers acknowledges the cooperative nature of spiritual ministry.
+            The Samaritans' confession that Jesus is <strong>"the Savior of the world"</strong>
+            <a href="https://ebible.org/study/?v1=JN4_42&t1=local%3Aeng-web&w1=bible" title="John 4:42"><small><ruby>John<rt>4:42</rt></ruby></small></a>
+            emphasizes the universal scope of his mission beyond the boundaries of Judaism.
+            This discourse demonstrates Jesus's concern for those marginalized by religious and
+            social structures while establishing principles for authentic worship that transcend
+            cultural and geographical limitations. The woman's transformation from skeptic to
+            evangelist illustrates the life-changing impact of encountering Jesus and recognizing his
+            true identity.</p>
+    </div>
     <h3><span class="emoji">🏃</span>The Discourse at Bethesda: Divine Authority (John 5)</h3>
     <p class="story-box"><br />
         Following the healing of a paralyzed man at the pool of Bethesda on the Sabbath, Jesus
