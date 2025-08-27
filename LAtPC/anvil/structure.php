@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="<?= $page->getDir(); ?>LAtPC/anvil/mainStyle.css">
     <link rel="stylesheet" href="<?= $page->getDir(); ?>LAtPC/anvil/homepage.css">
     <link rel="stylesheet" href="<?= $page->getDir(); ?>LAtPC/anvil/navMenu.css">
+    <?php
+    if (function_exists('cssStyles')) {
+        cssStyles();
+    }
+    ?>
 </head>
 
 <body>

@@ -56,7 +56,7 @@
     parables        ---> Organize the Parables, I guess Matthew will lead the organization of the page, followed by Mark, Luke and John at last. perhaps find more parables in case they are any, or maybe add the explanations Jesus gave to some of them.
 
 
-*Work on loading CSS files accordingly instead of using embedded CSS on each file.*
+
 *Work on getting the carousel to work, and implement it in parables, the current solution does not convince me.*
 *Switching between languages by pressing the Spanish or English button.*
 *work on the services page.*
@@ -67,7 +67,11 @@
 
 
 
-
+*Done (8/27/2025)*
+    ||loading CSS files accordingly instead of using embedded CSS on each file.||
+        The css will be in the same file as the content, but in a different function,
+            I just had th erealization that Loading CSS from within the content file would be better,
+                than creating a whole new -short- file for each content page.
 *Done (7/21/2025)*
     <WORKING (7/19/2025)>
     *Next Step* Implement the front controller pattern. first implement the Spanish page.
