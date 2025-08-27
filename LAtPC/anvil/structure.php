@@ -273,23 +273,40 @@
         </div> -->
 
         <?php
-        if    ($page->getLang() == "en" && $page->getTitle() == "Home LatinosPC"): content_home();
-        elseif($page->getLang() == "es-419" && $page->getTitle() == "Inicio LatinosPC"): contenido_inicio();
+        // Define page routes mapping
+        $pageRoutes = [
+            'en' => [
+                'Home LatinosPC' => 'content_home',
+                'Heavenly Father' => 'fihtmatw',
+                'The Apostles' => 'apostles',
+                'Parables' => 'parables',
+                'Sermons' => 'sermons',
+                'Teachings' => 'teachings',
+                'Teachings: John' => 'teachings',
+                'Template' => 'template'
+            ],
+            'es-419' => [
+                'Inicio LatinosPC' => 'contenido_inicio',
+                'Padre Celestial' => 'qpccsei',
+                'Los Apóstoles' => 'apostoles',
+                'Parabolas' => 'parabolas',
+                'Sermones' => 'sermones',
+                'Enseñanzas' => 'ensenhanzas'
+            ]
+        ];
 
-        elseif($page->getLang() == "en" && $page->getTitle() == "Heavenly Father"): fihtmatw();
-        elseif($page->getLang() == "es-419" && $page->getTitle() == "Padre Celestial"): qpccsei();
-        elseif($page->getLang() == "en" && $page->getTitle() == "The Apostles"): apostles();
-        elseif($page->getLang() == "es-419" && $page->getTitle() == "Los Apóstoles"): apostoles();
-        elseif($page->getLang() == "en" && $page->getTitle() == "Parables"): parables();
-        elseif($page->getLang() == "es-419" && $page->getTitle() == "Parabolas"): parabolas();
-        elseif($page->getLang() == "en" && $page->getTitle() == "Sermons"): sermons();
-        elseif($page->getLang() == "es-419" && $page->getTitle() == "Sermones"): sermones();
-        elseif($page->getLang() == "en" && $page->getTitle() == "Teachings"): teachings();
-        elseif($page->getLang() == "en" && $page->getTitle() == "Teachings: John"): teachings();
-        elseif($page->getLang() == "es-419" && $page->getTitle() == "Enseñanzas"): ensenhanzas();
+        // Get current page info
+        $currentLang = $page->getLang();
+        $currentTitle = $page->getTitle();
 
-        elseif($page->getLang() == "en" && $page->getTitle() == "Template"): template();
-        endif;?>
+        // Call appropriate function if route exists
+        if (isset($pageRoutes[$currentLang][$currentTitle])) {
+            $functionName = $pageRoutes[$currentLang][$currentTitle];
+            if (function_exists($functionName)) {
+                call_user_func($functionName);
+            }
+        }
+        ?>
 
     </main>
 
