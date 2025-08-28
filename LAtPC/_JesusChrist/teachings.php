@@ -123,6 +123,15 @@ function cssStyles(){
         margin-top: 1%;
     }
 
+    .passage{
+        float:left;
+        display:inline;
+        margin-right: 1%;
+        font-size: 1.1rem;
+        font-weight: bold;
+        transform: translateY(7px);
+    }
+
     .emoji {
         font-size: 1.5em;
         margin-right: 10px;
@@ -931,7 +940,8 @@ function teachings()  {
             and Jesus's messianic identity. This encounter crosses multiple social boundaries—
             gender, ethnicity, and moral status—demonstrating the universal scope of Jesus's
             mission and message.</p>
-        <p><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN4_1" title="John 4:1-15">John 4:1-15</a> The Request for Water begins with Jesus's simple request for a drink,
+            <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN4_1" title="John 4:1-15"><ruby>John<rt>4:1-15</rt></ruby></a></span>
+            <p>The Request for Water begins with Jesus's simple request for a drink,
             which surprises the Samaritan woman because of the hostility between Jews and
             Samaritans. Jesus redirects the conversation by offering living water.
             <strong>“If you knew the gift of God, and who it is who says to you, ‘Give me a drink,’ you would have asked him, and he would have given you living water.”</strong>
@@ -942,7 +952,8 @@ function teachings()  {
             This metaphor of living water builds on Old Testament imagery of God as the source of living water
             (<a href="https://ebible.org/study/?v1=JR2_13&t1=local%3Aeng-web&w1=bible">Jeremiah 2:13 </a>, <a href="https://ebible.org/study/?v1=JR17_13&t1=local%3Aeng-web&w1=bible">Jeremiah 17:13</a>)
             while pointing to the spiritual satisfaction that comes through relationship with Christ.</p>
-        <p><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN4_16" title="John 4:16-24">John 4:16-24</a> True Worship shifts to a discussion of worship after Jesus demonstrates supernatural knowledge of the woman's marital history.
+            <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN4_16" title="John 4:16-24"><ruby>John<rt>4:16-24</rt></ruby></a></span>
+            <p>True Worship shifts to a discussion of worship after Jesus demonstrates supernatural knowledge of the woman's marital history.
             When she raises the question of the proper location for worship—Mount Gerizim for Samaritans or Jerusalem for Jews— Jesus transcends the geographical dispute by declaring that
             <strong>"the hour is coming, and now is, when the true worshipers will worship the Father in spirit and truth for the Father seeks such to be his worshipers."</strong>
             <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN4_23" title="John 4:23"><small><ruby>John<rt>4:23</rt></ruby></small></a>
@@ -961,32 +972,27 @@ function teachings()  {
             establishes the urgency of the evangelistic mission while his discussion of sowers and reapers acknowledges the cooperative nature of spiritual ministry.
             The Samaritans' confession that Jesus is <strong>"the Savior of the world"</strong>
             <a href="https://ebible.org/study/?v1=JN4_42&t1=local%3Aeng-web&w1=bible" title="John 4:42"><small><ruby>John<rt>4:42</rt></ruby></small></a>
-            emphasizes the universal scope of his mission beyond the boundaries of Judaism.
-            This discourse demonstrates Jesus's concern for those marginalized by religious and
-            social structures while establishing principles for authentic worship that transcend
-            cultural and geographical limitations. The woman's transformation from skeptic to
-            evangelist illustrates the life-changing impact of encountering Jesus and recognizing his
-            true identity.</p>
+            emphasizes the universal scope of his mission beyond the boundaries of Judaism. This discourse demonstrates Jesus's concern for those marginalized
+            by religious and social structures while establishing principles for authentic worship that transcend cultural and geographical limitations.
+            The woman's transformation from skeptic to evangelist illustrates the life-changing impact of encountering Jesus and recognizing his true identity.</p>
     </div>
-    <h3><span class="emoji">🏃</span>The Discourse at Bethesda: Divine Authority (John 5)</h3>
-    <p class="story-box"><br />
+
+    <h2><span class="emoji">🌟</span>Divine Authority <small><a href="https://ebible.org/study/?v1=JN5_1&t1=local%3Aeng-web&w1=bible" title="John 5">John 5</a></small></h2>
+    <div class="story-box">
+    <p class="paragraphStoryBox">
         Following the healing of a paralyzed man at the pool of Bethesda on the Sabbath, Jesus
         delivers a discourse on his relationship with the Father and his divine authority. This
         teaching addresses the Jewish leaders' objections to Sabbath healing while making
         some of the most explicit claims about Jesus's divine identity and authority found in the
         Gospels.</p>
 
-    <h3><span class="emoji">🏃</span>The Sabbath Controversy</h3>
-    <p class="story-box"><br />
-        The Sabbath Controversy (John 5:1-18) begins with Jesus
-        healing a man who had
-        been paralyzed for thirty-eight years. When the Jewish leaders object to the man
-        carrying his mat on the Sabbath and later to Jesus healing on the Sabbath, Jesus
-        responds with the statement, "My Father has been working until now, and I have been
-        working" (John 5:17). This claim to a unique relationship with God as Father and to
-        divine prerogative regarding the Sabbath provokes charges of blasphemy and intensifies
-        the conflict with religious authorities.</p>
-    <p class="story-box"><br />
+        <span class="passage"><a href="https://ebible.org/study/?v1=JN5_1&t1=local%3Aeng-web&w1=bible" title="John 5:1-18"><ruby>John<rt>5:1-18</rt></ruby></a></span>
+        <p>The Sabbath Controversy begins with Jesus healing a man who had been paralyzed for thirty-eight years.
+            When the Jewish leaders object to the man carrying his mat on the Sabbath and later to Jesus healing on the Sabbath,
+            Jesus responds with the statement, <br /><strong>"My Father has been working until now, and I have been working"</strong>
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN5_17" title="John 5:17"><small><ruby>John<rt>5:17</rt></ruby></small></a>.
+            This claim to a unique relationship with God as Father and to divine prerogative regarding the Sabbath provokes charges of blasphemy and intensifies the conflict with religious authorities.</p>
+    <p>
         The Son's Relationship with the Father (John 5:19-23) establishes the intimate
         connection between Jesus's actions and the Father's will. Jesus's statement that "the
         Son can do nothing of Himself, but what He sees the Father do" (John 5:19) emphasizes
@@ -995,7 +1001,7 @@ function teachings()  {
         This teaching establishes Jesus's divine authority while maintaining the distinction
         between the Father and the Son within the Godhead.</p>
 
-    <p class="story-box"><br />
+    <p>
         Life and Judgment (John 5:24-30) addresses Jesus's authority to give life and
         execute
         judgment. The promise that "he who hears My word and believes in Him who sent Me
@@ -1007,7 +1013,7 @@ function teachings()  {
         judgment" (John 5:27) represents one of the most explicit assertions of divine
         prerogative in the Gospels.</p>
 
-    <p class="story-box"><br />
+    <p>
         Witnesses to Jesus (John 5:31-47) addresses the question of evidence for Jesus's
         claims by citing four witnesses: John the Baptist, Jesus's miraculous works, the Father's
         direct testimony, and the Scriptures, particularly the writings of Moses. This section
@@ -1020,6 +1026,7 @@ function teachings()  {
         prophecy. The teaching represents one of John's clearest presentations of high
         Christology, establishing Jesus's divine nature and authority while maintaining the
         distinction between the Father and the Son.</p>
+    </div>
 
     <h3><span class="emoji">🏃</span>The Bread of Life Discourse (John 6:22-59)</h3>
     <p class="story-box"><br />
