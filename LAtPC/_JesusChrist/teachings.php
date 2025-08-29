@@ -760,12 +760,12 @@ function teachings()  {
     <a href="?conclusion#^" class="crumb-link">🎯 Conclusion</a>
 </div>
 </nav>
-    <h2><span class="emoji">💫</span>John's Special Teachings</h2>
+    <h1><span class="emoji">💫</span>John's Special Teachings</h1>
     <p>John was like the friend who always asked the deep questions.
         While the other Gospel writers focused on what Jesus did and said,
         John was really interested in helping people understand who Jesus really was and why He came to Earth.</p>
 
-    <h3><span class="emoji">🍞</span>"I Am the Bread of Life"</h3>
+    <h2><span class="emoji">🍞</span>"I Am the Bread of Life"</h2>
     <div class="highlight-box">
         <p>After Jesus fed 5,000 people with just five loaves of bread and two fish, the people wanted more free
             food. But Jesus told them something more important: <strong>"I am the bread of life. Anyone who comes to
@@ -776,7 +776,7 @@ function teachings()  {
             that fills your heart and soul. Just like your body needs food to grow strong, your spirit needs Jesus to grow strong.</p>
     </div>
 
-    <h3><span class="emoji">💡</span>"I Am the Light of the World"</h3>
+    <h2><span class="emoji">💡</span>"I Am the Light of the World"</h2>
     <div class="story-box">
         <p class="paragraphStoryBox">Jesus said, <strong>"I am the light of the world.
             Whoever follows me will never walk in darkness but will have the light of life."</strong>
@@ -787,7 +787,7 @@ function teachings()  {
         Jesus comes into our lives, it's like someone turned on a bright light.</p>
     </div>
 
-    <h3><span class="emoji">🐑</span>"I Am the Good Shepherd"</h3>
+    <h2><span class="emoji">🐑</span>"I Am the Good Shepherd"</h2>
     <div class="story-box">
         <p class="paragraphStoryBox">Jesus said, <strong>"I am the good shepherd. The good shepherd gives his life for the sheep."</strong>
             <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN10_11" title="John 10:11-18">
@@ -798,7 +798,7 @@ function teachings()  {
             to save us from our sins (the wrong things we do).</p>
     </div>
 
-    <h3><span class="emoji">🌟</span>Jesus and Nicodemus: Being Born Again</h3>
+    <h2><span class="emoji">🌅</span>Jesus and Nicodemus: Being Born Again</h2>
     <cite>Nicodemus was a religious leader who came to talk to Jesus at night.</cite>
     <div class="story-box">
     <p class="paragraphStoryBox"> Jesus told him something that confused him:
@@ -808,7 +808,6 @@ function teachings()  {
         But Jesus explained that He wasn't talking about physical birth. He was talking about spiritual birth.
         When we believe in Jesus and ask Him to be our Savior, it's like being born again spiritually. God gives us a
         new heart that wants to love Him and do good things.</p>
-
         <p>Jesus told Nicodemus the most famous verse in the Bible: <strong>"For God so loved the world that he gave his one and only Son,
             that whoever believes in him shall not perish but have eternal life."</strong>
                 <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_16" title="John 3:16">
@@ -817,7 +816,7 @@ function teachings()  {
         </p>
     </div>
 
-    <h2><span class="emoji">🌟</span>John's Unique Sermons and Discourses</h2>
+    <h2 style="justify-content: center;"><span class="emoji">🌟</span>John's Unique Sermons and Discourses</h2>
     <div class="highlight-box">
         <p>The Gospel of John stands apart from the <a href="https://en.wikipedia.org/wiki/Synoptic_Gospels" title="Wikipedia">Synoptic Gospels</a>
             (<a href="?Matthew#^" title="Matthew's Special Teachings">Matthew</a>,
@@ -867,18 +866,16 @@ function teachings()  {
             The identification of Jesus as the source of <strong>"life"</strong> and <strong>"light"</strong>
             introduces key metaphors that will recur throughout the Gospel, particularly in Jesus's own self-descriptions.</p>
         <h3>The Witness of John the Baptist</h3>
-        <p>
-            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN1_6" title="John 1:6-8">John 1:6-8</a>
-            & <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN1_15" title="John 1:15">John 1:15</a>
-            establishes the relationship between
+        <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN1_6" title="John 1:6-8"><ruby>John<rt>1:6-8</rt></ruby></a>
+        & <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN1_15" title="John 1:15"><ruby>John<rt>1:15</rt></ruby></a></span>
+        <p>establishes the relationship between
             <a href="https://www.vaticannews.va/en/liturgical-holidays/memorial-of-the-passion-of-saint-john-the-baptist.html"title="Memorial of the Passion of Saint John the Baptist">
                 John the Baptist</a> and Jesus, <strong>"He was not the light, but was sent that he might testify about the light."</strong>
             <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN1_8"title="John 1:8"><small><ruby>John<rt>1:8</rt></ruby></small></a>
-            This clarification addresses potential confusion about John's role and establishes the proper relationship between the forerunner and the Messiah.
-        </p>
+            This clarification addresses potential confusion about John's role and establishes the proper relationship between the forerunner and the Messiah.</p>
         <h4>The Incarnation and Revelation</h4>
-        <p><a href="https://ebible.org/study/?v1=JN1_9&t1=local%3Aeng-web&w1=bible" title="John 1:9">John 1:9-14 & 16-18</a>
-            describes the Word's entrance into the world and humanity's varied responses to him.
+        <span class="passage"><a href="https://ebible.org/study/?v1=JN1_9&t1=local%3Aeng-web&w1=bible" title="John 1:9-14 & 16-18<"><ruby>John<rt>1:9-14 & 16-18</rt></ruby></a></span>
+        <p>describes the Word's entrance into the world and humanity's varied responses to him.
             The statement that <strong>"He came to His own, and His own did not receive Him"</strong>
             <a href="https://ebible.org/study/?v1=JN1_11&t1=local%3Aeng-web&w1=bible" title="John 1:11"><small><ruby>John<rt>1:11</rt></ruby></small></a>
             anticipates the rejection that Jesus will face throughout the Gospel. The promise that <strong>"those who receive him become 'children of God'"</strong>
@@ -901,8 +898,8 @@ function teachings()  {
             The Discourse with Nicodemus:  Jesus's conversation represents the first major discourse in John's
             Gospel and introduces several themes that will be developed throughout the narrative.
             This nighttime encounter with a member of the Jewish ruling council addresses fundamental questions about spiritual transformation and the nature of salvation.</p>
-        <p><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_1" title="John 3:1-8">John 3:1-8</a>
-            The conversation begins with Nicodemus's acknowledgment of Jesus as <strong>"a teacher come from God"</strong>
+        <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_1" title="John 3:1-8"><ruby>John<rt>3:1-8</rt></ruby></a></span>
+        <p>The conversation begins with Nicodemus's acknowledgment of Jesus as <strong>"a teacher come from God"</strong>
             <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_2" title="John 3:2"><small><ruby>John<rt>3:2</rt></ruby></small></a>
             based on the signs he has performed. Jesus's response, <strong>“Most certainly I tell you, unless one is born anew, he can’t see God’s Kingdom.”</strong>
             <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_3" title="John 3:3"><small><ruby>John<rt>3:3</rt></ruby></small></a>,
@@ -910,16 +907,16 @@ function teachings()  {
             <strong>"born of water and the Spirit"</strong>
             <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_5" title="John 3:5"><small><ruby>John<rt>3:5</rt></ruby></small></a>
             establishes the supernatural nature of this transformation and its essential role in salvation.</p>
-        <p><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_9" title="John 3:9-15">John 3:9-15</a>
-            The Heavenly Witness addresses Nicodemus's confusion about spiritual rebirth with an assertion of Jesus's unique authority to speak about heavenly things. The reference:
+        <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_9" title="John 3:9-15"><ruby>John<rt>3:9-15</rt></ruby></a></span>
+        <p>The Heavenly Witness addresses Nicodemus's confusion about spiritual rebirth with an assertion of Jesus's unique authority to speak about heavenly things. The reference:
             <strong>"No one has ascended into heaven but he who descended out of heaven, the Son of Man, who is in heaven"</strong>
             <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_13" title="John 3:13"><small><ruby>John<rt>3:13</rt></ruby></small></a>
             and <strong>"As Moses lifted up the serpent in the wilderness, even so must the Son of Man be lifted up,"</strong>
             <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_14" title="John 3:14"><small><ruby>John<rt>3:14</rt></ruby></small></a>
             introduces both the incarnation and the crucifixion as essential aspects of Jesus's redemptive mission.
             The comparison to Moses lifting up the serpent in the wilderness provides an Old Testament type for understanding Jesus's death as the source of healing and salvation.</p>
-        <p><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_16" title="John 3:16-21">John 3:16-21</a>
-            God's Love and Judgment contains what is perhaps the most famous verse in the Bible:
+        <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_16" title="John 3:16-21"><ruby>John<rt>3:16-21</rt></ruby></a></span>
+        <p>God's Love and Judgment contains what is perhaps the most famous verse in the Bible:
             <strong>"For God so loved the world that He gave His only begotten Son, that whoever believes in Him should not perish but have everlasting life"</strong>
             <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_16" title="John 3:16"><small><ruby>John<rt>3:16</rt></ruby></small></a>
             This statement encapsulates the Gospel message and establishes God's love as the motivation for salvation.
@@ -940,8 +937,8 @@ function teachings()  {
             and Jesus's messianic identity. This encounter crosses multiple social boundaries—
             gender, ethnicity, and moral status—demonstrating the universal scope of Jesus's
             mission and message.</p>
-            <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN4_1" title="John 4:1-15"><ruby>John<rt>4:1-15</rt></ruby></a></span>
-            <p>The Request for Water begins with Jesus's simple request for a drink,
+        <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN4_1" title="John 4:1-15"><ruby>John<rt>4:1-15</rt></ruby></a></span>
+        <p>The Request for Water begins with Jesus's simple request for a drink,
             which surprises the Samaritan woman because of the hostility between Jews and
             Samaritans. Jesus redirects the conversation by offering living water.
             <strong>“If you knew the gift of God, and who it is who says to you, ‘Give me a drink,’ you would have asked him, and he would have given you living water.”</strong>
@@ -958,15 +955,15 @@ function teachings()  {
             <strong>"the hour is coming, and now is, when the true worshipers will worship the Father in spirit and truth for the Father seeks such to be his worshipers."</strong>
             <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN4_23" title="John 4:23"><small><ruby>John<rt>4:23</rt></ruby></small></a>
             This teaching establishes that authentic worship depends not on location but on the worshiper's spiritual condition and relationship with God.</p>
-        <p><a href="https://ebible.org/study/?v1=JN4_25&t1=local%3Aeng-web&w1=bible" title="John 4:25">John 4:25-26</a>
-            The Messiah's Self-Revelation represents one of the clearest declarations of Jesus's messianic identity in the Gospels.
+        <span class="passage"><a href="https://ebible.org/study/?v1=JN4_25&t1=local%3Aeng-web&w1=bible" title="John 4:25"><ruby>John<rt>4:25-26</rt></ruby></a></span>
+        <p>The Messiah's Self-Revelation represents one of the clearest declarations of Jesus's messianic identity in the Gospels.
             When the woman mentions the coming Messiah who <strong>"will tell us all things,"</strong>
             <a href="https://ebible.org/study/?v1=JN4_25&t1=local%3Aeng-web&w1=bible" title="John 4:25"><small><ruby>John<rt>4:25</rt></ruby></small></a>
             Jesus responds with the direct statement, <strong>"I who speak to you am He"</strong>
             <a href="https://ebible.org/study/?v1=JN4_26&t1=local%3Aeng-web&w1=bible" title="John 4:26"><small><ruby>John<rt>4:26</rt></ruby></small></a>. This explicit self-identification as the Messiah contrasts with the more
             guarded approach found in the Synoptic Gospels, where Jesus often discourages public declarations of his messianic status.</p>
-        <p><a href="https://ebible.org/study/?v1=JN4_27&t1=local%3Aeng-web&w1=bible" title="John 4:27-42">John 4:27-42</a>
-            The discourse extends to include Jesus's conversation with his disciples about spiritual harvest and the subsequent belief of many Samaritans.
+        <span class="passage"><a href="https://ebible.org/study/?v1=JN4_27&t1=local%3Aeng-web&w1=bible" title="John 4:27-42"><ruby>John<rt>4:27-42</rt></ruby></a></span>
+        <p>The discourse extends to include Jesus's conversation with his disciples about spiritual harvest and the subsequent belief of many Samaritans.
             Jesus's statement that <strong>"the fields... are already white for harvest"</strong>
             <a href="https://ebible.org/study/?v1=JN4_35&t1=local%3Aeng-web&w1=bible" title="John 4:35"><small><ruby>John<rt>4:35</rt></ruby></small></a>
             establishes the urgency of the evangelistic mission while his discussion of sowers and reapers acknowledges the cooperative nature of spiritual ministry.
@@ -979,56 +976,51 @@ function teachings()  {
 
     <h2><span class="emoji">🌟</span>Divine Authority <small><a href="https://ebible.org/study/?v1=JN5_1&t1=local%3Aeng-web&w1=bible" title="John 5">John 5</a></small></h2>
     <div class="story-box">
-    <p class="paragraphStoryBox">
-        Following the healing of a paralyzed man at the pool of Bethesda on the Sabbath, Jesus
-        delivers a discourse on his relationship with the Father and his divine authority. This
-        teaching addresses the Jewish leaders' objections to Sabbath healing while making
-        some of the most explicit claims about Jesus's divine identity and authority found in the
-        Gospels.</p>
-
-        <span class="passage"><a href="https://ebible.org/study/?v1=JN5_1&t1=local%3Aeng-web&w1=bible" title="John 5:1-18"><ruby>John<rt>5:1-18</rt></ruby></a></span>
-        <p>The Sabbath Controversy begins with Jesus healing a man who had been paralyzed for thirty-eight years.
-            When the Jewish leaders object to the man carrying his mat on the Sabbath and later to Jesus healing on the Sabbath,
-            Jesus responds with the statement, <br /><strong>"My Father has been working until now, and I have been working"</strong>
-            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN5_17" title="John 5:17"><small><ruby>John<rt>5:17</rt></ruby></small></a>.
-            This claim to a unique relationship with God as Father and to divine prerogative regarding the Sabbath provokes charges of blasphemy and intensifies the conflict with religious authorities.</p>
-    <p>
-        The Son's Relationship with the Father (John 5:19-23) establishes the intimate
-        connection between Jesus's actions and the Father's will. Jesus's statement that "the
-        Son can do nothing of Himself, but what He sees the Father do" (John 5:19) emphasizes
-        his perfect alignment with the Father's purposes while his claim that "all should honor
-        the Son just as they honor the Father" (John 5:23) asserts his right to divine worship.
-        This teaching establishes Jesus's divine authority while maintaining the distinction
-        between the Father and the Son within the Godhead.</p>
-
-    <p>
-        Life and Judgment (John 5:24-30) addresses Jesus's authority to give life and
-        execute
-        judgment. The promise that "he who hears My word and believes in Him who sent Me
-        has everlasting life" (John 5:24) establishes faith in Christ as the path to eternal life. The
-        declaration that "the hour is coming, and now is, when the dead will hear the voice of
-        the Son of God; and those who hear will live" (John 5:25) refers both to spiritual
-        resurrection in the present and physical resurrection in the future. Jesus's claim to be
-        the judge of all humanity based on the Father's delegation of "authority to execute
-        judgment" (John 5:27) represents one of the most explicit assertions of divine
-        prerogative in the Gospels.</p>
-
-    <p>
-        Witnesses to Jesus (John 5:31-47) addresses the question of evidence for Jesus's
+    <p class="paragraphStoryBox">Following the healing of a paralyzed man at the pool of Bethesda on the Sabbath, Jesus
+        delivers a discourse on his relationship with the Father and his divine authority.
+        This teaching addresses the Jewish leaders' objections to Sabbath healing while making
+        some of the most explicit claims about Jesus's divine identity and authority found in the Gospels.</p>
+    <span class="passage"><a href="https://ebible.org/study/?v1=JN5_1&t1=local%3Aeng-web&w1=bible" title="John 5:1-18"><ruby>John<rt>5:1-18</rt></ruby></a></span>
+    <p>The Sabbath Controversy begins with Jesus healing a man who had been paralyzed for thirty-eight years.
+        When the Jewish leaders object to the man carrying his mat on the Sabbath and later to Jesus healing on the Sabbath,
+        Jesus responds with the statement, <br /><strong>"My Father has been working until now, and I have been working"</strong>
+        <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN5_17" title="John 5:17"><small><ruby>John<rt>5:17</rt></ruby></small></a>.
+        This claim to a unique relationship with God as Father and to divine prerogative regarding the Sabbath provokes charges of blasphemy and intensifies the conflict with religious authorities.</p>
+    <span class="passage"><a href="https://ebible.org/study/?v1=JN5_19&t1=local%3Aeng-web&w1=bible" title="John 5:19-23"><ruby>John<rt>5:19-23</rt></ruby></a></span>
+    <p>The Son's Relationship with the Father establishes the intimate
+        connection between Jesus's actions and the Father's will. Jesus's statement that <strong>"the
+        Son can do nothing of Himself, but what He sees the Father do"</strong> <a href="https://ebible.org/study/?v1=JN5_19&t1=local%3Aeng-web&w1=bible" title="John 5:19"><small><ruby>John<rt>5:19</rt></ruby></small></a>
+        emphasizes his perfect alignment with the Father's purposes while his claim that <strong>"all should honor the Son just as they honor the Father"</strong>
+        <a href="https://ebible.org/study/?v1=JN5_23&t1=local%3Aeng-web&w1=bible" title="John 5:23"> <small><ruby>John<rt>5:23</rt></ruby></small></a>
+        asserts his right to divine worship. This teaching establishes Jesus's divine authority while maintaining the distinction between the Father and the Son.</p>
+    <span class="passage"><a href="https://ebible.org/study/?v1=JN5_24&t1=local%3Aeng-web&w1=bible" title="John 5:24-30"><ruby>John<rt>5:24-30</rt></ruby></a></span>
+    <p>Life and Judgment addresses Jesus's authority to give life and execute judgment.
+        The promise that <strong>"he who hears My word and believes in Him who sent Me has everlasting life"</strong>
+        <a href="https://ebible.org/study/?v1=JN5_24&t1=local%3Aeng-web&w1=bible" title="John 5:24"> <small><ruby>John<rt>5:24</rt></ruby></small></a>
+        establishes faith in Christ as the path to eternal life. The declaration that <strong>"the hour is coming,
+        and now is, when the dead will hear the voice of the Son of God; and those who hear will live"</strong>
+        <a href="https://ebible.org/study/?v1=JN5_25&t1=local%3Aeng-web&w1=bible" title="John 5:25"> <small><ruby>John<rt>5:25</rt></ruby></small></a>
+        refers both to spiritual resurrection in the present and physical resurrection in the future.
+        Jesus's claim to be the judge of all humanity based on the Father's delegation of <strong>"authority to execute judgment"</strong>
+        <a href="https://ebible.org/study/?v1=JN5_27&t1=local%3Aeng-web&w1=bible" title="John 5:27"><small><ruby>John<rt>5:27</rt></ruby></a></small>
+        represents one of the most explicit assertions of divine prerogative in the Gospels.</p>
+    <span class="passage"><a href="https://ebible.org/study/?v1=JN5_31&t1=local%3Aeng-web&w1=bible" title="John 5:31-47"><ruby>John<rt>5:31-47</rt></ruby></a></span>
+    <p>Witnesses to Jesus addresses the question of evidence for Jesus's
         claims by citing four witnesses: John the Baptist, Jesus's miraculous works, the Father's
         direct testimony, and the Scriptures, particularly the writings of Moses. This section
         establishes the abundant evidence for Jesus's claims while exposing the underlying
-        spiritual resistance that prevents the religious leaders from accepting this evidence. The
-        indictment that "you are not willing to come to Me that you may have life" (John 5:40)
+        spiritual resistance that prevents the religious leaders from accepting this evidence.
+        The indictment that <strong>"you are not willing to come to Me that you may have life"</strong>
+        <small><a href="https://ebible.org/study/?v1=JN5_40&t1=local%3Aeng-web&w1=bible" title="John 5:40"><ruby>John<rt>5:40</rt></ruby></a></small>
         identifies the volitional rather than intellectual nature of their unbelief.
         This discourse establishes Jesus's divine authority in terms of his relationship with the
         Father, his power to give life and execute judgment, and his fulfillment of scriptural
         prophecy. The teaching represents one of John's clearest presentations of high
-        Christology, establishing Jesus's divine nature and authority while maintaining the
+        <a href="https://www.google.com/search?q=Christology" title="Google Search">Christology</a>, establishing Jesus's divine nature and authority while maintaining the
         distinction between the Father and the Son.</p>
     </div>
 
-    <h3><span class="emoji">🏃</span>The Bread of Life Discourse (John 6:22-59)</h3>
+    <h3><span class="emoji">🌟</span>The Bread of Life Discourse (John 6:22-59)</h3>
     <p class="story-box"><br />
         Following the feeding of the five thousand, Jesus delivers the Bread of Life
         discourse,
