@@ -277,6 +277,7 @@ function cssStyles(){
             font-size: .7rem;
             gap: 0;
             min-width: fit-content;
+            transform: translateX(-17px);
         }
         .crumbs{
             border-right: none;
