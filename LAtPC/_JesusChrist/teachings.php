@@ -281,6 +281,7 @@ function cssStyles(){
         }
         .crumbs{
             border-right: none;
+            min-width: fit-content;
         }
     }
     @media (min-width: 768px) {
