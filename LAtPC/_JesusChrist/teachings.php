@@ -276,6 +276,10 @@ function cssStyles(){
         .bread-crumbs{
             font-size: .7rem;
             gap: 0;
+            min-width: fit-content;
+        }
+        .crumbs{
+            border-right: none;
         }
     }
     @media (min-width: 768px) {
