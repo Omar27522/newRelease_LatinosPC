@@ -276,17 +276,24 @@ function cssStyles(){
         .bread-crumbs{
             font-size: .7rem;
             gap: 0;
-            min-width: fit-content;
-            transform: translateX(-17px);
+
         }
         .crumbs{
             border-right: none;
-            min-width: fit-content;
         }
     }
     @media (min-width: 768px) {
         pre {
             font-size: 1.5rem;
+        }
+    }
+    @media (max-width: 500px) {
+        .bread-crumbs{
+            font-size: .5rem;
+            gap: 0;
+
+        }.dropdown-content a {
+            font-size: 1rem;
         }
     }
     </style>
