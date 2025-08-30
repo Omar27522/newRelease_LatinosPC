@@ -214,6 +214,50 @@ function cssStyles(){
         text-decoration: underline;
     }
 
+        /* Dropdown Button */
+   /* Hide the actual checkbox */
+    .dropdown-toggle {
+      display: none;
+    }
+    /* Style the label to look like a button */
+    .dropdown-label {
+      cursor: pointer;
+      color: var(--primary-color);
+    }
+    .dropdown-label b {
+      text-decoration: underline;
+    }
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    /* --- The Magic Rule --- */
+    /* When the checkbox is checked, show the dropdown-content that is a sibling */
+    .dropdown-toggle:checked ~ .dropdown-content {
+      display: block;
+    }
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover, .dropdown-content a:focus {background-color: #ddd;}
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content, .dropdown:focus .dropdown-content {display: block;}
+
     @media (max-width: 768px) {
         .container {
             margin: 10px;
@@ -747,14 +791,25 @@ function teachings()  {
 
 
 
-
 <section id="^" class="section fullbar">
 <nav class="crumbs">
 <div class="bread-crumbs">
     <a href="?intro#^" class="crumb-link">📚 Introduction</a>
     <a href="?gospels#^" class="crumb-link">🌟 All Gospels</a>
     <a href="?Matthew#^" class="crumb-link">📖 Matthew</a>
-    <a href="?John#^" class="crumb-link">💫 <b>John</b></a>
+    <div class="dropdown crumb-link">
+        <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+        <label for="dropdown-toggle" class="dropdown-label">💫 <b>John</b></label>
+          <div class="dropdown-content">
+            <a href="#Unique Sermons and Discourses">Unique Sermons and Discourses</a>
+            <a href="#The Word Made Flesh">The Word Made Flesh</a>
+            <a href="#The New Birth">The New Birth</a>
+            <a href="#Living Water">Living Water</a>
+            <a href="#Divine Authority">Divine Authority</a>
+            <a href="#">Link next</a>
+            <a href="#">Link next</a>
+          </div>
+    </div>
     <a href="?Luke#^" class="crumb-link">❤️ Luke</a>
     <a href="?Mark#^" class="crumb-link">⚡ Mark</a>
     <a href="?conclusion#^" class="crumb-link">🎯 Conclusion</a>
@@ -816,7 +871,7 @@ function teachings()  {
         </p>
     </div>
 
-    <h2 style="justify-content: center;"><span class="emoji">🌟</span>John's Unique Sermons and Discourses</h2>
+    <h2 id="Unique Sermons and Discourses" style="justify-content: center;"><span class="emoji">🌟</span>John's Unique Sermons and Discourses</h2>
     <div class="highlight-box">
         <p>The Gospel of John stands apart from the <a href="https://en.wikipedia.org/wiki/Synoptic_Gospels" title="Wikipedia">Synoptic Gospels</a>
             (<a href="?Matthew#^" title="Matthew's Special Teachings">Matthew</a>,
@@ -850,7 +905,7 @@ function teachings()  {
         </div>
     </div>
 
-    <h3><span class="emoji">🌟</span>The Word Made Flesh <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN1_1" title="John 1:1-18">
+    <h3 id="The Word Made Flesh"><span class="emoji">🌟</span>The Word Made Flesh <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN1_1" title="John 1:1-18">
         John 1:1-18</a></small></h3>
     <div class="story-box">
         <p class="paragraphStoryBox">
@@ -891,7 +946,7 @@ function teachings()  {
             becomes one of the most distinctive aspects of his teaching in John's Gospel.</p>
     </div>
 
-    <h3><span class="emoji">🌟</span>The New Birth <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_1-21" title="John 3:1-21">
+    <h3 id="The New Birth"><span class="emoji">🌟</span>The New Birth <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN3_1-21" title="John 3:1-21">
         John 3:1-21</a></small></h3>
     <div class="story-box">
         <p class="paragraphStoryBox">
@@ -929,7 +984,7 @@ function teachings()  {
             allows Jesus to clarify the spiritual nature of the rebirth he describes.</p>
     </div>
 
-    <h3><span class="emoji">🌟</span>Living Water <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN4_1-42" title="John 4:1-42">John 4:1-42</a></small></h3>
+    <h3 id="Living Water"><span class="emoji">🌟</span>Living Water <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN4_1-42" title="John 4:1-42">John 4:1-42</a></small></h3>
     <div class="story-box">
         <p class="paragraphStoryBox">
             Jesus's conversation with the Samaritan woman at Jacob's well represents another
@@ -974,7 +1029,7 @@ function teachings()  {
             The woman's transformation from skeptic to evangelist illustrates the life-changing impact of encountering Jesus and recognizing his true identity.</p>
     </div>
 
-    <h2><span class="emoji">🌟</span>Divine Authority <small><a href="https://ebible.org/study/?v1=JN5_1&t1=local%3Aeng-web&w1=bible" title="John 5">John 5</a></small></h2>
+    <h2 id="Divine Authority"><span class="emoji">🌟</span>Divine Authority <small><a href="https://ebible.org/study/?v1=JN5_1&t1=local%3Aeng-web&w1=bible" title="John 5">John 5</a></small></h2>
     <div class="story-box">
     <p class="paragraphStoryBox">Following the healing of a paralyzed man at the pool of Bethesda on the Sabbath, Jesus
         delivers a discourse on his relationship with the Father and his divine authority.
@@ -1020,31 +1075,25 @@ function teachings()  {
         distinction between the Father and the Son.</p>
     </div>
 
-    <h3><span class="emoji">🌟</span>The Bread of Life Discourse (John 6:22-59)</h3>
-    <p class="story-box"><br />
-        Following the feeding of the five thousand, Jesus delivers the Bread of Life
-        discourse,
-        which develops the metaphor of spiritual nourishment and introduces the controversial
-        teaching about eating his flesh and drinking his blood. This discourse represents one of
-        the most challenging and divisive teachings in John's Gospel, leading many disciples to
-        abandon Jesus.</p>
-
-    <p class="story-box"><br />
-        The Search for Jesus (John 6:22-24) describes the crowds following Jesus to
-        Capernaum after the miraculous feeding, setting the stage for the discourse that follows.
+    <h3><span class="emoji">🌟</span>The Bread of Life<small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_22" title="John 6:22-59">John 6:22-59</a></small></h3>
+    <div class="story-box">
+        <p class="paragraphStoryBox">
+        Following the feeding of the five thousand, Jesus delivers the Bread of Life discourse,
+        which develops the metaphor of spiritual nourishment and introduces the controversial teaching about eating his flesh and drinking his blood.
+        This discourse represents one of the most challenging and divisive teachings in John's Gospel, leading many disciples to abandon Jesus.</p>
+    <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_22" title="John 6:22"><ruby>John<rt>6:22</rt></ruby></a></span>
+    <p>The Search for Jesus describes the crowds following Jesus to Capernaum after the miraculous feeding, setting the stage for the discourse that follows.
         Their pursuit of Jesus after receiving physical bread creates the opportunity for teaching
         about spiritual nourishment and eternal life.</p>
+    <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_25" title="John 6:25"><ruby>John<rt>6:25-29</rt></ruby></a></span>
+    <p>The Work of God begins with Jesus challenging the crowds' motivation,
+        stating that they seek him <strong>"not because you saw the signs, but because you ate of the loaves and were filled"</strong>
+        <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_26" title="John 6:26"><small><ruby>John<rt>6:26</rt></ruby></small></a>.
+        He redirects their focus from perishable food to <strong>"food which endures to everlasting life"</strong>
+        <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_27" title="John 6:27"><small><ruby>John<rt>6:27</rt></ruby></small></a>
+        and defines "the work of God" as believing in the one God has sent. This establishes faith in Christ as the fundamental requirement for receiving eternal life.</p>
 
-    <p class="story-box"><br />
-        The Work of God (John 6:25-29) begins with Jesus challenging the crowds'
-        motivation,
-        stating that they seek him "not because you saw the signs, but because you ate of the
-        loaves and were filled" (John 6:26). He redirects their focus from perishable food to
-        "food which endures to everlasting life" (John 6:27) and defines "the work of God" as
-        believing in the one God has sent. This establishes faith in Christ as the fundamental
-        requirement for receiving eternal life.
-
-    <p class="story-box"><br />
+    <p>
         The True Bread from Heaven (John 6:30-40) responds to the crowds' request for a
         sign
         comparable to the manna given through Moses. Jesus clarifies that it was not Moses but
@@ -1063,7 +1112,7 @@ function teachings()  {
         My flesh, which I shall give for the life of the world" (John 6:51) introduces the sacrificial
         aspect of his mission.</p>
 
-    <p class="story-box"><br />
+    <p>
         Eating Flesh and Drinking Blood (John 6:52-59) presents Jesus's most controversial
         teaching in this discourse. His insistence that "unless you eat the flesh of the Son of Man
         and drink His blood, you have no life in you" (John 6:53) provokes strong objections
@@ -1078,6 +1127,7 @@ function teachings()  {
         which led many disciples to turn away, demonstrates Jesus's unwillingness to
         compromise truth for popularity and establishes the dividing line between genuine
         discipleship and superficial following.</p>
+    </div>
 
     <p class="story-box"><br />
         The Light of the World Discourse (John 8:12-30)
