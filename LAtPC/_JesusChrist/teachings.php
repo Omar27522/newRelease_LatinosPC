@@ -819,8 +819,8 @@ function teachings()  {
             <a href="#The New Birth">The New Birth</a>
             <a href="#Living Water">Living Water</a>
             <a href="#Divine Authority">Divine Authority</a>
-            <a href="#">Link next</a>
-            <a href="#">Link next</a>
+            <a href="#The Bread of Life">The Bread of Life</a>
+            <a href="#The Light of the World">The Light of the World</a>
           </div>
     </div>
     <a href="?Luke#^" class="crumb-link">❤️ Luke</a>
@@ -1044,151 +1044,152 @@ function teachings()  {
 
     <h2 id="Divine Authority"><span class="emoji">🌟</span>Divine Authority <small><a href="https://ebible.org/study/?v1=JN5_1&t1=local%3Aeng-web&w1=bible" title="John 5">John 5</a></small></h2>
     <div class="story-box">
-    <p class="paragraphStoryBox">Following the healing of a paralyzed man at the pool of Bethesda on the Sabbath, Jesus
-        delivers a discourse on his relationship with the Father and his divine authority.
-        This teaching addresses the Jewish leaders' objections to Sabbath healing while making
-        some of the most explicit claims about Jesus's divine identity and authority found in the Gospels.</p>
-    <span class="passage"><a href="https://ebible.org/study/?v1=JN5_1&t1=local%3Aeng-web&w1=bible" title="John 5:1-18"><ruby>John<rt>5:1-18</rt></ruby></a></span>
-    <p>The Sabbath Controversy begins with Jesus healing a man who had been paralyzed for thirty-eight years.
-        When the Jewish leaders object to the man carrying his mat on the Sabbath and later to Jesus healing on the Sabbath,
-        Jesus responds with the statement, <br /><strong>"My Father has been working until now, and I have been working"</strong>
-        <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN5_17" title="John 5:17"><small><ruby>John<rt>5:17</rt></ruby></small></a>.
-        This claim to a unique relationship with God as Father and to divine prerogative regarding the Sabbath provokes charges of blasphemy and intensifies the conflict with religious authorities.</p>
-    <span class="passage"><a href="https://ebible.org/study/?v1=JN5_19&t1=local%3Aeng-web&w1=bible" title="John 5:19-23"><ruby>John<rt>5:19-23</rt></ruby></a></span>
-    <p>The Son's Relationship with the Father establishes the intimate
-        connection between Jesus's actions and the Father's will. Jesus's statement that <strong>"the
-        Son can do nothing of Himself, but what He sees the Father do"</strong> <a href="https://ebible.org/study/?v1=JN5_19&t1=local%3Aeng-web&w1=bible" title="John 5:19"><small><ruby>John<rt>5:19</rt></ruby></small></a>
-        emphasizes his perfect alignment with the Father's purposes while his claim that <strong>"all should honor the Son just as they honor the Father"</strong>
-        <a href="https://ebible.org/study/?v1=JN5_23&t1=local%3Aeng-web&w1=bible" title="John 5:23"> <small><ruby>John<rt>5:23</rt></ruby></small></a>
-        asserts his right to divine worship. This teaching establishes Jesus's divine authority while maintaining the distinction between the Father and the Son.</p>
-    <span class="passage"><a href="https://ebible.org/study/?v1=JN5_24&t1=local%3Aeng-web&w1=bible" title="John 5:24-30"><ruby>John<rt>5:24-30</rt></ruby></a></span>
-    <p>Life and Judgment addresses Jesus's authority to give life and execute judgment.
-        The promise that <strong>"he who hears My word and believes in Him who sent Me has everlasting life"</strong>
-        <a href="https://ebible.org/study/?v1=JN5_24&t1=local%3Aeng-web&w1=bible" title="John 5:24"> <small><ruby>John<rt>5:24</rt></ruby></small></a>
-        establishes faith in Christ as the path to eternal life. The declaration that <strong>"the hour is coming,
-        and now is, when the dead will hear the voice of the Son of God; and those who hear will live"</strong>
-        <a href="https://ebible.org/study/?v1=JN5_25&t1=local%3Aeng-web&w1=bible" title="John 5:25"> <small><ruby>John<rt>5:25</rt></ruby></small></a>
-        refers both to spiritual resurrection in the present and physical resurrection in the future.
-        Jesus's claim to be the judge of all humanity based on the Father's delegation of <strong>"authority to execute judgment"</strong>
-        <a href="https://ebible.org/study/?v1=JN5_27&t1=local%3Aeng-web&w1=bible" title="John 5:27"><small><ruby>John<rt>5:27</rt></ruby></a></small>
-        represents one of the most explicit assertions of divine prerogative in the Gospels.</p>
-    <span class="passage"><a href="https://ebible.org/study/?v1=JN5_31&t1=local%3Aeng-web&w1=bible" title="John 5:31-47"><ruby>John<rt>5:31-47</rt></ruby></a></span>
-    <p>Witnesses to Jesus addresses the question of evidence for Jesus's
-        claims by citing four witnesses: John the Baptist, Jesus's miraculous works, the Father's
-        direct testimony, and the Scriptures, particularly the writings of Moses. This section
-        establishes the abundant evidence for Jesus's claims while exposing the underlying
-        spiritual resistance that prevents the religious leaders from accepting this evidence.
-        The indictment that <strong>"you are not willing to come to Me that you may have life"</strong>
-        <small><a href="https://ebible.org/study/?v1=JN5_40&t1=local%3Aeng-web&w1=bible" title="John 5:40"><ruby>John<rt>5:40</rt></ruby></a></small>
-        identifies the volitional rather than intellectual nature of their unbelief.
-        This discourse establishes Jesus's divine authority in terms of his relationship with the
-        Father, his power to give life and execute judgment, and his fulfillment of scriptural
-        prophecy. The teaching represents one of John's clearest presentations of high
-        <a href="https://www.google.com/search?q=Christology" title="Google Search">Christology</a>, establishing Jesus's divine nature and authority while maintaining the
-        distinction between the Father and the Son.</p>
+        <p class="paragraphStoryBox">Following the healing of a paralyzed man at the pool of Bethesda on the Sabbath, Jesus
+            delivers a discourse on his relationship with the Father and his divine authority.
+            This teaching addresses the Jewish leaders' objections to Sabbath healing while making
+            some of the most explicit claims about Jesus's divine identity and authority found in the Gospels.</p>
+        <span class="passage"><a href="https://ebible.org/study/?v1=JN5_1&t1=local%3Aeng-web&w1=bible" title="John 5:1-18"><ruby>John<rt>5:1-18</rt></ruby></a></span>
+        <p>The Sabbath Controversy begins with Jesus healing a man who had been paralyzed for thirty-eight years.
+            When the Jewish leaders object to the man carrying his mat on the Sabbath and later to Jesus healing on the Sabbath,
+            Jesus responds with the statement, <br /><strong>"My Father has been working until now, and I have been working"</strong>
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN5_17" title="John 5:17"><small><ruby>John<rt>5:17</rt></ruby></small></a>.
+            This claim to a unique relationship with God as Father and to divine prerogative regarding the Sabbath provokes charges of blasphemy and intensifies the conflict with religious authorities.</p>
+        <span class="passage"><a href="https://ebible.org/study/?v1=JN5_19&t1=local%3Aeng-web&w1=bible" title="John 5:19-23"><ruby>John<rt>5:19-23</rt></ruby></a></span>
+        <p>The Son's Relationship with the Father establishes the intimate
+            connection between Jesus's actions and the Father's will. Jesus's statement that <strong>"the
+            Son can do nothing of Himself, but what He sees the Father do"</strong> <a href="https://ebible.org/study/?v1=JN5_19&t1=local%3Aeng-web&w1=bible" title="John 5:19"><small><ruby>John<rt>5:19</rt></ruby></small></a>
+            emphasizes his perfect alignment with the Father's purposes while his claim that <strong>"all should honor the Son just as they honor the Father"</strong>
+            <a href="https://ebible.org/study/?v1=JN5_23&t1=local%3Aeng-web&w1=bible" title="John 5:23"> <small><ruby>John<rt>5:23</rt></ruby></small></a>
+            asserts his right to divine worship. This teaching establishes Jesus's divine authority while maintaining the distinction between the Father and the Son.</p>
+        <span class="passage"><a href="https://ebible.org/study/?v1=JN5_24&t1=local%3Aeng-web&w1=bible" title="John 5:24-30"><ruby>John<rt>5:24-30</rt></ruby></a></span>
+        <p>Life and Judgment addresses Jesus's authority to give life and execute judgment.
+            The promise that <strong>"he who hears My word and believes in Him who sent Me has everlasting life"</strong>
+            <a href="https://ebible.org/study/?v1=JN5_24&t1=local%3Aeng-web&w1=bible" title="John 5:24"> <small><ruby>John<rt>5:24</rt></ruby></small></a>
+            establishes faith in Christ as the path to eternal life. The declaration that <strong>"the hour is coming,
+            and now is, when the dead will hear the voice of the Son of God; and those who hear will live"</strong>
+            <a href="https://ebible.org/study/?v1=JN5_25&t1=local%3Aeng-web&w1=bible" title="John 5:25"> <small><ruby>John<rt>5:25</rt></ruby></small></a>
+            refers both to spiritual resurrection in the present and physical resurrection in the future.
+            Jesus's claim to be the judge of all humanity based on the Father's delegation of <strong>"authority to execute judgment"</strong>
+            <a href="https://ebible.org/study/?v1=JN5_27&t1=local%3Aeng-web&w1=bible" title="John 5:27"><small><ruby>John<rt>5:27</rt></ruby></a></small>
+            represents one of the most explicit assertions of divine prerogative in the Gospels.</p>
+        <span class="passage"><a href="https://ebible.org/study/?v1=JN5_31&t1=local%3Aeng-web&w1=bible" title="John 5:31-47"><ruby>John<rt>5:31-47</rt></ruby></a></span>
+        <p>Witnesses to Jesus addresses the question of evidence for Jesus's
+            claims by citing four witnesses: John the Baptist, Jesus's miraculous works, the Father's
+            direct testimony, and the Scriptures, particularly the writings of Moses. This section
+            establishes the abundant evidence for Jesus's claims while exposing the underlying
+            spiritual resistance that prevents the religious leaders from accepting this evidence.
+            The indictment that <strong>"you are not willing to come to Me that you may have life"</strong>
+            <small><a href="https://ebible.org/study/?v1=JN5_40&t1=local%3Aeng-web&w1=bible" title="John 5:40"><ruby>John<rt>5:40</rt></ruby></a></small>
+            identifies the volitional rather than intellectual nature of their unbelief.
+            This discourse establishes Jesus's divine authority in terms of his relationship with the
+            Father, his power to give life and execute judgment, and his fulfillment of scriptural
+            prophecy. The teaching represents one of John's clearest presentations of high
+            <a href="https://www.google.com/search?q=Christology" title="Google Search">Christology</a>, establishing Jesus's divine nature and authority while maintaining the
+            distinction between the Father and the Son.</p>
     </div>
 
-    <h3><span class="emoji">🌟</span>The Bread of Life<small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_22" title="John 6:22-59">John 6:22-59</a></small></h3>
+    <h2 id="The Bread of Life"><span class="emoji">🌟</span>The Bread of Life<small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_22" title="John 6:22-59">John 6:22-59</a></small></h3>
     <div class="story-box">
-        <p class="paragraphStoryBox">
-        Following the feeding of the five thousand, Jesus delivers the Bread of Life discourse,
-        which develops the metaphor of spiritual nourishment and introduces the controversial teaching about eating his flesh and drinking his blood.
-        This discourse represents one of the most challenging and divisive teachings in John's Gospel, leading many disciples to abandon Jesus.</p>
-    <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_22" title="John 6:22"><ruby>John<rt>6:22</rt></ruby></a></span>
-    <p>The Search for Jesus describes the crowds following Jesus to Capernaum after the miraculous feeding, setting the stage for the discourse that follows.
-        Their pursuit of Jesus after receiving physical bread creates the opportunity for teaching
-        about spiritual nourishment and eternal life.</p>
-    <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_25" title="John 6:25"><ruby>John<rt>6:25-29</rt></ruby></a></span>
-    <p>The Work of God begins with Jesus challenging the crowds' motivation,
-        stating that they seek him <strong>"not because you saw the signs, but because you ate of the loaves and were filled"</strong>
-        <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_26" title="John 6:26"><small><ruby>John<rt>6:26</rt></ruby></small></a>.
-        He redirects their focus from perishable food to <strong>"food which endures to everlasting life"</strong>
-        <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_27" title="John 6:27"><small><ruby>John<rt>6:27</rt></ruby></small></a>
-        and defines "the work of God" as believing in the one God has sent. This establishes faith in Christ as the fundamental requirement for receiving eternal life.</p>
-
-    <p>
-        The True Bread from Heaven (John 6:30-40) responds to the crowds' request for a
-        sign
-        comparable to the manna given through Moses. Jesus clarifies that it was not Moses but
-        God who gave the manna and that God "gives you the true bread from heaven" (John
-        6:32). His declaration "I am the bread of life" (John 6:35) represents the first of seven "I
-        am" statements in John's Gospel, each of which reveals an aspect of Jesus's identity and
-        mission. The promise that "everyone who sees the Son and believes in Him may have
-        everlasting life" (John 6:40) establishes faith in Christ as the path to eternal life.
-        Murmuring and Divine Drawing (John 6:41-51) addresses the Jews' objection to
-        Jesus's claim to have "come down from heaven" given their knowledge of his human
-        parentage. Jesus responds by emphasizing the necessity of divine drawing: "No one can
-        come to Me unless the Father who sent Me draws him" (John 6:44). This teaching
-        establishes the supernatural nature of faith and the essential role of divine initiative in
-        salvation. Jesus's statement that "he who believes in Me has everlasting life" (John 6:47)
-        reiterates the centrality of faith while his declaration that "the bread that I shall give is
-        My flesh, which I shall give for the life of the world" (John 6:51) introduces the sacrificial
-        aspect of his mission.</p>
-
-    <p>
-        Eating Flesh and Drinking Blood (John 6:52-59) presents Jesus's most controversial
-        teaching in this discourse. His insistence that "unless you eat the flesh of the Son of Man
-        and drink His blood, you have no life in you" (John 6:53) provokes strong objections
-        from his hearers. The repeated emphasis on eating his flesh and drinking his blood,
-        coupled with the promise that "he who eats My flesh and drinks My blood abides in Me,
-        and I in him" (John 6:56), establishes the necessity of intimate spiritual union with
-        Christ. While Christians have interpreted this teaching in various ways—some seeing it as
-        a reference to the Eucharist, others as a metaphor for faith—the emphasis on complete
-        dependence on Christ's sacrificial death remains central to all interpretations.
-        This discourse establishes Jesus as the source of spiritual nourishment and eternal life
-        while emphasizing the necessity of faith in him. The challenging nature of the teaching,
-        which led many disciples to turn away, demonstrates Jesus's unwillingness to
-        compromise truth for popularity and establishes the dividing line between genuine
-        discipleship and superficial following.</p>
+        <p class="paragraphStoryBox">Following the <a href="https://en.wikipedia.org/wiki/Feeding_the_multitude#:~:text=The%20Feeding%20of%20the%205%2C000%20is%20also%20known%20as%20the,boy%20to%20feed%20a%20multitude.">feeding of the five thousand</a>, Jesus delivers the Bread of Life discourse,
+            which develops the metaphor of spiritual nourishment and introduces the controversial teaching about eating his flesh and drinking his blood.
+            This discourse represents one of the most challenging and divisive teachings in John's Gospel, leading many disciples to abandon Jesus.</p>
+        <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_22" title="John 6:22"><ruby>John<rt>6:22</rt></ruby></a></span>
+        <p>The Search for Jesus describes the crowds following Jesus to Capernaum after the miraculous feeding, setting the stage for the discourse that follows.
+            Their pursuit of Jesus after receiving physical bread creates the opportunity for teaching
+            about spiritual nourishment and eternal life.</p>
+        <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_25" title="John 6:25"><ruby>John<rt>6:25-29</rt></ruby></a></span>
+        <p>The Work of God begins with Jesus challenging the crowds' motivation,
+            stating that they seek him <strong>"not because you saw the signs, but because you ate of the loaves and were filled"</strong>
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_26" title="John 6:26"><small><ruby>John<rt>6:26</rt></ruby></small></a>.
+            He redirects their focus from perishable food to <strong>"food which endures to everlasting life"</strong>
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_27" title="John 6:27"><small><ruby>John<rt>6:27</rt></ruby></small></a>
+            and defines "the work of God" as believing in the one God has sent. This establishes faith in Christ as the fundamental requirement for receiving eternal life.</p>
+        <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_30" title="John 6:30-40"><ruby>John<rt>John 6:30-40</rt></ruby></a></span>
+        <p>The True Bread from Heaven responds to the crowds' request for a sign
+            comparable to the manna given through Moses. Jesus clarifies that it was not Moses but
+            God who gave the manna and that God <strong>"gives you the true bread from heaven"</strong>
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_32" title="John 6:32"><small><ruby>John<rt>6:32</rt></ruby></small></a>
+            His declaration <strong>"I am the bread of life"</strong>
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_35" title="John 6:35"><small><ruby>John<rt>6:35</rt></ruby></small></a>
+            represents the first of seven <b><i>"I am"</i></b> statements in John's Gospel, each of which reveals an aspect of Jesus's identity and mission.
+            The promise that <strong>"everyone who sees the Son and believes in Him may have everlasting life"</strong>
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_40" title="John 6:40"><small><ruby>John<rt>6:40</rt></ruby></small></a>
+            establishes faith in Christ as the path to eternal life.
+            Murmuring and Divine Drawing <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_41-51" title="John 6:41-51">John 6:41-51</a>
+            addresses the Jews' objection to Jesus's claim to have <b><i>"come down from heaven"</i></b> given their knowledge of his human parentage.
+            Jesus responds by emphasizing the necessity of divine drawing: <strong>"No one can come to Me unless the Father who sent Me draws him"</strong>
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_44" title="John 6:44"><small><ruby>John<rt>6:44</rt></ruby></small></a>
+            This teaching establishes the supernatural nature of faith and the essential role of divine initiative in
+            salvation. Jesus's statement that <strong>"he who believes in Me has everlasting life"</strong>
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_47" title="John 6:47"><small><ruby>John<rt>6:47</rt></ruby></small></a>
+            reiterates the centrality of faith while his declaration that
+            <strong>"the bread that I shall give is My flesh, which I shall give for the life of the world"</strong>
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_51" title="John 6:51"><small><ruby>John<rt>6:51</rt></ruby></small></a>
+            introduces the sacrificial aspect of his mission.</p>
+        <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_52" title="John 6:52-59"><ruby>John<rt>6:52-59</rt></ruby></a></span>
+        <p>Eating Flesh and Drinking Blood presents Jesus's most controversial teaching in this discourse.
+            His insistence that <strong>"unless you eat the flesh of the Son of Man and drink His blood, you have no life in you"</strong>
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_53" title="John 6:53"><small><ruby>John<rt>6:53</rt></ruby></small></a>
+            provokes strong objections from his hearers. The repeated emphasis on eating his flesh and drinking his blood, coupled with the promise that
+            <strong>"he who eats My flesh and drinks My blood abides in Me, and I in him"</strong>
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_56" title="John 6:56"><small><ruby>John<rt>6:56</rt></ruby></small></a>
+            establishes the necessity of intimate spiritual union with Christ. While Christians have interpreted this teaching in various ways—some seeing it as
+            a reference to the <a href="https://www.vatican.va/content/catechism/en/part_two/section_two/chapter_one/article_3/in_brief.html" title="Holy Communion">Eucharist</a><a href="https://www.vatican.va/content/catechism/en/part_two/section_two/chapter_one/article_3/i_the_eucharist_-_source_and_summit_of_ecclesial_life.html#$1KY"title="The Eucharist - Source and Summit of Ecclesial Life"><ruby><rd>[&#8544;]</rd></ruby></a>, others as a metaphor for faith—the emphasis on complete
+            dependence on Christ's sacrificial death remains central to all interpretations.
+            This discourse establishes Jesus as the source of spiritual nourishment and eternal life
+            while emphasizing the necessity of faith in him. The challenging nature of the teaching,
+            which led many disciples to turn away, demonstrates Jesus's unwillingness to
+            compromise truth for popularity and establishes the dividing line between genuine
+            discipleship and superficial following.</p>
     </div>
 
-    <p class="story-box"><br />
-        The Light of the World Discourse (John 8:12-30)
-        Following the controversy over the woman caught in adultery, Jesus declares himself to
-        be "the light of the world" and engages in a heated debate with the Pharisees about his
-        identity and authority. This discourse develops the metaphor of light introduced in the
-        Prologue and establishes Jesus's divine origin and mission.</p>
+    <h2 id="The Light of the World"><span class="emoji">🌟</span>The Light of the World<small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN8_12-30">John 8:12-30</a></small></h3>
+    <div class="story-box">
+        <p class="paragraphStoryBox">Following the controversy over the woman caught in adultery, Jesus declares himself to
+            be "the light of the world" and engages in a heated debate with the Pharisees about his
+            identity and authority. This discourse develops the metaphor of light introduced in the
+            Prologue and establishes Jesus's divine origin and mission.</p>
+        <p>
+            The Declaration and Challenge (John 8:12-20) begins with Jesus's statement, "I am
+            the light of the world. He who follows Me shall not walk in darkness, but have the light of
+            life" (John 8:12). This second "I am" statement builds on the Old Testament imagery of
+            God as light (Psalm 27:1, Isaiah 60:19-20) while establishing Jesus as the source of
+            spiritual illumination and guidance. The Pharisees' objection that Jesus bears witness to
+            himself leads to a discussion of testimony and judgment, with Jesus asserting that his
+            testimony is valid because of his knowledge of his origin and destination. His statement
+            that "I am not alone, but I am with the Father who sent Me" (John 8:16) establishes the
+            divine validation of his mission.
+        </p>
 
-    <p class="highlight-box"><br />
-        The Declaration and Challenge (John 8:12-20) begins with Jesus's statement, "I am
-        the light of the world. He who follows Me shall not walk in darkness, but have the light of
-        life" (John 8:12). This second "I am" statement builds on the Old Testament imagery of
-        God as light (Psalm 27:1, Isaiah 60:19-20) while establishing Jesus as the source of
-        spiritual illumination and guidance. The Pharisees' objection that Jesus bears witness to
-        himself leads to a discussion of testimony and judgment, with Jesus asserting that his
-        testimony is valid because of his knowledge of his origin and destination. His statement
-        that "I am not alone, but I am with the Father who sent Me" (John 8:16) establishes the
-        divine validation of his mission.
-    </p>
+        <p>
+            Origin and Destiny (John 8:21-24) addresses the question of Jesus's identity in
+            terms
+            of his divine origin. His statement that "you are from beneath; I am from above" and
+            "you are of this world; I am not of this world" (John 8:23) establishes the fundamental
+            distinction between his heavenly nature and human existence. The warning that "if you
+            do not believe that I am He, you will die in your sins" (John 8:24) establishes faith in
+            Jesus's divine identity as essential for salvation. The use of "I am" (ego eimi) without a
+            predicate echoes God's self-revelation to Moses in Exodus 3:14 and represents one of
+            John's subtle claims to Jesus's divinity.</p>
 
-    <p class="highlight-box"><br />
-        Origin and Destiny (John 8:21-24) addresses the question of Jesus's identity in
-        terms
-        of his divine origin. His statement that "you are from beneath; I am from above" and
-        "you are of this world; I am not of this world" (John 8:23) establishes the fundamental
-        distinction between his heavenly nature and human existence. The warning that "if you
-        do not believe that I am He, you will die in your sins" (John 8:24) establishes faith in
-        Jesus's divine identity as essential for salvation. The use of "I am" (ego eimi) without a
-        predicate echoes God's self-revelation to Moses in Exodus 3:14 and represents one of
-        John's subtle claims to Jesus's divinity.</p>
+        <p>
+            The Son's Relationship with the Father (John 8:25-30) responds to the direct
+            question
+            "Who are You?" with reference to Jesus's consistent teaching and his relationship with
+            the Father. The statement that "when you lift up the Son of Man, then you will know that
+            I am He" (John 8:28) points to the crucifixion as the ultimate revelation of Jesus's
+            identity. The affirmation that "I always do those things that please Him" (John 8:29)
+            establishes Jesus's perfect obedience to the Father's will as the foundation of their
+            relationship.</p>
 
-    <p class="highlight-box"><br />
-        The Son's Relationship with the Father (John 8:25-30) responds to the direct
-        question
-        "Who are You?" with reference to Jesus's consistent teaching and his relationship with
-        the Father. The statement that "when you lift up the Son of Man, then you will know that
-        I am He" (John 8:28) points to the crucifixion as the ultimate revelation of Jesus's
-        identity. The affirmation that "I always do those things that please Him" (John 8:29)
-        establishes Jesus's perfect obedience to the Father's will as the foundation of their
-        relationship.</p>
-
-    <p class="highlight-box"><br />
-        This discourse establishes Jesus as the divine light who reveals truth and
-        guides
-        believers out of darkness. The emphasis on Jesus's heavenly origin and perfect
-        alignment with the Father's will establishes his unique identity and authority while the
-        promise of light to those who follow him offers hope of spiritual illumination and
-        guidance.</p>
+        <p>
+            This discourse establishes Jesus as the divine light who reveals truth and
+            guides
+            believers out of darkness. The emphasis on Jesus's heavenly origin and perfect
+            alignment with the Father's will establishes his unique identity and authority while the
+            promise of light to those who follow him offers hope of spiritual illumination and
+            guidance.</p>
+    </div>
 
     <h2><span class="emoji">🏃</span>
         The Good Shepherd Discourse (John 10:1-18)</h2>
