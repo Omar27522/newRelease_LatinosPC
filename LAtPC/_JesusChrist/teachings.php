@@ -821,6 +821,7 @@ function teachings()  {
             <a href="#Divine Authority">Divine Authority</a>
             <a href="#The Bread of Life">The Bread of Life</a>
             <a href="#The Light of the World">The Light of the World</a>
+            <a href="#The Good Shepherd">The Good Shepherd</a>
           </div>
     </div>
     <a href="?Luke#^" class="crumb-link">❤️ Luke</a>
@@ -1104,7 +1105,7 @@ function teachings()  {
             He redirects their focus from perishable food to <strong>"food which endures to everlasting life"</strong>
             <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_27" title="John 6:27"><small><ruby>John<rt>6:27</rt></ruby></small></a>
             and defines "the work of God" as believing in the one God has sent. This establishes faith in Christ as the fundamental requirement for receiving eternal life.</p>
-        <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_30" title="John 6:30-40"><ruby>John<rt>John 6:30-40</rt></ruby></a></span>
+        <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_30" title="John 6:30-40"><ruby>John<rt>6:30-40</rt></ruby></a></span>
         <p>The True Bread from Heaven responds to the crowds' request for a sign
             comparable to the manna given through Moses. Jesus clarifies that it was not Moses but
             God who gave the manna and that God <strong>"gives you the true bread from heaven"</strong>
@@ -1145,55 +1146,53 @@ function teachings()  {
 
     <h2 id="The Light of the World"><span class="emoji">🌟</span>The Light of the World<small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN8_12-30">John 8:12-30</a></small></h3>
     <div class="story-box">
-        <p class="paragraphStoryBox">Following the controversy over the woman caught in adultery, Jesus declares himself to
-            be "the light of the world" and engages in a heated debate with the Pharisees about his
+        <p class="paragraphStoryBox">Following the controversy over the woman caught in adultery, Jesus declares himself to be
+            <b><i>"the light of the world"</i></b>
+            and engages in a heated debate with the Pharisees about his
             identity and authority. This discourse develops the metaphor of light introduced in the
             Prologue and establishes Jesus's divine origin and mission.</p>
-        <p>
-            The Declaration and Challenge (John 8:12-20) begins with Jesus's statement, "I am
+        <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN8_12-20" title="John 8:12-20"><ruby>John<rt>John 8:12-20</rt></ruby></a></span>
+        <p>The Declaration and Challenge begins with Jesus's statement, <strong>"I am
             the light of the world. He who follows Me shall not walk in darkness, but have the light of
-            life" (John 8:12). This second "I am" statement builds on the Old Testament imagery of
-            God as light (Psalm 27:1, Isaiah 60:19-20) while establishing Jesus as the source of
-            spiritual illumination and guidance. The Pharisees' objection that Jesus bears witness to
+            life"</strong> <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN8_12"title="John 8:12"><ruby>John<rt>John 8:12</rt></ruby></a></small>.
+            This second <b><i>"I am"</i></b> statement builds on the Old Testament imagery of
+            God as light <a href="https://ebible.org/study/?v1=PS27_1&t1=local%3Aeng-web&w1=bible"title="Psalm 27:1">Psalm 27:1</a>,
+            <a href="https://ebible.org/study/?v1=IS60_19&t1=local%3Aeng-web&w1=bible"title="Isaiah 60:19-20">Isaiah 60:19-20</a>
+            while establishing Jesus as the source of spiritual illumination and guidance. The Pharisees' objection that Jesus bears witness to
             himself leads to a discussion of testimony and judgment, with Jesus asserting that his
             testimony is valid because of his knowledge of his origin and destination. His statement
-            that "I am not alone, but I am with the Father who sent Me" (John 8:16) establishes the
-            divine validation of his mission.
-        </p>
+            that <strong>"I am not alone, but I am with the Father who sent Me"</strong>
+            <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN8_16"><ruby>John<rt>John 8:16</rt></ruby></a></small>
+            establishes the divine validation of his mission.</p>
+        <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN8_21"><ruby>John<rt>John 8:21-24</rt></ruby></a></span>
+        <p>Origin and Destiny addresses the question of Jesus's identity in
+            terms of his divine origin. His statement that <strong>"you are from beneath; I am from above"</strong> and
+            <strong>"you are of this world; I am not of this world"</strong> <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN8_23"><ruby>John<rt>8:23</rt></ruby></a></small>
+            establishes the fundamental distinction between his heavenly nature and human existence.
+            The warning that <strong>"if you do not believe that I am He, you will die in your sins"</strong>
+            <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN8_24"><ruby>John<rt>8:24</rt></ruby></a></small>
+            establishes faith in Jesus's divine identity as essential for salvation. The use of <b><i>"I am"</i></b>
+            (<a href="https://www.google.com/search?q=ego+eimi">ego eimi</a>) without a predicate echoes God's self-revelation to Moses in
+            <a href="https://ebible.org/study/?v1=EX3_14&t1=local%3Aeng-web&w1=bible">Exodus 3:14</a> and
+            represents one of John's subtle claims to Jesus's divinity.</p>
+        <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN8_25"><ruby>John<rt>8:25-30</rt></ruby></a></span>
+        <p>The Son's Relationship with the Father responds to the direct question <b><i>"Who are You?"</i></b>
+            with reference to Jesus's consistent teaching and his relationship with the Father.
+            The statement that <strong>"when you lift up the Son of Man, then you will know that I am He"</strong>
+            <small><a href="https://ebible.org/study/?v1=JN8_28&t1=local%3Aeng-web&w1=bible"title="John 8:28"><ruby>John<rt>8:28</rt></ruby></a></small>
+            points to the crucifixion as the ultimate revelation of Jesus's identity.
+            The affirmation that <strong>"I always do those things that please Him"</strong>
+            <small><a href="https://ebible.org/study/?v1=JN8_29&t1=local%3Aeng-web&w1=bible"title="John 8:29"><ruby>John<rt>8:29</rt></ruby></a></small>
+            establishes Jesus's perfect obedience to the Father's will as the foundation of their relationship.</p>
+        <p>This discourse establishes Jesus as the divine light who reveals truth and guides believers out of darkness.
+            The emphasis on Jesus's heavenly origin and perfect alignment with the Father's will establishes his unique identity and authority
+            while the promise of light to those who follow him offers hope of spiritual illumination and guidance.</p>
+    </div>  
 
-        <p>
-            Origin and Destiny (John 8:21-24) addresses the question of Jesus's identity in
-            terms
-            of his divine origin. His statement that "you are from beneath; I am from above" and
-            "you are of this world; I am not of this world" (John 8:23) establishes the fundamental
-            distinction between his heavenly nature and human existence. The warning that "if you
-            do not believe that I am He, you will die in your sins" (John 8:24) establishes faith in
-            Jesus's divine identity as essential for salvation. The use of "I am" (ego eimi) without a
-            predicate echoes God's self-revelation to Moses in Exodus 3:14 and represents one of
-            John's subtle claims to Jesus's divinity.</p>
-
-        <p>
-            The Son's Relationship with the Father (John 8:25-30) responds to the direct
-            question
-            "Who are You?" with reference to Jesus's consistent teaching and his relationship with
-            the Father. The statement that "when you lift up the Son of Man, then you will know that
-            I am He" (John 8:28) points to the crucifixion as the ultimate revelation of Jesus's
-            identity. The affirmation that "I always do those things that please Him" (John 8:29)
-            establishes Jesus's perfect obedience to the Father's will as the foundation of their
-            relationship.</p>
-
-        <p>
-            This discourse establishes Jesus as the divine light who reveals truth and
-            guides
-            believers out of darkness. The emphasis on Jesus's heavenly origin and perfect
-            alignment with the Father's will establishes his unique identity and authority while the
-            promise of light to those who follow him offers hope of spiritual illumination and
-            guidance.</p>
-    </div>
-
-    <h2><span class="emoji">🏃</span>
-        The Good Shepherd Discourse (John 10:1-18)</h2>
-    <p class="highlight-box"><br />
+    <h2 id="The Good Shepherd"><span class="emoji">🌟</span>
+        The Good Shepherd <small><a href="https://ebible.org/study/?v1=JN10_1&t1=local%3Aeng-web&w1=bible">John 10:1-18</a></small></h2>
+        <div class="story-box">
+    <p class="paragraphStoryBox">
         Following the healing of the man born blind and the subsequent controversy with the
         Pharisees, Jesus delivers the Good Shepherd discourse, which uses pastoral imagery to
         describe his relationship with his followers and his sacrificial mission. This teaching
@@ -1201,8 +1200,7 @@ function teachings()  {
         Jesus's unique role as the divinely appointed savior.
     </p>
 
-    <h2><span class="emoji">🏃</span>The Sheepfold Analogy (John 10:1-6)</h2>
-    <p class="highlight-box"><br />
+    <p>
         The Sheepfold Analogy (John 10:1-6) begins with a distinction between the shepherd
         who enters by the door and thieves and robbers who climb in another way. This analogy
         establishes the legitimacy of Jesus's ministry in contrast to false leaders who lack divine
@@ -1211,8 +1209,7 @@ function teachings()  {
         their ability to discern his authentic leadership.
     </p>
 
-    <h2><span class="emoji">🏃</span>Jesus as the Door (John 10:7-10)</h2>
-    <p class="highlight-box"><br />
+    <p>
         Jesus as the Door (John 10:7-10) presents the third "I am" statement: "I am the door of
         the sheep" (John 10:7). This metaphor establishes Jesus as the exclusive means of
         entrance into God's flock and the source of salvation. The contrast between thieves who
@@ -1221,8 +1218,7 @@ function teachings()  {
         mission in contrast to the destructive influence of false leaders.
     </p>
 
-    <h2><span class="emoji">🏃</span>Jesus as the Good Shepherd (John 10:11-18)</h2>
-    <p class="highlight-box"><br />
+    <p>
         Jesus as the Good Shepherd (John 10:11-18) presents the fourth "I am" statement: "I
         am the good shepherd" (John 10:11). This metaphor builds on Old Testament imagery of
         God as the shepherd of Israel (Psalm 23, Ezekiel 34) while emphasizing Jesus's sacrificial
@@ -1238,9 +1234,11 @@ function teachings()  {
         establishes the unique nature of his redemptive mission and the security of those who
         belong to his flock.
     </p>
+    </div>
 
     <h2><span class="emoji">🏃</span>The Farewell Discourse (John 13-17)</h2>
-    <p class="highlight-box"><br />
+    <div class="story-box">
+    <p class="paragraphStoryBox">
         The Farewell Discourse represents the longest and most comprehensive teaching section
         in John's Gospel, spanning five chapters and addressing a wide range of topics related to
         Jesus's departure, the coming of the Holy Spirit, and the future of the disciples. This
@@ -1249,8 +1247,7 @@ function teachings()  {
         physical absence.
     </p>
 
-    <h2><span class="emoji">🏃</span>The Foot Washing and New Commandment (John 13:1-35)</h2>
-    <p class="highlight-box"><br />
+    <p>
         The Foot Washing and New Commandment (John 13:1-35) begins with Jesus's
         symbolic act of washing the disciples' feet, demonstrating humble service as the model
         for Christian leadership. Peter's resistance and Jesus's insistence establish the necessity
@@ -1260,9 +1257,11 @@ function teachings()  {
         distinguishing mark of Christian community and the primary ethical imperative for
         Jesus's followers.
     </p>
+    </div>
 
     <h2><span class="emoji">🏃</span>The Way, the Truth, and the Life (John 14:1-14)</h2>
-    <p class="highlight-box"><br />
+    <div class="story-box">
+    <p class="paragraphStoryBox">
         The Way, the Truth, and the Life (John 14:1-14) addresses the disciples' anxiety about
         Jesus's departure with promises of reunion and continued relationship. The assurance
         that Jesus goes to prepare a place in the Father's house offers hope of ultimate reunion
@@ -1274,8 +1273,7 @@ function teachings()  {
         ongoing power available to his followers.
     </p>
 
-    <h2><span class="emoji">🏃</span>The Promise of the Holy Spirit (John 14:15-31)</h2>
-    <p class="highlight-box"><br />
+    <p>
         The Promise of the Holy Spirit (John 14:15-31) addresses the apparent abandonment
         the disciples will experience at Jesus's departure by promising "another Helper" who
         will "abide with you forever" (John 14:16). The identification of this Helper as "the Spirit
@@ -1286,9 +1284,11 @@ function teachings()  {
         while the promise of peace—"My peace I give to you" (John 14:27)—offers comfort in the
         face of tribulation.
     </p>
+    </div>
 
     <h2><span class="emoji">🏃</span>The True Vine (John 15:1-17)</h2>
-    <p class="highlight-box"><br />
+    <div class="story-box">
+    <p class="paragraphStoryBox">
         The True Vine (John 15:1-17) presents the fifth "I am" statement: "I am the true
         vine" (John 15:1). This metaphor establishes the organic connection between Jesus and
         his followers and the necessity of "abiding" in him for spiritual fruitfulness. The repeated
@@ -1300,8 +1300,7 @@ function teachings()  {
         mission.
     </p>
 
-    <h2><span class="emoji">🏃</span>The World's Hatred and the Spirit's Witness (John 15:18-16:15)</h2>
-    <p class="highlight-box"><br />
+    <p>
         The World's Hatred and the Spirit's Witness (John 15:18-16:15) prepares the disciples
         for the opposition they will face from a hostile world. The warning that "if they
         persecuted Me, they will also persecute you" (John 15:20) establishes the inevitable
@@ -1320,6 +1319,7 @@ function teachings()  {
         tribulation; but be of good cheer, I have overcome the world" (John 16:33)—offers hope
         based on Jesus's ultimate victory over all opposing forces.
     </p>
+    </div>
 
     <h2><span class="emoji">🏃</span>The High Priestly Prayer (John 17)</h2>
     <p class="highlight-box"><br />
