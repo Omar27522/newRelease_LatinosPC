@@ -822,6 +822,8 @@ function teachings()  {
             <a href="#The Bread of Life">The Bread of Life</a>
             <a href="#The Light of the World">The Light of the World</a>
             <a href="#The Good Shepherd">The Good Shepherd</a>
+            <a href="#The Farewell Discourse">The Farewell Discourse</a>
+            <a href="#Theological Contribution">Theological Contribution</a>
           </div>
     </div>
     <a href="?Luke#^" class="crumb-link">❤️ Luke</a>
@@ -1012,8 +1014,7 @@ function teachings()  {
             Samaritans. Jesus redirects the conversation by offering living water.
             <strong>“If you knew the gift of God, and who it is who says to you, ‘Give me a drink,’ you would have asked him, and he would have given you living water.”</strong>
             <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN4_10" title="John 4:10"><small><ruby>John<rt>4:10</rt></ruby></small></a><br />
-            <strong>"but whoever drinks of the water that I will give him will never thirst again;
-                but the water that I will give him will become in him a well of water springing up to eternal life."</strong>
+            <strong>"but whoever drinks of the water that I will give him will never thirst again; but the water that I will give him will become in him a well of water springing up to eternal life."</strong>
             <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN4_14" title="John 4:14"><small><ruby>John<rt>4:14</rt></ruby></small></a>
             This metaphor of living water builds on Old Testament imagery of God as the source of living water
             (<a href="https://ebible.org/study/?v1=JR2_13&t1=local%3Aeng-web&w1=bible">Jeremiah 2:13 </a>, <a href="https://ebible.org/study/?v1=JR17_13&t1=local%3Aeng-web&w1=bible">Jeremiah 17:13</a>)
@@ -1187,57 +1188,52 @@ function teachings()  {
         <p>This discourse establishes Jesus as the divine light who reveals truth and guides believers out of darkness.
             The emphasis on Jesus's heavenly origin and perfect alignment with the Father's will establishes his unique identity and authority
             while the promise of light to those who follow him offers hope of spiritual illumination and guidance.</p>
-    </div>  
+    </div>
 
     <h2 id="The Good Shepherd"><span class="emoji">🌟</span>
         The Good Shepherd <small><a href="https://ebible.org/study/?v1=JN10_1&t1=local%3Aeng-web&w1=bible">John 10:1-18</a></small></h2>
-        <div class="story-box">
-    <p class="paragraphStoryBox">
-        Following the healing of the man born blind and the subsequent controversy with the
-        Pharisees, Jesus delivers the Good Shepherd discourse, which uses pastoral imagery to
-        describe his relationship with his followers and his sacrificial mission. This teaching
-        develops the contrast between true and false spiritual leadership while establishing
-        Jesus's unique role as the divinely appointed savior.
-    </p>
-
-    <p>
-        The Sheepfold Analogy (John 10:1-6) begins with a distinction between the shepherd
-        who enters by the door and thieves and robbers who climb in another way. This analogy
-        establishes the legitimacy of Jesus's ministry in contrast to false leaders who lack divine
-        authorization. The description of the sheep recognizing the shepherd's voice and
-        following him establishes the intimate relationship between Jesus and his followers and
-        their ability to discern his authentic leadership.
-    </p>
-
-    <p>
-        Jesus as the Door (John 10:7-10) presents the third "I am" statement: "I am the door of
-        the sheep" (John 10:7). This metaphor establishes Jesus as the exclusive means of
-        entrance into God's flock and the source of salvation. The contrast between thieves who
-        "steal, and kill, and destroy" and Jesus who came "that they may have life, and that they
-        may have it more abundantly" (John 10:10) establishes the life-giving purpose of Jesus's
-        mission in contrast to the destructive influence of false leaders.
-    </p>
-
-    <p>
-        Jesus as the Good Shepherd (John 10:11-18) presents the fourth "I am" statement: "I
-        am the good shepherd" (John 10:11). This metaphor builds on Old Testament imagery of
-        God as the shepherd of Israel (Psalm 23, Ezekiel 34) while emphasizing Jesus's sacrificial
-        love: "The good shepherd gives His life for the sheep" (John 10:11). The contrast
-        between the good shepherd and the hireling who abandons the sheep in danger
-        establishes the depth of Jesus's commitment to his followers. The statement that "I lay
-        down My life for the sheep" (John 10:15) anticipates Jesus's sacrificial death while the
-        declaration that "I have power to lay it down, and I have power to take it again" (John
-        10:18) points to his resurrection and establishes his divine authority over life and death.
-        This discourse establishes Jesus as both the exclusive means of salvation (the door) and
-        the sacrificial protector of his people (the good shepherd). The emphasis on Jesus's
-        voluntary sacrifice, his intimate knowledge of his followers, and his divine commission
-        establishes the unique nature of his redemptive mission and the security of those who
-        belong to his flock.
-    </p>
+    <div class="story-box">
+        <p class="paragraphStoryBox">
+            Following the healing of the man born blind and the subsequent controversy with the
+            Pharisees, Jesus delivers the Good Shepherd discourse, which uses pastoral imagery to
+            describe his relationship with his followers and his sacrificial mission. This teaching
+            develops the contrast between true and false spiritual leadership while establishing
+            Jesus's unique role as the divinely appointed savior.</p>
+        <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN10_1"><ruby>John<rt>John 10:1-6</rt></ruby></a></span>
+        <p>The Sheepfold Analogy begins with a distinction between the shepherd who enters by the door and thieves and robbers who climb in another way.
+            This analogy establishes the legitimacy of Jesus's ministry in contrast to false leaders who lack divine authorization.
+            The description of the sheep recognizing the shepherd's voice and following him establishes the intimate relationship between Jesus
+            and his followers and their ability to discern his authentic leadership.</p>
+        <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN10_7"><ruby>John<rt>John 10:7-10</rt></ruby></a></span>
+        <p>Jesus as the Door presents the third <b><i>"I am"</i></b> statement: <strong>"I am the door of the sheep"</strong>
+            <small><a href="https://ebible.org/study/?v1=JN10_7&t1=local%3Aeng-web&w1=bible"><ruby>John<rt>10:7</rt></ruby></a></small>.
+            This metaphor establishes Jesus as the exclusive means ofentrance into God's flock and the source of salvation.
+            The contrast between thieves who <strong>"steal, and kill, and destroy" and Jesus who came "that they may have life, and that they may have it more abundantly"</strong>
+            <small><a href="https://ebible.org/study/?v1=JN10_10&t1=local%3Aeng-web&w1=bible"><ruby>John<rt>10:10</rt></ruby></a></small>
+            establishes the life-giving purpose of Jesus's mission in contrast to the destructive influence of false leaders.</p>
+        <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN10_11"><ruby>John<rt>John 10:11-18</rt></ruby></a></span>
+        <p>Jesus as the Good Shepherd presents the fourth <b><i>"I am"</i></b> statement: <strong>"I am the good shepherd"</strong>
+            <small><a href="https://ebible.org/study/?v1=JN10_11&t1=local%3Aeng-web&w1=bible"><ruby>John<rt>10:11</rt></ruby></a></small>.
+            This metaphor builds on Old Testament imagery of God as the shepherd of Israel
+            (<a href="https://ebible.org/study/?v1=PS23_1&t1=local%3Aeng-web&w1=bible">Psalm 23</a>, <a href="https://ebible.org/study/?v1=EK34_1&t1=local%3Aeng-web&w1=bible">Ezekiel 34</a>)
+            while emphasizing Jesus's sacrificial love: <strong>"The good shepherd gives His life for the sheep"</strong>
+            <small><a href="https://ebible.org/study/?v1=JN10_11&t1=local%3Aeng-web&w1=bible"><ruby>John<rt>10:11</rt></ruby></a></small>.
+            The contrast between the good shepherd and the hireling who abandons the sheep in danger
+            establishes the depth of Jesus's commitment to his followers. The statement that <strong>"I lay down My life for the sheep"</strong>
+            <small><a href="https://ebible.org/study/?v1=JN10_15&t1=local%3Aeng-web&w1=bible"><ruby>John<rt>10:15</rt></ruby></a></small>
+            anticipates Jesus's sacrificial death while the declaration that <strong>"I have power to lay it down, and I have power to take it again"</strong>
+            <small><a href="https://ebible.org/study/?v1=JN10_18&t1=local%3Aeng-web&w1=bible"><ruby>John<rt>10:18</rt></ruby></a></small>
+            points to his resurrection and establishes his divine authority over life and death.
+            This discourse establishes Jesus as both the exclusive means of salvation <b><i>(the door)</i></b> and
+            the sacrificial protector of his people <b><i>(the good shepherd)</i></b>. The emphasis on Jesus's
+            voluntary sacrifice, his intimate knowledge of his followers, and his divine commission
+            establishes the unique nature of his redemptive mission and the security of those who belong to his flock.</p>
     </div>
 
-    <h2><span class="emoji">🏃</span>The Farewell Discourse (John 13-17)</h2>
-    <div class="story-box">
+    <h2 id="The Farewell Discourse"><span class="emoji">🌟</span>
+        The Farewell Discourse <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN13_1">John 13-17</a></small></h2>
+    <div class="highlight-box">
+        <div class="story-box">
     <p class="paragraphStoryBox">
         The Farewell Discourse represents the longest and most comprehensive teaching section
         in John's Gospel, spanning five chapters and addressing a wide range of topics related to
@@ -1335,8 +1331,9 @@ function teachings()  {
         which You loved Me may be in them" (John 17:26) establishes unity and love as the
         ultimate goals for the Christian community.
     </p>
+            
 
-    <h2><span class="emoji">🏃</span>The Farewell Discourse (John 13-17)</h2>
+    <h2><span class="emoji">🏃</span>The Farewell Discourse (John 13-17) conclusion</h2>
     <p class="highlight-box"><br />
         The Farewell Discourse represents John's most comprehensive presentation of Jesus's
         teaching about the Christian life, the Holy Spirit's ministry, and the nature of the church.
@@ -1345,8 +1342,9 @@ function teachings()  {
         Spirit's presence, guidance, and power offer hope and assurance to believers facing the
         challenges of living as Christ's representatives in a hostile world.
     </p>
+    </div>
 
-    <h2><span class="emoji">🏃</span>John's Theological Contribution</h2>
+    <h2 id="Theological Contribution"><span class="emoji">🏃</span>John's Theological Contribution</h2>
     <p class="highlight-box"><br />
         John's presentation of Jesus's discourses makes a unique and essential contribution to
         Christian theology and spirituality. The extended, theologically rich teachings recorded
