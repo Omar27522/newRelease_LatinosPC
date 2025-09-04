@@ -835,6 +835,15 @@ function teachings()  {
     <p>John was like the friend who always asked the deep questions.
         While the other Gospel writers focused on what Jesus did and said,
         John was really interested in helping people understand who Jesus really was and why He came to Earth.</p>
+        <div class="highlight-box">
+        <p><span class="emoji" style="font-size:1.7rem;">🏃</span>John's presentation of Jesus's discourses thus provides essential theological content
+        that complements the more practical and ethical focus of the Synoptic Gospels.
+        Together, these diverse presentations of Jesus's teaching create a comprehensive
+        portrait of Christ as both the authoritative teacher of God's will and the divine revealer of
+        God's nature. The theological depth and spiritual richness of John's discourses have
+        made this Gospel particularly beloved by those seeking to understand the mysteries of
+        faith and the nature of relationship with God through Christ.</p>
+        </div>
 
     <h2><span class="emoji">🍞</span>"I Am the Bread of Life"</h2>
     <div class="highlight-box">
@@ -1233,115 +1242,115 @@ function teachings()  {
     <h2 id="The Farewell Discourse"><span class="emoji">🌟</span>
         The Farewell Discourse <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN13_1">John 13-17</a></small></h2>
     <div class="highlight-box">
-        <div class="story-box">
-    <p class="paragraphStoryBox">
-        The Farewell Discourse represents the longest and most comprehensive teaching section
-        in John's Gospel, spanning five chapters and addressing a wide range of topics related to
-        Jesus's departure, the coming of the Holy Spirit, and the future of the disciples. This
-        extended teaching, delivered on the night of Jesus's betrayal, provides essential
-        guidance for the disciples as they face the challenges of continuing Jesus's mission in his
-        physical absence.
-    </p>
-
-    <p>
-        The Foot Washing and New Commandment (John 13:1-35) begins with Jesus's
-        symbolic act of washing the disciples' feet, demonstrating humble service as the model
-        for Christian leadership. Peter's resistance and Jesus's insistence establish the necessity
-        of receiving Jesus's cleansing ministry. The subsequent teaching about the betrayer
-        leads to Judas's departure, after which Jesus gives the new commandment: "Love one
-        another; as I have loved you" (John 13:34). This establishes sacrificial love as the
-        distinguishing mark of Christian community and the primary ethical imperative for
-        Jesus's followers.
-    </p>
-    </div>
-
-    <h2><span class="emoji">🏃</span>The Way, the Truth, and the Life (John 14:1-14)</h2>
-    <div class="story-box">
-    <p class="paragraphStoryBox">
-        The Way, the Truth, and the Life (John 14:1-14) addresses the disciples' anxiety about
-        Jesus's departure with promises of reunion and continued relationship. The assurance
-        that Jesus goes to prepare a place in the Father's house offers hope of ultimate reunion
-        while the declaration "I am the way, the truth, and the life. No one comes to the Father
-        except through Me" (John 14:6) establishes Jesus as the exclusive mediator between
-        God and humanity. The teaching about Jesus's unity with the Father—"He who has seen
-        Me has seen the Father" (John 14:9)—establishes Jesus as the definitive revelation of
-        God while the promise of greater works through prayer in Jesus's name establishes the
-        ongoing power available to his followers.
-    </p>
-
-    <p>
-        The Promise of the Holy Spirit (John 14:15-31) addresses the apparent abandonment
-        the disciples will experience at Jesus's departure by promising "another Helper" who
-        will "abide with you forever" (John 14:16). The identification of this Helper as "the Spirit
-        of truth" establishes the Holy Spirit's role in guiding believers into truth while the
-        promise that "I will not leave you orphans; I will come to you" (John 14:18) suggests
-        Jesus's continued presence through the Spirit. The teaching about the indwelling of the
-        Father, Son, and Spirit establishes the intimate communion between God and believers
-        while the promise of peace—"My peace I give to you" (John 14:27)—offers comfort in the
-        face of tribulation.
-    </p>
-    </div>
-
-    <h2><span class="emoji">🏃</span>The True Vine (John 15:1-17)</h2>
-    <div class="story-box">
-    <p class="paragraphStoryBox">
-        The True Vine (John 15:1-17) presents the fifth "I am" statement: "I am the true
-        vine" (John 15:1). This metaphor establishes the organic connection between Jesus and
-        his followers and the necessity of "abiding" in him for spiritual fruitfulness. The repeated
-        emphasis on abiding—"He who abides in Me, and I in him, bears much fruit; for without
-        Me you can do nothing" (John 15:5)—establishes complete dependence on Christ as the
-        essential condition for spiritual productivity. The restatement of the love commandment
-        and the designation of the disciples as "friends" rather than servants establishes the
-        intimate nature of their relationship with Jesus and the privilege of sharing in his
-        mission.
-    </p>
-
-    <p>
-        The World's Hatred and the Spirit's Witness (John 15:18-16:15) prepares the disciples
-        for the opposition they will face from a hostile world. The warning that "if they
-        persecuted Me, they will also persecute you" (John 15:20) establishes the inevitable
-        conflict between Christ's followers and the world system. The promise of the Holy
-        Spirit's coming to "convict the world of sin, and of righteousness, and of
-        judgment" (John 16:8) establishes the Spirit's role in confronting unbelief while the
-        promise to "guide you into all truth" (John 16:13) establishes the Spirit's role in
-        illuminating believers. The assurance that the Spirit "will glorify Me" (John 16:14)
-        establishes Christ-centeredness as the criterion for authentic spiritual ministry.
-        Sorrow Turned to Joy (John 16:16-33) addresses the disciples' confusion and grief
-        about Jesus's departure with promises of reunion and ultimate joy. The metaphor of a
-        woman in labor, whose pain is forgotten in the joy of new life, illustrates how the
-        disciples' temporary sorrow will be transformed into permanent joy. The promise of
-        direct access to the Father "in My name" (John 16:23) establishes a new relationship with
-        God based on Jesus's mediatorial work. The final assurance—"In the world you will have
-        tribulation; but be of good cheer, I have overcome the world" (John 16:33)—offers hope
-        based on Jesus's ultimate victory over all opposing forces.
-    </p>
-    </div>
-
-    <h2><span class="emoji">🏃</span>The High Priestly Prayer (John 17)</h2>
-    <p class="highlight-box"><br />
-        The High Priestly Prayer (John 17) concludes the Farewell Discourse with Jesus's
-        extended prayer for himself, his disciples, and all future believers. The prayer for
-        glorification—"Glorify Your Son, that Your Son also may glorify You" (John 17:1)—
-        establishes the mutual glorification of Father and Son through the work of redemption.
-        The definition of eternal life as knowing "the only true God, and Jesus Christ whom You
-        have sent" (John 17:3) establishes salvation in relational rather than merely temporal
-        terms. The prayer for the disciples' protection, sanctification, and unity establishes
-        Jesus's ongoing concern for his followers and his vision for the church's witness in the
-        world. The final prayer for all believers "that they may be one" and "that the love with
-        which You loved Me may be in them" (John 17:26) establishes unity and love as the
-        ultimate goals for the Christian community.
-    </p>
-            
-
-    <h2><span class="emoji">🏃</span>The Farewell Discourse (John 13-17) conclusion</h2>
-    <p class="highlight-box"><br />
-        The Farewell Discourse represents John's most comprehensive presentation of Jesus's
-        teaching about the Christian life, the Holy Spirit's ministry, and the nature of the church.
-        The emphasis on love, unity, truth, and abiding relationship with Christ establishes the
-        fundamental principles of Christian spirituality and community life. The promises of the
-        Spirit's presence, guidance, and power offer hope and assurance to believers facing the
-        challenges of living as Christ's representatives in a hostile world.
-    </p>
+        <p>The Farewell Discourse represents the longest and most comprehensive teaching section
+            in John's Gospel, spanning five chapters and addressing a wide range of topics related to
+            Jesus's departure, the coming of the Holy Spirit, and the future of the disciples.
+            This extended teaching, delivered on the night of Jesus's betrayal, provides essential
+            guidance for the disciples as they face the challenges of continuing Jesus's mission in his
+            physical absence.</p>
+        <div class="story-box"><h3><span class="emoji">🦶🫧</span>The Foot Washing and New Commandment
+        <small><a href="https://ebible.org/study/?v1=JN13_1&t1=local%3Aeng-web&w1=bible">John 13:1-35</a></small></h3>
+            <p>The Foot Washing and New Commandment begins with Jesus's
+            symbolic act of washing the disciples' feet, demonstrating humble service as the model
+            for Christian leadership. Peter's resistance and Jesus's insistence establish the necessity
+            of receiving Jesus's cleansing ministry. The subsequent teaching about the betrayer
+            leads to Judas's departure, after which Jesus gives the new commandment:
+            <strong>"Love one another; as I have loved you"</strong>
+            <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN13_34"><ruby><ruby>John<rt>13:34</rt></ruby></ruby></a></small>.
+            This establishes sacrificial love as the distinguishing mark of Christian community and the primary ethical imperative for Jesus's followers.</p>
+        </div>
+        <div class="story-box"><h3><span class="emoji">🌱</span>The Way, the Truth, and the Life
+        <small><a href="https://ebible.org/study/?v1=JN14_1&t1=local%3Aeng-web&w1=bible">John 14:1-14</a></small></h3>
+            <p>The Way, the Truth, and the Life addresses the disciples' anxiety about
+            Jesus's departure with promises of reunion and continued relationship. The assurance
+            that Jesus goes to prepare a place in the Father's house offers hope of ultimate reunion
+            while the declaration <strong>"I am the way, the truth, and the life. No one comes to the Father except through Me"</strong>
+            <small><a href="https://ebible.org/study/?v1=JN14_6&t1=local%3Aeng-web&w1=bible"><ruby><ruby>John<rt>14:6</rt></ruby></ruby></a></small>
+            establishes Jesus as the exclusive mediator between God and humanity.
+            The teaching about Jesus's unity with the Father—<strong>"He who has seen Me has seen the Father"</strong>
+            <small><a href="https://ebible.org/study/?v1=JN14_9&t1=local%3Aeng-web&w1=bible"><ruby><ruby>John<rt>14:9</rt></ruby></ruby></a></small>
+            establishes Jesus as the definitive revelation of God while the promise of greater works through prayer in Jesus's name establishes the
+            ongoing power available to his followers.</p>
+        </div>
+        <div class="story-box"><h3><span class="emoji">🕊️</span>The Promise of the Holy Spirit
+        <small><a href="https://ebible.org/study/?v1=JN14_15&t1=local%3Aeng-web&w1=bible">John 14:15-31</a></small></h3>
+            <p>The Promise of the Holy Spirit addresses the apparent abandonment
+            the disciples will experience at Jesus's departure by promising:
+            <strong>I will pray to the Father, and he will give you another Counselor, that he may be with you forever</strong>
+            <small><a href="https://ebible.org/study/?v1=JN14_16&t1=local%3Aeng-web&w1=bible"><ruby><ruby>John<rt>14:16</rt></ruby></ruby></a></small>.
+            The identification of this Helper as <strong>"the Spirit of truth"</strong>
+            <small><a href="https://ebible.org/study/?v1=JN14_17&t1=local%3Aeng-web&w1=bible"><ruby><ruby>John<rt>14:17</rt></ruby></ruby></a></small>
+            establishes the Holy Spirit's role in guiding believers into truth while the
+            promise that <strong>"I will not leave you orphans; I will come to you"</strong>
+            <small><a href="https://ebible.org/study/?v1=JN14_18&t1=local%3Aeng-web&w1=bible"><ruby><ruby>John<rt>14:18</rt></ruby></ruby></a></small>
+            suggests Jesus's continued presence through the Spirit. The teaching about the indwelling of the
+            Father, Son, and Spirit establishes the intimate communion between God and believers
+            while the promise of peace—<strong>"My peace I give to you"</strong>
+            <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN14_27"><ruby><ruby>John<rt>14:27</rt></ruby></ruby></a></small>
+            offers comfort in the face of tribulation.</p>
+        </div>
+        <div class="story-box"><h3><span class="emoji">🍇</span>The True Vine
+        <small><a href="https://ebible.org/study/?v1=JN15_1&t1=local%3Aeng-web&w1=bible">John 15:1-17</a></small></h3>
+            <p>The True Vine presents the fifth <b><i>"I am"</i></b> statement: <strong>"I am the true vine"</strong>
+            <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN15_1"><ruby><ruby>John<rt>15:1</rt></ruby></ruby></a></small>.
+            This metaphor establishes the organic connection between Jesus and
+            his followers and the necessity of <b><i>"abiding"</i></b> in him for spiritual fruitfulness. The repeated
+            emphasis on abiding—<strong>"He who abides in Me, and I in him, bears much fruit; for without Me you can do nothing"</strong>
+            <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN15_5"><ruby><ruby>John<rt>15:5</rt></ruby></ruby></a></small>
+            —establishes complete dependence on Christ as the essential condition for spiritual productivity.
+            The restatement of the love commandment and the designation of the disciples as <b><i>"friends"</i></b> rather than servants establishes the
+            intimate nature of their relationship with Jesus and the privilege of sharing in his mission.</p>
+        </div>
+        <div class="story-box"><h3><span class="emoji">🌎</span>The World's Hatred and the Spirit's Witness
+        <small><a href="https://ebible.org/study/?v1=JN15_18&t1=local%3Aeng-web&w1=bible">John 15:18-16:15</a></small></h3>
+            <p>The World's Hatred and the Spirit's Witness prepares the disciples
+            for the opposition they will face from a hostile world. The warning that <strong>"if they persecuted Me, they will also persecute you"</strong>
+            <small><a href="https://ebible.org/study/?v1=JN15_20&t1=local%3Aeng-web&w1=bible"><ruby><ruby>John<rt>15:20</rt></ruby></ruby></a></small>
+            establishes the inevitable conflict between Christ's followers and the world system. The promise of the Holy Spirit's coming to
+            <strong>"convict the world of sin, and of righteousness, and of judgment"</strong>
+            <small><a href="https://ebible.org/study/?v1=JN16_8&t1=local%3Aeng-web&w1=bible"><ruby><ruby>John<rt>16:8</rt></ruby></ruby></a></small>
+            establishes the Spirit's role in confronting unbelief while the promise to <strong>"guide you into all truth"</strong>
+            <small><a href="https://ebible.org/study/?v1=JN16_13&t1=local%3Aeng-web&w1=bible"><ruby><ruby>John<rt>16:13</rt></ruby></ruby></a></small>
+            establishes the Spirit's role in illuminating believers. The assurance that the Spirit <strong>"will glorify Me"</strong>
+            <small><a href="https://ebible.org/study/?v1=JN16_14&t1=local%3Aeng-web&w1=bible"><ruby><ruby>John<rt>16:14</rt></ruby></ruby></a></small>
+            establishes Christ-centeredness as the criterion for authentic spiritual ministry.</p>
+        </div>
+        <div class="story-box"><h3><span class="emoji">🥀 💫</span>Sorrow Turned to Joy
+        <small><a href="https://ebible.org/study/?v1=JN16_16&t1=local%3Aeng-web&w1=bible">John 16:16-33</a></small></h3>
+            <p>Sorrow Turned to Joy addresses the disciples' confusion and grief
+            about Jesus's departure with promises of reunion and ultimate joy. The metaphor of a
+            woman in labor, whose pain is forgotten in the joy of new life, illustrates how the
+            disciples' temporary sorrow will be transformed into permanent joy. The promise of
+            direct access to the Father <strong>"in My name"</strong> <small><a href="https://ebible.org/study/?v1=JN16_23&t1=local%3Aeng-web&w1=bible"><ruby><ruby>John<rt>16:23</rt></ruby></ruby></a></small>
+            establishes a new relationship with God based on Jesus's mediatorial work. The final assurance—
+            <strong>"In the world you will have tribulation; but be of good cheer, I have overcome the world"</strong>
+            <small><a href="https://ebible.org/study/?v1=JN16_33&t1=local%3Aeng-web&w1=bible"><ruby><ruby>John<rt>16:33</rt></ruby></ruby></a></small>
+            offers hope based on Jesus's ultimate victory over all opposing forces.</p>
+        </div>
+        <div class="story-box"><h3><span class="emoji">☁️</span>The High Priestly Prayer
+        <small><a href="https://ebible.org/study/?v1=JN17_1&t1=local%3Aeng-web&w1=bible">John 17</a></small></h3>
+            <p>The High Priestly Prayer concludes the Farewell Discourse with Jesus's
+            extended prayer for himself, his disciples, and all future believers. The prayer for glorification—
+            <strong>"Glorify Your Son, that Your Son also may glorify You"</strong>
+            <small><a href="https://ebible.org/study/?v1=JN17_1&t1=local%3Aeng-web&w1=bible"><ruby><ruby>John<rt>17:1</rt></ruby></ruby></a></small>
+            establishes the mutual glorification of Father and Son through the work of redemption.
+            The definition of eternal life as knowing <strong>"the only true God, and Jesus Christ whom You have sent"</strong>
+            <small><a href="https://ebible.org/study/?v1=JN17_3&t1=local%3Aeng-web&w1=bible"><ruby><ruby>John<rt>17:3</rt></ruby></ruby></a></small>
+            establishes salvation in relational rather than merely temporal terms.
+            The prayer for the disciples' protection, sanctification, and unity establishes
+            Jesus's ongoing concern for his followers and his vision for the church's witness in the world.
+            The final prayer for all believers <strong>"that they may be one" and "that the love with which You loved Me may be in them"</strong>
+            <small><a href="https://ebible.org/study/?v1=JN17_26&t1=local%3Aeng-web&w1=bible"><ruby><ruby>John<rt>17:26</rt></ruby></ruby></a></small>
+            establishes unity and love as the ultimate goals for the Christian community.</p>
+        </div>
+        <h3 style="text-align: center;"><span class="emoji">👋</span>The Farewell Discourse conclusion
+        <small><a href="https://en.wikipedia.org/wiki/Farewell_Discourse"title="Wikipedia">John 13-17</a></small></h3>
+            <p>The Farewell Discourse represents John's most comprehensive presentation of Jesus's
+            teaching about the Christian life, the Holy Spirit's ministry, and the nature of the church.
+            The emphasis on love, unity, truth, and abiding relationship with Christ establishes the
+            fundamental principles of Christian spirituality and community life. The promises of the
+            Spirit's presence, guidance, and power offer hope and assurance to believers facing the
+            challenges of living as Christ's representatives in a hostile world.</p>
     </div>
 
     <h2 id="Theological Contribution"><span class="emoji">🏃</span>John's Theological Contribution</h2>
@@ -1384,16 +1393,7 @@ function teachings()  {
         Christian soteriology.
     </p>
 
-    <h2><span class="emoji">🏃</span>John's Presentation of Jesus's Discourses</h2>
-    <p class="highlight-box"><br />
-        John's presentation of Jesus's discourses thus provides essential theological content
-        that complements the more practical and ethical focus of the Synoptic Gospels.
-        Together, these diverse presentations of Jesus's teaching create a comprehensive
-        portrait of Christ as both the authoritative teacher of God's will and the divine revealer of
-        God's nature. The theological depth and spiritual richness of John's discourses have
-        made this Gospel particularly beloved by those seeking to understand the mysteries of
-        faith and the nature of relationship with God through Christ.
-    </p>
+    
 </section>
 
 
