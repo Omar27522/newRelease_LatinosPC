@@ -1099,7 +1099,7 @@ function teachings()  {
             distinction between the Father and the Son.</p>
     </div>
 
-    <h2 id="The Bread of Life"><span class="emoji">🌟</span>The Bread of Life<small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_22" title="John 6:22-59">John 6:22-59</a></small></h3>
+    <h3 id="The Bread of Life"><span class="emoji">🌟</span>The Bread of Life<small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN6_22" title="John 6:22-59">John 6:22-59</a></small></h3>
     <div class="story-box">
         <p class="paragraphStoryBox">Following the <a href="https://en.wikipedia.org/wiki/Feeding_the_multitude#:~:text=The%20Feeding%20of%20the%205%2C000%20is%20also%20known%20as%20the,boy%20to%20feed%20a%20multitude.">feeding of the five thousand</a>, Jesus delivers the Bread of Life discourse,
             which develops the metaphor of spiritual nourishment and introduces the controversial teaching about eating his flesh and drinking his blood.
@@ -1154,7 +1154,7 @@ function teachings()  {
             discipleship and superficial following.</p>
     </div>
 
-    <h2 id="The Light of the World"><span class="emoji">🌟</span>The Light of the World<small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN8_12-30">John 8:12-30</a></small></h3>
+    <h3 id="The Light of the World"><span class="emoji">🌟</span>The Light of the World<small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=JN8_12-30">John 8:12-30</a></small></h3>
     <div class="story-box">
         <p class="paragraphStoryBox">Following the controversy over the woman caught in adultery, Jesus declares himself to be
             <b><i>"the light of the world"</i></b>
@@ -1354,7 +1354,8 @@ function teachings()  {
     </div>
 
     <h2 id="Theological Contribution"><span class="emoji">🏃</span>John's Theological Contribution</h2>
-    <p class="highlight-box"><br />
+    <div class="highlight-box">
+    <p>
         John's presentation of Jesus's discourses makes a unique and essential contribution to
         Christian theology and spirituality. The extended, theologically rich teachings recorded
         in this Gospel provide the foundation for Christian understanding of Jesus's divine
@@ -1362,38 +1363,41 @@ function teachings()  {
         salvation through faith in Christ.
     </p>
 
-    <p class="highlight-box"><br />
-        The seven "I am" statements—"I am the bread of life," "I am the light of the world," "I am
-        the door," "I am the good shepherd," "I am the resurrection and the life," "I am the way,
-        the truth, and the life," and "I am the true vine"—provide a multifaceted revelation of
-        Jesus's identity and mission. Each metaphor illuminates a different aspect of Christ's
-        relationship with believers and his role in God's redemptive plan.
-        The emphasis on Jesus's divine origin and authority establishes high Christology as the
+    <p>
+        The seven <b><i>"I am"</i></b> statements—
+        <strong><a href="#The Bread of Life">"I am the bread of life"</a>,</strong>
+        <strong><a href="#The Light of the World">"I am the light of the world"</a>,</strong>
+        <strong><a href="https://desirejesus.com/blog/2019/11/24/jesus-said-i-am-the-door"title="Desire Jesus dotcom">"I am the door"</a>,</strong>
+        <strong><a href="#The Good Shepherd">"I am the good shepherd"</a>,</strong>
+        <strong><a href="#Living Water">"I am the resurrection and the life"</a>,</strong>
+        <strong><a href="#The Farewell Discourse">"I am the way, the truth, and the life"</a>,</strong>
+        <strong><a href="#The Farewell Discourse">"I am the true vine"</a></strong>
+        —provide a multifaceted revelation of Jesus's identity and mission. Each metaphor illuminates a different aspect of Christ's
+        relationship with believers and his role in God's redemptive plan. The emphasis on Jesus's divine origin and authority establishes high Christology as the
         foundation for Christian faith. The repeated claims to have come from the Father, to
         speak the Father's words, and to do the Father's works establish Jesus as the definitive
         revelation of God and the exclusive mediator of salvation. The teaching about Jesus's
         pre-existence, incarnation, and return to the Father creates a comprehensive
         Christological framework that complements and deepens the presentation found in the
-        Synoptic Gospels.
+        <a href="https://en.wikipedia.org/wiki/Synoptic_Gospels"title="Wikipedia">Synoptic Gospels</a>.
     </p>
 
-    <p class="highlight-box"><br />
+    <p>
         The teaching about the Holy Spirit, particularly in the Farewell Discourse, provides the
-        most detailed pneumatology in the Gospels. The promises of the Spirit's coming as
-        "another Helper," his role in guiding believers into truth, and his work of glorifying Christ
+        most detailed <a href="https://www.google.com/search?q=pneumatology"title="Google Search">pneumatology</a> in the Gospels. The promises of the Spirit's coming as
+        <b><i>"another Helper,"</i></b> his role in guiding believers into truth, and his work of glorifying Christ
         establish the foundation for Christian understanding of the Spirit's ministry. The
         emphasis on the Spirit's role in continuing Jesus's work and mediating his presence to
         believers offers comfort and assurance to the church in every generation.
         The emphasis on eternal life as a present reality, not merely a future hope, establishes
         salvation as a transformative relationship with God through Christ. The teaching about
-        being "born again," drinking "living water," eating "the bread of life," and abiding in "the
-        true vine" provides rich metaphors for understanding the nature of spiritual life and
+        being "<a href="#The New Birth">born again</a>," drinking <a href="#Living Water">"living water</a>," eating <a href="#The Bread of Life">"the bread of life</a>,"
+        and abiding in <b><i>"the true vine"</i></b> provides rich metaphors for understanding the nature of spiritual life and
         growth. The emphasis on faith as the means of receiving eternal life establishes the
         fundamental principle of salvation by grace through faith that would become central to
-        Christian soteriology.
+        Christian <a href="https://en.wikipedia.org/wiki/Soteriology"title="Wikipedia">soteriology</a>.
     </p>
-
-    
+            </div>
 </section>
 
 
@@ -1424,35 +1428,28 @@ function teachings()  {
     <a href="?conclusion#^" class="crumb-link">🎯 Conclusion</a>
 </div>
 </nav>
-    <h2><span class="emoji">❤️</span>Group 4: Luke's Special Teachings</h2>
+    <h1><span class="emoji">❤️</span>Luke's Special Teachings</h1>
     <p>Luke was like the friend who always noticed when someone was left out and made sure to include them.
-        Luke's Gospel is full of stories about Jesus caring for people that others might ignore - people who
-        were poor, sick, lonely, or different.</p>
-
-    <h3><span class="emoji">🤝</span>The Good Samaritan</h3>
+    Luke's Gospel is full of stories about Jesus caring for people that others might ignore - people who
+    were poor, sick, lonely, or different.</p>
     <div class="story-box">
-        <p>This is probably one of the most famous stories Jesus ever told. A man asked Jesus, "Who is my
-            neighbor that I'm supposed to love?" Instead of giving a simple answer, Jesus told this story:
-        </p>
-        <p>A man was walking from Jerusalem to Jericho when robbers attacked him. They beat him up, took all
-            his money and clothes, and left him half dead on the side of the road.</p>
-        <p>First, a priest (a religious leader) came walking down the road. When he saw the hurt man, he
-            crossed to the other side of the road and kept walking.</p>
-        <p>Then a Levite (another religious person) came by. He also saw the hurt man but walked past on the
-            other side.</p>
-        <p>Finally, a Samaritan man came along. Now, this is important to know: Jewish people and Samaritan
-            people didn't like each other at all. They were like enemies. But when this Samaritan man saw
-            the hurt person, he felt sorry for him.</p>
-        <p>The Samaritan man stopped and took care of the hurt man. He cleaned his wounds, put him on his
-            own donkey, took him to an inn, and paid for his care.</p>
-    </div>
-
-    <div class="highlight-box">
-        <h4>What This Story Teaches Us</h4>
-        <p>This story teaches us that our "neighbor" isn't just the people who live next door or the people
+        <h2><span class="emoji">🤝</span>The Good Samaritan</h2>
+        <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK10_25"><ruby>Luke<rt>10:25-37</rt></ruby></a></span>
+        <p>This is probably one of the most famous stories Jesus ever told. A man asked Jesus,
+            <strong>"Who is my neighbor?"</strong>
+            <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK10_29"><ruby>Luke<rt>10:29</rt></ruby></a></small>
+                Instead of giving a simple answer, Jesus told this story:</p>
+            <p>A man was walking from Jerusalem to Jericho when robbers attacked him. They beat him up, took all his money and clothes, and left him half dead on the side of the road.
+            <i>First</i>, a priest (a religious leader) came walking down the road. When he saw the hurt man, he crossed to the other side of the road and kept walking.
+            <i>Then</i> a Levite (another religious person) came by. He also saw the hurt man but walked past on the other side.
+            <i>Finally</i>, a Samaritan man came along, but when this Samaritan man saw the hurt person, he felt sorry for him.
+                The Samaritan man stopped and took care of the hurt man. He cleaned his wounds, put him on his own donkey, took him to an inn, and paid for his care.</p>
+            <b>Now, this is important to know: Jewish people and Samaritan people didn't like each other at all. They were like enemies.</b>
+            <small><a href="https://www.franciscanmedia.org/ask-a-franciscan/the-rift-between-jews-and-samaritans/"title="The Rift between Jews and Samaritans">Link</a></small>
+            <h3>What This Story Teaches Us</h3>
+        <p>Our <b><i>"neighbor"</i></b> isn't just the people who live next door or the people
             who are like us. Our neighbor is anyone who needs help, even if they're different from us or we
-            don't know them very well.</p>
-        <p>The story also teaches us that it's not enough to just know about God or go to church. What
+            don't know them very well. The story also teaches us that it's not enough to just know about God or go to church. What
             really matters is showing God's love by helping people who are in trouble.</p>
     </div>
 
