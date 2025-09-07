@@ -164,7 +164,9 @@ function cssStyles(){
         color: var(--primary-dark);
         font-size: 1.7rem;
     }
-
+    .img_fl{
+        border-right: 4px solid skyblue;
+    }
     .references-list {
         display: flex;
         flex-direction: column;
@@ -1429,82 +1431,38 @@ function teachings()  {
 </div>
 </nav>
     <h1><span class="emoji">❤️</span>Luke's Special Teachings</h1>
+    <div class="highlight-box">
     <p>Luke was like the friend who always noticed when someone was left out and made sure to include them.
     Luke's Gospel is full of stories about Jesus caring for people that others might ignore - people who
     were poor, sick, lonely, or different.</p>
-    <div class="story-box">
-        <h2><span class="emoji">🤝</span>The Good Samaritan</h2>
-        <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK10_25"><ruby>Luke<rt>10:25-37</rt></ruby></a></span>
-        <p>This is probably one of the most famous stories Jesus ever told. A man asked Jesus,
-            <strong>"Who is my neighbor?"</strong>
-            <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK10_29"><ruby>Luke<rt>10:29</rt></ruby></a></small>
-                Instead of giving a simple answer, Jesus told this story:</p>
-            <p>A man was walking from Jerusalem to Jericho when robbers attacked him. They beat him up, took all his money and clothes, and left him half dead on the side of the road.
-            <i>First</i>, a priest (a religious leader) came walking down the road. When he saw the hurt man, he crossed to the other side of the road and kept walking.
-            <i>Then</i> a Levite (another religious person) came by. He also saw the hurt man but walked past on the other side.
-            <i>Finally</i>, a Samaritan man came along, but when this Samaritan man saw the hurt person, he felt sorry for him.
-                The Samaritan man stopped and took care of the hurt man. He cleaned his wounds, put him on his own donkey, took him to an inn, and paid for his care.</p>
-            <b>Now, this is important to know: Jewish people and Samaritan people didn't like each other at all. They were like enemies.</b>
-            <small><a href="https://www.franciscanmedia.org/ask-a-franciscan/the-rift-between-jews-and-samaritans/"title="The Rift between Jews and Samaritans">Link</a></small>
-            <h3>What This Story Teaches Us</h3>
-        <p>Our <b><i>"neighbor"</i></b> isn't just the people who live next door or the people
-            who are like us. Our neighbor is anyone who needs help, even if they're different from us or we
-            don't know them very well. The story also teaches us that it's not enough to just know about God or go to church. What
-            really matters is showing God's love by helping people who are in trouble.</p>
-    </div>
 
-    <h3><span class="emoji">🏠</span>The Prodigal Son</h3>
-    <div class="story-box">
-        <p>This story is actually about two sons, but it's really about an amazing father who represents
-            God.</p>
-        <p>A man had two sons. The younger son got tired of living at home and wanted to go have fun in the
-            big city. He asked his father for his inheritance (the money he would get when his father died).
-            This was really rude - it was like saying, "I wish you were dead so I could have your money!"
-        </p>
-        <p>But the father gave him the money anyway. The young man left home and went to a far country where
-            he spent all his money on parties and foolish things. When his money was gone, his new "friends"
-            disappeared, and he had nothing left.</p>
-        <p>Finally, he came to his senses and decided to go home. But while he was still far away, his
-            father saw him coming! The father ran to meet his son, hugged him, and kissed him. Then he threw
-            a big party to celebrate his son's return!</p>
-    </div>
-
-    <div class="highlight-box">
-        <h4>What This Story Teaches Us</h4>
-        <ul style="margin-left: 20px;">
-            <li><strong>God's Amazing Love:</strong> The father in the story represents God. No matter what
-                we've done wrong, God is always ready to forgive us and welcome us back when we're truly
-                sorry.</li>
-            <li><strong>It's Never Too Late:</strong> Even when we've made really bad choices, we can always
-                come back to God.</li>
-            <li><strong>God Celebrates When We Come Home:</strong> Just like the father threw a party when
-                his son returned, God and all the angels in heaven celebrate when someone decides to follow
-                Jesus.</li>
-        </ul>
-    </div>
-
-    <h2>Luke's Unique Sermons and Discourses</h2>
-    <p class="highlight-box">The Gospel of Luke contains a wealth of unique material not found in the other
+    <!-- <h2>Luke's Unique Sermons and Discourses</h2> -->
+        <p>The Gospel of Luke contains a wealth of unique material not found in the other
         Gospels,
         including some of Jesus's most beloved parables and teachings. Luke's distinctive
         emphasis on Jesus's ministry to the marginalized, his concern for social justice, and his
         focus on prayer and the Holy Spirit create a portrait of Jesus that complements and
-        enriches the presentations found in Matthew, Mark, and John. Luke's unique
+        enriches the presentations found in <a href="?Matthew#^">Matthew</a>, <a href="?Mark#^">Mark</a>, and <a href="?John#^">John</a>. Luke's unique
         contributions have profoundly influenced Christian understanding of Jesus's
         compassion, inclusivity, and concern for the poor and outcast.</p>
 
-    <h3>Luke's Distinctive Approach to Jesus's Teachings</h3>
-    <p class="highlight-box">Luke's approach to Jesus's teachings reflects his overall purpose and audience.
-        Writing
-        primarily for Gentile readers, particularly Greeks, Luke presents Jesus as the Savior of all
-        humanity, not merely the Jewish people. This universal scope is evident from the
-        beginning of the Gospel, where Jesus's genealogy is traced back to Adam rather than
-        stopping at Abraham as Matthew does. Luke's emphasis on Jesus's ministry to those on
-        the margins of society—women, Gentiles, Samaritans, tax collectors, sinners, and the
-        poor—demonstrates the inclusive nature of God's kingdom and the transformative
-        power of divine mercy.</p>
+    <h2>Luke's Distinctive Approach to Jesus's Teachings</h2>
+    <p>The approach to Jesus's teachings reflects his overall purpose and audience.
+        Writing primarily for Gentile readers, particularly Greeks,
+        <a href="https://en.wikipedia.org/wiki/Luke_the_Evangelist"title="Wikipedia">Luke</a>
+        presents <a href="https://en.wikipedia.org/wiki/Christ_(title)"title="Wikipedia"><strong>Jesus</strong></a>
+        as the Savior of all humanity, not merely the Jewish people. This universal scope is evident from the
+        beginning of the Gospel, where Jesus's genealogy is traced back to <a href="https://en.wikipedia.org/wiki/Adam"title="Wikipedia">Adam</a> rather than
+        stopping at <a href="https://en.wikipedia.org/wiki/Abraham_in_Islam"title="Wikipedia">Abraham</a>
+        as <a href="https://en.wikipedia.org/wiki/Matthew_the_Apostle"title="Wikipedia">Matthew</a> does.
+        <a href="https://en.wikipedia.org/wiki/Luke_the_Evangelist"title="Wikipedia">Luke</a>'s emphasis on Jesus's ministry to those on
+        the margins of society—<a href="https://en.wikipedia.org/wiki/Woman"title="Wikipedia">women</a>,
+        <a href="https://en.wikipedia.org/wiki/Gentile"title="Wikipedia">Gentiles</a>, <a href="https://en.wikipedia.org/wiki/Samaritans"title="Wikipedia">Samaritans</a>,
+        <a href="https://en.wikipedia.org/wiki/Publicani"title="Wikipedia">tax collectors</a>, <a href="https://en.wikipedia.org/wiki/Christian_views_on_sin"title="Wikipedia">sinners</a>, and the
+        <a href="https://en.wikipedia.org/wiki/Poverty"title="Wikipedia">poor</a>—demonstrates the inclusive nature of <a href="https://en.wikipedia.org/wiki/Kingdom_of_God_(Christianity)"title="Wikipedia">God's kingdom</a> and the transformative
+        power of <a href="https://en.wikipedia.org/wiki/Divine_Mercy_(Catholic_devotion)"title="Wikipedia">divine mercy</a>.</p>
 
-    <p class="story-box">Luke's organization of Jesus's teachings differs significantly from Matthew's
+    <p>Luke's organization of Jesus's teachings differs significantly from Matthew's
         structured
         discourses. Rather than grouping teachings by theme, Luke often embeds them in
         narrative contexts that illuminate their meaning and application. This narrative
@@ -1513,6 +1471,7 @@ function teachings()  {
         interactions with individuals from diverse backgrounds demonstrates the personal
         nature of his ministry and the adaptability of his message to different contexts and
         concerns.</p>
+    </div>
 
     <h3>The Sermon on the Plain (Luke 6:17-49)</h3>
     <p class="highlight-box">The Sermon on the Plain represents Luke's parallel to Matthew's Sermon on the
@@ -1639,6 +1598,9 @@ function teachings()  {
         themes as foundational to understanding Jesus's mission and message.</p>
 
     <h3>Unique Parables in Luke's Gospel</h3>
+
+
+
     <p class="highlight-box">Luke's Gospel contains sixteen parables that appear nowhere else in the New
         Testament.
         These unique parables, many of which have become among the most beloved and
@@ -1646,6 +1608,64 @@ function teachings()  {
         and God's concern for the lost and marginalized. The following analysis examines
         several of the most significant of these unique parables and their contribution to Luke's
         theological vision.</p>
+
+
+
+        <div class="highlight-box">
+        <h2><span class="emoji">🤝</span>The Good Samaritan</h2>
+        <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK10_25"><ruby>Luke<rt>10:25-37</rt></ruby></a></span>
+        <p>This is probably one of the most famous stories Jesus ever told. A man asked Jesus,
+            <strong>"Who is my neighbor?"</strong>
+            <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK10_29"><ruby>Luke<rt>10:29</rt></ruby></a></small>
+                Instead of giving a simple answer, Jesus told this story:</p>
+                    <p class="rtl">
+                        <img src="../images/_JesusChrist/goodSamaritan_thumb.webp" alt="Good Samaritan" width="200" height="200"class="img_fl">
+                        A man was walking from Jerusalem to Jericho when robbers attacked him. They beat him up, took all his money and clothes, and left him half dead on the side of the road.
+            <i>First</i>, a priest (a religious leader) came walking down the road. When he saw the hurt man, he crossed to the other side of the road and kept walking.
+            <i>Then</i> a Levite (another religious person) came by. He also saw the hurt man but walked past on the other side.
+            <i>Finally</i>, a Samaritan man came along, but when this Samaritan man saw the hurt person, he felt sorry for him.
+                The Samaritan man stopped and took care of the hurt man. He cleaned his wounds, put him on his own donkey, took him to an inn, and paid for his care.</p>
+            <b>Now, this is important to know: Jewish people and Samaritan people didn't like each other at all. They were like enemies.</b>
+            <small><a href="https://www.franciscanmedia.org/ask-a-franciscan/the-rift-between-jews-and-samaritans/"title="The Rift between Jews and Samaritans">Link</a></small>
+            <h3>What This Story Teaches Us</h3>
+        <p>Our <b><i>"neighbor"</i></b> isn't just the people who live next door or the people
+            who are like us. Our neighbor is anyone who needs help, even if they're different from us or we
+            don't know them very well. The story also teaches us that it's not enough to just know about God or go to church. What
+            really matters is showing God's love by helping people who are in trouble.</p>
+    </div>
+
+    <div class="highlight-box">
+        <h2><span class="emoji">🏠</span>The Prodigal Son</h2>
+    <span class="passage"><a href="https://ebible.org/study/?v1=LK15_11&t1=local%3Aeng-web&w1=bible"><ruby>Luke<rt>15:11-32</rt></ruby></a></span>
+        <p>The context for story starts in <a href="https://ebible.org/study/?v1=LK14_1&t1=local%3Aeng-web&w1=bible">chapter 14.</a>
+            Jesus first shares two shorter parables about a <a href="./parables#:~:text=The%20Lost%20Sheep">lost sheep</a> and a <a href="./parables#:~:text=The%20Lost%20Coin">lost coin</a> to emphasize God's joy over something lost being found and restored.
+            With the religious leaders grumbling about his association with social outcasts, Jesus then began his longest story about a father with two sons to justify his actions and highlight the stark contrast between God's boundless mercy and the Pharisees' self-righteousness.
+            He began with these simple words to invite everyone present into the narrative.
+            This story is actually about two sons, but it's really about an amazing father who represents God.</p>
+            <p class="rtl">
+                <img src="../images/_JesusChrist/prodigalSon_thumb.webp" alt="Prodigal Son" width="200" height="200"class="img_fl">
+            A man had two sons. The younger son got tired of living at home and wanted to go have fun in the
+            big city. He asked his father for his inheritance (the money he would get when his father died).
+            This was really rude - it was like saying, "I wish you were dead so I could have your money!"
+            But the father gave him the money anyway. The young man left home and went to a far country where
+            he spent all his money on parties and foolish things. When his money was gone, his new "friends"
+            disappeared, and he had nothing left. Finally, he came to his senses and decided to go home. But while he was still far away, his
+            father saw him coming! The father ran to meet his son, hugged him, and kissed him. Then he threw
+            a big party to celebrate his son's return!</p>
+        <b>Jesus told this story as a direct response to the Pharisees and scribes, who were openly criticizing him for welcoming and eating with tax collectors and "sinners".</b>
+            <h3>The Lessons to be Learned</h3>
+        <ul style="margin-left: 20px;list">
+            <li><strong>God's Amazing Love:</strong> The father in the story represents God. No matter what
+                we've done wrong, God is always ready to forgive us and welcome us back when we're truly
+                sorry.</li>
+            <li><strong>It's Never Too Late:</strong> Even when we've made really bad choices, we can always
+                come back to God.</li>
+            <li><strong>God Celebrates When We Come Home:</strong> Just like the father threw a party when
+                his son returned, God and all the angels in heaven celebrate when someone decides to follow
+                Jesus.</li>
+        </ul>
+    </div>
+
 
     <div class="story-box">
         <fieldset class="highlight-box">

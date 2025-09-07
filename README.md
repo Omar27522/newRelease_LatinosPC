@@ -61,6 +61,18 @@ Each section will take the user to a different page:
 ## In Progress
 - Jesus Christ related content
 
+# Standards
+- Images will have 3 versions
+    - Original
+    - Webp
+    - Thumbnail
+
+- Content will be one file per page
+    - English [arrays]
+    - Español [arreglos]
+    - CSS
+    - HTML Structure
+
 ## Upcoming
 - **Links and menus.**
 - **Switching between languages by pressing the Spanish or English button.**

@@ -159,10 +159,20 @@ header small.rtl {
   margin: 4px 16px 4px 0;
   float: left;
 }
+.img_fl {
+  margin: 4px 16px 4px 0;
+  float: left;
+  padding-right: 1%;
+}
 
 .rtl {
   margin: 4px 4px 16px 0;
   float: right;
+}
+.img_rtl {
+  margin: 4px 4px 16px 0;
+  float: right;
+  padding-left: 1%;
 }
 
 /* ===================================
@@ -259,6 +269,17 @@ footer p {
     100% {
         position: fixed;
     }
+}
+
+
+/* ===================================
+   TARGET TEXT STYLES
+=================================== */
+::target-text {
+  /* Add your custom styles here */
+  background-color: yellow;
+  color: black;
+  text-decoration: underline;
 }
 
 
