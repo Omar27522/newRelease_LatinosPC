@@ -1461,7 +1461,6 @@ function teachings()  {
         <a href="https://en.wikipedia.org/wiki/Publicani"title="Wikipedia">tax collectors</a>, <a href="https://en.wikipedia.org/wiki/Christian_views_on_sin"title="Wikipedia">sinners</a>, and the
         <a href="https://en.wikipedia.org/wiki/Poverty"title="Wikipedia">poor</a>—demonstrates the inclusive nature of <a href="https://en.wikipedia.org/wiki/Kingdom_of_God_(Christianity)"title="Wikipedia">God's kingdom</a> and the transformative
         power of <a href="https://en.wikipedia.org/wiki/Divine_Mercy_(Catholic_devotion)"title="Wikipedia">divine mercy</a>.</p>
-
     <p>Luke's organization of Jesus's teachings differs significantly from Matthew's
         structured
         discourses. Rather than grouping teachings by theme, Luke often embeds them in
@@ -1473,81 +1472,68 @@ function teachings()  {
         concerns.</p>
     </div>
 
-    <h3>The Sermon on the Plain (Luke 6:17-49)</h3>
-    <p class="highlight-box">The Sermon on the Plain represents Luke's parallel to Matthew's Sermon on the
-        Mount,
-        though with significant differences in content, emphasis, and setting. The name derives
-        from Luke's description of Jesus coming down from the mountain and standing "on a
-        level place" (Luke 6:17) to deliver this teaching, in contrast to Matthew's setting on a
-        mountainside. This geographical distinction carries symbolic significance, suggesting
-        Jesus's accessibility and solidarity with the people rather than elevated separation.</p>
-
-    <p class="story-box">The Setting and Audience (Luke 6:17-19) establishes the context for the sermon.
-        Luke
-        specifically mentions that the audience included not only Jews from Judea and
-        Jerusalem but also people from "the seacoast of Tyre and Sidon," indicating a Gentile
-        presence. This mixed audience reflects Luke's emphasis on the universal scope of
-        Jesus's ministry and message. The description of people coming to hear Jesus and to be
-        healed of their diseases establishes the connection between Jesus's teaching and
-        healing ministries, both of which address human needs and demonstrate divine
-        compassion.</p>
-
-    <p class="story-box">The Beatitudes and Woes (Luke 6:20-26) present a more direct and concrete version
-        of
-        the blessings than Matthew's more spiritualized account. Luke's Jesus pronounces
-        blessing on "you who are poor" rather than "the poor in spirit" and on "you who hunger
-        now" rather than "those who hunger and thirst for righteousness." This emphasis on
-        physical conditions rather than spiritual attitudes reflects Luke's concern with actual
-        social and economic inequities and Jesus's solidarity with the materially deprived. The
-        addition of corresponding "woes" to the wealthy, the full, and those who laugh now
-        creates a pattern of reversal that characterizes Luke's presentation of the kingdom of
-        God, where present circumstances will be dramatically inverted in the future.</p>
-
-    <p class="story-box">Love for Enemies (Luke 6:27-36) presents Jesus's radical ethic of love that extends
-        even to those who hate, curse, and mistreat his followers. The command to "do good to
-        those who hate you" establishes a proactive response to hostility that goes beyond mere
-        non-retaliation. The principle of lending without expecting repayment challenges
-        conventional economic practices and establishes generosity as a fundamental
-        characteristic of kingdom ethics. The section culminates in the call to "be merciful, just
-        as your Father also is merciful" (Luke 6:36), which parallels Matthew's "be perfect, just as
-        your Father in heaven is perfect" but with a significant shift in emphasis from perfection
-        to mercy. This difference highlights Luke's focus on compassion as the defining attribute
-        of God and the primary virtue for Jesus's followers.</p>
-
-    <p class="story-box">Judging Others (Luke 6:37-42) addresses interpersonal relationships with an
-        emphasis
-        on forgiveness, generosity, and self-examination. The warning against judging others
-        and the promise that "with the same measure that you use, it will be measured back to
-        you" establishes reciprocity as a principle of divine justice. The metaphor of the speck
-        and the plank emphasizes the importance of addressing one's own faults before
-        attempting to correct others, establishing humility and self-awareness as prerequisites
-        for spiritual leadership.</p>
-
-    <p class="story-box">A Tree and Its Fruit (Luke 6:43-45) uses agricultural imagery to illustrate the
-        connection
-        between character and behavior. The principle that "a good tree does not bear bad fruit,
-        nor does a bad tree bear good fruit" establishes the organic relationship between inner
-        nature and outward actions. The statement that "out of the abundance of the heart his
-        mouth speaks" establishes the heart as the source of words and actions and emphasizes
-        the importance of inner transformation rather than merely external compliance.</p>
-
-    <p class="story-box">The Two Foundations (Luke 6:46-49) concludes the sermon with the parable of the
-        wise and foolish builders, emphasizing the importance of not merely hearing Jesus's
-        words but putting them into practice. The contrast between the house built on the rock,
-        which withstands the flood, and the house built on the earth, which collapses,
-        establishes the practical difference between superficial and genuine discipleship. The
-        question "Why do you call Me 'Lord, Lord,' and not do the things which I say?" challenges
-        nominal faith and establishes obedience as the authentic expression of commitment to
-        Christ.</p>
-
-    <p class="story-box">The Sermon on the Plain establishes the ethical foundation for Luke's presentation
-        of
-        discipleship, with particular emphasis on mercy, generosity, and practical obedience.
-        The focus on concrete social and economic conditions rather than merely spiritual
-        attitudes reflects Luke's concern with Jesus's ministry to the materially poor and socially
-        marginalized. The emphasis on mercy as the defining attribute of God and the primary
-        virtue for believers establishes compassion as the heart of Christian ethics and
-        community life.</p>
+    <div class="story-box"><h3>The Sermon on the Plain <small><a href="https://ebible.org/study/?v1=LK6_17&t1=local%3Aeng-web&w1=bible">Luke 6:17-49</a></small></h3>
+        <p>The Sermon on the Plain represents Luke's parallel to Matthew's Sermon on the
+            Mount, though with significant differences in content, emphasis, and setting. The name derives
+            from Luke's description of Jesus coming down from the mountain and standing <strong>"on a level place"</strong>
+            <span class="passage"><a href="https://ebible.org/study/?v1=LK6_17&t1=local%3Aeng-web&w1=bible"><ruby>Luke<rt>6:17</rt></ruby></a></span> to deliver this teaching, in contrast to Matthew's setting on a
+            mountainside. This geographical distinction carries symbolic significance, suggesting
+            Jesus's accessibility and solidarity with the people rather than elevated separation.</p>
+        <span class="passage"><a href="https://ebible.org/study/?v1=LK6_17&t1=local%3Aeng-web&w1=bible"><ruby>Luke<rt>6:17-19</rt></ruby></a></span>
+        <p>The Setting and Audience  establishes the context for the sermon.
+            Luke specifically mentions that the audience included not only Jews from Judea and
+            Jerusalem but also people from <b><i>"the seacoast of Tyre and Sidon,"</i></b> indicating a Gentile presence.
+            This mixed audience reflects Luke's emphasis on the universal scope of
+            Jesus's ministry and message. The description of people coming to hear Jesus and to be
+            healed of their diseases establishes the connection between Jesus's teaching and
+            healing ministries, both of which address human needs and demonstrate divine
+            compassion.</p>
+        <span class="passage"><a href="https://ebible.org/study/?v1=LK6_20&t1=local%3Aeng-web&w1=bible"><ruby>Luke<rt>6:20-26</rt></ruby></a></span>
+        <p>The Beatitudes and Woes present a more direct and concrete version of the blessings than Matthew's more spiritualized account.
+            Luke's Jesus pronounces blessing on <b><i>"you who are poor"</i></b> rather than <strong>"the poor in spirit"</strong> and on <b><i>"you who hunger now"</i></b>
+            rather than <strong>"those who hunger and thirst for righteousness."</strong> <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT5_3"><small><ruby>Matthew<rt>5:3-10</rt></ruby></small></a>
+            This emphasis on physical conditions rather than spiritual attitudes reflects Luke's concern with actual
+            social and economic inequities and Jesus's solidarity with the materially deprived.
+            The addition of corresponding <b><i>"woes"</i></b> to the wealthy, the full, and those who laugh now
+            creates a pattern of reversal that characterizes Luke's presentation of the kingdom of
+            God, where present circumstances will be dramatically inverted in the future.</p>
+        <span class="passage"><a href="https://ebible.org/study/?v1=LK6_27&t1=local%3Aeng-web&w1=bible"><ruby>Luke<rt>6:27-36</rt></ruby></a></span>
+        <p>Love for Enemies presents Jesus's radical ethic of love that extends
+            even to those who hate, curse, and mistreat his followers. The command to <b><i>"do good to those who hate you"</i></b>
+            establishes a proactive response to hostility that goes beyond mere
+            non-retaliation. The principle of <i>lending without expecting repayment</i> challenges
+            conventional economic practices and establishes generosity as a fundamental
+            characteristic of kingdom ethics. The section culminates in the call to <strong>"be merciful, just
+            as your Father also is merciful"</strong> <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK6_36"><ruby>Luke<rt>6:36</rt></ruby></a>,
+            which parallels Matthew's <strong>"be perfect, just as your Father in heaven is perfect"</strong> <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT5_48"><small><ruby>Matthew<rt>5:48</rt></ruby></small></a>
+            but with a significant shift in emphasis from <i>perfection</i> to <i>mercy</i>. This difference highlights Luke's focus on compassion as the defining attribute of God and the primary virtue for Jesus's followers.</p>
+        <span class="passage"><a href="https://ebible.org/study/?v1=LK6_37&t1=local%3Aeng-web&w1=bible"><ruby>Luke<rt>6:37-42</rt></ruby></a></span>
+        <p>Judging Others addresses interpersonal relationships with an emphasis
+            on forgiveness, generosity, and self-examination. The warning against judging others
+            and the promise that <b><i>"with the same measure that you use, it will be measured back to you"</i></b>
+            establishes reciprocity as a principle of divine justice. The metaphor of the <i>speck and the plank</i>
+            emphasizes the importance of addressing one's own faults before attempting to correct others, establishing humility and self-awareness as prerequisites for spiritual leadership.</p>
+        <span class="passage"><a href="https://ebible.org/study/?v1=LK6_43&t1=local%3Aeng-web&w1=bible"><ruby>Luke<rt>6:43-45</rt></ruby></a></span>
+        <p>A Tree and Its Fruit uses agricultural imagery to illustrate the connection
+            between character and behavior. The principle that <b><i>"a good tree does not bear bad fruit, nor does a bad tree bear good fruit"</i></b>
+            establishes the organic relationship between inner nature and outward actions. The statement that <b><i>"out of the abundance of the heart his mouth speaks"</i></b>
+            establishes the heart as the source of words and actions and emphasizes the importance of inner transformation rather than merely external compliance.</p>
+            <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK6_46"><ruby>Luke<rt>6:46-49</rt></ruby></a></span>
+            <p><img src="../images/_JesusChrist/wiseAndFoolishBuilders_thumb.webp" alt="Wise and Foolish Builders"height="150"width="auto"class="img_rtl">
+            The Two Foundations concludes the sermon with the parable of the
+            <a href="./parables#:~:text=The%20Wise%20and%20Foolish%20Builders">wise and foolish builders</a>, emphasizing the importance of not merely hearing Jesus's
+            words but putting them into practice. The contrast between the house built on the rock,
+            which withstands the flood, and the house built on the earth, which collapses,
+            establishes the practical difference between superficial and genuine discipleship. The
+            question <b><i>"Why do you call Me 'Lord, Lord,' and not do the things which I say?"</i></b>
+            challenges nominal faith and establishes obedience as the authentic expression of commitment to Christ.</p>
+        <p><big>The Sermon on the Plain</big> establishes the ethical foundation for Luke's presentation
+            of discipleship, with particular emphasis on mercy, generosity, and practical obedience.
+            The focus on concrete social and economic conditions rather than merely spiritual
+            attitudes reflects Luke's concern with Jesus's ministry to the materially poor and socially
+            marginalized. The emphasis on mercy as the defining attribute of God and the primary
+            virtue for believers establishes compassion as the heart of Christian ethics and community life.</p>
+    </div>
 
     <p class="story-box">The Nazareth Synagogue Discourse (Luke 4:16-30)
         Luke uniquely places Jesus's rejection at Nazareth at the beginning of his public ministry
