@@ -1472,7 +1472,54 @@ function teachings()  {
         concerns.</p>
     </div>
 
-    <div class="story-box"><h3>The Sermon on the Plain <small><a href="https://ebible.org/study/?v1=LK6_17&t1=local%3Aeng-web&w1=bible">Luke 6:17-49</a></small></h3>
+    <div class="story-box">
+        <h2><span class="emoji">˗ˏˋ✞ˎˊ˗</span>The Nazareth Synagogue Discourse <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK4_16">Luke 4:16-30</a></small></h2>
+        <p>Luke uniquely places Jesus's rejection at Nazareth at the beginning of his public ministry
+            rather than later as in Matthew and Mark. This strategic placement establishes Jesus's
+            mission statement and anticipates the opposition he will face throughout his ministry.
+            The discourse in the Nazareth synagogue represents one of Luke's most significant
+            contributions to understanding Jesus's self-conception and mission.</p>
+        <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK4_16"><ruby>Luke<rt>4:16-19</rt></ruby></a></span>
+        <p>The Reading from Isaiah describes Jesus entering the synagogue on the
+            Sabbath, standing up to read, and being handed the scroll of Isaiah. His selection of
+            <a href="https://ebible.org/study/?v1=IS61_1&t1=local%3Aeng-web&w1=bible">Isaiah 61:1-2</a> is highly significant, as this passage describes the mission of the Messiah in
+            terms of bringing good news to the poor, freedom to captives, sight to the blind, and
+            liberty to the oppressed. This text establishes Jesus's ministry as focused particularly on
+            those who are vulnerable, marginalized, and suffering, a theme that will be developed
+            throughout Luke's Gospel.</p>
+        <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK4_20"><ruby>Luke<rt>4:20-22</rt></ruby></a></span>
+        <p>The Proclamation of Fulfillment describes Jesus's dramatic statement
+            after reading the Isaiah passage: <strong>"Today this Scripture is fulfilled in your hearing"</strong> <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK4_21"><ruby>Luke<rt>4:21</rt></ruby></a>.
+            This declaration represents Jesus's explicit claim to be the Messiah described in
+            Isaiah's prophecy and establishes his ministry as the fulfillment of Old Testament promises.
+            The initial positive response of the crowd, who <b><i>"marveled at the gracious words which proceeded out of His mouth,"</i></b>
+            suggests the appealing nature of Jesus's message before controversy erupted.</p>
+            <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK4_23"><ruby>Luke<rt>4:23-27</rt></ruby></a></span>
+        <p>The Challenge to Expectations records Jesus's anticipation of the
+            crowd's demand for miraculous signs like those performed in Capernaum. His reference
+            to the proverb <b><i>"Physician, heal yourself"</i></b> suggests their expectation that he would
+            demonstrate his powers in his hometown. Jesus's response cites two examples from the
+            Old Testament—<a href="https://ebible.org/study/?v1=K117_10&t1=local%3Aeng-web&w1=bible">Elijah's ministry to the widow of Zarephath</a> and
+            <a href="https://ebible.org/study/?v1=K25_1&t1=local%3Aeng-web&w1=bible">Elisha's healing of Naaman the Syrian</a>—both
+            of which involve God's prophets ministering to Gentiles rather than Israelites. These examples establish the precedent for Jesus's ministry extending
+            beyond national boundaries and anticipate the universal scope of the gospel that will be a major theme in Luke-Acts.</p>
+            <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK4_28"><ruby>Luke<rt>4:28-30</rt></ruby></a></span>
+        <p>The Violent Rejection describes the crowd's furious response to Jesus's
+            implied criticism and their attempt to kill him by throwing him off a cliff. This violent
+            rejection in his hometown anticipates the opposition Jesus will face throughout his
+            ministry and foreshadows his ultimate rejection and execution. The statement that
+            Jesus <b><i>"passing through the midst of them, went His way"</i></b> suggests a supernatural
+            protection that preserves him until the appointed time for his sacrifice.
+            This discourse establishes several key themes that will characterize Luke's presentation
+            of Jesus's ministry: his focus on the poor and marginalized, his fulfillment of Old
+            Testament prophecy, his extension of God's grace beyond national boundaries, and the
+            opposition he faces from those who resist this inclusive message. The placement of this
+            episode at the beginning of Jesus's public ministry in Luke's Gospel establishes these
+            themes as foundational to understanding Jesus's mission and message.</p>
+    </div>
+
+    <div class="story-box">
+        <h2><span class="emoji">🌳</span>The Sermon on the Plain <small><a href="https://ebible.org/study/?v1=LK6_17&t1=local%3Aeng-web&w1=bible">Luke 6:17-49</a></small></h2>
         <p>The Sermon on the Plain represents Luke's parallel to Matthew's Sermon on the
             Mount, though with significant differences in content, emphasis, and setting. The name derives
             from Luke's description of Jesus coming down from the mountain and standing <strong>"on a level place"</strong>
@@ -1535,53 +1582,6 @@ function teachings()  {
             virtue for believers establishes compassion as the heart of Christian ethics and community life.</p>
     </div>
 
-    <p class="story-box">The Nazareth Synagogue Discourse (Luke 4:16-30)
-        Luke uniquely places Jesus's rejection at Nazareth at the beginning of his public ministry
-        rather than later as in Matthew and Mark. This strategic placement establishes Jesus's
-        mission statement and anticipates the opposition he will face throughout his ministry.
-        The discourse in the Nazareth synagogue represents one of Luke's most significant
-        contributions to understanding Jesus's self-conception and mission.</p>
-
-    <p class="story-box">The Reading from Isaiah (Luke 4:16-19) describes Jesus entering the synagogue on
-        the
-        Sabbath, standing up to read, and being handed the scroll of Isaiah. His selection of
-        Isaiah 61:1-2 is highly significant, as this passage describes the mission of the Messiah in
-        terms of bringing good news to the poor, freedom to captives, sight to the blind, and
-        liberty to the oppressed. This text establishes Jesus's ministry as focused particularly on
-        those who are vulnerable, marginalized, and suffering, a theme that will be developed
-        throughout Luke's Gospel.</p>
-
-    <p class="story-box">The Proclamation of Fulfillment (Luke 4:20-22) describes Jesus's dramatic statement
-        after reading the Isaiah passage: "Today this Scripture is fulfilled in your hearing" (Luke
-        4:21). This declaration represents Jesus's explicit claim to be the Messiah described in
-        Isaiah's prophecy and establishes his ministry as the fulfillment of Old Testament
-        promises. The initial positive response of the crowd, who "marveled at the gracious
-        words which proceeded out of His mouth," suggests the appealing nature of Jesus's
-        message before controversy erupted.</p>
-
-    <p class="story-box">The Challenge to Expectations (Luke 4:23-27) records Jesus's anticipation of the
-        crowd's demand for miraculous signs like those performed in Capernaum. His reference
-        to the proverb "Physician, heal yourself" suggests their expectation that he would
-        demonstrate his powers in his hometown. Jesus's response cites two examples from the
-        Old Testament—Elijah's ministry to the widow of Zarephath and Elisha's healing of
-        Naaman the Syrian—both of which involve God's prophets ministering to Gentiles rather
-        than Israelites. These examples establish the precedent for Jesus's ministry extending
-        beyond national boundaries and anticipate the universal scope of the gospel that will be
-        a major theme in Luke-Acts.</p>
-
-    <p class="story-box">The Violent Rejection (Luke 4:28-30) describes the crowd's furious response to
-        Jesus's
-        implied criticism and their attempt to kill him by throwing him off a cliff. This violent
-        rejection in his hometown anticipates the opposition Jesus will face throughout his
-        ministry and foreshadows his ultimate rejection and execution. The statement that
-        Jesus "passing through the midst of them, went His way" suggests a supernatural
-        protection that preserves him until the appointed time for his sacrifice.
-        This discourse establishes several key themes that will characterize Luke's presentation
-        of Jesus's ministry: his focus on the poor and marginalized, his fulfillment of Old
-        Testament prophecy, his extension of God's grace beyond national boundaries, and the
-        opposition he faces from those who resist this inclusive message. The placement of this
-        episode at the beginning of Jesus's public ministry in Luke's Gospel establishes these
-        themes as foundational to understanding Jesus's mission and message.</p>
 
     <h3>Unique Parables in Luke's Gospel</h3>
 
