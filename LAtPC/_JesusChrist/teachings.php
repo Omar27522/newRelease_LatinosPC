@@ -1523,7 +1523,7 @@ function teachings()  {
         <p>The Sermon on the Plain represents Luke's parallel to Matthew's Sermon on the
             Mount, though with significant differences in content, emphasis, and setting. The name derives
             from Luke's description of Jesus coming down from the mountain and standing <strong>"on a level place"</strong>
-            <span class="passage"><a href="https://ebible.org/study/?v1=LK6_17&t1=local%3Aeng-web&w1=bible"><ruby>Luke<rt>6:17</rt></ruby></a></span> to deliver this teaching, in contrast to Matthew's setting on a
+            <a href="https://ebible.org/study/?v1=LK6_17&t1=local%3Aeng-web&w1=bible"><ruby>Luke<rt>6:17</rt></ruby></a> to deliver this teaching, in contrast to Matthew's setting on a
             mountainside. This geographical distinction carries symbolic significance, suggesting
             Jesus's accessibility and solidarity with the people rather than elevated separation.</p>
         <span class="passage"><a href="https://ebible.org/study/?v1=LK6_17&t1=local%3Aeng-web&w1=bible"><ruby>Luke<rt>6:17-19</rt></ruby></a></span>
@@ -1582,38 +1582,45 @@ function teachings()  {
             virtue for believers establishes compassion as the heart of Christian ethics and community life.</p>
     </div>
 
-
     <h3>Unique Parables in Luke's Gospel</h3>
-
-
-
-    <p class="highlight-box">Luke's Gospel contains sixteen parables that appear nowhere else in the New
-        Testament.
+    <p>Luke's Gospel contains sixteen parables that appear nowhere else in the New Testament.
         These unique parables, many of which have become among the most beloved and
         influential of Jesus's teachings, reflect Luke's distinctive emphasis on mercy, inclusion,
         and God's concern for the lost and marginalized. The following analysis examines
         several of the most significant of these unique parables and their contribution to Luke's
         theological vision.</p>
 
-
-
-        <div class="highlight-box">
-        <h2><span class="emoji">🤝</span>The Good Samaritan</h2>
-        <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK10_25"><ruby>Luke<rt>10:25-37</rt></ruby></a></span>
+    <div class="highlight-box">
+        <h2><span class="emoji">🤝</span>The Good Samaritan
+            <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK10_25">Luke 10:25-37</a></small></h2>
         <p>This is probably one of the most famous stories Jesus ever told. A man asked Jesus,
             <strong>"Who is my neighbor?"</strong>
             <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK10_29"><ruby>Luke<rt>10:29</rt></ruby></a></small>
-                Instead of giving a simple answer, Jesus told this story:</p>
-                    <p class="rtl">
-                        <img src="../images/_JesusChrist/goodSamaritan_thumb.webp" alt="Good Samaritan" width="200" height="200"class="img_fl">
-                        A man was walking from Jerusalem to Jericho when robbers attacked him. They beat him up, took all his money and clothes, and left him half dead on the side of the road.
+            Instead of giving a simple answer, Jesus told this story:</p>
+        <p class="rtl">
+            <img src="../images/_JesusChrist/goodSamaritan_thumb.webp" alt="Good Samaritan" width="200" height="200"class="img_fl">
+            A man was walking from Jerusalem to Jericho when robbers attacked him. They beat him up, took all his money and clothes, and left him half dead on the side of the road.
             <i>First</i>, a priest (a religious leader) came walking down the road. When he saw the hurt man, he crossed to the other side of the road and kept walking.
             <i>Then</i> a Levite (another religious person) came by. He also saw the hurt man but walked past on the other side.
             <i>Finally</i>, a Samaritan man came along, but when this Samaritan man saw the hurt person, he felt sorry for him.
-                The Samaritan man stopped and took care of the hurt man. He cleaned his wounds, put him on his own donkey, took him to an inn, and paid for his care.</p>
-            <b>Now, this is important to know: Jewish people and Samaritan people didn't like each other at all. They were like enemies.</b>
-            <small><a href="https://www.franciscanmedia.org/ask-a-franciscan/the-rift-between-jews-and-samaritans/"title="The Rift between Jews and Samaritans">Link</a></small>
-            <h3>What This Story Teaches Us</h3>
+            The Samaritan man stopped and took care of the hurt man. He cleaned his wounds, put him on his own donkey, took him to an inn, and paid for his care.</p>
+        <p><b>Now, this is important to know: Jewish people and Samaritan people didn't like each other at all. They were like enemies.</b>
+            <small><a href="https://www.franciscanmedia.org/ask-a-franciscan/the-rift-between-jews-and-samaritans/"title="The Rift between Jews and Samaritans">Link</a></small></p>
+        <p>This parable challenges conventional definitions of <b><i>"neighbor"</i></b> based on ethnic,
+            religious, or social boundaries. By making a Samaritan the hero of the story, Jesus
+            subverts his audience's prejudices and establishes compassionate action rather than
+            social identity as the criterion for fulfilling the command to <strong>"love your neighbor as yourself."</strong>
+            <a href="https://ebible.org/study/?v1=LK10_27&t1=local%3Aeng-web&w1=bible"><ruby>Luke<rt>10:27</rt></ruby></a>
+            The question <strong>"Which of these three do you think was neighbor to him who fell among the thieves?"</strong>
+            <a href="https://ebible.org/study/?v1=LK10_36&t1=local%3Aeng-web&w1=bible"><ruby>Luke<rt>10:36</rt></ruby></a>
+            shifts the focus from defining who deserves our love to becoming a person who shows mercy regardless of the recipient's identity.</p>
+        <p>The parable establishes several key principles of Luke's ethical vision: the priority of
+            compassion over ritual purity (explaining why the priest and Levite might have avoided
+            the injured man), the irrelevance of social boundaries to moral obligation, and the
+            definition of neighborliness through action rather than proximity or affinity. The command <strong>"Go and do likewise"</strong>
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK10_37"><ruby>Luke<rt>10:37</rt></ruby></a>
+            establishes this radical compassion as normative for Jesus's followers rather than merely admirable or exceptional.</p>
+        <h3>What This Story Teaches Us</h3>
         <p>Our <b><i>"neighbor"</i></b> isn't just the people who live next door or the people
             who are like us. Our neighbor is anyone who needs help, even if they're different from us or we
             don't know them very well. The story also teaches us that it's not enough to just know about God or go to church. What
@@ -1621,129 +1628,91 @@ function teachings()  {
     </div>
 
     <div class="highlight-box">
-        <h2><span class="emoji">🏠</span>The Prodigal Son</h2>
-    <span class="passage"><a href="https://ebible.org/study/?v1=LK15_11&t1=local%3Aeng-web&w1=bible"><ruby>Luke<rt>15:11-32</rt></ruby></a></span>
+        <h2><span class="emoji">🏠</span>The Prodigal Son
+            <small><a href="https://ebible.org/study/?v1=LK15_11&t1=local%3Aeng-web&w1=bible">Luke 15:11-32</a></small></h2>
         <p>The context for story starts in <a href="https://ebible.org/study/?v1=LK14_1&t1=local%3Aeng-web&w1=bible">chapter 14.</a>
             Jesus first shares two shorter parables about a <a href="./parables#:~:text=The%20Lost%20Sheep">lost sheep</a> and a <a href="./parables#:~:text=The%20Lost%20Coin">lost coin</a> to emphasize God's joy over something lost being found and restored.
             With the religious leaders grumbling about his association with social outcasts, Jesus then began his longest story about a father with two sons to justify his actions and highlight the stark contrast between God's boundless mercy and the Pharisees' self-righteousness.
             He began with these simple words to invite everyone present into the narrative.
             This story is actually about two sons, but it's really about an amazing father who represents God.</p>
-            <p class="rtl">
-                <img src="../images/_JesusChrist/prodigalSon_thumb.webp" alt="Prodigal Son" width="200" height="200"class="img_fl">
+        <p class="rtl">
+            <img src="../images/_JesusChrist/prodigalSon_thumb.webp" alt="Prodigal Son" width="200" height="200"class="img_fl">
             A man had two sons. The younger son got tired of living at home and wanted to go have fun in the
             big city. He asked his father for his inheritance (the money he would get when his father died).
             This was really rude - it was like saying, "I wish you were dead so I could have your money!"
             But the father gave him the money anyway. The young man left home and went to a far country where
-            he spent all his money on parties and foolish things. When his money was gone, his new "friends"
+            he spent all his money on parties and foolish things. When his money was gone, his new <i>"friends"</i>
             disappeared, and he had nothing left. Finally, he came to his senses and decided to go home. But while he was still far away, his
             father saw him coming! The father ran to meet his son, hugged him, and kissed him. Then he threw
             a big party to celebrate his son's return!</p>
-        <b>Jesus told this story as a direct response to the Pharisees and scribes, who were openly criticizing him for welcoming and eating with tax collectors and "sinners".</b>
-            <h3>The Lessons to be Learned</h3>
-        <ul style="margin-left: 20px;list">
-            <li><strong>God's Amazing Love:</strong> The father in the story represents God. No matter what
-                we've done wrong, God is always ready to forgive us and welcome us back when we're truly
-                sorry.</li>
-            <li><strong>It's Never Too Late:</strong> Even when we've made really bad choices, we can always
-                come back to God.</li>
-            <li><strong>God Celebrates When We Come Home:</strong> Just like the father threw a party when
-                his son returned, God and all the angels in heaven celebrate when someone decides to follow
-                Jesus.</li>
+        <p><b>Jesus told this story as a direct response to the Pharisees and scribes, who were openly criticizing him for welcoming and eating with tax collectors and "sinners".</b></p>
+        <p>This parable illustrates God's extravagant grace toward repentant sinners and challenges the resentment of the self-righteous toward such grace.
+        The father's statement <strong>"this my son was dead and is alive again; he was lost and is found"</strong>
+        <a href="https://ebible.org/study/?v1=LK15_24&t1=local%3Aeng-web&w1=bible"><ruby>Luke<rt>15:24</rt></ruby></a>
+        establishes restoration rather than retribution as God's response to repentance. The father's appeal
+        to the older son—<strong>"all that I have is yours"</strong>
+        <a href="https://ebible.org/study/?v1=LK15_31&t1=local%3Aeng-web&w1=bible"><ruby>Luke<rt>15:31</rt></ruby></a>—addresses the unnecessary
+        resentment of those who perceive grace toward others as somehow diminishing their own standing.</p>
+        <p>The parable contributes to Luke's emphasis on God's compassion for the lost, the joy of
+        heaven over repentance, and the inclusion of the morally compromised in the kingdom of God.
+        The open-ended conclusion, which does not reveal whether the older son joins the celebration,
+        challenges the audience to examine their own attitudes toward God's grace extended to those they consider undeserving.</p>
+        <h3>The Lessons to be Learned</h3>
+        <ul style="margin-left: 20px;">
+        <li><strong>God's Amazing Love:</strong> The father in the story represents God. No matter what
+            we've done wrong, God is always ready to forgive us and welcome us back when we're truly sorry.</li>
+        <li><strong>It's Never Too Late:</strong> Even when we've made really bad choices, we can always come back to God.</li>
+        <li><strong>God Celebrates When We Come Home:</strong> Just like the father threw a party when his son returned,
+            God and all the angels in heaven celebrate when someone decides to follow Jesus.</li>
         </ul>
     </div>
 
-
-    <div class="story-box">
-        <fieldset class="highlight-box">
-            <p>
-                <legend><strong>The Good Samaritan (Luke 10:30-37)</strong></legend>
-                Perhaps the most famous of Luke's unique parables, the Good Samaritan responds to a
-                lawyer's question about the identity of his "neighbor" whom he is commanded to love.
-                The parable describes a man attacked by robbers and left half dead on the road from
-                Jerusalem to Jericho. A priest and a Levite, representatives of the religious
-                establishment, pass by without helping, while a Samaritan, member of a group despised
-                by Jews, stops to provide extensive care for the injured man.
-            </p>
-
-            <p>This parable challenges conventional definitions of "neighbor" based on ethnic,
-                religious, or social boundaries. By making a Samaritan the hero of the story, Jesus
-                subverts his audience's prejudices and establishes compassionate action rather than
-                social identity as the criterion for fulfilling the command to "love your neighbor as
-                yourself." The question "Which of these three do you think was neighbor to him who fell
-                among the thieves?" (Luke 10:36) shifts the focus from defining who deserves our love to
-                becoming a person who shows mercy regardless of the recipient's identity.</p>
-
-            <p>The parable establishes several key principles of Luke's ethical vision: the priority of
-                compassion over ritual purity (explaining why the priest and Levite might have avoided
-                the injured man), the irrelevance of social boundaries to moral obligation, and the
-                definition of neighborliness through action rather than proximity or affinity. The
-                command "Go and do likewise" establishes this radical compassion as normative for
-                Jesus's followers rather than merely admirable or exceptional.</p>
-        </fieldset>
-    </div>
-
-    <h3>The Prodigal Son (Luke 15:11-32)</h3>
-    <p>The Parable of the Prodigal Son (or the Two Sons or the Loving Father) appears in a
-        trilogy of parables about lost things in Luke 15, following the Parables of the Lost Sheep
-        and the Lost Coin. All three respond to the criticism that Jesus "receives sinners and eats
-        with them" (Luke 15:2), but the Prodigal Son develops the theme of restoration most
-        fully and addresses the attitude of the self-righteous toward those who are welcomed by
-        God despite their moral failures.
-    </p>
-    <p>The parable describes a younger son who demands his inheritance early, leaves home,
-        wastes his resources in "prodigal living," experiences severe poverty during a famine,
-        and finally returns home hoping merely to be hired as a servant. His father, rather than
-        rejecting or punishing him, runs to meet him, embraces him, and celebrates his return
-        with a feast. The older son, who has remained dutifully at home, refuses to join the
-        celebration and complains about the father's generosity toward the wayward son.</p>
-
-    <p>This parable illustrates God's extravagant grace toward repentant sinners and challenges
-        the resentment of the self-righteous toward such grace. The father's statement "this my
-        son was dead and is alive again; he was lost and is found" (Luke 15:24) establishes
-        restoration rather than retribution as God's response to repentance. The father's appeal
-        to the older son—"all that I have is yours" (Luke 15:31)—addresses the unnecessary
-        resentment of those who perceive grace toward others as somehow diminishing their
-        own standing.</p>
-
-    <p>The parable contributes to Luke's emphasis on God's compassion for the lost, the joy of
-        heaven over repentance, and the inclusion of the morally compromised in the kingdom
-        of God. The open-ended conclusion, which does not reveal whether the older son joins
-        the celebration, challenges the audience to examine their own attitudes toward God's
-        grace extended to those they consider undeserving.</p>
-
-    <fieldset class="highlight-box">
-        <h3>The Rich Man and Lazarus (Luke 16:19-31)</h3>
-        <p class="story-box">This parable describes the contrasting fates of a rich man who "was clothed in
-            purple
-            and fine linen and fared sumptuously every day" and a poor man named Lazarus who
-            lay at his gate "full of sores, desiring to be fed with the crumbs which fell from the rich
-            man's table" (Luke 16:19-21). After death, their situations are reversed: Lazarus is carried
-            by angels to "Abraham's bosom" while the rich man finds himself in torment in Hades.
-            When the rich man begs Abraham to send Lazarus to warn his five brothers, Abraham
-            responds that "they have Moses and the prophets" and that "if they do not hear Moses
-            and the prophets, neither will they be persuaded though one rise from the dead" (Luke
-            16:31).</p>
-        <p>
-            This parable addresses several themes central to Luke's Gospel: the reversal of fortunes
+    <div class="highlight-box">
+        <h2><span class="emoji">💰 𓁉</span>The Rich Man and Lazarus
+            <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK16_19">Luke 16:19-31</a></small></h2>
+        <p>This famous parable is told by Jesus immediately after being mocked by the Pharisees, who are specifically described as <b><i>"lovers of money."</i></b>
+            He had just finished teaching that you cannot serve both God and wealth.
+            The story of the Rich Man and Lazarus, therefore, is not a random tale about the afterlife;
+            it's a direct and sharp response to the Pharisees' worldview.
+            It powerfully confronts the common belief that earthly riches are a sign of God's blessing,
+            while illustrating the eternal consequences of a life spent in selfish luxury, blind to the suffering of the poor.</p>
+        <p class="rtl"><img src="../images/_JesusChrist/richManAndLazarus_thumb.webp" alt="Rich Man and Lazarus" width="200" height="200"class="img_fl">
+            There was a very rich man who lived in a huge house, wore the best clothes, and ate amazing food every single day.
+            Lying just outside his gate was a poor, sick beggar named Lazarus. Lazarus was so hungry he would have been happy just to eat the scraps that fell from the rich man's table.
+            When they both died, their situations completely flipped. Angels carried Lazarus to a place of peace and comfort. The rich man, however, ended up in a terrible place of suffering.
+            The rich man looked up and saw Lazarus and <a href="https://ebible.org/study/?v1=GN17_1&t1=local%3Aeng-web&w1=bible">Abraham</a> far away in the good place.
+            He shouted, <i>"Please, send Lazarus to dip the tip of his finger in water and cool my tongue, because I am in agony in this fire!"</i>
+            But he was told that was impossible. In life, the rich man had all his good things while Lazarus had nothing but bad things.
+            Now, everything was reversed, and there was a giant gap between them that no one could cross.
+            So, the rich man begged, <i>"Then please send Lazarus back to the living to warn my five brothers, so they don't end up in this awful place!"</i>
+            The answer was that his brothers already have Moses and the prophets, the word of God in the scriptures to guide them.
+            The rich man argued that they would surely listen if someone came back from the dead.
+            But he was told, <b><i>"If they do not listen to Moses and the prophets— the scriptures, they will not be convinced even if someone rises from the dead."</i></b>
+        </p>
+        <p>This parable addresses several themes central to Luke's Gospel: the reversal of fortunes
             in the kingdom of God, the responsibility of the wealthy toward the poor, and the
             sufficiency of existing revelation for moral guidance. The dramatic reversal of the two
-            men's situations after death illustrates Jesus's teaching that "those who are first will be
-            last, and those who are last will be first" (Luke 13:30). The rich man's failure is not
+            men's situations after death illustrates Jesus's teaching that <strong>"those who are first will be
+            last, and those who are last will be first"</strong> <a href="https://ebible.org/study/?v1=LU13_30&t1=local%3Aeng-web&w1=bible"><ruby>Luke<rt>13:30</rt></ruby></a>. The rich man's failure is not
             explicitly his wealth but his indifference to the suffering at his gate, illustrating the moral
             peril of affluence without compassion.</p>
-
-        <p>The parable's conclusion about the sufficiency of "Moses and the prophets" establishes
+        <p>The parable's conclusion about the sufficiency of <b><i>"Moses and the prophets"</i></b> establishes
             that additional miraculous confirmation is not necessary for those who resist the moral
             demands of existing revelation. The statement that even someone rising from the dead
             would not convince those who reject the Scriptures proves ironically prophetic of the
             response to Jesus's own resurrection by many religious leaders.</p>
-
         <p>This parable contributes to Luke's emphasis on economic justice, the dangers of wealth,
-            and the eschatological reversal of present inequities. The naming of the poor man
-            (Lazarus) while leaving the rich man unnamed reverses conventional narrative practice
-            and emphasizes the dignity and value of those who are socially invisible in the present
-            world order.</p>
-    </fieldset>
+            and the <a href="https://en.wikipedia.org/wiki/Eschatology"title="Wikipedia">eschatological</a> reversal of present inequities.
+            The naming of the poor man (Lazarus) while leaving the rich man unnamed reverses conventional narrative practice
+            and emphasizes the dignity and value of those who are socially invisible in the present world order.</p>
+        <h3>Moral of the Story</h3>
+        <ul style="margin-left: 20px;">
+            <li><strong>Care for the poor.</strong> The story is a powerful warning that ignoring the suffering of those in need has severe eternal consequences. Compassion matters deeply.</li>
+            <li><strong>Earthly status is temporary.</strong> Your wealth, comfort, and social standing on Earth are fleeting and will be irrelevant in the afterlife. The rich man's riches became worthless after death.</li>
+            <li><strong>Your actions have eternal consequences.</strong> The choices you make in this life directly impact your fate in the next. There is a great reversal where justice is ultimately served.</li>
+            <li><strong>Listen to the guidance you already have.</strong> The final part of the story emphasizes that people have enough wisdom in scripture to know how to live righteously. Waiting for a spectacular miracle isn't an excuse for a hard heart.</li>
+        </ul>
+    </div>
 
     <h3>The Pharisee and the Tax Collector (Luke 18:9-14)</h3>
     <p class="story-box">This parable, addressed to "some who trusted in themselves that they were
