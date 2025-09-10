@@ -1473,7 +1473,7 @@ function teachings()  {
     </div>
 
     <div class="story-box">
-        <h2><span class="emoji">˗ˏˋ✞ˎˊ˗</span>The Nazareth Synagogue Discourse <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK4_16">Luke 4:16-30</a></small></h2>
+        <h2><span class="emoji">ˏˋ✞ˎˊ</span>The Nazareth Synagogue Discourse <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK4_16">Luke 4:16-30</a></small></h2>
         <p>Luke uniquely places Jesus's rejection at Nazareth at the beginning of his public ministry
             rather than later as in Matthew and Mark. This strategic placement establishes Jesus's
             mission statement and anticipates the opposition he will face throughout his ministry.
@@ -1582,13 +1582,31 @@ function teachings()  {
             virtue for believers establishes compassion as the heart of Christian ethics and community life.</p>
     </div>
 
-    <h3>Unique Parables in Luke's Gospel</h3>
-    <p>Luke's Gospel contains sixteen parables that appear nowhere else in the New Testament.
-        These unique parables, many of which have become among the most beloved and
-        influential of Jesus's teachings, reflect Luke's distinctive emphasis on mercy, inclusion,
-        and God's concern for the lost and marginalized. The following analysis examines
-        several of the most significant of these unique parables and their contribution to Luke's
-        theological vision.</p>
+    <h2>Unique Parables in Luke's Gospel</h2>
+    <h3>Luke's Gospel contains sixteen parables that appear nowhere else in the New Testament.</h3>
+    <p>These unique parables, many of which have become among the most beloved and
+    influential of Jesus's teachings, reflect Luke's distinctive emphasis on mercy, inclusion,
+    and God's concern for the lost and marginalized. The following analysis examines
+    several of the most significant of these unique parables and their contribution to Luke's
+    theological vision.</p>
+    <ul class="homepage-grid" style="list-style:none;">
+            <li><a href="./parables#:~:text=The%20Two%20Debtors">The Two Debtors</a></li>
+            <li><a href="./parables#:~:text=The%20Good%20Samaritan">The Good Samaritan</a></li>
+            <li><a href="./parables#:~:text=The%20Friend%20at%20Midnight">The Friend at Midnight</a></li>
+            <li><a href="./parables#:~:text=The%20Rich%20Fool">The Rich Fool</a></li>
+            <li><a href="./parables#:~:text=The%20Watchful%20Servants">The Watchful Servants</a></li>
+            <li><a href="./parables#:~:text=The%20Barren%20Fig%20Tree">The Barren Fig Tree</a></li>
+            <li><a href="./parables#:~:text=Building%20a%20Tower%20and%20King%20Going%20to%20War">The Tower Builder</a></li>
+            <li><a href="./parables#:~:text=Building%20a%20Tower%20and%20King%20Going%20to%20War">The Battling King</a></li>
+            <li><a href="./parables#:~:text=The%20Lost%20Coin">The Lost Coin</a></li>
+            <li><a href="./parables#:~:text=The%20Prodigal%20Son">The Prodigal Son</a></li>
+            <li><a href="./parables#:~:text=The%20Dishonest%20Manager">The Dishonest Manager</a></li>
+            <li><a href="./parables#:~:text=The%20Rich%20Man%20and%20Lazarus">The Rich Man and Lazarus</a></li>
+            <li><a href="./parables#:~:text=The%20Unprofitable%20Servants">The Unworthy Servants</a></li>
+            <li><a href="./parables#:~:text=The%20Unjust%20Judge">The Unjust Judge</a></li>
+            <li><a href="./parables#:~:text=The%20Pharisee%20and%20the%20Tax%20Collector">The Pharisee and the Tax Collector</a></li>
+            <li><a href="./parables#:~:text=The%20Ten%20Virgins">The Minas</a></li>
+        </ul>
 
     <div class="highlight-box">
         <h2><span class="emoji">🤝</span>The Good Samaritan
@@ -1714,28 +1732,34 @@ function teachings()  {
         </ul>
     </div>
 
-    <h3>The Pharisee and the Tax Collector (Luke 18:9-14)</h3>
-    <p class="story-box">This parable, addressed to "some who trusted in themselves that they were
-        righteous,
-        and despised others" (Luke 18:9), describes two men going to the temple to pray. The
-        Pharisee stands prominently and prays a self-congratulatory prayer thanking God that
-        he is not like other men, particularly the tax collector, and listing his religious
-        accomplishments. The tax collector, standing "afar off," beats his breast and prays
-        simply, "God, be merciful to me a sinner!" (Luke 18:13). Jesus concludes that the tax
-        collector rather than the Pharisee went home justified, stating that "everyone who exalts
-        himself will be humbled, and he who humbles himself will be exalted" (Luke 18:14).
-        This parable illustrates the contrast between self-righteousness and genuine humility
-        before God. The Pharisee's prayer, though addressed to God, is actually about himself
-        and his moral superiority to others. The tax collector's prayer acknowledges his
-        sinfulness and need for divine mercy. The surprising conclusion that the socially
-        despised tax collector rather than the respected religious leader is justified before God
-        challenges conventional assumptions about spiritual status and establishes humility
-        rather than moral achievement as the prerequisite for divine acceptance.
-        The parable contributes to Luke's emphasis on the inclusion of social outcasts in God's
-        kingdom, the danger of religious pride, and the centrality of mercy in divine-human
-        relationships. The principle that "everyone who exalts himself will be humbled, and he
-        who humbles himself will be exalted" establishes a pattern of reversal that characterizes
-        God's kingdom as presented throughout Luke's Gospel.</p>
+    <div class="highlight-box">
+        <h2><span class="emoji">🧾💸</span>The Pharisee and the Tax Collector
+        <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK18_9">Luke 18:9-14</a></small></h2>
+        <span class="highlight-box passage">Note: the 12's travels is underway in <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK17_11"title="Luke 17:11"><small><ruby>Luke<rt>17:11</rt></ruby></small></a>.</span>
+        <p>This parable is told while Jesus is on his final, determined journey toward Jerusalem, a lengthy section of Luke's Gospel that's filled with critical teachings.
+            The stories and lessons he shares along this path often focus on the nature of God's kingdom,
+            frequently turning conventional wisdom upside down.</p>
+        <p>This parable, addressed to <b><i>"some who trusted in themselves that they were righteous, and despised others"</i></b>.</p>
+        <p class="rlt"><img src="../images/_JesusChrist/phariseeAndTaxCollector_thumb.webp" alt="Pharisee and Tax Collector" width="200" height="200"class="img_fl">
+            The parable describes two men going to the temple to pray. The Pharisee stands prominently and prays a self-congratulatory prayer thanking God that
+            he is not like other men, particularly the tax collector, and listing his religious
+            accomplishments. The tax collector, standing <b><i>"afar off,"</i></b> beats his breast and prays
+            simply, <b><i>"God, be merciful to me a sinner!"</i></b>. Jesus concludes that the tax
+            collector rather than the Pharisee went home justified, stating that <b><i>"everyone who exalts
+            himself will be humbled, and he who humbles himself will be exalted"</i></b></p>
+        <p>This parable illustrates the contrast between self-righteousness and genuine humility
+            before God. The Pharisee's prayer, though addressed to God, is actually about himself
+            and his moral superiority to others. The tax collector's prayer acknowledges his
+            sinfulness and need for divine mercy.</p> <h3> The surprising conclusion</h3>
+            <p>The socially despised tax collector rather than the respected religious leader is justified before God
+            challenges conventional assumptions about spiritual status and establishes humility
+            rather than moral achievement as the prerequisite for divine acceptance.
+            The parable contributes to Luke's emphasis on the inclusion of social outcasts in God's
+            kingdom, the danger of religious pride, and the centrality of mercy in divine-human
+            relationships. The principle that <strong>"everyone who exalts himself will be humbled, and he
+            who humbles himself will be exalted"</strong> <a href="https://ebible.org/study/?v1=LU18_14&t1=local%3Aeng-web&w1=bible"><ruby>Luke<rt>18:14</rt></ruby></a> establishes a pattern of reversal that characterizes
+            God's kingdom as presented throughout Luke's Gospel.</p>
+    </div>
 
     <h2>Other Unique Parables in Luke</h2>
     <h3>Luke contains several other unique parables that develop his distinctive theological
