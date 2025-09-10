@@ -1418,18 +1418,18 @@ function teachings()  {
 
 
 
-<section id="^" class="section fullbar">
-<nav class="crumbs">
-<div class="bread-crumbs">
-    <a href="?intro#^" class="crumb-link">📚 Introduction</a>
-    <a href="?gospels#^" class="crumb-link">🌟 All Gospels</a>
-    <a href="?Matthew#^" class="crumb-link">📖 Matthew</a>
-    <a href="?John#^" class="crumb-link">💫 John</a>
-    <a href="?Luke#^" class="crumb-link">❤️ <b>Luke</b></a>
-    <a href="?Mark#^" class="crumb-link">⚡ Mark</a>
-    <a href="?conclusion#^" class="crumb-link">🎯 Conclusion</a>
-</div>
-</nav>
+<section id="^" class="section fullbar">    <!--LUKE-->
+    <nav class="crumbs">
+    <div class="bread-crumbs">
+        <a href="?intro#^" class="crumb-link">📚 Introduction</a>
+        <a href="?gospels#^" class="crumb-link">🌟 All Gospels</a>
+        <a href="?Matthew#^" class="crumb-link">📖 Matthew</a>
+        <a href="?John#^" class="crumb-link">💫 John</a>
+        <a href="?Luke#^" class="crumb-link">❤️ <b>Luke</b></a>
+        <a href="?Mark#^" class="crumb-link">⚡ Mark</a>
+        <a href="?conclusion#^" class="crumb-link">🎯 Conclusion</a>
+    </div>
+    </nav>
     <h1><span class="emoji">❤️</span>Luke's Special Teachings</h1>
     <div class="highlight-box">
     <p>Luke was like the friend who always noticed when someone was left out and made sure to include them.
@@ -1583,7 +1583,7 @@ function teachings()  {
     </div>
 
     <h2>Unique Parables in Luke's Gospel</h2>
-    <h3>Luke's Gospel contains sixteen parables that appear nowhere else in the New Testament.</h3>
+    <h3>Luke's Gospel contains fifteen/sixteen parables that appear nowhere else in the New Testament.</h3>
     <p>These unique parables, many of which have become among the most beloved and
     influential of Jesus's teachings, reflect Luke's distinctive emphasis on mercy, inclusion,
     and God's concern for the lost and marginalized. The following analysis examines
@@ -1605,7 +1605,7 @@ function teachings()  {
             <li><a href="./parables#:~:text=The%20Unprofitable%20Servants">The Unworthy Servants</a></li>
             <li><a href="./parables#:~:text=The%20Unjust%20Judge">The Unjust Judge</a></li>
             <li><a href="./parables#:~:text=The%20Pharisee%20and%20the%20Tax%20Collector">The Pharisee and the Tax Collector</a></li>
-            <li><a href="./parables#:~:text=The%20Ten%20Virgins">The Minas</a></li>
+            <li class="highlight-box" style="width:fit-content;padding:.5px;"><a href="./parables#:~:text=The%20Talents/Minas">The Minas</a></li>
         </ul>
 
     <div class="highlight-box">
@@ -1751,7 +1751,7 @@ function teachings()  {
             before God. The Pharisee's prayer, though addressed to God, is actually about himself
             and his moral superiority to others. The tax collector's prayer acknowledges his
             sinfulness and need for divine mercy.</p> <h3> The surprising conclusion</h3>
-            <p>The socially despised tax collector rather than the respected religious leader is justified before God
+        <p>The socially despised tax collector rather than the respected religious leader is justified before God
             challenges conventional assumptions about spiritual status and establishes humility
             rather than moral achievement as the prerequisite for divine acceptance.
             The parable contributes to Luke's emphasis on the inclusion of social outcasts in God's
@@ -1761,15 +1761,37 @@ function teachings()  {
             God's kingdom as presented throughout Luke's Gospel.</p>
     </div>
 
-    <h2>Other Unique Parables in Luke</h2>
+    <!-- <h2>Other Unique Parables in Luke</h2>
     <h3>Luke contains several other unique parables that develop his distinctive theological
-        emphases:</h3>
-    <p class="highlight-box">
-        The Two Debtors (Luke 7:41-43) illustrates the principle that those who are forgiven
-        much will love much, explaining the extravagant gratitude of the sinful woman who
-        anoints Jesus's feet. This parable establishes the connection between recognition of
-        one's moral debt, experience of forgiveness, and depth of love for the Savior.
-    </p>
+        emphases:</h3> -->
+
+    <div class="highlight-box">
+        <h2>The Two Debtors (Luke 7:41-43)</h2>
+        <span class="highlight-box passage">A bit of Context: <a href="https://ebible.org/study/?v1=LU7_36&t1=local%3Aeng-web&w1=bible"title="Luke 7:36"><small><ruby>Luke<rt>7:36-50</rt></ruby></small></a>.</span>
+        <p>Jesus is having dinner at the house of Simon, a religious leader called a Pharisee.
+            While they're eating, a woman from town who was known for making bad choices comes into the house.
+            She wasn't invited, but she had heard Jesus was there, she was standing behind Jesus.
+            She kneels and starts weeping, her tears fall on His feet, and she uses her long hair to dry them.
+            Then, she kisses His feet and pours expensive perfume on them.
+            Simon the host watches and is shocked. He thinks to himself, "If Jesus were really a prophet, he would know what a bad person this woman is.
+            He wouldn't let her touch him!".
+            But Jesus knows what Simon is thinking, and He decides to tell him a story.</p>
+        <p class="rlt"><img src="../images/_JesusChrist/twoDebtors_thumb.webp" alt="Two Debtors" width="200" height="200"class="img_fl">
+            A man who loaned money had two people who owed him. One person owed him a very big amount—about five hundred silver coins. The other person owed him much less—only fifty silver coins. Neither of them could pay him back. Instead of demanding the money, the lender forgave both of their debts.
+            Jesus asks, "Now, think about it: which of those two people do you think would be more thankful and love him more?"</p>
+        <p>The parable illustrates the principle that those who are forgiven
+            much will love much, explaining the extravagant gratitude of the sinful woman who
+            anoints Jesus's feet. This parable establishes the connection between recognition of
+            one's moral debt, experience of forgiveness, and depth of love for the Savior.</p>
+        <h3>Take Away Message</h3>
+        <ul style="margin-left: 20px;">
+            <li><strong>Forgiveness is powerful.</strong> The lender chose to forgive both people even though they couldn't pay.</li>
+            <li><strong>Gratitude grows with forgiveness.</strong> The person forgiven more has a bigger reason to be thankful.</li>
+            <li><strong>Think about God’s forgiveness.</strong> When we realize how much we've been forgiven, we tend to love and appreciate more.</li>
+            <big><li style="text-align: center;list-style-type: none;margin-top:1%;"><strong>Main idea:</strong> The more we understand how much we've been forgiven, the more our love and gratitude grow.</li></big>
+        </ul>
+    </div>
+
     <p class="highlight-box">
         The Good Samaritan (Luke 10:30-37) redefines "neighbor" as anyone in need
         regardless of social or ethnic boundaries and establishes compassionate action as the
