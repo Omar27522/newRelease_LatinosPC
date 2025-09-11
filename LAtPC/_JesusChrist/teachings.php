@@ -1594,6 +1594,7 @@ function teachings()  {
             <li><a href="./parables#:~:text=The%20Good%20Samaritan">The Good Samaritan</a></li>
             <li><a href="./parables#:~:text=The%20Friend%20at%20Midnight">The Friend at Midnight</a></li>
             <li><a href="./parables#:~:text=The%20Rich%20Fool">The Rich Fool</a></li>
+            <li><a href="./parables#:~:text=The%20Persistent%20Widow">The Persistent Widow</a></li>
             <li><a href="./parables#:~:text=The%20Watchful%20Servants">The Watchful Servants</a></li>
             <li><a href="./parables#:~:text=The%20Barren%20Fig%20Tree">The Barren Fig Tree</a></li>
             <li><a href="./parables#:~:text=Building%20a%20Tower%20and%20King%20Going%20to%20War">The Tower Builder</a></li>
@@ -1792,11 +1793,6 @@ function teachings()  {
         </ul>
     </div>
 
-    <p class="highlight-box">
-        The Good Samaritan (Luke 10:30-37) redefines "neighbor" as anyone in need
-        regardless of social or ethnic boundaries and establishes compassionate action as the
-        criterion for fulfilling the command to love one's neighbor.
-    </p>
     <p class="highlight-box">
         The Friend at Midnight (Luke 11:5-8) encourages persistence in prayer by comparing
         God's responsiveness favorably to that of a reluctant friend who eventually responds to

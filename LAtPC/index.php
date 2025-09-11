@@ -116,10 +116,10 @@ function show404()
 
 function fullPageTemplate()
 {
-	$page = new Structure ("../","english","Template");
-	$keywords = "test_Keywords";
-	$description = "test_Description";
-	include 'fullpageTemplate.php';
+	$page = new Structure('../','english','Template');
+	$keywords = 'test_Keywords';
+	$description = 'test_Description';
+	include 'fullPageTemplate.php';
 }
 
 function _JesusChrist($sub_route)
