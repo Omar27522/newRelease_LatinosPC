@@ -44,12 +44,16 @@
     (8/23/2025|Update) There is a way to change the titles of the teachings page.
         Currently John is the only one displaying the correct title.
     (8/24/2025|Update) Breadcrumbs added, but they are a bit wordy, I would like to change them to some PHP code, but for now this is fine.
+    (9/11/2025|Update)|*Work on getting the carousel to work, and implement it in parables, the current solution does not convince me.*
+        There are some images in Teachings for Luke's section that a carousel would be wonderful for.|
+            Finally the Carousel has been fixed. Template (fullPageTemplate.php) showcases how it works.
+                Also the first implementation is on the Teachings Page for Luke's section. The three versions of each image are being used.
+                    The fist displays the thumbnail version. The second the .WebP full size version, and the Third a link to the original .PNG file.
 
 
 
 
-
-**_JesusChrist |to-do:| (8/23/2025)
+**_JesusChrist |to-do:| (9/11/2025)
     teachings       ---> The titles must change with every link, for example the intro, gospels, etc. -LOOK@(8/23/2025|Update)
     _heavenlyFather ---> I would like to change the way this is presented (CSS), and perhaps make a new revision.
     _Apostles       ---> Add links and text dialogs, the reader needs to have a better understanding of the Apostles, and perhaps invite teh reader to a life of servitude, like a saint.
@@ -57,8 +61,6 @@
 
 
 
-*Work on getting the carousel to work, and implement it in parables, the current solution does not convince me.*
-    There are some images in Teachings for Luke's section that a carousel would be wonderful for.
 *Switching between languages by pressing the Spanish or English button.*
 *work on the services page.*
 *work on the contact page.*

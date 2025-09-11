@@ -1566,7 +1566,18 @@ function teachings()  {
             establishes the organic relationship between inner nature and outward actions. The statement that <b><i>"out of the abundance of the heart his mouth speaks"</i></b>
             establishes the heart as the source of words and actions and emphasizes the importance of inner transformation rather than merely external compliance.</p>
             <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK6_46"><ruby>Luke<rt>6:46-49</rt></ruby></a></span>
-            <p><img src="../images/_JesusChrist/wiseAndFoolishBuilders_thumb.webp" alt="Wise and Foolish Builders"height="150"width="auto"class="img_rtl">
+            <p><!-- Carousel img -->
+                <div class="carousel-group img_rtl">
+                    <div class="multi-link-container">
+                        <div class="thumbnail-container">
+                            <span tabindex="0" class="linked-text-img">
+                            <img src="../images/_JesusChrist/wiseAndFoolishBuilders_thumb.webp" alt="Wise and Foolish Builders"height="150"width="auto">
+                                <!-- <p>Primary Image</p> -->
+                            </span>
+                        </div>
+                        <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
+                    </div>
+                </div>
             The Two Foundations concludes the sermon with the parable of the
             <a href="./parables#:~:text=The%20Wise%20and%20Foolish%20Builders">wise and foolish builders</a>, emphasizing the importance of not merely hearing Jesus's
             words but putting them into practice. The contrast between the house built on the rock,
@@ -1616,8 +1627,18 @@ function teachings()  {
             <strong>"Who is my neighbor?"</strong>
             <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK10_29"><ruby>Luke<rt>10:29</rt></ruby></a></small>
             Instead of giving a simple answer, Jesus told this story:</p>
-        <p class="rtl">
-            <img src="../images/_JesusChrist/goodSamaritan_thumb.webp" alt="Good Samaritan" width="200" height="200"class="img_fl">
+        <p class="rtl"><!-- Carousel img -->
+            <div class="carousel-group img_fl">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img">
+                        <img src="../images/_JesusChrist/goodSamaritan_thumb.webp" alt="Good Samaritan" width="200" height="200">
+                            <!-- <p>Primary Image</p> -->
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="1"></div>
+                </div>
+            </div>
             A man was walking from Jerusalem to Jericho when robbers attacked him. They beat him up, took all his money and clothes, and left him half dead on the side of the road.
             <i>First</i>, a priest (a religious leader) came walking down the road. When he saw the hurt man, he crossed to the other side of the road and kept walking.
             <i>Then</i> a Levite (another religious person) came by. He also saw the hurt man but walked past on the other side.
@@ -1654,8 +1675,18 @@ function teachings()  {
             With the religious leaders grumbling about his association with social outcasts, Jesus then began his longest story about a father with two sons to justify his actions and highlight the stark contrast between God's boundless mercy and the Pharisees' self-righteousness.
             He began with these simple words to invite everyone present into the narrative.
             This story is actually about two sons, but it's really about an amazing father who represents God.</p>
-        <p class="rtl">
-            <img src="../images/_JesusChrist/prodigalSon_thumb.webp" alt="Prodigal Son" width="200" height="200"class="img_fl">
+        <p class="rtl"><!-- Carousel img -->
+        <div class="carousel-group img_fl">
+            <div class="multi-link-container">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img">
+                    <img src="../images/_JesusChrist/prodigalSon_thumb.webp" alt="Prodigal Son" width="200" height="200">
+                        <!-- <p>Primary Image</p> -->
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="2"></div>
+            </div>
+        </div>
             A man had two sons. The younger son got tired of living at home and wanted to go have fun in the
             big city. He asked his father for his inheritance (the money he would get when his father died).
             This was really rude - it was like saying, "I wish you were dead so I could have your money!"
@@ -1695,7 +1726,18 @@ function teachings()  {
             it's a direct and sharp response to the Pharisees' worldview.
             It powerfully confronts the common belief that earthly riches are a sign of God's blessing,
             while illustrating the eternal consequences of a life spent in selfish luxury, blind to the suffering of the poor.</p>
-        <p class="rtl"><img src="../images/_JesusChrist/richManAndLazarus_thumb.webp" alt="Rich Man and Lazarus" width="200" height="200"class="img_fl">
+        <p class="rtl"><!-- Carousel img -->
+        <div class="carousel-group img_fl">
+            <div class="multi-link-container">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img">
+                    <img src="../images/_JesusChrist/richManAndLazarus_thumb.webp" alt="Rich Man and Lazarus" width="200" height="200">
+                        <!-- <p>Primary Image</p> -->
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="3"></div>
+            </div>
+        </div>
             There was a very rich man who lived in a huge house, wore the best clothes, and ate amazing food every single day.
             Lying just outside his gate was a poor, sick beggar named Lazarus. Lazarus was so hungry he would have been happy just to eat the scraps that fell from the rich man's table.
             When they both died, their situations completely flipped. Angels carried Lazarus to a place of peace and comfort. The rich man, however, ended up in a terrible place of suffering.
@@ -1741,7 +1783,18 @@ function teachings()  {
             The stories and lessons he shares along this path often focus on the nature of God's kingdom,
             frequently turning conventional wisdom upside down.</p>
         <p>This parable, addressed to <b><i>"some who trusted in themselves that they were righteous, and despised others"</i></b>.</p>
-        <p class="rlt"><img src="../images/_JesusChrist/phariseeAndTaxCollector_thumb.webp" alt="Pharisee and Tax Collector" width="200" height="200"class="img_fl">
+        <p class="rlt"><!-- Carousel img -->
+        <div class="carousel-group img_fl">
+            <div class="multi-link-container">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img">
+                    <img src="../images/_JesusChrist/phariseeAndTaxCollector_thumb.webp" alt="Pharisee and Tax Collector" width="200" height="200">
+                        <!-- <p>Primary Image</p> -->
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="4"></div>
+            </div>
+        </div>
             The parable describes two men going to the temple to pray. The Pharisee stands prominently and prays a self-congratulatory prayer thanking God that
             he is not like other men, particularly the tax collector, and listing his religious
             accomplishments. The tax collector, standing <b><i>"afar off,"</i></b> beats his breast and prays
@@ -1777,7 +1830,18 @@ function teachings()  {
             Simon the host watches and is shocked. He thinks to himself, "If Jesus were really a prophet, he would know what a bad person this woman is.
             He wouldn't let her touch him!".
             But Jesus knows what Simon is thinking, and He decides to tell him a story.</p>
-        <p class="rlt"><img src="../images/_JesusChrist/twoDebtors_thumb.webp" alt="Two Debtors" width="200" height="200"class="img_fl">
+        <p class="rlt"><!-- Carousel img -->
+        <div class="carousel-group img_fl">
+            <div class="multi-link-container">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img">
+                    <img src="../images/_JesusChrist/twoDebtors_thumb.webp" alt="Two Debtors" width="200" height="200">
+                        <!-- <p>Primary Image</p> -->
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="5"></div>
+            </div>
+        </div>
             A man who loaned money had two people who owed him. One person owed him a very big amount—about five hundred silver coins. The other person owed him much less—only fifty silver coins. Neither of them could pay him back. Instead of demanding the money, the lender forgave both of their debts.
             Jesus asks, "Now, think about it: which of those two people do you think would be more thankful and love him more?"</p>
         <p>The parable illustrates the principle that those who are forgiven
@@ -1924,7 +1988,56 @@ function teachings()  {
         has enriched Christian theology and spirituality throughout the church's history.</p>
 </section>
 
+<!-- Carousel -->
+<div class="carousel-group">
+    <div class="multi-link-container">
+        <div class="thumbnail-container">
+            <span tabindex="0" class="linked-text-img">
+                <img src="https://latinospc.com/images/clouds.webp" width="263" height="186" alt="image" class="fr" alt="Start with Blank Page" class="thumbnail" />
+                <p>Primary Image</p>
+            </span>
+        </div>
+        <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
+    </div>
+</div>
 
+<template id="carousel-images">
+        <div class="carousel-item" data-image-index="0">
+            <a href="../images/_JesusChrist/wiseAndFoolishBuilders.png">
+                <img src="../images/_JesusChrist/wiseAndFoolishBuilders.webp" alt="Wise and Foolish Builders" /></a>
+            <p><a href="./parables#:~:text=The%20Wise%20and%20Foolish%20Builders">Wise and Foolish Builders</a></p>
+        </div>
+
+        <div class="carousel-item" data-image-index="1">
+            <a href="../images/_JesusChrist/goodSamaritan.png">
+                <img src="../images/_JesusChrist/goodSamaritan.webp" alt="Good Samaritan" /></a>
+            <p><a href="./parables#:~:text=The%20Good%20Samaritan">Good Samaritan</a></p>
+        </div>
+
+        <div class="carousel-item" data-image-index="2">
+            <a href="../images/_JesusChrist/prodigalSon.png">
+                <img src="../images/_JesusChrist/prodigalSon.webp" alt="Prodigal Son" /></a>
+            <p><a href="./parables#:~:text=The%20Prodigal%20Son">Prodigal Son</a></p>
+        </div>
+
+        <div class="carousel-item" data-image-index="3">
+            <a href="../images/_JesusChrist/richManAndLazarus.png">
+                <img src="../images/_JesusChrist/richManAndLazarus.webp" alt="Rich Man and Lazarus" /></a>
+            <p><a href="./parables#:~:text=The%20Rich%20Man%20and%20Lazarus">Rich Man and Lazarus</a></p>
+        </div>
+
+        <div class="carousel-item" data-image-index="4">
+            <a href="../images/_JesusChrist/phariseeAndTaxCollector.png">
+                <img src="../images/_JesusChrist/phariseeAndTaxCollector.webp" alt="Pharisee and Tax Collector" /></a>
+            <p><a href="./parables#:~:text=The%20Pharisee%20and%20the%20Tax%20Collector">Pharisee and Tax Collector</a></p>
+        </div>
+
+        <div class="carousel-item" data-image-index="5">
+            <a href="../images/_JesusChrist/twoDebtors.png">
+                <img src="../images/_JesusChrist/twoDebtors.webp" alt="Two Debtors" /></a>
+            <p><a href="./parables#:~:text=The%20Two%20Debtors">Two Debtors</a></p>
+        </div>
+</template>
 
 
 

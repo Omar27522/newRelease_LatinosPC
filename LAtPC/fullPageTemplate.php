@@ -33,68 +33,9 @@ figcaption a:hover {
     color: royalblue;
 }
 
-/* Ensure template is hidden */
-template {
-    display: none !important;
-}
 
-/* Hide carousel items in image-dialog until dialog is opened */
-.image-dialog .carousel-item {
-    display: none;
-}
 
-/* Show carousel items only when dialog is visible */
-.image-dialog.visible .carousel-item {
-    display: block;
-}
 
-/* Show only the active carousel item */
-.image-dialog.visible .carousel-item.active {
-    display: block;
-}
-
-.image-dialog.visible .carousel-item:not(.active) {
-    display: none;
-}
-
-/* Dialog modal styling */
-.image-dialog {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 1000;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer; /* Show pointer cursor on background */
-}
-
-.image-dialog.visible {
-    display: flex;
-}
-
-.image-dialog .carousel-item {
-    text-align: center;
-    color: white;
-    cursor: default; /* Reset cursor for content area */
-    pointer-events: auto; /* Allow interactions with content */
-}
-
-.image-dialog .carousel-item img {
-    max-width: 90%;
-    max-height: 80vh;
-    object-fit: contain;
-    cursor: default; /* Normal cursor on image */
-}
-
-.image-dialog .carousel-item p {
-    margin-top: 20px;
-    font-size: 1.2em;
-    cursor: default; /* Normal cursor on text */
-}
 </style>
 <article>
     <div class="multi-link-container">
