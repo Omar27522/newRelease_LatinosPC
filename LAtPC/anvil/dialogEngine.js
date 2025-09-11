@@ -241,6 +241,17 @@ class DialogEngine {
         document.body.appendChild(dialog);
       }
 
+      // Add click handler to close on background click
+      if (!dialog._backgroundClickHandler) {
+        dialog._backgroundClickHandler = (event) => {
+          // Only close if clicking directly on the dialog background, not on content
+          if (event.target === dialog) {
+            this.closeAnyOpenDialogs();
+          }
+        };
+        dialog.addEventListener('click', dialog._backgroundClickHandler);
+      }
+
       // Handle carousel-specific behavior when opening
       if (dialog.hasAttribute('data-carousel')) {
         // Reset carousel loop count
@@ -249,15 +260,16 @@ class DialogEngine {
         // Set the active item based on the start-index attribute
         const startIndex = parseInt(dialog.getAttribute('data-start-index') || '0', 10);
 
-        // Only set the active item if we have a specific start index
-        if (startIndex > 0) {
-          const items = dialog.querySelectorAll('.carousel-item');
-          items.forEach(item => item.classList.remove('active'));
+        // Set the active item for any valid start index (including 0)
+        const items = dialog.querySelectorAll('.carousel-item');
+        items.forEach(item => item.classList.remove('active'));
 
-          const activeItem = dialog.querySelector(`.carousel-item[data-image-index="${startIndex}"]`);
-          if (activeItem) {
-            activeItem.classList.add('active');
-          }
+        const activeItem = dialog.querySelector(`.carousel-item[data-image-index="${startIndex}"]`);
+        if (activeItem) {
+          activeItem.classList.add('active');
+        } else if (items.length > 0) {
+          // If specified index doesn't exist, default to the first item
+          items[0].classList.add('active');
         }
       }
 
