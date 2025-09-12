@@ -1566,18 +1566,18 @@ function teachings()  {
             establishes the organic relationship between inner nature and outward actions. The statement that <b><i>"out of the abundance of the heart his mouth speaks"</i></b>
             establishes the heart as the source of words and actions and emphasizes the importance of inner transformation rather than merely external compliance.</p>
             <span class="passage"><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK6_46"><ruby>Luke<rt>6:46-49</rt></ruby></a></span>
-            <p><!-- Carousel img -->
-                <div class="carousel-group img_rtl">
-                    <div class="multi-link-container">
+            <div class="carousel-group img_rtl">
+                <div class="multi-link-container">
                         <div class="thumbnail-container">
                             <span tabindex="0" class="linked-text-img">
-                            <img src="../images/_JesusChrist/wiseAndFoolishBuilders_thumb.webp" alt="Wise and Foolish Builders"height="150"width="auto">
+                                <img src="../images/_JesusChrist/wiseAndFoolishBuilders_thumb.webp" alt="Wise and Foolish Builders"height="150"width="auto">
                                 <!-- <p>Primary Image</p> -->
                             </span>
                         </div>
                         <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
                     </div>
                 </div>
+                <p><!-- Carousel img -->
             The Two Foundations concludes the sermon with the parable of the
             <a href="./parables#:~:text=The%20Wise%20and%20Foolish%20Builders">wise and foolish builders</a>, emphasizing the importance of not merely hearing Jesus's
             words but putting them into practice. The contrast between the house built on the rock,
@@ -1627,18 +1627,18 @@ function teachings()  {
             <strong>"Who is my neighbor?"</strong>
             <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK10_29"><ruby>Luke<rt>10:29</rt></ruby></a></small>
             Instead of giving a simple answer, Jesus told this story:</p>
-        <p class="rtl"><!-- Carousel img -->
             <div class="carousel-group img_fl">
                 <div class="multi-link-container">
                     <div class="thumbnail-container">
                         <span tabindex="0" class="linked-text-img">
-                        <img src="../images/_JesusChrist/goodSamaritan_thumb.webp" alt="Good Samaritan" width="200" height="200">
+                            <img src="../images/_JesusChrist/goodSamaritan_thumb.webp" alt="Good Samaritan" width="200" height="200">
                             <!-- <p>Primary Image</p> -->
                         </span>
                     </div>
                     <div class="image-dialog" data-carousel="true" data-start-index="1"></div>
                 </div>
             </div>
+            <p class="rtl"><!-- Carousel img -->
             A man was walking from Jerusalem to Jericho when robbers attacked him. They beat him up, took all his money and clothes, and left him half dead on the side of the road.
             <i>First</i>, a priest (a religious leader) came walking down the road. When he saw the hurt man, he crossed to the other side of the road and kept walking.
             <i>Then</i> a Levite (another religious person) came by. He also saw the hurt man but walked past on the other side.
@@ -1675,18 +1675,18 @@ function teachings()  {
             With the religious leaders grumbling about his association with social outcasts, Jesus then began his longest story about a father with two sons to justify his actions and highlight the stark contrast between God's boundless mercy and the Pharisees' self-righteousness.
             He began with these simple words to invite everyone present into the narrative.
             This story is actually about two sons, but it's really about an amazing father who represents God.</p>
-        <p class="rtl"><!-- Carousel img -->
-        <div class="carousel-group img_fl">
-            <div class="multi-link-container">
-                <div class="thumbnail-container">
-                    <span tabindex="0" class="linked-text-img">
-                    <img src="../images/_JesusChrist/prodigalSon_thumb.webp" alt="Prodigal Son" width="200" height="200">
-                        <!-- <p>Primary Image</p> -->
-                    </span>
+            <div class="carousel-group img_fl">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img">
+                            <img src="../images/_JesusChrist/prodigalSon_thumb.webp" alt="Prodigal Son" width="200" height="200">
+                            <!-- <p>Primary Image</p> -->
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="2"></div>
                 </div>
-                <div class="image-dialog" data-carousel="true" data-start-index="2"></div>
             </div>
-        </div>
+            <p class="rtl"><!-- Carousel img -->
             A man had two sons. The younger son got tired of living at home and wanted to go have fun in the
             big city. He asked his father for his inheritance (the money he would get when his father died).
             This was really rude - it was like saying, "I wish you were dead so I could have your money!"
@@ -1726,18 +1726,18 @@ function teachings()  {
             it's a direct and sharp response to the Pharisees' worldview.
             It powerfully confronts the common belief that earthly riches are a sign of God's blessing,
             while illustrating the eternal consequences of a life spent in selfish luxury, blind to the suffering of the poor.</p>
-        <p class="rtl"><!-- Carousel img -->
-        <div class="carousel-group img_fl">
-            <div class="multi-link-container">
-                <div class="thumbnail-container">
-                    <span tabindex="0" class="linked-text-img">
-                    <img src="../images/_JesusChrist/richManAndLazarus_thumb.webp" alt="Rich Man and Lazarus" width="200" height="200">
-                        <!-- <p>Primary Image</p> -->
-                    </span>
+            <div class="carousel-group img_fl">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img">
+                            <img src="../images/_JesusChrist/richManAndLazarus_thumb.webp" alt="Rich Man and Lazarus" width="200" height="200">
+                            <!-- <p>Primary Image</p> -->
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="3"></div>
                 </div>
-                <div class="image-dialog" data-carousel="true" data-start-index="3"></div>
             </div>
-        </div>
+            <p class="rtl"><!-- Carousel img -->
             There was a very rich man who lived in a huge house, wore the best clothes, and ate amazing food every single day.
             Lying just outside his gate was a poor, sick beggar named Lazarus. Lazarus was so hungry he would have been happy just to eat the scraps that fell from the rich man's table.
             When they both died, their situations completely flipped. Angels carried Lazarus to a place of peace and comfort. The rich man, however, ended up in a terrible place of suffering.
@@ -1783,18 +1783,18 @@ function teachings()  {
             The stories and lessons he shares along this path often focus on the nature of God's kingdom,
             frequently turning conventional wisdom upside down.</p>
         <p>This parable, addressed to <b><i>"some who trusted in themselves that they were righteous, and despised others"</i></b>.</p>
-        <p class="rlt"><!-- Carousel img -->
         <div class="carousel-group img_fl">
             <div class="multi-link-container">
                 <div class="thumbnail-container">
                     <span tabindex="0" class="linked-text-img">
-                    <img src="../images/_JesusChrist/phariseeAndTaxCollector_thumb.webp" alt="Pharisee and Tax Collector" width="200" height="200">
+                        <img src="../images/_JesusChrist/phariseeAndTaxCollector_thumb.webp" alt="Pharisee and Tax Collector" width="200" height="200">
                         <!-- <p>Primary Image</p> -->
                     </span>
                 </div>
                 <div class="image-dialog" data-carousel="true" data-start-index="4"></div>
             </div>
         </div>
+        <p class="rlt"><!-- Carousel img -->
             The parable describes two men going to the temple to pray. The Pharisee stands prominently and prays a self-congratulatory prayer thanking God that
             he is not like other men, particularly the tax collector, and listing his religious
             accomplishments. The tax collector, standing <b><i>"afar off,"</i></b> beats his breast and prays
@@ -1811,7 +1811,8 @@ function teachings()  {
             The parable contributes to Luke's emphasis on the inclusion of social outcasts in God's
             kingdom, the danger of religious pride, and the centrality of mercy in divine-human
             relationships. The principle that <strong>"everyone who exalts himself will be humbled, and he
-            who humbles himself will be exalted"</strong> <a href="https://ebible.org/study/?v1=LU18_14&t1=local%3Aeng-web&w1=bible"><ruby>Luke<rt>18:14</rt></ruby></a> establishes a pattern of reversal that characterizes
+            who humbles himself will be exalted"</strong> <a href="https://ebible.org/study/?v1=LU18_14&t1=local%3Aeng-web&w1=bible"><ruby>Luke<rt>18:14</rt></ruby></a>
+            establishes a pattern of reversal that characterizes
             God's kingdom as presented throughout Luke's Gospel.</p>
     </div>
 
@@ -1820,7 +1821,8 @@ function teachings()  {
         emphases:</h3> -->
 
     <div class="highlight-box">
-        <h2>The Two Debtors (Luke 7:41-43)</h2>
+        <h2><span class="emoji">💸 💳</span>The Two Debtors
+        <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK7_41">Luke 7:41-43</a></small></h2>
         <span class="highlight-box passage">A bit of Context: <a href="https://ebible.org/study/?v1=LU7_36&t1=local%3Aeng-web&w1=bible"title="Luke 7:36"><small><ruby>Luke<rt>7:36-50</rt></ruby></small></a>.</span>
         <p>Jesus is having dinner at the house of Simon, a religious leader called a Pharisee.
             While they're eating, a woman from town who was known for making bad choices comes into the house.
@@ -1830,18 +1832,18 @@ function teachings()  {
             Simon the host watches and is shocked. He thinks to himself, "If Jesus were really a prophet, he would know what a bad person this woman is.
             He wouldn't let her touch him!".
             But Jesus knows what Simon is thinking, and He decides to tell him a story.</p>
-        <p class="rlt"><!-- Carousel img -->
-        <div class="carousel-group img_fl">
-            <div class="multi-link-container">
-                <div class="thumbnail-container">
-                    <span tabindex="0" class="linked-text-img">
-                    <img src="../images/_JesusChrist/twoDebtors_thumb.webp" alt="Two Debtors" width="200" height="200">
-                        <!-- <p>Primary Image</p> -->
-                    </span>
+            <div class="carousel-group img_fl">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img">
+                            <img src="../images/_JesusChrist/twoDebtors_thumb.webp" alt="Two Debtors" width="200" height="200">
+                            <!-- <p>Primary Image</p> -->
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="5"></div>
                 </div>
-                <div class="image-dialog" data-carousel="true" data-start-index="5"></div>
             </div>
-        </div>
+            <p class="rlt"><!-- Carousel img -->
             A man who loaned money had two people who owed him. One person owed him a very big amount—about five hundred silver coins. The other person owed him much less—only fifty silver coins. Neither of them could pay him back. Instead of demanding the money, the lender forgave both of their debts.
             Jesus asks, "Now, think about it: which of those two people do you think would be more thankful and love him more?"</p>
         <p>The parable illustrates the principle that those who are forgiven
@@ -1857,12 +1859,56 @@ function teachings()  {
         </ul>
     </div>
 
-    <p class="highlight-box">
-        The Friend at Midnight (Luke 11:5-8) encourages persistence in prayer by comparing
-        God's responsiveness favorably to that of a reluctant friend who eventually responds to
-        repeated requests. This parable, unique to Luke, reflects his emphasis on prayer as a
-        central spiritual practice.
-    </p>
+    <div class="highlight-box">
+        <h2><span class="emoji">🫂 🌒</span>The Friend at Midnight
+            <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK11_5">Luke 11:5-8</a></small></h2>
+        <span class="highlight-box passage">Context: <a href="https://ebible.org/study/?v1=LU7_36&t1=local%3Aeng-web&w1=bible"title="Luke 7:36"><small><ruby>Luke<rt>10</rt></ruby></small></a>.</span>
+        <p>This is one of the best parables in Luke's gospel, because it followed <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK11_2"title="The Lord's Prayer">The Lord's Prayer</a>
+            that Jesus taught His disciples. At the start of the reading, Jesus sends out seventy-two of His followers to share the good news.
+            They return full of joy, amazed at the power of His name.
+            Jesus reminds them that the greatest gift is knowing they belong to God.
+            Soon after, a teacher of the law asks Jesus who his neighbor is.
+            Jesus answers with the Parable of the Good Samaritan, showing that true love is helping anyone in need—even someone we might not expect.
+            Then Jesus visits the home of two sisters, Martha and Mary.
+            Martha is busy serving, but Mary sits at Jesus’ feet, listening to His teaching.
+            Jesus gently reminds Martha that spending time with Him is the most important thing.
+            After this, Jesus teaches His disciples how to pray.
+            He gives them the Lord’s Prayer, followed by the Parable of the Friend at Midnight.</p>
+        <div class="carousel-group img_fl">
+            <div class="multi-link-container">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img">
+                    <img src="../images/_JesusChrist/friendAtMidnight_thumb.webp" alt="Friend at Midnight" width="200" height="200">
+                    <!-- <p>Primary Image</p> -->
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="6"></div>
+            </div>
+        </div>
+        <p><!-- Carousel img -->
+            In the Parable of the Friend at Midnight, Jesus tells about a man who suddenly has a guest arrive late at night.
+            Wanting to be a good host, he runs to his neighbor’s house and asks for bread.
+            The neighbor at first refuses, saying the door is shut and his family is asleep.
+            But because the man keeps on knocking and asking, the neighbor finally gets up and gives him what he needs.</p>
+        <p>Jesus uses this picture to teach us about prayer.
+            He says, <strong>“Ask, and it will be given to you; seek, and you will find; knock, and the door will be opened.”</strong>
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK11_9"><ruby>Luke<rt>11:9-10</rt></ruby></a>
+            God wants us to pray with persistence, not giving up, because He is always listening.
+            Unlike the sleepy neighbor who helps only because he feels pressured, God is a loving Father who gladly gives to His children.</p>
+        <p>Jesus then reminds us that even earthly parents, though imperfect, give good gifts to their children.
+            <b><i>If a child asks for bread, a father won’t give him a stone. If he asks for a fish, he won’t give him a snake.
+            If human parents know how to care for their children, how much more does our perfect Father in heaven love to give what is best to us!</i></b>
+            Jesus says that <strong>God especially loves to give the greatest gift of all—His Holy Spirit—to those who ask Him.</strong>
+            <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK11_11"><ruby>Luke<rt>11:11-13</rt></ruby></a></p>
+        <h3>What the Parable Shows</h3>
+        <ul style="margin-left: 20px;">
+            <li><strong>Persistence in prayer</strong>: by comparing God’s responsiveness to that of a reluctant friend who eventually responds to repeated requests.</li>
+            <li><strong>God is generous, loving, and faithful</strong>: He doesn’t turn away from our prayers.</li>
+            <li><strong>God delights when we come to Him again and again</strong>, trusting that He is able and willing to provide.</li>
+            <big><li style="text-align: center;list-style-type: none;margin-top:1%;">This parable reflects His emphasis on prayer as a central spiritual practice.</li></big>
+        </ul>
+    </div>
+
     <p class="highlight-box">
         The Rich Fool (Luke 12:16-21) warns against the accumulation of wealth without regard
         for spiritual values or divine judgment. The fool's plan to build bigger barns for his
@@ -1988,7 +2034,7 @@ function teachings()  {
         has enriched Christian theology and spirituality throughout the church's history.</p>
 </section>
 
-<!-- Carousel -->
+<!-- Carousel 
 <div class="carousel-group">
     <div class="multi-link-container">
         <div class="thumbnail-container">
@@ -2000,7 +2046,7 @@ function teachings()  {
         <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
     </div>
 </div>
-
+-->
 <template id="carousel-images">
         <div class="carousel-item" data-image-index="0">
             <a href="../images/_JesusChrist/wiseAndFoolishBuilders.png">
@@ -2037,6 +2083,14 @@ function teachings()  {
                 <img src="../images/_JesusChrist/twoDebtors.webp" alt="Two Debtors" /></a>
             <p><a href="./parables#:~:text=The%20Two%20Debtors">Two Debtors</a></p>
         </div>
+
+        <div class="carousel-item" data-image-index="6">
+            <a href="../images/_JesusChrist/friendAtMidnight.png">
+                <img src="../images/_JesusChrist/friendAtMidnight.webp" alt="Friend at Midnight" /></a>
+            <p><a href="./parables#:~:text=The%20Friend%20at%20Midnight">Friend at Midnight</a></p>
+        </div>
+
+
 </template>
 
 

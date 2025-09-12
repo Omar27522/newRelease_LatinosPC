@@ -79,6 +79,7 @@ header p {
   color: var(--secondary-dark);
   background-color: var(--link-bg);
   border-radius: 25%;
+  box-decoration-break: clone;
 }
 .fullbar a:active {
   color: var(--secondary-dark);
