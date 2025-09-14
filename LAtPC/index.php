@@ -116,7 +116,7 @@ function show404()
 
 function fullPageTemplate()
 {
-	$page = new Structure('../','english','Template');
+	$page = new Structure('../', 'english', 'Template');
 	$keywords = 'test_Keywords';
 	$description = 'test_Description';
 	include 'fullPageTemplate.php';
@@ -126,15 +126,15 @@ function _JesusChrist($sub_route)
 {
 	switch ($sub_route) {
 		case 'father_in_heaven_tell_me_about_web':
-			$page = new Structure ("../../","english","Heavenly Father");
-			$keywords="Keyword_test";
-			$description="Description_test";
+			$page = new Structure('../../', 'english', 'Heavenly Father');
+			$keywords = 'Keyword_test';
+			$description = 'Description_test';
 			include '_JesusChrist/_HeavenlyFather.php';
 			break;
 		case 'padre_celestial_cuentame_sobre_el_internet':
-			$page = new Structure ("../../","español","Padre Celestial");
-			$keywords="Keyword_test";
-			$description="Description_test";
+			$page = new Structure('../../', 'español', 'Padre Celestial');
+			$keywords = 'Keyword_test';
+			$description = 'Description_test';
 			include '_JesusChrist/_HeavenlyFather.php';
 			break;
 
@@ -152,47 +152,46 @@ function _JesusChrist($sub_route)
 			break;
 
 		case 'parables':
-			$page = new Structure('../../','english', 'Parables');
+			$page = new Structure('../../', 'english', 'Parables');
 			$keywords = 'Keyword_test';
 			$description = 'Description_test';
 			include '_JesusChrist/parables.php';
 			break;
 		case 'parabolas':
-			$page = new Structure('../../','español','Parabolas');
-			$keywords ='Palabras Clave de Parabolas';
+			$page = new Structure('../../', 'español', 'Parabolas');
+			$keywords = 'Palabras Clave de Parabolas';
 			$description = 'Descripción de Parabolas';
 			include '_JesusChrist/parables.php';
 			break;
 
 		case 'sermons':
-			$page = new Structure('../../','english','Sermons');
+			$page = new Structure('../../', 'english', 'Sermons');
 			$keywords = 'Keyword_test';
 			$description = 'Description_test';
 			include '_JesusChrist/sermons.php';
 			break;
 		case 'sermones':
-			$page = new Structure('../../','español','Sermones');
+			$page = new Structure('../../', 'español', 'Sermones');
 			$keywords = 'Keyword_test';
 			$description = 'Description_test';
 			include '_JesusChrist/sermons.php';
 			break;
 
 		case 'teachings':
-			if(isset($_GET['John'])){
-				$page = new Structure('../../','english','Teachings: John');
+			if (isset($_GET['John'])) {
+				$page = new Structure('../../', 'english', 'Teachings: John');
 				$keywords = 'Keyword_test';
 				$description = 'Description_test';
 				include '_JesusChrist/teachings.php';
-			}
-			else{
-				$page = new Structure('../../','english','Teachings');
+			} else {
+				$page = new Structure('../../', 'english', 'Teachings');
 				$keywords = 'Keyword_test';
 				$description = 'Description_test';
 				include '_JesusChrist/teachings.php';
 			}
 			break;
 		case 'enseñanzas':
-			$page = new Structure('../../','español','Enseñanzas');
+			$page = new Structure('../../', 'español', 'Enseñanzas');
 			$keywords = 'Keyword_test';
 			$description = 'Description_test';
 			include '_JesusChrist/teachings.php';
@@ -210,133 +209,178 @@ function _JesusChrist($sub_route)
 
 $page = new Structure('../', 'english', 'Home LatinosPC');
 
-$keywords = 'test_Keywords';
-$description = 'test_Description';
+$description = 'LatinosPC.com is your one-stop shop for all your computer repair needs. We offer a variety of services including computer repair, virus removal, data backup, and in-person and online computer classes. We work with individuals, students, small businesses, and gamers.';
+$keywords = 'Computer repair, virus removal, data backup, computer classes, in-person classes, online classes, IT support, gamers, small business IT, student IT support';
 
-function content_home()	{
-	?>
-	<section class="homepage-grid">
-		<div class="grid-item">
-			<div class="multi-link-container">
-				<h3 class="linked-text">Jesus Christ</h3>
-				<div class="link-dialog">
-					<p tabindex="0">Most accept that Jesus was truly a man who lived in Israel 2,000 years ago.</p>
-					<p tabindex="0">What do we really know about Jesus? Explore his life and teachings and form your
-						own valid experience.</p>
-				</div>
-			</div>
-			<a href="JesusChrist/father_in_heaven_tell_me_about_web" class="cta-button">Tell me about the web</a>
-			<a href="JesusChrist/apostles" class="cta-button">Apostles</a>
-			<a href="JesusChrist/parables" class="cta-button">Parables</a>
-			<a href="JesusChrist/sermons" class="cta-button">Sermons</a>
-			<a href="JesusChrist/teachings" class="cta-button">Teachings</a>
-		</div>
+function content_home()
+{
+	/* I want to be able to migrate to a database instead of having arrays, arrays are cool and all, I really like them.
+		Perhaps I can place the whole variable array into the database, and call it as is.
+		I'm guessing in my noob mind that the data fetching will better for me as I am learning,
+		also I kinda don't want to move away from arrays,
+		they're cool and I want to keep working with them.
+	*/
+	$headings = [
+		'Jesus' => 'Jesus Christ',
+		'About' => 'About Us',
+		'Services' => 'Services'
+	];
+	$dialogs = [
+		'Jesus' => 'Most accept that Jesus was truly a man who lived in Israel 2,000 years ago.',
+		'Jesus2' => 'What do we really know about Jesus? Explore his life and teachings and form your own valid experience.',
+		'about' => ''
+	];
+	$buttonsAndLinks = [
+		'tellMeAboutTheWeb' => [
+			'link' => 'JesusChrist/father_in_heaven_tell_me_about_web',
+			'button' => 'Tell me about the web'
+		],
+		'apostles' => [
+			'link' => 'JesusChrist/apostles',
+			'button' => 'Apostles'
+		],
+		'parables' => [
+			'link' => 'JesusChrist/parables',
+			'button' => 'Parables'
+		],
+		'sermons' => [
+			'link' => 'JesusChrist/sermons',
+			'button' => 'Sermons'
+		],
+		'teachings' => [
+			'link' => 'JesusChrist/teachings',
+			'button' => 'Teachings'
+		]
+	];
+	$paragraphs = [];
 
-		<div class="grid-item">
-			<div class="multi-link-container">
-				<h3 class="linked-text">About Us</h3>
-				<div class="link-dialog">
-					<p tabindex="0">
-						We started back in 2009 with one technician; Omar, we have one goal.</p>
-					<p tabindex="0">
-						Our goal is to provide you and your company with outstanding service.</p>
-					<p tabindex="0">We're dedicated to enhancing your experience through effective marketing,
-						customer-friendly retention
-						strategies, and maintaining top-notch quality control.
-					</p>
-				</div>
-			</div>
+?>
+<section class="homepage-grid">
+    <div class="grid-item">
+        <div class="multi-link-container">
+            <h3 class="linked-text"><?= $headings['Jesus']; ?></h3>
+            <div class="link-dialog">
+                <p tabindex="0"><?= $dialogs['Jesus']; ?></p>
+                <p tabindex="0"><?= $dialogs['Jesus2']; ?></p>
+            </div>
+        </div>
+        <a href="<?= $buttonsAndLinks['tellMeAboutTheWeb']['link']; ?>"
+            class="cta-button"><?= $buttonsAndLinks['tellMeAboutTheWeb']['button']; ?></a>
+        <a href="<?= $buttonsAndLinks['apostles']['link']; ?>"
+            class="cta-button"><?= $buttonsAndLinks['apostles']['button']; ?></a>
+        <a href="<?= $buttonsAndLinks['parables']['link']; ?>"
+            class="cta-button"><?= $buttonsAndLinks['parables']['button']; ?></a>
+        <a href="<?= $buttonsAndLinks['sermons']['link']; ?>"
+            class="cta-button"><?= $buttonsAndLinks['sermons']['button']; ?></a>
+        <a href="<?= $buttonsAndLinks['teachings']['link']; ?>"
+            class="cta-button"><?= $buttonsAndLinks['teachings']['button']; ?></a>
+    </div>
 
-			<p>we want to bring families and individuals, the experience of a fully working computer system; laptops
-				and desktops.</p>
-			<p>100% Satisfaction Guarantee | 90 Days Service Package -included</p>
-			<p>We are located in the city of Pomona, and will travel to LA county, SB county, RV county and OC.</p>
-			<a href="#" class="cta-button">Visit Page</a>
-		</div>
+    <div class="grid-item">
+        <div class="multi-link-container">
+            <h3 class="linked-text">About Us</h3>
+            <div class="link-dialog">
+                <p tabindex="0">
+                    We started back in 2009 with one technician; Omar, we have one goal.</p>
+                <p tabindex="0">
+                    Our goal is to provide you and your company with outstanding service.</p>
+                <p tabindex="0">We're dedicated to enhancing your experience through effective marketing,
+                    customer-friendly retention
+                    strategies, and maintaining top-notch quality control.
+                </p>
+            </div>
+        </div>
 
-		<div class="grid-item">
-			<div class="multi-link-container">
-				<h3 class="linked-text">Services</h3>
-				<div class="link-dialog">
-					<p tabindex="0">We mostly work with individuals, Students, Small-Medium Businesses, #Gamers!,
-						and Professionals.</p>
-					<p tabindex="0">Repairs and Service for Home and Office; any type-spec.</p>
-					<p tabindex="0">90 day service guarantee. Computers run smoother, faster and perform better.</p>
-					<img src="https://latinospc.com/images/number.jpg" width="auto" height="auto" alt="number"
-						style="display: block; margin: 0 auto;">
-				</div>
-			</div>
+        <p>we want to bring families and individuals, the experience of a fully working computer system; laptops
+            and desktops.</p>
+        <p>100% Satisfaction Guarantee | 90 Days Service Package -included</p>
+        <p>We are located in the city of Pomona, and will travel to LA county, SB county, RV county and OC.</p>
+        <a href="#" class="cta-button">Visit Page</a>
+    </div>
 
-			<a href="#" class="cta-button">Cleanups</a>
-			<a href="#" class="cta-button">Computer protection</a>
-			<a href="#" class="cta-button">Consultations</a>
-			<a href="#" class="cta-button">Managed Services</a>
-			<a href="#" class="cta-button">Remote Support</a>
-			<a href="#" class="cta-button">Websites</a>
-		</div>
+    <div class="grid-item">
+        <div class="multi-link-container">
+            <h3 class="linked-text">Services</h3>
+            <div class="link-dialog">
+                <p tabindex="0">We mostly work with individuals, Students, Small-Medium Businesses, #Gamers!,
+                    and Professionals.</p>
+                <p tabindex="0">Repairs and Service for Home and Office; any type-spec.</p>
+                <p tabindex="0">90 day service guarantee. Computers run smoother, faster and perform better.</p>
+                <img src="https://latinospc.com/images/number.jpg" width="auto" height="auto" alt="number"
+                    style="display: block; margin: 0 auto;">
+            </div>
+        </div>
 
-		<div class="grid-item">
-			<div class="multi-link-container">
-				<h3 class="linked-text">Security</h3>
-				<div class="link-dialog">
-					<p tabindex="0">Think of your computer as a virtual treasure chest filled with your important
-						stuff – photos, documents, and more. Computer protection is like a shield against
-						troublemakers like viruses and hackers.</p>
-				</div>
-			</div>
+        <a href="#" class="cta-button">Cleanups</a>
+        <a href="#" class="cta-button">Computer protection</a>
+        <a href="#" class="cta-button">Consultations</a>
+        <a href="#" class="cta-button">Managed Services</a>
+        <a href="#" class="cta-button">Remote Support</a>
+        <a href="#" class="cta-button">Websites</a>
+    </div>
 
-			<a href="#" class="cta-button">Best Practices</a>
-			<a href="#" class="cta-button">Backups</a>
-			<a href="#" class="cta-button">Passwords</a>
-			<aside>
-				<hr>
-				<div class="multi-link-container">
-					<h3 class="linked-text">Tutorials / Blog</h3>
-					<div class="link-dialog">
-						<p tabindex="0">This section is all about the tutorials and blog posts that we have on our
-							website. We have a wide range of topics that we cover, from computer hardware and
-							software to internet security and more.</p>
-					</div>
-				</div>
-				<p>Visit our tutorials and blog page for more information</p>
-				<a href="#" class="cta-button">Visit Page</a>
-			</aside>
-		</div>
+    <div class="grid-item">
+        <div class="multi-link-container">
+            <h3 class="linked-text">Security</h3>
+            <div class="link-dialog">
+                <p tabindex="0">Think of your computer as a virtual treasure chest filled with your important
+                    stuff – photos, documents, and more. Computer protection is like a shield against
+                    troublemakers like viruses and hackers.</p>
+            </div>
+        </div>
 
-		<div class="grid-item">
-			<div class="multi-link-container">
-				<h3 class="linked-text">Hardware</h3>
-				<div class="link-dialog">
-					<p tabindex="0">A computer is an electronic device that manipulates data or information. It has
-						the ability to store,retrieve, and process data.</p>
-					<p tabindex="0">The Hardware is the computer — it's physical components.</p>
-					<p>These components may include the computer's functionality, design, materials, innovations,
-						thermals, etc.</p>
-				</div>
-			</div>
+        <a href="#" class="cta-button">Best Practices</a>
+        <a href="#" class="cta-button">Backups</a>
+        <a href="#" class="cta-button">Passwords</a>
+        <aside>
+            <hr>
+            <div class="multi-link-container">
+                <h3 class="linked-text">Tutorials / Blog</h3>
+                <div class="link-dialog">
+                    <p tabindex="0">This section is all about the tutorials and blog posts that we have on our
+                        website. We have a wide range of topics that we cover, from computer hardware and
+                        software to internet security and more.</p>
+                </div>
+            </div>
+            <p>Visit our tutorials and blog page for more information</p>
+            <a href="#" class="cta-button">Visit Page</a>
+        </aside>
+    </div>
 
-			<a href="#" class="cta-button">CPU</a>
-			<a href="#" class="cta-button">Storage</a>
-			<a href="#" class="cta-button">Power Supply Unit</a>
-			<a href="#" class="cta-button">Input</a>
-			<a href="#" class="cta-button">Output</a>
-			<a href="#" class="cta-button">Parts</a>
+    <div class="grid-item">
+        <div class="multi-link-container">
+            <h3 class="linked-text">Hardware</h3>
+            <div class="link-dialog">
+                <p tabindex="0">A computer is an electronic device that manipulates data or information. It has
+                    the ability to store,retrieve, and process data.</p>
+                <p tabindex="0">The Hardware is the computer — it's physical components.</p>
+                <p>These components may include the computer's functionality, design, materials, innovations,
+                    thermals, etc.</p>
+            </div>
+        </div>
 
-			<aside>
-				<hr>
-				<div class="multi-link-container">
-					<h3 class="linked-text">Peripherals and Gear</h3>
-					<div class="link-dialog">
-						<p tabindex="0">Peripherals and gear are the additional components that help you use your
-							computer.</p>
-						<p tabindex="0">These include desks, chairs, computer mats, lights, clothing, and other
-							stuff that are unrelated to the computer itself, but are very useful to have.</p>
-					</div>
-				</div>
-				<p>Visit our computer peripherals and gear for more information</p>
-				<a href="#" class="cta-button">Visit Page</a>
-		</div>
-			</aside>
+        <a href="#" class="cta-button">CPU</a>
+        <a href="#" class="cta-button">Storage</a>
+        <a href="#" class="cta-button">Power Supply Unit</a>
+        <a href="#" class="cta-button">Input</a>
+        <a href="#" class="cta-button">Output</a>
+        <a href="#" class="cta-button">Parts</a>
+
+        <aside>
+            <hr>
+            <div class="multi-link-container">
+                <h3 class="linked-text">Peripherals and Gear</h3>
+                <div class="link-dialog">
+                    <p tabindex="0">Peripherals and gear are the additional components that help you use your
+                        computer.</p>
+                    <p tabindex="0">These include desks, chairs, computer mats, lights, clothing, and other
+                        stuff that are unrelated to the computer itself, but are very useful to have.</p>
+                </div>
+            </div>
+            <p>Visit our computer peripherals and gear for more information</p>
+            <a href="#" class="cta-button">Visit Page</a>
+    </div>
+    </aside>
 
     <div class="grid-item">
         <div class="multi-link-container">
@@ -361,8 +405,8 @@ function content_home()	{
         <a href="#" class="cta-button">Compression</a>
         <a href="#" class="cta-button">Developer Tools</a>
     </div>
-    </section>
-					<?php
+</section>
+<?php
 }
 
 include './anvil/structure.php';

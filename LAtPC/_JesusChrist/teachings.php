@@ -368,7 +368,7 @@ function teachings()  {
         // Below is a <section> that ends after the <nav>.
         ?>
 
-    <section class="section fullbar">
+    <section class="section fullbar" data-section="Intro">
         <!--Intro-->
         <nav class="crumbs">
             <div class="bread-crumbs">
@@ -407,7 +407,7 @@ function teachings()  {
             God
             with all our hearts.</p>
     </section>
-    <?php /*
+<?php /*
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
@@ -424,7 +424,7 @@ function teachings()  {
 */
 ?>
 
-    <section id="^" class="section fullbar">
+    <section id="^" class="section fullbar" data-section="Gospels">
         <!--Gospels-->
         <nav class="crumbs">
             <div class="bread-crumbs">
@@ -527,8 +527,7 @@ function teachings()  {
                 Also people remembered Jesus's stories and the lessons they taught.</p>
         </div>
     </section>
-
-    <?php /*
+<?php /*
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
@@ -544,7 +543,7 @@ function teachings()  {
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
 */
 ?>
-    <section id="^" class="section fullbar">
+    <section id="^" class="section fullbar" data-section="Matthew">
         <!--Matthew-->
         <nav class="crumbs">
             <div class="bread-crumbs">
@@ -964,8 +963,7 @@ function teachings()  {
                 eschatological understanding throughout the history of the church.</p>
         </div>
     </section>
-
-    <?php /*
+<?php /*
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
@@ -981,7 +979,7 @@ function teachings()  {
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
 */
 ?>
-    <section id="^" class="section fullbar">
+    <section id="^" class="section fullbar" data-section="John">
         <!--John-->
         <nav class="crumbs">
             <div class="bread-crumbs">
@@ -1994,8 +1992,7 @@ function teachings()  {
             </p>
         </div>
     </section>
-
-    <?php /*
+<?php /*
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
@@ -2011,9 +2008,7 @@ function teachings()  {
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
 */
 ?>
-
-    <section id="^" class="section fullbar">
-        <!--Luke-->
+    <section id="^" class="section fullbar" data-section="Luke">
         <nav class="crumbs">
             <div class="bread-crumbs">
                 <a href="?intro#^" class="crumb-link">📚 Introduction</a>
@@ -2826,7 +2821,8 @@ function teachings()  {
                 Jesus teaches that what really matters is being <b><i>“rich toward God”</i></b>—trusting Him, loving
                 others, and living with eternity in mind.</p>
             <h3>The real Lesson <a href="https://ebible.org/study/?v1=LK12_22&t1=local%3Aeng-web&w1=bible"><ruby>Luke
-                        <rt>12:22</rt></ruby></a></h3>
+                        <rt>12:22</rt>
+                    </ruby></a></h3>
             <p>Jesus reminds His followers not to be worried about food, clothes, or the things of this life.</p>
             <ul style="margin-left: 20px;">
                 <li>He points to the birds and the flowers.</li>
@@ -2849,19 +2845,10 @@ function teachings()  {
                 to return. <strong>Therefore be ready also, for the Son of Man is coming in an hour that you don’t
                     expect him.</strong>
                 <a href="https://ebible.org/study/?v1=LK12_40&t1=local%3Aeng-web&w1=bible"><ruby>Luke<rt>12:40</rt>
-                        </ruby></a>
+                    </ruby></a>
             </p>
-
-
-
-
-
-
-
-
-
-
         </div>
+
         <p class="highlight-box">
             The Barren Fig Tree (Luke 13:6-9) illustrates both divine patience and the expectation
             of fruitfulness in God's people. The owner's willingness to give the unproductive tree
@@ -2994,7 +2981,7 @@ function teachings()  {
     </div>
 </div>
 -->
-    <template id="carousel-images">
+    <template id="carousel-images" data-section="Luke-Images">
         <div class="carousel-item" data-image-index="0">
             <a href="../images/_JesusChrist/wiseAndFoolishBuilders.png">
                 <img src="../images/_JesusChrist/wiseAndFoolishBuilders.webp" alt="Wise and Foolish Builders" /></a>
@@ -3046,21 +3033,23 @@ function teachings()  {
 
 
     </template>
-
-
-
-
-
-
-    <?php
+<?php /*
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+*/
     elseif (isset($_GET['Mark'])):
+/*
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+*/
 ?>
-
-
-
-
-
-    <section id="^" class="section fullbar">
+    <section id="^" class="section fullbar" data-section="Mark">
         <nav class="crumbs">
             <div class="bread-crumbs">
                 <a href="?intro#^" class="crumb-link">📚 Introduction</a>
@@ -3339,7 +3328,7 @@ function teachings()  {
 
 
 
-    <section id="^" class="section fullbar">
+    <section id="^" class="section fullbar" data-section="Conclusion">
         <nav class="crumbs">
             <div class="bread-crumbs">
                 <a href="?intro#^" class="crumb-link">📚 Introduction</a>
@@ -3741,7 +3730,7 @@ function teachings()  {
 
 
 ?>
-    <section class="section fullbar">
+    <section class="section fullbar" data-section="Teachings-Main Page">
         <nav class="crumbs">
             <div class="bread-crumbs">
                 <a href="?intro#^" class="crumb-link">📚 Introduction</a>

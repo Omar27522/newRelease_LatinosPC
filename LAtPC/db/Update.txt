@@ -1,0 +1,38 @@
+Here we are trying to make sense of the database.
+    There are 3 tables:
+        1. Sections
+        2. Pages
+        3. Content
+
+Essentially the Sections are as follows:
+    1. home
+    2. Jesus Christ
+    3. Services
+    4. Security
+    5. Hardware
+    6. Software
+    7. About Us
+    8. Reviews
+    9. Tutorials
+    10. Blogs
+
+The Pages are the subsections.
+    I. Home
+    |-----1.indexEnglish
+    |-----2.indexSpanish
+
+The content is the data of each page.
+    I.indexEnglish
+    |-----1. headings
+    |-----2. dialogs
+    |-----3. buttons
+    |-----4. links
+    |-----5. paragraphs
+
+    II.indexSpanish
+    |-----1. encabezados
+    |-----2. diálogos
+    |-----3. botones
+    |-----4. enlaces
+    |-----5. párrafos
+
