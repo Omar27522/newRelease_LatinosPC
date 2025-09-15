@@ -5,7 +5,7 @@ Here we are trying to make sense of the database.
         3. Content
 
 Essentially the Sections are as follows:
-    1. home
+    1. Home
     2. Jesus Christ
     3. Services
     4. Security
@@ -20,6 +20,10 @@ The Pages are the subsections.
     I. Home
     |-----1.indexEnglish
     |-----2.indexSpanish
+
+    II. Jesus Christ
+    |-----1.teachings
+    |-----2.
 
 The content is the data of each page.
     I.indexEnglish

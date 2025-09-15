@@ -407,7 +407,7 @@ function teachings()  {
             God
             with all our hearts.</p>
     </section>
-<?php /*
+    <?php /*
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
@@ -527,7 +527,7 @@ function teachings()  {
                 Also people remembered Jesus's stories and the lessons they taught.</p>
         </div>
     </section>
-<?php /*
+    <?php /*
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
@@ -963,7 +963,7 @@ function teachings()  {
                 eschatological understanding throughout the history of the church.</p>
         </div>
     </section>
-<?php /*
+    <?php /*
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
@@ -1992,7 +1992,7 @@ function teachings()  {
             </p>
         </div>
     </section>
-<?php /*
+    <?php /*
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
@@ -2715,8 +2715,8 @@ function teachings()  {
                     <div class="image-dialog" data-carousel="true" data-start-index="6"></div>
                 </div>
             </div>
+            <!-- Carousel img -->
             <p>
-                <!-- Carousel img -->
                 In the Parable of the Friend at Midnight, Jesus tells about a man who suddenly has a guest arrive late
                 at
                 night.
@@ -2800,8 +2800,7 @@ function teachings()  {
                     <div class="image-dialog" data-carousel="true" data-start-index="7"></div>
                 </div>
             </div>
-            <p>
-                <!-- Carousel img -->
+            <!-- Carousel img -->
             <p>Jesus told a story about a wealthy farmer whose land produced an amazing harvest. The crops were so great
                 that his barns were not big enough to hold it all. Instead of sharing or thinking of others, the man
                 began to think only of himself.
@@ -2849,23 +2848,123 @@ function teachings()  {
             </p>
         </div>
 
-        <p class="highlight-box">
-            The Barren Fig Tree (Luke 13:6-9) illustrates both divine patience and the expectation
-            of fruitfulness in God's people. The owner's willingness to give the unproductive tree
-            one more year of cultivation before cutting it down represents God's merciful delay of
-            judgment to allow for repentance.
-        </p>
-        <p class="highlight-box">
-            The Great Supper (Luke 14:16-24), while having a parallel in Matthew 22:1-14, appears
-            in a significantly different form in Luke. The emphasis on the inclusion of "the poor, the
-            maimed, the lame, the blind" (Luke 14:21) after the invited guests make excuses reflects
-            Luke's concern for the marginalized and their special place in God's kingdom.
-        </p>
-        <p class="highlight-box">
-            The Lost Coin (Luke 15:8-10) illustrates God's diligent search for and joy over one lost
-            sinner who repents. The image of a woman carefully sweeping her house to find one lost
-            coin provides a domestic parallel to the more masculine imagery of the shepherd
-            seeking a lost sheep in the preceding parable.
+        <div class="highlight-box" data-section="Barren Fig Tree">
+            <h2><span class="emoji"><big>𖣂</big></span>Barren Fig Tree
+                <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK13_6">Luke 13:6-9</a></small>
+            </h2>
+            <span class="passage highlight-box">Same Crowd: <a
+                    href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK12_35"
+                    title="Luke 12:35"><small><ruby>Luke<rt>12:35</rt></ruby></small></a>.</span>
+            <p>After teaching about greed and worry, Jesus turns to His disciples and urges them to stay ready for His
+                return. He tells them to keep their lamps burning like servants waiting for their master to come back
+                from a wedding. <strong>Therefore be ready also, for the Son of Man is coming in an hour that you don’t
+                    expect him.</strong> <a
+                    href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK12_35"><ruby>Luke<rt>12:35</rt>
+                    </ruby></a></p>
+            <p><a href="apostles#:~:text=Simon%20Peter%20and%20Andrew%20(Sons%20of%20Jonah)">Peter</a>
+                then asks if this teaching is only for the disciples or for everyone. Jesus answers by describing <a
+                    href="parables#:~:text=The%20Faithful%20and%20wise%20servant"> the faithful and wise servant.</a>
+                He makes it clear that those who have been given much responsibility will be held accountable for how
+                they use it.</p>
+            <p>Then Jesus tells the crowds that His coming will not bring peace in the simple sense, but division—even
+                within families. Following Him will require serious commitment. He warns them:
+                <strong>You know how to interpret the appearance of the earth and the sky, but how is it that you don’t
+                    interpret this time?</strong>
+                <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK12_56"><ruby>Luke<rt>12:56</rt>
+                    </ruby></a>
+                He urges them to settle matters quickly, before it is too late.
+            </p>
+            <p>At that time, some in the crowd tell Jesus about a tragedy where Pilate killed Galileans while they were
+                offering sacrifices. Jesus also mentions a <a
+                    href="https://en.wikipedia.org/wiki/Tower_of_Siloam#Biblical_reference" title="Wikipedia">tower in
+                    Siloam</a> that fell and killed eighteen people. He explains
+                that those who died were not worse sinners than anyone else. Instead, these events serve as a warning:
+                <strong>unless you repent, you will all perish in the same way.</strong>
+                <a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK13_5"><ruby>Luke<rt>13:5</rt>
+                    </ruby></a>
+            </p>
+            <p style="text-align: center;"><i>It is in this context of urgency, repentance, and readiness for God’s
+                    judgment that Jesus tells the Parable
+                    of the Fig Tree.</i></p>
+            <div class="carousel-group img_fl">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img">
+                            <img src="../images/_JesusChrist/barrenFigTree_thumb.webp" alt="Barren Fig Tree" width="200"
+                                height="200">
+                            <!-- <p>Primary Image</p> -->
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="8"></div>
+                </div>
+            </div>
+            <!-- Carousel img -->
+            <p>There was a man who had a fig tree planted in his vineyard. For three years he came
+                looking for fruit on the tree, but each time he found nothing. Finally, the man said to the gardener,
+                <strong>“For three years I have been waiting, but this tree has not produced a single fig. Cut it down!
+                    It’s only taking up space and wasting the soil.”</strong>
+                But the gardener pleaded with him and said, <strong>“Please, give it one more year. I will dig around
+                    the roots and add fertilizer to help it grow. If it produces fruit next year, that will be
+                    wonderful. But if it still does not bear fruit, then you can cut it down.”</strong>
+            </p>
+            <p>Right after the parable, Jesus acts out the heart of His message. On the Sabbath, He heals a woman who
+                had been bent over for eighteen years.
+                This shows the kind of “fruit” God wants: compassion, mercy, and freedom. While the synagogue ruler
+                criticizes Him for healing on the Sabbath, Jesus exposes their hypocrisy and demonstrates that God’s
+                kingdom brings life, not empty rules.</p>
+            <p>Jesus then tells two short parables about the <a href="parables#:~:text=The%20Mustard%20Seed">mustard
+                    seed</a> and the <a href="parables#:~:text=The%20Leaven">yeast.</a>
+                These 2 parables teach that the kingdom of God starts small but grows powerfully, spreading through the
+                whole world—just as repentance and faith can grow in a person’s life.</p>
+            <p>As He continues traveling toward Jerusalem, someone asks Him, <strong>“Will only a few be
+                    saved?”</strong> <span><a
+                        href="https://ebible.org/study/?v1=LK13_23&w1=bible&t1=local%3Aeng-web"><ruby>Luke<rt>13:23</rt>
+                            </ruby></a></span>.
+                Jesus answers that <strong>the way is narrow, and many will try to enter but won’t be able</strong>.
+                <span><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LK13_24"><ruby>Luke<rt>13:24
+                            </rt></ruby></a></span> He warns that it’s not enough
+                to hear Him or be near Him—people must truly know Him and live in obedience. <i>Again, the theme of
+                    bearing fruit and readiness comes through.</i></p>
+            <p>Finally, as Jesus nears Jerusalem, some Pharisees warn Him about Herod’s threats <span><a
+                        href="https://ebible.org/study/?v1=LK13_31&w1=bible&t1=local%3Aeng-web"><ruby>Luke<rt>13:31–35
+                            </rt></ruby></a></span>. But Jesus stays
+                focused on His mission. He grieves over Jerusalem: <strong>"Jerusalem, Jerusalem, you who kills the
+                    prophets and stones those who are sent to her! How often I wanted to gather your children together,
+                    like a hen gathers her own brood under her wings, and you refused!"</strong> <span><a
+                        href="https://ebible.org/study/?v1=LK13_34&w1=bible&t1=local%3Aeng-web"><ruby>Luke<rt>13:34</rt>
+                            </ruby></a></span>
+                <big>His lament ties back to the fig tree:</big> <i>God is patient, but rejection of His mercy leads to
+                    judgment.</i>
+            </p>
+            <h3>Teaching</h3>
+            <ul style="margin-left: 20px;">
+                <li>Be Ready</li>
+                <li>Repent</li>
+                <li>Bear Fruit</li>
+                <li>Live in Mercy</li>
+                <li><b>Enter the Kingdom While There is Still Time</b></li>
+            </ul>
+            <p>The Barren Fig Tree illustrates both divine patience and the expectation
+                of fruitfulness in God's people. The owner's willingness to give the unproductive tree
+                one more year of cultivation before cutting it down represents God's merciful delay of
+                judgment to allow for repentance.</p>
+
+        </div>
+
+        <div class="highlight-box" data-section="Great Supper">
+            <p>The Great Supper (Luke 14:16-24), while having a parallel in Matthew 22:1-14, appears
+                in a significantly different form in Luke. The emphasis on the inclusion of "the poor, the
+                maimed, the lame, the blind" (Luke 14:21) after the invited guests make excuses reflects
+                Luke's concern for the marginalized and their special place in God's kingdom.
+            </p>
+        </div>
+
+        <div class="highlight-box" data-section="Lost Coin">
+            <p>The Lost Coin (Luke 15:8-10) illustrates God's diligent search for and joy over one lost
+                sinner who repents. The image of a woman carefully sweeping her house to find one lost
+                coin provides a domestic parallel to the more masculine imagery of the shepherd
+                seeking a lost sheep in the preceding parable.</p>
+        </div>
         </p>
         <p class="highlight-box">
             The Unjust Steward (Luke 16:1-9) presents one of Jesus's most challenging parables, in
@@ -3031,9 +3130,15 @@ function teachings()  {
             <p><a href="./parables#:~:text=The%20Rich%20Fool">Rich Fool</a></p>
         </div>
 
+        <div class="carousel-item" data-image-index="8">
+            <a href="../images/_JesusChrist/barrenFigTree.png">
+                <img src="../images/_JesusChrist/barrenFigTree.webp" alt="Barren Fig Tree" /></a>
+            <p><a href="./parables#:~:text=The%20Barren%20Fig%20Tree">Barren Fig Tree</a></p>
+        </div>
+
 
     </template>
-<?php /*
+    <?php /*
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
