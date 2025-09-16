@@ -2849,7 +2849,7 @@ function teachings()  {
         </div>
 
         <div class="highlight-box" data-section="Barren Fig Tree">
-            <h2><span class="emoji"><big>𖣂</big></span>Barren Fig Tree
+            <h2><span class="emoji"><big>𖣂</big></span>The Barren Fig Tree
                 <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK13_6">Luke 13:6-9</a></small>
             </h2>
             <span class="passage highlight-box">Same Crowd: <a
@@ -2919,12 +2919,13 @@ function teachings()  {
             <p>As He continues traveling toward Jerusalem, someone asks Him, <strong>“Will only a few be
                     saved?”</strong> <span><a
                         href="https://ebible.org/study/?v1=LK13_23&w1=bible&t1=local%3Aeng-web"><ruby>Luke<rt>13:23</rt>
-                            </ruby></a></span>.
+                        </ruby></a></span>.
                 Jesus answers that <strong>the way is narrow, and many will try to enter but won’t be able</strong>.
                 <span><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LK13_24"><ruby>Luke<rt>13:24
                             </rt></ruby></a></span> He warns that it’s not enough
                 to hear Him or be near Him—people must truly know Him and live in obedience. <i>Again, the theme of
-                    bearing fruit and readiness comes through.</i></p>
+                    bearing fruit and readiness comes through.</i>
+            </p>
             <p>Finally, as Jesus nears Jerusalem, some Pharisees warn Him about Herod’s threats <span><a
                         href="https://ebible.org/study/?v1=LK13_31&w1=bible&t1=local%3Aeng-web"><ruby>Luke<rt>13:31–35
                             </rt></ruby></a></span>. But Jesus stays
@@ -2932,7 +2933,7 @@ function teachings()  {
                     prophets and stones those who are sent to her! How often I wanted to gather your children together,
                     like a hen gathers her own brood under her wings, and you refused!"</strong> <span><a
                         href="https://ebible.org/study/?v1=LK13_34&w1=bible&t1=local%3Aeng-web"><ruby>Luke<rt>13:34</rt>
-                            </ruby></a></span>
+                        </ruby></a></span>
                 <big>His lament ties back to the fig tree:</big> <i>God is patient, but rejection of His mercy leads to
                     judgment.</i>
             </p>
@@ -2952,11 +2953,139 @@ function teachings()  {
         </div>
 
         <div class="highlight-box" data-section="Great Supper">
-            <p>The Great Supper (Luke 14:16-24), while having a parallel in Matthew 22:1-14, appears
-                in a significantly different form in Luke. The emphasis on the inclusion of "the poor, the
-                maimed, the lame, the blind" (Luke 14:21) after the invited guests make excuses reflects
-                Luke's concern for the marginalized and their special place in God's kingdom.
+            <h2><span class="emoji">🍲</span>The Great Supper
+                <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LK14_16"><small>Luke
+                        14:16-24</small></a>
+            </h2>
+            <span class="passage highlight-box">Jesus eats: <a
+                    href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK14-1"
+                    title="Luke 14"><small><ruby>Luke<rt>14</rt></ruby></small></a>.</span>
+            <p>In Jesus’ day, meals were not just about eating. They were social events that showed status, honor, and
+                belonging. Who you ate with—and where you sat—told everyone else your place in society. The Pharisees
+                and religious leaders often used meals to show off their power and to separate themselves from
+                <i>“outsiders.”</i>
+                When Jesus heals on the <a href="https://en.wikipedia.org/wiki/Biblical_Sabbath"
+                    title="Wikipedia">Sabbath</a>, sits at the table, and talks about humility and generosity, He is
+                challenging the whole system of pride, self-promotion, and exclusion. He shows that God’s kingdom is not
+                about climbing social ladders or protecting status—it’s about love, humility, and welcoming those who
+                can’t repay you.
             </p>
+            <div class="story-box">
+                <h3>Healing on the Sabbath: <small><a
+                            href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LK14_1"><ruby>Luke<rt>14:1–6
+                                </rt></ruby></a></small></h3>
+                <p>Jesus goes to eat at the house of a leading Pharisee on the Sabbath. A man suffering from swelling
+                    (dropsy) is there, and the Pharisees are watching Jesus closely. Jesus asks them, <strong>“Is it
+                        lawful to
+                        heal
+                        on the Sabbath or not?”</strong> They remain silent. He heals the man and reminds them that they
+                    would rescue
+                    even an ox or donkey on the Sabbath—so why not help a suffering person?</p>
+
+                <h3>Teaching on Humility: <small><a
+                            href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LK14_7"><ruby>Luke<rt>14:7–11
+                                </rt></ruby></a></small></h3>
+                <p>As guests choose the best seats at the table, Jesus tells a parable. He says not to take the place of
+                    honor at a feast, because the host may ask you to move for someone more important. Instead, take the
+                    lowest seat, and then the host may honor you by moving you higher. He sums it up: <strong>“Whoever
+                        exalts
+                        himself will be humbled, and whoever humbles himself will be exalted.”</strong>
+
+                <h3>Teaching on True Generosity: <small><a
+                            href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LK14_12"><ruby>Luke<rt>
+                                    14:12–14</rt></ruby></a></small></h3>
+                <p>Jesus then speaks directly to the host. He says not to invite only friends, relatives, or rich
+                    neighbors
+                    who can repay the favor. Instead, invite the poor, the crippled, the lame, and the blind. Such
+                    generosity reflects God’s heart, and the reward will come at the resurrection of the righteous.
+
+                <h3>Lead-in to the Parable: <small><a
+                            href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LK14_15"><ruby>Luke<rt>
+                                    14:15–16</rt></ruby></a></small></h3>
+                <p>One of the dinner guests, hearing Jesus’ words, blurts out: <strong>“Blessed is the one who will eat
+                        at the
+                        feast
+                        in the kingdom of God!”</strong> This sets the stage for Jesus to tell the Parable of the Great
+                    Supper, which
+                    describes who will really share in God’s banquet.</p>
+            </div>
+            <p style="text-align: center;"><i>While having a parallel in <a
+                        href="https://ebible.org/study/?v1=LK13_34&w1=bible&t1=local%3Aeng-web">
+                        <ruby>Matthew<rt>22:1-14</rt></ruby>
+                    </a>, the parable appears in a significantly different form in Luke.</i></p>
+
+            <div class="carousel-group img_fl">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img">
+                            <img src="../images/_JesusChrist/greatBanquet_thumb.webp" alt="Great Banquet" width="200"
+                                height="200">
+                            <!-- <p>Primary Image</p> -->
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="9"></div>
+                </div>
+            </div>
+            <p>Jesus told a story about a man who prepared a big banquet. He invited many guests and, when
+                everything was ready, he sent his servant to tell them, <b>“Come, the feast is ready!”</b>
+                But one by one, the guests made excuses. The first said, <b>“I just bought a field, and I need to go
+                    look at it.”</b> Another said, <b>“I just bought five pairs of oxen, and I need to go test
+                    them.”</b> Another
+                said, <b>“I just got married, so I can’t come.”</b>
+                The servant went back and told the master what happened. The master was upset. He said to the
+                servant, <b>“Go quickly into the city streets and alleys. Bring in the poor, the crippled, the
+                    blind,
+                    and the lame.”</b>
+                The servant obeyed and then said, <b>“Master, I have done what you asked, but there is still
+                    room.”</b> So
+                the master said, <b>“Go out to the roads and country paths. Urge everyone you find to come, so that
+                    my
+                    house will be full.”</b>
+                Then the master said, <b>“<i>None of those who were first invited will taste my supper.”</i></b></p>
+            <p> This parable shows that God’s kingdom is like a feast. Many people make excuses and miss out, but
+                God
+                opens the invitation wide—to the poor, the broken, and even to those far away. His table will be
+                full, but only those who accept His call will enjoy the feast.The emphasis on the inclusion of
+                <b>"the
+                    poor, the
+                    maimed, the lame, the blind"</b> after the invited guests make excuses reflects
+                God's reward for the marginalized and their special place in the kingdom.
+            </p>
+            <h3>Building a Tower and
+                King Going to War <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LK14_28"><small>Luke
+                        14:28-32</small></a></h3>
+            <div class="carousel-group img_rtl">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img">
+                            <img src="../images/_JesusChrist/buildingTower_thumb.webp" alt="Building a Tower"
+                                width="200" height="200">
+                            <!-- <p>Primary Image</p> -->
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="10"></div>
+                </div>
+            </div>
+            <p>After telling the parable about the great banquet, Jesus turned to the large crowd that was following
+                Him. He wanted them to understand that being His disciple was not something casual or easy—it would
+                cost them everything.
+                Jesus said that <i>anyone who wants to follow Him must love Him more than their own family and even
+                    more than their own life.</i> This didn’t mean people should stop loving their parents, spouse, or
+                children, but it meant that loyalty to Him comes first, above all other relationships.
+                He also said that <i>anyone who follows Him must <b>“carry their cross.”</b></i> In those days, a cross
+                meant death and suffering. Jesus was teaching that His disciples must be ready to give up comfort,
+                safety, and even their lives if necessary, in order to stay faithful to Him.
+                To explain, Jesus gave two examples:
+                <a href="parables#:~:text=Building%20a%20Tower%20and%20King%20Going%20to%20War">Building a Tower and
+                    King Going to War</a>
+                In the same way, Jesus told the crowd to <b>“count the cost”</b> before following Him. A true disciple
+                must
+                be willing to give up possessions, pride, and anything else that competes with full devotion to Him.
+                Finally, He said that disciples should be like salt. Salt is good and useful, but if it loses its
+                flavor, it is thrown away. In the same way, His followers must remain faithful and committed, or
+                else they lose their purpose.
+            </p>
+
         </div>
 
         <div class="highlight-box" data-section="Lost Coin">
@@ -3134,6 +3263,18 @@ function teachings()  {
             <a href="../images/_JesusChrist/barrenFigTree.png">
                 <img src="../images/_JesusChrist/barrenFigTree.webp" alt="Barren Fig Tree" /></a>
             <p><a href="./parables#:~:text=The%20Barren%20Fig%20Tree">Barren Fig Tree</a></p>
+        </div>
+
+        <div class="carousel-item" data-image-index="9">
+            <a href="../images/_JesusChrist/greatBanquet.png">
+                <img src="../images/_JesusChrist/greatBanquet.webp" alt="Great Banquet" /></a>
+            <p><a href="./parables#:~:text=The%20Great%20Banquet">Great Banquet</a></p>
+        </div>
+
+        <div class="carousel-item" data-image-index="10">
+            <a href="../images/_JesusChrist/buildingTower.png">
+                <img src="../images/_JesusChrist/buildingTower.webp" alt="Great Banquet" /></a>
+            <p><a href="./parables#:~:text=Building%20a%20Tower%20and%20King%20Going%20to%20War">Great Banquet</a></p>
         </div>
 
 
