@@ -14,7 +14,7 @@
 <h1>Database Test</h1>
 Last Update: 09/13/2025
 <?php
-// Basically I will crate a database that will retrieve data and out put it from the database
+// Basically I will crate a database that will retrieve data and output it from the database
     /*
     echo "Hola Mundo";
 
