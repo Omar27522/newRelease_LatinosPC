@@ -2034,7 +2034,32 @@ function teachings()  {
                     href="?John#^">John</a>. Luke's unique
                 contributions have profoundly influenced Christian understanding of Jesus's
                 compassion, inclusivity, and concern for the poor and outcast.</p>
-
+        </div>
+        <h2>Unique Parables in Luke's Gospel</h2>
+        <h3>Luke's Gospel contains fifteen parables that appear nowhere else in the New Testament.</h3>
+        <p>These unique parables, many of which have become among the most beloved and
+            influential of Jesus's teachings, reflect Luke's distinctive emphasis on mercy, inclusion,
+            and God's concern for the lost and marginalized. The following analysis examines
+            several of the most significant of these unique parables and their contribution to Luke's
+            theological vision.</p>
+        <ul class="homepage-grid" style="list-style:none;">
+            <li><a href="#TheGoodSamaritan">The Good Samaritan</a></li>
+            <li><a href="#TheProdigalSon">The Prodigal Son</a></li>
+            <li><a href="#TheRichManAndLazarus">The Rich Man and Lazarus</a></li>
+            <li><a href="#ThePhariseeAndTheTaxCollector">The Pharisee and the Tax Collector</a></li>
+            <li><a href="#TheTwoDebtors">The Two Debtors</a></li>
+            <li><a href="#TheFriendAtMidnight">The Friend at Midnight</a></li>
+            <li><a href="#TheRichFool">The Rich Fool</a></li>
+            <li><a href="#TheBarrenFigTree">The Barren Fig Tree</a></li>
+            <li><a href="#TheGreatBanquet">The Great Banquet</a></li>
+            <li><a href="#TheTowerBuilder_And_TheBattlingKing">The Tower Builder</a></li>
+            <li><a href="#TheTowerBuilder_And_TheBattlingKing">The Battling King</a></li>
+            <li><a href="#TheLostCoin">The Lost Coin</a></li>
+            <li><a href="#TheDishonestManager">The Dishonest Manager</a></li>
+            <li><a href="#TheUnprofitableServants">The Unworthy Servants</a></li>
+            <li><a href="#ThePersistentWidow">The Persistent Widow and the Unjust Judge</a></li>
+        </ul>
+        <div class="highlight-box">
             <h2>Luke's Distinctive Approach to Jesus's Teachings</h2>
             <p>The approach to Jesus's teachings reflects his overall purpose and audience.
                 Writing primarily for Gentile readers, particularly Greeks,
@@ -2149,7 +2174,7 @@ function teachings()  {
                 themes as foundational to understanding Jesus's mission and message.</p>
         </div>
 
-        <div class="story-box">
+        <div class="story-box" data-section="The Sermon on the Plain">
             <h2><span class="emoji">🌳</span>The Sermon on the Plain <small><a
                         href="https://ebible.org/study/?v1=LK6_17&t1=local%3Aeng-web&w1=bible">Luke 6:17-49</a></small>
             </h2>
@@ -2276,38 +2301,7 @@ function teachings()  {
                 virtue for believers establishes compassion as the heart of Christian ethics and community life.</p>
         </div>
 
-        <h2>Unique Parables in Luke's Gospel</h2>
-        <h3>Luke's Gospel contains fifteen/sixteen parables that appear nowhere else in the New Testament.</h3>
-        <p>These unique parables, many of which have become among the most beloved and
-            influential of Jesus's teachings, reflect Luke's distinctive emphasis on mercy, inclusion,
-            and God's concern for the lost and marginalized. The following analysis examines
-            several of the most significant of these unique parables and their contribution to Luke's
-            theological vision.</p>
-        <ul class="homepage-grid" style="list-style:none;">
-            <li><a href="./parables#:~:text=The%20Two%20Debtors">The Two Debtors</a></li>
-            <li><a href="./parables#:~:text=The%20Good%20Samaritan">The Good Samaritan</a></li>
-            <li><a href="./parables#:~:text=The%20Friend%20at%20Midnight">The Friend at Midnight</a></li>
-            <li><a href="./parables#:~:text=The%20Rich%20Fool">The Rich Fool</a></li>
-            <li><a href="./parables#:~:text=The%20Persistent%20Widow">The Persistent Widow</a></li>
-            <li><a href="./parables#:~:text=The%20Watchful%20Servants">The Watchful Servants</a></li>
-            <li><a href="./parables#:~:text=The%20Barren%20Fig%20Tree">The Barren Fig Tree</a></li>
-            <li><a href="./parables#:~:text=Building%20a%20Tower%20and%20King%20Going%20to%20War">The Tower Builder</a>
-            </li>
-            <li><a href="./parables#:~:text=Building%20a%20Tower%20and%20King%20Going%20to%20War">The Battling King</a>
-            </li>
-            <li><a href="./parables#:~:text=The%20Lost%20Coin">The Lost Coin</a></li>
-            <li><a href="./parables#:~:text=The%20Prodigal%20Son">The Prodigal Son</a></li>
-            <li><a href="./parables#:~:text=The%20Dishonest%20Manager">The Dishonest Manager</a></li>
-            <li><a href="./parables#:~:text=The%20Rich%20Man%20and%20Lazarus">The Rich Man and Lazarus</a></li>
-            <li><a href="./parables#:~:text=The%20Unprofitable%20Servants">The Unworthy Servants</a></li>
-            <li><a href="./parables#:~:text=The%20Unjust%20Judge">The Unjust Judge</a></li>
-            <li><a href="./parables#:~:text=The%20Pharisee%20and%20the%20Tax%20Collector">The Pharisee and the Tax
-                    Collector</a></li>
-            <li class="highlight-box" style="width:fit-content;padding:.5px;margin:0;"><a
-                    href="./parables#:~:text=The%20Talents/Minas">The Minas</a></li>
-        </ul>
-
-        <div class="highlight-box">
+        <div class="highlight-box" id="TheGoodSamaritan">
             <h2><span class="emoji">🤝</span>The Good Samaritan
                 <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK10_25">Luke
                         10:25-37</a></small>
@@ -2388,7 +2382,7 @@ function teachings()  {
                 really matters is showing God's love by helping people who are in trouble.</p>
         </div>
 
-        <div class="highlight-box">
+        <div class="highlight-box" id="TheProdigalSon">
             <h2><span class="emoji">🏠</span>The Prodigal Son
                 <small><a href="https://ebible.org/study/?v1=LK15_11&t1=local%3Aeng-web&w1=bible">Luke
                         15:11-32</a></small>
@@ -2465,7 +2459,7 @@ function teachings()  {
             </ul>
         </div>
 
-        <div class="highlight-box">
+        <div class="highlight-box" id="TheRichManAndLazarus">
             <h2><span class="emoji">💰 𓁉</span>The Rich Man and Lazarus
                 <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK16_19">Luke
                         16:19-31</a></small>
@@ -2562,7 +2556,7 @@ function teachings()  {
             </ul>
         </div>
 
-        <div class="highlight-box">
+        <div class="highlight-box" id="ThePhariseeAndTheTaxCollector">
             <h2><span class="emoji">🧾💸</span>The Pharisee and the Tax Collector
                 <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK18_9">Luke
                         18:9-14</a></small>
@@ -2617,7 +2611,7 @@ function teachings()  {
                 God's kingdom as presented throughout Luke's Gospel.</p>
         </div>
 
-        <div class="highlight-box">
+        <div class="highlight-box" id="TheTwoDebtors">
             <h2><span class="emoji">💸 💳</span>The Two Debtors
                 <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK7_41">Luke
                         7:41-43</a></small>
@@ -2679,7 +2673,7 @@ function teachings()  {
             </ul>
         </div>
 
-        <div class="highlight-box">
+        <div class="highlight-box" id="TheFriendAtMidnight">
             <h2><span class="emoji">🫂 🌒</span>The Friend at Midnight
                 <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK11_5">Luke 11:5-8</a></small>
             </h2>
@@ -2763,7 +2757,7 @@ function teachings()  {
             </ul>
         </div>
 
-        <div class="highlight-box">
+        <div class="highlight-box" id="TheRichFool">
             <h2><span class="emoji">🤑 🛠️</span>The Rich Fool
                 <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK12_16">Luke
                         12:16-21</a></small>
@@ -2848,7 +2842,7 @@ function teachings()  {
             </p>
         </div>
 
-        <div class="highlight-box" data-section="Barren Fig Tree">
+        <div class="highlight-box" id="TheBarrenFigTree">
             <h2><span class="emoji"><big>𖣂</big></span>The Barren Fig Tree
                 <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK13_6">Luke 13:6-9</a></small>
             </h2>
@@ -2856,7 +2850,8 @@ function teachings()  {
                     href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK12_35"
                     title="Luke 12:35"><small><ruby>Luke<rt>12:35</rt></ruby></small></a>.</span>
             <p>After teaching about greed and worry, Jesus turns to His disciples and urges them to stay ready for His
-                return. He tells them to keep their lamps burning like servants waiting for their master to come back
+                return. He tells them to keep their lamps burning like <a
+                    href="parables#:~:text=The%20Watchful%20servants">servants waiting</a> for their master to come back
                 from a wedding. <strong>Therefore be ready also, for the Son of Man is coming in an hour that you don’t
                     expect him.</strong> <a
                     href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK12_35"><ruby>Luke<rt>12:35</rt>
@@ -2952,8 +2947,8 @@ function teachings()  {
 
         </div>
 
-        <div class="highlight-box" data-section="Great Supper">
-            <h2><span class="emoji">🍲</span>The Great Supper
+        <div class="highlight-box" id="TheGreatBanquet">
+            <h2><span class="emoji">🍲</span>The Great Feast
                 <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LK14_16"><small>Luke
                         14:16-24</small></a>
             </h2>
@@ -2981,7 +2976,6 @@ function teachings()  {
                         on the Sabbath or not?”</strong> They remain silent. He heals the man and reminds them that they
                     would rescue
                     even an ox or donkey on the Sabbath—so why not help a suffering person?</p>
-
                 <h3>Teaching on Humility: <small><a
                             href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LK14_7"><ruby>Luke<rt>14:7–11
                                 </rt></ruby></a></small></h3>
@@ -2990,7 +2984,6 @@ function teachings()  {
                     lowest seat, and then the host may honor you by moving you higher. He sums it up: <strong>“Whoever
                         exalts
                         himself will be humbled, and whoever humbles himself will be exalted.”</strong>
-
                 <h3>Teaching on True Generosity: <small><a
                             href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LK14_12"><ruby>Luke<rt>
                                     14:12–14</rt></ruby></a></small></h3>
@@ -2998,7 +2991,6 @@ function teachings()  {
                     neighbors
                     who can repay the favor. Instead, invite the poor, the crippled, the lame, and the blind. Such
                     generosity reflects God’s heart, and the reward will come at the resurrection of the righteous.
-
                 <h3>Lead-in to the Parable: <small><a
                             href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LK14_15"><ruby>Luke<rt>
                                     14:15–16</rt></ruby></a></small></h3>
@@ -3051,7 +3043,7 @@ function teachings()  {
                     maimed, the lame, the blind"</b> after the invited guests make excuses reflects
                 God's reward for the marginalized and their special place in the kingdom.
             </p>
-            <h3>Building a Tower and
+            <h3 id="TheTowerBuilder_And_TheBattlingKing">Building a Tower and
                 King Going to War <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LK14_28"><small>Luke
                         14:28-32</small></a></h3>
             <div class="carousel-group img_rtl">
@@ -3085,36 +3077,219 @@ function teachings()  {
                 flavor, it is thrown away. In the same way, His followers must remain faithful and committed, or
                 else they lose their purpose.
             </p>
-
         </div>
 
-        <div class="highlight-box" data-section="Lost Coin">
-            <p>The Lost Coin (Luke 15:8-10) illustrates God's diligent search for and joy over one lost
+        <div class="highlight-box" id="TheLostCoin">
+            <h2 id="TheLostCoin"><span class="emoji">🪙</span> The Lost Coin <a
+                    href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LK15_8"><small>Luke
+                        15:8-10</small></a></h2>
+            <span class="passage highlight-box">In <a
+                    href="https://ebible.org/study/?v1=LK15_1&w1=bible&t1=local%3Aeng-web" title="Luke 15">Luke
+                    15</a><br />
+                large crowds are gathering around Jesus,<br />
+                but not everyone is happy about it.</span>
+            <p>The tax
+                collectors and sinners are drawing near to listen, while the Pharisees and teachers of the law complain:
+                <b><i>“This man welcomes sinners and eats with them!”</i></b> To them, sharing a meal with sinners was a
+                sign of approval, so they were upset that Jesus showed kindness to people they thought were unworthy.
+                In response, Jesus tells three parables: the <a href="parables#:~:text=The%20Lost%20Sheep">Lost
+                    Sheep</a>, <a href="parables#:~:text=The%20Lost%20Coin">the Lost Coin</a>, and <a
+                    href="parables#:~:text=The%20Prodigal%20Son">the Prodigal Son</a>.
+                Each story shows God’s heart for those who are lost and His joy when they are found.
+            </p>
+            <p>By telling these stories, Jesus is teaching that every person is precious to God, no matter their past.
+                He wants the Pharisees, the sinners, and all the listeners to see that God’s love reaches out to the
+                lost,
+                and that heaven rejoices when even one person repents and returns to Him.</p>
+            <div class="carousel-group img_fl">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img">
+                            <img src="../images/_JesusChrist/lostCoin_thumb.webp" alt="Lost Coin" width="200"
+                                height="200">
+                            <!-- <p>Primary Image</p> -->
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="11"></div>
+                </div>
+            </div>
+            <p>A woman who had ten silver coins. One day, she lost one of them.
+                The coin was very valuable to her, so she didn’t ignore it or just say, <b><i>“Well, I still have
+                        nine.”</i></b>
+                Instead, she lit a lamp, swept the whole house, and searched carefully until she found it.
+                When she finally discovered the coin, she was filled with joy. She called her friends and neighbors
+                together and said,
+                <b><i>“Rejoice with me! I have found the coin I lost!”</i></b>
+            </p>
+            <p>The parable illustrates God's diligent search for and joy over one lost
                 sinner who repents. The image of a woman carefully sweeping her house to find one lost
                 coin provides a domestic parallel to the more masculine imagery of the shepherd
                 seeking a lost sheep in the preceding parable.</p>
+            <h3>Main Takeaway:</h3>
+            <ul style="margin-left: 20px;">
+                <li>Every person is valuable to God, no matter who they are or what they’ve done.</li>
+                <li>God seeks after those who are lost, just like the woman searched for her coin.</li>
+                <li>Heaven rejoices when even one sinner repents and turns back to God.</li>
+                <li>We should share in God’s joy and care about others who are far from Him.</li>
+            </ul>
         </div>
-        </p>
-        <p class="highlight-box">
-            The Unjust Steward (Luke 16:1-9) presents one of Jesus's most challenging parables, in
-            which a dishonest manager is commended for his shrewd preparation for the future. The
-            application—"make friends for yourselves by unrighteous mammon"—establishes the
-            principle of using material resources for spiritual purposes and eternal benefit.
-        </p>
-        <p class="highlight-box">
-            The Unprofitable Servants (Luke 17:7-10) challenges entitlement mentality in spiritual
-            service by comparing disciples to servants who merely do their duty without expecting
-            special commendation. This parable establishes humility as the appropriate attitude for
-            those who serve God, recognizing that even their best service does not place God in their
-            debt.
-        </p>
-        <p class="highlight-box">
-            The Persistent Widow (Luke 18:1-8) encourages persistence in prayer by contrasting
-            God's willingness to respond with an unjust judge who grants a widow's request merely
-            to avoid being worn out by her continual coming. This parable, introduced explicitly as
-            teaching that "men always ought to pray and not lose heart" (Luke 18:1), reflects Luke's
-            emphasis on prayer as essential to discipleship.
-        </p>
+
+        <div class="highlight-box" id="TheDishonestManager">
+            <h2 id="TheDishonestManager"><span class="emoji">😞</span> The Dishonest Manager <a
+                    href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LK16_1"><small>Luke
+                        16:1-9</small></a></h2>
+            <div class="carousel-group img_fl">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img">
+                            <img src="../images/_JesusChrist/dishonestManager_thumb.webp" alt="Dishonest Manager"
+                                width="200" height="200">
+                            <!-- <p>Primary Image</p> -->
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="12"></div>
+                </div>
+            </div>
+            <p>There was a rich man who had a manager to take care of his business. One day the rich man heard that the
+                manager was wasting his possessions. So he called the manager in and said,<br /> <b><i>“What is this I
+                        hear about
+                        you?
+                        Give me a report of your work, because you can’t be my manager any longer.”</i></b><br />
+                The manager thought to himself,<br /> <b><i>“What am I going to do now? My master is taking away my job.
+                        I’m not
+                        strong
+                        enough to dig ditches, and I’m too ashamed to beg. I need a plan so that when I lose my job,
+                        people will
+                        welcome me into their homes.”</i></b><br />
+                So he called in each person who owed his master money. To the first he asked,<br /> <b><i>“How much do
+                        you owe my
+                        master?”</i></b><br />
+                The man replied,<br /> <b><i>“One hundred containers of oil.”</i></b><br />
+                The manager said,<br /> <b><i>“Take your bill, sit down quickly, and change it to fifty.”</i></b><br />
+                Then he asked another,<br /> <b><i>“How much do you owe?”</i></b><br />
+                He said,<br /> <b><i>“One hundred baskets of wheat.”</i></b><br />
+                The manager told him,<br /> <b><i>“Take your bill and make it eighty.”</i></b><br />
+                When the master heard what the manager had done, he was surprised—but he actually praised the manager
+                for
+                being so clever. Jesus explained, <strong>“The people of this world are often more shrewd in handling
+                    their own
+                    affairs than the children of light.”</strong> <a
+                    href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LK16_8"><small><ruby>Luke<rt>16:8
+                            </rt></ruby></small></a>
+            <h3>After telling the parable of the dishonest manager, Jesus explained what it meant. He said:</h3>
+            <span class="passage highlight-box">One of Jesus's most challenging parables</span>
+            <p>The application—"make friends for yourselves by unrighteous mammon"—establishes the
+                principle of using material resources for spiritual purposes and eternal benefit.</p>
+            <p><strong>Use money and possessions (“<i>unrighteous mammon</i>”) wisely.</strong> Money itself won’t last
+                forever, but how you
+                use it can have eternal results. If you use what you have to bless others and serve God, then when
+                earthly things fail, you will have treasure in heaven and eternal friendships.
+                <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LK16_9"><ruby>Luke<rt>16:9</rt>
+                    </ruby></a>
+            </p>
+            <p><strong>Faithfulness matters.</strong> If someone can be trusted with small things, they can also be
+                trusted with big
+                things. But if they are dishonest in small things, they will also be dishonest in big ones.
+                <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LK16_10"><ruby>Luke<rt>16:10</rt>
+                    </ruby></a> God is
+                looking for people who are faithful with earthly wealth so He can trust them with true spiritual riches.
+            </p>
+            <p><strong>Comparing earthly money with spiritual riches</strong> Everything we have—money, time,
+                abilities—actually belongs to God. We are just managers (like the steward in the parable).
+                If we’re careless or selfish with what belongs to God, why would He give us eternal treasures that will
+                truly belong to us in His kingdom?
+                <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LK16_11"><ruby>Luke<rt>16:11-12</rt>
+                    </ruby></a>
+            </p>
+            <p><strong>You cannot serve two masters.</strong> Just like a servant can’t serve two lords at once, you
+                cannot serve both
+                God and money. You will end up loving one and hating the other. Jesus made it clear: you have to choose
+                which one rules your life.
+                <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LK16_13"><ruby>Luke<rt>16:13</rt>
+                    </ruby></a>
+            </p>
+            <p>When the Pharisees heard this, they laughed at Jesus because they loved money. But Jesus told them,
+                <strong>“You
+                    try to make yourselves look right in front of people, but God knows your hearts.
+                    <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LK16_14"><ruby>Luke<rt>16:14</rt>
+                        </ruby></a>
+                    What people admire as success and wealth often doesn’t impress God—it can even be disgusting to
+                    Him.”</strong>
+            </p>
+            <div class="story-box">
+                <span class="paragraphStoryBox passage"><a
+                        href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LK16_15">
+                        <ruby>Luke<rt>16:15-18</rt></ruby>
+                    </a></span>
+                <p>Jesus then reminded them that the Law of Moses was still in place until John the Baptist, but now the
+                    kingdom of God was being preached. People were eagerly pressing into it. Still, God’s commands and
+                    standards had not disappeared. That’s why He also reminded them about God’s design for marriage,
+                    showing
+                    that His standards remain firm, even as the new kingdom is breaking in.</p>
+                <p>When Jesus taught about divorce and remarriage, He was not opposing Moses but restoring God’s
+                    original design for marriage.
+                    Moses allowed divorce as a concession because of human hardness of heart, but this was never God’s
+                    true plan.
+                    From the beginning, God created marriage to be a lifelong covenant between one man and one woman,
+                    reflecting His faithful love.
+                    By saying that divorce and remarriage amounts to adultery, Jesus was lifting marriage back to its
+                    sacred purpose.
+                    This was also the reason John the Baptist boldly confronted Herod, who had taken his brother’s wife
+                    unlawfully, and it cost John his life.
+                    For us today, Jesus’ teaching reminds us that marriage is holy, divorce is not God’s ideal, and His
+                    followers are called to honor His design for faithfulness.
+                </p>
+                <ul style="margin-left: 20px;">
+                    <li>Moses permitted divorce because of human hardness of heart, not because it was God’s desire.
+                    </li>
+                    <li>Jesus restores God’s original plan: marriage is a lifelong covenant meant to reflect His
+                        faithfulness.</li>
+                    <li>Divorce and remarriage outside of God’s design is like adultery because it breaks the covenant.
+                    </li>
+                    <li>John the Baptist was killed for speaking against Herod’s unlawful marriage, showing the cost of
+                        standing for God’s truth.</li>
+                    <li>For believers today, Jesus’ words call us to honor marriage as sacred and to live in
+                        faithfulness before God.</li>
+                    <hr>
+                    <li style="list-style: none;"><a
+                            href="https://ebible.org/study/?v1=MT5_31&w1=bible&t1=local%3Aeng-web"><ruby>Matthew<rt>
+                                    5:31–32</rt></ruby></a> (Sermon on the Mount)</li>
+                    <li style="list-style: none;"><a
+                            href="https://ebible.org/study/?v1=MT19_3&w1=bible&t1=local%3Aeng-web"><ruby>Matthew<rt>
+                                    19:3–9</rt></ruby></a> (with the Pharisees)</li>
+                    <li style="list-style: none;"><a
+                            href="https://ebible.org/study/?v1=MK10_2&w1=bible&t1=local%3Aeng-web"><ruby>Mark<rt>10:2–12
+                                </rt></ruby></a></li>
+                </ul>
+            </div>
+            <h3>✨ The big lesson here:</h3>
+            <p>Jesus used this parable to warn that money is temporary, but how you use it shows your heart. If you use
+                wealth selfishly, you’re serving money, not God. If you use it to bless others and honor God, it shows
+                your heart is faithful and trustworthy for greater things in God’s kingdom.</p>
+        </div>
+
+        <div class="highlight-box" id="TheUnprofitableServants">
+            <p>The Unprofitable Servants (Luke 17:7-10) challenges entitlement mentality in spiritual
+                service by comparing disciples to servants who merely do their duty without expecting
+                special commendation. This parable establishes humility as the appropriate attitude for
+                those who serve God, recognizing that even their best service does not place God in their
+                debt.</p>
+        </div>
+        <div class="highlight-box" id="ThePersistentWidow">
+            <p>The Persistent Widow (Luke 18:1-8) encourages persistence in prayer by contrasting
+                God's willingness to respond with an unjust judge who grants a widow's request merely
+                to avoid being worn out by her continual coming. This parable, introduced explicitly as
+                teaching that "men always ought to pray and not lose heart" (Luke 18:1), reflects Luke's
+                emphasis on prayer as essential to discipleship.</p>
+        </div>
+
+
+
+
+
+
+
+
         <h3>Luke's Emphasis on Prayer and the Holy Spirit</h3>
         <p class="story-box">
             Beyond his unique parables, Luke's Gospel is distinguished by its emphasis on Jesus's
@@ -3273,8 +3448,20 @@ function teachings()  {
 
         <div class="carousel-item" data-image-index="10">
             <a href="../images/_JesusChrist/buildingTower.png">
-                <img src="../images/_JesusChrist/buildingTower.webp" alt="Great Banquet" /></a>
-            <p><a href="./parables#:~:text=Building%20a%20Tower%20and%20King%20Going%20to%20War">Great Banquet</a></p>
+                <img src="../images/_JesusChrist/buildingTower.webp" alt="Building Tower" /></a>
+            <p><a href="./parables#:~:text=Building%20a%20Tower%20and%20King%20Going%20to%20War">Building Tower</a></p>
+        </div>
+
+        <div class="carousel-item" data-image-index="11">
+            <a href="../images/_JesusChrist/lostCoin.png">
+                <img src="../images/_JesusChrist/lostCoin.webp" alt="Lost Coin" /></a>
+            <p><a href="./parables#:~:text=The%20Lost%20Coin">Lost Coin</a></p>
+        </div>
+
+        <div class="carousel-item" data-image-index="12">
+            <a href="../images/_JesusChrist/dishonestManager_thumb.png">
+                <img src="../images/_JesusChrist/dishonestManager_thumb.webp" alt="Dishonest Manager" /></a>
+            <p><a href="./parables#:~:text=The%20Dishonest%20Manager">Dishonest Manager</a></p>
         </div>
 
 
