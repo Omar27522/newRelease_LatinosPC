@@ -2015,7 +2015,18 @@ function teachings()  {
                 <a href="?gospels#^" class="crumb-link">🌟 All Gospels</a>
                 <a href="?Matthew#^" class="crumb-link">📖 Matthew</a>
                 <a href="?John#^" class="crumb-link">💫 John</a>
-                <a href="?Luke#^" class="crumb-link">❤️ <b>Luke</b></a>
+                <div class="dropdown crumb-link">
+                    <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+                    <label for="dropdown-toggle" class="dropdown-label">❤️ <b>Luke</b></label>
+                    <div class="dropdown-content">
+                        <a href="#Parables">Unique Parables</a>
+                        <a href="#Distinctive Approach">Distinctive Approach</a>
+                        <a href="#Nazareth Synagogue Discourse">Nazareth Synagogue Discourse</a>
+                        <a href="#Sermon on the Plain">Sermon on the Plain</a>
+                        <a href="#Emphasis on Prayer and the Holy Spirit">Emphasis on Prayer and the Holy Spirit</a>
+                        <a href="#Theological Contribution">Theological Contribution</a>
+                    </div>
+                </div>
                 <a href="?Mark#^" class="crumb-link">⚡ Mark</a>
                 <a href="?conclusion#^" class="crumb-link">🎯 Conclusion</a>
             </div>
@@ -2035,7 +2046,8 @@ function teachings()  {
                 contributions have profoundly influenced Christian understanding of Jesus's
                 compassion, inclusivity, and concern for the poor and outcast.</p>
         </div>
-        <h2>Unique Parables in Luke's Gospel</h2>
+
+        <h2 id="Parables">Unique Parables in Luke's Gospel</h2>
         <h3>Luke's Gospel contains fifteen parables that appear nowhere else in the New Testament.</h3>
         <p>These unique parables, many of which have become among the most beloved and
             influential of Jesus's teachings, reflect Luke's distinctive emphasis on mercy, inclusion,
@@ -2059,7 +2071,8 @@ function teachings()  {
             <li><a href="#TheUnprofitableServants">The Unworthy Servants</a></li>
             <li><a href="#ThePersistentWidow">The Persistent Widow and the Unjust Judge</a></li>
         </ul>
-        <div class="highlight-box">
+
+        <div class="highlight-box" id="Distinctive Approach">
             <h2>Luke's Distinctive Approach to Jesus's Teachings</h2>
             <p>The approach to Jesus's teachings reflects his overall purpose and audience.
                 Writing primarily for Gentile readers, particularly Greeks,
@@ -2099,7 +2112,7 @@ function teachings()  {
                 concerns.</p>
         </div>
 
-        <div class="story-box">
+        <div class="story-box" id="Nazareth Synagogue Discourse">
             <h2><span class="emoji">ˏˋ✞ˎˊ</span>The Nazareth Synagogue Discourse <small><a
                         href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK4_16">Luke 4:16-30</a></small>
             </h2>
@@ -2174,7 +2187,7 @@ function teachings()  {
                 themes as foundational to understanding Jesus's mission and message.</p>
         </div>
 
-        <div class="story-box" data-section="The Sermon on the Plain">
+        <div class="story-box" id="Sermon on the Plain">
             <h2><span class="emoji">🌳</span>The Sermon on the Plain <small><a
                         href="https://ebible.org/study/?v1=LK6_17&t1=local%3Aeng-web&w1=bible">Luke 6:17-49</a></small>
             </h2>
@@ -3269,18 +3282,146 @@ function teachings()  {
         </div>
 
         <div class="highlight-box" id="TheUnprofitableServants">
-            <p>The Unprofitable Servants (Luke 17:7-10) challenges entitlement mentality in spiritual
-                service by comparing disciples to servants who merely do their duty without expecting
-                special commendation. This parable establishes humility as the appropriate attitude for
-                those who serve God, recognizing that even their best service does not place God in their
-                debt.</p>
+            <h2><span class="emoji">🙋</span> The Unprofitable Servants <a
+                    href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LK17_7"><small>Luke
+                        17:7-10</small></a></h2>
+            <p>Before Jesus told this parable, He was teaching His disciples about some very serious matters of
+                discipleship. First, He warned them about causing others to stumble.
+                Sin is real and temptations will come, but those who lead others astray carry a heavy responsibility
+                before God.</p>
+            <p>Next, He reminded them to live with a spirit of forgiveness. If someone sins against you—even seven times
+                in one day—but sincerely repents, you must forgive.
+                Hearing this, the apostles realized how hard such a life of forgiveness and holiness would be, so they
+                cried out, <strong>“Increase our faith!”</strong><a
+                    href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LK17_5"><ruby>Luke<rt>17:5</rt>
+                    </ruby></a>
+                Jesus answered by teaching that even faith as small as a mustard seed has great power when placed in
+                God.
+                Jesus is showing that discipleship means responsibility, forgiveness, faith, and humility.</p>
+            <p>Then, to keep them from pride, Jesus gave the parable of the unprofitable servants:</p>
+            <div class="carousel-group img_fl">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img">
+                            <img src="../images/_JesusChrist/unprofitableServants_thumb.webp"
+                                alt="Unprofitable Servants" width="200" height="200">
+                            <!-- <p>Primary Image</p> -->
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="13"></div>
+                </div>
+            </div>
+            <p>Imagine you are a servant working for a master. All day long you’ve been out in the field, plowing the
+                ground or taking care of the sheep. When you finally come back inside, tired and hungry, do you think
+                the master will say, <b><i>“Oh, you’ve worked so hard—come sit down right away and eat”?</i></b><br />
+
+                No.<br /> Instead, the master will say:<br /> <b><i>“Change your clothes, make dinner, and serve me
+                        first. After I have
+                        finished eating and drinking, then you can have your meal.”</i></b> And when you do that, the
+                master doesn’t
+                thank you for simply doing your job—that’s just what is expected of a servant.<br />
+                In the same way, Jesus said, you also should think of yourselves as servants of God. When you obey His
+                commands—when you forgive, when you walk by faith, when you live holy lives—you are only doing your
+                duty. You shouldn’t boast or act like God owes you something. Instead, you should say, <strong>“We are
+                    unworthy
+                    servants. We only did our job.”</strong><a
+                    href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LK17_10"><ruby>Luke<rt>17:10</rt>
+                    </ruby></a></p>
+            <div class="highlight-box">
+                <h3>Think about it like being on a sports team.</h3>
+                <p>
+                    When the coach asks you to run drills, play defense, or pass the ball, you don’t expect the coach to
+                    throw you a party every time you do it. You’re just doing what it means to be a team player. In the
+                    same way, being a disciple of Jesus means faithfully doing what God asks—not for applause, but
+                    because we love and serve Him.</p>
+            </div>
+            <p>His point was clear:
+                no matter how much His followers obey, forgive, or live by faith, they should not boast as if God owes
+                them something. Instead, they should see themselves as servants simply doing their duty for their
+                Master.</p>
+            <p>After telling the parable of the unprofitable servants, Jesus went on His journey toward
+                Jerusalem. On the way, He met ten men with leprosy, a terrible skin disease that forced people to live
+                apart from everyone else. Standing at a distance, they cried out, <b><i>“Jesus, Master, have mercy on
+                        us!”</i></b>
+
+                Jesus told them, <strong>“Go and show yourselves to the priests.”</strong> As they went, they were
+                healed—completely
+                cleansed of their disease. But out of the ten, only one man, a Samaritan, came back. He shouted praises
+                to God, fell at Jesus’ feet, and gave Him thanks.
+
+                Jesus asked, <strong>“Weren’t all ten cleansed? Where are the other nine? Was no one found to return and
+                    give
+                    glory to God except this foreigner?”</strong> Then He told the man, <strong>“Get up and go. Your
+                    faith has healed you.”</strong>
+                <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LK17_11"><ruby>Luke<rt>17:11-19</rt>
+                    </ruby></a>
+            </p>
+            <h3>Obedience to God is Love</h3>
+            <ul style="margin-left: 20px;">
+                <li>We should serve God humbly, obeying Him because He is our Master, not because we expect praise or
+                    reward.</li>
+                <li>We should live with thankful hearts, always returning to give glory to God for His blessings, like
+                    the one leper who came back.</li>
+                <li>God shows mercy to many, but only a few truly respond with faith and gratitude.</li>
+                <li>Faithful obedience and thankful hearts are what mark true disciples of Jesus.</li>
+            </ul>
         </div>
+
         <div class="highlight-box" id="ThePersistentWidow">
-            <p>The Persistent Widow (Luke 18:1-8) encourages persistence in prayer by contrasting
-                God's willingness to respond with an unjust judge who grants a widow's request merely
-                to avoid being worn out by her continual coming. This parable, introduced explicitly as
-                teaching that "men always ought to pray and not lose heart" (Luke 18:1), reflects Luke's
-                emphasis on prayer as essential to discipleship.</p>
+            <h2><span class="emoji">🙏</span> The Persistent Widow <small><a
+                        href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LK18_1">Luke 18:1-8</a></small>
+            </h2>
+            <p>As Jesus continued teaching His disciples, He wanted them to understand how important it is to never give
+                up when praying. Life can feel unfair, and sometimes it seems like our prayers go unanswered. But Jesus
+                used a simple story to show that God hears us, and we should keep coming to Him with faith.</p>
+            <div class="carousel-group img_fl">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img">
+                            <img src="../images/_JesusChrist/persistentWidow_thumb.webp" alt="Persistent Widow"
+                                width="200" height="200">
+                            <!-- <p>Primary Image</p> -->
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="14"></div>
+                </div>
+            </div>
+            <p>Jesus told them a story about a poor widow who lived in a city where there was also a powerful judge. In
+                those days, widows, children, women, and the disabled were some of the most vulnerable people in
+                society. Without a husband to provide for them, they often had little money, little protection, and few
+                people to defend them. This widow had an enemy who was taking advantage of her, and she needed justice.
+            </p>
+
+            <p>So she went to the judge, the one person who had the power to make things right. But there was a
+                problem: this judge didn’t care about God’s laws, and he didn’t care about people either. He was
+                selfish, stubborn, and only thought about himself. When the widow came to him the first time, he ignored
+                her. When she came the second time, he turned her away again. Over and over, the judge refused to help
+                her.</p>
+
+            <p>But the widow didn’t stop. Day after day, she kept showing up, asking the judge to defend her. She
+                wouldn’t quit, even when he rejected her. She was persistent—like a squeaky wheel that keeps making
+                noise until someone finally oils it.</p>
+
+            <p>Eventually, the judge said to himself, <b><i>“I don’t care about what’s right or wrong, and I don’t care
+                        about
+                        this woman. But she is wearing me out with her constant requests. If I don’t give her what she
+                        wants,
+                        she’s never going to stop bothering me!”</i></b> So, even though he didn’t care about justice,
+                the judge finally
+                gave in and helped her—simply because she refused to give up.</p>
+            <h3>What Does This Mean?</h3>
+            <p>It’s kind of like when a student keeps asking the teacher for help. Imagine a kid at school who didn’t
+                understand a math problem. The teacher was busy and didn’t really feel like helping at first. But the
+                student kept raising their hand, kept asking, and even came back after class. Finally, the teacher said,
+                <i>“Okay, fine, let’s go over it!”</i> Not because the teacher was excited to explain the problem, but because
+                the student’s persistence showed they really wanted help.
+                That’s what the widow was like—she just wouldn’t stop asking until she was heard. And Jesus said, if
+                even a stubborn judge will eventually give in, how much more will our loving Father in heaven answer His
+                children when they cry out to Him day and night? God is not annoyed by our prayers. Instead, He wants us
+                to keep coming to Him, trusting that He hears us and will answer in the right time.
+                <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LK18_6"><ruby>Luke<rt>18:6-8</rt>
+                        </ruby></a>
+            </p>
         </div>
 
 
@@ -3290,7 +3431,7 @@ function teachings()  {
 
 
 
-        <h3>Luke's Emphasis on Prayer and the Holy Spirit</h3>
+        <h2 id="Emphasis on Prayer and the Holy Spirit">Luke's Emphasis on Prayer and the Holy Spirit</h2>
         <p class="story-box">
             Beyond his unique parables, Luke's Gospel is distinguished by its emphasis on Jesus's
             prayer life and teaching about prayer, as well as its focus on the Holy Spirit's role in
@@ -3336,7 +3477,7 @@ function teachings()  {
             the continuing divine presence that will empower the church's mission after Jesus's
             ascension.</p>
 
-        <h3>Luke's Theological Contribution</h3>
+        <h2 id="Theological Contribution">Luke's Theological Contribution</h2>
         <p>Luke's unique sermons, parables, and teachings make a distinctive contribution to
             Christian understanding of Jesus's message and mission. The emphasis on Jesus's
             ministry to the marginalized, his concern for social justice, and his inclusion of those
@@ -3462,6 +3603,18 @@ function teachings()  {
             <a href="../images/_JesusChrist/dishonestManager_thumb.png">
                 <img src="../images/_JesusChrist/dishonestManager_thumb.webp" alt="Dishonest Manager" /></a>
             <p><a href="./parables#:~:text=The%20Dishonest%20Manager">Dishonest Manager</a></p>
+        </div>
+
+        <div class="carousel-item" data-image-index="13">
+            <a href="../images/_JesusChrist/unprofitableServants.png">
+                <img src="../images/_JesusChrist/unprofitableServants.webp" alt="Unprofitable Servants" /></a>
+            <p><a href="./parables#:~:text=The%20Unprofitable%20Servants">Unprofitable Servants</a></p>
+        </div>
+
+        <div class="carousel-item" data-image-index="14">
+            <a href="../images/_JesusChrist/persistentWidow.png">
+                <img src="../images/_JesusChrist/persistentWidow.webp" alt="Persistent Widow" /></a>
+            <p><a href="./parables#:~:text=The%20Persistent%20Widow">Persistent Widow</a></p>
         </div>
 
 
