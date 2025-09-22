@@ -84,3 +84,9 @@
     background-color: var(--primary-color);
     margin: 2rem 0;
   }
+  .dbLink{
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding-right: 10%;
+  }

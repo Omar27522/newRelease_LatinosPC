@@ -5,7 +5,6 @@ Here we are trying to make sense of the database.
         3. Content
 
 Essentially the Sections are as follows:
-    1. Home
     2. Jesus Christ
     3. Services
     4. Security
@@ -17,26 +16,34 @@ Essentially the Sections are as follows:
     10. Blogs
 
 The Pages are the subsections.
-    I. Home
-    |-----1.indexEnglish
-    |-----2.indexSpanish
-
     II. Jesus Christ
-    |-----1.teachings
-    |-----2.
+    |-----1.homeEnglish
+    |-----2.homeSpanish
+    |-----3.teachingsEnglish
+    |-----4.teachingsSpanish
 
 The content is the data of each page.
-    I.indexEnglish
+    I.homeEnglish
     |-----1. headings
     |-----2. dialogs
     |-----3. buttons
     |-----4. links
     |-----5. paragraphs
 
-    II.indexSpanish
+    II.homeSpanish
     |-----1. encabezados
     |-----2. diálogos
     |-----3. botones
     |-----4. enlaces
     |-----5. párrafos
+
+
+    I found that In order to call content has been a bit difficult.
+        The data is there, but when I go to call data the request comes back empty. and I'm not sure why.
+            Look: echo $content['page_id'] . ' - ' . $content['content'] . '<br>'; It only displays the last row of data.
+                This, loop does't display any data:
+                    foreach ($content as $content) {
+                        echo $content['page_id'] . ' - ' . $content['content'] . '<br>';
+                    }
+
 

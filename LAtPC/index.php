@@ -212,6 +212,28 @@ $page = new Structure('../', 'english', 'Home LatinosPC');
 $description = 'LatinosPC.com is your one-stop shop for all your computer repair needs. We offer a variety of services including computer repair, virus removal, data backup, and in-person and online computer classes. We work with individuals, students, small businesses, and gamers.';
 $keywords = 'Computer repair, virus removal, data backup, computer classes, in-person classes, online classes, IT support, gamers, small business IT, student IT support';
 
+/* DATABASE CONNECTION */
+try {
+    $dbPath = __DIR__ . '/db/mydatabase.db';
+    $pdo = new PDO('sqlite:' . $dbPath);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    // Check if content table exists
+    $tableExists = $pdo->query("SELECT name FROM sqlite_master WHERE type='table' AND name='content'")->fetch();
+
+	global $content;
+    if ($tableExists) {
+        $stmt = $pdo->query('SELECT * FROM content');
+        $content = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+} catch (PDOException $e) {
+    // Log error and continue without database content
+    error_log('Database Error: ' . $e->getMessage());
+    $content = [];
+}
+/* END DATABASE */
+
 function content_home()
 {
 	/* I want to be able to migrate to a database instead of having arrays, arrays are cool and all, I really like them.
@@ -219,17 +241,9 @@ function content_home()
 		I'm guessing in my noob mind that the data fetching will better for me as I am learning,
 		also I kinda don't want to move away from arrays,
 		they're cool and I want to keep working with them.
-	*/
-	$headings = [
-		'Jesus' => 'Jesus Christ',
-		'About' => 'About Us',
-		'Services' => 'Services'
-	];
-	$dialogs = [
-		'Jesus' => 'Most accept that Jesus was truly a man who lived in Israel 2,000 years ago.',
-		'Jesus2' => 'What do we really know about Jesus? Explore his life and teachings and form your own valid experience.',
-		'about' => ''
-	];
+	*/global $content;
+
+	
 	$buttonsAndLinks = [
 		'tellMeAboutTheWeb' => [
 			'link' => 'JesusChrist/father_in_heaven_tell_me_about_web',
@@ -253,15 +267,16 @@ function content_home()
 		]
 	];
 	$paragraphs = [];
-
+$headingIndex = array_search('headings', array_column($content, 'name'));
+$heading = $headingIndex !== false ? $content[$headingIndex]['content'] : 'Default Heading';
 ?>
 <section class="homepage-grid">
     <div class="grid-item">
         <div class="multi-link-container">
-            <h3 class="linked-text"><?= $headings['Jesus']; ?></h3>
+            <h3 class="linked-text"><?php echo $content[array_search('headings', array_column($content, 0))]['content']; ?></h3>
             <div class="link-dialog">
-                <p tabindex="0"><?= $dialogs['Jesus']; ?></p>
-                <p tabindex="0"><?= $dialogs['Jesus2']; ?></p>
+                <p tabindex="0"><?php  $_JesusChristDialog1 = $content[1]['content']; echo $_JesusChristDialog1; ?></p>
+                <p tabindex="0"><?php $_JesusChristDialog2 = $content[2]['content']; echo $_JesusChristDialog2; ?></p>
             </div>
         </div>
         <a href="<?= $buttonsAndLinks['tellMeAboutTheWeb']['link']; ?>"

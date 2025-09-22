@@ -49,7 +49,11 @@
             Finally the Carousel has been fixed. Template (fullPageTemplate.php) showcases how it works.
                 Also the first implementation is on the Teachings Page for Luke's section. The three versions of each image are being used.
                     The fist displays the thumbnail version. The second the .WebP full size version, and the Third a link to the original .PNG file.
-
+    (9/22/2025|Update) Although not part of the updates, the DB section is been updated.
+        I am beginning to understand how to work the database.
+            I am not sure how to call it better, but I am making new variables to understand the requests for data.
+                This implementation I hope will not be too difficult, because teachings still needs to be translated.
+                    I'm considering, making the page in the old fashion way, by creating 2d arrays and such.
 
 
 
@@ -67,6 +71,7 @@
 *work on the reviews page.*
 *work on a back-to-top button.*
 *Work on a 404 page.*
+*I would like to comeback to the Teachings page and modify the <ruby> tags where a dialog opens when clicked, but also there is an external link to teh verse in different versions of the Holy Scripture *
 
 
 
