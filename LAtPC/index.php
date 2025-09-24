@@ -214,81 +214,83 @@ $keywords = 'Computer repair, virus removal, data backup, computer classes, in-p
 
 /* DATABASE CONNECTION */
 try {
-    $dbPath = __DIR__ . '/db/mydatabase.db';
-    $pdo = new PDO('sqlite:' . $dbPath);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	$dbPath = __DIR__ . '/db/mydatabase.db';
+	$pdo = new PDO('sqlite:' . $dbPath);
+	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    // Check if content table exists
-    $tableExists = $pdo->query("SELECT name FROM sqlite_master WHERE type='table' AND name='content'")->fetch();
+	// Check if content table exists
+	$tableExists = $pdo->query("SELECT name FROM sqlite_master WHERE type='table' AND name='content'")->fetch();
 
 	global $content;
-    if ($tableExists) {
-        $stmt = $pdo->query('SELECT * FROM content');
-        $content = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    }
-
+	if ($tableExists) {
+		$stmt = $pdo->query('SELECT * FROM content WHERE page_id = "home"');
+		$content = $stmt->fetchAll(PDO::FETCH_ASSOC);
+	}
 } catch (PDOException $e) {
-    // Log error and continue without database content
-    error_log('Database Error: ' . $e->getMessage());
-    $content = [];
+	// Log error and continue without database content
+	error_log('Database Error: ' . $e->getMessage());
+	$content = [];
 }
 /* END DATABASE */
+//Send Request:
+ /*F
+$stmt = $pdo->prepare("INSERT INTO content (page_id, name, content) VALUES (?, ?, ?)");
+$stmt->execute(["home", "headings", "Jesus Christ"]);
+$stmt->execute(["home", "dialogs", "Most accept that Jesus was truly a man who lived in Israel 2,000 years ago."]);
+$stmt->execute(["home", "dialogs", "What do we really know about Jesus? Explore his life and teachings and form your own valid experience."]);
+$stmt->execute(["home", "link", "JesusChrist/father_in_heaven_tell_me_about_web"]);
+$stmt->execute(["home", "link", "JesusChrist/apostles"]);
+$stmt->execute(["home", "link", "JesusChrist/parables"]);
+$stmt->execute(["home", "link", "JesusChrist/sermons"]);
+$stmt->execute(["home", "link", "JesusChrist/teachings"]);
+$stmt->execute(["home", "button", "Tell me about the web"]);
+$stmt->execute(["home", "button", "Apostles"]);
+$stmt->execute(["home", "button", "Parables"]);
+$stmt->execute(["home", "button", "Sermons"]);
+$stmt->execute(["home", "button", "Teachings"]);
+
+IRE <BLANQUET></BLANQUET> */
+
+
+
 
 function content_home()
 {
-	/* I want to be able to migrate to a database instead of having arrays, arrays are cool and all, I really like them.
-		Perhaps I can place the whole variable array into the database, and call it as is.
-		I'm guessing in my noob mind that the data fetching will better for me as I am learning,
-		also I kinda don't want to move away from arrays,
-		they're cool and I want to keep working with them.
-	*/global $content;
+	/*
+	 * I want to be able to migrate to a database instead of having arrays, arrays are cool and all, I really like them.
+	 * 		Perhaps I can place the whole variable array into the database, and call it as is.
+	 * 		I'm guessing in my noob mind that the data fetching will better for me as I am learning,
+	 * 		also I kinda don't want to move away from arrays,
+	 * 		they're cool and I want to keep working with them.
+	 */
+	global $content;// This global is named content, as a variable called from above. and there is a content for the database. I know it must be obvious but right now I don't know why this is her to begin with, but I think is related to the Class needing a variable called at intervals of code.
 
-	
-	$buttonsAndLinks = [
-		'tellMeAboutTheWeb' => [
-			'link' => 'JesusChrist/father_in_heaven_tell_me_about_web',
-			'button' => 'Tell me about the web'
-		],
-		'apostles' => [
-			'link' => 'JesusChrist/apostles',
-			'button' => 'Apostles'
-		],
-		'parables' => [
-			'link' => 'JesusChrist/parables',
-			'button' => 'Parables'
-		],
-		'sermons' => [
-			'link' => 'JesusChrist/sermons',
-			'button' => 'Sermons'
-		],
-		'teachings' => [
-			'link' => 'JesusChrist/teachings',
-			'button' => 'Teachings'
-		]
-	];
-	$paragraphs = [];
-$headingIndex = array_search('headings', array_column($content, 'name'));
-$heading = $headingIndex !== false ? $content[$headingIndex]['content'] : 'Default Heading';
+	$headingIndex = array_search('headings', array_column($content, 'name'));
+	//$heading = $headingIndex !== false ? $content[$headingIndex]['content'] : 'Default Heading';
 ?>
 <section class="homepage-grid">
     <div class="grid-item">
         <div class="multi-link-container">
             <h3 class="linked-text"><?php echo $content[array_search('headings', array_column($content, 0))]['content']; ?></h3>
             <div class="link-dialog">
-                <p tabindex="0"><?php  $_JesusChristDialog1 = $content[1]['content']; echo $_JesusChristDialog1; ?></p>
-                <p tabindex="0"><?php $_JesusChristDialog2 = $content[2]['content']; echo $_JesusChristDialog2; ?></p>
+                <p tabindex="0"><?php $_JesusChristDialog1 = $content[1]['content'];
+	echo $_JesusChristDialog1; ?></p>
+                <p tabindex="0"><?php $_JesusChristDialog2 = $content[2]['content'];
+	echo $_JesusChristDialog2; ?></p>
             </div>
+
+			<?php #$link = $content[1]['content']; echo $link; ?>
         </div>
-        <a href="<?= $buttonsAndLinks['tellMeAboutTheWeb']['link']; ?>"
-            class="cta-button"><?= $buttonsAndLinks['tellMeAboutTheWeb']['button']; ?></a>
-        <a href="<?= $buttonsAndLinks['apostles']['link']; ?>"
-            class="cta-button"><?= $buttonsAndLinks['apostles']['button']; ?></a>
-        <a href="<?= $buttonsAndLinks['parables']['link']; ?>"
-            class="cta-button"><?= $buttonsAndLinks['parables']['button']; ?></a>
-        <a href="<?= $buttonsAndLinks['sermons']['link']; ?>"
-            class="cta-button"><?= $buttonsAndLinks['sermons']['button']; ?></a>
-        <a href="<?= $buttonsAndLinks['teachings']['link']; ?>"
-            class="cta-button"><?= $buttonsAndLinks['teachings']['button']; ?></a>
+        <a href="<?= htmlspecialchars($link = $content[14]['content']);?>"
+            class="cta-button"><?= $button = $content[9]['content'];?></a>
+        <a href="<?= $link2 = $content[5]['content'];?>"
+            class="cta-button"><?= $button2 = $content[10]['content'];?></a>
+        <a href="<?= $link3 = $content[6]['content'];?>"
+            class="cta-button"><?= $button3 = $content[11]['content'];?></a>
+        <a href="<?= $link4 = $content[7]['content']; ?>"
+            class="cta-button"><?= $button4 = $content[12]['content'];?></a>
+        <a href="<?= $link5 = $content[8]['content']; ?>"
+            class="cta-button"><?= $button5 = $content[13]['content'];?></a>
     </div>
 
     <div class="grid-item">

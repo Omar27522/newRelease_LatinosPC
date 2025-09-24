@@ -248,7 +248,7 @@ $stmt = $pdo->query('SELECT * FROM pages');
 $pages = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 $stmt = $pdo->query('SELECT * FROM content');
-$content = $stmt->fetchAll(PDO::FETCH_ASSOC);
+		$content = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
 
@@ -293,10 +293,10 @@ foreach ($pages as $page) {
 }
 
 echo '</div><div class="grid-item"><h3>These are the Content</h3>';
-foreach ($content as $content) {
+foreach ($content as $contents) {
     // Create a link to the section using its ID
-    echo '<a href="#' . $content['name'] . $content['content'] . '" style="color: var(--primary-dark); text-decoration: none;" class="cta-button">' .
-         $content['name']."<span style=\"float:right; padding-right:30%\">". $content['content'] . " | " . $pages[5]['name'] . '</a><br />';
+    echo '<a href="#' . $contents['name'] . $contents['content'] . '" style="color: var(--primary-dark); text-decoration: none;" class="cta-button">' .
+         $contents['name']."<span style=\"float:right; padding-right:30%\">". $contents['content'] . " | " . $pages[5]['name'] . '</a><br />';
 }
 ?>
 
@@ -374,14 +374,14 @@ foreach ($pages as $page) {
         <th>Content</th>
     </tr>
     <?php
-
-            echo '<tr>';
-            echo '<td>' . htmlspecialchars($content['id']) . '</td>';
-            echo '<td>' . htmlspecialchars($content['page_id']) . '</td>';
-            echo '<td>' . htmlspecialchars($content['name']) . '</td>';
-            echo '<td>' . htmlspecialchars($content['content']) . '</td>';
-            echo '</tr>';
-
+    foreach ($content as $contents) {
+        echo '<tr>';
+        echo '<td>' . htmlspecialchars($contents['id']) . '</td>';
+        echo '<td>' . htmlspecialchars($contents['page_id']) . '</td>';
+        echo '<td>' . htmlspecialchars($contents['name']) . '</td>';
+        echo '<td>' . htmlspecialchars($contents['content']) . '</td>';
+        echo '</tr>';
+    }
     ?>
 </table>
 </section>
