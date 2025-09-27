@@ -250,8 +250,13 @@ $pages = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $stmt = $pdo->query('SELECT * FROM content');
 		$content = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+        $stmt = $pdo->query('SELECT * FROM homeEnglish ');
+        $homeEnglish = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
+echo "<pre>";
+
+echo "</pre>";
 
 // add, update and delete can be added later. but I believe that the database will have to be prepared prior to testing.
 ?>
