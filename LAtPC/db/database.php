@@ -31,7 +31,7 @@ $pdo->exec("CREATE TABLE IF NOT EXISTS homeEnglish (
     homelink TEXT,   --Sermons
     homebutton TEXT, --Sermons
     homelink TEXT,   --Teachings
-    homebutton5 TEXT, --Teachings
+    homebutton TEXT, --Teachings
     aboutParagraph TEXT,
     aboutParagraph TEXT,
     aboutParagraph TEXT,
@@ -111,8 +111,8 @@ $stmt = $pdo->prepare("INSERT INTO homeEnglish (page_id,
 name,
 content, homeLink, tellMeAboutWeb, apostlesLink, apostles,
 parablesLink, parables,
-parablesLink, parables,
-sermons,teachings,
+sermonsLink, sermons,
+teachingsLink, teachings,
 homebutton,
 homebutton,
 aboutParagraph,
