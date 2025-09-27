@@ -251,7 +251,8 @@ $stmt = $pdo->query('SELECT * FROM content');
 		$content = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
-
+       // $stmt = $pdo->prepare("DELETE FROM content WHERE id = ?");
+       //$stmt->execute([6]);
 
 // add, update and delete can be added later. but I believe that the database will have to be prepared prior to testing.
 ?>
@@ -296,7 +297,7 @@ echo '</div><div class="grid-item"><h3>These are the Content</h3>';
 foreach ($content as $contents) {
     // Create a link to the section using its ID
     echo '<a href="#' . $contents['name'] . $contents['content'] . '" style="color: var(--primary-dark); text-decoration: none;" class="cta-button">' .
-         $contents['name']."<span style=\"float:right; padding-right:30%\">". $contents['content'] . " | " . $pages[5]['name'] . '</a><br />';
+         $contents['name']."<span style=\"float:right; flex-wrap: wrap; padding-right:30%\">". $contents['content'] . " | " . $pages[5]['name'] . '</a><br />';
 }
 ?>
 
@@ -368,14 +369,19 @@ foreach ($pages as $page) {
   
    <table border="1">
     <tr>
+        <th>Array Number</th>
         <th>ID</th>
         <th>Page ID</th>
         <th>Name</th>
         <th>Content</th>
     </tr>
     <?php
-    foreach ($content as $contents) {
-        echo '<tr>';
+    foreach ($content as $index => $contents) {
+        echo '<tr>
+        <td>' . $index .'</td>
+        <!--<td>Index: ' . $index . ' | Keys: ' . implode(', ', array_keys($contents)). '</td>-->
+        ';
+        //print_r($contents);
         echo '<td>' . htmlspecialchars($contents['id']) . '</td>';
         echo '<td>' . htmlspecialchars($contents['page_id']) . '</td>';
         echo '<td>' . htmlspecialchars($contents['name']) . '</td>';
@@ -398,7 +404,7 @@ foreach ($pdo->query('SELECT id, name FROM pages') as $row) {
 }
 ?>
     </div>
-    <h2><big><?php echo $sections[1]['name'] ?></big></h2>
+    <h2><big><?php echo $contents['content'] ?></big></h2>
 </body>
 
 </html>

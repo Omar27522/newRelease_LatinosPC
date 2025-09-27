@@ -281,16 +281,16 @@ function content_home()
 
 			<?php #$link = $content[1]['content']; echo $link; ?>
         </div>
-        <a href="<?= htmlspecialchars($link = $content[14]['content']);?>"
-            class="cta-button"><?= $button = $content[9]['content'];?></a>
+        <a href="<?= htmlspecialchars($link = $content[13]['content']);?>"
+            class="cta-button"><?= $button = $content[8]['content'];?></a>
         <a href="<?= $link2 = $content[5]['content'];?>"
             class="cta-button"><?= $button2 = $content[10]['content'];?></a>
         <a href="<?= $link3 = $content[6]['content'];?>"
             class="cta-button"><?= $button3 = $content[11]['content'];?></a>
-        <a href="<?= $link4 = $content[7]['content']; ?>"
-            class="cta-button"><?= $button4 = $content[12]['content'];?></a>
-        <a href="<?= $link5 = $content[8]['content']; ?>"
-            class="cta-button"><?= $button5 = $content[13]['content'];?></a>
+        <a href="<?= $link4 = $content[4]['content']; ?>"
+            class="cta-button"><?= $button4 = $content[9]['content'];?></a>
+        <a href="<?= $link5 = $content[7]['content']; ?>"
+            class="cta-button"><?= $button5 = $content[12]['content'];?></a>
     </div>
 
     <div class="grid-item">
