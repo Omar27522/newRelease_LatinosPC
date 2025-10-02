@@ -249,8 +249,59 @@ $stmt->execute(["home", "button", "Parables"]);
 $stmt->execute(["home", "button", "Sermons"]);
 $stmt->execute(["home", "button", "Teachings"]);
 
-IRE <BLANQUET></BLANQUET> */
+-------
+$stmt->execute(["home", "aboutHeadings", "About Us"]);
+$stmt->execute(["home", "aboutParagraph", "We started back in 2009 with one technician; Omar, we have one goal."]);
+$stmt->execute(["home", "aboutDialogs", "Our goal is to provide you and your company with outstanding service."]);
+$stmt->execute(["home", "aboutDialogs", "We're dedicated to enhancing your experience through effective marketing, customer-friendly retention strategies, and maintaining top-notch quality control."]);
+$stmt->execute(["home", "aboutParagraph", "we want to bring families and individuals, the experience of a fully working computer system; laptops and desktops."]);
+$stmt->execute(["home", "aboutParagraph", "100% Satisfaction Guarantee | 90 Days Service Package -included"]);
+$stmt->execute(["home", "aboutParagraph", "We are located in the city of Pomona, and will travel to LA county, SB county, RV county and OC."]);
+$stmt->execute(["home", "aboutButton", "/about"]);
+$stmt->execute(["home", "aboutLink", "Visit Us"]);
 
+$stmt->execute(["home", "servicesHeadings", "Services"]);
+$stmt->execute(["home", "servicesParagraph", "We mostly work with individuals, Students, Small-Medium Businesses, #Gamers!, and Professionals."]);
+$stmt->execute(["home", "servicesParagraph", "Repairs and Service for Home and Office; any type-spec."]);
+$stmt->execute(["home", "servicesParagraph", "90 day service guarantee. Computers run smoother, faster and perform better."]);
+$stmt->execute(["home", "servicesLinkCleanUps", "/services/cleanups"]);
+$stmt->execute(["home", "servicesCleanUpsButton", "Cleanups"]);
+
+//$stmt->execute(["home", "servicesLinkComputerProtection", "/services/computer_protection"]);
+$stmt->execute(["home", "servicesComputerProtectionButton", "Computer Protection"]);
+
+//$stmt->execute(["home", "servicesLinkConsultations", "/services/consultations"]);
+$stmt->execute(["home", "servicesConsultationsButton", "Consultations"]);
+
+//$stmt->execute(["home", "servicesLinkManagedServices", "/services/managed_services"]);
+$stmt->execute(["home", "servicesManagedServicesButton", "Managed Services"]);
+
+//$stmt->execute(["home", "servicesLinkRemoteSupport", "/services/remote_support"]);
+$stmt->execute(["home", "servicesRemoteSupportButton", "Remote Support"]);
+
+//$stmt->execute(["home", "servicesLinkWebsites", "/services/websites"]);
+$stmt->execute(["home", "servicesWebsitesButton", "Websites"]);
+
+$stmt->execute(["home", "securityHeadings", "Security"]);
+$stmt->execute(["home", "securityButton", "Best Practices"]);
+$stmt->execute(["home", "securityButton", "Backups"]);
+$stmt->execute(["home", "securityButton", "Passwords"]);
+$stmt->execute(["home", "securityParagraph", "Think of your computer as a virtual treasure chest filled with your important stuff – photos, documents, and more. Computer protection is like a shield against troublemakers like viruses and hackers."]);
+
+
+
+$stmt->execute(["home", "tutorialsHeadings", "Tutorials"]);
+$stmt->execute(["home", "tutorialsHeadings", "Blogs"]);
+$stmt->execute(["home", "tutorialsBlogDialog", "This section is all about the tutorials and blog posts that we have on our website. We have a wide range of topics that we cover, from computer hardware and software to internet security and more."]);
+$stmt->execute(["home", "tutorialsParagraph", "Visit our tutorials and blog page for more information"]);
+$stmt->execute(["home", "tutorialsButton", "Visit Page"]);
+$stmt->execute(["home", "tutorialsLink", "/tutorials"]);
+
+
+
+
+$stmt = $pdo->prepare("INSERT INTO content (page_id, name, content) VALUES (?, ?, ?)");
+IRE <BLANQUET></BLANQUET> */
 
 
 
@@ -273,10 +324,8 @@ function content_home()
         <div class="multi-link-container">
             <h3 class="linked-text"><?php echo $content[array_search('headings', array_column($content, 0))]['content']; ?></h3>
             <div class="link-dialog">
-                <p tabindex="0"><?php $_JesusChristDialog1 = $content[1]['content'];
-	echo $_JesusChristDialog1; ?></p>
-                <p tabindex="0"><?php $_JesusChristDialog2 = $content[2]['content'];
-	echo $_JesusChristDialog2; ?></p>
+                <p tabindex="0"><?= $_JesusChristDialog1 = $content[1]['content'];?></p>
+                <p tabindex="0"><?= $_JesusChristDialog2 = $content[2]['content'];?></p>
             </div>
 
 			<?php #$link = $content[1]['content']; echo $link; ?>
@@ -295,72 +344,61 @@ function content_home()
 
     <div class="grid-item">
         <div class="multi-link-container">
-            <h3 class="linked-text">About Us</h3>
+            <h3 class="linked-text"><?= $aboutUs = $content[14]['content'];?></h3>
             <div class="link-dialog">
-                <p tabindex="0">
-                    We started back in 2009 with one technician; Omar, we have one goal.</p>
-                <p tabindex="0">
-                    Our goal is to provide you and your company with outstanding service.</p>
-                <p tabindex="0">We're dedicated to enhancing your experience through effective marketing,
-                    customer-friendly retention
-                    strategies, and maintaining top-notch quality control.
-                </p>
+                <p tabindex="0"><?= $aboutDialog1 = $content[15]['content'];?></p>
+                <p tabindex="0"><?= $aboutDialog2 = $content[16]['content'];?></p>
+                <p tabindex="0"><?= $aboutDialog3 = $content[17]['content'];?></p>
             </div>
         </div>
 
-        <p>we want to bring families and individuals, the experience of a fully working computer system; laptops
-            and desktops.</p>
-        <p>100% Satisfaction Guarantee | 90 Days Service Package -included</p>
-        <p>We are located in the city of Pomona, and will travel to LA county, SB county, RV county and OC.</p>
-        <a href="#" class="cta-button">Visit Page</a>
+        <p><?= $aboutParagraph = $content[18]['content'];?></p>
+        <p><?= $aboutParagraph2 = $content[19]['content'];?></p>
+        <p><?= $aboutParagraph3 = $content[20]['content'];?></p>
+        <a href="<?= $aboutButton = $content[21]['content'];?>" class="cta-button"><?= $aboutButton = $content[22]['content'];?></a>
     </div>
 
     <div class="grid-item">
         <div class="multi-link-container">
-            <h3 class="linked-text">Services</h3>
+            <h3 class="linked-text"><?= $servicesHeading = $content[23]['content'];?></h3>
             <div class="link-dialog">
-                <p tabindex="0">We mostly work with individuals, Students, Small-Medium Businesses, #Gamers!,
-                    and Professionals.</p>
-                <p tabindex="0">Repairs and Service for Home and Office; any type-spec.</p>
-                <p tabindex="0">90 day service guarantee. Computers run smoother, faster and perform better.</p>
+                <p tabindex="0"><?= $servicesDialog1 = $content[24]['content'];?></p>
+                <p tabindex="0"><?= $servicesDialog2 = $content[25]['content'];?></p>
+                <p tabindex="0"><?= $servicesDialog3 = $content[26]['content'];?></p>
                 <img src="https://latinospc.com/images/number.jpg" width="auto" height="auto" alt="number"
                     style="display: block; margin: 0 auto;">
             </div>
         </div>
 
-        <a href="#" class="cta-button">Cleanups</a>
-        <a href="#" class="cta-button">Computer protection</a>
-        <a href="#" class="cta-button">Consultations</a>
-        <a href="#" class="cta-button">Managed Services</a>
-        <a href="#" class="cta-button">Remote Support</a>
-        <a href="#" class="cta-button">Websites</a>
+        <a href="#" class="cta-button"><?= $servicesCleanUpsButton = $content[28]['content'];?></a>
+        <a href="#" class="cta-button"><?= $servicesComputerProtectionButton = $content[29]['content'];?></a>
+        <a href="#" class="cta-button"><?= $servicesConsultationsButton = $content[30]['content'];?></a>
+        <a href="#" class="cta-button"><?= $servicesManagedServicesButton = $content[31]['content'];?></a>
+        <a href="#" class="cta-button"><?= $servicesRemoteSupportButton = $content[32]['content'];?></a>
+        <a href="#" class="cta-button"><?= $servicesWebsitesButton = $content[33]['content'];?></a>
     </div>
 
     <div class="grid-item">
         <div class="multi-link-container">
-            <h3 class="linked-text">Security</h3>
+            <h3 class="linked-text"><?= $securityHeading = $content[34]['content'];?></h3>
             <div class="link-dialog">
-                <p tabindex="0">Think of your computer as a virtual treasure chest filled with your important
-                    stuff – photos, documents, and more. Computer protection is like a shield against
-                    troublemakers like viruses and hackers.</p>
+                <p tabindex="0"><?= $securityDialog = $content[38]['content'];?></p>
             </div>
         </div>
 
-        <a href="#" class="cta-button">Best Practices</a>
-        <a href="#" class="cta-button">Backups</a>
-        <a href="#" class="cta-button">Passwords</a>
+        <a href="#" class="cta-button"><?= $securityButton = $content[35]['content'];?></a>
+        <a href="#" class="cta-button"><?= $securityButton2 = $content[36]['content'];?></a>
+        <a href="#" class="cta-button"><?= $securityButton3 = $content[37]['content'];?></a>
         <aside>
             <hr>
             <div class="multi-link-container">
-                <h3 class="linked-text">Tutorials / Blog</h3>
+                <h3 class="linked-text"><?= $securityButton3 = $content[39]['content'] . ' / ' . rtrim($content[40]['content'], 's');?></h3>
                 <div class="link-dialog">
-                    <p tabindex="0">This section is all about the tutorials and blog posts that we have on our
-                        website. We have a wide range of topics that we cover, from computer hardware and
-                        software to internet security and more.</p>
+                    <p tabindex="0"><?= $securityButton3 = $content[41]['content'];?></p>
                 </div>
             </div>
-            <p>Visit our tutorials and blog page for more information</p>
-            <a href="#" class="cta-button">Visit Page</a>
+            <p><?= $securityButton3 = $content[42]['content'];?></p>
+            <a href="#" class="cta-button"><?= $securityButton3 = $content[43]['content'];?></a>
         </aside>
     </div>
 
