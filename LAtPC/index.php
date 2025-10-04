@@ -231,93 +231,20 @@ try {
 	error_log('Database Error: ' . $e->getMessage());
 	$content = [];
 }
-/* END DATABASE */
-//Send Request:
- /*F
 $stmt = $pdo->prepare("INSERT INTO content (page_id, name, content) VALUES (?, ?, ?)");
-$stmt->execute(["home", "headings", "Jesus Christ"]);
-$stmt->execute(["home", "dialogs", "Most accept that Jesus was truly a man who lived in Israel 2,000 years ago."]);
-$stmt->execute(["home", "dialogs", "What do we really know about Jesus? Explore his life and teachings and form your own valid experience."]);
-$stmt->execute(["home", "link", "JesusChrist/father_in_heaven_tell_me_about_web"]);
-$stmt->execute(["home", "link", "JesusChrist/apostles"]);
-$stmt->execute(["home", "link", "JesusChrist/parables"]);
-$stmt->execute(["home", "link", "JesusChrist/sermons"]);
-$stmt->execute(["home", "link", "JesusChrist/teachings"]);
-$stmt->execute(["home", "button", "Tell me about the web"]);
-$stmt->execute(["home", "button", "Apostles"]);
-$stmt->execute(["home", "button", "Parables"]);
-$stmt->execute(["home", "button", "Sermons"]);
-$stmt->execute(["home", "button", "Teachings"]);
-
--------
-$stmt->execute(["home", "aboutHeadings", "About Us"]);
-$stmt->execute(["home", "aboutParagraph", "We started back in 2009 with one technician; Omar, we have one goal."]);
-$stmt->execute(["home", "aboutDialogs", "Our goal is to provide you and your company with outstanding service."]);
-$stmt->execute(["home", "aboutDialogs", "We're dedicated to enhancing your experience through effective marketing, customer-friendly retention strategies, and maintaining top-notch quality control."]);
-$stmt->execute(["home", "aboutParagraph", "we want to bring families and individuals, the experience of a fully working computer system; laptops and desktops."]);
-$stmt->execute(["home", "aboutParagraph", "100% Satisfaction Guarantee | 90 Days Service Package -included"]);
-$stmt->execute(["home", "aboutParagraph", "We are located in the city of Pomona, and will travel to LA county, SB county, RV county and OC."]);
-$stmt->execute(["home", "aboutButton", "/about"]);
-$stmt->execute(["home", "aboutLink", "Visit Us"]);
-
-$stmt->execute(["home", "servicesHeadings", "Services"]);
-$stmt->execute(["home", "servicesParagraph", "We mostly work with individuals, Students, Small-Medium Businesses, #Gamers!, and Professionals."]);
-$stmt->execute(["home", "servicesParagraph", "Repairs and Service for Home and Office; any type-spec."]);
-$stmt->execute(["home", "servicesParagraph", "90 day service guarantee. Computers run smoother, faster and perform better."]);
-$stmt->execute(["home", "servicesLinkCleanUps", "/services/cleanups"]);
-$stmt->execute(["home", "servicesCleanUpsButton", "Cleanups"]);
-
-//$stmt->execute(["home", "servicesLinkComputerProtection", "/services/computer_protection"]);
-$stmt->execute(["home", "servicesComputerProtectionButton", "Computer Protection"]);
-
-//$stmt->execute(["home", "servicesLinkConsultations", "/services/consultations"]);
-$stmt->execute(["home", "servicesConsultationsButton", "Consultations"]);
-
-//$stmt->execute(["home", "servicesLinkManagedServices", "/services/managed_services"]);
-$stmt->execute(["home", "servicesManagedServicesButton", "Managed Services"]);
-
-//$stmt->execute(["home", "servicesLinkRemoteSupport", "/services/remote_support"]);
-$stmt->execute(["home", "servicesRemoteSupportButton", "Remote Support"]);
-
-//$stmt->execute(["home", "servicesLinkWebsites", "/services/websites"]);
-$stmt->execute(["home", "servicesWebsitesButton", "Websites"]);
-
-$stmt->execute(["home", "securityHeadings", "Security"]);
-$stmt->execute(["home", "securityButton", "Best Practices"]);
-$stmt->execute(["home", "securityButton", "Backups"]);
-$stmt->execute(["home", "securityButton", "Passwords"]);
-$stmt->execute(["home", "securityParagraph", "Think of your computer as a virtual treasure chest filled with your important stuff – photos, documents, and more. Computer protection is like a shield against troublemakers like viruses and hackers."]);
 
 
 
-$stmt->execute(["home", "tutorialsHeadings", "Tutorials"]);
-$stmt->execute(["home", "tutorialsHeadings", "Blogs"]);
-$stmt->execute(["home", "tutorialsBlogDialog", "This section is all about the tutorials and blog posts that we have on our website. We have a wide range of topics that we cover, from computer hardware and software to internet security and more."]);
-$stmt->execute(["home", "tutorialsParagraph", "Visit our tutorials and blog page for more information"]);
-$stmt->execute(["home", "tutorialsButton", "Visit Page"]);
-$stmt->execute(["home", "tutorialsLink", "/tutorials"]);
-
-
-
-
-$stmt = $pdo->prepare("INSERT INTO content (page_id, name, content) VALUES (?, ?, ?)");
-IRE <BLANQUET></BLANQUET> */
 
 
 
 function content_home()
 {
-	/*
-	 * I want to be able to migrate to a database instead of having arrays, arrays are cool and all, I really like them.
-	 * 		Perhaps I can place the whole variable array into the database, and call it as is.
-	 * 		I'm guessing in my noob mind that the data fetching will better for me as I am learning,
-	 * 		also I kinda don't want to move away from arrays,
-	 * 		they're cool and I want to keep working with them.
-	 */
-	global $content;// This global is named content, as a variable called from above. and there is a content for the database. I know it must be obvious but right now I don't know why this is her to begin with, but I think is related to the Class needing a variable called at intervals of code.
+	
+	global $content;
 
 	$headingIndex = array_search('headings', array_column($content, 'name'));
-	//$heading = $headingIndex !== false ? $content[$headingIndex]['content'] : 'Default Heading';
+	
 ?>
 <section class="homepage-grid">
     <div class="grid-item">
@@ -328,7 +255,6 @@ function content_home()
                 <p tabindex="0"><?= $_JesusChristDialog2 = $content[2]['content'];?></p>
             </div>
 
-			<?php #$link = $content[1]['content']; echo $link; ?>
         </div>
         <a href="<?= htmlspecialchars($link = $content[13]['content']);?>"
             class="cta-button"><?= $button = $content[8]['content'];?></a>
@@ -404,61 +330,56 @@ function content_home()
 
     <div class="grid-item">
         <div class="multi-link-container">
-            <h3 class="linked-text">Hardware</h3>
+            <h3 class="linked-text"><?= $hardwareHeading = $content[45]['content'];?></h3>
             <div class="link-dialog">
-                <p tabindex="0">A computer is an electronic device that manipulates data or information. It has
-                    the ability to store,retrieve, and process data.</p>
-                <p tabindex="0">The Hardware is the computer — it's physical components.</p>
-                <p>These components may include the computer's functionality, design, materials, innovations,
-                    thermals, etc.</p>
+                <p tabindex="0"><?= $hardwareDialog = $content[46]['content'];?></p>
+                <p tabindex="0"><?= $hardwareDialog = $content[47]['content'];?></p>
+                <p><?= $hardwareDialog = $content[48]['content'];?></p>
             </div>
         </div>
 
-        <a href="#" class="cta-button">CPU</a>
-        <a href="#" class="cta-button">Storage</a>
-        <a href="#" class="cta-button">Power Supply Unit</a>
-        <a href="#" class="cta-button">Input</a>
-        <a href="#" class="cta-button">Output</a>
-        <a href="#" class="cta-button">Parts</a>
+        <a href="#" class="cta-button"><?= $hardwareButtons = $content[49]['content'];?></a>
+        <a href="#" class="cta-button"><?= $hardwareButtons = $content[50]['content'];?></a>
+        <a href="#" class="cta-button"><?= $hardwareButtons = $content[51]['content'];?></a>
+        <a href="#" class="cta-button"><?= $hardwareButtons = $content[52]['content'];?></a>
+        <a href="#" class="cta-button"><?= $hardwareButtons = $content[53]['content'];?></a>
+        <a href="#" class="cta-button"><?= $hardwareButtons = $content[54]['content'];?></a>
 
         <aside>
             <hr>
             <div class="multi-link-container">
-                <h3 class="linked-text">Peripherals and Gear</h3>
+                <h3 class="linked-text"><?= $hardwarePeripheralsAndGear = $content[55]['content'];?></h3>
                 <div class="link-dialog">
-                    <p tabindex="0">Peripherals and gear are the additional components that help you use your
-                        computer.</p>
-                    <p tabindex="0">These include desks, chairs, computer mats, lights, clothing, and other
-                        stuff that are unrelated to the computer itself, but are very useful to have.</p>
+                    <p tabindex="0"><?= $hardwarePeripheralsAndGearDialog = $content[57]['content'];?></p>
+                    <p tabindex="0"><?= $hardwarePeripheralsAndGearDialog = $content[58]['content'];?></p>
                 </div>
             </div>
-            <p>Visit our computer peripherals and gear for more information</p>
-            <a href="#" class="cta-button">Visit Page</a>
+            <p><?= $hardwarePeripheralsAndGear = $content[56]['content'];?></p>
+            <a href="#" class="cta-button"><?= $visitPage = $content[43]['content'];?></a>
     </div>
     </aside>
 
     <div class="grid-item">
         <div class="multi-link-container">
-            <h3 class="linked-text">Software</h3>
+            <h3 class="linked-text"><?= $softwareHeading = $content[59]['content'];?></h3>
             <div class="link-dialog">
-                <p tabindex="0">Commonly known as computer programs or apps, these are the instructions for the
-                    computer’s tasks</p>
+                <p tabindex="0"><?= $softwareDialog = $content[60]['content'];?></p>
             </div>
         </div>
-        <a href="#" class="cta-button">Anti-Virus</a>
-        <a href="#" class="cta-button">Malware Cleaner</a>
-        <a href="#" class="cta-button">Web Browsers</a>
-        <a href="#" class="cta-button">Messaging</a>
-        <a href="#" class="cta-button">Media</a>
-        <a href="#" class="cta-button">Runtimes</a>
-        <a href="#" class="cta-button">Imaging</a>
-        <a href="#" class="cta-button">Documents</a>
-        <a href="#" class="cta-button">File Sharing</a>
-        <a href="#" class="cta-button">Online Storage</a>
-        <a href="#" class="cta-button">Other</a>
-        <a href="#" class="cta-button">Utilities</a>
-        <a href="#" class="cta-button">Compression</a>
-        <a href="#" class="cta-button">Developer Tools</a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[61]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[62]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[63]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[64]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[65]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[66]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[67]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[68]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[69]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[70]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[71]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[72]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[73]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[74]['content'];?></a>
     </div>
 </section>
 <?php
