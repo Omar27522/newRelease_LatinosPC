@@ -1,149 +1,163 @@
 <?php
+/* DATABASE CONNECTION */
+try {
+	$dbPath = __DIR__ . '/db/laTpc.db';
+	$pdo = new PDO('sqlite:' . $dbPath);
+	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+	// Check if content table exists
+	$tableExists = $pdo->query("SELECT name FROM sqlite_master WHERE type='table' AND name='content'")->fetch();
+
+	global $content;
+	if ($tableExists) {
+		$stmt = $pdo->query('SELECT * FROM content WHERE page_id = "inicio"');
+		$content = $stmt->fetchAll(PDO::FETCH_ASSOC);
+	}
+} catch (PDOException $e) {
+	// Log error and continue without database content
+	error_log('Database Error: ' . $e->getMessage());
+	$content = [];
+}
 
 function contenido_inicio (){
-
+global $content;
    ?>
-   <section class="homepage-grid">
-<div class="grid-item">
-    <div class="multi-link-container">
-        <h3 class="linked-text">Jesucristo</h3>
-        <div class="link-dialog">
-            <p tabindex="0">La mayoría acepta que Jesús fue verdaderamente un hombre que vivió en Israel hace 2,000 años.</p>
-            <p tabindex="0">¿Qué sabemos realmente acerca de Jesús? Explora su vida y enseñanzas y forma tu propio criterio.</p>
-        </div>
-    </div>
-    <a href="Jesucristo/padre_celestial_cuentame_sobre_el_internet" class="cta-button">Háblame de la web</a>
-    <a href="Jesucristo/apostoles" class="cta-button">Apóstoles</a>
-    <a href="Jesucristo/parabolas" class="cta-button">Parábolas</a>
-    <a href="Jesucristo/sermones" class="cta-button">Sermones</a>
-    <a href="Jesucristo/enseñanzas" class="cta-button">Enseñanzas</a>
-</div>
 
-<div class="grid-item">
-    <div class="multi-link-container">
-        <h3 class="linked-text">Acerca de Nosotros</h3>
-        <div class="link-dialog">
-            <p tabindex="0">
-                Empezamos en 2009 con un técnico; Omar, tenemos un objetivo.</p>
-            <p tabindex="0">
-                Objetivo numero uno es, proporcionarte a ti y a tu empresa un servicio excepcional.</p>
-            <p tabindex="0">Nos dedicamos a mejorar tu experiencia a través de estrategias de mercadotecnia efectivas,
-                estrategias de retención al cliente y también al mantener un control de calidad excepcional.
-            </p>
-        </div>
-    </div>
-
-    <p>Queremos traer a las familias y a las personas, la experiencia de un sistema computacional completamente funcional; laptops y desktops.</p>
-    <p>Satisfacción 100% Garantizada | Paquete de servicio de 90 días - incluido</p>
-    <p>Estamos ubicados en la ciudad de Pomona, y viajaremos a el condado de LA, condado de SB, condado de RV y OC.</p>
-    <a href="#" class="cta-button">Visita la Pagina</a>
-</div>
-
-<div class="grid-item">
-    <div class="multi-link-container">
-        <h3 class="linked-text">Servicios</h3>
-        <div class="link-dialog">
-            <p tabindex="0">Nos dedicamos a trabajar con gente, estudiantes, pequeñas y medianas empresas, #Gamers!,
-                y profesionales.</p>
-            <p tabindex="0">Reparaciones y servicios para casa y oficina; computadoras de cualquier tipo y especificación.</p>
-            <p tabindex="0">Garantía de servicio de 90 días. Las computadoras funcionan más agradablemente, más rápidas y se mejora el rendimiento.</p>
-            <img src="https://latinospc.com/images/number.jpg" width="auto" height="auto" alt="number"
-                style="display: block; margin: 0 auto;">
-        </div>
-    </div>
-
-    <a href="#" class="cta-button">Limpiezas</a>
-    <a href="#" class="cta-button">Protección de computadoras</a>
-    <a href="#" class="cta-button">Consultas</a>
-    <a href="#" class="cta-button">Servicios gestionados</a>
-    <a href="#" class="cta-button">Soporte remoto</a>
-    <a href="#" class="cta-button">Sitios web</a>
-</div>
-
-<div class="grid-item">
-    <div class="multi-link-container">
-        <h3 class="linked-text">Seguridad</h3>
-        <div class="link-dialog">
-            <p tabindex="0">Piensa en tu computadora como tu tesoro virtual llena de tus cosas más importantes
-                – fotos, documentos, y más. La protección de la computadora es como una escudo contra
-                lo malo, como virus y hackers.</p>
-        </div>
-    </div>
-
-    <a href="#" class="cta-button">Las Mejores Prácticas</a>
-    <a href="#" class="cta-button">Respaldos</a>
-    <a href="#" class="cta-button">Contraseñas</a>
-    <aside>
-        <hr>
+<section class="homepage-grid">
+    <div class="grid-item">
         <div class="multi-link-container">
-            <h3 class="linked-text">Tutoriales / Blog</h3>
+            <h3 class="linked-text"><?php echo $content[array_search('headings', array_column($content, 0))]['content']; ?></h3>
             <div class="link-dialog">
-                <p tabindex="0">Esta sección es sobre los tutoriales y publicaciones del blog que tenemos en nuestro
-                    sitio web. Tenemos una amplia gama de temas que cubrimos, desde hardware y software de computadoras
-                    hasta seguridad en internet y más.</p>
+                <p tabindex="0"><?= $_JesusChristDialog1 = $content[1]['content'];?></p>
+                <p tabindex="0"><?= $_JesusChristDialog2 = $content[2]['content'];?></p>
+            </div>
+
+        </div>
+        <a href="#"
+            class="cta-button"><?= $button = $content[3]['content'];?></a>
+        <a href="#"
+            class="cta-button"><?= $button2 = $content[4]['content'];?></a>
+        <a href="#"
+            class="cta-button"><?= $button3 = $content[5]['content'];?></a>
+        <a href="#"
+            class="cta-button"><?= $button4 = $content[6]['content'];?></a>
+        <a href="#"
+            class="cta-button"><?= $button5 = $content[7]['content'];?></a>
+    </div>
+
+    <div class="grid-item">
+        <div class="multi-link-container">
+            <h3 class="linked-text"><?= $aboutUs = $content[13]['content'];?></h3>
+            <div class="link-dialog">
+                <p tabindex="0"><?= $aboutDialog1 = $content[14]['content'];?></p>
+                <p tabindex="0"><?= $aboutDialog2 = $content[15]['content'];?></p>
+                <p tabindex="0"><?= $aboutDialog3 = $content[16]['content'];?></p>
             </div>
         </div>
-        <p>Visita nuestra página de tutoriales y blog para más información</p>
-        <a href="#" class="cta-button">Visita la Pagina</a>
+
+        <p><?= $aboutParagraph = $content[17]['content'];?></p>
+        <p><?= $aboutParagraph2 = $content[18]['content'];?></p>
+        <p><?= $aboutParagraph3 = $content[19]['content'];?></p>
+        <a href="<?= $aboutButton = $content[21]['content'];?>" class="cta-button"><?= $aboutButton = $content[20]['content'];?></a>
+    </div>
+
+    <div class="grid-item">
+        <div class="multi-link-container">
+            <h3 class="linked-text"><?= $servicesHeading = $content[22]['content'];?></h3>
+            <div class="link-dialog">
+                <p tabindex="0"><?= $servicesDialog1 = $content[23]['content'];?></p>
+                <p tabindex="0"><?= $servicesDialog2 = $content[24]['content'];?></p>
+                <p tabindex="0"><?= $servicesDialog3 = $content[25]['content'];?></p>
+                <img src="https://latinospc.com/images/number.jpg" width="auto" height="auto" alt="number"
+                    style="display: block; margin: 0 auto;">
+            </div>
+        </div>
+
+        <a href="#" class="cta-button"><?= $servicesCleanUpsButton = $content[26]['content'];?></a>
+        <a href="#" class="cta-button"><?= $servicesComputerProtectionButton = $content[27]['content'];?></a>
+        <a href="#" class="cta-button"><?= $servicesConsultationsButton = $content[28]['content'];?></a>
+        <a href="#" class="cta-button"><?= $servicesManagedServicesButton = $content[29]['content'];?></a>
+        <a href="#" class="cta-button"><?= $servicesRemoteSupportButton = $content[30]['content'];?></a>
+        <a href="#" class="cta-button"><?= $servicesWebsitesButton = $content[31]['content'];?></a>
+    </div>
+
+    <div class="grid-item">
+        <div class="multi-link-container">
+            <h3 class="linked-text"><?= $securityHeading = $content[37]['content'];?></h3>
+            <div class="link-dialog">
+                <p tabindex="0"><?= $securityDialog = $content[38]['content'];?></p>
+            </div>
+        </div>
+
+        <a href="#" class="cta-button"><?= $securityButton = $content[39]['content'];?></a>
+        <a href="#" class="cta-button"><?= $securityButton2 = $content[40]['content'];?></a>
+        <a href="#" class="cta-button"><?= $securityButton3 = $content[41]['content'];?></a>
+        <aside>
+            <hr>
+            <div class="multi-link-container">
+                <h3 class="linked-text"><?= $tutorialsAndBlog = $content[42]['content'] . ' / ' . rtrim($content[43]['content'], 's');?></h3>
+                <div class="link-dialog">
+                    <p tabindex="0"><?= $tutorialsAndBlogDialog = $content[44]['content'];?></p>
+                </div>
+            </div>
+            <p><?= $tutorialsAndBlogParagraph = $content[45]['content'];?></p>
+            <a href="#" class="cta-button"><?= $tutorialsAndBlogButton = $content[46]['content'];?></a>
+        </aside>
+    </div>
+
+    <div class="grid-item">
+        <div class="multi-link-container">
+            <h3 class="linked-text"><?= $hardwareHeading = $content[47]['content'];?></h3>
+            <div class="link-dialog">
+                <p tabindex="0"><?= $hardwareDialog = $content[48]['content'];?></p>
+                <p tabindex="0"><?= $hardwareDialog = $content[49]['content'];?></p>
+                <p><?= $hardwareDialog = $content[50]['content'];?></p>
+            </div>
+        </div>
+
+        <a href="#" class="cta-button"><?= $hardwareButtons = $content[51]['content'];?></a>
+        <a href="#" class="cta-button"><?= $hardwareButtons = $content[52]['content'];?></a>
+        <a href="#" class="cta-button"><?= $hardwareButtons = $content[53]['content'];?></a>
+        <a href="#" class="cta-button"><?= $hardwareButtons = $content[54]['content'];?></a>
+        <a href="#" class="cta-button"><?= $hardwareButtons = $content[55]['content'];?></a>
+        <a href="#" class="cta-button"><?= $hardwareButtons = $content[56]['content'];?></a>
+
+        <aside>
+            <hr>
+            <div class="multi-link-container">
+                <h3 class="linked-text"><?= $hardwarePeripheralsAndGear = $content[57]['section'];?></h3>
+                <div class="link-dialog">
+                    <p tabindex="0"><?= $hardwarePeripheralsAndGearDialog = $content[58]['content'];?></p>
+                    <p tabindex="0"><?= $hardwarePeripheralsAndGearDialog = $content[59]['content'];?></p>
+                </div>
+            </div>
+            <p><?= $hardwarePeripheralsAndGear = $content[60]['content'];?></p>
+            <a href="#" class="cta-button"><?= $visitPage = $content[46]['content'];?></a>
+    </div>
     </aside>
-</div>
 
-<div class="grid-item">
-    <div class="multi-link-container">
-        <h3 class="linked-text">Hardware</h3>
-        <div class="link-dialog">
-            <p tabindex="0">Una computadora es un dispositivo electrónico que manipula datos y/o información. Tiene
-                la habilidad de almacenar, recuperar y procesar datos.</p>
-            <p tabindex="0">El Hardware es la computadora en sí — los componentes físicos.</p>
-            <p>Estos componentes pueden incluir la funcionalidad, el diseño, los materiales, las innovaciones,la gestión térmica, etc.</p>
-        </div>
-    </div>
-
-    <a href="#" class="cta-button">CPU</a>
-    <a href="#" class="cta-button">Almacenamiento</a>
-    <a href="#" class="cta-button">Fuente de Alimentación</a>
-    <a href="#" class="cta-button">Entrada</a>
-    <a href="#" class="cta-button">Salida</a>
-    <a href="#" class="cta-button">Partes</a>
-
-    <aside>
-        <hr>
+    <div class="grid-item">
         <div class="multi-link-container">
-            <h3 class="linked-text">Periféricos y equipo</h3>
+            <h3 class="linked-text"><?= ucfirst($content[61]['section']);?></h3>
             <div class="link-dialog">
-                <p tabindex="0">Los periféricos y equipo son los componentes adicionales que ayudan al rendimiento, comodidad y estética de el equipo completo.</p>
-                <p tabindex="0">Estos incluyen mesas, sillas, tapetes de computadora, luces, ropa, y otros
-                    cosas que no están relacionadas con la computadora misma, pero son muy útiles tener.</p>
+                <p tabindex="0"><?= $softwareDialog = $content[62]['content'];?></p>
             </div>
         </div>
-        <p>Visita nuestra página de periféricos y equipo para más información</p>
-        <a href="#" class="cta-button">Visita la Pagina</a>
-</div>
-</aside>
-</div>
-
-<div class="grid-item">
-    <div class="multi-link-container">
-        <h3 class="linked-text">Software</h3>
-        <div class="link-dialog">
-            <p tabindex="0">Conocido comúnmente como programas o aplicaciones, estos son las instrucciones de tareas para la computadora.</p>
-        </div>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[63]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[64]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[65]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[66]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[67]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[68]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[69]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[70]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[71]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[72]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[73]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[74]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[75]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[76]['content'];?></a>
     </div>
-    <a href="#" class="cta-button">Anti-Virus</a>
-    <a href="#" class="cta-button">Limpieza de malware</a>
-    <a href="#" class="cta-button">Navegadores</a>
-    <a href="#" class="cta-button">Mensajería</a>
-    <a href="#" class="cta-button">Multimedia</a>
-    <a href="#" class="cta-button">Runtimes</a>
-    <a href="#" class="cta-button">Imágenes</a>
-    <a href="#" class="cta-button">Documentos</a>
-    <a href="#" class="cta-button">Compartir archivos</a>
-    <a href="#" class="cta-button">Almacenamiento en línea</a>
-    <a href="#" class="cta-button">Otros</a>
-    <a href="#" class="cta-button">Utilidades</a>
-    <a href="#" class="cta-button">Compresión</a>
-    <a href="#" class="cta-button">Herramientas para el Desarrollo</a>
-</div>
 </section>
    <?php
 }

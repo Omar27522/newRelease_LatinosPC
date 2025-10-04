@@ -214,7 +214,7 @@ $keywords = 'Computer repair, virus removal, data backup, computer classes, in-p
 
 /* DATABASE CONNECTION */
 try {
-	$dbPath = __DIR__ . '/db/mydatabase.db';
+	$dbPath = __DIR__ . '/db/laTpc.db';
 	$pdo = new PDO('sqlite:' . $dbPath);
 	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
@@ -231,7 +231,7 @@ try {
 	error_log('Database Error: ' . $e->getMessage());
 	$content = [];
 }
-$stmt = $pdo->prepare("INSERT INTO content (page_id, name, content) VALUES (?, ?, ?)");
+//$stmt = $pdo->prepare("INSERT INTO content (page_id, name, content) VALUES (?, ?, ?)");
 
 
 
@@ -240,146 +240,146 @@ $stmt = $pdo->prepare("INSERT INTO content (page_id, name, content) VALUES (?, ?
 
 function content_home()
 {
-	
+
 	global $content;
 
 	$headingIndex = array_search('headings', array_column($content, 'name'));
-	
+
 ?>
 <section class="homepage-grid">
     <div class="grid-item">
         <div class="multi-link-container">
             <h3 class="linked-text"><?php echo $content[array_search('headings', array_column($content, 0))]['content']; ?></h3>
             <div class="link-dialog">
-                <p tabindex="0"><?= $_JesusChristDialog1 = $content[1]['content'];?></p>
-                <p tabindex="0"><?= $_JesusChristDialog2 = $content[2]['content'];?></p>
+                <p tabindex="0"><?= $_JesusChristDialog1 = $content[9]['content'];?></p>
+                <p tabindex="0"><?= $_JesusChristDialog2 = $content[10]['content'];?></p>
             </div>
 
         </div>
-        <a href="<?= htmlspecialchars($link = $content[13]['content']);?>"
-            class="cta-button"><?= $button = $content[8]['content'];?></a>
-        <a href="<?= $link2 = $content[5]['content'];?>"
-            class="cta-button"><?= $button2 = $content[10]['content'];?></a>
-        <a href="<?= $link3 = $content[6]['content'];?>"
-            class="cta-button"><?= $button3 = $content[11]['content'];?></a>
-        <a href="<?= $link4 = $content[4]['content']; ?>"
-            class="cta-button"><?= $button4 = $content[9]['content'];?></a>
-        <a href="<?= $link5 = $content[7]['content']; ?>"
-            class="cta-button"><?= $button5 = $content[12]['content'];?></a>
+        <a href="<?= htmlspecialchars($link = $content[16]['content']);?>"
+            class="cta-button"><?= $button = $content[11]['content'];?></a>
+        <a href="<?= $link2 = $content[17]['content'];?>"
+            class="cta-button"><?= $button2 = $content[12]['content'];?></a>
+        <a href="<?= $link3 = $content[18]['content'];?>"
+            class="cta-button"><?= $button3 = $content[13]['content'];?></a>
+        <a href="<?= $link4 = $content[19]['content']; ?>"
+            class="cta-button"><?= $button4 = $content[14]['content'];?></a>
+        <a href="<?= $link5 = $content[20]['content']; ?>"
+            class="cta-button"><?= $button5 = $content[15]['content'];?></a>
     </div>
 
     <div class="grid-item">
         <div class="multi-link-container">
-            <h3 class="linked-text"><?= $aboutUs = $content[14]['content'];?></h3>
+            <h3 class="linked-text"><?= $aboutUs = $content[1]['content'];?></h3>
             <div class="link-dialog">
-                <p tabindex="0"><?= $aboutDialog1 = $content[15]['content'];?></p>
-                <p tabindex="0"><?= $aboutDialog2 = $content[16]['content'];?></p>
-                <p tabindex="0"><?= $aboutDialog3 = $content[17]['content'];?></p>
+                <p tabindex="0"><?= $aboutDialog1 = $content[22]['content'];?></p>
+                <p tabindex="0"><?= $aboutDialog2 = $content[23]['content'];?></p>
+                <p tabindex="0"><?= $aboutDialog3 = $content[24]['content'];?></p>
             </div>
         </div>
 
-        <p><?= $aboutParagraph = $content[18]['content'];?></p>
-        <p><?= $aboutParagraph2 = $content[19]['content'];?></p>
-        <p><?= $aboutParagraph3 = $content[20]['content'];?></p>
-        <a href="<?= $aboutButton = $content[21]['content'];?>" class="cta-button"><?= $aboutButton = $content[22]['content'];?></a>
+        <p><?= $aboutParagraph = $content[25]['content'];?></p>
+        <p><?= $aboutParagraph2 = $content[26]['content'];?></p>
+        <p><?= $aboutParagraph3 = $content[27]['content'];?></p>
+        <a href="<?= $aboutButton = $content[29]['content'];?>" class="cta-button"><?= $aboutButton = $content[28]['content'];?></a>
     </div>
 
     <div class="grid-item">
         <div class="multi-link-container">
-            <h3 class="linked-text"><?= $servicesHeading = $content[23]['content'];?></h3>
+            <h3 class="linked-text"><?= $servicesHeading = $content[30]['content'];?></h3>
             <div class="link-dialog">
-                <p tabindex="0"><?= $servicesDialog1 = $content[24]['content'];?></p>
-                <p tabindex="0"><?= $servicesDialog2 = $content[25]['content'];?></p>
-                <p tabindex="0"><?= $servicesDialog3 = $content[26]['content'];?></p>
+                <p tabindex="0"><?= $servicesDialog1 = $content[31]['content'];?></p>
+                <p tabindex="0"><?= $servicesDialog2 = $content[32]['content'];?></p>
+                <p tabindex="0"><?= $servicesDialog3 = $content[33]['content'];?></p>
                 <img src="https://latinospc.com/images/number.jpg" width="auto" height="auto" alt="number"
                     style="display: block; margin: 0 auto;">
             </div>
         </div>
 
-        <a href="#" class="cta-button"><?= $servicesCleanUpsButton = $content[28]['content'];?></a>
-        <a href="#" class="cta-button"><?= $servicesComputerProtectionButton = $content[29]['content'];?></a>
-        <a href="#" class="cta-button"><?= $servicesConsultationsButton = $content[30]['content'];?></a>
-        <a href="#" class="cta-button"><?= $servicesManagedServicesButton = $content[31]['content'];?></a>
-        <a href="#" class="cta-button"><?= $servicesRemoteSupportButton = $content[32]['content'];?></a>
-        <a href="#" class="cta-button"><?= $servicesWebsitesButton = $content[33]['content'];?></a>
+        <a href="#" class="cta-button"><?= $servicesCleanUpsButton = $content[34]['content'];?></a>
+        <a href="#" class="cta-button"><?= $servicesComputerProtectionButton = $content[35]['content'];?></a>
+        <a href="#" class="cta-button"><?= $servicesConsultationsButton = $content[36]['content'];?></a>
+        <a href="#" class="cta-button"><?= $servicesManagedServicesButton = $content[37]['content'];?></a>
+        <a href="#" class="cta-button"><?= $servicesRemoteSupportButton = $content[38]['content'];?></a>
+        <a href="#" class="cta-button"><?= $servicesWebsitesButton = $content[39]['content'];?></a>
     </div>
 
     <div class="grid-item">
         <div class="multi-link-container">
-            <h3 class="linked-text"><?= $securityHeading = $content[34]['content'];?></h3>
+            <h3 class="linked-text"><?= $securityHeading = $content[45]['content'];?></h3>
             <div class="link-dialog">
-                <p tabindex="0"><?= $securityDialog = $content[38]['content'];?></p>
+                <p tabindex="0"><?= $securityDialog = $content[46]['content'];?></p>
             </div>
         </div>
 
-        <a href="#" class="cta-button"><?= $securityButton = $content[35]['content'];?></a>
-        <a href="#" class="cta-button"><?= $securityButton2 = $content[36]['content'];?></a>
-        <a href="#" class="cta-button"><?= $securityButton3 = $content[37]['content'];?></a>
+        <a href="#" class="cta-button"><?= $securityButton = $content[47]['content'];?></a>
+        <a href="#" class="cta-button"><?= $securityButton2 = $content[48]['content'];?></a>
+        <a href="#" class="cta-button"><?= $securityButton3 = $content[49]['content'];?></a>
         <aside>
             <hr>
             <div class="multi-link-container">
-                <h3 class="linked-text"><?= $securityButton3 = $content[39]['content'] . ' / ' . rtrim($content[40]['content'], 's');?></h3>
+                <h3 class="linked-text"><?= $tutorialsAndBlog = $content[50]['content'] . ' / ' . rtrim($content[51]['content'], 's');?></h3>
                 <div class="link-dialog">
-                    <p tabindex="0"><?= $securityButton3 = $content[41]['content'];?></p>
+                    <p tabindex="0"><?= $tutorialsAndBlogDialog = $content[52]['content'];?></p>
                 </div>
             </div>
-            <p><?= $securityButton3 = $content[42]['content'];?></p>
-            <a href="#" class="cta-button"><?= $securityButton3 = $content[43]['content'];?></a>
+            <p><?= $tutorialsAndBlogParagraph = $content[53]['content'];?></p>
+            <a href="#" class="cta-button"><?= $tutorialsAndBlogButton = $content[54]['content'];?></a>
         </aside>
     </div>
 
     <div class="grid-item">
         <div class="multi-link-container">
-            <h3 class="linked-text"><?= $hardwareHeading = $content[45]['content'];?></h3>
+            <h3 class="linked-text"><?= $hardwareHeading = $content[55]['content'];?></h3>
             <div class="link-dialog">
-                <p tabindex="0"><?= $hardwareDialog = $content[46]['content'];?></p>
-                <p tabindex="0"><?= $hardwareDialog = $content[47]['content'];?></p>
-                <p><?= $hardwareDialog = $content[48]['content'];?></p>
+                <p tabindex="0"><?= $hardwareDialog = $content[56]['content'];?></p>
+                <p tabindex="0"><?= $hardwareDialog = $content[57]['content'];?></p>
+                <p><?= $hardwareDialog = $content[58]['content'];?></p>
             </div>
         </div>
 
-        <a href="#" class="cta-button"><?= $hardwareButtons = $content[49]['content'];?></a>
-        <a href="#" class="cta-button"><?= $hardwareButtons = $content[50]['content'];?></a>
-        <a href="#" class="cta-button"><?= $hardwareButtons = $content[51]['content'];?></a>
-        <a href="#" class="cta-button"><?= $hardwareButtons = $content[52]['content'];?></a>
-        <a href="#" class="cta-button"><?= $hardwareButtons = $content[53]['content'];?></a>
-        <a href="#" class="cta-button"><?= $hardwareButtons = $content[54]['content'];?></a>
+        <a href="#" class="cta-button"><?= $hardwareButtons = $content[59]['content'];?></a>
+        <a href="#" class="cta-button"><?= $hardwareButtons = $content[60]['content'];?></a>
+        <a href="#" class="cta-button"><?= $hardwareButtons = $content[61]['content'];?></a>
+        <a href="#" class="cta-button"><?= $hardwareButtons = $content[62]['content'];?></a>
+        <a href="#" class="cta-button"><?= $hardwareButtons = $content[63]['content'];?></a>
+        <a href="#" class="cta-button"><?= $hardwareButtons = $content[64]['content'];?></a>
 
         <aside>
             <hr>
             <div class="multi-link-container">
-                <h3 class="linked-text"><?= $hardwarePeripheralsAndGear = $content[55]['content'];?></h3>
+                <h3 class="linked-text"><?= $hardwarePeripheralsAndGear = $content[65]['section'];?></h3>
                 <div class="link-dialog">
-                    <p tabindex="0"><?= $hardwarePeripheralsAndGearDialog = $content[57]['content'];?></p>
-                    <p tabindex="0"><?= $hardwarePeripheralsAndGearDialog = $content[58]['content'];?></p>
+                    <p tabindex="0"><?= $hardwarePeripheralsAndGearDialog = $content[66]['content'];?></p>
+                    <p tabindex="0"><?= $hardwarePeripheralsAndGearDialog = $content[67]['content'];?></p>
                 </div>
             </div>
-            <p><?= $hardwarePeripheralsAndGear = $content[56]['content'];?></p>
-            <a href="#" class="cta-button"><?= $visitPage = $content[43]['content'];?></a>
+            <p><?= $hardwarePeripheralsAndGear = $content[68]['content'];?></p>
+            <a href="#" class="cta-button"><?= $visitPage = $content[54]['content'];?></a>
     </div>
     </aside>
 
     <div class="grid-item">
         <div class="multi-link-container">
-            <h3 class="linked-text"><?= $softwareHeading = $content[59]['content'];?></h3>
+            <h3 class="linked-text"><?= ucfirst($content[69]['section']);?></h3>
             <div class="link-dialog">
-                <p tabindex="0"><?= $softwareDialog = $content[60]['content'];?></p>
+                <p tabindex="0"><?= $softwareDialog = $content[70]['content'];?></p>
             </div>
         </div>
-        <a href="#" class="cta-button"><?= $softwareButtons = $content[61]['content'];?></a>
-        <a href="#" class="cta-button"><?= $softwareButtons = $content[62]['content'];?></a>
-        <a href="#" class="cta-button"><?= $softwareButtons = $content[63]['content'];?></a>
-        <a href="#" class="cta-button"><?= $softwareButtons = $content[64]['content'];?></a>
-        <a href="#" class="cta-button"><?= $softwareButtons = $content[65]['content'];?></a>
-        <a href="#" class="cta-button"><?= $softwareButtons = $content[66]['content'];?></a>
-        <a href="#" class="cta-button"><?= $softwareButtons = $content[67]['content'];?></a>
-        <a href="#" class="cta-button"><?= $softwareButtons = $content[68]['content'];?></a>
-        <a href="#" class="cta-button"><?= $softwareButtons = $content[69]['content'];?></a>
-        <a href="#" class="cta-button"><?= $softwareButtons = $content[70]['content'];?></a>
         <a href="#" class="cta-button"><?= $softwareButtons = $content[71]['content'];?></a>
         <a href="#" class="cta-button"><?= $softwareButtons = $content[72]['content'];?></a>
         <a href="#" class="cta-button"><?= $softwareButtons = $content[73]['content'];?></a>
         <a href="#" class="cta-button"><?= $softwareButtons = $content[74]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[75]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[76]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[77]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[78]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[79]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[80]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[81]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[82]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[83]['content'];?></a>
+        <a href="#" class="cta-button"><?= $softwareButtons = $content[84]['content'];?></a>
     </div>
 </section>
 <?php
