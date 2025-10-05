@@ -1,7 +1,6 @@
 Here we are trying to make sense of the database.
-    There are 3 tables:
-        1. Sections
-        2. Pages
+    There are 2 tables:
+        2. Pages => sections
         3. Content
 
 Essentially the Sections are as follows:
@@ -45,5 +44,25 @@ The content is the data of each page.
                     foreach ($content as $content) {
                         echo $content['page_id'] . ' - ' . $content['content'] . '<br>';
                     }
+
+-----–---------------–-------------------–-------
+Solution: 10–/5/2025 last update:
+
+2 tables one which is called pages
+
+Pages looks like this:
+
+
+ID |  name |
+
+
+ID | Page ID | name | section | content |
+
+The first table only needs 2 data entries. 
+
+The second table takes the name of the first one as it's Page ID.
+
+
+The sections remain the same.
 
 
