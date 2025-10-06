@@ -75,6 +75,16 @@ switch ($main_route) {
 		exit;  // Important: stop execution here
 		break;
 
+	case 'about':
+		about();
+		exit;
+		break;
+
+	case 'offered_services':
+		offered_services($sub_route);
+		exit;
+		break;
+
 	case 'Template':
 		fullPageTemplate();
 		exit;
@@ -98,6 +108,14 @@ switch ($main_route) {
 		break;
 }
 
+function show404()
+{
+	http_response_code(404);
+	echo '<!DOCTYPE html>';
+	echo '<html><head><title>404 - Page Not Found</title></head>';
+	echo '<body><h1>Page not found Go away please!</h1></body></html>';
+}
+
 function showSpanishContent()
 {
 	$page = new Structure('../', 'español', 'Inicio LatinosPC');
@@ -106,13 +124,65 @@ function showSpanishContent()
 	include 'index_spanish.php';
 }
 
-function show404()
+function about()
 {
-	http_response_code(404);
-	echo '<!DOCTYPE html>';
-	echo '<html><head><title>404 - Page Not Found</title></head>';
-	echo '<body><h1>Page not found</h1></body></html>';
+	$page = new Structure('../', 'english', 'About');
+	$keywords = 'Keywords';
+	$description = 'Description';
+	include 'about.php';
 }
+
+function offered_services($sub_route)
+{
+	switch ($sub_route) {
+
+		case 'cleanups':
+			$page = new Structure('../../', 'english', 'Clean Ups');
+			$keywords = 'Keywords';
+			$description = 'Description';
+			include 'services/cleanups.php';
+			break;
+		case 'protection':
+			$page = new Structure('../../', 'english', 'Protection');
+			$keywords = 'Keywords';
+			$description = 'Description';
+			include 'services/protection.php';
+			break;
+		case 'consultations':
+			$page = new Structure('../../', 'english', 'Consultations');
+			$keywords = 'Keywords';
+			$description = 'Description';
+			include 'services/consultations.php';
+			break;
+		case 'managedServices':
+			$page = new Structure('../../', 'english', 'Managed Services');
+			$keywords = 'Keywords';
+			$description = 'Description';
+			include 'services/managedServices.php';
+			break;
+		case 'websites':
+			$page = new Structure('../../', 'english', 'Websites');
+			$keywords = 'Keywords';
+			$description = 'Description';
+			include 'services/websites.php';
+			break;
+		case 'remoteSupport':
+			$page = new Structure('../../', 'english', 'Remote Support');
+			$keywords = 'Keywords';
+			$description = 'Description';
+			include 'services/remoteSupport.php';
+			break;
+
+			case '':
+				echo 'Services Main Page';
+				break;
+		default:
+			show404();
+			break;
+	}
+}
+
+
 
 function fullPageTemplate()
 {
@@ -296,12 +366,12 @@ function content_home()
             </div>
         </div>
 
-        <a href="#" class="cta-button"><?= $servicesCleanUpsButton = $content[34]['content'];?></a>
-        <a href="#" class="cta-button"><?= $servicesComputerProtectionButton = $content[35]['content'];?></a>
-        <a href="#" class="cta-button"><?= $servicesConsultationsButton = $content[36]['content'];?></a>
-        <a href="#" class="cta-button"><?= $servicesManagedServicesButton = $content[37]['content'];?></a>
-        <a href="#" class="cta-button"><?= $servicesRemoteSupportButton = $content[38]['content'];?></a>
-        <a href="#" class="cta-button"><?= $servicesWebsitesButton = $content[39]['content'];?></a>
+        <a href="offered_services/cleanups" class="cta-button"><?= $servicesCleanUpsButton = $content[34]['content'];?></a>
+        <a href="offered_services/protection" class="cta-button"><?= $servicesComputerProtectionButton = $content[35]['content'];?></a>
+        <a href="offered_services/consultations" class="cta-button"><?= $servicesConsultationsButton = $content[36]['content'];?></a>
+        <a href="offered_services/managedServices" class="cta-button"><?= $servicesManagedServicesButton = $content[37]['content'];?></a>
+        <a href="offered_services/websites" class="cta-button"><?= $servicesRemoteSupportButton = $content[38]['content'];?></a>
+        <a href="offered_services/remoteSupport" class="cta-button"><?= $servicesWebsitesButton = $content[39]['content'];?></a>
     </div>
 
     <div class="grid-item">

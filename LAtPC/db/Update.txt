@@ -58,11 +58,9 @@ ID |  name |
 
 ID | Page ID | name | section | content |
 
-The first table only needs 2 data entries. 
+The first table only needs 2 data entries.
 
 The second table takes the name of the first one as it's Page ID.
 
 
 The sections remain the same.
-
-

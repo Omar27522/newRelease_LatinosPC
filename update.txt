@@ -54,20 +54,11 @@
             I am not sure how to call it better, but I am making new variables to understand the requests for data.
                 This implementation I hope will not be too difficult, because teachings still needs to be translated.
                     I'm considering, making the page in the old fashion way, by creating 2d arrays and such.
+    4/10/2025|Update) The Database implementation has been successful.
+        The database is a two table implementation where one is the id of the pages in content.
+            for example; I can call  page_id="home", or inicio, and it will give me the array for the same table where the contents were indexed differently.
+                A new file SQLiteconnection.php shows how the database has indexed the data, and how to show it in the page as content.
 
-
-
-**_JesusChrist |to-do:| (9/11/2025)
-    teachings       ---> The titles must change with every link, for example the intro, gospels, etc. -LOOK@(8/23/2025|Update)
-    _heavenlyFather ---> I would like to change the way this is presented (CSS), and perhaps make a new revision.
-    _Apostles       ---> Add links and text dialogs, the reader needs to have a better understanding of the Apostles, and perhaps invite teh reader to a life of servitude, like a saint.
-    parables        ---> Organize the Parables, I guess Matthew will lead the organization of the page, followed by Mark, Luke and John at last. perhaps find more parables in case they are any, or maybe add the explanations Jesus gave to some of them.
-
-
-
-*Switching between languages by pressing the Spanish or English button.*
-*work on the services page.*
-*work on the contact page.*
 *work on the reviews page.*
 *work on a back-to-top button.*
 *Work on a 404 page.*

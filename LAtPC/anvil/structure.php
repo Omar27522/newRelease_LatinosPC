@@ -288,7 +288,14 @@
                 'Sermons' => 'sermons',
                 'Teachings' => 'teachings',
                 'Teachings: John' => 'teachings',
-                'Template' => 'template'
+                'Template' => 'template',
+                'About' => 'content_about',
+                'Clean Ups' => 'content_services_cleanups',
+                'Protection' => 'content_services_protection',
+                'Consultations' => 'content_services_consultation',
+                'Managed Services' => 'content_services_managedServices',
+                'Websites' => 'content_services_websites',
+                'Remote Support' => 'content_services_remoteSupport'
             ],
             'es-419' => [
                 'Inicio LatinosPC' => 'contenido_inicio',
@@ -296,7 +303,8 @@
                 'Los Apóstoles' => 'apostoles',
                 'Parabolas' => 'parabolas',
                 'Sermones' => 'sermones',
-                'Enseñanzas' => 'ensenhanzas'
+                'Enseñanzas' => 'ensenhanzas',
+                'Acerca' => 'contenido_acerca'
             ]
         ];
 
