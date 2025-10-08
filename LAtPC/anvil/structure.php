@@ -295,7 +295,8 @@
                 'Consultations' => 'content_services_consultation',
                 'Managed Services' => 'content_services_managedServices',
                 'Websites' => 'content_services_websites',
-                'Remote Support' => 'content_services_remoteSupport'
+                'Remote Support' => 'content_services_remoteSupport',
+                'Best Practices' => 'best_practices',
             ],
             'es-419' => [
                 'Inicio LatinosPC' => 'contenido_inicio',

@@ -85,6 +85,11 @@ switch ($main_route) {
 		exit;
 		break;
 
+	case 'offered_security':
+		offered_security($sub_route);
+		exit;
+		break;
+
 	case 'Template':
 		fullPageTemplate();
 		exit;
@@ -182,6 +187,26 @@ function offered_services($sub_route)
 	}
 }
 
+function offered_security($sub_route){
+
+	switch ($sub_route) {
+		case 'best_practices':
+			$page = new Structure('../../', 'english', 'Best Practices');
+			$keywords = 'Keywords';
+			$description = 'Description';
+			echo '<section class="fullbar">';
+			include 'security/security.php';
+			echo '</section>';
+			break;
+
+			case '':
+				echo 'Security Main Page';
+				break;
+		default:
+			show404();
+			break;
+	}
+}
 
 
 function fullPageTemplate()
@@ -382,7 +407,7 @@ function content_home()
             </div>
         </div>
 
-        <a href="#" class="cta-button"><?= $securityButton = $content[47]['content'];?></a>
+        <a href="offered_security/best_practices" class="cta-button"><?= $securityButton = $content[47]['content'];?></a>
         <a href="#" class="cta-button"><?= $securityButton2 = $content[48]['content'];?></a>
         <a href="#" class="cta-button"><?= $securityButton3 = $content[49]['content'];?></a>
         <aside>
