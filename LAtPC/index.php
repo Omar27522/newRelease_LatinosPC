@@ -436,12 +436,12 @@ function content_home()
             </div>
         </div>
 
-        <a href="LAtPC/offered_services/cleanups" class="cta-button"><?= $servicesCleanUpsButton = $content[34]['content'];?></a>
-        <a href="LAtPC/offered_services/protection" class="cta-button"><?= $servicesComputerProtectionButton = $content[35]['content'];?></a>
-        <a href="LAtPC/offered_services/consultations" class="cta-button"><?= $servicesConsultationsButton = $content[36]['content'];?></a>
-        <a href="LAtPC/offered_services/managedServices" class="cta-button"><?= $servicesManagedServicesButton = $content[37]['content'];?></a>
-        <a href="LAtPC/offered_services/websites" class="cta-button"><?= $servicesRemoteSupportButton = $content[38]['content'];?></a>
-        <a href="LAtPC/offered_services/remoteSupport" class="cta-button"><?= $servicesWebsitesButton = $content[39]['content'];?></a>
+        <a href="../LAtPC/offered_services/cleanups" class="cta-button"><?= $servicesCleanUpsButton = $content[34]['content'];?></a>
+        <a href="../LAtPC/offered_services/protection" class="cta-button"><?= $servicesComputerProtectionButton = $content[35]['content'];?></a>
+        <a href="../LAtPC/offered_services/consultations" class="cta-button"><?= $servicesConsultationsButton = $content[36]['content'];?></a>
+        <a href="../LAtPC/offered_services/managedServices" class="cta-button"><?= $servicesManagedServicesButton = $content[37]['content'];?></a>
+        <a href="../LAtPC/offered_services/websites" class="cta-button"><?= $servicesRemoteSupportButton = $content[38]['content'];?></a>
+        <a href="../LAtPC/offered_services/remoteSupport" class="cta-button"><?= $servicesWebsitesButton = $content[39]['content'];?></a>
     </div>
 
     <div class="grid-item">
