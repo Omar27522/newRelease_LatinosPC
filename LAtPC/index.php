@@ -201,6 +201,22 @@ function offered_security($sub_route){
 			include 'security/security.php';
 			echo '</section>';
 			break;
+		case 'backups':
+			$page = new Structure('../../', 'english', 'Backups');
+			$keywords = 'Keywords';
+			$description = 'Description';
+			echo '<section class="fullbar">';
+			include 'security/security.php';
+			echo '</section>';
+			break;
+		case 'passwords':
+			$page = new Structure('../../', 'english', 'Passwords');
+			$keywords = 'Keywords';
+			$description = 'Description';
+			echo '<section class="fullbar">';
+			include 'security/security.php';
+			echo '</section>';
+			break;
 
 			case '':
 				echo 'Security Main Page';
@@ -408,11 +424,11 @@ function content_home()
             <div class="link-dialog">
                 <p tabindex="0"><?= $securityDialog = $content[46]['content'];?></p>
             </div>
-        <!-- </div> -->
+         </div>
 
-        <a href="latpc/offered_security/best_practices" class="cta-button"><?= $securityButton = $content[47]['content'];?></a>
-        <a href="#" class="cta-button"><?= $securityButton2 = $content[48]['content'];?></a>
-        <a href="#" class="cta-button"><?= $securityButton3 = $content[49]['content'];?></a>
+        <a href="../LAtPC/offered_security/best_practices" class="cta-button"><?= $securityButton = $content[47]['content'];?></a>
+        <a href="../LAtPC/offered_security/backups" class="cta-button"><?= $securityButton2 = $content[48]['content'];?></a>
+        <a href="../LAtPC/offered_security/passwords" class="cta-button"><?= $securityButton3 = $content[49]['content'];?></a>
         <aside>
             <hr>
             <div class="multi-link-container">

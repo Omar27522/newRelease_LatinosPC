@@ -297,6 +297,8 @@
                 'Websites' => 'content_services_websites',
                 'Remote Support' => 'content_services_remoteSupport',
                 'Best Practices' => 'best_practices',
+                'Backups' => 'backups',
+                'Passwords' => 'passwords',
             ],
             'es-419' => [
                 'Inicio LatinosPC' => 'contenido_inicio',
