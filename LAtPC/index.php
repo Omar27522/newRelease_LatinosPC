@@ -90,6 +90,11 @@ switch ($main_route) {
 		exit;
 		break;
 
+	case 'hardware':
+		offered_security($sub_route);
+		exit;
+		break;
+
 	case 'Template':
 		fullPageTemplate();
 		exit;
@@ -227,6 +232,27 @@ function offered_security($sub_route){
 	}
 }
 
+function hardware($sub_route){
+
+	switch ($sub_route) {
+		case 'cpu':
+			$page = new Structure('../../', 'english', 'hw_cpu');
+			$keywords = 'Keywords';
+			$description = 'Description';
+			echo '<section class="fullbar">';
+			include 'hardware/hardware.php';
+			echo '</section>';
+			break;
+
+			case '':
+				echo 'Hardware Main Page';
+				break;
+
+		default:
+			show404();
+			break;
+	}
+}
 
 function fullPageTemplate()
 {
@@ -438,7 +464,7 @@ function content_home()
                 </div>
             </div>
             <p><?= $tutorialsAndBlogParagraph = $content[53]['content'];?></p>
-            <a href="#" class="cta-button"><?= $tutorialsAndBlogButton = $content[54]['content'];?></a>
+            <a href="../LAtPC/tutorials/" class="cta-button"><?= $tutorialsAndBlogButton = $content[54]['content'];?></a>
         </aside>
     </div>
 
@@ -452,12 +478,12 @@ function content_home()
             </div>
         </div>
 
-        <a href="#" class="cta-button"><?= $hardwareButtons = $content[59]['content'];?></a>
-        <a href="#" class="cta-button"><?= $hardwareButtons = $content[60]['content'];?></a>
-        <a href="#" class="cta-button"><?= $hardwareButtons = $content[61]['content'];?></a>
-        <a href="#" class="cta-button"><?= $hardwareButtons = $content[62]['content'];?></a>
-        <a href="#" class="cta-button"><?= $hardwareButtons = $content[63]['content'];?></a>
-        <a href="#" class="cta-button"><?= $hardwareButtons = $content[64]['content'];?></a>
+        <a href="../LAtPC/hardware/cpu" class="cta-button"><?= $hardwareButtons = $content[59]['content'];?></a>
+        <a href="../LAtPC/hardware/storage" class="cta-button"><?= $hardwareButtons = $content[60]['content'];?></a>
+        <a href="../LAtPC/hardware/psu" class="cta-button"><?= $hardwareButtons = $content[61]['content'];?></a>
+        <a href="../LAtPC/hardware/input" class="cta-button"><?= $hardwareButtons = $content[62]['content'];?></a>
+        <a href="../LAtPC/hardware/output" class="cta-button"><?= $hardwareButtons = $content[63]['content'];?></a>
+        <a href="../LAtPC/hardware/" class="cta-button"><?= $hardwareButtons = $content[64]['content'];?></a>
 
         <aside>
             <hr>
@@ -469,7 +495,7 @@ function content_home()
                 </div>
             </div>
             <p><?= $hardwarePeripheralsAndGear = $content[68]['content'];?></p>
-            <a href="#" class="cta-button"><?= $visitPage = $content[54]['content'];?></a>
+            <a href="../LAtPC/hardware/peripherals_and_gear" class="cta-button"><?= $visitPage = $content[54]['content'];?></a>
     </div>
     </aside>
 
