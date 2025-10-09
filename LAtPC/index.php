@@ -118,7 +118,10 @@ function show404()
 	http_response_code(404);
 	echo '<!DOCTYPE html>';
 	echo '<html><head><title>404 - Page Not Found</title></head>';
-	echo '<body><h1>Page not found Go away please!</h1></body></html>';
+	echo "DEBUG: Route = '" . $route . "'<br>";
+echo $path_info;
+// Route handling
+	echo '<body><h1>Page not found</h1></body></html>';
 }
 
 function showSpanishContent()
@@ -391,12 +394,12 @@ function content_home()
             </div>
         </div>
 
-        <a href="offered_services/cleanups" class="cta-button"><?= $servicesCleanUpsButton = $content[34]['content'];?></a>
-        <a href="offered_services/protection" class="cta-button"><?= $servicesComputerProtectionButton = $content[35]['content'];?></a>
-        <a href="offered_services/consultations" class="cta-button"><?= $servicesConsultationsButton = $content[36]['content'];?></a>
-        <a href="offered_services/managedServices" class="cta-button"><?= $servicesManagedServicesButton = $content[37]['content'];?></a>
-        <a href="offered_services/websites" class="cta-button"><?= $servicesRemoteSupportButton = $content[38]['content'];?></a>
-        <a href="offered_services/remoteSupport" class="cta-button"><?= $servicesWebsitesButton = $content[39]['content'];?></a>
+        <a href="LAtPC/offered_services/cleanups" class="cta-button"><?= $servicesCleanUpsButton = $content[34]['content'];?></a>
+        <a href="LAtPC/offered_services/protection" class="cta-button"><?= $servicesComputerProtectionButton = $content[35]['content'];?></a>
+        <a href="LAtPC/offered_services/consultations" class="cta-button"><?= $servicesConsultationsButton = $content[36]['content'];?></a>
+        <a href="LAtPC/offered_services/managedServices" class="cta-button"><?= $servicesManagedServicesButton = $content[37]['content'];?></a>
+        <a href="LAtPC/offered_services/websites" class="cta-button"><?= $servicesRemoteSupportButton = $content[38]['content'];?></a>
+        <a href="LAtPC/offered_services/remoteSupport" class="cta-button"><?= $servicesWebsitesButton = $content[39]['content'];?></a>
     </div>
 
     <div class="grid-item">
@@ -405,9 +408,9 @@ function content_home()
             <div class="link-dialog">
                 <p tabindex="0"><?= $securityDialog = $content[46]['content'];?></p>
             </div>
-        </div>
+        <!-- </div> -->
 
-        <a href="offered_security/best_practices" class="cta-button"><?= $securityButton = $content[47]['content'];?></a>
+        <a href="latpc/offered_security/best_practices" class="cta-button"><?= $securityButton = $content[47]['content'];?></a>
         <a href="#" class="cta-button"><?= $securityButton2 = $content[48]['content'];?></a>
         <a href="#" class="cta-button"><?= $securityButton3 = $content[49]['content'];?></a>
         <aside>
