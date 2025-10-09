@@ -124,7 +124,7 @@ function show404()
 	echo '<!DOCTYPE html>';
 	echo '<html><head><title>404 - Page Not Found</title></head>';
 	echo "DEBUG: Route = '" . $route . "'<br>";
-echo $path_info;
+$path_info;
 // Route handling
 	echo '<body><h1>Page not found</h1></body></html>';
 }

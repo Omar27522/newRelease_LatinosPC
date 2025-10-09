@@ -299,6 +299,7 @@
                 'Best Practices' => 'best_practices',
                 'Backups' => 'backups',
                 'Passwords' => 'passwords',
+                'HW CPU' => 'hw_cpu',
             ],
             'es-419' => [
                 'Inicio LatinosPC' => 'contenido_inicio',
