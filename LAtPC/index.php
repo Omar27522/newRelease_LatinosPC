@@ -137,8 +137,12 @@ function show404()
       background-color: #f8f9fa;
       font-family: Arial, sans-serif;
       text-align: center;
+	  padding: .25rem 2rem .3rem;
       padding-top: 10%;
       color: #333;
+  margin: 0 auto;
+  position: relative;
+  max-width: 600px;
     }
     h1 {
       font-size: 5em;
