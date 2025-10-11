@@ -176,7 +176,7 @@ try {
     $tableExists = $pdo->query("SELECT name FROM sqlite_master WHERE type='table' AND name='content'")->fetch();
 
     if ($tableExists) {
-        $stmt = $pdo->query('SELECT * FROM content WHERE page_id="inicio"');
+        $stmt = $pdo->query('SELECT * FROM content WHERE page_id="home"');
         $content = $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 } catch (PDOException $e) {
@@ -269,7 +269,6 @@ if (isset($_GET['q']) && is_string($_GET['q'])) {
 
 //$stmt = $pdo->prepare("DELETE FROM content WHERE id = ?");
 //$stmt->execute([13]); // Delete record with ID 13
-
 
 
 
