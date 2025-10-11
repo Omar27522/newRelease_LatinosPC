@@ -94,6 +94,11 @@ switch ($main_route) {
 		hardware_options($sub_route);
 		exit;
 		break;
+
+	case 'software_options':
+		software_options($sub_route);
+		exit;
+		break;
  
 	case 'Template':
 		fullPageTemplate();
@@ -121,12 +126,50 @@ switch ($main_route) {
 function show404()
 {
 	http_response_code(404);
-	echo '<!DOCTYPE html>';
-	echo '<html><head><title>404 - Page Not Found</title></head>';
-	echo "DEBUG: Route = '" . $route . "'<br>";
-$path_info;
-// Route handling
-	echo '<body><h1>Page not found</h1></body></html>';
+	
+	 echo '<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>404 - Page Not Found</title>
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 10%;
+      color: #333;
+    }
+    h1 {
+      font-size: 5em;
+      margin-bottom: 0.5em;
+      color: #dc3545;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 2em;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+      background-color: #007bff;
+      padding: 0.75em 1.5em;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>404</h1>
+  <p>Oops! The page you’re looking for doesn’t exist.</p>
+  <a href="../">Return Home</a>
+</body>
+</html>';
+
+	exit;
 }
 
 function showSpanishContent()
@@ -238,15 +281,148 @@ function hardware_options($sub_route){
 			$description = 'CPU Description';
 			include 'hardware/hardware.php';
 			break;
+		case 'storage':
+			$page = new Structure('../../', 'english', 'HW Storage');
+			$keywords = 'Storage Keywords';
+			$description = 'Storage Description';
+			include 'hardware/hardware.php';
+			break;
+		case 'psu':
+			$page = new Structure('../../', 'english', 'HW PSU');
+			$keywords = 'PSU Keywords';
+			$description = 'PSU Description';
+			include 'hardware/hardware.php';
+			break;
+		case 'input_devices':
+			$page = new Structure('../../', 'english', 'HW Input Devices');
+			$keywords = 'Input Devices Keywords';
+			$description = 'Input Devices Description';
+			include 'hardware/hardware.php';
+			break;
+		case 'output_devices':
+			$page = new Structure('../../', 'english', 'HW Output Devices');
+			$keywords = 'Output Devices Keywords';
+			$description = 'Output Devices Description';
+			include 'hardware/hardware.php';
+			break;
+		case 'peripherals_and_gear':
+			$page = new Structure('../../', 'english', 'HW Peripherals');
+			$keywords = 'Peripherals Keywords';
+			$description = 'Peripherals Description';
+			include 'hardware/hardware.php';
+			break;
 
 			case '':
-				echo 'Hardware Main Page';
+				$page = new Structure('../../', 'english', 'Hardware');
+			$keywords = 'Hardware Keywords';
+			$description = 'Hardware Description';
+			include 'hardware/hardware.php';
 				break;
 
 		default:
 			show404();
 			break;
 	}
+}
+
+
+function software_options($sub_route){
+	switch ($sub_route){
+		case 'anti_virus':
+				$page = new Structure('../../', 'english', 'SW Anti-Virus');
+				$keywords = 'Anti-Virus Keywords';
+				$description = 'Anti-Virus Description';
+				include 'software/software.php';
+				break;
+		case 'malware_cleaner':
+				$page = new Structure('../../', 'english', 'SW Malware Cleaner');
+				$keywords = 'Malware Cleaner Keywords';
+				$description = 'Malware Cleaner Description';
+				include 'software/software.php';
+				break;
+		case 'web_browsers':
+				$page = new Structure('../../', 'english', 'SW Web Browsers');
+				$keywords = 'Web Browsers Keywords';
+				$description = 'Web Browsers Description';
+				include 'software/software.php';
+				break;
+		case 'messaging':
+				$page = new Structure('../../', 'english', 'SW Messaging');
+				$keywords = 'Messaging Keywords';
+				$description = 'Messaging Description';
+				include 'software/software.php';
+				break;
+		case 'media':
+				$page = new Structure('../../', 'english', 'SW Media');
+				$keywords = 'Media Keywords';
+				$description = 'Media Description';
+				include 'software/software.php';
+				break;
+		case 'runtimes':
+				$page = new Structure('../../', 'english', 'SW Runtimes');
+				$keywords = 'Runtimes Keywords';
+				$description = 'Runtimes Description';
+				include 'software/software.php';
+				break;
+		case 'imaging':
+			$page = new Structure('../../', 'english', 'SW Imaging');
+			$keywords = 'Imaging Keywords';
+			$description = 'Imaging Description';
+			include 'software/software.php';
+			break;
+		case 'documents':
+			$page = new Structure('../../', 'english', 'SW Documents');
+			$keywords = 'Documents Keywords';
+			$description = 'Documents Description';
+			include 'software/software.php';
+			break;
+		case'file_sharing':
+			$page = new Structure('../../', 'english', 'SW File Sharing');
+			$keywords = 'File Sharing Keywords';
+			$description = 'File Sharing Description';
+			include 'software/software.php';
+			break;
+		case 'online_storage':
+			$page = new Structure('../../', 'english', 'SW Online Storage');
+			$keywords = 'Online Storage Keywords';
+			$description = 'Online Storage Description';
+			include 'software/software.php';
+			break;
+		case 'other':
+			$page = new Structure('../../', 'english', 'SW Other');
+			$keywords = 'Other Keywords';
+			$description = 'Other Description';
+			include 'software/software.php';
+			break;
+		case 'utilities':
+			$page = new Structure('../../', 'english', 'SW Utilities');
+			$keywords = 'Utilities Keywords';
+			$description = 'Utilities Description';
+			include 'software/software.php';
+			break;
+		case 'compression':
+			$page = new Structure('../../', 'english', 'SW Compression');
+			$keywords = 'Compression Keywords';
+			$description = 'Compression Description';
+			include 'software/software.php';
+			break;
+		case 'developer_tools':
+			$page = new Structure('../../', 'english', 'SW Developer Tools');
+			$keywords = 'Developer Tools Keywords';
+			$description = 'Developer Tools Description';
+			include 'software/software.php';
+			break;
+						
+		case '':
+				$page = new Structure('../../', 'english', 'Software');
+				$keywords = 'Software Keywords';
+				$description = 'Software Description';
+				include 'software/software.php';
+					break;			
+		default:
+			show404();
+			break;
+		}
 }
 
 function fullPageTemplate()
@@ -476,8 +652,8 @@ function content_home()
         <a href="../LAtPC/hardware_options/cpu" class="cta-button"><?= $hardwareButtons = $content[59]['content'];?></a>
         <a href="../LAtPC/hardware_options/storage" class="cta-button"><?= $hardwareButtons = $content[60]['content'];?></a>
         <a href="../LAtPC/hardware_options/psu" class="cta-button"><?= $hardwareButtons = $content[61]['content'];?></a>
-        <a href="../LAtPC/hardware_options/input" class="cta-button"><?= $hardwareButtons = $content[62]['content'];?></a>
-        <a href="../LAtPC/hardware_options/output" class="cta-button"><?= $hardwareButtons = $content[63]['content'];?></a>
+        <a href="../LAtPC/hardware_options/input_devices" class="cta-button"><?= $hardwareButtons = $content[62]['content'];?></a>
+        <a href="../LAtPC/hardware_options/output_devices" class="cta-button"><?= $hardwareButtons = $content[63]['content'];?></a>
         <a href="../LAtPC/hardware_options/" class="cta-button"><?= $hardwareButtons = $content[64]['content'];?></a>
 
         <aside>
@@ -490,7 +666,7 @@ function content_home()
                 </div>
             </div>
             <p><?= $hardwarePeripheralsAndGear = $content[68]['content'];?></p>
-            <a href="../LAtPC/hardware/peripherals_and_gear" class="cta-button"><?= $visitPage = $content[54]['content'];?></a>
+            <a href="../LAtPC/hardware_options/peripherals_and_gear" class="cta-button"><?= $visitPage = $content[54]['content'];?></a>
     </div>
     </aside>
 
@@ -501,20 +677,20 @@ function content_home()
                 <p tabindex="0"><?= $softwareDialog = $content[70]['content'];?></p>
             </div>
         </div>
-        <a href="#" class="cta-button"><?= $softwareButtons = $content[71]['content'];?></a>
-        <a href="#" class="cta-button"><?= $softwareButtons = $content[72]['content'];?></a>
-        <a href="#" class="cta-button"><?= $softwareButtons = $content[73]['content'];?></a>
-        <a href="#" class="cta-button"><?= $softwareButtons = $content[74]['content'];?></a>
-        <a href="#" class="cta-button"><?= $softwareButtons = $content[75]['content'];?></a>
-        <a href="#" class="cta-button"><?= $softwareButtons = $content[76]['content'];?></a>
-        <a href="#" class="cta-button"><?= $softwareButtons = $content[77]['content'];?></a>
-        <a href="#" class="cta-button"><?= $softwareButtons = $content[78]['content'];?></a>
-        <a href="#" class="cta-button"><?= $softwareButtons = $content[79]['content'];?></a>
-        <a href="#" class="cta-button"><?= $softwareButtons = $content[80]['content'];?></a>
-        <a href="#" class="cta-button"><?= $softwareButtons = $content[81]['content'];?></a>
-        <a href="#" class="cta-button"><?= $softwareButtons = $content[82]['content'];?></a>
-        <a href="#" class="cta-button"><?= $softwareButtons = $content[83]['content'];?></a>
-        <a href="#" class="cta-button"><?= $softwareButtons = $content[84]['content'];?></a>
+        <a href="../LAtPC/software_options/anti_virus" class="cta-button"><?= $softwareButtons = $content[71]['content'];?></a>
+        <a href="../LAtPC/software_options/malware_cleaner" class="cta-button"><?= $softwareButtons = $content[72]['content'];?></a>
+        <a href="../LAtPC/software_options/web_browsers" class="cta-button"><?= $softwareButtons = $content[73]['content'];?></a>
+        <a href="../LAtPC/software_options/messaging" class="cta-button"><?= $softwareButtons = $content[74]['content'];?></a>
+        <a href="../LAtPC/software_options/media" class="cta-button"><?= $softwareButtons = $content[75]['content'];?></a>
+        <a href="../LAtPC/software_options/runtimes" class="cta-button"><?= $softwareButtons = $content[76]['content'];?></a>
+        <a href="../LAtPC/software_options/imaging" class="cta-button"><?= $softwareButtons = $content[77]['content'];?></a>
+        <a href="../LAtPC/software_options/documents" class="cta-button"><?= $softwareButtons = $content[78]['content'];?></a>
+        <a href="../LAtPC/software_options/file_sharing" class="cta-button"><?= $softwareButtons = $content[79]['content'];?></a>
+        <a href="../LAtPC/software_options/online_storage" class="cta-button"><?= $softwareButtons = $content[80]['content'];?></a>
+        <a href="../LAtPC/software_options/other" class="cta-button"><?= $softwareButtons = $content[81]['content'];?></a>
+        <a href="../LAtPC/software_options/utilities" class="cta-button"><?= $softwareButtons = $content[82]['content'];?></a>
+        <a href="../LAtPC/software_options/compression" class="cta-button"><?= $softwareButtons = $content[83]['content'];?></a>
+        <a href="../LAtPC/software_options/developer_tools" class="cta-button"><?= $softwareButtons = $content[84]['content'];?></a>
     </div>
 </section>
 <?php

@@ -59,13 +59,17 @@
             for example; I can call  page_id="home", or inicio, and it will give me the array for the same table where the contents were indexed differently.
                 A new file SQLiteconnection.php shows how the database has indexed the data, and how to show it in the page as content.
 
+
+
+
 *work on the reviews page.*
 *work on a back-to-top button.*
-*Work on a 404 page.*
 *I would like to comeback to the Teachings page and modify the <ruby> tags where a dialog opens when clicked, but also there is an external link to teh verse in different versions of the Holy Scripture *
 
 
 
+*Done (10/11/2025)*
+    *Work on a 404 page.*
 *Done (8/27/2025)*
     ||loading CSS files accordingly instead of using embedded CSS on each file.||
         The css will be in the same file as the content, but in a different function,
