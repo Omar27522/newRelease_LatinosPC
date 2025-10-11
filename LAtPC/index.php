@@ -90,11 +90,11 @@ switch ($main_route) {
 		exit;
 		break;
 
-	case 'hardware':
-		offered_security($sub_route);
+	case 'hardware_options':
+		hardware_options($sub_route);
 		exit;
 		break;
-
+ 
 	case 'Template':
 		fullPageTemplate();
 		exit;
@@ -202,46 +202,41 @@ function offered_security($sub_route){
 			$page = new Structure('../../', 'english', 'Best Practices');
 			$keywords = 'Keywords';
 			$description = 'Description';
-			echo '<section class="fullbar">';
 			include 'security/security.php';
-			echo '</section>';
 			break;
 		case 'backups':
 			$page = new Structure('../../', 'english', 'Backups');
 			$keywords = 'Keywords';
 			$description = 'Description';
-			echo '<section class="fullbar">';
 			include 'security/security.php';
-			echo '</section>';
 			break;
 		case 'passwords':
 			$page = new Structure('../../', 'english', 'Passwords');
 			$keywords = 'Keywords';
 			$description = 'Description';
-			echo '<section class="fullbar">';
 			include 'security/security.php';
-			echo '</section>';
 			break;
 
-			case '':
-				echo 'Security Main Page';
-				break;
+		case '':
+			$page = new Structure('../../', 'english', 'Security');
+			$keywords = 'Security Keywords';
+			$description = 'Security Description';
+			include 'security/security.php';
+			break;
 		default:
 			show404();
 			break;
 	}
 }
 
-function hardware($sub_route){
+function hardware_options($sub_route){
 
 	switch ($sub_route) {
 		case 'cpu':
-			$page = new Structure('../../', 'english', 'hw_cpu');
-			$keywords = 'Keywords';
-			$description = 'Description';
-			echo '<section class="fullbar">';
+			$page = new Structure('../../', 'english', 'HW CPU');
+			$keywords = 'CPU Keywords';
+			$description = 'CPU Description';
 			include 'hardware/hardware.php';
-			echo '</section>';
 			break;
 
 			case '':
@@ -478,12 +473,12 @@ function content_home()
             </div>
         </div>
 
-        <a href="../LAtPC/hardware/cpu" class="cta-button"><?= $hardwareButtons = $content[59]['content'];?></a>
-        <a href="../LAtPC/hardware/storage" class="cta-button"><?= $hardwareButtons = $content[60]['content'];?></a>
-        <a href="../LAtPC/hardware/psu" class="cta-button"><?= $hardwareButtons = $content[61]['content'];?></a>
-        <a href="../LAtPC/hardware/input" class="cta-button"><?= $hardwareButtons = $content[62]['content'];?></a>
-        <a href="../LAtPC/hardware/output" class="cta-button"><?= $hardwareButtons = $content[63]['content'];?></a>
-        <a href="../LAtPC/hardware/" class="cta-button"><?= $hardwareButtons = $content[64]['content'];?></a>
+        <a href="../LAtPC/hardware_options/cpu" class="cta-button"><?= $hardwareButtons = $content[59]['content'];?></a>
+        <a href="../LAtPC/hardware_options/storage" class="cta-button"><?= $hardwareButtons = $content[60]['content'];?></a>
+        <a href="../LAtPC/hardware_options/psu" class="cta-button"><?= $hardwareButtons = $content[61]['content'];?></a>
+        <a href="../LAtPC/hardware_options/input" class="cta-button"><?= $hardwareButtons = $content[62]['content'];?></a>
+        <a href="../LAtPC/hardware_options/output" class="cta-button"><?= $hardwareButtons = $content[63]['content'];?></a>
+        <a href="../LAtPC/hardware_options/" class="cta-button"><?= $hardwareButtons = $content[64]['content'];?></a>
 
         <aside>
             <hr>

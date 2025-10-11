@@ -54,7 +54,7 @@
             I am not sure how to call it better, but I am making new variables to understand the requests for data.
                 This implementation I hope will not be too difficult, because teachings still needs to be translated.
                     I'm considering, making the page in the old fashion way, by creating 2d arrays and such.
-    4/10/2025|Update) The Database implementation has been successful.
+    (10/4/2025|Update) The Database implementation has been successful.
         The database is a two table implementation where one is the id of the pages in content.
             for example; I can call  page_id="home", or inicio, and it will give me the array for the same table where the contents were indexed differently.
                 A new file SQLiteconnection.php shows how the database has indexed the data, and how to show it in the page as content.

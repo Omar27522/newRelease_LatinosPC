@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LatinosPC - Development Roadmap</title>
+    <link rel="stylesheet" href="LAtPC/anvil/mainStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .roadmap-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+        }
+        
+        .roadmap-section {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .roadmap-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--primary-color);
+        }
+        
+        .roadmap-section h3 {
+            color: var(--primary-dark);
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .task-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 0.75rem;
+            margin-bottom: 0.5rem;
+            border-radius: 6px;
+            transition: var(--transition);
+            background: var(--background);
+        }
+        
+        .task-item:hover {
+            background: var(--dialog-text-highlight);
+        }
+        
+        .task-item.completed {
+            opacity: 0.6;
+            text-decoration: line-through;
+        }
+        
+        .task-item input[type="checkbox"] {
+            margin-right: 1rem;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+        
+        .task-content {
+            flex-grow: 1;
+        }
+        
+        .task-content strong {
+            color: var(--primary-dark);
+        }
+        
+        .task-date {
+            font-size: 0.85rem;
+            color: var(--light-text);
+            margin-left: 0.5rem;
+        }
+        
+        .delete-btn {
+            background: #dc3545;
+            color: white;
+            border: none;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 1rem;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+        
+        .delete-btn:hover {
+            background: #c82333;
+        }
+        
+        .add-task-form {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .add-task-form input[type="text"] {
+            flex: 1;
+            min-width: 250px;
+            padding: 0.5rem;
+            border: 2px solid var(--primary-color);
+            border-radius: 6px;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .add-task-form button {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        
+        .add-task-form button:hover {
+            background: var(--primary-dark);
+        }
+        
+        .priority-high { border-left: 4px solid #dc3545; }
+        .priority-medium { border-left: 4px solid #ffc107; }
+        .priority-low { border-left: 4px solid var(--secondary-dark); }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .stat-card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .stat-card h3 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin: 0;
+        }
+        
+        .stat-card p {
+            color: var(--light-text);
+            margin-top: 0.5rem;
+        }
+        
+        .bug-item {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+            border-radius: 6px;
+        }
+        
+        .bug-item.fixed {
+            background: #d4edda;
+            border-left-color: var(--secondary-dark);
+        }
+        
+        .section-controls {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .section-controls input {
+            flex: 1;
+            min-width: 200px;
+            padding: 0.75rem;
+            border: 2px solid var(--primary-color);
+            border-radius: 6px;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .section-controls button {
+            background: var(--secondary-dark);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        
+        .section-controls button:hover {
+            background: var(--primary-dark);
+        }
+        
+        .delete-section-btn {
+            background: #dc3545;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            margin-left: 1rem;
+        }
+        
+        .delete-section-btn:hover {
+            background: #c82333;
+        }
+        
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .section-header h2 {
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logos" style="text-align: center; font-size: 5rem;">
+            <span>LA</span><span>tinos</span>PC
+            <small style="display: block; font-size: 0.5em;">Development Roadmap</small>
+        </div>
+    </header>
+
+    <div class="roadmap-container">
+        <!-- Add New Section -->
+        <div class="roadmap-section">
+            <h2>➕ Add New Section</h2>
+            <div class="section-controls">
+                <input type="text" id="newSectionName" placeholder="Section name (e.g., Testing, Documentation)...">
+                <input type="text" id="newSectionEmoji" placeholder="Emoji (e.g., 🧪, 📚)" maxlength="2">
+                <button onclick="addNewSection()">Create Section</button>
+            </div>
+        </div>
+
+        <!-- Statistics -->
+        <div class="stats">
+            <div class="stat-card">
+                <h3 id="totalTasks">0</h3>
+                <p>Total Tasks</p>
+            </div>
+            <div class="stat-card">
+                <h3 id="completedTasks">0</h3>
+                <p>Completed</p>
+            </div>
+            <div class="stat-card">
+                <h3 id="pendingTasks">0</h3>
+                <p>Pending</p>
+            </div>
+            <div class="stat-card">
+                <h3 id="progressPercent">0%</h3>
+                <p>Progress</p>
+            </div>
+        </div>
+
+        <!-- Current Work -->
+        <div class="roadmap-section">
+            <h2>🚀 Current Sprint</h2>
+            <div id="currentTasks"></div>
+            <div class="add-task-form">
+                <input type="text" id="newCurrentTask" placeholder="Add new task to current sprint...">
+                <button onclick="addTask('current')">Add Task</button>
+            </div>
+        </div>
+
+        <!-- Content Development -->
+        <div class="roadmap-section">
+            <h2>📝 Content Development</h2>
+            <div id="contentTasks"></div>
+            <div class="add-task-form">
+                <input type="text" id="newContentTask" placeholder="Add content task...">
+                <button onclick="addTask('content')">Add Task</button>
+            </div>
+        </div>
+
+        <!-- Features & Enhancements -->
+        <div class="roadmap-section">
+            <h2>✨ Features & Enhancements</h2>
+            <div id="featureTasks"></div>
+            <div class="add-task-form">
+                <input type="text" id="newFeatureTask" placeholder="Add feature request...">
+                <button onclick="addTask('feature')">Add Task</button>
+            </div>
+        </div>
+
+        <!-- Bug Fixes -->
+        <div class="roadmap-section">
+            <h2>🐛 Bug Fixes</h2>
+            <div id="bugTasks"></div>
+            <div class="add-task-form">
+                <input type="text" id="newBugTask" placeholder="Add bug report...">
+                <button onclick="addTask('bug')">Add Task</button>
+            </div>
+        </div>
+
+        <!-- Structure & Refactoring -->
+        <div class="roadmap-section">
+            <h2>🏗️ Structure & Refactoring</h2>
+            <div id="structureTasks"></div>
+            <div class="add-task-form">
+                <input type="text" id="newStructureTask" placeholder="Add structure improvement...">
+                <button onclick="addTask('structure')">Add Task</button>
+            </div>
+        </div>
+
+        <!-- Dynamic Sections Container -->
+        <div id="dynamicSections"></div>
+
+        <!-- Completed Tasks -->
+        <div class="roadmap-section">
+            <h2>✅ Completed Tasks</h2>
+            <div id="completedTasksList"></div>
+        </div>
+    </div>
+
+    <footer style="text-align: center; padding: 2rem; color: var(--light-text);">
+        <p>&copy; 2024 LatinosPC Development Roadmap | Last Updated: <span id="lastUpdated"></span></p>
+    </footer>
+
+    <script>
+        // Roadmap data structure
+        let customSections = {}; // Store custom sections
+        let roadmapData = {
+            current: [
+                { text: 'Database implementation - Two table structure for multilingual content', completed: true, date: '10/4/2025' },
+                { text: 'Work on Teachings page translation', completed: false, date: '10/11/2025' }
+            ],
+            content: [
+                { text: 'Hardware pages content', completed: false },
+                { text: 'Software pages content', completed: false },
+                { text: 'Complete Parables images', completed: false },
+                { text: 'Build Gallery section', completed: false },
+                { text: 'Fact check Apostles page', completed: false },
+                { text: 'Translate Sermons and Discourses page', completed: false }
+            ],
+            feature: [
+                { text: 'Breadcrumbs for subdirectory navigation', completed: true, date: '8/24/2025' },
+                { text: 'Carousel implementation for image galleries', completed: true, date: '9/11/2025' },
+                { text: 'Reviews page', completed: false },
+                { text: 'Back-to-top button', completed: false },
+                { text: '404 error page', completed: false },
+                { text: 'Ruby tags with dialog for verse references', completed: false },
+                { text: 'Better navigation for Sermons section (immersive/interactive)', completed: false },
+                { text: 'Dialog for Apostle names when clicked', completed: false }
+            ],
+            bug: [
+                { text: 'CSS loading issue with function-based content (FIXED: Isolated include in subroute)', completed: true, date: '10/11/2025' },
+                { text: 'Subdirectory access requires underscore workaround', completed: false, date: '10/11/2025' },
+                { text: 'Dialog media queries - text overflow on tablets', completed: false },
+                { text: 'Dialog too narrow on mobile for Parables', completed: true, date: '8/2/2025' },
+                { text: 'Background scrolling when dialog open', completed: true, date: '8/2/2025' }
+            ],
+            structure: [
+                { text: 'Front controller pattern implementation', completed: true, date: '7/21/2025' },
+                { text: 'Subdirectory support with $subroute', completed: true, date: '7/22/2025' },
+                { text: 'Structure class (directory, language, title)', completed: true, date: '7/25/2025' },
+                { text: 'Merge 3 files into one per location', completed: true, date: '7/29/2025' },
+                { text: 'CSS loading standardization', completed: true, date: '8/27/2025' },
+                { text: 'Improve page structure and CSS organization', completed: false },
+                { text: 'Simplify CSS file loading for single pages', completed: false }
+            ]
+        };
+
+        // Load data from localStorage if available
+        function loadData() {
+            const saved = localStorage.getItem('latinosPCRoadmap');
+            if (saved) {
+                roadmapData = JSON.parse(saved);
+            }
+            const savedSections = localStorage.getItem('latinosPCCustomSections');
+            if (savedSections) {
+                customSections = JSON.parse(savedSections);
+            }
+            renderAll();
+            renderCustomSections();
+            updateStats();
+            updateLastModified();
+        }
+
+        // Save data to localStorage
+        function saveData() {
+            localStorage.setItem('latinosPCRoadmap', JSON.stringify(roadmapData));
+            localStorage.setItem('latinosPCCustomSections', JSON.stringify(customSections));
+            updateLastModified();
+        }
+
+        // Render all tasks
+        function renderAll() {
+            renderTasks('current', 'currentTasks');
+            renderTasks('content', 'contentTasks');
+            renderTasks('feature', 'featureTasks');
+            renderTasks('bug', 'bugTasks');
+            renderTasks('structure', 'structureTasks');
+            renderCompletedTasks();
+        }
+
+        // Render tasks for a specific category
+        function renderTasks(category, containerId) {
+            const container = document.getElementById(containerId);
+            container.innerHTML = '';
+            
+            roadmapData[category].forEach((task, index) => {
+                if (!task.completed) {
+                    const taskEl = createTaskElement(task, category, index);
+                    container.appendChild(taskEl);
+                }
+            });
+        }
+
+        // Render completed tasks
+        function renderCompletedTasks() {
+            const container = document.getElementById('completedTasksList');
+            container.innerHTML = '';
+            
+            // Collect all completed tasks from default sections
+            const completed = [];
+            for (const category in roadmapData) {
+                roadmapData[category].forEach((task, index) => {
+                    if (task.completed) {
+                        completed.push({ ...task, category, index, isCustom: false });
+                    }
+                });
+            }
+            
+            // Collect completed tasks from custom sections
+            for (const sectionId in customSections) {
+                customSections[sectionId].tasks.forEach((task, index) => {
+                    if (task.completed) {
+                        completed.push({ ...task, category: sectionId, index, isCustom: true, sectionName: customSections[sectionId].name });
+                    }
+                });
+            }
+            
+            // Sort by date (most recent first)
+            completed.sort((a, b) => {
+                if (!a.date) return 1;
+                if (!b.date) return -1;
+                return new Date(b.date) - new Date(a.date);
+            });
+            
+            completed.forEach(task => {
+                const taskEl = task.isCustom ? 
+                    createCustomTaskElement(task, task.category, task.index) : 
+                    createTaskElement(task, task.category, task.index);
+                container.appendChild(taskEl);
+            });
+        }
+
+        // Create task element
+        function createTaskElement(task, category, index) {
+            const div = document.createElement('div');
+            div.className = 'task-item' + (task.completed ? ' completed' : '');
+            
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.checked = task.completed;
+            checkbox.onchange = () => toggleTask(category, index);
+            
+            const content = document.createElement('div');
+            content.className = 'task-content';
+            content.innerHTML = task.text + (task.date ? `<span class="task-date">(${task.date})</span>` : '');
+            
+            const deleteBtn = document.createElement('button');
+            deleteBtn.className = 'delete-btn';
+            deleteBtn.textContent = 'Delete';
+            deleteBtn.onclick = () => deleteTask(category, index);
+            
+            div.appendChild(checkbox);
+            div.appendChild(content);
+            div.appendChild(deleteBtn);
+            
+            return div;
+        }
+
+        // Toggle task completion
+        function toggleTask(category, index) {
+            roadmapData[category][index].completed = !roadmapData[category][index].completed;
+            
+            // Add date if completing
+            if (roadmapData[category][index].completed && !roadmapData[category][index].date) {
+                const today = new Date();
+                roadmapData[category][index].date = `${today.getMonth() + 1}/${today.getDate()}/${today.getFullYear()}`;
+            }
+            
+            saveData();
+            renderAll();
+            updateStats();
+        }
+
+        // Delete task
+        function deleteTask(category, index) {
+            if (confirm('Are you sure you want to delete this task?')) {
+                roadmapData[category].splice(index, 1);
+                saveData();
+                renderAll();
+                updateStats();
+            }
+        }
+
+        // Add new task
+        function addTask(category) {
+            const inputId = 'new' + category.charAt(0).toUpperCase() + category.slice(1) + 'Task';
+            const input = document.getElementById(inputId);
+            const text = input.value.trim();
+            
+            if (text) {
+                const today = new Date();
+                const dateStr = `${today.getMonth() + 1}/${today.getDate()}/${today.getFullYear()}`;
+                
+                roadmapData[category].push({
+                    text: text,
+                    completed: false,
+                    date: dateStr
+                });
+                
+                input.value = '';
+                saveData();
+                renderAll();
+                updateStats();
+            }
+        }
+
+        // Add new custom section
+        function addNewSection() {
+            const nameInput = document.getElementById('newSectionName');
+            const emojiInput = document.getElementById('newSectionEmoji');
+            const name = nameInput.value.trim();
+            const emoji = emojiInput.value.trim() || '📋';
+            
+            if (name) {
+                const sectionId = name.toLowerCase().replace(/\s+/g, '_');
+                
+                if (customSections[sectionId]) {
+                    alert('A section with this name already exists!');
+                    return;
+                }
+                
+                customSections[sectionId] = {
+                    name: name,
+                    emoji: emoji,
+                    tasks: []
+                };
+                
+                nameInput.value = '';
+                emojiInput.value = '';
+                saveData();
+                renderCustomSections();
+                updateStats();
+            }
+        }
+        
+        // Delete custom section
+        function deleteSection(sectionId) {
+            if (confirm(`Are you sure you want to delete the "${customSections[sectionId].name}" section and all its tasks?`)) {
+                delete customSections[sectionId];
+                saveData();
+                renderCustomSections();
+                updateStats();
+            }
+        }
+        
+        // Render custom sections
+        function renderCustomSections() {
+            const container = document.getElementById('dynamicSections');
+            container.innerHTML = '';
+            
+            for (const sectionId in customSections) {
+                const section = customSections[sectionId];
+                const sectionDiv = document.createElement('div');
+                sectionDiv.className = 'roadmap-section';
+                
+                sectionDiv.innerHTML = `
+                    <div class="section-header">
+                        <h2>${section.emoji} ${section.name}</h2>
+                        <button class="delete-section-btn" onclick="deleteSection('${sectionId}')">Delete Section</button>
+                    </div>
+                    <div id="${sectionId}Tasks"></div>
+                    <div class="add-task-form">
+                        <input type="text" id="new${sectionId}Task" placeholder="Add task to ${section.name}...">
+                        <button onclick="addCustomTask('${sectionId}')">Add Task</button>
+                    </div>
+                `;
+                
+                container.appendChild(sectionDiv);
+                
+                // Render tasks for this section
+                renderCustomTasks(sectionId);
+            }
+            
+            // Re-attach enter key listeners for new inputs
+            attachCustomEnterListeners();
+        }
+        
+        // Render tasks for custom section
+        function renderCustomTasks(sectionId) {
+            const container = document.getElementById(`${sectionId}Tasks`);
+            if (!container) return;
+            
+            container.innerHTML = '';
+            const section = customSections[sectionId];
+            
+            section.tasks.forEach((task, index) => {
+                if (!task.completed) {
+                    const taskEl = createCustomTaskElement(task, sectionId, index);
+                    container.appendChild(taskEl);
+                }
+            });
+        }
+        
+        // Create custom task element
+        function createCustomTaskElement(task, sectionId, index) {
+            const div = document.createElement('div');
+            div.className = 'task-item' + (task.completed ? ' completed' : '');
+            
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.checked = task.completed;
+            checkbox.onchange = () => toggleCustomTask(sectionId, index);
+            
+            const content = document.createElement('div');
+            content.className = 'task-content';
+            content.innerHTML = task.text + (task.date ? `<span class="task-date">(${task.date})</span>` : '');
+            
+            const deleteBtn = document.createElement('button');
+            deleteBtn.className = 'delete-btn';
+            deleteBtn.textContent = 'Delete';
+            deleteBtn.onclick = () => deleteCustomTask(sectionId, index);
+            
+            div.appendChild(checkbox);
+            div.appendChild(content);
+            div.appendChild(deleteBtn);
+            
+            return div;
+        }
+        
+        // Add task to custom section
+        function addCustomTask(sectionId) {
+            const inputId = `new${sectionId}Task`;
+            const input = document.getElementById(inputId);
+            const text = input.value.trim();
+            
+            if (text) {
+                const today = new Date();
+                const dateStr = `${today.getMonth() + 1}/${today.getDate()}/${today.getFullYear()}`;
+                
+                customSections[sectionId].tasks.push({
+                    text: text,
+                    completed: false,
+                    date: dateStr
+                });
+                
+                input.value = '';
+                saveData();
+                renderCustomTasks(sectionId);
+                updateStats();
+            }
+        }
+        
+        // Toggle custom task completion
+        function toggleCustomTask(sectionId, index) {
+            customSections[sectionId].tasks[index].completed = !customSections[sectionId].tasks[index].completed;
+            
+            if (customSections[sectionId].tasks[index].completed && !customSections[sectionId].tasks[index].date) {
+                const today = new Date();
+                customSections[sectionId].tasks[index].date = `${today.getMonth() + 1}/${today.getDate()}/${today.getFullYear()}`;
+            }
+            
+            saveData();
+            renderCustomSections();
+            renderCompletedTasks();
+            updateStats();
+        }
+        
+        // Delete custom task
+        function deleteCustomTask(sectionId, index) {
+            if (confirm('Are you sure you want to delete this task?')) {
+                customSections[sectionId].tasks.splice(index, 1);
+                saveData();
+                renderCustomTasks(sectionId);
+                updateStats();
+            }
+        }
+        
+        // Attach enter key listeners to custom section inputs
+        function attachCustomEnterListeners() {
+            for (const sectionId in customSections) {
+                const inputId = `new${sectionId}Task`;
+                const input = document.getElementById(inputId);
+                if (input) {
+                    input.addEventListener('keypress', (e) => {
+                        if (e.key === 'Enter') {
+                            addCustomTask(sectionId);
+                        }
+                    });
+                }
+            }
+        }
+
+        // Update statistics
+        function updateStats() {
+            let total = 0;
+            let completed = 0;
+            
+            // Count default sections
+            for (const category in roadmapData) {
+                total += roadmapData[category].length;
+                completed += roadmapData[category].filter(t => t.completed).length;
+            }
+            
+            // Count custom sections
+            for (const sectionId in customSections) {
+                total += customSections[sectionId].tasks.length;
+                completed += customSections[sectionId].tasks.filter(t => t.completed).length;
+            }
+            
+            const pending = total - completed;
+            const percent = total > 0 ? Math.round((completed / total) * 100) : 0;
+            
+            document.getElementById('totalTasks').textContent = total;
+            document.getElementById('completedTasks').textContent = completed;
+            document.getElementById('pendingTasks').textContent = pending;
+            document.getElementById('progressPercent').textContent = percent + '%';
+        }
+
+        // Update last modified date
+        function updateLastModified() {
+            const now = new Date();
+            const dateStr = now.toLocaleDateString() + ' ' + now.toLocaleTimeString();
+            document.getElementById('lastUpdated').textContent = dateStr;
+        }
+
+        // Allow Enter key to add tasks
+        document.addEventListener('DOMContentLoaded', () => {
+            loadData();
+            
+            // Add enter key listeners for default sections
+            ['newCurrentTask', 'newContentTask', 'newFeatureTask', 'newBugTask', 'newStructureTask'].forEach(id => {
+                const input = document.getElementById(id);
+                if (input) {
+                    input.addEventListener('keypress', (e) => {
+                        if (e.key === 'Enter') {
+                            const category = id.replace('new', '').replace('Task', '').toLowerCase();
+                            addTask(category);
+                        }
+                    });
+                }
+            });
+            
+            // Add enter key listener for new section creation
+            const sectionNameInput = document.getElementById('newSectionName');
+            const sectionEmojiInput = document.getElementById('newSectionEmoji');
+            if (sectionNameInput) {
+                sectionNameInput.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') {
+                        addNewSection();
+                    }
+                });
+            }
+            if (sectionEmojiInput) {
+                sectionEmojiInput.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') {
+                        addNewSection();
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

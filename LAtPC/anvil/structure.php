@@ -296,6 +296,7 @@
                 'Managed Services' => 'content_services_managedServices',
                 'Websites' => 'content_services_websites',
                 'Remote Support' => 'content_services_remoteSupport',
+                'Security' => 'security',
                 'Best Practices' => 'best_practices',
                 'Backups' => 'backups',
                 'Passwords' => 'passwords',

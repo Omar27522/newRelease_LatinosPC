@@ -1,0 +1,41 @@
+
+
+
+
+10/11/2025
+I have a problem when loading Pages.
+
+The first Problem I encountered was not being able to access the desired subdirectory such as:
+hardware, services, security. I had to add an extra word with a underscore to make it work. (I do not know the reason as to why this happens.)
+    The issue was that when I tried to access the desired URL I was met with a Content not found page, and not my 404 error page. (I think the code was working then it breaks, but renaming the URL works.)
+
+Once the first issue was solved, I was a ble to move on, then a new issue arised. The CSS does not load propertly when I load data from a function, but If I access the data from a file, it works fine.
+
+Eg. Services directory was loaded using single files, and it works fine.
+    Security directory loads the content via functions, but the CSS does not work correctly in this situation.
+
+Also the DevTools inside the browser show me that the <head> is empty, and is the <body> that one that contains the CSS.
+
+I was able to solve the issue, by isolating the include file with in the subroute function, Once again Idk why this is a fix, but it is. 
+I shall include the section tag in the subDirectory function, and the CSS will load correctly. 
+
+|WRONG| |WRONG| |WRONG| |WRONG| |WRONG| |WRONG| |WRONG| |WRONG| |WRONG| |WRONG| |WRONG| |WRONG|
+    case 'passwords':
+    			$page = new Structure('../../', 'english', 'Passwords');
+    			$keywords = 'Keywords';
+    			$description = 'Description';
+    			    echo '<section class="fullbar">';   ---------------> DELETE
+    			include 'security/security.php';
+    			    echo '</section>';                  ---------------> DELETE
+    			break;
+|WRONG| |WRONG| |WRONG| |WRONG| |WRONG| |WRONG| |WRONG| |WRONG| |WRONG| |WRONG| |WRONG| |WRONG|
+
+
+---------Fixed---------
+case 'cpu':
+			$page = new Structure('../../', 'english', 'HW CPU');
+			$keywords = 'CPU Keywords';
+			$description = 'CPU Description';
+			include 'hardware/hardware.php';
+			break;
+---------Fixed---------
