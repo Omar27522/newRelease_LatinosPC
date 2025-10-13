@@ -2,7 +2,7 @@
 function content_services_remoteSupport(){
     ?>
     <section class="fullbar">
-    
+
 <style>
 .remote {
     display: inline-block;

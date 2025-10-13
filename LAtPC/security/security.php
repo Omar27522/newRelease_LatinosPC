@@ -69,7 +69,7 @@ function best_practices() {
     <h2 id="p3s"><a href="?best_practices#navi" title="Best Practices">Train yourself and your employees on best
             practices for device security. Regularly remind emplyees to be vigilant and aware of potential threats,
             these include:</a></h2>
-    <img src="../../images/s_teal.jpg" class="rtl" width="300px">
+    <img src="https://latinospc.com/images/s_teal.jpg" class="rtl" width="300px">
     <h2>Physical attacks:</h2>
     <h3>A bad actor may try to gain physical access to a device by stealing it or by using a technique called "evil
         maid" attack, where they tamper with a device while it is unattended in a public place such as a hotel room.
@@ -186,7 +186,7 @@ function backups (){
 
     <div class="clr"></div>
     <!-- Content goes here -->
-    <img src="../images/backup.png" alt="usbbackup" class="fl" />
+    <img src="https://latinospc.com/images/backup.png" alt="usbbackup" class="fl" />
     <h3>
         <strong><a href="#onsite_b">Onsite</a></strong> backup is easy to set up, data is convenient to
         access and no Internet connection is
@@ -243,7 +243,7 @@ function backups (){
 
 function passwords(){
 ?>
-<div class="article">
+<div class="article fullbar">
     <h2 id="top"><span>Passwords</span></h2>
     <div class="clr"></div>
     <p><span class="date">November 14, 2020</span>
@@ -327,7 +327,7 @@ function passwords(){
         <a href="?about#scroll">About Us</a>,
         <a href="?team#scroll">Team members</a>
     </p>
-    <img src="../images/websites/passcard.gif" width="263" height="146" alt="image" class="fl" />
+    <img src="https://latinospc.com/images/websites/passcard.gif" width="263" height="146" alt="image" class="fl" />
 
     <h3>Passwords will have to be secured and should have a combination of alphanumeric numbers,
         (a-z, 1-9) and other character symbols(!@#$%^&*{}|`). Also secure passwords should be at least
@@ -335,13 +335,14 @@ function passwords(){
     <p>#note; capitalized letters are recognized different from lowercase,
         a T is different from t.</p>
     <div class="clr"></div>
+    <img src="https://latinospc.com/images/websites/ppp.jpg" width="400" height="850" alt="image" class="rtl" />
     <h2>Print the <a href="?perfect_paper_passwords#navi">PassCard:</a></h2>
 
     <p><strong>How to use the <a href="?perfect_paper_passwords#navi">pass card:</a> </strong>
         By default the passcard generates a block of four characters (password piece)
         A-G, 1-10. A strong secure password should be of at least 12 characters long.
         Instead of memorizing a long password, is much simpler for a human to memorize a pattern.</p>
-    <a href="../images/websites/passcard_animation.gif"><img src="../images/websites/passcard_animation.gif" width="400"
+    <a href="https://latinospc.com/images/websites/passcard_animation.gif"><img src="https://latinospc.com/images/websites/passcard_animation.gif" width="400"
             height="200" alt="image" class="rtl" /></a>
     For this password, the sequence will be C3|G7|B10|E5|A1<br />
     The second password's sequence, will be A7|C9|D3|F4<br />
@@ -351,7 +352,7 @@ function passwords(){
     </p>
 </div>
 
-<div class="article">
+<div class="article fullbar">
     <h2><span>Perfect Paper Passwords</span></h2>
     <div class="clr"></div>
     <p><span class="date">November 11, 2020</span>
@@ -364,7 +365,7 @@ function passwords(){
         <a href="?team#scroll">Team members</a>
     </p>
     <h2><strong> Use perfect paper passwords</strong></h2>
-    <img src="../images/websites/passcard.gif" width="263" height="146" alt="image" class="fl" />
+    <img src="https://latinospc.com/images/websites/passcard.gif" width="263" height="146" alt="image" class="fl" />
     <h3>
         “Almost without exception, today's Internet users prove
         their identity online using a fixed account name and password.
@@ -385,25 +386,38 @@ function passwords(){
         state-of-the-art cryptographic logon security.” <a href="https://grc.com/ppp.htm">https://grc.com/</a><br />
 
         <div class="clr"></div>
+        <pre class="fl">
+      A      B      C      D      E
+ 1: \.=who b%$@dh v9$hn? ddy6?q oyxd8f
+ 2: .c.3;3 %ytqm1 n$4uz] f84tj~ dw6scw
+ 3: ,~k_tk e5#4a. @9e4bm cgcib. 9%$"#!
+ 4: 7&oan- [:ri>w +jk3,! a=bvr' u:]&|=
+ 5: [etwvj 9k/xew rjl4p7 ds"k|n fw!odn
+ 6: ?7cpxv nj^gy] /wxfrk ixspk> {@mm:}
+ 7: zf/s6t zbaa>7 wcc$.^ !^teg? 2q7{\<
+ 8: |afn:8 ,rvb34 xrym4! 6*^!z% u.]6r6
+ 9: !;ar~j f_@x2k s,6v5t >cbud5 4yaroz
+10: od[/s" res.r] d\h%y, u}o3oz rkzsut
+    </pre>
         <ol align="right"><a href="https://grc.com/ppp.htm">Go to grc.com/ppp</a></ol>
         <p>Sequence Key: Every-time the page refreshes the sequence key changes. You can copy and paste your key to
             later reprint the same card .
-        </p><br />
+        </p>
         <p>Passcode character set: 64, 88, or your own. The alphabet that your password will have is the passcode
             character set. The default option offers 64 conservative characters, the second option however is much more
             visually aggressive, and therefore much more secure.
-        </p><br />
+        </p>
         <p>Passcode length: The length of the block in characters; the minimum is two the maximum is sixteen.
-        </p><br />
+        </p>
         <p>Passcard label:The name of your passcard, e.g. email,Social media, entertainment,Work etc.
-        </p><br />
+        </p>
         <p>First passcard to generate: by default the fist passcard is the first to generate, but for example you could
             choose the hundreth passcard to be the one you want to display first.
-        </p><br />
+        </p>
         <p>Passcard size: is the size of the passcard when printed. The deafult size is 14 which is the size of a
             “credit card” when printed.
-        </p><img src="../images/websites/ppp.jpg" width="400" height="850" alt="image" class="rtl" /><br />
-        <p>click on generate passcards and Print the desired passcard.<br /></p>
+        </p>
+        <p>click on generate passcards and Print the desired passcard.</p>
         <p>Done! You now have a chance to improve your overall online experience, with the piece of mind that the
             password you are using is in fact a secure strong password.</p>
 
@@ -413,4 +427,19 @@ function passwords(){
 }
 
 include 'anvil/structure.php';
+
+/*
+   A      B      C      D      E
+ 1: \.=who b%$<dh +v9hn? ddy6?q oyxd8f
+ 2: .c.};{ %ytqm{ n<4uz] f84tj~ dw6scw
+ 3: ,~k_tk e5#4a. @9e)bm cgcib. 9%$"#!
+ 4: 7&oan- [:ri>w +jk3,! a=bvr' u:]&|=
+ 5: [etwvj 9k/xew rjl4p7 ds"k|n fw!odn
+ 6: ?7cpxv nj^gy] /wxfrk ixspk> {@mm:}
+ 7: zf/s6t zbaa>7 wcc$.^ !^teg? 2q7{\<
+ 8: |afn:8 ,rvb34 xrym4! 6*^!z% u.]6r6
+ 9: !;ar~j f_)x2k s,6v5t >cbud5 4yaroz
+10: od[/s" res.r] d\h(y, u}o<oz rkzsut
+
+*/
 ?>
