@@ -1,6 +1,976 @@
 <?php
 function hw_hardware() {
     echo "<h1 class=\"fullbar\">Hardware Main Page</h1>";
+    $title="<h2>The Hardware is the computer — it&#39;s physical components.</h2>";
+
+    $description ="<p>These components may include the computer&#39;s
+        functionality, design, materials, innovations, thermals, etc.<br />A computer is an electronic device that
+        manipulates data or information. It has the ability to store,retrieve, and process data.<p>     <!--https://unsplash.com/photos/2sILr4DwabQ-->
+        <h3><a href=\"https://latinospc.com/hardware/?anatomy_of_a_computer#navi\">The anatomy of a computer</a> typically includes,
+    <a href=\"https://latinospc.com//hardware/?notebooks#navi\">Laptops</a>, Portable, Smart Devices, Modular PC's, ETC.</h3>";
+
+    $contentSubTitles= ["Computer Parts",       "Central Processing Unit (CPU):",       "Memory (RAM):",        "Memory Storage Drive (hard drive, SSD):",
+                            "Motherboard:",        "Power Supply Unit (PSU):",      "GPU:",       "Chassis:",       "Coolers",      "Input/Output devices:", "Peripheral devices:"  ];
+
+    $content=['CPU' =>  "The \"brain\" of the computer, responsible for carrying out instructions of computer programs.",
+                'RAM' =>  "Stores data that the CPU uses in the short-term.",
+                    'HDD' =>  "Persistently stores data, even when the computer is powered off.",
+                        'Motherboard' =>  "The main circuit board in a computer, which houses the CPU, memory, and other components.&nbsp;",
+                            'PSU' =>  "Converts AC power from a wall outlet into DC power used by the computer.",
+                                'GPU' =>  "specialized Graphic Processing Unit (GPU) that handles the computational heavy lifting needed for tasks.&nbsp ",
+                                    'Chassis' =>  "Houses all the internal components a computer needs.",
+                                        'Coolers' =>  "Help to regulate the temperature of the central processing unit (CPU) and other critical components of the computer.",
+                'I/O' =>  "Allow data to be input into the computer (such as a keyboard and mouse) and output from the computer (such as a display and speakers).&nbsp",
+                'Peripherals' =>  "Additional hardware connected to a computer, such as printers, scanners, and external hard drives.&nbsp"
+             ];
+    $peripherals = [
+    "Mouse",
+    "Keyboard",
+    "Display",
+    "External Memory Drives",
+    "PCI Cards",
+    "Power Supply",
+    "Cooling",
+    "GPU",
+    "Scanners",
+    "Printers",
+    "Console Controllers",
+    "Joystick",
+    "Tablets",
+    "Microphones",
+    "Headsets",
+    "Headphones",
+    "Audio Mixers",
+    "Controllers",
+    "Gaming Uniforms",
+    "Pens, Pencils & Tablets",
+    "Chairs",
+    "Desks",
+    "Anti-Slip Mats",
+    "Speakers and Subwoofers",
+    "Peripherals",
+    ];
+    $peripherals = [
+    "Mouse",
+    "Keyboard",
+    "Display",
+    "External Memory Drives",
+    "PCI Cards",
+    "Power Supply",
+    "Cooling",
+    "GPU",
+    "Scanners",
+    "Printers",
+    "Console Controllers",
+    "Joystick",
+    "Tablets",
+    "Microphones",
+    "Headsets",
+    "Headphones",
+    "Audio Mixers",
+    "Controllers",
+    "Gaming Uniforms",
+    "Pens, Pencils & Tablets",
+    "Chairs",
+    "Desks",
+    "Anti-Slip Mats",
+    "Speakers and Subwoofers",
+    "Peripherals",
+    ];
+
+    $hardwareTitles = [
+        'cc'   => 'Console Controllers',
+        'cpu'  => 'CPU',
+        'ram'  => 'RAM',
+        'ssd'  => 'SSD',
+        'psu'  => 'PSU',
+        'gpu'  => 'Graphics Cards',
+        'pci'  => 'PCI Cards',
+        'mouse' => 'Mouse',
+        'desk'  => 'Desks',
+        'chair'  => 'Chairs',
+        'cooling'=> 'Cooling',
+        'tablet' => 'Tablets',
+        'micro'  => 'Microphones',
+        'monitor' => 'Display',
+        'headset' => 'Headsets',
+        'printer' => 'Printers',
+        'scanner' => 'Scanners',
+        'chassis'  => 'Computer Case',
+        'keyboard'  => 'Keyboard',
+        'joystick'  => 'Joysticks',
+        'headphone' => 'Headphones',
+        'p_memory'  => 'Portable Memory',
+        'controller' => 'Controllers',
+        'audiomixer' => 'Audio Mixers',
+        'motherboard' => 'Motherboard',
+        'pencil' => 'Pens, Pencils and Tablets',
+        'antislipmats' => 'Anti-Slip Mats',
+        'speakers_and_subwoofers' => 'Speakers and Subwoofers',
+        'team_uniformity_authority' => 'Uniforms'
+    ];
+
+
+    $title="<h2>The Hardware is the computer — it&#39;s physical components.</h2>";
+
+    $descriptions ="<p>These components may include the computer&#39;s
+        functionality, design, materials, innovations, thermals, etc.<br />A computer is an electronic device that
+        manipulates data or information. It has the ability to store,retrieve, and process data.<p>     <!--https://unsplash.com/photos/2sILr4DwabQ-->
+        <h3><a href=\"https://latinospc.com/hardware/?anatomy_of_a_computer#navi\">The anatomy of a computer</a> typically includes,
+    <a href=\"https://latinospc.com//hardware/?notebooks#navi\">Laptops</a>, Portable, Smart Devices, Modular PC's, ETC.</h3>";
+
+    $contentSubTitles= ["Computer Parts",       "Central Processing Unit (CPU):",       "Memory (RAM):",        "Memory Storage Drive (hard drive, SSD):",
+                            "<small>Motherboard</small>:",        "Power Supply Unit (PSU):",      "GPU:",       "Chassis:",       "Coolers",      "<small>Input/Output</small> devices:", "Peripheral devices:"  ];
+
+    $content=['CPU' =>  "The \"brain\" of the computer, responsible for carrying out instructions of computer programs.",
+                'RAM' =>  "Stores data that the CPU uses in the short-term.",
+                    'HDD' =>  "Persistently stores data, even when the computer is powered off.",
+                        'Motherboard' =>  "The main circuit board in a computer, which houses the CPU, memory, and other components.&nbsp;",
+                            'PSU' =>  "Converts AC power from a wall outlet into DC power used by the computer.",
+                                'GPU' =>  "specialized Graphic Processing Unit (GPU) that handles the computational heavy lifting needed for tasks.&nbsp ",
+                                    'Chassis' =>  "Houses all the internal components a computer needs.",
+                                        'Coolers' =>  "Help to regulate the temperature of the central processing unit (CPU) and other critical components of the computer.",
+                'I/O' =>  "Allow data to be input into the computer (such as a keyboard and mouse) and output from the computer (such as a display and speakers).&nbsp",
+                'Peripherals' =>  "Additional hardware connected to a computer, such as printers, scanners, and external hard drives.&nbsp"
+             ];
+
+             $hw = 'else';
+    ?>
+    <article class="fullbar">
+     <section class="hero3 article" id="article">
+        <div style=background-color:whitesmoke;>
+            <?= empty($title) ? $titulo : $title;?>
+            <?= empty($descriptions) ? $descripcion : $descriptions;?>
+        </div>
+    </section>
+    <section class="hero article" style="background-color: whitesmoke;">
+        <div>
+            <h2 style="text-align: center;" id="cpu">
+                <?= empty($contentSubTitles[0]) ? $subTitulosContenido[0] : $contentSubTitles[0];?>
+            </h2><br /><a href="https://latinospc.com/images/hardware/hw/mobo.jpg" title="Motherboard">
+                <img src="https://latinospc.com/images/hardware/hw/mobo.webp" alt="Motherboard" style="transform: translateX(20%)"/></a>
+    <!-- Make this image randomize with all the images from here, I really would like to build a fulls creen gallery page maybe, where the image has a right and a left button.
+	under the main image there is a carrousel of more images. Then the Gallery section will be right under This gallery section.
+    -->
+            <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** Computer Parts-->
+    </div>
+
+    <ul>
+        <div class="hardware-grid">
+    <div tabindex="0" class="hardware-card" data-component="cpu">
+        <a href="/parts/hardware/cpu" class="card-link">
+            <h2><?= empty($contentSubTitles[1]) ? $subTitulosContenido[0] : $contentSubTitles[1]; ?></h2>
+            <p><?= empty($content['CPU']) ? $contenido['CPU'] : $content['CPU']; ?></p>
+            <div class="card-image">
+                <img src="https://latinospc.com/images/hardware/hw/cpu.jpg" alt="CPU component" title="CPU">
+            </div>
+        </a>
+    </div>
+
+    <div tabindex="0" class="hardware-card" data-component="ram">
+        <a href="/parts/hardware/ram" class="card-link">
+            <h2><?= empty($contentSubTitles[2]) ? $subTitulosContenido[0] : $contentSubTitles[2]; ?></h2>
+            <p><?= empty($content['RAM']) ? $contenido['RAM'] : $content['RAM']; ?></p>
+            <div class="card-image">
+                <img src="https://latinospc.com/images/hardware/hw/ram.jpg" alt="RAM module" title="RAM">
+            </div>
+        </a>
+    </div>
+
+    <div tabindex="0" class="hardware-card" data-component="ssd">
+        <a href="/parts/hardware/storage" class="card-link">
+            <h2><?= empty($contentSubTitles[3]) ? $subTitulosContenido[0] : $contentSubTitles[3]; ?></h2>
+            <p><?= empty($content['HDD']) ? $contenido['HDD'] : $content['HDD']; ?></p>
+            <div class="card-image">
+                <img src="https://latinospc.com/images/hardware/hw/memdrive.png" alt="Storage drive" title="Memory Drive">
+            </div>
+        </a>
+    </div>
+
+    <div class="hardware-logo">
+        <a rel="example_group" href="https://latinospc.com/images/websites/webcontent/2.jpg" title="LatinosPC Logo">
+            <img src="https://latinospc.com/images/hardware/hw/lapc.webp" alt="LatinosPC Logo" title="LatinosPC">
+        </a>
+    </div>
+
+    <div tabindex="0" class="hardware-card" data-component="motherboard">
+        <a href="/parts/hardware/motherboard" class="card-link">
+            <h2><?= empty($contentSubTitles[4]) ? $subTitulosContenido[4] : $contentSubTitles[4]; ?></h2>
+            <p><?= empty($content['Motherboard']) ? $contenido['Motherboard'] : $content['Motherboard']; ?></p>
+            <div class="card-image">
+                <img src="https://latinospc.com/images/hardware/hw/mobo.jpg" alt="Motherboard" title="Motherboard">
+            </div>
+        </a>
+    </div>
+
+    <div tabindex="0" class="hardware-card" data-component="psu">
+        <a href="/parts/hardware/powersupply" class="card-link">
+            <h2><?= empty($contentSubTitles[5]) ? $subTitulosContenido[5] : $contentSubTitles[5]; ?></h2>
+            <p><?= empty($content['PSU']) ? $contenido['PSU'] : $content['PSU']; ?></p>
+            <div class="card-image">
+                <img src="https://latinospc.com/images/hardware/hw/psu.jpg" alt="Power Supply Unit" title="Power Supply Unit">
+            </div>
+        </a>
+    </div>
+
+    <div tabindex="0" class="hardware-card featured" data-component="gpu">
+        <a href="/parts/hardware/graphicscard" class="card-link">
+            <h2><?= empty($contentSubTitles[6]) ? $subTitulosContenido[6] : $contentSubTitles[6]; ?></h2>
+            <p><?= empty($content['GPU']) ? $contenido['GPU'] : $content['GPU']; ?></p>
+            <div class="card-image">
+                <img src="https://latinospc.com/images/hardware/hw/gpu.png" alt="Graphics Card" title="Graphic Processing Unit">
+            </div>
+        </a>
+    </div>
+
+    <div tabindex="0" class="hardware-card" data-component="chassis">
+        <a href="/parts/hardware/chassis" class="card-link">
+            <h2><?= empty($contentSubTitles[7]) ? $subTitulosContenido[7] : $contentSubTitles[7]; ?></h2>
+            <p><?= empty($content['Chassis']) ? $contenido['Chassis'] : $content['Chassis']; ?></p>
+            <div class="card-image">
+                <img src="https://latinospc.com/images/hardware/case/case.webp" alt="Computer Case" title="Computer Case">
+            </div>
+        </a>
+    </div>
+
+    <div tabindex="0" class="hardware-card" data-component="cooling">
+        <a href="/parts/hardware/coolers" class="card-link">
+            <h2><?= empty($contentSubTitles[8]) ? $subTitulosContenido[8] : $contentSubTitles[8]; ?></h2>
+            <p><?= empty($content['Coolers']) ? $contenido['Coolers'] : $content['Coolers']; ?></p>
+            <div class="card-image">
+                <img src="https://latinospc.com/images/hardware/hw/cooler.jpg" alt="CPU Cooler" title="Coolers">
+            </div>
+        </a>
+    </div>
+
+    <div tabindex="0" class="hardware-card" data-component="io">
+        <a href="https://www.tutorialspoint.com/operating_system/os_io_hardware.htm" class="card-link">
+            <h2><?= empty($contentSubTitles[9]) ? $subTitulosContenido[9] : $contentSubTitles[9]; ?></h2>
+            <p><?= empty($content['I/O']) ? $contenido['I/O'] : $content['I/O']; ?></p>
+        </a>
+    </div>
+
+    <div tabindex="0" class="hardware-card" data-component="peripherals">
+        <a href="#peripherals" class="card-link">
+            <h2><?= empty($contentSubTitles[10]) ? $subTitulosContenido[10] : $contentSubTitles[10]; ?></h2>
+            <p><?= empty($content['Peripherals']) ? $contenido['Peripherals'] : $content['Peripherals']; ?></p>
+        </a>
+    </div>
+    </div>
+
+
+        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/mouse.jpg" title="Mouse"></a>
+        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/keys.jpg" title="Keyboard"></a>
+        <!--https://unsplash.com/photos/mFtcZzLruCQ-->
+        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/display.jpg" title="Display"></a>
+        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/memory.jpg"
+            title="External Memory Drives"></a>
+        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/pci.jpg" title="PCI Cards"></a>
+        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/psu.jpg"
+            title="Power Supply"></a>
+        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/cooler.jpg" title="Cooling"></a>
+        <!--https://unsplash.com/photos/5fZqHF21CIw-->
+        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/gpu.jpg" title="GPU"></a>
+        <!--https://unsplash.com/photos/d6gyCYQU1vc-->
+        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/scanners.jpg"
+            title="Scanners"></a>
+        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/printer.jpg"
+            title="Printers"></a>
+        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/c_controllers.jpg"
+            title="Console Controllers"></a>
+        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/joystick.jpg"
+            title="Joysticks"></a>
+        <!--https://unsplash.com/photos/V5hAryReZzo-->
+        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/tablet.jpg" title="Tablets"></a>
+        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/microphone.jpg"
+            title="Microphones"></a>
+        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/headset.jpg"
+            title="Headsets"></a>
+        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/headphones.jpg"
+            title="Headphones"></a>
+        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/audio_mixer.jpg"
+            title="Audio Mixers"></a>
+        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/controller.jpg"
+            title="Controllers"></a>
+        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/uniform.jpg"
+            title="Gaming Uniforms"></a>
+        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/pen.jpg"
+            title="Pens, Pencils and Tablets"></a>
+        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/chairs.jpg" title="Chairs"></a>
+        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/desk.jpg" title="Desks"></a>
+        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/anti-slip-mat.jpg"
+            title="Anti-Slip Mats"></a>
+        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/speakers.jpg"
+            title="Speakers and Subwoofers"></a>
+        <div class="clr"></div>
+    </section>
+
+    <section class="peripherals-section">
+    <div class="peripherals-header">
+        <a href="#scroll" class="peripherals-title-link">
+            <h2 id="peripherals" class="peripherals-title">
+                <?= empty($peripherals[24]) ? $perifericos[24] : $peripherals[24];?>
+            </h2>
+        </a>
+    </div>
+
+    <div class="peripherals-container">
+        <div class="peripherals-grid">
+            <?php
+            function hw_Link($hw, $en, $es) {
+                echo $hw === 'en' ? $en : ($hw === 'es' ? $es : 'ERROR');
+            }
+            function hw_alt($hw, $en, $es) {
+                echo $hw === 'en' ? $en : ($hw === 'es' ? $es : 'ERROR');
+            }
+            function hw_title($hw, $en, $es) {
+                echo $hw === 'en' ? $en : ($hw === 'es' ? $es : 'ERROR');
+            }
+            ?>
+
+            <div class="peripheral-card" data-type="input" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?mouse', $es='?ratón'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= $mouse = empty($peripherals[0]) ? $perifericos[0] : $peripherals[0]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/mouse.jpg" alt="<?= $mouse; ?>" title="<?= $mouse; ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="input" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?keyboard', $es='?teclado'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= $keyboard = empty($peripherals[1]) ? $perifericos[1] : $peripherals[1]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/keyboard.jpg" alt="<?= $keyboard; ?>" title="<?= $keyboard; ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="output" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?monitor', $es='?pantalla'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[2]) ? $perifericos[2] : $peripherals[2]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/monitor.jpg"
+                                alt="<?= hw_alt($hw, $en='Display', $es='Pantalla'); ?>"
+                                title="<?= hw_title($hw, $en='Computer Monitor', $es='Pantalla de la computadora'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="storage" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?p_memory', $es='?memoria_externa'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[3]) ? $perifericos[3] : $peripherals[3]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/portable.jpg"
+                                alt="<?= hw_alt($hw, $en='External Drives', $es='Memoria Externa'); ?>"
+                                title="<?= hw_title($hw, $en='External Drives', $es='Memoria Externas'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="component" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?pci', $es='?tarjeta_pci'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[4]) ? $perifericos[4] : $peripherals[4]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/soundcard.jpg"
+                                alt="<?= hw_alt($hw, $en='PCI Cards', $es='Tarjetas PCI'); ?>"
+                                title="<?= hw_title($hw, $en='Peripheral Component Interconnect Cards', $es='Componente Periférico Interconexión'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="power" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?psu', $es='?fuente_de_poder'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[5]) ? $perifericos[5] : $peripherals[5]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/psu2.png"
+                                alt="<?= hw_alt($hw, $en='Power Supply', $es='Fuente de Poder'); ?>"
+                                title="<?= hw_title($hw, $en='PSU', $es='Fuente de Poder'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="cooling" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?cooling', $es='?enfriamiento'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[6]) ? $perifericos[6] : $peripherals[6]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/cooler.jpg"
+                                alt="<?= hw_alt($hw, $en='Cooling', $es='Enfriamiento'); ?>"
+                                title="<?= hw_title($hw, $en='Cooling', $es='Enfriamiento'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="graphics" featured tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?gpu', $es='?tarjeta_grafica'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[7]) ? $perifericos[7] : $peripherals[7]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/gpu.png"
+                                alt="<?= hw_alt($hw, $en='GPU', $es='Tarjeta Gráfica'); ?>"
+                                title="<?= hw_title($hw, $en='GPU', $es='Tarjeta Gráfica'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="input" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?scanner', $es='?escáner'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[8]) ? $perifericos[8] : $peripherals[8]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/scanner.png"
+                                alt="<?= hw_alt($hw, $en='Scanners', $es='Escáneres'); ?>"
+                                title="<?= hw_title($hw, $en='Scanners', $es='Escáneres'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="output" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?printer', $es='?impresoras'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[9]) ? $perifericos[9] : $peripherals[9]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/printer.png"
+                                alt="<?= hw_alt($hw, $en='Printers', $es='Impresoras'); ?>"
+                                title="<?= hw_title($hw, $en='Printers', $es='Impresoras'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="gaming" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?cc', $es='?mando_de_consola'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[10]) ? $perifericos[10] : $peripherals[10]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/controllers.png"
+                                alt="<?= hw_alt($hw, $en='Controllers', $es='Mandos de Consola'); ?>"
+                                title="<?= hw_title($hw, $en='Video Game Controllers', $es='Mandos de Videojuego'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="gaming" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?joystick', $es='?joystick'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[11]) ? $perifericos[11] : $peripherals[11]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/joystick.png"
+                                alt="<?= hw_alt($hw, $en='Joysticks', $es='Joysticks'); ?>"
+                                title="<?= hw_title($hw, $en='Joysticks', $es='Joysticks'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+                              <div class="peripheral-card" data-type="input" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?tablet', $es='?tabletas'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[12]) ? $perifericos[12] : $peripherals[12]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/tablets.png"
+                                alt="<?= hw_alt($hw, $en='Tablets', $es='Tabletas'); ?>"
+                                title="<?= hw_title($hw, $en='Tablets', $es='Tabletas'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="audio" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?micro', $es='?micrófonos'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[13]) ? $perifericos[13] : $peripherals[13]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/mic.jpg"
+                                alt="<?= hw_alt($hw, $en='Microphone', $es='Micrófono'); ?>"
+                                title="<?= hw_title($hw, $en='Microphone', $es='Micrófono'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="audio" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?headset', $es='?headsets'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[14]) ? $perifericos[14] : $peripherals[14]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/headset.png"
+                                alt="<?= hw_alt($hw, $en='Headsets', $es='Headsets'); ?>"
+                                title="<?= hw_title($hw, $en='Headsets', $es='Headsets'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="audio" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?headphone', $es='?audífonos'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[15]) ? $perifericos[15] : $peripherals[15]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/headphones.png"
+                                alt="<?= hw_alt($hw, $en='Headphones', $es='Audífonos'); ?>"
+                                title="<?= hw_title($hw, $en='Headphones', $es='Audífonos'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="audio" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?audiomixer', $es='?mezcladora_de_audio'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[16]) ? $perifericos[16] : $peripherals[16]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/mixer.jpg"
+                                alt="<?= hw_alt($hw, $en='Audio Mixer', $es='Mezcladora de Audio'); ?>"
+                                title="<?= hw_title($hw, $en='Audio Mixer', $es='Mezcladora de Audio'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="gaming" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?controller', $es='?controladores'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[17]) ? $perifericos[17] : $peripherals[17]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/controller.jpg"
+                                alt="<?= hw_alt($hw, $en='Controllers', $es='Controladores'); ?>"
+                                title="<?= hw_title($hw, $en='Controllers', $es='Controladores'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="gaming" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?team_uniformity_authority', $es='?uniformes_gaming'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[18]) ? $perifericos[18] : $peripherals[18]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/uniforms.jpg"
+                                alt="<?= hw_alt($hw, $en='Uniforms', $es='Uniformes'); ?>"
+                                title="<?= hw_title($hw, $en='Gaming Uniforms', $es='Uniformes Gaming'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="input" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?pencil', $es='?lápices_plumas_tabletas'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[19]) ? $perifericos[19] : $peripherals[19]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/pensandpencils.jpg"
+                                alt="<?= hw_alt($hw, $en='Pens and Pencils and Stylus', $es='Lápices, Plumas y Tabletas'); ?>"
+                                title="<?= hw_title($hw, $en='Pens and Pencils and Stylus', $es='Lápices, Plumas y Tabletas'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="furniture" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?chair', $es='?sillas'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[20]) ? $perifericos[20] : $peripherals[20]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/chairs.jpg"
+                                alt="<?= hw_alt($hw, $en='Chairs', $es='Sillas'); ?>"
+                                title="<?= hw_title($hw, $en='Chairs', $es='Sillas'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="furniture" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?desk', $es='?escritorios'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[21]) ? $perifericos[21] : $peripherals[21]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/desk.jpg"
+                                alt="<?= hw_alt($hw, $en='Desks', $es='Escritorios'); ?>"
+                                title="<?= hw_title($hw, $en='Desks', $es='Escritorios'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="accessories" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?antislipmats', $es='?alfombrillas_antideslizantes'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[22]) ? $perifericos[22] : $peripherals[22]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/anti-slip-mat.jpg"
+                                alt="<?= hw_alt($hw, $en='Anti Slip Mats', $es='Alfombrillas Antideslizantes'); ?>"
+                                title="<?= hw_title($hw, $en='Anti Slip Mats', $es='Alfombrillas Antideslizantes'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="audio" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?speakers_and_subwoofers', $es='?bocinas_y_subwoofers'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[23]) ? $perifericos[23] : $peripherals[23]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/speakers.jpg"
+                                alt="<?= hw_alt($hw, $en='Speakers and Subwoofers', $es='Bocinas y Subwoofers'); ?>"
+                                title="<?= hw_title($hw, $en='Speakers and Subwoofers', $es='Bocinas y Subwoofers'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+                <!-- Photo by Rosen Genov from Pexels: https://www.pexels.com/photo/a-presonus-speaker-system-4295360/ --></a>
+
+
+
+        </div>
+        </div>
+
+    </section>
+    </article>
+    <style>
+    .article {
+        color:rgb(54, 42, 54);
+        border-radius: 10px;
+    }
+
+    .hardware-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        padding: 1rem;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .hardware-card {
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        overflow: hidden;
+        position: relative;
+        height: 100%;
+    }
+
+    .hardware-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .hardware-card.featured {
+        grid-column: span 2;
+    }
+
+    .card-link {
+        display: block;
+        text-decoration: none;
+        color: #383a3b;
+        height: 100%;
+        padding: 1.5rem;
+    }
+
+    .hardware-card h2 {
+        margin-top: 0;
+        font-size: 1.4rem;
+        color: #2a2d34;
+        margin-bottom: 0.8rem;
+        position: relative;
+    }
+
+    .hardware-card h2::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 50px;
+        height: 3px;
+        background: linear-gradient(90deg, #4a6fa5, #6b8cbe);
+    }
+
+    .hardware-card p {
+        color: #555;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+
+    .card-image {
+        margin-top: auto;
+        text-align: center;
+    }
+
+    .card-image img {
+        max-height: 150px;
+        object-fit: contain;
+        transition: transform 0.5s ease;
+    }
+
+    .hardware-card:hover .card-image img {
+        transform: scale(1.05);
+    }
+
+    .hardware-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .hardware-logo img {
+        max-width: 100%;
+        max-height: 120px;
+        transition: transform 0.3s ease;
+    }
+
+    .hardware-logo img:hover {
+        transform: scale(1.1);
+    }
+
+    [data-component="cpu"] { border-top: 4px solid #4a6fa5; }
+    [data-component="ram"] { border-top: 4px solid #6b8cbe; }
+    [data-component="ssd"] { border-top: 4px solid #4a6fa5; }
+    [data-component="motherboard"] { border-top: 4px solid #6b8cbe; }
+    [data-component="psu"] { border-top: 4px solid #4a6fa5; }
+    [data-component="gpu"] { border-top: 4px solid #6b8cbe; }
+    [data-component="chassis"] { border-top: 4px solid #4a6fa5; }
+    [data-component="cooling"] { border-top: 4px solid #6b8cbe; }
+    [data-component="io"] { border-top: 4px solid #4a6fa5; }
+    [data-component="peripherals"] { border-top: 4px solid #6b8cbe; }
+
+    @media (max-width: 768px) {
+        .hardware-grid {
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        }
+
+        .hardware-card.featured {
+            grid-column: auto;
+        }
+    }
+    .newspaper2 li {
+        font-size: x-large;
+        line-height: 1.5;
+        break-inside: avoid;
+    }
+
+    .newspaper2 li a {
+        width: 100%;
+    }
+
+    /* Peripherals Section Styling */
+    .peripherals-section {
+        padding: 3rem 1rem;
+        background-color: #f8f9fa;
+        margin-top: 2rem;
+    }
+
+    .peripherals-header {
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+
+    .peripherals-title-link {
+        text-decoration: none;
+        color: inherit;
+        transition: color 0.3s ease;
+    }
+
+    .peripherals-title-link:hover {
+        color: #0056b3;
+    }
+
+    .peripherals-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #333;
+        position: relative;
+        display: inline-block;
+        padding-bottom: 0.5rem;
+    }
+
+    .peripherals-title:after {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 3px;
+        background: linear-gradient(90deg, #0056b3, #00c6ff);
+        bottom: 0;
+        left: 25%;
+        border-radius: 2px;
+    }
+
+    .peripherals-container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .peripherals-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .peripheral-card {
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+    }
+
+    .peripheral-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .peripheral-card:focus-within {
+        outline: 3px solid #0056b3;
+    }
+
+    .peripheral-card[data-type="input"] {
+        border-top: 4px solid #2ecc71;
+    }
+
+    .peripheral-card[data-type="output"] {
+        border-top: 4px solid #e74c3c;
+    }
+
+    .peripheral-card[data-type="storage"] {
+        border-top: 4px solid #f39c12;
+    }
+
+    .peripheral-card[data-type="component"] {
+        border-top: 4px solid #9b59b6;
+    }
+
+    .peripheral-card[data-type="power"] {
+        border-top: 4px solid #e67e22;
+    }
+
+    .peripheral-card[data-type="cooling"] {
+        border-top: 4px solid #3498db;
+    }
+
+    .peripheral-card[data-type="graphics"] {
+        border-top: 4px solid #1abc9c;
+    }
+
+    .peripheral-card[data-type="audio"] {
+        border-top: 4px solid #8e44ad;
+    }
+
+    .peripheral-card[data-type="gaming"] {
+        border-top: 4px solid #e84393;
+    }
+
+    .peripheral-card[data-type="mobile"] {
+        border-top: 4px solid #00cec9;
+    }
+
+    .peripheral-card.featured {
+        grid-column: span 2;
+    }
+
+    .peripheral-link {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        height: 100%;
+    }
+
+    .peripheral-content {
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .peripheral-name {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #333;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .peripheral-image {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+    .peripheral-image img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    .peripheral-card:hover .peripheral-image img {
+        transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+        .peripherals-grid {
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
+
+        .peripheral-card.featured {
+            grid-column: auto;
+        }
+
+        .peripherals-title {
+            font-size: 2rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .peripherals-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .peripheral-content {
+            padding: 1rem;
+        }
+
+        .peripherals-title {
+            font-size: 1.75rem;
+        }
+    }
+    .hero3.article {
+        padding: 20px;
+        margin: 15px 0;
+        border-radius: 5px;
+    }
+    .hero3.article div {
+        padding: 15px;
+        border-radius: 3px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    </style>
+    <?php
 }
 
 function hw_cpu()  {
@@ -128,7 +1098,7 @@ function hw_cpu()  {
             'Ryzen™',
             'Ryzen™ with Radeon™ Graphics',
             'Athlon™ with Radeon™ Graphics',//25
-    
+
             'The current <a href="https://www.amd.com/en/products/chipsets-motherboards-desktop" title="Chipsets">Chipsets</a> are:',
             'Implemented by high-performance AMD Threadripper™ and Ryzen™ processors for powerful computers. designed for advanced users who need a lot of processing power for demanding tasks like video editing or gaming.',
             'Implemented by 3rd Gen Ryzen™ and Threadripper™ processors. It was and still is used in computers that needed a lot of power for tasks like video editing, gaming, or running multiple programs at the same time.',
@@ -140,7 +1110,7 @@ function hw_cpu()  {
             'This <a href="https://www.amd.com/en/products/cpu/amd-epyc-7452">socket</a> is used by AMD EPYC processors for servers and workstations.',
             '',//35
     ];
-    
+
     $cpu =['It\'s important to check the CPU socket size compatibility with the motherboard before buying a CPU, as the CPU will not fit in the socket if they are not compatible.<br />AMD usually supports their sockets for longer periods than Intel, so the AM4 socket is still being used and supported by new processors.',
             'The speed, core count, and cache size of a PC CPU can vary widely depending on the specific model and manufacturer, but in general, these are the most popular speeds, core counts, and cache sizes currently:',
             'Speed ',//2
@@ -177,14 +1147,14 @@ function hw_cpu()  {
                 device.'
             ];
             $update = ['Last Update:7/19/2023'];
-            
+
     ?>
     <style>
     /* CPU Page Modern Styling
        Created: June 23, 2025
        A modern, clean design for the CPU hardware section
     */
-        
+
     /* Modern CPU styling */
     .hero3,
     .hero4,
@@ -211,12 +1181,12 @@ function hw_cpu()  {
         --huawei-color: #CF0A2C;
         --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         --transition: all 0.3s ease;
-    
+
         /* Base styles applied to elements */
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         line-height: 1.6;
     }
-    
+
     /* Container */
     .container {
         max-width: 1200px;
@@ -225,7 +1195,7 @@ function hw_cpu()  {
         width: 100%;
         box-sizing: border-box;
     }
-    
+
     /* Hero sections */
     .hero3,
     .hero4 {
@@ -235,17 +1205,17 @@ function hw_cpu()  {
         box-shadow: var(--box-shadow);
         transition: var(--transition);
     }
-    
+
     .hero3 {
         background-color: #e8f4ea !important;
         /* Replacing DarkSeaGreen with a more modern shade */
     }
-    
+
     .hero4 {
         background-color: #f9f5eb !important;
         /* Replacing wheat with a more modern shade */
     }
-    
+
     /* Article sections */
     .article {
         padding: 25px;
@@ -254,23 +1224,23 @@ function hw_cpu()  {
         border-radius: 8px;
         box-shadow: var(--box-shadow);
     }
-    
+
     /* Menu styling */
     .ex_menu {
         list-style-type: none;
         padding: 0;
         margin: 20px 0;
     }
-    
+
     .ex_menu li {
         margin-bottom: 15px;
         transition: var(--transition);
     }
-    
+
     .ex_menu li:hover {
         transform: translateX(5px);
     }
-    
+
     /* Center menu with large text */
     .ex_menu[style*="text-align:center"] {
         display: flex;
@@ -279,25 +1249,25 @@ function hw_cpu()  {
         gap: 15px;
         padding-bottom: 20px;
     }
-    
+
     .ex_menu[style*="text-align:center"] li {
         display: inline-block;
         font-size: 2rem !important;
         margin: 0 10px;
     }
-    
+
     /* Links */
     a {
         color: var(--secondary-color);
         text-decoration: none;
         transition: var(--transition);
     }
-    
+
     a:hover {
         color: var(--accent-color);
         text-decoration: underline;
     }
-    
+
     /* Headings */
     h2 {
         color: var(--primary-color);
@@ -308,7 +1278,7 @@ function hw_cpu()  {
         padding-bottom: 8px;
         display: inline-block;
     }
-    
+
     /* Images */
     img.fl {
         float: left;
@@ -317,7 +1287,7 @@ function hw_cpu()  {
         border-radius: 50%;
         box-shadow: var(--box-shadow);
     }
-    
+
     img.rtl {
         float: right;
         margin-left: 15px;
@@ -325,7 +1295,7 @@ function hw_cpu()  {
         border-radius: 8px;
         box-shadow: var(--box-shadow);
     }
-    
+
     /* Two column layout */
     .colms2 {
         display: grid;
@@ -333,7 +1303,7 @@ function hw_cpu()  {
         gap: 25px;
         margin: 30px 0;
     }
-    
+
     /* Buttons */
     button {
         background-color: var(--secondary-color);
@@ -346,19 +1316,19 @@ function hw_cpu()  {
         font-weight: 600;
         box-shadow: var(--box-shadow);
     }
-    
+
     button:hover {
         background-color: var(--primary-color);
         transform: translateY(-3px);
     }
-    
+
     button[style*="padding:40px"] {
         background-color: var(--amd-red);
         font-size: 1.5rem !important;
         padding: 20px 40px !important;
         border-radius: 8px;
     }
-    
+
     /* Button red style */
     .button_red {
         color: white;
@@ -367,7 +1337,7 @@ function hw_cpu()  {
         border-radius: 6px;
         margin: 0;
     }
-    
+
     /* Card styles */
     .card2 {
         background-color: white;
@@ -376,21 +1346,21 @@ function hw_cpu()  {
         box-shadow: var(--box-shadow);
         transition: var(--transition);
     }
-    
+
     .card2:hover {
         transform: translateY(-5px);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     }
-    
+
     /* Spacers */
     .spacer {
         height: 30px;
     }
-    
+
     .spacer_mega {
         height: 60px;
     }
-    
+
     .spacer_shape {
         padding: 20px;
         margin: 30px 0;
@@ -398,7 +1368,7 @@ function hw_cpu()  {
         border-radius: 8px;
         box-shadow: var(--box-shadow);
     }
-    
+
     /* Horizontal rule */
     hr {
         border: none;
@@ -407,86 +1377,86 @@ function hw_cpu()  {
         margin: 30px 0;
         opacity: 0.5;
     }
-    
+
     /* Brand-specific styles */
     .intelletters {
         color: var(--intel-blue);
         font-weight: 600;
     }
-    
+
     .amdletters {
         color: var(--amd-red);
         font-weight: 600;
     }
-    
+
     .amdred {
         color: var(--amd-red);
         font-weight: 700;
         text-decoration: none;
     }
-    
+
     .amdred:hover {
         text-decoration: underline;
     }
-    
+
     .qualcomm {
         color: var(--qualcomm-color);
     }
-    
+
     .samsung {
         color: var(--samsung-color);
     }
-    
+
     .apple {
         color: var(--apple-color);
     }
-    
+
     .huawei {
         color: var(--huawei-color);
     }
-    
+
     /* Responsive design */
     @media (max-width: 768px) {
         .colms2 {
             grid-template-columns: 1fr;
         }
-    
+
         .ex_menu[style*="text-align:center"] {
             flex-direction: column;
             align-items: center;
         }
-    
+
         .ex_menu[style*="text-align:center"] li {
             margin: 5px 0;
         }
-    
+
         b button[style*="padding:40px"] {
             padding: 15px 30px !important;
             font-size: 1.2rem !important;
         }
-    
+
         .spacer_mega {
             height: 40px;
         }
     }
-    
+
     /* Animations */
     @keyframes fadeIn {
         from {
             opacity: 0;
         }
-    
+
         to {
             opacity: 1;
         }
     }
-    
+
     .hero3,
     .hero4,
     .article {
         animation: fadeIn 0.5s ease-in-out;
     }
-    
+
     /* Remove inline styles */
     [style*="font-size: xx-large;color:red;"] {
         font-size: 1.8rem !important;
@@ -495,13 +1465,13 @@ function hw_cpu()  {
         margin-top: 30px;
         margin-bottom: 15px;
     }
-    
+
     /* Additional modern touches */
     .ex_menu a {
         position: relative;
         overflow: hidden;
     }
-    
+
     .ex_menu a::after {
         content: '';
         position: absolute;
@@ -512,23 +1482,23 @@ function hw_cpu()  {
         background-color: var(--accent-color);
         transition: width 0.3s ease;
     }
-    
+
     .ex_menu a:hover::after {
         width: 100%;
     }
-    
+
     /* Focus states for accessibility */
     a:focus,
     button:focus {
         outline: 3px solid rgba(52, 152, 219, 0.5);
         outline-offset: 3px;
     }
-    
+
     header span {
         color: rgb(53, 97, 135);
     }
     </style>
-    
+
     <section class="hero3 fulbar article" style="background-color:DarkSeaGreen;">
         <div class="container">
             <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
@@ -607,7 +1577,7 @@ function hw_cpu()  {
                 class="fl" title="Central Processing Unit" alt="CPU stiker">
         </div>
     </section>
-    
+
     <!-- et▄;Gë6T3ï(⌡╦vt⌐Æïÿ|╪╓kÿY╪R+▌╫¥±   ▄;Gë6T3ï(          )             -->
     <section class="hero4 fulbar article" style="background-color:whitesmoke;">
         <div class="container">
@@ -630,19 +1600,19 @@ function hw_cpu()  {
                 -<li style="display: inline"><a class="button" href="<?=$links['intel_i5'] ?>">
                         i5</a>
                 </li>
-    
+
                 -<li style="display: inline"><a class="button" href="<?=$links['intel_i7'] ?>">
                         i7</a>
                 </li>
-    
+
                 -<li style="display: inline"><a class="button" href="<?=$links['intel_i9'] ?>">
                         i9</a>
                 </li>
-    
+
                 -<li style="display: inline"><a class="button" href="<?=$links['intel_xeon'] ?>">
                         Xeon</a>
                 </li>
-    
+
                 -<li style="display: inline"><a class="button" href="<?=$links['intel_mobile'] ?>">
                         Mobile</a>
                 </li>
@@ -684,14 +1654,14 @@ function hw_cpu()  {
                         <?= $intel[7]; ?>
                 </li>
                 </p>
-    
+
                 <li>
                     <h2 class="intelletters">intel Xeon:</h2>
                     <p>
                         <?= $intel[8]; ?>
-    
+
                         <span style="font-size: larger;"><?= empty($subTitle[2]) ? $subTitulo[2] : $subTitle[2];?></span>
-    
+
                 <li>
                     <p><?= $intel[9]; ?></p>
                 </li>
@@ -701,7 +1671,7 @@ function hw_cpu()  {
                 <li>
                     <p><?= $intel[11]; ?></p>
                 </li>
-    
+
                 <p><?= $intel[12]; ?></p>
                 </li>
                 </p>
@@ -713,7 +1683,7 @@ function hw_cpu()  {
                         class="rtl">
                     <?= $lga[2]; ?></p>
             </div>
-    
+
             <p>
                 <?= $lga[3]; ?>
             </p>
@@ -739,8 +1709,8 @@ function hw_cpu()  {
         <div class="fulbar article">
         </div>
     </section>
-    
-    
+
+
     <section class="hero4 fulbar article" style="background-color:wheat;">
         <div class="container">
             <div class="spacer_mega"></div>
@@ -762,7 +1732,7 @@ function hw_cpu()  {
                             </div>
                 </p>
                 </button></a></p>
-    
+
                 <p><a href="<?=$links['AMD_WS'] ?>" title="Ryzen™ & Threadripper™"><button>
                             <p class="button_red">
                             <div class="amdletters">
@@ -774,7 +1744,7 @@ function hw_cpu()  {
                 </p>
                 </button></a></p>
             </div>
-    
+
             <div class="colms2">
                 <p><a href="<?=$links['AMD_embedded'] ?>" title="Embedded"><button>
                             <p class="button_red">
@@ -787,7 +1757,7 @@ function hw_cpu()  {
                             </ul>
                 </p>
                 </button></a></p>
-    
+
                 <p><a href="<?=$links['AMD_laptop'] ?>" title="Laptop"><button>
                             <p class="button_red">
                             <ul class="amdletters ex_menu"><?= $amd[13]; ?>
@@ -803,7 +1773,7 @@ function hw_cpu()  {
                 </p>
                 </button></a></p>
             </div>
-    
+
             <p><a href="<?=$links['AMD_desktop'] ?>" title="Desktop"><button>
                         <p class="button_red">
                         <ul class="ex_menu"><?= $amd[18]; ?>
@@ -863,22 +1833,22 @@ function hw_cpu()  {
         </div>
         <section class="hero4 fulbar article">
             <div class="container">
-    
+
                 <h2><?= $cpu[0]; ?></h2>
                 <p>
                     <?= $cpu[1]; ?>
                 </p>
-    
+
                 <h2><?= $cpu[2]; ?></h2>
                 <p>
                     <?= $cpu[3]; ?>
                 </p>
-    
+
                 <h2><?= $cpu[4]; ?></h2>
                 <p>
                     <?= $cpu[5]; ?>
                 </p>
-    
+
                 <h2><?= $cpu[6]; ?></h2>
                 <p>
                     <?= $cpu[7]; ?>
@@ -932,7 +1902,7 @@ function hw_cpu()  {
 
 function hw_storage(){
     ?>
-        
+
     <style>
     .ssd {
         font-size: 18px;
@@ -1138,7 +2108,614 @@ function hw_output_devices() {
 }
 
 function hw_peripherals_and_gear() {
-    echo "<h1 class=\"fullbar\">Peripherals and Gear</h1>";
+    $title="<h2>The Hardware is the computer — it&#39;s physical components.</h2>";
+
+    $description ="<p>These components may include the computer&#39;s
+        functionality, design, materials, innovations, thermals, etc.<br />A computer is an electronic device that
+        manipulates data or information. It has the ability to store,retrieve, and process data.<p>     <!--https://unsplash.com/photos/2sILr4DwabQ-->
+        <h3><a href=\"https://latinospc.com/hardware/?anatomy_of_a_computer#navi\">The anatomy of a computer</a> typically includes,
+    <a href=\"https://latinospc.com//hardware/?notebooks#navi\">Laptops</a>, Portable, Smart Devices, Modular PC's, ETC.</h3>";
+
+    $contentSubTitles= ["Computer Parts",       "Central Processing Unit (CPU):",       "Memory (RAM):",        "Memory Storage Drive (hard drive, SSD):",
+                            "Motherboard:",        "Power Supply Unit (PSU):",      "GPU:",       "Chassis:",       "Coolers",      "Input/Output devices:", "Peripheral devices:"  ];
+
+    $content=['CPU' =>  "The \"brain\" of the computer, responsible for carrying out instructions of computer programs.",
+                'RAM' =>  "Stores data that the CPU uses in the short-term.",
+                    'HDD' =>  "Persistently stores data, even when the computer is powered off.",
+                        'Motherboard' =>  "The main circuit board in a computer, which houses the CPU, memory, and other components.&nbsp;",
+                            'PSU' =>  "Converts AC power from a wall outlet into DC power used by the computer.",
+                                'GPU' =>  "specialized Graphic Processing Unit (GPU) that handles the computational heavy lifting needed for tasks.&nbsp ",
+                                    'Chassis' =>  "Houses all the internal components a computer needs.",
+                                        'Coolers' =>  "Help to regulate the temperature of the central processing unit (CPU) and other critical components of the computer.",
+                'I/O' =>  "Allow data to be input into the computer (such as a keyboard and mouse) and output from the computer (such as a display and speakers).&nbsp",
+                'Peripherals' =>  "Additional hardware connected to a computer, such as printers, scanners, and external hard drives.&nbsp"
+             ];
+    $peripherals = [
+    "Mouse",
+    "Keyboard",
+    "Display",
+    "External Memory Drives",
+    "PCI Cards",
+    "Power Supply",
+    "Cooling",
+    "GPU",
+    "Scanners",
+    "Printers",
+    "Console Controllers",
+    "Joystick",
+    "Tablets",
+    "Microphones",
+    "Headsets",
+    "Headphones",
+    "Audio Mixers",
+    "Controllers",
+    "Gaming Uniforms",
+    "Pens, Pencils & Tablets",
+    "Chairs",
+    "Desks",
+    "Anti-Slip Mats",
+    "Speakers and Subwoofers",
+    "Peripherals",
+    ];
+    $peripherals = [
+    "Mouse",
+    "Keyboard",
+    "Display",
+    "External Memory Drives",
+    "PCI Cards",
+    "Power Supply",
+    "Cooling",
+    "GPU",
+    "Scanners",
+    "Printers",
+    "Console Controllers",
+    "Joystick",
+    "Tablets",
+    "Microphones",
+    "Headsets",
+    "Headphones",
+    "Audio Mixers",
+    "Controllers",
+    "Gaming Uniforms",
+    "Pens, Pencils & Tablets",
+    "Chairs",
+    "Desks",
+    "Anti-Slip Mats",
+    "Speakers and Subwoofers",
+    "Peripherals",
+    ];
+
+    $hardwareTitles = [
+        'cc'   => 'Console Controllers',
+        'cpu'  => 'CPU',
+        'ram'  => 'RAM',
+        'ssd'  => 'SSD',
+        'psu'  => 'PSU',
+        'gpu'  => 'Graphics Cards',
+        'pci'  => 'PCI Cards',
+        'mouse' => 'Mouse',
+        'desk'  => 'Desks',
+        'chair'  => 'Chairs',
+        'cooling'=> 'Cooling',
+        'tablet' => 'Tablets',
+        'micro'  => 'Microphones',
+        'monitor' => 'Display',
+        'headset' => 'Headsets',
+        'printer' => 'Printers',
+        'scanner' => 'Scanners',
+        'chassis'  => 'Computer Case',
+        'keyboard'  => 'Keyboard',
+        'joystick'  => 'Joysticks',
+        'headphone' => 'Headphones',
+        'p_memory'  => 'Portable Memory',
+        'controller' => 'Controllers',
+        'audiomixer' => 'Audio Mixers',
+        'motherboard' => 'Motherboard',
+        'pencil' => 'Pens, Pencils and Tablets',
+        'antislipmats' => 'Anti-Slip Mats',
+        'speakers_and_subwoofers' => 'Speakers and Subwoofers',
+        'team_uniformity_authority' => 'Uniforms'
+    ];
+    ?>
+<section class="peripherals-section fullbar">
+    <div class="peripherals-header">
+        <a href="#scroll" class="peripherals-title-link">
+            <h1 id="peripherals" class="peripherals-title">
+                <?= empty($peripherals[24]) ? $perifericos[24] : $peripherals[24];?>
+            </h1>
+        </a>
+    </div>
+
+    <div class="peripherals-container">
+        <div class="peripherals-grid">
+            <?php
+            function hw_Link($hw, $en, $es) {
+                echo $hw === 'en' ? $en : ($hw === 'es' ? $es : 'ERROR');
+            }
+            function hw_alt($hw, $en, $es) {
+                echo $hw === 'en' ? $en : ($hw === 'es' ? $es : 'ERROR');
+            }
+            function hw_title($hw, $en, $es) {
+                echo $hw === 'en' ? $en : ($hw === 'es' ? $es : 'ERROR');
+            }
+            ?>
+
+            <div class="peripheral-card" data-type="input" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?mouse', $es='?ratón'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= $mouse = empty($peripherals[0]) ? $perifericos[0] : $peripherals[0]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/mouse.jpg" alt="<?= $mouse; ?>" title="<?= $mouse; ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="input" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?keyboard', $es='?teclado'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= $keyboard = empty($peripherals[1]) ? $perifericos[1] : $peripherals[1]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/keyboard.jpg" alt="<?= $keyboard; ?>" title="<?= $keyboard; ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="output" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?monitor', $es='?pantalla'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[2]) ? $perifericos[2] : $peripherals[2]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/monitor.jpg"
+                                alt="<?= hw_alt($hw, $en='Display', $es='Pantalla'); ?>"
+                                title="<?= hw_title($hw, $en='Computer Monitor', $es='Pantalla de la computadora'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="storage" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?p_memory', $es='?memoria_externa'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[3]) ? $perifericos[3] : $peripherals[3]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/portable.jpg"
+                                alt="<?= hw_alt($hw, $en='External Drives', $es='Memoria Externa'); ?>"
+                                title="<?= hw_title($hw, $en='External Drives', $es='Memoria Externas'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="component" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?pci', $es='?tarjeta_pci'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[4]) ? $perifericos[4] : $peripherals[4]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/soundcard.jpg"
+                                alt="<?= hw_alt($hw, $en='PCI Cards', $es='Tarjetas PCI'); ?>"
+                                title="<?= hw_title($hw, $en='Peripheral Component Interconnect Cards', $es='Componente Periférico Interconexión'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="power" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?psu', $es='?fuente_de_poder'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[5]) ? $perifericos[5] : $peripherals[5]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/psu2.png"
+                                alt="<?= hw_alt($hw, $en='Power Supply', $es='Fuente de Poder'); ?>"
+                                title="<?= hw_title($hw, $en='PSU', $es='Fuente de Poder'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="cooling" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?cooling', $es='?enfriamiento'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[6]) ? $perifericos[6] : $peripherals[6]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/cooler.jpg"
+                                alt="<?= hw_alt($hw, $en='Cooling', $es='Enfriamiento'); ?>"
+                                title="<?= hw_title($hw, $en='Cooling', $es='Enfriamiento'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="graphics" featured tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?gpu', $es='?tarjeta_grafica'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[7]) ? $perifericos[7] : $peripherals[7]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/gpu.png"
+                                alt="<?= hw_alt($hw, $en='GPU', $es='Tarjeta Gráfica'); ?>"
+                                title="<?= hw_title($hw, $en='GPU', $es='Tarjeta Gráfica'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="input" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?scanner', $es='?escáner'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[8]) ? $perifericos[8] : $peripherals[8]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/scanner.png"
+                                alt="<?= hw_alt($hw, $en='Scanners', $es='Escáneres'); ?>"
+                                title="<?= hw_title($hw, $en='Scanners', $es='Escáneres'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="output" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?printer', $es='?impresoras'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[9]) ? $perifericos[9] : $peripherals[9]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/printer.png"
+                                alt="<?= hw_alt($hw, $en='Printers', $es='Impresoras'); ?>"
+                                title="<?= hw_title($hw, $en='Printers', $es='Impresoras'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="gaming" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?cc', $es='?mando_de_consola'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[10]) ? $perifericos[10] : $peripherals[10]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/controllers.png"
+                                alt="<?= hw_alt($hw, $en='Controllers', $es='Mandos de Consola'); ?>"
+                                title="<?= hw_title($hw, $en='Video Game Controllers', $es='Mandos de Videojuego'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="gaming" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?joystick', $es='?joystick'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[11]) ? $perifericos[11] : $peripherals[11]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/joystick.png"
+                                alt="<?= hw_alt($hw, $en='Joysticks', $es='Joysticks'); ?>"
+                                title="<?= hw_title($hw, $en='Joysticks', $es='Joysticks'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+                              <div class="peripheral-card" data-type="input" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?tablet', $es='?tabletas'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[12]) ? $perifericos[12] : $peripherals[12]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/tablets.png"
+                                alt="<?= hw_alt($hw, $en='Tablets', $es='Tabletas'); ?>"
+                                title="<?= hw_title($hw, $en='Tablets', $es='Tabletas'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="audio" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?micro', $es='?micrófonos'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[13]) ? $perifericos[13] : $peripherals[13]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/mic.jpg"
+                                alt="<?= hw_alt($hw, $en='Microphone', $es='Micrófono'); ?>"
+                                title="<?= hw_title($hw, $en='Microphone', $es='Micrófono'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="audio" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?headset', $es='?headsets'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[14]) ? $perifericos[14] : $peripherals[14]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/headset.png"
+                                alt="<?= hw_alt($hw, $en='Headsets', $es='Headsets'); ?>"
+                                title="<?= hw_title($hw, $en='Headsets', $es='Headsets'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="audio" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?headphone', $es='?audífonos'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[15]) ? $perifericos[15] : $peripherals[15]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/headphones.png"
+                                alt="<?= hw_alt($hw, $en='Headphones', $es='Audífonos'); ?>"
+                                title="<?= hw_title($hw, $en='Headphones', $es='Audífonos'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="audio" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?audiomixer', $es='?mezcladora_de_audio'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[16]) ? $perifericos[16] : $peripherals[16]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/mixer.jpg"
+                                alt="<?= hw_alt($hw, $en='Audio Mixer', $es='Mezcladora de Audio'); ?>"
+                                title="<?= hw_title($hw, $en='Audio Mixer', $es='Mezcladora de Audio'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="gaming" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?controller', $es='?controladores'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[17]) ? $perifericos[17] : $peripherals[17]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/controller.jpg"
+                                alt="<?= hw_alt($hw, $en='Controllers', $es='Controladores'); ?>"
+                                title="<?= hw_title($hw, $en='Controllers', $es='Controladores'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="gaming" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?team_uniformity_authority', $es='?uniformes_gaming'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[18]) ? $perifericos[18] : $peripherals[18]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/uniforms.jpg"
+                                alt="<?= hw_alt($hw, $en='Uniforms', $es='Uniformes'); ?>"
+                                title="<?= hw_title($hw, $en='Gaming Uniforms', $es='Uniformes Gaming'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="input" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?pencil', $es='?lápices_plumas_tabletas'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[19]) ? $perifericos[19] : $peripherals[19]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/pensandpencils.jpg"
+                                alt="<?= hw_alt($hw, $en='Pens and Pencils and Stylus', $es='Lápices, Plumas y Tabletas'); ?>"
+                                title="<?= hw_title($hw, $en='Pens and Pencils and Stylus', $es='Lápices, Plumas y Tabletas'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="furniture" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?chair', $es='?sillas'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[20]) ? $perifericos[20] : $peripherals[20]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/chairs.jpg"
+                                alt="<?= hw_alt($hw, $en='Chairs', $es='Sillas'); ?>"
+                                title="<?= hw_title($hw, $en='Chairs', $es='Sillas'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="furniture" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?desk', $es='?escritorios'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[21]) ? $perifericos[21] : $peripherals[21]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/desk.jpg"
+                                alt="<?= hw_alt($hw, $en='Desks', $es='Escritorios'); ?>"
+                                title="<?= hw_title($hw, $en='Desks', $es='Escritorios'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="accessories" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?antislipmats', $es='?alfombrillas_antideslizantes'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[22]) ? $perifericos[22] : $peripherals[22]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/anti-slip-mat.jpg"
+                                alt="<?= hw_alt($hw, $en='Anti Slip Mats', $es='Alfombrillas Antideslizantes'); ?>"
+                                title="<?= hw_title($hw, $en='Anti Slip Mats', $es='Alfombrillas Antideslizantes'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="peripheral-card" data-type="audio" tabindex="0">
+                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?speakers_and_subwoofers', $es='?bocinas_y_subwoofers'); ?>">
+                    <div class="peripheral-content">
+                        <h3 class="peripheral-name"><?= empty($peripherals[23]) ? $perifericos[23] : $peripherals[23]; ?></h3>
+                        <div class="peripheral-image">
+                            <img src="https://latinospc.com/images/hardware/hw/speakers.jpg"
+                                alt="<?= hw_alt($hw, $en='Speakers and Subwoofers', $es='Bocinas y Subwoofers'); ?>"
+                                title="<?= hw_title($hw, $en='Speakers and Subwoofers', $es='Bocinas y Subwoofers'); ?>">
+                        </div>
+                    </div>
+                </a>
+            </div>
+                <!-- Photo by Rosen Genov from Pexels: https://www.pexels.com/photo/a-presonus-speaker-system-4295360/ --></a>
+
+
+
+        </div>
+        </div>
+
+    </section>
+            <style>/* Peripherals Section Styling */
+.peripherals-section {
+    padding: 3rem 1rem;
+    background-color: #f8f9fa;
+    margin-top: 2rem;
+}
+
+.peripherals-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.peripherals-title-link {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.peripherals-title-link:hover {
+    color: #0056b3;
+}
+
+.peripherals-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.peripherals-title:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background: linear-gradient(90deg, #0056b3, #00c6ff);
+    bottom: 0;
+    left: 25%;
+    border-radius: 2px;
+}
+
+.peripherals-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.peripherals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.peripheral-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.peripheral-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.peripheral-card:focus-within {
+    outline: 3px solid #0056b3;
+}
+
+.peripheral-card[data-type="input"] {
+    border-top: 4px solid #2ecc71;
+}
+
+.peripheral-card[data-type="output"] {
+    border-top: 4px solid #e74c3c;
+}
+
+.peripheral-card[data-type="storage"] {
+    border-top: 4px solid #f39c12;
+}
+
+.peripheral-card[data-type="component"] {
+    border-top: 4px solid #9b59b6;
+}
+
+.peripheral-card[data-type="power"] {
+    border-top: 4px solid #e67e22;
+}
+
+.peripheral-card[data-type="cooling"] {
+    border-top: 4px solid #3498db;
+}
+
+.peripheral-card[data-type="graphics"] {
+    border-top: 4px solid #1abc9c;
+}
+
+.peripheral-card[data-type="audio"] {
+    border-top: 4px solid #8e44ad;
+}
+
+.peripheral-card[data-type="gaming"] {
+    border-top: 4px solid #e84393;
+}
+
+.peripheral-card[data-type="mobile"] {
+    border-top: 4px solid #00cec9;
+}
+
+.peripheral-card.featured {
+    grid-column: span 2;
+}
+
+.peripheral-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+.peripheral-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.peripheral-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.peripheral-image {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.peripheral-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.peripheral-card:hover .peripheral-image img {
+    transform: scale(1.05);
+}
+                </style>
+    <?php
+
 }
 
 

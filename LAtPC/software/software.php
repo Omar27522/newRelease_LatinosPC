@@ -439,7 +439,7 @@ function sw_software() {
             </p>
             <p><strong><?= empty($rightChoice) ? $correctaEleccion['strong'][7] : $rightChoice['strong'][7]; ?>:</strong>
                 <?= empty($rightChoice) ? $correctaEleccion['descriptions'][7] : $rightChoice['descriptions'][7]; ?></p>
-            
+
             <!-- Implement the Spanish version of the right choice $variable, is not on _works/_software/index.php -->
         </section><h2>
                 <?= empty($titles) ? $titulos[3] : $titles[3]; ?>
@@ -469,7 +469,7 @@ function sw_software() {
                 <p>
                     <?= empty($types) ? $tipos['gratis'] : $types['free']; ?>
                 </p>
-            </div>  
+            </div>
             <div style="flex: 0 0 48%; margin-bottom: 20px;">
                 <a href="#navi">
                     <!-- (╯°□°）╯ SHAREWARE  ┻━┻ `ღ´ -->
@@ -619,7 +619,7 @@ function sw_anti_virus() {
                 </a>
             </div>
             <?php  //BreadCrumbs
-    
+
                     ?>
                 <p tabindex="0" class=""><?= $av[0]; ?><br />
                     <img tabindex="0" src="https://latinospc.com/images/programs/av.jpg" height="210" width="240" alt="First Image" class="rtl selection_2 card2"
@@ -1087,13 +1087,13 @@ function sw_mlwcleaner() {
     ];
      echo "<div class=\"fullbar\">";
     sw_breadCrumbs();
-  
+
     echo "</div>";
             ?>
             <article class="hero4">
     <div class="fullbar">
     <h1 id="title"><?= empty($titles) ? $titulos[0] : $titles[0];?></h1>
-    
+
     <!-- 1st Section -->
     <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[Early days Section]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ -->
     <div class="colms2">
@@ -1414,7 +1414,7 @@ function sw_webBrowsers() {
     'Work and Productivity' => 'Many web-based applications support productivity, including project management tools, collaboration platforms, and document storage and editing services.',
     'News and Updates' => 'Staying updated with current events is easy with browsers. Users can access news websites, subscribe to news feeds, and watch live broadcasts.',
     'Travel Plan    ning' => 'Browsers facilitate booking flights, hotels, and rental cars, as well as researching travel destinations and reading travel blogs or reviews.',
-    'Health and Fitness' => 'Web browsers help you find information about health conditions, book medical appointments, track fitness goals, and follow workout routines or diets.',    
+    'Health and Fitness' => 'Web browsers help you find information about health conditions, book medical appointments, track fitness goals, and follow workout routines or diets.',
     'Government and Civic Services' => 'Accessing government services, such as renewing licenses, filing taxes, or applying for permits, is often done through web browsers.',
     'Job Hunting and Professional Networking' => 'Browsers are essential for searching job listings, submitting applications, and connecting with professionals via platformsplatforms like LinkedIn.'
     ];
@@ -1459,7 +1459,7 @@ function sw_webBrowsers() {
 
      echo "<div class=\"fullbar\">";
     sw_breadCrumbs();
- 
+
     echo "</div>";
         ?>
         <style>.buttons {
@@ -1470,207 +1470,2145 @@ function sw_webBrowsers() {
     align-items: center;
     gap: 15px;
     padding: 20px 0;
-}
+    }
 
-section a{
-    color: rgb(101, 101, 101);
-}
-section a:hover{
-    color: midnightblue;
-}
-.steps{
-    background-color: rgba(252, 253, 159, 0.41);
-}
-.selection:hover{
- background-color: rgba(25, 25, 112, 0.146);
-}
-.selection{
-    padding: 1%;
-    border-radius: 1.5%;
-    padding-left:25%;
-    text-align: center;
-}
-.steps h2{
-    font-size: 1.3em;
-    padding-left:1%;
-}
-.steps p {
-    font-size: 1.2em;
-    padding-top: 2%;
-    width:70%;
-}
-.steps strong{
-    font-size: 1.7em;
-}
-.readMore{
-    background-color: rgba(25, 25, 112, 0.146);   
-    padding: 1%;
-    border-radius: 1.5%;
-    margin-right: 1%;
-    text-align: center;
-}
-.rm{
-    font-size: 1.5em; float:right; padding-right: 2em; margin-top: .7em;cursor: pointer;
-}
-.rm:hover{
-    color: midnightblue;
-    text-decoration: underline;
-}
+    section a{
+        color: rgb(101, 101, 101);
+    }
+    section a:hover{
+        color: midnightblue;
+    }
+    .steps{
+        background-color: rgba(252, 253, 159, 0.41);
+    }
+    .selection:hover{
+     background-color: rgba(25, 25, 112, 0.146);
+    }
+    .selection{
+        padding: 1%;
+        border-radius: 1.5%;
+        padding-left:25%;
+        text-align: center;
+    }
+    .steps h2{
+        font-size: 1.3em;
+        padding-left:1%;
+    }
+    .steps p {
+        font-size: 1.2em;
+        padding-top: 2%;
+        width:70%;
+    }
+    .steps strong{
+        font-size: 1.7em;
+    }
+    .readMore{
+        background-color: rgba(25, 25, 112, 0.146);
+        padding: 1%;
+        border-radius: 1.5%;
+        margin-right: 1%;
+        text-align: center;
+    }
+    .rm{
+        font-size: 1.5em; float:right; padding-right: 2em; margin-top: .7em;cursor: pointer;
+    }
+    .rm:hover{
+        color: midnightblue;
+        text-decoration: underline;
+    }
 
-.fl {
-    float: left;
-    margin-right: 10px;
-    width: 25%;
-    height: auto;
-}
-.rtl {
-    float: right;
-}
-            </style>
-        <article class="hero4 fullbar">
-    <h1 id="title"><?= empty($titles) ? $titulos[0] : $titles[0];?></h1>
-    <h2><span style="text-align:right;color:blue;">
-            <!-- INDENT THE SECOND H2 -->
-            <?= empty($titles) ? $titulos[1] : $titles[1];?>
-        </span></h2>
+    .fl {
+        float: left;
+        margin-right: 10px;
+        width: 25%;
+        height: auto;
+    }
+    .rtl {
+        float: right;
+    }
+                </style>
+            <article class="hero4 fullbar">
+        <h1 id="title"><?= empty($titles) ? $titulos[0] : $titles[0];?></h1>
+        <h2><span style="text-align:right;color:blue;">
+                <!-- INDENT THE SECOND H2 -->
+                <?= empty($titles) ? $titulos[1] : $titles[1];?>
+            </span></h2>
 
-    <p tabindex="0" class="selection"><?= empty($pc_webBrowsing) ? $navegacionWeb_pc[0] : $pc_webBrowsing[0];?></p>
-    <img tabindex="0" src="../../../tempimages/sath.jpg" style="background-color:rgb(178,34,34,.7);" alt="1st image" class="fl selection_2 card2" height="100%" width="10%">
-    <p tabindex="0" class="selection"><?= empty($pc_webBrowsing) ? $navegacionWeb_pc[1] : $pc_webBrowsing[1];?></p>
-    <hr />
-    <h2><?= empty($subTitles) ? $subtitulos[0] : $subTitles[0];?></h2>
+        <p tabindex="0" class="selection"><?= empty($pc_webBrowsing) ? $navegacionWeb_pc[0] : $pc_webBrowsing[0];?></p>
+        <img tabindex="0" src="../../../tempimages/sath.jpg" style="background-color:rgb(178,34,34,.7);" alt="1st image" class="fl selection_2 card2" height="100%" width="10%">
+        <p tabindex="0" class="selection"><?= empty($pc_webBrowsing) ? $navegacionWeb_pc[1] : $pc_webBrowsing[1];?></p>
+        <hr />
+        <h2><?= empty($subTitles) ? $subtitulos[0] : $subTitles[0];?></h2>
 
-    <p><?= empty($subTitles) ? $subtitulos[1] : $subTitles[1];?></p>
-    <h2 style="text-align:center;"><?= empty($subTitles) ? $subtitulos[2] : $subTitles[2];?></h2>
-    <section class="colms2">
+        <p><?= empty($subTitles) ? $subtitulos[1] : $subTitles[1];?></p>
+        <h2 style="text-align:center;"><?= empty($subTitles) ? $subtitulos[2] : $subTitles[2];?></h2>
+        <section class="colms2">
 
-        <div class="selection">
-            <h2><?= empty($subTitles) ? $subtitulos[3] : $subTitles[3];?></h2>
-            <ul>
-                <li><?= empty($pro_environment) ? $entornoProfesional['resumen'][0] : $pro_environment['summary'][0];?></li>
-                <li><?= empty($pro_environment) ? $entornoProfesional['resumen'][1] : $pro_environment['summary'][1];?></li>
-            </ul>
-        </div>
+            <div class="selection">
+                <h2><?= empty($subTitles) ? $subtitulos[3] : $subTitles[3];?></h2>
+                <ul>
+                    <li><?= empty($pro_environment) ? $entornoProfesional['resumen'][0] : $pro_environment['summary'][0];?></li>
+                    <li><?= empty($pro_environment) ? $entornoProfesional['resumen'][1] : $pro_environment['summary'][1];?></li>
+                </ul>
+            </div>
 
-        <div class="item selection" style="margin-top: 79px;">
-            <h2><?= empty($subTitles) ? $subtitulos[4] : $subTitles[4];?></h2>
-            <ul>
-                <li><?= empty($pro_environment) ? $entornoProfesional['resumen'][2] : $pro_environment['summary'][2];?></li>
-                <li><?= empty($pro_environment) ? $entornoProfesional['resumen'][3] : $pro_environment['summary'][3];?></li>
-                <li><?= empty($pro_environment) ? $entornoProfesional['resumen'][4] : $pro_environment['summary'][4];?></li>
-            </ul>
-        </div>
+            <div class="item selection" style="margin-top: 79px;">
+                <h2><?= empty($subTitles) ? $subtitulos[4] : $subTitles[4];?></h2>
+                <ul>
+                    <li><?= empty($pro_environment) ? $entornoProfesional['resumen'][2] : $pro_environment['summary'][2];?></li>
+                    <li><?= empty($pro_environment) ? $entornoProfesional['resumen'][3] : $pro_environment['summary'][3];?></li>
+                    <li><?= empty($pro_environment) ? $entornoProfesional['resumen'][4] : $pro_environment['summary'][4];?></li>
+                </ul>
+            </div>
 
-        <div class="selection item">
-            <h2><?= empty($subTitles) ? $subtitulos[5] : $subTitles[5];?></h2>
-            <ul>
-                <li><?= empty($pro_environment) ? $entornoProfesional['resumen'][5] : $pro_environment['summary'][5];?></li>
-                <li><?= empty($pro_environment) ? $entornoProfesional['resumen'][6] : $pro_environment['summary'][6];?></li>
-                <li><?= empty($pro_environment) ? $entornoProfesional['resumen'][7] : $pro_environment['summary'][7];?></li>
-            </ul>
-        </div>
+            <div class="selection item">
+                <h2><?= empty($subTitles) ? $subtitulos[5] : $subTitles[5];?></h2>
+                <ul>
+                    <li><?= empty($pro_environment) ? $entornoProfesional['resumen'][5] : $pro_environment['summary'][5];?></li>
+                    <li><?= empty($pro_environment) ? $entornoProfesional['resumen'][6] : $pro_environment['summary'][6];?></li>
+                    <li><?= empty($pro_environment) ? $entornoProfesional['resumen'][7] : $pro_environment['summary'][7];?></li>
+                </ul>
+            </div>
 
-        <div class="selection">
-            <h2><?= empty($subTitles) ? $subtitulos[6] : $subTitles[6];?></h2>
-            <p><?= empty($pro_environment) ? $entornoProfesional['resumen'][8] : $pro_environment['summary'][8];?></p>
-        </div>
-    </section> <!-- colms2 -->
-    <hr style="width:65%;">
-    <h2 class="center"><?= empty($subTitles) ? $subtitulos[7] : $subTitles[7];?></h2>
-    <section class="colms newspaper2">
-    <?php
-        $activeArr = !empty($usecases) ? $usecases : $casosDeUso;
-        foreach ($activeArr as $key => $value) { ?>
-            <fieldset>
-                <legend><?= $key; ?></legend> <?= $value; ?>
-            </fieldset>
-    <?php }
-    ?>
-    </section>
-    <hr style="width:65%;">
-    <h2 class="center"><?= empty($subTitles) ? $subtitulos[8] : $subTitles[8];?></h2>
-    <section class="colms2">
-    <?php
-        $environment = !empty($profesionalEnvironment) ? $profesionalEnvironment : $entornoPro;
-        if (!empty($environment)) {
-            foreach ($environment['summary'] as $index => $summary) { ?>
-                <details>
-                    <summary class="selection_2"><?= htmlspecialchars($summary); ?></summary>
-                    <div class="pe">
-                        <span tabindex="0" class="selection_2"><?= htmlspecialchars($environment['detail'][$index]); ?></span>
-                    </div>
-                </details>
-            <?php }
-        }
-    ?>
-    </section>
-    <hr style="width:65%;">
-    <h2><?= empty($subTitles) ? $subtitulos[9] : $subTitles[9];?></h2>
-   <section>
-         <?php
-         $interaction = !empty($wbInteraction) ? $wbInteraction : $interaccionWeb;
-         foreach ($interaction as $key => $value) {
-            $class = ($key === '11:00 PM') ? ' class="last"' : '';
+            <div class="selection">
+                <h2><?= empty($subTitles) ? $subtitulos[6] : $subTitles[6];?></h2>
+                <p><?= empty($pro_environment) ? $entornoProfesional['resumen'][8] : $pro_environment['summary'][8];?></p>
+            </div>
+        </section> <!-- colms2 -->
+        <hr style="width:65%;">
+        <h2 class="center"><?= empty($subTitles) ? $subtitulos[7] : $subTitles[7];?></h2>
+        <section class="colms newspaper2">
+        <?php
+            $activeArr = !empty($usecases) ? $usecases : $casosDeUso;
+            foreach ($activeArr as $key => $value) { ?>
+                <fieldset>
+                    <legend><?= $key; ?></legend> <?= $value; ?>
+                </fieldset>
+        <?php }
         ?>
-        <p<?= $class;?>><strong><?= $key;?>:</strong> <?= $value;?></p>
-       <?php } ?>
-    </section>
-    </article>
+        </section>
+        <hr style="width:65%;">
+        <h2 class="center"><?= empty($subTitles) ? $subtitulos[8] : $subTitles[8];?></h2>
+        <section class="colms2">
+        <?php
+            $environment = !empty($profesionalEnvironment) ? $profesionalEnvironment : $entornoPro;
+            if (!empty($environment)) {
+                foreach ($environment['summary'] as $index => $summary) { ?>
+                    <details>
+                        <summary class="selection_2"><?= htmlspecialchars($summary); ?></summary>
+                        <div class="pe">
+                            <span tabindex="0" class="selection_2"><?= htmlspecialchars($environment['detail'][$index]); ?></span>
+                        </div>
+                    </details>
+                <?php }
+            }
+        ?>
+        </section>
+        <hr style="width:65%;">
+        <h2><?= empty($subTitles) ? $subtitulos[9] : $subTitles[9];?></h2>
+       <section>
+             <?php
+             $interaction = !empty($wbInteraction) ? $wbInteraction : $interaccionWeb;
+             foreach ($interaction as $key => $value) {
+                $class = ($key === '11:00 PM') ? ' class="last"' : '';
+            ?>
+            <p<?= $class;?>><strong><?= $key;?>:</strong> <?= $value;?></p>
+           <?php } ?>
+        </section>
+        </article>
 
 
 
-<?php
+    <?php
 
 
 }
+
 function sw_messaging() {
      echo "<div class=\"fullbar\">";
     sw_breadCrumbs();
-    echo "<h1>Messaging</h1>";
     echo "</div>";
+
+                $introduction = [
+    'title' => 'Messaging',
+    'content' => [
+        'From the dawn of human civilization, the need to communicate has driven countless innovations. As societies evolved, so did their methods of communication, transitioning from smoke signals and carrier pigeons to telegraphs and telephones. With the advent of the internet in the late 20th century, a new era of instantaneous, global communication was born. <a href="https://www.scicommcollective.com/articles/sccsymposium/communicationmedia" title="Science Communication Through Art: The Universal Language">Communication</a>',
+        'Aside from email, we can communicate instantaneously over the internet using a messaging program (APP), now days we can send attached video files, pictures, links and attachments over these apps. Most modern messaging applications offer private group chats, video/voice calling the person(s), make and accept payments, and of course, play games.',
+        '"<i>Though the term dates from the 1990s, instant messaging predates the Internet, first appearing on multi-user operating systems like Compatible Time-Sharing System (CTSS) and Multiplexed Information and Computing Service (Multics)[12][13] in the mid-1960s. Initially, some of these systems were used as notification systems for services like printing, but quickly were used to facilitate communication with other users logged into the same machine. CTSS facilitated communication via text message for up to 30 people.[14] </i>"'
+    ],
+    'wiki_link' => 'https://en.wikipedia.org/wiki/Instant_messaging'
+    ];
+
+    $links = ['sms'=> 'https://en.wikipedia.org/wiki/SMS',
+                'whatsApp'=>'https://www.whatsapp.com/',
+                'facebookMessenger'=>'https://www.messenger.com/',
+                'weChat'=>'https://www.wechat.com/en/',
+                'telegram'=>'https://telegram.org/',
+                'signal'=>'https://signal.org/',
+                'iMessage'=>'https://en.wikipedia.org/wiki/IMessage',
+                'googleChat'=>'https://workspace.google.com/products/chat/',
+                'slack'=>'https://slack.com/',
+                'microsoftTeams'=>'https://www.microsoft.com/en-us/microsoft-365/microsoft-teams/group-chat-software',
+
+                'encryptionEnd2End'=>'https://en.wikipedia.org/wiki/End-to-end_encryption',
+
+                'discord'=>'https://discord.com/',
+                'snapchat'=>'https://www.snapchat.com/',
+                'viber'=>'https://www.viber.com/',
+                'line'=>'https://line.me/en/',
+                'kik'=>'https://www.kik.com/',
+                'skype'=>'https://www.skype.com/',
+                'dust'=>'https://www.useDust.com/',
+                'qq'=>'https://www.imqq.com/',
+                'kakaoTalk'=>'https://www.kakaocorp.com/page/service/service/KakaoTalk?lang=ENG&tab=all',
+                'marcoPolo'=>'https://www.marcopolo.me/',
+                'textMe'=>'https://www.textmeinc.com/',
+                'textNow'=>'https://www.textnow.com/',
+                'threema'=>'https://threema.ch/en/',
+                'wire'=>'https://wire.com/',
+                'session'=>'https://getsession.org/',
+                'wickr'=>'https://wickr.com/',
+                'tango'=>'https://www.tango.me/',
+                'chompSMS'=>'https://chompsms.com/',
+                'pinger'=>'https://www.pinger.com/',
+                'hike'=>'https://hike.in/'
+            ];
+
+    // Recent Messaging Apps section
+    $recent_apps = [
+        'title' => 'Here are some Messaging Apps as of recently',
+        'apps' => [
+            '<a href="'.$links['sms'].'">Text Messaging (SMS)</a>',
+            '<a href="'.$links['whatsApp'].'">WhatsApp</a>',
+            '<a href="'.$links['facebookMessenger'].'">Facebook Messenger</a>',
+            '<a href="'.$links['weChat'].'">WeChat</a>',
+            '<a href="'.$links['telegram'].'">Telegram</a>',
+            '<a href="'.$links['signal'].'">Signal</a>',
+            '<a href="'.$links['iMessage'].'">iMessage</a>',
+            '<a href="'.$links['googleChat'].'">Google Chat</a>',
+            '<a href="'.$links['slack'].'">Slack</a>',
+            '<a href="'.$links['microsoftTeams'].'">Microsoft Teams</a>'
+        ],
+        'security_title' => 'Security and Privacy in Modern Messaging',
+        'security_content' => 'In today\'s digital age, security and privacy have become paramount in messaging applications. Most modern messaging platforms implement <a href="'.$links['encryptionEnd2End'].'">end-to-end encryption</a>, ensuring that only the intended recipients can read the messages. Features like disappearing messages, two-factor authentication, and secure cloud backups have become standard. Apps like Signal and Telegram have gained popularity specifically for their enhanced security features and commitment to user privacy.'
+    ];
+
+    // Advanced Features section
+    $advanced_features = [
+        'title' => 'Advanced Features and Capabilities',
+        'intro' => 'Modern messaging apps have evolved far beyond simple text communication. Users can now enjoy features like:',
+        'features' => [
+            'Cross-platform synchronization across devices',
+            'Voice and video messaging',
+            'Live location sharing',
+            'Message reactions and replies',
+            'File sharing and cloud storage integration',
+            'Digital payments and money transfers',
+            'Group video calls and conferences'
+        ]
+    ];
+
+    // Future Trends section
+    $future_trends = [
+        'title' => 'Emerging Trends and Future of Messaging',
+        'content' => 'The messaging landscape continues to evolve with emerging technologies. Rich Communication Services (RCS) is positioned to replace traditional SMS, offering enhanced features like read receipts and higher quality media sharing. Artificial Intelligence is being integrated into messaging platforms, enabling smart replies, automated translations, and intelligent chatbots. Some platforms are even experimenting with AR/VR elements, allowing users to create immersive messaging experiences with filters, effects, and virtual environments.'
+    ];
+
+    // Market Stats section
+    $market_stats = [
+        'content' => 'As of 2023, WhatsApp leads the global messaging market with over 2 billion monthly active users, followed by WeChat and Facebook Messenger. The COVID-19 pandemic has significantly accelerated the adoption of messaging platforms, with businesses increasingly using these platforms for customer service and communication.'
+    ];
+
+    // Additional Messaging Apps section
+    $additional_apps = [
+        'apps' => [
+            '<a href="'.$links['discord'].'">Discord</a>',
+            '<a href="'.$links['snapchat'].'">Snapchat</a>',
+            '<a href="'.$links['viber'].'">Viber</a>',
+            '<a href="'.$links['line'].'">Line</a>',
+            '<a href="'.$links['kik'].'">Kik</a>',
+            '<a href="'.$links['skype'].'">Skype</a>',
+            '<a href="'.$links['dust'].'">Dust</a>',
+            '<a href="'.$links['qq'].'">QQ</a>',
+            '<a href="'.$links['kakaoTalk'].'">KakaoTalk</a>',
+            '<a href="'.$links['marcoPolo'].'">Marco Polo</a>',
+            '<a href="'.$links['textMe'].'">Text Me</a>',
+            '<a href="'.$links['textNow'].'">Text Now</a>',
+            '<a href="'.$links['threema'].'">Threema</a>',
+            '<a href="'.$links['wire'].'">Wire</a>',
+            '<a href="'.$links['session'].'">Session</a>',
+            '<a href="'.$links['wickr'].'">Wickr</a>',
+            '<a href="'.$links['tango'].'">Tango</a>',
+            '<a href="'.$links['chompSMS'].'">Chomp SMS</a>',
+            '<a href="'.$links['pinger'].'">Pinger</a>',
+            '<a href="'.$links['hike'].'">Hike</a>'
+        ]
+    ];
+
+
+    ?>
+    <div class="hero4 fullbar">
+    <h1 id="title"><?= empty($introduction) ? $introduccion['titulo'] : $introduction['title']; ?></h1>
+
+    <img src="../../../tempimages/messaging1.jpg" class="rtl" style="background-color:black">
+
+    <?php if (!empty($introduction) || !empty($introduccion)) :
+         foreach ((!empty($introduction) ? $introduction['content'] : $introduccion['contenido']) as $paragraph) : ?>
+    <p tabindex="0" class="selection"><?php echo $paragraph; ?></p>
+    <?php endforeach;  endif; ?>
+
+    <p tabindex="0" class="selection" style="display:inline;margin:1%;"><a
+            href="<?= empty($introduction) ? $introduccion['wiki_link'] : $introduction['wiki_link']; ?>">Wikipedia</a>
+    </p>
+    <hr />
+    <h2><?= empty($recent_apps) ? $apps_recientes['titulo'] : $recent_apps['title']; ?></h2>
+    <ul class="newspaper2">
+
+        <?php   if(!empty($recent_apps) || !empty($apps_recientes)) :
+        foreach ((!empty($recent_apps) ? $recent_apps['apps'] : $apps_recientes['apps']) as $app): ?>
+        <li style="line-height:1.5;"><?php echo $app; ?></li>
+        <?php   endforeach; endif; ?>
+
+    </ul>
+    <h2><?= empty($recent_apps) ? $apps_recientes['titulo_seguridad'] : $recent_apps['security_title']; ?></h2>
+    <p tabindex="0" class="selection">
+        <?= empty($recent_apps) ? $apps_recientes['contenido_seguridad'] : $recent_apps['security_content']; ?></p>
+    <hr />
+    <h2><?= empty($advanced_features) ? $rasgos_avanzados['titulo'] : $advanced_features['title']; ?></h2>
+    <p tabindex="0" class="selection">
+        <?= empty($advanced_features) ? $rasgos_avanzados['intro'] : $advanced_features['intro']; ?></p>
+    <ul class="newspaper2">
+
+        <?php if (!empty($advanced_features) || !empty($rasgos_avanzados)) :
+        foreach ((!empty($advanced_features) ? $advanced_features['features'] : $rasgos_avanzados['rasgos']) as $feature) : ?>
+        <p>
+            <li tabindex="0" class="border-li"><?php echo $feature; ?></li>
+        </p>
+        <?php endforeach; endif; ?>
+    </ul>
+    <hr />
+    <h2><?= empty($future_trends) ? $tendencias_futuras['titulo'] : $future_trends['title']; ?></h2>
+    <p tabindex="0" class="selection">
+        <?= empty($future_trends) ? $tendencias_futuras['contenido'] : $future_trends['content']; ?></p>
+    <hr />
+    <p tabindex="0" class="selection">
+        <?= empty($market_stats) ? $estadisticas_mercado['contenido'] : $market_stats['content']; ?></p>
+    <hr />
+    <ul class="newspaper2 lastItem">
+        <?php if (!empty($additional_apps) || !empty($apps_adicionales)) :
+        foreach (!empty($additional_apps) ? $additional_apps['apps'] : $apps_adicionales['apps'] as $app) : ?>
+        <div style="line-height:1.5;">
+            <li><?php echo $app; ?></li>
+        </div>
+        <?php endforeach; endif; ?>
+    </ul>
+    </div>
+    <?php
+
+
+
 }
+
 function sw_media() {
      echo "<div class=\"fullbar\">";
     sw_breadCrumbs();
-    echo "<h1>Media</h1>";
     echo "</div>";
+
+        $title="Digital Media";
+    $links = ['mediaFormats'=>['https://www.loc.gov/preservation/digital/formats/fdd/browse_list.shtml','Library of Congress (.gov)'],
+                'internetUsers'=>['https://datareportal.com/global-digital-overview','DataReportal | Global Digital Insights | Digital Around the World'],
+                'video'=>['https://www.synthesia.io/post/video-statistics#:~:text=Video%20made%20up%2082%25%20of,10%25%20through%20text).','Video Statistics'],
+
+                'core'=>['image'=>['https://www.iana.org/assignments/media-types/media-types.xhtml#image','Media Types Images'],
+                            'audio'=>['https://www.iana.org/assignments/media-types/media-types.xhtml#audio','Media Types Audio'],
+                            'video'=>['https://www.iana.org/assignments/media-types/media-types.xhtml#video','Media Types Video'],
+                            'text'=>['https://www.iana.org/assignments/media-types/media-types.xhtml#text','Media Types Text']
+                        ],
+                'evolution'=>['40'=>['http://world-information.org/wio/infostructure/100437611663/100438659338','Early Digital Computing'],
+                                '60'=>['https://en.wikipedia.org/wiki/Digital_audio','Digital Audio and Storage'],
+                                '80'=>['https://en.wikipedia.org/wiki/Digital_image','Digital Images','https://en.wikipedia.org/wiki/Digital_video','Digital Video'],
+                                '00'=>['https://www.socialchamp.io/in/blog/history-of-social-media/','History of Social Media: Tracing the Evolution from the Beginning to Now'],
+                                '20'=>['https://www.interaction-design.org/literature/topics/immersive-media','Immersive Media']
+                            ],
+                'popularMediaFormats'=>['jpg'=>['https://en.wikipedia.org/wiki/JPEG','JPEG'],
+                                        'png'=>['https://en.wikipedia.org/wiki/PNG','PNG'],
+                                        'mp4'=>['https://en.wikipedia.org/wiki/MP4_file_format','MP4'],
+                                        'mp3'=>['https://en.wikipedia.org/wiki/MP3','MP3'],
+                                        'gif'=>['https://en.wikipedia.org/wiki/GIF','GIF'],
+                                        'wav'=>['https://en.wikipedia.org/wiki/WAV','WAV'],
+                                        'pdf'=>['https://en.wikipedia.org/wiki/PDF','PDF'],
+                                        'svg'=>['https://en.wikipedia.org/wiki/SVG','SVG']
+                                    ],
+                'aACR'=>['https://www.mentalhelp.net/internet/types-of-media/','American Addiction Centers Resource'],
+                'mediaType'=>'https://en.wikipedia.org/wiki/Media_type'
+            ];
+
+    $subTitle = ['Understanding Digital Media: Visual, Audio, and Interactive Content',
+                    'Core Media Types',
+                    'Evolution of Digital Media',
+                    'Popular Media Formats',
+                    'The Role of Digital Media Today'
+                ];
+
+    $stats = ['mediaFormats'=>['500+','Media Formats'],
+                'internetUsers'=>['5.52','Internet Users'],
+                'video'=>['Video','82% of all internet traffic (2022)'],
+            ];
+
+    $digital = ['Digital media encompasses all forms of content that can be created, viewed, distributed, modified and preserved on digital electronic devices. These representations primarily fall into several key categories:'];
+    $core = ['image'=>['📷','Images'],'audio'=>['🎵','Audio'],'video'=>['🎬','Video'],'text'=>['📝','Text'],
+            'evolution'=>['earlyDigitalComputing'=>['1940s-1950s','Early Digital Computing'],
+                            'digitalAudioandStorage'=>['1960s-1970s','Digital Audio and Storage'],
+                            'digitalImagesandVideo'=>['1980s-1990s','Digital'],
+                            '80'=>['Images','and','Video'],
+                            '00'=>['2000s-2010s','Social Media Revolution'],
+                            '20'=>['2020s','Immersive and Interactive Media'],]
+            ];
+    $popularMediaFormats = ['JPG','PNG','MP4','MP3','GIF','WAV','PDF','SVG'];
+    $role = ['Digital media has transformed how we communicate, learn, and entertain ourselves.','It enables:','Instant global communication','Interactive learning experiences','Creative expression and sharing','Digital preservation of culture','Cross-platform content delivery'];
+    $modernMedia = ['aACR'=>'American Addiction Centers Resource', 'quote'=>'"Modern media comes in many different formats, including print media (books, magazines, newspapers), television, movies, video games, music, cell phones, various kinds of software, and the Internet."'];
+    $learn = ['Learn more about Internet Media Types →'];
+    ?>
+
+    <article class="hero4">
+    <div class="fullbar">
+        <h2 id="title"><?= empty($title) ? $titulo : $title;?></h2>
+
+        <h2><?= empty($subTitle) ? $subTitulo[0] : $subTitle[0];?></h2>
+        <div tabindex="0" class="selection">
+            <!-- Stats Section --><div class="stats-grid">
+                <?php
+            $sections = [
+                'multimediaFormatos' => 'mediaFormats',
+                'internetUsuarios' => 'internetUsers',
+                'video' => 'video'
+            ];
+            foreach ($sections as $spanishKey => $englishKey) :
+                $linkKey = empty($links) ? $enlaces[$spanishKey] : $links[$englishKey];
+                $statKey = empty($stats) ? $estadisticas[$spanishKey] : $stats[$englishKey];
+            ?>
+                <a class="stat-card" href="<?= $linkKey[0] ?>" title="<?= $linkKey[1] ?>">
+                    <div class="stat-number"><?= $statKey[0] ?></div>
+                    <div class="stat-label"><?= $statKey[1] ?></div>
+                </a>
+                <?php
+            endforeach;
+            ?>
+            </div> <!-- Stats Section -->
+            <p>
+                <?= $digital[0];?>
+            </p>
+            <div class="media-types media-card">
+                <h3><?= empty($subTitle) ? $subTitulo[1] : $subTitle[1];?></h3>
+                <div class="tech-grid">
+                    <a href="<?= empty($links) ? $enlaces['centro']['imagen'][0] : $links['core']['image'][0];?>"
+                        title="<?= empty($links) ? $enlaces['centro']['imagen'][1] : $links['core']['image'][1];?>"
+                        class="tech-item">
+                        <div class="media-icon"><?= empty($core) ? $centro['imagen'][0] : $core['image'][0];?></div>
+                        <strong><?= empty($core) ? $centro['imagen'][1] : $core['image'][1];?></strong>
+                    </a>
+                    <a href="<?= empty($links) ? $enlaces['centro']['audio'][0] : $links['core']['audio'][0];?>"
+                        title="<?= empty($links) ? $enlaces['centro']['audio'][1] : $links['core']['audio'][1];?>"
+                        class="tech-item">
+                        <div class="media-icon"><?= empty($core) ? $centro['audio'][0] : $core['audio'][0];?></div>
+                        <strong><?= empty($core) ? $centro['audio'][1] : $core['audio'][1];?></strong>
+                    </a>
+                    <a href="<?= empty($links) ? $enlaces['video'][0] : $links['core']['video'][0];?>"
+                        title="<?= empty($links) ? $enlaces['centro']['video'][1] : $links['core']['video'][1];?>"
+                        class="tech-item">
+                        <div class="media-icon"><?= empty($core) ? $centro['video'][0] : $core['video'][0];?></div>
+                        <strong><?= empty($core) ? $centro['video'][1] : $core['video'][1];?></strong>
+                    </a>
+                    <a href="<?= empty($links) ? $enlaces['centro']['texto'][0] : $links['core']['text'][0];?>"
+                        title="<?= empty($links) ? $enlaces['centro']['texto'][1] : $links['core']['text'][1];?>"
+                        class="tech-item">
+                        <div class="media-icon"><?= empty($core) ? $centro['texto'][0] : $core['text'][0];?></div>
+                        <strong><?= empty($core) ? $centro['texto'][1] : $core['text'][1];?></strong>
+                    </a>
+                </div>
+            </div>
+            <div class="timeline">
+                <h3><?= empty($subTitle) ? $subTitulo[2] : $subTitle[2]; ?></h3>
+                <?php
+    // Define the timeline data structure
+    $timelineItems = [
+        '40' => [
+            'key' => 'computacionDigitalTemprana',
+            'englishKey' => 'earlyDigitalComputing',
+            'hasLink' => true,
+            'specialFormat' => false
+        ],
+        '60' => [
+            'key' => 'audioyAlmacenamientoDigital',
+            'englishKey' => 'digitalAudioandStorage',
+            'hasLink' => true,
+            'specialFormat' => false
+        ],
+        '80' => [
+            'key' => 'imageneyVideoDigital',
+            'englishKey' => 'digitalImagesandVideo',
+            'hasLink' => false,
+            'specialFormat' => true
+        ],
+        '00' => [
+            'key' => '00',
+            'englishKey' => '00',
+            'hasLink' => true,
+            'specialFormat' => false
+        ],
+        '20' => [
+            'key' => '20',
+            'englishKey' => '20',
+            'hasLink' => true,
+            'specialFormat' => false
+        ]
+    ];
+    foreach ($timelineItems as $decade => $item) :
+        $baseKey = empty($core) ? $centro['evolucion'] : $core['evolution'];
+        $linkBase = empty($links) ? $enlaces['evolucion'] : $links['evolution'];
+        ?>
+                <div class="timeline-item">
+                    <?php if ($item['specialFormat']) { // Special case for 80s entry
+             ?>
+                    <strong><?= empty($core) ? $baseKey[$item['key']][0] : $core['evolution'][$item['englishKey']][0]; ?>:</strong>
+                    <?= empty($core) ?$baseKey[$item['key']][1]: $core['evolution'][$item['englishKey']][1]; ?>
+                    <a href="<?= $linkBase[$decade][0] ?>" title="<?= $linkBase[$decade][1] ?>">
+                        <?= $baseKey[$decade][0] ?>
+                    </a>
+                    <?= $baseKey[$decade][1] ?>
+                    <a href="<?= $linkBase[$decade][2] ?>" title="<?= $linkBase[$decade][3] ?>">
+                        <?= $baseKey[$decade][2] ?>
+                    </a>
+                    <?php } else { // Standard format for other entries ?>
+                    <strong>
+                        <?php if ($item['hasLink']) { ?>
+                        <a href="<?= $linkBase[$decade][0] ?>" title="<?= $linkBase[$decade][1] ?>">
+                            <?php } ?>
+                            <?= empty($core) ? $baseKey[$item['key']][0] : $core['evolution'][$item['englishKey']][0]; ?>
+                            <?php if ($item['hasLink']) { ?>
+                        </a>
+                        <?php } ?>
+                    </strong>:
+                    <?= empty($core) ? $baseKey[$item['key']][1] : $core['evolution'][$item['englishKey']][1] ?>
+                    <?php } ?>
+                </div>
+                <?php endforeach; ?>
+
+
+            </div>
+            <div class="media-formats media-card">
+                <h3><?= empty($subTitle) ? $subTitulo[3] : $subTitle[3];?></h3>
+                <div class="tech-grid">
+
+                    <?php
+    // Define the formats we want to display
+    $formatTypes = ['jpg', 'png', 'mp4', 'mp3', 'gif', 'wav', 'pdf', 'svg'];
+    foreach ($formatTypes as $index => $format) :
+        $href = empty($links)
+            ? $enlaces['formatos'][$format][0]
+            : $links['popularMediaFormats'][$format][0];
+        $title = empty($links)
+            ? $enlaces['formatos'][$format][1]
+            : $links['popularMediaFormats'][$format][1];
+        $text = empty($popularMediaFormats)
+            ? $formatos[$index]
+            : $popularMediaFormats[$index];
+        ?>
+                    <a href="<?= $href ?>" title="<?= $title ?>" class="tech-item">
+                        <?= $text ?>
+                    </a>
+                    <?php
+    endforeach;
+    ?>
+                </div>
+            </div>
+            <div class="media-importance">
+                <h3><?= empty($subTitle) ? $subTitulo[4] : $subTitle[4];?></h3>
+                <p><?= empty($role) ? $rol[0] : $role[0];?><br><b><?= empty($role) ? $rol[1] : $role[1];?></b></p>
+                <ul>
+                    <?php for ($i = 2; $i < 7; $i++): ?>
+                    <li><?= empty($role) ? $rol[$i] : $role[$i];?></li>
+                    <?php endfor; ?>
+                </ul>
+            </div>
+            <blockquote class="expert-quote">
+                <p><?= empty($modernMedia) ? $multimediaModerna['cita'] : $modernMedia['quote'];?></p>
+                <footer>— <cite><a
+                            href="<?= empty($links) ? $enlaces['aACR'][0] : $links['aACR'][0]; ?>"><?= empty($modernMedia) ? $multimediaModerna['aACR'] : $modernMedia['aACR'];?></a></cite>
+                </footer>
+            </blockquote>
+            <p class="learn-more">
+                <a href="<?= empty($links) ? $enlaces['tiposMultimedia'] : $links['mediaType'];?>"
+                    class="reference-link"><?= empty($learn) ? $aprender[0] : $learn[0];?></a>
+            </p>
+        </div>
+    </div>
+    </article>
+
+    <?php
+
 }
+
 function sw_runtimes() {
      echo "<div class=\"fullbar\">";
     sw_breadCrumbs();
     echo "<h1>Runtimes</h1>";
     echo "</div>";
+        $title="Understanding Program Runtimes:<br />The Magic Behind Your Apps";
+
+    $question="Ever wondered why some apps run smoothly while others feel sluggish? Or why the same game might run perfectly on your friend's phone but struggle on yours? The answer lies in something called \"runtime\" - the invisible conductor orchestrating everything your apps do.";
+
+    $links=[
+        'programming'=>'https://en.wikipedia.org/wiki/History_of_programming_languages#Current_trends',
+        'mobile'=>'https://en.wikipedia.org/wiki/Mobile_game',
+        'next100Years'=>'https://www.nyas.org/ideas-insights/blog/imagining-the-next-100-years-of-science-and-technology/',
+        'technicalDetails'=>'https://www.techtarget.com/searchsoftwarequality/definition/runtime'
+    ];
+
+    $subtitles= [
+                'What is Runtime? — Think of it as a Kitchen',
+                'How Does Runtime Work?',
+                '🌟 Fun Fact:',
+                'Why Some Apps Run Better Than Others'
+    ];
+
+    $kitchen = [
+                'Imagine your computer as a busy restaurant kitchen:',
+                'the'=>'The',
+                'chef'=>['The chef','(runtime environment)','coordinates everything'],
+                'recipe'=>['The recipe','(program code)','tells what needs to be done'],
+                'ingredients'=>['The ingredients','(data)','are what you\'re working with'],
+                'tools'=>['The kitchen tools','(system resources)','help get the job done'],
+                'just'=>'Just like a kitchen needs all these elements working together to serve a meal, your apps need runtime to function!',
+                'how'=>'Every <a href="'.$links['programming'].'">programming language</a> needs its own special runtime environment. Think of it as different types of kitchens - a sushi restaurant needs different tools than a pizzeria, but they both make delicious food!'
+    ];
+
+    $funFact = 'When you\'re playing a mobile game, the runtime is handling millions of tiny tasks every second - from making sure your character jumps when you tap, to keeping track of your score, all while making sure your phone\'s battery isn\'t drained too quickly!';
+
+    $complexity = [
+                '1. App Complexity',
+                'Simple apps (like a calculator) are like making toast - quick and easy. Complex games are like preparing a five-course meal - they need more time and resources!'
+    ];
+
+    $devicePower = [
+                    '2. Your Device\'s Power',
+                    'Different devices have different capabilities:',
+                    'desktop'=>['🖥️ Desktop Computers:','Like a professional kitchen - lots of power and space'],
+                    'laptop'=>['💻 Laptops:','Like a home kitchen - good for most tasks'],
+                    'mobile'=>['📱 Mobile Devices:','Like a food truck kitchen - smaller but surprisingly capable!']
+    ];
+
+    $future = [
+                '🚀 The <a href="'.$links['next100Years'].'">Future</a> is Exciting!',
+                'Technology keeps getting better - imagine having the power of today\'s desktop computer in tomorrow\'s smartwatch! Many tech-companies are constantly developing new ways to pack more processing power into smaller spaces.'
+    ];
+
+    $learnMore =[
+        'Want to Learn More?',
+        'If you\'re curious about how computers work, runtime is just the beginning! You might also be interested in:',
+        'How programming languages work',
+        'What makes some computers faster than others',
+        'How games and apps are made',
+        'The latest in computer chip technology'
+    ];
+
+    $proTips = [
+        '💡 Pro Tips for Better Runtime Performance',
+        'Keep your device\'s operating system updated',
+        'Close apps you\'re not using',
+        'Make sure you have enough free storage space',
+        'Choose apps that match your device\'s capabilities'
+    ];
+
+    $deepDive = [
+        'Want to Dive Deeper?',
+        '<a href="'.$links['technicalDetails'].'">Understanding Runtime (Technical Details)</a>',
+        'Check out our other <a href="../#ps2">articles</a> about computer basics and advanced topics!'
+    ];
+
+    ?>
+    <article class="hero4">
+    <div class="content_resize">
+        <div class="fullbar">
+            <h2 id="title"><?= empty($title) ? $titulo : $title;?></h2>
+
+            <?php /*BreadCrumbs*/
+    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/tiemposdeejecucion/") {
+                    include ('../../../include/_code/migasDePan_software.php');
+    }
+    else {
+        include ('../../include/_code/breadCrumbs_software.php');
+    }  /*BreadCrumbs*/ ?>
+
+                <div class="highlight-box">
+                    <p><?= empty($question) ? $pregunta : $question ?></p>
+                </div>
+
+                <h2><?= empty($title) ? $subtitulos[0] : $subtitles[0]; ?></h2>
+                <p><?= empty($kitchen) ? $cocina[0] : $kitchen[0]; ?></p>
+                <ul class="kitchen-analogy">
+            <?php
+                $activeArray = empty($kitchen) ? $cocina : $kitchen;
+                $keys = empty($kitchen) ? ['chef', 'receta', 'ingredientes', 'herramientas'] : ['chef', 'recipe', 'ingredients', 'tools'];
+                foreach ($keys as $key) :
+                    echo '<li>';
+                    echo $activeArray[$key][0] . ' '; // Article
+                    echo '<strong>' . $activeArray[$key][1] . '</strong> '; // Parenthetical term
+                    echo $activeArray[$key][2]; // Description
+                    echo '</li>';
+                endforeach;
+            ?></ul><p><?=empty($kitchen) ? $cocina['justo'] : $kitchen['just']; ?></p>
+
+                <h2><?= empty($title) ? $subtitulos[1] : $subtitles[1]; ?></h2>
+                <p><?=empty($kitchen) ? $cocina['como'] : $kitchen['how']; ?></p>
+
+                <div class="fun-fact">
+                    <h3><?= empty($title) ? $subtitulos[2] : $subtitles[2]; ?></h3>
+                    <p><?= empty($funFact) ? $datoCurioso : $funFact; ?></p>
+                </div>
+
+                <h2><?= empty($title) ? $subtitulos[3] : $subtitles[3]; ?></h2>
+                <h3><?= empty($complexity) ? $complejidad[0] : $complexity[0]; ?></h3>
+                <div class="highlight-box">
+                    <p><?= empty($complexity) ? $complejidad[1] : $complexity[1]; ?></p>
+                </div>
+
+                <h3><?= empty($devicePower) ? $dispositivoPotencia[0] : $devicePower[0]; ?></h3>
+                <p><?= empty($devicePower) ? $dispositivoPotencia[1] : $devicePower[1]; ?></p>
+
+                    <ul class="device-list">
+                        <?php $devices = ['desktop', 'laptop', 'mobile'];
+                            foreach ($devices as $device) : ?>
+                            <li>
+                                <strong><?= empty($devicePower) ? $dispositivoPotencia[$device][0] : $devicePower[$device][0]; ?></strong>
+                                <?= empty($devicePower) ? $dispositivoPotencia[$device][1] : $devicePower[$device][1]; ?>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+
+
+                <div class="future-section">
+                    <h3><?= empty($future) ? $futuro[0] : $future[0]; ?></h3>
+                    <p><?= empty($future) ? $futuro[1] : $future[1]; ?></p>
+                </div>
+
+                <div class="learn-more">
+                    <h2><?= empty($learnMore) ? $aprendeMas[0] : $learnMore[0]; ?></h2>
+                    <p><?= empty($learnMore) ? $aprendeMas[1] : $learnMore[1]; ?></p>
+                    <ul>
+                        <?php $learnMoreToShow = array_slice(empty($learnMore) ? $aprendeMas : $learnMore, 2);
+                            foreach ($learnMoreToShow as $learn) : ?>
+                            <li><?= $learn; ?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+
+                <div class="pro-tip">
+                    <h3><?= empty($proTips) ? $consejosPro[0] : $proTips[0]; ?></h3>
+                    <ul>
+                    <?php
+                        $proTipsToShow = array_slice(empty($proTips) ? $consejosPro : $proTips, 1);
+                        foreach ($proTipsToShow as $tip) : ?>
+                            <li><?= $tip; ?></li>
+                    <?php endforeach; ?>
+
+                    </ul>
+                </div>
+
+                <div class="references">
+                    <h3><?= empty($deepDive) ? $chapuzon[0] : $deepDive[0]; ?></h3>
+                    <ul>
+                        <li><?= empty($deepDive) ? $chapuzon[1] : $deepDive[1]; ?></li>
+                        <li><?= empty($deepDive) ? $chapuzon[2] : $deepDive[2]; ?></li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+    </article>
+    <?php
 }
+
 function sw_imaging() {
      echo "<div class=\"fullbar\">";
     sw_breadCrumbs();
-    echo "<h1>Imaging</h1>";
     echo "</div>";
+    $title="Imaging";
+
+    $subTitles = [
+        'The Evolution of Computer Graphics',
+        '2D Graphics: The Foundation',
+        '3D Graphics: Adding Depth',
+        'Digital Photography and Imaging Hardware',
+        'Modern Display Technologies',
+        'Virtual and Augmented Reality',
+        'Modern Computer Imaging'
+    ];
+
+    $links = [
+        'thirdDimension'=>'https://all3dp.com/2/3d-file-format-3d-model-types/',
+        'graphicFileFormats'=>'https://www.adobe.com/creativecloud/file-types/image/raster.html',
+        'sight'=>'https://www.livescience.com/60752-human-senses.html#section-sense-of-sight',
+        'optics'=>'https://en.wikipedia.org/wiki/Optics',
+        'vision'=>'https://en.wikipedia.org/wiki/Visual_perception',
+        'mit'=>'https://mitmuseum.mit.edu/collections/object/2000.006.001',
+        'whirlwind'=>'https://en.wikipedia.org/wiki/Whirlwind_I',
+        'ivanSutherland'=>'https://en.wikipedia.org/wiki/Ivan_Sutherland',
+        'sketchPad'=>'https://en.wikipedia.org/wiki/Sketchpad',
+        'graphics1970'=>'https://danielsevo.com/hocg/hocg_1970.htm',
+        'graphics1980'=>'https://danielsevo.com/hocg/hocg_1980.htm',
+        'animation'=>'https://en.wikipedia.org/wiki/History_of_computer_animation#Towards_3-D:_mid-1970s_into_the_1980s',
+        'gpu'=>'https://www.techspot.com/article/650-history-of-the-gpu/',
+        'realTimeGraphics'=>'https://www.advances.realtimerendering.com/',
+        'photoRealism'=>'https://www.theartstory.org/movement/photorealism/',
+        'vector'=>'https://www.techtarget.com/whatis/definition/vector-graphics',
+        'twoD'=>'https://www.velocenetwork.com/tech/what-is-a-2d-computer-graphic/',
+        'threeD'=>'https://blog.zwsoft.com/3d-computer-graphics/',
+        'logo'=>'https://en.wikipedia.org/wiki/Logo',
+        'typography'=>'https://en.wikipedia.org/wiki/Typography',
+        'technicalIllustrations'=>'https://en.wikipedia.org/wiki/Technical_illustration',
+        'polygons'=>'https://ikarus3d.com/media/3d-blog/a-comprehensive-guide-to-polygonal-modeling/',
+        'rayTracing'=>'https://en.wikipedia.org/wiki/Ray_tracing_(graphics)',
+        'realtimeRendering'=>'https://en.wikipedia.org/wiki/Real-time_computer_graphics',
+        'digitalPhotography'=>'https://en.wikipedia.org/wiki/Digital_photography',
+        'sensors'=>'https://petapixel.com/2025/02/03/the-60-year-history-of-digital-image-sensors-as-told-by-those-involved/',
+        'textureMapping'=>'https://en.wikipedia.org/wiki/Texture_mapping',
+        'display'=>'../../hardware/?monitor#monitor',
+        'arVr'=>'../../hardware/?headset',
+        'mri'=>'https://www.healthline.com/health/what-is-a-mri#what-it-is',
+        'ct'=>'https://my.clevelandclinic.org/health/diagnostics/4808-ct-computed-tomography-scan',
+        'satelliteImaging'=>'https://business.esa.int/newcomers-earth-observation-guide',
+        'aiImaging'=>'https://www.spectral-ai.com/blog/the-intelligent-revolution-ai-in-medical-imaging-and-diagnostics/',
+        'dataQuality'=>'https://research.aimultiple.com/data-quality-ai/',
+        'ethicalConcerns'=>'https://hbr.org/2024/05/ais-trust-problem',
+        'rasterImages'=>'https://en.wikipedia.org/wiki/Raster_graphics',
+        'colorTheory'=>'https://www.colorsexplained.com/color-theory/',
+
+        //don't forget the links have titles. an imagesTitles variable will be needed for this feat, because Im not using arrays like last time. Last time was fun right? I bet it was, supposedly im done, so I don't have to look at old code ever again. hahhahahahah 🙃 I love PHP, write it once Forget it for a cool lustrum.
+    ];
+
+    $images = [
+        'girl'=>['https://www.w3schools.com/w3images/photographer.jpg','Photographer']
+    ];
+
+    $sight = [
+        '<a href="'.$links['sight'].'">Sight</a> is one of the primary senses humans use to make sense of the world.',
+        'When <a href="'.$links['optics'].'">light reflects off an object</a>, the eyes detect light variations, then the brain processes this information to create a personal experience of perceived reality trough <b><a href="'.$links['vision'].'">vision</a></b>.',
+        'I\'d say, if an object is visible to an observer, the object\'s existence can be further confirmed by testing it with the other senses, such as <b>touch</b>, <b>sound</b>, <b>taste</b>, and <b>smell</b>, etc...'
+    ];
+
+    $evolution = [
+        'The history of computer graphics dates back to the 1950s, beginning with the <a href="'.$links['whirlwind'].'">Whirlwind computer</a> at <a href="'.$links['mit'].'">MIT</a> which used a CRT display for output. In 1963, <a href="'.$links['ivanSutherland'].'">Ivan Sutherland</a> revolutionized the field with <a href="'.$links['sketchPad'].'">Sketchpad</a>, the first computer-aided design program. The 1970s saw the birth of <a href="'.$links['graphics1970'].'">2D computer graphics</a> in commercial applications, while the 1980s brought us breakthrough developments in <a href="'.$links['graphics1980'].'">3D graphics</a> and <a href="'.$links['animation'].'">animation</a>. The 1990s witnessed the rise of dedicated <a href="'.$links['gpu'].'">graphics processing units</a> (GPUs), leading to today\'s <a href="'.$links['photoRealism'].'">photorealistic</a> rendering capabilities and <a href="'.$links['realTimeGraphics'].'">real-time 3D graphics</a>.'
+    ];
+
+    $graphics2D = ['<a href="'.$links['twoD'].'">2D graphics</a> form the basis of digital imaging, consisting of pixels arranged in a two-dimensional grid. These graphics include everything from basic user interfaces to digital art and photographs. <a href="'.$links['vector'].'">Vector graphics</a>, another form of 2D imaging, use mathematical equations to create scalable images that maintain quality at any size. Common applications include <a href="'.$links['logo'].'">logo</a> design, <a href="'.$links['typography'].'">typography</a>, and <a href="'.$links['technicalIllustrations'].'">technical illustrations</a>.'];
+
+    $graphics3D = [
+        'thirdD' => '<a href="'.$links['threeD'].'">3D graphics</a> introduce the z-axis, creating virtual objects with depth, volume, and perspective. Modern 3D graphics utilize complex techniques like:',
+        'first' => 'Polygon mesh <a href="'.$links['polygons'].'">modeling</a> for creating object shapes',
+        'second' => '<a href="'.$links['textureMapping'].'">Texture mapping</a> for adding surface details',
+        'third' => '<a href="'.$links['rayTracing'].'">Ray tracing</a> for realistic lighting and shadows',
+        'fourth' => '<a href="'.$links['realtimeRendering'].'">Real-time rendering</a> for interactive experiences',
+        'thirdDLast' => 'These technologies power everything from video games to architectural visualization and scientific simulations.',
+    ];
+
+    $digitalPhotography = [
+        'photo'=>'Digital <a href="'.$links['digitalPhotography'].'">photography</a> represents a crucial aspect of modern imaging technology.',
+        'include'=>'Key components include:',
+        'sensor'=>[
+            'image'=>'Image Sensors',
+            'type'=>'At the heart of digital cameras are two main types of image sensors:',
+            'ccd'=>['strong'=>'CCD (Charge-Coupled Device):',
+                'pro'=>'Known for high-quality images with less noise, traditionally used in professional cameras'],
+            'cmos'=>['strong'=>'CMOS (Complementary Metal-Oxide Semiconductor):',
+                'pro'=>'More energy-efficient and cheaper to manufacture, now the dominant technology in most modern cameras'],
+            'sensors'=>'These <a href="'.$links['sensors'].'">sensors</a> convert light into electrical signals through millions of photosites (pixels).'
+        ],
+        'keyComponents'=>'Key Photography Components',
+        'elements'=>'Several elements work together to create digital images:',
+        'components'=>[
+            'lens'=>['Lens System:','Controls focus, zoom, and light gathering through adjustable apertures'],
+            'processor'=>['Image Processor:','Converts sensor data into digital images, handling tasks like noise reduction and color processing'],
+            'resolution'=>['Resolution:','Measured in megapixels, determining the detail level of captured images'],
+            'range'=>['Dynamic Range:','The camera\'s ability to capture both bright and dark areas in a single shot'],
+            'keyComponentsSection'=>[
+                'lens'=>['Lens System:','Controls focus, zoom, and light gathering through adjustable apertures'],
+                'processor'=>['Image Processor:','Converts sensor data into digital images, handling tasks like noise reduction and color processing'],
+                'resolution'=>['Resolution:','Measured in megapixels, determining the detail level of captured images'],
+                'range'=>['Dynamic Range:','The camera\'s ability to capture both bright and dark areas in a single shot']
+            ]
+        ]
+    ];
+
+    $digitalProcessing = [
+        'title' => 'Digital Image Processing',
+        'intro' => 'After capture, images go through several processing steps:',
+        'steps' => [
+            'raw' => ['RAW Processing:', 'Converting raw sensor data into viewable images'],
+            'color' => ['Color Correction:', 'Adjusting white balance and color accuracy'],
+            'noise' => ['Noise Reduction:', 'Removing digital artifacts and sensor noise'],
+            'compression' => ['Compression:', 'Optimizing file size while maintaining image quality']
+        ]
+    ];
+
+    $displayTech = [
+        'intro' => 'Today\'s <a href="'.$links['display'].'">display</a> technology has evolved dramatically, offering unprecedented visual experiences:',
+        'technologies' => [
+            'refresh' => [
+                'title' => 'High Refresh Rates',
+                'description' => 'Modern displays can achieve 144Hz, 240Hz, or even higher, providing smoother motion and reducing motion blur'
+            ],
+            'resolution' => [
+                'title' => 'Resolution',
+                'description' => 'From 4K (3840x2160) to 8K (7680x4320) resolutions, displays now offer incredible detail and clarity'
+            ],
+            'hdr' => [
+                'title' => 'HDR (High Dynamic Range)',
+                'description' => 'Enhanced contrast and color accuracy, making images more vivid and lifelike'
+            ],
+            'oled' => [
+                'title' => 'OLED and Mini-LED',
+                'description' => 'Advanced display technologies offering perfect blacks, vibrant colors, and improved energy efficiency'
+            ]
+        ]
+    ];
+
+    $immersiveTech = [
+        'intro' => 'The latest frontier in computer graphics involves immersive technologies:',
+        'technologies' => [
+            'vr' => [
+                'title' => 'Virtual Reality (VR)',
+                'description' => 'Creating fully immersive digital environments for gaming, training, and virtual tours'
+            ],
+            'ar' => [
+                'title' => 'Augmented Reality (AR)',
+                'description' => 'Overlaying digital content onto the real world, enhancing our daily experiences'
+            ],
+            'mr' => [
+                'title' => 'Mixed Reality (MR)',
+                'description' => 'Blending virtual and real environments where digital and physical objects can interact'
+            ]
+        ],
+        'conclusion' => 'These <a href="'.$links['arVr'].'">technologies</a> are revolutionizing fields from gaming and entertainment to education, healthcare, and professional training, pushing the boundaries of human-computer interaction.'
+    ];
+
+    $imageFormats = [
+        'title' => 'Common Image File Formats',
+        'intro' => 'There are numerous image file formats, each designed for specific uses. You can learn more about the major graphic file formats through this <a href="'.$links['graphicFileFormats'].'">comprehensive guide</a>.'
+    ];
+
+    $modernImaging = [
+        'intro' => 'While traditional computer displays work in 2 dimensions, modern technology enables us to capture, process, and display images in increasingly sophisticated ways:',
+        'applications' => [
+            'medical' => [
+                'title' => 'Medical Imaging',
+                'description' => 'Advanced visualization techniques like <a href="'.$links['mri'].'">MRI</a> and <a href="'.$links['ct'].'">CT</a> scans provide detailed 3D views of the human body'
+            ],
+            'satellite' => [
+                'title' => 'Satellite Imaging',
+                'description' => 'High-resolution earth observation satellites capture detailed <a href="'.$links['satelliteImaging'].'">images</a> for mapping, weather forecasting, and environmental monitoring'
+            ],
+            'ai' => [
+                'title' => 'AI-Enhanced Imaging',
+                'description' => 'AI and machine learning are changing medical <a href="'.$links['aiImaging'].'">imaging</a> by making pictures clearer, analyzing them faster, and allowing for new ways to use them. AI improves techniques like MRI and CT scans by reducing noise and enhancing details. While AI offers many benefits, there are still challenges like <a href="'.$links['dataQuality'].'">data quality</a> and <a href="'.$links['ethicalConcerns'].'">ethical concerns</a> to consider.'
+            ]
+            ],
+    'conclusion'=>'Today\'s imaging technology extends beyond mere display - computers can now materialize digital designs into
+                physical objects through <a href="'.$links['thirdDimension'].'">3D Printing
+                    technology</a>.'
+    ];
+
+    $closingText = [
+        'title'=>'Further Exploration',
+        'text' => 'The field of computer graphics and imaging is vast and constantly evolving. We encourage you to explore topics like <b>ray tracing</b> <small>[<a href="'.$links['rayTracing'].'">1</a>]</small>, <b>vector graphics</b> <small>[<a href="'.$links['vector'].'">1</a>]</small>, <b>raster images</b> <small>[<a href="'.$links['rasterImages'].'">1</a>]</small>, <b>color theory</b> <small>[<a href="'.$links['colorTheory'].'">1</a>]</small>, and the latest developments in <b>real-time rendering</b> <small>[<a href="'.$links['realtimeRendering'].'">1</a>]</small> <small>[<a href="'.$links['realTimeGraphics'].'">2</a>]</small>. Understanding these concepts can provide deeper insights into how modern digital imaging works and where the technology is headed.'
+    ];
+
+    ?>
+        <article class="hero4">
+        <div class="fullbar">
+            <h1 id="title"><?= empty($title) ? $titulo : $title;?></h1>
+            <div class="colms2" style="padding-top: 1%;">
+                <p class="selection item" tabindex="0">
+                    <span
+                        style="font-size: larger;padding-left: 20px"><?= empty($sight) ? $vista[0] : $sight[0];?></span><br />
+                    <?= empty($sight) ? $vista[1] : $sight[1];?>
+                </p>
+                <p class="selection" tabindex="0">
+                    <?= empty($sight) ? $vista[2] : $sight[2];?></p>
+            </div><!-- colms2 -->
+            <h2 class="eych8"><?= empty($subTitles) ? $subTitulos[0] : $subTitles[0];?></h2>
+            <p class="selection newspaper2" tabindex="0"><?= empty($evolution) ? $evolucion[0] : $evolution[0];?></p>
+
+            <h2 class="eych8"><?= empty($subTitles) ? $subTitulos[1] : $subTitles[1];?></h2>
+            <p class="selection" tabindex="0" style="font-size: x-large;">
+                <?= empty($graphics2D) ? $graficos2D[0] : $graphics2D[0];?></p>
+
+            <h2 class="eych8"><?= empty($subTitles) ? $subTitulos[2] : $subTitles[2];?></h2>
+            <aside class="newspaper2">
+                <p class="selection" tabindex="0" style="margin-top: 0;">
+                    <?= empty($graphics3D) ? $graficos3D['tercerD'] : $graphics3D['thirdD'];?>
+                </p>
+                <ul class="imgs item">
+                    <?php
+                    // Define the mapping of keys
+                    $items = [
+                        ['es' => 'primer', 'en' => 'first'],
+                        ['es' => 'segundo', 'en' => 'second'],
+                        ['es' => 'tercer', 'en' => 'third'],
+                        ['es' => 'cuarto', 'en' => 'fourth']
+                    ];
+
+                    // Generate the list items using foreach
+                    foreach ($items as $item) :
+                        $key = empty($graphics3D) ? $item['es'] : $item['en'];
+                        $value = empty($graphics3D) ? $graficos3D[$key] : $graphics3D[$key];
+                    ?>
+                    <li tabindex="0" class="d3"><?= $value ?></li>
+                    <?php endforeach; ?>
+
+                </ul>
+                <p class="selection" tabindex="0">
+                    <?= empty($graphics3D) ? $graficos3D['tercerDUltimo'] : $graphics3D['thirdDLast'];?></p>
+            </aside>
+
+            <h2 class="eych8"><?= empty($subTitles) ? $subTitulos[3] : $subTitles[3];?></h2>
+            <p class="selection" tabindex="0" style="display: inline">
+                <?= empty($digitalPhotography) ?$fotografiaDigital['foto'] : $digitalPhotography['photo'];?></p>
+            <p><?= empty($digitalPhotography) ?$fotografiaDigital['incluye'] : $digitalPhotography['include'];?></p>
+            <aside class="colms2">
+                <div class="item">
+                    <h3 style="margin-top: 0;">
+                        <?= empty($digitalPhotography) ?$fotografiaDigital['sensor']['imagen'] : $digitalPhotography['sensor']['image'];?>
+                    </h3>
+                    <p class="selection" tabindex="0">
+                        <?= empty($digitalPhotography) ?$fotografiaDigital['sensor']['tipo'] : $digitalPhotography['sensor']['type'];?>
+                    </p>
+                    <ul class="imgs">
+                        <?php
+                        $sensorTypes = ['ccd' => 'ccd', 'cmos' => 'cmos'];
+                        foreach ($sensorTypes as $es => $en) : ?>
+                        <li class="blurb" tabindex="0">
+                            <strong><?= empty($digitalPhotography) ? $fotografiaDigital['sensor'][$es]['fuerte'] : $digitalPhotography['sensor'][$en]['strong'];?></strong>
+                            <?= empty($digitalPhotography) ? $fotografiaDigital['sensor'][$es]['pro'] : $digitalPhotography['sensor'][$en]['pro'];?>
+                        </li>
+                        <?php endforeach; ?>
+                    </ul>
+                    <p class="selection" tabindex="0">
+                        <?= empty($digitalPhotography) ?$fotografiaDigital['sensor']['sensores'] : $digitalPhotography['sensor']['sensors'];?>
+                    </p>
+                    <img src="<?=empty($images) ? $imagenes['girl'][0] : $images['girl'][0]; ?>" alt="Photographer"
+                        style="width:100%;max-width:400px;margin-top:16px;">
+                </div>
+                <div class="item">
+                    <h3><?= empty($digitalPhotography) ? $fotografiaDigital['componentesClave'] : $digitalPhotography['keyComponents'];?>
+                    </h3>
+                    <p class="selection" tabindex="0">
+                        <?= empty($digitalPhotography) ? $fotografiaDigital['elementos'] : $digitalPhotography['elements'];?>
+                    </p>
+                    <ul class="imgs">
+                        <?php
+                        $componentTypes = ['lente' => 'lens', 'procesador' => 'processor', 'resolucion' => 'resolution', 'rango' => 'range'];
+                        foreach ($componentTypes as $es => $en) : ?>
+                        <li><strong><?= empty($digitalPhotography) ? $fotografiaDigital['componentes'][$es][0] : $digitalPhotography['components'][$en][0];?></strong>
+                            <?= empty($digitalPhotography) ? $fotografiaDigital['componentes'][$es][1] : $digitalPhotography['components'][$en][1];?>
+                        </li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h3><?= empty($digitalProcessing) ? $procesamientoDigital['titulo'] : $digitalProcessing['title'];?>
+                    </h3>
+                    <p class="selection" tabindex="0">
+                        <?= empty($digitalProcessing) ? $procesamientoDigital['intro'] : $digitalProcessing['intro'];?></p>
+                    <ul class="imgs">
+                        <?php
+                        $processSteps = ['raw' => 'raw', 'color' => 'color', 'ruido' => 'noise', 'compresion' => 'compression'];
+                        foreach ($processSteps as $es => $en) : ?>
+                        <li><strong><?= empty($digitalProcessing) ? $procesamientoDigital['pasos'][$es][0] : $digitalProcessing['steps'][$en][0];?></strong>
+                            <?= empty($digitalProcessing) ? $procesamientoDigital['pasos'][$es][1] : $digitalProcessing['steps'][$en][1];?>
+                        </li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+            </aside>
+
+            <h2 class="eych8"><?= empty($subTitles) ? $subTitulos[4] : $subTitles[4];?></h2>
+            <p class="selection" tabindex="0">
+                <?= empty($displayTech) ? $tecnologiaPantalla['intro'] : $displayTech['intro'];?></p>
+            <aside class="colms2">
+                <ul class="imgs">
+                    <?php
+                    $techTypes = ['refresco' => 'refresh', 'resolucion' => 'resolution', 'hdr' => 'hdr', 'oled' => 'oled'];
+                    foreach ($techTypes as $es => $en) : ?>
+                    <li class="item spz d4" tabindex="0">
+                        <strong><?= empty($displayTech) ? $tecnologiaPantalla['tecnologias'][$es]['titulo'] : $displayTech['technologies'][$en]['title'];?>:</strong>
+                        <?= empty($displayTech) ? $tecnologiaPantalla['tecnologias'][$es]['descripcion'] : $displayTech['technologies'][$en]['description'];?>
+                    </li>
+                    <?php endforeach; ?>
+                </ul>
+            </aside>
+
+            <h2 class="eych8"><?= empty($subTitles) ? $subTitulos[5] : $subTitles[5];?></h2>
+            <p class="selection" tabindex="0">
+                <?= empty($immersiveTech) ? $tecnologiaInmersiva['intro'] : $immersiveTech['intro'];?></p>
+            <aside class="colms2">
+                <ul class="imgs">
+                    <?php
+                    $immersiveTypes = ['vr' => 'vr', 'ar' => 'ar', 'mr' => 'mr'];
+                    foreach ($immersiveTypes as $es => $en) : ?>
+                    <li class="item spz d4" tabindex="0">
+                        <strong><?= empty($immersiveTech) ? $tecnologiaInmersiva['tecnologias'][$es]['titulo'] : $immersiveTech['technologies'][$en]['title'];?>:</strong>
+                        <?= empty($immersiveTech) ? $tecnologiaInmersiva['tecnologias'][$es]['descripcion'] : $immersiveTech['technologies'][$en]['description'];?>
+                    </li>
+                    <?php endforeach; ?>
+                </ul>
+            </aside>
+            <p class="selection" tabindex="0">
+                <?= empty($immersiveTech) ? $tecnologiaInmersiva['conclusion'] : $immersiveTech['conclusion'];?></p>
+
+            <h2 class="eych8"><?= empty($subTitles) ? $subTitulos[6] : $subTitles[6];?></h2>
+            <p class="selection" tabindex="0">
+                <?= empty($modernImaging) ? $imagenModerna['intro'] : $modernImaging['intro'];?></p>
+            <aside class="colms2">
+                <ul class="imgs">
+                    <?php
+                    $appTypes = ['medica' => 'medical', 'satelital' => 'satellite', 'ia' => 'ai'];
+                    foreach ($appTypes as $es => $en) : ?>
+                    <li class="item spz" tabindex="0">
+                        <strong><?= empty($modernImaging) ? $imagenModerna['aplicaciones'][$es]['titulo'] : $modernImaging['applications'][$en]['title'];?>:</strong>
+                        <?= empty($modernImaging) ? $imagenModerna['aplicaciones'][$es]['descripcion'] : $modernImaging['applications'][$en]['description'];?>
+                    </li>
+                    <?php endforeach; ?>
+                </ul>
+                <p class="selection item" tabindex="0" style="margin-top: 0;">
+                    <?= empty($modernImaging) ? $imagenModerna['conclusion'] : $modernImaging['conclusion'];?></p>
+            </aside>
+
+            <aside class="colms2" style="margin-top: 1%;">
+                <div class="item">
+                    <h3 style="margin-top: 0;">
+                        <?= empty($imageFormats) ? $formatosImagen['titulo'] : $imageFormats['title'];?></h3>
+                    <p class="selection" tabindex="0">
+                        <?= empty($imageFormats) ? $formatosImagen['intro'] : $imageFormats['intro'];?></p>
+                </div>
+
+                <div class="item">
+                    <h3 style="text-align:center">
+                        <?= empty($closingText) ? $textoCierre['titulo'] : $closingText['title'];?></h3>
+                    <p class="selection" tabindex="0" style="margin-bottom: 0;">
+                        <?= empty($closingText) ? $textoCierre['texto'] : $closingText['text'];?></p>
+                </div>
+            </aside>
+        </div>
+    </article>
+    <?php
 }
+
 function sw_documents() {
     echo "<div class=\"fullbar\">";
     sw_breadCrumbs();
-    echo "<h1>Documents</h1>";
     echo "</div>";
+    ?>
+    <div class="blurb">
+    <h1 id="title">Understanding Documents in the Modern World</h1>
+    <section class="intro">
+        <p>Documents are fundamental tools for storing, sharing, and preserving information. As we bridge the gap between traditional and digital worlds, understanding both physical and electronic documents becomes increasingly important.</p>
+    </section>
+
+    <section class="electronic-documents">
+        <h2>Electronic Documents</h2>
+        <div class="document-section">
+            <h3>Common File Formats</h3>
+            <div class="format-grid">
+                <div class="format-item">
+                    <i class="fas fa-file-word"></i>
+                    <h4>Text Documents</h4>
+                    <ul>
+                        <li>DOC/DOCX (Microsoft Word)</li>
+                        <li>TXT (Plain Text)</li>
+                        <li>RTF (Rich Text Format)</li>
+                        <li>ODT (OpenDocument Text)</li>
+                    </ul>
+                </div>
+                <div class="format-item">
+                    <i class="fas fa-file-excel"></i>
+                    <h4>Spreadsheets</h4>
+                    <ul>
+                        <li>XLS/XLSX (Microsoft Excel)</li>
+                        <li>CSV (Comma Separated Values)</li>
+                        <li>ODS (OpenDocument Spreadsheet)</li>
+                    </ul>
+                </div>
+                <div class="format-item">
+                    <i class="fas fa-file-powerpoint"></i>
+                    <h4>Presentations</h4>
+                    <ul>
+                        <li>PPT/PPTX (Microsoft PowerPoint)</li>
+                        <li>ODP (OpenDocument Presentation)</li>
+                        <li>KEY (Apple Keynote)</li>
+                    </ul>
+                </div>
+                <div class="format-item">
+                    <i class="fas fa-file-pdf"></i>
+                    <h4>PDF Documents</h4>
+                    <ul>
+                        <li>Portable Document Format</li>
+                        <li>Universal compatibility</li>
+                        <li>Print-ready format</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="advantages-section">
+            <h3>Advantages of Electronic Documents</h3>
+            <ul class="feature-list">
+                <li><strong>Easy Storage:</strong> Store thousands of documents in minimal space</li>
+                <li><strong>Searchability:</strong> Find content instantly with search functions</li>
+                <li><strong>Sharing:</strong> Send documents worldwide instantly</li>
+                <li><strong>Version Control:</strong> Track changes and maintain document history</li>
+                <li><strong>Environmental Impact:</strong> Reduce paper waste and storage space</li>
+            </ul>
+        </div>
+
+        <div class="security-section">
+            <h3>Security Considerations</h3>
+            <ul class="security-features">
+                <li>Digital signatures for authentication</li>
+                <li>Encryption for sensitive information</li>
+                <li>Access control and permissions</li>
+                <li>Regular backup strategies</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="physical-documents">
+        <h2>Physical Documents</h2>
+
+        <div class="document-types">
+            <h3>Common Physical Document Types</h3>
+            <ul class="type-list">
+                <li>Legal contracts and agreements</li>
+                <li>Certificates and diplomas</li>
+                <li>Government-issued identification</li>
+                <li>Historical records and archives</li>
+                <li>Handwritten notes and documents</li>
+            </ul>
+        </div>
+
+        <div class="storage-section">
+            <h3>Storage and Preservation</h3>
+            <ul class="storage-tips">
+                <li>Temperature and humidity control</li>
+                <li>Proper filing systems</li>
+                <li>Protection from light and environmental damage</li>
+                <li>Regular maintenance and inspection</li>
+            </ul>
+        </div>
+
+        <div class="physical-advantages">
+            <h3>Advantages of Physical Documents</h3>
+            <ul class="advantage-list">
+                <li>Legal validity in certain situations</li>
+                <li>No technology dependence</li>
+                <li>Tangible proof of existence</li>
+                <li>Long-term preservation potential</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="best-practices">
+        <h2>Document Management Best Practices</h2>
+        <div class="practice-grid">
+            <div class="practice-item">
+                <h4>Organization</h4>
+                <p>Implement consistent naming conventions and folder structures</p>
+            </div>
+            <div class="practice-item">
+                <h4>Backup</h4>
+                <p>Maintain regular backups of both digital and physical documents</p>
+            </div>
+            <div class="practice-item">
+                <h4>Security</h4>
+                <p>Implement appropriate security measures for both formats</p>
+            </div>
+            <div class="practice-item">
+                <h4>Accessibility</h4>
+                <p>Ensure quick and easy access while maintaining security</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="future-trends">
+        <h2>Future of Document Management</h2>
+
+        <div class="future-intro">
+            <p>The landscape of document management is rapidly evolving with technological advancements. Understanding these trends is crucial for organizations and individuals to stay ahead in the digital age.</p>
+        </div>
+
+        <div class="trend-categories">
+            <div class="trend-category">
+                <h3>Artificial Intelligence and Machine Learning</h3>
+                <div class="trend-content">
+                    <ul class="trend-list">
+                        <li><strong>Automated Document Classification:</strong> AI systems will automatically categorize and tag documents based on content, making organization effortless</li>
+                        <li><strong>Intelligent Data Extraction:</strong> ML algorithms will extract and analyze key information from documents without human intervention</li>
+                        <li><strong>Natural Language Processing:</strong> Advanced systems will understand and summarize document content, creating automated reports and insights</li>
+                        <li><strong>Predictive Analytics:</strong> AI will predict document lifecycle stages and suggest optimal storage and retention strategies</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="trend-category">
+                <h3>Blockchain Technology</h3>
+                <div class="trend-content">
+                    <ul class="trend-list">
+                        <li><strong>Document Authenticity:</strong> Blockchain will provide immutable proof of document existence and authenticity</li>
+                        <li><strong>Smart Contracts:</strong> Self-executing contracts will automate document-based transactions and agreements</li>
+                        <li><strong>Decentralized Storage:</strong> Documents will be stored across distributed networks, increasing security and accessibility</li>
+                        <li><strong>Version Control:</strong> Blockchain will maintain transparent, tamper-proof version histories of documents</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="trend-category">
+                <h3>Advanced Security Measures</h3>
+                <div class="trend-content">
+                    <ul class="trend-list">
+                        <li><strong>Biometric Authentication:</strong> Access to documents will be controlled through fingerprints, facial recognition, and other biometric data</li>
+                        <li><strong>Quantum Encryption:</strong> Next-generation encryption will protect documents from future security threats</li>
+                        <li><strong>Zero-Trust Architecture:</strong> Security systems will verify every access attempt, regardless of location or network</li>
+                        <li><strong>Dynamic Access Control:</strong> AI-powered systems will adjust access permissions based on context and behavior patterns</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="trend-category">
+                <h3>Collaborative Technologies</h3>
+                <div class="trend-content">
+                    <ul class="trend-list">
+                        <li><strong>Real-time Collaboration:</strong> Multiple users will work on documents simultaneously with zero latency</li>
+                        <li><strong>Augmented Reality Integration:</strong> AR will enable interactive document experiences and spatial document management</li>
+                        <li><strong>Cross-platform Compatibility:</strong> Documents will be seamlessly accessible across all devices and platforms</li>
+                        <li><strong>Voice-controlled Interfaces:</strong> Natural language commands will simplify document management tasks</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="trend-category">
+                <h3>Environmental Sustainability</h3>
+                <div class="trend-content">
+                    <ul class="trend-list">
+                        <li><strong>Zero-paper Initiatives:</strong> Organizations will completely transition to digital documents to reduce environmental impact</li>
+                        <li><strong>Energy-efficient Storage:</strong> Green data centers will optimize document storage while minimizing energy consumption</li>
+                        <li><strong>Sustainable Formats:</strong> New document formats will be designed to minimize digital carbon footprint</li>
+                        <li><strong>Lifecycle Management:</strong> Automated systems will optimize document retention and deletion to save resources</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="trend-category">
+                <h3>Integration and Automation</h3>
+                <div class="trend-content">
+                    <ul class="trend-list">
+                        <li><strong>IoT Integration:</strong> Documents will automatically update based on real-world sensor data and events</li>
+                        <li><strong>Workflow Automation:</strong> End-to-end document processes will be automated with minimal human intervention</li>
+                        <li><strong>API-first Architecture:</strong> Documents will be easily integrated into any business system or application</li>
+                        <li><strong>Metadata Enhancement:</strong> Rich metadata will enable advanced search and analytics capabilities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="future-implications">
+            <h3>Preparing for the Future</h3>
+            <p>Organizations and individuals should consider these steps to prepare for the future of document management:</p>
+            <ul class="preparation-list">
+                <li>Invest in scalable and flexible document management systems</li>
+                <li>Train staff in emerging technologies and best practices</li>
+                <li>Develop clear policies for digital transformation</li>
+                <li>Stay informed about regulatory changes and compliance requirements</li>
+                <li>Prioritize security and privacy in document management strategies</li>
+            </ul>
+        </div>
+    </section>
+
+    <style>
+    .blurb {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .format-grid, .practice-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin: 20px 0;
+    }
+
+    .format-item, .practice-item {
+        background: #f5f5f5;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .feature-list, .security-features, .type-list, .storage-tips, .advantage-list, .trend-list {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .feature-list li, .security-features li, .type-list li, .storage-tips li, .advantage-list li, .trend-list li {
+        margin: 10px 0;
+        padding-left: 25px;
+        position: relative;
+    }
+
+    .feature-list li:before, .security-features li:before, .type-list li:before, .storage-tips li:before, .advantage-list li:before, .trend-list li:before {
+        content: "•";
+        color: #007bff;
+        position: absolute;
+        left: 0;
+    }
+
+    section {
+        margin: 40px 0;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h1, h2, h3, h4 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        text-align: center;
+        color: #2c3e50;
+    }
+
+    h2 {
+        font-size: 2em;
+        color: #34495e;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        color: #2980b9;
+    }
+
+    p {
+        line-height: 1.6;
+        color: #555;
+    }
+
+    .fas {
+        font-size: 2em;
+        color: #007bff;
+        margin-bottom: 15px;
+    }
+
+    .future-trends {
+        background: #f8f9fa;
+        padding: 30px;
+        border-radius: 15px;
+    }
+
+    .future-intro {
+        margin-bottom: 30px;
+        font-size: 1.1em;
+        line-height: 1.6;
+        color: #2c3e50;
+    }
+
+    .trend-categories {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+        margin-bottom: 30px;
+    }
+
+    .trend-category {
+        background: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .trend-category:hover {
+        transform: translateY(-5px);
+    }
+
+    .trend-category h3 {
+        color: #2980b9;
+        margin-bottom: 15px;
+        font-size: 1.3em;
+    }
+
+    .trend-list li {
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+
+    .trend-list li strong {
+        color: #34495e;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .future-implications {
+        background: white;
+        padding: 25px;
+        border-radius: 10px;
+        margin-top: 30px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .preparation-list {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .preparation-list li {
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+        color: #555;
+    }
+
+    .preparation-list li:last-child {
+        border-bottom: none;
+    }
+
+    @media (max-width: 768px) {
+        .format-grid, .practice-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .blurb {
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        h3 {
+            font-size: 1.2em;
+        }
+
+        .trend-categories {
+            grid-template-columns: 1fr;
+        }
+
+        .trend-category {
+            padding: 20px;
+        }
+    }
+    </style>
+    </div>
+    <?php
 }
+
 function sw_fileSharing() {
      echo "<div class=\"fullbar\">";
     sw_breadCrumbs();
-    echo "<h1>File Sharing</h1>";
     echo "</div>";
+    ?>
+    <div class="blurb"><h1 id="title">File sharing</h1>
+    <p class="selection">Imagine sending photos, videos, or documents to anyone, anywhere in the world, instantly! File sharing makes this possible by letting you move files between devices without physically carrying them around. Whether you're sharing vacation photos with family or working on projects with colleagues, file sharing makes it simple and fast.</p>
+
+    <details>
+        <summary>Popular file sharing services:</summary>
+        <p tabindex="0" class="selection buttonskit colms2">
+            <button><a class="bttn" href="https://www.dropbox.com/" title="DropBox">Dropbox</a></button>
+            <button><a class="bttn" href="https://www.google.com/drive/" title="Google Drive">Google Drive</a></button>
+            <button><a class="bttn" href="https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage" title="One Drive">OneDrive</a></button>
+            <button><a class="bttn" href="https://www.google.com/drive/" title="Hightail">Hightail</a></button>
+            <button><a class="bttn" href="https://www.hightail.com/" title="MediaFire">MediaFire</a></button>
+            <button><a class="bttn" href="https://mega.io/" title="Mega">Mega</a></button>
+            <button><a class="bttn" href="https://www.box.com/" title="Box">Box</a></button>
+            <button><a class="bttn" href="https://www.icloud.com/" title="iCloud">iCloud</a></button>
+            <button><a class="bttn" target="_parent" href="https://wetransfer.com/" title="WeTransfer">WeTransfer</a></button>
+        </p>
+    </details><br />
+
+    <fieldset>
+        <legend>Internet sharing</legend>
+        <p>Think of internet sharing as creating your own mini internet café at home! It lets all your devices - computers, phones, tablets - connect to the internet at once. The magic happens through a device called a <a href="https://www.cnet.com/home/internet/best-wi-fi-router/" title="Best Wifi Routers of 2022">router</a>, which acts like a traffic controller for your internet connection. You can connect devices either with cables (wired) or without them (wireless/WiFi), making it super convenient for everyone in your home to get online.</p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Screen sharing</legend>
+        <p>Ever wished you could show someone exactly what's on your screen? That's what screen sharing does! It's perfect for getting help with computer problems, teaching someone new skills, or having virtual meetings. Try these friendly tools: <a href="https://www.zoom.com/" title="Zoom">Zoom</a>, <a href="https://www.skype.com/en/" title="Skype">Skype</a>, <a href="https://meet.google.com/" title="Google Meet">Google Meet</a>, <a href="https://www.microsoft.com/en-us/microsoft-teams/group-chat-software" title="Microsoft Teams">Microsoft Teams</a>, <a href="https://www.teamviewer.com/en-us/" title="TeamViewer">TeamViewer</a>, <a href="https://anydesk.com/en" title="AnyDesk">AnyDesk</a></p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Social media</legend>
+        <p>Social media is like a digital gathering place where you can share moments of your life with friends and family. Popular platforms include <a href="https://www.facebook.com/" title="facebook.com">Facebook</a>, <a href="https://www.instagram.com/" title="instagram.com">Instagram</a>, <a href="https://www.linkedin.com/" title="linkedin.com">LinkedIn</a>, <a href="https://www.pinterest.com/" title="pinterest.com">Pinterest</a>, <a href="https://www.reddit.com/" title="reddit.com">Reddit</a>, and <a href="https://x.com/" title="x.com">X (Former. Twitter)</a>.</p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Collaboration</legend>
+        <p>Working together has never been easier! These tools let teams create and edit together in real-time, just like being in the same room: <a href="https://workspace.google.com/" title="Google Workspace">Google Workspace</a>, <a href="https://www.office.com/" title="Microsoft 365">Microsoft 365</a>, <a href="https://asana.com/" title="Asana">Asana</a>, <a href="https://slack.com/" title="Slack">Slack</a>, <a href="https://basecamp.com/" title="Basecamp">Basecamp</a>, <a href="https://monday.com/" title="Monday.com">Monday.com</a>, and <a href="https://trello.com/" title="Trello">Trello</a>.</p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Credentials</legend>
+        <p tabindex="0" class="selection">Just like you lock your doors at home, it's essential to keep your online sharing safe and secure. When sharing access with others, always follow these safety tips:</p>
+        <br />
+        <figure>
+            <figcaption>Share!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Securely, Reliably, Fast!<br /></figcaption>
+            <iframe src="https://latinospc.com/images/gallery/thumbnail/mail.png" title="Share" width="263px" height="263px"></iframe>
+        </figure>
+        <div class="colms2">
+            <fieldset>
+                <legend>1</legend>
+                <p style="border:2px solid green;">Create strong passwords using a mix of letters, numbers, and symbols - think of it as making a secret code that only you know!</p>
+            </fieldset>
+            <fieldset>
+                <legend>2</legend>
+                <p style="border:2px solid red;">Keep your passwords private - sharing them is like giving away the keys to your house.</p>
+            </fieldset>
+            <fieldset>
+                <legend>3</legend>
+                <p style="border:2px solid purple;">Use a password manager - it's like having a secure digital safe for all your passwords.</p>
+            </fieldset>
+            <fieldset>
+                <legend>4</legend>
+                <p style="border:2px solid orange;">Remember to remove access when you're done sharing - just like taking back a spare key.</p>
+            </fieldset>
+            <fieldset>
+                <legend>5</legend>
+                <p style="border:2px solid yellow;">Keep an eye on your accounts - checking regularly helps catch any unusual activity early.</p>
+            </fieldset>
+        </div>
+        <p>Remember: staying safe online is easy when you make it a habit, just like locking your door when you leave home!</p>
+    </fieldset>
+    </div>
+    <div class="spacer">
+        <hr />
+    </div>
+
+    <style>
+    .blurb {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .blurb summary {
+        padding: 20px;
+        font-size: 1.2rem;
+        margin: 10px 0;
+        background-color: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+
+    .blurb summary:hover, .blurb summary:focus {
+        background-color: #f8f9fa;
+        border-color: #007bff;
+        color: #007bff;
+        box-shadow: 0 4px 12px rgba(0, 123, 255, 0.15);
+        cursor: pointer;
+        font-weight: 600;
+        transform: translateY(-2px);
+    }
+
+    .blurb details {
+        margin-bottom: 20px;
+    }
+
+    .blurb details[open] summary {
+        margin-bottom: 15px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .blurb details[open] > p {
+        padding: 20px;
+        background-color: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-top: none;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        margin: 0;
+        line-height: 1.6;
+    }
+
+    .buttonskit {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .buttonskit button {
+        margin: 0;
+        padding: 0;
+        border: none;
+        background: none;
+        width: 100%;
+    }
+
+    .bttn {
+        display: block;
+        padding: 15px 25px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .bttn:hover {
+        background-color: #0056b3;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+    }
+
+    figure {
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    figcaption {
+        font-size: 1.1rem;
+        color: #666;
+        margin-bottom: 15px;
+    }
+
+    iframe {
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .selection {
+        line-height: 1.6;
+        color: #333;
+    }
+
+    [style*="border"] {
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 6px;
+    }
+
+    #title {
+        text-align: center;
+        color: #2c3e50;
+        margin-bottom: 30px;
+        font-size: 2.5rem;
+    }
+
+    </style>
+    <?php
 }
+
 function sw_onlineStorage() {
      echo "<div class=\"fullbar\">";
     sw_breadCrumbs();
-    echo "<h1>Online Storage</h1>";
     echo "</div>";
+    ?>
+    <div class="blurb fullbar">
+    <h1 id="title"><a href="https://www.pcmag.com/picks/the-best-cloud-storage-and-file-sharing-services"
+        title="PC Magazine Best CloudStorage 2022">Online storage</a></h1>
+    <p tabindex="0" class="selection">Also known as <a href="https://www.pcmag.com/picks/the-best-cloud-storage-and-file-sharing-services"
+            title="PC Magazine Best CloudStorage 2022">cloud storage,</a> this technology revolutionizes how we store and manage digital content. It enables seamless data storage and access through remote servers via the internet, eliminating the limitations of physical storage devices. This modern solution offers enhanced flexibility, allowing users to access their files from any internet-connected device while providing robust backup protection against hardware failures.</p>
+    <p tabindex="0" class="selection"><a href="https://www.pcmag.com/picks/the-best-cloud-storage-and-file-sharing-services"
+            title="PC Magazine Best CloudStorage 2022">Online Storage Services</a> have become essential tools for both personal and professional use. Most providers offer generous free storage tiers and scalable paid plans to accommodate growing storage needs. Beyond basic storage, these platforms now include advanced features like real-time collaboration, automatic file syncing, version history, and enterprise-grade security measures to protect your valuable data.</p>
+    <h2>Here are some leading cloud storage providers, each offering unique features and capabilities:</h2>
+    <div class="colms">
+    <fieldset tabindex="0" class="selection card2">
+        <legend tabindex="0" class="selection card2"><a href="https://www.google.com/drive/" title="Google Drive">Google Drive:</a></legend> A powerful cloud platform offering 15GB free storage and seamless integration with Google Workspace apps. Perfect for collaborative work, it includes AI-powered search and smart features for organizing files efficiently.
+    </fieldset>
+    <fieldset tabindex="0" class="selection card2">
+        <legend tabindex="0" class="selection card2"><a href="https://www.dropbox.com/" title="DropBox">Dropbox:</a></legend> A pioneer in cloud storage, Dropbox offers sophisticated file synchronization, powerful sharing capabilities, and advanced collaboration tools. It features Smart Sync to save local space and Paper for collaborative document creation.
+    </fieldset>
+    <fieldset tabindex="0" class="selection card2">
+        <legend tabindex="0" class="selection card2"><a href="https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage"
+                title="One Drive">OneDrive:</a></legend> Microsoft's integrated cloud solution offers seamless Windows integration and real-time co-authoring with Office 365 apps. It includes features like Personal Vault for enhanced security and automatic photo backup.
+    </fieldset>
+    <fieldset tabindex="0" class="selection card2">
+        <legend tabindex="0" class="selection card2"><a href="https://www.icloud.com/" title="iCloud">iCloud:</a></legend> Apple's ecosystem-integrated storage solution provides seamless synchronization across Apple devices. It offers features like iCloud Photos, device backup, and Family Sharing, making it ideal for Apple users.
+    </fieldset>
+    <fieldset tabindex="0" class="selection card2">
+        <legend tabindex="0" class="selection card2"><a href="https://www.amazon.com/photos/storage" title="Amazon Photos">Amazon Photos:</a></legend> Offering unlimited full-resolution photo storage for Prime members, it includes sophisticated AI-powered photo organization and search capabilities, plus 5GB for videos and documents.
+    </fieldset>
+    <fieldset tabindex="0" class="selection card2">
+        <legend tabindex="0" class="selection card2"><a href="https://www.box.com/" title="Box">Box:</a></legend> Enterprise-focused cloud storage platform offering advanced security features, workflow automation, and extensive third-party integrations. Ideal for businesses requiring robust content management and compliance features.
+    </fieldset>
+    </div>
+    <fieldset tabindex="0" class="selection card2">
+        <legend tabindex="0" class="selection card2" style="text-align: center;"><a href="https://mega.io/" title="Mega">Mega:</a></legend> Known for its strong encryption and privacy focus, Mega offers 20GB free storage with end-to-end encryption. It features secure file sharing, built-in chat, and cross-platform synchronization tools.
+    </fieldset>
+    </div>
+    <div class="spacer">
+        <hr />
+    </div>
+    <style>
+        fieldset {
+            margin-bottom: 20px;
+        }
+    </style>
+        <?php
 }
+
 function sw_other() {
      echo "<div class=\"fullbar\">";
     sw_breadCrumbs();
     echo "<h1>Other</h1>";
     echo "</div>";
+    ?>
+    <div class="blurb fullbar">
+    <h2 id="title">Computer Tools & Resources</h2>
+
+    <div class="content-grid">
+        <!-- Computer Repair Section -->
+        <details tabindex="0" class="selection main-section">
+            <summary class="card2 section-title">
+                <i class="fas fa-tools"></i> Computer Repair Guide
+            </summary>
+            <div class="section-content">
+                <p class="section-intro">Troubleshooting computer issues can be challenging, but following these systematic steps can help identify and resolve common problems quickly and effectively.</p>
+                <div class="troubleshooting-steps">
+                    <details tabindex="0" class="selection step-item">
+                        <summary class="selection card2">1. Check Physical Connections</summary>
+                        <div class="step-content">
+                            <p><span tabindex="0" class="selection_2">• Verify all cables are properly connected (power, monitor, keyboard, mouse)</span><br/>
+                               <span tabindex="0" class="selection_2">• Ensure connections are secure and not loose</span>
+                            </p>
+                        </div>
+                    </details>
+
+                    <details tabindex="0" class="selection step-item">
+                        <summary class="selection card2">2. Power Supply Verification</summary>
+                        <div class="step-content">
+                            <p><span tabindex="0" class="selection_2">• Confirm power switch is ON</span><br/>
+                               <span tabindex="0" class="selection_2">• Test power outlet functionality</span><br/>
+                               <span tabindex="0" class="selection_2">• Check for proper power cord connection</span>
+                            </p>
+                        </div>
+                    </details>
+
+                    <details tabindex="0" class="selection step-item">
+                        <summary class="selection card2">3. Hardware Component Check</summary>
+                        <div class="step-content">
+                            <p><span tabindex="0" class="selection_2">• Verify fan operation</span><br/>
+                               <span tabindex="0" class="selection_2">• Check RAM module seating</span><br/>
+                               <span tabindex="0" class="selection_2">• Inspect for loose components</span>
+                            </p>
+                        </div>
+                    </details>
+                </div>
+
+                <div class="professional-help">
+                    <p>If issues persist after following these steps, consider contacting a
+                        <a href="https://www.google.com/search?q=computer+repair+technician+near+me"
+                           title="Google search: Computer Repair Technician Near Me"
+                           class="professional-link">professional computer repair technician</a>
+                        for expert diagnosis and resolution.
+                    </p>
+                </div>
+            </div>
+        </details>
+
+        <!-- Windows Shortcuts Section -->
+        <details tabindex="0" class="selection main-section">
+            <summary class="card2 section-title">
+                <i class="fab fa-windows"></i> Essential Windows Shortcuts
+            </summary>
+            <div class="shortcuts-grid">
+                <!-- File Operations -->
+                <div class="shortcut-category">
+                    <h3 class="category-title">File Operations</h3>
+                    <div class="shortcut-list">
+                        <details tabindex="0" class="selection">
+                            <summary class="selection card2">Ctrl + C</summary>
+                            <p><span tabindex="0" class="selection_2">Copy selected item</span></p>
+                        </details>
+                        <details tabindex="0" class="selection">
+                            <summary class="selection card2">Ctrl + X</summary>
+                            <p><span tabindex="0" class="selection_2">Cut selected item</span></p>
+                        </details>
+                        <details tabindex="0" class="selection">
+                            <summary class="selection card2">Ctrl + V</summary>
+                            <p><span tabindex="0" class="selection_2">Paste selected item</span></p>
+                        </details>
+                        <details tabindex="0" class="selection">
+                            <summary class="selection card2">Ctrl + S</summary>
+                            <p><span tabindex="0" class="selection_2">Save current file</span></p>
+                        </details>
+                    </div>
+                </div>
+
+                <!-- System Navigation -->
+                <div class="shortcut-category">
+                    <h3 class="category-title">System Navigation</h3>
+                    <div class="shortcut-list">
+                        <details tabindex="0" class="selection">
+                            <summary class="selection card2">Win + E</summary>
+                            <p><span tabindex="0" class="selection_2">Open File Explorer</span></p>
+                        </details>
+                        <details tabindex="0" class="selection">
+                            <summary class="selection card2">Win + D</summary>
+                            <p><span tabindex="0" class="selection_2">Show desktop</span></p>
+                        </details>
+                        <details tabindex="0" class="selection">
+                            <summary class="selection card2">Win + L</summary>
+                            <p><span tabindex="0" class="selection_2">Lock computer</span></p>
+                        </details>
+                        <details tabindex="0" class="selection">
+                            <summary class="selection card2">Alt + Tab</summary>
+                            <p><span tabindex="0" class="selection_2">Switch between programs</span></p>
+                        </details>
+                    </div>
+                </div>
+
+                <!-- Window Management -->
+                <div class="shortcut-category">
+                    <h3 class="category-title">Window Management</h3>
+                    <div class="shortcut-list">
+                        <details tabindex="0" class="selection">
+                            <summary class="selection card2">Win + ←/→</summary>
+                            <p><span tabindex="0" class="selection_2">Snap window left/right</span></p>
+                        </details>
+                        <details tabindex="0" class="selection">
+                            <summary class="selection card2">Win + ↑/↓</summary>
+                            <p><span tabindex="0" class="selection_2">Maximize/minimize window</span></p>
+                        </details>
+                        <details tabindex="0" class="selection">
+                            <summary class="selection card2">Alt + F4</summary>
+                            <p><span tabindex="0" class="selection_2">Close active window</span></p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <!-- Remote Support Section -->
+        <details tabindex="0" class="selection main-section">
+            <summary class="card2 section-title">
+                <i class="fas fa-desktop"></i> Remote Support Services
+            </summary>
+            <div class="section-content">
+                <div class="service-description">
+                    <p><span tabindex="0" class="selection_2">Professional technical support delivered remotely through secure internet connections, providing:</span></p>
+                    <ul class="service-list">
+                        <li><span tabindex="0" class="selection_2">Software installation and configuration</span></li>
+                        <li><span tabindex="0" class="selection_2">Virus removal and security solutions</span></li>
+                        <li><span tabindex="0" class="selection_2">Hardware diagnostics and troubleshooting</span></li>
+                        <li><span tabindex="0" class="selection_2">Network configuration and optimization</span></li>
+                    </ul>
+                    <div class="service-link">
+                        <a href="../../services/?remote_support#title" title="Learn more about our remote support services" class="button">
+                            <i class="fas fa-arrow-right"></i> Explore Our Remote Support Services
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <!-- MSP Section -->
+        <details tabindex="0" class="selection main-section">
+            <summary class="card2 section-title">
+                <i class="fas fa-network-wired"></i> Managed Service Providers (MSP)
+            </summary>
+            <div class="section-content">
+                <div class="msp-description">
+                    <p><cite>
+                        MSPs are professional IT service providers that manage and assume responsibility for providing a defined set of services to their clients either proactively or as needed. They specialize in:
+                    </cite></p>
+                    <ul class="msp-services">
+                        <li>Network infrastructure management</li>
+                        <li>Security monitoring and management</li>
+                        <li>Cloud services and solutions</li>
+                        <li>Help desk and technical support</li>
+                        <li>Data backup and disaster recovery</li>
+                    </ul>
+                </div>
+            </div>
+        </details>
+    </div>
+    </div>
+
+    <style>
+    .content-grid {
+        display: grid;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .main-section {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        transition: transform 0.2s ease;
+    }
+
+    .main-section:hover {
+        transform: translateY(-2px);
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        color: #2c3e50;
+        padding: 1rem;
+        border-bottom: 2px solid #eee;
+    }
+
+    .section-title i {
+        margin-right: 0.5rem;
+        color: #3498db;
+    }
+
+    .section-content {
+        padding: 1.5rem;
+    }
+
+    .section-intro {
+        font-size: 1.1rem;
+        color: #666;
+        margin-bottom: 1.5rem;
+    }
+
+    .troubleshooting-steps {
+        display: grid;
+        gap: 1rem;
+    }
+
+    .step-item {
+        background: #f8f9fa;
+        border-radius: 6px;
+        padding: 0.5rem;
+    }
+
+    .shortcuts-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .shortcut-category {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 1rem;
+    }
+
+    .category-title {
+        color: #2c3e50;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #e0e0e0;
+    }
+
+    .shortcut-list {
+        display: grid;
+        gap: 0.5rem;
+    }
+
+    .service-list, .msp-services {
+        list-style: none;
+        padding-left: 1.5rem;
+    }
+
+    .service-list li, .msp-services li {
+        position: relative;
+        padding: 0.5rem 0;
+    }
+
+    .service-list li:before, .msp-services li:before {
+        content: "→";
+        position: absolute;
+        left: -1.5rem;
+        color: #3498db;
+    }
+
+    .service-link {
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 0.8rem 1.5rem;
+        background: #3498db;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background 0.3s ease;
+    }
+
+    .button:hover {
+        background: #2980b9;
+    }
+
+    .button i {
+        margin-right: 0.5rem;
+    }
+
+    /* Essential Software Knowledge Styles */
+    .knowledge-content {
+        display: grid;
+        gap: 1rem;
+    }
+
+    .knowledge-content .section-intro {
+        color: #2c3e50;
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+    }
+
+    .knowledge-content .step-content {
+        padding: 1rem;
+        background: rgba(52, 152, 219, 0.05);
+        border-radius: 8px;
+    }
+
+    .knowledge-content .step-content p {
+        margin: 0;
+    }
+
+    .knowledge-content .selection_2 {
+        display: inline-block;
+        margin: 0.4rem 0;
+        line-height: 1.5;
+    }
+
+    @media (max-width: 768px) {
+        .shortcuts-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+        }
+
+        .button {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    </style>
+    <?php
 }
+
 function sw_utilities() {
         ?>
     <style>
