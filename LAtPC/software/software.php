@@ -1,4 +1,155 @@
 <?php
+function cssStyles() {
+    // Check if the current URI contains 'compression'
+    if(str_contains($_SERVER['REQUEST_URI'], 'compression')) {
+            ?>
+            <style>
+        .blurb {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+        .intro {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            color: #34495e;
+        }
+        .timeline-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .timeline-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+        .timeline-item:hover {
+            transform: translateY(-5px);
+        }
+        .timeline-item h3 {
+            color: #2980b9;
+            margin-top: 0;
+        }
+        .formats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .format-card {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+        .format-card:hover {
+            transform: translateY(-5px);
+        }
+        .format-card summary {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #34495e;
+            padding: 15px;
+            cursor: pointer;
+            border-radius: 8px;
+            background: #f8f9fa;
+        }
+        .format-content {
+            padding: 15px;
+        }
+        .format-content ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .format-content li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .format-content li:before {
+            content: "•";
+            color: #3498db;
+            position: absolute;
+            left: 0;
+        }
+        fieldset {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+        /* Accessibility improvements */
+        *:focus {
+            outline: 2px solid #3498db;
+            outline-offset: 2px;
+        }
+        .timeline-item:hover {
+            outline: 2px solid #3498db;
+            outline-offset: 2px;
+            cursor: pointer;
+        }
+        /* Responsive design */
+        @media (max-width: 768px) {
+
+            .timeline-grid,
+            .formats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .blurb {
+                padding: 15px;
+            }
+        }
+        </style>
+        <?php
+    }
+
+    if(str_contains($_SERVER['REQUEST_URI'], 'developer_tools')) {
+            ?><style>
+        .tools-list li {
+            display: inline-block;
+            overflow: hidden;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .button-grid li {
+            list-style: none;
+        }
+        .button-grid button {
+            width: 100%;
+            padding: 10px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        .button-grid button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .button-grid img {
+            max-width: 70%;
+            height: auto;
+            margin-bottom: 8px;
+        }
+        .grid-item:hover {
+            transform: translateY(.10px);
+        }
+        </style>
+            <?php
+    }
+}
 
 function sw_breadCrumbs() {
     $breadCrumbs = [
@@ -3766,120 +3917,6 @@ function sw_utilities() {
 
 function sw_compression() {
         ?>
-    <style>
-    .blurb {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    }
-
-    .intro {
-        font-size: 1.1em;
-        line-height: 1.6;
-        margin-bottom: 40px;
-        color: #34495e;
-    }
-
-    .timeline-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-        margin: 30px 0;
-    }
-
-    .timeline-item {
-        background: #f8f9fa;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        transition: transform 0.2s ease;
-    }
-
-    .timeline-item:hover {
-        transform: translateY(-5px);
-    }
-
-    .timeline-item h3 {
-        color: #2980b9;
-        margin-top: 0;
-    }
-
-    .formats-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 20px;
-        margin: 30px 0;
-    }
-
-    .format-card {
-        background: #ffffff;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        transition: transform 0.2s ease;
-    }
-
-    .format-card:hover {
-        transform: translateY(-5px);
-    }
-
-    .format-card summary {
-        font-size: 1.2rem;
-        font-weight: 600;
-        color: #34495e;
-        padding: 15px;
-        cursor: pointer;
-        border-radius: 8px;
-        background: #f8f9fa;
-    }
-
-    .format-content {
-        padding: 15px;
-    }
-
-    .format-content ul {
-        list-style-type: none;
-        padding-left: 0;
-    }
-
-    .format-content li {
-        margin-bottom: 8px;
-        padding-left: 20px;
-        position: relative;
-    }
-
-    .format-content li:before {
-        content: "•";
-        color: #3498db;
-        position: absolute;
-        left: 0;
-    }
-
-    fieldset {
-        border: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    /* Accessibility improvements */
-    *:focus {
-        outline: 2px solid #3498db;
-        outline-offset: 2px;
-    }
-
-    /* Responsive design */
-    @media (max-width: 768px) {
-
-        .timeline-grid,
-        .formats-grid {
-            grid-template-columns: 1fr;
-        }
-
-        .blurb {
-            padding: 15px;
-        }
-    }
-    </style>
     <article class="fullbar">
         <?php sw_breadCrumbs(); ?>
         <h1>Compression</h1>
@@ -3932,7 +3969,7 @@ function sw_compression() {
             </section>
 
             <section class="compression-formats">
-                <h2>Popular Compression Formats</h2>
+                <h2>Popular Compression Directory Formats</h2>
                 <div class="formats-grid">
                     <details class="format-card">
                         <summary tabindex="0" class="selection">ZIP Format</summary>
@@ -4020,6 +4057,113 @@ function sw_compression() {
                     </details>
                 </div>
             </section>
+
+            <section class="other-compression">
+                <h2>Other Compression Technologies</h2>
+                <div class="formats-grid">
+                    <details class="format-card">
+                        <summary tabindex="0" class="selection">Image Compression</summary>
+                        <fieldset tabindex="0" class="selection">
+                            <div class="format-content">
+                                <h4>Popular Formats:</h4>
+                                <ul>
+                                    <li>JPEG - Lossy compression for photos</li>
+                                    <li>PNG - Lossless with transparency support</li>
+                                    <li>WebP - Modern format with superior compression</li>
+                                    <li>AVIF - Next-gen format with excellent quality</li>
+                                </ul>
+                                <p>Image compression balances visual quality with file size, using specialized algorithms
+                                    optimized for visual data.</p>
+                            </div>
+                        </fieldset>
+                    </details>
+
+                    <details class="format-card">
+                        <summary tabindex="0" class="selection">Audio Compression</summary>
+                        <fieldset tabindex="0" class="selection">
+                            <div class="format-content">
+                                <h4>Popular Formats:</h4>
+                                <ul>
+                                    <li>MP3 - Universal lossy audio format</li>
+                                    <li>AAC - Advanced audio coding</li>
+                                    <li>FLAC - Lossless audio compression</li>
+                                    <li>Opus - Modern low-latency codec</li>
+                                </ul>
+                                <p>Audio compression leverages psychoacoustic models to remove imperceptible sounds,
+                                    achieving significant size reduction.</p>
+                            </div>
+                        </fieldset>
+                    </details>
+
+                    <details class="format-card">
+                        <summary tabindex="0" class="selection">Video Compression</summary>
+                        <fieldset tabindex="0" class="selection">
+                            <div class="format-content">
+                                <h4>Popular Codecs:</h4>
+                                <ul>
+                                    <li>H.264/AVC - Industry standard codec</li>
+                                    <li>H.265/HEVC - High efficiency video coding</li>
+                                    <li>VP9 - Open-source alternative</li>
+                                    <li>AV1 - Royalty-free next-gen codec</li>
+                                </ul>
+                                <p>Video compression uses temporal and spatial redundancy reduction, enabling efficient
+                                    streaming and storage of video content.</p>
+                            </div>
+                        </fieldset>
+                    </details>
+
+                    <details class="format-card">
+                        <summary tabindex="0" class="selection">Modern Algorithms</summary>
+                        <fieldset tabindex="0" class="selection">
+                            <div class="format-content">
+                                <h4>Advanced Technologies:</h4>
+                                <ul>
+                                    <li>Zstandard (zstd) - Fast with high compression</li>
+                                    <li>Brotli - Web-optimized compression</li>
+                                    <li>LZMA - Extreme compression ratios</li>
+                                    <li>7-Zip - Multi-algorithm archiver</li>
+                                </ul>
+                                <p>Modern compression algorithms offer improved speed and efficiency, optimized for
+                                    contemporary hardware and use cases.</p>
+                            </div>
+                        </fieldset>
+                    </details>
+
+                    <details class="format-card">
+                        <summary tabindex="0" class="selection">Database Compression</summary>
+                        <fieldset tabindex="0" class="selection">
+                            <div class="format-content">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li>Columnar compression for analytics</li>
+                                    <li>Dictionary encoding</li>
+                                    <li>Run-length encoding (RLE)</li>
+                                    <li>Transparent compression layers</li>
+                                </ul>
+                                <p>Database compression reduces storage costs while maintaining query performance through
+                                    specialized compression techniques.</p>
+                            </div>
+                        </fieldset>
+                    </details>
+
+                    <details class="format-card">
+                        <summary tabindex="0" class="selection">Network Compression</summary>
+                        <fieldset tabindex="0" class="selection">
+                            <div class="format-content">
+                                <h4>Technologies:</h4>
+                                <ul>
+                                    <li>HTTP compression (gzip, Brotli)</li>
+                                    <li>VPN compression protocols</li>
+                                    <li>TCP/IP header compression</li>
+                                    <li>Real-time streaming compression</li>
+                                </ul>
+                                <p>Network compression reduces bandwidth usage and improves transmission speeds for web
+                                    content and data transfers.</p>
+                            </div>
+                        </fieldset>
+                    </details>
+                </div>
+            </section>
         </div>
     </article>
     <?php
@@ -4027,51 +4171,6 @@ function sw_compression() {
 
 function sw_developerTools() {
     ?>
-    <style>
-    .tools-list li {
-        display: inline-block;
-        overflow: hidden;
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .button-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 20px;
-        padding: 20px 0;
-    }
-
-    .button-grid li {
-        list-style: none;
-    }
-
-    .button-grid button {
-        width: 100%;
-        padding: 10px;
-        background: white;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        transition: transform 0.2s;
-    }
-
-    .button-grid button:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .button-grid img {
-        max-width: 70%;
-        height: auto;
-        margin-bottom: 8px;
-    }
-
-    .grid-item:hover {
-        transform: translateY(.10px);
-
-    }
-    </style>
-
     <article class="blurb fullbar">
         <?php //BreadCrumbs
            /* if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/herramientasparadesarrolladores/") {
