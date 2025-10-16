@@ -234,7 +234,10 @@ function offered_services($sub_route)
 			break;
 
 			case '':
-				echo 'Services Main Page';
+				$page = new Structure('../../', 'english', 'Services');
+			$keywords = 'Keywords';
+			$description = 'Description';
+			include 'services/services.php';
 				break;
 		default:
 			show404();

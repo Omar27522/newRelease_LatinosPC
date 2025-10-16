@@ -132,9 +132,9 @@
 
                         <a href="<?php
                         if($page->getLang() == "en"):
-                           echo "#";
+                           echo $page->getDir(). "LAtPC/offered_security/backups";
                         elseif($page->getLang() == "es-419"):
-                           echo "#";
+                           echo $page->getDir(). "LAtPC/security/backups";
                         endif;?>">
                             <li><?php
                         if($page->getLang() == "en"):
@@ -146,7 +146,7 @@
 
                         <a href="<?php
                         if($page->getLang() == "en"):
-                           echo "#";
+                           echo $page->getDir(). "LAtPC/hardware_options";
                         elseif($page->getLang() == "es-419"):
                            echo "#";
                         endif;?>">
@@ -160,7 +160,7 @@
 
                         <a href="<?php
                         if($page->getLang() == "en"):
-                           echo "#";
+                           echo $page->getDir(). "LAtPC/software_options/";
                         elseif($page->getLang() == "es-419"):
                            echo "#";
                         endif;?>">
@@ -188,7 +188,7 @@
 
                         <a href="<?php
                         if($page->getLang() == "en"):
-                           echo "#";
+                           echo $page->getDir(). "LAtPC/offered_security/";
                         elseif($page->getLang() == "es-419"):
                            echo "#";
                         endif;?>">
@@ -202,7 +202,7 @@
 
                         <a href="<?php
                         if($page->getLang() == "en"):
-                           echo "#";
+                           echo $page->getDir(). "LAtPC/offered_security/best_practices";
                         elseif($page->getLang() == "es-419"):
                            echo "#";
                         endif;?>">
@@ -216,7 +216,7 @@
 
                         <a href="<?php
                         if($page->getLang() == "en"):
-                           echo "#";
+                           echo $page->getDir(). "LAtPC/offered_security/passwords";
                         elseif($page->getLang() == "es-419"):
                            echo "#";
                         endif;?>">
@@ -251,7 +251,7 @@
                 ?>
                 <button><a href="<?= $page->getDir();?>LAtPC/index.php">Home</a></button>
                 <button><a href="<?= $page->getDir();?>LAtPC/español">Español</a></button>
-                <button><a href="#">Services</a></button>
+                <button><a href="<?= $page->getDir();?>LAtPC/offered_services">Services</a></button>
                 <button><a href="#">Contact Us</a></button>
                 <button><a href="#">Reviews</a></button>
                 <?php
@@ -290,6 +290,7 @@
                 'Teachings: John' => 'teachings',
                 'Template' => 'template',
                 'About' => 'content_about',
+                'Services' => 'content_services',//WRITE A FUNCTION NAME TO GIVE TO THE SERVICE.PHP FILE
                 'Clean Ups' => 'content_services_cleanups',
                 'Protection' => 'content_services_protection',
                 'Consultations' => 'content_services_consultation',
@@ -298,7 +299,7 @@
                 'Remote Support' => 'content_services_remoteSupport',
                 'Security' => 'security',
                 'Best Practices' => 'best_practices',
-                'Backups' => 'backups',
+                'Backups' => 'security_backups',
                 'Passwords' => 'passwords',
                 'Hardware' => 'hw_hardware',
                 'HW CPU' => 'hw_cpu',
