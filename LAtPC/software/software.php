@@ -59,6 +59,7 @@ function cssStyles() {
             cursor: pointer;
             border-radius: 8px;
             background: #f8f9fa;
+            display: inline;
         }
         .format-content {
             padding: 15px;
@@ -149,6 +150,88 @@ function cssStyles() {
         </style>
             <?php
     }
+
+    if(str_contains($_SERVER['REQUEST_URI'], 'utilities')) {
+        ?>
+        <style>
+        .blurb {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .intro {
+            margin-bottom: 40px;
+        }
+
+        .windows-optimization h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 15px;
+            transition: transform 0.2s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .blurb summary {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #34495e;
+            cursor: pointer;
+            padding: 10px;
+            display: inline;
+        }
+
+        fieldset {
+            border: none;
+            padding: 15px;
+            background: white;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 4px;
+        }
+
+        .warning-box h3 {
+            color: #856404;
+            margin-top: 0;
+        }
+
+        /* Accessibility improvements */
+        *:focus {
+            outline: 2px solid #007bff;
+            outline-offset: 2px;
+        }
+
+        @media (max-width: 768px) {
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        </style>
+     <?php
+    }
+
 }
 
 function sw_breadCrumbs() {
@@ -3426,12 +3509,12 @@ function sw_other() {
     echo "</div>";
     ?>
     <div class="blurb fullbar">
-    <h2 id="title">Computer Tools & Resources</h2>
-
+    <h2 id="title">Computer Tools & Resources</h2><span style="font-size: 1rem; color: skyblue;">
+MAKE IT MORE INTERACIVE, ADD MORE CSS LIKE THE PAGE IS SIMPLE, THE <SUMMARY> ARE VERY HARD TO READ ADD A HOVER AND A FOCUS. AND MAKE IT BETTER, PERHAPS ADD NEW ENTRIES.
     <div class="content-grid">
         <!-- Computer Repair Section -->
         <details tabindex="0" class="selection main-section">
-            <summary class="card2 section-title">
+            <summary class="card2 section-title" style="display:inline;">
                 <i class="fas fa-tools"></i> Computer Repair Guide
             </summary>
             <div class="section-content">
@@ -3447,7 +3530,7 @@ function sw_other() {
                     </details>
 
                     <details tabindex="0" class="selection step-item">
-                        <summary class="selection card2">2. Power Supply Verification</summary>
+                        <summary class="selection card2" style="display:inline;">2. Power Supply Verification</summary>
                         <div class="step-content">
                             <p><span tabindex="0" class="selection_2">• Confirm power switch is ON</span><br/>
                                <span tabindex="0" class="selection_2">• Test power outlet functionality</span><br/>
@@ -3457,7 +3540,7 @@ function sw_other() {
                     </details>
 
                     <details tabindex="0" class="selection step-item">
-                        <summary class="selection card2">3. Hardware Component Check</summary>
+                        <summary class="selection card2" style="display:inline;">3. Hardware Component Check</summary>
                         <div class="step-content">
                             <p><span tabindex="0" class="selection_2">• Verify fan operation</span><br/>
                                <span tabindex="0" class="selection_2">• Check RAM module seating</span><br/>
@@ -3480,7 +3563,7 @@ function sw_other() {
 
         <!-- Windows Shortcuts Section -->
         <details tabindex="0" class="selection main-section">
-            <summary class="card2 section-title">
+            <summary class="card2 section-title" style="display:inline;">
                 <i class="fab fa-windows"></i> Essential Windows Shortcuts
             </summary>
             <div class="shortcuts-grid">
@@ -3553,7 +3636,7 @@ function sw_other() {
 
         <!-- Remote Support Section -->
         <details tabindex="0" class="selection main-section">
-            <summary class="card2 section-title">
+            <summary class="card2 section-title" style="display:inline;">
                 <i class="fas fa-desktop"></i> Remote Support Services
             </summary>
             <div class="section-content">
@@ -3576,7 +3659,7 @@ function sw_other() {
 
         <!-- MSP Section -->
         <details tabindex="0" class="selection main-section">
-            <summary class="card2 section-title">
+            <summary class="card2 section-title" style="display:inline;">
                 <i class="fas fa-network-wired"></i> Managed Service Providers (MSP)
             </summary>
             <div class="section-content">
@@ -3762,81 +3845,6 @@ function sw_other() {
 
 function sw_utilities() {
         ?>
-    <style>
-    .blurb {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-
-    .intro {
-        margin-bottom: 40px;
-    }
-
-    .windows-optimization h2 {
-        color: #2c3e50;
-        margin-bottom: 20px;
-    }
-
-    .features-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-        margin: 30px 0;
-    }
-
-    .feature-card {
-        background: #f8f9fa;
-        border-radius: 8px;
-        padding: 15px;
-        transition: transform 0.2s ease;
-    }
-
-    .feature-card:hover {
-        transform: translateY(-5px);
-    }
-
-    .blurb summary {
-        font-size: 1.2rem;
-        font-weight: 600;
-        color: #34495e;
-        cursor: pointer;
-        padding: 10px;
-    }
-
-    fieldset {
-        border: none;
-        padding: 15px;
-        background: white;
-        border-radius: 4px;
-        margin-top: 10px;
-    }
-
-    .warning-box {
-        background: #fff3cd;
-        border-left: 4px solid #ffc107;
-        padding: 20px;
-        margin-top: 40px;
-        border-radius: 4px;
-    }
-
-    .warning-box h3 {
-        color: #856404;
-        margin-top: 0;
-    }
-
-    /* Accessibility improvements */
-    *:focus {
-        outline: 2px solid #007bff;
-        outline-offset: 2px;
-    }
-
-    @media (max-width: 768px) {
-        .features-grid {
-            grid-template-columns: 1fr;
-        }
-    }
-    </style>
     <article class="fullbar">
         <?php sw_breadCrumbs(); ?>
         <h1>Utilities</h1>
@@ -3909,6 +3917,20 @@ function sw_utilities() {
                         precaution ensures you can revert changes if needed.
                     </p>
                 </div>
+            </section>
+            <section class="intro" style="margin-top: 1rem;">
+            <h3>This is what I do on a typical new installation</h3>
+            <p>
+                After having installed windows on with latest updates:<br />
+                 I use a windows debloater tool, and I make sure to not have any unwanted software installed.
+            </p>
+            <p>I run a banchmark or two on BrowserBench.org so I know what the system is capable of.</p>
+            <p>Then I install the following:</p>
+            <ul>
+                <li><a href="https://ninite.com/">Ninite</a></li>
+                <li><a href="https://www.ccleaner.com/speccy">Speccy</a></li>
+                <li><a href="https://www.nirsoft.net/utils/battery_information_view.html">BatteyInfoView</a></li>
+            </ul>
             </section>
         </div>
     </article>
@@ -4172,14 +4194,6 @@ function sw_compression() {
 function sw_developerTools() {
     ?>
     <article class="blurb fullbar">
-        <?php //BreadCrumbs
-           /* if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/herramientasparadesarrolladores/") {
-            include ('../../../include/_code/migasDePan_software.php');
-            }
-            else {
-                include ('../../include/_code/breadCrumbs_software.php');
-        }*/
-        ?>
         <?php sw_breadCrumbs(); ?>
         <h2>Developer Tools</h2>
         <section class="homepage-grid" style="padding-top: 0;">
@@ -4203,7 +4217,7 @@ function sw_developerTools() {
                 <ul class="tools-list sb_menu">
                     <li tabindex="0" class="card2 selection"><a href="https://www.google.com/keep/">Google Keep</a> for note
                         taking</li>
-                    <li tabindex="0" class="card2 selection"><a href="https://www.wps.com/">WPS</a> for accessing documents,
+                    <li tabindex="0" class="card2 selection"><a href="https://www.libreoffice.org/discover/libreoffice/">Libre Office</a> for accessing documents,
                         Office Suite</li>
                     <li tabindex="0" class="card2 selection"><a href="https://notepad-plus-plus.org/">Notepad ++</a> Source
                         Code Editor</li>
