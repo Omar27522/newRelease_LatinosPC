@@ -232,8 +232,633 @@ function cssStyles() {
      <?php
     }
 
-}
+    if (str_contains($_SERVER['REQUEST_URI'], 'other')) {
+        ?>
 
+        <style>
+            summary {
+                display:inline;
+                margin-bottom  : 10px;
+            }
+
+        summary{
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+        summary:hover{
+            border: 2px solid #3498db;
+        }
+        details{
+            padding-bottom  : 10px;
+        }
+        p{
+            margin-bottom  : 10px; margin-top: 10px;
+        }
+        .main-section {
+            background-color: var(--background-color);
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius);
+            padding: 15px;
+        }
+        </style>
+        <?php
+    }
+
+    if (str_contains($_SERVER['REQUEST_URI'], 'media')) {
+        ?>
+            <style>
+                .hero4{
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+                    line-height: 1.6;
+                }
+
+                .selection{
+                    background: #ffffff;
+                    border-radius: 8px;
+                    padding: 20px;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                }
+
+                .stats-grid{
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                    gap: 20px;
+                    margin: 30px 0;
+                }
+                .stat-card{
+                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                    color: white;
+                    padding: 25px;
+                    border-radius: 12px;
+                    text-align: center;
+                    text-decoration: none;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    display: block;
+                }
+                .stat-number{
+                    font-size: 2.5rem;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+                .stat-label{
+                    font-size: 1rem;
+                    opacity: 0.95;
+                }
+                .media-types{
+                    margin: 30px 0;
+                }
+                .media-card{
+                    background: #f8f9fa;
+                    border-radius: 8px;
+                    padding: 25px;
+                    margin: 30px 0;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+                }
+                .tech-grid{
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                    gap: 15px;
+                    margin: 20px 0;
+                }
+                .tech-item{
+                    background: white;
+                    padding: 20px;
+                    border-radius: 8px;
+                    text-align: center;
+                    text-decoration: none;
+                    color: #34495e;
+                    transition: all 0.3s ease;
+                    border: 2px solid transparent;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .media-icon{
+                    font-size: 2.5rem;
+                    margin-bottom: 10px;
+                }
+                .timeline{
+                    margin: 30px 0;
+                    padding: 20px;
+                    background: #f8f9fa;
+                    border-radius: 8px;
+                }
+                .timeline-item{
+                    background: white;
+                    padding: 15px;
+                    margin: 10px 0;
+                    border-radius: 6px;
+                    border-left: 4px solid #3498db;
+                    transition: transform 0.2s ease;
+                }
+                .media-importance{
+                    background: #e8f4f8;
+                    padding: 25px;
+                    border-radius: 8px;
+                    margin: 30px 0;
+                }
+                ul{
+                    list-style-type: none;
+                    padding-left: 0;
+                }
+                li{
+                    padding: 8px 0;
+                    padding-left: 25px;
+                    position: relative;
+                }
+                .expert-quote{
+                    background: #fff9e6;
+                    border-left: 4px solid #f39c12;
+                    padding: 20px;
+                    margin: 30px 0;
+                    border-radius: 4px;
+                    font-style: italic;
+                }
+                .learn-more{
+                    text-align: center;
+                    margin: 30px 0;
+                    font-size: 1.1rem;
+                }
+                .stat-card:hover{
+                    transform: translateY(-5px);
+                    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+                }
+                .tech-item:hover{
+                    transform: translateY(-3px);
+                    border-color: #3498db;
+                    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.2);
+                }
+                .timeline-item:hover{
+                    transform: translateX(5px);
+                }
+                .tech-item strong{
+                    font-size: 1.1rem;
+                    color: #2c3e50;
+                }
+                .media-card h3{
+                    color: #2c3e50;
+                    margin-top: 0;
+                    margin-bottom: 20px;
+                    font-size: 1.5rem;
+                }
+                .timeline h3{
+                    color: #2c3e50;
+                    margin-top: 0;
+                }
+                .media-importance h3{
+                    color: #2c3e50;
+                    margin-top: 0;
+                }
+                li:before{
+                    content: "▸";
+                    color: #3498db;
+                    position: absolute;
+                    left: 0;
+                    font-weight: bold;
+                }
+                .expert-quote p{
+                    margin: 0;
+                    color: #555;
+                }
+                .expert-quote footer{
+                    margin-top: 10px;
+                    text-align: right;
+                    font-style: normal;
+                }
+                .reference-link{
+                    color: #3498db;
+                    text-decoration: none;
+                    font-weight: 600;
+                    transition: color 0.2s ease;
+                }
+                .reference-link:hover{
+                    color: #2980b9;
+                    text-decoration: underline;
+                }
+                /* Responsive design */
+                @media (max-width: 768px){
+                    .stats-grid{
+                        grid-template-columns: 1fr;
+                    }
+                    .tech-grid{
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    .fullbar{
+                        padding: 15px;
+                    }
+                }
+                @media (max-width: 480px){
+                    .tech-grid{
+                        grid-template-columns: 1fr;
+                    }
+                    .stat-number{
+                        font-size: 2rem;
+                    }
+                }
+            </style>
+        <?php
+    }
+
+    if (str_contains($_SERVER['REQUEST_URI'], 'runtimes')){
+        ?>
+        <style>
+        .hero4{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.7;
+            color: #333;
+        }
+        .content_resize{
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .highlight-box{
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        .highlight-box p{
+            margin: 0;
+        }
+        .kitchen-analogy{
+            list-style: none;
+            padding: 0;
+            margin: 25px 0;
+        }
+        .kitchen-analogy li{
+            background: #f8f9fa;
+            padding: 15px 20px;
+            margin: 12px 0;
+            border-left: 5px solid #3498db;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-size: 1.05rem;
+        }
+        .kitchen-analogy li:hover{
+            transform: translateX(10px);
+            background: #e8f4f8;
+            box-shadow: 0 3px 10px rgba(52, 152, 219, 0.2);
+        }
+        .kitchen-analogy strong{
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        .fun-fact{
+            background: #fff9e6;
+            border: 2px solid #f39c12;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 35px 0;
+            position: relative;
+            box-shadow: 0 3px 10px rgba(243, 156, 18, 0.15);
+        }
+        .fun-fact h3{
+            color: #f39c12;
+            margin-top: 0;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        .fun-fact p{
+            margin: 0;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+        .device-list{
+            list-style: none;
+            padding: 0;
+            margin: 25px 0;
+        }
+        .device-list li{
+            background: white;
+            padding: 18px 25px;
+            margin: 15px 0;
+            border-radius: 10px;
+            border: 2px solid #e0e0e0;
+            transition: all 0.3s ease;
+            font-size: 1.05rem;
+        }
+        .device-list li:hover{
+            border-color: #3498db;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2);
+        }
+        .device-list strong{
+            color: #2c3e50;
+            font-size: 1.2rem;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .future-section{
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 35px 0;
+            box-shadow: 0 5px 20px rgba(17, 153, 142, 0.3);
+        }
+        .future-section h3{
+            margin-top: 0;
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+        }
+        .future-section p{
+            margin: 0;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        .future-section a{
+            color: #fff;
+            text-decoration: underline;
+            font-weight: 600;
+        }
+        .learn-more{
+            background: #f0f7ff;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 35px 0;
+            border: 1px solid #d0e7ff;
+        }
+        .learn-more h2{
+            color: #2c3e50;
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+        .learn-more ul{
+            list-style: none;
+            padding-left: 0;
+        }
+        .learn-more li{
+            padding: 10px 0 10px 30px;
+            position: relative;
+            font-size: 1.05rem;
+        }
+        .learn-more li:before{
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+        .pro-tip{
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 35px 0;
+            box-shadow: 0 5px 20px rgba(240, 147, 251, 0.3);
+        }
+        .pro-tip h3{
+            margin-top: 0;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+        }
+        .pro-tip ul{
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+        .pro-tip li{
+            padding: 12px 0 12px 35px;
+            position: relative;
+            font-size: 1.05rem;
+            line-height: 1.6;
+        }
+        .pro-tip li:before{
+            content: "✓";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #fff;
+        }
+        .references{
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 35px 0;
+            border-left: 5px solid #3498db;
+        }
+        .references h3{
+            color: #2c3e50;
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+        .references ul{
+            list-style: none;
+            padding-left: 0;
+        }
+        .references li{
+            padding: 10px 0;
+            font-size: 1.05rem;
+        }
+        .references a{
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s ease;
+        }
+        .references a:hover{
+            color: #2980b9;
+            text-decoration: underline;
+        }
+        h2{
+            color: #2c3e50;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        h3{
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px){
+            .fullbar{
+                padding: 15px;
+            }
+            .highlight-box, .fun-fact, .future-section, .learn-more, .pro-tip, .references{
+                padding: 20px;
+            }
+            h2{
+                font-size: 1.5rem;
+            }
+            h3{
+                font-size: 1.2rem;
+            }
+        }
+        </style>
+        <?php
+    }
+
+    if (str_contains($_SERVER['REQUEST_URI'], 'imaging')){
+        ?>
+        <style>
+        .hero4{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.7;
+            color: #2c3e50;
+        }
+      
+        .colms2{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        .selection{
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+            transition: all 0.3s ease;
+        }
+        .selection:hover{
+            background: #e8f4f8;
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.15);
+        }
+        .selection.item{
+            border-left-color: #9b59b6;
+        }
+        .eych8{
+            color: #2c3e50;
+            font-size: 1.9rem;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3498db;
+        }
+        .newspaper2{
+            column-count: 2;
+            column-gap: 30px;
+            margin: 25px 0;
+        }
+        .newspaper2 p{
+            margin-top: 0;
+        }
+        .imgs{
+            list-style: none;
+            padding-left: 0;
+            margin: 20px 0;
+        }
+        .imgs li{
+            background: white;
+            padding: 15px 20px;
+            margin: 12px 0;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        .imgs li:hover{
+            transform: translateX(8px);
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.2);
+            border-left-color: #2980b9;
+        }
+        .imgs.item li{
+            border-left-color: #e74c3c;
+        }
+        .imgs.item li:hover{
+            border-left-color: #c0392b;
+        }
+        .d3{
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-weight: 500;
+        }
+        .d3:hover{
+            transform: translateX(10px) scale(1.02);
+        }
+        .blurb{
+            line-height: 1.8;
+        }
+        .blurb strong{
+            color: #2c3e50;
+            font-size: 1.1rem;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .item{
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+        .item h3{
+            color: #3498db;
+            margin-top: 0;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        .item img{
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+        .item img:hover{
+            transform: scale(1.05);
+        }
+       
+        /* Focus states for accessibility */
+        *:focus{
+            outline: 3px solid #3498db;
+            outline-offset: 3px;
+        }
+        [tabindex="0"]:focus{
+            background: #e8f4f8;
+        }
+        /* Responsive design */
+        @media (max-width: 1024px){
+            .newspaper2{
+                column-count: 1;
+            }
+        }
+        @media (max-width: 768px){
+            .fullbar{
+                padding: 15px;
+            }
+            .colms2{
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .eych8{
+                font-size: 1.6rem;
+            }
+            h1#title{
+                font-size: 2rem;
+            }
+            h2{
+                font-size: 1.4rem;
+            }
+            h3{
+                font-size: 1.2rem;
+            }
+            .item{
+                padding: 20px;
+            }
+        }
+        @media (max-width: 480px){
+            .selection{
+                padding: 15px;
+            }
+            .imgs li{
+                padding: 12px 15px;
+            }
+        }
+        </style>
+        <?php
+    }
+}
 function sw_breadCrumbs() {
     $breadCrumbs = [
         "<a href=\"./\">Software</a>",
@@ -256,7 +881,7 @@ function sw_breadCrumbs() {
     // Get current URI path
     $currentPath = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-    echo "<span class=\"fullbar\">";
+    echo "<nav class=\"fullbar\">";
     foreach ($breadCrumbs as $crumb) {
         // Extract href attribute from anchor tag
         preg_match('/href="\.\/([^"]+)"/', $crumb, $matches);
@@ -275,7 +900,7 @@ function sw_breadCrumbs() {
         }
     }
 
-    echo "</span> <hr style=\"margin: 0; margin-bottom: 10px;\">";
+    echo "</nav> <hr style=\"margin: 0; margin-bottom: 10px;\">";
 }
 
 function sw_software() {
@@ -2366,14 +2991,6 @@ function sw_runtimes() {
         <div class="fullbar">
             <h2 id="title"><?= empty($title) ? $titulo : $title;?></h2>
 
-            <?php /*BreadCrumbs*/
-    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/tiemposdeejecucion/") {
-                    include ('../../../include/_code/migasDePan_software.php');
-    }
-    else {
-        include ('../../include/_code/breadCrumbs_software.php');
-    }  /*BreadCrumbs*/ ?>
-
                 <div class="highlight-box">
                     <p><?= empty($question) ? $pregunta : $question ?></p>
                 </div>
@@ -3508,30 +4125,28 @@ function sw_other() {
     echo "<h1>Other</h1>";
     echo "</div>";
     ?>
-    <div class="blurb fullbar">
-    <h2 id="title">Computer Tools & Resources</h2><span style="font-size: 1rem; color: skyblue;">
-MAKE IT MORE INTERACIVE, ADD MORE CSS LIKE THE PAGE IS SIMPLE, THE <SUMMARY> ARE VERY HARD TO READ ADD A HOVER AND A FOCUS. AND MAKE IT BETTER, PERHAPS ADD NEW ENTRIES.
-    <div class="content-grid">
+    <div class="content-grid fullbar">
+    <h2 id="title">Computer Tools & Resources</h2>
         <!-- Computer Repair Section -->
-        <details tabindex="0" class="selection main-section">
-            <summary class="card2 section-title" style="display:inline;">
+        <details tabindex="0" class="main-section">
+            <summary class="section-title">
                 <i class="fas fa-tools"></i> Computer Repair Guide
             </summary>
             <div class="section-content">
                 <p class="section-intro">Troubleshooting computer issues can be challenging, but following these systematic steps can help identify and resolve common problems quickly and effectively.</p>
                 <div class="troubleshooting-steps">
-                    <details tabindex="0" class="selection step-item">
-                        <summary class="selection card2">1. Check Physical Connections</summary>
-                        <div class="step-content">
+                    <details tabindex="0" class="step-item">
+                        <summary>1. Check Physical Connections</summary>
+                        <div>
                             <p><span tabindex="0" class="selection_2">• Verify all cables are properly connected (power, monitor, keyboard, mouse)</span><br/>
                                <span tabindex="0" class="selection_2">• Ensure connections are secure and not loose</span>
                             </p>
                         </div>
                     </details>
 
-                    <details tabindex="0" class="selection step-item">
-                        <summary class="selection card2" style="display:inline;">2. Power Supply Verification</summary>
-                        <div class="step-content">
+                    <details tabindex="0" class="step-item">
+                        <summary>2. Power Supply Verification</summary>
+                        <div>
                             <p><span tabindex="0" class="selection_2">• Confirm power switch is ON</span><br/>
                                <span tabindex="0" class="selection_2">• Test power outlet functionality</span><br/>
                                <span tabindex="0" class="selection_2">• Check for proper power cord connection</span>
@@ -3539,9 +4154,9 @@ MAKE IT MORE INTERACIVE, ADD MORE CSS LIKE THE PAGE IS SIMPLE, THE <SUMMARY> ARE
                         </div>
                     </details>
 
-                    <details tabindex="0" class="selection step-item">
-                        <summary class="selection card2" style="display:inline;">3. Hardware Component Check</summary>
-                        <div class="step-content">
+                    <details tabindex="0" class="step-item">
+                        <summary>3. Hardware Component Check</summary>
+                        <div>
                             <p><span tabindex="0" class="selection_2">• Verify fan operation</span><br/>
                                <span tabindex="0" class="selection_2">• Check RAM module seating</span><br/>
                                <span tabindex="0" class="selection_2">• Inspect for loose components</span>
@@ -3550,20 +4165,17 @@ MAKE IT MORE INTERACIVE, ADD MORE CSS LIKE THE PAGE IS SIMPLE, THE <SUMMARY> ARE
                     </details>
                 </div>
 
-                <div class="professional-help">
-                    <p>If issues persist after following these steps, consider contacting a
-                        <a href="https://www.google.com/search?q=computer+repair+technician+near+me"
-                           title="Google search: Computer Repair Technician Near Me"
-                           class="professional-link">professional computer repair technician</a>
-                        for expert diagnosis and resolution.
-                    </p>
-                </div>
+                <p class="section-intro">If issues persist after following these steps, consider contacting a
+                    <a href="https://www.google.com/search?q=computer+repair+technician+near+me"
+                       title="Google search: Computer Repair Technician Near Me">professional computer repair technician</a>
+                    for expert diagnosis and resolution.
+                </p>
             </div>
         </details>
 
         <!-- Windows Shortcuts Section -->
-        <details tabindex="0" class="selection main-section">
-            <summary class="card2 section-title" style="display:inline;">
+        <details tabindex="0" class="main-section">
+            <summary class="section-title">
                 <i class="fab fa-windows"></i> Essential Windows Shortcuts
             </summary>
             <div class="shortcuts-grid">
@@ -3571,22 +4183,22 @@ MAKE IT MORE INTERACIVE, ADD MORE CSS LIKE THE PAGE IS SIMPLE, THE <SUMMARY> ARE
                 <div class="shortcut-category">
                     <h3 class="category-title">File Operations</h3>
                     <div class="shortcut-list">
-                        <details tabindex="0" class="selection">
-                            <summary class="selection card2">Ctrl + C</summary>
+                        <section tabindex="0">
+                            <p>Ctrl + C</p>
                             <p><span tabindex="0" class="selection_2">Copy selected item</span></p>
-                        </details>
-                        <details tabindex="0" class="selection">
-                            <summary class="selection card2">Ctrl + X</summary>
+                        </section>
+                        <section tabindex="0">
+                            <p>Ctrl + X</p>
                             <p><span tabindex="0" class="selection_2">Cut selected item</span></p>
-                        </details>
-                        <details tabindex="0" class="selection">
-                            <summary class="selection card2">Ctrl + V</summary>
+                        </section>
+                        <section tabindex="0">
+                            <p>Ctrl + V</p>
                             <p><span tabindex="0" class="selection_2">Paste selected item</span></p>
-                        </details>
-                        <details tabindex="0" class="selection">
-                            <summary class="selection card2">Ctrl + S</summary>
+                        </section>
+                        <section tabindex="0">
+                            <p>Ctrl + S</p>
                             <p><span tabindex="0" class="selection_2">Save current file</span></p>
-                        </details>
+                        </section>
                     </div>
                 </div>
 
@@ -3594,22 +4206,22 @@ MAKE IT MORE INTERACIVE, ADD MORE CSS LIKE THE PAGE IS SIMPLE, THE <SUMMARY> ARE
                 <div class="shortcut-category">
                     <h3 class="category-title">System Navigation</h3>
                     <div class="shortcut-list">
-                        <details tabindex="0" class="selection">
-                            <summary class="selection card2">Win + E</summary>
+                        <section tabindex="0">
+                            <p>Win + E</p>
                             <p><span tabindex="0" class="selection_2">Open File Explorer</span></p>
-                        </details>
-                        <details tabindex="0" class="selection">
-                            <summary class="selection card2">Win + D</summary>
+                        </section>
+                        <section tabindex="0">
+                            <p>Win + D</p>
                             <p><span tabindex="0" class="selection_2">Show desktop</span></p>
-                        </details>
-                        <details tabindex="0" class="selection">
-                            <summary class="selection card2">Win + L</summary>
+                        </section>
+                        <section tabindex="0">
+                            <p>Win + L</p>
                             <p><span tabindex="0" class="selection_2">Lock computer</span></p>
-                        </details>
-                        <details tabindex="0" class="selection">
-                            <summary class="selection card2">Alt + Tab</summary>
+                        </section>
+                        <section tabindex="0">
+                            <p>Alt + Tab</p>
                             <p><span tabindex="0" class="selection_2">Switch between programs</span></p>
-                        </details>
+                        </section>
                     </div>
                 </div>
 
@@ -3617,229 +4229,181 @@ MAKE IT MORE INTERACIVE, ADD MORE CSS LIKE THE PAGE IS SIMPLE, THE <SUMMARY> ARE
                 <div class="shortcut-category">
                     <h3 class="category-title">Window Management</h3>
                     <div class="shortcut-list">
-                        <details tabindex="0" class="selection">
-                            <summary class="selection card2">Win + ←/→</summary>
+                        <section tabindex="0">
+                            <p>Win + ←/→</p>
                             <p><span tabindex="0" class="selection_2">Snap window left/right</span></p>
-                        </details>
-                        <details tabindex="0" class="selection">
-                            <summary class="selection card2">Win + ↑/↓</summary>
+                        </section>
+                        <section tabindex="0">
+                            <p>Win + ↑/↓</p>
                             <p><span tabindex="0" class="selection_2">Maximize/minimize window</span></p>
-                        </details>
-                        <details tabindex="0" class="selection">
-                            <summary class="selection card2">Alt + F4</summary>
+                        </section>
+                        <section tabindex="0">
+                            <p>Alt + F4</p>
                             <p><span tabindex="0" class="selection_2">Close active window</span></p>
-                        </details>
+                        </section>
                     </div>
                 </div>
             </div>
         </details>
 
         <!-- Remote Support Section -->
-        <details tabindex="0" class="selection main-section">
-            <summary class="card2 section-title" style="display:inline;">
+        <details tabindex="0" class="main-section">
+            <summary class="section-title">
                 <i class="fas fa-desktop"></i> Remote Support Services
             </summary>
             <div class="section-content">
-                <div class="service-description">
-                    <p><span tabindex="0" class="selection_2">Professional technical support delivered remotely through secure internet connections, providing:</span></p>
+                <p class="section-intro"><span tabindex="0" class="selection_2">Professional technical support delivered remotely through secure internet connections, providing:</span></p>
                     <ul class="service-list">
                         <li><span tabindex="0" class="selection_2">Software installation and configuration</span></li>
                         <li><span tabindex="0" class="selection_2">Virus removal and security solutions</span></li>
                         <li><span tabindex="0" class="selection_2">Hardware diagnostics and troubleshooting</span></li>
                         <li><span tabindex="0" class="selection_2">Network configuration and optimization</span></li>
                     </ul>
-                    <div class="service-link">
-                        <a href="../../services/?remote_support#title" title="Learn more about our remote support services" class="button">
-                            <i class="fas fa-arrow-right"></i> Explore Our Remote Support Services
-                        </a>
-                    </div>
+                <div class="service-link">
+                    <a href="../offered_services/remoteSupport" title="Learn more about our remote support services" class="button">
+                        <i class="fas fa-arrow-right"></i> Explore Our Remote Support Services
+                    </a>
                 </div>
             </div>
         </details>
 
         <!-- MSP Section -->
-        <details tabindex="0" class="selection main-section">
-            <summary class="card2 section-title" style="display:inline;">
+        <details tabindex="0" class="main-section">
+            <summary class="section-title">
                 <i class="fas fa-network-wired"></i> Managed Service Providers (MSP)
             </summary>
             <div class="section-content">
-                <div class="msp-description">
-                    <p><cite>
-                        MSPs are professional IT service providers that manage and assume responsibility for providing a defined set of services to their clients either proactively or as needed. They specialize in:
-                    </cite></p>
-                    <ul class="msp-services">
+                <p class="section-intro"><cite>
+                    MSPs are professional IT service providers that manage and assume responsibility for providing a defined set of services to their clients either proactively or as needed. They specialize in:
+                </cite></p>
+                <ul class="msp-services">
                         <li>Network infrastructure management</li>
                         <li>Security monitoring and management</li>
                         <li>Cloud services and solutions</li>
                         <li>Help desk and technical support</li>
                         <li>Data backup and disaster recovery</li>
+                </ul>
+            </div>
+        </details>
+
+        <details tabindex="0" class="main-section">
+            <summary class="section-title">
+                <i class="fas fa-network-wired"></i> Backups
+            </summary>
+            <div class="section-content">
+                <p class="section-intro"><cite>
+                    Backups are copies of data that are stored in a safe location, such as a different computer or a cloud storage service. Backups are important because they allow you to recover from data loss due to hardware failures, software corruption, or other causes. Backups are also important for disaster recovery, as they allow you to restore your data in the event of a natural disaster or other emergency.
+                </cite></p>
+                <ul class="backups">
+                        <li>Full backups</li>
+                        <li>Incremental backups</li>
+                        <li>Differential backups</li>
+                        <li>Cloud backups</li>
+                        <li>Local backups</li>
+                </ul>
+                <div class="service-link">
+                    <a href="../offered_security/backups" title="Learn more about our backup services" class="button">
+                        <i class="fas fa-arrow-right"></i>Explore more
+                    </a>
+                </div>
+            </div>
+        </details>
+        <details tabindex="0" class="main-section">
+            <summary class="section-title">
+                <i class="fas fa-network-wired"></i>Best Practices
+            </summary>
+            <div class="section-content">
+                <p class="section-intro"><cite>
+                    Best practices are guidelines and recommendations for performing a task or achieving a goal. Best practices are important because they help ensure that a task is performed correctly and efficiently. Best practices are also important for maintaining consistency and quality, as they provide a standard for evaluating the performance of a task.
+                </cite></p>
+                <ul class="best-practices">
+                        <li>Keep the computers in a secure location when not in use, such as a locked room or cabinet.</li>
+                        <li>Use a cable lock to physically secure the computers to a desk or other immovable object.</li>
+                        <li>Use a privacy screen or webcam cover to prevent unwanted access to the computer's camera.</li>
+                        <li>Use a surge protector to protect the computer from power surges and voltage spikes.</li>
+                        <li>Keep the computer and its peripherals in good condition, such as cleaning dust from fans and vents to prevent overheating.</li>
+                        <li>Use a laptop lock to physically secure the computer to a desk or other immovable object.</li>
+                        <li>Always use a protective carrying case when transporting a portable device, laptop or desktop computer.</li>
+                        <li>Avoid leaving portable devices in plain sight in vehicles or other public places.</li>
+                        <li>Be aware of your surroundings when using a portable computer in public, and be prepared to close and secure it quickly if necessary.</li>
+                </ul>
+                <div class="service-link">
+                    <a href="../offered_security/best_practices" title="Learn more about our backup services" class="button">
+                        <i class="fas fa-arrow-right"></i>Explore more
+                    </a>
+                </div>
+            </div>
+        </details>
+        <details tabindex="0" class="main-section">
+            <summary class="section-title">
+                <i class="fas fa-network-wired"></i>Passwords
+            </summary>
+            <div class="section-content">
+                <p class="section-intro"><cite>
+                    Passwords are a security measure that are used to protect access to a computer, network, or other system. Passwords are important because they help ensure that only authorized users have access to a system, and they prevent unauthorized access to sensitive information. Passwords are also important for maintaining security, as they provide a way to control access to a system and prevent unauthorized access to sensitive information.
+                </cite></p>
+                <ul class="passwords">
+                    <details>
+                        <summary>Use strong passwords</summary>
+                        <p>Strong passwords are passwords that are difficult to guess or crack. They are typically made up of a combination of uppercase and lowercase letters, numbers, and special characters. Strong passwords are important because they help ensure that only authorized users have access to a system, and they prevent unauthorized access to sensitive information.</p>
+                    </details>
+                    <details>
+                        <summary>Use unique passwords</summary>
+                        <p>Unique passwords are passwords that are different from each other. They are important because they help ensure that only authorized users have access to a system, and they prevent unauthorized access to sensitive information.</p>
+                    </details>
+                    <details>
+  <summary>password managers</summary>
+  <p>
+    <ul>
+      <li><a href="https://www.1password.com" target="_blank">1Password</a></li>
+      <li><a href="https://bitwarden.com" target="_blank">Bitwarden</a></li>
+      <li><a href="https://www.dashlane.com" target="_blank">Dashlane</a></li>
+      <li><a href="https://www.lastpass.com" target="_blank">LastPass</a></li>
+      <li><a href="https://www.nordpass.com" target="_blank">NordPass</a></li>
+      <li><a href="https://www.roboform.com" target="_blank">RoboForm</a></li>
+      <li><a href="https://www.enpass.io" target="_blank">Enpass</a></li>
+      <li><a href="https://keepersecurity.com" target="_blank">Keeper</a></li>
+      <li><a href="https://www.intuitivepassword.com" target="_blank">Intuitive Password</a></li>
+      <li><a href="https://www.stickypassword.com" target="_blank">Sticky Password</a></li>
+    </ul>
+  </p>
+    </details>
+
+                    <details>
+  <summary>password generators</summary>
+                    <ul>
+                        <!-- Verified and updated list -->
+                        <li><a href="https://1password.com/password-generator/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">1Password Generator</a></li>
+                        <li><a href="https://www.avast.com/random-password-generator" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">Avast Password Generator</a></li>
+                        <li><a href="https://bitwarden.com/password-generator/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">Bitwarden Password Generator</a></li>
+                        <li><a href="https://passwords-generator.org/bulk" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">Bulk Password Generator</a></li>
+                        <li><a href="https://www.dashlane.com/features/password-generator" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">Dashlane Password Generator</a></li>
+                        <li><a href="https://www.expressvpn.com/password-generator" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">ExpressVPN Password Generator</a></li>
+                        <li><a href="https://www.keepersecurity.com/password-generator" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">Keeper Password Generator</a></li>
+                        <li><a href="https://www.lastpass.com/password-generator" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">LastPass Password Generator</a></li>
+                        <li><a href="https://manytools.org/network/password-generator/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">ManyTools Password Generator</a></li>
+                        <li><a href="https://nordpass.com/password-generator/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">NordPass Password Generator</a></li>
+                        <li><a href="https://norton.com/password-generator" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">Norton Password Generator</a></li>
+                        <li><a href="https://passwordsgenerator.net/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">PasswordsGenerator.net</a></li>
+                        <li><a href="https://www.roboform.com/password-generator" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">RoboForm Password Generator</a></li>
                     </ul>
+    </details>
+
+                    <details>
+                        <summary>Password vaults</summary>
+                        <p></p>
+                    </details>
+                </ul>
+                <div class="service-link">
+                    <a href="../offered_security/passwords" title="Learn more about our backup services" class="button">
+                        <i class="fas fa-arrow-right"></i>Explore more
+                    </a>
                 </div>
             </div>
         </details>
     </div>
-    </div>
 
-    <style>
-    .content-grid {
-        display: grid;
-        gap: 2rem;
-        padding: 1rem;
-    }
 
-    .main-section {
-        background: white;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        transition: transform 0.2s ease;
-    }
-
-    .main-section:hover {
-        transform: translateY(-2px);
-    }
-
-    .section-title {
-        font-size: 1.5rem;
-        color: #2c3e50;
-        padding: 1rem;
-        border-bottom: 2px solid #eee;
-    }
-
-    .section-title i {
-        margin-right: 0.5rem;
-        color: #3498db;
-    }
-
-    .section-content {
-        padding: 1.5rem;
-    }
-
-    .section-intro {
-        font-size: 1.1rem;
-        color: #666;
-        margin-bottom: 1.5rem;
-    }
-
-    .troubleshooting-steps {
-        display: grid;
-        gap: 1rem;
-    }
-
-    .step-item {
-        background: #f8f9fa;
-        border-radius: 6px;
-        padding: 0.5rem;
-    }
-
-    .shortcuts-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 2rem;
-        padding: 1rem;
-    }
-
-    .shortcut-category {
-        background: #f8f9fa;
-        border-radius: 8px;
-        padding: 1rem;
-    }
-
-    .category-title {
-        color: #2c3e50;
-        margin-bottom: 1rem;
-        padding-bottom: 0.5rem;
-        border-bottom: 2px solid #e0e0e0;
-    }
-
-    .shortcut-list {
-        display: grid;
-        gap: 0.5rem;
-    }
-
-    .service-list, .msp-services {
-        list-style: none;
-        padding-left: 1.5rem;
-    }
-
-    .service-list li, .msp-services li {
-        position: relative;
-        padding: 0.5rem 0;
-    }
-
-    .service-list li:before, .msp-services li:before {
-        content: "→";
-        position: absolute;
-        left: -1.5rem;
-        color: #3498db;
-    }
-
-    .service-link {
-        margin-top: 1.5rem;
-        text-align: center;
-    }
-
-    .button {
-        display: inline-block;
-        padding: 0.8rem 1.5rem;
-        background: #3498db;
-        color: white;
-        text-decoration: none;
-        border-radius: 4px;
-        transition: background 0.3s ease;
-    }
-
-    .button:hover {
-        background: #2980b9;
-    }
-
-    .button i {
-        margin-right: 0.5rem;
-    }
-
-    /* Essential Software Knowledge Styles */
-    .knowledge-content {
-        display: grid;
-        gap: 1rem;
-    }
-
-    .knowledge-content .section-intro {
-        color: #2c3e50;
-        font-size: 1.1rem;
-        margin-bottom: 1.5rem;
-        line-height: 1.6;
-    }
-
-    .knowledge-content .step-content {
-        padding: 1rem;
-        background: rgba(52, 152, 219, 0.05);
-        border-radius: 8px;
-    }
-
-    .knowledge-content .step-content p {
-        margin: 0;
-    }
-
-    .knowledge-content .selection_2 {
-        display: inline-block;
-        margin: 0.4rem 0;
-        line-height: 1.5;
-    }
-
-    @media (max-width: 768px) {
-        .shortcuts-grid {
-            grid-template-columns: 1fr;
-        }
-
-        .section-title {
-            font-size: 1.3rem;
-        }
-
-        .button {
-            width: 100%;
-            text-align: center;
-        }
-    }
-    </style>
     <?php
 }
 

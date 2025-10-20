@@ -308,6 +308,7 @@
                 'HW Input Devices' => 'hw_input_devices',
                 'HW Output Devices' => 'hw_output_devices',
                 'HW Peripherals' => 'hw_peripherals_and_gear',
+                'HW Mouse' => 'hw_mouse',
                 'Software' => 'sw_software',
                 'SW Anti-Virus' => 'sw_anti_virus',
                 'SW Malware Cleaner' => 'sw_mlwcleaner',

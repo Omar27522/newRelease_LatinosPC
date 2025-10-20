@@ -99,7 +99,7 @@ switch ($main_route) {
 		software_options($sub_route);
 		exit;
 		break;
- 
+
 	case 'Template':
 		fullPageTemplate();
 		exit;
@@ -126,7 +126,7 @@ switch ($main_route) {
 function show404()
 {
 	http_response_code(404);
-	
+
 	 echo '<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -318,6 +318,146 @@ function hardware_options($sub_route){
 			$description = 'Peripherals Description';
 			include 'hardware/hardware.php';
 			break;
+		case 'mouse':
+			$page = new Structure('../../', 'english', 'HW Mouse');
+			$keywords = 'Mouse Keywords';
+			$description = 'Mouse Description';
+			include 'hardware/hardware.php';
+			break;
+		case 'keyboard':
+			$page = new Structure('../../', 'english', 'HW Keyboard');
+			$keywords = 'Keyboard Keywords';
+			$description = 'Keyboard Description';
+			include 'hardware/hardware.php';
+			break;
+		case 'monitor':
+			$page = new Structure('../../', 'english', 'HW Monitor');
+			$keywords = 'Monitor Keywords';
+			$description = 'Monitor Description';
+			include 'hardware/hardware.php';
+			break;
+		case 'external_drive':
+			$page = new Structure('../../', 'english', 'HW External Drive');
+			$keywords = 'External Drive Keywords';
+			$description = 'External Drive Description';
+			include 'hardware/hardware.php';
+			break;
+		case 'pci_cards':
+			$page = new Structure('../../', 'english', 'HW PCI Cards');
+			$keywords = 'PCI Cards Keywords';
+			$description = 'PCI Cards Description';
+			include 'hardware/hardware.php';
+			break;
+		case 'gpu':
+			$page = new Structure('../../', 'english', 'HW GPU');
+			$keywords = 'GPU Keywords';
+			$description = 'GPU Description';
+			include 'hardware/hardware.php';
+			break;
+		case 'scanners':
+			$page = new Structure('../../', 'english', 'HW Scanners');
+			$keywords = 'Scanners Keywords';
+			$description = 'Scanners Description';
+			include 'hardware/hardware.php';
+			break;
+		case 'printers':
+			$page = new Structure('../../', 'english', 'HW Printers');
+			$keywords = 'Printers Keywords';
+			$description = 'Printers Description';
+			include 'hardware/hardware.php';
+			break;
+		case 'console_controllers':
+			$page = new Structure('../../', 'english', 'HW Console Controllers');
+			$keywords = 'Console Controllers Keywords';
+			$description = 'Console Controllers Description';
+			include 'hardware/hardware.php';
+			break;
+		case 'joystick':
+			$page = new Structure('../../', 'english', 'HW Joystick');
+			$keywords = 'Joystick Keywords';
+			$description = 'Joystick Description';
+			include 'hardware/hardware.php';
+			break;
+		case 'tablets':
+			$page = new Structure('../../', 'english', 'HW Tablets');
+			$keywords = 'Tablets Keywords';
+			$description = 'Tablets Description';
+			include 'hardware/hardware.php';
+			break;
+		case 'microphones':
+			$page = new Structure('../../', 'english', 'HW Microphones');
+			$keywords = 'Microphones Keywords';
+			$description = 'Microphones Description';
+			include 'hardware/hardware.php';
+			break;
+		case 'headsets':
+			$page = new Structure('../../', 'english', 'HW Headsets');
+			$keywords = 'Headsets Keywords';
+			$description = 'Headsets Description';
+			include 'hardware/hardware.php';
+			break;
+		case 'headphones':
+			$page = new Structure('../../', 'english', 'HW Headphones');
+			$keywords = 'Headphones Keywords';
+			$description = 'Headphones Description';
+			include 'hardware/hardware.php';
+			break;
+		case 'audio_mixers':
+			$page = new Structure('../../', 'english', 'HW Audio Mixers');
+			$keywords = 'Audio Mixers Keywords';
+			$description = 'Audio Mixers Description';
+			include 'hardware/hardware.php';
+			break;
+		case 'controllers':
+			$page = new Structure('../../', 'english', 'HW Controllers');
+			$keywords = 'Controllers Keywords';
+			$description = 'Controllers Description';
+			include 'hardware/hardware.php';
+			break;
+		case 'gaming_uniforms':
+			$page = new Structure('../../', 'english', 'HW Gaming Uniforms');
+			$keywords = 'Gaming Uniforms Keywords';
+			$description = 'Gaming Uniforms Description';
+			include 'hardware/hardware.php';
+			break;
+		case 'pens_pencils_tablets':
+			$page = new Structure('../../', 'english', 'HW Pens, Pencils & Tablets');
+			$keywords = 'Pens, Pencils & Tablets Keywords';
+			$description = 'Pens, Pencils & Tablets Description';
+			include 'hardware/hardware.php';
+			break;
+		case 'chairs':
+			$page = new Structure('../../', 'english', 'HW Chairs');
+			$keywords = 'Chairs Keywords';
+			$description = 'Chairs Description';
+			include 'hardware/hardware.php';
+			break;
+		case 'desks':
+			$page = new Structure('../../', 'english', 'HW Desks');
+			$keywords = 'Desks Keywords';
+			$description = 'Desks Description';
+			include 'hardware/hardware.php';
+			break;
+		case 'anti_slip_mats':
+			$page = new Structure('../../', 'english', 'HW Anti-Slip Mats');
+			$keywords = 'Anti-Slip Mats Keywords';
+			$description = 'Anti-Slip Mats Description';
+			include 'hardware/hardware.php';
+			break;
+		case 'speakers_and_subwoofers':
+			$page = new Structure('../../', 'english', 'HW Speakers and Subwoofers');
+			$keywords = 'Speakers and Subwoofers Keywords';
+			$description = 'Speakers and Subwoofers Description';
+			include 'hardware/hardware.php';
+			break;
+		
+
+
+
+
+
+
+
 
 			case '':
 				$page = new Structure('../../', 'english', 'Hardware');
@@ -419,13 +559,13 @@ function software_options($sub_route){
 			$description = 'Developer Tools Description';
 			include 'software/software.php';
 			break;
-						
+
 		case '':
 				$page = new Structure('../../', 'english', 'Software');
 				$keywords = 'Software Keywords';
 				$description = 'Software Description';
 				include 'software/software.php';
-					break;			
+					break;
 		default:
 			show404();
 			break;

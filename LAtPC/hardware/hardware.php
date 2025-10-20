@@ -1,4 +1,163 @@
 <?php
+function cssStyles()    {
+    ?>
+    <style>
+    .peripherals-header {
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+
+    .peripherals-title-link {
+        text-decoration: none;
+        color: inherit;
+        transition: color 0.3s ease;
+    }
+
+    .peripherals-title-link:hover {
+        color: #0056b3;
+    }
+
+    .peripherals-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #333;
+        position: relative;
+        display: inline-block;
+        padding-bottom: 0.5rem;
+    }
+
+    .peripherals-title:after {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 3px;
+        background: linear-gradient(90deg, #0056b3, #00c6ff);
+        bottom: 0;
+        left: 25%;
+        border-radius: 2px;
+    }
+
+    .peripherals-container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .peripherals-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .peripheral-card {
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+    }
+
+    .peripheral-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .peripheral-card:focus-within {
+        outline: 3px solid #0056b3;
+    }
+
+    .peripheral-card[data-type="input"] {
+        border-top: 4px solid #2ecc71;
+    }
+
+    .peripheral-card[data-type="output"] {
+        border-top: 4px solid #e74c3c;
+    }
+
+    .peripheral-card[data-type="storage"] {
+        border-top: 4px solid #f39c12;
+    }
+
+    .peripheral-card[data-type="component"] {
+        border-top: 4px solid #9b59b6;
+    }
+
+    .peripheral-card[data-type="power"] {
+        border-top: 4px solid #e67e22;
+    }
+
+    .peripheral-card[data-type="cooling"] {
+        border-top: 4px solid #3498db;
+    }
+
+    .peripheral-card[data-type="graphics"] {
+        border-top: 4px solid #1abc9c;
+    }
+
+    .peripheral-card[data-type="audio"] {
+        border-top: 4px solid #8e44ad;
+    }
+
+    .peripheral-card[data-type="gaming"] {
+        border-top: 4px solid #e84393;
+    }
+
+    .peripheral-card[data-type="mobile"] {
+        border-top: 4px solid #00cec9;
+    }
+
+    .peripheral-card.featured {
+        grid-column: span 2;
+    }
+
+    .peripheral-link {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        height: 100%;
+    }
+
+    .peripheral-content {
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .peripheral-name {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #333;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .peripheral-image {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+    .peripheral-image img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    .peripheral-card:hover .peripheral-image img {
+        transform: scale(1.05);
+    }
+                    </style>
+    
+    <?php
+}
+
 function hw_hardware() {
     echo "<h1 class=\"fullbar\">Hardware Main Page</h1>";
     $title="<h2>The Hardware is the computer — it&#39;s physical components.</h2>";
@@ -111,8 +270,6 @@ function hw_hardware() {
     ];
 
 
-    $title="<h2>The Hardware is the computer — it&#39;s physical components.</h2>";
-
     $descriptions ="<p>These components may include the computer&#39;s
         functionality, design, materials, innovations, thermals, etc.<br />A computer is an electronic device that
         manipulates data or information. It has the ability to store,retrieve, and process data.<p>     <!--https://unsplash.com/photos/2sILr4DwabQ-->
@@ -135,6 +292,8 @@ function hw_hardware() {
              ];
 
              $hw = 'else';
+
+
     ?>
     <article class="fullbar">
      <section class="hero3 article" id="article">
@@ -147,9 +306,10 @@ function hw_hardware() {
         <div>
             <h2 style="text-align: center;" id="cpu">
                 <?= empty($contentSubTitles[0]) ? $subTitulosContenido[0] : $contentSubTitles[0];?>
-            </h2><br /><a href="https://latinospc.com/images/hardware/hw/mobo.jpg" title="Motherboard">
+            </h2>
+            <!-- <a href="https://latinospc.com/images/hardware/hw/mobo.jpg" title="Motherboard">
                 <img src="https://latinospc.com/images/hardware/hw/mobo.webp" alt="Motherboard" style="transform: translateX(20%)"/></a>
-    <!-- Make this image randomize with all the images from here, I really would like to build a fulls creen gallery page maybe, where the image has a right and a left button.
+    Make this image randomize with all the images from here, I really would like to build a fulls creen gallery page maybe, where the image has a right and a left button.
 	under the main image there is a carrousel of more images. Then the Gallery section will be right under This gallery section.
     -->
             <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** Computer Parts-->
@@ -158,7 +318,7 @@ function hw_hardware() {
     <ul>
         <div class="hardware-grid">
     <div tabindex="0" class="hardware-card" data-component="cpu">
-        <a href="/parts/hardware/cpu" class="card-link">
+        <a href="./cpu" class="card-link">
             <h2><?= empty($contentSubTitles[1]) ? $subTitulosContenido[0] : $contentSubTitles[1]; ?></h2>
             <p><?= empty($content['CPU']) ? $contenido['CPU'] : $content['CPU']; ?></p>
             <div class="card-image">
@@ -168,7 +328,7 @@ function hw_hardware() {
     </div>
 
     <div tabindex="0" class="hardware-card" data-component="ram">
-        <a href="/parts/hardware/ram" class="card-link">
+        <a href="./ram" class="card-link">
             <h2><?= empty($contentSubTitles[2]) ? $subTitulosContenido[0] : $contentSubTitles[2]; ?></h2>
             <p><?= empty($content['RAM']) ? $contenido['RAM'] : $content['RAM']; ?></p>
             <div class="card-image">
@@ -178,7 +338,7 @@ function hw_hardware() {
     </div>
 
     <div tabindex="0" class="hardware-card" data-component="ssd">
-        <a href="/parts/hardware/storage" class="card-link">
+        <a href="./storage" class="card-link">
             <h2><?= empty($contentSubTitles[3]) ? $subTitulosContenido[0] : $contentSubTitles[3]; ?></h2>
             <p><?= empty($content['HDD']) ? $contenido['HDD'] : $content['HDD']; ?></p>
             <div class="card-image">
@@ -194,7 +354,7 @@ function hw_hardware() {
     </div>
 
     <div tabindex="0" class="hardware-card" data-component="motherboard">
-        <a href="/parts/hardware/motherboard" class="card-link">
+        <a href="./motherboard" class="card-link">
             <h2><?= empty($contentSubTitles[4]) ? $subTitulosContenido[4] : $contentSubTitles[4]; ?></h2>
             <p><?= empty($content['Motherboard']) ? $contenido['Motherboard'] : $content['Motherboard']; ?></p>
             <div class="card-image">
@@ -204,7 +364,7 @@ function hw_hardware() {
     </div>
 
     <div tabindex="0" class="hardware-card" data-component="psu">
-        <a href="/parts/hardware/powersupply" class="card-link">
+        <a href="./powersupply" class="card-link">
             <h2><?= empty($contentSubTitles[5]) ? $subTitulosContenido[5] : $contentSubTitles[5]; ?></h2>
             <p><?= empty($content['PSU']) ? $contenido['PSU'] : $content['PSU']; ?></p>
             <div class="card-image">
@@ -214,7 +374,7 @@ function hw_hardware() {
     </div>
 
     <div tabindex="0" class="hardware-card featured" data-component="gpu">
-        <a href="/parts/hardware/graphicscard" class="card-link">
+        <a href=."/graphicscard" class="card-link">
             <h2><?= empty($contentSubTitles[6]) ? $subTitulosContenido[6] : $contentSubTitles[6]; ?></h2>
             <p><?= empty($content['GPU']) ? $contenido['GPU'] : $content['GPU']; ?></p>
             <div class="card-image">
@@ -224,7 +384,7 @@ function hw_hardware() {
     </div>
 
     <div tabindex="0" class="hardware-card" data-component="chassis">
-        <a href="/parts/hardware/chassis" class="card-link">
+        <a href="./chassis" class="card-link">
             <h2><?= empty($contentSubTitles[7]) ? $subTitulosContenido[7] : $contentSubTitles[7]; ?></h2>
             <p><?= empty($content['Chassis']) ? $contenido['Chassis'] : $content['Chassis']; ?></p>
             <div class="card-image">
@@ -234,7 +394,7 @@ function hw_hardware() {
     </div>
 
     <div tabindex="0" class="hardware-card" data-component="cooling">
-        <a href="/parts/hardware/coolers" class="card-link">
+        <a href="./coolers" class="card-link">
             <h2><?= empty($contentSubTitles[8]) ? $subTitulosContenido[8] : $contentSubTitles[8]; ?></h2>
             <p><?= empty($content['Coolers']) ? $contenido['Coolers'] : $content['Coolers']; ?></p>
             <div class="card-image">
@@ -329,7 +489,7 @@ function hw_hardware() {
             ?>
 
             <div class="peripheral-card" data-type="input" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?mouse', $es='?ratón'); ?>">
+                <a class="peripheral-link" href="./mouse">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= $mouse = empty($peripherals[0]) ? $perifericos[0] : $peripherals[0]; ?></h3>
                         <div class="peripheral-image">
@@ -340,7 +500,7 @@ function hw_hardware() {
             </div>
 
             <div class="peripheral-card" data-type="input" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?keyboard', $es='?teclado'); ?>">
+                <a class="peripheral-link" href="./keyboard">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= $keyboard = empty($peripherals[1]) ? $perifericos[1] : $peripherals[1]; ?></h3>
                         <div class="peripheral-image">
@@ -351,7 +511,7 @@ function hw_hardware() {
             </div>
 
             <div class="peripheral-card" data-type="output" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?monitor', $es='?pantalla'); ?>">
+                <a class="peripheral-link" href="./monitor">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[2]) ? $perifericos[2] : $peripherals[2]; ?></h3>
                         <div class="peripheral-image">
@@ -364,7 +524,7 @@ function hw_hardware() {
             </div>
 
             <div class="peripheral-card" data-type="storage" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?p_memory', $es='?memoria_externa'); ?>">
+                <a class="peripheral-link" href="./p_memory">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[3]) ? $perifericos[3] : $peripherals[3]; ?></h3>
                         <div class="peripheral-image">
@@ -377,7 +537,7 @@ function hw_hardware() {
             </div>
 
             <div class="peripheral-card" data-type="component" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?pci', $es='?tarjeta_pci'); ?>">
+                <a class="peripheral-link" href="./pci">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[4]) ? $perifericos[4] : $peripherals[4]; ?></h3>
                         <div class="peripheral-image">
@@ -390,7 +550,7 @@ function hw_hardware() {
             </div>
 
             <div class="peripheral-card" data-type="power" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?psu', $es='?fuente_de_poder'); ?>">
+                <a class="peripheral-link" href="./psu">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[5]) ? $perifericos[5] : $peripherals[5]; ?></h3>
                         <div class="peripheral-image">
@@ -403,7 +563,7 @@ function hw_hardware() {
             </div>
 
             <div class="peripheral-card" data-type="cooling" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?cooling', $es='?enfriamiento'); ?>">
+                <a class="peripheral-link" href="./cooling">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[6]) ? $perifericos[6] : $peripherals[6]; ?></h3>
                         <div class="peripheral-image">
@@ -416,7 +576,7 @@ function hw_hardware() {
             </div>
 
             <div class="peripheral-card" data-type="graphics" featured tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?gpu', $es='?tarjeta_grafica'); ?>">
+                <a class="peripheral-link" href="./gpu">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[7]) ? $perifericos[7] : $peripherals[7]; ?></h3>
                         <div class="peripheral-image">
@@ -429,7 +589,7 @@ function hw_hardware() {
             </div>
 
             <div class="peripheral-card" data-type="input" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?scanner', $es='?escáner'); ?>">
+                <a class="peripheral-link" href="./scanner">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[8]) ? $perifericos[8] : $peripherals[8]; ?></h3>
                         <div class="peripheral-image">
@@ -442,7 +602,7 @@ function hw_hardware() {
             </div>
 
             <div class="peripheral-card" data-type="output" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?printer', $es='?impresoras'); ?>">
+                <a class="peripheral-link" href="./printer">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[9]) ? $perifericos[9] : $peripherals[9]; ?></h3>
                         <div class="peripheral-image">
@@ -455,7 +615,7 @@ function hw_hardware() {
             </div>
 
             <div class="peripheral-card" data-type="gaming" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?cc', $es='?mando_de_consola'); ?>">
+                <a class="peripheral-link" href="./cc">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[10]) ? $perifericos[10] : $peripherals[10]; ?></h3>
                         <div class="peripheral-image">
@@ -468,7 +628,7 @@ function hw_hardware() {
             </div>
 
             <div class="peripheral-card" data-type="gaming" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?joystick', $es='?joystick'); ?>">
+                <a class="peripheral-link" href="./joystick">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[11]) ? $perifericos[11] : $peripherals[11]; ?></h3>
                         <div class="peripheral-image">
@@ -481,7 +641,7 @@ function hw_hardware() {
             </div>
 
                               <div class="peripheral-card" data-type="input" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?tablet', $es='?tabletas'); ?>">
+                <a class="peripheral-link" href="./tablet">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[12]) ? $perifericos[12] : $peripherals[12]; ?></h3>
                         <div class="peripheral-image">
@@ -494,7 +654,7 @@ function hw_hardware() {
             </div>
 
             <div class="peripheral-card" data-type="audio" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?micro', $es='?micrófonos'); ?>">
+                <a class="peripheral-link" href="./micro">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[13]) ? $perifericos[13] : $peripherals[13]; ?></h3>
                         <div class="peripheral-image">
@@ -507,7 +667,7 @@ function hw_hardware() {
             </div>
 
             <div class="peripheral-card" data-type="audio" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?headset', $es='?headsets'); ?>">
+                <a class="peripheral-link" href="./headset">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[14]) ? $perifericos[14] : $peripherals[14]; ?></h3>
                         <div class="peripheral-image">
@@ -520,7 +680,7 @@ function hw_hardware() {
             </div>
 
             <div class="peripheral-card" data-type="audio" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?headphone', $es='?audífonos'); ?>">
+                <a class="peripheral-link" href="./headphone">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[15]) ? $perifericos[15] : $peripherals[15]; ?></h3>
                         <div class="peripheral-image">
@@ -533,7 +693,7 @@ function hw_hardware() {
             </div>
 
             <div class="peripheral-card" data-type="audio" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?audiomixer', $es='?mezcladora_de_audio'); ?>">
+                <a class="peripheral-link" href="./audiomixer">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[16]) ? $perifericos[16] : $peripherals[16]; ?></h3>
                         <div class="peripheral-image">
@@ -546,7 +706,7 @@ function hw_hardware() {
             </div>
 
             <div class="peripheral-card" data-type="gaming" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?controller', $es='?controladores'); ?>">
+                <a class="peripheral-link" href="./controller">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[17]) ? $perifericos[17] : $peripherals[17]; ?></h3>
                         <div class="peripheral-image">
@@ -559,7 +719,7 @@ function hw_hardware() {
             </div>
 
             <div class="peripheral-card" data-type="gaming" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?team_uniformity_authority', $es='?uniformes_gaming'); ?>">
+                <a class="peripheral-link" href="./uniforms">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[18]) ? $perifericos[18] : $peripherals[18]; ?></h3>
                         <div class="peripheral-image">
@@ -572,7 +732,7 @@ function hw_hardware() {
             </div>
 
             <div class="peripheral-card" data-type="input" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?pencil', $es='?lápices_plumas_tabletas'); ?>">
+                <a class="peripheral-link" href="./pencil">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[19]) ? $perifericos[19] : $peripherals[19]; ?></h3>
                         <div class="peripheral-image">
@@ -585,7 +745,7 @@ function hw_hardware() {
             </div>
 
             <div class="peripheral-card" data-type="furniture" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?chair', $es='?sillas'); ?>">
+                <a class="peripheral-link" href="./chair">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[20]) ? $perifericos[20] : $peripherals[20]; ?></h3>
                         <div class="peripheral-image">
@@ -598,7 +758,7 @@ function hw_hardware() {
             </div>
 
             <div class="peripheral-card" data-type="furniture" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?desk', $es='?escritorios'); ?>">
+                <a class="peripheral-link" href="./desk">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[21]) ? $perifericos[21] : $peripherals[21]; ?></h3>
                         <div class="peripheral-image">
@@ -611,7 +771,7 @@ function hw_hardware() {
             </div>
 
             <div class="peripheral-card" data-type="accessories" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?antislipmats', $es='?alfombrillas_antideslizantes'); ?>">
+                <a class="peripheral-link" href="./antislipmats">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[22]) ? $perifericos[22] : $peripherals[22]; ?></h3>
                         <div class="peripheral-image">
@@ -624,7 +784,7 @@ function hw_hardware() {
             </div>
 
             <div class="peripheral-card" data-type="audio" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?speakers_and_subwoofers', $es='?bocinas_y_subwoofers'); ?>">
+                <a class="peripheral-link" href="./speakers_and_subwoofers">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[23]) ? $perifericos[23] : $peripherals[23]; ?></h3>
                         <div class="peripheral-image">
@@ -2217,7 +2377,7 @@ function hw_peripherals_and_gear() {
         'team_uniformity_authority' => 'Uniforms'
     ];
     ?>
-<section class="peripherals-section fullbar">
+    <section class="peripherals-section fullbar">
     <div class="peripherals-header">
         <a href="#scroll" class="peripherals-title-link">
             <h1 id="peripherals" class="peripherals-title">
@@ -2228,17 +2388,7 @@ function hw_peripherals_and_gear() {
 
     <div class="peripherals-container">
         <div class="peripherals-grid">
-            <?php
-            function hw_Link($hw, $en, $es) {
-                echo $hw === 'en' ? $en : ($hw === 'es' ? $es : 'ERROR');
-            }
-            function hw_alt($hw, $en, $es) {
-                echo $hw === 'en' ? $en : ($hw === 'es' ? $es : 'ERROR');
-            }
-            function hw_title($hw, $en, $es) {
-                echo $hw === 'en' ? $en : ($hw === 'es' ? $es : 'ERROR');
-            }
-            ?>
+
 
             <div class="peripheral-card" data-type="input" tabindex="0">
                 <a class="peripheral-link" href="<?= hw_Link($hw, $en='?mouse', $es='?ratón'); ?>">
@@ -2555,170 +2705,11 @@ function hw_peripherals_and_gear() {
         </div>
 
     </section>
-            <style>/* Peripherals Section Styling */
-.peripherals-section {
-    padding: 3rem 1rem;
-    background-color: #f8f9fa;
-    margin-top: 2rem;
-}
-
-.peripherals-header {
-    text-align: center;
-    margin-bottom: 2.5rem;
-}
-
-.peripherals-title-link {
-    text-decoration: none;
-    color: inherit;
-    transition: color 0.3s ease;
-}
-
-.peripherals-title-link:hover {
-    color: #0056b3;
-}
-
-.peripherals-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #333;
-    position: relative;
-    display: inline-block;
-    padding-bottom: 0.5rem;
-}
-
-.peripherals-title:after {
-    content: '';
-    position: absolute;
-    width: 50%;
-    height: 3px;
-    background: linear-gradient(90deg, #0056b3, #00c6ff);
-    bottom: 0;
-    left: 25%;
-    border-radius: 2px;
-}
-
-.peripherals-container {
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.peripherals-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1rem;
-}
-
-.peripheral-card {
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-}
-
-.peripheral-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-.peripheral-card:focus-within {
-    outline: 3px solid #0056b3;
-}
-
-.peripheral-card[data-type="input"] {
-    border-top: 4px solid #2ecc71;
-}
-
-.peripheral-card[data-type="output"] {
-    border-top: 4px solid #e74c3c;
-}
-
-.peripheral-card[data-type="storage"] {
-    border-top: 4px solid #f39c12;
-}
-
-.peripheral-card[data-type="component"] {
-    border-top: 4px solid #9b59b6;
-}
-
-.peripheral-card[data-type="power"] {
-    border-top: 4px solid #e67e22;
-}
-
-.peripheral-card[data-type="cooling"] {
-    border-top: 4px solid #3498db;
-}
-
-.peripheral-card[data-type="graphics"] {
-    border-top: 4px solid #1abc9c;
-}
-
-.peripheral-card[data-type="audio"] {
-    border-top: 4px solid #8e44ad;
-}
-
-.peripheral-card[data-type="gaming"] {
-    border-top: 4px solid #e84393;
-}
-
-.peripheral-card[data-type="mobile"] {
-    border-top: 4px solid #00cec9;
-}
-
-.peripheral-card.featured {
-    grid-column: span 2;
-}
-
-.peripheral-link {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    height: 100%;
-}
-
-.peripheral-content {
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.peripheral-name {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #333;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-.peripheral-image {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    border-radius: 8px;
-}
-
-.peripheral-image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.peripheral-card:hover .peripheral-image img {
-    transform: scale(1.05);
-}
-                </style>
     <?php
-
 }
 
-
-
-include 'anvil/structure.php';
+function hw_mouse(){
+    echo "hello?";
+}
+    include 'anvil/structure.php';
 ?>

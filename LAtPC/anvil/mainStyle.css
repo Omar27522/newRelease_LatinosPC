@@ -156,6 +156,11 @@ header small.rtl {
 /* ===================================
    IMAGES STYLES
 =================================== */
+img {
+    background-color: var(--background);
+    padding: 10px;
+    border: 1px solid #b7b7b7;
+}
 .fl {
   margin: 4px 16px 4px 0;
   float: left;
