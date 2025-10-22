@@ -288,16 +288,49 @@ function hardware_options($sub_route){
 			$description = 'CPU Description';
 			include 'hardware/hardware.php';
 			break;
+		case 'ram':
+			$page = new Structure('../../', 'english', 'HW RAM');
+			$keywords = 'RAM Keywords';
+			$description = 'RAM Description';
+			include 'hardware/hardware.php';
+			break;
+		case 'motherboard':
+			$page = new Structure('../../', 'english', 'HW Motherboard');
+			$keywords = 'Motherboard Keywords';
+			$description = 'Motherboard Description';
+			include 'hardware/hardware.php';
+			break;
+		case 'chassis':
+			$page = new Structure('../../', 'english', 'HW Chassis');
+			$keywords = 'Chassis Keywords';
+			$description = 'Chassis Description';
+			include 'hardware/hardware.php';
+			break;
 		case 'storage':
 			$page = new Structure('../../', 'english', 'HW Storage');
 			$keywords = 'Storage Keywords';
 			$description = 'Storage Description';
 			include 'hardware/hardware.php';
 			break;
-		case 'psu':
+		case 'powersupply':
+			case 'psu':
 			$page = new Structure('../../', 'english', 'HW PSU');
 			$keywords = 'PSU Keywords';
 			$description = 'PSU Description';
+			include 'hardware/hardware.php';
+			break;
+		case 'graphicscard':
+			case 'gpu':
+			$page = new Structure('../../', 'english', 'HW GPU');
+			$keywords = 'GPU Keywords';
+			$description = 'GPU Description';
+			include 'hardware/hardware.php';
+			break;
+		case 'coolers':
+			case 'cooling':
+			$page = new Structure('../../', 'english', 'HW Cooling');
+			$keywords = 'Cooling Keywords';
+			$description = 'Cooling Description';
 			include 'hardware/hardware.php';
 			break;
 		case 'input_devices':
@@ -336,22 +369,16 @@ function hardware_options($sub_route){
 			$description = 'Monitor Description';
 			include 'hardware/hardware.php';
 			break;
-		case 'external_drive':
+		case 'p_memory':
 			$page = new Structure('../../', 'english', 'HW External Drive');
 			$keywords = 'External Drive Keywords';
 			$description = 'External Drive Description';
 			include 'hardware/hardware.php';
 			break;
-		case 'pci_cards':
+		case 'pci':
 			$page = new Structure('../../', 'english', 'HW PCI Cards');
 			$keywords = 'PCI Cards Keywords';
 			$description = 'PCI Cards Description';
-			include 'hardware/hardware.php';
-			break;
-		case 'gpu':
-			$page = new Structure('../../', 'english', 'HW GPU');
-			$keywords = 'GPU Keywords';
-			$description = 'GPU Description';
 			include 'hardware/hardware.php';
 			break;
 		case 'scanners':
