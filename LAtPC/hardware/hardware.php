@@ -1,7 +1,144 @@
 <?php
 function cssStyles()    {
+
+    if(str_contains($_SERVER['REQUEST_URI'], 'hardware')){
     ?>
     <style>
+    .article {
+        color:rgb(54, 42, 54);
+        border-radius: 10px;
+    }
+
+    .hardware-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        padding: 1rem;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .hardware-card {
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        overflow: hidden;
+        position: relative;
+        height: 100%;
+    }
+
+    .hardware-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .hardware-card.featured {
+        grid-column: span 2;
+    }
+
+    .card-link {
+        display: block;
+        text-decoration: none;
+        color: #383a3b;
+        height: 100%;
+        padding: 1.5rem;
+    }
+
+    .hardware-card h2 {
+        margin-top: 0;
+        font-size: 1.4rem;
+        color: #2a2d34;
+        margin-bottom: 0.8rem;
+        position: relative;
+    }
+
+    .hardware-card h2::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 50px;
+        height: 3px;
+        background: linear-gradient(90deg, #4a6fa5, #6b8cbe);
+    }
+
+    .hardware-card p {
+        color: #555;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+
+    .card-image {
+        margin-top: auto;
+        text-align: center;
+    }
+
+    .card-image img {
+        max-height: 150px;
+        object-fit: contain;
+        transition: transform 0.5s ease;
+    }
+
+    .hardware-card:hover .card-image img {
+        transform: scale(1.05);
+    }
+
+    .hardware-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .hardware-logo img {
+        max-width: 100%;
+        max-height: 120px;
+        transition: transform 0.3s ease;
+    }
+
+    .hardware-logo img:hover {
+        transform: scale(1.1);
+    }
+
+    [data-component="cpu"] { border-top: 4px solid #4a6fa5; }
+    [data-component="ram"] { border-top: 4px solid #6b8cbe; }
+    [data-component="ssd"] { border-top: 4px solid #4a6fa5; }
+    [data-component="motherboard"] { border-top: 4px solid #6b8cbe; }
+    [data-component="psu"] { border-top: 4px solid #4a6fa5; }
+    [data-component="gpu"] { border-top: 4px solid #6b8cbe; }
+    [data-component="chassis"] { border-top: 4px solid #4a6fa5; }
+    [data-component="cooling"] { border-top: 4px solid #6b8cbe; }
+    [data-component="io"] { border-top: 4px solid #4a6fa5; }
+    [data-component="peripherals"] { border-top: 4px solid #6b8cbe; }
+
+    @media (max-width: 768px) {
+        .hardware-grid {
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        }
+
+        .hardware-card.featured {
+            grid-column: auto;
+        }
+    }
+    .newspaper2 li {
+        font-size: x-large;
+        line-height: 1.5;
+        break-inside: avoid;
+    }
+
+    .newspaper2 li a {
+        width: 100%;
+    }
+
+    /* Peripherals Section Styling */
+    .peripherals-section {
+        padding: 3rem 1rem;
+        background-color: #f8f9fa;
+        margin-top: 2rem;
+    }
+
     .peripherals-header {
         text-align: center;
         margin-bottom: 2.5rem;
@@ -153,9 +290,566 @@ function cssStyles()    {
     .peripheral-card:hover .peripheral-image img {
         transform: scale(1.05);
     }
+
+    @media (max-width: 768px) {
+        .peripherals-grid {
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
+
+        .peripheral-card.featured {
+            grid-column: auto;
+        }
+
+        .peripherals-title {
+            font-size: 2rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .peripherals-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .peripheral-content {
+            padding: 1rem;
+        }
+
+        .peripherals-title {
+            font-size: 1.75rem;
+        }
+    }
+    .hero3.article {
+        padding: 20px;
+        margin: 15px 0;
+        border-radius: 5px;
+    }
+    .hero3.article div {
+        padding: 15px;
+        border-radius: 3px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    </style>
+    
+    <?php
+    }
+
+    if(str_contains($_SERVER['REQUEST_URI'], 'cpu')){
+        ?>
+
+        <style>
+        /* CPU Page Modern Styling
+       Created: June 23, 2025
+       A modern, clean design for the CPU hardware section
+         */
+
+         /* Modern CPU styling */
+         .hero3,
+         .hero4,
+         .article,
+         .container,
+         .ex_menu,
+         .colms2,
+         button,
+         .card2,
+         .spacer_shape {
+             /* CSS Variables applied to specific elements */
+             --primary-color: #2c3e50;
+             --secondary-color: #3498db;
+             --accent-color: #e74c3c;
+             --light-bg: #bac3cc;
+             --dark-bg: #343a40;
+             --text-color: #333;
+             --light-text: #305a84;
+             --intel-blue: #0071c5;
+             --amd-red: #ED1C24;
+             --qualcomm-color: #3253DC;
+             --samsung-color: #1428A0;
+             --apple-color: #555555;
+             --huawei-color: #CF0A2C;
+             --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+             --transition: all 0.3s ease;
+
+             /* Base styles applied to elements */
+             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+             line-height: 1.6;
+         }
+     
+         /* Container */
+         .container {
+             max-width: 1200px;
+             margin: 0 auto;
+             padding: 20px;
+             width: 100%;
+             box-sizing: border-box;
+         }
+     
+         /* Hero sections */
+         .hero3,
+         .hero4 {
+             padding: 40px 0;
+             margin-bottom: 30px;
+             border-radius: 8px;
+             box-shadow: var(--box-shadow);
+             transition: var(--transition);
+         }
+     
+         .hero3 {
+             background-color: #e8f4ea !important;
+             /* Replacing DarkSeaGreen with a more modern shade */
+         }
+     
+         .hero4 {
+             background-color: #f9f5eb !important;
+             /* Replacing wheat with a more modern shade */
+         }
+     
+         /* Article sections */
+         .article {
+             padding: 25px;
+             margin-bottom: 30px;
+             background-color: white;
+             border-radius: 8px;
+             box-shadow: var(--box-shadow);
+         }
+     
+         /* Menu styling */
+         .ex_menu {
+             list-style-type: none;
+             padding: 0;
+             margin: 20px 0;
+         }
+     
+         .ex_menu li {
+             margin-bottom: 15px;
+             transition: var(--transition);
+         }
+     
+         .ex_menu li:hover {
+             transform: translateX(5px);
+         }
+     
+         /* Center menu with large text */
+         .ex_menu[style*="text-align:center"] {
+             display: flex;
+             justify-content: center;
+             flex-wrap: wrap;
+             gap: 15px;
+             padding-bottom: 20px;
+         }
+     
+         .ex_menu[style*="text-align:center"] li {
+             display: inline-block;
+             font-size: 2rem !important;
+             margin: 0 10px;
+         }
+     
+         /* Links */
+         a {
+             color: var(--secondary-color);
+             text-decoration: none;
+             transition: var(--transition);
+         }
+     
+         a:hover {
+             color: var(--accent-color);
+             text-decoration: underline;
+         }
+     
+         /* Headings */
+         h2 {
+             color: var(--primary-color);
+             margin-top: 30px;
+             margin-bottom: 15px;
+             font-weight: 600;
+             border-bottom: 2px solid var(--secondary-color);
+             padding-bottom: 8px;
+             display: inline-block;
+         }
+     
+         /* Images */
+         img.fl {
+             float: left;
+             margin-right: 15px;
+             margin-bottom: 10px;
+             border-radius: 50%;
+             box-shadow: var(--box-shadow);
+         }
+     
+         img.rtl {
+             float: right;
+             margin-left: 15px;
+             margin-bottom: 10px;
+             border-radius: 8px;
+             box-shadow: var(--box-shadow);
+         }
+     
+         /* Two column layout */
+         .colms2 {
+             display: grid;
+             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+             gap: 25px;
+             margin: 30px 0;
+         }
+     
+         /* Buttons */
+         button {
+             background-color: var(--secondary-color);
+             color: white;
+             border: none;
+             border-radius: 6px;
+             padding: 12px 20px;
+             cursor: pointer;
+             transition: var(--transition);
+             font-weight: 600;
+             box-shadow: var(--box-shadow);
+         }
+     
+         button:hover {
+             background-color: var(--primary-color);
+             transform: translateY(-3px);
+         }
+     
+         button[style*="padding:40px"] {
+             background-color: var(--amd-red);
+             font-size: 1.5rem !important;
+             padding: 20px 40px !important;
+             border-radius: 8px;
+         }
+     
+         /* Button red style */
+         .button_red {
+             color: white;
+             background-color: var(--amd-red);
+             padding: 15px;
+             border-radius: 6px;
+             margin: 0;
+         }
+     
+         /* Card styles */
+         .card2 {
+             background-color: white;
+             border-radius: 8px;
+             padding: 20px;
+             box-shadow: var(--box-shadow);
+             transition: var(--transition);
+         }
+     
+         .card2:hover {
+             transform: translateY(-5px);
+             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+         }
+     
+         /* Spacers */
+         .spacer {
+             height: 30px;
+         }
+     
+         .spacer_mega {
+             height: 60px;
+         }
+     
+         .spacer_shape {
+             padding: 20px;
+             margin: 30px 0;
+             background-color: rgba(255, 255, 255, 0.7);
+             border-radius: 8px;
+             box-shadow: var(--box-shadow);
+         }
+     
+         /* Horizontal rule */
+         hr {
+             border: none;
+             height: 2px;
+             background-color: var(--secondary-color);
+             margin: 30px 0;
+             opacity: 0.5;
+         }
+     
+         /* Brand-specific styles */
+         .intelletters {
+             color: var(--intel-blue);
+             font-weight: 600;
+         }
+     
+         .amdletters {
+             color: var(--amd-red);
+             font-weight: 600;
+         }
+     
+         .amdred {
+             color: var(--amd-red);
+             font-weight: 700;
+             text-decoration: none;
+         }
+     
+         .amdred:hover {
+             text-decoration: underline;
+         }
+     
+         .qualcomm {
+             color: var(--qualcomm-color);
+         }
+     
+         .samsung {
+             color: var(--samsung-color);
+         }
+     
+         .apple {
+             color: var(--apple-color);
+         }
+     
+         .huawei {
+             color: var(--huawei-color);
+         }
+     
+         /* Responsive design */
+         @media (max-width: 768px) {
+             .colms2 {
+                 grid-template-columns: 1fr;
+             }
+         
+             .ex_menu[style*="text-align:center"] {
+                 flex-direction: column;
+                 align-items: center;
+             }
+         
+             .ex_menu[style*="text-align:center"] li {
+                 margin: 5px 0;
+             }
+         
+             b button[style*="padding:40px"] {
+                 padding: 15px 30px !important;
+                 font-size: 1.2rem !important;
+             }
+         
+             .spacer_mega {
+                 height: 40px;
+             }
+         }
+     
+         /* Animations */
+         @keyframes fadeIn {
+             from {
+                 opacity: 0;
+             }
+         
+             to {
+                 opacity: 1;
+             }
+         }
+     
+         .hero3,
+         .hero4,
+         .article {
+             animation: fadeIn 0.5s ease-in-out;
+         }
+     
+         /* Remove inline styles */
+         [style*="font-size: xx-large;color:red;"] {
+             font-size: 1.8rem !important;
+             color: var(--accent-color) !important;
+             font-weight: 700;
+             margin-top: 30px;
+             margin-bottom: 15px;
+         }
+     
+         /* Additional modern touches */
+         .ex_menu a {
+             position: relative;
+             overflow: hidden;
+         }
+     
+         .ex_menu a::after {
+             content: '';
+             position: absolute;
+             bottom: 0;
+             left: 0;
+             width: 0;
+             height: 2px;
+             background-color: var(--accent-color);
+             transition: width 0.3s ease;
+         }
+     
+         .ex_menu a:hover::after {
+             width: 100%;
+         }
+     
+         /* Focus states for accessibility */
+         a:focus,
+         button:focus {
+             outline: 3px solid rgba(52, 152, 219, 0.5);
+             outline-offset: 3px;
+         }
+     
+         header span {
+             color: rgb(53, 97, 135);
+         }
+         </style>
+         <?php
+         }
+     
+         else{
+         ?>
+         <style>
+         .peripherals-header {
+             text-align: center;
+             margin-bottom: 2.5rem;
+         }
+     
+         .peripherals-title-link {
+             text-decoration: none;
+             color: inherit;
+             transition: color 0.3s ease;
+         }
+     
+         .peripherals-title-link:hover {
+             color: #0056b3;
+         }
+     
+         .peripherals-title {
+             font-size: 2.5rem;
+             font-weight: 700;
+             color: #333;
+             position: relative;
+             display: inline-block;
+             padding-bottom: 0.5rem;
+         }
+     
+         .peripherals-title:after {
+             content: '';
+             position: absolute;
+             width: 50%;
+             height: 3px;
+             background: linear-gradient(90deg, #0056b3, #00c6ff);
+             bottom: 0;
+             left: 25%;
+             border-radius: 2px;
+         }
+     
+         .peripherals-container {
+             max-width: 1400px;
+             margin: 0 auto;
+         }
+     
+         .peripherals-grid {
+             display: grid;
+             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+             gap: 1.5rem;
+             margin-top: 1rem;
+         }
+     
+         .peripheral-card {
+             background-color: #fff;
+             border-radius: 12px;
+             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+             overflow: hidden;
+             transition: transform 0.3s ease, box-shadow 0.3s ease;
+             position: relative;
+         }
+     
+         .peripheral-card:hover {
+             transform: translateY(-5px);
+             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+         }
+     
+         .peripheral-card:focus-within {
+             outline: 3px solid #0056b3;
+         }
+     
+         .peripheral-card[data-type="input"] {
+             border-top: 4px solid #2ecc71;
+         }
+     
+         .peripheral-card[data-type="output"] {
+             border-top: 4px solid #e74c3c;
+         }
+     
+         .peripheral-card[data-type="storage"] {
+             border-top: 4px solid #f39c12;
+         }
+     
+         .peripheral-card[data-type="component"] {
+             border-top: 4px solid #9b59b6;
+         }
+     
+         .peripheral-card[data-type="power"] {
+             border-top: 4px solid #e67e22;
+         }
+     
+         .peripheral-card[data-type="cooling"] {
+             border-top: 4px solid #3498db;
+         }
+     
+         .peripheral-card[data-type="graphics"] {
+             border-top: 4px solid #1abc9c;
+         }
+     
+         .peripheral-card[data-type="audio"] {
+             border-top: 4px solid #8e44ad;
+         }
+     
+         .peripheral-card[data-type="gaming"] {
+             border-top: 4px solid #e84393;
+         }
+     
+         .peripheral-card[data-type="mobile"] {
+             border-top: 4px solid #00cec9;
+         }
+     
+         .peripheral-card.featured {
+             grid-column: span 2;
+         }
+     
+         .peripheral-link {
+             text-decoration: none;
+             color: inherit;
+             display: block;
+             height: 100%;
+         }
+     
+         .peripheral-content {
+             padding: 1.5rem;
+             display: flex;
+             flex-direction: column;
+             height: 100%;
+         }
+     
+         .peripheral-name {
+             font-size: 1.25rem;
+             font-weight: 600;
+             color: #333;
+             margin-top: 0;
+             margin-bottom: 1rem;
+             text-align: center;
+         }
+     
+         .peripheral-image {
+             flex-grow: 1;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             overflow: hidden;
+             border-radius: 8px;
+         }
+     
+         .peripheral-image img {
+             width: 100%;
+             height: auto;
+             object-fit: cover;
+             transition: transform 0.5s ease;
+         }
+     
+         .peripheral-card:hover .peripheral-image img {
+             transform: scale(1.05);
+         }
                     </style>
 
-    <?php
+        <?php
+    }
+
+    //if(str_contains($_SERVER['REQUEST_URI'], 'ram')){
+
+    
 }
 
 function hw_hardware() {
@@ -615,7 +1309,7 @@ function hw_hardware() {
             </div>
 
             <div class="peripheral-card" data-type="gaming" tabindex="0">
-                <a class="peripheral-link" href="./cc">
+                <a class="peripheral-link" href="./console_controllers">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[10]) ? $perifericos[10] : $peripherals[10]; ?></h3>
                         <div class="peripheral-image">
@@ -804,332 +1498,6 @@ function hw_hardware() {
 
     </section>
     </article>
-    <style>
-    .article {
-        color:rgb(54, 42, 54);
-        border-radius: 10px;
-    }
-
-    .hardware-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 1.5rem;
-        padding: 1rem;
-        max-width: 1400px;
-        margin: 0 auto;
-    }
-
-    .hardware-card {
-        background-color: #ffffff;
-        border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        overflow: hidden;
-        position: relative;
-        height: 100%;
-    }
-
-    .hardware-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    }
-
-    .hardware-card.featured {
-        grid-column: span 2;
-    }
-
-    .card-link {
-        display: block;
-        text-decoration: none;
-        color: #383a3b;
-        height: 100%;
-        padding: 1.5rem;
-    }
-
-    .hardware-card h2 {
-        margin-top: 0;
-        font-size: 1.4rem;
-        color: #2a2d34;
-        margin-bottom: 0.8rem;
-        position: relative;
-    }
-
-    .hardware-card h2::after {
-        content: '';
-        position: absolute;
-        bottom: -5px;
-        left: 0;
-        width: 50px;
-        height: 3px;
-        background: linear-gradient(90deg, #4a6fa5, #6b8cbe);
-    }
-
-    .hardware-card p {
-        color: #555;
-        font-size: 0.95rem;
-        line-height: 1.5;
-        margin-bottom: 1rem;
-    }
-
-    .card-image {
-        margin-top: auto;
-        text-align: center;
-    }
-
-    .card-image img {
-        max-height: 150px;
-        object-fit: contain;
-        transition: transform 0.5s ease;
-    }
-
-    .hardware-card:hover .card-image img {
-        transform: scale(1.05);
-    }
-
-    .hardware-logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
-    }
-
-    .hardware-logo img {
-        max-width: 100%;
-        max-height: 120px;
-        transition: transform 0.3s ease;
-    }
-
-    .hardware-logo img:hover {
-        transform: scale(1.1);
-    }
-
-    [data-component="cpu"] { border-top: 4px solid #4a6fa5; }
-    [data-component="ram"] { border-top: 4px solid #6b8cbe; }
-    [data-component="ssd"] { border-top: 4px solid #4a6fa5; }
-    [data-component="motherboard"] { border-top: 4px solid #6b8cbe; }
-    [data-component="psu"] { border-top: 4px solid #4a6fa5; }
-    [data-component="gpu"] { border-top: 4px solid #6b8cbe; }
-    [data-component="chassis"] { border-top: 4px solid #4a6fa5; }
-    [data-component="cooling"] { border-top: 4px solid #6b8cbe; }
-    [data-component="io"] { border-top: 4px solid #4a6fa5; }
-    [data-component="peripherals"] { border-top: 4px solid #6b8cbe; }
-
-    @media (max-width: 768px) {
-        .hardware-grid {
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        }
-
-        .hardware-card.featured {
-            grid-column: auto;
-        }
-    }
-    .newspaper2 li {
-        font-size: x-large;
-        line-height: 1.5;
-        break-inside: avoid;
-    }
-
-    .newspaper2 li a {
-        width: 100%;
-    }
-
-    /* Peripherals Section Styling */
-    .peripherals-section {
-        padding: 3rem 1rem;
-        background-color: #f8f9fa;
-        margin-top: 2rem;
-    }
-
-    .peripherals-header {
-        text-align: center;
-        margin-bottom: 2.5rem;
-    }
-
-    .peripherals-title-link {
-        text-decoration: none;
-        color: inherit;
-        transition: color 0.3s ease;
-    }
-
-    .peripherals-title-link:hover {
-        color: #0056b3;
-    }
-
-    .peripherals-title {
-        font-size: 2.5rem;
-        font-weight: 700;
-        color: #333;
-        position: relative;
-        display: inline-block;
-        padding-bottom: 0.5rem;
-    }
-
-    .peripherals-title:after {
-        content: '';
-        position: absolute;
-        width: 50%;
-        height: 3px;
-        background: linear-gradient(90deg, #0056b3, #00c6ff);
-        bottom: 0;
-        left: 25%;
-        border-radius: 2px;
-    }
-
-    .peripherals-container {
-        max-width: 1400px;
-        margin: 0 auto;
-    }
-
-    .peripherals-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 1.5rem;
-        margin-top: 1rem;
-    }
-
-    .peripheral-card {
-        background-color: #fff;
-        border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-        overflow: hidden;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        position: relative;
-    }
-
-    .peripheral-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    }
-
-    .peripheral-card:focus-within {
-        outline: 3px solid #0056b3;
-    }
-
-    .peripheral-card[data-type="input"] {
-        border-top: 4px solid #2ecc71;
-    }
-
-    .peripheral-card[data-type="output"] {
-        border-top: 4px solid #e74c3c;
-    }
-
-    .peripheral-card[data-type="storage"] {
-        border-top: 4px solid #f39c12;
-    }
-
-    .peripheral-card[data-type="component"] {
-        border-top: 4px solid #9b59b6;
-    }
-
-    .peripheral-card[data-type="power"] {
-        border-top: 4px solid #e67e22;
-    }
-
-    .peripheral-card[data-type="cooling"] {
-        border-top: 4px solid #3498db;
-    }
-
-    .peripheral-card[data-type="graphics"] {
-        border-top: 4px solid #1abc9c;
-    }
-
-    .peripheral-card[data-type="audio"] {
-        border-top: 4px solid #8e44ad;
-    }
-
-    .peripheral-card[data-type="gaming"] {
-        border-top: 4px solid #e84393;
-    }
-
-    .peripheral-card[data-type="mobile"] {
-        border-top: 4px solid #00cec9;
-    }
-
-    .peripheral-card.featured {
-        grid-column: span 2;
-    }
-
-    .peripheral-link {
-        text-decoration: none;
-        color: inherit;
-        display: block;
-        height: 100%;
-    }
-
-    .peripheral-content {
-        padding: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-    }
-
-    .peripheral-name {
-        font-size: 1.25rem;
-        font-weight: 600;
-        color: #333;
-        margin-top: 0;
-        margin-bottom: 1rem;
-        text-align: center;
-    }
-
-    .peripheral-image {
-        flex-grow: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        border-radius: 8px;
-    }
-
-    .peripheral-image img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        transition: transform 0.5s ease;
-    }
-
-    .peripheral-card:hover .peripheral-image img {
-        transform: scale(1.05);
-    }
-
-    @media (max-width: 768px) {
-        .peripherals-grid {
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        }
-
-        .peripheral-card.featured {
-            grid-column: auto;
-        }
-
-        .peripherals-title {
-            font-size: 2rem;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .peripherals-grid {
-            grid-template-columns: 1fr;
-        }
-
-        .peripheral-content {
-            padding: 1rem;
-        }
-
-        .peripherals-title {
-            font-size: 1.75rem;
-        }
-    }
-    .hero3.article {
-        padding: 20px;
-        margin: 15px 0;
-        border-radius: 5px;
-    }
-    .hero3.article div {
-        padding: 15px;
-        border-radius: 3px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    </style>
     <?php
 }
 
@@ -1309,355 +1677,7 @@ function hw_cpu()  {
             $update = ['Last Update:7/19/2023'];
 
     ?>
-    <style>
-    /* CPU Page Modern Styling
-       Created: June 23, 2025
-       A modern, clean design for the CPU hardware section
-    */
-
-    /* Modern CPU styling */
-    .hero3,
-    .hero4,
-    .article,
-    .container,
-    .ex_menu,
-    .colms2,
-    button,
-    .card2,
-    .spacer_shape {
-        /* CSS Variables applied to specific elements */
-        --primary-color: #2c3e50;
-        --secondary-color: #3498db;
-        --accent-color: #e74c3c;
-        --light-bg: #bac3cc;
-        --dark-bg: #343a40;
-        --text-color: #333;
-        --light-text: #305a84;
-        --intel-blue: #0071c5;
-        --amd-red: #ED1C24;
-        --qualcomm-color: #3253DC;
-        --samsung-color: #1428A0;
-        --apple-color: #555555;
-        --huawei-color: #CF0A2C;
-        --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        --transition: all 0.3s ease;
-
-        /* Base styles applied to elements */
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.6;
-    }
-
-    /* Container */
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    /* Hero sections */
-    .hero3,
-    .hero4 {
-        padding: 40px 0;
-        margin-bottom: 30px;
-        border-radius: 8px;
-        box-shadow: var(--box-shadow);
-        transition: var(--transition);
-    }
-
-    .hero3 {
-        background-color: #e8f4ea !important;
-        /* Replacing DarkSeaGreen with a more modern shade */
-    }
-
-    .hero4 {
-        background-color: #f9f5eb !important;
-        /* Replacing wheat with a more modern shade */
-    }
-
-    /* Article sections */
-    .article {
-        padding: 25px;
-        margin-bottom: 30px;
-        background-color: white;
-        border-radius: 8px;
-        box-shadow: var(--box-shadow);
-    }
-
-    /* Menu styling */
-    .ex_menu {
-        list-style-type: none;
-        padding: 0;
-        margin: 20px 0;
-    }
-
-    .ex_menu li {
-        margin-bottom: 15px;
-        transition: var(--transition);
-    }
-
-    .ex_menu li:hover {
-        transform: translateX(5px);
-    }
-
-    /* Center menu with large text */
-    .ex_menu[style*="text-align:center"] {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
-        padding-bottom: 20px;
-    }
-
-    .ex_menu[style*="text-align:center"] li {
-        display: inline-block;
-        font-size: 2rem !important;
-        margin: 0 10px;
-    }
-
-    /* Links */
-    a {
-        color: var(--secondary-color);
-        text-decoration: none;
-        transition: var(--transition);
-    }
-
-    a:hover {
-        color: var(--accent-color);
-        text-decoration: underline;
-    }
-
-    /* Headings */
-    h2 {
-        color: var(--primary-color);
-        margin-top: 30px;
-        margin-bottom: 15px;
-        font-weight: 600;
-        border-bottom: 2px solid var(--secondary-color);
-        padding-bottom: 8px;
-        display: inline-block;
-    }
-
-    /* Images */
-    img.fl {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px;
-        border-radius: 50%;
-        box-shadow: var(--box-shadow);
-    }
-
-    img.rtl {
-        float: right;
-        margin-left: 15px;
-        margin-bottom: 10px;
-        border-radius: 8px;
-        box-shadow: var(--box-shadow);
-    }
-
-    /* Two column layout */
-    .colms2 {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 25px;
-        margin: 30px 0;
-    }
-
-    /* Buttons */
-    button {
-        background-color: var(--secondary-color);
-        color: white;
-        border: none;
-        border-radius: 6px;
-        padding: 12px 20px;
-        cursor: pointer;
-        transition: var(--transition);
-        font-weight: 600;
-        box-shadow: var(--box-shadow);
-    }
-
-    button:hover {
-        background-color: var(--primary-color);
-        transform: translateY(-3px);
-    }
-
-    button[style*="padding:40px"] {
-        background-color: var(--amd-red);
-        font-size: 1.5rem !important;
-        padding: 20px 40px !important;
-        border-radius: 8px;
-    }
-
-    /* Button red style */
-    .button_red {
-        color: white;
-        background-color: var(--amd-red);
-        padding: 15px;
-        border-radius: 6px;
-        margin: 0;
-    }
-
-    /* Card styles */
-    .card2 {
-        background-color: white;
-        border-radius: 8px;
-        padding: 20px;
-        box-shadow: var(--box-shadow);
-        transition: var(--transition);
-    }
-
-    .card2:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    }
-
-    /* Spacers */
-    .spacer {
-        height: 30px;
-    }
-
-    .spacer_mega {
-        height: 60px;
-    }
-
-    .spacer_shape {
-        padding: 20px;
-        margin: 30px 0;
-        background-color: rgba(255, 255, 255, 0.7);
-        border-radius: 8px;
-        box-shadow: var(--box-shadow);
-    }
-
-    /* Horizontal rule */
-    hr {
-        border: none;
-        height: 2px;
-        background-color: var(--secondary-color);
-        margin: 30px 0;
-        opacity: 0.5;
-    }
-
-    /* Brand-specific styles */
-    .intelletters {
-        color: var(--intel-blue);
-        font-weight: 600;
-    }
-
-    .amdletters {
-        color: var(--amd-red);
-        font-weight: 600;
-    }
-
-    .amdred {
-        color: var(--amd-red);
-        font-weight: 700;
-        text-decoration: none;
-    }
-
-    .amdred:hover {
-        text-decoration: underline;
-    }
-
-    .qualcomm {
-        color: var(--qualcomm-color);
-    }
-
-    .samsung {
-        color: var(--samsung-color);
-    }
-
-    .apple {
-        color: var(--apple-color);
-    }
-
-    .huawei {
-        color: var(--huawei-color);
-    }
-
-    /* Responsive design */
-    @media (max-width: 768px) {
-        .colms2 {
-            grid-template-columns: 1fr;
-        }
-
-        .ex_menu[style*="text-align:center"] {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .ex_menu[style*="text-align:center"] li {
-            margin: 5px 0;
-        }
-
-        b button[style*="padding:40px"] {
-            padding: 15px 30px !important;
-            font-size: 1.2rem !important;
-        }
-
-        .spacer_mega {
-            height: 40px;
-        }
-    }
-
-    /* Animations */
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-
-    .hero3,
-    .hero4,
-    .article {
-        animation: fadeIn 0.5s ease-in-out;
-    }
-
-    /* Remove inline styles */
-    [style*="font-size: xx-large;color:red;"] {
-        font-size: 1.8rem !important;
-        color: var(--accent-color) !important;
-        font-weight: 700;
-        margin-top: 30px;
-        margin-bottom: 15px;
-    }
-
-    /* Additional modern touches */
-    .ex_menu a {
-        position: relative;
-        overflow: hidden;
-    }
-
-    .ex_menu a::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0;
-        height: 2px;
-        background-color: var(--accent-color);
-        transition: width 0.3s ease;
-    }
-
-    .ex_menu a:hover::after {
-        width: 100%;
-    }
-
-    /* Focus states for accessibility */
-    a:focus,
-    button:focus {
-        outline: 3px solid rgba(52, 152, 219, 0.5);
-        outline-offset: 3px;
-    }
-
-    header span {
-        color: rgb(53, 97, 135);
-    }
-    </style>
+    
 
     <section class="hero3 fulbar article" style="background-color:DarkSeaGreen;">
         <div class="container">
@@ -5778,6 +5798,70 @@ function hw_pci_cards() {
  
 
     <?php
+}
+
+function hw_scanners() {
+    echo "<h1 class=\"fullbar\">Scanners</h1>";
+}
+
+function hw_printers() {
+    echo "<h1 class=\"fullbar\">Printers</h1>";
+}
+
+function hw_console_controllers() {
+    echo "<h1 class=\"fullbar\">Console Controllers</h1>";
+}
+
+function hw_joysticks (){
+    echo "<h1 class=\"fullbar\">Joystick</h1>";
+}
+
+function hw_tablets (){
+    echo "<h1 class=\"fullbar\">Tablets</h1>";
+}
+
+function hw_microphones (){
+    echo "<h1 class=\"fullbar\">Microphones</h1>";
+}
+
+function hw_headsets () {
+    echo "<h1 class=\"fullbar\">Headsets</h1>";
+}
+
+function hw_headphones () {
+    echo "<h1 class=\"fullbar\">Headphones</h1>";
+}
+
+function hw_audio_mixers () {
+    echo "<h1 class=\"fullbar\">Audio Mixers</h1>";
+}
+
+function hw_controllers () {
+    echo "<h1 class=\"fullbar\">Controllers</h1>";
+}
+
+function hw_gaming_uniforms () {
+    echo "<h1 class=\"fullbar\">Gaming Uniforms</h1>";
+}
+
+function hw_pens_pencils_tablets () {
+    echo "<h1 class=\"fullbar\">Pens, Pencils, Tablets</h1>";
+}
+
+function hw_chairs () {
+    echo "<h1 class=\"fullbar\">Chairs</h1>";
+}
+
+function hw_desks () {
+    echo "<h1 class=\"fullbar\">Desks</h1>";
+}
+
+function hw_anti_slip_mats () {
+    echo "<h1 class=\"fullbar\">Anti Slip Mats</h1>";
+}
+
+function hw_speakers_and_subwoofers () {
+    echo "<h1 class=\"fullbar\">Speakers and Subwoofers</h1>";
 }
 
     include 'anvil/structure.php';
