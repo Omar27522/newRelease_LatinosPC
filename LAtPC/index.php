@@ -853,7 +853,7 @@ function content_home()
                 </div>
             </div>
             <p><?= $hardwarePeripheralsAndGear = $content[68]['content'];?></p>
-            <a href="../LAtPC/hardware_options/peripherals_and_gear" class="cta-button"><?= $visitPage = $content[54]['content'];?></a>
+            <a href="./hardware_options/peripherals_and_gear" class="cta-button"><?= $visitPage = $content[54]['content'];?></a>
     </div>
     </aside>
 

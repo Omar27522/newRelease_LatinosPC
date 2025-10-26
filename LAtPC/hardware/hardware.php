@@ -2127,16 +2127,119 @@ function cssStyles()    {
 
     if(str_contains($_SERVER['REQUEST_URI'], 'chair')){
         ?>
-            <style>
+            <style>.sub_title {
+                    font-size: xx-large;
+                    line-height: .9;
+                }
+                .sub_sub_title {
+                    font-size: x-large;
+                    line-height: .9;
+                }
+                .space {
+                    margin-bottom: 10px;
+                }
+                /*(-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´***/
 
-            </style>
+                .element, fieldset {  /* This are the UL elements */
+                    background-color: rgba(127, 255, 212, 0.316);
+                    padding: 10px;
+                    margin: 10px 0;
+                    border-radius: 20px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    border: 2px solid black;
+                    list-style: none;
+                    break-inside: avoid;
+                }
+                .element strong, .over_overlay {
+                    font-size: 22px;
+                    background-color: rgba(255, 10, 10, 0.38);
+                    border-radius: 25px;
+                }
+                .element :hover{
+                    background-color: rgba(255, 10, 10, 0.38);
+                    color: wheat;
+                    cursor: pointer;
+                }
+                dd:hover{
+                    background-color: rgba(255, 10, 10, 0.38);
+                    cursor: pointer;
+                }
+                .element :focus,dd:focus{/*Selected text stays selected*/
+                    background-color: rgba(255, 10, 10, 0.38);
+                    cursor: pointer;
+                    border-radius: 15px;
+                }
+                .element li {
+                    break-inside: avoid;
+                }
+                .element li p, dl {
+                    font-size: 16px;
+                    font-weight: 650;
+                }/* This are the UL elements */
+
+                /*(-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´***/
+
+                dl { /* This is the definition list */
+                    margin-top: 3px;
+                }
+                dl dt {
+                    margin-left: .5em;
+                }
+                dl dd {
+                    margin-left: 2em;
+                }
+                dd::before {
+                    content: "• ";
+                }/* This is the definition list */
+                /*
+
+                dt:hover,dt:focus {
+                    background-color: #000000;
+                color: #ffffff;
+                cursor: pointer;
+                }
+                (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´**
+
+                */
+                article legend{
+                    background-color: skyblue;
+                    padding: 10px;
+                    border-radius: 15px;
+                    border: 3px dotted black;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    color: whitesmoke;
+                    font-size: 22px;
+                }
+
+
+                /*(-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´***/
+                summary{
+                    display: inline;
+                }
+                .overlay {
+                    font-weight: 800;
+                    cursor: pointer;
+                    font-size: 25px;
+                    padding: 15px;
+                    border-radius: 15px;
+                }
+                .overlay > summary:hover {
+                    background: linear-gradient(0deg, rgba(2,0,36,1) 21%, rgb(45, 101, 243) 38%, rgba(0, 213, 255, 0.261) 74%);
+                    color:antiquewhite;
+                }
+                </style>
         <?php
     }
 
     if(str_contains($_SERVER['REQUEST_URI'], 'desk')){
         ?>
-            <style>
-
+            <style>.entrylevel{
+            transition: all 10s ease-in-out;
+            }
+            .card2 {
+            box-shadow: none;
+            transition: all 0.7s ease-in-out;
+            }
             </style>
         <?php
     }
@@ -2144,16 +2247,59 @@ function cssStyles()    {
     if(str_contains($_SERVER['REQUEST_URI'], 'antislipmats')){
         ?>
             <style>
-
+                fieldset {
+            border-radius: 10px;
+            }
+            strong, legend {
+                color:brown;
+            }
+            legend{
+            font-weight: 600;
+            font-size: larger;
+            }
+            .card2 {
+                box-shadow: none;
+            }
+            li strong { /*This is so the Strong is closer to the bullet, and give some space to the sentences <span>*/
+                position: relative;
+                left: -15px;
+            }
+            li{
+                margin-bottom: 10px;
+            }
             </style>
         <?php
     }
 
     if(str_contains($_SERVER['REQUEST_URI'], 'speakers_and_subwoofers')){
         ?>
-            <style>
+                    <style>
+            .speakers {
+            color:green;
+        }
 
-            </style>
+        .borderdl {
+            border: solid 7px transparent;
+            padding: 15px;
+            margin-bottom: 15px;
+            break-inside: avoid;
+        }
+
+        .borderdl:hover, .borderdl:focus{
+            border:dashed 7px rgba(43, 94, 157, 0.167);
+        }
+        dt {font-size: x-large;}
+
+        .article li{
+            margin-bottom:10%;
+        }
+        details {
+            break-inside: avoid-column;
+        }
+        .center {
+            margin-top: 10px;
+        }
+        </style>
         <?php
     }
    //if(str_contains($_SERVER['REQUEST_URI'], 'x'))
@@ -2183,33 +2329,7 @@ function hw_hardware() {
                 'I/O' =>  "Allow data to be input into the computer (such as a keyboard and mouse) and output from the computer (such as a display and speakers).&nbsp",
                 'Peripherals' =>  "Additional hardware connected to a computer, such as printers, scanners, and external hard drives.&nbsp"
              ];
-    $peripherals = [
-    "Mouse",
-    "Keyboard",
-    "Display",
-    "External Memory Drives",
-    "PCI Cards",
-    "Power Supply",
-    "Cooling",
-    "GPU",
-    "Scanners",
-    "Printers",
-    "Console Controllers",
-    "Joystick",
-    "Tablets",
-    "Microphones",
-    "Headsets",
-    "Headphones",
-    "Audio Mixers",
-    "Controllers",
-    "Gaming Uniforms",
-    "Pens, Pencils & Tablets",
-    "Chairs",
-    "Desks",
-    "Anti-Slip Mats",
-    "Speakers and Subwoofers",
-    "Peripherals",
-    ];
+    
     $peripherals = [
     "Mouse",
     "Keyboard",
@@ -4888,28 +5008,6 @@ function hw_output_devices() {
 }
 
 function hw_peripherals_and_gear() {
-    $title="<h2>The Hardware is the computer — it&#39;s physical components.</h2>";
-
-    $description ="<p>These components may include the computer&#39;s
-        functionality, design, materials, innovations, thermals, etc.<br />A computer is an electronic device that
-        manipulates data or information. It has the ability to store,retrieve, and process data.<p>     <!--https://unsplash.com/photos/2sILr4DwabQ-->
-        <h3><a href=\"https://latinospc.com/hardware/?anatomy_of_a_computer#navi\">The anatomy of a computer</a> typically includes,
-    <a href=\"https://latinospc.com//hardware/?notebooks#navi\">Laptops</a>, Portable, Smart Devices, Modular PC's, ETC.</h3>";
-
-    $contentSubTitles= ["Computer Parts",       "Central Processing Unit (CPU):",       "Memory (RAM):",        "Memory Storage Drive (hard drive, SSD):",
-                            "Motherboard:",        "Power Supply Unit (PSU):",      "GPU:",       "Chassis:",       "Coolers",      "Input/Output devices:", "Peripheral devices:"  ];
-
-    $content=['CPU' =>  "The \"brain\" of the computer, responsible for carrying out instructions of computer programs.",
-                'RAM' =>  "Stores data that the CPU uses in the short-term.",
-                    'HDD' =>  "Persistently stores data, even when the computer is powered off.",
-                        'Motherboard' =>  "The main circuit board in a computer, which houses the CPU, memory, and other components.&nbsp;",
-                            'PSU' =>  "Converts AC power from a wall outlet into DC power used by the computer.",
-                                'GPU' =>  "specialized Graphic Processing Unit (GPU) that handles the computational heavy lifting needed for tasks.&nbsp ",
-                                    'Chassis' =>  "Houses all the internal components a computer needs.",
-                                        'Coolers' =>  "Help to regulate the temperature of the central processing unit (CPU) and other critical components of the computer.",
-                'I/O' =>  "Allow data to be input into the computer (such as a keyboard and mouse) and output from the computer (such as a display and speakers).&nbsp",
-                'Peripherals' =>  "Additional hardware connected to a computer, such as printers, scanners, and external hard drives.&nbsp"
-             ];
     $peripherals = [
     "Mouse",
     "Keyboard",
@@ -4936,82 +5034,35 @@ function hw_peripherals_and_gear() {
     "Anti-Slip Mats",
     "Speakers and Subwoofers",
     "Peripherals",
-    ];
-    $peripherals = [
-    "Mouse",
-    "Keyboard",
-    "Display",
-    "External Memory Drives",
-    "PCI Cards",
-    "Power Supply",
-    "Cooling",
-    "GPU",
-    "Scanners",
-    "Printers",
-    "Console Controllers",
-    "Joystick",
-    "Tablets",
-    "Microphones",
-    "Headsets",
-    "Headphones",
-    "Audio Mixers",
-    "Controllers",
-    "Gaming Uniforms",
-    "Pens, Pencils & Tablets",
-    "Chairs",
-    "Desks",
-    "Anti-Slip Mats",
-    "Speakers and Subwoofers",
-    "Peripherals",
-    ];
-
-    $hardwareTitles = [
-        'cc'   => 'Console Controllers',
-        'cpu'  => 'CPU',
-        'ram'  => 'RAM',
-        'ssd'  => 'SSD',
-        'psu'  => 'PSU',
-        'gpu'  => 'Graphics Cards',
-        'pci'  => 'PCI Cards',
-        'mouse' => 'Mouse',
-        'desk'  => 'Desks',
-        'chair'  => 'Chairs',
-        'cooling'=> 'Cooling',
-        'tablet' => 'Tablets',
-        'micro'  => 'Microphones',
-        'monitor' => 'Display',
-        'headset' => 'Headsets',
-        'printer' => 'Printers',
-        'scanner' => 'Scanners',
-        'chassis'  => 'Computer Case',
-        'keyboard'  => 'Keyboard',
-        'joystick'  => 'Joysticks',
-        'headphone' => 'Headphones',
-        'p_memory'  => 'Portable Memory',
-        'controller' => 'Controllers',
-        'audiomixer' => 'Audio Mixers',
-        'motherboard' => 'Motherboard',
-        'pencil' => 'Pens, Pencils and Tablets',
-        'antislipmats' => 'Anti-Slip Mats',
-        'speakers_and_subwoofers' => 'Speakers and Subwoofers',
-        'team_uniformity_authority' => 'Uniforms'
     ];
     ?>
     <section class="peripherals-section fullbar">
     <div class="peripherals-header">
         <a href="#scroll" class="peripherals-title-link">
             <h1 id="peripherals" class="peripherals-title">
-                <?= empty($peripherals[24]) ? $perifericos[24] : $peripherals[24];?>
+                Peripherals
             </h1>
         </a>
     </div>
 
+    
+
     <div class="peripherals-container">
         <div class="peripherals-grid">
-
+            <?php
+            function hw_Link($hw, $en, $es) {
+                echo $hw === 'en' ? $en : ($hw === 'es' ? $es : 'ERROR');
+            }
+            function hw_alt($hw, $en, $es) {
+                echo $hw === 'en' ? $en : ($hw === 'es' ? $es : 'ERROR');
+            }
+            function hw_title($hw, $en, $es) {
+                echo $hw === 'en' ? $en : ($hw === 'es' ? $es : 'ERROR');
+            }
+            ?>
 
             <div class="peripheral-card" data-type="input" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?mouse', $es='?ratón'); ?>">
+                <a class="peripheral-link" href="./mouse">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= $mouse = empty($peripherals[0]) ? $perifericos[0] : $peripherals[0]; ?></h3>
                         <div class="peripheral-image">
@@ -5022,7 +5073,7 @@ function hw_peripherals_and_gear() {
             </div>
 
             <div class="peripheral-card" data-type="input" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?keyboard', $es='?teclado'); ?>">
+                <a class="peripheral-link" href="./keyboard">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= $keyboard = empty($peripherals[1]) ? $perifericos[1] : $peripherals[1]; ?></h3>
                         <div class="peripheral-image">
@@ -5033,7 +5084,7 @@ function hw_peripherals_and_gear() {
             </div>
 
             <div class="peripheral-card" data-type="output" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?monitor', $es='?pantalla'); ?>">
+                <a class="peripheral-link" href="./monitor">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[2]) ? $perifericos[2] : $peripherals[2]; ?></h3>
                         <div class="peripheral-image">
@@ -5046,7 +5097,7 @@ function hw_peripherals_and_gear() {
             </div>
 
             <div class="peripheral-card" data-type="storage" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?p_memory', $es='?memoria_externa'); ?>">
+                <a class="peripheral-link" href="./p_memory">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[3]) ? $perifericos[3] : $peripherals[3]; ?></h3>
                         <div class="peripheral-image">
@@ -5059,7 +5110,7 @@ function hw_peripherals_and_gear() {
             </div>
 
             <div class="peripheral-card" data-type="component" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?pci', $es='?tarjeta_pci'); ?>">
+                <a class="peripheral-link" href="./pci">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[4]) ? $perifericos[4] : $peripherals[4]; ?></h3>
                         <div class="peripheral-image">
@@ -5072,7 +5123,7 @@ function hw_peripherals_and_gear() {
             </div>
 
             <div class="peripheral-card" data-type="power" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?psu', $es='?fuente_de_poder'); ?>">
+                <a class="peripheral-link" href="./psu">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[5]) ? $perifericos[5] : $peripherals[5]; ?></h3>
                         <div class="peripheral-image">
@@ -5085,7 +5136,7 @@ function hw_peripherals_and_gear() {
             </div>
 
             <div class="peripheral-card" data-type="cooling" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?cooling', $es='?enfriamiento'); ?>">
+                <a class="peripheral-link" href="./cooling">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[6]) ? $perifericos[6] : $peripherals[6]; ?></h3>
                         <div class="peripheral-image">
@@ -5098,7 +5149,7 @@ function hw_peripherals_and_gear() {
             </div>
 
             <div class="peripheral-card" data-type="graphics" featured tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?gpu', $es='?tarjeta_grafica'); ?>">
+                <a class="peripheral-link" href="./gpu">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[7]) ? $perifericos[7] : $peripherals[7]; ?></h3>
                         <div class="peripheral-image">
@@ -5111,7 +5162,7 @@ function hw_peripherals_and_gear() {
             </div>
 
             <div class="peripheral-card" data-type="input" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?scanner', $es='?escáner'); ?>">
+                <a class="peripheral-link" href="./scanner">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[8]) ? $perifericos[8] : $peripherals[8]; ?></h3>
                         <div class="peripheral-image">
@@ -5124,7 +5175,7 @@ function hw_peripherals_and_gear() {
             </div>
 
             <div class="peripheral-card" data-type="output" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?printer', $es='?impresoras'); ?>">
+                <a class="peripheral-link" href="./printer">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[9]) ? $perifericos[9] : $peripherals[9]; ?></h3>
                         <div class="peripheral-image">
@@ -5137,7 +5188,7 @@ function hw_peripherals_and_gear() {
             </div>
 
             <div class="peripheral-card" data-type="gaming" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?cc', $es='?mando_de_consola'); ?>">
+                <a class="peripheral-link" href="./console_controllers">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[10]) ? $perifericos[10] : $peripherals[10]; ?></h3>
                         <div class="peripheral-image">
@@ -5150,7 +5201,7 @@ function hw_peripherals_and_gear() {
             </div>
 
             <div class="peripheral-card" data-type="gaming" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?joystick', $es='?joystick'); ?>">
+                <a class="peripheral-link" href="./joystick">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[11]) ? $perifericos[11] : $peripherals[11]; ?></h3>
                         <div class="peripheral-image">
@@ -5163,7 +5214,7 @@ function hw_peripherals_and_gear() {
             </div>
 
                               <div class="peripheral-card" data-type="input" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?tablet', $es='?tabletas'); ?>">
+                <a class="peripheral-link" href="./tablet">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[12]) ? $perifericos[12] : $peripherals[12]; ?></h3>
                         <div class="peripheral-image">
@@ -5176,7 +5227,7 @@ function hw_peripherals_and_gear() {
             </div>
 
             <div class="peripheral-card" data-type="audio" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?micro', $es='?micrófonos'); ?>">
+                <a class="peripheral-link" href="./micro">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[13]) ? $perifericos[13] : $peripherals[13]; ?></h3>
                         <div class="peripheral-image">
@@ -5189,7 +5240,7 @@ function hw_peripherals_and_gear() {
             </div>
 
             <div class="peripheral-card" data-type="audio" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?headset', $es='?headsets'); ?>">
+                <a class="peripheral-link" href="./headset">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[14]) ? $perifericos[14] : $peripherals[14]; ?></h3>
                         <div class="peripheral-image">
@@ -5202,7 +5253,7 @@ function hw_peripherals_and_gear() {
             </div>
 
             <div class="peripheral-card" data-type="audio" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?headphone', $es='?audífonos'); ?>">
+                <a class="peripheral-link" href="./headphone">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[15]) ? $perifericos[15] : $peripherals[15]; ?></h3>
                         <div class="peripheral-image">
@@ -5215,7 +5266,7 @@ function hw_peripherals_and_gear() {
             </div>
 
             <div class="peripheral-card" data-type="audio" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?audiomixer', $es='?mezcladora_de_audio'); ?>">
+                <a class="peripheral-link" href="./audiomixer">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[16]) ? $perifericos[16] : $peripherals[16]; ?></h3>
                         <div class="peripheral-image">
@@ -5228,7 +5279,7 @@ function hw_peripherals_and_gear() {
             </div>
 
             <div class="peripheral-card" data-type="gaming" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?controller', $es='?controladores'); ?>">
+                <a class="peripheral-link" href="./controller">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[17]) ? $perifericos[17] : $peripherals[17]; ?></h3>
                         <div class="peripheral-image">
@@ -5241,7 +5292,7 @@ function hw_peripherals_and_gear() {
             </div>
 
             <div class="peripheral-card" data-type="gaming" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?team_uniformity_authority', $es='?uniformes_gaming'); ?>">
+                <a class="peripheral-link" href="./uniforms">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[18]) ? $perifericos[18] : $peripherals[18]; ?></h3>
                         <div class="peripheral-image">
@@ -5254,7 +5305,7 @@ function hw_peripherals_and_gear() {
             </div>
 
             <div class="peripheral-card" data-type="input" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?pencil', $es='?lápices_plumas_tabletas'); ?>">
+                <a class="peripheral-link" href="./pencil">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[19]) ? $perifericos[19] : $peripherals[19]; ?></h3>
                         <div class="peripheral-image">
@@ -5267,7 +5318,7 @@ function hw_peripherals_and_gear() {
             </div>
 
             <div class="peripheral-card" data-type="furniture" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?chair', $es='?sillas'); ?>">
+                <a class="peripheral-link" href="./chair">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[20]) ? $perifericos[20] : $peripherals[20]; ?></h3>
                         <div class="peripheral-image">
@@ -5280,7 +5331,7 @@ function hw_peripherals_and_gear() {
             </div>
 
             <div class="peripheral-card" data-type="furniture" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?desk', $es='?escritorios'); ?>">
+                <a class="peripheral-link" href="./desk">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[21]) ? $perifericos[21] : $peripherals[21]; ?></h3>
                         <div class="peripheral-image">
@@ -5293,7 +5344,7 @@ function hw_peripherals_and_gear() {
             </div>
 
             <div class="peripheral-card" data-type="accessories" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?antislipmats', $es='?alfombrillas_antideslizantes'); ?>">
+                <a class="peripheral-link" href="./antislipmats">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[22]) ? $perifericos[22] : $peripherals[22]; ?></h3>
                         <div class="peripheral-image">
@@ -5306,7 +5357,7 @@ function hw_peripherals_and_gear() {
             </div>
 
             <div class="peripheral-card" data-type="audio" tabindex="0">
-                <a class="peripheral-link" href="<?= hw_Link($hw, $en='?speakers_and_subwoofers', $es='?bocinas_y_subwoofers'); ?>">
+                <a class="peripheral-link" href="./speakers_and_subwoofers">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= empty($peripherals[23]) ? $perifericos[23] : $peripherals[23]; ?></h3>
                         <div class="peripheral-image">
@@ -5323,7 +5374,6 @@ function hw_peripherals_and_gear() {
 
         </div>
         </div>
-
     </section>
     <?php
 }
@@ -12275,19 +12325,2114 @@ function hw_pens_pencils_tablets () {
 }
 
 function hw_chairs () {
-    echo "<h1 class=\"fullbar\">Chairs</h1>";
+    ?>
+        <article class="article fullbar"><!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
+        <a href="./#pheripherals" id="chair"><h1>Chairs</h1></a>
+        <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
+        <section>
+        <h2 class="sub_title">History and Evolution of Chairs:</h2>
+        <p class="sub_title spacer_shape">Chairs have a rich history that spans thousands of years. Here's a brief overview of their evolution:</p>
+
+        <ul class="element">
+        <div class="colms2 space">
+            <li>
+                <strong>Ancient Times:</strong>
+                <p tabindex="0">Early chairs were simple stools or benches made from materials like stone, wood, and animal hides.</p>
+                <p tabindex="0">These were often used by rulers, priests, and the wealthy.</p>
+            </li>
+            <li><strong>Egyptian and Greek Civilization:</strong>
+                <p tabindex="0">In ancient Egypt, chairs were symbols of status and were often adorned with intricate carvings.</p>
+                <p tabindex="0">Greek chairs were more functional and included designs like the klismos chair, known for its curved legs and backrest.</p>
+            </li>
+        </div>
+
+        <div class="colms2 space">
+            <li><strong>Roman Empire:</strong>
+                <p tabindex="0">Romans used folding chairs made of wood or metal, which were practical for both indoor and outdoor use.</p>
+                <p tabindex="0">These were often used in various social and official settings.</p>
+            </li>
+
+            <li><strong>Medieval and Renaissance Period:</strong>
+                <p tabindex="0">During the Middle Ages, chairs became more common among the general population.</p>
+                <p tabindex="0">In the Renaissance, chairs became more ornate and artistic, with elaborate carvings and upholstery.</p>
+            </li>
+        </div>
+
+        <div class="colms2 space">
+            <li><Strong>18th and 19th Centuries:</Strong>
+                <p tabindex="0">The 18th century saw the development of specialized chairs like the Windsor chair and the Chippendale chair.</p>
+                <p tabindex="0">The 19th century brought advancements in mass production techniques, making chairs more accessible.</p>
+            </li>
+            <li><strong>20th Century:</strong>
+                <p tabindex="0">Modernist movements like Art Nouveau and Art Deco influenced chair design in the early 20th century.</p>
+                <p tabindex="0">In the mid-20th century, iconic designs like the Eames Lounge Chair and the Barcelona Chair emerged, focusing on aesthetics and comfort.</p>
+            </li>
+        </div>
+
+            <li><strong>Contemporary Times:</strong>
+                <p tabindex="0">Today, chairs come in a vast array of styles, materials, and designs to cater to different preferences, ergonomic needs, and functions.</p>
+            </li>
+        </ul>
+        </section>
+
+        <section>
+        <p class="sub_title spacer_shape">What Computer Users Should Know:</p>
+        <div class="colms2">
+        <fieldset>
+        <legend>Entry Level Computer User:</legend>
+        <dl>
+            <hr><dt>Ergonomics:</dt><hr>
+                <dd tabindex="0">Understand the basics of ergonomic positioning for your monitor, keyboard, and chair to prevent discomfort and strain.</dd>
+                <dd tabindex="0">Your monitor should be at eye level, and your wrists should be straight while typing.</dd>
+
+            <hr><dt>Keyboard Shortcuts:</dt><hr>
+                <dd tabindex="0">Learn some essential keyboard shortcuts to increase your efficiency while using computers.</dd>
+                <dd tabindex="0">These can help you navigate, copy, paste, and perform other common tasks quickly.</dd>
+
+            <hr><dt>Basic Troubleshooting:</dt><hr>
+                <dd tabindex="0">Familiarize yourself with common computer issues like frozen programs, slow performance, or internet connectivity problems.</dd>
+                <dd tabindex="0">Knowing how to troubleshoot can save you time and frustration.</dd>
+        </dl>
+        </fieldset>
+
+        <fieldset>
+        <legend>Chair Enthusiast:</legend>
+        <dl>
+            <hr><dt>Ergonomic Design:</dt><hr>
+                <dd tabindex="0">Dive deeper into the world of ergonomic chairs.</dd>
+                <dd tabindex="0">Learn about features like adjustable lumbar support, armrests, and seat height that contribute to comfortable, healthy seating.</dd>
+
+            <hr><dt>Materials:</dt><hr>
+                <dd tabindex="0">Explore different chair materials such as mesh, leather, fabric, and more.</dd>
+                <dd tabindex="0">Understand the pros and cons of each material in terms of comfort, durability, and maintenance.</dd>
+
+            <hr><dt>Aesthetics:</dt><hr>
+                <dd tabindex="0">Study various chair designs and their historical and cultural influences.</dd>
+                <dd tabindex="0">This can help you appreciate the artistry behind chair manufacturing.</dd>
+        </dl>
+        </fieldset>
+        </div>
+        <div class="colms2">
+        <fieldset style="break-inside: avoid;">
+        <legend>Pro Computer User:</legend>
+        <dl>
+            <hr><dt>Advanced Keyboard Shortcuts:</dt><hr>
+                <dd tabindex="0">Master a broader range of keyboard shortcuts to enhance your workflow efficiency.</dd>
+                <dd tabindex="0">This includes shortcuts for specific software applications you use frequently.</dd>
+
+            <hr><dt>Multi-Monitor Setup:</dt><hr>
+                <dd tabindex="0">If applicable, learn how to optimize a multi-monitor setup for productivity.</dd>
+                <dd tabindex="0">This involves arranging screens, using virtual desktops, and moving windows efficiently.</dd>
+
+            <hr><dt>Backup and Security:</dt><hr>
+                <dd tabindex="0">Develop a robust backup strategy to protect your important data.</dd>
+                <dd tabindex="0">Understand the basics of cybersecurity, including using strong passwords and recognizing phishing attempts.</dd>
+
+            <hr><dt>Performance Optimization:</dt><hr>
+                <dd tabindex="0">Learn about system maintenance, such as clearing temporary files, updating drivers, and managing startup programs, to keep your computer running smoothly.</dd>
+        </dl>
+        </fieldset>
+        <div style="text-align: center; font-size: 30px; line-height: 85%; width: 85%;" class="center">
+        Remember that each user's needs and interests may vary, so it's important to tailor your knowledge to what's most relevant to you.
+        </div></div>
+        </section>
+        </article>
+        <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
+        <article class="article fullbar">
+        <section style="background-color: whitesmoke;">
+        <div class="spacer_shape">
+            <p class="sub_title" style="padding-right: 15px;">There are various types of computer chairs designed to cater to different needs and preferences.</p></div>
+            <p class="sub_sub_title">Here are some common types of computer chairs that a person should know about:</p>
+
+
+        <details class="overlay">
+            <summary class="overlay">Ergonomic Office Chair:</summary>
+            <ul class="element">
+                <li tabindex="0"><p>Designed for comfort and support during long periods of work.</p></li>
+                <li tabindex="0"><p>Features adjustable lumbar support, armrests, seat height, and recline options.</p></li>
+                <li tabindex="0"><p>Promotes proper posture and reduces strain on the spine and muscles.</p></li>
+                <li tabindex="0"><p>Ideal for people who spend extended hours working at a desk.</p></li>
+            </ul>
+        </details>
+        <details class="overlay">
+            <summary class="overlay">Gaming Chair:</summary>
+            <ul class="element">
+                <li tabindex="0"><p>Tailored for gamers who spend hours playing video games.</p></li>
+                <li tabindex="0"><p>Often equipped with ergonomic features like adjustable lumbar pillows and headrests.</p></li>
+                <li tabindex="0"><p>Stylish and sporty design, often with vibrant colors and racing-inspired aesthetics.</p></li>
+                <li tabindex="0"><p>Some models include built-in speakers, cup holders, and vibration feedback.</p></li>
+            </ul>
+        </details>
+        <details class="overlay">
+            <summary class="overlay">Mesh Office Chair:</summary>
+            <ul class="element">
+                <li tabindex="0"><p>Features a breathable mesh backrest for better ventilation and comfort.</p></li>
+                <li tabindex="0"><p>Suitable for those who prefer a cooler seating experience.</p></li>
+                <li tabindex="0"><p>Provides adequate support while maintaining airflow to prevent sweat buildup.</p></li>
+            </ul>
+        </details>
+        <details class="overlay">
+            <summary class="overlay">Executive Chair:</summary>
+            <ul class="element">
+                <li tabindex="0"><p>Designed for high-level executives and professionals.</p></li>
+                <li tabindex="0"><p>Typically larger and more luxurious, often made from premium materials like leather.</p></li>
+                <li tabindex="0"><p>Offers a sophisticated appearance and extra padding for extended comfort.</p></li>
+            </ul>
+        </details>
+        <details class="overlay">
+            <summary class="overlay">Kneeling Chair:</summary>
+            <ul class="element">
+                <li tabindex="0"><p>Promotes an open hip angle and encourages a more natural spinal alignment.</p></li>
+                <li tabindex="0"><p>Supports the body's weight on the shins and buttocks.</p></li>
+                <li tabindex="0"><p>May require an adjustment period for users not accustomed to this seating style.</p></li>
+            </ul>
+        </details>
+        <details class="overlay">
+            <summary class="overlay">Drafting Chair/Stool:</summary>
+            <ul class="element">
+                <li tabindex="0"><p>Designed for use at elevated surfaces like drafting tables or standing desks.</p></li>
+                <li tabindex="0"><p>Features a taller seat height and often includes a footrest.</p></li>
+                <li tabindex="0"><p>Allows users to maintain proper posture while working at higher surfaces.</p></li>
+            </ul>
+        </details>
+        <details class="overlay">
+            <summary class="overlay">Task Chair:</summary>
+            <ul class="element">
+                <li tabindex="0"><p>A basic and versatile chair suitable for a variety of tasks.</p></li>
+                <li tabindex="0"><p>Typically compact, with simple ergonomic adjustments.</p></li>
+                <li tabindex="0"><p>Ideal for users who switch between different activities throughout the day.</p></li>
+            </ul>
+        </details>
+        <details class="overlay">
+            <summary class="overlay">Swivel Chair:</summary>
+            <ul class="element">
+                <li tabindex="0"><p>Features a 360-degree swiveling base, allowing users to rotate freely.</p></li>
+                <li tabindex="0"><p>Commonly used in office settings, providing ease of movement between workstations.</p></li>
+            </ul>
+        </details>
+        <details class="overlay">
+            <summary class="overlay">Ball Chair (Exercise Ball Chair):</summary>
+            <ul class="element">
+                <li tabindex="0"><p>Utilizes an exercise ball as the seating surface.</p></li>
+                <li tabindex="0"><p>Promotes core engagement and balance, potentially reducing back strain.</p></li>
+                <li tabindex="0"><p>Best suited for short periods of use, as prolonged sitting can be tiring.</p></li>
+            </ul>
+        </details>
+        <details class="overlay">
+            <summary class="overlay">Reclining Chair:</summary>
+            <ul class="element">
+                <li tabindex="0"><p>Offers a reclining feature that allows users to lean back and relax.</p></li>
+                <li tabindex="0"><p>Some models may come with footrests or ottomans for added comfort.</p></li>
+                <li tabindex="0"><p>Ideal for taking breaks or leisurely activities like reading.</p></li>
+            </ul>
+        </details><div class="spacer_shape">
+        <p class="sub_sub_title">When choosing a computer chair, consider factors such as your specific comfort needs, the amount of time you'll spend sitting, and any ergonomic requirements.</p>
+        <p class="sub_sub_title">Testing out different chairs and understanding their features can help you find the one that best suits your preferences and lifestyle.</p>
+        </div></section>
+        </article>
+        <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
+        <article class="article fullbar">
+            <section style="background-color: whitesmoke;">
+            <p class="sub_sub_title spacer_shape">Here are several fun facts about chairs that you might find intriguing in the context of research about computer chairs:</p>
+
+        <ul class="element">
+                <div class="colms2 space">
+            <li>
+            <strong>Oldest Known Chair:</strong>
+            <p tabindex="0">The oldest known chair dates back to ancient Egypt and is over 4,000 years old.</p>
+            <p tabindex="0">It was found in the tomb of an official named Hemiunu and is made of cedar wood.</p>
+            </li>
+            <li>
+            <strong>The Electric Chair Connection:</strong>
+            <p tabindex="0">The term "electric chair" is famously associated with capital punishment, but it also has a connection to office chairs.</p>
+            <p tabindex="0">Thomas Edison, the inventor, was involved in the development of the electric chair as a form of execution.</p>
+            <p tabindex="0">He was in competition with George Westinghouse, who promoted alternating current (AC) over Edison's direct current (DC).</p>
+            <p tabindex="0">Edison attempted to discredit AC by using it in the development of the electric chair, leading to the term's association with both execution and electricity.</p>
+            </li>
+            </div>
+            <div class="colms2 space">
+            <li>
+            <strong>Chair of St. Peter:</strong>
+            <p tabindex="0">The Cathedra Petri, also known as the "Chair of St. Peter," is an ornate throne in St.Peter's Basilica in Vatican City.</p>
+            <p tabindex="0">It's a symbol of the papacy and represents the authority of the Pope.</p>
+        </li>
+        <li>
+            <strong>Chair Design Competitions:</strong>
+            <p tabindex="0">Designing chairs has been the subject of many competitions over the years.</p>
+            <p tabindex="0">The Pritzker Prize-winning architect Frank Gehry gained early recognition for his innovative cardboard "Easy Edges" furniture, including a unique chair design.</p>
+        </li>
+        </div>
+        <div class="colms2 space">
+        <li>
+            <strong>Seating Hierarchy:</strong>
+            <p tabindex="0">The arrangement of seating in historical settings often conveyed social status.</p>
+            <p tabindex="0">For example, the term "chairman" comes from the practice of placing the most important person in a meeting at the "head" of the table in a prominent chair.</p>
+        </li>
+        <li>
+            <strong>Chair in Pop Culture:</strong>
+            <p tabindex="0">The "Aeron Chair" gained widespread recognition due to its appearance in the TV show "The West Wing."</p>
+            <p tabindex="0">It's a highly ergonomic office chair designed by Bill Stumpf and Don Chadwick.</p>
+        </li>
+        </div>
+        <div class="colms2 space">
+        <li>
+            <strong>Chair Sculptures:</strong>
+            <p tabindex="0">Chairs have been used as sculptures in various forms of art.</p>
+            <p tabindex="0">Salvador Dalí created the "Mae West Lips Sofa," which is shaped like a pair of lips, and Pablo Picasso designed a "Bull's Head" sculpture using a bicycle seat and handlebars.</p>
+        </li>
+        <li>
+            <strong>Chairs in Fashion:</strong>
+            <p tabindex="0">Chairs have influenced fashion as well.</p>
+            <p tabindex="0">The "Wassily Chair" designed by Marcel Breuer was inspired by the frame of a bicycle and became an iconic piece of furniture design.</p>
+            <p tabindex="0">It has also inspired fashion designers like Karl Lagerfeld.</p>
+        </li>
+        </div>
+        <div class="colms2 space">
+        <li>
+            <strong>Chair Yoga:</strong>
+            <p tabindex="0">For those who spend extended hours sitting in front of a computer, "chair yoga" offers a way to stretch and exercise without leaving your seat.</p>
+            <p tabindex="0">It's designed to improve flexibility and reduce stiffness.</p>
+        </li>
+        <li>
+            <strong>Chair Museum:</strong>
+            <p tabindex="0">There's a museum in France called the "Musée des Arts et Métiers" that houses a collection of historic chairs, showcasing their evolution and impact on design and culture.</p>
+        </li></div>
+        </ul>
+        <p class="sub_sub_title spacer_shape">These fun facts highlight the diverse and intriguing aspects of chairs, from their historical significance to their influence on art, fashion, and even modern technology like computer chairs.</p>
+            </section>
+        </article>
+        <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
+        <article class="article fullbar"><section>
+
+            <p class="sub_sub_title spacer_shape">Here are a few more interesting tidbits about chairs that you might find fascinating for your research:</p>
+
+        <ul class="element">
+        <div class="colms2 space">
+            <li>
+                <strong>Chairs as Symbols:</strong>
+                <p tabindex="0">Throughout history, chairs have symbolized authority, power, and identity.</p>
+                <p tabindex="0">The "Speaker's Chair" in legislative bodies, such as the House of Commons in the UK, represents the authority of the speaker to preside over debates.</p>
+            </li>
+            <li>
+                <strong>Famous Chair Artworks:</strong>
+                <p tabindex="0">Contemporary artists have created thought-provoking artworks using chairs.</p>
+                <p>One example is Ai Weiwei's "Throne," a chair made of different parts from traditional Chinese chairs, commenting on cultural heritage and political censorship.</p>
+            </li>
+        </div>
+        <div class="colms2 space">
+            <li>
+                <strong>Modern Ergonomics:</strong>
+                <p tabindex="0">The concept of ergonomic design gained significant traction in the mid-20th century.</p>
+                <p>Charles and Ray Eames, renowned designers, made contributions to ergonomic seating through their focus on comfort, function, and aesthetics.</p>
+            </li>
+            <li>
+                <strong>Emoji Chairs:</strong>
+                <p tabindex="0">The Chair Emoji: The 🪑 emoji represents a simple wooden chair and is often used in digital communication to signify a seat or a place to sit.
+                <p tabindex="0">It's a part of the Unicode Standard Emoji list.</p>
+            </li>
+        </div>
+        <div class="colms2 space">
+            <li>
+                <strong>Chairs in Film:</strong>
+                <p tabindex="0">Chairs have played roles in memorable film scenes.</p>
+                <p tabindex="0">The "Emperor's Throne Room" in "Star Wars: Episode IV - A New Hope" features distinct chairs.</p>
+                <p tabindex="0">The film "The Matrix" includes the famous "red pill, blue pill" scene with chairs as central imagery.</p>
+            </li>
+            <li>
+                <strong>Upcycling and DIY Chairs:</strong>
+                <p tabindex="0">Creative individuals have transformed old or discarded chairs into unique pieces of functional art.</p>
+                <p tabindex="0">This trend highlights sustainability and showcases the potential for repurposing furniture.</p>
+            </li>
+        </div>
+        <div class="colms2 space">
+            <li>
+                <strong>Chairs in Literature:</strong>
+                <p tabindex="0">Chairs have metaphorical significance in literature.</p>
+                <p tabindex="0">The children's book "The Little Red Chair" by Karin Amatmoekrim, for instance, uses a chair as a symbol of comfort and refuge.</p>
+            </li>
+            <li>
+                <strong>Smart Chairs:</strong>
+                <p tabindex="0">With the rise of smart technology, "smart chairs" have emerged.</p>
+                <p tabindex="0">These chairs incorporate features like built-in speakers, massage functions, and even integrated charging ports for devices.</p>
+            </li>
+        </div>
+        <div class="colms2 space">
+            <li>
+                <strong>Chairs in Virtual Reality:</strong>
+                <p tabindex="0">In virtual reality (VR) and augmented reality (AR) applications, users often interact with virtual chairs or seating environments.</p>
+                <p tabindex="0">These virtual chairs can enhance immersion and user experience.</p>
+            </li>
+            <li>
+                <strong>World Records with Chairs:</strong>
+                <p tabindex="0">The Guinness World Record for the largest chair measured over 22 feet in height and was built in Italy.</p>
+                <p tabindex="0">Another record for the most people seated on a single chair involved 1,331 people sitting on a chair in Sri Lanka.</p>
+            </li>
+        </div>
+        </ul>
+        <div class="spacer_shape">
+        <p class="sub_sub_title">These additional facts offer a deeper look into the multifaceted role that chairs play in various aspects of culture, technology, and creative expression.</p>
+        <p class="sub_sub_title">As you continue your research, you'll find that chairs hold a wealth of intriguing stories and connections.</p>
+        </div>
+        </section>
+
+        <section>
+        <p class="sub_sub_title spacer_shape">Here are a few more interesting and lesser-known facts about chairs to add to your research:</p>
+        <details class="overlay">
+            <summary class="overlay">The Windsor Chair:</summary>
+            <ul class="element">
+                <li tabindex="0"><p>The Windsor chair, known for its distinctive design with a solid wooden seat and spindles, originated in England during the 18th century.</p></li>
+                <li tabindex="0"><p>It's characterized by its lightweight and comfortable construction.</p></li>
+            </ul>
+        </details>
+        <details class="overlay">
+            <summary class="overlay">The Eames Lounge Chair:</summary>
+            <ul class="element">
+                <li tabindex="0"><p>The Eames Lounge Chair and Ottoman, designed by Charles and Ray Eames in 1956, is often hailed as an iconic piece of modern furniture.</p></li>
+                <li tabindex="0"><p>It's renowned for its combination of style, comfort, and craftsmanship.</p></li>
+            </ul>
+        </details>
+        <details class="overlay">
+            <summary class="overlay">Chair Leg Styles:</summary>
+            <ul class="element">
+                <li tabindex="0"><p>Chairs have various leg styles, each with its own name and design.</p></li>
+                <li tabindex="0"><p>Examples include cabriole legs (curved and often ornate), saber legs (curved outward), and splayed legs (angled outward for stability).</p></li>
+            </ul>
+        </details>
+        <details class="overlay">
+            <summary class="overlay">Chair Symbolism in Art:</summary>
+            <ul class="element">
+                <li tabindex="0"><p>In art history, chairs have been used symbolically to convey various meanings.</p></li>
+                <li tabindex="0"><p>For instance, an empty chair in a portrait might represent the absence of a person or an allegorical concept.</p></li>
+            </ul>
+        </details>
+        <details class="overlay">
+            <summary class="overlay">The Barcalounger:</summary>
+            <ul class="element">
+                <li tabindex="0"><p>The term "barcalounger" became a genericized trademark for a type of recliner chair.</p></li>
+                <li tabindex="0"><p>The name is a combination of "Barclay" (the original manufacturer) and "lounger."</p></li>
+            </ul>
+        </details>
+        <details class="overlay">
+            <summary class="overlay">Chairs in Architecture:</summary>
+            <ul class="element">
+                <li tabindex="0"><p>Chairs have influenced architectural design.</p></li>
+                <li tabindex="0"><p>The Guggenheim Museum in New York, designed by Frank Lloyd Wright, features a spiral ramp that some visitors liken to sitting on a continuous bench.</p></li>
+            </ul>
+        </details>
+        <details class="overlay">
+            <summary class="overlay">Chairs in Language:</summary>
+            <ul class="element">
+                <li tabindex="0"><p>The phrase "pull up a chair" is often used metaphorically to invite someone to join a conversation or discussion, even if no actual chairs are present.</p></li>
+            </ul>
+        </details>
+        <details class="overlay">
+            <summary class="overlay">Chairs in Fashion Runways:</summary>
+            <ul class="element">
+                <li tabindex="0"><p>Fashion designers have incorporated chairs into their runway shows to create immersive experiences.</p></li>
+                <li tabindex="0"><p>Designers like Chanel and Louis Vuitton have featured elaborate chair designs as part of their show sets.</p></li>
+            </ul>
+        </details>
+        <details class="overlay">
+            <summary class="overlay">The "Chair of Death":</summary>
+            <ul class="element">
+                <li tabindex="0"><p>The "electric chair" was sometimes referred to as the "chair of death" due to its association with capital punishment.</p></li>
+                <li tabindex="0"><p>The first known use of the electric chair for execution was in 1890.</p></li>
+            </ul>
+        </details>
+        <details class="overlay">
+            <summary class="overlay">Chairs in Music:</summary>
+            <ul class="element">
+                <li tabindex="0"><p>Chairs have made appearances in song lyrics and album covers.</p></li>
+                <li tabindex="0"><p>For example, the rock band Queen released an album titled "A Night at the Opera" with an image of a chair on the cover.</p></li>
+            </ul>
+        </details><div class="spacer_shape">
+        <p class="sub_sub_title">These additional facts delve further into the diverse and fascinating world of chairs, showcasing their influence across various disciplines and contexts.</p>
+        <p class="sub_sub_title">Whether it's through design, history, symbolism, or even language, chairs continue to captivate our attention and creativity.</p>
+        </section>
+
+        <section>
+        <p class="sub_sub_title spacer_shape">Here are a few more intriguing and unique facts about chairs to enhance your research:</p>
+        <div class="spacer_shape sub_sub_title">Interesting Chair Facts:</div>
+        <dl>
+        <div class="colms2">
+        <fieldset>
+            <legend><dt>The Chair Museum in Italy:</dt></legend><hr>
+            <dd tabindex="0">Chiavari, a town in Italy, is known for its historical contribution to chair design.</dd>
+            <dd tabindex="0">The Museo delle Sedie (Museum of Chairs) in Chiavari is dedicated to showcasing the town's rich history of chair craftsmanship.</dd>
+        <hr>
+        </fieldset>
+
+        <fieldset>
+            <legend><dt>Famous Chair Designs Inspired by Nature:</dt></legend><hr>
+            <dd tabindex="0">Some chair designs have drawn inspiration from nature.</dd>
+            <dd tabindex="0">The "Ant Chair" by Arne Jacobsen takes its form from the shape of an ant, while the "Tulip Chair" by Eero Saarinen resembles a tulip in bloom.</dd>
+        <hr>
+        </fieldset>
+
+        <fieldset>
+        <legend><dt>Chair Etiquette in Art:</dt></legend><hr>
+            <dd tabindex="0">In portraiture from the 17th and 18th centuries, the placement and style of the chair a subject sat on conveyed their social status.</dd>
+            <dd tabindex="0">Some artists specialized in painting ornate and intricate chairs to enhance the subject's prestige.</dd>
+        <hr>
+        </fieldset>
+
+        <fieldset><legend><dt>One-Legged Chairs:</dt></legend><hr>
+            <dd tabindex="0">Some innovative chair designs challenge the conventional four-legged structure.</dd>
+            <dd tabindex="0">The "Panton Chair" by Verner Panton is an example of a one-legged chair that was molded from a single piece of plastic.</dd>
+        <hr>
+        </fieldset>
+
+        <fieldset>
+            <hr><legend><dt>Chairs in Literature:</dt></legend><hr>
+            <dd tabindex="0">Chairs often play symbolic roles in literature.</dd>
+            <dd tabindex="0">The author Lewis Carroll included the "Dormouse's Seat" in "Alice's Adventures in Wonderland," where it became a whimsical element in the Mad Hatter's tea party scene.</dd>
+        <hr>
+        </fieldset>
+
+        <fieldset>
+            <hr><legend><dt>The Portable Chair:</dt></legend><hr>
+            <dd tabindex="0">The "Traveller's Chair," popular in the 18th century, was a portable chair designed for travelers.</dd>
+            <dd tabindex="0">It could be folded and carried like a briefcase, providing a seat wherever needed.</dd>
+        <hr>
+        </fieldset>
+
+        <fieldset><legend><dt>Chairs as Art Installations:</dt></legend><hr>
+            <dd tabindex="0">Some artists use chairs as the focal point of their installations.</dd>
+            <dd tabindex="0">For instance, Doris Salcedo's art piece "1550 Chairs Stacked Between Two City Buildings" creates a powerful statement about violence and loss.</dd>
+        <hr>
+        </fieldset>
+
+        <fieldset><legend><dt>Chairs in Comedy:</dt></legend><hr>
+            <dd tabindex="0">Visual and physical comedy often involves chairs, from classic "slapstick" routines where characters trip over or get entangled in chairs, to the famous "invisible chair" illusion where performers appear to sit on air.</dd>
+        <hr>
+        </fieldset>
+
+        <fieldset><legend><dt>Ancient Chair Innovations:</dt></legend><hr>
+            <dd tabindex="0">The ancient Chinese used folding chairs made of bamboo and silk, showing their early mastery of collapsible furniture design.</dd>
+            <dd tabindex="0">This innovation allowed for easy transportation and storage.</dd>
+        <hr>
+        </fieldset>
+
+        </div>
+
+        <fieldset>
+            <legend><dt>Chairs in Science Fiction:</dt></legend><hr>
+                <dd tabindex="0">Science fiction literature and films often depict futuristic chairs that hover, rotate, or have advanced features.</dd>
+                <dd tabindex="0">These imaginative designs contribute to the portrayal of futuristic technology.</dd>
+        <hr>
+        </fieldset>
+        </dl>
+        <div class="spacer_shape sub_sub_title">These additional facts offer a glimpse into the intricacies of chairs, from their impact on art and literature to their innovative designs and roles in different cultures. As you continue your research, you'll discover even more captivating stories and aspects of chairs to explore.</div>
+        </section>
+
+        <table style="table-layout:fixed;width:468pt">
+            <colgroup><col /><col /></colgroup><tbody>
+                <tr style="height:42pt">
+                    <td style="vertical-align:top;overflow:hidden;overflow-wrap:break-word;">
+                    <h3>[Free Research Preview. ChatGPT ChatGPT August 3 Version 2023]</h3>
+                    <hr /></td></tr></tbody></table>
+        </article>
+    <?php
 }
 
 function hw_desks () {
-    echo "<h1 class=\"fullbar\">Desks</h1>";
+    ?>
+        <article class="article fullbar"><!-- (-.-)Zzz...--|c[_]|--☁ THIS PAGE CONTAINS JS【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
+        <a href="./#peripherals"><h1>Desks</h1></a>
+        <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
+        <p class="sub_title">History and Evolution of Desks:</p><br /><div class="spacer_double_lines" style="margin-bottom: -20px;"><hr><hr></div>
+
+        <section class="blurb">
+
+        <div tabindex="0" class="spacer_shape selection">
+        <p class="sub_sub_title">
+            Desks have a long and diverse history that spans centuries.<br /><br />
+            The evolution of desks can be traced through various cultural and technological shifts:
+        </p>
+        </div>
+
+        <div class="colms2">
+        <p tabindex="0" class="selection"><span tabindex="0" class="sub_sub_title">Ancient and Medieval Times:</span>
+            <span tabindex="0" class="selection_2">In ancient civilizations like Egypt and Greece, scribes and scholars used simple wooden surfaces to write on.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;These <a href="#">surfaces</a> were often supported by trestles or stands. In the Middle Ages, desks were often large and heavy, used for both writing and storage.</span>
+        </p>
+
+        <p tabindex="0" class="selection"><span tabindex="0" class="sub_sub_title">Renaissance and Early Modern Era:</span>
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;During the Renaissance, desks became more specialized, with compartments and drawers for storing documents.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;These desks were often elaborately designed and were primarily used by scholars and nobility.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;The "bureau" was a notable <a href="#">development</a>, featuring a sloping writing surface and multiple drawers.</span>
+        </p>
+        </div>
+
+        <div class="colms2">
+        <p tabindex="0" class="selection"><span tabindex="0" class="sub_sub_title">18th and 19th Centuries:</span>
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;The 18th century saw the emergence of the pedestal desk, which featured a central compartment surrounded by drawers.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;As industrialization progressed, more people needed desks for administrative work, leading to simpler and more utilitarian designs.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Roll-top desks also gained popularity during this time, providing a way to conceal paperwork when not in use.</span>
+        </p>
+
+        <p tabindex="0" class="selection"><span tabindex="0"  class="sub_sub_title">20th Century:</span>
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;With the advent of technology, desks started incorporating features to accommodate typewriters, telephones, and eventually computers.</span>
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;These desks were often functional and practical, focusing on ergonomic design and organization.</span>
+        </p>
+        </div>
+
+        <p tabindex="0" class="selection"><span tabindex="0"  class="sub_sub_title">Contemporary Era:</span>
+        &nbsp;<span tabindex="0" class="selection_2">&nbsp;In the late 20th century and beyond, desks evolved to accommodate the increasing use of computers and technology.</span><br />
+        &nbsp;<span tabindex="0" class="selection_2">&nbsp;Features like cable management, adjustable heights, and built-in storage for electronic devices became important.</span><br />
+        &nbsp;<span tabindex="0" class="selection_2">&nbsp;Modern desks cater to various needs, from home offices to professional workspaces.</span>
+        </p>
+
+        </section>
+        <div class="spacer_double_lines" ><hr><hr></div>
+        <p class="sub_title spacer">What a Computer User Should Know:</p>
+
+        <section class="blurb">
+        <dl>
+            <div tabindex="0" class="selection">
+                <details class="card2">
+                <summary class="sub_sub_title card2 entrylevel">
+                <dt class="sub_sub_title">Entry Level Computer User:</dt>
+                </summary>
+                <div class="spacer"></div>
+
+                <dd><strong>Basic Hardware and Software:</strong>
+                <span tabindex="0" class="selection_2 card2">Understand the main components of a computer, such as the CPU, monitor, keyboard, and mouse.</span>
+                <span tabindex="0" class="selection_2 card2">Also, learn about operating systems and basic software applications.</span>
+                </dd>
+
+                <dd><strong>Internet Usage:</strong>
+                <span tabindex="0" class="selection_2 card2">Familiarize yourself with web browsers, search engines, and online safety practices.</span>
+                <span tabindex="0" class="selection_2 card2">Learn how to navigate websites, perform searches, and recognize potential online threats.</span>
+                </dd>
+
+                <dd><strong>File Management:</strong>
+                <span tabindex="0" class="selection_2 card2">Learn how to organize files and folders on your computer.</span>
+                <span tabindex="0" class="selection_2 card2">Understand concepts like saving, copying, and deleting files.</span>
+                </dd>
+
+                <dd><strong>Keyboard Shortcuts:</strong>
+                <span tabindex="0" class="selection_2 card2">Discover common keyboard shortcuts to improve your efficiency when navigating your computer and applications.</span>
+                </dd>
+            </details>
+            </div>
+
+            <div class="spacer"></div>
+
+            <div tabindex="0" class="selection">
+                <dt class="sub_sub_title">Desk Enthusiast:</dt>
+                </summary>
+                <div class="spacer"></div>
+
+                <dd><strong>Ergonomics:</strong>
+                <span tabindex="0" class="selection_2">Understand the importance of ergonomic desk setups to maintain good posture and reduce strain on your body during extended computer use.</span>
+                </dd>
+
+                <dd><strong>Organization:</strong>
+                <span tabindex="0" class="selection_2">Explore desk organization techniques, cable management solutions, and storage options to create a clutter-free workspace.</span>
+                </dd>
+
+                <dd><strong>Aesthetic and Functionality:</strong>
+                <span tabindex="0" class="selection_2">Consider both the design and functionality of your desk. Look for features like cable routing holes, adjustable heights, and storage compartments that suit your needs.</span>
+                </dd>
+            </div>
+
+            <div class="spacer"></div>
+
+            <div tabindex="0" class="selection">
+                <details class="card2">
+                    <summary class="sub_sub_title card2 entrylevel">
+                <dt class="sub_sub_title">Pro Computer User:</dt>
+                </summary>
+                <div class="spacer"></div>
+
+                <dd><strong>Advanced Software Usage:</strong>
+                <span tabindex="0" class="selection_2">Gain proficiency in specialized software relevant to your field, whether it's graphic design, programming, video editing, or other professional applications.</span>
+                </dd>
+
+                <dd><strong>Workflow Optimization:</strong>
+                <span tabindex="0" class="selection_2">Research and implement productivity tools, keyboard shortcuts, and automation techniques to streamline your work processes.</span>
+                </dd>
+
+                <dd><strong>Backup and Security:</strong>
+                <span tabindex="0" class="selection_2">Develop a robust backup strategy to prevent data loss and ensure the security of sensitive information. Learn about encryption, antivirus software, and best practices for online security.</span>
+                </dd>
+
+                <dd><strong>Multi-Monitor Setup:</strong>
+                <span tabindex="0" class="selection_2">Explore the benefits of a multi-monitor setup to enhance your productivity by having multiple applications visible simultaneously.</span>
+                </dd>
+
+                <dd><strong>Networking:</strong>
+                <span tabindex="0" class="selection_2">Understand networking concepts to troubleshoot connectivity issues, set up local networks, and optimize internet speed.</span>
+                </dd>
+                </details>
+            </div>
+            </dl>
+        </section>
+
+        <div tabindex="0" class="blurb spacer_shape selection">
+        <p class="sub_sub_sub_title">
+        Remember that the knowledge and skills required for each level can vary, and individuals can gradually progress from entry-level to becoming proficient users and even enthusiasts in the world of computers and desks.
+        </p>
+        </div>
+
+        </article>
+        <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
+
+        <a href="./#peripherals" class="article fullbar"><button title="Take Back to the Peripherals" class="card2 button"><div style="translate: -1px 0;color:wheat;" class="spacer_double_lines">Back<hr>To<hr>Peripherals</div></button></a>
+
+
+        <article class="article fullbar" id="common_types_of_computer_desk">
+
+        <div tabindex="0" class="blurb spacer_shape selection">
+            <p class="sub_sub_title">There are several types of computer desks designed to cater to different needs, preferences, and spaces.<br /><br />
+                Here are some common types of computer desks that a person should know about:
+            </p>
+        </div>                                    <!--This Button is called [button_common_types in css]-->
+        <a href="#common_types_of_computer_desk"><button class="card2 button_common_types" id="openDetailsButton">
+            <img src="https://latinospc.com/images/artificialintelligence/pixel.jpeg" alt="Standard Computer Desk" width="17px" title="Open -View all desks">
+            <!-- for align to the left_---<-> translate: 3px 26px;---<-> nocard class="card"---<->   display: inline; translate: 571px 40px -->
+        </button>
+        </a>
+
+        <section class="blurb colms2">
+        <ul>
+            <details tabindex="0" class="selection half_size card2" style="display: inline;" id="1000">
+                <summary class="sub_sub_title">Standard Computer Desk:</summary>
+                <div class="spacer"></div>
+                <li>
+                    <span tabindex="0" class="selection_2">This is a basic desk designed for computer use.</span>
+                </li>
+                <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]0.jpeg" class="rtl card2 img_in-colms2"
+                    alt="Standard Computer Desk" width="100px">
+                <br />&nbsp; <li>
+                    <span tabindex="0" class="selection_2">&nbsp;It typically features a flat surface for the computer monitor,
+                    a keyboard tray or space for the keyboard and mouse, and sometimes a lower shelf for the computer
+                    tower.</span>
+                </li>
+                <br />&nbsp; <li>
+                    <span tabindex="0" class="selection_2">&nbsp;Suitable for: Entry-level computer users, students, basic
+                    office setups.</span>
+                </li>
+            </details>
+            <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁
+        <img src="https://latinospc.com/images/artificialintelligence/pixel.jpeg" class="fl" style="float: right;"  alt="Standard Computer Desk">
+        --|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
+            <div class="spacer"></div>
+            <details tabindex="0" id="900" class="selection half_size card2" style="display: inline;">
+                <summary class="sub_sub_title">Corner Desk:</summary>
+                <div class="spacer"></div>
+                <li>
+                    <span tabindex="0" class="selection_2">Designed to fit into corners, these desks maximize space utilization
+                    and are great for smaller rooms or offices.</span>
+                </li>
+                <br />&nbsp; <li>
+                    <span tabindex="0" class="selection_2">Suitable for: Those looking to make the most of limited space, home
+                    offices, compact setups.</span>
+                </li>
+                <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]0.jpeg" class="rtl card2 img_in-colms2"
+                    alt="Standard Computer Desk" width="100px">
+            </details>
+            <div class="spacer"></div>
+            <details tabindex="0" id="800" class="selection half_size card2" style="display: inline;">
+                <summary class="sub_sub_title">L-Shaped Desk:</summary>
+                <div class="spacer"></div>
+                <li>
+                    <span tabindex="0" class="selection_2">These desks have an L-shaped configuration, providing more surface
+                    area for work. They often come with additional storage options.</span>
+                </li>
+                <br />&nbsp; <li>
+                    <span tabindex="0" class="selection_2">Suitable for: Home offices, professionals needing more workspace,
+                    multitasking.</span>
+                </li>
+                <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]1.jpeg" class="rtl card2 img_in-colms2"
+                    alt="Standard Computer Desk" width="100px">
+            </details>
+            <div class="spacer"></div>
+            <details tabindex="0" id="700" class="selection half_size card2" style="display: inline;">
+                <summary class="sub_sub_title">U-Shaped Desk:</summary>
+                <div class="spacer"></div>
+                <li>
+                    <span tabindex="0" class="selection_2">Offering even more surface area than L-shaped desks, U-shaped desks
+                    provide ample space for various tasks. They often come with built-in storage and shelving.</span>
+                </li>
+                <br />&nbsp; <li>
+                    <span tabindex="0" class="selection_2">Suitable for: Executives, professionals with extensive workspace
+                    needs, home offices.</span>
+                </li>
+                <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]2.jpeg" class="rtl card2 img_in-colms2"
+                    alt="Standard Computer Desk" width="100px">
+            </details>
+            <div class="spacer"></div>
+            <details tabindex="0" id="600" class="selection half_size card2" style="display: inline;">
+                <summary class="sub_sub_title">Gaming Desk:</summary>
+                <div class="spacer"></div>
+                <li>
+                    <span tabindex="0" class="selection_2">Designed with gamers in mind, these desks often have features like
+                    cable management, built-in headphone stands, cup holders, and RGB lighting.</span>
+                </li>
+                <br />&nbsp; <li>
+                    <span tabindex="0" class="selection_2">Suitable for: Gamers, content creators, those with elaborate computer
+                    setups.</span>
+                </li>
+                <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]3.jpeg" class="rtl card2 img_in-colms2"
+                    alt="Standard Computer Desk" width="100px">
+            </details>
+            <div class="spacer"></div>
+            <details tabindex="0" id="500" class="selection half_size card2" style="display: inline;">
+                <summary class="sub_sub_title">Standing Desk:</summary>
+                <div class="spacer"></div>
+                <li>
+                    <span tabindex="0" class="selection_2">Also known as sit-stand desks, these desks allow you to alternate
+                    between sitting and standing while working. They can be manually or electronically adjustable.</span>
+                </li>
+                <br />&nbsp; <li>
+                    <span tabindex="0" class="selection_2">Suitable for: Individuals concerned about ergonomics, those who want
+                    to reduce sedentary time.</span>
+                </li>
+                <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]4.jpeg" class="rtl card2 img_in-colms2"
+                    alt="Standard Computer Desk" width="100px">
+            </details>
+            <div class="spacer"></div>
+            <details tabindex="0" id="400" class="selection half_size card2" style="display: inline;">
+                <summary class="sub_sub_title">Executive Desk:</summary>
+                <div class="spacer"></div>
+                <li>
+                    <span tabindex="0" class="selection_2">Usually large and sophisticated, executive desks are designed for
+                    professionals and often include ample storage, ornate designs, and high-quality materials.</span>
+                </li>
+                <br />&nbsp; <li>
+                    <span tabindex="0" class="selection_2">Suitable for: Corporate executives, professionals seeking a luxurious
+                    workspace.</span>
+                </li>
+                <img src="https://latinospc.com/images/artificialintelligence/[4][1]/cyber[4][1]1.jpeg" class="rtl card2 img_in-colms2"
+                    alt="Standard Computer Desk" width="100px">
+            </details>
+            <div class="spacer"></div>
+            <details tabindex="0" id="300" class="selection half_size card2" style="display: inline;">
+                <summary class="sub_sub_title">Floating Wall Desk:</summary>
+                <div class="spacer"></div>
+                <li>
+                    <span tabindex="0" class="selection_2">Mounted directly on the wall, these desks save floor space and can be
+                    folded up when not in use.</span>
+                </li>
+                <br />&nbsp; <li>
+                    <span tabindex="0" class="selection_2">Suitable for: Small spaces, minimalist aesthetics, occasional
+                    computer use.</span>
+                </li>
+                <img src="https://latinospc.com/images/artificialintelligence/[4][1]/cyber[4][1]2.jpeg" class="rtl card2 img_in-colms2"
+                    alt="Standard Computer Desk" width="100px">
+            </details>
+            <div class="spacer"></div>
+            <details tabindex="0" id="200" class="selection half_size card2" style="display: inline;">
+                <summary class="sub_sub_title">Convertible Desk:</summary>
+                <div class="spacer"></div>
+                <li>
+                    <span tabindex="0" class="selection_2">These desks can transform into different configurations, such as a
+                    regular desk, a standing desk, or even a dining table.</span>
+                </li>
+                <br />&nbsp; <li>
+                    <span tabindex="0" class="selection_2">Suitable for: Those with multifunctional needs, people with limited
+                    space.</span>
+                </li>
+                <img src="https://latinospc.com/images/artificialintelligence/[4][1]/cyber[4][1]0.jpeg" class="rtl card2 img_in-colms2"
+                    alt="Standard Computer Desk" width="100px">
+            </details>
+            <div class="spacer"></div>
+            <details tabindex="0" id="100" class="selection half_size card2" style="display: inline;">
+                <summary class="sub_sub_title card2">Minimalist Desk:</summary>
+                <div class="spacer"></div>
+                <li>
+                    <span tabindex="0" class="selection_2">Designed with simplicity in mind, these desks have clean lines and a
+                    clutter-free design.</span>
+                </li>
+                <br />&nbsp; <li>
+                    <span tabindex="0" class="selection_2">Suitable for: Minimalists, those who prefer a simple and uncluttered
+                    workspace.</span>
+                </li>
+                <img src="https://latinospc.com/images/artificialintelligence/[4][4]/cyber[4][4]2.jpeg" class="rtl card2 img_in-colms2"
+                    alt="Standard Computer Desk" width="100px">
+            </details>
+        </section>
+
+        <div tabindex="0" class="blurb spacer_shape selection">
+        <p class="sub_sub_sub_title">
+        When choosing a computer desk, consider factors such as your specific use case, available space, ergonomic requirements, storage needs, and personal style. The right desk can greatly enhance your comfort and productivity while using your computer.
+        </p>
+        </div>
+
+        </article>
+        <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
+        <article class="article fullbar">
+        <p class="sub_title spacer">Here are some additional computer desks things, you might find interesting about desks:</p>
+        <section class="blurb"><!-- Make these have Field sets--><div class="spacer_double_lines" ><hr><hr></div>
+        <!-- STRUCTURE: --><div class="colms2">
+        <fieldset tabindex="0" class="selection">
+            <legend tabindex="0" class="sub_sub_title selection">Ergonomics and Modern Computer Desks:</legend>
+            <p>
+                &nbsp;<span tabindex="0" class="selection_2">&nbsp;Ergonomics is a crucial consideration when it comes to computer desks.</span><br />
+                &nbsp;<span tabindex="0" class="selection_2">&nbsp;A well-designed ergonomic desk setup can help prevent discomfort, strain, and injuries caused by prolonged computer use.</span><br />
+                &nbsp;<span tabindex="0" class="selection_2">&nbsp;Ergonomics Matters: It is a key factor in designing modern computer desks for optimal user comfort and health.</span>
+            </p>
+        </fieldset>
+        <fieldset tabindex="0" class="selection">
+        <legend tabindex="0" class="sub_sub_title selection">Cable Management Solutions:</legend>
+        <p>
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Many modern computer desks come with built-in cable management systems.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;These systems help keep your workspace organized and free of tangled cables.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Cable management is essential for maintaining a clean and efficient workspace.</span>
+        </p>
+        </fieldset>
+
+        <fieldset tabindex="0" class="selection">
+        <legend tabindex="0" class="sub_sub_title selection">Adjustable Heights:</legend>
+        <p>
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Some computer desks feature adjustable heights, allowing switching between sitting and standing positions.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;This can promote better posture and reduce health risks associated with prolonged sitting.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Adjustable height desks offer flexibility for various work styles and preferences.</span>
+        </p>
+        </fieldset>
+
+        <fieldset tabindex="0" class="selection">
+        <legend tabindex="0" class="sub_sub_title selection">Built-in Power Outlets:</legend>
+        <p>
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Some computer desks come equipped with built-in power outlets and USB ports.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;This makes it convenient to charge devices without cluttering the workspace with extra cables.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Integrated power solutions enhance the functionality of modern computer desks.</span>
+        </p>
+        </fieldset>
+
+        <fieldset tabindex="0" class="selection">
+        <legend tabindex="0" class="sub_sub_title selection">Materials Diversity:</legend>
+        <p>
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Computer desks can be made from a wide range of materials, including wood, metal, glass, and acrylic.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Each material choice offers different aesthetics, durability, and maintenance requirements.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;The diversity in materials allows for customization to fit various decor styles and preferences.</span>
+        </p>
+        </fieldset>
+
+        <fieldset tabindex="0" class="selection">
+        <legend tabindex="0" class="sub_sub_title selection">Gaming Desk Innovations:</legend>
+        <p>
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Gaming desks often include features such as RGB lighting, headphone holders, and cup holders.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Some high-end models even have motorized height adjustments for optimal gaming comfort.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;These specialized desks cater to the unique needs and preferences of gamers.</span>
+        </p>
+        </fieldset>
+
+        <fieldset tabindex="0" class="selection">
+        <legend tabindex="0" class="sub_sub_title selection">Historical Significance:</legend>
+        <p>
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Desks have played a role in historical events, such as the Resolute Desk in the White House.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;The Resolute Desk was a gift from Queen Victoria to President Rutherford B. Hayes in 1880.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;It has been used by many U.S. presidents since then, becoming a symbol of presidential power.</span>
+        </p>
+        </fieldset>
+
+        <fieldset tabindex="0" class="selection">
+        <legend tabindex="0" class="sub_sub_title selection">DIY and Customization:</legend>
+        <p>
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Many enthusiasts enjoy building their own computer desks or customizing pre-made ones.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;DIY projects can range from simple modifications to complex woodworking creations.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Customization allows for unique, personalized workspaces tailored to individual needs.</span>
+        </p>
+        </fieldset>
+
+        <fieldset tabindex="0" class="selection">
+        <legend tabindex="0" class="sub_sub_title selection">Multi-Monitor Support:</legend>
+        <p>
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Some computer desks are designed to accommodate multiple monitors.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;This is particularly useful for professionals, gamers, and content creators.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Multi-monitor setups provide larger screen real estate for enhanced productivity and immersion.</span>
+        </p>
+        </fieldset>
+
+        <fieldset tabindex="0" class="selection">
+        <legend tabindex="0" class="sub_sub_title selection">Convertible Space:</legend>
+        <p>
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Some desks are designed to save space by serving multiple functions.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;For example, a wall-mounted desk might fold down to become a workspace and then fold back up when not in use.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Convertible desks offer flexibility in small living spaces or multi-purpose rooms.</span>
+        </p>
+        </fieldset>
+
+        <fieldset tabindex="0" class="selection">
+        <legend tabindex="0" class="sub_sub_title selection">Mobility:</legend>
+        <p>
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Mobile computer desks often come with wheels, allowing easy movement of your workstation.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;This is useful for changing your setup or moving it out of the way when needed.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Mobility adds versatility to workspace arrangements and facilitates easy cleaning.</span>
+        </p>
+        </fieldset>
+
+        <fieldset tabindex="0" class="selection">
+        <legend tabindex="0" class="sub_sub_title selection">Environmental Considerations:</legend>
+        <p>
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;With growing concerns about sustainability, some companies now produce eco-friendly computer desks.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;These desks use sustainable materials and manufacturing processes.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Eco-friendly options cater to environmentally conscious consumers and businesses.</span>
+        </p>
+        </fieldset>
+
+        <fieldset tabindex="0" class="selection">
+        <legend tabindex="0" class="sub_sub_title selection">Desk Accessories:</legend>
+        <p>
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Alongside computer desks, there's a plethora of desk accessories available.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;These include monitor stands, keyboard trays, cable organizers, and desk plants.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Accessories help personalize and enhance your workspace for improved comfort and efficiency.</span>
+        </p>
+        </fieldset>
+
+        <fieldset tabindex="0" class="selection">
+        <legend tabindex="0" class="sub_sub_title selection">Inspiring Designs:</legend>
+        <p>
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Some computer desk designs are inspired by futuristic concepts.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;These incorporate elements like built-in touch screens, holographic displays, and integrated charging technologies.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Futuristic designs push the boundaries of what a computer desk can be and do.</span>
+        </p>
+        </fieldset>
+        <div>
+        <div tabindex="0" class="blurb spacer_shape selection">
+        <p class="sub_sub_sub_title">
+            Remember that computer desk designs continue to evolve with advancements in technology and changing user needs. Exploring the history, trends, and innovations in computer desks can be both fascinating and informative for your research.
+        </p>
+        </div>
+        </section>
+        </article>
+        <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
+        <article class="article fullbar">
+
+        <div class="selection center" tabindex="0"><p>Here are a few more interesting tidbits about computer desks that you might find intriguing:</p></div>
+
+            <section class="blurb">
+        <!-- Fieldsets with 2 columns-->
+        <div class="colms2">
+        <fieldset tabindex="0" class="selection">
+        <legend tabindex="0" class="sub_sub_title selection">Smart Desks:</legend>
+        <p>
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;With the rise of IoT, some computer desks are now integrated with smart features.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;These desks might have voice control capabilities and wireless charging pads.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Some even have sensors that adjust lighting and temperature based on your preferences.</span>
+        </p>
+        </fieldset>
+
+        <fieldset tabindex="0" class="selection">
+        <legend tabindex="0" class="sub_sub_title selection">Virtual Reality Integration:</legend>
+        <p>
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;As VR becomes more mainstream, there are desks designed with VR users in mind.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;These desks might include special cable management solutions for VR setups.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;They often feature storage for VR headsets and accessories.</span>
+        </p>
+        </fieldset>
+
+        <fieldset tabindex="0" class="selection">
+        <legend tabindex="0" class="sub_sub_title selection">Floating Desks:</legend>
+        <p>
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Floating computer desks are mounted directly onto walls.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;This design gives the illusion that they are floating in mid-air.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;This minimalist design can be both functional and aesthetically pleasing.</span>
+        </p>
+        </fieldset>
+
+        <fieldset tabindex="0" class="selection">
+        <legend tabindex="0" class="sub_sub_title selection">Health Tracking Desks:</legend>
+        <p>
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Some innovative desks come with health tracking capabilities.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;They might include features like a built-in fitness tracker.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;These track sitting time, monitor posture, and remind you to take breaks.</span>
+        </p>
+        </fieldset>
+
+        <fieldset tabindex="0" class="selection">
+        <legend tabindex="0" class="sub_sub_title selection">Eco-Friendly Materials:</legend>
+        <p>
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;As sustainability gains importance, eco-friendly computer desks are becoming popular.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;These desks are made from materials like bamboo, reclaimed wood, and recycled materials.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;They appeal to environmentally conscious consumers seeking sustainable furniture options.</span>
+        </p>
+        </fieldset>
+
+        <fieldset tabindex="0" class="selection">
+        <legend tabindex="0" class="sub_sub_title selection">Customizable Lighting:</legend>
+        <p>
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Some high-tech computer desks come with customizable LED lighting.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;The lighting is often built into the edges or underneath the surface.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Users can adjust the lighting color and intensity to match their mood or workspace aesthetics.</span>
+        </p>
+        </fieldset>
+
+        <fieldset tabindex="0" class="selection">
+        <legend tabindex="0" class="sub_sub_title selection">Hidden Storage Solutions:</legend>
+        <p>
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;To maintain a clean workspace, some computer desks have hidden compartments.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;These storage areas are seamlessly integrated into the desk design.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Hidden storage helps keep the workspace organized and clutter-free.</span>
+        </p>
+        </fieldset>
+
+        <fieldset tabindex="0" class="selection">
+        <legend tabindex="0" class="sub_sub_title selection">Wireless Charging Surfaces:</legend>
+        <p>
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Modern computer desks are incorporating wireless charging technology.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;This technology is often integrated directly into the desk surface.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Users can charge devices by simply placing them on designated areas of the desk.</span>
+        </p>
+        </fieldset>
+
+        <fieldset tabindex="0" class="selection">
+        <legend tabindex="0" class="sub_sub_title selection">Biophilic Design:</legend>
+        <p>
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Biophilic design integrates elements of nature into indoor spaces.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Some computer desks are designed with built-in planters or natural wood finishes.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;This approach creates a calming and nature-inspired workspace.</span>
+        </p>
+        </fieldset>
+
+        <fieldset tabindex="0" class="selection">
+        <legend tabindex="0" class="sub_sub_title selection">Artistic Creations:</legend>
+        <p>
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Beyond functionality, some computer desks are designed as works of art.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;These desks feature unique shapes, intricate carvings, and creative designs.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Such desks can become a centerpiece in a room, blending function with aesthetics.</span>
+        </p>
+        </fieldset>
+
+        <fieldset tabindex="0" class="selection">
+        <legend tabindex="0" class="sub_sub_title selection">Historical Influences:</legend>
+        <p>
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Traditional desk styles from different historical periods influence modern designs.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Styles like Victorian, Art Deco, and Mid-Century Modern inspire contemporary desks.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;These influences add a touch of nostalgia and elegance to modern computer desks.</span>
+        </p>
+        </fieldset>
+
+        <fieldset tabindex="0" class="selection">
+        <legend tabindex="0" class="sub_sub_title selection">Modular Desks:</legend>
+        <p>
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Modular computer desks allow customization of your workspace.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;Users can add or remove components to adapt to different tasks or changing needs.</span><br />
+            &nbsp;<span tabindex="0" class="selection_2">&nbsp;This flexibility makes modular desks suitable for various work environments.</span>
+        </p>
+        </fieldset>
+        </div>
+        <p class="selection sub_sub_title" tabindex="0">&nbsp;&nbsp;
+        These additional insights highlight the incredible diversity and innovation present in the world of computer desks.<br/><br />&nbsp;&nbsp;
+        As you continue your research, exploring these aspects can help you gain a deeper understanding of how computer desks have evolved and adapted to the ever-changing technological landscape.
+        </p>
+        </section>
+        </article>
+        <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
+        <article class="article fullbar">
+
+        <div class="sub_title" id="intriguingPointsDesk">Here are a few more intriguing points to consider regarding computer desks:</div><div class="spacer"></div>
+        <div class="spacer_double_lines" style="margin-bottom: -20px;"><hr><hr></div>
+        <!--DETAILS button-->
+        <a href="#intriguingPointsDesk"><button class="card2 button_common_types" id="openDetailsButton2">
+            <img src="https://latinospc.com/images/artificialintelligence/pixel.jpeg" alt="Standard Computer Desk" width="17px" title="Open -View all desks">
+            <!-- for align to the left_---<-> translate: 3px 26px;---<-> nocard class="card"---<->   display: inline; translate: 571px 40px -->
+        </button></a>
+        <!--^^^ DETAILS button ^^^-->
+
+        <section class="blurb">
+
+        <!-- Make these have details with summaries-->
+        <div class="colms2">
+        <details tabindex="0" id="2" class="selection half_size card2" style="display: inline;">
+            <summary class="sub_sub_title">Cultural Influences on Desk Design:</summary>
+            <div class="spacer"></div>
+            <li>
+                <span tabindex="0" class="selection_2">Desk designs can be significantly influenced by cultural factors. For instance, Japanese design principles often emphasize minimalism and functionality, resulting in clean, uncluttered desk designs.</span>
+            </li>
+            <br />&nbsp; <li>
+                <span tabindex="0" class="selection_2">In contrast, European designs might focus on ornate details and craftsmanship, leading to more elaborate and decorative desk styles.</span>
+            </li>
+            <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Cultural Influences on Desk Design" height="100px">
+        </details>
+
+
+        <details tabindex="0" id="22" class="selection half_size card2" style="display: inline;">
+        <summary class="sub_sub_title">Wireless Connectivity:</summary>
+        <div class="spacer"></div>
+        <li>
+            <span tabindex="0" class="selection_2">As technology advances, some computer desks are incorporating wireless connectivity not only for charging but also for connecting to monitors, peripherals, and other devices without the need for cables.</span>
+        </li>
+        <br />&nbsp; <li>
+            <span tabindex="0" class="selection_2">This technology promotes a cleaner, more organized workspace and increased flexibility in desk setup and arrangement.</span>
+        </li>
+        <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Wireless Connectivity Desk" height="100px">
+        </details>
+
+        <details tabindex="0" id="23" class="selection half_size card2" style="display: inline;">
+        <summary class="sub_sub_title">Collapsible and Portable Desks:</summary>
+        <div class="spacer"></div>
+        <li>
+            <span tabindex="0" class="selection_2">Collapsible or portable computer desks are designed for easy setup and storage. These can be particularly useful for people with limited space or those who frequently move their workstations.</span>
+        </li>
+        <br />&nbsp; <li>
+            <span tabindex="0" class="selection_2">These desks offer flexibility and convenience, making them ideal for small apartments, dorm rooms, or mobile offices.</span>
+        </li>
+        <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Collapsible and Portable Desk" height="100px">
+        </details>
+
+        <details tabindex="0" id="24" class="selection half_size card2" style="display: inline;">
+        <summary class="sub_sub_title">Collaborative Workspaces:</summary>
+        <div class="spacer"></div>
+        <li>
+            <span tabindex="0" class="selection_2">Some modern offices and co-working spaces are equipped with collaborative computer desks that allow multiple users to work together, promoting teamwork and interaction.</span>
+        </li>
+        <br />&nbsp; <li>
+            <span tabindex="0" class="selection_2">These desks often feature shared screens, integrated power solutions, and modular designs to accommodate different group sizes and working styles.</span>
+        </li>
+        <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Collaborative Workspace Desk" height="100px">
+        </details>
+
+        <details tabindex="0" id="25" class="selection half_size card2" style="display: inline;">
+        <summary class="sub_sub_title">Minimal Footprint Desks:</summary>
+        <div class="spacer"></div>
+        <li>
+            <span tabindex="0" class="selection_2">Designed for small living spaces, minimal footprint desks are compact and efficient, providing a workspace without taking up much room.</span>
+        </li>
+        <br />&nbsp; <li>
+            <span tabindex="0" class="selection_2">These desks often feature clever storage solutions and multi-functional designs to maximize utility in limited spaces.</span>
+        </li>
+        <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Minimal Footprint Desk" height="100px">
+        </details>
+
+        <details tabindex="0" id="26" class="selection half_size card2" style="display: inline;">
+        <summary class="sub_sub_title">Digital Nomad Desks:</summary>
+        <div class="spacer"></div>
+        <li>
+            <span tabindex="0" class="selection_2">With the rise of remote work and digital nomadism, there's a growing trend of portable desks designed for travelers. These desks are lightweight, foldable, and often come with built-in storage for laptops and accessories.</span>
+        </li>
+        <br />&nbsp; <li>
+            <span tabindex="0" class="selection_2">Digital nomad desks prioritize portability and functionality, allowing users to set up a productive workspace anywhere in the world.</span>
+        </li>
+        <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Digital Nomad Desk" height="100px">
+        </details>
+
+        <details tabindex="0" id="27" class="selection half_size card2" style="display: inline;">
+        <summary class="sub_sub_title">Historical Desk Collections:</summary>
+        <div class="spacer"></div>
+        <li>
+            <span tabindex="0" class="selection_2">Museums and historical sites often feature collections of antique desks, showcasing the evolution of desk designs throughout different time periods.</span>
+        </li>
+        <br />&nbsp; <li>
+            <span tabindex="0" class="selection_2">These collections provide valuable insights into cultural, technological, and aesthetic changes in workspace design over the centuries.</span>
+        </li>
+        <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Historical Desk Collection" height="100px">
+        </details>
+
+        <details tabindex="0" id="28" class="selection half_size card2" style="display: inline;">
+        <summary class="sub_sub_title">DIY Desk Communities:</summary>
+        <div class="spacer"></div>
+        <li>
+            <span tabindex="0" class="selection_2">Online communities and platforms like Reddit and Pinterest are full of DIY enthusiasts sharing their custom computer desk projects, offering inspiration and tips for creating unique workspaces.</span>
+        </li>
+        <br />&nbsp; <li>
+            <span tabindex="0" class="selection_2">These communities foster creativity and resourcefulness, encouraging people to design and build desks tailored to their specific needs and preferences.</span>
+        </li>
+        <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="DIY Desk Community" height="100px">
+        </details>
+
+        <details tabindex="0" id="29" class="selection half_size card2" style="display: inline;">
+        <summary class="sub_sub_title">Feng Shui Considerations:</summary>
+        <div class="spacer"></div>
+        <li>
+            <span tabindex="0" class="selection_2">Some individuals follow Feng Shui principles when designing their workspaces, aiming to create a harmonious and balanced environment that enhances productivity and creativity.</span>
+        </li>
+        <br />&nbsp; <li>
+            <span tabindex="0" class="selection_2">Feng Shui-inspired desk arrangements often consider factors like desk placement, natural light, and the flow of energy in the workspace.</span>
+        </li>
+        <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Feng Shui Desk Arrangement" height="100px">
+        </details>
+
+        <details tabindex="0" id="210" class="selection half_size card2" style="display: inline;">
+        <summary class="sub_sub_title">Desk Personalization:</summary>
+        <div class="spacer"></div>
+        <li>
+            <span tabindex="0" class="selection_2">Personalizing your computer desk with items like photos, artwork, and inspirational quotes can create a more comfortable and motivating workspace.</span>
+        </li>
+        <br />&nbsp; <li>
+            <span tabindex="0" class="selection_2">Personal touches can help reduce stress, increase job satisfaction, and reflect individual personality and style in the workspace.</span>
+        </li>
+        <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Personalized Desk" height="100px">
+        </details>
+
+        <details tabindex="0" id="211" class="selection half_size card2" style="display: inline;">
+        <summary class="sub_sub_title">Psychology of Desk Design:</summary>
+        <div class="spacer"></div>
+        <li>
+            <span tabindex="0" class="selection_2">Researchers have explored the psychology of desk design and how factors like colors, lighting, and organization can influence mood, creativity, and cognitive performance.</span>
+        </li>
+        <br />&nbsp; <li>
+            <span tabindex="0" class="selection_2">Understanding these psychological factors can help in creating more productive and comfortable work environments.</span>
+        </li>
+        <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Psychology of Desk Design" height="100px">
+        </details>
+
+        <details tabindex="0" id="212" class="selection half_size card2" style="display: inline;">
+        <summary class="sub_sub_title">Social Media Trends:</summary>
+        <div class="spacer"></div>
+        <li>
+            <span tabindex="0" class="selection_2">Social media platforms like Instagram and TikTok have popularized "desk tours," where individuals showcase their beautifully organized and aesthetically pleasing workspaces, often inspiring others to create their own unique setups.</span>
+        </li>
+        <br />&nbsp; <li>
+            <span tabindex="0" class="selection_2">These trends have influenced desk design and accessories, with a focus on both functionality and visual appeal.</span>
+        </li>
+        <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Social Media Desk Trend" height="100px">
+        </details>
+        </div>
+        <div class="spacer blurb half_size selection" tabindex="0">
+        <p class="sub_sub_title" tabindex="0">Remember, the world of computer desks is constantly evolving as technology advances and user needs change.</p>
+        <span class="selection_2 sub_sub_sub_title" tabindex="0">Exploring these diverse and evolving aspects can provide a comprehensive view of the role desks play in our modern work and living spaces.</span>
+        </div>
+        </section>
+        <aside>
+        <table style="table-layout:fixed;width:468pt">
+            <colgroup><col /><col /></colgroup><tbody>
+                <tr style="height:42pt">
+                    <td style="vertical-align:top;overflow:hidden;overflow-wrap:break-word;">
+                    <h3>[Free Research Preview. ChatGPT ChatGPT August 3 Version 2023]</h3>
+                    <hr /></td></tr></tbody></table>
+                </aside>
+        </article>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const button1 = document.getElementById('openDetailsButton');
+            const detailsIds1 = ['100', '200', '300', '400', '500', '600', '700', '800', '900', '1000'];
+
+            const button2 = document.getElementById('openDetailsButton2');
+            const detailsIds2 = ['2', '22', '23', '24', '25', '26', '27', '28', '29', '210','211', '212'];
+
+            function toggleDetails(ids) {
+            ids.forEach(id => {
+                const details = document.getElementById(id);
+                if (details) {
+                details.open = !details.open;
+                }
+            });
+            }
+
+            if (button1) {
+            button1.addEventListener('click', function() {
+                toggleDetails(detailsIds1);
+            });
+            }
+
+            if (button2) {
+            button2.addEventListener('click', function() {
+                toggleDetails(detailsIds2);
+            });
+            }
+        });
+        </script>
+    <?php
 }
 
 function hw_anti_slip_mats () {
-    echo "<h1 class=\"fullbar\">Anti Slip Mats</h1>";
+    ?>
+        <article class="article fullbar"><!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ -->
+        <a href="./#peripherals"><h1>Mats</h1></a>
+        <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ -->
+        <section class="blurb">
+
+            <p tabindex="0" class="sub_title center card2 selection" style="text-align: center;">Anti-Slip Mats: Overview</p>
+
+            <p class="sub_sub_title selection" tabindex="0">Anti-slip mats are designed to prevent items from sliding or
+                slipping on a surface.<br /><br />
+                They are commonly used in various applications, including under computer peripherals such as keyboards, mice,
+                laptops, and desktop computers.<br /><br />
+                The primary purpose of using anti-slip mats for computers is to enhance stability and prevent accidental
+                movement, which can improve user comfort and productivity.</p>
+
+            <div class="colms2">
+                <p class="sub_sub_title spacer_shape">Key Features and Benefits:</p>
+                <ul>
+                    <li tabindex="0" class="selection card2"><strong>Surface Grip:</strong>
+                        <span tabindex="0" class="selection_2 card2">Anti-slip mats are made from materials that provide a high level
+                            of friction.</span>
+                        <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]1.jpeg" class="fl card2" alt="Surface Grip"
+                            width="100px">
+                        <span tabindex="0" class="selection_2 card2">This helps to keep computer peripherals and devices securely in
+                            place, preventing them from sliding around during use.</span>
+                    </li>
+
+                    <li tabindex="0" class="selection card2"><strong>Protection:</strong>
+                        <span tabindex="0" class="selection_2 card2">These mats also serve as a protective layer between the computer
+                            peripherals and the surface they're placed on.</span>
+                        <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]2.jpeg" class="fl card2" alt="Protection"
+                            width="100px">
+                        <span tabindex="0" class="selection_2 card2">They can help prevent scratches and wear on both the peripherals
+                            and the underlying surface.</span>
+                    </li>
+
+                    <li tabindex="0" class="selection card2"><strong>Stability:</strong>
+                        <span tabindex="0" class="selection_2 card2">By preventing movement, anti-slip mats contribute to a more
+                            stable work environment.</span>
+                        <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]3.jpeg" class="fl card2" alt="Stability"
+                            width="100px">
+                        <span tabindex="0" class="selection_2 card2">This is particularly important for tasks that require precision,
+                            such as gaming or graphic design.</span>
+                    </li>
+
+                    <li tabindex="0" class="selection card2"><strong>Reduced Strain:</strong>
+                        <span tabindex="0" class="selection_2 card2">Using an anti-slip mat can reduce the need for constant
+                            readjustment of peripherals, <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]4.jpeg" class="fl card2" alt="Reduced Strain"
+                            width="100px">which can help reduce strain on the user's wrists and
+                            hands.</span>
+                    </li>
+
+                    <li tabindex="0" class="selection card2"><strong>Noise Reduction:</strong>
+                        <span tabindex="0" class="selection_2 card2">Mats can dampen the noise generated by moving peripherals,</span>
+                        <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]5.jpeg" class="fl card2" alt="Noise Reduction"
+                            width="100px">
+                        <span tabindex="0" class="selection_2 card2">making for a quieter workspace.</span>
+                    </li>
+
+                    <li tabindex="0" class="selection card2"><strong>Customization:</strong>
+                        <span tabindex="0" class="selection_2 card2">Anti-slip mats come in various shapes and sizes to accommodate
+                            different types of peripherals and devices.</span>
+                        <img src="https://latinospc.com/images/artificialintelligence/[4][1]/cyber[4][1]2.jpeg" class="fl card2"
+                            alt="Customization" width="100px">
+                        <span tabindex="0" class="selection_2 card2">Some may even be cut to fit specific areas.</span>
+                    </li>
+
+                    <li tabindex="0" class="selection card2"><strong>Easy to Clean:</strong>
+                        <span tabindex="0" class="selection_2 card2">Many anti-slip mats are easy to clean and maintain,</span>
+                        <img src="https://latinospc.com/images/artificialintelligence/[4][1]/cyber[4][1]2.jpeg" class="fl card2"
+                            alt="Easy to Clean" width="100px">
+                        <span tabindex="0" class="selection_2 card2">which is important for maintaining a clean and hygienic
+                            workspace.</span>
+                    </li>
+                </ul>
+            </div><div class="spacer"></div>
+
+            <div class="colms2">
+                <p class="sub_sub_title spacer_shape">Materials and Construction:</p>
+                    <p tabindex="0" class="selection sub_sub_sub_title spacer_shape">Anti-slip mats are typically made from rubber, silicone, or other
+                        materials with high friction properties. These materials create a grippy surface that prevents movement. The
+                        mats may also have a textured pattern that enhances their anti-slip properties.</p>
+            </div>
+
+            <div class="spacer"></div>
+
+            <div class="colms2">
+            <p class="sub_sub_title spacer_shape">Applications:</p>
+                <p tabindex="0" class="sub_sub_sub_title spacer_shape selection">Anti-slip mats for computers are used in
+                    various settings, including:</p>
+                <ul>
+                    <li tabindex="0" class="selection card2"><strong>Offices:</strong>
+                        <span tabindex="0" class="selection_2 card2">To keep keyboards and mice from sliding on desks.</span>
+                    </li>
+
+                    <li tabindex="0" class="selection card2"><strong>Gaming:</strong>
+                        <span tabindex="0" class="selection_2 card2">To prevent gaming peripherals from moving during intense gameplay.</span>
+                    </li>
+
+                    <li tabindex="0" class="selection card2"><strong>Home Use:</strong>
+                        <span tabindex="0" class="selection_2 card2">To enhance stability and comfort when using laptops and desktop computers.</span>
+                    </li>
+
+                    <li tabindex="0" class="selection card2"><strong>Industrial Environments:</strong>
+                        <span tabindex="0" class="selection_2 card2">To secure computers and devices in manufacturing or industrial settings.</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="spacer"></div>
+        <div class="colms2">
+            <p class="sub_sub_title spacer_shape">Considerations:</p>
+                <p tabindex="0" class="sub_sub_sub_title spacer_shape selection">When researching and selecting anti-slip mats for computers, consider
+                    the following factors:</p>
+
+                <ul>
+                    <li tabindex="0" class="selection card2"><strong>Size and Shape:</strong>
+                        <span tabindex="0" class="selection_2 card2">Ensure that the mat is appropriately sized for the peripherals you intend to use it with.</span>
+                    </li>
+
+                    <li tabindex="0" class="selection card2"><strong>Material Quality:</strong>
+                        <span tabindex="0" class="selection_2 card2">Look for durable materials that will maintain their anti-slip properties over time.</span>
+                    </li>
+
+                    <li tabindex="0" class="selection card2"><strong>Ease of Cleaning:</strong>
+                        <span tabindex="0" class="selection_2 card2">Consider mats that are easy to clean, especially if they will be used in environments where
+                            cleanliness is important.</span>
+                    </li>
+
+                    <li tabindex="0" class="selection card2"><strong>Thickness:</strong>
+                        <span tabindex="0" class="selection_2 card2">The thickness of the mat can affect how much it raises the peripherals. Consider whether this will
+                            be comfortable for your intended use.</span>
+                    </li>
+
+                    <li tabindex="0" class="selection card2"><strong>Customizability:</strong>
+                        <span tabindex="0" class="selection_2 card2">Some mats can be cut to fit specific areas or shaped around obstacles.</span>
+                    </li>
+
+                    <li tabindex="0" class="selection card2"><strong>Aesthetics:</strong>
+                        <span tabindex="0" class="selection_2 card2">If aesthetics are important, choose a mat that complements your workspace.</span>
+                    </li>
+                    <p class="sub_sub_title card2 selection spacer_shape" tabindex="0">
+                    Remember that user reviews and recommendations can also provide valuable insights into the effectiveness and durability of specific anti-slip mats.
+                    </p>
+                </ul>
+            </div>
+            <br /><br />
+        <p class="sub_sub_title card2 selection spacer_shape" tabindex="0">
+        In conclusion, anti-slip mats for computers are practical accessories that enhance stability, prevent movement, and contribute to a more comfortable and productive computing experience.
+        </p>
+
+        </section>
+        </article>
+        <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ -->
+        <article class="article fullbar">
+            <section class="blurb">
+                <p class="spacer_shape">
+        <span tabindex="0" class="sub_title selection_2" style="display: inline-block;">Here are a few additional research considerations:</span><br />
+        <span tabindex="0" class="sub_sub_title card2 center selection_2">Using anti-slip mats in your PC system:</span>
+                </p>
+
+                <div class="spacer"></div>
+
+        <div class="colms">
+                <fieldset tabindex="0" class="selection">
+        <legend>Anti-slip:</legend>
+        <span tabindex="0" class="card2 selection_2">Anti-slip mats are designed to prevent items from sliding or sliding on surfaces.</span>
+        </fieldset>
+
+                <fieldset tabindex="0" class="selection">
+            <legend>Compatibility:</legend>
+            <span tabindex="0" class="card2 selection_2">Some anti-slip mats may have adhesive properties to stick to surfaces, while others rely solely on their friction to stay in place. Depending on your preference and the type of surface you'll be placing the mat on, make sure to choose a mat that is compatible with your needs.</span>
+            </fieldset>
+
+                <fieldset tabindex="0" class="selection">
+            <legend>Environmental Considerations:</legend>
+            <span tabindex="0" class="card2 selection_2">If environmental impact is a concern, look for mats made from eco-friendly materials. Some manufacturers offer mats that are recyclable or made from sustainable materials.</span>
+        </fieldset>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="colms">
+        <fieldset tabindex="0" class="selection">
+            <legend>Temperature Resistance:</legend>
+            <span tabindex="0" class="card2 selection_2">Consider the temperature range in which the mat will be used. Some materials might become less effective at extreme temperatures, so make sure the mat can handle the conditions of your workspace.</span>
+        </fieldset>
+
+        <fieldset tabindex="0" class="selection">
+            <legend>Storage and Portability:</legend>
+            <span tabindex="0" class="card2 selection_2">If you plan to use the anti-slip mat in different locations or while traveling, consider its portability and ease of storage. Some mats can be rolled or folded for easy transportation.</span>
+        </fieldset>
+
+        <fieldset tabindex="0" class="selection">
+            <legend>Multi-Purpose Use:</legend>
+            <span tabindex="0" class="card2 selection_2">Anti-slip mats can have applications beyond just computer peripherals. They can be used under other items like vases, cups, or small appliances to prevent slipping.</span>
+        </fieldset>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="colms">
+        <fieldset tabindex="0" class="selection">
+            <legend>Regular Maintenance:</legend>
+            <span tabindex="0" class="card2 selection_2">While anti-slip mats are designed to be durable, it's a good idea to periodically clean them to maintain their grip. Over time, dust and debris can accumulate on the mat's surface, reducing its effectiveness.</span>
+        </fieldset>
+
+        <fieldset tabindex="0" class="selection">
+            <legend>DIY Options:</legend>
+            <span tabindex="0" class="card2 selection_2">If you're on a budget or prefer a specific material, you might consider creating your own anti-slip solution. For example, you could use shelf liner or rubberized drawer liners as a makeshift anti-slip surface.</span>
+        </fieldset>
+
+        <fieldset tabindex="0" class="selection">
+            <legend>Test Before Applying:</legend>
+            <span tabindex="0" class="card2 selection_2">If you're using an adhesive anti-slip mat, consider testing it on a small, inconspicuous area of your surface before applying it in a prominent location. This helps ensure it adheres properly without causing damage.</span>
+        </fieldset>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="colms2">
+        <fieldset tabindex="0" class="selection">
+            <legend>User Reviews and Recommendations:</legend>
+            <span tabindex="0" class="card2 selection_2">Reading user reviews and testimonials can provide valuable insights into how well a specific anti-slip mat performs in real-world scenarios. Look for mats with positive feedback and consider any potential drawbacks mentioned by users.</span>
+        </fieldset>
+
+        <fieldset tabindex="0" class="selection">
+            <legend>Warranty and Return Policy:</legend>
+            <span tabindex="0" class="card2 selection_2">Check the manufacturer's warranty and return policy in case you encounter any issues with the mat's performance or quality. This can provide peace of mind in case you need to replace or return the product.</span>
+        </fieldset>
+        </div>
+        <fieldset tabindex="0" class="selection">
+            <legend>Experiment and Adjust:</legend>
+            <span tabindex="0" class="card2 selection_2">Anti-slip mats can have varying levels of grip depending on the surface they're placed on, the weight of the peripherals, and other factors. Don't hesitate to experiment with different mat placements and orientations to find the configuration that works best for you.</span>
+        </fieldset>
+
+
+        <div class="spacer"></div>
+
+        </section>
+        <div class="blurb">
+        <p tabindex="0" class="sub_sub_title card2 selection">&nbsp;&nbsp;&nbsp;&nbsp;Remember that the effectiveness of an anti-slip mat can be influenced by factors such as the cleanliness of the mat and the surface it's placed on.<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;Regular maintenance and care can help prolong the mat's useful life and maintain its grip.</p>
+
+        <p tabindex="0" class="sub_sub_sub_title card2 selection">&nbsp;&nbsp;&nbsp;&nbsp;Overall, anti-slip mats are practical tools that can greatly enhance the usability and comfort of your computer setup.<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;By considering these additional factors, you can make an informed decision when selecting the right anti-slip mat for your specific needs.</p>
+        </div>
+        <table style="table-layout:fixed;width:468pt">
+            <colgroup><col /><col /></colgroup><tbody>
+                <tr style="height:42pt">
+                    <td style="vertical-align:top;overflow:hidden;overflow-wrap:break-word;">
+                    <h3>[Free Research Preview. ChatGPT August 3 Version 2023]</h3>
+                    <hr /></td></tr></tbody></table>
+        </article>
+            <?php
 }
 
 function hw_speakers_and_subwoofers () {
-    echo "<h1 class=\"fullbar\">Speakers and Subwoofers</h1>";
+    ?>
+        <article class="article fullbar"><!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
+        <a href="./#peripherals"><h1>Speakers & Subwoofers</h1></a>
+        <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
+
+        <section class="blurb">
+        <p class="sub_title">Computer Speakers: </p>//Here make like links take you to places inside the same page more often
+        <dl class="selection colms2">
+
+        <div tabindex="0" class="borderdl">
+            <dt tabindex="0"class="sub_sub_title">History and Evolution:</dt>
+        <dd><span tabindex="1" class="selection_2">Computer speakers have evolved from basic internal beeping mechanisms to sophisticated audio systems that cater to a wide range of needs, from gaming to music production.</span></dd>
+        </div>
+        <div tabindex="0" class="borderdl">
+            <dt tabindex="0"class="sub_sub_title">Connectivity Options:</dt>
+            <dd>
+                <span tabindex="1" class="selection_2">
+                    Different connectors like 3.5mm audio jacks, USB, Bluetooth, and even HDMI are used to connect computer speakers to various devices such as computers, smartphones, TVs, and gaming consoles.
+                </span>
+            </dd>
+        </div>
+
+        <div tabindex="0" class="borderdl">
+            <dt tabindex="0"class="sub_sub_title">Speaker Types:</dt>
+            <dd>
+                <span tabindex="1" class="selection_2">
+                    Entry-level users might opt for basic stereo speakers, while enthusiasts might prefer bookshelf or multimedia speakers. Professionals often gravitate towards studio monitors for accurate sound reproduction.
+                </span>
+            </dd>
+        </div>
+
+        <div tabindex="0" class="borderdl">
+            <dt tabindex="0"class="sub_sub_title">Sound Quality:</dt>
+            <dd>
+                <span tabindex="1" class="selection_2">
+                    Consider sound quality relative to your needs. Entry-level users can aim for balanced sound, while enthusiasts and professionals might seek better fidelity and accuracy.
+                </span>
+            </dd>
+        </div>
+
+        <div tabindex="0" class="borderdl">
+            <dt tabindex="0"class="sub_sub_title">Wireless Technology:</dt>
+            <dd>
+                <span tabindex="1" class="selection_2">
+                    Bluetooth connectivity offers convenience for wirelessly connecting speakers to devices, making it popular for casual use.
+                </span>
+            </dd>
+        </div>
+
+        <div tabindex="0" class="borderdl">
+            <dt tabindex="0"class="sub_sub_title">Immersive Audio:</dt>
+            <dd>
+                <span tabindex="1" class="selection_2">
+                    Enthusiasts and gamers might consider surround sound setups, while professionals value accurate sound reproduction for music production and audio editing.
+                </span>
+            </dd>
+        </div>
+
+        <div tabindex="0" class="borderdl">
+            <dt tabindex="0"class="sub_sub_title">Speaker Size and Placement:</dt>
+            <dd>
+                <span tabindex="1" class="selection_2">
+                    Ensure that the size of the speakers fits your space. Placement can impact sound quality, so experiment with positioning for optimal results.
+                </span>
+            </dd>
+        </div>
+
+        </dl>
+        </section>
+        <section class="blurb">
+        <h2 class="sub_title">Computer Subwoofers:</h2>
+        <dl>
+            <ol class="selection colms">
+                <li tabindex="0" class="selection_2">
+                    <dt tabindex="0"class="sub_sub_title">1. Bass Enhancement:</dt>
+                    <dd><span tabindex="0" class="selection_2">Subwoofers specialize in producing deep bass frequencies that regular speakers might struggle to reproduce effectively.</span></dd>
+                </li>
+                <li tabindex="0" class="selection_2">
+                    <dt tabindex="0"class="sub_sub_title">2. Entry-Level Considerations:</dt>
+                    <dd><span tabindex="0" class="selection_2">Entry-level users can benefit from improved audio depth and immersion by adding a compact subwoofer to their setup.</span></dd>
+                </li>
+                <li tabindex="0" class="selection_2">
+                    <dt tabindex="0"class="sub_sub_title">3. Enthusiast Attention:</dt>
+                    <dd><span tabindex="0" class="selection_2">Enthusiasts should look for subwoofers with a wide frequency response and adjustable settings to enhance their audio experience.</span></dd>
+                </li>
+                <li tabindex="0" class="selection_2">
+                    <dt tabindex="0"class="sub_sub_title">4. Integration with Speakers:</dt>
+                    <dd><span tabindex="0" class="selection_2">Ensure your subwoofer complements your existing speakers, whether they're integrated or separate components.</span></dd>
+                </li>
+                <li tabindex="0" class="selection_2">
+                    <dt tabindex="0"class="sub_sub_title">5. Room Acoustics:</dt>
+                    <dd><span tabindex="0" class="selection_2">Subwoofer placement and room acoustics greatly affect bass response. Experiment with positioning for balanced sound.</span></dd>
+                </li>
+                <li tabindex="0" class="selection_2">
+                    <dt tabindex="0"class="sub_sub_title">6. Professional Precision:</dt>
+                    <dd><span tabindex="0" class="selection_2">Professionals, especially in audio production, require accurate and detailed bass representation for precise monitoring and mixing.</span></dd>
+                </li>
+                <li tabindex="0" class="selection_2">
+                    <dt tabindex="0"class="sub_sub_title">7. Crossover and Phase Control:</dt>
+                    <dd><span tabindex="0" class="selection_2">Adjust crossover settings to ensure seamless integration between the subwoofer and main speakers. Phase control helps align audio waves.</span></dd>
+                </li>
+                <li tabindex="0" class="selection_2">
+                    <dt tabindex="0"class="sub_sub_title">8. Room Calibration:</dt>
+                    <dd><span tabindex="0" class="selection_2">High-end subwoofers might come with calibration tools to adapt to your room's acoustics for accurate bass reproduction.</span></dd>
+                </li>
+                <li tabindex="0" class="selection_2">
+                    <dt tabindex="0"class="sub_sub_title">9. Multiple Subwoofers:</dt>
+                    <dd><span tabindex="0" class="selection_2">Professionals working in larger spaces might use multiple subwoofers to achieve consistent bass distribution.</span></dd>
+                </li>
+            </ol>
+        </section>
+        </article>
+        <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
+        <article class="article fullbar">
+
+        <section class="blurb section">
+            <h3 class="sub_title">Inception and Early Days:</h3>
+            <p tabindex="0" class="selection">
+                <span tabindex="0" class="selection_2">Computer speakers trace their roots back to the early days of computing when computers primarily used text-based interfaces.</span><br />
+                <span tabindex="0" class="selection_2">In the 1980s and early 1990s, computer systems like the Commodore 64 and early IBM PCs used simple internal speakers that were capable of producing basic beeps and tones.</span><br />
+                <span tabindex="0" class="selection_2">These sounds were primarily used for system alerts and rudimentary audio output in games and applications.</span>
+            </p>
+
+            <h3 class="sub_title">Evolution of Sound Quality:</h3>
+            <p tabindex="0" class="selection">
+                <span tabindex="0" class="selection_2">As graphical interfaces and multimedia capabilities became more prevalent in computers, the demand for better audio quality grew.</span><br>
+                <span tabindex="0" class="selection_2">By the late 1990s and early 2000s, computer manufacturers started incorporating better audio capabilities into their systems, including improved internal speakers and the ability to output sound through external speakers.</span>
+            </p>
+
+            <h3 class="sub_title">Introduction of External Speakers:</h3>
+            <p tabindex="0" class="selection">
+                <span tabindex="0" class="selection_2">External computer speakers began to gain popularity as users sought to enhance their multimedia experiences.</span><br />
+                <span tabindex="0" class="selection_2">These speakers were often connected via the standard audio jack, which was a 3.5mm mini-jack connector. This connector was also used for headphones and microphones. These early external speakers provided a significant improvement in audio quality over the internal speakers of that time.</span>
+            </p>
+
+            <h3 class="sub_title">Transition to Digital Audio:</h3>
+            <p tabindex="0" class="selection">
+                <span tabindex="0" class="selection_2">With the advancement of technology, computer speakers transitioned from analog audio to digital audio interfaces.</span><br />
+                <span tabindex="0" class="selection_2">USB (Universal Serial Bus) emerged as a popular connection method for digital audio, allowing for higher quality sound and more advanced features.</span><br />
+                <span tabindex="0" class="selection_2">USB-powered speakers started to become more common, often providing better audio fidelity and the ability to play higher quality audio formats.</span>
+            </p>
+
+            <h3 class="sub_title">Surround Sound and Gaming:</h3>
+            <p tabindex="0" class="selection">
+                <span tabindex="0" class="selection_2">As gaming and multimedia content became more immersive, the demand for surround sound capabilities grew.</span><br />
+                <span tabindex="0" class="selection_2">Many computer speaker systems began to feature multiple speakers and subwoofers to create a more immersive audio experience, especially for gaming and home entertainment.</span>
+            </p>
+
+            <h3 class="sub_title">Wireless Connectivity:</h3>
+            <p tabindex="0" class="selection">
+                <span tabindex="0" class="selection_2">In recent years, wireless connectivity options such as Bluetooth have become increasingly popular for connecting computer speakers.</span><br />
+                <span tabindex="0" class="selection_2">This enables users to connect their devices to speakers without the need for physical cables. Bluetooth speakers offer convenience and versatility, allowing users to play audio from their computers, smartphones, and other devices wirelessly.</span>
+            </p>
+
+            <h3 tabindex="0" class="sub_title center card2 selection">Current State:</h3>
+            <p tabindex="0" class="selection">
+                <span tabindex="0" class="selection_2">Today, computer speakers come in a wide range of sizes, shapes, and configurations, catering to various needs and preferences.</span><br />
+                <span tabindex="0" class="selection_2">From compact portable speakers to high-end surround sound setups, the market offers a plethora of options to suit different use cases.</span>
+            </p></section>
+
+        <section class="blurb">
+            <h2 tabindex="0" class="center card2 selection">Common Connectors:</h2>
+            <h3>The most common connectors used for computer speakers include:</h3>
+            <fieldset tabindex="0" class="selection_2">
+                <legend tabindex="0" class="center card2 selection">3.5mm Audio Jack:</legend>
+                <p>
+                    <span tabindex="0" class="selection_2">This is a standard connector size that is commonly used for
+                        connecting speakers, headphones, and microphones to computers and other devices.</span><br />
+                    <span tabindex="0" class="selection_2">It's often color-coded green for speakers, pink for microphones, and
+                        blue for line-in.</span>
+                </p>
+            </fieldset>
+        <div class="colms">
+            <fieldset tabindex="0" class="selection_2">
+                <legend tabindex="0" class="center card2 selection">USB:</legend>
+                <p>
+                    <span tabindex="0" class="selection_2">USB connectivity is commonly used for digital audio
+                        transmission.</span><br />
+                    <span tabindex="0" class="selection_2">USB-powered speakers often combine both power and audio data over a
+                        single USB connection.</span>
+                </p>
+            </fieldset>
+
+            <fieldset tabindex="0" class="selection_2">
+                <legend tabindex="0" class="center card2 selection">Bluetooth:</legend>
+                <p>
+                    <span tabindex="0" class="selection_2">Wireless Bluetooth connectivity allows you to connect speakers to
+                        devices like laptops, smartphones, and tablets without the need for physical cables.</span>
+                </p>
+            </fieldset>
+
+            <fieldset tabindex="0" class="selection_2">
+                <legend tabindex="0" class="center card2 selection">HDMI:</legend>
+                <p>
+                    <span tabindex="0" class="selection_2">In some cases, high-end computer speaker systems may connect through
+                        HDMI ports, especially if they are part of a multi-channel audio setup.</span>
+                </p>
+            </fieldset>
+        </div>
+        </section>
+
+        <section class="blurb colms2">
+            
+            
+
+            <fieldset tabindex="0" class="selection_2">
+                <legend tabindex="0" class="center card2 selection" style="translate: 0 -45px;"><h2>Connection Targets:</h2></legend>
+                <h3 style="translate: 0 -65px;">Computer speakers can connect to various devices including:</h3>
+                    <span tabindex="0" class="selection_2"><a rel="example_group" href="https://latinospc.com/images/hardware/hw/speakers.jpg"><img src="https://latinospc.com/images/hardware/hw/speakers.jpg" alt="phone and tablet" width="200" height="472" title="phone and tablet"></a></span>
+            
+            </fieldset>
+
+            <fieldset tabindex="0" class="selection_2">
+                <legend tabindex="0" class="center card2 selection">Computers:</legend>
+        
+                    <span tabindex="0" class="selection_2">Desktops, laptops, and all-in-one computers are primary targets for connecting computer speakers.</span>
+            
+            </fieldset>
+
+            <fieldset tabindex="0" class="selection_2">
+                <legend tabindex="0" class="center card2 selection">Smartphones and Tablets:</legend>
+        
+                    <span tabindex="0" class="selection_2">Wireless speakers with Bluetooth connectivity can be paired with smartphones and tablets for portable audio playback.</span>
+            
+            </fieldset>
+
+        
+
+            <fieldset tabindex="0" class="selection_2">
+                <legend tabindex="0" class="center card2 selection">TVs and Monitors:</legend>
+        
+                    <span tabindex="0" class="selection_2">Some computer speaker systems can also connect to TVs and monitors to enhance audio quality for multimedia consumption.</span>
+            
+            </fieldset>
+
+            <fieldset tabindex="0" class="selection_2">
+                <legend tabindex="0" class="center card2 selection">Gaming Consoles:</legend>
+                
+                    <span tabindex="0" class="selection_2">Gamers often connect computer speaker systems to their gaming consoles for a more immersive audio experience.</span>
+        
+            </fieldset>
+        </section>
+        </article>
+        <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
+        <article class="article fullbar">
+        <h2 class="spacer_shape">Speakers can greatly enhance the audio experience for entry-level users, enthusiasts, and professionals. Here's a breakdown of what each group should know:</h2>
+        <section class="blurb">
+            <div class="colms2">
+        <details>
+        <summary tabindex="0" class="sub_sub_title card2 borderdl">Entry-Level Users</summary>
+        <dl >
+        <dt tabindex="0"class="borderdl">1. Sound Quality vs. Price:</dt><dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Entry-level users should balance their budget with sound quality expectations.</span><br />
+        <span tabindex="0" class="selection_2">While high-end speakers offer superior audio, there are affordable options that provide decent sound for basic tasks like web browsing and watching videos.</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">2. Compatibility:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Check if the speakers are compatible with your computer's audio output ports, whether it's a 3.5mm jack, USB, or Bluetooth.</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">3. Speaker Type:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Consider whether you want traditional stereo speakers, compact bookshelf speakers, or all-in-one options that combine speakers and subwoofers.</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">4. Space Constraints:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Choose speakers that fit your workspace or desk setup. Smaller speakers are often ideal for tight spaces.</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">5. Power Source:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Determine if the speakers are powered via USB, batteries, or a separate power adapter. USB-powered speakers are convenient for laptops.</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">6. Wired vs. Wireless:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Decide if you prefer wired or wireless speakers. Wireless speakers offer convenience but may have slightly higher latency.</span>
+        </dd>
+        </dl>
+        </details>
+
+
+        <details>
+        <summary class="sub_sub_title card2 borderdl">Enthusiasts:</summary>
+        <dl>
+            <dt tabindex="0"class="borderdl">1. Sound Quality:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Enthusiasts should prioritize sound quality. Look for speakers with higher wattage, larger drivers, and possibly additional features like equalizers and customizable sound profiles.</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">2. Audio Source:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Consider your primary use: gaming, multimedia, music production, or a mix. Choose speakers that excel in your chosen area.</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">3. Connectivity Options:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Evaluate the range of connectivity options. USB, Bluetooth, and multiple input ports can offer flexibility for various devices.</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">4. Frequency Response:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Look for speakers with a wider frequency response range. This indicates the range of tones the speakers can reproduce, leading to more detailed sound.</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">5. Stereo vs. Surround Sound:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Decide if you want stereo sound or a more immersive experience with surround sound. Some systems offer virtual surround sound through software processing.</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">6. Build Quality:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Durable construction and quality materials can impact speaker longevity and overall performance.</span>
+        </dd>
+            </dl>
+        </details>
+
+        <details>
+        <summary class="sub_sub_title card2 borderdl">Professionals:</summary>
+
+        <dl>
+            <dt tabindex="0"class="borderdl">1. Accuracy and Precision:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Professionals, especially those in audio production, should prioritize accurate sound representation. Look for studio monitors designed for precise sound reproduction.</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">2. Frequency Response Accuracy:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Pay close attention to the frequency response curve of studio monitors. A flat frequency response is essential for accurate audio work.</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">3. Active vs. Passive:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Professionals might consider active (powered) studio monitors with built-in amplification for consistent performance. Passive monitors require external amplification.</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">4. Room Acoustics:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Understand your room's acoustics and consider investing in acoustic treatment to optimize the sound of your speakers.</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">5. Connectivity and Inputs:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Look for speakers with a variety of inputs to accommodate multiple audio sources. Balanced XLR and TRS inputs are common in professional setups.</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">6. Calibration and Adjustability:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Some high-end speakers come with calibration tools to adjust sound output based on your room and preferences.</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">7. Size and Placement:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Choose the appropriate speaker size for your room. Larger rooms might require larger monitors for adequate sound dispersion.</span>
+        </dd>
+            </dl>
+        </details>
+        </div>
+        </section>
+        <h2 class="spacer_shape">Subwoofers are specialized speakers designed to reproduce low-frequency sounds, typically in the bass range. They can significantly enhance audio experiences by providing deep and powerful bass tones that regular speakers might not be able to reproduce effectively. Here's what entry-level users, enthusiasts, and professionals should know about computer subwoofers:</h2>
+        <details>
+        <summary class="sub_sub_title card2 selection center article">Entry-Level Users:</summary>
+
+        <dl>
+            <dt tabindex="0"class="borderdl">1. Basic Audio Improvement:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">For entry-level users, a subwoofer can add depth to audio playback, making music, movies, and games more immersive.</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">2. Size and Space:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Consider the available space on your desk or in your room. Subwoofers come in various sizes, and smaller ones might be better suited for tighter spaces.</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">3. Simple Setup:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Most subwoofers connect to your computer's audio output, usually through a 3.5mm jack or USB connection. Check compatibility before purchasing.</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">4. Budget-Friendly Options:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Entry-level users can find affordable subwoofers that offer a noticeable improvement in bass without breaking the bank.</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">5. Integrated vs. Separate Subwoofers:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Some speaker systems come with integrated subwoofers, while others offer separate subwoofers that can be placed on the floor. Consider your space and preferences.</span>
+        </dd>
+        </dl>
+        </details><details>
+        <summary class="sub_sub_title card2 selection center article">Enthusiasts:</summary>
+
+        <dl>
+            <dt tabindex="0"class="borderdl">1. Sound Quality Enhancement:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Enthusiasts seeking enhanced audio quality will appreciate a subwoofer's ability to reproduce deep bass frequencies accurately.</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">2. Frequency Response:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Look for subwoofers with a wide frequency response range, preferably going down to the lower limits of human hearing (around 20 Hz).</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">3. Matching with Speakers:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Ensure that the subwoofer's characteristics match well with your existing speakers, especially if you're using separate components.</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">4. Crossover Control:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Many subwoofers offer adjustable crossover settings. This determines the point at which the subwoofer takes over from the main speakers, preventing overlap.</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">5. Room Acoustics:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Consider the acoustics of your room. Subwoofer placement can significantly impact bass response. Experiment with positioning to achieve optimal results.</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">6. Amplification:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Some subwoofers are passive and require external amplification, while others are active (powered) and have built-in amplifiers. Active subwoofers simplify setup.</span>
+        </dd>
+        </dl>
+        </details><details>
+        <summary class="sub_sub_title card2 selection center article">Professionals:</summary>
+        <dl>
+            <dt tabindex="0"tabindex="0" class="borderdl">1. Accuracy and Precision:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Professionals, especially in audio production and mixing, should prioritize subwoofers that offer accurate and detailed bass representation.</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">2. Studio Monitors with Subwoofers:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Some studio monitor setups include a dedicated subwoofer for more accurate bass monitoring during music production.</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">3. Phase Adjustment:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Advanced subwoofers often offer phase adjustment settings to ensure that the subwoofer's output aligns well with the main speakers.</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">4. Frequency Response Linearity:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Look for subwoofers with a linear frequency response in their operational range. This ensures consistent and accurate bass reproduction.</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">5. Room Calibration:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">High-end subwoofers might come with room calibration tools that help compensate for room acoustics, ensuring a balanced bass response.</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">6. Multiple Subwoofers:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">In larger studios, professionals might opt for multiple subwoofers strategically placed to achieve more even bass distribution.</span>
+        </dd>
+
+        <dt tabindex="0"class="borderdl">7. Low-End Extension:</dt>
+        <dd class="selection_2" style="padding: 20px; margin-top: -35px;">
+        <span tabindex="0" class="selection_2">Professionals might want subwoofers capable of reproducing extremely low frequencies for precise audio work and mixing.</span>
+        </dd>
+        </dl>
+        </details>
+        <p class="selection">Regardless of your level of expertise, consider factors like frequency response, placement, compatibility, and room acoustics when choosing a subwoofer. Also, keep in mind that a well-integrated subwoofer can greatly enhance the overall audio experience, whether you're a casual listener or a professional working with sound.
+        </p></section>
+        </article>
+        <!--@%@#%@#^@^@^@#@^%#@$^$%&%^&*%^*^*&^*^*^*^&*$%*%^#&@^$%^#&*^%#*&^$(&*%)*()%*#&$%^!%$@#%^$@#^$%^$#^$%^-->
+        <article class="article fullbar">
+        <h2>Here are some computer speakers fun facts:</h2>
+        <fieldset>
+
+        <legend class="center">The Birth of "Beeps":</legend>
+        <div tabindex="0" class="colms selection">
+            <span tabindex="0" class="selection_2">
+                Early computer systems used simple internal speakers that were capable of producing basic beeps and tones.</span><br />
+            <span tabindex="0" class="selection_2">
+                These beeps were not just for sound effects; they were often used as a form of diagnostic feedback to indicate errors during the boot-up process.</span>
+        </div>
+
+        <legend class="center">The First Sound Card:</legend>
+        <div tabindex="0" class="colms selection">
+            <span tabindex="0" class="selection_2">
+                The AdLib Music Synthesizer Card, released in 1987, is often considered one of the first sound cards for PCs. It allowed computers to produce more complex audio beyond basic beeps and laid the foundation for modern computer audio capabilities.</span><br />
+            <span tabindex="0" class="selection_2">
+                The Sound Blaster Revolution: Creative's Sound Blaster sound card, introduced in 1989, played a crucial role in shaping computer audio. It popularized digital audio playback and helped establish the multimedia capabilities of personal computers.</span>
+        </div>
+        <legend class="center">The MIDI Influence:</legend>
+        <div tabindex="0" class="colms selection">
+            <span tabindex="0" class="selection_2">
+                MIDI (Musical Instrument Digital Interface) played a significant role in early computer audio.</span><br />
+            <span tabindex="0" class="selection_2">
+                It allowed computers to control external synthesizers and produce a wide range of musical sounds, contributing to the rise of computer-generated music.</span>
+        </div>
+        <legend class="center">The "Magic Smoke":</legend>
+        <div tabindex="0" class="colms selection">
+            <span tabindex="0" class="selection_2">
+                A humorous phrase in the tech community is "magic smoke." It's said that electronic devices operate because they contain "magic smoke." If you let the magic smoke out (due to a malfunction), the device stops working.</span>
+        </div>
+        <legend class="center">Bass Shakers:</legend>
+        <div tabindex="0" class="colms selection">
+            <span tabindex="0" class="selection_2">
+                Some gaming enthusiasts use bass shakers in addition to speakers. These devices are attached to chairs or surfaces and vibrate in response to low-frequency audio, providing a tactile dimension to gaming and media experiences.</span>
+        </div>
+        <legend class="center">Text-to-Speech Pranks:</legend>
+        <div tabindex="0" class="colms selection">
+            <span tabindex="0" class="selection_2">
+                Text-to-speech technology has led to amusing pranks where people input humorous or nonsensical phrases for the computer to "speak." These pranks have gained popularity online, leading to various entertaining results.</span>
+        </div>
+        <legend class="center">Hidden Speaker Designs:</legend>
+        <div tabindex="0" class="colms selection">
+            <span tabindex="0" class="selection_2">
+                Some computer peripherals, like keyboards and monitors, have integrated speakers hidden within their designs. These speakers are often not immediately visible but provide audio output as a secondary feature.</span>
+        </div>
+        <legend class="center">DIY Speaker Builds:</legend>
+        <div tabindex="0" class="colms selection">
+            <span tabindex="0" class="selection_2">
+                Enthusiasts often engage in DIY projects to build custom computer speakers from scratch or modify existing ones. This hobby allows for unique designs and tailored audio experiences.</span>
+        </div>
+        <legend class="center">Silence Is Golden:</legend>
+        <div tabindex="0" class="colms selection">
+            <span tabindex="0" class="selection_2">
+                While speakers are known for producing sound, some high-end gaming setups include "soundproof" or "acoustic" foam panels to reduce noise pollution and ensure a quieter gaming environment.</span>
+        </div>
+        <legend class="center">Speaker Voice Coils as Heaters:</legend>
+        <div tabindex="0" class="colms selection">
+            <span tabindex="0" class="selection_2">
+                In a playful twist, some tech enthusiasts have used powerful speaker magnets and voice coils to create mini-heaters by allowing the coils to generate heat as they interact with the magnets.</span>
+        </div>
+        <legend class="center">High-End Audio Enthusiast Market:</legend>
+        <div tabindex="0" class="colms selection">
+            <span tabindex="0" class="selection_2">
+                Just like with regular home audio setups, there's a high-end market for audiophile-grade computer speaker systems. These systems can come with premium materials, advanced speaker technology, and exquisite craftsmanship.</span>
+        </div>
+        </fieldset>
+        <h3>These fun facts highlight the playful and innovative side of computer speakers, showcasing how they've evolved from simple beeps to complex audio systems that enhance our digital experiences.
+        </h3>
+        <table style="table-layout:fixed;width:468pt">
+            <colgroup><col /><col /></colgroup><tbody>
+                <tr style="height:42pt">
+                    <td style="vertical-align:top;overflow:hidden;overflow-wrap:break-word;">
+                    <h3>[Free Research Preview. ChatGPT August 3 Version 2023]</h3>
+                    <hr /></td></tr></tbody></table>
+        </article>
+
+            <?php
 }
 
 
