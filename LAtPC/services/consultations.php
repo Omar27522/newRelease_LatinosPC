@@ -2,7 +2,7 @@
 function content_services_consultation(){
     ?>
     <section class="fullbar">
-    
+
 <section class="cut-it">
             <h2 id="hardware"><a href="./#help">Personal computers can encounter various points of failure, but many
                     issues can be prevented or mitigated with proper care and maintenance.</a></h2>

@@ -1,0 +1,20 @@
+There will be 2 tables.
+
+pages & content
+
+Pages looks like this:
+ID |  name |
+
+Content looks like this:
+ID | Page ID | name | section | content |
+
+The first table only needs 2 data entries.
+
+The second table takes the name of the first one as it's Page ID.
+
+
+The sections remain the same. look inside directory db for a full summary.
+
+
+
+I need a better way to visualize the database for debugging, it looks a bit messy and hard to follow.

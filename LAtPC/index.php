@@ -100,6 +100,11 @@ switch ($main_route) {
 		exit;
 		break;
 
+	case 'tutorials':
+		tutorial();
+		exit;
+		break;
+
 	case 'Template':
 		fullPageTemplate();
 		exit;
@@ -490,16 +495,7 @@ function hardware_options($sub_route){
 			$description = 'Speakers and Subwoofers Description';
 			include 'hardware/hardware.php';
 			break;
-		
-
-
-
-
-
-
-
-
-			case '':
+		case '':
 				$page = new Structure('../../', 'english', 'Hardware');
 			$keywords = 'Hardware Keywords';
 			$description = 'Hardware Description';
@@ -703,6 +699,13 @@ function _JesusChrist($sub_route)
 			show404();
 			break;
 	}
+}
+
+function tutorial() {
+	$page = new Structure('../../', 'english', 'Tutorials');
+	$keywords = 'Tutorials Keywords';
+	$description = 'Tutorials Description';
+	include 'anvil/tutorials.php';
 }
 
 $page = new Structure('../', 'english', 'Home LatinosPC');

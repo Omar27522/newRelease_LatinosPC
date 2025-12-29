@@ -350,6 +350,7 @@
                 'SW Utilities' => 'sw_utilities',
                 'SW Compression' => 'sw_compression',
                 'SW Developer Tools' => 'sw_developerTools',
+                'Tutorials' => 'tutorials',
             ],
             'es-419' => [
                 'Inicio LatinosPC' => 'contenido_inicio',

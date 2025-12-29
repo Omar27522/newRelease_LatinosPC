@@ -1,162 +1,198 @@
 <html>
+
 <head>
     <title>SQLite Connection</title>
     <style>
-        article {
-            padding: 1rem 2rem 3rem;
-            margin: 0 auto;
-            position: relative;
-            max-width: 1200px;
-        }
+    article {
+        padding: 1rem 2rem 3rem;
+        margin: 0 auto;
+        position: relative;
+        max-width: 1200px;
+    }
 
-        figure {
-            padding-left: 10%;
-        }
+    figure {
+        padding-left: 10%;
+    }
 
-        figcaption {
-            text-align: center;
-            padding-right: 10%;
-        }
+    figcaption {
+        text-align: center;
+        padding-right: 10%;
+    }
 
-        figcaption a {
-            text-decoration: none;
-            font-size: 2em;
-            color: white;
-            background-color: black;
-            margin-top: 2%;
-            padding-right: 2%;
-            padding-left: 2%;
-        }
+    figcaption a {
+        text-decoration: none;
+        font-size: 2em;
+        color: white;
+        background-color: black;
+        margin-top: 2%;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
 
-        figcaption a:hover {
-            text-decoration: underline;
-            color: royalblue;
-        }
+    figcaption a:hover {
+        text-decoration: underline;
+        color: royalblue;
+    }
 
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+    }
 
-        h1 {
-            color: #333;
-            text-align: center;
-        }
+    h1 {
+        color: #333;
+        text-align: center;
+    }
 
-        table {
-            background-color: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            border-radius: 12px;
-            overflow: hidden;
-            font-size: 15px;
-            border: none;
-            margin: 20px auto;
-            width: 95%;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+    table {
+        background-color: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        overflow: hidden;
+        font-size: 15px;
+        border: none;
+        margin: 20px auto;
+        width: 95%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-        th {
-            background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
-            color: white;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            padding: 18px 16px;
-            font-size: 13px;
-            border: none;
-            text-align: left;
-        }
+    th {
+        background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+        color: white;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 18px 16px;
+        font-size: 13px;
+        border: none;
+        text-align: left;
+    }
 
-        td {
-            padding: 16px;
-            border-bottom: 1px solid #eee;
-            vertical-align: top;
-            line-height: 1.6;
-        }
+    td {
+        padding: 16px;
+        border-bottom: 1px solid #eee;
+        vertical-align: top;
+        line-height: 1.6;
+    }
 
-        tr:nth-child(even) {
-            background-color: #fafbfc;
-        }
+    tr:nth-child(even) {
+        background-color: #fafbfc;
+    }
 
-        tr:hover {
-            background-color: #f0f7ff;
-            transition: background-color 0.2s ease;
-        }
+    tr:hover {
+        background-color: #f0f7ff;
+        transition: background-color 0.2s ease;
+    }
 
-        tr:last-child td {
-            border-bottom: none;
-        }
+    tr:last-child td {
+        border-bottom: none;
+    }
 
-        /* Column width adjustments for better readability */
-        th:nth-child(1), td:nth-child(1) { width: 5%; }   /* Array Number */
-        th:nth-child(2), td:nth-child(2) { width: 7%; }   /* ID */
-        th:nth-child(3), td:nth-child(3) { width: 10%; }  /* Page ID */
-        th:nth-child(4), td:nth-child(4) { width: 15%; }  /* Name */
-        th:nth-child(5), td:nth-child(5) { width: 13%; }  /* Section */
-        th:nth-child(6), td:nth-child(6) { width: 50%; }  /* Content */
+    /* Column width adjustments for better readability */
+    th:nth-child(1),
+    td:nth-child(1) {
+        width: 5%;
+    }
 
-        /* Style for the first column (Array Number) */
-        td:first-child {
-            font-weight: bold;
-            color: #4a90e2;
-            text-align: center;
-            background-color: rgba(74, 144, 226, 0.08);
-            font-size: 14px;
-        }
+    /* Array Number */
+    th:nth-child(2),
+    td:nth-child(2) {
+        width: 7%;
+    }
 
-        /* Style for ID column */
-        td:nth-child(2) {
-            font-weight: 600;
-            color: #666;
-            text-align: center;
-            font-size: 14px;
-        }
+    /* ID */
+    th:nth-child(3),
+    td:nth-child(3) {
+        width: 10%;
+    }
 
-        /* Style for Page ID column */
-        td:nth-child(3) {
-            font-weight: 600;
-            color: #2c3e50;
-            background-color: rgba(44, 62, 80, 0.05);
-        }
+    /* Page ID */
+    th:nth-child(4),
+    td:nth-child(4) {
+        width: 15%;
+    }
 
-        /* Style for Name column */
-        td:nth-child(4) {
-            font-weight: 500;
-            color: #27ae60;
-        }
+    /* Name */
+    th:nth-child(5),
+    td:nth-child(5) {
+        width: 13%;
+    }
 
-        /* Style for Section column */
-        td:nth-child(5) {
-            color: #8e44ad;
-            font-weight: 500;
-            font-size: 14px;
-        }
+    /* Section */
+    th:nth-child(6),
+    td:nth-child(6) {
+        width: 50%;
+    }
 
-        /* Style for content column - most important for readability */
-        td:last-child {
-            word-wrap: break-word;
-            line-height: 1.7;
-            color: #2c3e50;
-            font-size: 14px;
-            padding-right: 20px;
-        }
+    /* Content */
+
+    /* Style for the first column (Array Number) */
+    td:first-child {
+        font-weight: bold;
+        color: #4a90e2;
+        text-align: center;
+        background-color: rgba(74, 144, 226, 0.08);
+        font-size: 14px;
+    }
+
+    /* Style for ID column */
+    td:nth-child(2) {
+        font-weight: 600;
+        color: #666;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    /* Style for Page ID column */
+    td:nth-child(3) {
+        font-weight: 600;
+        color: #2c3e50;
+        background-color: rgba(44, 62, 80, 0.05);
+    }
+
+    /* Style for Name column */
+    td:nth-child(4) {
+        font-weight: 500;
+        color: #27ae60;
+    }
+
+    /* Style for Section column */
+    td:nth-child(5) {
+        color: #8e44ad;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    /* Style for content column - most important for readability */
+    td:last-child {
+        word-wrap: break-word;
+        line-height: 1.7;
+        color: #2c3e50;
+        font-size: 14px;
+        padding-right: 20px;
+    }
     </style>
 </head>
+
 <body>
     <h1>SQLite Connection</h1>
     <p>Connection to SQLite database was successful.</p>
 
     <!-- Simple Search Form -->
     <form method="get" action="" style="max-width: 1200px; margin: 10px auto; display: flex; gap: 8px;">
-        <input type="text" name="q" value="<?= isset($_GET['q']) ? htmlspecialchars($_GET['q'], ENT_QUOTES, 'UTF-8') : '' ?>" placeholder="Search content, name, section, or page_id..." style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 14px;" />
-        <button type="submit" style="padding: 10px 16px; border: none; background: #357abd; color: #fff; border-radius: 6px; cursor: pointer;">Search</button>
+        <input type="text" name="q"
+            value="<?= isset($_GET['q']) ? htmlspecialchars($_GET['q'], ENT_QUOTES, 'UTF-8') : '' ?>"
+            placeholder="Search content, name, section, or page_id..."
+            style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 14px;" />
+        <button type="submit"
+            style="padding: 10px 16px; border: none; background: #357abd; color: #fff; border-radius: 6px; cursor: pointer;">Search</button>
     </form>
 
 
-<?php
+    <?php
 // **************************** Content Home Page ****************************
 // Insert Content in the Content Table
 
@@ -314,10 +350,11 @@ if ($tableExists) {
 }
 
 
-
-echo 'Content: ' . $content[85]['content'] . '!!!';
+/*
+echo 'Content: ' . $content[84]['content'] . '!!!';
 echo '<br />';
 echo 'Content: ' . $content[13]['content'] . '!!!';
+*/
 
 // Display content in HTML table
 if (!empty($content)) {
@@ -559,4 +596,5 @@ if (!empty($content)) {
 ?>
 
 </body>
+
 </html>

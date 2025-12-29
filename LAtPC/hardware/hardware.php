@@ -1,4 +1,9 @@
 <?php
+
+function crumbs() {
+    echo '<a href="./" class="fullbar">Hardware</a>';
+}
+
 function cssStyles()    {
 
     if(str_contains($_SERVER['REQUEST_URI'], 'hardware')){
@@ -1266,10 +1271,8 @@ function cssStyles()    {
             border-radius: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
         #joysticks{
         flex-direction: column;}
-
         .container {
         max-width: 800px;
         margin: 50px auto;
@@ -1281,27 +1284,22 @@ function cssStyles()    {
         .colms2{
         break-inside: avoid-column;
         }
-
         .heading {
         font-size: 28px;
         font-weight: bold;
         color: #1e90ff;
         text-align: center;
         margin-bottom: 30px;}
-
         .tnk:focus{
-
             background: url(blue_rectangle.png) repeat-y right;
             transition: all 0.3s ease-out;
             background-size: 60px auto;
             animation-delay: 6000ms;
 
         }
-
         .logo {
             padding-top: 20px;
         }
-
         </style>
         <?php
     }
@@ -3107,7 +3105,9 @@ function hw_cpu()  {
 
 
     <section class="hero3 fulbar article" style="background-color:DarkSeaGreen;">
+        
         <div class="container fullbar">
+            <?php crumbs(); ?>
             <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
             <ul class="ex_menu" style="text-align:center;padding-bottom: 20px;">
                 <li id="cpu" style="display: inline;font-size: xxx-large"><a href="?hw/sw#cpu">
@@ -5709,14 +5709,6 @@ function hw_keyboard(){
 
 function hw_monitor() {
     ?>
-                <style>
-    .purple {
-        color: #6d64e8;
-        font-weight: 700;
-        font-size: 27pt;
-        text-align: left;
-    }
-    </style>
     <article class="article fullbar">
     <div align="center">
         <a href="#tech"><button type="button" class="bttn">
@@ -14436,5 +14428,6 @@ function hw_speakers_and_subwoofers () {
 }
 
 
-    include 'anvil/structure.php';
+
+include 'anvil/structure.php';
 ?>

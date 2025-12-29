@@ -66,6 +66,7 @@
 *work on a back-to-top button.*
 *I would like to comeback to the Teachings page and modify the <ruby> tags where a dialog opens when clicked, but also there is an external link to teh verse in different versions of the Holy Scripture *
 *I want to have a Last Update: DATE legend for every page*
+*I would want to start transfering the data over to the database in order to reduce costs. software fire is 4200 lines of code.*
 
 
 *Done (10/11/2025)*
