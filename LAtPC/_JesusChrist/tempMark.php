@@ -1,118 +1,162 @@
 <section id="^" class="section fullbar" data-section="Mark">
-        <nav class="crumbs">
-            <div class="bread-crumbs">
-                <a href="?intro#^" class="crumb-link">📚 Introduction</a>
-                <a href="?gospels#^" class="crumb-link">🌟 All Gospels</a>
-                <a href="?Matthew#^" class="crumb-link">📖 Matthew</a>
-                <a href="?John#^" class="crumb-link">💫 John</a>
-                <a href="?Luke#^" class="crumb-link">❤️ Luke</a>
-                <a href="?Mark#^" class="crumb-link">⚡ <b>Mark</b></a>
-                <a href="?conclusion#^" class="crumb-link">🎯 Conclusion</a>
-            </div>
-        </nav>
-        <h2><span class="emoji">⚡</span>Mark's Special Way of Telling the Story</h2>
-        <p>Mark was like the friend who's always in a hurry and gets straight to the point. Mark's Gospel is the
-            shortest of
-            the four, and it's packed with action! Instead of writing down lots of long speeches that Jesus gave, Mark
-            focused on showing us what Jesus did.</p>
-
-        <h3><span class="emoji">🏃‍♂️</span>Mark's Focus: What Jesus Did</h3>
-        <p>While Matthew focused on what Jesus said, Mark focused on what Jesus did. Mark wanted to show people that
-            Jesus
-            wasn't just a good teacher - He was someone with amazing power who could do things that only God could do.
-        </p>
-
-        <div class="highlight-box">
-            <h4>Jesus the Action Hero</h4>
-            <p>In Mark's Gospel, Jesus is constantly moving, helping people, and demonstrating God's power:</p>
-            <ul style="margin-left: 20px;">
-                <li>He heals sick people</li>
-                <li>He makes demons leave people alone</li>
-                <li>He calms storms</li>
-                <li>He feeds thousands of people with just a little food</li>
-                <li>He brings dead people back to life</li>
-            </ul>
+    <nav class="crumbs">
+        <div class="bread-crumbs">
+            <a href="?intro#^" class="crumb-link">📚 Introduction</a>
+            <a href="?gospels#^" class="crumb-link">🌟 All Gospels</a>
+            <a href="?Matthew#^" class="crumb-link">📖 Matthew</a>
+            <a href="?John#^" class="crumb-link">💫 John</a>
+            <a href="?Luke#^" class="crumb-link">❤️ Luke</a>
+            <a href="?Mark#^" class="crumb-link">⚡ <b>Mark</b></a>
+            <a href="?conclusion#^" class="crumb-link">🎯 Conclusion</a>
         </div>
+    </nav>
+    <h2><span class="emoji">⚡</span>Mark's Special Way of Telling the Story</h2>
+    <p><a href="https://en.wikipedia.org/wiki/Mark_the_Evangelist" title="Wikipedia">Mark</a> was like the friend who's
+        always in a hurry and gets straight to the point. Mark's Gospel is the
+        shortest of
+        the four, and it's packed with action! Instead of writing down lots of long speeches that Jesus gave, Mark
+        focused on showing us what Jesus did.</p>
 
-        <h3><span class="emoji">❓</span>Teaching Through Questions</h3>
-        <p>Mark's Jesus asks lots of questions that make people think:</p>
+    <h3><span class="emoji">🏃‍♂️</span>Mark's Focus: What Jesus Did</h3>
+    <p>While <a href="?Matthew#^">Matthew</a> focused on what Jesus said, Mark focused on what Jesus did. Mark wanted to
+        show people that
+        Jesus
+        wasn't just a good teacher - He was someone with amazing power who could do things that only God could do.
+    </p>
+    <p>The Gospel of Mark stands as the most action-oriented of the four Gospels, with a
+        distinctive focus on Jesus's deeds rather than his extended teachings. Mark's approach is
+        characterized by brevity, immediacy, and an emphasis on Jesus as the suffering servant
+        whose actions reveal his identity and mission. While Mark contains fewer unique
+        discourses than the other Gospels, his distinctive presentation of Jesus's teachings and
+        his narrative approach make a vital contribution to our understanding of Jesus's
+        ministry and message.</p>
+
+    <div class="highlight-box">
+        <h4>Jesus the Action Hero</h4>
+        <p>In Mark's Gospel, Jesus is constantly moving, helping people, and demonstrating God's power:</p>
         <ul style="margin-left: 20px;">
-            <li>"Who do people say I am?" (This helped the disciples think about Jesus's identity)</li>
-            <li>"What do you want me to do for you?" (This helped people think about what they really needed)</li>
-            <li>"Why are you so afraid? Do you still have no faith?" (This helped the disciples think about trusting
-                God)
-            </li>
+            <li>He heals sick people</li>
+            <li>He makes demons leave people alone</li>
+            <li>He calms storms</li>
+            <li>He feeds thousands of people with just a little food</li>
+            <li>He brings dead people back to life</li>
         </ul>
+    </div>
 
-        <div class="highlight-box">
-            <p><strong>Following Jesus is Hard:</strong> Mark doesn't hide the fact that following Jesus can be
-                difficult.
-                Even Jesus's closest disciples often didn't understand what He was teaching them.</p>
-            <p><strong>Jesus Came to Serve:</strong> One of the most important verses in Mark's Gospel is when Jesus
-                says,
-                "The Son of Man did not come to be served, but to serve, and to give his life as a ransom for many."</p>
-            <p><strong>Faith vs. Fear:</strong> Throughout Mark's Gospel, Jesus often asks His disciples, "Why are you
-                afraid? Where is your faith?"</p>
-        </div>
+    <h3><span class="emoji">❓</span>Teaching Through Questions</h3>
+    <p>Mark's Jesus asks lots of questions that make people think:</p>
+    <ul style="margin-left: 20px;">
+        <li>"Who do people say I am?" (This helped the disciples think about Jesus's identity)</li>
+        <li>"What do you want me to do for you?" (This helped people think about what they really needed)</li>
+        <li>"Why are you so afraid? Do you still have no faith?" (This helped the disciples think about trusting
+            God)
+        </li>
+    </ul>
 
-        <fieldset class="highlight-box">
-            <legend>
-                <h2><span class="emoji">🏃</span>Mark's Distinctive Approach to Sermons and Discourses</h2>
-            </legend>
-            <p>The Gospel of Mark stands as the most action-oriented of the four Gospels, with a
-                distinctive focus on Jesus's deeds rather than his extended teachings. Mark's approach is
-                characterized by brevity, immediacy, and an emphasis on Jesus as the suffering servant
-                whose actions reveal his identity and mission. While Mark contains fewer unique
-                discourses than the other Gospels, his distinctive presentation of Jesus's teachings and
-                his narrative approach make a vital contribution to our understanding of Jesus's
-                ministry and message.</p>
-        </fieldset>
+    <div class="highlight-box">
+        <p><strong>Following Jesus is Hard:</strong> Mark doesn't hide the fact that following Jesus can be
+            difficult.
+            Even Jesus's closest disciples often didn't understand what He was teaching them.</p>
+        <p><strong>Jesus Came to Serve:</strong> One of the most important verses in Mark's Gospel is when Jesus
+            says,
+            "The Son of Man did not come to be served, but to serve, and to give his life as a ransom for many."</p>
+        <p><strong>Faith vs. Fear:</strong> Throughout Mark's Gospel, Jesus often asks His disciples, "Why are you
+            afraid? Where is your faith?"</p>
+    </div>
 
-        <fieldset class="story-box">
-            <legend>
-                <h2><span class="emoji">🏃</span>Mark's Action-Oriented Narrative</h2>
-            </legend>
-            <p>Mark's Gospel is distinguished by its focus on Jesus's actions rather than his words. The
-                fast-paced narrative, driven by the frequent use of the word "immediately" (euthys,
-                appearing 41 times), creates a sense of urgency and movement that reflects Mark's
-                emphasis on Jesus as a man of action whose identity is revealed through what he does
-                rather than merely what he says. This action-oriented approach answers the question
-                "What did Jesus do?" rather than "What did Jesus say?" and presents Jesus primarily as
-                the suffering servant who came "not to be served, but to serve, and to give His life a
-                ransom for many" (Mark 10:45).</p>
 
-            <p>The brevity of Mark's Gospel—significantly shorter than Matthew and Luke—reflects this
-                focus on essential action rather than extended teaching. Mark includes fewer parables
-                than Matthew and Luke and presents Jesus's teachings in more condensed form. This
-                brevity may reflect Mark's purpose of presenting the Gospel to a Roman audience more
-                interested in power and action than in theological discourse or ethical teaching. The
-                emphasis on Jesus's miracles and exorcisms demonstrates his divine power and
-                authority in terms that would be compelling to a Roman audience accustomed to
-                evaluating leaders based on their demonstrations of power rather than their
-                philosophical sophistication.</p>
-        </fieldset>
+    <section class="story-box">
+        <h2><span class="emoji">🏃</span>Mark's Action-Oriented Narrative</h2>
+        <p class="paragraphStoryBox">Mark's Gospel is distinguished by its focus on Jesus's actions rather than his
+            words. The
+            fast-paced narrative, driven by the frequent use of the word "<b>immediately</b>" (euthys,
+            appearing 41 times), creates a sense of urgency and movement that reflects Mark's
+            emphasis on Jesus as a man of action whose identity is revealed through what he does
+            rather than merely what he says. This action-oriented approach answers the question
+            "<b>What did Jesus do?</b>" rather than "<b>What did Jesus say?</b>" and presents Jesus primarily as
+            the suffering servant who came "<strong>not to be served, but to serve, and to give His life a
+                ransom for many</strong>" <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK10_45"
+                title="Mark 10:45">Mark 10:45</a></p>
 
-        <fieldset class="story-box">
-            <legend>
-                <h2><span class="emoji">🏃</span>Mark's Presentation of Jesus's Teachings</h2>
-            </legend>
-            <p>While Mark contains fewer unique discourses than the other Gospels, his presentation of
-                Jesus's teachings makes a distinctive contribution to our understanding of Jesus's
-                message. Mark's Jesus teaches with authority but often in brief, provocative sayings
-                rather than extended discourses. The emphasis on action over words reflects Mark's
-                understanding of Jesus as one who demonstrates the kingdom of God through powerful
-                deeds rather than merely proclaiming it through eloquent speech.</p>
+        <p>The brevity of Mark's Gospel—significantly shorter than Matthew and Luke—reflects this
+            focus on essential action rather than extended teaching. Mark includes fewer parables
+            than Matthew and Luke and presents Jesus's teachings in more condensed form. This
+            brevity may reflect Mark's purpose of presenting the Gospel to a Roman audience more
+            interested in power and action than in theological discourse or ethical teaching. The
+            emphasis on Jesus's miracles and exorcisms demonstrates his divine power and
+            authority in terms that would be compelling to a Roman audience accustomed to
+            evaluating leaders based on their demonstrations of power rather than their
+            philosophical sophistication.</p>
+    </section>
 
-            <p>Parables in Mark appear primarily in chapter 4, which presents a shorter parallel to
-                Matthew's Parabolic Discourse. Mark includes the Parable of the Sower with its detailed
-                explanation (Mark 4:3-20), emphasizing the importance of hearing and understanding
-                God's word. The Parable of the Growing Seed (Mark 4:26-29), unique to Mark, illustrates
+    <h2><span class="emoji">🌟</span>Mark's Presentation of Jesus's Teachings</h2>
+    <section class="">
+        <p class="paragraphStoryBox">While Mark contains fewer unique discourses than the other Gospels, his
+            presentation of
+            Jesus's teachings makes a distinctive contribution to our understanding of Jesus's
+            message. Mark's Jesus teaches with authority but often in brief, provocative sayings
+            rather than extended discourses. The emphasis on action over words reflects Mark's
+            understanding of Jesus as one who demonstrates the kingdom of God through powerful
+            deeds rather than merely proclaiming it through eloquent speech.</p>
+
+
+        <section class="highlight-box">
+            <div class="carousel-group img_fl">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img">
+                            <img src="../images/_JesusChrist/growingSeed.webp" width="150" height="150" alt="image"
+                                class="fl thumbnail" alt="Start with Blank Page" />
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
+                </div>
+            </div>
+            </article>
+
+            <template id="carousel-images">
+                <div class="carousel-item" data-image-index="0">
+                    <img src="../images/_JesusChrist/growingSeed.webp" alt="Image 1" />
+                    <p><a href="./parables#:~:text=The%20Growing%20Seed">The Growing Seed</a> <a
+                            href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK4_26"
+                            title="Mark 4:26-29">4:26-29</a></p>
+                </div>
+                <!-- <div class="carousel-item" data-image-index="1">
+                <img src="../LAtPC/images/_JesusChrist/phariseeAndTaxCollector_thumb.webp" alt="Image 2" />
+                <p>Image 2 Description</p>
+            </div>
+            <div class="carousel-item" data-image-index="2">
+                <img src="../LAtPC/images/_JesusChrist/richManAndLazarus_thumb.webp" alt="Image 3" />
+                <p>Image 3 Description</p>
+            </div> -->
+            </template>
+
+
+
+
+            <p>
+
+
+                Parables in Mark appear primarily in chapter 4, which presents a shorter parallel to
+                <a href="?Matthew#The Parabolic Discourse">Matthew's Parabolic Discourse</a>. Mark includes the <a
+                    href="./parables#:~:text=The%20Sower">Parable of
+                    the Sower</a> with its detailed
+                explanation <small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK4_3"
+                        title="Mark 4:3-20"><ruby>Mark<rt>4:3-20</rt></ruby></a></small>, emphasizing the importance of
+                hearing and
+                understanding God's word. <a href="./parables#:~:text=The%20Growing%20Seed">The Parable of the Growing
+                    Seed</a> <small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK4_26"
+                        title="Mark 4:26-29"><ruby>Mark<rt>4:26-29</rt></ruby></small></a>,
+                unique to Mark, illustrates
                 the mysterious and autonomous growth of the kingdom once the seed of the word has
-                been planted. The Parable of the Mustard Seed (Mark 4:30-32) emphasizes the contrast
+                been planted. <a href="./parables#:~:text=The%20Mustard%20Seed">The Parable of the Mustard Seed</a>
+                <small><a href="https://ebible.org/study/?v1=MK4_30&w1=bible&t1=local%3Aeng-web"
+                        title="Mark 4:30-32"><ruby>Mark<rt>4:30-32</rt></ruby></small></a> emphasizes the contrast
                 between the kingdom's small beginnings and its ultimate greatness. Mark's presentation
                 of these parables maintains his characteristic focus on the immediate impact of Jesus's
-                teaching and the urgency of response.</p>
-        </fieldset>
+                teaching and the urgency of response.
+            </p>
+        </section>
 
         <p>The Olivet Discourse in Mark 13 presents a more concise version of Jesus's
             eschatological teaching than Matthew's extended treatment. Mark's account focuses
