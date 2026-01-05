@@ -10,88 +10,7 @@
         <meta name="description" content="<?= $description ?>">
         <link rel="stylesheet" href="../anvil/mainStyle.css">
         <link rel="stylesheet" href="../anvil/homepage.css">
-        <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--dialog-background);
-            padding-top: 20px;
-        }
-
-        .fullbar {
-            color: var(--background);
-            box-shadow: var(--box-shadow);
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 3%;
-        }
-
-        .sections {
-            margin-bottom: 2rem;
-            padding-bottom: 2rem;
-            padding-left: 2rem;
-            border-bottom: 1px solid var(--bannerAndFooter-bg);
-            border-radius: var(--border-radius);
-            box-shadow: var(--box-shadow);
-            background-color: var(--dialog-text-highlight);
-            color: var(--primary-dark);
-        }
-
-        .pages {
-            margin-bottom: 2rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid var(--bannerAndFooter-bg);
-            border-radius: var(--border-radius);
-            box-shadow: var(--box-shadow);
-            background-color: var(--card-bg);
-            color: var(--primary-dark);
-            padding-left: 3rem;
-        }
-
-        .debugInfo {
-            background: var(--primary-dark);
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid var(--secondary-dark);
-        }
-
-        pre {
-            overflow-x: auto;
-            max-width: 100%;
-            white-space: nowrap;
-            word-wrap: nowrap;
-            word-break: keep-all;
-            font-size: 22px;
-            padding: 10px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--box-shadow);
-            background-color: var(--card-bg);
-            color: var(--primary-dark);
-            margin: 10px 0;
-            overflow-y: auto;
-            -webkit-overflow-scrolling: touch;
-            isolation: isolate;
-            will-change: transform;
-            pointer-events: auto;
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.6;
-            padding-top: 20px;
-        }
-
-        hr {
-            border: 1px solid var(--secondary-dark);
-            margin: 1rem 0;
-        }
-        </style>
+        <link rel="stylesheet" href="index_style_db.css">
     </head>
 
 <body class="fullbar">
@@ -262,13 +181,8 @@ $stmt = $pdo->query('SELECT * FROM content');
     <div class="container">
         <!--<img src="https://latinospc.com/images/websites/webcontent/1.jpg" alt="Image 1">-->
 
-        <h2><?php
-foreach ($images as $image) {
-    echo ($image['name']);
-}
-?></h2><?php foreach ($images as $image) { ?>
-        <img src="<?php echo $image['image']; ?>" alt="<?php echo $image['name']; ?>" width="10%" height="10%">
-        <?php } ?>
+        <big><?php foreach ($images as $image) { echo ($image['name'].'<br />');}?></big>
+        <?php foreach ($images as $image) { echo $image['image'].'<br />';} ?>
 
 
         <hr>
@@ -286,23 +200,24 @@ foreach ($sections as $section) {
     echo '<a href="#' . $section['name'] . '" style="color: var(--primary-dark); text-decoration: none;" class="cta-button">' .
          $section['name'] . '</a><br />';
 }
-echo '</div><div class="grid-item"><h3>These are the Pages</h3>';
+echo '</div>';
+echo '<div class="grid-item"><h3>These are the Pages</h3>';
 foreach ($pages as $page) {
     // Create a link to the section using its ID
     echo '<a href="#' . $page['name'] . '" style="color: var(--primary-dark); text-decoration: none;" class="cta-button">' .
          $page['name']."<span style=\"float:right; padding-right:30%\"> | " .$sections[0]['name']  . '</a><br />';
 }
-
-echo '</div><div class="grid-item"><h3>These are the Content</h3>';
+echo '</div>';
+/* echo '</div><div class="grid-item"><h3>These are the Content</h3>';
 foreach ($content as $contents) {
     // Create a link to the section using its ID
     echo '<a href="#' . $contents['name'] . $contents['content'] . '" style="color: var(--primary-dark); text-decoration: none;" class="cta-button">' .
          $contents['name']."<span style=\"float:right; flex-wrap: wrap; padding-right:30%\">". $contents['content'] . " | " . $pages[5]['name'] . '</a><br />';
-}
+} */
 ?>
 
-        </div>
-    </section>
+
+        </section>
         </h2>
 
 
@@ -361,21 +276,21 @@ foreach ($pages as $page) {
 ?></h2>
 
 
-<section id="home">
-    <h2>Home</h2>
-    <p>Home content</p>
+        <section id="home">
+            <h2>home in Jesus Christ section</h2>
+            <p>Home page content</p>
 
 
-  
-   <table border="1">
-    <tr>
-        <th>Array Number</th>
-        <th>ID</th>
-        <th>Page ID</th>
-        <th>Name</th>
-        <th>Content</th>
-    </tr>
-    <?php
+
+            <table border="1">
+                <tr>
+                    <th>Array Number</th>
+                    <th>ID</th>
+                    <th>Page ID</th>
+                    <th>Name</th>
+                    <th>Content</th>
+                </tr>
+                <?php
     foreach ($content as $index => $contents) {
         echo '<tr>
         <td>' . $index .'</td>
@@ -389,8 +304,8 @@ foreach ($pages as $page) {
         echo '</tr>';
     }
     ?>
-</table>
-</section>
+            </table>
+        </section>
 
         <?php
 echo '<hr><h3>Section IDs</h3>';

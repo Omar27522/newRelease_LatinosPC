@@ -179,7 +179,7 @@
 
 <body>
     <h1>SQLite Connection</h1>
-    <p>Connection to SQLite database was successful.</p>
+
 
     <!-- Simple Search Form -->
     <form method="get" action="" style="max-width: 1200px; margin: 10px auto; display: flex; gap: 8px;">
@@ -344,17 +344,18 @@ if (!empty($content)) {
 }
 
 
+//HERE IS THE SECOND TABLE FOR THE SPANISH CONTENT
 if ($tableExists) {
-    $stmt = $pdo->query('SELECT * FROM content WHERE page_id="home"');
+    $stmt = $pdo->query('SELECT * FROM content WHERE page_id="inicio"');
     $content = $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
 
-/*
-echo 'Content: ' . $content[84]['content'] . '!!!';
+
+echo 'Content: ' . $content[0]['content'] . '!!!';
 echo '<br />';
 echo 'Content: ' . $content[13]['content'] . '!!!';
-*/
+
 
 // Display content in HTML table
 if (!empty($content)) {
