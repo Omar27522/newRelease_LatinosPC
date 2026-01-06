@@ -60,6 +60,8 @@
                 A new file SQLiteconnection.php shows how the database has indexed the data, and how to show it in the page as content.
     (10/5/2025|Update) Teachings page almost ready.
         It's been a while since any work has been done on the site, I'm glad work on it has resumed once again.
+    (1/6/2026|Update)
+        The Gospel pages have been updated, but the Teacchings page is yet to be concluded.
 
 
 
@@ -69,6 +71,7 @@
 *I would like to comeback to the Teachings page and modify the <ruby> tags where a dialog opens when clicked, but also there is an external link to teh verse in different versions of the Holy Scripture *
 *I want to have a Last Update: DATE legend for every page*
 *I would want to start transfering the data over to the database in order to reduce costs. software fire is 4200 lines of code.*
+*Design a system for content management in the database.*
 
 
 *Done (10/11/2025)*
