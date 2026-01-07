@@ -2306,7 +2306,7 @@ function teachings()  {
                 question <b><i>"Why do you call Me 'Lord, Lord,' and not do the things which I say?"</i></b>
                 challenges nominal faith and establishes obedience as the authentic expression of commitment to Christ.
             </p>
-            <p><big>The Sermon on the Plain</big> establishes the ethical foundation for Luke's presentation
+            <p><span style="font-size: 1.2em;">The Sermon on the Plain</span> establishes the ethical foundation for Luke's presentation
                 of discipleship, with particular emphasis on mercy, generosity, and practical obedience.
                 The focus on concrete social and economic conditions rather than merely spiritual
                 attitudes reflects Luke's concern with Jesus's ministry to the materially poor and socially
@@ -2678,11 +2678,11 @@ function teachings()  {
                 <li><strong>Think about God’s forgiveness.</strong> When we realize how much we've been forgiven, we
                     tend to
                     love and appreciate more.</li>
-                <big>
+                <span style="font-size: 1.2em;">
                     <li style="text-align: center;list-style-type: none;margin-top:1%;"><strong>Main idea:</strong> The
                         more
                         we understand how much we've been forgiven, the more our love and gratitude grow.</li>
-                </big>
+                </span>
             </ul>
         </div>
 
@@ -2762,11 +2762,11 @@ function teachings()  {
                 <li><strong>God delights when we come to Him again and again</strong>, trusting that He is able and
                     willing
                     to provide.</li>
-                <big>
+                <span style="font-size: 1.2em;">
                     <li style="text-align: center;list-style-type: none;margin-top:1%;">This parable reflects His
                         emphasis
                         on prayer as a central spiritual practice.</li>
-                </big>
+                </span>
             </ul>
         </div>
 
@@ -2816,9 +2816,9 @@ function teachings()  {
                     plenty of room
                     to store all my grain. After that, I can relax! I will eat, drink, and enjoy life for many
                     years.”</i>
-                But God spoke to him that very night and said, <big><b><i>“You fool! This very night your life will be
+                But God spoke to him that very night and said, <span style="font-size: 1.2em;"><b><i>“You fool! This very night your life will be
                             demanded
-                            from you. Then who will get all the things you have prepared for yourself?”</i></b></big>
+                            from you. Then who will get all the things you have prepared for yourself?”</i></b></span>
                 Jesus ended the parable by saying that this is what happens to anyone who piles up treasures for
                 themselves but is not rich toward God.</p>
             <p>The Parable reminds us that true life is not found in storing up more and more things.
@@ -2835,8 +2835,8 @@ function teachings()  {
                 <li>Ravens don’t plant or store grain, yet God feeds them.</li>
                 <li>Lilies don’t work or sew clothes, yet they are dressed more beautifully than King Solomon in all his
                     glory.</li>
-                <li><big><b>If God takes such good care of birds and flowers, how much more will He care for His
-                            children?</b></big></li>
+                <li><span style="font-size: 1.2em;"><b>If God takes such good care of birds and flowers, how much more will He care for His
+                            children?</b></span></li>
             </ul>
             <p style="text-align: center;margin-top:1%;">Jesus teaches us not to chase after possessions the way the
                 world does. Our heavenly Father already knows
@@ -2856,7 +2856,7 @@ function teachings()  {
         </div>
 
         <div class="highlight-box" id="TheBarrenFigTree">
-            <h2><span class="emoji"><big>𖣂</big></span>The Barren Fig Tree
+            <h2><span class="emoji"><span style="font-size: 1.2em;">𖣂</span></span>The Barren Fig Tree
                 <small><a href="https://ebible.org/study/?w1=bible&t1=local%3Aeng-web&v1=LK13_6">Luke 13:6-9</a></small>
             </h2>
             <span class="passage highlight-box">Same Crowd: <a
@@ -2942,7 +2942,7 @@ function teachings()  {
                     like a hen gathers her own brood under her wings, and you refused!"</strong> <span><a
                         href="https://ebible.org/study/?v1=LK13_34&w1=bible&t1=local%3Aeng-web"><ruby>Luke<rt>13:34</rt>
                         </ruby></a></span>
-                <big>His lament ties back to the fig tree:</big> <i>God is patient, but rejection of His mercy leads to
+                <span style="font-size: 1.2em;">His lament ties back to the fig tree:</span> <i>God is patient, but rejection of His mercy leads to
                     judgment.</i>
             </p>
             <h3>Teaching</h3>
@@ -3455,8 +3455,8 @@ function teachings()  {
                 that he was praying alone when he asked the disciples
                 <strong>"Who do the crowds say that I am?"</strong><sup><small>[3]</small></sup>,
                 and that he was praying on the mountain when he was transfigured <sup><small>[4]</small></sup>.
-                <big>These references establish prayer as fundamental to Jesus's relationship with the Father and his
-                    discernment of the Father's will at key moments in his ministry.</big>
+                <span style="font-size: 1.2em;">These references establish prayer as fundamental to Jesus's relationship with the Father and his
+                    discernment of the Father's will at key moments in his ministry.</span>
                 <div class="multi-link-container" style="display:inline;">
                     <ruby class="linked-text" style="color: var(--primary-dark);" title="1">Luke<rt>3:21-22</rt></ruby>
                     <div class="link-dialog">
@@ -3511,9 +3511,9 @@ function teachings()  {
                     </div>
                 </div>
             </div>
-        
 
-        
+
+
         <h3>The Holy Spirit's Role receives particular emphasis in Luke's Gospel, anticipating the
             more extensive treatment in the Book of Acts.</h3>
             <p> Luke alone records that John the Baptist
@@ -3705,24 +3705,394 @@ function teachings()  {
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
                                                             །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
 */
-include 'tempMark.php';
 ?>
+<section id="^" class="section fullbar" data-section="Mark">
+    <nav class="crumbs">
+        <div class="bread-crumbs">
+            <a href="?intro#^" class="crumb-link">📚 Introduction</a>
+            <a href="?gospels#^" class="crumb-link">🌟 All Gospels</a>
+            <a href="?Matthew#^" class="crumb-link">📖 Matthew</a>
+            <a href="?John#^" class="crumb-link">💫 John</a>
+            <a href="?Luke#^" class="crumb-link">❤️ Luke</a>
+            <a href="?Mark#^" class="crumb-link">⚡ <b>Mark</b></a>
+            <a href="?conclusion#^" class="crumb-link">🎯 Conclusion</a>
+        </div>
+    </nav>
+    <h2><span class="emoji">⚡</span>Mark's Special Way of Telling the Story</h2>
+    <p><a href="https://en.wikipedia.org/wiki/Mark_the_Evangelist" title="Wikipedia">Mark</a> was like the friend who's
+        always in a hurry and gets straight to the point. Mark's Gospel is the
+        shortest of
+        the four, and it's packed with action! Instead of writing down lots of long speeches that Jesus gave, Mark
+        focused on showing us what Jesus did.</p>
+
+    <h3><span class="emoji">🏃‍♂️</span>Mark's Focus: What Jesus Did</h3>
+    <p>While <a href="?Matthew#^">Matthew</a> focused on what Jesus said, Mark focused on what Jesus did. Mark wanted to
+        show people that
+        Jesus
+        wasn't just a good teacher - He was someone with amazing power who could do things that only God could do.
+    </p>
+    <p>The Gospel of Mark stands as the most action-oriented of the four Gospels, with a
+        distinctive focus on Jesus's deeds rather than his extended teachings. Mark's approach is
+        characterized by brevity, immediacy, and an emphasis on Jesus as the suffering servant
+        whose actions reveal his identity and mission. While Mark contains fewer unique
+        discourses than the other Gospels, his distinctive presentation of Jesus's teachings and
+        his narrative approach make a vital contribution to our understanding of Jesus's
+        ministry and message.</p>
+
+    <div class="highlight-box">
+        <h4>Jesus the Action Hero</h4>
+        <p>In Mark's Gospel, Jesus is constantly moving, helping people, and demonstrating God's power:</p>
+        <ul style="margin-left: 20px;">
+            <li>He heals sick people</li>
+            <li>He makes demons leave people alone</li>
+            <li>He calms storms</li>
+            <li>He feeds thousands of people with just a little food</li>
+            <li>He brings dead people back to life</li>
+        </ul>
+    </div>
+
+    <h3><span class="emoji">❓</span>Teaching Through Questions</h3>
+    <p>Mark's Jesus asks lots of questions that make people think:</p>
+    <ul style="margin-left: 20px;">
+        <li>"Who do people say I am?" (This helped the disciples think about Jesus's identity)</li>
+        <li>"What do you want me to do for you?" (This helped people think about what they really needed)</li>
+        <li>"Why are you so afraid? Do you still have no faith?" (This helped the disciples think about trusting
+            God)
+        </li>
+    </ul>
+
+    <div class="highlight-box">
+        <p><strong>Following Jesus is Hard:</strong> Mark doesn't hide the fact that following Jesus can be
+            difficult.
+            Even Jesus's closest disciples often didn't understand what He was teaching them.</p>
+        <p><strong>Jesus Came to Serve:</strong> One of the most important verses in Mark's Gospel is when Jesus
+            says,
+            "The Son of Man did not come to be served, but to serve, and to give his life as a ransom for many."</p>
+        <p><strong>Faith vs. Fear:</strong> Throughout Mark's Gospel, Jesus often asks His disciples, "Why are you
+            afraid? Where is your faith?"</p>
+    </div>
+
+    <section class="story-box">
+        <h2><span class="emoji">🏃</span>Mark's Action-Oriented Narrative</h2>
+        <p class="paragraphStoryBox">Mark's Gospel is distinguished by its focus on Jesus's actions rather than his
+            words. The
+            fast-paced narrative, driven by the frequent use of the word "<b>immediately</b>" (euthys,
+            appearing 41 times), creates a sense of urgency and movement that reflects Mark's
+            emphasis on Jesus as a man of action whose identity is revealed through what he does
+            rather than merely what he says. This action-oriented approach answers the question
+            "<b>What did Jesus do?</b>" rather than "<b>What did Jesus say?</b>" and presents Jesus primarily as
+            the suffering servant who came "<strong>not to be served, but to serve, and to give His life a
+                ransom for many</strong>" <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK10_45"
+                title="Mark 10:45">Mark 10:45</a></p>
+
+        <p>The brevity of Mark's Gospel—significantly shorter than Matthew and Luke—reflects this
+            focus on essential action rather than extended teaching. Mark includes fewer parables
+            than Matthew and Luke and presents Jesus's teachings in more condensed form. This
+            brevity may reflect Mark's purpose of presenting the Gospel to a Roman audience more
+            interested in power and action than in theological discourse or ethical teaching. The
+            emphasis on Jesus's miracles and exorcisms demonstrates his divine power and
+            authority in terms that would be compelling to a Roman audience accustomed to
+            evaluating leaders based on their demonstrations of power rather than their
+            philosophical sophistication.</p>
+    </section>
+
+    <h2><span class="emoji">🌟</span>Mark's Presentation of Jesus's Teachings</h2>
+
+    <p class="paragraphStoryBox">While Mark contains fewer unique discourses than the other Gospels, his
+        presentation of
+        Jesus's teachings makes a distinctive contribution to our understanding of Jesus's
+        message. Mark's Jesus teaches with authority but often in brief, provocative sayings
+        rather than extended discourses. The emphasis on action over words reflects Mark's
+        understanding of Jesus as one who demonstrates the kingdom of God through powerful
+        deeds rather than merely proclaiming it through eloquent speech.</p>
+
+    <section class="highlight-box">
+        <div class="carousel-group img_fl">
+            <div class="multi-link-container">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img">
+                        <img src="../images/_JesusChrist/growingSeed.webp" width="150" height="150" alt="image"
+                            class="fl thumbnail" alt="Start with Blank Page" />
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
+            </div>
+        </div>
+        </article>
+
+        <template id="carousel-images">
+            <div class="carousel-item" data-image-index="0">
+                <img src="../images/_JesusChrist/growingSeed.webp" alt="Image 1" />
+                <p><a href="./parables#:~:text=The%20Growing%20Seed">The Growing Seed</a> <a
+                        href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK4_26"
+                        title="Mark 4:26-29">4:26-29</a></p>
+            </div>
+            <!-- <div class="carousel-item" data-image-index="1">
+                <img src="../LAtPC/images/_JesusChrist/phariseeAndTaxCollector_thumb.webp" alt="Image 2" />
+                <p>Image 2 Description</p>
+            </div>
+            <div class="carousel-item" data-image-index="2">
+                <img src="../LAtPC/images/_JesusChrist/richManAndLazarus_thumb.webp" alt="Image 3" />
+                <p>Image 3 Description</p>
+            </div> -->
+        </template>
+
+        <p>Parables in Mark appear primarily in chapter 4, which presents a shorter parallel to
+            <a href="?Matthew#The Parabolic Discourse">Matthew's Parabolic Discourse</a>. Mark includes the <a
+                href="./parables#:~:text=The%20Sower">Parable of the Sower</a> with its detailed explanation
+            <small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK4_3"
+                    title="Mark 4:3-20"><ruby>Mark<rt>4:3-20</rt></ruby></a></small>, emphasizing the importance of
+            hearing and
+            understanding God's word. <a href="./parables#:~:text=The%20Growing%20Seed">The Parable of the Growing
+                Seed</a> <small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK4_26"
+                    title="Mark 4:26-29"><ruby>Mark<rt>4:26-29</rt></ruby></small></a>, unique to Mark, illustrates
+            the mysterious and autonomous growth of the kingdom once the seed of the word has
+            been planted. <a href="./parables#:~:text=The%20Mustard%20Seed">The Parable of the Mustard Seed</a>
+            <small><a href="https://ebible.org/study/?v1=MK4_30&w1=bible&t1=local%3Aeng-web"
+                    title="Mark 4:30-32"><ruby>Mark<rt>4:30-32</rt></ruby></small></a> emphasizes the contrast
+            between the kingdom's small beginnings and its ultimate greatness. Mark's presentation
+            of these parables maintains his characteristic focus on the immediate impact of Jesus's
+            teaching and the urgency of response.
+        </p>
+    </section>
+
+    <p><span class="passage"><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK13_1"
+                title="Mark 13:1-37"><ruby>Mark<rt>13:1-37</rt></ruby></a></span>
+        <a href="https://en.wikipedia.org/wiki/Olivet_Discourse">The Olivet Discourse</a> presents a more concise
+        version of Jesus's eschatological teaching than Matthew's extended treatment.
+        Mark's account focuses primarily on the prophetic warnings and signs, maintaining his characteristic
+        emphasis on immediate action and urgency. The repeated calls to "<i>watch</i>" and "<i>take heed</i>"
+        reflect Mark's concern with readiness for the coming crisis and judgment. The discourse concludes with the
+        explicit command
+        "<strong>What I say to you, I say to all: Watch!</strong>"
+        <a href="https://ebible.org/study/?v1=MK13_37&w1=bible&t1=local%3Aeng-web" title="Mark 13:37"><ruby>Mark<rt>
+                    13:37</rt></ruby></a>,
+        emphasizing vigilance as the appropriate response to eschatological expectation.
+        Teaching Through Questions represents a distinctive aspect of Mark's presentation of
+        Jesus as teacher. Mark's Jesus frequently uses questions to provoke thought, challenge
+        assumptions, and expose motives. Questions like "<strong>Who do men say that I am?</strong>"
+        <a href="https://ebible.org/study/?v1=MK8_27&w1=bible&t1=local%3Aeng-web" title="Mark 8:27"><ruby>Mark<rt>
+                    8:27</rt></ruby></a>,
+        "<strong>What do you want Me to do for you?</strong>" <a
+            href="https://ebible.org/study/?v1=MK10_36&w1=bible&t1=local%3Aeng-web" title="Mark 10:36">
+            <ruby>Mark<rt>10:36, 51</rt></ruby></a>, and "<strong>Why do you call Me
+            good?</strong>" <a href="https://ebible.org/study/?v1=MK10_18&w1=bible&t1=local%3Aeng-web"
+            title="Mark 10:18">
+            <ruby>Mark<rt>10:18</rt></ruby></a> invite engagement rather than merely passive reception of
+        information. This dialogical approach to teaching reflects Mark's emphasis on Jesus's
+        interaction with individuals and his concern with eliciting personal response rather than
+        merely conveying information.
+    </p>
+
+    <p class="highlight-box">Teaching Through Actions represents perhaps the most distinctive aspect
+        of Mark's
+        presentation of Jesus as teacher. Throughout the Gospel, Jesus's actions serve as
+        enacted parables that reveal the nature of God's kingdom and the character of true
+        discipleship. The feeding of the five thousand demonstrates God's abundant provision,
+        the healing of the blind man illustrates the gradual nature of spiritual illumination, and
+        the cursing of the fig tree enacts judgment on fruitless religious observance. Jesus's
+        washing of the disciples' feet in John's Gospel finds its Markan parallel in Jesus's
+        statement that "the Son of Man did not come to be served, but to serve" (Mark 10:45),
+        immediately followed by the healing of blind Bartimaeus as a demonstration of that
+        servant ministry.</p>
 
 
+    <h2><span class="emoji">📖</span>Mark's Unique Narrative Techniques</h2>
+    <p>While Mark contains fewer unique discourses than the other Gospels, his distinctive
+        narrative techniques create a powerful presentation of Jesus's identity and mission.
+        These techniques include the use of the "Messianic secret," the "sandwich" technique of
+        intercalating stories, and the emphasis on irony as a literary device.</p>
+
+    <section class="story-box">
+        <p class="paragraphStoryBox">The Messianic Secret refers to Jesus's frequent commands in Mark's Gospel for
+            people
+            to remain silent about his identity and miracles. After healing a leper, Jesus
+            "<strong>strictly warned him</strong>" and sent him away with the command "<strong>See that you say
+                nothing to
+                anyone</strong>"
+            <small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK1_43"
+                    title="Mark 1:43-44"><ruby>Mark<rt>1:43-44</rt></ruby></a></small>.
+            After raising Jairus's daughter, Jesus "<strong>commanded them strictly that no one should know
+                it</strong>"
+            <small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK5_43"
+                    title="Mark 5:43"><ruby>Mark<rt>5:43</rt></ruby></a></small>.
+            After Peter's confession of Jesus as the Christ,
+            Jesus "<strong>strictly warned them that they should tell no one about Him</strong>"
+            <small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK8_30"
+                    title="Mark 8:30"><ruby>Mark<rt>8:30</rt></ruby></a></small>. This
+            pattern of secrecy has been variously interpreted, but it serves Mark's narrative purpose
+            of gradually revealing Jesus's identity while explaining why Jesus was not more widely
+            recognized as Messiah during his lifetime. The secret creates narrative tension and
+            emphasizes that Jesus's identity can be fully understood only in light of his suffering,
+            death, and resurrection.
+        </p>
+
+        <p>The "Sandwich" Technique refers to Mark's characteristic practice of beginning
+            one
+            story, interrupting it with another, and then returning to complete the first. Examples
+            include the healing of Jairus's daughter interrupted by the healing of the woman with
+            the issue of blood <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK5_21-43"
+                title="Mark 5:21-43">Mark 5:21-43</a>, the cursing of the fig tree interrupted
+            by the cleansing
+            of the temple <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK11_12-25"
+                title="Mark 11:12-25">Mark 11:12-25</a>, and the commissioning of the twelve interrupted by the
+            account of Jesus's family seeking him <a
+                href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK3_13-35" title="Mark 3:13-35">Mark
+                3:13-35</a>. This technique creates
+            connections between the intercalated stories, suggesting interpretive links between
+            them. The technique also builds suspense and emphasizes Mark's theme of interruption
+            and unexpected developments in the journey of discipleship.</p>
+
+        <p>Irony serves as a significant literary device in Mark's Gospel, particularly in the passion
+            narrative. The soldiers who mock Jesus as king unwittingly proclaim the truth about his
+            identity. <small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK15_16"
+                    title="Mark 15:16-20"><ruby>Mark
+                        <rt>15:16-20</rt>
+                    </ruby></a></small> The religious leaders who challenge Jesus to come down from the cross to
+            prove his identity fail to recognize that his remaining on the cross is the ultimate
+            demonstration of his messianic mission. <small><a
+                    href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK15_31"
+                    title="Mark 15:31-32"><ruby>Mark
+                        <rt>15:31-32</rt>
+                    </ruby></a></small> The centurion's confession "<strong>Truly this Man was the Son
+                of God!</strong>"
+            <small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK15_39"
+                    title="Mark 15:39"><ruby>Mark
+                        <rt>15:39</rt>
+                    </ruby></a></small> represents the ironic recognition by a Gentile soldier of
+            what Israel's religious leaders failed to see. This use of irony creates a sense of dramatic
+            tension and invites readers to see beyond surface appearances to the deeper truth of
+            Jesus's identity and mission.
+        </p>
+    </section>
+
+    <h2><span class="emoji">🏃</span>Mark's Distinctive Emphases</h2>
+    <p>While Mark contains fewer unique discourses than the other Gospels, his narrative
+        presents several distinctive emphases that contribute significantly to our understanding
+        of Jesus's ministry and message.</p>
+    <section class="highlight-box">
+
+        <p><a href="https://www.sermonnotebook.org/mark/Mark%2000%20-%20Series%20Introduction.htm"
+                title="https://www.sermonnotebook.org/">The Suffering Servant</a> represents Mark's primary
+            christological emphasis. The Gospel's
+            central section (<a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK8_27"
+                title="Mark 8:27-10:45">Mark 8:27</a>-10:45) is structured around three passion predictions, each
+            followed by teaching about the nature of discipleship as sharing in Jesus's suffering and
+            service. The explicit statement that the Son of Man came "<strong>to give His life a ransom for
+                many</strong>" <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK10_45"
+                title="Mark 10:45"><ruby>Mark
+                    <rt>10:45</rt>
+                </ruby></a> establishes sacrificial service as the heart of Jesus's mission and the
+            model for his followers. This emphasis on suffering service rather than triumphant rule
+            distinguishes Mark's presentation of Jesus from contemporary expectations of the
+            Messiah as a political liberator.</p>
+
+        <p><a href="https://integratedcatholiclife.org/2024/01/the-cost-of-discipleship/"
+                title="https://integratedcatholiclife.org">The Cost of Discipleship</a> receives particular emphasis
+            in Mark's Gospel. Following each
+            passion prediction, Jesus teaches about the nature of discipleship in terms that parallel
+            his own suffering mission. After the first prediction, he teaches that "<strong>whoever desires to
+                come after Me, let him deny himself, and take up his cross, and follow Me</strong>".
+            <small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK8_34"
+                    title="Mark 8:34"><ruby>Mark
+                        <rt>8:34</rt>
+                    </ruby></a></small>
+            After the second, he teaches that "<strong>if anyone desires to be first, he shall be last of all and
+                servant of all</strong>".
+            <small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK9_35"
+                    title="Mark 9:35"><ruby>Mark
+                        <rt>9:35</rt>
+                    </ruby></a></small>
+            After the third, he teaches that "<strong>whoever desires to become
+                great among you shall be your servant</strong>".
+            <small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK10_43"
+                    title="Mark 10:43"><ruby>Mark
+                        <rt>10:43</rt>
+                    </ruby></a></small>
+            This consistent pattern establishes discipleship as participation in Jesus's suffering service rather
+            than a path to prestige or power.
+        </p>
+
+        <p>The Failure of the Disciples receives more emphasis in Mark than in the other Gospels.
+            Mark frequently notes the disciples' lack of understanding (Mark <a
+                href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK4_13">4:13</a>,
+            <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK6_52">6:52</a>,
+            <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK8_17">8:17-21</a>),
+            their inappropriate responses to Jesus's teaching (Mark <a
+                href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK8_32">8:32-33</a>,
+            <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK9_33">9:33-34</a>,
+            <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK10_35">10:35-37</a>), and
+            their ultimate desertion at his arrest (Mark <a
+                href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK14_50">14:50</a>).
+            This emphasis on discipleship failure serves several purposes: it creates a realistic portrait of the
+            challenges of following
+            Jesus, it emphasizes the necessity of divine grace rather than human achievement in
+            discipleship, and it offers hope to Mark's readers who may be experiencing their own
+            failures in following Christ. The fact that these same failed disciples became the leaders
+            of the early church demonstrates the transformative power of the resurrection and the
+            Spirit.
+        </p>
+
+        <p>The Present Reality of the Kingdom receives particular emphasis in Mark's
+            presentation of Jesus's teaching. While not ignoring future aspects of the kingdom, Mark
+            emphasizes its present manifestation in Jesus's ministry of healing, exorcism, and
+            teaching. The declaration that "the kingdom of God has come near" <small><a
+                    href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK1_15"><ruby>Mark
+                        <rt>1:15</rt>
+                    </ruby></a></small>
+            establishes the immediacy of God's reign in Jesus's person and work. The emphasis on
+            Jesus's authority over demons, disease, and natural forces demonstrates the kingdom's
+            power breaking into the present world order. This emphasis on the kingdom's present
+            reality creates a sense of urgency about response and establishes discipleship as
+            participation in God's current work rather than merely preparation for a future reality.</p>
+    </section>
 
 
+    <h2><span class="emoji">🏃</span>Mark's Theological Contribution</h2>
 
+    <p>Mark's distinctive approach to Jesus's teachings and his narrative presentation make a
+        unique and essential contribution to our understanding of Jesus's ministry and
+        message. The emphasis on Jesus as the suffering servant who reveals God's kingdom
+        through powerful deeds rather than merely eloquent words provides a necessary
+        complement to the more discourse-focused presentations in Matthew and John. The
+        focus on the cost of discipleship and the failures of the first disciples creates a realistic
+        portrait of the challenges of following Jesus while offering hope based on God's
+        transformative grace rather than human achievement.</p>
 
+    <p>Mark's fast-paced, action-oriented narrative style makes the Gospel particularly
+        accessible to readers more interested in what Jesus did than in extended theological
+        discourse. The emphasis on Jesus's deeds as revelatory of his identity and mission
+        establishes the principle that authentic Christianity involves not merely correct belief
+        but transformative action. The focus on Jesus's service and sacrifice as the model for
+        discipleship establishes humility and self-giving as the defining characteristics of
+        Christian leadership rather than dominance or self-promotion.</p>
+
+    <p>Mark's Gospel thus provides an essential perspective on Jesus's teaching ministry,
+        emphasizing its integration with his actions, its focus on sacrificial service, and its call to
+        costly discipleship. While containing fewer unique discourses than the other Gospels,
+        Mark's presentation of Jesus's teachings embedded in a fast-paced narrative of powerful
+        deeds creates a compelling portrait of Jesus as the suffering servant whose words and
+        actions together reveal the present reality of God's kingdom and the transformative
+        demands of authentic discipleship.</p>
+</section>
 
     <?php
+/*
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+*/
     elseif (isset($_GET['conclusion'])):
+/*
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+                                                            །† ͝ ︶ ͝ ꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷ ͝ ︶ ͝ †། ·̩͙
+*/
 ?>
-
-
-
-
-
-
     <section id="^" class="section fullbar" data-section="Conclusion">
         <nav class="crumbs">
             <div class="bread-crumbs">
@@ -3737,53 +4107,48 @@ include 'tempMark.php';
         </nav>
         <h2 class="section-title"><span class="emoji">🎯</span>Conclusion: What We Learn from All Four Gospels
         </h2>
-        <p>Now that we've looked at all four Gospel books, we can see how they work together like pieces of a
-            puzzle.
-            Each one shows us something special about Jesus and His teachings.</p>
+        <p>Now that we've looked at all <a href="https://overviewbible.com/four-gospels/"title="https://overviewbible.com">four Gospel books</a>,
+        we can see how they work together like pieces of a puzzle.
+        Each one shows us something special about Jesus and His teachings.</p>
 
-        <p>Jesus's teachings, as captured in the Sermon on the Mount and throughout His ministry, present a
-            revolutionary
-            spiritual and ethical framework centered on the Kingdom of God. This Kingdom isn't merely a future hope but
-            a
-            present reality that transforms how we live now. From the Beatitudes to the parables, Jesus consistently
-            emphasized that God's reign brings an inversion of worldly values.</p>
+        <p>Jesus's teachings, as captured in the <a href="https://bibleproject.com/articles/what-is-the-sermon-on-the-mount/"title="https://bibleproject.com">
+            Sermon on the Mount</a> and throughout His ministry, present a revolutionary spiritual and ethical framework centered on
+            <a href="https://www.gotquestions.org/kingdom-of-God.html"title="https://www.gotquestions.org">the Kingdom of God</a>.
+            This Kingdom isn't merely a future hope but a present reality that transforms how we live now.
+            From the Beatitudes to the parables, Jesus consistently emphasized that God's reign brings an inversion of worldly values.</p>
 
-        <p>The core of Jesus's message revolves around two inseparable commandments: wholehearted love for God and
-            selfless
-            love for others—even enemies. This radical ethic manifests in forgiveness, generosity, humility, and
-            service.
-            His teachings challenge followers to move beyond religious performance toward authentic relationship with
-            God
-            and compassionate engagement with humanity.</p>
+        <p><span style="font-size: 1.2em;">The core of Jesus's message revolves around
+            <a href="https://gferichsen.medium.com/the-two-great-commandments-are-they-one-and-the-same-29c1922aef47"title="https://medium.com/">
+                two inseparable commandments</a>: <b>wholehearted love for God and
+            selfless love for others—even enemies.</b></span> This radical ethic manifests in forgiveness, generosity, humility,
+            and service. His teachings challenge followers to move beyond religious performance toward authentic relationship with
+            God and compassionate engagement with humanity.</p>
 
-        <p>Jesus embodied these teachings through His own life of service, ultimately demonstrating the depth of divine
-            love
+        <p>Jesus embodied these teachings through His own life of service, ultimately demonstrating the depth of divine love
             through self-sacrifice. His invitation remains open today: to seek first God's Kingdom and righteousness,
-            trusting in divine provision while actively participating in bringing glimpses of heaven's justice, mercy,
-            and
-            love.</p>
+            trusting in divine provision while actively participating in bringing glimpses of heaven's justice, mercy, and love.</p>
 
         <h3 class="subsection-title"><span class="emoji">🧩</span>How the Gospels Work Together</h3>
         <div class="highlight-box">
-            <p><strong>Matthew</strong> is like a great teacher who organizes everything perfectly. He shows us
+            <p><strong><a href="?Matthew#^">Matthew</a></strong> is like a great teacher who organizes everything perfectly. He shows us
                 what
                 Jesus taught about how to live good lives, how to treat others, and how to get ready for Jesus
                 to come
                 back.</p>
-            <p><strong>Mark</strong> is like an exciting storyteller who shows us Jesus in action. He helps us
+            <p><strong><a href="?Mark#^">Mark</a></strong> is like an exciting storyteller who shows us Jesus in action. He helps us
                 see that
                 Jesus has real power and that following Him is an adventure that requires courage and faith.</p>
-            <p><strong>Luke</strong> is like a caring friend who makes sure everyone feels included. He shows us
+            <p><strong><a href="?Luke#^">Luke</a></strong> is like a caring friend who makes sure everyone feels included. He shows us
                 that
                 Jesus loves everyone, especially people who are poor, sad, or left out.</p>
-            <p><strong>John</strong> is like a wise teacher who helps us understand the deep truths about who
+            <p><strong><a href="?John#^">John</a></strong> is like a wise teacher who helps us understand the deep truths about who
                 Jesus
                 really is. He shows us that Jesus is God's son who came to save us and give us eternal life.</p>
         </div>
 
         <h3 class="subsection-title"><span class="emoji">⭐</span>The Most Important Things Jesus Taught</h3>
         <div class="story-box">
-            <p>When we put all four Gospels together, we can see the most important things Jesus wants us to
+            <p class="paragraphStoryBox">When we put all four Gospels together, we can see the most important things Jesus wants us to
                 know:</p>
             <ol style="margin-left: 20px;">
                 <li><strong>God Loves You:</strong> No matter who you are or what you've done, God loves you and
@@ -3811,7 +4176,9 @@ include 'tempMark.php';
             </ol>
         </div>
 
-        <h3 class="subsection-title"><span class="emoji">🌈</span>Your Next Steps</h3>
+        <h3 class="subsection-title"><span class="emoji">🌈</span>
+        Your Next Steps
+        <span style="transform: rotate(90deg); display: inline-block;" class="emoji">🌈</span></h3>
         <p>Now that you know about Jesus's amazing teachings, here are some things you can do:</p>
         <ul style="margin-left: 20px;">
             <li><strong>Read the Bible:</strong> Start reading the Gospel books for yourself. You might want to
@@ -3836,7 +4203,11 @@ include 'tempMark.php';
                 to live
                 the way Jesus taught us. When we make mistakes (and we all do), we can ask God to forgive us,
                 and He
-                will!</p>
+                will!
+            <blockquote><ruby><rt>7</rt></ruby> “Ask, and it will be given you. Seek, and you will find. Knock, and it will be opened for you.
+                <ruby><rt>8</rt></ruby> For everyone who asks receives. He who seeks finds. To him who knocks it will be opened.
+                <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT7_7"><ruby class="rtl">Matthew<rt>7:7-8</rt></ruby></a></blockquote>
+            </p>
             <p>Jesus's teachings show us that God loves us so much that He sent His son to save us. That's the
                 most
                 amazing news in the world, and it's available to everyone who believes in Jesus. What a
@@ -3856,37 +4227,29 @@ include 'tempMark.php';
             could
             provide.</p>
         <h3 class="subsection-title"><span class="emoji">📚</span>The Unique Contributions of Each Gospel</h3>
-        <div class="highlight-box">
             <h4><strong>Matthew's Contribution</strong></h4>
             <p>Matthew's contribution lies in his systematic organization of Jesus's teachings into five major
                 discourses that establish the ethical, ecclesiological, and eschatological foundations of
                 Christian
                 faith.</p>
-            <p>The Sermon on the Mount provides the fundamental principles of Christian discipleship, the
-                Mission
-                Discourse establishes guidelines for Christian ministry, the Parabolic Discourse reveals the
-                mysteries
-                of the Kingdom of Heaven, the Church Discourse addresses community life and governance, and the
-                Olivet
-                Discourse warns of coming judgment while calling for vigilance and faithfulness.</p>
-            <p>Matthew's emphasis on Jesus as the authoritative teacher and interpreter of God's law makes his
-                Gospel
+            <p>The <a href="?Matthew#Sermon on the Mount">Sermon on the Mount</a> provides the fundamental principles of Christian discipleship, the
+                <a href="?Matthew#The Mission Discourse">Mission Discourse</a> establishes guidelines for Christian ministry, the
+                <a href="?Matthew#The Parabolic Discourse">Parabolic Discourse</a> reveals the mysteries of the Kingdom of Heaven, the
+                <a href="?Matthew#The Discourse on the Church">Church Discourse</a> addresses community life and governance, and the
+                <a href="?Matthew#The Olivet Discourse">Olivet Discourse</a> warns of coming judgment while calling for vigilance and faithfulness.</p>
+            <p>Matthew's emphasis on Jesus as the authoritative teacher and interpreter of God's law makes his Gospel
                 the primary source for Christian ethics and doctrine.</p>
-        </div>
-        <div class="highlight-box">
             <h4><strong>John's Contribution</strong></h4>
-            <p>John's contribution lies in his presentation of extended theological discourses that explore the
-                deepest
-                questions about Jesus's identity, his relationship with the Father, and the nature of salvation
-                through
-                faith in him. The discourses with Nicodemus, the Samaritan woman, and others establish the
-                necessity of
-                spiritual transformation, while the Bread of Life discourse, the Good Shepherd teaching, and the
-                Farewell Discourse provide profound insights into the nature of spiritual life and the resources
+            <p>John's contribution lies in his presentation of extended theological discourses that explore the deepest
+                questions about Jesus's identity, his relationship with the Father, and the nature of salvation through
+                faith in him. The discourses with <a href="?John#The New Birth"title="The New Birth">Nicodemus</a>,
+                <a href="?John#Living Water"title="Living Water">the Samaritan woman</a>, and others establish the necessity of
+                spiritual transformation, while <a href="?John#The Bread of Life"title="The Bread of Life">the Bread of Life discourse</a>,
+                <a href="?John#The Good Shepherd"title="The Good Shepherd">the Good Shepherd teaching</a>, and the
+                <a href="?John#The Farewell Discourse"title="The Farewell Discourse">Farewell Discourse</a>
+                provide profound insights into the nature of spiritual life and the resources
                 available to believers. John's emphasis on Jesus as the divine revealer of God makes his Gospel
                 essential for understanding Christian theology and spirituality.</p>
-        </div>
-        <div class="highlight-box">
             <h4><strong>Luke's Contribution</strong></h4>
             <p>Luke's contribution lies in his emphasis on Jesus's ministry to the marginalized and his concern
                 for
@@ -3899,8 +4262,6 @@ include 'tempMark.php';
                 makes his account essential for understanding the inclusive nature of God's kingdom and the
                 spiritual
                 resources available for Christian mission.</p>
-        </div>
-        <div class="highlight-box">
             <h4><strong>Mark's Contribution</strong></h4>
             <p>Mark's contribution lies in his action-oriented presentation of Jesus as the suffering servant
                 whose
@@ -3912,7 +4273,6 @@ include 'tempMark.php';
                 narrative
                 style and focus on Jesus's actions make his Gospel particularly effective for demonstrating the
                 integration of faith and practice in authentic Christian living.</p>
-        </div>
         <h2 class="section-title"><span class="emoji">🔍</span>The Theological Significance of the Diversity
         </h2>
         <div class="story-box">

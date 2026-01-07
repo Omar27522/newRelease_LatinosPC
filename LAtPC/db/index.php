@@ -176,7 +176,7 @@
     Last Update: 09/21/2025
     <div class="container">
         <!--<img src="https://latinospc.com/images/websites/webcontent/1.jpg" alt="Image 1">-->
-        <big><?php foreach ($images as $image) { echo ($image['name'] . '<br />'); } ?></big>
+        <span style="font-size: 1.2em;"><?php foreach ($images as $image) { echo ($image['name'] . '<br />'); } ?></span>
         <?php foreach ($images as $image) { echo $image['image'] . '<br />'; } ?>
         <hr>
         <section class="homepage-grid ">
@@ -277,7 +277,7 @@ foreach ($pages as $page) {
         }
         ?>
     </div>
-    <h2><big><?php echo $contents['content'] ?></big></h2>
+    <h2><span style="font-size: 1.2em;"><?php echo $contents['content'] ?></span></h2>
 </body>
 
 </html>
