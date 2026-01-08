@@ -4181,57 +4181,107 @@ function teachings()  {
         <span style="transform: rotate(90deg); display: inline-block;" class="emoji">🌈</span></h3>
         <p>Now that you know about Jesus's amazing teachings, here are some things you can do:</p>
         <ul style="margin-left: 20px;">
-            <li><strong>Read the Bible:</strong> Start reading the Gospel books for yourself. You might want to
-                start
-                with Mark since it's the shortest and most action-packed.</li>
-            <li><strong>Pray:</strong> Talk to God every day. Thank Him for His love, ask Him to help you follow
-                Jesus,
-                and pray for other people.</li>
-            <li><strong>Be Kind:</strong> Look for ways to be kind and helpful to others, especially people who
-                might be
-                sad, lonely, or in need.</li>
-            <li><strong>Learn More:</strong> Keep learning about Jesus by going to church, Sunday school, or
-                Bible
-                study.</li>
-            <li><strong>Tell Others:</strong> Share what you've learned about Jesus's love with your friends and
-                family.
-            </li>
+            <li><strong>Read the Bible:</strong> Start reading the Gospel books for yourself. You might want to start with Mark since it's the shortest and most action-packed.</li>
+            <li><strong>Pray:</strong> Talk to God every day. Thank Him for His love, ask Him to help you follow Jesus, and pray for other people.</li>
+            <li><strong>Be Kind:</strong> Look for ways to be kind and helpful to others, especially people who might be sad, lonely, or in need.</li>
+            <li><strong>Learn More:</strong> Keep learning about Jesus by going to church, Sunday school, or Bible study.</li>
+            <li><strong>Tell Others:</strong> Share what you've learned about Jesus's love with your friends and family.</li>
         </ul>
 
         <div class="highlight-box">
-            <p>Remember, following Jesus isn't about being perfect - it's about loving God and others and trying
-                to live
-                the way Jesus taught us. When we make mistakes (and we all do), we can ask God to forgive us,
-                and He
-                will!
+            <p>Remember, following Jesus isn't about being perfect - it's about loving God and others and trying to live the way Jesus taught us.
+                When we make mistakes (and we all do), we can ask God to forgive us, and He will!
             <blockquote><ruby><rt>7</rt></ruby> “Ask, and it will be given you. Seek, and you will find. Knock, and it will be opened for you.
                 <ruby><rt>8</rt></ruby> For everyone who asks receives. He who seeks finds. To him who knocks it will be opened.
                 <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT7_7"><ruby class="rtl">Matthew<rt>7:7-8</rt></ruby></a></blockquote>
             </p>
-            <p>Jesus's teachings show us that God loves us so much that He sent His son to save us. That's the
-                most
-                amazing news in the world, and it's available to everyone who believes in Jesus. What a
-                wonderful gift!
+            <p>Jesus's teachings show us that God loves us so much that He sent His son to save us. That's the most
+                amazing news in the world, and it's available to everyone who believes in Jesus. What a wonderful gift!
             </p>
         </div>
 
         <hr class="section-divider">
-        <h2 class="section-title"><span class="emoji">🎯</span>Conclusion: The Complementary Nature of the
-            Gospel
-            Presentations</h2>
+            <h2 class="section-title"><span class="emoji">🔍</span>The Theological Significance of the Diversity</h2>
+            <div class="story-box">
+            <p class="paragraphStoryBox">The diversity in the Gospel presentations of Jesus's teachings reflects several important
+                theological principles. First, it demonstrates the richness and complexity of Jesus's ministry, which cannot
+                be adequately captured by any single perspective or approach. The different emphases of the
+                evangelists reveal different aspects of Jesus's identity and mission, creating a comprehensive portrait that
+                addresses the varied needs and concerns of different audiences and contexts.</p>
+            <p>Second, the diversity reflects the principle of divine accommodation, whereby God's revelation is adapted
+                to the specific needs and capacities of different recipients.
+                <ul style="list-style-type: circle;padding-left: 20px;font-size: larger;"><li>Matthew's systematic organization serves readers who need clear ethical and doctrinal guidance.</li>
+                <li>John's theological depth serves those seeking to understand the mysteries of faith.</li>
+                <li>Luke's social emphasis serves those concerned with justice and inclusion.</li>
+                <li>Mark's action-oriented approach serves those who need to see faith demonstrated in practice.</li></ul></p>
+            <p>Third, the diversity demonstrates the ongoing relevance of Jesus's teachings for different
+                situations and challenges. The varied presentations ensure that readers in different circumstances can find
+                guidance and encouragement appropriate to their needs. Those facing persecution can find strength in
+                Mark's emphasis on the suffering servant, those struggling with social justice issues can find
+                direction in Luke's concern for the marginalized, those needing doctrinal clarity can find guidance in
+                Matthew's systematic teaching, and those seeking deeper spiritual understanding can find illumination in
+                John's theological discourses.</p>
+                <h3 class="section-title"><span class="emoji">🤝</span>The Unity Underlying the Diversity</h3>
+                <p>The <a href="https://en.wikipedia.org/wiki/Unity_in_diversity"title="Wikipeida">unity underlying the diversity</a>
+                is perhaps most clearly seen in the shared emphasis on Jesus's death and resurrection as the climax of his ministry.
+                While the Gospels differ in their presentation of Jesus's teachings, they are unanimous in their emphasis on his sacrificial death as the means of salvation
+                and his resurrection as the vindication of his claims and the foundation of Christian hope. This shared emphasis
+                establishes the cross and resurrection as the interpretive key for understanding all of Jesus's teachings,
+                whether they focus on ethics, theology, social justice, or spiritual practice.</p>
+            </div>
+            <section class="highlight-box">
+        <h2 class="section-title"><span class="emoji">📝</span>Implications for Contemporary Study and
+            Application</h2>
+        <p>The complementary nature of the Gospel presentations has important implications for contemporary
+            study and application of Jesus's teachings. First, it suggests the importance of studying all four Gospels
+            rather than focusing exclusively on one or two. Each Gospel provides essential insights that complement and
+            enrich the others, and a comprehensive understanding of Jesus's teaching ministry requires attention to all
+            four perspectives.</p>
+        <p>Second, it suggests the importance of <i>recognizing</i> the different emphases and purposes of each Gospel
+            when interpreting specific passages. Understanding Matthew's systematic approach, John's theological depth,
+            Luke's social concern, and Mark's action orientation helps readers appreciate why certain teachings appear
+            in some Gospels but not others and why the same teachings may be presented differently in different accounts.</p>
+        <p>Third, it suggests the importance of <i>applying</i> Jesus's teachings in ways that reflect the full range
+            of Gospel emphases. Christian discipleship should include the ethical rigor emphasized by Matthew, the
+            theological depth emphasized by John, the social concern emphasized by Luke, and the practical action emphasized
+            by Mark. A balanced Christian life requires attention to all these dimensions rather than focusing
+            exclusively on one aspect of Jesus's teaching.</p>
+            </section>
+
+        <h2 class="section-title"><span class="emoji">🌟</span>The Continuing Relevance of Jesus's Teachings
+        </h2>
+        <p>The sermons and discourses of Jesus recorded in the four Gospels continue to provide essential
+            guidance for Christian faith and practice nearly two millennia after they were first spoken. The ethical
+            principles established in the Sermon on the Mount continue to challenge conventional values and call believers
+            to a higher standard of righteousness. The theological insights revealed in John's discourses continue to
+            illuminate the mysteries of faith and provide comfort and assurance to believers facing doubt or difficulty.
+            The social concerns addressed in Luke's unique parables continue to challenge the church to care for the
+            marginalized and work for justice in society. The call to costly discipleship emphasized in Mark continues
+            to remind believers that following Jesus involves sacrifice and service rather than merely personal benefit.
+        </p>
+        <p>The enduring relevance of Jesus's teachings reflects their divine origin and their address to
+            fundamental human needs and concerns that transcend cultural and temporal boundaries. The questions addressed by
+            Jesus—how to live righteously, how to relate to God, how to treat others, how to face suffering and
+            death—remain central to human existence in every generation. The answers provided by Jesus—through
+            faith, love, mercy, and sacrificial service—continue to offer hope and guidance to all who seek authentic
+            relationship with God and meaningful existence in the world.</p>
+        <p>The study of Jesus's sermons and discourses thus remains essential for anyone seeking to understand
+            the Christian faith or to live according to its principles. The four Gospels together provide a
+            comprehensive
+            curriculum for Christian discipleship that addresses every aspect of human existence and every
+            challenge of faithful living. The diversity of their presentations ensures that readers in every circumstance can
+            find relevant guidance, while the unity of their witness ensures that this guidance is grounded in the
+            authoritative teaching of Jesus Christ, the Word made flesh, who came to reveal God's will and provide the
+            way of salvation for all humanity.</p>
+<h2 class="section-title"><span class="emoji">🎯</span>Conclusion: The Complementary Nature of the Gospel Presentations</h2>
         <p>The examination of Jesus's sermons and discourses across the four Gospels reveals the remarkable
             complementary nature of these accounts. Rather than simply duplicating material, each evangelist
-            selected
-            and organized Jesus's teachings according to their specific theological purposes and audience needs,
-            creating a multifaceted portrait of Jesus as teacher that is far richer than any single account
-            could
-            provide.</p>
+            selected and organized Jesus's teachings according to their specific theological purposes and audience needs,
+            creating a multifaceted portrait of Jesus as teacher that is far richer than any single account could provide.</p>
+
         <h3 class="subsection-title"><span class="emoji">📚</span>The Unique Contributions of Each Gospel</h3>
-            <h4><strong>Matthew's Contribution</strong></h4>
-            <p>Matthew's contribution lies in his systematic organization of Jesus's teachings into five major
-                discourses that establish the ethical, ecclesiological, and eschatological foundations of
-                Christian
-                faith.</p>
+            <h4><strong><a href="?Matthew#^">Matthew's Contribution</a></strong></h4>
+            <p>Matthew's contribution lies in his systematic organization of Jesus's teachings into five major discourses that establish the ethical, ecclesiological, and eschatological foundations of Christian faith.</p>
             <p>The <a href="?Matthew#Sermon on the Mount">Sermon on the Mount</a> provides the fundamental principles of Christian discipleship, the
                 <a href="?Matthew#The Mission Discourse">Mission Discourse</a> establishes guidelines for Christian ministry, the
                 <a href="?Matthew#The Parabolic Discourse">Parabolic Discourse</a> reveals the mysteries of the Kingdom of Heaven, the
@@ -4239,7 +4289,8 @@ function teachings()  {
                 <a href="?Matthew#The Olivet Discourse">Olivet Discourse</a> warns of coming judgment while calling for vigilance and faithfulness.</p>
             <p>Matthew's emphasis on Jesus as the authoritative teacher and interpreter of God's law makes his Gospel
                 the primary source for Christian ethics and doctrine.</p>
-            <h4><strong>John's Contribution</strong></h4>
+
+            <h4><strong><a href="?John#^">John's Contribution</a></strong></h4>
             <p>John's contribution lies in his presentation of extended theological discourses that explore the deepest
                 questions about Jesus's identity, his relationship with the Father, and the nature of salvation through
                 faith in him. The discourses with <a href="?John#The New Birth"title="The New Birth">Nicodemus</a>,
@@ -4250,143 +4301,22 @@ function teachings()  {
                 provide profound insights into the nature of spiritual life and the resources
                 available to believers. John's emphasis on Jesus as the divine revealer of God makes his Gospel
                 essential for understanding Christian theology and spirituality.</p>
-            <h4><strong>Luke's Contribution</strong></h4>
-            <p>Luke's contribution lies in his emphasis on Jesus's ministry to the marginalized and his concern
-                for
-                social justice, mercy, and inclusion. The unique parables of the Good Samaritan, the Prodigal
-                Son, the
-                Rich Man and Lazarus, and others establish compassion as the defining attribute of God and the
-                primary
-                virtue for believers. Luke's emphasis on prayer, the Holy Spirit, and the universal scope of the
-                Gospel
-                makes his account essential for understanding the inclusive nature of God's kingdom and the
-                spiritual
-                resources available for Christian mission.</p>
-            <h4><strong>Mark's Contribution</strong></h4>
-            <p>Mark's contribution lies in his action-oriented presentation of Jesus as the suffering servant
-                whose
-                identity is revealed through powerful deeds rather than extended discourses. The emphasis on the
-                cost of
-                discipleship, the failures of the first disciples, and the present reality of God's kingdom
-                creates a
-                realistic portrait of the challenges and possibilities of following Jesus. Mark's fast-paced
-                narrative
-                style and focus on Jesus's actions make his Gospel particularly effective for demonstrating the
-                integration of faith and practice in authentic Christian living.</p>
-        <h2 class="section-title"><span class="emoji">🔍</span>The Theological Significance of the Diversity
-        </h2>
-        <div class="story-box">
-            <p>The diversity in the Gospel presentations of Jesus's teachings reflects several important
-                theological
-                principles. First, it demonstrates the richness and complexity of Jesus's ministry, which cannot
-                be
-                adequately captured by any single perspective or approach. The different emphases of the
-                evangelists
-                reveal different aspects of Jesus's identity and mission, creating a comprehensive portrait that
-                addresses the varied needs and concerns of different audiences and contexts.</p>
-            <p>Second, the diversity reflects the principle of divine accommodation, whereby God's revelation is
-                adapted
-                to the specific needs and capacities of different recipients. Matthew's systematic organization
-                serves
-                readers who need clear ethical and doctrinal guidance, John's theological depth serves those
-                seeking to
-                understand the mysteries of faith, Luke's social emphasis serves those concerned with justice
-                and
-                inclusion, and Mark's action-oriented approach serves those who need to see faith demonstrated
-                in
-                practice.</p>
-            <p>Third, the diversity demonstrates the ongoing relevance of Jesus's teachings for different
-                situations and
-                challenges. The varied presentations ensure that readers in different circumstances can find
-                guidance
-                and encouragement appropriate to their needs. Those facing persecution can find strength in
-                Mark's
-                emphasis on the suffering servant, those struggling with social justice issues can find
-                direction in
-                Luke's concern for the marginalized, those needing doctrinal clarity can find guidance in
-                Matthew's
-                systematic teaching, and those seeking deeper spiritual understanding can find illumination in
-                John's
-                theological discourses.</p>
-        </div>
-        <h2 class="section-title"><span class="emoji">🤝</span>The Unity Underlying the Diversity</h2>
-        <p>The unity underlying the diversity is perhaps most clearly seen in the shared emphasis on Jesus's
-            death and
-            resurrection as the climax of his ministry. While the Gospels differ in their presentation of
-            Jesus's
-            teachings, they are unanimous in their emphasis on his sacrificial death as the means of salvation
-            and his
-            resurrection as the vindication of his claims and the foundation of Christian hope. This shared
-            emphasis
-            establishes the cross and resurrection as the interpretive key for understanding all of Jesus's
-            teachings,
-            whether they focus on ethics, theology, social justice, or spiritual practice.</p>
-        <h2 class="section-title"><span class="emoji">📝</span>Implications for Contemporary Study and
-            Application</h2>
-        <p>The complementary nature of the Gospel presentations has important implications for contemporary
-            study and
-            application of Jesus's teachings. First, it suggests the importance of studying all four Gospels
-            rather than
-            focusing exclusively on one or two. Each Gospel provides essential insights that complement and
-            enrich the
-            others, and a comprehensive understanding of Jesus's teaching ministry requires attention to all
-            four
-            perspectives.</p>
-        <p>Second, it suggests the importance of recognizing the different emphases and purposes of each Gospel
-            when
-            interpreting specific passages. Understanding Matthew's systematic approach, John's theological
-            depth,
-            Luke's social concern, and Mark's action orientation helps readers appreciate why certain teachings
-            appear
-            in some Gospels but not others and why the same teachings may be presented differently in different
-            accounts.</p>
-        <p>Third, it suggests the importance of applying Jesus's teachings in ways that reflect the full range
-            of Gospel
-            emphases. Christian discipleship should include the ethical rigor emphasized by Matthew, the
-            theological
-            depth emphasized by John, the social concern emphasized by Luke, and the practical action emphasized
-            by
-            Mark. A balanced Christian life requires attention to all these dimensions rather than focusing
-            exclusively
-            on one aspect of Jesus's teaching.</p>
-        <h2 class="section-title"><span class="emoji">🌟</span>The Continuing Relevance of Jesus's Teachings
-        </h2>
-        <p>The sermons and discourses of Jesus recorded in the four Gospels continue to provide essential
-            guidance for
-            Christian faith and practice nearly two millennia after they were first spoken. The ethical
-            principles
-            established in the Sermon on the Mount continue to challenge conventional values and call believers
-            to a
-            higher standard of righteousness. The theological insights revealed in John's discourses continue to
-            illuminate the mysteries of faith and provide comfort and assurance to believers facing doubt or
-            difficulty.
-            The social concerns addressed in Luke's unique parables continue to challenge the church to care for
-            the
-            marginalized and work for justice in society. The call to costly discipleship emphasized in Mark
-            continues
-            to remind believers that following Jesus involves sacrifice and service rather than merely personal
-            benefit.
-        </p>
-        <p>The enduring relevance of Jesus's teachings reflects their divine origin and their address to
-            fundamental
-            human needs and concerns that transcend cultural and temporal boundaries. The questions addressed by
-            Jesus—how to live righteously, how to relate to God, how to treat others, how to face suffering and
-            death—remain central to human existence in every generation. The answers provided by Jesus—through
-            faith,
-            love, mercy, and sacrificial service—continue to offer hope and guidance to all who seek authentic
-            relationship with God and meaningful existence in the world.</p>
-        <p>The study of Jesus's sermons and discourses thus remains essential for anyone seeking to understand
-            the
-            Christian faith or to live according to its principles. The four Gospels together provide a
-            comprehensive
-            curriculum for Christian discipleship that addresses every aspect of human existence and every
-            challenge of
-            faithful living. The diversity of their presentations ensures that readers in every circumstance can
-            find
-            relevant guidance, while the unity of their witness ensures that this guidance is grounded in the
-            authoritative teaching of Jesus Christ, the Word made flesh, who came to reveal God's will and
-            provide the
-            way of salvation for all humanity.</p>
+
+            <h4><strong><a href="?Luke#^">Luke's Contribution</a></strong></h4>
+            <p>Luke's contribution lies in his emphasis on Jesus's ministry to the marginalized and his concern for
+                social justice, mercy, and inclusion. The unique parables of <a href="?Luke#TheGoodSamaritan">the Good Samaritan</a>,
+                <a href="?Luke#TheProdigalSon">the Prodigal Son</a>,
+                <a href="?Luke#TheRichManAndLazarus">the Rich Man and Lazarus </a>, and others establish compassion as the defining attribute of God and the
+                primary virtue for believers. Luke's <a href="?Luke#Emphasis on Prayer and the Holy Spirit">emphasis on prayer, the Holy Spirit</a>, and the universal scope of the
+                Gospel makes his account essential for understanding the inclusive nature of God's kingdom and the
+                spiritual resources available for Christian mission.</p>
+            <h4><strong><a href="?Mark#^">Mark's Contribution</a></strong></h4>
+            <p>Mark's contribution lies in his action-oriented presentation of Jesus as the suffering servant whose identity is
+                revealed through powerful deeds rather than extended discourses.
+                The emphasis on the cost of discipleship, the failures of the first disciples, and the present reality of God's kingdom creates
+                a realistic portrait of the challenges and possibilities of following Jesus.
+                Mark's fast-paced narrative style and focus on Jesus's actions make his Gospel particularly effective for demonstrating
+                the integration of faith and practice in authentic Christian living.</p>
 
 
         <h2><span class="emoji">🎯</span>References</h2>
