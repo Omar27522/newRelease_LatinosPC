@@ -282,6 +282,7 @@
         $pageRoutes = [
             'en' => [
                 'Home LatinosPC' => 'content_home',
+                'Jesus Christ' => '_JesusChrist_King_of_kings',
                 'Heavenly Father' => 'fihtmatw',
                 'The Apostles' => 'apostles',
                 'Parables' => 'parables',

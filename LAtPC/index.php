@@ -692,7 +692,16 @@ function _JesusChrist($sub_route)
 			break;
 
 		case '':
-			echo 'Jesus Christ Main Page';
+			$page = new Structure('../../', 'english', 'Jesus Christ');
+			$keywords = 'Keyword_test';
+			$description = 'Description_test';
+			include '_JesusChrist/_TheBelovedSon.php';
+			break;
+		case 'jesucristo':
+			$page = new Structure('../../', 'español', 'Jesucristo');
+			$keywords = 'Keyword_test';
+			$description = 'Description_test';
+			include 'hola! Hay que arreglar las paginas en español';// This is a test: failed. The page displays the empty case above.
 			break;
 
 		default:

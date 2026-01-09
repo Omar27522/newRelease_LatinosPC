@@ -564,7 +564,7 @@ function teachings()  {
         <h2><small>The Five Discourses: Structure and Significance</small></h2>
         <p>Matthew's organization of Jesus's teachings into five distinct discourses represents one
             of the most sophisticated literary structures in the New Testament <sup>[<a
-                    href="?conclusion#[1]">1</a>]</sup>.
+                    href="?conclusion#[1]:~:text=Circe%20Institute.">1</a>]</sup>.
         </p>
         <h3>Biblical scholars have long recognized that these five discourses are marked by a distinctive closing
             formula:
@@ -4397,7 +4397,7 @@ function teachings()  {
                 <span>"The Sermons and Discourses of Jesus Christ: A Comprehensive Guide Organized by Gospel" By Manus
                     AI.
                     Created Access June 11, 2025.</span>
-                <br /><a href="../_JesusChrist/Jesus_Christ_Sermons_and_Discourses_Guide.pdf">
+                <br /><a href="../_JesusChrist/TeachingsReferenceNine%20Jesus_Christ_Sermons_and_Discourses_Guide.pdf">
                     Jesus_Christ_Sermons_and_Discourses_Guide.pdf</a>
             </div>
     </section>
