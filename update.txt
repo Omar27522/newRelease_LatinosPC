@@ -62,10 +62,12 @@
         It's been a while since any work has been done on the site, I'm glad work on it has resumed once again.
     (1/6/2026|Update)
         The Gospel pages have been updated, but the Teacchings page is yet to be concluded.
+    (1/9/2026|Update)
+        The Teachings page is finally finished, and the Beloved Son page is ready to be worked on.
 
 
 
-
+*Jesus Christ Section: apostles revision*
 *work on the reviews page.*
 *work on a back-to-top button.*
 *I would like to comeback to the Teachings page and modify the <ruby> tags where a dialog opens when clicked, but also there is an external link to teh verse in different versions of the Holy Scripture *

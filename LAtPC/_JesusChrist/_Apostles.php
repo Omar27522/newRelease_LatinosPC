@@ -1,106 +1,5 @@
 <?php
-function apostles()   {
-  global $titles, $names, $subTitles, $adicionalNames, $_Jesus;
-  $titles = [
-    'From the Greek apostolos; Apostle is someone who is sent, or one commissioned.',
-    'In Hebrews 3: "Jesus Our Apostle and High Priest',
-    'The Twelve Original Apostles',
-    'Additional Apostles',
-    '📖 Additional Apostles in Scripture',
-    'Name(s)',
-    'Reference(s)',
-    '🧮 Total Count'
-  ];
-  $names = [
-    'Simon Peter and Andrew (Sons of Jonah)',
-    'James and John (Sons of Zebedee)',
-    'Philip and Bartholomew',
-    'Thomas and Matthew',
-    'James (son of Alphaeus)',
-    'Thaddaeus',
-    'Simon the Zealot',
-    'Judas Iscariot',
-    'Matthias (replaced Judas)',
-    'Paul (Apostle to the Gentiles)',
-  ];
-  $subTitles = [
-    'Let’s start counting. Yes, there were the twelve chosen by Jesus (see Acts 1:13). Judas Iscariot, who betrayed Jesus, was replaced by Matthias (Acts 1:26). Revelation 21:14 confirms “the twelve apostles of the Lamb.” Counting both Judas and Matthias brings us to',
-    '13 apostles',
-    'But it doesn’t end there. Ephesians 4:11–13 speaks of ascension-gift apostles given by Christ',
-    'until we all attain to the unity of the faith.',
-    'That implies the apostolic ministry continues today.',
-    'Including everyone listed—even debated figures like Junia—we arrive at a total of',
-    '25 apostles',
-    'named in the New Testament.'
-  ];
-  $adicionalNames = [
-    ['James (Jesus’ brother)', 'Galatians 1:19'],
-    ['Barnabas', 'Acts 14:14'],
-    ['Paul', 'Acts 14:14, etc.'],
-    ['Apollos', '1 Corinthians 4:6–9'],
-    ['Timothy & Silvanus', '1 Thessalonians 1:1; 2:6'],
-    ['Epaphroditus', 'Philippians 2:25'],
-    ['Two unnamed brothers', '2 Corinthians 8:23'],
-    ['Andronicus & Junia (disputed)', 'Romans 16:7'],
-    ['Jesus Christ', 'Hebrews 3:1'],
-  ];
-
-  $_Jesus = '“Jesus, the Apostle and High Priest of our confession.” – Hebrews 3:1';
-  content();
-}
-
-function apostoles()  {
-  global $titulos, $nombres, $subTitulos, $nombresAdicionales, $_Jesus;
-  $titulos = [
-    'Del griego apostolos; Apóstol es alguien que es enviado, o uno comisionado.',
-    'En Hebreos 3: "Jesús Nuestro Apóstol y Sumo Sacerdote',
-    'Los Doce Apóstoles Originales',
-    'Apóstoles Adicionales',
-    '📖 Apóstoles Adicionales en las Escrituras',
-    'Nombre(s)',
-    'Referencia(s)',
-    '🧮 Conteo Total'
-  ];
-  $nombres = [
-    'Simón Pedro y Andrés (Hijos de Jonás)',
-    'Santiago y Juan (Hijos de Zebedeo)',
-    'Felipe y Bartolomé',
-    'Tomás y Mateo',
-    'Santiago (hijo de Alfeo)',
-    'Tadeo',
-    'Simón el Zelote',
-    'Judas Iscariote',
-    'Matías (reemplazó a Judas)',
-    'Pablo (Apóstol de los Gentiles)',
-  ];
-  $subTitulos = [
-    'Comencemos a contar. Sí, hubo los doce elegidos por Jesús (véase Hechos 1:13). Judas Iscariote, quien traicionó a Jesús, fue reemplazado por Matías (Hechos 1:26). Apocalipsis 21:14 confirma "los doce apóstoles del Cordero." Contando tanto a Judas como a Matías nos lleva a',
-    '13 apóstoles',
-    'Pero no termina ahí. Efesios 4:11–13 habla de apóstoles como dones de ascensión dados por Cristo',
-    'hasta que todos alcancemos la unidad de la fe.',
-    'Eso implica que el ministerio apostólico continúa hoy.',
-    'Incluyendo a todos los mencionados—incluso figuras debatidas como Junia—llegamos a un total de',
-    '25 apóstoles',
-    'nombrados en el Nuevo Testamento.'
-  ];
-  $nombresAdicionales = [
-    ['Santiago (hermano de Jesús)', 'Gálatas 1:19'],
-    ['Bernabé', 'Hechos 14:14'],
-    ['Pablo', 'Hechos 14:14, etc.'],
-    ['Apolos', '1 Corintios 4:6–9'],
-    ['Timoteo y Silvano', '1 Tesalonicenses 1:1; 2:6'],
-    ['Epafrodito', 'Filipenses 2:25'],
-    ['Dos hermanos sin nombre', '2 Corintios 8:23'],
-    ['Andrónico y Junia (disputado)', 'Romanos 16:7'],
-    ['Jesucristo', 'Hebreos 3:1'],
-  ];
-  $_Jesus = '"Jesús, el Apóstol y Sumo Sacerdote de nuestra confesión." – Hebreos 3:1';
-  content();
-}
-
-function content()    {
-  global $titles, $names, $subTitles, $adicionalNames, $_Jesus;
-  global $titulos, $nombres, $subTitulos, $nombresAdicionales, $_Jesus;
+function cssStyles(){
   ?>
   <style>
      /*.container {
@@ -286,7 +185,142 @@ function content()    {
         font-size: 0.9rem;
       }
     }
-  </style>
+  </style><?php
+}
+function apostles()   {
+  global $titles, $names, $subTitles, $adicionalNames, $_Jesus;
+  $titles = [
+    'From the Greek apostolos; Apostle is someone who is sent, or one commissioned.',
+    'In Hebrews 3: "Jesus Our Apostle and High Priest',
+    'The Twelve Original Apostles',
+    'Additional Apostles',
+    '📖 Additional Apostles in Scripture',
+    'Name(s)',
+    'Reference(s)',
+    '🧮 Total Count'
+  ];
+  $names = [
+    '<a href="?peter">Simon Peter</a> and <a href="?andrew">Andrew</a> (Sons of Jonah)',
+    '<a href="?james">James</a> and <a href="?john">John</a> (Sons of Zebedee)',
+    '<a href="?philip">Philip</a> and <a href="?bartholomew">Bartholomew</a>',
+    '<a href="?thomas">Thomas</a> and <a href="?matthew">Matthew</a>',
+    '<a href="?little_james">James (son of Alphaeus)</a>',
+    '<a href="?thaddaeus">Thaddaeus</a>',
+    '<a href="?simon">Simon the Zealot</a>',
+    '<a href="?judas">Judas Iscariot</a>',
+    '<a href="?matthias">Matthias (replaced Judas)</a>',
+    '<a href="?paul">Paul (Apostle to the Gentiles)</a>',
+  ];
+  $subTitles = [
+    'Let’s start counting. Yes, there were the twelve chosen by Jesus (see Acts 1:13). Judas Iscariot, who betrayed Jesus, was replaced by Matthias (Acts 1:26). Revelation 21:14 confirms “the twelve apostles of the Lamb.” Counting both Judas and Matthias brings us to',
+    '13 apostles',
+    'But it doesn’t end there. Ephesians 4:11–13 speaks of ascension-gift apostles given by Christ',
+    'until we all attain to the unity of the faith.',
+    'That implies the apostolic ministry continues today.',
+    'Including everyone listed—even debated figures like Junia—we arrive at a total of',
+    '25 apostles',
+    'named in the New Testament.'
+  ];
+  $adicionalNames = [
+    ['<a href="https://www.catholic.com/qa/james-lords-brother-galatians-118-19"title="https://www.catholic.com">James</a> (Jesus’ brother)', 'Galatians 1:19'],
+    ['Barnabas', 'Acts 14:14'],
+    ['Paul', 'Acts 14:14, etc.'],
+    ['Apollos', '1 Corinthians 4:6–9'],
+    ['Timothy & Silvanus', '1 Thessalonians 1:1; 2:6'],
+    ['Epaphroditus', 'Philippians 2:25'],
+    ['Two unnamed brothers', '2 Corinthians 8:23'],
+    ['Andronicus & Junia (disputed)', 'Romans 16:7'],
+    ['Jesus Christ', 'Hebrews 3:1'],
+  ];
+
+  $_Jesus = '“Jesus, the Apostle and High Priest of our confession.” – Hebrews 3:1';
+  content();
+}
+
+function apostoles()  {
+  global $titulos, $nombres, $subTitulos, $nombresAdicionales, $_Jesus;
+  $titulos = [
+    'Del griego apostolos; Apóstol es alguien que es enviado, o uno comisionado.',
+    'En Hebreos 3: "Jesús Nuestro Apóstol y Sumo Sacerdote',
+    'Los Doce Apóstoles Originales',
+    'Apóstoles Adicionales',
+    '📖 Apóstoles Adicionales en las Escrituras',
+    'Nombre(s)',
+    'Referencia(s)',
+    '🧮 Conteo Total'
+  ];
+  $nombres = [
+    'Simón Pedro y Andrés (Hijos de Jonás)',
+    'Santiago y Juan (Hijos de Zebedeo)',
+    'Felipe y Bartolomé',
+    'Tomás y Mateo',
+    'Santiago (hijo de Alfeo)',
+    'Tadeo',
+    'Simón el Zelote',
+    'Judas Iscariote',
+    'Matías (reemplazó a Judas)',
+    'Pablo (Apóstol de los Gentiles)',
+  ];
+  $subTitulos = [
+    'Comencemos a contar. Sí, hubo los doce elegidos por Jesús (véase Hechos 1:13). Judas Iscariote, quien traicionó a Jesús, fue reemplazado por Matías (Hechos 1:26). Apocalipsis 21:14 confirma "los doce apóstoles del Cordero." Contando tanto a Judas como a Matías nos lleva a',
+    '13 apóstoles',
+    'Pero no termina ahí. Efesios 4:11–13 habla de apóstoles como dones de ascensión dados por Cristo',
+    'hasta que todos alcancemos la unidad de la fe.',
+    'Eso implica que el ministerio apostólico continúa hoy.',
+    'Incluyendo a todos los mencionados—incluso figuras debatidas como Junia—llegamos a un total de',
+    '25 apóstoles',
+    'nombrados en el Nuevo Testamento.'
+  ];
+  $nombresAdicionales = [
+    ['Santiago (hermano de Jesús)', 'Gálatas 1:19'],
+    ['Bernabé', 'Hechos 14:14'],
+    ['Pablo', 'Hechos 14:14, etc.'],
+    ['Apolos', '1 Corintios 4:6–9'],
+    ['Timoteo y Silvano', '1 Tesalonicenses 1:1; 2:6'],
+    ['Epafrodito', 'Filipenses 2:25'],
+    ['Dos hermanos sin nombre', '2 Corintios 8:23'],
+    ['Andrónico y Junia (disputado)', 'Romanos 16:7'],
+    ['Jesucristo', 'Hebreos 3:1'],
+  ];
+  $_Jesus = '"Jesús, el Apóstol y Sumo Sacerdote de nuestra confesión." – Hebreos 3:1';
+  content();
+}
+
+function content()    {
+  global $titles, $names, $subTitles, $adicionalNames, $_Jesus;
+  global $titulos, $nombres, $subTitulos, $nombresAdicionales, $_Jesus;
+  if (isset($_GET['peter'])):
+    echo "<section class=\"fullbar\">Simon Peter</section>";
+elseif (isset($_GET['andrew'])):
+    echo "<section class=\"fullbar\">Andrew</section>";
+elseif (isset($_GET['james'])):
+    echo "<section class=\"fullbar\">James</section>";
+elseif (isset($_GET['john'])):
+    echo "<section class=\"fullbar\">John</section>";
+elseif (isset($_GET['philip'])):
+    echo "<section class=\"fullbar\">Philip</section>";
+elseif (isset($_GET['bartholomew'])):
+    echo "<section class=\"fullbar\">Bartholomew</section>";
+elseif (isset($_GET['thomas'])):
+    echo "<section class=\"fullbar\">Thomas</section>";
+elseif (isset($_GET['matthew'])):
+    echo "<section class=\"fullbar\">Matthew</section>";
+elseif (isset($_GET['little_james'])):
+    echo "<section class=\"fullbar\">James (son of Alphaeus)</section>";
+elseif (isset($_GET['thaddaeus'])):
+    echo "<section class=\"fullbar\">Thaddaeus</section>";
+elseif (isset($_GET['simon'])):
+    echo "<section class=\"fullbar\">Simon the Zealot</section>";
+elseif (isset($_GET['judas'])):
+    echo "<section class=\"fullbar\">Judas Iscariot</section>";
+elseif (isset($_GET['matthias'])):
+    echo "<section class=\"fullbar\">Matthias (replaced Judas)</section>";
+elseif (isset($_GET['paul'])):
+    echo "<section class=\"fullbar\">Paul (Apostle to the Gentiles)</section>";
+else:
+
+  ?>
+  
   <div class="fullbar">
     <div class="apostles-intro">
       <h2><?= empty($titles) ? $titulos[0] : $titles[0]; ?></h2>
@@ -348,6 +382,8 @@ function content()    {
     </div>
   </div>
   <?php
+endif;
 }
+
 include './anvil/structure.php';
 ?>

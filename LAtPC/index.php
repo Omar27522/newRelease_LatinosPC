@@ -633,11 +633,39 @@ function _JesusChrist($sub_route)
 			break;
 
 		case 'apostles':
-			$page = new Structure('../../', 'english', 'The Apostles');
-			$keywords = 'Keyword_test';
-			$description = 'Description_test';
-			include '_JesusChrist/_Apostles.php';
-			break;
+			$apostles = [
+			    'peter'         => 'Peter',
+			    'andrew'        => 'Andrew',
+			    'james'         => 'James',
+			    'john'          => 'John',
+			    'philip'        => 'Philip',
+			    'bartholomew'   => 'Bartholomew',
+			    'thomas'        => 'Thomas',
+			    'matthew'       => 'Matthew',
+			    'little_james'  => 'James',
+			    'thaddeus'      => 'Thaddeus',
+			    'simon'         => 'Simon',
+			    'judas'         => 'Judas',
+			    'matthias'      => 'Matthias',
+			    'paul'          => 'Paul'
+			];
+
+			$selected = null;
+
+			// Find which GET key is present
+			foreach ($apostles as $key => $name) {
+			    if (isset($_GET[$key])) {
+			        $selected = $name;
+			    break;
+			}
+		}
+		// Default title if none matched
+		$title = $selected ? "Apostles: $selected" : "The Apostles";
+		$page = new Structure('../../', 'english', $title);
+		$keywords = 'Keyword_test';
+		$description = 'Description_test';
+		include '_JesusChrist/_Apostles.php';
+		break;
 		case 'apostoles':
 			$page = new Structure('../../', 'español', 'Los Apóstoles');
 			$keywords = 'Keyword_test';
