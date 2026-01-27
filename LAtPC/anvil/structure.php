@@ -8,9 +8,9 @@
     <title><?= !empty($page->getTitle()) ? $page->getTitle() : $page->getTitle() ?> </title>
     <meta name="keywords" content="<?=$keywords?>">
     <meta name="description" content="<?=$description?>">
-    <link rel="stylesheet" href="<?= $page->getDir(); ?>LAtPC/anvil/mainStyle.css">
-    <link rel="stylesheet" href="<?= $page->getDir(); ?>LAtPC/anvil/homepage.css">
-    <link rel="stylesheet" href="<?= $page->getDir(); ?>LAtPC/anvil/navMenu.css">
+    <link rel="stylesheet" href="<?= $page->getDir(); ?>/anvil/mainStyle.css">
+    <link rel="stylesheet" href="<?= $page->getDir(); ?>/anvil/homepage.css">
+    <link rel="stylesheet" href="<?= $page->getDir(); ?>/anvil/navMenu.css">
     <?php
     if (function_exists('cssStyles')) {
         cssStyles();
@@ -61,9 +61,9 @@
 
                         <a href="<?php
                         if($page->getLang() == "en"):
-                           echo  $page->getDir(). "LAtPC/JesusChrist/father_in_heaven_tell_me_about_web";
+                           echo  $page->getDir(). "JesusChrist/father_in_heaven_tell_me_about_web";
                         elseif($page->getLang() == "es-419"):
-                           echo $page->getDir(). "LAtPC/Jesucristo/padre_celestial_cuentame_sobre_el_internet";
+                           echo $page->getDir(). "Jesucristo/padre_celestial_cuentame_sobre_el_internet";
                         endif; ?>">
                             <li><?php
                         if($page->getLang() == "en"):
@@ -75,9 +75,9 @@
 
                         <a href="<?php
                         if($page->getLang() == "en"):
-                           echo  $page->getDir(). "LAtPC/JesusChrist/parables";
+                           echo  $page->getDir(). "JesusChrist/parables";
                         elseif($page->getLang() == "es-419"):
-                           echo $page->getDir(). "LAtPC/Jesucristo/parabolas";
+                           echo $page->getDir(). "Jesucristo/parabolas";
                         endif;?>">
                             <!-- https://bibilium.com/38-parables-of-Jesus-parables-of-Jesus/ -->
                             <li><?php
@@ -90,9 +90,9 @@
 
                         <a href="<?php
                         if($page->getLang() == "en"):
-                           echo $page->getDir(). "LAtPC/JesusChrist/sermons";
+                           echo $page->getDir(). "JesusChrist/sermons";
                         elseif($page->getLang() == "es-419"):
-                           echo $page->getDir(). "LAtPC/Jesucristo/sermones";
+                           echo $page->getDir(). "Jesucristo/sermones";
                         endif;?>">
                             <li><?php
                         if($page->getLang() == "en"):
@@ -104,9 +104,9 @@
 
                         <a href="<?php
                         if($page->getLang() == "en"):
-                           echo $page->getDir(). "LAtPC/JesusChrist/apostles";
+                           echo $page->getDir(). "JesusChrist/apostles";
                         elseif($page->getLang() == "es-419"):
-                           echo $page->getDir(). "LAtPC/Jesucristo/apostoles";
+                           echo $page->getDir(). "Jesucristo/apostoles";
                         endif;?>">
                             <li><?php
                         if($page->getLang() == "en"):
@@ -118,9 +118,9 @@
 
                         <a href="<?php
                         if($page->getLang() == "en"):
-                           echo $page->getDir(). "LAtPC/JesusChrist/teachings";
+                           echo $page->getDir(). "JesusChrist/teachings";
                         elseif($page->getLang() == "es-419"):
-                           echo $page->getDir(). "LAtPC/Jesucristo/enseñanzas";
+                           echo $page->getDir(). "Jesucristo/enseñanzas";
                         endif;?>">
                             <li><?php
                         if($page->getLang() == "en"):
@@ -132,9 +132,9 @@
 
                         <a href="<?php
                         if($page->getLang() == "en"):
-                           echo $page->getDir(). "LAtPC/offered_security/backups";
+                           echo $page->getDir(). "offered_security/backups";
                         elseif($page->getLang() == "es-419"):
-                           echo $page->getDir(). "LAtPC/security/backups";
+                           echo $page->getDir(). "security/backups";
                         endif;?>">
                             <li><?php
                         if($page->getLang() == "en"):
@@ -146,7 +146,7 @@
 
                         <a href="<?php
                         if($page->getLang() == "en"):
-                           echo $page->getDir(). "LAtPC/hardware_options";
+                           echo $page->getDir(). "hardware_options";
                         elseif($page->getLang() == "es-419"):
                            echo "#";
                         endif;?>">
@@ -160,7 +160,7 @@
 
                         <a href="<?php
                         if($page->getLang() == "en"):
-                           echo $page->getDir(). "LAtPC/software_options/";
+                           echo $page->getDir(). "software_options/";
                         elseif($page->getLang() == "es-419"):
                            echo "#";
                         endif;?>">
@@ -188,7 +188,7 @@
 
                         <a href="<?php
                         if($page->getLang() == "en"):
-                           echo $page->getDir(). "LAtPC/offered_security/";
+                           echo $page->getDir(). "offered_security/";
                         elseif($page->getLang() == "es-419"):
                            echo "#";
                         endif;?>">
@@ -202,7 +202,7 @@
 
                         <a href="<?php
                         if($page->getLang() == "en"):
-                           echo $page->getDir(). "LAtPC/offered_security/best_practices";
+                           echo $page->getDir(). "offered_security/best_practices";
                         elseif($page->getLang() == "es-419"):
                            echo "#";
                         endif;?>">
@@ -216,7 +216,7 @@
 
                         <a href="<?php
                         if($page->getLang() == "en"):
-                           echo $page->getDir(). "LAtPC/offered_security/passwords";
+                           echo $page->getDir(). "offered_security/passwords";
                         elseif($page->getLang() == "es-419"):
                            echo "#";
                         endif;?>">
@@ -249,16 +249,16 @@
                 <?php /*On page.php from the last refactor there is a function called getNavButtons() that gets the correct place in the page I will need to use it for English and Spanish jumps.*/
                 if($page->getLang() == "en"):
                 ?>
-                <button><a href="<?= $page->getDir();?>LAtPC/index.php">Home</a></button>
-                <button><a href="<?= $page->getDir();?>LAtPC/español">Español</a></button>
-                <button><a href="<?= $page->getDir();?>LAtPC/offered_services">Services</a></button>
+                <button><a href="<?= $page->getDir();?>index.php">Home</a></button>
+                <button><a href="<?= $page->getDir();?>español">Español</a></button>
+                <button><a href="<?= $page->getDir();?>offered_services">Services</a></button>
                 <button><a href="#">Contact Us</a></button>
                 <button><a href="#">Reviews</a></button>
                 <?php
                 elseif($page->getLang() == "es-419"):
                 ?>
-                <button><a href="<?= $page->getDir();?>LAtPC/español">inicio</a></button>
-                <button><a href="<?= $page->getDir();?>LAtPC/index.php">Inglés</a></button>
+                <button><a href="<?= $page->getDir();?>español">inicio</a></button>
+                <button><a href="<?= $page->getDir();?>index.php">Inglés</a></button>
                 <button><a href="#">Servicios</a></button>
                 <button><a href="#">Contacto</a></button>
                 <button><a href="#">Reseñas</a></button><?php endif;?>

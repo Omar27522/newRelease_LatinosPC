@@ -204,7 +204,7 @@
 
 /* DATABASE CONNECTION */
 try {
-    $dbPath = __DIR__ . '/db/.db';
+    $dbPath = __DIR__ . '/db/LatPC.db';
     $pdo = new PDO('sqlite:' . $dbPath);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
@@ -298,6 +298,10 @@ if (isset($_GET['q']) && is_string($_GET['q'])) {
  * $stmt->execute(["home"]);
  */
 // $pdo->exec("DROP TABLE content");
+##-/-*/*-/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*
+
+
+
 
 // Update content by ID
 //$stmt = $pdo->prepare("UPDATE content SET content = ? WHERE id = ?");
@@ -305,7 +309,6 @@ if (isset($_GET['q']) && is_string($_GET['q'])) {
 
 //$stmt = $pdo->prepare("DELETE FROM content WHERE id = ?");
 //$stmt->execute([13]); // Delete record with ID 13
-
 
 
 

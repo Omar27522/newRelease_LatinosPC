@@ -10,7 +10,7 @@
         <meta name="description" content="<?= $description ?>">
         <link rel="stylesheet" href="../anvil/mainStyle.css">
         <link rel="stylesheet" href="../anvil/homepage.css">
-        <link rel="stylesheet" href="index_style_db.css">
+        <link rel="stylesheet" href="../db/index_style_db.css">
     </head>
 
 <body class="fullbar">
@@ -170,6 +170,9 @@
     // $stmt->execute([6]);
 
     // add, update and delete can be added later. but I believe that the database will have to be prepared prior to testing.
+    
+   
+
     ?>
 
     <h1><?php echo ucfirst($pages[5]['name']) // DB Title ?></h1>

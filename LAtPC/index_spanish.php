@@ -1,7 +1,7 @@
 <?php
 /* DATABASE CONNECTION */
 try {
-	$dbPath = __DIR__ . '/db/.db';
+	$dbPath = __DIR__ . '/db/laTpc.db';
 	$pdo = new PDO('sqlite:' . $dbPath);
 	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
