@@ -3828,11 +3828,11 @@ function teachings()  {
                         title="Mark 4:26-29">4:26-29</a></p>
             </div>
             <!-- <div class="carousel-item" data-image-index="1">
-                <img src="../LAtPC/images/_JesusChrist/phariseeAndTaxCollector_thumb.webp" alt="Image 2" />
+                <img src="../images/_JesusChrist/phariseeAndTaxCollector_thumb.webp" alt="Image 2" />
                 <p>Image 2 Description</p>
             </div>
             <div class="carousel-item" data-image-index="2">
-                <img src="../LAtPC/images/_JesusChrist/richManAndLazarus_thumb.webp" alt="Image 3" />
+                <img src="../images/_JesusChrist/richManAndLazarus_thumb.webp" alt="Image 3" />
                 <p>Image 3 Description</p>
             </div> -->
         </template>

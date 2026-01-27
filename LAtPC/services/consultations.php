@@ -88,7 +88,7 @@ function content_services_consultation(){
                 15. Outdated Hardware:</h2>
             <h3>
                 - Keep an eye on your computer's performance over time. Consider upgrading or replacing aging <a
-                    href="..//hardware/#peripherals">components</a> to maintain optimal performance.
+                    href="../hardware/#peripherals">components</a> to maintain optimal performance.
             </h3>
             <h2>
                 Regular maintenance, proper handling, and proactive measures can go a long way in preventing these

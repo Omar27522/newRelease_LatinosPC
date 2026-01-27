@@ -531,8 +531,8 @@ function software_options($sub_route){
 				break;
 		case 'messaging':
 				$page = new Structure('../../', 'english', 'SW Messaging');
-				$keywords = 'Messaging Keywords';
-				$description = 'Messaging Description';
+				$keywords = 'messaging, instant messaging, online communication, digital communication, text messaging, SMS, chat apps, messaging platforms, communication technology, kid-safe messaging, parental controls, online safety for kids, child communication apps, safe messaging apps for children, family digital safety, privacy for kids online, end-to-end encryption, secure messaging, private messaging, data privacy, two-factor authentication, disappearing messages, encrypted chat apps, voice messaging, video messaging, group chats, cross-platform sync, file sharing, cloud backup, digital payments, live location sharing, group video calls, RCS messaging, AI messaging features, smart replies, chatbots, automated translation, AR messaging, VR communication, immersive messaging, WhatsApp, Facebook Messenger, WeChat, Telegram, Signal, iMessage, Google Chat, Slack, Microsoft Teams, Discord, Snapchat, Viber, Line, Kik, Skype, QQ, KakaoTalk, Marco Polo, TextNow, Threema, Wire, Wickr, Session, Tango, history of messaging, early communication systems, CTSS messaging, Multics messaging, evolution of communication, internet communication history';
+				$description = 'A clear, focused overview of today’s messaging apps, explaining how people communicate online and what features matter most for families. This description highlights essential topics such as safety tools, privacy protections, secure messaging habits, and ways to help children use technology responsibly. It also introduces advanced features and emerging trends — like smarter parental controls, safer chat environments, and new communication technologies — so parents can stay informed and confidently guide their child’s digital world.';
 				include 'software/software.php';
 				break;
 		case 'media':
@@ -834,12 +834,12 @@ function content_home()
             </div>
         </div>
 
-        <a href="../LAtPC/offered_services/cleanups" class="cta-button"><?= $servicesCleanUpsButton = $content[34]['content'];?></a>
-        <a href="../LAtPC/offered_services/protection" class="cta-button"><?= $servicesComputerProtectionButton = $content[35]['content'];?></a>
-        <a href="../LAtPC/offered_services/consultations" class="cta-button"><?= $servicesConsultationsButton = $content[36]['content'];?></a>
-        <a href="../LAtPC/offered_services/managedServices" class="cta-button"><?= $servicesManagedServicesButton = $content[37]['content'];?></a>
-        <a href="../LAtPC/offered_services/websites" class="cta-button"><?= $servicesRemoteSupportButton = $content[38]['content'];?></a>
-        <a href="../LAtPC/offered_services/remoteSupport" class="cta-button"><?= $servicesWebsitesButton = $content[39]['content'];?></a>
+        <a href="../offered_services/cleanups" class="cta-button"><?= $servicesCleanUpsButton = $content[34]['content'];?></a>
+        <a href="../offered_services/protection" class="cta-button"><?= $servicesComputerProtectionButton = $content[35]['content'];?></a>
+        <a href="../offered_services/consultations" class="cta-button"><?= $servicesConsultationsButton = $content[36]['content'];?></a>
+        <a href="../offered_services/managedServices" class="cta-button"><?= $servicesManagedServicesButton = $content[37]['content'];?></a>
+        <a href="../offered_services/websites" class="cta-button"><?= $servicesRemoteSupportButton = $content[38]['content'];?></a>
+        <a href="../offered_services/remoteSupport" class="cta-button"><?= $servicesWebsitesButton = $content[39]['content'];?></a>
     </div>
 
     <div class="grid-item">
@@ -850,9 +850,9 @@ function content_home()
             </div>
          </div>
 
-        <a href="../LAtPC/offered_security/best_practices" class="cta-button"><?= $securityButton = $content[47]['content'];?></a>
-        <a href="../LAtPC/offered_security/backups" class="cta-button"><?= $securityButton2 = $content[48]['content'];?></a>
-        <a href="../LAtPC/offered_security/passwords" class="cta-button"><?= $securityButton3 = $content[49]['content'];?></a>
+        <a href="../offered_security/best_practices" class="cta-button"><?= $securityButton = $content[47]['content'];?></a>
+        <a href="../offered_security/backups" class="cta-button"><?= $securityButton2 = $content[48]['content'];?></a>
+        <a href="../offered_security/passwords" class="cta-button"><?= $securityButton3 = $content[49]['content'];?></a>
         <aside>
             <hr>
             <div class="multi-link-container">
@@ -862,7 +862,7 @@ function content_home()
                 </div>
             </div>
             <p><?= $tutorialsAndBlogParagraph = $content[53]['content'];?></p>
-            <a href="../LAtPC/tutorials/" class="cta-button"><?= $tutorialsAndBlogButton = $content[54]['content'];?></a>
+            <a href="../tutorials/" class="cta-button"><?= $tutorialsAndBlogButton = $content[54]['content'];?></a>
         </aside>
     </div>
 
@@ -876,12 +876,12 @@ function content_home()
             </div>
         </div>
 
-        <a href="../LAtPC/hardware_options/cpu" class="cta-button"><?= $hardwareButtons = $content[59]['content'];?></a>
-        <a href="../LAtPC/hardware_options/storage" class="cta-button"><?= $hardwareButtons = $content[60]['content'];?></a>
-        <a href="../LAtPC/hardware_options/psu" class="cta-button"><?= $hardwareButtons = $content[61]['content'];?></a>
-        <a href="../LAtPC/hardware_options/input_devices" class="cta-button"><?= $hardwareButtons = $content[62]['content'];?></a>
-        <a href="../LAtPC/hardware_options/output_devices" class="cta-button"><?= $hardwareButtons = $content[63]['content'];?></a>
-        <a href="../LAtPC/hardware_options/" class="cta-button"><?= $hardwareButtons = $content[64]['content'];?></a>
+        <a href="../hardware_options/cpu" class="cta-button"><?= $hardwareButtons = $content[59]['content'];?></a>
+        <a href="../hardware_options/storage" class="cta-button"><?= $hardwareButtons = $content[60]['content'];?></a>
+        <a href="../hardware_options/psu" class="cta-button"><?= $hardwareButtons = $content[61]['content'];?></a>
+        <a href="../hardware_options/input_devices" class="cta-button"><?= $hardwareButtons = $content[62]['content'];?></a>
+        <a href="../hardware_options/output_devices" class="cta-button"><?= $hardwareButtons = $content[63]['content'];?></a>
+        <a href="../hardware_options/" class="cta-button"><?= $hardwareButtons = $content[64]['content'];?></a>
 
         <aside>
             <hr>
@@ -904,20 +904,20 @@ function content_home()
                 <p tabindex="0"><?= $softwareDialog = $content[70]['content'];?></p>
             </div>
         </div>
-        <a href="../LAtPC/software_options/anti_virus" class="cta-button"><?= $softwareButtons = $content[71]['content'];?></a>
-        <a href="../LAtPC/software_options/malware_cleaner" class="cta-button"><?= $softwareButtons = $content[72]['content'];?></a>
-        <a href="../LAtPC/software_options/web_browsers" class="cta-button"><?= $softwareButtons = $content[73]['content'];?></a>
-        <a href="../LAtPC/software_options/messaging" class="cta-button"><?= $softwareButtons = $content[74]['content'];?></a>
-        <a href="../LAtPC/software_options/media" class="cta-button"><?= $softwareButtons = $content[75]['content'];?></a>
-        <a href="../LAtPC/software_options/runtimes" class="cta-button"><?= $softwareButtons = $content[76]['content'];?></a>
-        <a href="../LAtPC/software_options/imaging" class="cta-button"><?= $softwareButtons = $content[77]['content'];?></a>
-        <a href="../LAtPC/software_options/documents" class="cta-button"><?= $softwareButtons = $content[78]['content'];?></a>
-        <a href="../LAtPC/software_options/file_sharing" class="cta-button"><?= $softwareButtons = $content[79]['content'];?></a>
-        <a href="../LAtPC/software_options/online_storage" class="cta-button"><?= $softwareButtons = $content[80]['content'];?></a>
-        <a href="../LAtPC/software_options/other" class="cta-button"><?= $softwareButtons = $content[81]['content'];?></a>
-        <a href="../LAtPC/software_options/utilities" class="cta-button"><?= $softwareButtons = $content[82]['content'];?></a>
-        <a href="../LAtPC/software_options/compression" class="cta-button"><?= $softwareButtons = $content[83]['content'];?></a>
-        <a href="../LAtPC/software_options/developer_tools" class="cta-button"><?= $softwareButtons = $content[84]['content'];?></a>
+        <a href="../software_options/anti_virus" class="cta-button"><?= $softwareButtons = $content[71]['content'];?></a>
+        <a href="../software_options/malware_cleaner" class="cta-button"><?= $softwareButtons = $content[72]['content'];?></a>
+        <a href="../software_options/web_browsers" class="cta-button"><?= $softwareButtons = $content[73]['content'];?></a>
+        <a href="../software_options/messaging" class="cta-button"><?= $softwareButtons = $content[74]['content'];?></a>
+        <a href="../software_options/media" class="cta-button"><?= $softwareButtons = $content[75]['content'];?></a>
+        <a href="../software_options/runtimes" class="cta-button"><?= $softwareButtons = $content[76]['content'];?></a>
+        <a href="../software_options/imaging" class="cta-button"><?= $softwareButtons = $content[77]['content'];?></a>
+        <a href="../software_options/documents" class="cta-button"><?= $softwareButtons = $content[78]['content'];?></a>
+        <a href="../software_options/file_sharing" class="cta-button"><?= $softwareButtons = $content[79]['content'];?></a>
+        <a href="../software_options/online_storage" class="cta-button"><?= $softwareButtons = $content[80]['content'];?></a>
+        <a href="../software_options/other" class="cta-button"><?= $softwareButtons = $content[81]['content'];?></a>
+        <a href="../software_options/utilities" class="cta-button"><?= $softwareButtons = $content[82]['content'];?></a>
+        <a href="../software_options/compression" class="cta-button"><?= $softwareButtons = $content[83]['content'];?></a>
+        <a href="../software_options/developer_tools" class="cta-button"><?= $softwareButtons = $content[84]['content'];?></a>
     </div>
 </section>
 <?php

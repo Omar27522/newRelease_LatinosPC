@@ -2,12 +2,7 @@
 function cssStyles(){
   ?>
   <style>
-     /*.container {
-      padding: .25rem 2rem .3rem;
-    margin: 0 auto;
-    position: relative;
-    max-width: 1200px;
-    }*/
+   
 
     h1, h2 {
       color: var(--primary-dark);
@@ -200,7 +195,7 @@ function apostles()   {
     '🧮 Total Count'
   ];
   $names = [
-    '<a href="?peter">Simon Peter</a> and <a href="?andrew">Andrew</a> (Sons of Jonah)',
+    '<a href="?peter">Simon Peter</a> and <a href="?andrew">Andrew</a> (Sons of Jonah) <a href="https://en.wikipedia.org/wiki/Bethsaida#New_Testament"title="Wikipedia">Bethsaida</a>',
     '<a href="?james">James</a> and <a href="?john">John</a> (Sons of Zebedee)',
     '<a href="?philip">Philip</a> and <a href="?bartholomew">Bartholomew</a>',
     '<a href="?thomas">Thomas</a> and <a href="?matthew">Matthew</a>',
@@ -286,43 +281,55 @@ function apostoles()  {
   content();
 }
 
+function peterApostle()    {
+    include 'peter_the_apostle_temp.php';
+}
+
+function andrewApostle()    {
+    echo'ANDREW JOHN 1:39
+                39 He said to them, “Come and see.”
+  They came and saw where he was staying, and they stayed with him that day. It was about the tenth hour.† 40 One of the two who heard John and followed him was Andrew, Simon Peter’s brother. 41 He first found his own brother, Simon, and said to him, “We have found the Messiah!” (which is, being interpreted, Christ‡). 42 He brought him to Jesus. Jesus looked at him and said, “You are Simon the son of Jonah. You shall be called Cephas” (which is by interpretation, Peter).§
+  ';
+}
+
 function content()    {
-  global $titles, $names, $subTitles, $adicionalNames, $_Jesus;
-  global $titulos, $nombres, $subTitulos, $nombresAdicionales, $_Jesus;
-  if (isset($_GET['peter'])):
-    echo "<section class=\"fullbar\">Simon Peter</section>";
-elseif (isset($_GET['andrew'])):
-    echo "<section class=\"fullbar\">Andrew</section>";
-elseif (isset($_GET['james'])):
-    echo "<section class=\"fullbar\">James</section>";
-elseif (isset($_GET['john'])):
-    echo "<section class=\"fullbar\">John</section>";
-elseif (isset($_GET['philip'])):
-    echo "<section class=\"fullbar\">Philip</section>";
-elseif (isset($_GET['bartholomew'])):
-    echo "<section class=\"fullbar\">Bartholomew</section>";
-elseif (isset($_GET['thomas'])):
-    echo "<section class=\"fullbar\">Thomas</section>";
-elseif (isset($_GET['matthew'])):
-    echo "<section class=\"fullbar\">Matthew</section>";
-elseif (isset($_GET['little_james'])):
-    echo "<section class=\"fullbar\">James (son of Alphaeus)</section>";
-elseif (isset($_GET['thaddaeus'])):
-    echo "<section class=\"fullbar\">Thaddaeus</section>";
-elseif (isset($_GET['simon'])):
-    echo "<section class=\"fullbar\">Simon the Zealot</section>";
-elseif (isset($_GET['judas'])):
-    echo "<section class=\"fullbar\">Judas Iscariot</section>";
-elseif (isset($_GET['matthias'])):
-    echo "<section class=\"fullbar\">Matthias (replaced Judas)</section>";
-elseif (isset($_GET['paul'])):
-    echo "<section class=\"fullbar\">Paul (Apostle to the Gentiles)</section>";
-else:
+    global $titles, $names, $subTitles, $adicionalNames, $_Jesus;
+    global $titulos, $nombres, $subTitulos, $nombresAdicionales, $_Jesus;
+    if (isset($_GET['peter'])):
+      peterApostle();
+  elseif (isset($_GET['andrew'])):
+      andrewApostle();
+      echo "<section class=\"fullbar\">Andrew</section>";
+  elseif (isset($_GET['james'])):
+      echo "<section class=\"fullbar\">James</section>";
+  elseif (isset($_GET['john'])):
+      echo "<section class=\"fullbar\">John</section>";
+  elseif (isset($_GET['philip'])):
+      echo "<section class=\"fullbar\">Philip</section>";
+  elseif (isset($_GET['bartholomew'])):
+      echo "<section class=\"fullbar\">Bartholomew</section>";
+  elseif (isset($_GET['thomas'])):
+      echo "<section class=\"fullbar\">Thomas</section>";
+  elseif (isset($_GET['matthew'])):
+      echo "<section class=\"fullbar\">Matthew</section>";
+  elseif (isset($_GET['little_james'])):
+      echo "<section class=\"fullbar\">James (son of Alphaeus)</section>";
+  elseif (isset($_GET['thaddaeus'])):
+      echo "<section class=\"fullbar\">Thaddaeus</section>";
+  elseif (isset($_GET['simon'])):
+      echo "<section class=\"fullbar\">Simon the Zealot</section>";
+  elseif (isset($_GET['judas'])):
+      echo "<section class=\"fullbar\">Judas Iscariot</section>";
+  elseif (isset($_GET['matthias'])):
+      echo "<section class=\"fullbar\">Matthias (replaced Judas)</section>";
+  elseif (isset($_GET['paul'])):
+      echo "<section class=\"fullbar\">Paul (Apostle to the Gentiles)</section>";
+  else:
 
   ?>
-  
+
   <div class="fullbar">
-    <div class="apostles-intro">
+    <div class="apostles-intro" id="^">
       <h2><?= empty($titles) ? $titulos[0] : $titles[0]; ?></h2>
       <h3><?= empty($titles) ? $titulos[1] : $titles[1]; ?></h3>
     </div>
@@ -380,9 +387,19 @@ else:
       <h2><?= empty($titles) ? $titulos[7] : $titles[7]; ?></h2>
       <p><?= empty($titles) ? $subTitulos[5] : $subTitles[5]; ?> <span class="highlight-number"><?= empty($titles) ? $subTitulos[6] : $subTitles[6]; ?></span> <?= empty($titles) ? $subTitulos[7] : $subTitles[7]; ?></p>
     </div>
+    possible born in places:
+    <br />
+    Andrew Peter and Philip were born in Bethsaida<br />
+    James, John, and Matthew were born in Capernaum also little James<br />
+    Nathanael was born in Cana<br />
+    Simon the Zealot was born in Gamla, or Cana<br />
+    Judas Iscariot was born in Kerioth 1,2<br />
+    Thadeus was born in Korazin<br />
+    Thomas was born in Arbel<br />
+    Matthias was born in Jerusalem
   </div>
   <?php
-endif;
+  endif;
 }
 
 include './anvil/structure.php';

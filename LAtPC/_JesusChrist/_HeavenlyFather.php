@@ -317,7 +317,7 @@ function content()  {
     }
 
     </style>
-    <div class="fullbar">
+    <div class="fullbar" id="title">
         <div class="title" style="text-align:center"><?= empty($titles) ? $titulos[0] : $titles[0]; ?></div>
         <!--This is the image linked to | OLD SYSTEM I NEED TO CHANGE IT TO THE NEW PICTURE DIALOG WITH FIG CAPTIONS-->
         <a rel="example_group"
@@ -616,7 +616,8 @@ function content()  {
             <tbody>
                 <tr style="height:42pt">
                     <td style="vertical-align:top;overflow:hidden;overflow-wrap:break-word;">
-                        <p>[Free Research Preview. ChatGPT ChatGPT May 3 Version 2023]</p>
+                        <p>[Free Research Preview. ChatGPT ChatGPT May 3 Version 2023
+                            <br />last edit on 2026-01-24]</p>
                         <hr />
                     </td>
                 </tr>
