@@ -47,12 +47,17 @@ if (!empty($path_info)) {
 	$route = ltrim($path_info, '/');
 } else {
 	// Fallback: parse from REQUEST_URI
-	$route = str_replace(dirname($script_name), '', $request_uri);
+    $script_dir = str_replace('\\', '/', dirname($script_name));
+    $uri_path = parse_url($request_uri, PHP_URL_PATH);
+
+    // If the script is in a subdirectory, remove that directory from the URI path
+    if (strpos($uri_path, $script_dir) === 0) {
+        $route = substr($uri_path, strlen($script_dir));
+    } else {
+        $route = $uri_path;
+    }
+
 	$route = ltrim($route, '/');
-	$route = strtok($route, '?');  // Remove query string
-	$route = str_replace('LAtPC', '', $route);
-	/* NOTE: in production $route str_replace 'LAtPC' will have to be deleted or something since the path will not be inside the LAtPC dir.
-	but on the root of the public directory*/
 	$route = trim($route, '/');
 }
 
