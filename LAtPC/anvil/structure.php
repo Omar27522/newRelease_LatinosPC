@@ -8,9 +8,11 @@
     <title><?= !empty($page->getTitle()) ? $page->getTitle() : $page->getTitle() ?> </title>
     <meta name="keywords" content="<?=$keywords?>">
     <meta name="description" content="<?=$description?>">
-    <link rel="stylesheet" href="<?= $page->getDir(); ?>/anvil/mainStyle.css">
-    <link rel="stylesheet" href="<?= $page->getDir(); ?>/anvil/homepage.css">
-    <link rel="stylesheet" href="<?= $page->getDir(); ?>/anvil/navMenu.css">
+    <meta name="author" content="Miguel Omar, and Available AI Technologies">
+    <link rel="stylesheet" href="<?= $page->getDir(); ?>anvil/mainStyle.css">
+    <link rel="stylesheet" href="<?= $page->getDir(); ?>anvil/homepage.css">
+    <link rel="stylesheet" href="<?= $page->getDir(); ?>anvil/navMenu.css">
+    <link rel="shortcut icon" href="<?= $page->getDir(); ?>favicon.ico" />
     <?php
     if (function_exists('cssStyles')) {
         cssStyles();

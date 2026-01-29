@@ -9,7 +9,7 @@
 
 
                 ANDREW JOHN 1:39
-                
+
                 39 He said to them, “Come and see.”
 They came and saw where he was staying, and they stayed with him that day. It was about the tenth hour.† 40 One of the two who heard John and followed him was Andrew, Simon Peter’s brother. 41 He first found his own brother, Simon, and said to him, “We have found the Messiah!” (which is, being interpreted, Christ‡). 42 He brought him to Jesus. Jesus looked at him and said, “You are Simon the son of Jonah. You shall be called Cephas” (which is by interpretation, Peter).§
 -->
@@ -341,7 +341,7 @@ For the vision on the mountain strengthened him for the trials to come, and he u
     community. <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=JN21_15"title="John 21:15-19">John 21:15-19</a>
 </p>
 
-<h2 class="total-count">Peter the Leader of the Early Church</h2>
+<h2 class="total-count">Peter the Leader of the Early Church <small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC1_1"title="Acts 1" style="color: var(--dialog-text-highlight);"class="rtl">Holy Spirit praxis</a></small></h2>
 <ul style="list-style-type: none;padding-left: .3%;margin-left: 1%; border: 1.5px groove #a90d0dff;" class="rtl">
     <li style="text-align: center;"><strong><a href="https://www.st-peters-basilica-tickets.com/saint-peter-the-apostle/" title="Find out the revered history of Saint Peter the Apostle">Peter the Apostle</a></strong></li>
     <li><strong>Birth:</strong> 1 AD</li>
@@ -351,23 +351,21 @@ For the vision on the mountain strengthened him for the trials to come, and he u
     <li><strong>About:</strong> <a href="?#^">Apostle</a> of <a href="./">Jesus Christ</a>/<a href="https://en.wikipedia.org/wiki/Primacy_of_Peter#Catholic_view"title="Wikipedia">First Pope of Rome</a></li>
 </ul>
 <p>
-After Jesus died and came back to life, He didn’t just disappear right away. For forty days, He spent time with His followers to show them that He was truly alive. He let them see Him, talk to Him, and even eat with Him so they could be completely sure it was really Him.
-
+After Jesus died and came back to life, He didn’t just disappear right away.
+For forty days, He spent time with His followers to show them that He was truly alive.
+He let them see Him, talk to Him, and even eat with Him so they could be completely sure it was really Him.</p>
+<p>
 During those days, Jesus taught them more about God’s Kingdom — what God is doing in the world and how they would be part of it.
-
-One day, when they were all together, Jesus gave them an important instruction. He told them:
-
-Stay in Jerusalem.
-
-Wait for the special gift God promised.
-
-This “gift” was the Holy Spirit, who would come to give them courage, power, and guidance. Jesus explained that while John the Baptist used water to baptize people, God would soon baptize them with the Holy Spirit, filling them with strength to continue Jesus’ mission.
-
+One day, when they were all together, Jesus gave them an important instruction.
+He told them:<br /><strong>Stay in Jerusalem</strong>.<br /><strong>Wait for the special gift God promised.</strong>
+<small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC1_4"title="Acts 1:4">Acts 1:4</a></small><br />
+This “gift” was the Holy Spirit, who would come to give them courage, power, and guidance.
+Jesus explained that while John the Baptist used water to baptize people, God would soon baptize them with the Holy Spirit, filling them with strength to continue Jesus’ mission.</p>
+<p>
 The disciples were curious and still trying to understand everything. So they asked Jesus:
-
 “Lord, is this the time when You will make Israel a strong kingdom again?”
-
-They were thinking about a political kingdom — like a powerful nation. But Jesus was preparing them for something much bigger: a worldwide mission powered by the Holy Spirit.
+They were thinking about a political kingdom — like a powerful nation.
+But Jesus was preparing them for something much bigger: a worldwide mission powered by the Holy Spirit.</p>
 <hr>
 
     Following Jesus' ascension, Peter stepped into the role of the primary leader of the

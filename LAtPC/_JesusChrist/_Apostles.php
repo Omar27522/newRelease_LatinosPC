@@ -2,13 +2,10 @@
 function cssStyles(){
   ?>
   <style>
-   
-
     h1, h2 {
       color: var(--primary-dark);
       margin-bottom: 1rem;
     }
-
     h1 {
       text-align: center;
       font-size: 2.2rem;
