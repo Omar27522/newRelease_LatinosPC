@@ -89,6 +89,8 @@ Apostles return to Jerusalem to wait for the Spirit
 </pre>
 
 https://www.youtube.com/watch?v=MDkttJPR-7I
+
+https://en.wikipedia.org/wiki/Seventy_disciples
 </section>
 <?php
 }

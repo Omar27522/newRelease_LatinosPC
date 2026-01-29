@@ -7,7 +7,7 @@
 [![Last Update](https://img.shields.io/badge/last%20update-July%202025-green)](https://github.com)
 
 **A bilingual (English/Spanish) website focused on providing outstanding service through effective marketing, customer retention strategies, and quality control.**
-
+ 
 [Features](#-features) • [Project Structure](#-project-structure) • [Standards](#-development-standards) • [Roadmap](#-roadmap)
 
 ---
@@ -31,7 +31,21 @@ Each section navigates to a dedicated page:
 
 ### ✝️ Jesus Christ
 - 🙏 Father in heaven tell me about the web
-- 👥 Apostles
+- Jesus Christ
+    - 👥 Apostles
+        - Peter
+        - Andrew
+        - James the Just
+        - John
+        - Taddeus
+        - James
+        - Philip
+        - Bartholomew
+        - Matthew
+        - Simon
+        - Judas
+        - Thomas
+
 - 📖 Parables
 - 🎤 Sermons
 - 📚 Teachings
@@ -86,6 +100,8 @@ Each section navigates to a dedicated page:
 ---
 
 ## 🎯 Development Standards
+- URI will have to be in English throughout the entire site.
+- Design Document Reference
 
 ### 📸 Image Optimization
 All images maintain **3 versions** for optimal performance:
@@ -107,30 +123,31 @@ Each page follows a **single-file structure**:
 ### 🔄 In Progress
 - [ ] ✝️ Jesus Christ related content
 
-### 📅 Upcoming Features
+### 📅 Upcoming Live Features
 - [ ] 🔗 Links and menus
 - [ ] 🌐 Language switching (Spanish/English button)
-- [ ] 🛠️ Services page
-- [ ] 🔒 Security page
 - [ ] 📧 Contact page
 - [ ] ⭐ Reviews page
-- [ ] 💻 Hardware page
-- [ ] 📦 Software page
-- [ ] ❌ 404 page
-- [ ] 📝 Tutorials / Blog page
+- [x] 📝 Tutorials / Blog page
+- [x] 🔒 Security page
+- [x] 🛠️ Services page
+- [x] 💻 Hardware page
+- [x] 📦 Software page
+- [x] ❌ 404 page
+- [ ] 🗺️Site Map
 
 ---
 
 ## 📌 Release Information
 
-**newRelease_LatinosPC** - The latest release of LatinosPc.com before it goes live
+**newRelease_LatinosPC** - The latest live release of LatinosPc.com
 
-> 🗓️ **Last Updated:** September 06, 2025
+> 🗓️ **Was Last Updated:** January 28th, 2026 
 
 ---
 
 <div align="center">
 
-**Built with ❤️ for the Latino community**
+**Site is live **
 
 </div>
