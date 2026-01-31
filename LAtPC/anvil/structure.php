@@ -19,7 +19,15 @@
     }
     ?>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W6JFHGLW2Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-W6JFHGLW2Y');
+</script>
 <body>
     <header>
         <a href="#" class="phone">
