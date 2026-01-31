@@ -1,6 +1,5 @@
 <?php
-class Structure
-{
+class Structure		{
 	// Declare properties to avoid dynamic property creation warnings
 	public string $dir;
 	public string $lang;
@@ -61,13 +60,15 @@ if (!empty($path_info)) {
 	$route = trim($route, '/');
 }
 
+$route = urldecode($route);
+
 // Split the route into segments for subdirectory support
 $route_segments = explode('/', $route);
 $main_route = $route_segments[0] ?? '';
 $sub_route = $route_segments[1] ?? '';
 
-// echo "DEBUG: Route = '" . $route . "'<br>";
-// echo $path_info;
+ #echo "DEBUG: Route = '" . $route . "'<br>";
+ # echo $path_info;
 // Route handling
 switch ($main_route) {
 	case '':

@@ -100,7 +100,6 @@ Each section navigates to a dedicated page:
 ---
 
 ## 🎯 Development Standards
-- URI will have to be in English throughout the entire site.
 - Design Document Reference
 
 ### 📸 Image Optimization

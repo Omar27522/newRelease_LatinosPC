@@ -1,11 +1,13 @@
+1/31/2026
+The live environment was not routing the Spanish URI properly.
+The problem arise because of the encoding done with special characters. I think the use UTF 16, but the server only has UTF 8.
+I think the URL has to get decoded first then encoded again when it routes the page. to fix the problem the .htaccess file had to be modified and a line added to the index.php	$route = urldecode($route);
+This fixed the issue, and the page can once again have the URL with special characters ideal for the Spanish language.
+
 1/9/2026
 There is a problem with the Jesus Christ main page.
 it works fine in English, but the Spanish version seems to not work as expected.
 There is something missing, it might only need a separate code section only for the spanish version of the page.
-
-
-
-
 
 10/11/2025
 I have a problem when loading Pages.

@@ -6,4 +6,15 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
 # Send it to index.php
-RewriteRule ^ index.php [QSA,L]
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+
+
+
+
+
+
+
+
+
+
+
