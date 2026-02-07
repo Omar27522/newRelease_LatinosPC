@@ -253,10 +253,10 @@
                         </a>
                     </ul>
                 </div>
-                <!--    TerwanPOP Made by Erik Terwan    -->
+                <!-- ^   TerwanPOP Made by Erik Terwan   ^ -->
             </div>
             <div class="navButtons">
-                <?php /*On page.php from the last refactor there is a function called getNavButtons() that gets the correct place in the page I will need to use it for English and Spanish jumps.*/
+                <?php
                 if($page->getLang() == "en"):
 
                 $uri = $_SERVER['REQUEST_URI'];
@@ -272,7 +272,7 @@
                 ?>
 
 
-                <button><a href="<?= $page->getDir();?>index.php">Home</a></button>
+                <button><a href="<?= $page->getDir();?>">Home</a></button>
                 <button><a href="<?= $page->getDir() . $var;?>">Español</a></button>
                 <button><a href="<?= $page->getDir();?>offered_services">Services</a></button>
                 <button><a href="#">Contact Us</a></button>

@@ -61,10 +61,13 @@
     (10/5/2025|Update) Teachings page almost ready.
         It's been a while since any work has been done on the site, I'm glad work on it has resumed once again.
     (1/6/2026|Update)
-        The Gospel pages have been updated, but the Teacchings page is yet to be concluded.
+        The Gospel pages have been updated, but the Teachings page is yet to be concluded.
     (1/9/2026|Update)
         The Teachings page is finally finished, and the Beloved Son page is ready to be worked on.
-
+    (2/7/2026) 
+        An apostles sub page has been created, I have only started working on Apostle's Peter page.
+            ON the database each page has its own page_id which is represented by a table on the SQLite Connection file.
+                Database population should be easier.
 
 
 *Jesus Christ Section: apostles revision*
@@ -72,7 +75,7 @@
 *work on a back-to-top button.*
 *I would like to comeback to the Teachings page and modify the <ruby> tags where a dialog opens when clicked, but also there is an external link to teh verse in different versions of the Holy Scripture *
 *I want to have a Last Update: DATE legend for every page*
-*I would want to start transfering the data over to the database in order to reduce costs. software fire is 4200 lines of code.*
+*I would want to start transferring the data over to the database in order to reduce costs. software fire is 4200 lines of code.*
 *Design a system for content management in the database.*
 
 

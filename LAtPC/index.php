@@ -67,8 +67,8 @@ $route_segments = explode('/', $route);
 $main_route = $route_segments[0] ?? '';
 $sub_route = $route_segments[1] ?? '';
 
- #echo "DEBUG: Route = '" . $route . "'<br>";
- # echo $path_info;
+#echo "DEBUG: Route = '" . $route . "'<br>";
+#echo $path_info;
 // Route handling
 switch ($main_route) {
 	case '':
@@ -120,11 +120,9 @@ switch ($main_route) {
 		_JesusChrist($sub_route);
 		exit;
 		break;
+
 	case 'Jesucristo':
-		_Jesucristo($sub_route);  /*this cannot work anywhere else in the same way;
-										 say: when we start services functions,
-											 there has to be a services(sub_route) function
-												 and a servicios(sub_route) function.*/
+		_Jesucristo($sub_route);
 		exit;
 		break;
 	default:
@@ -134,77 +132,71 @@ switch ($main_route) {
 		break;
 }
 
-function show404()
-{
+function show404(){
 	http_response_code(404);
-
 	 echo '<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>404 - Page Not Found</title>
-  <style>
-    body {
-      background-color: #f8f9fa;
-      font-family: Arial, sans-serif;
-      text-align: center;
-	  padding: .25rem 2rem .3rem;
-      padding-top: 10%;
-      color: #333;
-  margin: 0 auto;
-  position: relative;
-  max-width: 600px;
-    }
-    h1 {
-      font-size: 5em;
-      margin-bottom: 0.5em;
-      color: #dc3545;
-    }
-    p {
-      font-size: 1.2em;
-      margin-bottom: 2em;
-    }
-    a {
-      text-decoration: none;
-      color: #fff;
-      background-color: #007bff;
-      padding: 0.75em 1.5em;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-    a:hover {
-      background-color: #0056b3;
-    }
-  </style>
-</head>
-<body>
-  <h1>404</h1>
-  <p>Oops! The page you’re looking for doesn’t exist.</p>
-  <a href="../">Return Home</a>
-</body>
-</html>';
-
+			<html lang="en">
+			<head>
+			  <meta charset="UTF-8">
+			  <title>404 - Page Not Found</title>
+			  <style>
+			    body {
+			      background-color: #f8f9fa;
+			      font-family: Arial, sans-serif;
+			      text-align: center;
+				  padding: .25rem 2rem .3rem;
+			      padding-top: 10%;
+			      color: #333;
+			  margin: 0 auto;
+			  position: relative;
+			  max-width: 600px;
+			    }
+			    h1 {
+			      font-size: 5em;
+			      margin-bottom: 0.5em;
+			      color: #dc3545;
+			    }
+			    p {
+			      font-size: 1.2em;
+			      margin-bottom: 2em;
+			    }
+			    a {
+			      text-decoration: none;
+			      color: #fff;
+			      background-color: #007bff;
+			      padding: 0.75em 1.5em;
+			      border-radius: 5px;
+			      font-weight: bold;
+			    }
+			    a:hover {
+			      background-color: #0056b3;
+			    }
+			  </style>
+			</head>
+			<body>
+			  <h1>404</h1>
+			  <p>Oops! The page you’re looking for doesn’t exist.</p>
+			  <a href="../">Return Home</a>
+			</body>
+			</html>';
 	exit;
 }
 
-function showSpanishContent()
-{
+function showSpanishContent(){
 	$page = new Structure('../', 'español', 'Inicio LatinosPC');
 	$keywords = 'reparación de computadoras, reparación de laptops, reparación de PC, eliminación de virus, eliminación de malware, respaldo de datos, recuperación de datos, diagnóstico de computadoras, soporte IT para pequeñas empresas, soporte técnico para estudiantes, reparación de computadoras a domicilio, reparación de PC para gamers, ayuda con PC gamer personalizada, clases de computación, clases de computación online, clases de computación presenciales, capacitación tecnológica para adultos mayores, clases básicas de computación, reparación de computadoras en Pomona, soporte técnico en Pomona, reparación de laptops cerca de mí, servicios IT en Pomona, clases de computación en Pomona';
 	$description = 'Clases de tecnología en línea, servicios de computación, configuraciones, hardware y atención presencial para negocios y usuarios domésticos.';
 	include 'index_spanish.php';
 }
 
-function about()
-{
+function about(){
 	$page = new Structure('../', 'english', 'About');
 	$keywords = 'computer repair Pomona, on-site computer service, remote IT support, laptop repair, desktop repair, computer technician Los Angeles, PC repair Inland Empire, small business IT, web development, computer services San Bernardino, Riverside computer repair, Orange County IT, home computer repair, network setup, computer training, technology solutions';
 	$description = "LatinosPC offers on-site and remote computer repair services in Pomona, CA, serving LA, San Bernardino, Riverside, and Orange counties. Founded in 2021, personalized IT solutions provided to homes and small businesses with a 90-day service guarantee and 100% satisfaction commitment.";
 	include 'about.php';
 }
 
-function offered_services($sub_route)
-{
+function offered_services($sub_route){
 	switch ($sub_route) {
 
 		case 'cleanups':
@@ -513,7 +505,6 @@ function hardware_options($sub_route){
 	}
 }
 
-
 function software_options($sub_route){
 	switch ($sub_route){
 		case 'anti_virus':
@@ -617,13 +608,6 @@ function software_options($sub_route){
 			show404();
 			break;
 		}
-}
-
-function fullPageTemplate(){
-	$page = new Structure('../', 'english', 'Template');
-	$keywords = 'test_Keywords';
-	$description = 'test_Description';
-	include 'fullPageTemplate.php';
 }
 
 function _JesusChrist($sub_route){
@@ -769,6 +753,13 @@ function tutorial(){
 	include 'anvil/tutorials.php';
 }
 
+function fullPageTemplate(){
+	$page = new Structure('../', 'english', 'Template');
+	$keywords = 'test_Keywords';
+	$description = 'test_Description';
+	include 'fullPageTemplate.php';
+}
+
 $page = new Structure('../', 'english', 'Home LatinosPC');
 
 $description = 'Online Tech Classes Computer services, Configurations, Hardware, and in‑person, businesses, and home users.';
@@ -785,7 +776,7 @@ try {
 
 	global $content;
 	if ($tableExists) {
-		$stmt = $pdo->query('SELECT * FROM content WHERE page_id = "home"');
+		$stmt = $pdo->query('SELECT * FROM content WHERE page_id = "home"');//each page has its own page_id wich is represnted by a table on the SQLite Connection file.
 		$content = $stmt->fetchAll(PDO::FETCH_ASSOC);
 	}
 } catch (PDOException $e) {
@@ -812,7 +803,6 @@ function content_home()
                 <p tabindex="0"><?= $_JesusChristDialog1 = $content[9]['content'];?></p>
                 <p tabindex="0"><?= $_JesusChristDialog2 = $content[10]['content'];?></p>
             </div>
-
         </div>
         <a href="<?= htmlspecialchars($link = $content[16]['content']);?>"
             class="cta-button"><?= $button = $content[11]['content'];?></a>
