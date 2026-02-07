@@ -258,17 +258,41 @@
             <div class="navButtons">
                 <?php /*On page.php from the last refactor there is a function called getNavButtons() that gets the correct place in the page I will need to use it for English and Spanish jumps.*/
                 if($page->getLang() == "en"):
+
+                $uri = $_SERVER['REQUEST_URI'];
+                    $routes = [
+                        "/JesusChrist/father_in_heaven_tell_me_about_web" => "Jesucristo/padre_celestial_cuentame_sobre_el_internet",
+                        "/JesusChrist/parables" => "Jesucristo/parabolas",
+                        "/JesusChrist/sermons" => "Jesucristo/sermones",
+                        "/JesusChrist/apostles" => "Jesucristo/apostoles",
+                        "/JesusChrist/teachings" => "Jesucristo/enseñanzas"
+                    ];
+
+                $var = isset($routes[$uri]) ? $routes[$uri] : $page->getDir()."español/";
                 ?>
+
+
                 <button><a href="<?= $page->getDir();?>index.php">Home</a></button>
-                <button><a href="<?= $page->getDir();?>español">Español</a></button>
+                <button><a href="<?= $page->getDir() . $var;?>">Español</a></button>
                 <button><a href="<?= $page->getDir();?>offered_services">Services</a></button>
                 <button><a href="#">Contact Us</a></button>
                 <button><a href="#">Reviews</a></button>
                 <?php
                 elseif($page->getLang() == "es-419"):
+
+                    $uri = $_SERVER['REQUEST_URI'];
+                    $routes = [
+                        "/Jesucristo/padre_celestial_cuentame_sobre_el_internet" => "JesusChrist/father_in_heaven_tell_me_about_web",
+                        "/Jesucristo/parabolas" => "JesusChrist/parables",
+                        "/Jesucristo/sermones" => "JesusChrist/sermons",
+                        "/Jesucristo/apostoles" => "JesusChrist/apostles",
+                        "/Jesucristo/enseñanzas" => "JesusChrist/teachings"
+                    ];
+                    $var = isset($routes[$uri]) ? $routes[$uri] : $page->getDir()."";
+
                 ?>
                 <button><a href="<?= $page->getDir();?>español">inicio</a></button>
-                <button><a href="<?= $page->getDir();?>index.php">Inglés</a></button>
+                <button><a href="<?= $page->getDir() . $var;?>">Inglés</a></button>
                 <button><a href="#">Servicios</a></button>
                 <button><a href="#">Contacto</a></button>
                 <button><a href="#">Reseñas</a></button><?php endif;?>

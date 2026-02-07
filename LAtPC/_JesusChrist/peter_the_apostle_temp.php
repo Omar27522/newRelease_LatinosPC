@@ -353,7 +353,7 @@ For the vision on the mountain strengthened him for the trials to come, and he u
 <p>
 After Jesus died and came back to life, He didn’t just disappear right away.
 For forty days, He spent time with His followers to show them that He was truly alive.
-He let them see Him, talk to Him, and even eat with Him so they could be completely sure it was really Him.</p>
+He let them see Him, talk to Him, and even eat with Him so they could be completely sure it was really Him. <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC1_1"title="Acts 1:4">Acts 1</a></p>
 <p>
 During those days, Jesus taught them more about God’s Kingdom — what God is doing in the world and how they would be part of it.
 One day, when they were all together, Jesus gave them an important instruction.
@@ -364,24 +364,24 @@ Jesus explained that while John the Baptist used water to baptize people, God wo
 <p>
 The disciples were curious and still trying to understand everything. So they asked Jesus:
 “Lord, is this the time when You will make Israel a strong kingdom again?”
-They were thinking about a political kingdom — like a powerful nation.
+They were thinking about a political kingdom — like a powerful nation. <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC1_6"title="Acts 1:6">Acts 1:6</a>
 But Jesus was preparing them for something much bigger: a worldwide mission powered by the Holy Spirit.</p>
 <hr>
 
     Following Jesus' ascension, Peter stepped into the role of the primary leader of the
     apostles, just as Jesus had promised.
-    
+    <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC1_15"title="Acts 1:15">Acts 1:15</a>
     <hr>
-    Jesus ascended into heaven (Acts 1), the disciples were suddenly without their physical teacher and leader. But Jesus had already prepared them for this moment. He told them:
+    Jesus ascended into heaven (<a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC1_1"title="Acts 1:1">Acts 1:1</a>), the disciples were suddenly without their physical teacher and leader. But Jesus had already prepared them for this moment. He told them:
 
 The Holy Spirit would come and empower them
 
-Peter, in particular, would have a foundational leadership role (see Matthew 16:18–19; Luke 22:31–32; John 21:15–17)
+Peter, in particular, would have a foundational leadership role (see <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT16_18"title="Matthew 16:18–19">Matthew 16:18–19</a>; <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LU22_31"title="Luke 22:31–32">Luke 22:31–32</a>; <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=JN21_15"title="John 21:15–17">John 21:15–17</a>)
 
 So when Jesus ascended, the disciples returned to Jerusalem and waited — just as He instructed.
 </p>
 
-<h4>Pentecost and Bold Preaching (Acts 2)</h4>
+<h4>Pentecost and Bold Preaching (<a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC2_1"title="Acts 2:1">Acts 2:1</a>)</h4>
 <p>
     The day of Pentecost is considered the birthday of the Christian Church. After the Holy
     Spirit descended upon the disciples, Peter stood up and preached a powerful sermon to the

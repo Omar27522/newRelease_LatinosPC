@@ -33,15 +33,15 @@ global $content;
             </div>
 
         </div>
-        <a href="#"
+        <a href="../Jesucristo/padre_celestial_cuentame_sobre_el_internet"
             class="cta-button"><?= $button = $content[3]['content'];?></a>
-        <a href="#"
+        <a href="../Jesucristo/apostoles"
             class="cta-button"><?= $button2 = $content[4]['content'];?></a>
-        <a href="#"
+        <a href="../Jesucristo/parabolas"
             class="cta-button"><?= $button3 = $content[5]['content'];?></a>
-        <a href="#"
+        <a href="../Jesucristo/sermones"
             class="cta-button"><?= $button4 = $content[6]['content'];?></a>
-        <a href="#"
+        <a href="../Jesucristo/enseñanzas"
             class="cta-button"><?= $button5 = $content[7]['content'];?></a>
     </div>
 

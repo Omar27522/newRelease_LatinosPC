@@ -1638,19 +1638,19 @@ function cssStyles()    {
         word-break: break-word;
         }
         #luke {
-        background-image: url("../https://latinospc.com/images/hardware/hw/headsets/luke.webp");
+        background-image: url("../images/hardware/hw/headsets/luke.webp");
         }
         #neo {
-        background-image: url("../https://latinospc.com/images/hardware/hw/headsets/neo.webp");
+        background-image: url("../images/hardware/hw/headsets/neo.webp");
         }
         #marty {
-        background-image: url("../https://latinospc.com/images/hardware/hw/headsets/marty.webp");
+        background-image: url("../images/hardware/hw/headsets/marty.webp");
         }
         #tony {
-        background-image: url("../https://latinospc.com/images/hardware/hw/headsets/tony.webp");
+        background-image: url("../images/hardware/hw/headsets/tony.webp");
         }
         #parzivalbrycelynch {
-        background-image: url("../https://latinospc.com/images/hardware/hw/headsets/wadewatts.webp");
+        background-image: url("../images/hardware/hw/headsets/wadewatts.webp");
         }
 
         fieldset p:hover,fieldset p:focus,fieldset li:hover,fieldset li:focus {
@@ -1659,31 +1659,31 @@ function cssStyles()    {
         cursor: pointer;
         }
         .arvr {
-        background-image: url("../https://latinospc.com/images/hardware/hw/headsets/arvr.webp");
+        background-image: url("../images/hardware/hw/headsets/arvr.webp");
         background-size:  cover;
         background-repeat: no-repeat;
         background-position: center;
         }
         .futureofvrandar{
-        background-image: url("../https://latinospc.com/images/hardware/hw/headsets/futureofvrandar.webp");
+        background-image: url("../images/hardware/hw/headsets/futureofvrandar.webp");
         background-size:  cover;
         background-repeat: no-repeat;
         background-position: center;
         }
         .futureofvrandar0{
-        background-image: url("../https://latinospc.com/images/hardware/hw/headsets/futureofvrandar1.webp");
+        background-image: url("../images/hardware/hw/headsets/futureofvrandar1.webp");
         background-size:  cover;
         background-repeat: no-repeat;
         background-position: center;
         }
         .arandvr{
-        background-image: url("../https://latinospc.com/images/hardware/hw/headsets/arandvr.webp");
+        background-image: url("../images/hardware/hw/headsets/arandvr.webp");
         background-size:  cover;
         background-repeat: no-repeat;
         background-position: center;
         }
         .poem {
-        background-image: url("../https://latinospc.com/images/hardware/hw/headsets/paper.webp");
+        background-image: url("../images/hardware/hw/headsets/paper.webp");
         background-size:  cover;
         border-radius: 10px;
         color: azure;
