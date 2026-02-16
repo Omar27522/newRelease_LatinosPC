@@ -138,7 +138,7 @@ try {
     <div
         style="max-width: 1200px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
         <h2 style="margin-top: 0; color: #333;">
-            <?= $editData ? 'Edit Entry (ID: ' . $editData['id'] . ')' : 'Add New Entry' ?></h2>
+            <?= $editData ? 'Edit Entry (ID: ' . $editData['id'] -1 . ')' : 'Add New Entry' ?></h2>
         <form method="post" action="">
             <?php if ($editData): ?>
             <input type="hidden" name="id" value="<?= htmlspecialchars($editData['id']) ?>">

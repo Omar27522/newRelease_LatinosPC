@@ -18,7 +18,9 @@ function cssStyles(){
       font-size: 1.5rem;
       margin-top: 2rem;
     }
-
+    .img_link {
+      color: var(--primary-color) !important;
+    }
     .apostles-intro {
       background: linear-gradient(127deg,var(--secondary-dark), var(--primary-dark));
       border-radius: 15px;
@@ -306,7 +308,7 @@ function content()    {
   elseif (isset($_GET['bartholomew'])):
       echo "<section class=\"fullbar\">Bartholomew</section>";
   elseif (isset($_GET['thomas'])):
-      echo "<section class=\"fullbar\">Thomas</section>";
+      echo "<section class=\"fullbar\">Thomas</section>";//https://en.wikipedia.org/wiki/Caravaggio#/media/File:The_Incredulity_of_Saint_Thomas-Caravaggio_(1601-2).jpg
   elseif (isset($_GET['matthew'])):
       echo "<section class=\"fullbar\">Matthew</section>";
   elseif (isset($_GET['little_james'])):

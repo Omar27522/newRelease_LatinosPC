@@ -27,22 +27,16 @@ They came and saw where he was staying, and they stayed with him that day. It wa
                 </ruby></a></p>
     <!-- Carousel -->
     <div class="carousel-group fl">
-                <div class="multi-link-container">
-                        <div class="thumbnail-container">
-                            <span tabindex="0" class="linked-text-img">
-                                <img src="../images/_JesusChrist/apostlePeter_goh_thumb.png" alt="Gates of Hades" />
-                            </span>
-                            </div>
-                        <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
-                    </div>
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/_JesusChrist/apostlePeter_goh_thumb.png" alt="Gates of Hades" />
+                </span>
             </div>
-
-<template id="carousel-images">
-        <div class="carousel-item" data-image-index="0">
-            <img src="../images/_JesusChrist/apostlePeter_goh.png" alt="Image 1" />
-            <h4><a href="https://www.thattheworldmayknow.com/gates-of-hell-article"title="Gates of Hades">Caesarea Philippi</a></h4>
+            <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
         </div>
-    </template>
+    </div>
+
     To understand this quote, we have to understand the time and the place in order to draw a mental image of where Jesus and His disciples were standing.
     <p>Jesus took his friends to a place called Caesarea Philippi. It wasn’t a quiet park; it was at the foot of a
         massive, towering cliff of solid rock. In that cliff, there was a deep, dark cave that people back then called
@@ -128,7 +122,7 @@ They came and saw where he was staying, and they stayed with him that day. It wa
                 <h4>Likely Features:</h4>
                 <li>His father had been a fisherman before him</li>
                 <li>Skills passed down, not learned in school</li>
-                <li>Andrew worked alongside him</li>
+                <li><a href="?andrew#^"title="Andrew the Apostle">Andrew</a> worked alongside him</li>
                 <li>Extended family likely lived nearby</li>
             </ul>
             <ul>
@@ -203,13 +197,23 @@ They came and saw where he was staying, and they stayed with him that day. It wa
     </div>
 
           <h2 class="total-count">Simon the Fisherman</h2>
-    <div class="apostles-list">
+          <div class="apostles-list">
+            <div class="carousel-group img_rtl">
+                <div class="multi-link-container">
+                        <div class="thumbnail-container">
+                            <span tabindex="0" class="linked-text-img">
+                                <img src="../images/_JesusChrist/apostlePeter_fisherman_thumb.webp" alt="Simon the Fisherman" data-author="https://pixabay.com/users/airgilstudio-40053523/" data-source-url="https://pixabay.com/illustrations/ai-generated-peter-fisherman-8598026/">
+                            </span>
+                            </div>
+                        <div class="image-dialog" data-carousel="true" data-start-index="1"></div>
+                    </div>
+            </div>
         <p>The lake governed Simon’s life and told him when to work and when to rest. Some nights it was calm, some nights the lake fought back. Simon
             learned to be strong, quick, and loud enough to be heard over wind and waves. If fishermen at the time waited too long, they would lose the fish.</p>
         <p>His hands were rough. His back was strong. He knew nets, boats, and storms better than stories. He worked to
             feed his family. Simon didn’t dream much, dreaming didn’t fix broken nets. His town, Capernaum, stayed busy. Soldiers came and went. People paid taxes. Prayers were said every week.
             Life stayed the same, and Simon expected it to stay that way.</p>
-        <p>Then his brother Andrew came back because he had been gone for a while. When he returned, he talked differently. He wasn’t excited like someone
+        <p>Then his brother <a href="?andrew#^"title="Andrew the Apostle">Andrew</a> came back because he had been gone for a while. When he returned, he talked differently. He wasn’t excited like someone
             telling a rumor, he was sure.</p>
         <p> Andrew said something like, “Something is happening,” “We don’t have to wait anymore.”</p>
         <p>Simon asked questions, lots of them. Who? Where? How does this help us now? Andrew answered as best he could.</p>
@@ -261,6 +265,16 @@ They came and saw where he was staying, and they stayed with him that day. It wa
     <h3>Walking on Water <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT14_22"title="Matthew 14:22-33"><small>
             <ruby>Matthew<rt>14:22-33</rt></ruby>
         </small></a></h3>
+<div class="carousel-group fl">
+                <div class="multi-link-container">
+                        <div class="thumbnail-container">
+                            <span tabindex="0" class="linked-text-img">
+                                <img src="../images/_JesusChrist/apostlePeter_waterWalk_thumb.webp" alt="Peter walking on water" data-author="https://pixabay.com/users/debradeka-19003134/" data-source-url="https://pixabay.com/illustrations/jesus-st-peter-storm-boat-7304040/">
+                            </span>
+                            </div>
+                        <div class="image-dialog" data-carousel="true" data-start-index="2"></div>
+                    </div>
+            </div>
     <p>
         One of the most famous stories of Peter's impulsiveness and faith is when he walked on
         water immediately after the
@@ -299,17 +313,23 @@ They came and saw where he was staying, and they stayed with him that day. It wa
 <h3 style="padding-top: 2%;">The Transfiguration <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT17_1" title="Matthew 17:1-9"><small><ruby>Matthew<rt>17:1-9</rt></ruby></small></a></h3>
 <p>
     And it came to pass in those days that Jesus spoke to His disciples about the things that were to come. He asked them, “<strong>Who do you say that I am?</strong>” <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT16_15" title="Matthew 16:15"><small><ruby>Matthew<rt>16:15</rt></ruby></small></a> And Simon Peter answered and said, “<strong>You are the Messiah, the Son of the living God.</strong>” <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT16_16" title="Matthew 16:16"><small><ruby>Matthew<rt>16:16</rt></ruby></small></a> Though he spoke truly, he did not yet understand the weight of those words.
-
 After this, Jesus began to teach His disciples that He must suffer many things. Peter, troubled in heart, could not accept it. His thoughts were heavy, and his understanding was dim. Yet he followed Jesus still, for he loved him and believed that life was found in his words.
-
-And after six days, Jesus took Peter, James, and John and led them up a high mountain apart from the others. The air was quiet, and the path was steep, but the three followed him, not knowing what the Lord intended. <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT17_1" title="Matthew 17:1">Matthew 17:1</a>
-</p>
+And after six days, Jesus took Peter, James, and John and led them up a high mountain apart from the others. The air was quiet, and the path was steep, but the three followed him, not knowing what the Lord intended. <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT17_1" title="Matthew 17:1">Matthew 17:1</a></p>
 <aside class="verse" style="border-color: var(--primary-dark);">
 <p>In the Scriptures, mountains were often places where God revealed Himself in powerful ways. Long before Peter’s time, <a href="https://en.wikipedia.org/wiki/Moses"title="Wikipedia">Moses</a> met God on <a href="https://en.wikipedia.org/wiki/Mount_Sinai"title="Wikipedia">Mount Sinai</a>, where the mountain shook, a cloud covered it, and God gave His people the Ten Commandments. <a href="https://ebible.org/study/?v1=EX19_16&w1=bible&t1=local%3Aeng-web" title="Exodus 19:16"><small><ruby>Exodus<rt>19:16</rt></ruby></small></a></p>
     <p>
     The prophet <a href="https://en.wikipedia.org/wiki/Elijah"title="Wikipedia">Elijah</a> later heard God’s gentle whisper on <a href="https://en.wikipedia.org/wiki/Mount_Horeb"title="Wikipedia">Mount Horeb</a>, another sacred mountain. <a href="https://en.wikipedia.org/wiki/Abraham"title="Wikipedia">Abraham</a> showed his faith on <a href="https://en.wikipedia.org/wiki/Moriah"title="Wikipedia">Mount Moriah</a>, where God provided a ram in place of <a href="https://en.wikipedia.org/wiki/Isaac"title="Wikipedia">Isaac</a>. And in the Psalms, <a href="https://en.wikipedia.org/wiki/History_of_Jerusalem"title="Wikipedia">Jerusalem</a> is called a “<strong>mountain of God</strong>,” reminding the people that God often met them in high, set‑apart places. Because of stories like these, Peter would have known that when Jesus led him and the others up a high mountain, something important might happen. Mountains are/were considered to be places where heaven is a little closer to earth.</p>
 </aside>
-
+<div class="carousel-group img_fl">
+    <div class="multi-link-container">
+        <div class="thumbnail-container">
+            <span tabindex="0" class="linked-text-img">
+                <img src="../images/_JesusChrist/JesusChrist_transfiguration_thumb.webp" alt="Jesus Transfiguration" data-author="https://pixabay.com/users/celekirui-14997842/" data-source-url="https://pixabay.com/illustrations/transfiguration-jesus-christ-bible-10068355/" />
+            </span>
+        </div>
+        <div class="image-dialog" data-carousel="true" data-start-index="3"></div>
+    </div>
+</div>
 <p>And as they were upon the <a href="https://en.wikipedia.org/wiki/Mount_of_Transfiguration"title="Wikipedia">mountain</a>, Jesus prayed. And while he prayed, his appearance was changed before them. His face shone as the sun, and his garments became white as light, brighter than any earthly whiteness.
 
 And behold, Moses and Elijah appeared in glory, speaking with Jesus about the things he would accomplish in Jerusalem. When Peter saw this, fear and wonder filled him. Not knowing what he said, he spoke to Jesus, “<strong>Lord, it is good for us to be here. If you wish, let us make three shelters—one for you, one for Moses, and one for Elijah.</strong>”<a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT17_4" title="Matthew 17:4"><small><ruby>Matthew<rt>17:4</rt></ruby></small></a>
@@ -326,6 +346,16 @@ For the vision on the mountain strengthened him for the trials to come, and he u
 
 <h3 style="padding-top: 2%;">The Denial and Restoration <a href="https://ebible.org/study/?v1=LK22_54&w1=bible&t1=local%3Aeng-web"title="Luke 22:54-62">Luke 22:54-62</a>
 <a href="https://ebible.org/study/?v1=JN21_15&w1=bible&t1=local%3Aeng-web"title="John 21:15-17">John 21:15-17</a></h3>
+<div class="carousel-group img_rtl">
+    <div class="multi-link-container">
+        <div class="thumbnail-container">
+            <span tabindex="0" class="linked-text-img">
+                <img src="../images/_JesusChrist/apostlePeter_restoration_thumb.webp" alt="Peter restoration" data-author="https://pixabay.com/users/debradeka-19003134/" data-source-url="https://pixabay.com/illustrations/jesus-sheep-rock-gospel-church-7300070/" />
+            </span>
+        </div>
+        <div class="image-dialog" data-carousel="true" data-start-index="4"></div>
+    </div>
+</div>
 <p>
     Despite his bold promises of loyalty, Peter's greatest failure came on the night of
     <a href="./#I knew you come back to me">Jesus'trial.</a>
@@ -338,8 +368,7 @@ For the vision on the mountain strengthened him for the trials to come, and he u
     time Jesus responded with a command: "<a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=JN21_15"title="John 21:15">Feed my lambs</a>" or "<a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=JN21_16"title="John 21:16">Tend my sheep</a>."
     This three-fold questioning and commissioning perfectly reversed Peter's three-fold denial,
     restoring him to his leadership role and entrusting him with the care of the new Christian
-    community. <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=JN21_15"title="John 21:15-19">John 21:15-19</a>
-</p>
+    community. <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=JN21_15"title="John 21:15-19">John 21:15-19</a></p>
 
 <h2 class="total-count">Peter the Leader of the Early Church <small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC1_1"title="Acts 1" style="color: var(--dialog-text-highlight);"class="rtl">Holy Spirit praxis</a></small></h2>
 <ul style="list-style-type: none;padding-left: .3%;margin-left: 1%; border: 1.5px groove #a90d0dff;" class="rtl">
@@ -349,16 +378,29 @@ For the vision on the mountain strengthened him for the trials to come, and he u
     <li><strong>Death:</strong> Between 64 to 68 AD</li>
     <li><strong>Burial:</strong> <a href="https://en.wikipedia.org/wiki/Vatican_Hill"title="Wikipedia">Vatican Hill</a></li>
     <li><strong>About:</strong> <a href="?#^">Apostle</a> of <a href="./">Jesus Christ</a>/<a href="https://en.wikipedia.org/wiki/Primacy_of_Peter#Catholic_view"title="Wikipedia">First Pope of Rome</a></li>
+    <li><strong>See</strong> <small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT16_18"title="Matthew 16:18–19">Matthew 16:18–19</a>; <a href="https://ebible.org/study/?v1=LK22_31&w1=bible&t1=local%3Aeng-web"title="Luke 22:31–32">Luke 22:31–32</a>; <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=JN21_15"title="John 21:15–17">John 21:15–17</a></small>
+
 </ul>
 <p>
 After Jesus died and came back to life, He didn’t just disappear right away.
 For forty days, He spent time with His followers to show them that He was truly alive.
-He let them see Him, talk to Him, and even eat with Him so they could be completely sure it was really Him. <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC1_1"title="Acts 1:4">Acts 1</a></p>
+He let them see Him, talk to Him, and even eat with Him so they could be completely sure it was really Him.
+<a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC1_1"title="Acts 1:4">Acts 1</a></p>
 <p>
 During those days, Jesus taught them more about God’s Kingdom — what God is doing in the world and how they would be part of it.
 One day, when they were all together, Jesus gave them an important instruction.
 He told them:<br /><strong>Stay in Jerusalem</strong>.<br /><strong>Wait for the special gift God promised.</strong>
 <small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC1_4"title="Acts 1:4">Acts 1:4</a></small><br />
+<div class="carousel-group img_fl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/_JesusChrist/apostlePeter_Pentecost_thumb.webp" alt="holy Spirit atPentecost" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="5"></div>
+        </div>
+    </div>
 This “gift” was the Holy Spirit, who would come to give them courage, power, and guidance.
 Jesus explained that while John the Baptist used water to baptize people, God would soon baptize them with the Holy Spirit, filling them with strength to continue Jesus’ mission.</p>
 <p>
@@ -366,44 +408,75 @@ The disciples were curious and still trying to understand everything. So they as
 “Lord, is this the time when You will make Israel a strong kingdom again?”
 They were thinking about a political kingdom — like a powerful nation. <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC1_6"title="Acts 1:6">Acts 1:6</a>
 But Jesus was preparing them for something much bigger: a worldwide mission powered by the Holy Spirit.</p>
+
+Following Jesus' ascension, Peter stepped into the role of the primary leader of the
+apostles, just as Jesus had promised.
+<a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC1_15"title="Acts 1:15">Acts 1:15</a>
+
 <hr>
 
-    Following Jesus' ascension, Peter stepped into the role of the primary leader of the
-    apostles, just as Jesus had promised.
-    <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC1_15"title="Acts 1:15">Acts 1:15</a>
-    <hr>
-    Jesus ascended into heaven (<a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC1_1"title="Acts 1:1">Acts 1:1</a>), the disciples were suddenly without their physical teacher and leader. But Jesus had already prepared them for this moment. He told them:
-
-The Holy Spirit would come and empower them
-
-Peter, in particular, would have a foundational leadership role (see <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT16_18"title="Matthew 16:18–19">Matthew 16:18–19</a>; <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LU22_31"title="Luke 22:31–32">Luke 22:31–32</a>; <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=JN21_15"title="John 21:15–17">John 21:15–17</a>)
-
-So when Jesus ascended, the disciples returned to Jerusalem and waited — just as He instructed.
-</p>
-
-<h4>Pentecost and Bold Preaching (<a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC2_1"title="Acts 2:1">Acts 2:1</a>)</h4>
+<h3>Pentecost and Bold Preaching (<a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC2_1"title="Acts 2:1">Acts 2:1</a>)</h3>
+<aside style ="padding:1%; padding-bottom:2.7%; border-right: 1.5px groove #a90d0dff;border-bottom: 1.5px groove #a90d0dff; width:43%;" class="fl apostles-list">
+Peter’s ministry quickly became known for miraculous signs that demonstrated God’s power working through him.
+One of the most memorable events occurred at the Gate of the Temple, where a man who had been lame from birth asked Peter and John for money
+<small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC3_1"title="Acts 3:1"><ruby>Acts<rt>3:1-3</rt></ruby></a></small>.
+Peter said "<strong>Look at us.</strong>" <small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC3_4"title="Acts 3:4"><ruby>Acts<rt>3:4</rt></ruby></a></small>
+Instead of giving him silver or gold, Peter declared, “<strong>I have no silver or gold, but what I have, that I give you.
+In the name of Jesus Christ of Nazareth, get up and walk!</strong>”
+<small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC3_6"title="Acts 3:6"><ruby>Acts<rt>3:6-7</rt></ruby></a></small> and the man was instantly healed.
+The formerly lame man began walking, leaping, and praising God, drawing a crowd of astonished onlookers into
+<a href="https://biblehub.com/q/Solomon_s_Colonnade_s_biblical_role.htm"title="Bible Hub">Solomon’s Colonnade</a>
+<small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC3_8"title="Acts 3:8"><ruby>Acts<rt>3:8-11</rt></ruby></a></small>.
+Peter used the moment to preach again, explaining that the miracle had been done by the power of Jesus, whom God had raised from the dead
+<small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC3_12"title="Acts 3:12"><ruby>Acts<rt>3:12-16</rt></ruby></a></small>.
+As a result, many more people believed, and the early church continued to grow in number and influence
+<small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC4_4"title="Acts 4:4"><ruby>Acts<rt>4:4</rt></ruby></a></small>.
+    </aside>
 <p>
-    The day of Pentecost is considered the birthday of the Christian Church. After the Holy
-    Spirit descended upon the disciples, Peter stood up and preached a powerful sermon to the
-    crowds in Jerusalem. His message was so convincing that about 3,000 people were
-    baptized that day, marking the beginning of the rapid growth of the early church.
-    Miracles and Ministry
-    Peter's ministry was filled with miracles, demonstrating the power of God working through
-    him. One notable event is the healing of the lame man at the Beautiful Gate of the
-    Temple. When the man asked for money, Peter declared, "Silver or gold I do not have, but
-    what I do have I give you. In the name of Jesus Christ of Nazareth, walk." 5 The man
-    was instantly healed, and the event led to more people believing in Jesus.
-</p>
-
-<h4>Imprisonment and Escape (Acts 12:1-11)</h4>
+The day of Pentecost is widely regarded as the birthday of the Christian Church, when the Holy Spirit descended on the gathered disciples with the sound of a rushing wind and tongues of fire resting on each of them
+<small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC2_1"title="Acts 2:1"><ruby>Acts<rt>2:1-4</rt></ruby></a></small>.
+Empowered by the Spirit, they began speaking in languages understood by Jewish pilgrims from across the Roman world, drawing a large and astonished crowd in Jerusalem
+<small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC2_5"title="Acts 2:5"><ruby>Acts<rt>2:5-12</rt></ruby></a></small>.</p>
 <p>
-    Peter's leadership made him a target. King Herod Agrippa had him arrested and planned to
-    execute him. However, the night before his execution, Peter was miraculously freed from
-    prison by an angel. The chains fell from his wrists, the iron gate opened by itself, and Peter
-    walked out, reinforcing the belief in divine protection over the church's leader.
-</p>
+In this moment of confusion and curiosity, Peter stepped forward as the spokesman for the apostles.
+He boldly explained that the crowd was witnessing the fulfillment of the
+<a href="https://ebible.org/study/?v1=JL2_28&w1=bible&t1=local%3Aeng-web"title="Joel 2:28">prophet Joel’s words</a> about God pouring out His Spirit in the last days
+<small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC2_14"title="Acts 2:14"><ruby>Acts<rt>2:14-21</rt></ruby></a></small>.
+Peter then proclaimed that Jesus—whom many in Jerusalem had seen crucified—had been raised from the dead and exalted by God, fulfilling the
+<a href="https://www.gods7000yearplan.com/promises-to-david#:~:text=God%E2%80%99s%20Promise%20to%20David,New%20Testament%20makes%20clear"title="Promises made to David">
+    promises made to David</a>
+<small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC2_22"title="Acts 2:22"><ruby>Acts<rt>2:22-36</rt></ruby></a></small>.</p>
+<p>
+His message deeply moved the listeners, and when they asked what they should do, Peter urged them to repent and be baptized in the name of Jesus Christ for the forgiveness of their sins
+<small><a href="https://ebible.org/study/?v1=AC2_37&w1=bible&t1=local%3Aeng-web"title="Acts 2:37"><ruby>Acts<rt>2:37-38</rt></ruby></a></small>.
+About 3,000 people responded that day, were baptized, and joined the community of believers, marking the beginning of the church’s rapid growth
+<small><a href="https://ebible.org/study/?v1=AC2_41&w1=bible&t1=local%3Aeng-web"title="Acts 2:41"><ruby>Acts<rt>2:41</rt></ruby></a></small>.</p>
 
-<h4>The Council of Jerusalem (Acts 15:7-11)</h4>
+<h3>Imprisonment and Escape <a href="https://ebible.org/study/?v1=AC12_1&w1=bible&t1=local%3Aeng-web"title="Acts 12:1-11">Acts 12:1-11</a></h3>
+<p>
+Peter’s growing influence made him a prime target for opposition. By this point, the
+<a href="https://en.wikipedia.org/wiki/Early_Christianity#Jerusalem_church"title="Wikipedia">Christian movement in Jerusalem</a> had become too visible to ignore.
+<a href="https://www.gotquestions.org/Herod-Agrippa-I.html"title="Got Questions">King Herod Agrippa I</a>, who ruled over Judea from AD 41–44, sought to maintain political favor with influential Jewish leaders.
+His crackdown began with the execution of <a href="?james#^"title="James the Apostle">James</a>, the brother of <a href="?john#^"title="John the Apostle">John</a>, and when he saw how this pleased his supporters, he proceeded to arrest Peter as well.</p>
+<p>
+Peter was imprisoned in Jerusalem, likely in the <a href="https://en.wikipedia.org/wiki/Antonia_Fortress"title="Wikipedia">Antonia Fortress</a> or another secure holding area near the Temple complex—locations commonly used by Roman and Herodian authorities. The timing was deliberate: it occurred during the <a href="https://www.gotquestions.org/Feast-of-Unleavened-Bread.html"title="Got Questions">Feast of Unleavened Bread</a>, when the city was crowded with pilgrims and public sentiment was heightened.</p>
+<p>
+Herod assigned four squads of soldiers to guard Peter, signaling both Peter’s importance and Herod’s determination to prevent another escape like the one recorded earlier in <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC5_18"title="Acts 5 18-20">Acts 5</a>. The church, unable to intervene politically, gathered in homes throughout Jerusalem—most notably the <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC12_12"title="Acts 12 12">house of Mary</a>, the mother of John Mark—to pray earnestly for Peter’s deliverance.</p>
+<p>
+The night before his scheduled execution, everything changed. An angel appeared in Peter’s cell, light filled the room, and the chains fell from his wrists. The angel led him past multiple guards and out through an iron gate leading into the city, which opened on its own. Once Peter found himself safely in the streets of Jerusalem, he realized that God had intervened decisively, rescuing him from Herod’s grasp and from the expectations of those who wanted to see the church’s leadership destroyed.</p>
+<ul style="text-align: center;list-style-position: inside;">
+<span style="text-align: center;font-size: 1.2em;font-weight: bold;">This event reinforced several key themes for the early believers:</span>
+<li>God’s sovereignty over earthly powers. Herod ruled Judea, but God ruled history.</li>
+<li>The church’s dependence on prayer. Their intercession in Jerusalem coincided with God’s dramatic action.</li>
+<li>Peter’s ongoing mission. His rescue affirmed that his leadership was still essential as the gospel spread beyond Jerusalem.</li>
+<li>The unstoppable nature of the gospel. Even imprisonment in the heart of the city could not halt its advance.</li>
+<p>
+<a href="https://en.wikipedia.org/wiki/Liberation_of_Peter"title="Wikipedia">Peter’s escape</a> didn’t just preserve his life—it strengthened the church’s confidence that God was actively guiding and protecting its leaders. It also marked a transition point, after which Peter’s ministry increasingly moved beyond Jerusalem as the Christian movement expanded outward.</p>
+<hr style="width:33%; margin-left: 33%;">
+</ul>
+
+<h3>The Council of Jerusalem (Acts 15:7-11)</h3>
+<section>
 <p>
     As the Gospel spread, a major debate arose: did non-Jewish believers (Gentiles) have to
     follow all the Jewish laws? Peter played a crucial role at the Council of Jerusalem, arguing
@@ -411,16 +484,139 @@ So when Jesus ascended, the disciples returned to Jerusalem and waited — just 
     Mosaic Law. His influential stance helped shape Christianity into a worldwide religion open
     to all people.
 </p>
+  <p>
+    As more and more people heard about Jesus, the message began spreading far beyond Jewish communities.
+    Many new believers were Gentiles—people who were not Jewish and had never followed the Jewish Law.
+    This raised a big question in the early church:
+    <strong>Did Gentile Christians have to follow all the Jewish laws, like circumcision and food rules, to be saved?</strong>
+    You can read about this problem in <strong>Acts 15:1–2</strong>.
+  </p>
 
+  <p>
+    To settle the issue, the apostles and church leaders gathered in Jerusalem for an important meeting
+    now called <strong>the Council of Jerusalem</strong> (<strong>Acts 15:4–6</strong>).
+  </p>
 
-<h4>His Writings</h4>
+  <h3>What was the debate about?</h3>
+
+  <p>
+    Some believers argued that Gentiles <em>must</em> follow the Law of Moses to truly belong to God’s people
+    (<strong>Acts 15:1, 5</strong>). Others believed that Jesus had opened the way for everyone, without requiring
+    them to become Jewish first. Paul later talks about this same issue in his letter in
+    <strong>Galatians 2:1–10</strong>.
+  </p>
+
+  <h3>Peter’s key role</h3>
+
+  <p>
+    After a long discussion, Peter stood up and reminded everyone of something important
+    (<strong>Acts 15:7–11</strong>):
+  </p>
+
+  <ul>
+    <li>
+      God had already chosen him to share the Gospel with Gentiles, like the Roman centurion Cornelius
+      (<strong>Acts 10:1–48</strong>).
+    </li>
+    <li>
+      God gave the Holy Spirit to Gentile believers <strong>just as He did to Jewish believers</strong>
+      (<strong>Acts 10:44–48</strong>).
+    </li>
+    <li>
+      God did not make a distinction between them—He accepted them by faith (<strong>Acts 15:8–9</strong>).
+    </li>
+    <li>
+      Peter boldly said that salvation comes <strong>through the grace of the Lord Jesus</strong>, not by keeping
+      the entire Mosaic Law (<strong>Acts 15:11</strong>).
+    </li>
+  </ul>
+
+  <p>
+    Peter’s words helped the whole group understand that God was doing something new:
+    <strong>the church was meant for all people, not just one group</strong>. Paul later explains this idea by saying
+    that Jews and Gentiles are brought together as one in Christ in <strong>Ephesians 2:11–22</strong>.
+  </p>
+
+  <h3>The final decision</h3>
+
+  <p>
+    After Peter spoke, Paul and Barnabas shared stories of how God was working among the Gentiles
+    (<strong>Acts 15:12</strong>). Then James, the leader of the Jerusalem church, agreed with Peter and suggested
+    a solution (<strong>Acts 15:13–21</strong>):
+  </p>
+
+  <ul>
+    <li>
+      Gentile believers did <strong>not</strong> need to follow the whole Jewish Law to be saved.
+    </li>
+    <li>
+      They were asked only to avoid a few practices that would cause major conflict with Jewish Christians
+      (<strong>Acts 15:19–21</strong>).
+    </li>
+  </ul>
+
+  <p>
+    A letter was written and sent to the Gentile churches, explaining this decision. When the believers read it,
+    they were encouraged and filled with joy (<strong>Acts 15:22–31</strong>).
+  </p>
+
+  <h3>Why this moment matters</h3>
+
+  <p>
+    The Council of Jerusalem was a turning point in the history of the church. Because of Peter’s testimony
+    and the agreement of the apostles, Christianity became a faith open to <strong>every nation</strong>, not just
+    one culture. This decision helped the Gospel spread across the world and showed that anyone who trusts in
+    Jesus can belong to God’s family (<strong>Acts 15:14, 17</strong>; see also <strong>Ephesians 2:19–22</strong>).</p>
+  <hr style="width:33%; margin-left: 33%;">
+</section>
+
+<h3>Peter’s Writings (1 & 2 Peter)</h3>
+<section>
 <p>
-    Peter authored two letters in the New Testament, 1 Peter and 2 Peter. These letters were
-    written to encourage Christians who were suffering persecution. They emphasize hope,
-    endurance, and the importance of living a holy life, even in difficult times.
-</p>
+    Peter authored two letters in the New Testament, <strong>1 Peter</strong> and <strong>2 Peter</strong>. These letters were
+    written to encourage Christians who were suffering persecution to stay strong in their faith. The letters emphasize hope,
+    endurance, and the importance of living a holy life, even in difficult times.</p>
+  <h4>Why Peter Wrote These Letters</h4>
 
-<h4>The Final Journey</h4>
+  <p>
+    In <strong>1 Peter</strong>, he encourages believers to remain hopeful even during suffering
+    (see <strong>1 Peter 1:6–7</strong>). He reminds them that Jesus also suffered and that following Him
+    sometimes means facing challenges. Peter teaches that Christians should live with kindness, courage,
+    and holiness (<strong>1 Peter 1:13–16</strong>).
+  </p>
+
+  <h3>Themes in 1 Peter</h3>
+  <ul>
+    <li><strong>Hope in suffering</strong> — God uses trials to strengthen faith (<strong>1 Peter 4:12–13</strong>).</li>
+    <li><strong>Living differently</strong> — Christians are called to be holy and set apart (<strong>1 Peter 2:9–12</strong>).</li>
+    <li><strong>Following Jesus’ example</strong> — Jesus suffered with patience and love (<strong>1 Peter 2:21–23</strong>).</li>
+  </ul>
+
+  <h3>Themes in 2 Peter</h3>
+  <p>
+    Peter’s second letter focuses on staying faithful to the truth. He warns believers to watch out for
+    false teachers who try to lead people away from Jesus (<strong>2 Peter 2:1–3</strong>). He also encourages
+    Christians to grow in their faith by adding qualities like goodness, knowledge, and self-control
+    (<strong>2 Peter 1:5–8</strong>).
+  </p>
+
+  <p>
+    Peter ends the letter by reminding believers that Jesus will return one day, so they should live with
+    purpose and stay close to God (<strong>2 Peter 3:10–14</strong>).
+  </p>
+
+  <h3>Why Peter’s Letters Matter Today</h3>
+  <p>
+    Peter’s writings continue to encourage Christians around the world. They teach that even when life is
+    tough, God is with His people, helping them grow stronger. His letters remind believers to stay hopeful,
+    live wisely, and trust God’s promises.
+  </p>
+  <hr style="width:33%; margin-left: 33%;">
+</section>
+
+
+<h3>The Final Journey</h3>
+<section>
 <p>
     According to tradition, Peter eventually traveled to Rome, the capital of the Roman Empire,
     to preach the Gospel. He served as a leader there until he was arrested during the
@@ -428,15 +624,194 @@ So when Jesus ascended, the disciples returned to Jerusalem and waited — just 
     Tradition holds that Peter was sentenced to death by crucifixion. However, feeling
     unworthy to die in the same manner as his Lord, Jesus Christ, Peter requested to be
     crucified upside down. This final act of humility and devotion cemented his legacy as a
-    cornerstone of the Christian faith—the fisherman who became the "Rock."
-</p>
+    cornerstone of the Christian faith—the fisherman who became the "Rock."</p>
+  <p>
+    The Bible does not give a full account of Peter’s final years, but it provides important clues.
+    The rest of what we know comes from early Christian writers who lived shortly after the apostles.
+  </p>
 
-<h4>Legacy and Martyrdom</h4>
-<p>
-    Peter's influence extends far beyond his life as an apostle.
-</p>
+  <h3>What the Bible Tells Us</h3>
+  <p>
+    The New Testament shows that Peter continued traveling and teaching after Jesus’ resurrection.
+    He leaves Jerusalem to minister elsewhere (<strong>Acts 12:17</strong>), and Paul mentions him as a
+    well-known leader among the churches (<strong>1 Corinthians 1:12; 9:5</strong>). Peter also sends
+    greetings from “Babylon,” which many scholars believe is a symbolic name for Rome
+    (<strong>1 Peter 5:13</strong>).
+  </p>
+
+  <h3>Peter’s Ministry in Rome (Early Christian Sources)</h3>
+  <p>
+    While the Bible does not directly say that Peter went to Rome, several early Christian writers
+    record that he did:
+  </p>
+  <ul>
+    <li><strong>Clement of Rome (AD 96)</strong> writes that Peter suffered martyrdom for his faith.</li>
+    <li><strong>Ignatius of Antioch (AD 110)</strong> mentions Peter’s influence in Rome.</li>
+    <li><strong>Irenaeus (AD 180)</strong> states that Peter and Paul preached in Rome and helped establish the church there.</li>
+  </ul>
+
+  <h3>Persecution Under Emperor Nero</h3>
+  <p>
+    In AD 64, a massive fire destroyed much of Rome. The Roman historian <strong>Tacitus</strong> records
+    that Emperor <strong>Nero</strong> blamed the Christians and began a fierce persecution. According to
+    early Christian tradition, Peter was arrested during this time because of his leadership and preaching.
+  </p>
+
+  <h3>Peter’s Martyrdom</h3>
+  <p>
+    Early Christian tradition teaches that Peter was sentenced to die by <strong>crucifixion</strong>.
+    Feeling unworthy to die in the same way as Jesus, he requested to be crucified
+    <strong>upside down</strong>. This account is recorded by <strong>Origen</strong> (AD 230) and later
+    by <strong>Eusebius</strong> (AD 325). Although the Bible does not describe Peter’s death, Jesus
+    predicted that Peter would die as a martyr (<strong>John 21:18–19</strong>).
+  </p>
+
+  <h3>Peter’s Legacy</h3>
+  <p>
+    Peter’s final sacrifice became a powerful example of courage and humility. His life—from fisherman,
+    to apostle, to martyr—made him one of the most influential leaders in Christian history. Jesus’ words
+    in <strong>Matthew 16:18</strong>, calling Peter the “rock,” are often connected to his faithful
+    leadership and his role in strengthening the early church.
+  </p>
+  <hr style="width:33%; margin-left: 33%;">
+</section>
+
+
+<h3>Legacy and Martyrdom</h3>
+<section>
+
+  <p>
+    Peter's influence extends far beyond his life as an apostle. In the New Testament, Jesus gives Peter a
+    unique mission when He says, “You are Peter, and on this rock I will build my Church”
+    (<strong>Matthew 16:18</strong>). Catholics understand this as Jesus establishing Peter as the visible
+    leader of the early Christian community.
+  </p>
+
+  <h3>A Foundation for the Church</h3>
+  <p>
+    According to Catholic teaching, the role Jesus gave Peter continues through his successors—the bishops
+    of Rome. This is why the Pope is called the <strong>Successor of Peter</strong>. The Vatican teaches that
+    the Pope carries on Peter’s mission of guiding, teaching, and strengthening the Church.
+  </p>
+  <p>
+    For more information, see the Vatican’s explanation of the Papacy:
+    <a href="https://www.vatican.va/content/vatican/en.html" target="_blank">
+      Vatican Official Website
+    </a>.
+  </p>
+
+  <h3>Peter’s Witness of Courage</h3>
+  <p>
+    Jesus foretold Peter’s martyrdom when He said that one day Peter would be led where he did not want to go
+    (<strong>John 21:18–19</strong>). Early Christian writers confirm that Peter fulfilled this prophecy by
+    giving his life for the Gospel in Rome.
+  </p>
+  <ul>
+    <li><strong>Clement of Rome (AD 96)</strong> mentions Peter’s “noble example” of martyrdom.</li>
+    <li><strong>Ignatius of Antioch (AD 110)</strong> refers to Peter’s leadership in Rome.</li>
+    <li><strong>Irenaeus (AD 180)</strong> states that Peter and Paul founded and organized the Church in Rome.</li>
+    <li><strong>Origen (AD 230)</strong> records that Peter was crucified upside down.</li>
+    <li><strong>Eusebius (AD 325)</strong> preserves the tradition of Peter’s death under Emperor Nero.</li>
+  </ul>
+
+  <p>
+    These writings are not Scripture, but they are respected historical sources within the Catholic tradition.
+    A detailed summary can be found in the Catholic Encyclopedia:
+    <a href="https://www.newadvent.org/cathen/11744a.htm" target="_blank">
+      St. Peter – Catholic Encyclopedia
+    </a>.
+  </p>
+
+  <h3>Peter’s Martyrdom in Rome</h3>
+  <p>
+    According to tradition, Peter was sentenced to death by <strong>crucifixion</strong> during Nero’s
+    persecution (AD 64). Feeling unworthy to die in the same manner as Jesus, he requested to be crucified
+    <strong>upside down</strong>. This act became a powerful symbol of humility and devotion.
+  </p>
+  <p>
+    The Roman historian <strong>Tacitus</strong> (not a Christian) also confirms Nero’s persecution of
+    Christians, providing historical context for Peter’s death.
+  </p>
+
+  <h3>Peter’s Legacy in the Modern Church</h3>
+  <p>
+    Peter’s legacy continues to shape the Catholic Church today:
+  </p>
+  <ul>
+    <li>
+      <strong>The Papacy:</strong> Every Pope is considered part of the line that began with Peter.
+      Learn more about the Pope’s role:
+      <a href="https://www.vatican.va/content/leo-xiv/en.html" target="_blank">
+        Pope Leo XIV
+      </a>.
+      <a href="https://www.vatican.va/content/francesco/en.html" target="_blank">
+        Pope Francis
+      </a>.
+      <a href="https://www.vatican.va/content/vatican/en/holy-father/benedetto-xvi.html" target="_blank">
+        Pope Benedict XVI
+      </a>.
+      <a href="https://www.vatican.va/content/vatican/en/holy-father/giovanni-paolo-ii.html" target="_blank">
+        Saint John Paul II
+      </a>.
+    </li>
+    <li>
+      <strong>St. Peter’s Basilica:</strong> Built over what is believed to be Peter’s burial site.
+      Virtual tour available:
+      <a href="https://www.vatican.va/various/basiliche/san_pietro/index_it.htm" target="_blank">
+        St. Peter’s Basilica – Vatican
+      </a>.
+    </li>
+    <li>
+      <strong>Christian Unity:</strong> Peter’s role as a unifying leader inspires ongoing efforts toward
+      unity among Christians.
+    </li>
+    <li>
+      <strong>A Model of Imperfect Holiness:</strong> Peter denied Jesus (Luke 22:54–62), struggled at times,
+      yet always returned to Christ. His life shows that God works through ordinary, imperfect people.
+    </li>
+  </ul>
+
+  <h3>Why Peter’s Story Matters Today</h3>
+  <p>
+    For Catholics, Peter is not just a historical figure. His life shapes how the Church understands
+    leadership, faithfulness, and mission. His courage encourages believers to stay faithful in difficult
+    times, and his humility reminds them that God can transform anyone who chooses to follow Him.
+  </p>
+
+  <p>
+    For more on Peter’s role in the Church today, visit:
+    <a href="https://www.usccb.org/about" target="_blank">United States Conference of Catholic Bishops (USCCB)</a>.
+  </p>
+</section>
 
 
 
+
+<template id="carousel-images">
+        <div class="carousel-item" data-image-index="0">
+            <a href="../images/_JesusChrist/apostlePeter_goh.png"><img src="../images/_JesusChrist/apostlePeter_goh.png" alt="goh" /></a>
+            <h4><a class="img_link" href="https://www.thattheworldmayknow.com/gates-of-hell-article"title="Gates of Hades">Caesarea Philippi</a></h4>
+        </div>
+        <div class="carousel-item" data-image-index="1">
+            <a href="../images/_JesusChrist/apostlePeter_fisherman.png"><img src="../images/_JesusChrist/apostlePeter_fisherman.webp" alt="Peter walking on water" /></a>
+            <h4><a class="img_link" href="Link To somewhere"title="Simon the Fisherman">Simon the Fisherman</a></h4>
+        </div>
+        <div class="carousel-item" data-image-index="2">
+            <a href="../images/_JesusChrist/apostlePeter_waterWalk.jpg"><img src="../images/_JesusChrist/apostlePeter_waterWalk.webp" alt="Peter walking on water" /></a>
+            <h4><a class="img_link" href="Link To somewhere"title="Peter and Jesus on the Water">Peter and Jesus on the Water</a></h4>
+        </div>
+        <div class="carousel-item" data-image-index="3">
+            <a href="../images/_JesusChrist/JesusChrist_transfiguration.png"><img src="../images/_JesusChrist/JesusChrist_transfiguration.webp" alt="Jesus Transfiguration" /></a>
+            <h4><a class="img_link" href="Link To somewhere"title="Jesus Transfiguration">Jesus Transfiguration</a></h4>
+        </div>
+        <div class="carousel-item" data-image-index="4">
+            <a href="../images/_JesusChrist/apostlePeter_restoration.png"><img src="../images/_JesusChrist/apostlePeter_restoration.webp" alt="Peter restoration" /></a>
+            <h4><a class="img_link" href="Link To somewhere"title="Peter restoration">Peter restoration</a></h4>
+        </div>
+        <div class="carousel-item" data-image-index="5">
+            <a href="../images/_JesusChrist/apostlePeter_Pentecost.png"><img src="../images/_JesusChrist/apostlePeter_Pentecost.webp" alt="Holy Spirit at Pentecost" /></a>
+            <h4><a class="img_link" href="https://www.youtube.com/watch?v=AtJAtYh5XFM"title="The Holy Spirit as a Dove">Holy Spirit at Pentecost</a></h4>
+        </div>
+    </template>
 
 </section>
