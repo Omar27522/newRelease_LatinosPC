@@ -63,9 +63,86 @@ if(isset($_GET['omar'])){
   <h1>Who is running the joint?</h1>
 <section>
   <h2>The Early Influence</h2>
-  <p>
-    Started his career early in life, his childhood home was a family business run \"from home\" acrylic fiber fabric manufacturer. Anecdotes tell of him playing with the weaving and sewing machines pretending he was servicing them and caring for them. Time passed, technology improved around his neighborhood, and Omar found curiosity for the electronic components in the textile shop.
-  </p>
+  <p> Started his career early in life, his childhood home was a family business run \"from home\" acrylic fiber fabric manufacturer. Anecdotes tell of him playing with the weaving
+  and sewing machines pretending he was servicing them and caring for them. Time passed, technology improved around his neighborhood, and Omar found curiosity for the tool's electronic components
+  around the textile shop. He would at the electonic boards, and prentended that a tiny peron lived in this silicon city and was in charge of making
+  the tool work— components like capacitors and resistors were really big back then. Because Omar lived during the time when something broke a person would go to the local repair shop got get it fixed. Also \"things\" were not easily accessible for the
+  common folk, so pleople had to fix the equipment they had.</p>
+<h3>Some shops were:</h3>
+<ul style=\"columns:3; margin-bottom:1rem; \">
+  <li>shoe repair shops</li>
+  <li>cobblers</li>
+  <li>watch repair shops</li>
+  <li>jewelry repair shops</li>
+  <li>eyeglass repair shops</li>
+  <li>TV repair shops</li>
+  <li>VCR repair shops</li>
+  <li>stereo repair shops</li>
+  <li>hi‑fi repair shops</li>
+  <li>cassette deck repair</li>
+  <li>CD player repair</li>
+  <li>camcorder repair</li>
+  <li>boombox repair</li>
+  <li>radio repair</li>
+  <li>turntable repair</li>
+  <li>record player repair</li>
+  <li>reel‑to‑reel repair</li>
+  <li>video game console repair</li>
+  <li>arcade machine repair</li>
+  <li>computer repair shops</li>
+  <li>CRT monitor repair</li>
+  <li>typewriter repair</li>
+  <li>fax machine repair</li>
+  <li>pager repair</li>
+  <li>sewing machine repair</li>
+  <li>vacuum cleaner repair</li>
+  <li>small appliance repair</li>
+  <li>blender repair</li>
+  <li>toaster repair</li>
+  <li>iron repair</li>
+  <li>lamp repair</li>
+  <li>clock repair</li>
+  <li>cuckoo clock repair</li>
+  <li>grandfather clock repair</li>
+  <li>lawnmower repair</li>
+  <li>chainsaw repair</li>
+  <li>weed‑whacker repair</li>
+  <li>bicycle repair shops</li>
+  <li>moped repair</li>
+  <li>alternator rebuild shops</li>
+  <li>starter rebuild shops</li>
+  <li>radiator repair shops</li>
+  <li>muffler shops</li>
+  <li>carburetor repair</li>
+  <li>carburetor tuning shops</li>
+  <li>upholstery repair</li>
+  <li>furniture refinishing shops</li>
+  <li>window screen repair</li>
+  <li>door screen repair</li>
+  <li>locksmith shops</li>
+  <li>key‑cutting kiosks</li>
+  <li>camera repair shops</li>
+  <li>film camera repair</li>
+  <li>projector repair</li>
+  <li>slide projector repair</li>
+  <li>audio equipment repair</li>
+  <li>speaker reconing shops</li>
+  <li>antenna repair</li>
+  <li>satellite dish repair</li>
+  <li>appliance motor rewind shops</li>
+  <li>vacuum tube repair shops</li>
+  <li>electronics hobbyist repair benches</li>
+  <li>soldering service counters</li>
+  <li>battery re‑cell shops</li>
+  <li>remote control repair</li>
+  <li>garage door opener repair</li>
+  <li>lamp rewiring services</li>
+  <li>neon sign repair</li>
+  <li>jukebox repair</li>
+  <li>pinball machine repair</li>
+</ul>
+<p>Probaly many more, but now days is cheaper to buy new or used than it is to justify the high cost of repair due to local
+  labor costs. </p>
   <p>
     Around this time his family got a NES for Christmas, it was the Japanese version of the console, also around this time arcades were really popular; -so most of Omar's allowances as a boy would be spent at the different arcade halls and places around his neighborhood where arcade machines were located. The best arcades were the ones inside the town's shopping center, inside this place was also a movie theater, and many places to shop.
   </p>
