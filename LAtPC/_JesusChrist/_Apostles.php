@@ -49,6 +49,7 @@ function cssStyles(){
       border-radius: var(--border-radius);
       padding: 1.5rem;
       box-shadow: var(--box-shadow);
+      margin-bottom: 1rem;
     }
 
     .apostles-list h3 {
@@ -158,13 +159,14 @@ function cssStyles(){
       font-size: 1.3em;
     }
 
+    ul ul {
+      margin-left: 1rem;/* increase or decrease indentation */
+      padding-bottom:.5rem;
+      list-style-type: none; /* or square, disc, etc. */
+    }
+
     /* Responsive Design */
     @media (max-width: 768px) {
-      .container {
-        padding: .25rem;
-        margin: 0 .1rem;
-      }
-
       .apostles-lists {
         grid-template-columns: 1fr;
         gap: 1rem;
@@ -328,6 +330,12 @@ function content()    {
   ?>
 
   <div class="fullbar">
+    <nav class="crumbs">
+      <div class="bread-crumbs">
+        <a href="../#^" class="crumb-link">Jesus Christ</a>
+        <a href="#^" class="crumb-link"><b>Apostles</b></a>
+      </div>
+    </nav>
     <div class="apostles-intro" id="^">
       <h2><?= empty($titles) ? $titulos[0] : $titles[0]; ?></h2>
       <h3><?= empty($titles) ? $titulos[1] : $titles[1]; ?></h3>

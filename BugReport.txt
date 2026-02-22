@@ -1,15 +1,20 @@
-1/31/2026
+2/21/2026 -> NOT FIXED
+I've added a menu for The Beloved Son Page but the links have a bug.
+I want to reuse what the database has, but this is a terrible workaround, the link disappears until hover when  ../ is added to the beginning of the link. Like I am not even touching the text.
+Why does this happen? I need a better way to add stuff from the BD that makes sense visually. the current implementation os very difficult to follow. It feels over engineered and human readability deterrent
+	A temporary fix is to add an inline style to the menu, since the index does not uses the .fullbar the class cta-button gets ignored, and the rules of the fullbar in relation to the links, This is so annoying.
+1/31/2026 |FIXED|
 The live environment was not routing the Spanish URI properly.
 The problem arise because of the encoding done with special characters. I think the use UTF 16, but the server only has UTF 8.
 I think the URL has to get decoded first then encoded again when it routes the page. to fix the problem the .htaccess file had to be modified and a line added to the index.php	$route = urldecode($route);
 This fixed the issue, and the page can once again have the URL with special characters ideal for the Spanish language.
 
-1/9/2026
+1/9/2026 |FIXED|
 There is a problem with the Jesus Christ main page.
 it works fine in English, but the Spanish version seems to not work as expected.
 There is something missing, it might only need a separate code section only for the spanish version of the page.
 
-10/11/2025
+10/11/2025 |FIXED|
 I have a problem when loading Pages.
 
 The first Problem I encountered was not being able to access the desired subdirectory such as:

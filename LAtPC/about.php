@@ -68,17 +68,17 @@ if(isset($_GET['omar'])){
   around the textile shop. He would at the electonic boards, and prentended that a tiny peron lived in this silicon city and was in charge of making
   the tool work— components like capacitors and resistors were really big back then. Because Omar lived during the time when something broke a person would go to the local repair shop got get it fixed. Also \"things\" were not easily accessible for the
   common folk, so pleople had to fix the equipment they had.</p>
-<h3>Some shops were:</h3>
+<h3>Some of the Repair Shops were:</h3>
 <ul style=\"columns:3; margin-bottom:1rem; \">
-  <li>shoe repair shops</li>
+  <li>shoe repair</li>
   <li>cobblers</li>
-  <li>watch repair shops</li>
-  <li>jewelry repair shops</li>
-  <li>eyeglass repair shops</li>
-  <li>TV repair shops</li>
-  <li>VCR repair shops</li>
-  <li>stereo repair shops</li>
-  <li>hi‑fi repair shops</li>
+  <li>watch repair</li>
+  <li>jewelry repair</li>
+  <li>eyeglass repair</li>
+  <li>TV repair</li>
+  <li>VCR repair</li>
+  <li>stereo repair</li>
+  <li>hi‑fi repair</li>
   <li>cassette deck repair</li>
   <li>CD player repair</li>
   <li>camcorder repair</li>
@@ -89,7 +89,7 @@ if(isset($_GET['omar'])){
   <li>reel‑to‑reel repair</li>
   <li>video game console repair</li>
   <li>arcade machine repair</li>
-  <li>computer repair shops</li>
+  <li>computer repair</li>
   <li>CRT monitor repair</li>
   <li>typewriter repair</li>
   <li>fax machine repair</li>
@@ -107,33 +107,33 @@ if(isset($_GET['omar'])){
   <li>lawnmower repair</li>
   <li>chainsaw repair</li>
   <li>weed‑whacker repair</li>
-  <li>bicycle repair shops</li>
+  <li>bicycle repair</li>
   <li>moped repair</li>
-  <li>alternator rebuild shops</li>
-  <li>starter rebuild shops</li>
-  <li>radiator repair shops</li>
-  <li>muffler shops</li>
+  <li>alternator rebuild</li>
+  <li>starter rebuild</li>
+  <li>radiator repair</li>
+  <li>muffler</li>
   <li>carburetor repair</li>
-  <li>carburetor tuning shops</li>
+  <li>carburetor tuning</li>
   <li>upholstery repair</li>
-  <li>furniture refinishing shops</li>
+  <li>furniture refinishing</li>
   <li>window screen repair</li>
   <li>door screen repair</li>
-  <li>locksmith shops</li>
+  <li>locksmith</li>
   <li>key‑cutting kiosks</li>
-  <li>camera repair shops</li>
+  <li>camera repair</li>
   <li>film camera repair</li>
   <li>projector repair</li>
   <li>slide projector repair</li>
   <li>audio equipment repair</li>
-  <li>speaker reconing shops</li>
+  <li>speaker reconing</li>
   <li>antenna repair</li>
   <li>satellite dish repair</li>
-  <li>appliance motor rewind shops</li>
-  <li>vacuum tube repair shops</li>
+  <li>appliance motor rewind</li>
+  <li>vacuum tube repair</li>
   <li>electronics hobbyist repair benches</li>
   <li>soldering service counters</li>
-  <li>battery re‑cell shops</li>
+  <li>battery re‑cell</li>
   <li>remote control repair</li>
   <li>garage door opener repair</li>
   <li>lamp rewiring services</li>

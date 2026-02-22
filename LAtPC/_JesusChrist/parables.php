@@ -127,6 +127,12 @@ function content () {
     }
   </style>
   <article class="fullbar">
+    <nav class="crumbs">
+    <div class="bread-crumbs">
+      <a href="../#^" class="crumb-link">Jesus Christ</a>
+      <a href="#^" class="crumb-link"><b>Parables</b></a>
+    </div>
+  </nav>
     <div class="intro-section">
     <h1 class="section-title" style="box-shadow:none;"><?= !empty ($_JesusChrist) ? $_JesusChrist[0] : $_Jesucristo[0]; ?></h1>
       <ul class="intro-list">

@@ -1,8 +1,52 @@
 <?php
 function _JesusChrist_King_of_kings(){
+try {
+	$dbPath = __DIR__ . '../../db/laTpc.db';
+	$pdo = new PDO('sqlite:' . $dbPath);
+	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+	// Check if content table exists
+	$tableExists = $pdo->query("SELECT name FROM sqlite_master WHERE type='table' AND name='content'")->fetch();
+
+	global $content;
+	if ($tableExists) {
+		$stmt = $pdo->query('SELECT * FROM content WHERE page_id = "home"');//each page has its own page_id wich is represnted by a table on the SQLite Connection file.
+		$content = $stmt->fetchAll(PDO::FETCH_ASSOC);
+	}
+} catch (PDOException $e) {
+	// Log error and continue without database content
+	error_log('Database Error: ' . $e->getMessage());
+	$content = [];
+}
+
+
+    global $content;
+
+	$headingIndex = array_search('headings', array_column($content, 'name'));
+
     ?>
     <section class="fullbar">
-        <pre id="I knew you come back to me">
+        <nav class="crumbs">
+      <div class="bread-crumbs">
+        <a href="#^" class="crumb-link"><b>The Beloved Son</b></a>
+      </div>
+    </nav>
+    <section class="homepage-grid">
+   
+        
+        <a href="../<?= htmlspecialchars($content[16]['content']);?>/#^"
+            class="cta-button" style="color: white;"><?= $content[11]['content'];?></a> <!-- There is a bug here, I want to reuse what the database has, but this is a terrible workaround, the link disapears until hover whhen  ../ is added to the begining of the link. Like I am not even touhing the text why does this happen? I need a better way to add stuff from the BD that makes sense visually. the current implementation os very difficult to follow. It feels overengineered and code reader deterrent -->
+        <a href="../<?= htmlspecialchars($content[17]['content']);?>/#^"
+            class="cta-button" style="color: white;"><?= $content[12]['content'];?></a>
+        <a href="../<?= htmlspecialchars($content[18]['content']);?>/#^"
+            class="cta-button" style="color: white;"><?= $content[13]['content'];?></a>
+        <a href="../<?= htmlspecialchars($content[19]['content']);?>/#^"
+            class="cta-button" style="color: white;"><?= $content[14]['content'];?></a>
+        <a href="../<?= htmlspecialchars($content[20]['content']);?>/#^"
+            class="cta-button" style="color: white;"><?= $content[15]['content'];?></a>
+
+    </section>
+        <pre id="^">
 📜 Chronological Timeline Framework
 A structured outline beginning with the 40 days in the desert and continuing through the early Christian movement after the crucifixion.
 

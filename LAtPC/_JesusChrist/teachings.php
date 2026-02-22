@@ -223,27 +223,6 @@ summary::marker {
     word-break: break-all;
 }
 
-/* Breadcrumb Navigation Styles */
-.crumbs {
-    border-radius: 7px;
-    border-right: 4px solid var(--primary-color);
-    padding-top: -20px;
-}
-
-.bread-crumbs {
-    display: flex;
-    gap: 10px;
-    justify-content: flex-end;
-}
-
-.crumb-link {
-    padding: 10px;
-}
-
-.crumb-link b {
-    text-decoration: underline;
-}
-
 /* Dropdown Button */
 /* Hide the actual checkbox */
 .dropdown-toggle {
@@ -319,16 +298,6 @@ summary::marker {
     .paragraphStoryBox {
         margin-top: 5%;
     }
-
-    .bread-crumbs {
-        font-size: .7rem;
-        gap: 0;
-
-    }
-
-    .crumbs {
-        border-right: none;
-    }
 }
 
 @media (min-width: 768px) {
@@ -338,12 +307,6 @@ summary::marker {
 }
 
 @media (max-width: 500px) {
-    .bread-crumbs {
-        font-size: .5rem;
-        gap: 0;
-
-    }
-
     .dropdown-content a {
         font-size: 1rem;
     }
@@ -372,6 +335,7 @@ function teachings()  {
         <!--Intro-->
         <nav class="crumbs">
             <div class="bread-crumbs">
+                <a href="../#^" class="crumb-link">Jesus Christ</a>
                 <a href="?intro#^" class="crumb-link">📚 <b>Introduction</b></a>
                 <a href="?gospels#^" class="crumb-link">🌟 All Gospels</a>
                 <a href="?Matthew#^" class="crumb-link">📖 Matthew</a>
@@ -428,6 +392,7 @@ function teachings()  {
         <!--Gospels-->
         <nav class="crumbs">
             <div class="bread-crumbs">
+                <a href="../#^" class="crumb-link">Jesus Christ</a>
                 <a href="?intro#^" class="crumb-link">📚 Introduction</a>
                 <a href="?gospels#^" class="crumb-link">🌟 <b>All Gospels</b></a>
                 <a href="?Matthew#^" class="crumb-link">📖 Matthew</a>
@@ -547,6 +512,7 @@ function teachings()  {
         <!--Matthew-->
         <nav class="crumbs">
             <div class="bread-crumbs">
+                <a href="../#^" class="crumb-link">Jesus Christ</a>
                 <a href="?intro#^" class="crumb-link">📚 Introduction</a>
                 <a href="?gospels#^" class="crumb-link">🌟 All Gospels</a>
                 <a href="?Matthew#^" class="crumb-link">📖 <b>Matthew</b></a>
@@ -983,6 +949,7 @@ function teachings()  {
         <!--John-->
         <nav class="crumbs">
             <div class="bread-crumbs">
+                <a href="../#^" class="crumb-link">Jesus Christ</a>
                 <a href="?intro#^" class="crumb-link">📚 Introduction</a>
                 <a href="?gospels#^" class="crumb-link">🌟 All Gospels</a>
                 <a href="?Matthew#^" class="crumb-link">📖 Matthew</a>
@@ -2011,6 +1978,7 @@ function teachings()  {
     <section id="^" class="section fullbar" data-section="Luke">
         <nav class="crumbs">
             <div class="bread-crumbs">
+                <a href="../#^" class="crumb-link">Jesus Christ</a>
                 <a href="?intro#^" class="crumb-link">📚 Introduction</a>
                 <a href="?gospels#^" class="crumb-link">🌟 All Gospels</a>
                 <a href="?Matthew#^" class="crumb-link">📖 Matthew</a>
@@ -3709,6 +3677,7 @@ function teachings()  {
 <section id="^" class="section fullbar" data-section="Mark">
     <nav class="crumbs">
         <div class="bread-crumbs">
+            <a href="../#^" class="crumb-link">Jesus Christ</a>
             <a href="?intro#^" class="crumb-link">📚 Introduction</a>
             <a href="?gospels#^" class="crumb-link">🌟 All Gospels</a>
             <a href="?Matthew#^" class="crumb-link">📖 Matthew</a>
@@ -3811,7 +3780,7 @@ function teachings()  {
             <div class="multi-link-container">
                 <div class="thumbnail-container">
                     <span tabindex="0" class="linked-text-img">
-                        <img src="../images/_JesusChrist/growingSeed.webp" width="150" height="150" alt="image"
+                        <img src="../../images/_JesusChrist/growingSeed.webp" width="150" height="150" alt="image"
                             class="fl thumbnail" alt="Start with Blank Page" />
                     </span>
                 </div>
@@ -3822,7 +3791,7 @@ function teachings()  {
 
         <template id="carousel-images">
             <div class="carousel-item" data-image-index="0">
-                <img src="../images/_JesusChrist/growingSeed.webp" alt="Image 1" />
+                <img src="../../images/_JesusChrist/growingSeed.webp" alt="Image 1" />
                 <p><a href="./parables#:~:text=The%20Growing%20Seed">The Growing Seed</a> <a
                         href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK4_26"
                         title="Mark 4:26-29">4:26-29</a></p>
@@ -4096,6 +4065,7 @@ function teachings()  {
     <section id="^" class="section fullbar" data-section="Conclusion">
         <nav class="crumbs">
             <div class="bread-crumbs">
+                <a href="../#^" class="crumb-link">Jesus Christ</a>
                 <a href="?intro#^" class="crumb-link">📚 Introduction</a>
                 <a href="?gospels#^" class="crumb-link">🌟 All Gospels</a>
                 <a href="?Matthew#^" class="crumb-link">📖 Matthew</a>
@@ -4418,6 +4388,7 @@ function teachings()  {
     <section class="section fullbar" data-section="Teachings-Main Page">
         <nav class="crumbs">
             <div class="bread-crumbs">
+                <a href="../#^" class="crumb-link">Jesus Christ</a>
                 <a href="?intro#^" class="crumb-link">📚 Introduction</a>
                 <a href="?gospels#^" class="crumb-link">🌟 All Gospels</a>
                 <a href="?Matthew#^" class="crumb-link">📖 Matthew</a>

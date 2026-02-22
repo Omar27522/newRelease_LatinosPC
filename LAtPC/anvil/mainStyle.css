@@ -354,11 +354,34 @@ footer p {
    TARGET TEXT STYLES
 =================================== */
 ::target-text {
-  /* Add your custom styles here */
   background-color: yellow;
   color: black;
   text-decoration: underline;
 }
+
+/* ===================================
+   Breadcrumb Navigation Styles
+=================================== */
+  .crumbs {
+      border-radius: 7px;
+      border-right: 4px solid var(--primary-color);
+      padding-top: -20px;
+  }
+
+  .bread-crumbs {
+      display: flex;
+      font-family: manuscript;
+      gap: 10px;
+      justify-content: flex-end;
+  }
+
+  .crumb-link {
+      padding: 10px;
+  }
+
+  .crumb-link b {
+      text-decoration: underline;
+  }
 
 
 /* ===================================
@@ -418,4 +441,22 @@ footer p {
   .link-dialog figure {
     padding: 0;
   }
+
+  .bread-crumbs {
+        font-size: .7rem;
+        gap: 0;
+
+    }
+
+    .crumbs {
+        border-right: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .bread-crumbs {
+        font-size: .5rem;
+        gap: 0;
+
+    }
 }

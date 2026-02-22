@@ -2324,10 +2324,10 @@ function hw_hardware() {
                                 'GPU' =>  "specialized Graphic Processing Unit (GPU) that handles the computational heavy lifting needed for tasks.&nbsp ",
                                     'Chassis' =>  "Houses all the internal components a computer needs.",
                                         'Coolers' =>  "Help to regulate the temperature of the central processing unit (CPU) and other critical components of the computer.",
-                'I/O' =>  "Allow data to be input into the computer (such as a keyboard and mouse) and output from the computer (such as a display and speakers).&nbsp",
-                'Peripherals' =>  "Additional hardware connected to a computer, such as printers, scanners, and external hard drives.&nbsp"
+                                            'I/O' =>  "Allow data to be input into the computer (such as a keyboard and mouse) and output from the computer (such as a display and speakers).&nbsp",
+                                                'Peripherals' =>  "Additional hardware connected to a computer, such as printers, scanners, and external hard drives.&nbsp"
              ];
-    
+
     $peripherals = [
     "Mouse",
     "Keyboard",
@@ -3105,7 +3105,7 @@ function hw_cpu()  {
 
 
     <section class="hero3 fulbar article" style="background-color:DarkSeaGreen;">
-        
+
         <div class="container fullbar">
             <?php crumbs(); ?>
             <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
@@ -5045,7 +5045,7 @@ function hw_peripherals_and_gear() {
         </a>
     </div>
 
-    
+
 
     <div class="peripherals-container">
         <div class="peripherals-grid">
@@ -11122,7 +11122,7 @@ function hw_audio_mixers () {
                     Feedback Management:</b> Learn techniques for managing feedback in live sound situations. This includes understanding how to use the mixer's EQ and monitor mixing capabilities to prevent and control feedback during performances.
         </h3></li><h3><li><b class="items">
                     Firmware Updates and Documentation:</b> Stay updated with firmware updates for your mixer model, as manufacturers often release updates to improve performance and add new features. Also, familiarize yourself with the user manual and documentation provided by the manufacturer to understand the full capabilities of your mixer.
-        </h3></li><h3><li><b class="items"> 
+        </h3></li><h3><li><b class="items">
                     Practice and Experimentation:</b> Lastly, practice regularly and experiment with different settings and techniques on your mixer. This hands-on experience will help you develop your mixing skills and gain a better understanding of how your specific mixer functions.
         </h3></li></ul></article>
         <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
@@ -11592,7 +11592,7 @@ function hw_gaming_uniforms () {
                         <h3>[Free Research Preview. ChatGPT August 3 Version 2023]</h3>
                         <hr /></td></tr></tbody></table>
         </article>
-        <?php    
+        <?php
 }
 
 function hw_pens_pencils_tablets () {
@@ -14081,44 +14081,44 @@ function hw_speakers_and_subwoofers () {
         </section>
 
         <section class="blurb colms2">
-            
-            
+
+
 
             <fieldset tabindex="0" class="selection_2">
                 <legend tabindex="0" class="center card2 selection" style="translate: 0 -45px;"><h2>Connection Targets:</h2></legend>
                 <h3 style="translate: 0 -65px;">Computer speakers can connect to various devices including:</h3>
                     <span tabindex="0" class="selection_2"><a rel="example_group" href="https://latinospc.com/images/hardware/hw/speakers.jpg"><img src="https://latinospc.com/images/hardware/hw/speakers.jpg" alt="phone and tablet" width="200" height="472" title="phone and tablet"></a></span>
-            
+
             </fieldset>
 
             <fieldset tabindex="0" class="selection_2">
                 <legend tabindex="0" class="center card2 selection">Computers:</legend>
-        
+
                     <span tabindex="0" class="selection_2">Desktops, laptops, and all-in-one computers are primary targets for connecting computer speakers.</span>
-            
+
             </fieldset>
 
             <fieldset tabindex="0" class="selection_2">
                 <legend tabindex="0" class="center card2 selection">Smartphones and Tablets:</legend>
-        
+
                     <span tabindex="0" class="selection_2">Wireless speakers with Bluetooth connectivity can be paired with smartphones and tablets for portable audio playback.</span>
-            
+
             </fieldset>
 
-        
+
 
             <fieldset tabindex="0" class="selection_2">
                 <legend tabindex="0" class="center card2 selection">TVs and Monitors:</legend>
-        
+
                     <span tabindex="0" class="selection_2">Some computer speaker systems can also connect to TVs and monitors to enhance audio quality for multimedia consumption.</span>
-            
+
             </fieldset>
 
             <fieldset tabindex="0" class="selection_2">
                 <legend tabindex="0" class="center card2 selection">Gaming Consoles:</legend>
-                
+
                     <span tabindex="0" class="selection_2">Gamers often connect computer speaker systems to their gaming consoles for a more immersive audio experience.</span>
-        
+
             </fieldset>
         </section>
         </article>

@@ -33,6 +33,12 @@ function sermons() {
     ?>
 
     <article class="fullbar">
+        <nav class="crumbs">
+    <div class="bread-crumbs">
+      <a href="../#^" class="crumb-link">Jesus Christ</a>
+      <a href="#^" class="crumb-link"><b>Sermons and Discourses</b></a>
+    </div>
+  </nav>
         <div class="homepage-grid">
             <section class="grid-item">
            <h1>Sermons and Discourses</h1>

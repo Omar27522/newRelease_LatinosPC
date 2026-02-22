@@ -318,7 +318,13 @@ function content()  {
 
     </style>
     <div class="fullbar" id="title">
-        <div class="title" style="text-align:center"><?= empty($titles) ? $titulos[0] : $titles[0]; ?></div>
+        <nav class="crumbs">
+            <div class="bread-crumbs">
+                <a href="../#^" class="crumb-link">Jesus Christ</a>
+                <a href="#^" class="crumb-link"><b>Heavenly Father</b></a>
+            </div>
+        </nav>
+        <div class="title" style="text-align:center" id="^"><?= empty($titles) ? $titulos[0] : $titles[0]; ?></div>
         <!--This is the image linked to | OLD SYSTEM I NEED TO CHANGE IT TO THE NEW PICTURE DIALOG WITH FIG CAPTIONS-->
         <a rel="example_group"
             href="https://latinospc.com/images/artificialintelligence/our_lord_and_savior_jesus_christ/lamb1.jpg"

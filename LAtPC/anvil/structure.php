@@ -445,9 +445,6 @@
    echo $meses[date("F")] . " " . date("Y");} else{ echo date("F Y"); }?></p>
     </footer>
 
-    <script src="<?php if($page->getDir() == "../"): echo "./";
-    elseif ($page->getDir() == "../../"): echo "../";
-    elseif ($page->getDir() == "../../../"): echo "../../";
-    endif;?>anvil/dialogEngine.js"></script>
+    <script src="<?= $page->getDir(); ?>anvil/dialogEngine.js"></script>
 </body>
 </html>
