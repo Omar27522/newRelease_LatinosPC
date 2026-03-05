@@ -323,8 +323,8 @@ They came and saw where he was staying, and they stayed with him that day. It wa
       <div class="multi-link-container">
         <div class="thumbnail-container">
           <span tabindex="0" class="linked-text-img">
-            <img src="../../images/_JesusChrist/apostlePeter_restoration_thumb.webp" alt="Peter restoration" data-author="https://pixabay.com/users/debradeka-19003134/"
-              data-source-url="https://pixabay.com/illustrations/jesus-sheep-rock-gospel-church-7300070/" />
+            <img src="../../images/_JesusChrist/apostlePeter_restoration_thumb.webp" alt="Peter restoration" data-author="https://www.nga.gov/artists/3472-lambert-suavius"
+              data-source-url="https://www.nga.gov/artworks/65888-apostles-peter-and-john-healing-paralytic" />
           </span>
         </div>
         <div class="image-dialog" data-carousel="true" data-start-index="4"></div>
@@ -384,7 +384,8 @@ They came and saw where he was staying, and they stayed with him that day. It wa
   <hr>
   <section data-section="pentecost and Bold Preaching">
     <h3> Pentecost and Bold Preaching ( <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC2_1" title="Acts 2:1">Acts 2:1</a> ) </h3>
-    <aside style="padding:1%; padding-bottom:2.7%; border-right: 1.5px groove #a90d0dff;border-bottom: 1.5px groove #a90d0dff; width:43%;" class="fl apostles-list"> Peter’s
+    <aside style="padding:1%; padding-bottom:2.7%; border-right: 1.5px groove #a90d0dff;border-bottom: 1.5px groove #a90d0dff; width:43%;" class="fl apostles-list">
+    Peter’s
       ministry quickly became known for miraculous signs that demonstrated God’s power working through him. One of the most memorable events occurred at the Gate of the Temple,
       where a man who had been lame from birth asked Peter and John for money. <small>
         <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC3_1" title="Acts 3:1">
@@ -419,7 +420,18 @@ They came and saw where he was staying, and they stayed with him that day. It wa
           <ruby> Acts <rt>4:4</rt>
           </ruby>
         </a>
-      </small> </aside>
+      </small>
+    <div class="carousel-group fl">
+    <div class="multi-link-container">
+      <div class="thumbnail-container">
+        <span tabindex="0" class="linked-text-img">
+          <img src="../../images/_JesusChrist/apostles_peter_and_john_healing_the_paralytic_1985213_thumb.webp" alt="Gates of Hades" />
+        </span>
+      </div>
+      <div class="image-dialog" data-carousel="true" data-start-index="6"></div>
+    </div>
+  </div>
+</aside>
     <p> The day of Pentecost is widely regarded as the birthday of the Christian Church, when the Holy Spirit descended on the gathered disciples with the sound of a rushing wind
       and tongues of fire resting on each of them. <small>
         <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC2_1" title="Acts 2:1">
@@ -468,6 +480,16 @@ They came and saw where he was staying, and they stayed with him that day. It wa
         title="Got Questions">King Herod Agrippa I</a> , who ruled over Judea from AD 41–44, sought to maintain political favor with influential Jewish leaders. His crackdown began
       with the execution of <a href="?james#^" title="James the Apostle">James</a> , the brother of <a href="?john#^" title="John the Apostle">John</a> , and when he saw how this
       pleased his supporters, he proceeded to arrest Peter as well. </p>
+      <div class="carousel-group img_rtl">
+    <div class="multi-link-container">
+      <div class="thumbnail-container">
+        <span tabindex="0" class="linked-text-img">
+          <img src="../../images/_JesusChrist/Liberacion_de_San_Pedro_Murillo_1667_thumb.webp" alt="Liberacion de San Pedro Murillo 1667"  data-author="https://en.wikipedia.org/wiki/Bartolom%C3%A9_Esteban_Murillo#Public_collections"  data-source="https://commons.wikimedia.org/wiki/File:Liberacion_de_San_Pedro_Murillo_1667.jpg"/>
+        </span>
+      </div>
+      <div class="image-dialog" data-carousel="true" data-start-index="7"></div>
+    </div>
+  </div>
     <p> Peter was imprisoned in Jerusalem, likely in the <a href="https://en.wikipedia.org/wiki/Antonia_Fortress" title="Wikipedia">Antonia Fortress</a> or another secure holding
       area near the Temple complex—locations commonly used by Roman and Herodian authorities. The timing was deliberate: it occurred during the <a
         href="https://www.gotquestions.org/Feast-of-Unleavened-Bread.html" title="Got Questions">Feast of Unleavened Bread</a> , when the city was crowded with pilgrims and public
@@ -552,6 +574,16 @@ They came and saw where he was staying, and they stayed with him that day. It wa
           practices.<br /> Live peacefully with each other.<br /> It wasn’t about making life harder—it was about helping the new Christian community grow strong and united.</li>
         </li>
       </ul>
+      <div class="carousel-group img_fl">
+    <div class="multi-link-container">
+      <div class="thumbnail-container">
+        <span tabindex="0" class="linked-text-img">
+          <img src="../../images/_JesusChrist/council_of_jerusalem_scene_thumb.webp" alt="Council of Jerusalem"  data-author="<?php echo "Cannot Find data Source A.D., Ep. 2 \"A.D.. Episodes 3 and 4\";"?>"  data-source="https://youtu.be/Esl-q-ocwrs?si=ypCAyvzcECtlPtxq&t=60"/>
+        </span>
+      </div>
+      <div class="image-dialog" data-carousel="true" data-start-index="8"></div>
+    </div>
+  </div>
       <p> A letter was written and sent to the Gentile churches, explaining this decision. When the believers read it, they were encouraged and filled with joy. <strong>“The
           apostles, the elders, and the brothers, to the brothers who are of the Gentiles in Antioch, Syria, and Cilicia: greetings...</strong>" <small><a
             href="https://ebible.org/study/?v1=AC15_22&w1=bible&t1=local%3Aeng-web" title="Acts 15:22-31"><ruby>Acts <rt>15:22-31</rt></ruby></a></small>
@@ -584,9 +616,10 @@ They came and saw where he was staying, and they stayed with him that day. It wa
   <h3 class="verse"> In him, though now you don’t see him, yet believing, you rejoice greatly with joy that is unspeakable and full of glory, receiving the result of your faith,
     the salvation of your souls. <small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=P11_8" title="1 Peter 1:8-9"><ruby>1 Peter<rt>1:8-9</rt>
         </ruby></a></small></h3>
-  <aside style="column-count:2; margin-bottom:1rem">
+  <aside style="column-count:2; margin-bottom:1rem;">
     <div style="break-inside: avoid;border-right: 1.5px groove #a90d0dff;">
-      <h2 style="text-align: center;margin-top:0">1 Peter</h2>
+     
+    <h2 style="text-align: center;margin-top:0">1 Peter</h2>
       <ul style="margin-bottom:1rem">
         <li>Living differently</li>
         <ul>
@@ -609,6 +642,7 @@ They came and saw where he was staying, and they stayed with him that day. It wa
         </ul>
       </ul>
     </div>
+    <div style="break-inside: avoid;">
     <h2 style="text-align: center;">2 Peter</h2>
     <p> Peter’s second letter focuses on staying faithful to the truth and encourages Christians to grow in their faith by adding qualities like goodness, knowledge, and
       self-control. <strong>"moral excellence, knowledge, self-control, perseverance, godliness, brotherly affection & love"</strong>
@@ -620,47 +654,107 @@ They came and saw where he was staying, and they stayed with him that day. It wa
         are in it will be burned up."</strong>
       <small><a href="https://ebible.org/study/?v1=P23_10&w1=bible&t1=local%3Aeng-web" title="2 Peter 3:10"><ruby>2 Peter<rt>3:10-14</rt></ruby></a></small>. </p>
   </aside>
-  <h3>Why Peter’s Letters Still Matter Today</h3>
-  <p> Peter’s writings continue to encourage Christians around the world. They teach that even when life is tough, God is with His people, helping them grow stronger. His letters
+  <h3>Why Peter’s Letters Still Matter Today</h3><p>
+  <div class="carousel-group img_rtl">
+    <div class="multi-link-container">
+      <div class="thumbnail-container">
+        <span tabindex="0" class="linked-text-img">
+          <img src="../../images/_JesusChrist/apostlePeter_Letters_thumb.webp" alt="Apostle Peter's Letters"  data-author="https://sundayschoolzone.com/"  data-source="https://sundayschoolzone.com/bible-story/peters-letters/"/>
+        </span>
+      </div>
+      <div class="image-dialog" data-carousel="true" data-start-index="9"></div>
+    </div>
+  </div> Peter’s writings continue to encourage Christians around the world. They teach that even when life is tough, God is with His people, helping them grow stronger. His letters
     are a reminder to stay hopeful, live wisely, and trust God’s promises.</p>
   <p>Peter’s letters remind us that following Jesus isn’t always easy, but it’s always worth it. He encourages believers to stand strong when life feels confusing or unfair,
     knowing that God never forgets His people.</p>
   <p>Peter challenges us to live with courage, kindness, and integrity—choices that make a real difference in the world around us. And he points us toward a hope that can’t be
     shaken: Jesus will keep His promises. So when you feel pressured, discouraged, or unsure of what to do next, Peter’s words are like a steady voice saying, “Don’t give up. God
     is with you, and He’s shaping you into someone strong and faithful.”</p>
-  <hr style="width:33%; margin-left: 33%;">
+    </div>
 </section>
-
           <h3 class="apostles-intro">The Final Journey</h3>
-          <section data-section="Peter's Final Journey Legacy and Martyrdom">
+          <div class="carousel-group img_rtl">
+            <div class="multi-link-container">
+              <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                  <img src="../../images/_JesusChrist/apostlePeter_DP890511_thumb.webp" alt="Apostle Peter Final Journey"  data-author="https://www.metmuseum.org/art/collection/search?q=Jacques+Callot&searchField=ArtistCulture"  data-source="https://www.metmuseum.org/art/collection/search/418496"/>
+                </span>
+              </div>
+              <div class="image-dialog" data-carousel="true" data-start-index="10"></div>
+            </div>
+          </div>
+<section data-section="Peter's Final Journey Legacy and Martyrdom">
   <p> According to tradition, Peter eventually traveled to Rome, the capital of the Roman Empire, to preach the Gospel. He served as a leader there until he was arrested during the
     persecution of Christians under Emperor Nero. Tradition holds that Peter was sentenced to death by crucifixion. However, feeling unworthy to die in the same manner as his Lord,
-    Jesus Christ, <a href="https://www.gotquestions.org/apostle-Peter-die.html"title="Got Questions">Peter requested to be crucified upside down</a>. This final act of humility and devotion cemented his legacy as a cornerstone of the Christian faith—the fisherman who
-    became the "Rock".</p>
+    Jesus Christ, <a href="https://www.gotquestions.org/apostle-Peter-die.html" title="Got Questions">Peter requested to be crucified upside down</a>. This final act of humility
+    and devotion cemented his legacy as a cornerstone of the Christian faith—the fisherman who became the "Rock".</p>
   <p> The Bible does not give a full account of Peter’s final years, but it provides important clues. The rest of what we know comes from early Christian writers who lived shortly
     after the apostles. </p>
-    <h3>What the Bible Tells Us</h3>
-    <div class="rtl" style="width:20%; margin-left: 4%;border:1px solid #ccc;padding:10px;">Peter was jailed and released by an act of God.
-    <strong><a href="https://ebible.org/study/?v1=AC12_17&w1=bible&t1=local%3Aeng-web"title="Acts 12:17">Acts 12:5-17</a></strong></div>
-    <p> The New Testament shows that Peter continued traveling and teaching after Jesus’ resurrection. He leaves Jerusalem to minister elsewhere, and
-    Paul mentions him as a well-known leader among the churches (<strong>1 Corinthians <a href="https://ebible.org/study/?v1=C11_12&w1=bible&t1=local%3Aeng-web"title="1 Corinthians 1:12">1:12</a>; <a href="https://ebible.org/study/?v1=C19_5&w1=bible&t1=local%3Aeng-web"title="1 Corinthians 9:5">9:5</a></strong>).
-    Peter also sends greetings from “Babylon,” which many scholars believe
-    is a symbolic name for Rome (<strong>1 Peter <a href="https://ebible.org/study/?v1=P15_13&w1=bible&t1=local%3Aeng-web"title="1 Peter 5:13">5:13</a></strong>). </p>
+  <h3>What the Bible Tells Us</h3>
+  <div class="rtl" style="width:20%; margin-left: 4%;border:1px solid #ccc;padding:10px;">Peter was jailed and released by an act of God. <strong><a
+        href="https://ebible.org/study/?v1=AC12_17&w1=bible&t1=local%3Aeng-web" title="Acts 12:17">Acts 12:5-17</a></strong></div>
+  <p> The New Testament shows that Peter continued traveling and teaching after Jesus’ resurrection. He leaves Jerusalem to minister elsewhere, and Paul mentions him as a
+    well-known leader among the churches (<strong>1 Corinthians <a href="https://ebible.org/study/?v1=C11_12&w1=bible&t1=local%3Aeng-web" title="1 Corinthians 1:12">1:12</a>; <a
+        href="https://ebible.org/study/?v1=C19_5&w1=bible&t1=local%3Aeng-web" title="1 Corinthians 9:5">9:5</a></strong>). Peter also sends greetings from “Babylon,” which many
+    scholars believe is a symbolic name for Rome (<strong>1 Peter <a href="https://ebible.org/study/?v1=P15_13&w1=bible&t1=local%3Aeng-web" title="1 Peter 5:13">5:13</a></strong>).
+  </p>
   <h3>Peter’s Ministry in Rome (Early Christian Sources)</h3>
-  <p> While the Bible does not directly say that Peter went to Rome, several early Christian writers record that he did: <small><a href="https://www.catholic.com/tract/peters-roman-residency"title="Peter's Roman Residency">Link</small></p>
+  <p> While the Bible does not directly say that Peter went to Rome, several early Christian writers record that he did: <small><a
+        href="https://www.catholic.com/tract/peters-roman-residency" title="Peter's Roman Residency">Link</small></p>
   <ul style="margin-bottom:1rem;">
-    <li><strong><a href="https://en.wikipedia.org/wiki/Clement_of_Rome"title="Wikipedia">Clement of Rome</a> (AD 96)</strong> writes that Peter suffered martyrdom for his faith. <small><a href="https://www.earlychristianwritings.com/text/1clement-roberts.html#:~:text=Peter%2C%20through%20unrighteous%20envy%2C%20endured%20not%20one%20or%20two%2C%20but%20numerous%20labours%2C%20and%20when%20he%20had%20finally%20suffered%20martyrdom%2C%20departed%20to%20the%20place%20of%20glory%20due%20to%20him."title="CLEMENT OF ROME, First Epistle Letter of Clement to the Corinthians">Clement to the Corinthians Chapter 5</a></small></li>
-    <li><strong><a href="https://en.wikipedia.org/wiki/Ignatius_of_Antioch"title="Wikipedia">Ignatius of Antioch</a> (AD 110)</strong> mentions Peter’s influence in Rome. <small><a href="https://www.earlychristianwritings.com/text/ignatius-romans-roberts.html#:~:text=I%20do%20not%2C%20as%20Peter%20and%20Paul%2C%20issue%20commandments%20unto%20you."title="Ignatius to the Romans">Ignatius to the Romans Chapter 4</small></li>
-    <li><strong><a href="https://en.wikipedia.org/wiki/Irenaeus"title="Wikipedia">Irenaeus</a> (AD 180)</strong> states that Peter and Paul preached in Rome and helped establish the church there. <small><a href="https://www.earlychristianwritings.com/text/irenaeus-book3.html#:~:text=Matthew%20also%20issued%20a%20written%20Gospel%20among%20the%20Hebrews%20in%20their%20own%20dialect%2C%20while%20Peter%20and%20Paul%20were%20preaching%20at%20Rome%2C%20and%20laying%20the%20foundations%20of%20the%20Church."title="Irenaeus Against Heresies">Irenaeus Against Heresies Book 3, Chapter 1</a></small></li>
+    <li><strong><a href="https://en.wikipedia.org/wiki/Clement_of_Rome" title="Wikipedia">Clement of Rome</a> (AD 96)</strong> writes that Peter suffered martyrdom for his faith.
+      <small><a
+          href="https://www.earlychristianwritings.com/text/1clement-roberts.html#:~:text=Peter%2C%20through%20unrighteous%20envy%2C%20endured%20not%20one%20or%20two%2C%20but%20numerous%20labours%2C%20and%20when%20he%20had%20finally%20suffered%20martyrdom%2C%20departed%20to%20the%20place%20of%20glory%20due%20to%20him."
+          title="CLEMENT OF ROME, First Epistle Letter of Clement to the Corinthians">Clement to the Corinthians Chapter 5</a></small></li>
+    <li><strong><a href="https://en.wikipedia.org/wiki/Ignatius_of_Antioch" title="Wikipedia">Ignatius of Antioch</a> (AD 110)</strong> mentions Peter’s influence in Rome.
+      <small><a
+          href="https://www.earlychristianwritings.com/text/ignatius-romans-roberts.html#:~:text=I%20do%20not%2C%20as%20Peter%20and%20Paul%2C%20issue%20commandments%20unto%20you."
+          title="Ignatius to the Romans">Ignatius to the Romans Chapter 4</small></li>
+    <li><strong><a href="https://en.wikipedia.org/wiki/Irenaeus" title="Wikipedia">Irenaeus</a> (AD 180)</strong> states that Peter and Paul preached in Rome and helped establish
+      the church there. <small><a
+          href="https://www.earlychristianwritings.com/text/irenaeus-book3.html#:~:text=Matthew%20also%20issued%20a%20written%20Gospel%20among%20the%20Hebrews%20in%20their%20own%20dialect%2C%20while%20Peter%20and%20Paul%20were%20preaching%20at%20Rome%2C%20and%20laying%20the%20foundations%20of%20the%20Church."
+          title="Irenaeus Against Heresies">Irenaeus Against Heresies Book 3, Chapter 1</a></small></li>
   </ul>
   <h3>Persecution Under Emperor Nero</h3>
-  <p> In AD 64, a massive fire destroyed much of Rome. The Roman historian <a href="https://www.queensu.ca/classics/latn-814-latin-historians-tacitus-ca-56-ca-120-and-roman-empire"title="Queen’s University in Canada">Tacitus</a> records that Emperor <a href="https://en.wikipedia.org/wiki/Nero"title="Wikipedia">Nero</a> blamed the Christians and began a
-    fierce persecution. According to early Christian tradition, Peter was arrested during this time because of his leadership and preaching. <small><a href="https://bam.sites.uiowa.edu/faq/peter-and-paul-martyrdoms#:~:text=Maybe%20we'll%20have%20more,%28On%20the%20Praises%20of%20Saint%20Paul%204.15%29."title="University of Iowa">Link</a></small></p>
+  <p> In AD 64, a massive fire destroyed much of Rome. The Roman historian <a href="https://www.queensu.ca/classics/latn-814-latin-historians-tacitus-ca-56-ca-120-and-roman-empire"
+      title="Queen’s University in Canada">Tacitus</a> records that Emperor <a href="https://en.wikipedia.org/wiki/Nero" title="Wikipedia">Nero</a> blamed the Christians and began
+    a fierce persecution. According to early Christian tradition, Peter was arrested during this time because of his leadership and preaching. <small><a
+        href="https://bam.sites.uiowa.edu/faq/peter-and-paul-martyrdoms#:~:text=Maybe%20we'll%20have%20more,%28On%20the%20Praises%20of%20Saint%20Paul%204.15%29."
+        title="University of Iowa">Link</a></small></p>
   <hr style="width:33%; margin-left: 33%;">
+  <p> Early Christian tradition teaches that Peter was sentenced to die by <a href="https://christianhistoryinstitute.org/magazine/article/ch156-peters-fate"
+      title="Christian History Institute">crucifixion</a>. Feeling unworthy to die in the same way as Jesus, he requested to be crucified upside down. This account is recorded by
+    <a href="https://en.wikipedia.org/wiki/Origen#" title="Wikipedia">Origen (AD 230)</a> and later by <a href="https://en.wikipedia.org/wiki/Eusebius" title="Wikipedia">Eusebius
+      (AD 325)</a>. Although the Bible does not describe Peter’s death, Jesus predicted that Peter would die as a martyr. <strong>"Most certainly I tell you, when you were young,
+      you dressed yourself and walked where you wanted to. But when you are old, you will stretch out your hands, and another will dress you and carry you where you don’t want to
+      go."</strong> <small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=JN21_18" title="John 21:18-19"><ruby>John<rt>21:18-19</rt></ruby></a></small></p>
+  <h3>Peter’s Legacy</h3>
 
-
-
-          <!-- CONTINUE
+  <div class="carousel-group img_fl">
+    <div class="multi-link-container">
+      <div class="thumbnail-container">
+        <span tabindex="0" class="linked-text-img">
+          <img src="../../images/_JesusChrist/aposltePeter_domyd-saint-pierre_thumb.webp" alt="Apostle Peter Legacy"  data-author="https://pixabay.com/users/domyd-3118263/"  data-source="https://pixabay.com/photos/saint-pierre-statue-sculpture-art-1633682/"/>
+        </span>
+      </div>
+      <div class="image-dialog" data-carousel="true" data-start-index="11"></div>
+    </div>
+  </div>
+  <p> Peter’s final sacrifice became a powerful example of courage and humility. His life—from fisherman, to apostle, to martyr—made him one of the most influential leaders in
+    Christian history. Jesus’ words in <a href="https://ebible.org/study/?v1=MT16_18&w1=bible&t1=local%3Aeng-web" title="Matthew 16:18">Matthew 16:18</a> <strong>"You are Peter,
+      and on this rock I will build my church; and the gates of Hades will not overcome it."</strong>, calling Peter the “<u>rock</u>,” are often connected to his faithful
+    leadership and his role in strengthening the early church. Catholics understand this as Jesus establishing Peter as the visible <a
+      href="https://www.vatican.va/content/vatican/en/holy-father.html" title="The Holy See"> leader of the early Christian community </a>, and the fundation (role model) for the
+    next leaders thoughout the ages.</p>
+  <h3>A Foundation for the Church</h3>
+  <p> According to Catholic teaching, the role Jesus gave Peter continues through his successors—the bishops of Rome. This is why the Pope is called the <a href="https://whateverycatholicshouldknow.com/successor-to-peter/" title="Successor of Peter">Successor of
+      Peter</a>. The Vatican teaches that the Pope carries on Peter’s mission of guiding, teaching, and strengthening the Church. </p>
+  <p> For more information, see the Vatican’s explanation of the <a href="https://en.wikipedia.org/wiki/Papal_primacy" title="Wikipedia">Papal primacy</a>, <a
+      href="https://en.wikipedia.org/wiki/Papal_supremacy#" title="Wikipedia"> supremacy</a> and <a href="https://en.wikipedia.org/wiki/Papal_infallibility"
+      title="Wikipedia">infallibility</a>: <a class="rtl" href="https://www.vatican.va/content/vatican/en.html" target="_blank"> Vatican Official Website </a>
+  </p>
+      <!-- CONTINUE
            
           
           
@@ -671,128 +765,76 @@ They came and saw where he was staying, and they stayed with him that day. It wa
           
           
           
-          
-          
-          
-          
-          -->
-  <p>
-    Early Christian tradition teaches that Peter was sentenced to die by <strong>crucifixion</strong>.
-    Feeling unworthy to die in the same way as Jesus, he requested to be crucified
-    <strong>upside down</strong>. This account is recorded by <strong>Origen</strong> (AD 230) and later
-    by <strong>Eusebius</strong> (AD 325). Although the Bible does not describe Peter’s death, Jesus
-    predicted that Peter would die as a martyr (<strong>John 21:18–19</strong>).
-  </p>
+          https://www.earlychristianwritings.com/text/ignatius-romans-roberts.html#:~:text=Then%20shall%20I%20be%20a%20true%20disciple%20of%20Jesus%20Christ%2Cworldly%20or%20vain.
 
-  <h3>Peter’s Legacy</h3>
-  <p>
-    Peter’s final sacrifice became a powerful example of courage and humility. His life—from fisherman,
-    to apostle, to martyr—made him one of the most influential leaders in Christian history. Jesus’ words
-    in <strong>Matthew 16:18</strong>, calling Peter the “rock,” are often connected to his faithful
-    leadership and his role in strengthening the early church.
-  </p>
-  <p>
-    Peter's influence extends far beyond his life as an apostle. In the New Testament, Jesus gives Peter a
-    unique mission when He says, “You are Peter, and on this rock I will build my Church”
-    (<strong>Matthew 16:18</strong>). Catholics understand this as Jesus establishing Peter as the visible
-    leader of the early Christian community.
-  </p>
 
-  <h3>A Foundation for the Church</h3>
-  <p>
-    According to Catholic teaching, the role Jesus gave Peter continues through his successors—the bishops
-    of Rome. This is why the Pope is called the <strong>Successor of Peter</strong>. The Vatican teaches that
-    the Pope carries on Peter’s mission of guiding, teaching, and strengthening the Church.
-  </p>
-  <p>
-    For more information, see the Vatican’s explanation of the Papacy:
-    <a href="https://www.vatican.va/content/vatican/en.html" target="_blank">
-      Vatican Official Website
-    </a>.
-  </p>
-
+          
+          
+          
+          --><hr style="width:33%; margin-left: 33%;">
   <h3>Peter’s Witness of Courage</h3>
-  <p>
-    Jesus foretold Peter’s martyrdom when He said that one day Peter would be led where he did not want to go
-    (<strong>John 21:18–19</strong>). Early Christian writers confirm that Peter fulfilled this prophecy by
-    giving his life for the Gospel in Rome.
-  </p>
+  <p> Jesus foretold Peter’s martyrdom: <strong>"Most certainly I tell you, when you were young, you dressed yourself and walked where you wanted to. But when you are old, you will stretch out your hands, and another will dress you and carry you where you don’t want to go."</strong>
+    <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=JN21_18" title="John 21:18-19"><ruby>John<rt>21:18-19</rt></ruby></a>. Early Christian writers confirm
+    that Peter fulfilled this prophecy by giving his life for the Gospel in Rome. </p>
   <ul>
-    <li><strong>Clement of Rome (AD 96)</strong> mentions Peter’s “noble example” of martyrdom.</li>
-    <li><strong>Ignatius of Antioch (AD 110)</strong> refers to Peter’s leadership in Rome.</li>
-    <li><strong>Irenaeus (AD 180)</strong> states that Peter and <a href="?paul#^">Paul</a> founded and organized the Church in Rome.</li>
-    <li><strong>Origen (AD 230)</strong> records that Peter was crucified upside down.</li>
-    <li><strong>Eusebius (AD 325)</strong> preserves the tradition of Peter’s death under Emperor Nero.</li>
+    <li><strong><a href="https://en.wikipedia.org/wiki/Clement_of_Rome"title="Wikipedia">Clement of Rome</a> (AD 96)</strong> mentions Peter’s “<a href=" https://www.earlychristianwritings.com/text/1clement-lightfoot.html#:~:text=1Clem%205%3A1,of%20patient%20endurance."title="First Clement 5">noble example</a>” of martyrdom.</li>
+    <li><strong><a href="https://en.wikipedia.org/wiki/Ignatius_of_Antioch"title="Wikipedia">Ignatius of Antioch</a> (AD 110)</strong> refers to Peter’s leadership in Rome. <a href="https://www.earlychristianwritings.com/text/ignatius-romans-roberts.html#:~:text=Then%20shall%20I%20be%20a%20true%20disciple%20of%20Jesus%20Christ%2C,worldly%20or%20vain."title="Ignatius to the Romans Chapter IV">Link</a></li>
+    <li><strong><a href="https://en.wikipedia.org/wiki/Irenaeus"title="Wikipedia">Irenaeus</a> (AD 180)</strong> states that Peter and <a href="?paul#^">Paul</a> <a href="https://www.earlychristianwritings.com/text/irenaeus-book3.html#:~:text=3.%20The%20blessed%20apostles%2C,before%20his%20eyes."title="Irenaeus of Lyons Book III Chapter III">founded and organized the Church in Rome</a>.</li>
+    <li><strong><a href="https://en.wikipedia.org/wiki/Origen"title="Wikipedia">Origen</a> (AD 230)</strong> records that Peter was crucified upside down. <a href="https://www.newadvent.org/fathers/250103.htm#:~:text=2.%20Peter%20appears%20to%20have,Commentary%20on%20Genesis."title="Church History (Book III) Chapter 1 by Eusebius">Link</a></li><!--Origen Commentary on Genesis Text is lost, and or partially found. This is from Eusebius quoting Origen -->
+    <li><strong><a href="https://en.wikipedia.org/wiki/Eusebius"title="Wikipedia">Eusebius</a> (AD 325)</strong> preserves the tradition of Peter’s death under Emperor Nero.<a href="https://www.newadvent.org/fathers/250102.htm#:~:text=Chapter%2025.%20The%20Persecution%20under%20Nero,the%20present%20day."title="Church History (Book II) Chapter 25">Link</a></li>
   </ul>
-
-  <p>
-    These writings are not Scripture, but they are respected historical sources within the Catholic tradition.
-    A detailed summary can be found in the Catholic Encyclopedia:
-    <a href="https://www.newadvent.org/cathen/11744a.htm" target="_blank">
-      St. Peter – Catholic Encyclopedia
-    </a>.
-  </p>
-
+  <p> These writings are not Scripture, but they are respected historical sources within the Catholic tradition. A detailed summary can be found in the Catholic Encyclopedia: <a
+      href="https://www.newadvent.org/cathen/11744a.htm" target="_blank"> St. Peter – Catholic Encyclopedia </a>. </p>
   <h3>Peter’s Martyrdom in Rome</h3>
-  <p>
-    According to tradition, Peter was sentenced to death by <strong>crucifixion</strong> during Nero’s
-    persecution (AD 64). Feeling unworthy to die in the same manner as Jesus, he requested to be crucified
-    <strong>upside down</strong>. This act became a powerful symbol of humility and devotion.
-  </p>
-  <p>
-    The Roman historian <strong>Tacitus</strong> (not a Christian) also confirms Nero’s persecution of
-    Christians, providing historical context for Peter’s death.
-  </p>
-
+  <div class="carousel-group img_fl">
+   <div class="multi-link-container">
+     <div class="thumbnail-container">
+       <span tabindex="0" class="linked-text-img">
+         <img src="../../images/_JesusChrist/apostlePeter_falco-church-window_thumb.webp" alt="Apostle Peter Martyrdom" data-author="https://pixabay.com/users/falco-81448/"
+           data-source="https://pixabay.com/photos/church-window-window-church-1607997/" />
+       </span>
+     </div>
+     <div class="image-dialog" data-carousel="true" data-start-index="12"></div>
+   </div>
+ </div>
+  <p> According to tradition, Peter was sentenced to death by <strong>crucifixion</strong> during Nero’s persecution (AD 64). Feeling unworthy to die in the same manner as Jesus,
+    he requested to be crucified <strong>upside down</strong>. This act became a powerful symbol of humility and devotion. </p>
+  <p> The Roman historian <a href="https://en.wikipedia.org/wiki/Tacitus"title="Wikipedia">Tacitus</a> also confirms Nero’s persecution of Christians, providing historical context for Peter’s death.
+    <a href="https://en.wikipedia.org/wiki/Tacitus_on_Jesus"title="Wikipedia"><small>[1]</small></a> <a href="https://en.wikisource.org/wiki/The_Annals_(Tacitus)/Book_15#44"title="Wikipedia"><small>[2]</small></a></p>
   <h3>Peter’s Legacy in the Modern Church</h3>
-  <p>
-    Peter’s legacy continues to shape the Catholic Church today:
-  </p>
+  <p> Peter’s legacy continues to shape the Catholic Church today: </p>
+  <div class="carousel-group img_rtl">
+   <div class="multi-link-container">
+     <div class="thumbnail-container">
+       <span tabindex="0" class="linked-text-img">
+         <img src="../../images/_JesusChrist/apostlePeter_glavo-st-peters-basilica_thumb.webp" alt="Apostle Peter Legacy" data-author="https://pixabay.com/users/glavo-6474130/"
+           data-source="https://pixabay.com/photos/st-peters-basilica-vatican-4773749/" />
+       </span>
+     </div>
+     <div class="image-dialog" data-carousel="true" data-start-index="13"></div>
+   </div>
+ </div>
   <ul>
     <li>
-      <strong>The Papacy:</strong> Every Pope is considered part of the line that began with Peter.
-      Learn more about the Pope’s role:
-      <a href="https://www.vatican.va/content/leo-xiv/en.html" target="_blank">
-        Pope Leo XIV
-      </a>.
-      <a href="https://www.vatican.va/content/francesco/en.html" target="_blank">
-        Pope Francis
-      </a>.
-      <a href="https://www.vatican.va/content/vatican/en/holy-father/benedetto-xvi.html" target="_blank">
-        Pope Benedict XVI
-      </a>.
-      <a href="https://www.vatican.va/content/vatican/en/holy-father/giovanni-paolo-ii.html" target="_blank">
-        Saint John Paul II
-      </a>.
-    </li>
+  <strong>The Papacy:</strong> <a href="https://www.vatican.va/content/vatican/en/holy-father.html"title="The Holy See Pontiffs">Every Pope</a> is considered part of the line that began with Peter. Learn more about the Pope’s role:<ul style="column-count: 2; column-gap: 2em;padding-top: 1em;"><li><a
+      href="https://www.vatican.va/content/leo-xiv/en.html" target="_blank"> Pope Leo XIV </a></li>. <li><a href="https://www.vatican.va/content/francesco/en.html" target="_blank">
+      Pope Francis </a></li>. <li><a href="https://www.vatican.va/content/vatican/en/holy-father/benedetto-xvi.html" target="_blank"> Pope Benedict XVI </a></li>. <li><a
+      href="https://www.vatican.va/content/vatican/en/holy-father/giovanni-paolo-ii.html" target="_blank"> Saint John Paul II </a></li>. </ul></li>
     <li>
-      <strong>St. Peter’s Basilica:</strong> Built over what is believed to be Peter’s burial site.
-      Virtual tour available:
-      <a href="https://www.vatican.va/various/basiliche/san_pietro/index_it.htm" target="_blank">
-        St. Peter’s Basilica – Vatican
-      </a>.
-    </li>
+      <strong>St. Peter’s Basilica:</strong> Built over what is believed to be Peter’s burial site. Virtual tour available: <a
+        href="https://www.vatican.va/various/basiliche/san_pietro/index_it.htm" target="_blank"> St. Peter’s Basilica – Vatican </a>. </li>
     <li>
-      <strong>Christian Unity:</strong> Peter’s role as a unifying leader inspires ongoing efforts toward
-      unity among Christians.
-    </li>
+      <strong>Christian Unity:</strong> Peter’s role as a unifying leader inspires ongoing efforts toward unity among Christians. </li>
     <li>
-      <strong>A Model of Imperfect Holiness:</strong> Peter denied Jesus (Luke 22:54–62), struggled at times,
-      yet always returned to Christ. His life shows that God works through ordinary, imperfect people.
-    </li>
+      <strong>A Model of Imperfect Holiness:</strong> Peter denied Jesus (Luke 22:54–62), struggled at times, yet always returned to Christ. His life shows that God works through
+      ordinary, imperfect people. </li>
   </ul>
-
-  <h3>Why Peter’s Story Matters Today</h3>
-  <p>
-    For Catholics, Peter is not just a historical figure. His life shapes how the Church understands
-    leadership, faithfulness, and mission. His courage encourages believers to stay faithful in difficult
-    times, and his humility reminds them that God can transform anyone who chooses to follow Him.
-  </p>
-
-  <p>
-    For more on Peter’s role in the Church today, visit:
-    <a href="https://www.usccb.org/about" target="_blank">United States Conference of Catholic Bishops (USCCB)</a>.
-  </p>
+  <h3 style="text-align: center;"class="verse total-count">Why Peter’s Story Matters Today</h3>
+  <section style="border:1px groove cornflowerblue;padding:.5rem;">
+  <p> For Catholics, Peter is not just a historical figure. His life shapes how the Church understands leadership, faithfulness, and mission. His courage encourages believers to
+    stay faithful in difficult times, and his humility reminds them that God can transform anyone who chooses to follow Him. </p>
+  <p> For more on Peter’s role in the Church today, visit: <a href="https://www.usccb.org/about" target="_blank">United States Conference of Catholic Bishops (USCCB)</a>. </p>
+    </section>
 </section>
 
 
@@ -822,6 +864,38 @@ They came and saw where he was staying, and they stayed with him that day. It wa
         <div class="carousel-item" data-image-index="5">
             <a href="../../images/_JesusChrist/apostlePeter_Pentecost.png"><img src="../../images/_JesusChrist/apostlePeter_Pentecost.webp" alt="Holy Spirit at Pentecost" /></a>
             <h4><a class="img_link" href="https://www.youtube.com/watch?v=AtJAtYh5XFM"title="The Holy Spirit as a Dove">Holy Spirit at Pentecost</a></h4>
+        </div>
+        <div class="carousel-item" data-image-index="6">
+            <a href="../../images/_JesusChrist/apostles_peter_and_john_healing_the_paralytic_1985213.jpg"><img src="../../images/_JesusChrist/apostles_peter_and_john_healing_the_paralytic_1985213.webp" alt="apostles_peter_and_john_healing_the_paralytic" /></a>
+            <h4><a class="img_link" href="https://www.bing.com/videos/riverview/relatedvideo?q=Peter+and+John+healing+the+paralytic&&mid=2690607923E8850012D42690607923E8850012D4&mmscn=mtsc&aps=71&FORM=VMSOVR"title="Peter and John healing the paralytic">Peter and John healing the paralytic</a></h4>
+        </div>
+        <div class="carousel-item" data-image-index="7">
+            <a href="../../images/_JesusChrist/Liberacion_de_San_Pedro_Murillo_1667.jpg"><img src="../../images/_JesusChrist/Liberacion_de_San_Pedro_Murillo_1667.webp" alt="Liberation of Peter" /></a>
+            <h4><a class="img_link" href="https://youtu.be/BhZuSMKNbrk?si=wqg29LO6FDYJlIZI"title="Peter Freed From Prison">Peter Freed From Prison</a></h4>
+        </div>
+        <div class="carousel-item" data-image-index="8">
+            <a href="../../images/_JesusChrist/council_of_jerusalem_scene.jpg"><img src="../../images/_JesusChrist/council_of_jerusalem_scene.webp" alt="Council Of Jerusalem Scene" /></a>
+            <h4><a class="img_link" href="https://youtu.be/Esl-q-ocwrs?si=TYuVETPC2glp5cvZ&t=60"title="Council Of Jerusalem Scene">Cauncil Of Jerusalem</a></h4>
+        </div>
+        <div class="carousel-item" data-image-index="9">
+            <a href="../../images/_JesusChrist/apostlePeter_Letters.png"><img src="../../images/_JesusChrist/apostlePeter_Letters.webp" alt="Apostle Peter's Letters" /></a>
+            <h4><a class="img_link" href="https://sundayschoolzone.com/activity/peter-wrote-letters-parents-connect-page/"title="Apostle Peter's Letters">Apostle Peter's Letters</a></h4>
+        </div>
+        <div class="carousel-item" data-image-index="10">
+            <a href="../../images/_JesusChrist/apostlePeter_DP890511.jpg"><img src="../../images/_JesusChrist/apostlePeter_DP890511.webp" alt="L'Apotre Saint Pierre" /></a>
+            <h4><a class="img_link" href="https://www.metmuseum.org/art/collection/search/418496"title="www.metmuseum.org">L'Apotre Saint Pierre</a></h4>
+        </div>
+        <div class="carousel-item" data-image-index="11">
+            <a href="../../images/_JesusChrist/aposltePeter_domyd-saint-pierre.jpg"><img src="../../images/_JesusChrist/aposltePeter_domyd-saint-pierre.webp" alt="Apostle Peter's Legacy" /></a>
+            <h4><a class="img_link" href="https://www.vatican.va/content/vatican/en/ra/statua-san-pietro.html"title="Statue monumentale de l'Apôtre Saint Pierre en face de la Basilique Saint Pierre, Piazza San Pietro, la Place Saint Pierre">Apostle Peter Statue</a></h4>
+        </div>
+        <div class="carousel-item" data-image-index="12">
+            <a href="../../images/_JesusChrist/apostlePeter_falco-church-window.jpg"><img src="../../images/_JesusChrist/apostlePeter_falco-church-window.webp" alt="Apostle Peter Martyrdom" /></a>
+            <h4><a class="img_link" href="https://youtu.be/4WzJaXaut_w?si=pxb6GQV3ZmkAH-lT"title="Crucifixion of St. Peter, QUO VADIS 1951">Crucifixion of St. Peter</a></h4>
+        </div>
+        <div class="carousel-item" data-image-index="13">
+            <a href="../../images/_JesusChrist/apostlePeter_glavo-st-peters-basilica.jpg"><img src="../../images/_JesusChrist/apostlePeter_glavo-st-peters-basilica.webp" alt="Apostle Peter Legacy" /></a>
+            <h4><a class="img_link" href="https://www.basilicasanpietro.va/en/san-pietro"title="Discover the Basilica">Saint Peter's Basilica</a></h4>
         </div>
     </template>
 

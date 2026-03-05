@@ -47,7 +47,9 @@ try {
 
     </section>
         <pre id="^">
-📜 Chronological Timeline Framework
+            <a href="https://www.carloacutis.com/en/patronato/subscribe">Carlo Acutis Petition</a>
+<a href="https://www.carloacutis.com/">https://www.carloacutis.com/</a>📜
+ Chronological Timeline Framework
 A structured outline beginning with the 40 days in the desert and continuing through the early Christian movement after the crucifixion.
 
 1. Before the 40 Days in the Desert (Context Setting)
