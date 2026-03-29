@@ -1,0 +1,64 @@
+.as {
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+}
+
+.as:before {
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.as:hover {
+    background-position: 0;
+}
+
+.as:hover::before {
+    width: 100%;
+}
+
+.i_t {
+    text-indent: 25px;
+}
+
+._purple {
+    font-size: 18px;
+    color: rgb(78, 10, 181);
+}
+
+._red {
+    font-size: 18px;
+    color: rgb(192, 28, 28);
+}
+
+._green {
+    font-size: 18px;
+    color: rgb(79, 193, 38);
+}
+
+._yell {
+    font-size: 18px;
+    color: rgb(131, 137, 42);
+}
+
+._tiel {
+    font-size: 18px;
+    color: rgb(43, 125, 116);
+}
+
+._orange {
+    font-size: 18px;
+    color: rgb(187, 98, 35);
+}
+
+._pink {
+    font-size: 18px;
+    color: rgb(194, 19, 186);
+}

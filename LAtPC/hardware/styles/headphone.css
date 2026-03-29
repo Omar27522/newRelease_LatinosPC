@@ -1,0 +1,160 @@
+.cards3 {
+    padding: 5px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.cards3 p,
+.cards3 details summary,
+.consumer p {
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(127, 255, 212, 0.107);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    color: #333;
+    line-height: 1.5;
+    transition: all 0.3s ease;
+}
+
+.cards3 p:hover {
+    transform: scale(1.07);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cards3 ol {
+    display: flex;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+.cards3 li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cards3 li strong,
+.cards3 details summary {
+    font-weight: bold;
+    cursor: pointer;
+    font-style: oblique;
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 8px 12px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    justify-content: space-evenly;
+    z-index: 1;
+}
+
+.cards3 li strong::before,
+.cards3 details summary::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: transform 0.9s ease;
+}
+
+.cards3 li strong:hover,
+.cards3 details summary:hover {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cards3 li strong:hover::before,
+.cards3 details summary:hover::before,
+.cards3 li strong:focus::before,
+.cards3 details summary:focus::before {
+    transform: translateX(0);
+}
+
+.cards3 details summary {
+    display: inline-flex;
+}
+
+.cards3 details {
+    display: inline-flex;
+    margin: 0 40px;
+}
+
+.cards3 fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.cards3 legend {
+    font-size: x-large;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.consumer fieldset {
+    margin-top: 30px;
+}
+
+.consumer ol {
+    text-align: center;
+}
+
+.consumer li {
+    border: rgba(0, 0, 0, 0.2) .1px dashed;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.colms2 .datacol {
+    break-inside: avoid;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.dataset-item {
+    margin-bottom: 30px;
+}
+
+.dataset-item-number {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #007bff;
+}
+
+.dataset-item-content {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #444;
+}
+
+.section-heading {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.subsection-heading {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}

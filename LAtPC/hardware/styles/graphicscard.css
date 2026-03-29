@@ -1,0 +1,14 @@
+.gpu {
+    font-size: 18px;
+    color: rgb(41, 161, 43);
+}
+
+.amd {
+    font-size: 25px;
+    color: rgb(237, 28, 36);
+}
+
+.nvidia {
+    font-size: 25px;
+    color: rgb(118, 185, 0);
+}

@@ -37,7 +37,8 @@ They came and saw where he was staying, and they stayed with him that day. It wa
       </div>
       <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
     </div>
-  </div> To understand this quote, we have to understand the time and the place in order to draw a mental image of where Jesus and His disciples were standing. <p>Jesus took his
+  </div>
+  To understand this quote, we have to understand the time and the place in order to draw a mental image of where Jesus and His disciples were standing. <p>Jesus took his
     friends to a place called Caesarea Philippi. It wasn’t a quiet park; it was at the foot of a massive, towering cliff of solid rock. In that cliff, there was a deep, dark cave
     that people back then called the "Gates of Hades" (or the Gates of Hell). They thought the cave was a doorway to the underworld. So, while Jesus is talking about "rocks" and
     "gates," his disciples were likely looking right at a giant rock wall and a scary-looking cave!</p>
@@ -754,24 +755,7 @@ They came and saw where he was staying, and they stayed with him that day. It wa
       href="https://en.wikipedia.org/wiki/Papal_supremacy#" title="Wikipedia"> supremacy</a> and <a href="https://en.wikipedia.org/wiki/Papal_infallibility"
       title="Wikipedia">infallibility</a>: <a class="rtl" href="https://www.vatican.va/content/vatican/en.html" target="_blank"> Vatican Official Website </a>
   </p>
-      <!-- CONTINUE
-           
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          https://www.earlychristianwritings.com/text/ignatius-romans-roberts.html#:~:text=Then%20shall%20I%20be%20a%20true%20disciple%20of%20Jesus%20Christ%2Cworldly%20or%20vain.
-
-
-          
-          
-          
-          --><hr style="width:33%; margin-left: 33%;">
+  <hr style="width:33%; margin-left: 33%;">
   <h3>Peter’s Witness of Courage</h3>
   <p> Jesus foretold Peter’s martyrdom: <strong>"Most certainly I tell you, when you were young, you dressed yourself and walked where you wanted to. But when you are old, you will stretch out your hands, and another will dress you and carry you where you don’t want to go."</strong>
     <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=JN21_18" title="John 21:18-19"><ruby>John<rt>21:18-19</rt></ruby></a>. Early Christian writers confirm
@@ -836,9 +820,6 @@ They came and saw where he was staying, and they stayed with him that day. It wa
   <p> For more on Peter’s role in the Church today, visit: <a href="https://www.usccb.org/about" target="_blank">United States Conference of Catholic Bishops (USCCB)</a>. </p>
     </section>
 </section>
-
-
-
 
 <template id="carousel-images">
         <div class="carousel-item" data-image-index="0">

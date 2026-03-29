@@ -1,0 +1,92 @@
+article .container {
+    break-inside: avoid;
+    margin: 2px 5px 20px 5px;
+}
+
+article .center {
+    font-size: large;
+    text-align: center;
+}
+
+.container .card2 .center {
+    border-radius: 20px;
+    background-color: #f6cdbe;
+}
+
+article .card2 {
+    font-size: large;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card2 strong {
+    font-weight: bold;
+    color: #1e90ff;
+}
+
+.card2 em {
+    font-style: italic;
+    color: #ff7f50;
+}
+
+article details {
+    /*This is for the table of contents apple, notables, Microsoft and so on*/
+    font-size: xx-large;
+}
+
+article a {
+    line-height: 1.6;
+    font-size: large;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: large;
+}
+
+article h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.article p {
+    /*If I leave p by itself the footer About section will resize due to it being a paragraph as well*/
+    line-height: 1.6;
+    font-size: large;
+}
+
+.article p a {
+    /*If I leave p by itself the footer About section will resize due to it being a paragraph as well*/
+    display: inline;
+    text-decoration: none;
+    word-break: break-word;
+}
+
+summary {
+    font-weight: bold;
+}
+
+.budget {
+    margin: 0 0 20px 0;
+}
+
+.cent {
+    text-align: center;
+}
+
+.content .mainbar img.flt {
+    margin: 10px 1px 4px 15px;
+    float: left;
+}
+
+.content .mainbar img.rtls {
+    margin: 10px 15px 4px 10px;
+    float: right;
+}

@@ -1,0 +1,62 @@
+.printer {
+    font-size: xx-large;
+}
+
+#m {
+    color: rgb(92, 5, 5);
+}
+
+#q {
+    background-color: rgb(181, 158, 203);
+    color: rgb(197, 234, 234);
+}
+
+.center {
+    width: fit-content;
+}
+
+.spacer_shape {
+    width: fit-content;
+}
+
+.print {
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+}
+
+.print:after {
+    content: ' ';
+    background: rgb(92, 5, 5);
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.print:before {
+    content: ' ';
+    background: rgb(92, 5, 5);
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.print:hover {
+    background-position: 0;
+}
+
+.print:hover::after {
+    width: 100%;
+}
+
+.print:hover::before {
+    width: 100%;
+}

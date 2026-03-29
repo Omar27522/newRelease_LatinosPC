@@ -1,0 +1,16 @@
+.cooler_button {
+    text-align: center;
+    background-color: #91c9b7;
+    display: flex;
+    flex-direction: column;
+}
+
+.cooler2_button :hover {
+    background-color: #b3f6e0;
+    cursor: pointer;
+}
+
+.cooler_button :hover {
+    background-color: #b3f6e0;
+    cursor: pointer;
+}

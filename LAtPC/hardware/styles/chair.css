@@ -1,0 +1,125 @@
+.sub_title {
+    font-size: xx-large;
+    line-height: .9;
+}
+
+.sub_sub_title {
+    font-size: x-large;
+    line-height: .9;
+}
+
+.space {
+    margin-bottom: 10px;
+}
+
+/*(-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´***/
+
+.element,
+fieldset {
+    /* This are the UL elements */
+    background-color: rgba(127, 255, 212, 0.316);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid black;
+    list-style: none;
+    break-inside: avoid;
+}
+
+.element strong,
+.over_overlay {
+    font-size: 22px;
+    background-color: rgba(255, 10, 10, 0.38);
+    border-radius: 25px;
+}
+
+.element :hover {
+    background-color: rgba(255, 10, 10, 0.38);
+    color: wheat;
+    cursor: pointer;
+}
+
+dd:hover {
+    background-color: rgba(255, 10, 10, 0.38);
+    cursor: pointer;
+}
+
+.element :focus,
+dd:focus {
+    /*Selected text stays selected*/
+    background-color: rgba(255, 10, 10, 0.38);
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.element li {
+    break-inside: avoid;
+}
+
+.element li p,
+dl {
+    font-size: 16px;
+    font-weight: 650;
+}
+
+/* This are the UL elements */
+
+/*(-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´***/
+
+dl {
+    /* This is the definition list */
+    margin-top: 3px;
+}
+
+dl dt {
+    margin-left: .5em;
+}
+
+dl dd {
+    margin-left: 2em;
+}
+
+dd::before {
+    content: "• ";
+}
+
+/* This is the definition list */
+/*
+
+dt:hover,dt:focus {
+    background-color: #000000;
+color: #ffffff;
+cursor: pointer;
+}
+(-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´**
+
+*/
+article legend {
+    background-color: skyblue;
+    padding: 10px;
+    border-radius: 15px;
+    border: 3px dotted black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: whitesmoke;
+    font-size: 22px;
+}
+
+
+/*(-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´***/
+summary {
+    display: inline;
+}
+
+.overlay {
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.overlay > summary:hover {
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 21%, rgb(45, 101, 243) 38%, rgba(0, 213, 255, 0.261) 74%);
+    color: antiquewhite;
+}

@@ -1,0 +1,27 @@
+fieldset {
+    border-radius: 10px;
+}
+
+strong,
+legend {
+    color: brown;
+}
+
+legend {
+    font-weight: 600;
+    font-size: larger;
+}
+
+.card2 {
+    box-shadow: none;
+}
+
+li strong {
+    /*This is so the Strong is closer to the bullet, and give some space to the sentences <span>*/
+    position: relative;
+    left: -15px;
+}
+
+li {
+    margin-bottom: 10px;
+}

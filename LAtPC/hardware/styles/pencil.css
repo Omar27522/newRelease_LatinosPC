@@ -1,0 +1,157 @@
+article .sub_title {
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.blurb {
+    font-size: 14px;
+    margin-bottom: 30px;
+    /* Add spacing between blurbs */
+    padding: 20px;
+    border-radius: 5px;
+    /* Gentle rounded corners */
+    background-color: #f5f5f5;
+    /* Light gray background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    background-image: linear-gradient(to right, #5595f530, #ebeef1);
+}
+
+.blurb span,
+.last_item,
+article li strong {
+    font-size: 1.2em;
+    /* Adjust heading size as needed */
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* Add space after heading */
+    color: #333;
+    /* Darker text for headings */
+    background-image: linear-gradient(to right, #f00, rgb(255, 145, 0), rgb(121, 128, 4));
+    background-clip: text;
+    /* Clip gradient to text only */
+    -webkit-background-clip: text;
+    /* For older WebKit browsers */
+    color: transparent;
+    /* Text color becomes transparent */
+}
+
+.blurb legend {
+    font-size: 1.2em;
+    /* Adjust heading size as needed */
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* Add space after heading */
+    color: #333;
+    /* Darker text for headings */
+    background-image: linear-gradient(to right, rgb(58, 148, 25), rgb(45, 101, 243), rgb(174, 29, 31));
+    background-clip: text;
+    /* Clip gradient to text only */
+    color: transparent;
+    /* Text color becomes transparent */
+    background-color: #f5f5f5;
+    font-size: 20px;
+}
+
+.blurb p,
+.article details p,
+.blurb dd {
+    line-height: 1.5;
+    /* Increase line spacing for readability */
+    color: #577;
+    /* Lighter text for body */
+    font-size: 18px;
+    font-weight: 800;
+    font-stretch: condensed;
+}
+
+.blurb:hover,
+.article details:hover,
+.article details:focus {
+    /* Add hover effect on hover */
+    background-color: #eee;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to right, #e0e0e0, #d3d3d3);
+}
+
+.spacio {
+    padding-left: 15px;
+}
+
+.article hr {
+    border-top: 4px double #3b003b;
+}
+
+/*Use this to make colms||colms2 do not get sliced but use it in an element.
+.colms2 {
+break-inside: avoid;
+}*/
+.colms p,
+.colms2 p,
+.avdrk {
+    break-inside: avoid;
+}
+
+article summary,
+.bluey {
+    display: inline;
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 21%, rgb(45, 101, 243) 38%, rgba(0, 212, 255, 1) 74%);
+    background-clip: text;
+    /* Clip gradient to text only */
+    color: transparent;
+    /* Text color becomes transparent */
+    padding: 20px;
+    font-size: large;
+}
+
+.bluey {
+    display: block;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+article details {
+    margin-bottom: 30px;
+    /* Add spacing between blurbs */
+    border-radius: 5px;
+    /* Gentle rounded corners */
+    background-color: #f5f5f5;
+    /* Light gray background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    background-image: linear-gradient(to right, #5595f530, #ebeef1);
+    display: inline-block;
+}
+
+article li {
+    list-style: inside;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+/* Base styling for the definition list */
+dl {
+    border-radius: 10px;
+}
+
+/* Styling for the term (dt) */
+dt {
+    background: linear-gradient(135deg, #f0f4ff, #cce0ff);
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #0044cc;
+    margin: 10px 0 5px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Styling for the description (dd) */
+dd {
+    color: #333333;
+    margin: 5px 0 15px 20px;
+    padding: 10px;
+    border-left: 5px solid #0044cc;
+    border-radius: 5px;
+}

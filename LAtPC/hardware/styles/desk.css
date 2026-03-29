@@ -1,0 +1,8 @@
+.entrylevel {
+    transition: all 10s ease-in-out;
+}
+
+.card2 {
+    box-shadow: none;
+    transition: all 0.7s ease-in-out;
+}

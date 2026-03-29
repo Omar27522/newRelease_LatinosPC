@@ -896,7 +896,7 @@ function content_home()
         <a href="../hardware_options/psu" class="cta-button"><?= $hardwareButtons = $content[61]['content'];?></a>
         <a href="../hardware_options/input_devices" class="cta-button"><?= $hardwareButtons = $content[62]['content'];?></a>
         <a href="../hardware_options/output_devices" class="cta-button"><?= $hardwareButtons = $content[63]['content'];?></a>
-        <a href="../hardware_options/" class="cta-button"><?= $hardwareButtons = $content[64]['content'];?></a>
+        <a href="../hardware_options/#article" class="cta-button"><?= $hardwareButtons = $content[64]['content'];?></a>
 
         <aside>
             <hr>

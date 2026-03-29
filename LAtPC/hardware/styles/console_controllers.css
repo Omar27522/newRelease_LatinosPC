@@ -1,0 +1,144 @@
+#card {
+    height: auto;
+    width: 300px;
+}
+
+.card2:hover {
+    background: url(./menu.gif) repeat-x top;
+    background-size: 100% auto;
+}
+
+.link {
+    border-style: solid;
+    border-color: rgb(103, 99, 99);
+    border-width: 1px;
+    border-radius: 20%;
+    padding: .3%;
+}
+
+.link:hover {
+    background: url(menu.gif) repeat-x top;
+}
+
+.textlink:hover {
+    background: url(./menu.gif) repeat-x top;
+}
+
+.game {
+    font-size: x-large;
+}
+
+.arcade:hover {
+    background-color: rgb(209, 151, 151);
+}
+
+.arcadeg:hover {
+    background-color: rgb(151, 209, 164);
+}
+
+.arcadeb:hover {
+    background-color: rgb(151, 151, 209);
+}
+
+.arcadey:hover {
+    background-color: rgb(201, 209, 151);
+}
+
+.arcadep:hover {
+    background-color: rgb(151, 200, 209);
+}
+
+.sonyplaystation5,
+.nes,
+.magnavoxodyssey {
+    transform: translate(470px, -30px);
+}
+
+.sonyplaystation {
+    transform: translate(470px, -32px);
+}
+
+.ataripong {
+    transform: translate(470px, -25%);
+}
+
+.sonyplaystation4,
+.nintendoswitch,
+.nintendowii,
+.nintendogamecube,
+.microsoftxbox,
+.nintendo64,
+.segadreamcast,
+.pacman,
+.streetfighter,
+.spaceinvaders,
+.segagenesis,
+.microsoftxboxseriesx {
+    transform: translate(470px, -40%);
+}
+
+.sonyplaystation2,
+.sonyplaystation3,
+.microsoftxboxone {
+    transform: translate(470px, 13px);
+}
+
+.track {
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+}
+
+.track:after {
+    content: ' ';
+    background: rgb(92, 5, 5);
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.track:before {
+    content: ' ';
+    background: rgb(92, 5, 5);
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.track:hover {
+    background-position: 0;
+}
+
+.track:hover::after {
+    width: 100%;
+}
+
+.track:hover::before {
+    width: 100%;
+}
+
+.tnk:hover {
+    background: url(https://latinospc.com/images/blue_rectangle.png) repeat-x top;
+    transition: all 0.5s ease-in-out;
+}
+
+.tnk:focus {
+    background: url(https://latinospc.com/images/blue_rectangle.png) repeat-y right;
+    transition: all 0.3s ease-in-out;
+}
+
+.tnk {
+    display: flex;
+}
+
+.bars {
+    padding-top: 5%;
+}

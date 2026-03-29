@@ -1,0 +1,258 @@
+article .container {
+    break-inside: avoid;
+    margin: 2px 5px 20px 5px;
+}
+
+article .card2 {
+    font-size: large;
+    margin: 10px;
+    background-color: #f0f0f0;
+    padding: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50% 20% / 10% 40%;
+    margin-top: 10px;
+    break-inside: avoid-column;
+}
+
+.card2 strong {
+    font-weight: bold;
+    color: #1e90ff;
+}
+
+.card2 em {
+    font-style: italic;
+    color: #ff7f50;
+}
+
+.card2 em:hover {
+    color: #1e90ff;
+}
+
+article .center {
+    text-align: center;
+    display: inline-block;
+    border-radius: 80% 40% 0% 20% / 20% 50% 40% 55%;
+    background-color: #f5b199;
+    color: rgb(13, 14, 15);
+    margin-bottom: 10px;
+}
+
+fieldset {
+    font-size: large;
+    border-radius: 10px;
+    background-color: #a4e2f6f7;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container fieldset {
+    color: rgba(0, 0, 0, 0.09);
+}
+
+.arvr {
+    color: rgba(0, 0, 0, 0.09);
+}
+
+fieldset p {
+    font-weight: bold;
+}
+
+legend {
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+article ul li {
+    list-style-type: none;
+}
+
+article details summary {
+    transition: all 1.2s ease-in-out;
+    display: block;
+    border-radius: 50% 70% / 10% 60%;
+    padding: 6%;
+    color: rgb(13, 14, 15);
+    background-color: #c7cdf6;
+}
+
+.fl {
+    transition: all 3.2s ease-in-out;
+    display: inline;
+    border-radius: 50% 70% / 10% 60%;
+    background-color: #122fec;
+}
+
+.rtl {
+    transition: all 3.2s ease-in-out;
+    display: inline;
+    border-radius: 50% 70% / 10% 60%;
+    background-color: #122fec;
+}
+
+article details {
+    flex-direction: row;
+    transition-delay: 2s;
+}
+
+.arvsvr :hover {
+    background-color: #ede2de;
+    transition: 1s;
+}
+
+.arvsvr :focus {
+    background-color: #856052;
+    color: rgb(126, 247, 247);
+}
+
+.big {
+    font-size: large;
+}
+
+.left {
+    text-align: right;
+}
+
+.story {
+    background-position: 50px;
+    background-color: #b0a4f6f7;
+    display: inline-flex;
+    border-radius: 50% 70% / 10% 60%;
+    padding: 6%;
+    color: rgb(13, 14, 15);
+    margin: 50px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.story:hover {
+    background-color: #862f0f;
+    color: #b3cde7;
+    transition: .2s;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.centercenter {
+    padding-left: 200px;
+}
+
+.centercenter2 {
+    padding-right: 200px;
+    margin-right: 5.5%;
+    text-align: justify;
+}
+
+.colms {
+    break-inside: avoid-page;
+}
+
+.article fieldset a {
+    /*If I leave p by itself the footer About section will resize due to it being a paragraph as well I got this bloke from microphones.css but it changed to a div, im not using p*/
+    display: inline;
+    text-decoration: none;
+    word-break: break-word;
+}
+
+#luke {
+    background-image: url("../images/hardware/hw/headsets/luke.webp");
+}
+
+#neo {
+    background-image: url("../images/hardware/hw/headsets/neo.webp");
+}
+
+#marty {
+    background-image: url("../images/hardware/hw/headsets/marty.webp");
+}
+
+#tony {
+    background-image: url("../images/hardware/hw/headsets/tony.webp");
+}
+
+#parzivalbrycelynch {
+    background-image: url("../images/hardware/hw/headsets/wadewatts.webp");
+}
+
+fieldset p:hover,
+fieldset p:focus,
+fieldset li:hover,
+fieldset li:focus {
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.arvr {
+    background-image: url("../images/hardware/hw/headsets/arvr.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.futureofvrandar {
+    background-image: url("../images/hardware/hw/headsets/futureofvrandar.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.futureofvrandar0 {
+    background-image: url("../images/hardware/hw/headsets/futureofvrandar1.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.arandvr {
+    background-image: url("../images/hardware/hw/headsets/arandvr.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.poem {
+    background-image: url("../images/hardware/hw/headsets/paper.webp");
+    background-size: cover;
+    border-radius: 10px;
+    color: azure;
+    box-shadow: #000000 0 0 10px;
+    text-shadow: 1px 1px 2px rebeccapurple;
+}
+
+.linky {
+    display: inline-flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.linky a:link {
+    text-decoration: none;
+    margin-top: 15px;
+    padding: 0 15px 0 15px;
+}
+
+.linky a:hover {
+    text-decoration: underline;
+    color: rgb(126, 247, 247);
+    background-color: #862f0f;
+    border-radius: 5px;
+}
+
+.colms23 {
+    word-break: break-word;
+    display: inline-block;
+}
+
+.tnk2 {
+    cursor: pointer;
+    background-color: #862f0f;
+    border-radius: 5px;
+    color: #b3cde7;
+}
+
+.tnk2:hover {
+    color: #000000;
+    background-color: white;
+}

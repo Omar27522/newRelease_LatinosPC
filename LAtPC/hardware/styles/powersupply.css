@@ -1,0 +1,28 @@
+.psu {
+    font-size: 18px;
+    background-color: rgb(255, 215, 0);
+    color: rgb(35, 35, 35);
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+}
+
+.psu:before {
+    content: '';
+    background: rgb(21, 14, 7);
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.psu:hover {
+    background-position: 0;
+}
+
+.psu:hover::before {
+    width: 100%;
+}

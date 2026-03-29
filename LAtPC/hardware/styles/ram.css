@@ -1,0 +1,28 @@
+.ram {
+    font-size: 18px;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+}
+
+.ram:before {
+    content: '';
+    background-color: rgb(106, 207, 101);
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.ram:hover {
+    background-position: 0;
+}
+
+.ram:hover::before {
+    width: 100%;
+    margin-block: auto;
+    border: 2px solid #000000;
+}

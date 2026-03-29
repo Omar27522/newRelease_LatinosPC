@@ -1,0 +1,63 @@
+article fieldset {
+    font-size: 18px;
+    color: rgb(11, 184, 19);
+    break-inside: avoid;
+    /* Makes colms2 do not get sliced */
+    margin-bottom: 15px;
+    background-color: rgba(255, 0, 0, 0.09);
+    border-radius: 77% 22% / 7% 22%;
+}
+
+article fieldset p {
+    font-size: 22px;
+    line-height: .8;
+}
+
+article legend {
+    color: lightblue;
+    text-shadow: rgb(0, 30, 255) 4px 1px 3px;
+    font-weight: 800;
+    background-color: rgb(0, 0, 0);
+    border: solid 10px black;
+    border-radius: 50% 15% / 10% 40%;
+    cursor: pointer;
+}
+
+.colms2 {
+    column-fill: balance;
+}
+
+details {
+    display: block;
+}
+
+article a:link {
+    text-decoration: none;
+}
+
+.unif {
+    border-color: aquamarine;
+    border-style: groove;
+    border-width: 25px;
+}
+
+.text {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+    break-inside: avoid;
+    padding-left: 5px;
+}
+
+article .center {
+    text-align: center;
+}
+
+.civs {
+    break-inside: avoid;
+    border: dashed 1px purple;
+    border-radius: 50% 20% / 10% 40%;
+    margin: 2px 5px 20px 5px;
+    padding: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

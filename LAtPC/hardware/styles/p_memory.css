@@ -1,0 +1,31 @@
+/*This Code is already on jsk.css */
+.container {
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    break-inside: avoid-column;
+}
+
+/*This Code is already on jsk.css */
+.tnk:focus {
+    background: url(blue_rectangle.png) repeat-y right;
+    transition: all 0.3s ease-out;
+    background-size: 60px auto;
+    animation-delay: 6000ms;
+}
+
+/*This Code is already on jsk.css care with the duplicates */
+.logo {
+    padding-top: 20px;
+}
+
+.portable a {
+    font-size: larger;
+    text-transform: uppercase;
+}
+
+.container .card2 {
+    background-color: azure;
+}

@@ -428,7 +428,7 @@
     </main>
 
     <footer>
-        <p>&copy; LatinosPC <?php if($page->getLang() == "es-419"){$meses = [
+        <p>&copy; <a href="#content" class="footer-link-content">LatinosPC</a> <?php if($page->getLang() == "es-419"){$meses = [
     'January' => 'Enero',
     'February' => 'Febrero',
     'March' => 'Marzo',

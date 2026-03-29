@@ -335,6 +335,14 @@ footer p {
     box-shadow: var(--box-shadow);
 }
 
+.footer-link-content {
+  text-decoration:none;
+color: inherit;
+}
+.footer-link-content:visited  {
+  color: inherit;
+}
+
 
 /* ===================================
    ANIMATIONS

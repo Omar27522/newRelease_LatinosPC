@@ -1,0 +1,324 @@
+        .article {
+            color:rgb(54, 42, 54);
+            border-radius: 10px;
+        }
+
+        .hardware-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            padding: 1rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .hardware-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            position: relative;
+            height: 100%;
+        }
+
+        .hardware-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .hardware-card.featured {
+            grid-column: span 2;
+        }
+
+        .card-link {
+            display: block;
+            text-decoration: none;
+            color: #383a3b;
+            height: 100%;
+            padding: 1.5rem;
+        }
+
+        .hardware-card h2 {
+            margin-top: 0;
+            font-size: 1.4rem;
+            color: #2a2d34;
+            margin-bottom: 0.8rem;
+            position: relative;
+        }
+
+        .hardware-card h2::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, #4a6fa5, #6b8cbe);
+        }
+
+        .hardware-card p {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+
+        .card-image {
+            margin-top: auto;
+            text-align: center;
+        }
+
+        .card-image img {
+            max-height: 150px;
+            object-fit: contain;
+            transition: transform 0.5s ease;
+        }
+
+        .hardware-card:hover .card-image img {
+            transform: scale(1.05);
+        }
+
+        .hardware-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .hardware-logo img {
+            max-width: 100%;
+            max-height: 120px;
+            transition: transform 0.3s ease;
+        }
+
+        .hardware-logo img:hover {
+            transform: scale(1.1);
+        }
+
+        [data-component="cpu"] { border-top: 4px solid #4a6fa5; }
+        [data-component="ram"] { border-top: 4px solid #6b8cbe; }
+        [data-component="ssd"] { border-top: 4px solid #4a6fa5; }
+        [data-component="motherboard"] { border-top: 4px solid #6b8cbe; }
+        [data-component="psu"] { border-top: 4px solid #4a6fa5; }
+        [data-component="gpu"] { border-top: 4px solid #6b8cbe; }
+        [data-component="chassis"] { border-top: 4px solid #4a6fa5; }
+        [data-component="cooling"] { border-top: 4px solid #6b8cbe; }
+        [data-component="io"] { border-top: 4px solid #4a6fa5; }
+        [data-component="peripherals"] { border-top: 4px solid #6b8cbe; }
+
+        @media (max-width: 768px) {
+            .hardware-grid {
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            }
+
+            .hardware-card.featured {
+                grid-column: auto;
+            }
+        }
+        .newspaper2 li {
+            font-size: x-large;
+            line-height: 1.5;
+            break-inside: avoid;
+        }
+
+        .newspaper2 li a {
+            width: 100%;
+        }
+
+        /* Peripherals Section Styling */
+        .peripherals-section {
+            padding: 3rem 1rem;
+            background-color: #f8f9fa;
+            margin-top: 2rem;
+        }
+
+        .peripherals-header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .peripherals-title-link {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        .peripherals-title-link:hover {
+            color: #0056b3;
+        }
+
+        .peripherals-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #333;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+
+        .peripherals-title:after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            background: linear-gradient(90deg, #0056b3, #00c6ff);
+            bottom: 0;
+            left: 25%;
+            border-radius: 2px;
+        }
+
+        .peripherals-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .peripherals-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .peripheral-card {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .peripheral-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .peripheral-card:focus-within {
+            outline: 3px solid #0056b3;
+        }
+
+        .peripheral-card[data-type="input"] {
+            border-top: 4px solid #2ecc71;
+        }
+
+        .peripheral-card[data-type="output"] {
+            border-top: 4px solid #e74c3c;
+        }
+
+        .peripheral-card[data-type="storage"] {
+            border-top: 4px solid #f39c12;
+        }
+
+        .peripheral-card[data-type="component"] {
+            border-top: 4px solid #9b59b6;
+        }
+
+        .peripheral-card[data-type="power"] {
+            border-top: 4px solid #e67e22;
+        }
+
+        .peripheral-card[data-type="cooling"] {
+            border-top: 4px solid #3498db;
+        }
+
+        .peripheral-card[data-type="graphics"] {
+            border-top: 4px solid #1abc9c;
+        }
+
+        .peripheral-card[data-type="audio"] {
+            border-top: 4px solid #8e44ad;
+        }
+
+        .peripheral-card[data-type="gaming"] {
+            border-top: 4px solid #e84393;
+        }
+
+        .peripheral-card[data-type="mobile"] {
+            border-top: 4px solid #00cec9;
+        }
+
+        .peripheral-card.featured {
+            grid-column: span 2;
+        }
+
+        .peripheral-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            height: 100%;
+        }
+
+        .peripheral-content {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .peripheral-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .peripheral-image {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .peripheral-image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .peripheral-card:hover .peripheral-image img {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .peripherals-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+
+            .peripheral-card.featured {
+                grid-column: auto;
+            }
+
+            .peripherals-title {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .peripherals-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .peripheral-content {
+                padding: 1rem;
+            }
+
+            .peripherals-title {
+                font-size: 1.75rem;
+            }
+        }
+        .hero3.article {
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .hero3.article div {
+            padding: 15px;
+            border-radius: 3px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }

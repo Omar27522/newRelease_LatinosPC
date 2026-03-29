@@ -1,0 +1,31 @@
+.speakers {
+    color: green;
+}
+
+.borderdl {
+    border: solid 7px transparent;
+    padding: 15px;
+    margin-bottom: 15px;
+    break-inside: avoid;
+}
+
+.borderdl:hover,
+.borderdl:focus {
+    border: dashed 7px rgba(43, 94, 157, 0.167);
+}
+
+dt {
+    font-size: x-large;
+}
+
+.article li {
+    margin-bottom: 10%;
+}
+
+details {
+    break-inside: avoid-column;
+}
+
+.center {
+    margin-top: 10px;
+}

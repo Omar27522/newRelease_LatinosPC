@@ -1,0 +1,83 @@
+.modern_list {
+    background-image: url("https://latinospc.com/images/hardware/hw/controllers/texture.webp");
+    /* Replace with your texture image path */
+    background-size: contain;
+}
+
+.modern_list legend,
+.modern_list p,
+.segment {
+    display: inline-block;
+    margin: 10px 15px 10px 0;
+    /* Adjust margins for spacing */
+    padding: 5px 5px;
+    /* Adjust padding for content size */
+    background-color: #333;
+    /* Darker background for chip look */
+    color: #ddd;
+    /* Light text for readability */
+    font-family: sans-serif;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(40, 250, 46, 1.2);
+    /* Subtle shadow for depth */
+}
+
+.modern_list p::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    /* Space between pin and text */
+    background-color: #ccc;
+    /* Metallic pin color */
+    border-radius: 50%;
+}
+
+.modern_list p:hover {
+    background-color: #444;
+    cursor: pointer;
+}
+
+p,
+.segment {
+    font-size: 18px;
+}
+
+.modern_list legend {
+    font-weight: 700;
+}
+
+.colms2 {
+    padding-top: 20px;
+    border-radius: 25px;
+}
+
+fieldset {
+    border-radius: 25px;
+}
+
+.colms {
+    list-style-position: inside;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.colms li {
+    flex: 0 0 33%;
+    /* This will create three columns */
+    box-sizing: border-box;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.ml2 {
+    color: azure;
+    display: inline;
+    padding: 10px;
+}
+
+.push {
+    margin-right: 10px;
+}

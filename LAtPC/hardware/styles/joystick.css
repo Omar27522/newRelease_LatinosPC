@@ -1,0 +1,74 @@
+.jsk {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.jsk strong {
+    font-weight: bold;
+    color: #1e90ff;
+    font-size: large;
+}
+
+.jsk::first-letter {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #1e90ff;
+}
+
+.jks2 {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.jks3 {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#joysticks {
+    flex-direction: column;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    break-inside: avoid-column;
+}
+
+.colms2 {
+    break-inside: avoid-column;
+}
+
+.heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1e90ff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tnk:focus {
+    background: url(blue_rectangle.png) repeat-y right;
+    transition: all 0.3s ease-out;
+    background-size: 60px auto;
+    animation-delay: 6000ms;
+}
+
+.logo {
+    padding-top: 20px;
+}

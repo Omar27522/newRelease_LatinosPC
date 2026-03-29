@@ -293,6 +293,10 @@ function andrewApostle()    {
   ';
 }
 
+function paulApostle () {
+  include 'paul_the_apostle_temp.php';
+}
+
 function content()    {
     global $titles, $names, $subTitles, $adicionalNames, $_Jesus;
     global $titulos, $nombres, $subTitulos, $nombresAdicionales, $_Jesus;
@@ -324,7 +328,7 @@ function content()    {
   elseif (isset($_GET['matthias'])):
       echo "<section class=\"fullbar\">Matthias (replaced Judas)</section>";
   elseif (isset($_GET['paul'])):
-      echo "<section class=\"fullbar\">Paul (Apostle to the Gentiles) Then, again, the Church in Ephesus, founded by Paul, and having John remaining among them permanently until the times of Trajan, is a true witness of the tradition of the apostles. https://www.earlychristianwritings.com/text/irenaeus-book3.html</section>";
+    paulApostle ();
   else:
 
   ?>
