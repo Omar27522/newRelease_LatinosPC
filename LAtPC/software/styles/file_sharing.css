@@ -1,0 +1,114 @@
+.blurb {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.blurb summary {
+    padding: 20px;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.blurb summary:hover,
+.blurb summary:focus {
+    background-color: #f8f9fa;
+    border-color: #007bff;
+    color: #007bff;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.15);
+    cursor: pointer;
+    font-weight: 600;
+    transform: translateY(-2px);
+}
+
+.blurb details {
+    margin-bottom: 20px;
+}
+
+.blurb details[open] summary {
+    margin-bottom: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.blurb details[open]>p {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-top: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.buttonskit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.buttonskit button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    width: 100%;
+}
+
+.bttn {
+    display: block;
+    padding: 15px 25px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-weight: 500;
+}
+
+.bttn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
+
+figure {
+    text-align: center;
+    margin: 30px 0;
+}
+
+figcaption {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.selection {
+    line-height: 1.6;
+    color: #333;
+}
+
+[style*="border"] {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 6px;
+}
+
+#title {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}

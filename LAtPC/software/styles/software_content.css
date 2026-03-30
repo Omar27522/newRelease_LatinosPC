@@ -1,0 +1,27 @@
+.selection li {
+    list-style: none;
+    font-size: 110%;
+}
+
+.bttn {
+    /*This whole section is for the buttons, I wanted to add a background color to the buttons, but it doesn't let me*/
+    font-size: 130%;
+    margin: 2.4%;
+    padding: 10.4%;
+}
+
+.bttn:hover {
+    color: midnightblue;
+}
+
+.cell button {
+    background-color: #436bbdc7;
+}
+
+.cell button:hover,
+.cell button:focus,
+.cell button:active {
+    border-radius: 25px;
+    color: white;
+    background-color: #74747463;
+}

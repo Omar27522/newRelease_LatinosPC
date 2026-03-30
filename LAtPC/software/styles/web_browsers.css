@@ -1,0 +1,79 @@
+.buttons {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+section a {
+    color: rgb(101, 101, 101);
+}
+
+section a:hover {
+    color: midnightblue;
+}
+
+.steps {
+    background-color: rgba(252, 253, 159, 0.41);
+}
+
+.selection:hover {
+    background-color: rgba(25, 25, 112, 0.146);
+}
+
+.selection {
+    padding: 1%;
+    border-radius: 1.5%;
+    padding-left: 25%;
+    text-align: center;
+}
+
+.steps h2 {
+    font-size: 1.3em;
+    padding-left: 1%;
+}
+
+.steps p {
+    font-size: 1.2em;
+    padding-top: 2%;
+    width: 70%;
+}
+
+.steps strong {
+    font-size: 1.7em;
+}
+
+.readMore {
+    background-color: rgba(25, 25, 112, 0.146);
+    padding: 1%;
+    border-radius: 1.5%;
+    margin-right: 1%;
+    text-align: center;
+}
+
+.rm {
+    font-size: 1.5em;
+    float: right;
+    padding-right: 2em;
+    margin-top: .7em;
+    cursor: pointer;
+}
+
+.rm:hover {
+    color: midnightblue;
+    text-decoration: underline;
+}
+
+.fl {
+    float: left;
+    margin-right: 10px;
+    width: 25%;
+    height: auto;
+}
+
+.rtl {
+    float: right;
+}

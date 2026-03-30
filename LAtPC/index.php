@@ -549,6 +549,13 @@ function software_options($sub_route){
 		    include 'software/software.php';
 		    break;
 
+		case 'messaging':
+		    $page = new Structure('../../', 'english', 'SW Messaging');
+		    $keywords = 'messaging software, chat software, instant messaging, WhatsApp, Telegram, Signal, Facebook Messenger, Skype, Zoom, Microsoft Teams, Slack, Discord, video conferencing, chat application, messaging app, communication software';
+		    $description = 'Messaging and communication software in Pomona, CA. Install and configure tools like WhatsApp, Telegram, Signal, Facebook Messenger, Skype, Zoom, Microsoft Teams, Slack, Discord for messaging, chat, and video conferencing. We set up messaging apps, configure communication tools, and teach you how to use them effectively for personal and business communication.';
+		    include 'software/software.php';
+		    break;
+
 		case 'documents':
 		    $page = new Structure('../../', 'english', 'SW Documents');
 		    $keywords = 'document software, Microsoft Office, Word, Excel, PowerPoint, LibreOffice, Google Docs, PDF reader, Adobe Acrobat, document editing, spreadsheet software, presentation software, office suite, document creation, PDF editing, office productivity';

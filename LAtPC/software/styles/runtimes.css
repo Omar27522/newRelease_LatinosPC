@@ -1,0 +1,232 @@
+.hero4{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.7;
+    color: #333;
+}
+.content_resize{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.highlight-box{
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 30px 0;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+.highlight-box p{
+    margin: 0;
+}
+.kitchen-analogy{
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+}
+.kitchen-analogy li{
+    background: #f8f9fa;
+    padding: 15px 20px;
+    margin: 12px 0;
+    border-left: 5px solid #3498db;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-size: 1.05rem;
+}
+.kitchen-analogy li:hover{
+    transform: translateX(10px);
+    background: #e8f4f8;
+    box-shadow: 0 3px 10px rgba(52, 152, 219, 0.2);
+}
+.kitchen-analogy strong{
+    color: #2c3e50;
+    font-weight: 600;
+}
+.fun-fact{
+    background: #fff9e6;
+    border: 2px solid #f39c12;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 35px 0;
+    position: relative;
+    box-shadow: 0 3px 10px rgba(243, 156, 18, 0.15);
+}
+.fun-fact h3{
+    color: #f39c12;
+    margin-top: 0;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+.fun-fact p{
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+.device-list{
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+}
+.device-list li{
+    background: white;
+    padding: 18px 25px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s ease;
+    font-size: 1.05rem;
+}
+.device-list li:hover{
+    border-color: #3498db;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2);
+}
+.device-list strong{
+    color: #2c3e50;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 8px;
+}
+.future-section{
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 35px 0;
+    box-shadow: 0 5px 20px rgba(17, 153, 142, 0.3);
+}
+.future-section h3{
+    margin-top: 0;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+.future-section p{
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+.future-section a{
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 600;
+}
+.learn-more{
+    background: #f0f7ff;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 35px 0;
+    border: 1px solid #d0e7ff;
+}
+.learn-more h2{
+    color: #2c3e50;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+.learn-more ul{
+    list-style: none;
+    padding-left: 0;
+}
+.learn-more li{
+    padding: 10px 0 10px 30px;
+    position: relative;
+    font-size: 1.05rem;
+}
+.learn-more li:before{
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #3498db;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.pro-tip{
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 35px 0;
+    box-shadow: 0 5px 20px rgba(240, 147, 251, 0.3);
+}
+.pro-tip h3{
+    margin-top: 0;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+.pro-tip ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.pro-tip li{
+    padding: 12px 0 12px 35px;
+    position: relative;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+.pro-tip li:before{
+    content: "✓";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.references{
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 35px 0;
+    border-left: 5px solid #3498db;
+}
+.references h3{
+    color: #2c3e50;
+    margin-top: 0;
+    font-size: 1.4rem;
+}
+.references ul{
+    list-style: none;
+    padding-left: 0;
+}
+.references li{
+    padding: 10px 0;
+    font-size: 1.05rem;
+}
+.references a{
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+.references a:hover{
+    color: #2980b9;
+    text-decoration: underline;
+}
+h2{
+    color: #2c3e50;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+h3{
+    color: #34495e;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px){
+    .fullbar{
+        padding: 15px;
+    }
+    .highlight-box, .fun-fact, .future-section, .learn-more, .pro-tip, .references{
+        padding: 20px;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+}
