@@ -9,55 +9,30 @@ function security(){
             Practices</a></p>
     <h1 id="title">Valuable Implementable Measures.</h1>
     <h2>Keep your Security in check</h2><img src="../../images/gallery/secty.jpg" class="fl" width="300px">
-    <h3>
+    <ul>
         <li>Your operating system and software must be kept up to date, installed with the latest security patches.</li>
-    </h3>
-    <h3>
-        <li>Use a strong, unique password for each device and account, also enable two-factor authentication when
-            available.</li>
-    </h3>
-    <h3>
+        <li>Use a strong, unique password for each device and account, also enable two-factor authentication when available.</li>
         <li>Avoid clicking on links or downloading attachments from unknown or suspicious sources.</li>
-    </h3>
-    <h3>
         <li>Use anti-virus and anti-malware software to protect against known threats.</li>
-    </h3>
-    <h3>
         <li>Keep a backup of important files to an external drive or cloud service in case they are lost or stolen.</li>
-    </h3>
-    <h3>
         <li>Use encryption to protect sensitive data stored on your devices. Be cautious when connecting to public Wi-Fi
             networks, and use a virtual private network (VPN) when possible.</li>
-    </h3>
-    <h3>
         <li>Use a firewall to block unauthorized access to your devices. Use a lockout policy to automatically lock your
             device after a period of inactivity.</li>
-    </h3>
-    <h3>
         <li>Log out of accounts and lock your device when you're not using it. Be aware of social engineering tactics,
             such as phishing scams, and do not provide personal information or login credentials to anyone you do not
             trust. Use a pop-up blocker to prevent unwanted advertisements and pop-ups from appearing on your device.
         </li>
-    </h3>
-    <h3>
         <li>Limit the number of users with administrative access to your devices, and restrict access to sensitive data
             and settings.</li>
-    </h3>
-    <h3>
         <li>Regularly review and audit user accounts and permissions to ensure that only authorized individuals have
             access.</li>
-    </h3>
-    <h3>
         <li>Use parental controls to limit access to inappropriate or harmful content on your devices.</li>
-    </h3>
-    <h3>
         <li>Regularly review your device's security settings and configurations to ensure they are up to date and
             appropriate for your needs.</li>
-    </h3>
-    <h3>
         <li>When discarding or selling old devices, securely erase all data and restore the device to its factory
             settings.</li>
-    </h3>
+    </ul>
     </article>
   <?php
 }
@@ -268,37 +243,28 @@ function passwords(){
         doesn’t use obvious substitution, like a letter for a
         number or vice versa. </p>
     <ul>
-        <p>
-            <a href="https://en.wikipedia.org/wiki/Multi-factor_authentication">
-                <li>Two factor authentication:
-            </a>
-            Is an added extra security
-            layer, that in simplest terms is two passwords (factors).
-            The user is granted access by presenting the passwords
-            and a second piece of evidence (factor). Knowledge (something
-            the user only knows), possession(something the user has),
-            and (who the user is) Inheritance is presented to the
-            authentication mechanism.
-        </p>
-        </li>
-
-
-
         <li>
-            <p><a href="https://www.fbi.gov/services/cjis/fingerprints-and-other-biometrics">Fingerprint</a> is a <a
-                    href="https://www.csoonline.com/article/3339565/what-is-biometrics-and-why-collecting-biometric-data-is-risky.html">biometric
-                    authentication;</a> lets users use hand's
-                fingerprints to verify their identity.</p>
+            <p>
+                <a href="https://en.wikipedia.org/wiki/Multi-factor_authentication">Two factor authentication:</a>
+                Is an added extra security layer, that in simplest terms is two passwords (factors).
+                The user is granted access by presenting the passwords and a second piece of evidence (factor). Knowledge (something the user only knows), possession(something the user has), and (who the user is) Inheritance is presented to the authentication mechanism.
+            </p>
         </li>
 
         <li>
-            <p>Facial recognition is a biometric authentication; lets users use unique facial
-                features to verify ones identity.</p>
+            <p>
+                <a href="https://www.fbi.gov/services/cjis/fingerprints-and-other-biometrics">Fingerprint</a> is a 
+                <a href="https://www.csoonline.com/article/3339565/what-is-biometrics-and-why-collecting-biometric-data-is-risky.html">biometric authentication;</a> 
+                lets users use hand's fingerprints to verify their identity.
+            </p>
         </li>
 
         <li>
-            <p>Social Log in is an authentication method that lets users use their social media
-                credentials to verify ownership, partnership, or other. </p>
+            <p>Facial recognition is a biometric authentication; lets users use unique facial features to verify ones identity.</p>
+        </li>
+
+        <li>
+            <p>Social Log in is an authentication method that lets users use their social media credentials to verify ownership, partnership, or other. </p>
         </li>
 
         <li>

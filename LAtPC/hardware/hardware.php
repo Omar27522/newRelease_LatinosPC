@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 function crumbs() {
     echo '<a href="./#cpu" class="fullbar">Hardware</a>';

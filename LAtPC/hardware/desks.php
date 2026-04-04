@@ -160,9 +160,11 @@ Remember that the knowledge and skills required for each level can vary, and ind
 
 <section class="blurb colms2">
 <ul>
-    <details tabindex="0" class="selection half_size card2" style="display: inline;" id="1000">
+    <li>
+    <details tabindex="0" class="selection half_size card2" id="1000">
         <summary class="sub_sub_title">Standard Computer Desk:</summary>
         <div class="spacer"></div>
+        <ul>
         <li>
             <span tabindex="0" class="selection_2">This is a basic desk designed for computer use.</span>
         </li>
@@ -177,14 +179,18 @@ Remember that the knowledge and skills required for each level can vary, and ind
             <span tabindex="0" class="selection_2">&nbsp;Suitable for: Entry-level computer users, students, basic
             office setups.</span>
         </li>
+        </ul>
     </details>
+    </li>
     <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁ 
 <img src="https://latinospc.com/images/artificialintelligence/pixel.jpeg" class="fl" style="float: right;"  alt="Standard Computer Desk">
 --|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
-    <div class="spacer"></div>
-    <details tabindex="0" id="900" class="selection half_size card2" style="display: inline;">
+    <li><div class="spacer"></div></li>
+    <li>
+    <details tabindex="0" id="900" class="selection half_size card2">
         <summary class="sub_sub_title">Corner Desk:</summary>
         <div class="spacer"></div>
+        <ul>
         <li>
             <span tabindex="0" class="selection_2">Designed to fit into corners, these desks maximize space utilization
             and are great for smaller rooms or offices.</span>
@@ -193,13 +199,17 @@ Remember that the knowledge and skills required for each level can vary, and ind
             <span tabindex="0" class="selection_2">Suitable for: Those looking to make the most of limited space, home
             offices, compact setups.</span>
         </li>
+        </ul>
         <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]0.jpeg" class="rtl card2 img_in-colms2"
             alt="Standard Computer Desk" width="100px">
     </details>
-    <div class="spacer"></div>
-    <details tabindex="0" id="800" class="selection half_size card2" style="display: inline;">
+    </li>
+    <li><div class="spacer"></div></li>
+    <li>
+    <details tabindex="0" id="800" class="selection half_size card2">
         <summary class="sub_sub_title">L-Shaped Desk:</summary>
         <div class="spacer"></div>
+        <ul>
         <li>
             <span tabindex="0" class="selection_2">These desks have an L-shaped configuration, providing more surface
             area for work. They often come with additional storage options.</span>
@@ -208,13 +218,17 @@ Remember that the knowledge and skills required for each level can vary, and ind
             <span tabindex="0" class="selection_2">Suitable for: Home offices, professionals needing more workspace,
             multitasking.</span>
         </li>
+        </ul>
         <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]1.jpeg" class="rtl card2 img_in-colms2"
             alt="Standard Computer Desk" width="100px">
     </details>
-    <div class="spacer"></div>
-    <details tabindex="0" id="700" class="selection half_size card2" style="display: inline;">
+    </li>
+    <li><div class="spacer"></div></li>
+    <li>
+    <details tabindex="0" id="700" class="selection half_size card2">
         <summary class="sub_sub_title">U-Shaped Desk:</summary>
         <div class="spacer"></div>
+        <ul>
         <li>
             <span tabindex="0" class="selection_2">Offering even more surface area than L-shaped desks, U-shaped desks
             provide ample space for various tasks. They often come with built-in storage and shelving.</span>
@@ -223,13 +237,17 @@ Remember that the knowledge and skills required for each level can vary, and ind
             <span tabindex="0" class="selection_2">Suitable for: Executives, professionals with extensive workspace
             needs, home offices.</span>
         </li>
+        </ul>
         <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]2.jpeg" class="rtl card2 img_in-colms2"
             alt="Standard Computer Desk" width="100px">
     </details>
-    <div class="spacer"></div>
-    <details tabindex="0" id="600" class="selection half_size card2" style="display: inline;">
+    </li>
+    <li><div class="spacer"></div></li>
+    <li>
+    <details tabindex="0" id="600" class="selection half_size card2">
         <summary class="sub_sub_title">Gaming Desk:</summary>
         <div class="spacer"></div>
+        <ul>
         <li>
             <span tabindex="0" class="selection_2">Designed with gamers in mind, these desks often have features like
             cable management, built-in headphone stands, cup holders, and RGB lighting.</span>
@@ -238,13 +256,17 @@ Remember that the knowledge and skills required for each level can vary, and ind
             <span tabindex="0" class="selection_2">Suitable for: Gamers, content creators, those with elaborate computer
             setups.</span>
         </li>
+        </ul>
         <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]3.jpeg" class="rtl card2 img_in-colms2"
             alt="Standard Computer Desk" width="100px">
     </details>
-    <div class="spacer"></div>
-    <details tabindex="0" id="500" class="selection half_size card2" style="display: inline;">
+    </li>
+    <li><div class="spacer"></div></li>
+    <li>
+    <details tabindex="0" id="500" class="selection half_size card2">
         <summary class="sub_sub_title">Standing Desk:</summary>
         <div class="spacer"></div>
+        <ul>
         <li>
             <span tabindex="0" class="selection_2">Also known as sit-stand desks, these desks allow you to alternate
             between sitting and standing while working. They can be manually or electronically adjustable.</span>
@@ -253,13 +275,17 @@ Remember that the knowledge and skills required for each level can vary, and ind
             <span tabindex="0" class="selection_2">Suitable for: Individuals concerned about ergonomics, those who want
             to reduce sedentary time.</span>
         </li>
+        </ul>
         <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]4.jpeg" class="rtl card2 img_in-colms2"
             alt="Standard Computer Desk" width="100px">
     </details>
-    <div class="spacer"></div>
-    <details tabindex="0" id="400" class="selection half_size card2" style="display: inline;">
+    </li>
+    <li><div class="spacer"></div></li>
+    <li>
+    <details tabindex="0" id="400" class="selection half_size card2">
         <summary class="sub_sub_title">Executive Desk:</summary>
         <div class="spacer"></div>
+        <ul>
         <li>
             <span tabindex="0" class="selection_2">Usually large and sophisticated, executive desks are designed for
             professionals and often include ample storage, ornate designs, and high-quality materials.</span>
@@ -268,13 +294,17 @@ Remember that the knowledge and skills required for each level can vary, and ind
             <span tabindex="0" class="selection_2">Suitable for: Corporate executives, professionals seeking a luxurious
             workspace.</span>
         </li>
+        </ul>
         <img src="https://latinospc.com/images/artificialintelligence/[4][1]/cyber[4][1]1.jpeg" class="rtl card2 img_in-colms2"
             alt="Standard Computer Desk" width="100px">
     </details>
-    <div class="spacer"></div>
-    <details tabindex="0" id="300" class="selection half_size card2" style="display: inline;">
+    </li>
+    <li><div class="spacer"></div></li>
+    <li>
+    <details tabindex="0" id="300" class="selection half_size card2">
         <summary class="sub_sub_title">Floating Wall Desk:</summary>
         <div class="spacer"></div>
+        <ul>
         <li>
             <span tabindex="0" class="selection_2">Mounted directly on the wall, these desks save floor space and can be
             folded up when not in use.</span>
@@ -283,13 +313,17 @@ Remember that the knowledge and skills required for each level can vary, and ind
             <span tabindex="0" class="selection_2">Suitable for: Small spaces, minimalist aesthetics, occasional
             computer use.</span>
         </li>
+        </ul>
         <img src="https://latinospc.com/images/artificialintelligence/[4][1]/cyber[4][1]2.jpeg" class="rtl card2 img_in-colms2"
             alt="Standard Computer Desk" width="100px">
     </details>
-    <div class="spacer"></div>
-    <details tabindex="0" id="200" class="selection half_size card2" style="display: inline;">
+    </li>
+    <li><div class="spacer"></div></li>
+    <li>
+    <details tabindex="0" id="200" class="selection half_size card2">
         <summary class="sub_sub_title">Convertible Desk:</summary>
         <div class="spacer"></div>
+        <ul>
         <li>
             <span tabindex="0" class="selection_2">These desks can transform into different configurations, such as a
             regular desk, a standing desk, or even a dining table.</span>
@@ -298,13 +332,17 @@ Remember that the knowledge and skills required for each level can vary, and ind
             <span tabindex="0" class="selection_2">Suitable for: Those with multifunctional needs, people with limited
             space.</span>
         </li>
+        </ul>
         <img src="https://latinospc.com/images/artificialintelligence/[4][1]/cyber[4][1]0.jpeg" class="rtl card2 img_in-colms2"
             alt="Standard Computer Desk" width="100px">
     </details>
-    <div class="spacer"></div>
-    <details tabindex="0" id="100" class="selection half_size card2" style="display: inline;">
+    </li>
+    <li><div class="spacer"></div></li>
+    <li>
+    <details tabindex="0" id="100" class="selection half_size card2">
         <summary class="sub_sub_title card2">Minimalist Desk:</summary>
         <div class="spacer"></div>
+        <ul>
         <li>
             <span tabindex="0" class="selection_2">Designed with simplicity in mind, these desks have clean lines and a
             clutter-free design.</span>
@@ -313,9 +351,11 @@ Remember that the knowledge and skills required for each level can vary, and ind
             <span tabindex="0" class="selection_2">Suitable for: Minimalists, those who prefer a simple and uncluttered
             workspace.</span>
         </li>
+        </ul>
         <img src="https://latinospc.com/images/artificialintelligence/[4][4]/cyber[4][4]2.jpeg" class="rtl card2 img_in-colms2"
             alt="Standard Computer Desk" width="100px">
     </details>
+    </li>
 </ul>
 </section>
 

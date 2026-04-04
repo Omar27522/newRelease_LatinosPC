@@ -205,11 +205,11 @@ We are located in the city of Pomona, and will travel to LA county, SB county, R
 <p>We're dedicated to simplifying technology for your technological needs. Our specialization provides tailored computer services for home users, and ensure a seamless experience. Our remote support is designed to be user-friendly, making tech issues a thing of the past. Additionally, we excel in fostering strong business relationships and driving advancements in technology solutions, making your journey with technology smooth and accessible. In other words we care!</p>
 
 <h2>Company History</h2>
-LAtinosPC founded in 2021, initially as a sole proprietor the site has been live since 2017. The founder Omar has gone through a lot of changes in the business. And the goal for this company is simple, reachable and profitable.
+<p>LAtinosPC founded in 2021, initially as a sole proprietor the site has been live since 2017. The founder Omar has gone through a lot of changes in the business. And the goal for this company is simple, reachable and profitable.</p>
 
 
-<ul>
 <h3>1.1 Objectives</h3>
+<ul>
     <li>Our main objective is to provide the best informative service available to the community.</li>
     <li>To generate substantial market share so that LAtinosPC is a common name.</li>
     <li>Constant growth in sales from start up through the years.</li>

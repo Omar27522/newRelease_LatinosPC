@@ -6,13 +6,13 @@
 
 :root {
   /* Colors */
-  --menu-bg: #ededed;
-  --text-color: #232323;
-  --text-hover: tomato;
-  --hamburger-color: #cdcdcd;
-  --cross-color: #232323;
-  --accent-color: goldenrod;
-  --button-color:white;
+  --menu-bg: #f8f9fa; /* Lighter for better contrast */
+  --text-color: #1a1a1a;
+  --text-hover: #bd2130; /* Darker red for contrast */
+  --hamburger-color: #495057; /* Darker for accessibility */
+  --cross-color: #1a1a1a;
+  --accent-color: #8f6800; /* Darker golden for contrast */
+  --button-color: #ffffff;
 
   /* Sizes */
   --hamburger-width: 28px;
@@ -23,52 +23,90 @@
 }
 
 nav {
-  margin-bottom: 0;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin: 1rem 0;
   width: 100%;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-nav button a {
-  color: var(--button-color);
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 1.5rem;
+  background-color: var(--bannerAndFooter-bg);
+  border-radius: 12px;
 }
 
 nav button {
   background-color: var(--primary-dark);
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: x-large;
-  padding: 0 2% 0 2%;
-  @media (max-width: 768px) {
-      font-size: 0.8em;
-  }
+  font-size: 1.1rem;
+  padding: 0;
+  transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.2s ease;
+  margin: 0; /* Let gap handle spacing */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 nav button:hover {
-  background-color: var(--light-text);
+  background-color: var(--text-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+nav button:active {
+  transform: translateY(0);
+}
+
+nav button a {
+  color: var(--button-color);
+  text-decoration: none;
+  display: block;
+  padding: 12px 20px; /* Ensures minimum touch target size (~44-48px height) */
+}
+
+nav button:hover {
+  background-color: var(--text-hover);
 }
 
 nav .navButtons {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Changed from center to follow nav alignment */
+  gap: 10px;
 }
 
 body.menu-open {
   overflow: hidden;
 }
+
 #menuToggle {
   display: inline-block;
-  position: relative; /* Positioned relative for proper stacking context */
-  z-index: 20; /* Increased to be above the menu */
+  position: relative;
+  z-index: 20;
   user-select: none;
   background-color: var(--primary-dark);
   color: var(--button-color);
-  padding: 0.5rem;
+  padding: 14px;
+  border-radius: 8px;
+  min-width: 44px;
+  min-height: 44px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, box-shadow 0.2s ease;
 }
 
+#menuToggle:hover {
+  background-color: var(--text-hover);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#menuToggle:active {
+  background-color: var(--text-hover);
+}
+.sticky{
+  align-items: center;
+  justify-content: center;
+
+}
 #menuToggle a {
   text-decoration: none;
   color: var(--text-color);
@@ -115,8 +153,8 @@ body.menu-open {
   background: var(--hamburger-color);
   border-radius: 2px;
   position: relative;
-  z-index: 19; /* Keep below the checkbox but above other elements */
-  transform-origin: 6px 1px;
+  z-index: 19;
+  transform-origin: 4px 0px; /* Adjusted from 6px for better centering */
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
               background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
               opacity 0.55s ease;
@@ -177,8 +215,13 @@ body.menu-open {
   /* Ensure menu is off-screen when closed */
   pointer-events: none;
   overflow-y: auto;
-  overscroll-behavior: contain; /* optional: prevent background scroll */
-  scrollbar-gutter: stable;     /* optional: prevent layout shift */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+/* Chrome, Safari and Opera */
+#menu::-webkit-scrollbar {
+  display: none;
 }
 
 /* Open menu styling */
@@ -189,12 +232,12 @@ body.menu-open {
 
 /* Menu items */
 #menu li {
-  padding: 10px 0;
+  padding: 12px 0;
 }
 
 #menu a {
   display: block;
-  padding: 10px 15px;
+  padding: 15px 20px; /* Increased for better touch target size */
   border-radius: 5px;
   transition: background-color 0.3s ease;
   text-align: center;

@@ -57,12 +57,13 @@
             crossroads of trade and culture, making it a natural hub for the spread of new ideas—including the rapidly growing Christian movement. Because the early followers of Jesus had
             already reached Damascus, the city became a strategic target for Saul, who saw the Christian message as a dangerous threat to Judaism as he understood it.
             His explicit mission on the road to Damascus was to arrest followers of Christ and bring them back to Jerusalem for trial.</p>
-    <ul><h3>Saul’s travel to Damascus wasn’t just physical—it symbolized:</h3>
+    <h3>Saul’s travel to Damascus wasn’t just physical—it symbolized:</h3>
+    <ul>
         <li><strong>Expansion of persecution:</strong> He wasn’t content to stop Christians in Jerusalem; he wanted to stop the movement wherever it spread.</li>
         <li><strong>Determination and authority:</strong> He carried letters from the high priest, giving him legal power to arrest believers in Damascus.</li>
         <li><strong>A collision course with grace:</strong> The journey represents Saul’s attempt to suppress the gospel, only to be overtaken by the very Christ he opposed.</li>
-        <h3> The journey flips from <i>mission of destruction</i> to <b>mission of calling</b>.</h3>
     </ul>
+    <h3> The journey flips from <i>mission of destruction</i> to <b>mission of calling</b>.</h3>
 </div>
 </section>
 

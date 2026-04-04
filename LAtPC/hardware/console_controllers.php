@@ -661,14 +661,14 @@
                 </div>
             </h3>
             <h2>
-                As <a href="https://www.devteam.space/blog/gaming-technology/" style="color: red; font-size: xx-large;"
+                As <a href="https://www.devteam.space/blog/gaming-technology/" style="color: #c82333; font-size: 1.5rem;"
                     class="textlink">gaming technology</a> continues to evolve, so too will the design and functionality of
                 controllers. Innovations like <a href="https://www.xeeltech.com/haptics-in-gaming/"
-                    style="color: green; font-size: xx-large;" class="textlink">advanced haptic feedback</a>, <a
-                    href="https://en.wikipedia.org/wiki/Pose_tracking" style="color: blue; font-size: xx-large;"
+                    style="color: #218838; font-size: 1.5rem;" class="textlink">advanced haptic feedback</a>, <a
+                    href="https://en.wikipedia.org/wiki/Pose_tracking" style="color: #0069d9; font-size: 1.5rem;"
                     class="textlink">motion tracking</a>, and even <a
                     href="https://en.wikipedia.org/wiki/Brain%E2%80%93computer_interface"
-                    style="color: yellow; font-size: xx-large;" class="textlink">brain-computer interfaces</a> hint at exciting
+                    style="color: #856404; font-size: 1.5rem;" class="textlink">brain-computer interfaces</a> hint at exciting
                 possibilities for the future of gaming interaction. The rich history of controllers showcases how these input
                 devices have shaped and been shaped by the evolution of video games.
             </h2>

@@ -1,30 +1,48 @@
 :root {
-  --primary-color: #0275d8;
-  --primary-dark: rgba(13, 65, 100);
+  --primary-color: #0056b3; /* Darkened for better contrast */
+  --primary-dark: #082d45; /* Standardized to hex */
 
-  --secondary-color: #5bce8b91;
-  --secondary-dark: #449d44;
+  --secondary-color: #218838;
+  --secondary-dark: #155724; /* Darker green for AA contrast */
 
-  --text-color: #333;
-  --light-text: #657477;
+  --text-color: #1a1e21;
+  --light-text: #343a40;
 
-  --dialog-text-highlight: #bcd9df;
-  --dialog-background: #0a0c0ca7;
+  --dialog-text-highlight: #dee2e6;
+  --dialog-background: rgba(0, 0, 0, 0.9);
 
-  --background: #f8f9fa;
-  --card-bg: whitesmoke;
-  --border-radius: 10px;
-  --box-shadow: 0 4px 12px #00000153;
-  --transition: all 0.3s ease;
-  --link-bg: rgba(13, 65, 100, 0.3);
+  --background: #ffffff;
+  --card-bg: #f8f9fa;
+  --border-radius: 12px;
+  --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  --transition: all 0.25s ease-in-out;
+  --link-bg: rgba(0, 86, 179, 0.1);
 
-  --bannerAndFooter-bg: #6494ed23;
+  --bannerAndFooter-bg: #daedfb; /* Slightly darker blue for contrast */
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+strong {
+  color: var(--text-color);
+  font-weight: 800;
+}
+
+/* Accessibility: visually hidden but available to screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 body {
@@ -451,9 +469,12 @@ color: inherit;
   }
 
   .bread-crumbs {
-        font-size: .7rem;
-        gap: 0;
+        font-size: .85rem; /* Increased slightly for mobile */
+        gap: 12px; /* Restored healthy gap */
+    }
 
+    .crumb-link {
+        padding: 12px 15px; /* Increased touch target size */
     }
 
     .crumbs {

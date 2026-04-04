@@ -954,8 +954,8 @@ function teachings()  {
                 <a href="?gospels#^" class="crumb-link">🌟 All Gospels</a>
                 <a href="?Matthew#^" class="crumb-link">📖 Matthew</a>
                 <div class="dropdown crumb-link">
-                    <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
-                    <label for="dropdown-toggle" class="dropdown-label">💫 <b>John</b></label>
+                    <input type="checkbox" id="dropdown-toggle-john" class="dropdown-toggle">
+                    <label for="dropdown-toggle-john" class="dropdown-label">💫 <b>John</b></label>
                     <div class="dropdown-content">
                         <a href="#Unique Sermons and Discourses">Unique Sermons and Discourses</a>
                         <a href="#The Word Made Flesh">The Word Made Flesh</a>
@@ -1984,8 +1984,8 @@ function teachings()  {
                 <a href="?Matthew#^" class="crumb-link">📖 Matthew</a>
                 <a href="?John#^" class="crumb-link">💫 John</a>
                 <div class="dropdown crumb-link">
-                    <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
-                    <label for="dropdown-toggle" class="dropdown-label">❤️ <b>Luke</b></label>
+                    <input type="checkbox" id="dropdown-toggle-luke" class="dropdown-toggle">
+                    <label for="dropdown-toggle-luke" class="dropdown-label">❤️ <b>Luke</b></label>
                     <div class="dropdown-content">
                         <a href="#Parables">Unique Parables</a>
                         <a href="#Distinctive Approach">Distinctive Approach</a>

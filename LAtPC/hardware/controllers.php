@@ -134,7 +134,7 @@ These are just a few examples of the many industries that rely on controllers to
 <article class="article fullbar">
     <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ -->
 <div class="spacer_shape">
-    <h2 class="modern_list" style="color: azure;">Let&#39;s take a detailed look at how controllers are used in the energy and utilities industry, specifically in a power plant.</h2>
+    <h2 class="modern_list" style="color: var(--primary-color);">Let&#39;s take a detailed look at how controllers are used in the energy and utilities industry, specifically in a power plant.</h2>
         <p class="segment">Power plants generate electricity, and controllers play a critical role in managing various processes to ensure efficient and safe operation.</p>
         <div class="spacer"></div>
 <p class="modern_list ml2 center">Example:</p>
@@ -193,7 +193,7 @@ These are just a few examples of the many industries that rely on controllers to
 </ul>
 <div class="spacer"></div>
 <h2>In the energy and utilities industry, controllers help optimize power generation, improve efficiency, and enhance safety.</h2>
-<p class="segment modern_list" style="color: azure;">By continuously monitoring and adjusting various processes, controllers ensure that power plants can reliably generate electricity to meet the demands of homes, businesses, and industries while adhering to strict safety and environmental standards.</p>
+<p class="segment modern_list" style="color: var(--primary-color);">By continuously monitoring and adjusting various processes, controllers ensure that power plants can reliably generate electricity to meet the demands of homes, businesses, and industries while adhering to strict safety and environmental standards.</p>
 </div>
 <table style="table-layout:fixed;width:468pt">
     <colgroup><col /><col /></colgroup><tbody>

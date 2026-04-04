@@ -54,30 +54,30 @@ function content_services_remoteSupport(){
     </p>
     <p style="background: rgb(204, 227, 200);">2. Remote support offers several advantages:</p>
     <p>
-        <ul>
-            <ol class="remote"><strong class="text">Time and Cost-Efficiency:</strong> It eliminates the need for
-                on-site visits, saving both time and money.</ol><br />
+    <ul>
+        <li class="remote"><strong class="text">Time and Cost-Efficiency:</strong> It eliminates the need for
+            on-site visits, saving both time and money.</li>
 
-            <ol class="remote"><strong class="text">Convenience:</strong> You can get help from the comfort of your home
-                or office, without having to transport your computer to a service center.</ol><br />
+        <li class="remote"><strong class="text">Convenience:</strong> You can get help from the comfort of your home
+            or office, without having to transport your computer to a service center.</li>
 
-            <ol class="remote"><strong class="text">Quick Issue Resolution:</strong> Technicians can often resolve
-                problems faster as they have direct access to your system.</ol>
-        </ul>
+        <li class="remote"><strong class="text">Quick Issue Resolution:</strong> Technicians can often resolve
+            problems faster as they have direct access to your system.</li>
+    </ul>
     </p>
     <p style="background: rgb(204, 227, 200);">3. Security and Privacy</p>
 
     <p><span class="center">While remote support is a powerful tool, it's essential to consider security and
             privacy:</span>
         <ul>
-            <ol class="remote"><span class="text">Always Choose Trusted Providers:</span> Ensure that you only grant
-                remote access to technicians or support teams from reputable and trusted companies.</ol>
-            <br /><br />
-            <ol class="remote"><span class="text">Verify Credentials:</span> Before allowing remote access, verify the
-                identity of the technician and their credentials.</ol>
-            <br /><br />
-            <ol class="remote"><span class="text">Monitor the Session:</span> Stay vigilant during the remote session
-                and close it if you feel uncomfortable.</ol>
+            <li class="remote"><span class="text">Always Choose Trusted Providers:</span> Ensure that you only grant
+                remote access to technicians or support teams from reputable and trusted companies.</li>
+            
+            <li class="remote"><span class="text">Verify Credentials:</span> Before allowing remote access, verify the
+                identity of the technician and their credentials.</li>
+            
+            <li class="remote"><span class="text">Monitor the Session:</span> Stay vigilant during the remote session
+                and close it if you feel uncomfortable.</li>
         </ul>
     </p>
     <p style="background: rgb(204, 227, 200);">4. Preparing for Remote Support</p>
@@ -85,13 +85,14 @@ function content_services_remoteSupport(){
         To make remote support efficient, you can take the following steps:</p>
     <p>
         <ul>
-            <ol class="remote"><span class="text">Backup Your Data:</span> Always back up critical data before allowing
-                remote access to your computer.</ol>
-            <br /><br />
-            <ol class="remote"><span class="text">Clear Personal Information:</span> Close sensitive documents or
-                applications and clear your browser history to protect your privacy.</ol><br /><br />
-            <ol class="remote"><span class="text">Follow Instructions:</span> Listen to the technician's guidance and
-                follow their instructions carefully.</ol>
+            <li class="remote"><span class="text">Backup Your Data:</span> Always back up critical data before allowing
+                remote access to your computer.</li>
+            
+            <li class="remote"><span class="text">Clear Personal Information:</span> Close sensitive documents or
+                applications and clear your browser history to protect your privacy.</li>
+            
+            <li class="remote"><span class="text">Follow Instructions:</span> Listen to the technician's guidance and
+                follow their instructions carefully.</li>
         </ul>
     </p>
     <p style="background: rgb(204, 227, 200);">5. Communication is Key</p>
@@ -99,14 +100,14 @@ function content_services_remoteSupport(){
     <p>Effective communication is crucial during remote support sessions:</p>
     <p>
         <ul>
-            <ol class="remote"><strong class="text">Describe the Issue:</strong> Provide a clear and concise description
-                of the problem you're experiencing.</ol><br /><br />
+            <li class="remote"><strong class="text">Describe the Issue:</strong> Provide a clear and concise description
+                of the problem you're experiencing.</li>
 
-            <ol class="remote"><strong class="text">Ask Questions:</strong> Don't hesitate to ask questions if you don't
-                understand something.</ol><br /><br />
+            <li class="remote"><strong class="text">Ask Questions:</strong> Don't hesitate to ask questions if you don't
+                understand something.</li>
 
-            <ol class="remote"><strong class="text">Be Patient:</strong> Technical problem-solving may take some time,
-                so exercise patience during the session.</ol>
+            <li class="remote"><strong class="text">Be Patient:</strong> Technical problem-solving may take some time,
+                so exercise patience during the session.</li>
         </ul>
     </p>
     <p style="background: rgb(204, 227, 200);">6. Ending the Session</p>
@@ -114,11 +115,11 @@ function content_services_remoteSupport(){
     <p>When the remote support session is complete:</p>
     <p>
         <ul>
-            <ol class="remote"><strong class="text">Terminate the Connection:</strong> Ensure that the technician has
-                logged out and can no longer access your computer.</ol>
-            <br /><br />
-            <ol class="remote"><strong class="text">Request Documentation:</strong> Ask for a summary of the work
-                performed and any changes made to your system.</ol>
+            <li class="remote"><strong class="text">Terminate the Connection:</strong> Ensure that the technician has
+                logged out and can no longer access your computer.</li>
+            
+            <li class="remote"><strong class="text">Request Documentation:</strong> Ask for a summary of the work
+                performed and any changes made to your system.</li>
         </ul>
     </p>
     <p class="spacer_shape">

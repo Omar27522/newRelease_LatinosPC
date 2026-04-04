@@ -139,9 +139,9 @@
             <li tabindex="0" class="selection card2"><strong>Aesthetics:</strong>
                 <span tabindex="0" class="selection_2 card2">If aesthetics are important, choose a mat that complements your workspace.</span>
             </li>
-            <p class="sub_sub_title card2 selection spacer_shape" tabindex="0">
+            <li><p class="sub_sub_title card2 selection spacer_shape" tabindex="0">
             Remember that user reviews and recommendations can also provide valuable insights into the effectiveness and durability of specific anti-slip mats.
-            </p>
+            </p></li>
         </ul>
     </div>
     <br /><br />

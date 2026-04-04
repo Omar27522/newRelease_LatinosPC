@@ -15,13 +15,13 @@ article .card2 {
 }
 
 .card2 strong {
-    font-weight: bold;
-    color: #1e90ff;
+    font-weight: 800;
+    color: var(--primary-dark);
 }
 
 .card2 em {
     font-style: italic;
-    color: #ff7f50;
+    color: var(--secondary-dark);
 }
 
 .card2 em:hover {
@@ -32,8 +32,8 @@ article .center {
     text-align: center;
     display: inline-block;
     border-radius: 80% 40% 0% 20% / 20% 50% 40% 55%;
-    background-color: #f5b199;
-    color: rgb(13, 14, 15);
+    background-color: #d1ada1; /* Darkened */
+    color: #1a1e21;
     margin-bottom: 10px;
 }
 
@@ -47,11 +47,11 @@ fieldset {
 }
 
 .container fieldset {
-    color: rgba(0, 0, 0, 0.09);
+    color: var(--text-color); /* Fixed transparency */
 }
 
 .arvr {
-    color: rgba(0, 0, 0, 0.09);
+    color: var(--text-color); /* Fixed transparency */
 }
 
 fieldset p {
@@ -215,9 +215,9 @@ fieldset li:focus {
     background-image: url("../images/hardware/hw/headsets/paper.webp");
     background-size: cover;
     border-radius: 10px;
-    color: azure;
-    box-shadow: #000000 0 0 10px;
-    text-shadow: 1px 1px 2px rebeccapurple;
+    color: #1a1e21; /* Darkened from azure */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
 }
 
 .linky {

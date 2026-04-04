@@ -10,7 +10,8 @@ article .center {
 
 .container .card2 .center {
     border-radius: 20px;
-    background-color: #f6cdbe;
+    background-color: #d1b4a9; /* Darkened for better contrast */
+    color: #1a1e21;
 }
 
 article .card2 {
@@ -22,13 +23,13 @@ article .card2 {
 }
 
 .card2 strong {
-    font-weight: bold;
-    color: #1e90ff;
+    font-weight: 800;
+    color: var(--primary-dark);
 }
 
 .card2 em {
     font-style: italic;
-    color: #ff7f50;
+    color: var(--secondary-dark);
 }
 
 article details {

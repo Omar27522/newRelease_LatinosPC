@@ -7,8 +7,8 @@
 <h2 class="sub_title">History and Evolution of Chairs:</h2>
 <p class="sub_title spacer_shape">Chairs have a rich history that spans thousands of years. Here's a brief overview of their evolution:</p>
 
-<ul class="element">
 <div class="colms2 space">
+<ul class="element">
     <li>
         <strong>Ancient Times:</strong>
         <p tabindex="0">Early chairs were simple stools or benches made from materials like stone, wood, and animal hides.</p>
@@ -18,9 +18,11 @@
         <p tabindex="0">In ancient Egypt, chairs were symbols of status and were often adorned with intricate carvings.</p>
         <p tabindex="0">Greek chairs were more functional and included designs like the klismos chair, known for its curved legs and backrest.</p>
     </li>
+</ul>
 </div>
 
 <div class="colms2 space">
+<ul class="element">
     <li><strong>Roman Empire:</strong>
         <p tabindex="0">Romans used folding chairs made of wood or metal, which were practical for both indoor and outdoor use.</p>
         <p tabindex="0">These were often used in various social and official settings.</p>
@@ -30,9 +32,11 @@
         <p tabindex="0">During the Middle Ages, chairs became more common among the general population.</p>
         <p tabindex="0">In the Renaissance, chairs became more ornate and artistic, with elaborate carvings and upholstery.</p>
     </li>
+</ul>
 </div>
 
 <div class="colms2 space">
+<ul class="element">
     <li><Strong>18th and 19th Centuries:</Strong>
         <p tabindex="0">The 18th century saw the development of specialized chairs like the Windsor chair and the Chippendale chair.</p>
         <p tabindex="0">The 19th century brought advancements in mass production techniques, making chairs more accessible.</p>
@@ -41,8 +45,10 @@
         <p tabindex="0">Modernist movements like Art Nouveau and Art Deco influenced chair design in the early 20th century.</p>
         <p tabindex="0">In the mid-20th century, iconic designs like the Eames Lounge Chair and the Barcelona Chair emerged, focusing on aesthetics and comfort.</p>
     </li>
+</ul>
 </div>
 
+<ul class="element">
     <li><strong>Contemporary Times:</strong>
         <p tabindex="0">Today, chairs come in a vast array of styles, materials, and designs to cater to different preferences, ergonomic needs, and functions.</p>
     </li>

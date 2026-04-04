@@ -15,19 +15,19 @@
             .card2,
             .spacer_shape {
                 /* CSS Variables applied to specific elements */
-                --primary-color: #2c3e50;
-                --secondary-color: #3498db;
-                --accent-color: #e74c3c;
-                --light-bg: #bac3cc;
-                --dark-bg: #343a40;
-                --text-color: #333;
-                --light-text: #305a84;
+                --primary-color: #002d4d;
+                --secondary-color: var(--primary-color);
+                --accent-color: #c82333;
+                --light-bg: var(--bannerAndFooter-bg);
+                --dark-bg: #1a1e21;
+                --text-color: #1a1e21;
+                --light-text: #343a40;
                 --intel-blue: #0071c5;
                 --amd-red: #ED1C24;
                 --qualcomm-color: #3253DC;
                 --samsung-color: #1428A0;
-                --apple-color: #555555;
-                --huawei-color: #CF0A2C;
+                --apple-color: #444444;
+                --huawei-color: #bd0a2c;
                 --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
                 --transition: all 0.3s ease;
 
@@ -56,13 +56,13 @@
             }
 
             .hero3 {
-                background-color: #e8f4ea !important;
-                /* Replacing DarkSeaGreen with a more modern shade */
+                background-color: #e2f1e4 !important; /* Slightly darker for contrast */
+                border-left: 5px solid #218838;
             }
 
             .hero4 {
-                background-color: #f9f5eb !important;
-                /* Replacing wheat with a more modern shade */
+                background-color: #f7efdd !important; /* Darkened wheat for contrast */
+                border-left: 5px solid #8f6800;
             }
 
             /* Article sections */
@@ -309,8 +309,8 @@
             /* Remove inline styles */
             [style*="font-size: xx-large;color:red;"] {
                 font-size: 1.8rem !important;
-                color: var(--accent-color) !important;
-                font-weight: 700;
+                color: #bd2130 !important; /* Accessible red */
+                font-weight: 800;
                 margin-top: 30px;
                 margin-bottom: 15px;
             }

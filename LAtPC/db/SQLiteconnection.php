@@ -123,13 +123,15 @@ try {
 
 
     <!-- Simple Search Form -->
-    <form method="get" action="" style="max-width: 1200px; margin: 10px auto; display: flex; gap: 8px;">
-        <input type="text" name="q"
+    <form method="get" action="" style="max-width: 1200px; margin: 10px auto; display: flex; gap: 12px; align-items: stretch;">
+        <label for="search-input" class="sr-only" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;">Search the database</label>
+        <input type="text" name="q" id="search-input"
+            aria-label="Search content, name, section, or page_id"
             value="<?= isset($_GET['q']) ? htmlspecialchars($_GET['q'], ENT_QUOTES, 'UTF-8') : '' ?>"
-            placeholder="Search content, name, section, or page_id..."
-            style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 14px;" />
+            placeholder="Search content..."
+            style="flex: 1; padding: 12px 15px; border: 1px solid #ccc; border-radius: 6px; font-size: 16px;" />
         <button type="submit"
-            style="padding: 10px 16px; border: none; background: #357abd; color: #fff; border-radius: 6px; cursor: pointer;">Search</button>
+            style="padding: 12px 20px; border: none; background: #357abd; color: #fff; border-radius: 6px; cursor: pointer; font-size: 16px; font-weight: bold;">Search</button>
     </form>
 
     <hr style="max-width: 1200px; margin: 20px auto; border: 0; border-top: 1px solid #eee;">
@@ -138,37 +140,37 @@ try {
     <div
         style="max-width: 1200px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
         <h2 style="margin-top: 0; color: #333;">
-            <?= $editData ? 'Edit Entry (ID: ' . $editData['id'] -1 . ')' : 'Add New Entry' ?></h2>
+            <?= $editData ? 'Edit Entry (ID: ' . $editData['id'] - 1 . ')' : 'Add New Entry' ?></h2>
         <form method="post" action="">
             <?php if ($editData): ?>
             <input type="hidden" name="id" value="<?= htmlspecialchars($editData['id']) ?>">
             <?php endif; ?>
             <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin-bottom: 15px;">
                 <div>
-                    <label style="display: block; margin-bottom: 5px; font-weight: bold; color: #555;">Page ID</label>
-                    <input type="text" name="page_id" list="page_id_list" required placeholder="e.g., home"
+                    <label for="page_id_input" style="display: block; margin-bottom: 5px; font-weight: bold; color: #555;">Page ID</label>
+                    <input type="text" name="page_id" id="page_id_input" list="page_id_list" required placeholder="e.g., home"
                         value="<?= $editData ? htmlspecialchars($editData['page_id']) : '' ?>"
                         style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
                     <datalist id="page_id_list">
                         <?php foreach ($existingPageIds as $val): ?>
                         <option value="<?= htmlspecialchars($val) ?>">
-                            <?php endforeach; ?>
+                        <?php endforeach; ?>
                     </datalist>
                 </div>
                 <div>
-                    <label style="display: block; margin-bottom: 5px; font-weight: bold; color: #555;">Name</label>
-                    <input type="text" name="name" list="name_list" required placeholder="e.g., heading"
+                    <label for="name_input" style="display: block; margin-bottom: 5px; font-weight: bold; color: #555;">Name</label>
+                    <input type="text" name="name" id="name_input" list="name_list" required placeholder="e.g., heading"
                         value="<?= $editData ? htmlspecialchars($editData['name']) : '' ?>"
                         style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
                     <datalist id="name_list">
                         <?php foreach ($existingNames as $val): ?>
                         <option value="<?= htmlspecialchars($val) ?>">
-                            <?php endforeach; ?>
+                        <?php endforeach; ?>
                     </datalist>
                 </div>
                 <div>
-                    <label style="display: block; margin-bottom: 5px; font-weight: bold; color: #555;">Section</label>
-                    <input type="text" name="section" list="section_list" required placeholder="e.g., about"
+                    <label for="section_input" style="display: block; margin-bottom: 5px; font-weight: bold; color: #555;">Section</label>
+                    <input type="text" name="section" id="section_input" list="section_list" required placeholder="e.g., about"
                         value="<?= $editData ? htmlspecialchars($editData['section']) : '' ?>"
                         style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
                     <datalist id="section_list">
@@ -179,8 +181,8 @@ try {
                 </div>
             </div>
             <div style="margin-bottom: 15px;">
-                <label style="display: block; margin-bottom: 5px; font-weight: bold; color: #555;">Content</label>
-                <textarea name="content" required placeholder="Enter content here..." rows="4"
+                <label for="content_textarea" style="display: block; margin-bottom: 5px; font-weight: bold; color: #555;">Content</label>
+                <textarea name="content" id="content_textarea" required placeholder="Enter content here..." rows="4"
                     style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit;"><?= $editData ? htmlspecialchars($editData['content']) : '' ?></textarea>
             </div>
             <?php if ($editData): ?>
