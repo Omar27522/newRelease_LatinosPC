@@ -89,9 +89,9 @@ global $content;
             </div>
         </div>
 
-        <a href="#" class="cta-button"><?= $securityButton = $content[39]['content'];?></a>
-        <a href="#" class="cta-button"><?= $securityButton2 = $content[40]['content'];?></a>
-        <a href="#" class="cta-button"><?= $securityButton3 = $content[41]['content'];?></a>
+        <a href="/seguridad/mejores_practicas" class="cta-button"><?= $securityButton = $content[39]['content'];?></a>
+        <a href="/seguridad/respaldos" class="cta-button"><?= $securityButton2 = $content[40]['content'];?></a>
+        <a href="/seguridad/clave" class="cta-button"><?= $securityButton3 = $content[41]['content'];?></a>
         <aside>
             <hr>
             <div class="multi-link-container">

@@ -260,7 +260,13 @@
                 "/JesusChrist/parables" => "Jesucristo/parabolas",
                 "/JesusChrist/sermons" => "Jesucristo/sermones",
                 "/JesusChrist/apostles" => "Jesucristo/apostoles",
-                "/JesusChrist/teachings" => "Jesucristo/enseñanzas"
+                "/JesusChrist/teachings" => "Jesucristo/enseñanzas",
+                "/about" => "acerca",
+                "/offered_security" => "seguridad",
+                "/offered_security/best_practices" => "seguridad/mejores_practicas",
+                "/offered_security/passwords" => "seguridad/clave",
+                "/offered_security/backups" => "seguridad/respaldos",
+                "/offered_services" => "servicios",
             ];
             $var = isset($routes[$uri]) ? $routes[$uri] : $page->getDir()."español/";
             ?>
@@ -277,7 +283,13 @@
                 "/Jesucristo/parabolas" => "JesusChrist/parables",
                 "/Jesucristo/sermones" => "JesusChrist/sermons",
                 "/Jesucristo/apostoles" => "JesusChrist/apostoles",
-                "/Jesucristo/enseñanzas" => "JesusChrist/teachings"
+                "/Jesucristo/enseñanzas" => "JesusChrist/teachings",
+                "/acerca" => "about",
+                "/seguridad" => "offered_security",
+                "/seguridad/mejores_practicas" => "offered_security/best_practices",
+                "/seguridad/clave" => "offered_security/passwords",
+                "/seguridad/respaldos" => "offered_security/backups",
+                "/servicios" => "offered_services",
             ];
             $var = isset($routes[$uri]) ? $routes[$uri] : $page->getDir()."";
             ?>

@@ -52,4 +52,19 @@ function offered_services($sub_route){
 	}
 }
 
+function servicios($sub_route){
+	switch ($sub_route) {
+
+		case '':
+			$page = new Structure('../../', 'español', 'Servicios');
+			$keywords = 'reparación de computadoras Pomona, servicio de cómputo a domicilio, soporte técnico remoto, reparación de laptops, reparación de computadoras de escritorio, técnico en computación Los Ángeles, reparación de PC Inland Empire, TI para pequeñas empresas, desarrollo web, servicios de cómputo San Bernardino, reparación de computadoras Riverside, TI Orange County, reparación de computadoras a domicilio, configuración de redes, capacitación en computación, soluciones tecnológicas';
+			$description = 'LatinosPC ofrece servicios de reparación de computadoras a domicilio y de forma remota en Pomona, CA, atendiendo los condados de LA, San Bernardino, Riverside y Orange. Fundada en 2021, brinda soluciones de TI personalizadas para hogares y pequeñas empresas con un paquete de servicio de 90 días y garantía de satisfacción al 100%.';
+			include 'services/services.php';
+			break;
+		default:
+			show404();
+			break;
+	}
+}
+
 ?>

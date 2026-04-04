@@ -18,13 +18,28 @@ switch ($main_route) {
 		exit;
 		break;
 
+	case 'acerca':
+		acerca();
+		exit;
+		break;
+
 	case 'offered_services':
 		offered_services($sub_route);
 		exit;
 		break;
 
+	case 'servicios':
+		servicios($sub_route);
+		exit;
+		break;
+
 	case 'offered_security':
 		offered_security($sub_route);
+		exit;
+		break;
+
+	case 'seguridad':
+		seguridad_subninistrable($sub_route);
 		exit;
 		break;
 

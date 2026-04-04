@@ -33,4 +33,40 @@ function offered_security($sub_route){
 			break;
 	}
 }
+
+function seguridad_subninistrable($sub_route){
+		switch ($sub_route) {
+	case '':
+			$page = new Structure('../../', 'español', 'Seguridad');
+			$keywords = 'password security, strong passwords, password management, password manager, secure passwords, password best practices, password protection, password recovery, password reset, two-factor authentication, password vault, credential management, password tips, account security, password strength';
+			$description = 'Password security services and guidance in Pomona, CA. Learn to create strong passwords, use password managers, and protect your accounts. offered help with password setup, recovery, and implementing best practices for maximum security.';
+			include 'security/security.php';
+			break;
+
+		case 'mejores_practicas':
+			$page = new Structure('../../', 'español', 'Mejores Prácticas');
+			$keywords = 'password security, strong passwords, password management, password manager, secure passwords, password best practices, password protection, password recovery, password reset, two-factor authentication, password vault, credential management, password tips, account security, password strength';
+			$description = 'Password security services and guidance in Pomona, CA. Learn to create strong passwords, use password managers, and protect your accounts. offered help with password setup, recovery, and implementing best practices for maximum security.';
+			include 'security/security.php';
+			break;
+
+		case 'respaldos':
+			$page = new Structure('../../', 'español', 'Respaldos');
+			$keywords = 'password security, strong passwords, password management, password manager, secure passwords, password best practices, password protection, password recovery, password reset, two-factor authentication, password vault, credential management, password tips, account security, password strength';
+			$description = 'Password security services and guidance in Pomona, CA. Learn to create strong passwords, use password managers, and protect your accounts. offered help with password setup, recovery, and implementing best practices for maximum security.';
+			include 'security/security.php';
+			break;
+
+		case 'clave':
+			$page = new Structure('../../', 'español', 'Contraseñas');
+			$keywords = 'password security, strong passwords, password management, password manager, secure passwords, password best practices, password protection, password recovery, password reset, two-factor authentication, password vault, credential management, password tips, account security, password strength';
+			$description = 'Password security services and guidance in Pomona, CA. Learn to create strong passwords, use password managers, and protect your accounts. offered help with password setup, recovery, and implementing best practices for maximum security.';
+			include 'security/security.php';
+			break;
+
+		default:
+			show404();
+			break;
+	}
+}
 ?>

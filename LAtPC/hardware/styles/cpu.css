@@ -155,8 +155,6 @@
 
             /* Buttons */
             button {
-                background-color: var(--secondary-color);
-                color: white;
                 border: none;
                 border-radius: 6px;
                 padding: 12px 20px;
@@ -167,7 +165,7 @@
             }
 
             button:hover {
-                background-color: var(--primary-color);
+
                 transform: translateY(-3px);
             }
 
@@ -242,6 +240,14 @@
                 color: var(--amd-red);
                 font-weight: 700;
                 text-decoration: none;
+            }
+
+            .fullbar .amdletters a:link {
+                color: var(--amd-red);
+            }
+
+            .fullbar .colms2 a:visited {
+                color: var(--amd-red);
             }
 
             .amdred:hover {
@@ -346,7 +352,7 @@
             header span {
                 color: rgb(53, 97, 135);
             }
-      
+
             .peripherals-header {
                 text-align: center;
                 margin-bottom: 2.5rem;
@@ -498,4 +504,3 @@
             .peripheral-card:hover .peripheral-image img {
                 transform: scale(1.05);
             }
-                  

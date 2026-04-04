@@ -104,7 +104,12 @@ include_once __DIR__ . '/header.php';
                 'Parabolas' => 'parabolas',
                 'Sermones' => 'sermones',
                 'Enseñanzas' => 'ensenhanzas',
-                'Acerca' => 'contenido_acerca'
+                'Acerca' => 'contenido_acerca',
+                'Seguridad' => 'seguridad',
+                'Mejores Prácticas' => 'mejores_practicas',
+                'Respaldos' => 'respaldos',
+                'Contraseñas' => 'clave',
+                'Servicios' => 'contenido_servicios',
             ]
         ];
 
