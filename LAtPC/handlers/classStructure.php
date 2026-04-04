@@ -1,9 +1,9 @@
 <?php 
 class Structure		{
 	// Declare properties to avoid dynamic property creation warnings
-	public string $dir;
-	public string $lang;
-	public string $title;
+	public $dir;
+	public $lang;
+	public $title;
 
 	public function __construct($dir, $lang, $title)
 	{
