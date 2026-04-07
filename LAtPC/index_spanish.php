@@ -73,12 +73,12 @@ global $content;
             </div>
         </div>
 
-        <a href="#" class="cta-button"><?= $servicesCleanUpsButton = $content[26]['content'];?></a>
-        <a href="#" class="cta-button"><?= $servicesComputerProtectionButton = $content[27]['content'];?></a>
-        <a href="#" class="cta-button"><?= $servicesConsultationsButton = $content[28]['content'];?></a>
-        <a href="#" class="cta-button"><?= $servicesManagedServicesButton = $content[29]['content'];?></a>
-        <a href="#" class="cta-button"><?= $servicesRemoteSupportButton = $content[30]['content'];?></a>
-        <a href="#" class="cta-button"><?= $servicesWebsitesButton = $content[31]['content'];?></a>
+        <a href="/servicios/limpieza" class="cta-button"><?= $servicesCleanUpsButton = $content[26]['content'];?></a>
+        <a href="/servicios/proteccion" class="cta-button"><?= $servicesComputerProtectionButton = $content[27]['content'];?></a>
+        <a href="/servicios/consultas" class="cta-button"><?= $servicesConsultationsButton = $content[28]['content'];?></a>
+        <a href="/servicios/serviciosGestionados" class="cta-button"><?= $servicesManagedServicesButton = $content[29]['content'];?></a>
+        <a href="/servicios/sitiosWeb" class="cta-button"><?= $servicesWebsitesButton = $content[30]['content'];?></a>
+        <a href="/servicios/soporteRemoto" class="cta-button"><?= $servicesRemoteSupportButton = $content[31]['content'];?></a>
     </div>
 
     <div class="grid-item">

@@ -36,6 +36,41 @@ function content_services_protection(){
     <?php
 }
 
+function contenido_servicios_proteccion(){
+    ?>
+    <section class="fullbar">
+    <article class="article">
+    <h1 id="security"><a href="./#help">Protección de la Computadora</a></h1>
+
+    <section>
+      <h2>Imagina tu computadora como un cofre del tesoro virtual lleno de tus cosas importantes — fotos, documentos y mucho más. La protección de la computadora es como un escudo contra los maleantes, como los virus y los hackers.</h2>
+      <h3>Estos maleantes intentan colarse en tu computadora y armar un desmadre. Pero con la protección adecuada, se quedan afuera y tus cosas están a salvo.</h3>
+      <h3>¿Y sabes qué más? Si accidentalmente borras algo o tu computadora empieza a portarse rara, la protección puede ayudarte. Es como un respaldo mágico que te devuelve tus cosas. Así como le pones llave a tu puerta, necesitas protección en tu computadora para mantener a los malos afuera y que todo funcione bien.</h3>
+      <h2 class="center">Aquí tienes 15 puntos sobre cómo <a href="../software/?security#title">proteger tus equipos</a> y también tus datos:</h2>
+      <h3><span class="service">1. Soluciones de Ciberseguridad:</span> Proteger a nuestros clientes de amenazas cibernéticas como virus, malware y hackers es nuestra prioridad. Ofrecemos servicios como configuración de firewall, instalación de antivirus y actualizaciones de seguridad regulares para garantizar sistemas seguros.</h3>
+      <h3><span class="service">2. Respaldo y Recuperación de Datos:</span> Mucha gente le preocupa perder información importante por accidentes o fallas del sistema. Ofrecemos servicios de <a href="../software/?backups#top">respaldo de datos</a> para mantener tus archivos seguros y la capacidad de recuperarlos rápidamente si algo sale mal.</h3>
+      <h3><span class="service">3. Seguridad de Red:</span> Podemos proteger tu red contra accesos no autorizados, filtraciones de datos y posibles ataques, implementando cifrado, controles de acceso y sistemas de monitoreo.</h3>
+      <h3><span class="service">4. Seguridad de Correo Electrónico:</span> Ofrecemos <a href="../software/?security#p3s">clases para proteger</a> tus sistemas de correo electrónico contra ataques de phishing, spam y otras amenazas, asegurando que tus comunicaciones permanezcan confidenciales y protegidas.</h3>
+      <h3><span class="service">5. Evaluaciones de Vulnerabilidades:</span> Realizamos evaluaciones de tus sistemas para detectar vulnerabilidades, identificar puntos débiles que puedan ser explotados y ofrecemos soluciones para corregirlos.</h3>
+      <h3><span class="service">6. Monitoreo Remoto:</span> Ofrecemos monitoreo en tiempo real y mantenimiento remoto regular, lo que nos ayuda a identificar y resolver posibles problemas antes de que se compliquen.</h3>
+      <h3><span class="service">7. Soporte 24/7:</span> Estamos disponibles las 24 horas del día para brindarte soporte técnico en caso de emergencias, garantizando el mínimo tiempo de inactividad y una resolución rápida de problemas.</h3>
+      <h3><span class="service">8. Capacitación en Seguridad:</span> Ofrecemos sesiones de educación y capacitación para ayudar a los empleados a entender las <a href="../software/?best_practices#title">mejores prácticas</a> de ciberseguridad, reduciendo el riesgo de errores humanos que puedan provocar brechas de seguridad.</h3>
+      <h3><span class="service">9. Actualizaciones y Parches Regulares:</span> Mantenemos tus sistemas al día con el software y los parches de seguridad más recientes para evitar que se exploten vulnerabilidades.</h3>
+      <h3><span class="service">10. Seguridad en Dispositivos Móviles:</span> Si aplica, podemos platicar sobre cómo extender la protección a los dispositivos móviles, asegurándonos de que los celulares y tabletas también estén protegidos al acceder a los recursos de la empresa.</h3>
+      <h3><span class="service">11. Plan de Respuesta a Incidentes:</span> Desarrollaremos una estrategia personalizada para manejar incidentes de seguridad, incluyendo un plan paso a paso para reducir daños y recuperarse rápidamente si ocurre una brecha.</h3>
+      <!-- <h3><span class="service">12. Asistencia con el Cumplimiento Normativo:</span> Si operan en industrias con regulaciones específicas (como salud o finanzas), mencione cómo sus servicios pueden ayudarles a cumplir con los requisitos y evitar sanciones.</h3>-->
+      <h3><span class="service">12. Auditorías de Seguridad Regulares:</span> Podemos realizar auditorías de seguridad de rutina para evaluar la salud general de los sistemas, identificar posibles problemas y recomendar mejoras.</h3>
+      <h3><span class="service">13. Soluciones Personalizadas:</span> Tenemos la capacidad de adaptar nuestros servicios a tus necesidades y presupuesto específicos, asegurándonos de que obtengas el nivel de protección adecuado sin gastar de más.</h3>
+      <h3><span class="service">14. Reportes Transparentes:</span> Podemos proporcionarte reportes regulares sobre las medidas de seguridad, las amenazas detectadas y las acciones tomadas, manteniéndote a ti y a tu equipo informados sobre el estado de la protección de tu empresa.</h3>
+      <h2>Recuerda, la comunicación clara y directa es clave. Valoramos tus servicios, atenderemos cualquier duda de inmediato y te daremos tranquilidad en todo lo relacionado con la protección de tu computadora.</h2></section>
+
+        <h2> <hr>LLAMA o MANDA MENSAJE: <a href="tel:+19092767214">909-276-7214</a>&nbsp;|&nbsp;
+            <br />Correo: <a href="mailto:Help@LAtinosPC.com?subject=Comentarios&body=Mensaje">Help@LAtinosPC.com</a></h2><hr>
+    </article>
+    </section>
+    <?php
+}
+
 
 
 include 'anvil/structure.php';

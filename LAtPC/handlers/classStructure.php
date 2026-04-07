@@ -1,4 +1,4 @@
-<?php 
+<?php
 class Structure		{
 	// Declare properties to avoid dynamic property creation warnings
 	public $dir;

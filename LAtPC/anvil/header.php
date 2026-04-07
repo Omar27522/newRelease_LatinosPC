@@ -126,7 +126,7 @@
                         if($page->getLang() == "en"):
                             echo $page->getDir(). "offered_security/backups";
                         elseif($page->getLang() == "es-419"):
-                            echo $page->getDir(). "security/backups";
+                            echo $page->getDir(). "seguridad/respaldos";
                         endif;?>">
                             <?php
                         if($page->getLang() == "en"):
@@ -172,9 +172,9 @@
                     <li>
                         <a href="<?php
                         if($page->getLang() == "en"):
-                            echo "#";
+                            echo $page->getDir(). "offered_services/websites";
                         elseif($page->getLang() == "es-419"):
-                            echo "#";
+                            echo $page->getDir(). "servicios/sitiosWeb";
                         endif;?>">
                             <?php
                         if($page->getLang() == "en"):
@@ -190,7 +190,7 @@
                         if($page->getLang() == "en"):
                             echo $page->getDir(). "offered_security/";
                         elseif($page->getLang() == "es-419"):
-                            echo "#";
+                            echo $page->getDir(). "seguridad/";
                         endif;?>">
                             <?php
                         if($page->getLang() == "en"):
@@ -206,7 +206,7 @@
                         if($page->getLang() == "en"):
                             echo $page->getDir(). "offered_security/best_practices";
                         elseif($page->getLang() == "es-419"):
-                            echo "#";
+                            echo $page->getDir(). "seguridad/mejores_practicas";
                         endif;?>">
                             <?php
                         if($page->getLang() == "en"):
@@ -222,7 +222,7 @@
                         if($page->getLang() == "en"):
                             echo $page->getDir(). "offered_security/passwords";
                         elseif($page->getLang() == "es-419"):
-                            echo "#";
+                            echo $page->getDir(). "seguridad/clave";
                         endif;?>">
                             <?php
                         if($page->getLang() == "en"):
@@ -267,6 +267,12 @@
                 "/offered_security/passwords" => "seguridad/clave",
                 "/offered_security/backups" => "seguridad/respaldos",
                 "/offered_services" => "servicios",
+                "/offered_services/cleanups" => "servicios/limpieza",
+                "/offered_services/protection" => "servicios/proteccion",
+                "/offered_services/consultations" => "servicios/consultas",
+                "/offered_services/managedServices" => "servicios/serviciosGestionados",
+                "/offered_services/remoteSupport" => "servicios/soporteRemoto",
+                "/offered_services/websites" => "servicios/sitiosWeb",
             ];
             $var = isset($routes[$uri]) ? $routes[$uri] : $page->getDir()."español/";
             ?>
@@ -282,7 +288,7 @@
                 "/Jesucristo/padre_celestial_cuentame_sobre_el_internet" => "JesusChrist/father_in_heaven_tell_me_about_web",
                 "/Jesucristo/parabolas" => "JesusChrist/parables",
                 "/Jesucristo/sermones" => "JesusChrist/sermons",
-                "/Jesucristo/apostoles" => "JesusChrist/apostoles",
+                "/Jesucristo/apostoles" => "JesusChrist/apostles",
                 "/Jesucristo/enseñanzas" => "JesusChrist/teachings",
                 "/acerca" => "about",
                 "/seguridad" => "offered_security",
@@ -290,12 +296,18 @@
                 "/seguridad/clave" => "offered_security/passwords",
                 "/seguridad/respaldos" => "offered_security/backups",
                 "/servicios" => "offered_services",
+                "/servicios/limpieza" => "offered_services/cleanups",
+                "/servicios/proteccion" => "offered_services/protection",
+                "/servicios/consultas" => "offered_services/consultations",
+                "/servicios/serviciosGestionados" => "offered_services/managedServices",
+                "/servicios/soporteRemoto" => "offered_services/remoteSupport",
+                "/servicios/sitiosWeb" => "offered_services/websites",
             ];
             $var = isset($routes[$uri]) ? $routes[$uri] : $page->getDir()."";
             ?>
             <button><a href="<?= $page->getDir();?>español">Inicio</a></button>
             <button><a href="<?= $page->getDir() . $var;?>">Inglés</a></button>
-            <button><a href="#">Servicios</a></button>
+            <button><a href="<?= $page->getDir();?>servicios">Servicios</a></button>
             <button><a href="#">Contacto</a></button>
             <button><a href="#">Reseñas</a></button>
         <?php endif;?>

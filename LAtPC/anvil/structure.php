@@ -110,6 +110,12 @@ include_once __DIR__ . '/header.php';
                 'Respaldos' => 'respaldos',
                 'Contraseñas' => 'clave',
                 'Servicios' => 'contenido_servicios',
+                'Limpieza' => 'contenido_servicios_limpieza',
+                'Protección' => 'contenido_servicios_proteccion',
+                'Consultas' => 'contenido_servicios_consultas',
+                'Servicios Gestionados' => 'contenido_servicios_gestionados',
+                'Soporte Remoto' => 'contenido_servicios_soporteRemoto',
+                'Paginas Web' => 'contenido_servicios_paginasWeb',
             ]
         ];
 
