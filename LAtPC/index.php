@@ -14,6 +14,8 @@ $page = new Structure('../', 'english', 'Home LatinosPC');
 $description = 'Online Tech Classes Computer services, Configurations, Hardware, and in‑person, businesses, and home users.';
 $keywords = 'computer repair, laptop repair, pc repair, virus removal, malware removal, data backup, data recovery, computer diagnostics, small business IT support, student tech support, home computer repair, gamer PC repair, custom gaming PC help, computer classes, online computer classes, in-person computer classes, tech training for seniors, beginner computer lessons, computer repair in Pomona, Pomona tech support, laptop repair near me, IT services Pomona, computer classes Pomona';
 
+
+
 /* DATABASE CONNECTION */
 try {
 	$dbPath = __DIR__ . '/db/laTpc.db';
@@ -35,8 +37,8 @@ try {
 }
 //$stmt = $pdo->prepare("INSERT INTO content (page_id, name, content) VALUES (?, ?, ?)");
 
-include __DIR__ . '/handlers/home.php';
+include_once __DIR__ . '/handlers/home.php';
 
-include __DIR__ . '/anvil/structure.php';
+include_once __DIR__ . '/anvil/structure.php';
 
 ?>

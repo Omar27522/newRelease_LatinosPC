@@ -45,15 +45,17 @@ try {
             $name = trim($_POST['name'] ?? '');
             $section = trim($_POST['section'] ?? '');
             $content_text = trim($_POST['content'] ?? '');
+            $contenido_text = trim($_POST['contenido'] ?? '');
 
             if ($page_id && $name && $section && $content_text) {
                 try {
-                    $stmt = $pdo->prepare("INSERT INTO content (page_id, name, section, content) VALUES (:page_id, :name, :section, :content)");
+                    $stmt = $pdo->prepare("INSERT INTO content (page_id, name, section, content, contenido) VALUES (:page_id, :name, :section, :content, :contenido)");
                     $stmt->execute([
                         ':page_id' => $page_id,
                         ':name' => $name,
                         ':section' => $section,
-                        ':content' => $content_text
+                        ':content' => $content_text,
+                        ':contenido' => $contenido_text
                     ]);
                     echo '<div style="max-width: 1200px; margin: 10px auto; padding: 10px; background: #d4edda; color: #155724; border: 1px solid #c3e6cb; border-radius: 4px;">Entry added successfully!</div>';
                 } catch (PDOException $e) {
@@ -69,20 +71,22 @@ try {
             $name = trim($_POST['name'] ?? '');
             $section = trim($_POST['section'] ?? '');
             $content_text = trim($_POST['content'] ?? '');
+            $contenido_text = trim($_POST['contenido'] ?? '');
 
             if ($id && $page_id && $name && $section && $content_text) {
                 try {
-                    $stmt = $pdo->prepare("UPDATE content SET page_id = :page_id, name = :name, section = :section, content = :content WHERE id = :id");
+                    $stmt = $pdo->prepare("UPDATE content SET page_id = :page_id, name = :name, section = :section, content = :content, contenido = :contenido WHERE id = :id");
                     $stmt->execute([
                         ':page_id' => $page_id,
                         ':name' => $name,
                         ':section' => $section,
                         ':content' => $content_text,
+                        ':contenido' => $contenido_text,
                         ':id' => $id
                     ]);
                     echo '<div style="max-width: 1200px; margin: 10px auto; padding: 10px; background: #d4edda; color: #155724; border: 1px solid #c3e6cb; border-radius: 4px;">Entry updated successfully! <a href="SQLiteconnection.php">Clear Edit Mode</a></div>';
                     // Refresh edit data to show updated values
-                    $editData = ['id' => $id, 'page_id' => $page_id, 'name' => $name, 'section' => $section, 'content' => $content_text];
+                    $editData = ['id' => $id, 'page_id' => $page_id, 'name' => $name, 'section' => $section, 'content' => $content_text, 'contenido' => $contenido_text];
                 } catch (PDOException $e) {
                     echo '<div style="max-width: 1200px; margin: 10px auto; padding: 10px; background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; border-radius: 4px;">Error updating entry: ' . htmlspecialchars($e->getMessage()) . '</div>';
                 }
@@ -180,10 +184,17 @@ try {
                     </datalist>
                 </div>
             </div>
-            <div style="margin-bottom: 15px;">
-                <label for="content_textarea" style="display: block; margin-bottom: 5px; font-weight: bold; color: #555;">Content</label>
-                <textarea name="content" id="content_textarea" required placeholder="Enter content here..." rows="4"
-                    style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit;"><?= $editData ? htmlspecialchars($editData['content']) : '' ?></textarea>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px;">
+                <div>
+                    <label for="content_textarea" style="display: block; margin-bottom: 5px; font-weight: bold; color: #555;">Content (English)</label>
+                    <textarea name="content" id="content_textarea" required placeholder="Enter English content here..." rows="4"
+                        style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit;"><?= $editData ? htmlspecialchars($editData['content']) : '' ?></textarea>
+                </div>
+                <div>
+                    <label for="contenido_textarea" style="display: block; margin-bottom: 5px; font-weight: bold; color: #555;">Contenido (Español)</label>
+                    <textarea name="contenido" id="contenido_textarea" placeholder="Ingrese el contenido en español aquí..." rows="4"
+                        style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit;"><?= $editData ? htmlspecialchars($editData['contenido'] ?? '') : '' ?></textarea>
+                </div>
             </div>
             <?php if ($editData): ?>
             <button type="submit" name="update_entry"
@@ -221,8 +232,8 @@ if (isset($_GET['q']) && is_string($_GET['q'])) {
     } else if (!empty($tableExists)) {
         try {
             $like = '%' . $q . '%';
-            $stmt = $pdo->prepare('SELECT id, page_id, name, section, content FROM content
-                                   WHERE content LIKE :q OR name LIKE :q OR section LIKE :q OR page_id LIKE :q
+            $stmt = $pdo->prepare('SELECT id, page_id, name, section, content, contenido FROM content
+                                   WHERE content LIKE :q OR contenido LIKE :q OR name LIKE :q OR section LIKE :q OR page_id LIKE :q
                                    ORDER BY page_id, name, id LIMIT 200');
             $stmt->execute([':q' => $like]);
             $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -233,7 +244,7 @@ if (isset($_GET['q']) && is_string($_GET['q'])) {
                 echo '<p>Found ' . count($rows) . ' result(s) for <strong>' . htmlspecialchars($q, ENT_QUOTES, 'UTF-8') . '</strong>.</p>';
                 echo '<table cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 100%; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">';
                 echo '<thead><tr style="background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%); color: #fff;">';
-                echo '<th style="text-align:left; padding: 12px;">ID</th><th style="text-align:left; padding: 12px;">Page</th><th style="text-align:left; padding: 12px;">Name</th><th style="text-align:left; padding: 12px;">Section</th><th style="text-align:left; padding: 12px;">Content Snippet</th><th style="text-align:left; padding: 12px;">Actions</th>';
+                echo '<th style="text-align:left; padding: 12px;">ID</th><th style="text-align:left; padding: 12px;">Page</th><th style="text-align:left; padding: 12px;">Name</th><th style="text-align:left; padding: 12px;">Section</th><th style="text-align:left; padding: 12px;">Content</th><th style="text-align:left; padding: 12px;">Contenido</th><th style="text-align:left; padding: 12px;">Actions</th>';
                 echo '</tr></thead><tbody>';
 
                 foreach ($rows as $r) {
@@ -252,6 +263,7 @@ if (isset($_GET['q']) && is_string($_GET['q'])) {
                     echo '<td style="padding:12px;">' . htmlspecialchars((string)$r['name']) . '</td>';
                     echo '<td style="padding:12px;">' . htmlspecialchars((string)$r['section']) . '</td>';
                     echo '<td style="padding:12px;">' . htmlspecialchars($snippet) . '</td>';
+                    echo '<td style="padding:12px;">' . htmlspecialchars((string)($r['contenido'] ?? '')) . '</td>';
                     echo '<td style="white-space: nowrap; padding: 12px;">
                         <a href="?edit_id=' . $r['id'] . '" class="btn btn-edit">Edit</a>
                         <a href="?delete_id=' . $r['id'] . '" onclick="return confirm(\'Are you sure you want to delete this item?\');" class="btn btn-delete">Delete</a>
@@ -287,7 +299,8 @@ if (!empty($groupedContent)) {
         echo '<th>Page ID</th>';
         echo '<th>Name</th>';
         echo '<th>Section</th>';
-        echo '<th>Content</th>';
+        echo '<th>Content (EN)</th>';
+        echo '<th>Contenido (ES)</th>';
         echo '<th>Actions</th>';
         echo '</tr>';
         echo '</thead>';
@@ -300,6 +313,7 @@ if (!empty($groupedContent)) {
             echo '<td>' . htmlspecialchars($row['name']) . '</td>';
             echo '<td>' . htmlspecialchars($row['section']) . '</td>';
             echo '<td>' . htmlspecialchars($row['content']) . '</td>';
+            echo '<td>' . htmlspecialchars($row['contenido'] ?? '') . '</td>';
             echo '<td style="white-space: nowrap;">
                 <a href="?edit_id=' . $row['id'] . '" class="btn btn-edit">Edit</a>
                 <a href="?delete_id=' . $row['id'] . '" onclick="return confirm(\'Are you sure you want to delete this item?\');" class="btn btn-delete">Delete</a>

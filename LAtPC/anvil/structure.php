@@ -98,7 +98,7 @@ include_once __DIR__ . '/header.php';
                 'Tutorials' => 'tutorials',
             ],
             'es-419' => [
-                'Inicio LatinosPC' => 'contenido_inicio',
+                'Inicio LatinosPC' => 'content_home',
                 'Padre Celestial' => 'qpccsei',
                 'Los Apóstoles' => 'apostoles',
                 'Parabolas' => 'parabolas',
