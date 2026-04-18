@@ -40,23 +40,6 @@
 
     <div class="peripherals-container">
         <div class="peripherals-grid">
-            <?php
-            if (!function_exists('hw_Link')) {
-                function hw_Link($hw, $en, $es) {
-                    echo $hw === 'en' ? $en : ($hw === 'es' ? $es : 'ERROR');
-                }
-            }
-            if (!function_exists('hw_alt')) {
-                function hw_alt($hw, $en, $es) {
-                    echo $hw === 'en' ? $en : ($hw === 'es' ? $es : 'ERROR');
-                }
-            }
-            if (!function_exists('hw_title')) {
-                function hw_title($hw, $en, $es) {
-                    echo $hw === 'en' ? $en : ($hw === 'es' ? $es : 'ERROR');
-                }
-            }
-            ?>
 
             <div class="peripheral-card" data-type="input" tabindex="0">
                 <a class="peripheral-link" href="./mouse">
