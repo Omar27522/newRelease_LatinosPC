@@ -1,8 +1,13 @@
 <?php
+function cssStyles(){
+    ?>
+    <link rel="stylesheet" href="../services/style.css">
+    <?php
+}
 function content_services_consultation(){
     ?>
     <section class="fullbar">
-
+<?php include 'navBar.php'; ?>
     <section class="cut-it">
             <h2 id="hardware"><a href="./#help">Personal computers can encounter various points of failure, but many
                     issues can be prevented or mitigated with proper care and maintenance.</a></h2>
@@ -187,6 +192,6 @@ function contenido_servicios_consultas(){
 }
 
 
-include 'anvil/structure.php';
+include dirname(__DIR__) . '/anvil/structure.php';
 
 ?>

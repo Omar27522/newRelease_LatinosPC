@@ -562,7 +562,7 @@ function clave(){
 }
 
 
-include 'anvil/structure.php';
+include dirname(__DIR__) . '/anvil/structure.php';
 
 /*
    A      B      C      D      E

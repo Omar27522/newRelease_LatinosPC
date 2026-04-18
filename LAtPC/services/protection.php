@@ -1,7 +1,17 @@
 <?php
+function cssStyles(){
+    ?>
+    <link rel="stylesheet" href="../services/style.css">
+    <?php
+}
 function content_services_protection(){
+    global $content, $key;
+    include_once dirname(__DIR__) . '/handlers/databaseConnection.php';
+    databaseConnection('services');// database connection
+
     ?>
     <section class="fullbar">
+        <?php include 'navBar.php'; ?>
     <article class="article">
 <h1 id="security"><a href="./#help">Computer Protection</a></h1>
 
@@ -73,6 +83,6 @@ function contenido_servicios_proteccion(){
 
 
 
-include 'anvil/structure.php';
+include dirname(__DIR__) . '/anvil/structure.php';
 
 ?>

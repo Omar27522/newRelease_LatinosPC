@@ -1,385 +1,347 @@
+<?php
+/**
+ * Content Management Dashboard for LatinosPC
+ * Restructured for better maintainability and professional aesthetics.
+ */
+
+// --- SESSION & SECURITY ---
+session_start();
+if (empty($_SESSION['csrf_token'])) {
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
+
+// --- CONFIGURATION ---
+define('DB_PATH', __DIR__ . '/laTpc.db');
+
+require_once __DIR__ . '/sources/ContentManager.php';
+require_once __DIR__ . '/sources/ViewHelper.php';
+
+// --- CONTROLLER LOGIC ---
+$db = new ContentManager(DB_PATH);
+$message = null;
+$error = null;
+$editData = null;
+$lastSavedEntry = [];
+
+// Handle CSRF Protection
+function verifyCSRF() {
+    if (!isset($_POST['csrf_token']) || $_POST['csrf_token'] !== $_SESSION['csrf_token']) {
+        die("CSRF token validation failed.");
+    }
+}
+
+// Process GET Actions
+if (isset($_GET['delete_id'])) {
+    if ($db->delete($_GET['delete_id'])) {
+        $message = "Entry deleted successfully.";
+    } else {
+        $error = "Failed to delete entry.";
+    }
+}
+
+if (isset($_GET['edit_id'])) {
+    $editData = $db->getById($_GET['edit_id']);
+}
+
+// Process POST Submissions
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    verifyCSRF();
+
+    $data = [
+        'page_id' => trim($_POST['page_id'] ?? ''),
+        'name' => trim($_POST['name'] ?? ''),
+        'section' => trim($_POST['section'] ?? ''),
+        'content' => trim($_POST['content'] ?? ''),
+        'contenido' => trim($_POST['contenido'] ?? '')
+    ];
+
+    if (!$data['page_id'] || !$data['name'] || !$data['content']) {
+        $error = "Please fill in all required fields (Page ID, Name, Content).";
+    } else {
+        if (isset($_POST['id']) && !empty($_POST['id'])) {
+            if ($db->update($_POST['id'], $data)) {
+                $message = "Entry updated successfully.";
+                $data['id'] = $_POST['id'];
+                $lastSavedEntry = $data;
+                $editData = null; // Exit edit mode
+            } else {
+                $error = "Failed to update entry.";
+            }
+        } else {
+            if ($lastId = $db->add($data)) {
+                $message = "Entry added successfully.";
+                $data['id'] = $lastId;
+                $lastSavedEntry = $data;
+            } else {
+                $error = "Failed to add entry.";
+            }
+        }
+    }
+}
+
+// Fetch display data
+$groupedContent = $db->getAllGrouped();
+
+// Find true_index of latest entry if available
+if (!empty($lastSavedEntry)) {
+    $pid = $lastSavedEntry['page_id'];
+    $lastSavedEntry['true_index'] = '?';
+    if (isset($groupedContent[$pid])) {
+        foreach ($groupedContent[$pid] as $row) {
+            if ($row['id'] == $lastSavedEntry['id']) {
+                $lastSavedEntry['true_index'] = $row['true_index'];
+                break;
+            }
+        }
+    }
+}
+
+$existingPageIds = $db->getDistinct('page_id');
+$existingNames = $db->getDistinct('name');
+$existingSections = $db->getDistinct('section');
+$searchResults = null;
+if (isset($_GET['q']) && trim($_GET['q']) !== '') {
+    $searchResults = $db->search(trim($_GET['q']));
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>SQLite Connection</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LatinoPC | Data Hub</title>
+    <!-- Modern Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styleSQLiteConnection.css">
 </head>
-
 <body>
-    <h1>SQLite Connection</h1>
 
-    <?php
-/* DATABASE CONNECTION */
-try {
-    $dbPath ='laTpc.db';
-    $pdo = new PDO('sqlite:' . $dbPath);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+<div class="container">
+    <header>
+        <h1>LatinosPC <span style="font-weight: 300; color: var(--text-light);">DbManager</span></h1>
+        <div class="actions">
+            <a href="../index.php" class="btn btn-ghost">← Back to Site</a>
+            <?php if ($editData): ?>
+                <a href="SQLiteconnection.php" class="btn btn-danger">Clear Edit Mode</a>
+            <?php endif; ?>
+        </div>
+    </header>
 
-    // Handle Edit Request (Fetch Data)
-    $editData = null;
-    if (isset($_GET['edit_id'])) {
-        $edit_id = $_GET['edit_id'];
-        $stmt = $pdo->prepare("SELECT * FROM content WHERE id = :id");
-        $stmt->execute([':id' => $edit_id]);
-        $editData = $stmt->fetch(PDO::FETCH_ASSOC);
-    }
-
-    // Handle Delete Request
-    if (isset($_GET['delete_id'])) {
-        $delete_id = $_GET['delete_id'];
-        try {
-            $stmt = $pdo->prepare("DELETE FROM content WHERE id = :id");
-            $stmt->execute([':id' => $delete_id]);
-            echo '<div style="max-width: 1200px; margin: 10px auto; padding: 10px; background: #d4edda; color: #155724; border: 1px solid #c3e6cb; border-radius: 4px;">Entry deleted successfully! <a href="SQLiteconnection.php">Refresh</a></div>';
-        } catch (PDOException $e) {
-            echo '<div style="max-width: 1200px; margin: 10px auto; padding: 10px; background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; border-radius: 4px;">Error deleting entry: ' . htmlspecialchars($e->getMessage()) . '</div>';
-        }
-    }
-
-    // Handle Form Submission (Add or Update)
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        if (isset($_POST['add_entry'])) {
-            // Add Entry Logic
-            $page_id = trim($_POST['page_id'] ?? '');
-            $name = trim($_POST['name'] ?? '');
-            $section = trim($_POST['section'] ?? '');
-            $content_text = trim($_POST['content'] ?? '');
-            $contenido_text = trim($_POST['contenido'] ?? '');
-
-            if ($page_id && $name && $section && $content_text) {
-                try {
-                    $stmt = $pdo->prepare("INSERT INTO content (page_id, name, section, content, contenido) VALUES (:page_id, :name, :section, :content, :contenido)");
-                    $stmt->execute([
-                        ':page_id' => $page_id,
-                        ':name' => $name,
-                        ':section' => $section,
-                        ':content' => $content_text,
-                        ':contenido' => $contenido_text
-                    ]);
-                    echo '<div style="max-width: 1200px; margin: 10px auto; padding: 10px; background: #d4edda; color: #155724; border: 1px solid #c3e6cb; border-radius: 4px;">Entry added successfully!</div>';
-                } catch (PDOException $e) {
-                    echo '<div style="max-width: 1200px; margin: 10px auto; padding: 10px; background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; border-radius: 4px;">Error adding entry: ' . htmlspecialchars($e->getMessage()) . '</div>';
+    <?php if ($message): ?>
+        <div class="alert alert-success" id="auto-dismiss-message" style="transition: opacity 0.3s ease;"><?= htmlspecialchars($message) ?></div>
+        <script>
+            setTimeout(() => {
+                const msg = document.getElementById('auto-dismiss-message');
+                if (msg) {
+                    msg.style.opacity = '0';
+                    setTimeout(() => msg.remove(), 300);
                 }
-            } else {
-                echo '<div style="max-width: 1200px; margin: 10px auto; padding: 10px; background: #fff3cd; color: #856404; border: 1px solid #ffeeba; border-radius: 4px;">Please fill in all fields.</div>';
-            }
-        } elseif (isset($_POST['update_entry'])) {
-            // Update Entry Logic
-            $id = $_POST['id'];
-            $page_id = trim($_POST['page_id'] ?? '');
-            $name = trim($_POST['name'] ?? '');
-            $section = trim($_POST['section'] ?? '');
-            $content_text = trim($_POST['content'] ?? '');
-            $contenido_text = trim($_POST['contenido'] ?? '');
+            }, 500);
+        </script>
+        <?php if (!empty($lastSavedEntry)): ?>
+            <div class="glass-card" style="margin-bottom: 20px; border-left: 4px solid var(--primary-color); padding: 1.25rem;">
+                <div style="font-size: 0.85rem; color: var(--primary-light); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; font-weight: 600;">Latest Submitted Entry (Persists)</div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px;">
+                    <div><span style="color: var(--text-light); font-size: 0.85rem;">Index / #:</span><br><strong style="font-size: 1.1rem; color: var(--primary-color);">[<?= htmlspecialchars($lastSavedEntry['true_index']) ?>]</strong></div>
+                    <div><span style="color: var(--text-light); font-size: 0.85rem;">Page ID:</span><br><strong style="font-size: 1.1rem;"><?= htmlspecialchars($lastSavedEntry['page_id']) ?></strong></div>
+                    <div><span style="color: var(--text-light); font-size: 0.85rem;">Internal Name:</span><br><strong style="font-size: 1.1rem;"><?= htmlspecialchars($lastSavedEntry['name']) ?></strong></div>
+                    <div><span style="color: var(--text-light); font-size: 0.85rem;">Section:</span><br><strong style="font-size: 1.1rem;"><?= htmlspecialchars($lastSavedEntry['section']) ?></strong></div>
+                </div>
+                <!-- Content Previews -->
+                <div style="margin-top: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; border-top: 1px solid rgba(0,0,0,0.05); padding-top: 20px;">
+                    <div>
+                        <span style="color: var(--text-light); font-size: 0.85rem; text-transform: uppercase;">Content (English)</span>
+                        <div style="margin-top: 5px; font-size: 0.95rem; line-height: 1.5; color: var(--text-main); white-space: pre-wrap;"><?= htmlspecialchars($lastSavedEntry['content']) ?></div>
+                    </div>
+                    <div>
+                        <span style="color: var(--text-light); font-size: 0.85rem; text-transform: uppercase;">Contenido (Español)</span>
+                        <div style="margin-top: 5px; font-size: 0.95rem; line-height: 1.5; color: var(--text-main); white-space: pre-wrap; font-style: italic;"><?= htmlspecialchars($lastSavedEntry['contenido']) ?></div>
+                    </div>
+                </div>
+            </div>
+        <?php endif; ?>
+    <?php endif; ?>
+    <?php if ($error): ?>
+        <div class="alert alert-error"><?= htmlspecialchars($error) ?></div>
+    <?php endif; ?>
 
-            if ($id && $page_id && $name && $section && $content_text) {
-                try {
-                    $stmt = $pdo->prepare("UPDATE content SET page_id = :page_id, name = :name, section = :section, content = :content, contenido = :contenido WHERE id = :id");
-                    $stmt->execute([
-                        ':page_id' => $page_id,
-                        ':name' => $name,
-                        ':section' => $section,
-                        ':content' => $content_text,
-                        ':contenido' => $contenido_text,
-                        ':id' => $id
-                    ]);
-                    echo '<div style="max-width: 1200px; margin: 10px auto; padding: 10px; background: #d4edda; color: #155724; border: 1px solid #c3e6cb; border-radius: 4px;">Entry updated successfully! <a href="SQLiteconnection.php">Clear Edit Mode</a></div>';
-                    // Refresh edit data to show updated values
-                    $editData = ['id' => $id, 'page_id' => $page_id, 'name' => $name, 'section' => $section, 'content' => $content_text, 'contenido' => $contenido_text];
-                } catch (PDOException $e) {
-                    echo '<div style="max-width: 1200px; margin: 10px auto; padding: 10px; background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; border-radius: 4px;">Error updating entry: ' . htmlspecialchars($e->getMessage()) . '</div>';
-                }
-            } else {
-                echo '<div style="max-width: 1200px; margin: 10px auto; padding: 10px; background: #fff3cd; color: #856404; border: 1px solid #ffeeba; border-radius: 4px;">Please fill in all fields.</div>';
-            }
-        }
-    }
-
-    // Check if content table exists
-    $tableExists = $pdo->query("SELECT name FROM sqlite_master WHERE type='table' AND name='content'")->fetch();
-
-    // Fetch distinct values for datalists
-    $existingPageIds = [];
-    $existingNames = [];
-    $existingSections = [];
-
-    if ($tableExists) {
-        $existingPageIds = $pdo->query("SELECT DISTINCT page_id FROM content ORDER BY page_id")->fetchAll(PDO::FETCH_COLUMN);
-        $existingNames = $pdo->query("SELECT DISTINCT name FROM content ORDER BY name")->fetchAll(PDO::FETCH_COLUMN);
-        $existingSections = $pdo->query("SELECT DISTINCT section FROM content ORDER BY section")->fetchAll(PDO::FETCH_COLUMN);
-    }
-
-    // Fetch ALL content for browsing, grouped by page_id
-    $groupedContent = [];
-    if ($tableExists && !isset($_GET['q'])) {
-        $stmt = $pdo->query('SELECT * FROM content ORDER BY page_id, id');
-        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-            $groupedContent[$row['page_id']][] = $row;
-        }
-    }
-} catch (PDOException $e) {
-    // Log error and continue without database content
-    error_log('Database Error: ' . $e->getMessage());
-    $content = [];
-}
-?>
-
-
-    <!-- Simple Search Form -->
-    <form method="get" action="" style="max-width: 1200px; margin: 10px auto; display: flex; gap: 12px; align-items: stretch;">
-        <label for="search-input" class="sr-only" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;">Search the database</label>
-        <input type="text" name="q" id="search-input"
-            aria-label="Search content, name, section, or page_id"
-            value="<?= isset($_GET['q']) ? htmlspecialchars($_GET['q'], ENT_QUOTES, 'UTF-8') : '' ?>"
-            placeholder="Search content..."
-            style="flex: 1; padding: 12px 15px; border: 1px solid #ccc; border-radius: 6px; font-size: 16px;" />
-        <button type="submit"
-            style="padding: 12px 20px; border: none; background: #357abd; color: #fff; border-radius: 6px; cursor: pointer; font-size: 16px; font-weight: bold;">Search</button>
+    <!-- Search Section -->
+    <form class="search-form" method="get">
+        <input type="text" name="q" value="<?= htmlspecialchars($_GET['q'] ?? '') ?>" placeholder="Search database content..." aria-label="Search">
+        <button type="submit" class="btn btn-primary">Search</button>
+        <?php if (isset($_GET['q'])): ?>
+            <a href="SQLiteconnection.php" class="btn btn-ghost">Clear</a>
+        <?php endif; ?>
     </form>
 
-    <hr style="max-width: 1200px; margin: 20px auto; border: 0; border-top: 1px solid #eee;">
+    <!-- Editor Section -->
+    <div class="glass-card" id="editor">
+        <div class="section-header" style="margin-bottom: 20px;">
+            <h2 class="section-title" style="margin-bottom: 0;"><?= $editData ? 'Edit Entry' : 'Add New Entry' ?></h2>
+            <?php if (!$editData): ?>
+                <button type="button" class="btn btn-ghost" onclick="fillLastUsed()" style="padding: 6px 12px; font-size: 0.85rem;" title="Fills Page ID and Section from last entry">⬇ Fill Last Used Context</button>
+            <?php endif; ?>
+        </div>
+        <form method="post" id="entryForm">
+            <input type="hidden" name="csrf_token" value="<?= $_SESSION['csrf_token'] ?>">
+            <?php if ($editData): ?>
+                <input type="hidden" name="id" value="<?= $editData['id'] ?>">
+            <?php endif; ?>
 
-    <!-- Add/Edit Entry Form -->
-    <div
-        style="max-width: 1200px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-        <h2 style="margin-top: 0; color: #333;">
-            <?= $editData ? 'Edit Entry (ID: ' . $editData['id'] - 1 . ')' : 'Add New Entry' ?></h2>
-        <form method="post" action="">
-            <?php if ($editData): ?>
-            <input type="hidden" name="id" value="<?= htmlspecialchars($editData['id']) ?>">
-            <?php endif; ?>
-            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin-bottom: 15px;">
-                <div>
-                    <label for="page_id_input" style="display: block; margin-bottom: 5px; font-weight: bold; color: #555;">Page ID</label>
-                    <input type="text" name="page_id" id="page_id_input" list="page_id_list" required placeholder="e.g., home"
-                        value="<?= $editData ? htmlspecialchars($editData['page_id']) : '' ?>"
-                        style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
-                    <datalist id="page_id_list">
-                        <?php foreach ($existingPageIds as $val): ?>
-                        <option value="<?= htmlspecialchars($val) ?>">
-                        <?php endforeach; ?>
+            <div class="grid-3">
+                <div class="form-group">
+                    <label>Page ID</label>
+                    <input type="text" name="page_id" list="page_ids" required value="<?= htmlspecialchars($editData['page_id'] ?? '') ?>" placeholder="e.g. home">
+                    <datalist id="page_ids">
+                        <?php foreach($existingPageIds as $id): ?><option value="<?= htmlspecialchars($id) ?>"><?php endforeach; ?>
                     </datalist>
                 </div>
-                <div>
-                    <label for="name_input" style="display: block; margin-bottom: 5px; font-weight: bold; color: #555;">Name</label>
-                    <input type="text" name="name" id="name_input" list="name_list" required placeholder="e.g., heading"
-                        value="<?= $editData ? htmlspecialchars($editData['name']) : '' ?>"
-                        style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
-                    <datalist id="name_list">
-                        <?php foreach ($existingNames as $val): ?>
-                        <option value="<?= htmlspecialchars($val) ?>">
-                        <?php endforeach; ?>
+                <div class="form-group">
+                    <label>Internal Name</label>
+                    <input type="text" name="name" list="names" required value="<?= htmlspecialchars($editData['name'] ?? '') ?>" placeholder="e.g. hero_title">
+                    <datalist id="names">
+                        <?php foreach($existingNames as $name): ?><option value="<?= htmlspecialchars($name) ?>"><?php endforeach; ?>
                     </datalist>
                 </div>
-                <div>
-                    <label for="section_input" style="display: block; margin-bottom: 5px; font-weight: bold; color: #555;">Section</label>
-                    <input type="text" name="section" id="section_input" list="section_list" required placeholder="e.g., about"
-                        value="<?= $editData ? htmlspecialchars($editData['section']) : '' ?>"
-                        style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
-                    <datalist id="section_list">
-                        <?php foreach ($existingSections as $val): ?>
-                        <option value="<?= htmlspecialchars($val) ?>">
-                            <?php endforeach; ?>
+                <div class="form-group">
+                    <label>Section</label>
+                    <input type="text" name="section" list="sections" value="<?= htmlspecialchars($editData['section'] ?? '') ?>" placeholder="e.g. main">
+                    <datalist id="sections">
+                        <?php foreach($existingSections as $sec): ?><option value="<?= htmlspecialchars($sec) ?>"><?php endforeach; ?>
                     </datalist>
                 </div>
             </div>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px;">
-                <div>
-                    <label for="content_textarea" style="display: block; margin-bottom: 5px; font-weight: bold; color: #555;">Content (English)</label>
-                    <textarea name="content" id="content_textarea" required placeholder="Enter English content here..." rows="4"
-                        style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit;"><?= $editData ? htmlspecialchars($editData['content']) : '' ?></textarea>
+
+            <div class="grid-2">
+                <div class="form-group">
+                    <label>Content (English)</label>
+                    <textarea name="content" rows="6" required placeholder="Enter content..."><?= htmlspecialchars($editData['content'] ?? '') ?></textarea>
                 </div>
-                <div>
-                    <label for="contenido_textarea" style="display: block; margin-bottom: 5px; font-weight: bold; color: #555;">Contenido (Español)</label>
-                    <textarea name="contenido" id="contenido_textarea" placeholder="Ingrese el contenido en español aquí..." rows="4"
-                        style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit;"><?= $editData ? htmlspecialchars($editData['contenido'] ?? '') : '' ?></textarea>
+                <div class="form-group">
+                    <label>Contenido (Español)</label>
+                    <textarea name="contenido" rows="6" placeholder="Ingrese contenido..."><?= htmlspecialchars($editData['contenido'] ?? '') ?></textarea>
                 </div>
             </div>
-            <?php if ($editData): ?>
-            <button type="submit" name="update_entry"
-                style="padding: 10px 20px; border: none; background: #e67e22; color: #fff; border-radius: 6px; cursor: pointer; font-size: 16px; font-weight: bold;">Update
-                Entry</button>
-            <a href="SQLiteconnection.php" style="margin-left: 10px; color: #666; text-decoration: none;">Cancel</a>
-            <?php else: ?>
-            <button type="submit" name="add_entry"
-                style="padding: 10px 20px; border: none; background: #27ae60; color: #fff; border-radius: 6px; cursor: pointer; font-size: 16px; font-weight: bold;">Add
-                Entry</button>
-            <?php endif; ?>
+
+            <div style="display: flex; gap: 10px; align-items: center;">
+                <button type="submit" class="btn btn-primary">
+                    <?= $editData ? 'Save Changes' : 'Create Entry' ?>
+                </button>
+                <?php if ($editData): ?>
+                    <a href="SQLiteconnection.php" class="btn btn-ghost">Cancel</a>
+                <?php endif; ?>
+            </div>
         </form>
     </div>
 
-    <?php
-// **************************** Content Home Page ****************************
-// Insert Content in the Content Table
+    <!-- Results Section -->
+    <?php if ($searchResults !== null): ?>
+        <div class="section-header">
+            <h2 class="section-title">Search Results (<?= count($searchResults) ?>)</h2>
+        </div>
+        <div class="glass-card">
+            <?php renderTable($searchResults, true); ?>
+        </div>
+    <?php else: ?>
+        <div class="tabs-container">
+            <?php $firstTab = true; foreach ($groupedContent as $pageId => $rows): ?>
+                <?php $tabId = 'tab-' . md5($pageId); ?>
+                <a href="#<?= htmlspecialchars($pageId) ?>" style="text-decoration: none;"><button class="tab-button <?= $firstTab ? 'active' : '' ?>" onclick="openTab(event, '<?= $tabId ?>')">
+                    <span style="text-transform: capitalize;  text-decoration: none;"><?= htmlspecialchars($pageId) ?></span> <span class="badge"><?= count($rows) ?></span>
+                </button></a>
+            <?php $firstTab = false; endforeach; ?>
+        </div>
 
-/*
- * page_id:home
- * name: the name of the content I have to create better naming for this content "name"
- * content: The actual content for the page.
- */
+        <div class="tab-content-container">
+            <?php $firstTab = true; foreach ($groupedContent as $pageId => $rows): ?>
+                <?php $tabId = 'tab-' . md5($pageId); ?>
+                <div id="<?= $tabId ?>" class="tab-content <?= $firstTab ? 'active' : '' ?>">
+                    <div class="section-header">
+                        <h2 class="section-title" style="text-transform: capitalize;" id="<?= htmlspecialchars($pageId) ?>"><?= htmlspecialchars($pageId) ?></h2>
+                    </div>
+                    <div class="glass-card">
+                        <?php renderTable($rows, false); ?>
+                    </div>
+                </div>
+            <?php $firstTab = false; endforeach; ?>
+        </div>
+    <?php endif; ?>
+</div>
 
-
-// Search Results Section
-if (isset($_GET['q']) && is_string($_GET['q'])) {
-    $q = trim($_GET['q']);
-    echo '<section style="max-width: 1200px; margin: 10px auto;">';
-    echo '<h2 style="color:#333;">Search Results</h2>';
-
-    if ($q === '') {
-        echo '<p>Please type a keyword to search.</p>';
-        echo '</section>';
-    } else if (!empty($tableExists)) {
-        try {
-            $like = '%' . $q . '%';
-            $stmt = $pdo->prepare('SELECT id, page_id, name, section, content, contenido FROM content
-                                   WHERE content LIKE :q OR contenido LIKE :q OR name LIKE :q OR section LIKE :q OR page_id LIKE :q
-                                   ORDER BY page_id, name, id LIMIT 200');
-            $stmt->execute([':q' => $like]);
-            $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-            if (!$rows) {
-                echo '<p>No results for <strong>' . htmlspecialchars($q, ENT_QUOTES, 'UTF-8') . '</strong>.</p>';
-            } else {
-                echo '<p>Found ' . count($rows) . ' result(s) for <strong>' . htmlspecialchars($q, ENT_QUOTES, 'UTF-8') . '</strong>.</p>';
-                echo '<table cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 100%; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">';
-                echo '<thead><tr style="background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%); color: #fff;">';
-                echo '<th style="text-align:left; padding: 12px;">ID</th><th style="text-align:left; padding: 12px;">Page</th><th style="text-align:left; padding: 12px;">Name</th><th style="text-align:left; padding: 12px;">Section</th><th style="text-align:left; padding: 12px;">Content</th><th style="text-align:left; padding: 12px;">Contenido</th><th style="text-align:left; padding: 12px;">Actions</th>';
-                echo '</tr></thead><tbody>';
-
-                foreach ($rows as $r) {
-                    $text = (string)$r['content'];
-                    $snippet = $text;
-                    if (mb_strlen($text) > 180) {
-                        $pos = mb_stripos($text, $q);
-                        if ($pos === false) { $pos = 0; }
-                        $start = max(0, $pos - 60);
-                        $snippet = '...' . trim(mb_substr($text, $start, 180)) . '...';
-                    }
-
-                    echo '<tr style="border-bottom:1px solid #eee;">';
-                    echo '<td style="padding:12px;">' . htmlspecialchars((string)$r['id']) . '</td>';
-                    echo '<td style="padding:12px;">' . htmlspecialchars((string)$r['page_id']) . '</td>';
-                    echo '<td style="padding:12px;">' . htmlspecialchars((string)$r['name']) . '</td>';
-                    echo '<td style="padding:12px;">' . htmlspecialchars((string)$r['section']) . '</td>';
-                    echo '<td style="padding:12px;">' . htmlspecialchars($snippet) . '</td>';
-                    echo '<td style="padding:12px;">' . htmlspecialchars((string)($r['contenido'] ?? '')) . '</td>';
-                    echo '<td style="white-space: nowrap; padding: 12px;">
-                        <a href="?edit_id=' . $r['id'] . '" class="btn btn-edit">Edit</a>
-                        <a href="?delete_id=' . $r['id'] . '" onclick="return confirm(\'Are you sure you want to delete this item?\');" class="btn btn-delete">Delete</a>
-                    </td>';
-                    echo '</tr>';
-                }
-
-                echo '</tbody></table>';
-            }
-        } catch (PDOException $e) {
-            error_log('Search DB Error: ' . $e->getMessage());
-            echo '<p>There was a problem searching. Please try again later.</p>';
-        }
-
-        echo '</section>';
-    }
-}
+<div id="copy-toast">Snippet copied!</div>
 
 
+<script>
+    // Copy to clipboard logic
+    document.querySelectorAll('.clickable-row').forEach(row => {
+        row.addEventListener('click', (e) => {
+            if (e.target.closest('.actions')) return;
 
+            const index = row.dataset.index;
+            const snippet = `$content[${index}]['content']`;
 
-
-
-// Display content grouped by Page ID
-if (!empty($groupedContent)) {
-    foreach ($groupedContent as $pageId => $rows) {
-        echo '<div style="margin-top: 40px; margin-bottom: 20px;">';
-        echo '<h2 style="color: #357abd; border-bottom: 2px solid #eee; padding-bottom: 10px; text-transform: capitalize; margin-bottom: 0;">' . htmlspecialchars($pageId) . '</h2>';
-        echo '<table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-top: 20px;">';
-        echo '<thead>';
-        echo '<tr style="background-color: #f2f2f2;">';
-        echo '<th>Index</th>';
-        echo '<th>Page ID</th>';
-        echo '<th>Name</th>';
-        echo '<th>Section</th>';
-        echo '<th>Content (EN)</th>';
-        echo '<th>Contenido (ES)</th>';
-        echo '<th>Actions</th>';
-        echo '</tr>';
-        echo '</thead>';
-        echo '<tbody>';
-
-        foreach ($rows as $index => $row) {
-            echo '<tr>';
-            echo '<td>' . $index . '</td>';
-            echo '<td>' . htmlspecialchars($row['page_id']) . '</td>';
-            echo '<td>' . htmlspecialchars($row['name']) . '</td>';
-            echo '<td>' . htmlspecialchars($row['section']) . '</td>';
-            echo '<td>' . htmlspecialchars($row['content']) . '</td>';
-            echo '<td>' . htmlspecialchars($row['contenido'] ?? '') . '</td>';
-            echo '<td style="white-space: nowrap;">
-                <a href="?edit_id=' . $row['id'] . '" class="btn btn-edit">Edit</a>
-                <a href="?delete_id=' . $row['id'] . '" onclick="return confirm(\'Are you sure you want to delete this item?\');" class="btn btn-delete">Delete</a>
-            </td>';
-            echo '</tr>';
-        }
-
-        echo '</tbody>';
-        echo '</table>';
-        echo '</div>';
-    }
-} elseif (!isset($_GET['q'])) {
-    echo '<p>No content found in the database.</p>';
-}
-?>
-    <div id="copy-toast">Copied HTML snippet to clipboard!</div>
-
-    <script>
-    // Smooth scrolling for Edit
-    if (window.location.search.includes('edit_id')) {
-        const form = document.querySelector('form[method="post"]');
-        if (form) {
-            form.scrollIntoView({
-                behavior: 'smooth',
-                block: 'center'
-            });
-        }
-    }
-
-    // Click-to-Copy Logic
-    document.addEventListener('DOMContentLoaded', () => {
-        const rows = document.querySelectorAll('tbody tr');
-        const toast = document.getElementById('copy-toast');
-
-        rows.forEach(row => {
-            row.addEventListener('click', (e) => {
-                // Ignore clicks on buttons or links (Actions column)
-                if (e.target.closest('a') || e.target.closest('button')) {
-                    return;
-                }
-
-                // Get the index from the first cell (Index column)
-                const indexCell = row.cells[0];
-                if (indexCell) {
-                    const index = indexCell.textContent.trim();
-                    const phpSnippet = `$content[${index}]['content']`;
-
-                    // Copy to clipboard
-                    navigator.clipboard.writeText(phpSnippet).then(() => {
-                        showToast(phpSnippet);
-                    }).catch(err => {
-                        console.error('Failed to copy: ', err);
-                    });
-                }
+            navigator.clipboard.writeText(snippet).then(() => {
+                const toast = document.getElementById('copy-toast');
+                toast.textContent = `Copied: ${snippet}`;
+                toast.classList.add('show');
+                setTimeout(() => toast.classList.remove('show'), 3000);
             });
         });
-
-        function showToast(text) {
-            toast.textContent = `Copied: "${text}"`;
-            toast.className = "show";
-            setTimeout(() => {
-                toast.className = toast.className.replace("show", "");
-            }, 3000);
-        }
     });
-    </script>
-</body>
 
+    // Auto-scroll to editor if editing
+    if (window.location.search.includes('edit_id')) {
+        document.getElementById('editor').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Tabs navigation logic
+    function openTab(evt, tabId) {
+        // Hide all tab contents
+        const tabContents = document.getElementsByClassName("tab-content");
+        for (let i = 0; i < tabContents.length; i++) {
+            tabContents[i].classList.remove("active");
+        }
+
+        // Remove active class from all buttons
+        const tabButtons = document.getElementsByClassName("tab-button");
+        for (let i = 0; i < tabButtons.length; i++) {
+            tabButtons[i].classList.remove("active");
+        }
+
+        // Show current tab, and add active class to the button that opened the tab
+        document.getElementById(tabId).classList.add("active");
+        evt.currentTarget.classList.add("active");
+    }
+
+    // Save to local storage on submit
+    document.getElementById('entryForm')?.addEventListener('submit', function() {
+        const pageId = document.querySelector('input[name="page_id"]').value;
+        const name = document.querySelector('input[name="name"]').value;
+        const section = document.querySelector('input[name="section"]').value;
+        localStorage.setItem('last_page_id', pageId);
+        localStorage.setItem('last_name', name);
+        localStorage.setItem('last_section', section);
+    });
+
+    function fillLastUsed() {
+        const pageId = localStorage.getItem('last_page_id');
+        const name = localStorage.getItem('last_name');
+        const section = localStorage.getItem('last_section');
+        
+        if (pageId) document.querySelector('input[name="page_id"]').value = pageId;
+        if (name) document.querySelector('input[name="name"]').value = name;
+        if (section) document.querySelector('input[name="section"]').value = section;
+        
+        // Brief visual feedback
+        const btn = document.querySelector('button[onclick="fillLastUsed()"]');
+        if(btn) {
+            const originalText = btn.innerHTML;
+            btn.innerHTML = "Filled!";
+            setTimeout(() => btn.innerHTML = originalText, 1000);
+        }
+    }
+</script>
+
+</body>
 </html>

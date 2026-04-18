@@ -1,6 +1,7 @@
 <?php
 
 function offered_services($sub_route){
+    global $page, $keywords, $description;
 	switch ($sub_route) {
 
 		case 'cleanups':
@@ -53,6 +54,7 @@ function offered_services($sub_route){
 }
 
 function servicios($sub_route){
+    global $page, $keywords, $description;
 	switch ($sub_route) {
 
 		case 'limpieza':

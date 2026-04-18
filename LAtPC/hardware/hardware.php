@@ -177,5 +177,5 @@ function hw_speakers_and_subwoofers () {
     include_once('hardware/speakers_and_subwoofers.php');
 }
 
-include 'anvil/structure.php';
+include dirname(__DIR__) . '/anvil/structure.php';
 ?>

@@ -1,44 +1,13 @@
 <?php
-    function cssStyles(){
-        ?>
-        <style>
-        .remote {
-            display: inline-block;
-            padding: 5px 0;
-            position: relative;
-        }
-
-        .remote:before {
-            content: '';
-            background: rgb(31, 150, 99);
-            display: block;
-            position: absolute;
-            bottom: -3px;
-            left: 0;
-            width: 0;
-            height: 3px;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .remote:hover {
-            background-position: 0;
-        }
-
-        .remote:hover::before {
-            width: 100%;
-        }
-
-        .text {
-            font-size: 20px;
-            background: rgb(221, 247, 233);
-        }
-        </style>
-        <?php
-    }
-
+function cssStyles(){
+    ?>
+    <link rel="stylesheet" href="../services/style.css">
+    <?php
+}
 function content_services_remoteSupport(){
     ?>
     <section class="fullbar">
+        <?php include 'navBar.php'; ?>
     <article class="article">
     <a href="./#help">
         <h1 id="title">The Essentials of Remote Support: A Guide for Computer Users</h1>
@@ -251,6 +220,6 @@ function contenido_servicios_soporteRemoto(){
 
 
 
-include 'anvil/structure.php';
+include dirname(__DIR__) . '/anvil/structure.php';
 
 ?>

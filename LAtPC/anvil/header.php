@@ -254,7 +254,7 @@
         </div>
         <?php
         if($page->getLang() == "en"):
-            $uri = $_SERVER['REQUEST_URI'];
+            $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
             $routes = [
                 "/JesusChrist/father_in_heaven_tell_me_about_web" => "Jesucristo/padre_celestial_cuentame_sobre_el_internet",
                 "/JesusChrist/parables" => "Jesucristo/parabolas",
@@ -275,6 +275,9 @@
                 "/offered_services/websites" => "servicios/sitiosWeb",
             ];
             $var = isset($routes[$uri]) ? $routes[$uri] : $page->getDir()."español/";
+
+            $query = parse_url($_SERVER['REQUEST_URI'], PHP_URL_QUERY);
+            if (!empty($query)) $var .= '?' . $query;
             ?>
             <button><a href="<?= $page->getDir();?>">Home</a></button>
             <button><a href="<?= $page->getDir() . $var;?>">Español</a></button>
@@ -283,7 +286,7 @@
             <button><a href="#">Reviews</a></button>
             <?php
         elseif($page->getLang() == "es-419"):
-            $uri = $_SERVER['REQUEST_URI'];
+            $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
             $routes = [
                 "/Jesucristo/padre_celestial_cuentame_sobre_el_internet" => "JesusChrist/father_in_heaven_tell_me_about_web",
                 "/Jesucristo/parabolas" => "JesusChrist/parables",
@@ -304,6 +307,8 @@
                 "/servicios/sitiosWeb" => "offered_services/websites",
             ];
             $var = isset($routes[$uri]) ? $routes[$uri] : $page->getDir()."";
+            $query = parse_url($_SERVER['REQUEST_URI'], PHP_URL_QUERY);
+            if (!empty($query)) $var .= '?' . $query;
             ?>
             <button><a href="<?= $page->getDir();?>español">Inicio</a></button>
             <button><a href="<?= $page->getDir() . $var;?>">Inglés</a></button>

@@ -1,41 +1,14 @@
 <?php
-
 function cssStyles(){
-  ?>
-  <style>
-  .service {
-      font-size: 18px;
-      color: rgb(35, 33, 33);
-      display: inline-block;
-      padding: 5px 0;
-      position: relative;
-  }
-
-  .service:before {
-      content: '';
-      background: #13b1ea;
-      display: block;
-      position: absolute;
-      bottom: -3px;
-      left: 0;
-      width: 0;
-      height: 3px;
-      transition: all 0.3s ease-in-out;
-  }
-
-  .service:hover {
-      background-position: 0;
-  }
-
-  .service:hover::before {
-      width: 100%;
-  }
-  </style>
-  <?php
+    ?>
+    <link rel="stylesheet" href="../services/style.css">
+    <?php
 }
+
 function content_services_managedServices(){
     ?>
   <section class="fullbar">
+    <?php include 'navBar.php'; ?>
     <article class="article">
         <section>
             <h1><a href="./#help" id="title">Managed Services</a></h1>
@@ -155,6 +128,6 @@ function contenido_servicios_gestionados(){
   <?php
 }
 
-include 'anvil/structure.php';
+include dirname(__DIR__) . '/anvil/structure.php';
 
 ?>

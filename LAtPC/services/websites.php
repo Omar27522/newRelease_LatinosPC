@@ -1,4 +1,10 @@
 <?php
+function cssStyles(){
+    ?>
+    <link rel="stylesheet" href="../services/style.css">
+    <?php
+}
+
 function content_services_websites(){
     ?>
     <section class="fullbar">
@@ -11,6 +17,7 @@ function content_services_websites(){
 function contenido_servicios_paginasWeb(){
     ?>
     <section class="fullbar">
+        <?php include 'navBar.php'; ?>
     Sitios Web
 </section>
 
@@ -19,6 +26,6 @@ function contenido_servicios_paginasWeb(){
 
 
 
-include 'anvil/structure.php';
+include dirname(__DIR__) . '/anvil/structure.php';
 
 ?>

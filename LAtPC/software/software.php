@@ -130,5 +130,5 @@ function sw_developerTools() {
     include_once('software/developer_tools.php');
 }
 
-include 'anvil/structure.php';
+include dirname(__DIR__) . '/anvil/structure.php';
 ?>
