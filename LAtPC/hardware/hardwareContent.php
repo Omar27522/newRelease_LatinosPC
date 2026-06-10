@@ -1,5 +1,5 @@
 <?php
-
+include_once('navBarHW.php');
 echo "<h1 class=\"fullbar\">Hardware Main Page</h1>";
     $title="<h2>The Hardware is the computer it's physical components.</h2>";
 

@@ -5,7 +5,7 @@ function cssStyles(){
     <?php
 }
 
-function content(){
+function content_services(){
         global $title, $reliable, $services, $specialOffers, $contact;
         global $titulo, $confiable, $servicios, $ofertasEspeciales, $contacto;
         global $page, $sub_route;

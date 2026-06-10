@@ -1,9 +1,5 @@
 <?php
 
-function crumbs() {
-    echo '<a href="./#cpu" class="fullbar">Hardware</a>';
-}
-
 function cssStyles() {
     $styles = [
         'hardware' => 'hw_mainStyle.css',

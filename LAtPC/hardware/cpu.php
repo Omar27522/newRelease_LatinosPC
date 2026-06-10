@@ -1,5 +1,6 @@
 <?php
-    // no putito files here, Unfortunatelly yes here
+include_once('navBarHW.php');
+ 
     $title =[   'CPU','INTEL','AMD','x86:','ARM:','RISC-V:','Architecture','MIPS:','Power:'
     ];
 
@@ -57,7 +58,7 @@
         'Used by Intel and AMD processors and is the most common architecture found in personal computers and servers.',
         'Mobile devices, embedded systems, and low-power servers. Known for its low power consumption and energy efficiency.',
         'This is a free and open-source instruction set architecture (ISA) that has been gaining popularity in recent years. It is used in a variety of applications, including data centers, IoT devices, and edge computing.',
-        'This architecture is used in a wide range of devices such as routers, set-top boxes, and video game consoles. <a href="https://en.wikipedia.org/wiki/MIPS_architecture"title="MIPS architecture">https://en.wikipedia.org/wiki/MIPS_architecture</a>',
+        'This architecture is used in a wide range of devices such as routers, set-top boxes, and video game consoles. <a href="https://en.wikipedia.org/wiki/MIPS_architecture"title="MIPS architecture">Wikipedia Link</a>',
         'This architecture is used in IBM\'s Power systems, which are commonly used in enterprise and scientific computing.',
         'Each of these architectures has its own strengths and weaknesses, and the choice of which one to use will depend on the specific requirements of the application or device.'
     ];
@@ -177,12 +178,10 @@
     ?>
 
 
-    <section class="hero3 fulbar article">
-
-        <div class="container fullbar">
-            <?php crumbs(); ?>
+    <section class=" fulbar article">
+        <div class="container hero3">
             <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
-            <ul class="ex_menu" style="text-align:center;padding-bottom: 20px;">
+            <ul class="ex_menu spacer_shape" style="text-align:center;padding-bottom: 20px;">
                 <li id="cpu" style="display: inline;font-size: xxx-large"><a href="?hw/sw#cpu">
                         <?= empty($title[0]) ? $titulo[0] : $title[0];?>
                     </a> - </li>
@@ -200,7 +199,7 @@
             <p>
                 <?= empty($architecture[1]) ? $arquitectura[1] : $architecture[1];?>
             </p>
-            <div class="colms2">
+            <div style="columns: 2; column-gap: 20px;">
                 <ul class="ex_menu">
                     <li>
                         <h2><a href="<?=$links['x86'] ?>" title="Wikipedia">
@@ -222,15 +221,16 @@
                         <h2><a href="<?=$links['RISCV'] ?>" title="History">
                                 <?= empty($title[5]) ? $titulo[5] : $title[5];?>
                             </a></h2>
-                        <p>
+                        <p style="break-inside: avoid;">
                             <?= empty($architecture[4]) ? $arquitectura[4] : $architecture[4];?>
                         </p>
-                        <p>
-                            <a href="<?=$links['CUDDGBM'] ?>"
-                                title="Concepts of Urban Design By David Gosling, Barry Maitland · 1984">
-                                <?= empty($title[6]) ? $titulo[6] : $title[6];?>
-                            </a>
-                        </p>
+
+                        <a href="<?=$links['CUDDGBM'] ?>"
+                            title="Concepts of Urban Design By David Gosling, Barry Maitland · 1984"
+                            class="spacer_shape"style="margin-left: 35%;">
+                            <?= empty($title[6]) ? $titulo[6] : $title[6];?>
+                        </a>
+
                     </li>
                     <li>
                         <h2><a href="<?=$links['MIPS'] ?>">
@@ -259,7 +259,7 @@
     </section>
 
     <!-- et▄;Gë6T3ï(⌡╦vt⌐Æïÿ|╪╓kÿY╪R+▌╫¥±   ▄;Gë6T3ï(          )             -->
-    <section class="hero4 fulbar article" style="background-color:whitesmoke;">
+    <section class="article">
         <div class="container fullbar">
             <p>
                 <?= empty($subTitle[0]) ? $subTitulo[0] : $subTitle[0];?>
@@ -273,7 +273,7 @@
             <h2>
                 <?= empty($subTitle[1]) ? $subTitulo[1] : $subTitle[1];?>
             </h2>
-            <ul style="font-size: 35px; padding: 25px;" class="ex_menu intel_menu">
+            <ul style="font-size: 35px; padding: 25px;" class="ex_menu intel_menu hero4">
                 <li style="display: inline"><a class="button" href="<?=$links['intel_i3'] ?>">
                         i3</a>
                 </li>
@@ -309,7 +309,7 @@
             <h2>
                 <?= $intel[3]; ?>
             </h2>
-            <ul class="ex_menu">
+            <ul class="ex_menu hero4">
                 <li>
                     <h2 class="intelletters">Core i3:</h2>
                     <p>
@@ -357,7 +357,7 @@
                 </p>
             </ul>
             <hr>
-            <div class="spacer_shape">
+            <div class="spacer_shape hero4">
                 <p><?= $lga[0]; ?> <a href="<?=$links['LGA'] ?>" title="Digital Trends"><?= $lga[1]; ?></a></p>
                 <p><img src="https://latinospc.com/images/artificialintelligence/hw/cpu/thumbs/socket.jpg" title="Socket"
                         class="rtl">
@@ -391,15 +391,14 @@
     </section>
 
 
-    <section class="hero4 fulbar article" style="background-color:wheat;">
+    <section class="article">
         <div class="container fullbar">
-            <div class="spacer_mega"></div>
+            <div style="background-color:black; color:gray">
             <div class="spacer_shape" id="amd"><a href="https://www.amd.com/en.html" title="AMD Processors">
                     <button style="padding:40px;font-size:xx-large">
                         <?= empty($title[2]) ? $titulo[2] : $title[2];?>
-                    </button></a><a href="#scroll"><img src="https://latinospc.com/images/computer%20CPU.jpg"
+                    </button></a><a href="#content"><img src="https://latinospc.com/images/computer%20CPU.jpg"
                         alt="CPU Image" class="rtl" height="60" width="60" /></a></div>
-            <div class="spacer"></div>
             <div class="colms2">
                 <p><a href="<?=$links['AMD_epyc'] ?>" title="Epyc™"><button>
                             <p class="button_red">Epyc

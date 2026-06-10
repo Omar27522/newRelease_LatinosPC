@@ -3,7 +3,6 @@
         Created: June 23, 2025
         A modern, clean design for the CPU hardware section
             */
-
             /* Modern CPU styling */
             .hero3,
             .hero4,
@@ -77,8 +76,6 @@
             /* Menu styling */
             .ex_menu {
                 list-style-type: none;
-                padding: 0;
-                margin: 20px 0;
             }
 
             .ex_menu li {
@@ -240,6 +237,9 @@
                 color: var(--amd-red);
                 font-weight: 700;
                 text-decoration: none;
+            }
+            .amdred a:link , .amdred a:visited , .amdred a:active , .amdred a:hover {
+                color: white;
             }
 
             .fullbar .amdletters a:link {

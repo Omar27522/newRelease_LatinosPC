@@ -44,7 +44,7 @@ if (isset($_GET['edit_id'])) {
 }
 
 // Process POST Submissions
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['batch_action'])) {
     verifyCSRF();
 
     $data = [
@@ -224,16 +224,22 @@ if (isset($_GET['q']) && trim($_GET['q']) !== '') {
                 </div>
             </div>
 
-            <div style="display: flex; gap: 10px; align-items: center;">
-                <button type="submit" class="btn btn-primary">
-                    <?= $editData ? 'Save Changes' : 'Create Entry' ?>
-                </button>
-                <?php if ($editData): ?>
-                    <a href="SQLiteconnection.php" class="btn btn-ghost">Cancel</a>
-                <?php endif; ?>
+            <div style="display: flex; gap: 10px; align-items: center; justify-content: space-between;">
+                <div style="display: flex; gap: 10px; align-items: center;">
+                    <button type="submit" class="btn btn-primary">
+                        <?= $editData ? 'Save Changes' : 'Create Entry' ?>
+                    </button>
+                    <?php if ($editData): ?>
+                        <a href="SQLiteconnection.php" class="btn btn-ghost">Cancel</a>
+                    <?php endif; ?>
+                </div>
+                <button type="button" class="btn btn-ghost" onclick="toggleEditorMode()" style="border: 1px solid var(--primary-light); color: var(--primary-color);">Switch to Batch Mode</button>
             </div>
         </form>
     </div>
+
+    <!-- Batch Editor Section -->
+    <?php include __DIR__ . '/batch_editor.php'; ?>
 
     <!-- Results Section -->
     <?php if ($searchResults !== null): ?>
@@ -328,11 +334,11 @@ if (isset($_GET['q']) && trim($_GET['q']) !== '') {
         const pageId = localStorage.getItem('last_page_id');
         const name = localStorage.getItem('last_name');
         const section = localStorage.getItem('last_section');
-        
+
         if (pageId) document.querySelector('input[name="page_id"]').value = pageId;
         if (name) document.querySelector('input[name="name"]').value = name;
         if (section) document.querySelector('input[name="section"]').value = section;
-        
+
         // Brief visual feedback
         const btn = document.querySelector('button[onclick="fillLastUsed()"]');
         if(btn) {

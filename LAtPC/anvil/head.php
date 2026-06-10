@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= !empty($page->getTitle()) ? $page->getTitle() : $page->getTitle() ?> </title>
+    <title><?= $page->getTitle() ?> </title>
     <meta name="keywords" content="<?=$keywords?>">
     <meta name="description" content="<?=$description?>">
     <meta name="author" content="Miguel Omar, and Available AI Technologies">

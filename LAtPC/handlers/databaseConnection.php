@@ -21,7 +21,7 @@ try {
 	}
 
 	if ($tableExists) {
-		$stmt = $pdo->prepare('SELECT * FROM content WHERE page_id = ?');
+		$stmt = $pdo->prepare('SELECT * FROM content WHERE page_id = ? ORDER BY id ASC');
 		$stmt->execute([$page_id]);
 		$content = $stmt->fetchAll(PDO::FETCH_ASSOC);
 	}
