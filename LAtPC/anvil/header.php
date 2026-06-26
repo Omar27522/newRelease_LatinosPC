@@ -142,7 +142,7 @@
                         if($page->getLang() == "en"):
                             echo $page->getDir(). "hardware_options";
                         elseif($page->getLang() == "es-419"):
-                            echo "#";
+                            echo $page->getDir(). "opciones_hardware";
                         endif;?>">
                             <?php
                         if($page->getLang() == "en"):
@@ -273,6 +273,8 @@
                 "/offered_services/managedServices" => "servicios/serviciosGestionados",
                 "/offered_services/remoteSupport" => "servicios/soporteRemoto",
                 "/offered_services/websites" => "servicios/sitiosWeb",
+                "/hardware_options" => "opciones_hardware",
+                "/hardware_options/cpu" => "opciones_hardware/cpu",
             ];
             $var = isset($routes[$uri]) ? $routes[$uri] : $page->getDir()."español/";
 
@@ -305,6 +307,8 @@
                 "/servicios/serviciosGestionados" => "offered_services/managedServices",
                 "/servicios/soporteRemoto" => "offered_services/remoteSupport",
                 "/servicios/sitiosWeb" => "offered_services/websites",
+                "/opciones_hardware" => "hardware_options",
+                "/opciones_hardware/cpu" => "hardware_options/cpu",
             ];
             $var = isset($routes[$uri]) ? $routes[$uri] : $page->getDir()."";
             $query = parse_url($_SERVER['REQUEST_URI'], PHP_URL_QUERY);

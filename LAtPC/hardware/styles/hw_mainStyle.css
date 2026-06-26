@@ -338,9 +338,7 @@
     }
 
     .hardware-breadcrumbs {
-        display: flex;
-        justify-content: flex-start; /* Align to start for scrolling */
-        align-items: center;
+        display: block;
         padding: 0.4rem 0.8rem;
         margin: 1.5rem auto;
         width: 100%;
@@ -374,6 +372,7 @@
 
     .hardware-breadcrumbs ul {
         display: flex;
+        width: 100%;
         flex-wrap: nowrap; /* Prevent wrapping */
         overflow-x: auto; /* Enable horizontal scroll */
         scroll-behavior: smooth;
@@ -383,13 +382,19 @@
         margin: 0;
         gap: 0.25rem;
         align-items: center;
-        scrollbar-width: none; /* Hide scrollbar Firefox */
+        scrollbar-width: thin; /* Show thin scrollbar Firefox */
+        scrollbar-color: rgba(14, 165, 233, 0.3) transparent;
     }
 
-    /* Hide Scrollbar Chrome/Safari/Edge */
+    /* Styled Scrollbar Chrome/Safari/Edge */
     .hardware-breadcrumbs ul::-webkit-scrollbar {
-        display: none;
+        height: 5px;
     }
+    .hardware-breadcrumbs ul::-webkit-scrollbar-thumb {
+        background: rgba(14, 165, 233, 0.3);
+        border-radius: 10px;
+    }
+
 
     .hardware-breadcrumbs li {
         display: flex;

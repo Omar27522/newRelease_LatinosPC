@@ -48,6 +48,11 @@ switch ($main_route) {
 		exit;
 		break;
 
+	case 'opciones_hardware':
+		hardware_spanish($sub_route);
+		exit;
+		break;
+
 	case 'software_options':
 		software_options($sub_route);
 		exit;
