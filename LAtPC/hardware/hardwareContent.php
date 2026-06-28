@@ -125,7 +125,7 @@ echo "<h1 class=\"fullbar\">" . ($content[105][$key] ?? '') . "</h1>";
     <div tabindex="0" class="hardware-card" data-component="peripherals">
         <a href="#peripherals" class="card-link">
             <h2><?= $content[118][$key] ?? ''; ?></h2>
-            <p><?= $content[128][$key] ?? ''; ?></p>
+
         </a>
     </div>
     </div>
@@ -203,7 +203,7 @@ echo "<h1 class=\"fullbar\">" . ($content[105][$key] ?? '') . "</h1>";
             <div class="peripheral-card" data-type="input" tabindex="0">
                 <a class="peripheral-link" href="./mouse">
                     <div class="peripheral-content">
-                        <h3 class="peripheral-name"><?= $mouse = $content[129][$key] ?? ''; ?></h3>
+                        <h3 class="peripheral-name"><?= $mouse = $content[128][$key] ?? ''; ?></h3>
                         <div class="peripheral-image">
                             <img src="https://latinospc.com/images/hardware/hw/mouse.jpg" alt="<?= $mouse; ?>" title="<?= $mouse; ?>">
                         </div>
@@ -214,7 +214,7 @@ echo "<h1 class=\"fullbar\">" . ($content[105][$key] ?? '') . "</h1>";
             <div class="peripheral-card" data-type="input" tabindex="0">
                 <a class="peripheral-link" href="./keyboard">
                     <div class="peripheral-content">
-                        <h3 class="peripheral-name"><?= $keyboard = $content[130][$key] ?? ''; ?></h3>
+                        <h3 class="peripheral-name"><?= $keyboard = $content[129][$key] ?? ''; ?></h3>
                         <div class="peripheral-image">
                             <img src="https://latinospc.com/images/hardware/hw/keyboard.jpg" alt="<?= $keyboard; ?>" title="<?= $keyboard; ?>">
                         </div>
@@ -225,7 +225,7 @@ echo "<h1 class=\"fullbar\">" . ($content[105][$key] ?? '') . "</h1>";
             <div class="peripheral-card" data-type="output" tabindex="0">
                 <a class="peripheral-link" href="./monitor">
                     <div class="peripheral-content">
-                        <h3 class="peripheral-name"><?= $content[131][$key] ?? ''; ?></h3>
+                        <h3 class="peripheral-name"><?= $content[130][$key] ?? ''; ?></h3>
                         <div class="peripheral-image">
                             <img src="https://latinospc.com/images/hardware/hw/monitor.jpg"
                                 alt="<?= hw_alt($hw, $en='Display', $es='Pantalla'); ?>"
@@ -238,7 +238,7 @@ echo "<h1 class=\"fullbar\">" . ($content[105][$key] ?? '') . "</h1>";
             <div class="peripheral-card" data-type="storage" tabindex="0">
                 <a class="peripheral-link" href="./p_memory">
                     <div class="peripheral-content">
-                        <h3 class="peripheral-name"><?= $content[132][$key] ?? ''; ?></h3>
+                        <h3 class="peripheral-name"><?= $content[131][$key] ?? ''; ?></h3>
                         <div class="peripheral-image">
                             <img src="https://latinospc.com/images/hardware/hw/portable.jpg"
                                 alt="<?= hw_alt($hw, $en='External Drives', $es='Memoria Externa'); ?>"
@@ -251,7 +251,7 @@ echo "<h1 class=\"fullbar\">" . ($content[105][$key] ?? '') . "</h1>";
             <div class="peripheral-card" data-type="component" tabindex="0">
                 <a class="peripheral-link" href="./pci">
                     <div class="peripheral-content">
-                        <h3 class="peripheral-name"><?= $content[133][$key] ?? ''; ?></h3>
+                        <h3 class="peripheral-name"><?= $content[132][$key] ?? ''; ?></h3>
                         <div class="peripheral-image">
                             <img src="https://latinospc.com/images/hardware/hw/soundcard.jpg"
                                 alt="<?= hw_alt($hw, $en='PCI Cards', $es='Tarjetas PCI'); ?>"
@@ -264,7 +264,7 @@ echo "<h1 class=\"fullbar\">" . ($content[105][$key] ?? '') . "</h1>";
             <div class="peripheral-card" data-type="power" tabindex="0">
                 <a class="peripheral-link" href="./psu">
                     <div class="peripheral-content">
-                        <h3 class="peripheral-name"><?= $content[134][$key] ?? ''; ?></h3>
+                        <h3 class="peripheral-name"><?= $content[133][$key] ?? ''; ?></h3>
                         <div class="peripheral-image">
                             <img src="https://latinospc.com/images/hardware/hw/psu2.png"
                                 alt="<?= hw_alt($hw, $en='Power Supply', $es='Fuente de Poder'); ?>"
@@ -277,7 +277,7 @@ echo "<h1 class=\"fullbar\">" . ($content[105][$key] ?? '') . "</h1>";
             <div class="peripheral-card" data-type="cooling" tabindex="0">
                 <a class="peripheral-link" href="./cooling">
                     <div class="peripheral-content">
-                        <h3 class="peripheral-name"><?= $content[135][$key] ?? ''; ?></h3>
+                        <h3 class="peripheral-name"><?= $content[134][$key] ?? ''; ?></h3>
                         <div class="peripheral-image">
                             <img src="https://latinospc.com/images/hardware/hw/cooler.jpg"
                                 alt="<?= hw_alt($hw, $en='Cooling', $es='Enfriamiento'); ?>"
@@ -290,7 +290,7 @@ echo "<h1 class=\"fullbar\">" . ($content[105][$key] ?? '') . "</h1>";
             <div class="peripheral-card" data-type="graphics" featured tabindex="0">
                 <a class="peripheral-link" href="./gpu">
                     <div class="peripheral-content">
-                        <h3 class="peripheral-name"><?= $content[136][$key] ?? ''; ?></h3>
+                        <h3 class="peripheral-name"><?= $content[135][$key] ?? ''; ?></h3>
                         <div class="peripheral-image">
                             <img src="https://latinospc.com/images/hardware/hw/gpu.png"
                                 alt="<?= hw_alt($hw, $en='GPU', $es='Tarjeta GrÃ¡fica'); ?>"
@@ -303,7 +303,7 @@ echo "<h1 class=\"fullbar\">" . ($content[105][$key] ?? '') . "</h1>";
             <div class="peripheral-card" data-type="input" tabindex="0">
                 <a class="peripheral-link" href="./scanner">
                     <div class="peripheral-content">
-                        <h3 class="peripheral-name"><?= $content[137][$key] ?? ''; ?></h3>
+                        <h3 class="peripheral-name"><?= $content[136][$key] ?? ''; ?></h3>
                         <div class="peripheral-image">
                             <img src="https://latinospc.com/images/hardware/hw/scanner.png"
                                 alt="<?= hw_alt($hw, $en='Scanners', $es='EscÃ¡neres'); ?>"
@@ -316,7 +316,7 @@ echo "<h1 class=\"fullbar\">" . ($content[105][$key] ?? '') . "</h1>";
             <div class="peripheral-card" data-type="output" tabindex="0">
                 <a class="peripheral-link" href="./printer">
                     <div class="peripheral-content">
-                        <h3 class="peripheral-name"><?= $content[138][$key] ?? ''; ?></h3>
+                        <h3 class="peripheral-name"><?= $content[137][$key] ?? ''; ?></h3>
                         <div class="peripheral-image">
                             <img src="https://latinospc.com/images/hardware/hw/printer.png"
                                 alt="<?= hw_alt($hw, $en='Printers', $es='Impresoras'); ?>"
@@ -329,7 +329,7 @@ echo "<h1 class=\"fullbar\">" . ($content[105][$key] ?? '') . "</h1>";
             <div class="peripheral-card" data-type="gaming" tabindex="0">
                 <a class="peripheral-link" href="./console_controllers">
                     <div class="peripheral-content">
-                        <h3 class="peripheral-name"><?= $content[139][$key] ?? ''; ?></h3>
+                        <h3 class="peripheral-name"><?= $content[138][$key] ?? ''; ?></h3>
                         <div class="peripheral-image">
                             <img src="https://latinospc.com/images/hardware/hw/controllers.png"
                                 alt="<?= hw_alt($hw, $en='Controllers', $es='Mandos de Consola'); ?>"
@@ -342,7 +342,7 @@ echo "<h1 class=\"fullbar\">" . ($content[105][$key] ?? '') . "</h1>";
             <div class="peripheral-card" data-type="gaming" tabindex="0">
                 <a class="peripheral-link" href="./joystick">
                     <div class="peripheral-content">
-                        <h3 class="peripheral-name"><?= $content[140][$key] ?? ''; ?></h3>
+                        <h3 class="peripheral-name"><?= $content[139][$key] ?? ''; ?></h3>
                         <div class="peripheral-image">
                             <img src="https://latinospc.com/images/hardware/hw/joystick.png"
                                 alt="<?= hw_alt($hw, $en='Joysticks', $es='Joysticks'); ?>"
@@ -355,7 +355,7 @@ echo "<h1 class=\"fullbar\">" . ($content[105][$key] ?? '') . "</h1>";
                               <div class="peripheral-card" data-type="input" tabindex="0">
                 <a class="peripheral-link" href="./tablet">
                     <div class="peripheral-content">
-                        <h3 class="peripheral-name"><?= $content[141][$key] ?? ''; ?></h3>
+                        <h3 class="peripheral-name"><?= $content[140][$key] ?? ''; ?></h3>
                         <div class="peripheral-image">
                             <img src="https://latinospc.com/images/hardware/hw/tablets.png"
                                 alt="<?= hw_alt($hw, $en='Tablets', $es='Tabletas'); ?>"
@@ -368,7 +368,7 @@ echo "<h1 class=\"fullbar\">" . ($content[105][$key] ?? '') . "</h1>";
             <div class="peripheral-card" data-type="audio" tabindex="0">
                 <a class="peripheral-link" href="./micro">
                     <div class="peripheral-content">
-                        <h3 class="peripheral-name"><?= $content[142][$key] ?? ''; ?></h3>
+                        <h3 class="peripheral-name"><?= $content[141][$key] ?? ''; ?></h3>
                         <div class="peripheral-image">
                             <img src="https://latinospc.com/images/hardware/hw/mic.jpg"
                                 alt="<?= hw_alt($hw, $en='Microphone', $es='MicrÃ³fono'); ?>"
@@ -381,7 +381,7 @@ echo "<h1 class=\"fullbar\">" . ($content[105][$key] ?? '') . "</h1>";
             <div class="peripheral-card" data-type="audio" tabindex="0">
                 <a class="peripheral-link" href="./headset">
                     <div class="peripheral-content">
-                        <h3 class="peripheral-name"><?= $content[143][$key] ?? ''; ?></h3>
+                        <h3 class="peripheral-name"><?= $content[142][$key] ?? ''; ?></h3>
                         <div class="peripheral-image">
                             <img src="https://latinospc.com/images/hardware/hw/headset.png"
                                 alt="<?= hw_alt($hw, $en='Headsets', $es='Headsets'); ?>"
@@ -394,7 +394,7 @@ echo "<h1 class=\"fullbar\">" . ($content[105][$key] ?? '') . "</h1>";
             <div class="peripheral-card" data-type="audio" tabindex="0">
                 <a class="peripheral-link" href="./headphone">
                     <div class="peripheral-content">
-                        <h3 class="peripheral-name"><?= $content[144][$key] ?? ''; ?></h3>
+                        <h3 class="peripheral-name"><?= $content[143][$key] ?? ''; ?></h3>
                         <div class="peripheral-image">
                             <img src="https://latinospc.com/images/hardware/hw/headphones.png"
                                 alt="<?= hw_alt($hw, $en='Headphones', $es='AudÃ­fonos'); ?>"
@@ -407,7 +407,7 @@ echo "<h1 class=\"fullbar\">" . ($content[105][$key] ?? '') . "</h1>";
             <div class="peripheral-card" data-type="audio" tabindex="0">
                 <a class="peripheral-link" href="./audiomixer">
                     <div class="peripheral-content">
-                        <h3 class="peripheral-name"><?= $content[145][$key] ?? ''; ?></h3>
+                        <h3 class="peripheral-name"><?= $content[144][$key] ?? ''; ?></h3>
                         <div class="peripheral-image">
                             <img src="https://latinospc.com/images/hardware/hw/mixer.jpg"
                                 alt="<?= hw_alt($hw, $en='Audio Mixer', $es='Mezcladora de Audio'); ?>"
@@ -420,7 +420,7 @@ echo "<h1 class=\"fullbar\">" . ($content[105][$key] ?? '') . "</h1>";
             <div class="peripheral-card" data-type="gaming" tabindex="0">
                 <a class="peripheral-link" href="./controller">
                     <div class="peripheral-content">
-                        <h3 class="peripheral-name"><?= $content[146][$key] ?? ''; ?></h3>
+                        <h3 class="peripheral-name"><?= $content[145][$key] ?? ''; ?></h3>
                         <div class="peripheral-image">
                             <img src="https://latinospc.com/images/hardware/hw/controller.jpg"
                                 alt="<?= hw_alt($hw, $en='Controllers', $es='Controladores'); ?>"
@@ -433,7 +433,7 @@ echo "<h1 class=\"fullbar\">" . ($content[105][$key] ?? '') . "</h1>";
             <div class="peripheral-card" data-type="gaming" tabindex="0">
                 <a class="peripheral-link" href="./uniforms">
                     <div class="peripheral-content">
-                        <h3 class="peripheral-name"><?= $content[147][$key] ?? ''; ?></h3>
+                        <h3 class="peripheral-name"><?= $content[146][$key] ?? ''; ?></h3>
                         <div class="peripheral-image">
                             <img src="https://latinospc.com/images/hardware/hw/uniforms.jpg"
                                 alt="<?= hw_alt($hw, $en='Uniforms', $es='Uniformes'); ?>"
@@ -446,7 +446,7 @@ echo "<h1 class=\"fullbar\">" . ($content[105][$key] ?? '') . "</h1>";
             <div class="peripheral-card" data-type="input" tabindex="0">
                 <a class="peripheral-link" href="./pencil">
                     <div class="peripheral-content">
-                        <h3 class="peripheral-name"><?= $content[148][$key] ?? ''; ?></h3>
+                        <h3 class="peripheral-name"><?= $content[147][$key] ?? ''; ?></h3>
                         <div class="peripheral-image">
                             <img src="https://latinospc.com/images/hardware/hw/pensandpencils.jpg"
                                 alt="<?= hw_alt($hw, $en='Pens and Pencils and Stylus', $es='LÃ¡pices, Plumas y Tabletas'); ?>"
@@ -459,7 +459,7 @@ echo "<h1 class=\"fullbar\">" . ($content[105][$key] ?? '') . "</h1>";
             <div class="peripheral-card" data-type="furniture" tabindex="0">
                 <a class="peripheral-link" href="./chair">
                     <div class="peripheral-content">
-                        <h3 class="peripheral-name"><?= $content[149][$key] ?? ''; ?></h3>
+                        <h3 class="peripheral-name"><?= $content[148][$key] ?? ''; ?></h3>
                         <div class="peripheral-image">
                             <img src="https://latinospc.com/images/hardware/hw/chairs.jpg"
                                 alt="<?= hw_alt($hw, $en='Chairs', $es='Sillas'); ?>"
@@ -472,7 +472,7 @@ echo "<h1 class=\"fullbar\">" . ($content[105][$key] ?? '') . "</h1>";
             <div class="peripheral-card" data-type="furniture" tabindex="0">
                 <a class="peripheral-link" href="./desk">
                     <div class="peripheral-content">
-                        <h3 class="peripheral-name"><?= $content[150][$key] ?? ''; ?></h3>
+                        <h3 class="peripheral-name"><?= $content[149][$key] ?? ''; ?></h3>
                         <div class="peripheral-image">
                             <img src="https://latinospc.com/images/hardware/hw/desk.jpg"
                                 alt="<?= hw_alt($hw, $en='Desks', $es='Escritorios'); ?>"
@@ -485,7 +485,7 @@ echo "<h1 class=\"fullbar\">" . ($content[105][$key] ?? '') . "</h1>";
             <div class="peripheral-card" data-type="accessories" tabindex="0">
                 <a class="peripheral-link" href="./antislipmats">
                     <div class="peripheral-content">
-                        <h3 class="peripheral-name"><?= $content[151][$key] ?? ''; ?></h3>
+                        <h3 class="peripheral-name"><?= $content[150][$key] ?? ''; ?></h3>
                         <div class="peripheral-image">
                             <img src="https://latinospc.com/images/hardware/hw/anti-slip-mat.jpg"
                                 alt="<?= hw_alt($hw, $en='Anti Slip Mats', $es='Alfombrillas Antideslizantes'); ?>"
@@ -498,7 +498,7 @@ echo "<h1 class=\"fullbar\">" . ($content[105][$key] ?? '') . "</h1>";
             <div class="peripheral-card" data-type="audio" tabindex="0">
                 <a class="peripheral-link" href="./speakers_and_subwoofers">
                     <div class="peripheral-content">
-                        <h3 class="peripheral-name"><?= $content[152][$key] ?? ''; ?></h3>
+                        <h3 class="peripheral-name"><?= $content[151][$key] ?? ''; ?></h3>
                         <div class="peripheral-image">
                             <img src="https://latinospc.com/images/hardware/hw/speakers.jpg"
                                 alt="<?= hw_alt($hw, $en='Speakers and Subwoofers', $es='Bocinas y Subwoofers'); ?>"

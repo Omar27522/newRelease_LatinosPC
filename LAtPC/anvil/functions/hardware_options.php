@@ -85,18 +85,22 @@ function hardware_options($sub_route){
 		    include 'hardware/hardware.php';
 		    break;
 		case 'monitor':
+		case 'display':
+		case 'displays':
 		    $page = new Structure('../../', 'english', 'HW Monitor');
 		    $keywords = 'computer monitor, gaming monitor, 4K monitor, ultrawide monitor, monitor setup, dual monitor, high refresh rate, IPS monitor, LED monitor, monitor calibration';
 		    $description = 'Computer monitor sales and setup in Pomona, CA. Gaming monitors, 4K displays, ultrawide screens, and dual monitor configurations for productivity and entertainment.';
 		    include 'hardware/hardware.php';
 		    break;
 		case 'p_memory':
+		case 'portableMemory':
 		    $page = new Structure('../../', 'english', 'HW External Drive');
 		    $keywords = 'external hard drive, portable storage, external SSD, USB drive, backup drive, external storage, portable hard drive, flash drive, thumb drive, data portability';
 		    $description = 'External storage solutions in Pomona, CA. Portable hard drives, external SSDs, and USB drives for backup, file transfer, and expanding your storage capacity.';
 		    include 'hardware/hardware.php';
 		    break;
 		case 'pci':
+		case 'pci_cards':
 		    $page = new Structure('../../', 'english', 'HW PCI Cards');
 		    $keywords = 'PCI card, expansion card, PCIe card, sound card, network card, capture card, WiFi card, PCI Express, expansion slot, add-in card';
 		    $description = 'PCI and PCIe expansion cards in Pomona, CA. Sound cards, network cards, WiFi adapters, and other expansion cards to enhance your PC capabilities.';
@@ -123,6 +127,7 @@ function hardware_options($sub_route){
 		    include 'hardware/hardware.php';
 		    break;
 		case 'joystick':
+		case 'joysticks':
 		    $page = new Structure('../../', 'english', 'HW Joysticks');
 		    $keywords = 'joystick, flight stick, HOTAS, flight simulator joystick, gaming joystick, flight controls, throttle control, arcade stick, sim racing joystick';
 		    $description = 'Gaming joysticks and flight controls in Pomona, CA. Flight simulator joysticks, HOTAS systems, and arcade sticks for immersive gaming experiences.';
@@ -240,114 +245,146 @@ function hardware_spanish($sub_route){
 		    $description = 'Servicios de actualización de RAM y memoria en Pomona, CA. Instalamos y recomendamos la memoria adecuada para un rendimiento más rápido en computadoras de escritorio y laptops. Opciones DDR4 y DDR5 disponibles.';
 		    include 'hardware/hardware.php';
 		    break;
+		case 'placa_base':
+		case 'placa-base':
 		case 'motherboard':
-		    $page = new Structure('../../', 'español', 'HW Motherboard');
+		    $page = new Structure('../../', 'español', 'HW Placa Base');
 		    $keywords = 'tarjeta madre, placa base, reemplazo de tarjeta madre, actualización de placa madre, placa base de PC, placa base para juegos, placa base ATX, micro ATX, instalación de placa base, placa base Intel, placa base AMD';
 		    $description = 'Servicios de reemplazo y actualización de placas base en Pomona, CA. Instalación experta de placas base Intel y AMD para juegos, estaciones de trabajo y construcciones de PC estándar.';
 		    include 'hardware/hardware.php';
 		    break;
+		case 'gabinete':
+		case 'carcasa':
 		case 'chassis':
-		    $page = new Structure('../../', 'español', 'HW Chassis');
+		    $page = new Structure('../../', 'español', 'HW Carcasa');
 		    $keywords = 'gabinete de computadora, chasis de PC, gabinete de torre, gabinete de escritorio, gabinete para juegos, gabinete ATX, gabinete mini ITX, carcasa de computadora, actualización de gabinete, gabinete de flujo de aire, gabinete RGB';
 		    $description = 'Opciones de chasis y gabinetes de computadora en Pomona, CA. Elija entre torres para juegos, gabinetes compactos y carcasas profesionales con flujo de aire y diseño óptimos.';
 		    include 'hardware/hardware.php';
 		    break;
+		case 'almacenamiento':
 		case 'storage':
-		    $page = new Structure('../../', 'español', 'HW Storage');
+		    $page = new Structure('../../', 'español', 'HW Almacenamiento');
 		    $keywords = 'SSD, disco duro, SSD NVMe, actualización de almacenamiento, unidad de estado sólido, reemplazo de HDD, unidad M.2, expansión de almacenamiento, SSD SATA, almacenamiento interno, almacenamiento de datos';
 		    $description = 'Servicios de actualización de almacenamiento de computadoras en Pomona, CA. Instale SSD, unidades NVMe y discos duros para un rendimiento más rápido y mayor capacidad. Soluciones de almacenamiento profesional.';
 		    include 'hardware/hardware.php';
 		    break;
+		case 'fuente_de_poder':
+		case 'fuente-de-poder':
 		case 'powersupply':
 		case 'psu':
-		    $page = new Structure('../../', 'español', 'HW PSU');
+		    $page = new Structure('../../', 'español', 'HW Fuente de Poder');
 		    $keywords = 'fuente de poder, PSU, unidad de fuente de alimentación, reemplazo de PSU, fuente modular, fuente de alimentación de computadora, calculadora de vataje, actualización de fuente, fuente de alimentación confiable, certificación 80 Plus';
 		    $description = 'Servicios de instalación y reemplazo de fuentes de alimentación en Pomona, CA. Selección e instalación experta de fuentes de poder para un rendimiento de PC estable y confiable. Opciones modulares y certificadas disponibles.';
 		    include 'hardware/hardware.php';
 		    break;
+		case 'tarjeta_grafica':
+		case 'tarjeta-grafica':
 		case 'graphicscard':
 		case 'gpu':
-		    $page = new Structure('../../', 'español', 'HW GPU');
+		    $page = new Structure('../../', 'español', 'HW Tarjeta Grafica');
 		    $keywords = 'tarjeta gráfica, GPU, tarjeta de video, GPU NVIDIA, tarjeta gráfica AMD, actualización de GPU, tarjeta gráfica para juegos, instalación de tarjeta gráfica, RTX, Radeon, gráficos discretos';
 		    $description = 'Servicios de instalación y actualización de tarjetas gráficas en Pomona, CA. Recomendaciones e instalación experta de GPU para juegos, edición de video y trabajo gráfico profesional.';
 		    include 'hardware/hardware.php';
 		    break;
+		case 'enfriamiento':
 		case 'coolers':
 		case 'cooling':
-		    $page = new Structure('../../', 'español', 'HW Cooling');
+		    $page = new Structure('../../', 'español', 'HW Enfriamiento');
 		    $keywords = 'enfriador de CPU, enfriamiento de PC, enfriamiento líquido, enfriador AIO, enfriador de aire, pasta térmica, ventiladores de gabinete, sistema de enfriamiento, actualización de enfriamiento de computadora, gestión de temperatura, disipador de calor';
 		    $description = 'Soluciones de enfriamiento para computadoras en Pomona, CA. Instale enfriadores de aire, sistemas de enfriamiento líquido y ventiladores de gabinete para mantener su PC fresca y silenciosa bajo cualquier carga de trabajo.';
 		    include 'hardware/hardware.php';
 		    break;
+		case 'dispositivos_de_entrada':
+		case 'dispositivos-de-entrada':
 		case 'input_devices':
-		    $page = new Structure('../../', 'español', 'HW Input Devices');
+		    $page = new Structure('../../', 'español', 'HW Dispositivos de Entrada');
 		    $keywords = 'dispositivos de entrada, teclado, mouse, teclado para juegos, teclado mecánico, mouse inalámbrico, panel táctil, trackball, periféricos de entrada, teclado USB, mouse para juegos';
 		    $description = 'Dispositivos de entrada de computadora, incluyendo teclados, ratones y periféricos en Pomona, CA. Recomendaciones de expertos para juegos, productividad y necesidades informáticas cotidianas.';
 		    include 'hardware/hardware.php';
 		    break;
+		case 'dispositivos_de_salida':
+		case 'dispositivos-de-salida':
 		case 'output_devices':
-		    $page = new Structure('../../', 'español', 'HW Output Devices');
+		    $page = new Structure('../../', 'español', 'HW Dispositivos de Salida');
 		    $keywords = 'dispositivos de salida, monitor de computadora, impresora, altavoces, pantalla, proyector, periféricos de salida, configuración de doble monitor, pantalla, salida de audio, pantalla visual';
 		    $description = 'Dispositivos de salida de computadora, incluyendo monitores, impresoras y altavoces en Pomona, CA. Configuración profesional y recomendaciones para un rendimiento óptimo de pantalla y audio.';
 		    include 'hardware/hardware.php';
 		    break;
+		case 'perifericos':
 		case 'peripherals_and_gear':
-		    $page = new Structure('../../', 'español', 'HW Peripherals');
+		    $page = new Structure('../../', 'español', 'HW Perifericos');
 		    $keywords = 'periféricos de computadora, accesorios de PC, equipo de juego, dispositivos USB, periféricos inalámbricos, accesorios de computadora, dispositivos externos, configuración de periféricos, equipo tecnológico, equipo de PC';
 		    $description = 'Periféricos de computadora y equipo para juegos en Pomona, CA. Gama completa de accesorios para PC, dispositivos USB y equipos tecnológicos para mejorar la productividad y el rendimiento de los juegos.';
 		    include 'hardware/hardware.php';
 		    break;
+		case 'raton':
+		case 'ratón':
 		case 'mouse':
-		    $page = new Structure('../../', 'español', 'HW Mouse');
+		    $page = new Structure('../../', 'español', 'HW Ratón');
 		    $keywords = 'mouse de computadora, mouse para juegos, mouse inalámbrico, mouse ergonómico, mouse óptico, mouse DPI, mouse RGB, mouse trackball, mouse Bluetooth, mouse de precisión';
 		    $description = 'Opciones y recomendaciones de mouse de computadora en Pomona, CA. Ratones para juegos, inalámbricos y opciones ergonómicas para comodidad y precisión en el trabajo o el juego.';
 		    include 'hardware/hardware.php';
 		    break;
+		case 'teclado':
 		case 'keyboard':
-		    $page = new Structure('../../', 'español', 'HW Keyboard');
+		    $page = new Structure('../../', 'español', 'HW Teclado');
 		    $keywords = 'teclado, teclado mecánico, teclado para juegos, teclado inalámbrico, teclado ergonómico, teclado RGB, teclado de membrana, interruptores de teclado, teclado retroiluminado, teclado USB';
 		    $description = 'Opciones de teclado de computadora en Pomona, CA. Teclados mecánicos, para juegos y ergonómicos para comodidad de escritura y rendimiento. Opciones con cable e inalámbricas disponibles.';
 		    include 'hardware/hardware.php';
 		    break;
 		case 'monitor':
+		case 'display':
+		case 'displays':
 		    $page = new Structure('../../', 'español', 'HW Monitor');
 		    $keywords = 'monitor de computadora, monitor para juegos, monitor 4K, monitor ultrawide, configuración de monitor, monitor dual, alta tasa de refresco, monitor IPS, monitor LED, calibración de monitor';
 		    $description = 'Venta y configuración de monitores de computadora en Pomona, CA. Monitores para juegos, pantallas 4K, pantallas ultrawide y configuraciones de monitor dual para productividad y entretenimiento.';
 		    include 'hardware/hardware.php';
 		    break;
+		case 'memoria_portatil':
+		case 'memoria-portatil':
 		case 'p_memory':
-		    $page = new Structure('../../', 'español', 'HW External Drive');
+		case 'portableMemory':
+		    $page = new Structure('../../', 'español', 'HW Memoria Portatil');
 		    $keywords = 'disco duro externo, almacenamiento portátil, SSD externo, unidad USB, unidad de respaldo, almacenamiento externo, disco duro portátil, unidad flash, memoria USB, portabilidad de datos';
 		    $description = 'Soluciones de almacenamiento externo en Pomona, CA. Discos duros portátiles, SSD externos y unidades USB para respaldo, transferencia de archivos y expansión de su capacidad de almacenamiento.';
 		    include 'hardware/hardware.php';
 		    break;
+		case 'tarjetas_pci':
+		case 'tarjetas-pci':
 		case 'pci':
-		    $page = new Structure('../../', 'español', 'HW PCI Cards');
+		case 'pci_cards':
+		    $page = new Structure('../../', 'español', 'HW Tarjetas PCI');
 		    $keywords = 'tarjeta PCI, tarjeta de expansión, tarjeta PCIe, tarjeta de sonido, tarjeta de red, tarjeta de captura, tarjeta WiFi, PCI Express, ranura de expansión, tarjeta adicional';
 		    $description = 'Tarjetas de expansión PCI y PCIe en Pomona, CA. Tarjetas de sonido, tarjetas de red, adaptadores WiFi y otras tarjetas de expansión para mejorar las capacidades de su PC.';
 		    include 'hardware/hardware.php';
 		    break;
+		case 'escaneres':
+		case 'escáneres':
 		case 'scanners':
 		case 'scanner':
-		    $page = new Structure('../../', 'español', 'HW Scanners');
+		    $page = new Structure('../../', 'español', 'HW Escáneres');
 		    $keywords = 'escáner de documentos, escáner plano, escáner de fotos, escáner portátil, configuración de escáner, digitalización de documentos, escáner OCR, escáner de alta velocidad, escáner dúplex';
 		    $description = 'Configuración de escáneres de documentos y fotos en Pomona, CA. Instalación profesional de escáneres y recomendaciones para digitalizar documentos, fotos y papeles importantes.';
 		    include 'hardware/hardware.php';
 		    break;
+		case 'impresoras':
 		case 'printers':
 		case 'printer':
-		    $page = new Structure('../../', 'español', 'HW Printers');
+		    $page = new Structure('../../', 'español', 'HW Impresoras');
 		    $keywords = 'impresora, impresora de inyección de tinta, impresora láser, impresora inalámbrica, impresora todo en uno, configuración de impresora, instalación de impresora, impresora para el hogar, impresora de oficina, impresora fotográfica';
 		    $description = 'Servicios de configuración e instalación de impresoras en Pomona, CA. Impresoras de inyección de tinta, láser y todo en uno para el hogar y la oficina. Configuración de impresoras inalámbricas y de red disponible.';
 		    include 'hardware/hardware.php';
 		    break;
+		case 'controladores_de_consola':
+		case 'controladores-de-consola':
 		case 'console_controllers':
-		    $page = new Structure('../../', 'español', 'HW Console Controllers');
+		    $page = new Structure('../../', 'español', 'HW Controladores de Consola');
 		    $keywords = 'control de consola, control de juego, control de Xbox, control de PlayStation, control de Nintendo, control inalámbrico, control para juegos, gamepad, control de PC';
 		    $description = 'Controles de consolas de juegos en Pomona, CA. Controles de Xbox, PlayStation y Nintendo para juegos de PC. Opciones con cable e inalámbricas para todas las plataformas de juegos.';
 		    include 'hardware/hardware.php';
 		    break;
 		case 'joystick':
+		case 'joysticks':
 		    $page = new Structure('../../', 'español', 'HW Joysticks');
 		    $keywords = 'joystick, palanca de vuelo, HOTAS, joystick de simulador de vuelo, joystick para juegos, controles de vuelo, control de aceleración, palanca arcade, joystick de carreras sim';
 		    $description = 'Joysticks de juego y controles de vuelo en Pomona, CA. Joysticks para simulador de vuelo, sistemas HOTAS y palancas arcade para experiencias de juego inmersivas.';
@@ -360,9 +397,11 @@ function hardware_spanish($sub_route){
 		    $description = 'Tabletas de dibujo y gráficas en Pomona, CA. Tabletas con lápiz profesionales para arte digital, diseño y edición de fotos. Servicios de configuración y ajuste disponibles.';
 		    include 'hardware/hardware.php';
 		    break;
+		case 'microfonos':
+		case 'micrófonos':
 		case 'microphones':
 		case 'micro':
-		    $page = new Structure('../../', 'español', 'HW Microphones');
+		    $page = new Structure('../../', 'español', 'HW Micrófonos');
 		    $keywords = 'micrófono, micrófono USB, micrófono de streaming, micrófono de condensador, micrófono para juegos, micrófono para podcast, micrófono de estudio, configuración de micrófono, micrófono XLR';
 		    $description = 'Opciones y configuración de micrófonos en Pomona, CA. Micrófonos USB y XLR para streaming, podcasting, juegos y grabación. Soluciones profesionales de captura de audio.';
 		    include 'hardware/hardware.php';
@@ -374,64 +413,79 @@ function hardware_spanish($sub_route){
 		    $description = 'Auriculares y diademas para juegos y PC en Pomona, CA. Auriculares inalámbricos y con cable con micrófonos para juegos, videollamadas y multimedia. Opciones de sonido envolvente disponibles.';
 		    include 'hardware/hardware.php';
 		    break;
+		case 'audifonos':
+		case 'audífonos':
 		case 'headphones':
 		case 'headphone':
-		    $page = new Structure('../../', 'español', 'HW Headphones');
+		    $page = new Structure('../../', 'español', 'HW Audífonos');
 		    $keywords = 'auriculares, audífonos inalámbricos, auriculares de estudio, auriculares Bluetooth, auriculares con cancelación de ruido, auriculares sobre la oreja, auriculares para audiófilos, auriculares para música';
 		    $description = 'Auriculares para computadora en Pomona, CA. Auriculares con cable e inalámbricos para música, juegos y trabajo. Opciones de calidad de estudio y cancelación de ruido disponibles.';
 		    include 'hardware/hardware.php';
 		    break;
+		case 'mezcladoras_de_audio':
+		case 'mezcladoras-de-audio':
 		case 'audio_mixers':
 		case 'audiomixer':
-		    $page = new Structure('../../', 'español', 'HW Audio Mixers');
+		    $page = new Structure('../../', 'español', 'HW Mezcladoras de Audio');
 		    $keywords = 'mezclador de audio, mezclador de audio USB, mezclador de streaming, mezclador de podcast, interfaz de audio, consola de mezcla, mezclador digital, GoXLR, mezclador de producción de audio';
 		    $description = 'Mezcladores e interfaces de audio en Pomona, CA. Soluciones de mezcla profesional para streaming, podcasting y producción musical. Servicios de configuración y ajuste disponibles.';
 		    include 'hardware/hardware.php';
 		    break;
+		case 'controladores':
 		case 'controllers':
 		case 'controller':
-		    $page = new Structure('../../', 'español', 'HW Controllers');
+		    $page = new Structure('../../', 'español', 'HW Controladores');
 		    $keywords = 'control de juego, control de PC, control inalámbrico, control con cable, control de Xbox para PC, control de PlayStation para PC, control de terceros, gamepad para juegos';
 		    $description = 'Controles para juegos de PC en Pomona, CA. Controles inalámbricos y con cable compatibles con juegos de PC. Opciones de Xbox, PlayStation y de terceros disponibles.';
 		    include 'hardware/hardware.php';
 		    break;
+		case 'uniformes_de_gaming':
+		case 'uniformes-de-gaming':
 		case 'gaming_uniforms':
 		case 'uniforms':
-		    $page = new Structure('../../', 'español', 'HW Gaming Uniforms');
+		    $page = new Structure('../../', 'español', 'HW Uniformes de Gaming');
 		    $keywords = 'jersey de juego, jersey de esports, ropa de equipo de juego, uniforme de juego, ropa de streamer, ropa de juego, equipo de esports, jerseys de equipo, mercancía de juego';
 		    $description = 'Uniformes de juego y ropa de esports en Pomona, CA. Jerseys de equipo, ropa de streaming y mercancía de juego para jugadores competitivos y creadores de contenido.';
 		    include 'hardware/hardware.php';
 		    break;
+		case 'lapices_plumas_y_tablets':
+		case 'lapices-plumas-y-tablets':
 		case 'pens_pencils_tablets':
 		case 'pencil':
-		    $page = new Structure('../../', 'español', 'HW Pens, Pencils & Tablets');
+		    $page = new Structure('../../', 'español', 'HW Lápices, Plumas y Tablets');
 		    $keywords = 'lápiz óptico, lápiz digital, lápiz de tableta, Apple Pencil, Surface Pen, lápiz de dibujo, lápiz sensible a la presión, lápiz activo, accesorios de tableta con lápiz';
 		    $description = 'Lápices digitales y ópticos en Pomona, CA. Lápices sensibles a la presión para tabletas de dibujo, iPads y dispositivos con pantalla táctil. Perfecto para artistas y diseñadores.';
 		    include 'hardware/hardware.php';
 		    break;
+		case 'sillas':
 		case 'chairs':
 		case 'chair':
-		    $page = new Structure('../../', 'español', 'HW Chairs');
+		    $page = new Structure('../../', 'español', 'HW Sillas');
 		    $keywords = 'silla para juegos, silla de oficina, silla ergonómica, silla de computadora, silla de escritorio, silla de carreras, silla de malla, silla ajustable, silla con soporte lumbar';
 		    $description = 'Sillas de oficina y para juegos en Pomona, CA. Sillas ergonómicas para computadora con soporte lumbar para sesiones de juego y horas de trabajo cómodas.';
 		    include 'hardware/hardware.php';
 		    break;
+		case 'escritorios':
 		case 'desk':
 		case 'desks':
-		    $page = new Structure('../../', 'español', 'HW Desks');
+		    $page = new Structure('../../', 'español', 'HW Escritorios');
 		    $keywords = 'escritorio para juegos, escritorio de computadora, escritorio de pie, escritorio en L, escritorio ajustable, configuración de escritorio, escritorio de estación de trabajo, estación de juegos, escritorio de oficina, escritorio ergonómico';
 		    $description = 'Escritorios para computadoras y juegos en Pomona, CA. Escritorios de pie, escritorios en L y estaciones de juego para una organización y comodidad óptimas del espacio de trabajo.';
 		    include 'hardware/hardware.php';
 		    break;
+		case 'tapetes_antideslizantes':
+		case 'tapetes-antideslizantes':
 		case 'anti_slip_mats':
 		case 'antislipmats':
-		    $page = new Structure('../../', 'español', 'HW Anti-Slip Mats');
+		    $page = new Structure('../../', 'español', 'HW Tapetes Antideslizantes');
 		    $keywords = 'mouse pad, mouse pad para juegos, mouse pad extendido, tapete de escritorio, mouse pad RGB, mouse pad grande, alfombrilla antideslizante, almohadilla de escritorio, tapete de escritorio para juegos';
 		    $description = 'Alfombrillas de ratón para juegos y tapetes de escritorio en Pomona, CA. Mouse pads extendidos, tapetes de escritorio RGB y superficies antideslizantes para un control preciso del mouse y protección del escritorio.';
 		    include 'hardware/hardware.php';
 		    break;
+		case 'altavoces_y_subwoofers':
+		case 'altavoces-y-subwoofers':
 		case 'speakers_and_subwoofers':
-		    $page = new Structure('../../', 'español', 'HW Speakers and Subwoofers');
+		    $page = new Structure('../../', 'español', 'HW Altavoces y Subwoofers');
 		    $keywords = 'altavoces de computadora, bocinas de PC, subwoofer, altavoces 2.1, bocinas para juegos, altavoces de escritorio, altavoces multimedia, bocinas Bluetooth, altavoces de sonido envolvente';
 		    $description = 'Altavoces y subwoofers para computadora en Pomona, CA. Sistemas 2.1, altavoces para juegos y configuraciones de sonido envolvente para un audio inmersivo en su PC de escritorio.';
 		    include 'hardware/hardware.php';

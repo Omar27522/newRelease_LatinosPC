@@ -1,152 +1,139 @@
 <?php
+include_once dirname(__DIR__) . '/handlers/databaseConnection.php';
+databaseConnection('hardware');
+global $content, $key;
+?>
+<?php include_once('navBarHW.php'); ?>
+<?php
 ?>
 <article class="article fullbar"><!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ -->
-<a href="./#peripherals"><h1>Mats</h1></a>
+<a href="./#peripherals"><h1><?= $content[3349][$key] ?? ''; ?></h1></a>
 <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ -->
 <section class="blurb">
 
-    <p tabindex="0" class="sub_title center card2 selection" style="text-align: center;">Anti-Slip Mats: Overview</p>
+    <p tabindex="0" class="sub_title center card2 selection" style="text-align: center;"><?= $content[3350][$key] ?? ''; ?></p>
 
-    <p class="sub_sub_title selection" tabindex="0">Anti-slip mats are designed to prevent items from sliding or
-        slipping on a surface.<br /><br />
-        They are commonly used in various applications, including under computer peripherals such as keyboards, mice,
-        laptops, and desktop computers.<br /><br />
-        The primary purpose of using anti-slip mats for computers is to enhance stability and prevent accidental
-        movement, which can improve user comfort and productivity.</p>
+    <p class="sub_sub_title selection" tabindex="0"><?= $content[3351][$key] ?? ''; ?><br /><br />
+        <?= $content[3352][$key] ?? ''; ?><br /><br />
+        <?= $content[3353][$key] ?? ''; ?></p>
 
     <div class="colms2">
-        <p class="sub_sub_title spacer_shape">Key Features and Benefits:</p>
+        <p class="sub_sub_title spacer_shape"><?= $content[3354][$key] ?? ''; ?></p>
         <ul>
-            <li tabindex="0" class="selection card2"><strong>Surface Grip:</strong>
-                <span tabindex="0" class="selection_2 card2">Anti-slip mats are made from materials that provide a high level
-                    of friction.</span>
+            <li tabindex="0" class="selection card2"><strong><?= $content[3355][$key] ?? ''; ?></strong>
+                <span tabindex="0" class="selection_2 card2"><?= $content[3356][$key] ?? ''; ?></span>
                 <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]1.jpeg" class="fl card2" alt="Surface Grip"
                     width="100px">
-                <span tabindex="0" class="selection_2 card2">This helps to keep computer peripherals and devices securely in
-                    place, preventing them from sliding around during use.</span>
+                <span tabindex="0" class="selection_2 card2"><?= $content[3357][$key] ?? ''; ?></span>
             </li>
 
-            <li tabindex="0" class="selection card2"><strong>Protection:</strong>
-                <span tabindex="0" class="selection_2 card2">These mats also serve as a protective layer between the computer
-                    peripherals and the surface they're placed on.</span>
+            <li tabindex="0" class="selection card2"><strong><?= $content[3358][$key] ?? ''; ?></strong>
+                <span tabindex="0" class="selection_2 card2"><?= $content[3359][$key] ?? ''; ?></span>
                 <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]2.jpeg" class="fl card2" alt="Protection"
                     width="100px">
-                <span tabindex="0" class="selection_2 card2">They can help prevent scratches and wear on both the peripherals
-                    and the underlying surface.</span>
+                <span tabindex="0" class="selection_2 card2"><?= $content[3360][$key] ?? ''; ?></span>
             </li>
 
-            <li tabindex="0" class="selection card2"><strong>Stability:</strong>
-                <span tabindex="0" class="selection_2 card2">By preventing movement, anti-slip mats contribute to a more
-                    stable work environment.</span>
+            <li tabindex="0" class="selection card2"><strong><?= $content[3361][$key] ?? ''; ?></strong>
+                <span tabindex="0" class="selection_2 card2"><?= $content[3362][$key] ?? ''; ?></span>
                 <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]3.jpeg" class="fl card2" alt="Stability"
                     width="100px">
-                <span tabindex="0" class="selection_2 card2">This is particularly important for tasks that require precision,
-                    such as gaming or graphic design.</span>
+                <span tabindex="0" class="selection_2 card2"><?= $content[3363][$key] ?? ''; ?></span>
             </li>
 
-            <li tabindex="0" class="selection card2"><strong>Reduced Strain:</strong>
-                <span tabindex="0" class="selection_2 card2">Using an anti-slip mat can reduce the need for constant
-                    readjustment of peripherals, <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]4.jpeg" class="fl card2" alt="Reduced Strain"
-                    width="100px">which can help reduce strain on the user's wrists and
-                    hands.</span>
+            <li tabindex="0" class="selection card2"><strong><?= $content[3364][$key] ?? ''; ?></strong>
+                <span tabindex="0" class="selection_2 card2"><?= $content[3365][$key] ?? ''; ?> <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]4.jpeg" class="fl card2" alt="Reduced Strain"
+                    width="100px"><?= $content[3366][$key] ?? ''; ?></span>
             </li>
 
-            <li tabindex="0" class="selection card2"><strong>Noise Reduction:</strong>
-                <span tabindex="0" class="selection_2 card2">Mats can dampen the noise generated by moving peripherals,</span>
+            <li tabindex="0" class="selection card2"><strong><?= $content[3367][$key] ?? ''; ?></strong>
+                <span tabindex="0" class="selection_2 card2"><?= $content[3368][$key] ?? ''; ?></span>
                 <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]5.jpeg" class="fl card2" alt="Noise Reduction"
                     width="100px">
-                <span tabindex="0" class="selection_2 card2">making for a quieter workspace.</span>
+                <span tabindex="0" class="selection_2 card2"><?= $content[3369][$key] ?? ''; ?></span>
             </li>
 
-            <li tabindex="0" class="selection card2"><strong>Customization:</strong>
-                <span tabindex="0" class="selection_2 card2">Anti-slip mats come in various shapes and sizes to accommodate
-                    different types of peripherals and devices.</span>
+            <li tabindex="0" class="selection card2"><strong><?= $content[3370][$key] ?? ''; ?></strong>
+                <span tabindex="0" class="selection_2 card2"><?= $content[3371][$key] ?? ''; ?></span>
                 <img src="https://latinospc.com/images/artificialintelligence/[4][1]/cyber[4][1]2.jpeg" class="fl card2"
                     alt="Customization" width="100px">
-                <span tabindex="0" class="selection_2 card2">Some may even be cut to fit specific areas.</span>
+                <span tabindex="0" class="selection_2 card2"><?= $content[3372][$key] ?? ''; ?></span>
             </li>
 
-            <li tabindex="0" class="selection card2"><strong>Easy to Clean:</strong>
-                <span tabindex="0" class="selection_2 card2">Many anti-slip mats are easy to clean and maintain,</span>
+            <li tabindex="0" class="selection card2"><strong><?= $content[3373][$key] ?? ''; ?></strong>
+                <span tabindex="0" class="selection_2 card2"><?= $content[3374][$key] ?? ''; ?></span>
                 <img src="https://latinospc.com/images/artificialintelligence/[4][1]/cyber[4][1]2.jpeg" class="fl card2"
                     alt="Easy to Clean" width="100px">
-                <span tabindex="0" class="selection_2 card2">which is important for maintaining a clean and hygienic
-                    workspace.</span>
+                <span tabindex="0" class="selection_2 card2"><?= $content[3375][$key] ?? ''; ?></span>
             </li>
         </ul>
     </div><div class="spacer"></div>
 
     <div class="colms2">
-        <p class="sub_sub_title spacer_shape">Materials and Construction:</p>
-            <p tabindex="0" class="selection sub_sub_sub_title spacer_shape">Anti-slip mats are typically made from rubber, silicone, or other
-                materials with high friction properties. These materials create a grippy surface that prevents movement. The
-                mats may also have a textured pattern that enhances their anti-slip properties.</p>
+        <p class="sub_sub_title spacer_shape"><?= $content[3376][$key] ?? ''; ?></p>
+            <p tabindex="0" class="selection sub_sub_sub_title spacer_shape"><?= $content[3377][$key] ?? ''; ?></p>
     </div>
 
     <div class="spacer"></div>
 
     <div class="colms2">
-    <p class="sub_sub_title spacer_shape">Applications:</p>
-        <p tabindex="0" class="sub_sub_sub_title spacer_shape selection">Anti-slip mats for computers are used in
-            various settings, including:</p>
+    <p class="sub_sub_title spacer_shape"><?= $content[3378][$key] ?? ''; ?></p>
+        <p tabindex="0" class="sub_sub_sub_title spacer_shape selection"><?= $content[3379][$key] ?? ''; ?></p>
         <ul>
-            <li tabindex="0" class="selection card2"><strong>Offices:</strong>
-                <span tabindex="0" class="selection_2 card2">To keep keyboards and mice from sliding on desks.</span>
+            <li tabindex="0" class="selection card2"><strong><?= $content[3380][$key] ?? ''; ?></strong>
+                <span tabindex="0" class="selection_2 card2"><?= $content[3381][$key] ?? ''; ?></span>
             </li>
 
-            <li tabindex="0" class="selection card2"><strong>Gaming:</strong>
-                <span tabindex="0" class="selection_2 card2">To prevent gaming peripherals from moving during intense gameplay.</span>
+            <li tabindex="0" class="selection card2"><strong><?= $content[3382][$key] ?? ''; ?></strong>
+                <span tabindex="0" class="selection_2 card2"><?= $content[3383][$key] ?? ''; ?></span>
             </li>
 
-            <li tabindex="0" class="selection card2"><strong>Home Use:</strong>
-                <span tabindex="0" class="selection_2 card2">To enhance stability and comfort when using laptops and desktop computers.</span>
+            <li tabindex="0" class="selection card2"><strong><?= $content[3384][$key] ?? ''; ?></strong>
+                <span tabindex="0" class="selection_2 card2"><?= $content[3385][$key] ?? ''; ?></span>
             </li>
 
-            <li tabindex="0" class="selection card2"><strong>Industrial Environments:</strong>
-                <span tabindex="0" class="selection_2 card2">To secure computers and devices in manufacturing or industrial settings.</span>
+            <li tabindex="0" class="selection card2"><strong><?= $content[3386][$key] ?? ''; ?></strong>
+                <span tabindex="0" class="selection_2 card2"><?= $content[3387][$key] ?? ''; ?></span>
             </li>
         </ul>
     </div>
     <div class="spacer"></div>
 <div class="colms2">
-    <p class="sub_sub_title spacer_shape">Considerations:</p>
-        <p tabindex="0" class="sub_sub_sub_title spacer_shape selection">When researching and selecting anti-slip mats for computers, consider
-            the following factors:</p>
+    <p class="sub_sub_title spacer_shape"><?= $content[3388][$key] ?? ''; ?></p>
+        <p tabindex="0" class="sub_sub_sub_title spacer_shape selection"><?= $content[3389][$key] ?? ''; ?></p>
 
         <ul>
-            <li tabindex="0" class="selection card2"><strong>Size and Shape:</strong>
-                <span tabindex="0" class="selection_2 card2">Ensure that the mat is appropriately sized for the peripherals you intend to use it with.</span>
+            <li tabindex="0" class="selection card2"><strong><?= $content[3390][$key] ?? ''; ?></strong>
+                <span tabindex="0" class="selection_2 card2"><?= $content[3391][$key] ?? ''; ?></span>
             </li>
 
-            <li tabindex="0" class="selection card2"><strong>Material Quality:</strong>
-                <span tabindex="0" class="selection_2 card2">Look for durable materials that will maintain their anti-slip properties over time.</span>
+            <li tabindex="0" class="selection card2"><strong><?= $content[3392][$key] ?? ''; ?></strong>
+                <span tabindex="0" class="selection_2 card2"><?= $content[3393][$key] ?? ''; ?></span>
             </li>
 
-            <li tabindex="0" class="selection card2"><strong>Ease of Cleaning:</strong>
-                <span tabindex="0" class="selection_2 card2">Consider mats that are easy to clean, especially if they will be used in environments where
-                    cleanliness is important.</span>
+            <li tabindex="0" class="selection card2"><strong><?= $content[3394][$key] ?? ''; ?></strong>
+                <span tabindex="0" class="selection_2 card2"><?= $content[3395][$key] ?? ''; ?></span>
             </li>
 
-            <li tabindex="0" class="selection card2"><strong>Thickness:</strong>
-                <span tabindex="0" class="selection_2 card2">The thickness of the mat can affect how much it raises the peripherals. Consider whether this will
-                    be comfortable for your intended use.</span>
+            <li tabindex="0" class="selection card2"><strong><?= $content[3396][$key] ?? ''; ?></strong>
+                <span tabindex="0" class="selection_2 card2"><?= $content[3397][$key] ?? ''; ?></span>
             </li>
 
-            <li tabindex="0" class="selection card2"><strong>Customizability:</strong>
-                <span tabindex="0" class="selection_2 card2">Some mats can be cut to fit specific areas or shaped around obstacles.</span>
+            <li tabindex="0" class="selection card2"><strong><?= $content[3398][$key] ?? ''; ?></strong>
+                <span tabindex="0" class="selection_2 card2"><?= $content[3399][$key] ?? ''; ?></span>
             </li>
 
-            <li tabindex="0" class="selection card2"><strong>Aesthetics:</strong>
-                <span tabindex="0" class="selection_2 card2">If aesthetics are important, choose a mat that complements your workspace.</span>
+            <li tabindex="0" class="selection card2"><strong><?= $content[3400][$key] ?? ''; ?></strong>
+                <span tabindex="0" class="selection_2 card2"><?= $content[3401][$key] ?? ''; ?></span>
             </li>
             <li><p class="sub_sub_title card2 selection spacer_shape" tabindex="0">
-            Remember that user reviews and recommendations can also provide valuable insights into the effectiveness and durability of specific anti-slip mats.
+            <?= $content[3402][$key] ?? ''; ?>
             </p></li>
         </ul>
     </div>
     <br /><br />
 <p class="sub_sub_title card2 selection spacer_shape" tabindex="0">
-In conclusion, anti-slip mats for computers are practical accessories that enhance stability, prevent movement, and contribute to a more comfortable and productive computing experience.
+<?= $content[3403][$key] ?? ''; ?>
 </p>
 
 </section>
@@ -155,26 +142,26 @@ In conclusion, anti-slip mats for computers are practical accessories that enhan
 <article class="article fullbar">
     <section class="blurb">
         <p class="spacer_shape">
-<span tabindex="0" class="sub_title selection_2" style="display: inline-block;">Here are a few additional research considerations:</span><br />
-<span tabindex="0" class="sub_sub_title card2 center selection_2">Using anti-slip mats in your PC system:</span>
+<span tabindex="0" class="sub_title selection_2" style="display: inline-block;"><?= $content[3404][$key] ?? ''; ?></span><br />
+<span tabindex="0" class="sub_sub_title card2 center selection_2"><?= $content[3405][$key] ?? ''; ?></span>
         </p>
 
         <div class="spacer"></div>
 
 <div class="colms">
         <fieldset tabindex="0" class="selection">
-<legend>Anti-slip:</legend>
-<span tabindex="0" class="card2 selection_2">Anti-slip mats are designed to prevent items from sliding or sliding on surfaces.</span>
+<legend><?= $content[3406][$key] ?? ''; ?></legend>
+<span tabindex="0" class="card2 selection_2"><?= $content[3407][$key] ?? ''; ?></span>
 </fieldset>
 
         <fieldset tabindex="0" class="selection">
-    <legend>Compatibility:</legend>
-    <span tabindex="0" class="card2 selection_2">Some anti-slip mats may have adhesive properties to stick to surfaces, while others rely solely on their friction to stay in place. Depending on your preference and the type of surface you'll be placing the mat on, make sure to choose a mat that is compatible with your needs.</span>
+    <legend><?= $content[3408][$key] ?? ''; ?></legend>
+    <span tabindex="0" class="card2 selection_2"><?= $content[3409][$key] ?? ''; ?></span>
     </fieldset>
 
         <fieldset tabindex="0" class="selection">
-    <legend>Environmental Considerations:</legend>
-    <span tabindex="0" class="card2 selection_2">If environmental impact is a concern, look for mats made from eco-friendly materials. Some manufacturers offer mats that are recyclable or made from sustainable materials.</span>
+    <legend><?= $content[3410][$key] ?? ''; ?></legend>
+    <span tabindex="0" class="card2 selection_2"><?= $content[3411][$key] ?? ''; ?></span>
 </fieldset>
 </div>
 
@@ -182,18 +169,18 @@ In conclusion, anti-slip mats for computers are practical accessories that enhan
 
 <div class="colms">
 <fieldset tabindex="0" class="selection">
-    <legend>Temperature Resistance:</legend>
-    <span tabindex="0" class="card2 selection_2">Consider the temperature range in which the mat will be used. Some materials might become less effective at extreme temperatures, so make sure the mat can handle the conditions of your workspace.</span>
+    <legend><?= $content[3412][$key] ?? ''; ?></legend>
+    <span tabindex="0" class="card2 selection_2"><?= $content[3413][$key] ?? ''; ?></span>
 </fieldset>
 
 <fieldset tabindex="0" class="selection">
-    <legend>Storage and Portability:</legend>
-    <span tabindex="0" class="card2 selection_2">If you plan to use the anti-slip mat in different locations or while traveling, consider its portability and ease of storage. Some mats can be rolled or folded for easy transportation.</span>
+    <legend><?= $content[3414][$key] ?? ''; ?></legend>
+    <span tabindex="0" class="card2 selection_2"><?= $content[3415][$key] ?? ''; ?></span>
 </fieldset>
 
 <fieldset tabindex="0" class="selection">
-    <legend>Multi-Purpose Use:</legend>
-    <span tabindex="0" class="card2 selection_2">Anti-slip mats can have applications beyond just computer peripherals. They can be used under other items like vases, cups, or small appliances to prevent slipping.</span>
+    <legend><?= $content[3416][$key] ?? ''; ?></legend>
+    <span tabindex="0" class="card2 selection_2"><?= $content[3417][$key] ?? ''; ?></span>
 </fieldset>
 </div>
 
@@ -201,18 +188,18 @@ In conclusion, anti-slip mats for computers are practical accessories that enhan
 
 <div class="colms">
 <fieldset tabindex="0" class="selection">
-    <legend>Regular Maintenance:</legend>
-    <span tabindex="0" class="card2 selection_2">While anti-slip mats are designed to be durable, it's a good idea to periodically clean them to maintain their grip. Over time, dust and debris can accumulate on the mat's surface, reducing its effectiveness.</span>
+    <legend><?= $content[3418][$key] ?? ''; ?></legend>
+    <span tabindex="0" class="card2 selection_2"><?= $content[3419][$key] ?? ''; ?></span>
 </fieldset>
 
 <fieldset tabindex="0" class="selection">
-    <legend>DIY Options:</legend>
-    <span tabindex="0" class="card2 selection_2">If you're on a budget or prefer a specific material, you might consider creating your own anti-slip solution. For example, you could use shelf liner or rubberized drawer liners as a makeshift anti-slip surface.</span>
+    <legend><?= $content[3420][$key] ?? ''; ?></legend>
+    <span tabindex="0" class="card2 selection_2"><?= $content[3421][$key] ?? ''; ?></span>
 </fieldset>
 
 <fieldset tabindex="0" class="selection">
-    <legend>Test Before Applying:</legend>
-    <span tabindex="0" class="card2 selection_2">If you're using an adhesive anti-slip mat, consider testing it on a small, inconspicuous area of your surface before applying it in a prominent location. This helps ensure it adheres properly without causing damage.</span>
+    <legend><?= $content[3422][$key] ?? ''; ?></legend>
+    <span tabindex="0" class="card2 selection_2"><?= $content[3423][$key] ?? ''; ?></span>
 </fieldset>
 </div>
 
@@ -220,18 +207,18 @@ In conclusion, anti-slip mats for computers are practical accessories that enhan
 
 <div class="colms2">
 <fieldset tabindex="0" class="selection">
-    <legend>User Reviews and Recommendations:</legend>
-    <span tabindex="0" class="card2 selection_2">Reading user reviews and testimonials can provide valuable insights into how well a specific anti-slip mat performs in real-world scenarios. Look for mats with positive feedback and consider any potential drawbacks mentioned by users.</span>
+    <legend><?= $content[3424][$key] ?? ''; ?></legend>
+    <span tabindex="0" class="card2 selection_2"><?= $content[3425][$key] ?? ''; ?></span>
 </fieldset>
 
 <fieldset tabindex="0" class="selection">
-    <legend>Warranty and Return Policy:</legend>
-    <span tabindex="0" class="card2 selection_2">Check the manufacturer's warranty and return policy in case you encounter any issues with the mat's performance or quality. This can provide peace of mind in case you need to replace or return the product.</span>
+    <legend><?= $content[3426][$key] ?? ''; ?></legend>
+    <span tabindex="0" class="card2 selection_2"><?= $content[3427][$key] ?? ''; ?></span>
 </fieldset>
 </div>
 <fieldset tabindex="0" class="selection">
-    <legend>Experiment and Adjust:</legend>
-    <span tabindex="0" class="card2 selection_2">Anti-slip mats can have varying levels of grip depending on the surface they're placed on, the weight of the peripherals, and other factors. Don't hesitate to experiment with different mat placements and orientations to find the configuration that works best for you.</span>
+    <legend><?= $content[3428][$key] ?? ''; ?></legend>
+    <span tabindex="0" class="card2 selection_2"><?= $content[3429][$key] ?? ''; ?></span>
 </fieldset>
 
 
@@ -239,16 +226,16 @@ In conclusion, anti-slip mats for computers are practical accessories that enhan
 
 </section>
 <div class="blurb">
-<p tabindex="0" class="sub_sub_title card2 selection">&nbsp;&nbsp;&nbsp;&nbsp;Remember that the effectiveness of an anti-slip mat can be influenced by factors such as the cleanliness of the mat and the surface it's placed on.<br />
-&nbsp;&nbsp;&nbsp;&nbsp;Regular maintenance and care can help prolong the mat's useful life and maintain its grip.</p>
+<p tabindex="0" class="sub_sub_title card2 selection"><?= $content[3430][$key] ?? ''; ?><br />
+<?= $content[3431][$key] ?? ''; ?></p>
 
-<p tabindex="0" class="sub_sub_sub_title card2 selection">&nbsp;&nbsp;&nbsp;&nbsp;Overall, anti-slip mats are practical tools that can greatly enhance the usability and comfort of your computer setup.<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;By considering these additional factors, you can make an informed decision when selecting the right anti-slip mat for your specific needs.</p>
+<p tabindex="0" class="sub_sub_sub_title card2 selection"><?= $content[3432][$key] ?? ''; ?><br />
+    <?= $content[3433][$key] ?? ''; ?></p>
 </div>
 <table style="table-layout:fixed;width:468pt">
     <colgroup><col /><col /></colgroup><tbody>
         <tr style="height:42pt">
             <td style="vertical-align:top;overflow:hidden;overflow-wrap:break-word;">
-            <h3>[Free Research Preview. ChatGPT August 3 Version 2023]</h3>
+            <h3><?= $content[3434][$key] ?? ''; ?></h3>
             <hr /></td></tr></tbody></table>
 </article>

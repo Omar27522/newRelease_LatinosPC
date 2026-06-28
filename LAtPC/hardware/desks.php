@@ -1,81 +1,87 @@
 <?php
+include_once dirname(__DIR__) . '/handlers/databaseConnection.php';
+databaseConnection('hardware');
+global $content, $key;
+?>
+<?php include_once('navBarHW.php'); ?>
+<?php
 ?>
 <article class="article fullbar"><!-- (-.-)Zzz...--|c[_]|--☁ THIS PAGE CONTAINS JS【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
-<a href="./#peripherals"><h1>Desks</h1></a>
+<a href="./#peripherals"><h1><?= $content[2984][$key] ?? ''; ?></h1></a>
 <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
-<p class="sub_title">History and Evolution of Desks:</p><br /><div class="spacer_double_lines" style="margin-bottom: -20px;"><hr><hr></div>
+<p class="sub_title"><?= $content[2985][$key] ?? ''; ?></p><br /><div class="spacer_double_lines" style="margin-bottom: -20px;"><hr><hr></div>
 
 <section class="blurb">
 
 <div tabindex="0" class="spacer_shape selection">
 <p class="sub_sub_title">
-    Desks have a long and diverse history that spans centuries.<br /><br />
-    The evolution of desks can be traced through various cultural and technological shifts:
+    <?= $content[2986][$key] ?? ''; ?><br /><br />
+    <?= $content[2987][$key] ?? ''; ?>
 </p>
 </div>
 
 <div class="colms2">
-<p tabindex="0" class="selection"><span tabindex="0" class="sub_sub_title">Ancient and Medieval Times:</span>
-    <span tabindex="0" class="selection_2">In ancient civilizations like Egypt and Greece, scribes and scholars used simple wooden surfaces to write on.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;These <a href="#">surfaces</a> were often supported by trestles or stands. In the Middle Ages, desks were often large and heavy, used for both writing and storage.</span>
+<p tabindex="0" class="selection"><span tabindex="0" class="sub_sub_title"><?= $content[2988][$key] ?? ''; ?></span>
+    <span tabindex="0" class="selection_2"><?= $content[2989][$key] ?? ''; ?></span><br />
+    <?= $content[2990][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[2991][$key] ?? ''; ?> <a href="#"><?= $content[2992][$key] ?? ''; ?></a> <?= $content[2993][$key] ?? ''; ?></span>
 </p>
 
-<p tabindex="0" class="selection"><span tabindex="0" class="sub_sub_title">Renaissance and Early Modern Era:</span>
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;During the Renaissance, desks became more specialized, with compartments and drawers for storing documents.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;These desks were often elaborately designed and were primarily used by scholars and nobility.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;The "bureau" was a notable <a href="#">development</a>, featuring a sloping writing surface and multiple drawers.</span>
+<p tabindex="0" class="selection"><span tabindex="0" class="sub_sub_title"><?= $content[2994][$key] ?? ''; ?></span>
+    <?= $content[2995][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[2996][$key] ?? ''; ?></span><br />
+    <?= $content[2997][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[2998][$key] ?? ''; ?></span><br />
+    <?= $content[2999][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3000][$key] ?? ''; ?> <a href="#"><?= $content[3001][$key] ?? ''; ?></a><?= $content[3002][$key] ?? ''; ?></span>
 </p>
 </div>
 
 <div class="colms2">
-<p tabindex="0" class="selection"><span tabindex="0" class="sub_sub_title">18th and 19th Centuries:</span>
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;The 18th century saw the emergence of the pedestal desk, which featured a central compartment surrounded by drawers.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;As industrialization progressed, more people needed desks for administrative work, leading to simpler and more utilitarian designs.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Roll-top desks also gained popularity during this time, providing a way to conceal paperwork when not in use.</span>
+<p tabindex="0" class="selection"><span tabindex="0" class="sub_sub_title"><?= $content[3003][$key] ?? ''; ?></span>
+    <?= $content[3004][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3005][$key] ?? ''; ?></span><br />
+    <?= $content[3006][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3007][$key] ?? ''; ?></span><br />
+    <?= $content[3008][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3009][$key] ?? ''; ?></span>
 </p>
 
-<p tabindex="0" class="selection"><span tabindex="0"  class="sub_sub_title">20th Century:</span>
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;With the advent of technology, desks started incorporating features to accommodate typewriters, telephones, and eventually computers.</span>
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;These desks were often functional and practical, focusing on ergonomic design and organization.</span>
+<p tabindex="0" class="selection"><span tabindex="0"  class="sub_sub_title"><?= $content[3010][$key] ?? ''; ?></span>
+    <?= $content[3011][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3012][$key] ?? ''; ?></span>
+    <?= $content[3013][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3014][$key] ?? ''; ?></span>
 </p>
 </div>
 
-<p tabindex="0" class="selection"><span tabindex="0"  class="sub_sub_title">Contemporary Era:</span>
-&nbsp;<span tabindex="0" class="selection_2">&nbsp;In the late 20th century and beyond, desks evolved to accommodate the increasing use of computers and technology.</span><br />
-&nbsp;<span tabindex="0" class="selection_2">&nbsp;Features like cable management, adjustable heights, and built-in storage for electronic devices became important.</span><br />
-&nbsp;<span tabindex="0" class="selection_2">&nbsp;Modern desks cater to various needs, from home offices to professional workspaces.</span>
+<p tabindex="0" class="selection"><span tabindex="0"  class="sub_sub_title"><?= $content[3015][$key] ?? ''; ?></span>
+<?= $content[3016][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3017][$key] ?? ''; ?></span><br />
+<?= $content[3018][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3019][$key] ?? ''; ?></span><br />
+<?= $content[3020][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3021][$key] ?? ''; ?></span>
 </p>
 
 </section>
 <div class="spacer_double_lines" ><hr><hr></div>
-<p class="sub_title spacer">What a Computer User Should Know:</p>
+<p class="sub_title spacer"><?= $content[3022][$key] ?? ''; ?></p>
 
 <section class="blurb">
 <dl>
     <div tabindex="0" class="selection">
         <details class="card2">
         <summary class="sub_sub_title card2 entrylevel">
-        <dt class="sub_sub_title">Entry Level Computer User:</dt>
+        <dt class="sub_sub_title"><?= $content[3023][$key] ?? ''; ?></dt>
         </summary>
         <div class="spacer"></div>
 
-        <dd><strong>Basic Hardware and Software:</strong>
-        <span tabindex="0" class="selection_2 card2">Understand the main components of a computer, such as the CPU, monitor, keyboard, and mouse.</span>
-        <span tabindex="0" class="selection_2 card2">Also, learn about operating systems and basic software applications.</span>
+        <dd><strong><?= $content[3024][$key] ?? ''; ?></strong>
+        <span tabindex="0" class="selection_2 card2"><?= $content[3025][$key] ?? ''; ?></span>
+        <span tabindex="0" class="selection_2 card2"><?= $content[3026][$key] ?? ''; ?></span>
         </dd>
 
-        <dd><strong>Internet Usage:</strong>
-        <span tabindex="0" class="selection_2 card2">Familiarize yourself with web browsers, search engines, and online safety practices.</span>
-        <span tabindex="0" class="selection_2 card2">Learn how to navigate websites, perform searches, and recognize potential online threats.</span>
+        <dd><strong><?= $content[3027][$key] ?? ''; ?></strong>
+        <span tabindex="0" class="selection_2 card2"><?= $content[3028][$key] ?? ''; ?></span>
+        <span tabindex="0" class="selection_2 card2"><?= $content[3029][$key] ?? ''; ?></span>
         </dd>
 
-        <dd><strong>File Management:</strong>
-        <span tabindex="0" class="selection_2 card2">Learn how to organize files and folders on your computer.</span>
-        <span tabindex="0" class="selection_2 card2">Understand concepts like saving, copying, and deleting files.</span>
+        <dd><strong><?= $content[3030][$key] ?? ''; ?></strong>
+        <span tabindex="0" class="selection_2 card2"><?= $content[3031][$key] ?? ''; ?></span>
+        <span tabindex="0" class="selection_2 card2"><?= $content[3032][$key] ?? ''; ?></span>
         </dd>
 
-        <dd><strong>Keyboard Shortcuts:</strong>
-        <span tabindex="0" class="selection_2 card2">Discover common keyboard shortcuts to improve your efficiency when navigating your computer and applications.</span>
+        <dd><strong><?= $content[3033][$key] ?? ''; ?></strong>
+        <span tabindex="0" class="selection_2 card2"><?= $content[3034][$key] ?? ''; ?></span>
         </dd>
     </details>
     </div>
@@ -83,20 +89,20 @@
     <div class="spacer"></div>
 
     <div tabindex="0" class="selection">
-        <dt class="sub_sub_title">Desk Enthusiast:</dt>
+        <dt class="sub_sub_title"><?= $content[3035][$key] ?? ''; ?></dt>
         </summary>
         <div class="spacer"></div>
 
-        <dd><strong>Ergonomics:</strong>
-        <span tabindex="0" class="selection_2">Understand the importance of ergonomic desk setups to maintain good posture and reduce strain on your body during extended computer use.</span>
+        <dd><strong><?= $content[3036][$key] ?? ''; ?></strong>
+        <span tabindex="0" class="selection_2"><?= $content[3037][$key] ?? ''; ?></span>
         </dd>
 
-        <dd><strong>Organization:</strong>
-        <span tabindex="0" class="selection_2">Explore desk organization techniques, cable management solutions, and storage options to create a clutter-free workspace.</span>
+        <dd><strong><?= $content[3038][$key] ?? ''; ?></strong>
+        <span tabindex="0" class="selection_2"><?= $content[3039][$key] ?? ''; ?></span>
         </dd>
 
-        <dd><strong>Aesthetic and Functionality:</strong>
-        <span tabindex="0" class="selection_2">Consider both the design and functionality of your desk. Look for features like cable routing holes, adjustable heights, and storage compartments that suit your needs.</span>
+        <dd><strong><?= $content[3040][$key] ?? ''; ?></strong>
+        <span tabindex="0" class="selection_2"><?= $content[3041][$key] ?? ''; ?></span>
         </dd>
     </div>
 
@@ -105,28 +111,28 @@
     <div tabindex="0" class="selection">
         <details class="card2">
             <summary class="sub_sub_title card2 entrylevel">
-        <dt class="sub_sub_title">Pro Computer User:</dt>
+        <dt class="sub_sub_title"><?= $content[3042][$key] ?? ''; ?></dt>
         </summary>
         <div class="spacer"></div>
 
-        <dd><strong>Advanced Software Usage:</strong>
-        <span tabindex="0" class="selection_2">Gain proficiency in specialized software relevant to your field, whether it's graphic design, programming, video editing, or other professional applications.</span>
+        <dd><strong><?= $content[3043][$key] ?? ''; ?></strong>
+        <span tabindex="0" class="selection_2"><?= $content[3044][$key] ?? ''; ?></span>
         </dd>
 
-        <dd><strong>Workflow Optimization:</strong>
-        <span tabindex="0" class="selection_2">Research and implement productivity tools, keyboard shortcuts, and automation techniques to streamline your work processes.</span>
+        <dd><strong><?= $content[3045][$key] ?? ''; ?></strong>
+        <span tabindex="0" class="selection_2"><?= $content[3046][$key] ?? ''; ?></span>
         </dd>
 
-        <dd><strong>Backup and Security:</strong>
-        <span tabindex="0" class="selection_2">Develop a robust backup strategy to prevent data loss and ensure the security of sensitive information. Learn about encryption, antivirus software, and best practices for online security.</span>
+        <dd><strong><?= $content[3047][$key] ?? ''; ?></strong>
+        <span tabindex="0" class="selection_2"><?= $content[3048][$key] ?? ''; ?></span>
         </dd>
 
-        <dd><strong>Multi-Monitor Setup:</strong>
-        <span tabindex="0" class="selection_2">Explore the benefits of a multi-monitor setup to enhance your productivity by having multiple applications visible simultaneously.</span>
+        <dd><strong><?= $content[3049][$key] ?? ''; ?></strong>
+        <span tabindex="0" class="selection_2"><?= $content[3050][$key] ?? ''; ?></span>
         </dd>
 
-        <dd><strong>Networking:</strong>
-        <span tabindex="0" class="selection_2">Understand networking concepts to troubleshoot connectivity issues, set up local networks, and optimize internet speed.</span>
+        <dd><strong><?= $content[3051][$key] ?? ''; ?></strong>
+        <span tabindex="0" class="selection_2"><?= $content[3052][$key] ?? ''; ?></span>
         </dd>
         </details>
     </div>
@@ -135,26 +141,26 @@
 
 <div tabindex="0" class="blurb spacer_shape selection">
 <p class="sub_sub_sub_title">
-Remember that the knowledge and skills required for each level can vary, and individuals can gradually progress from entry-level to becoming proficient users and even enthusiasts in the world of computers and desks.
+<?= $content[3053][$key] ?? ''; ?>
 </p>
 </div>
 
 </article>
 <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
 
-<a href="./#peripherals" class="article fullbar"><button title="Take Back to the Peripherals" class="card2 button"><div style="translate: -1px 0;color:wheat;" class="spacer_double_lines">Back<hr>To<hr>Peripherals</div></button></a>
+<a href="./#peripherals" class="article fullbar"><button title="Take Back to the Peripherals" class="card2 button"><div style="translate: -1px 0;color:wheat;" class="spacer_double_lines"><?= $content[3054][$key] ?? ''; ?><hr><?= $content[3055][$key] ?? ''; ?><hr><?= $content[3056][$key] ?? ''; ?></div></button></a>
 
 
 <article class="article fullbar" id="common_types_of_computer_desk">
 
 <div tabindex="0" class="blurb spacer_shape selection">
-    <p class="sub_sub_title">There are several types of computer desks designed to cater to different needs, preferences, and spaces.<br /><br />
-        Here are some common types of computer desks that a person should know about:
+    <p class="sub_sub_title"><?= $content[3057][$key] ?? ''; ?><br /><br />
+        <?= $content[3058][$key] ?? ''; ?>
     </p>
 </div>                                    <!--This Button is called [button_common_types in css]-->
 <a href="#common_types_of_computer_desk"><button class="card2 button_common_types" id="openDetailsButton">
     <img src="https://latinospc.com/images/artificialintelligence/pixel.jpeg" alt="Standard Computer Desk" width="17px" title="Open -View all desks">
-    <!-- for align to the left_---<-> translate: 3px 26px;---<-> nocard class="card"---<->   display: inline; translate: 571px 40px -->
+    <!-- for align to the left_---<-> <?= $content[3059][$key] ?? ''; ?><-> <?= $content[3060][$key] ?? ''; ?><->   <?= $content[3061][$key] ?? ''; ?>
 </button>
 </a>
 
@@ -162,42 +168,37 @@ Remember that the knowledge and skills required for each level can vary, and ind
 <ul>
     <li>
     <details tabindex="0" class="selection half_size card2" id="1000">
-        <summary class="sub_sub_title">Standard Computer Desk:</summary>
+        <summary class="sub_sub_title"><?= $content[3062][$key] ?? ''; ?></summary>
         <div class="spacer"></div>
         <ul>
         <li>
-            <span tabindex="0" class="selection_2">This is a basic desk designed for computer use.</span>
+            <span tabindex="0" class="selection_2"><?= $content[3063][$key] ?? ''; ?></span>
         </li>
         <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]0.jpeg" class="rtl card2 img_in-colms2"
             alt="Standard Computer Desk" width="100px">
-        <br />&nbsp; <li>
-            <span tabindex="0" class="selection_2">&nbsp;It typically features a flat surface for the computer monitor,
-            a keyboard tray or space for the keyboard and mouse, and sometimes a lower shelf for the computer
-            tower.</span>
+        <br /><?= $content[3064][$key] ?? ''; ?> <li>
+            <span tabindex="0" class="selection_2"><?= $content[3065][$key] ?? ''; ?></span>
         </li>
-        <br />&nbsp; <li>
-            <span tabindex="0" class="selection_2">&nbsp;Suitable for: Entry-level computer users, students, basic
-            office setups.</span>
+        <br /><?= $content[3066][$key] ?? ''; ?> <li>
+            <span tabindex="0" class="selection_2"><?= $content[3067][$key] ?? ''; ?></span>
         </li>
         </ul>
     </details>
     </li>
     <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁ 
 <img src="https://latinospc.com/images/artificialintelligence/pixel.jpeg" class="fl" style="float: right;"  alt="Standard Computer Desk">
---|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
+<?= $content[3068][$key] ?? ''; ?>
     <li><div class="spacer"></div></li>
     <li>
     <details tabindex="0" id="900" class="selection half_size card2">
-        <summary class="sub_sub_title">Corner Desk:</summary>
+        <summary class="sub_sub_title"><?= $content[3069][$key] ?? ''; ?></summary>
         <div class="spacer"></div>
         <ul>
         <li>
-            <span tabindex="0" class="selection_2">Designed to fit into corners, these desks maximize space utilization
-            and are great for smaller rooms or offices.</span>
+            <span tabindex="0" class="selection_2"><?= $content[3070][$key] ?? ''; ?></span>
         </li>
-        <br />&nbsp; <li>
-            <span tabindex="0" class="selection_2">Suitable for: Those looking to make the most of limited space, home
-            offices, compact setups.</span>
+        <br /><?= $content[3071][$key] ?? ''; ?> <li>
+            <span tabindex="0" class="selection_2"><?= $content[3072][$key] ?? ''; ?></span>
         </li>
         </ul>
         <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]0.jpeg" class="rtl card2 img_in-colms2"
@@ -207,16 +208,14 @@ Remember that the knowledge and skills required for each level can vary, and ind
     <li><div class="spacer"></div></li>
     <li>
     <details tabindex="0" id="800" class="selection half_size card2">
-        <summary class="sub_sub_title">L-Shaped Desk:</summary>
+        <summary class="sub_sub_title"><?= $content[3073][$key] ?? ''; ?></summary>
         <div class="spacer"></div>
         <ul>
         <li>
-            <span tabindex="0" class="selection_2">These desks have an L-shaped configuration, providing more surface
-            area for work. They often come with additional storage options.</span>
+            <span tabindex="0" class="selection_2"><?= $content[3074][$key] ?? ''; ?></span>
         </li>
-        <br />&nbsp; <li>
-            <span tabindex="0" class="selection_2">Suitable for: Home offices, professionals needing more workspace,
-            multitasking.</span>
+        <br /><?= $content[3075][$key] ?? ''; ?> <li>
+            <span tabindex="0" class="selection_2"><?= $content[3076][$key] ?? ''; ?></span>
         </li>
         </ul>
         <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]1.jpeg" class="rtl card2 img_in-colms2"
@@ -226,16 +225,14 @@ Remember that the knowledge and skills required for each level can vary, and ind
     <li><div class="spacer"></div></li>
     <li>
     <details tabindex="0" id="700" class="selection half_size card2">
-        <summary class="sub_sub_title">U-Shaped Desk:</summary>
+        <summary class="sub_sub_title"><?= $content[3077][$key] ?? ''; ?></summary>
         <div class="spacer"></div>
         <ul>
         <li>
-            <span tabindex="0" class="selection_2">Offering even more surface area than L-shaped desks, U-shaped desks
-            provide ample space for various tasks. They often come with built-in storage and shelving.</span>
+            <span tabindex="0" class="selection_2"><?= $content[3078][$key] ?? ''; ?></span>
         </li>
-        <br />&nbsp; <li>
-            <span tabindex="0" class="selection_2">Suitable for: Executives, professionals with extensive workspace
-            needs, home offices.</span>
+        <br /><?= $content[3079][$key] ?? ''; ?> <li>
+            <span tabindex="0" class="selection_2"><?= $content[3080][$key] ?? ''; ?></span>
         </li>
         </ul>
         <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]2.jpeg" class="rtl card2 img_in-colms2"
@@ -245,16 +242,14 @@ Remember that the knowledge and skills required for each level can vary, and ind
     <li><div class="spacer"></div></li>
     <li>
     <details tabindex="0" id="600" class="selection half_size card2">
-        <summary class="sub_sub_title">Gaming Desk:</summary>
+        <summary class="sub_sub_title"><?= $content[3081][$key] ?? ''; ?></summary>
         <div class="spacer"></div>
         <ul>
         <li>
-            <span tabindex="0" class="selection_2">Designed with gamers in mind, these desks often have features like
-            cable management, built-in headphone stands, cup holders, and RGB lighting.</span>
+            <span tabindex="0" class="selection_2"><?= $content[3082][$key] ?? ''; ?></span>
         </li>
-        <br />&nbsp; <li>
-            <span tabindex="0" class="selection_2">Suitable for: Gamers, content creators, those with elaborate computer
-            setups.</span>
+        <br /><?= $content[3083][$key] ?? ''; ?> <li>
+            <span tabindex="0" class="selection_2"><?= $content[3084][$key] ?? ''; ?></span>
         </li>
         </ul>
         <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]3.jpeg" class="rtl card2 img_in-colms2"
@@ -264,16 +259,14 @@ Remember that the knowledge and skills required for each level can vary, and ind
     <li><div class="spacer"></div></li>
     <li>
     <details tabindex="0" id="500" class="selection half_size card2">
-        <summary class="sub_sub_title">Standing Desk:</summary>
+        <summary class="sub_sub_title"><?= $content[3085][$key] ?? ''; ?></summary>
         <div class="spacer"></div>
         <ul>
         <li>
-            <span tabindex="0" class="selection_2">Also known as sit-stand desks, these desks allow you to alternate
-            between sitting and standing while working. They can be manually or electronically adjustable.</span>
+            <span tabindex="0" class="selection_2"><?= $content[3086][$key] ?? ''; ?></span>
         </li>
-        <br />&nbsp; <li>
-            <span tabindex="0" class="selection_2">Suitable for: Individuals concerned about ergonomics, those who want
-            to reduce sedentary time.</span>
+        <br /><?= $content[3087][$key] ?? ''; ?> <li>
+            <span tabindex="0" class="selection_2"><?= $content[3088][$key] ?? ''; ?></span>
         </li>
         </ul>
         <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]4.jpeg" class="rtl card2 img_in-colms2"
@@ -283,16 +276,14 @@ Remember that the knowledge and skills required for each level can vary, and ind
     <li><div class="spacer"></div></li>
     <li>
     <details tabindex="0" id="400" class="selection half_size card2">
-        <summary class="sub_sub_title">Executive Desk:</summary>
+        <summary class="sub_sub_title"><?= $content[3089][$key] ?? ''; ?></summary>
         <div class="spacer"></div>
         <ul>
         <li>
-            <span tabindex="0" class="selection_2">Usually large and sophisticated, executive desks are designed for
-            professionals and often include ample storage, ornate designs, and high-quality materials.</span>
+            <span tabindex="0" class="selection_2"><?= $content[3090][$key] ?? ''; ?></span>
         </li>
-        <br />&nbsp; <li>
-            <span tabindex="0" class="selection_2">Suitable for: Corporate executives, professionals seeking a luxurious
-            workspace.</span>
+        <br /><?= $content[3091][$key] ?? ''; ?> <li>
+            <span tabindex="0" class="selection_2"><?= $content[3092][$key] ?? ''; ?></span>
         </li>
         </ul>
         <img src="https://latinospc.com/images/artificialintelligence/[4][1]/cyber[4][1]1.jpeg" class="rtl card2 img_in-colms2"
@@ -302,16 +293,14 @@ Remember that the knowledge and skills required for each level can vary, and ind
     <li><div class="spacer"></div></li>
     <li>
     <details tabindex="0" id="300" class="selection half_size card2">
-        <summary class="sub_sub_title">Floating Wall Desk:</summary>
+        <summary class="sub_sub_title"><?= $content[3093][$key] ?? ''; ?></summary>
         <div class="spacer"></div>
         <ul>
         <li>
-            <span tabindex="0" class="selection_2">Mounted directly on the wall, these desks save floor space and can be
-            folded up when not in use.</span>
+            <span tabindex="0" class="selection_2"><?= $content[3094][$key] ?? ''; ?></span>
         </li>
-        <br />&nbsp; <li>
-            <span tabindex="0" class="selection_2">Suitable for: Small spaces, minimalist aesthetics, occasional
-            computer use.</span>
+        <br /><?= $content[3095][$key] ?? ''; ?> <li>
+            <span tabindex="0" class="selection_2"><?= $content[3096][$key] ?? ''; ?></span>
         </li>
         </ul>
         <img src="https://latinospc.com/images/artificialintelligence/[4][1]/cyber[4][1]2.jpeg" class="rtl card2 img_in-colms2"
@@ -321,16 +310,14 @@ Remember that the knowledge and skills required for each level can vary, and ind
     <li><div class="spacer"></div></li>
     <li>
     <details tabindex="0" id="200" class="selection half_size card2">
-        <summary class="sub_sub_title">Convertible Desk:</summary>
+        <summary class="sub_sub_title"><?= $content[3097][$key] ?? ''; ?></summary>
         <div class="spacer"></div>
         <ul>
         <li>
-            <span tabindex="0" class="selection_2">These desks can transform into different configurations, such as a
-            regular desk, a standing desk, or even a dining table.</span>
+            <span tabindex="0" class="selection_2"><?= $content[3098][$key] ?? ''; ?></span>
         </li>
-        <br />&nbsp; <li>
-            <span tabindex="0" class="selection_2">Suitable for: Those with multifunctional needs, people with limited
-            space.</span>
+        <br /><?= $content[3099][$key] ?? ''; ?> <li>
+            <span tabindex="0" class="selection_2"><?= $content[3100][$key] ?? ''; ?></span>
         </li>
         </ul>
         <img src="https://latinospc.com/images/artificialintelligence/[4][1]/cyber[4][1]0.jpeg" class="rtl card2 img_in-colms2"
@@ -340,16 +327,14 @@ Remember that the knowledge and skills required for each level can vary, and ind
     <li><div class="spacer"></div></li>
     <li>
     <details tabindex="0" id="100" class="selection half_size card2">
-        <summary class="sub_sub_title card2">Minimalist Desk:</summary>
+        <summary class="sub_sub_title card2"><?= $content[3101][$key] ?? ''; ?></summary>
         <div class="spacer"></div>
         <ul>
         <li>
-            <span tabindex="0" class="selection_2">Designed with simplicity in mind, these desks have clean lines and a
-            clutter-free design.</span>
+            <span tabindex="0" class="selection_2"><?= $content[3102][$key] ?? ''; ?></span>
         </li>
-        <br />&nbsp; <li>
-            <span tabindex="0" class="selection_2">Suitable for: Minimalists, those who prefer a simple and uncluttered
-            workspace.</span>
+        <br /><?= $content[3103][$key] ?? ''; ?> <li>
+            <span tabindex="0" class="selection_2"><?= $content[3104][$key] ?? ''; ?></span>
         </li>
         </ul>
         <img src="https://latinospc.com/images/artificialintelligence/[4][4]/cyber[4][4]2.jpeg" class="rtl card2 img_in-colms2"
@@ -361,144 +346,144 @@ Remember that the knowledge and skills required for each level can vary, and ind
 
 <div tabindex="0" class="blurb spacer_shape selection">
 <p class="sub_sub_sub_title">
-When choosing a computer desk, consider factors such as your specific use case, available space, ergonomic requirements, storage needs, and personal style. The right desk can greatly enhance your comfort and productivity while using your computer.
+<?= $content[3105][$key] ?? ''; ?>
 </p>
 </div>
 
 </article>
 <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
 <article class="article fullbar">
-<p class="sub_title spacer">Here are some additional computer desks things, you might find interesting about desks:</p>
+<p class="sub_title spacer"><?= $content[3106][$key] ?? ''; ?></p>
 <section class="blurb"><!-- Make these have Field sets--><div class="spacer_double_lines" ><hr><hr></div>
 <!-- STRUCTURE: --><div class="colms2">
 <fieldset tabindex="0" class="selection">
-    <legend tabindex="0" class="sub_sub_title selection">Ergonomics and Modern Computer Desks:</legend>
+    <legend tabindex="0" class="sub_sub_title selection"><?= $content[3107][$key] ?? ''; ?></legend>
     <p>
-        &nbsp;<span tabindex="0" class="selection_2">&nbsp;Ergonomics is a crucial consideration when it comes to computer desks.</span><br />
-        &nbsp;<span tabindex="0" class="selection_2">&nbsp;A well-designed ergonomic desk setup can help prevent discomfort, strain, and injuries caused by prolonged computer use.</span><br />
-        &nbsp;<span tabindex="0" class="selection_2">&nbsp;Ergonomics Matters: It is a key factor in designing modern computer desks for optimal user comfort and health.</span>
+        <?= $content[3108][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3109][$key] ?? ''; ?></span><br />
+        <?= $content[3110][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3111][$key] ?? ''; ?></span><br />
+        <?= $content[3112][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3113][$key] ?? ''; ?></span>
     </p>
 </fieldset>
 <fieldset tabindex="0" class="selection">
-<legend tabindex="0" class="sub_sub_title selection">Cable Management Solutions:</legend>
+<legend tabindex="0" class="sub_sub_title selection"><?= $content[3114][$key] ?? ''; ?></legend>
 <p>
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Many modern computer desks come with built-in cable management systems.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;These systems help keep your workspace organized and free of tangled cables.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Cable management is essential for maintaining a clean and efficient workspace.</span>
+    <?= $content[3115][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3116][$key] ?? ''; ?></span><br />
+    <?= $content[3117][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3118][$key] ?? ''; ?></span><br />
+    <?= $content[3119][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3120][$key] ?? ''; ?></span>
 </p>
 </fieldset>
 
 <fieldset tabindex="0" class="selection">
-<legend tabindex="0" class="sub_sub_title selection">Adjustable Heights:</legend>
+<legend tabindex="0" class="sub_sub_title selection"><?= $content[3121][$key] ?? ''; ?></legend>
 <p>
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Some computer desks feature adjustable heights, allowing switching between sitting and standing positions.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;This can promote better posture and reduce health risks associated with prolonged sitting.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Adjustable height desks offer flexibility for various work styles and preferences.</span>
+    <?= $content[3122][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3123][$key] ?? ''; ?></span><br />
+    <?= $content[3124][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3125][$key] ?? ''; ?></span><br />
+    <?= $content[3126][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3127][$key] ?? ''; ?></span>
 </p>
 </fieldset>
 
 <fieldset tabindex="0" class="selection">
-<legend tabindex="0" class="sub_sub_title selection">Built-in Power Outlets:</legend>
+<legend tabindex="0" class="sub_sub_title selection"><?= $content[3128][$key] ?? ''; ?></legend>
 <p>
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Some computer desks come equipped with built-in power outlets and USB ports.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;This makes it convenient to charge devices without cluttering the workspace with extra cables.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Integrated power solutions enhance the functionality of modern computer desks.</span>
+    <?= $content[3129][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3130][$key] ?? ''; ?></span><br />
+    <?= $content[3131][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3132][$key] ?? ''; ?></span><br />
+    <?= $content[3133][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3134][$key] ?? ''; ?></span>
 </p>
 </fieldset>
 
 <fieldset tabindex="0" class="selection">
-<legend tabindex="0" class="sub_sub_title selection">Materials Diversity:</legend>
+<legend tabindex="0" class="sub_sub_title selection"><?= $content[3135][$key] ?? ''; ?></legend>
 <p>
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Computer desks can be made from a wide range of materials, including wood, metal, glass, and acrylic.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Each material choice offers different aesthetics, durability, and maintenance requirements.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;The diversity in materials allows for customization to fit various decor styles and preferences.</span>
+    <?= $content[3136][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3137][$key] ?? ''; ?></span><br />
+    <?= $content[3138][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3139][$key] ?? ''; ?></span><br />
+    <?= $content[3140][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3141][$key] ?? ''; ?></span>
 </p>
 </fieldset>
 
 <fieldset tabindex="0" class="selection">
-<legend tabindex="0" class="sub_sub_title selection">Gaming Desk Innovations:</legend>
+<legend tabindex="0" class="sub_sub_title selection"><?= $content[3142][$key] ?? ''; ?></legend>
 <p>
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Gaming desks often include features such as RGB lighting, headphone holders, and cup holders.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Some high-end models even have motorized height adjustments for optimal gaming comfort.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;These specialized desks cater to the unique needs and preferences of gamers.</span>
+    <?= $content[3143][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3144][$key] ?? ''; ?></span><br />
+    <?= $content[3145][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3146][$key] ?? ''; ?></span><br />
+    <?= $content[3147][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3148][$key] ?? ''; ?></span>
 </p>
 </fieldset>
 
 <fieldset tabindex="0" class="selection">
-<legend tabindex="0" class="sub_sub_title selection">Historical Significance:</legend>
+<legend tabindex="0" class="sub_sub_title selection"><?= $content[3149][$key] ?? ''; ?></legend>
 <p>
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Desks have played a role in historical events, such as the Resolute Desk in the White House.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;The Resolute Desk was a gift from Queen Victoria to President Rutherford B. Hayes in 1880.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;It has been used by many U.S. presidents since then, becoming a symbol of presidential power.</span>
+    <?= $content[3150][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3151][$key] ?? ''; ?></span><br />
+    <?= $content[3152][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3153][$key] ?? ''; ?></span><br />
+    <?= $content[3154][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3155][$key] ?? ''; ?></span>
 </p>
 </fieldset>
 
 <fieldset tabindex="0" class="selection">
-<legend tabindex="0" class="sub_sub_title selection">DIY and Customization:</legend>
+<legend tabindex="0" class="sub_sub_title selection"><?= $content[3156][$key] ?? ''; ?></legend>
 <p>
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Many enthusiasts enjoy building their own computer desks or customizing pre-made ones.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;DIY projects can range from simple modifications to complex woodworking creations.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Customization allows for unique, personalized workspaces tailored to individual needs.</span>
+    <?= $content[3157][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3158][$key] ?? ''; ?></span><br />
+    <?= $content[3159][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3160][$key] ?? ''; ?></span><br />
+    <?= $content[3161][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3162][$key] ?? ''; ?></span>
 </p>
 </fieldset>
 
 <fieldset tabindex="0" class="selection">
-<legend tabindex="0" class="sub_sub_title selection">Multi-Monitor Support:</legend>
+<legend tabindex="0" class="sub_sub_title selection"><?= $content[3163][$key] ?? ''; ?></legend>
 <p>
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Some computer desks are designed to accommodate multiple monitors.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;This is particularly useful for professionals, gamers, and content creators.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Multi-monitor setups provide larger screen real estate for enhanced productivity and immersion.</span>
+    <?= $content[3164][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3165][$key] ?? ''; ?></span><br />
+    <?= $content[3166][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3167][$key] ?? ''; ?></span><br />
+    <?= $content[3168][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3169][$key] ?? ''; ?></span>
 </p>
 </fieldset>
 
 <fieldset tabindex="0" class="selection">
-<legend tabindex="0" class="sub_sub_title selection">Convertible Space:</legend>
+<legend tabindex="0" class="sub_sub_title selection"><?= $content[3170][$key] ?? ''; ?></legend>
 <p>
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Some desks are designed to save space by serving multiple functions.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;For example, a wall-mounted desk might fold down to become a workspace and then fold back up when not in use.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Convertible desks offer flexibility in small living spaces or multi-purpose rooms.</span>
+    <?= $content[3171][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3172][$key] ?? ''; ?></span><br />
+    <?= $content[3173][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3174][$key] ?? ''; ?></span><br />
+    <?= $content[3175][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3176][$key] ?? ''; ?></span>
 </p>
 </fieldset>
 
 <fieldset tabindex="0" class="selection">
-<legend tabindex="0" class="sub_sub_title selection">Mobility:</legend>
+<legend tabindex="0" class="sub_sub_title selection"><?= $content[3177][$key] ?? ''; ?></legend>
 <p>
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Mobile computer desks often come with wheels, allowing easy movement of your workstation.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;This is useful for changing your setup or moving it out of the way when needed.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Mobility adds versatility to workspace arrangements and facilitates easy cleaning.</span>
+    <?= $content[3178][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3179][$key] ?? ''; ?></span><br />
+    <?= $content[3180][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3181][$key] ?? ''; ?></span><br />
+    <?= $content[3182][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3183][$key] ?? ''; ?></span>
 </p>
 </fieldset>
 
 <fieldset tabindex="0" class="selection">
-<legend tabindex="0" class="sub_sub_title selection">Environmental Considerations:</legend>
+<legend tabindex="0" class="sub_sub_title selection"><?= $content[3184][$key] ?? ''; ?></legend>
 <p>
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;With growing concerns about sustainability, some companies now produce eco-friendly computer desks.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;These desks use sustainable materials and manufacturing processes.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Eco-friendly options cater to environmentally conscious consumers and businesses.</span>
+    <?= $content[3185][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3186][$key] ?? ''; ?></span><br />
+    <?= $content[3187][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3188][$key] ?? ''; ?></span><br />
+    <?= $content[3189][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3190][$key] ?? ''; ?></span>
 </p>
 </fieldset>
 
 <fieldset tabindex="0" class="selection">
-<legend tabindex="0" class="sub_sub_title selection">Desk Accessories:</legend>
+<legend tabindex="0" class="sub_sub_title selection"><?= $content[3191][$key] ?? ''; ?></legend>
 <p>
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Alongside computer desks, there's a plethora of desk accessories available.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;These include monitor stands, keyboard trays, cable organizers, and desk plants.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Accessories help personalize and enhance your workspace for improved comfort and efficiency.</span>
+    <?= $content[3192][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3193][$key] ?? ''; ?></span><br />
+    <?= $content[3194][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3195][$key] ?? ''; ?></span><br />
+    <?= $content[3196][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3197][$key] ?? ''; ?></span>
 </p>
 </fieldset>
 
 <fieldset tabindex="0" class="selection">
-<legend tabindex="0" class="sub_sub_title selection">Inspiring Designs:</legend>
+<legend tabindex="0" class="sub_sub_title selection"><?= $content[3198][$key] ?? ''; ?></legend>
 <p>
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Some computer desk designs are inspired by futuristic concepts.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;These incorporate elements like built-in touch screens, holographic displays, and integrated charging technologies.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Futuristic designs push the boundaries of what a computer desk can be and do.</span>
+    <?= $content[3199][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3200][$key] ?? ''; ?></span><br />
+    <?= $content[3201][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3202][$key] ?? ''; ?></span><br />
+    <?= $content[3203][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3204][$key] ?? ''; ?></span>
 </p>
 </fieldset>
 <div>
 <div tabindex="0" class="blurb spacer_shape selection">
 <p class="sub_sub_sub_title">
-    Remember that computer desk designs continue to evolve with advancements in technology and changing user needs. Exploring the history, trends, and innovations in computer desks can be both fascinating and informative for your research.
+    <?= $content[3205][$key] ?? ''; ?>
 </p>
 </div>
 </section>
@@ -506,134 +491,132 @@ When choosing a computer desk, consider factors such as your specific use case, 
 <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
 <article class="article fullbar">
 
-<div class="selection center" tabindex="0"><p>Here are a few more interesting tidbits about computer desks that you might find intriguing:</p></div>
+<div class="selection center" tabindex="0"><p><?= $content[3206][$key] ?? ''; ?></p></div>
 
     <section class="blurb">
 <!-- Fieldsets with 2 columns-->
 <div class="colms2">
 <fieldset tabindex="0" class="selection">
-<legend tabindex="0" class="sub_sub_title selection">Smart Desks:</legend>
+<legend tabindex="0" class="sub_sub_title selection"><?= $content[3207][$key] ?? ''; ?></legend>
 <p>
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;With the rise of IoT, some computer desks are now integrated with smart features.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;These desks might have voice control capabilities and wireless charging pads.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Some even have sensors that adjust lighting and temperature based on your preferences.</span>
+    <?= $content[3208][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3209][$key] ?? ''; ?></span><br />
+    <?= $content[3210][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3211][$key] ?? ''; ?></span><br />
+    <?= $content[3212][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3213][$key] ?? ''; ?></span>
 </p>
 </fieldset>
 
 <fieldset tabindex="0" class="selection">
-<legend tabindex="0" class="sub_sub_title selection">Virtual Reality Integration:</legend>
+<legend tabindex="0" class="sub_sub_title selection"><?= $content[3214][$key] ?? ''; ?></legend>
 <p>
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;As VR becomes more mainstream, there are desks designed with VR users in mind.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;These desks might include special cable management solutions for VR setups.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;They often feature storage for VR headsets and accessories.</span>
+    <?= $content[3215][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3216][$key] ?? ''; ?></span><br />
+    <?= $content[3217][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3218][$key] ?? ''; ?></span><br />
+    <?= $content[3219][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3220][$key] ?? ''; ?></span>
 </p>
 </fieldset>
 
 <fieldset tabindex="0" class="selection">
-<legend tabindex="0" class="sub_sub_title selection">Floating Desks:</legend>
+<legend tabindex="0" class="sub_sub_title selection"><?= $content[3221][$key] ?? ''; ?></legend>
 <p>
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Floating computer desks are mounted directly onto walls.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;This design gives the illusion that they are floating in mid-air.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;This minimalist design can be both functional and aesthetically pleasing.</span>
+    <?= $content[3222][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3223][$key] ?? ''; ?></span><br />
+    <?= $content[3224][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3225][$key] ?? ''; ?></span><br />
+    <?= $content[3226][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3227][$key] ?? ''; ?></span>
 </p>
 </fieldset>
 
 <fieldset tabindex="0" class="selection">
-<legend tabindex="0" class="sub_sub_title selection">Health Tracking Desks:</legend>
+<legend tabindex="0" class="sub_sub_title selection"><?= $content[3228][$key] ?? ''; ?></legend>
 <p>
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Some innovative desks come with health tracking capabilities.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;They might include features like a built-in fitness tracker.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;These track sitting time, monitor posture, and remind you to take breaks.</span>
+    <?= $content[3229][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3230][$key] ?? ''; ?></span><br />
+    <?= $content[3231][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3232][$key] ?? ''; ?></span><br />
+    <?= $content[3233][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3234][$key] ?? ''; ?></span>
 </p>
 </fieldset>
 
 <fieldset tabindex="0" class="selection">
-<legend tabindex="0" class="sub_sub_title selection">Eco-Friendly Materials:</legend>
+<legend tabindex="0" class="sub_sub_title selection"><?= $content[3235][$key] ?? ''; ?></legend>
 <p>
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;As sustainability gains importance, eco-friendly computer desks are becoming popular.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;These desks are made from materials like bamboo, reclaimed wood, and recycled materials.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;They appeal to environmentally conscious consumers seeking sustainable furniture options.</span>
+    <?= $content[3236][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3237][$key] ?? ''; ?></span><br />
+    <?= $content[3238][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3239][$key] ?? ''; ?></span><br />
+    <?= $content[3240][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3241][$key] ?? ''; ?></span>
 </p>
 </fieldset>
 
 <fieldset tabindex="0" class="selection">
-<legend tabindex="0" class="sub_sub_title selection">Customizable Lighting:</legend>
+<legend tabindex="0" class="sub_sub_title selection"><?= $content[3242][$key] ?? ''; ?></legend>
 <p>
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Some high-tech computer desks come with customizable LED lighting.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;The lighting is often built into the edges or underneath the surface.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Users can adjust the lighting color and intensity to match their mood or workspace aesthetics.</span>
+    <?= $content[3243][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3244][$key] ?? ''; ?></span><br />
+    <?= $content[3245][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3246][$key] ?? ''; ?></span><br />
+    <?= $content[3247][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3248][$key] ?? ''; ?></span>
 </p>
 </fieldset>
 
 <fieldset tabindex="0" class="selection">
-<legend tabindex="0" class="sub_sub_title selection">Hidden Storage Solutions:</legend>
+<legend tabindex="0" class="sub_sub_title selection"><?= $content[3249][$key] ?? ''; ?></legend>
 <p>
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;To maintain a clean workspace, some computer desks have hidden compartments.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;These storage areas are seamlessly integrated into the desk design.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Hidden storage helps keep the workspace organized and clutter-free.</span>
+    <?= $content[3250][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3251][$key] ?? ''; ?></span><br />
+    <?= $content[3252][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3253][$key] ?? ''; ?></span><br />
+    <?= $content[3254][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3255][$key] ?? ''; ?></span>
 </p>
 </fieldset>
 
 <fieldset tabindex="0" class="selection">
-<legend tabindex="0" class="sub_sub_title selection">Wireless Charging Surfaces:</legend>
+<legend tabindex="0" class="sub_sub_title selection"><?= $content[3256][$key] ?? ''; ?></legend>
 <p>
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Modern computer desks are incorporating wireless charging technology.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;This technology is often integrated directly into the desk surface.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Users can charge devices by simply placing them on designated areas of the desk.</span>
+    <?= $content[3257][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3258][$key] ?? ''; ?></span><br />
+    <?= $content[3259][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3260][$key] ?? ''; ?></span><br />
+    <?= $content[3261][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3262][$key] ?? ''; ?></span>
 </p>
 </fieldset>
 
 <fieldset tabindex="0" class="selection">
-<legend tabindex="0" class="sub_sub_title selection">Biophilic Design:</legend>
+<legend tabindex="0" class="sub_sub_title selection"><?= $content[3263][$key] ?? ''; ?></legend>
 <p>
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Biophilic design integrates elements of nature into indoor spaces.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Some computer desks are designed with built-in planters or natural wood finishes.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;This approach creates a calming and nature-inspired workspace.</span>
+    <?= $content[3264][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3265][$key] ?? ''; ?></span><br />
+    <?= $content[3266][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3267][$key] ?? ''; ?></span><br />
+    <?= $content[3268][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3269][$key] ?? ''; ?></span>
 </p>
 </fieldset>
 
 <fieldset tabindex="0" class="selection">
-<legend tabindex="0" class="sub_sub_title selection">Artistic Creations:</legend>
+<legend tabindex="0" class="sub_sub_title selection"><?= $content[3270][$key] ?? ''; ?></legend>
 <p>
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Beyond functionality, some computer desks are designed as works of art.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;These desks feature unique shapes, intricate carvings, and creative designs.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Such desks can become a centerpiece in a room, blending function with aesthetics.</span>
+    <?= $content[3271][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3272][$key] ?? ''; ?></span><br />
+    <?= $content[3273][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3274][$key] ?? ''; ?></span><br />
+    <?= $content[3275][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3276][$key] ?? ''; ?></span>
 </p>
 </fieldset>
 
 <fieldset tabindex="0" class="selection">
-<legend tabindex="0" class="sub_sub_title selection">Historical Influences:</legend>
+<legend tabindex="0" class="sub_sub_title selection"><?= $content[3277][$key] ?? ''; ?></legend>
 <p>
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Traditional desk styles from different historical periods influence modern designs.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Styles like Victorian, Art Deco, and Mid-Century Modern inspire contemporary desks.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;These influences add a touch of nostalgia and elegance to modern computer desks.</span>
+    <?= $content[3278][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3279][$key] ?? ''; ?></span><br />
+    <?= $content[3280][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3281][$key] ?? ''; ?></span><br />
+    <?= $content[3282][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3283][$key] ?? ''; ?></span>
 </p>
 </fieldset>
 
 <fieldset tabindex="0" class="selection">
-<legend tabindex="0" class="sub_sub_title selection">Modular Desks:</legend>
+<legend tabindex="0" class="sub_sub_title selection"><?= $content[3284][$key] ?? ''; ?></legend>
 <p>
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Modular computer desks allow customization of your workspace.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;Users can add or remove components to adapt to different tasks or changing needs.</span><br />
-    &nbsp;<span tabindex="0" class="selection_2">&nbsp;This flexibility makes modular desks suitable for various work environments.</span>
+    <?= $content[3285][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3286][$key] ?? ''; ?></span><br />
+    <?= $content[3287][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3288][$key] ?? ''; ?></span><br />
+    <?= $content[3289][$key] ?? ''; ?><span tabindex="0" class="selection_2"><?= $content[3290][$key] ?? ''; ?></span>
 </p>
 </fieldset>
 </div>
-<p class="selection sub_sub_title" tabindex="0">&nbsp;&nbsp;
-These additional insights highlight the incredible diversity and innovation present in the world of computer desks.<br/><br />&nbsp;&nbsp;
-As you continue your research, exploring these aspects can help you gain a deeper understanding of how computer desks have evolved and adapted to the ever-changing technological landscape.
+<p class="selection sub_sub_title" tabindex="0"><?= $content[3291][$key] ?? ''; ?><br/><br /><?= $content[3292][$key] ?? ''; ?>
 </p>
 </section>
 </article>
 <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
 <article class="article fullbar">
 
-<div class="sub_title" id="intriguingPointsDesk">Here are a few more intriguing points to consider regarding computer desks:</div><div class="spacer"></div>
+<div class="sub_title" id="intriguingPointsDesk"><?= $content[3293][$key] ?? ''; ?></div><div class="spacer"></div>
 <div class="spacer_double_lines" style="margin-bottom: -20px;"><hr><hr></div>
 <!--DETAILS button-->
 <a href="#intriguingPointsDesk"><button class="card2 button_common_types" id="openDetailsButton2">
     <img src="https://latinospc.com/images/artificialintelligence/pixel.jpeg" alt="Standard Computer Desk" width="17px" title="Open -View all desks">
-    <!-- for align to the left_---<-> translate: 3px 26px;---<-> nocard class="card"---<->   display: inline; translate: 571px 40px -->
+    <!-- for align to the left_---<-> <?= $content[3294][$key] ?? ''; ?><-> <?= $content[3295][$key] ?? ''; ?><->   <?= $content[3296][$key] ?? ''; ?>
 </button></a>
 <!--^^^ DETAILS button ^^^-->
 
@@ -642,153 +625,153 @@ As you continue your research, exploring these aspects can help you gain a deepe
 <!-- Make these have details with summaries-->
 <div class="colms2">
 <details tabindex="0" id="2" class="selection half_size card2" style="display: inline;">
-    <summary class="sub_sub_title">Cultural Influences on Desk Design:</summary>
+    <summary class="sub_sub_title"><?= $content[3297][$key] ?? ''; ?></summary>
     <div class="spacer"></div>
     <li>
-        <span tabindex="0" class="selection_2">Desk designs can be significantly influenced by cultural factors. For instance, Japanese design principles often emphasize minimalism and functionality, resulting in clean, uncluttered desk designs.</span>
+        <span tabindex="0" class="selection_2"><?= $content[3298][$key] ?? ''; ?></span>
     </li>
-    <br />&nbsp; <li>
-        <span tabindex="0" class="selection_2">In contrast, European designs might focus on ornate details and craftsmanship, leading to more elaborate and decorative desk styles.</span>
+    <br /><?= $content[3299][$key] ?? ''; ?> <li>
+        <span tabindex="0" class="selection_2"><?= $content[3300][$key] ?? ''; ?></span>
     </li>
     <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Cultural Influences on Desk Design" height="100px">
 </details>
 
 
 <details tabindex="0" id="22" class="selection half_size card2" style="display: inline;">
-<summary class="sub_sub_title">Wireless Connectivity:</summary>
+<summary class="sub_sub_title"><?= $content[3301][$key] ?? ''; ?></summary>
 <div class="spacer"></div>
 <li>
-    <span tabindex="0" class="selection_2">As technology advances, some computer desks are incorporating wireless connectivity not only for charging but also for connecting to monitors, peripherals, and other devices without the need for cables.</span>
+    <span tabindex="0" class="selection_2"><?= $content[3302][$key] ?? ''; ?></span>
 </li>
-<br />&nbsp; <li>
-    <span tabindex="0" class="selection_2">This technology promotes a cleaner, more organized workspace and increased flexibility in desk setup and arrangement.</span>
+<br /><?= $content[3303][$key] ?? ''; ?> <li>
+    <span tabindex="0" class="selection_2"><?= $content[3304][$key] ?? ''; ?></span>
 </li>
 <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Wireless Connectivity Desk" height="100px">
 </details>
 
 <details tabindex="0" id="23" class="selection half_size card2" style="display: inline;">
-<summary class="sub_sub_title">Collapsible and Portable Desks:</summary>
+<summary class="sub_sub_title"><?= $content[3305][$key] ?? ''; ?></summary>
 <div class="spacer"></div>
 <li>
-    <span tabindex="0" class="selection_2">Collapsible or portable computer desks are designed for easy setup and storage. These can be particularly useful for people with limited space or those who frequently move their workstations.</span>
+    <span tabindex="0" class="selection_2"><?= $content[3306][$key] ?? ''; ?></span>
 </li>
-<br />&nbsp; <li>
-    <span tabindex="0" class="selection_2">These desks offer flexibility and convenience, making them ideal for small apartments, dorm rooms, or mobile offices.</span>
+<br /><?= $content[3307][$key] ?? ''; ?> <li>
+    <span tabindex="0" class="selection_2"><?= $content[3308][$key] ?? ''; ?></span>
 </li>
 <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Collapsible and Portable Desk" height="100px">
 </details>
 
 <details tabindex="0" id="24" class="selection half_size card2" style="display: inline;">
-<summary class="sub_sub_title">Collaborative Workspaces:</summary>
+<summary class="sub_sub_title"><?= $content[3309][$key] ?? ''; ?></summary>
 <div class="spacer"></div>
 <li>
-    <span tabindex="0" class="selection_2">Some modern offices and co-working spaces are equipped with collaborative computer desks that allow multiple users to work together, promoting teamwork and interaction.</span>
+    <span tabindex="0" class="selection_2"><?= $content[3310][$key] ?? ''; ?></span>
 </li>
-<br />&nbsp; <li>
-    <span tabindex="0" class="selection_2">These desks often feature shared screens, integrated power solutions, and modular designs to accommodate different group sizes and working styles.</span>
+<br /><?= $content[3311][$key] ?? ''; ?> <li>
+    <span tabindex="0" class="selection_2"><?= $content[3312][$key] ?? ''; ?></span>
 </li>
 <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Collaborative Workspace Desk" height="100px">
 </details>
 
 <details tabindex="0" id="25" class="selection half_size card2" style="display: inline;">
-<summary class="sub_sub_title">Minimal Footprint Desks:</summary>
+<summary class="sub_sub_title"><?= $content[3313][$key] ?? ''; ?></summary>
 <div class="spacer"></div>
 <li>
-    <span tabindex="0" class="selection_2">Designed for small living spaces, minimal footprint desks are compact and efficient, providing a workspace without taking up much room.</span>
+    <span tabindex="0" class="selection_2"><?= $content[3314][$key] ?? ''; ?></span>
 </li>
-<br />&nbsp; <li>
-    <span tabindex="0" class="selection_2">These desks often feature clever storage solutions and multi-functional designs to maximize utility in limited spaces.</span>
+<br /><?= $content[3315][$key] ?? ''; ?> <li>
+    <span tabindex="0" class="selection_2"><?= $content[3316][$key] ?? ''; ?></span>
 </li>
 <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Minimal Footprint Desk" height="100px">
 </details>
 
 <details tabindex="0" id="26" class="selection half_size card2" style="display: inline;">
-<summary class="sub_sub_title">Digital Nomad Desks:</summary>
+<summary class="sub_sub_title"><?= $content[3317][$key] ?? ''; ?></summary>
 <div class="spacer"></div>
 <li>
-    <span tabindex="0" class="selection_2">With the rise of remote work and digital nomadism, there's a growing trend of portable desks designed for travelers. These desks are lightweight, foldable, and often come with built-in storage for laptops and accessories.</span>
+    <span tabindex="0" class="selection_2"><?= $content[3318][$key] ?? ''; ?></span>
 </li>
-<br />&nbsp; <li>
-    <span tabindex="0" class="selection_2">Digital nomad desks prioritize portability and functionality, allowing users to set up a productive workspace anywhere in the world.</span>
+<br /><?= $content[3319][$key] ?? ''; ?> <li>
+    <span tabindex="0" class="selection_2"><?= $content[3320][$key] ?? ''; ?></span>
 </li>
 <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Digital Nomad Desk" height="100px">
 </details>
 
 <details tabindex="0" id="27" class="selection half_size card2" style="display: inline;">
-<summary class="sub_sub_title">Historical Desk Collections:</summary>
+<summary class="sub_sub_title"><?= $content[3321][$key] ?? ''; ?></summary>
 <div class="spacer"></div>
 <li>
-    <span tabindex="0" class="selection_2">Museums and historical sites often feature collections of antique desks, showcasing the evolution of desk designs throughout different time periods.</span>
+    <span tabindex="0" class="selection_2"><?= $content[3322][$key] ?? ''; ?></span>
 </li>
-<br />&nbsp; <li>
-    <span tabindex="0" class="selection_2">These collections provide valuable insights into cultural, technological, and aesthetic changes in workspace design over the centuries.</span>
+<br /><?= $content[3323][$key] ?? ''; ?> <li>
+    <span tabindex="0" class="selection_2"><?= $content[3324][$key] ?? ''; ?></span>
 </li>
 <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Historical Desk Collection" height="100px">
 </details>
 
 <details tabindex="0" id="28" class="selection half_size card2" style="display: inline;">
-<summary class="sub_sub_title">DIY Desk Communities:</summary>
+<summary class="sub_sub_title"><?= $content[3325][$key] ?? ''; ?></summary>
 <div class="spacer"></div>
 <li>
-    <span tabindex="0" class="selection_2">Online communities and platforms like Reddit and Pinterest are full of DIY enthusiasts sharing their custom computer desk projects, offering inspiration and tips for creating unique workspaces.</span>
+    <span tabindex="0" class="selection_2"><?= $content[3326][$key] ?? ''; ?></span>
 </li>
-<br />&nbsp; <li>
-    <span tabindex="0" class="selection_2">These communities foster creativity and resourcefulness, encouraging people to design and build desks tailored to their specific needs and preferences.</span>
+<br /><?= $content[3327][$key] ?? ''; ?> <li>
+    <span tabindex="0" class="selection_2"><?= $content[3328][$key] ?? ''; ?></span>
 </li>
 <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="DIY Desk Community" height="100px">
 </details>
 
 <details tabindex="0" id="29" class="selection half_size card2" style="display: inline;">
-<summary class="sub_sub_title">Feng Shui Considerations:</summary>
+<summary class="sub_sub_title"><?= $content[3329][$key] ?? ''; ?></summary>
 <div class="spacer"></div>
 <li>
-    <span tabindex="0" class="selection_2">Some individuals follow Feng Shui principles when designing their workspaces, aiming to create a harmonious and balanced environment that enhances productivity and creativity.</span>
+    <span tabindex="0" class="selection_2"><?= $content[3330][$key] ?? ''; ?></span>
 </li>
-<br />&nbsp; <li>
-    <span tabindex="0" class="selection_2">Feng Shui-inspired desk arrangements often consider factors like desk placement, natural light, and the flow of energy in the workspace.</span>
+<br /><?= $content[3331][$key] ?? ''; ?> <li>
+    <span tabindex="0" class="selection_2"><?= $content[3332][$key] ?? ''; ?></span>
 </li>
 <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Feng Shui Desk Arrangement" height="100px">
 </details>
 
 <details tabindex="0" id="210" class="selection half_size card2" style="display: inline;">
-<summary class="sub_sub_title">Desk Personalization:</summary>
+<summary class="sub_sub_title"><?= $content[3333][$key] ?? ''; ?></summary>
 <div class="spacer"></div>
 <li>
-    <span tabindex="0" class="selection_2">Personalizing your computer desk with items like photos, artwork, and inspirational quotes can create a more comfortable and motivating workspace.</span>
+    <span tabindex="0" class="selection_2"><?= $content[3334][$key] ?? ''; ?></span>
 </li>
-<br />&nbsp; <li>
-    <span tabindex="0" class="selection_2">Personal touches can help reduce stress, increase job satisfaction, and reflect individual personality and style in the workspace.</span>
+<br /><?= $content[3335][$key] ?? ''; ?> <li>
+    <span tabindex="0" class="selection_2"><?= $content[3336][$key] ?? ''; ?></span>
 </li>
 <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Personalized Desk" height="100px">
 </details>
 
 <details tabindex="0" id="211" class="selection half_size card2" style="display: inline;">
-<summary class="sub_sub_title">Psychology of Desk Design:</summary>
+<summary class="sub_sub_title"><?= $content[3337][$key] ?? ''; ?></summary>
 <div class="spacer"></div>
 <li>
-    <span tabindex="0" class="selection_2">Researchers have explored the psychology of desk design and how factors like colors, lighting, and organization can influence mood, creativity, and cognitive performance.</span>
+    <span tabindex="0" class="selection_2"><?= $content[3338][$key] ?? ''; ?></span>
 </li>
-<br />&nbsp; <li>
-    <span tabindex="0" class="selection_2">Understanding these psychological factors can help in creating more productive and comfortable work environments.</span>
+<br /><?= $content[3339][$key] ?? ''; ?> <li>
+    <span tabindex="0" class="selection_2"><?= $content[3340][$key] ?? ''; ?></span>
 </li>
 <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Psychology of Desk Design" height="100px">
 </details>
 
 <details tabindex="0" id="212" class="selection half_size card2" style="display: inline;">
-<summary class="sub_sub_title">Social Media Trends:</summary>
+<summary class="sub_sub_title"><?= $content[3341][$key] ?? ''; ?></summary>
 <div class="spacer"></div>
 <li>
-    <span tabindex="0" class="selection_2">Social media platforms like Instagram and TikTok have popularized "desk tours," where individuals showcase their beautifully organized and aesthetically pleasing workspaces, often inspiring others to create their own unique setups.</span>
+    <span tabindex="0" class="selection_2"><?= $content[3342][$key] ?? ''; ?></span>
 </li>
-<br />&nbsp; <li>
-    <span tabindex="0" class="selection_2">These trends have influenced desk design and accessories, with a focus on both functionality and visual appeal.</span>
+<br /><?= $content[3343][$key] ?? ''; ?> <li>
+    <span tabindex="0" class="selection_2"><?= $content[3344][$key] ?? ''; ?></span>
 </li>
 <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Social Media Desk Trend" height="100px">
 </details>
 </div>
 <div class="spacer blurb half_size selection" tabindex="0">
-<p class="sub_sub_title" tabindex="0">Remember, the world of computer desks is constantly evolving as technology advances and user needs change.</p>
-<span class="selection_2 sub_sub_sub_title" tabindex="0">Exploring these diverse and evolving aspects can provide a comprehensive view of the role desks play in our modern work and living spaces.</span>
+<p class="sub_sub_title" tabindex="0"><?= $content[3345][$key] ?? ''; ?></p>
+<span class="selection_2 sub_sub_sub_title" tabindex="0"><?= $content[3346][$key] ?? ''; ?></span>
 </div>
 </section>
 <aside>
@@ -796,37 +779,10 @@ As you continue your research, exploring these aspects can help you gain a deepe
     <colgroup><col /><col /></colgroup><tbody>
         <tr style="height:42pt">
             <td style="vertical-align:top;overflow:hidden;overflow-wrap:break-word;">
-            <h3>[Free Research Preview. ChatGPT ChatGPT August 3 Version 2023]</h3>
+            <h3><?= $content[3347][$key] ?? ''; ?></h3>
             <hr /></td></tr></tbody></table>
         </aside>
 </article>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const button1 = document.getElementById('openDetailsButton');
-    const detailsIds1 = ['100', '200', '300', '400', '500', '600', '700', '800', '900', '1000'];
-
-    const button2 = document.getElementById('openDetailsButton2');
-    const detailsIds2 = ['2', '22', '23', '24', '25', '26', '27', '28', '29', '210','211', '212'];
-
-    function toggleDetails(ids) {
-    ids.forEach(id => {
-        const details = document.getElementById(id);
-        if (details) {
-        details.open = !details.open;
-        }
-    });
-    }
-
-    if (button1) {
-    button1.addEventListener('click', function() {
-        toggleDetails(detailsIds1);
-    });
-    }
-
-    if (button2) {
-    button2.addEventListener('click', function() {
-        toggleDetails(detailsIds2);
-    });
-    }
-});
+<?= $content[3348][$key] ?? ''; ?>
 </script>

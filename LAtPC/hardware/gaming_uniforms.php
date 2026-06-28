@@ -1,196 +1,194 @@
 <?php
+include_once dirname(__DIR__) . '/handlers/databaseConnection.php';
+databaseConnection('hardware');
+global $content, $key;
+?>
+<?php include_once('navBarHW.php'); ?>
+<?php
 ?>
 <article class="article fullbar"><!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ -->
-<h1><a href="./#peripherals">Gaming Uniforms</a></h1>
+<h1><a href="./#peripherals"><?= $content[2334][$key] ?? ''; ?></a></h1>
 <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ -->
-<h2>Get ready to embark on a journey through time and style as we explore the profound significance and intriguing history behind these virtual battle garbs.</h2>
+<h2><?= $content[2335][$key] ?? ''; ?></h2>
 
-<h2 class="card2 center">The Striking Significance of Gaming Uniforms:</h2>
+<h2 class="card2 center"><?= $content[2336][$key] ?? ''; ?></h2>
 
-<h2>Ah, gaming uniforms - the vibrant, stylish armor that cloaks our digital gladiators in the competitive arena. These seemingly simple garments are more than just a riot of colors and logos; they're symbols of unity, identity, and prowess. Here's why they matter so much:</h2>
+<h2><?= $content[2337][$key] ?? ''; ?></h2>
 <div class="spacer"></div>
 <div class="colms2">
 
-<fieldset class="card2"><legend class="card2">1. Team Unity and Identity:</legend>
+<fieldset class="card2"><legend class="card2"><?= $content[2338][$key] ?? ''; ?></legend>
     <p>
-        Just as knights donned coats of arms to signify their allegiance and purpose,
-        gaming uniforms forge an unbreakable bond among teammates.
+        <?= $content[2339][$key] ?? ''; ?>
     </p><p>
-        The synchronized appearance unites players mentally and emotionally,
-        creating a sense of camaraderie that translates into better coordination
-        in-game.
+        <?= $content[2340][$key] ?? ''; ?>
     </p>
 </fieldset>
 
-<fieldset class="card2"><legend class="card2">2. Professionalism and Recognition:</legend>
+<fieldset class="card2"><legend class="card2"><?= $content[2341][$key] ?? ''; ?></legend>
     <p>
-        Imagine a world without sports jerseys - just a sea of indistinguishable players.
+        <?= $content[2342][$key] ?? ''; ?>
     </p><p>
-        Gaming uniforms serve as beacons of recognition in the ever-expanding esports landscape.
+        <?= $content[2343][$key] ?? ''; ?>
     </p><p>
-        Spectators and fans can instantly identify their favorite team, fostering a deeper connection and loyalty.
+        <?= $content[2344][$key] ?? ''; ?>
     </p>
 </fieldset>
 
-<fieldset class="card2"><legend class="card2">3. Psychological Edge:</legend>
+<fieldset class="card2"><legend class="card2"><?= $content[2345][$key] ?? ''; ?></legend>
     <p>
-        Donning a uniform isn't just about looking good; it's about feeling good too.
+        <?= $content[2346][$key] ?? ''; ?>
     </p><p>
-        Uniforms provide players with a psychological edge, boosting their confidence and reminding them that they're part of something larger than themselves.
+        <?= $content[2347][$key] ?? ''; ?>
     </p><p>
-        That <a href="https://becomingbetter.org/the-uniform-effect/">"power outfit"</a> effect? Absolutely real!
+        <?= $content[2348][$key] ?? ''; ?> <a href="https://becomingbetter.org/the-uniform-effect/"><?= $content[2349][$key] ?? ''; ?></a> <?= $content[2350][$key] ?? ''; ?>
     </p>
 </fieldset>
 
-<fieldset class="card2"><legend class="card2">4. Sponsorship and Branding:</legend>
+<fieldset class="card2"><legend class="card2"><?= $content[2351][$key] ?? ''; ?></legend>
     <p>
-        Gaming uniforms are like stylish billboards that showcase team sponsors and logos.
+        <?= $content[2352][$key] ?? ''; ?>
     </p><p>
-        Much like the banners of medieval knights, these logos highlight the support system backing the team,
-        making it a vital revenue stream for the esports ecosystem.
+        <?= $content[2353][$key] ?? ''; ?>
     </p>
     </fieldset>
 </div>
-<fieldset class="card2"><legend class="card2" style="text-align:right;">5. Spectator Experience:</legend>
+<fieldset class="card2"><legend class="card2" style="text-align:right;"><?= $content[2354][$key] ?? ''; ?></legend>
     <p>
-        Esports events are nothing short of electrifying spectacles.
+        <?= $content[2355][$key] ?? ''; ?>
     </p><p>
-        Just as you can spot your favorite superhero from a mile away,
-        uniforms allow spectators to track the action fluidly, enhancing the viewing experience.
+        <?= $content[2356][$key] ?? ''; ?>
     </p>
     </fieldset>
 <hr>
-<h2 class="spacer_shape">Now, let's hop into our virtual time machine and explore the evolution of gaming uniforms through the ages:</h2>
+<h2 class="spacer_shape"><?= $content[2357][$key] ?? ''; ?></h2>
 <div class="spacer"></div>
-<p class="center card2 text unif">Ancient Pixels (Pre-2000s):</p>
+<p class="center card2 text unif"><?= $content[2358][$key] ?? ''; ?></p>
 <div class="colms unif">
     <p class="text">
-        In the early days of gaming competitions, uniforms were as scarce as a legendary drop.
+        <?= $content[2359][$key] ?? ''; ?>
     </p><p class="text">
-        Players, adorned in whatever they fancied, competed with a hodgepodge of styles.
+        <?= $content[2360][$key] ?? ''; ?>
     </p><p class="text">
-        It was a wild west of fashion, where jerseys were rarer than a unicorn.
+        <?= $content[2361][$key] ?? ''; ?>
     </p>
 </div>
                                 <br />
-<p class="center card2 text unif">Pixel Renaissance (2000s):</p>
+<p class="center card2 text unif"><?= $content[2362][$key] ?? ''; ?></p>
 <div class="colms unif">
     <p class="text">
-        As gaming grew, so did the recognition of the need for team uniforms.
+        <?= $content[2363][$key] ?? ''; ?>
     </p><p class="text">
-        The 2000s saw the rise of rudimentary uniform concepts &#8210; simple shirts with team logos and perhaps a splash of color.
+        <?= $content[2364][$key] ?? ''; ?>
     </p><p class="text">
-        It was like the early plate armor of gaming uniforms &#8210; practical but basic.
+        <?= $content[2365][$key] ?? ''; ?>
     </p>
 </div>
                                 <br />
-<p class="center card2 text unif">The Digital Couture Era (2010s):</p>
+<p class="center card2 text unif"><?= $content[2366][$key] ?? ''; ?></p>
 <div class="colms unif">
     <p class="text">
-        Ah, the 2010s, where gaming uniforms truly came into their own.
+        <?= $content[2367][$key] ?? ''; ?>
     </p><p class="text">
-        As esports gained global recognition, so did the uniform game.
+        <?= $content[2368][$key] ?? ''; ?>
     </p><p class="text">
-        Teams started embracing sleek designs, incorporating player names and numbers, and even experimenting with different fabrics and materials.
+        <?= $content[2369][$key] ?? ''; ?>
     </p><p class="text">
-        These uniforms were like tailored armor &#8210; designed for both function and style.
+        <?= $content[2370][$key] ?? ''; ?>
     </p>
 </div>
                                 <br />
-<p class="center card2 text unif">Future-Focused Aesthetics (2020s and Beyond):</p>
+<p class="center card2 text unif"><?= $content[2371][$key] ?? ''; ?></p>
 <div class="colms unif">
     <p class="text">
-        While I can't predict the specifics of the future, it's safe to assume that gaming uniforms will continue to evolve.
+        <?= $content[2372][$key] ?? ''; ?>
     </p><p class="text">
-        With technology advancing at an unprecedented pace, we might see uniforms with embedded LEDs </p><p class="text">that change colors in response to in-game events
-        or uniforms made from advanced materials for enhanced comfort during long gaming sessions.
+        <?= $content[2373][$key] ?? ''; ?> </p><p class="text"><?= $content[2374][$key] ?? ''; ?>
     </p></div>
                                 <br />
-<div  class="unif center"><p class="text">So there you have it, the mesmerizing saga of gaming uniforms!</p>
-    <p class="text">From the humble beginnings of mismatched shirts to the dazzling designs of today, these uniforms have carved a distinctive place in the esports realm.</p>
-    <p class="text">So the next time you see a team stride onto the virtual battlefield,
-        remember that their uniforms aren't just threads - they're the embodiment of teamwork, history, and a future yet to be written.</p>
+<div  class="unif center"><p class="text"><?= $content[2375][$key] ?? ''; ?></p>
+    <p class="text"><?= $content[2376][$key] ?? ''; ?></p>
+    <p class="text"><?= $content[2377][$key] ?? ''; ?></p>
 </div>
 </article>
 <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ -->
 <article class="article fullbar">
-<h2>let's unravel the riveting story of uniforms!
-    From the early origins to their modern-day applications, uniforms have played a fascinating role in various sectors and among civilians.
+<h2><?= $content[2378][$key] ?? ''; ?>
     </h2>
 <div class="colms">
-    <fieldset class="card2"><legend class="card2">Ancient Beginnings:</legend>
-        <p>The tale of uniforms starts in the annals of history.</p>
-        <p>Ancient civilizations, from the Roman legions to the Chinese dynasties, used uniforms to distinguish soldiers, mark ranks, and instill a sense of discipline.</p>
-        <p>These uniforms weren't just practical; they were symbols of authority, cohesion, and a shared purpose.</p>
+    <fieldset class="card2"><legend class="card2"><?= $content[2379][$key] ?? ''; ?></legend>
+        <p><?= $content[2380][$key] ?? ''; ?></p>
+        <p><?= $content[2381][$key] ?? ''; ?></p>
+        <p><?= $content[2382][$key] ?? ''; ?></p>
     </fieldset>
 
-    <fieldset class="card2"><legend class="card2">Military Majesty:</legend>
-        <p>Military uniforms have always been a striking example of unity and order.</p>
-        <p>As empires expanded and armies grew, the need for standardized attire became evident.</p>
-        <p>Each branch of the military &#8210; army, navy, air force &#8210; adopted distinct uniforms for their unique functions.</p>
-        <p>Think of it as a sartorial symphony of power and precision.</p>
+    <fieldset class="card2"><legend class="card2"><?= $content[2383][$key] ?? ''; ?></legend>
+        <p><?= $content[2384][$key] ?? ''; ?></p>
+        <p><?= $content[2385][$key] ?? ''; ?></p>
+        <p><?= $content[2386][$key] ?? ''; ?></p>
+        <p><?= $content[2387][$key] ?? ''; ?></p>
     </fieldset>
 
-    <fieldset class="card2"><legend class="card2">Law and Order:</legend>
-        <p>Police forces around the world don uniforms that blend function with authority.</p>
-        <p>The uniforms not only provide practical features like pockets and holsters but also serve as symbols of law enforcement and community protection.</p>
-        <p>A police officer's uniform is an emblem of trust and safety.</p>
+    <fieldset class="card2"><legend class="card2"><?= $content[2388][$key] ?? ''; ?></legend>
+        <p><?= $content[2389][$key] ?? ''; ?></p>
+        <p><?= $content[2390][$key] ?? ''; ?></p>
+        <p><?= $content[2391][$key] ?? ''; ?></p>
     </fieldset>
 </div><div class="spacer"></div>
 <div class="colms">
-    <fieldset class="card2"><legend class="card2">First Responders and Heroes:</legend>
-        <p>Firefighters, paramedics, and other first responders wear uniforms that prioritize functionality in high-stress situations.</p>
-        <p>These uniforms are often flame-resistant, durable, and equipped with reflective materials for visibility.</p>
-        <p>They're the unsung heroes' second skin.</p>
+    <fieldset class="card2"><legend class="card2"><?= $content[2392][$key] ?? ''; ?></legend>
+        <p><?= $content[2393][$key] ?? ''; ?></p>
+        <p><?= $content[2394][$key] ?? ''; ?></p>
+        <p><?= $content[2395][$key] ?? ''; ?></p>
     </fieldset>
 
-    <fieldset class="card2"><legend class="card2">Sky High Style:</legend>
-        <p>Pilots and flight attendants glide through the skies in uniforms that exude sophistication and professionalism.</p>
-        <p>From the classic aviator jackets to the sleek, contemporary designs, these uniforms reflect the elegance of air travel.</p>
+    <fieldset class="card2"><legend class="card2"><?= $content[2396][$key] ?? ''; ?></legend>
+        <p><?= $content[2397][$key] ?? ''; ?></p>
+        <p><?= $content[2398][$key] ?? ''; ?></p>
     </fieldset>
 
-    <fieldset class="card2"><legend class="card2">Medical Attire:</legend>
-        <p>Doctors, nurses, and healthcare professionals don uniforms that symbolize their dedication to healing.</p>
-        <p>The white coats and scrubs aren't just about hygiene; they represent compassion, knowledge, and the promise of care.</p>
+    <fieldset class="card2"><legend class="card2"><?= $content[2399][$key] ?? ''; ?></legend>
+        <p><?= $content[2400][$key] ?? ''; ?></p>
+        <p><?= $content[2401][$key] ?? ''; ?></p>
     </fieldset>
 </div>
-    <fieldset class="card2"><legend class="card2" style="text-align:center;">Civilians in Uniform:</legend>
+    <fieldset class="card2"><legend class="card2" style="text-align:center;"><?= $content[2402][$key] ?? ''; ?></legend>
         <div class="spacer"></div>
-    <p>Uniforms aren't solely reserved for professional sectors.</p>
-    <h3>Civilian entities also adopt uniforms to create a sense of belonging, unity, and identity:</h3>
+    <p><?= $content[2403][$key] ?? ''; ?></p>
+    <h3><?= $content[2404][$key] ?? ''; ?></h3>
 <div class="colms2">
-    <div class="civs card2"><p>1. Schools:<br /><br />
-    School uniforms instill a sense of equality, reduce distractions, and foster a sense of community among students.</p>
-    <p>They erase socio-economic disparities and promote a focus on learning.</p></div>
+    <div class="civs card2"><p><?= $content[2405][$key] ?? ''; ?><br /><br />
+    <?= $content[2406][$key] ?? ''; ?></p>
+    <p><?= $content[2407][$key] ?? ''; ?></p></div>
 
-    <div class="civs card2"><p>2. Sports Teams:<br /><br />
-    Whether it's a soccer team, a basketball squad, or a cricket XI, sports teams don uniforms that proudly display team colors and logos.</p>
-    <p>These uniforms bolster team spirit and create a visual identity for fans to rally behind.</p>
+    <div class="civs card2"><p><?= $content[2408][$key] ?? ''; ?><br /><br />
+    <?= $content[2409][$key] ?? ''; ?></p>
+    <p><?= $content[2410][$key] ?? ''; ?></p>
     </div>
 
-    <div class="civs card2"><p>3. Service Industry:<br /><br />
-    Service-oriented businesses like restaurants, hotels, and retail outlets use uniforms to help customers identify employees and maintain a professional appearance.</p>
-    <p>These uniforms communicate a commitment to service excellence.</p>
+    <div class="civs card2"><p><?= $content[2411][$key] ?? ''; ?><br /><br />
+    <?= $content[2412][$key] ?? ''; ?></p>
+    <p><?= $content[2413][$key] ?? ''; ?></p>
     </div>
 
-    <div class="civs card2"><p>4. Transportation:<br /><br />
-    Drivers of buses, taxis, and other public transportation often wear uniforms that help passengers recognize them and establish a sense of trust and safety during journeys.</p>
+    <div class="civs card2"><p><?= $content[2414][$key] ?? ''; ?><br /><br />
+    <?= $content[2415][$key] ?? ''; ?></p>
     </div>
 </div>
-    <div class="civs card2"><p>5. Security and Event Staff:<br /><br />
-    Event staff and security personnel don uniforms that signal their role as authoritative figures.</p>
-    <p>These uniforms contribute to maintaining order and ensuring smooth event operations.</p>
+    <div class="civs card2"><p><?= $content[2416][$key] ?? ''; ?><br /><br />
+    <?= $content[2417][$key] ?? ''; ?></p>
+    <p><?= $content[2418][$key] ?? ''; ?></p>
     </div>
 <div class="spacer"></div>
 </fieldset>
-    <div class="card2 colms civs" style = "padding-top:20px;"><p class="text">The story of uniforms is a narrative of human organization, identity, and practicality.</p>
-    <p class="text">From the battlefields of yore to the bustling city streets of today, uniforms continue to serve as a tangible expression of unity, purpose, and pride.</p>
-    <p class="text">They're not just clothes; they're the threads that weave together the fabric of various sectors and communities, ensuring a world where distinction and unity go hand in hand.</p>
+    <div class="card2 colms civs" style = "padding-top:20px;"><p class="text"><?= $content[2419][$key] ?? ''; ?></p>
+    <p class="text"><?= $content[2420][$key] ?? ''; ?></p>
+    <p class="text"><?= $content[2421][$key] ?? ''; ?></p>
     </div>
     <table style="table-layout:fixed;width:468pt">
         <colgroup><col /><col /></colgroup><tbody>
             <tr style="height:42pt">
                 <td style="vertical-align:top;overflow:hidden;overflow-wrap:break-word;">
-                <h3>[Free Research Preview. ChatGPT August 3 Version 2023]</h3>
+                <h3><?= $content[2422][$key] ?? ''; ?></h3>
                 <hr /></td></tr></tbody></table>
 </article>
