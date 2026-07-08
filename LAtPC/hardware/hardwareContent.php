@@ -30,7 +30,7 @@ echo "<h1 class=\"fullbar\">" . ($content[105][$key] ?? '') . "</h1>";
     <ul>
         <div class="hardware-grid">
     <div tabindex="0" class="hardware-card" data-component="cpu">
-        <a href="./cpu" class="card-link">
+        <a href="<?= $content[4319][$key] ?? 'CPU'; ?>" class="card-link">
             <h2><?= $content[109][$key] ?? ''; ?></h2>
             <p><?= $content[119][$key] ?? ''; ?></p>
             <div class="card-image">
@@ -40,7 +40,7 @@ echo "<h1 class=\"fullbar\">" . ($content[105][$key] ?? '') . "</h1>";
     </div>
 
     <div tabindex="0" class="hardware-card" data-component="ram">
-        <a href="./ram" class="card-link">
+        <a href="<?= $content[4320][$key] ?? 'RAM'; ?>" class="card-link">
             <h2><?= $content[110][$key] ?? ''; ?></h2>
             <p><?= $content[120][$key] ?? ''; ?></p>
             <div class="card-image">
@@ -129,83 +129,32 @@ echo "<h1 class=\"fullbar\">" . ($content[105][$key] ?? '') . "</h1>";
         </a>
     </div>
     </div>
-
-
-        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/mouse.jpg" title="Mouse"></a>
-        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/keys.jpg" title="Keyboard"></a>
-        <!--https://unsplash.com/photos/mFtcZzLruCQ-->
-        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/display.jpg" title="Display"></a>
-        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/memory.jpg"
-            title="External Memory Drives"></a>
-        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/pci.jpg" title="PCI Cards"></a>
-        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/psu.jpg"
-            title="Power Supply"></a>
-        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/cooler.jpg" title="Cooling"></a>
-        <!--https://unsplash.com/photos/5fZqHF21CIw-->
-        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/gpu.jpg" title="GPU"></a>
-        <!--https://unsplash.com/photos/d6gyCYQU1vc-->
-        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/scanners.jpg"
-            title="Scanners"></a>
-        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/printer.jpg"
-            title="Printers"></a>
-        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/c_controllers.jpg"
-            title="Console Controllers"></a>
-        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/joystick.jpg"
-            title="Joysticks"></a>
-        <!--https://unsplash.com/photos/V5hAryReZzo-->
-        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/tablet.jpg" title="Tablets"></a>
-        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/microphone.jpg"
-            title="Microphones"></a>
-        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/headset.jpg"
-            title="Headsets"></a>
-        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/headphones.jpg"
-            title="Headphones"></a>
-        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/audio_mixer.jpg"
-            title="Audio Mixers"></a>
-        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/controller.jpg"
-            title="Controllers"></a>
-        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/uniform.jpg"
-            title="Gaming Uniforms"></a>
-        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/pen.jpg"
-            title="Pens, Pencils and Tablets"></a>
-        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/chairs.jpg" title="Chairs"></a>
-        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/desk.jpg" title="Desks"></a>
-        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/anti-slip-mat.jpg"
-            title="Anti-Slip Mats"></a>
-        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/speakers.jpg"
-            title="Speakers and Subwoofers"></a>
-        <div class="clr"></div>
     </section>
 
     <section class="peripherals-section">
     <div class="peripherals-header">
         <a href="#scroll" class="peripherals-title-link">
             <h2 id="peripherals" class="peripherals-title">
-                <?= $content[153][$key] ?? '';?>
+                <?= $content[152][$key] ?? '';?>
             </h2>
         </a>
     </div>
 
     <div class="peripherals-container">
         <div class="peripherals-grid">
-            <?php
-            function hw_Link($hw, $en, $es) {
-                echo $hw === 'en' ? $en : ($hw === 'es' ? $es : 'ERROR');
-            }
-            function hw_alt($hw, $en, $es) {
-                echo $hw === 'en' ? $en : ($hw === 'es' ? $es : 'ERROR');
-            }
-            function hw_title($hw, $en, $es) {
-                echo $hw === 'en' ? $en : ($hw === 'es' ? $es : 'ERROR');
-            }
-            ?>
-
+<?php
+$hw=$lang;
+function hw_alt($hw, $en, $es){ return $hw == 'es-419' ? $es : $en;}
+function hw_title($hw, $en, $es){ return $hw == 'es-419' ? $es : $en;}
+?>
             <div class="peripheral-card" data-type="input" tabindex="0">
                 <a class="peripheral-link" href="./mouse">
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= $mouse = $content[128][$key] ?? ''; ?></h3>
                         <div class="peripheral-image">
-                            <img src="https://latinospc.com/images/hardware/hw/mouse.jpg" alt="<?= $mouse; ?>" title="<?= $mouse; ?>">
+                            <img src="https://latinospc.com/images/hardware/hw/mouse.jpg"
+                            alt="<?= hw_alt($hw, $en='Mouse', $es='Ratón'); ?>"
+                            title="<?= hw_title($hw, $en='Mouse', $es='Ratón'); ?>">
                         </div>
                     </div>
                 </a>
@@ -216,7 +165,9 @@ echo "<h1 class=\"fullbar\">" . ($content[105][$key] ?? '') . "</h1>";
                     <div class="peripheral-content">
                         <h3 class="peripheral-name"><?= $keyboard = $content[129][$key] ?? ''; ?></h3>
                         <div class="peripheral-image">
-                            <img src="https://latinospc.com/images/hardware/hw/keyboard.jpg" alt="<?= $keyboard; ?>" title="<?= $keyboard; ?>">
+                            <img src="https://latinospc.com/images/hardware/hw/keyboard.jpg"
+                            alt="<?= hw_alt($hw, $en='Keyboard', $es='Teclado'); ?>"
+                            title="<?= hw_title($hw, $en='Keyboard', $es='Teclado'); ?>">
                         </div>
                     </div>
                 </a>
