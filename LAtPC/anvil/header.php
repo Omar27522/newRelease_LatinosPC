@@ -276,7 +276,7 @@
                 "/hardware_options" => "opciones_hardware",
                 "/hardware_options/cpu" => "opciones_hardware/cpu",
             ];
-            $var = isset($routes[$uri]) ? $routes[$uri] : $page->getDir()."español/";
+            $var = isset($routes[$uri]) ? $routes[$uri] : $page->getDir()."español";
 
             $query = parse_url($_SERVER['REQUEST_URI'], PHP_URL_QUERY);
             if (!empty($query)) $var .= '?' . $query;

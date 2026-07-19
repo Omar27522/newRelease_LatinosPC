@@ -1,6 +1,6 @@
 <?php
 function content () {
-  global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+  global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     global $introduction, $_JesusChrist, $list, $bible;
   global $titulo, $imagen, $imagenAlt, $enlaceImagen, $figLeyenda, $descripcion, $dialogoParrafo, $evangelio, $enlaceEvangelio, $pasaje;
     global $introducion, $_Jesucristo, $lista, $biblia;
@@ -182,7 +182,7 @@ function content () {
             </td>
             <td>
                 <div class="multi-link-container">
-                  <span tabindex="0" class="linked-text"><?= !empty ($description) ? $description : $descripcion; ?></span>
+                  <span tabindex="0" class="linked-text"><?= !empty ($depiction) ? $depiction : $descripcion; ?></span>
                   <div class="link-dialog">
                     <?php
                     echo '<h2 class="section-title" style="box-shadow:none;">'.(!empty ($title) ? $title : $titulo).'</h2>';
@@ -234,7 +234,7 @@ function content () {
 */
 function parables() {
 
-  global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+  global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
   global $introduction, $_JesusChrist, $list, $bible;
 
   $_JesusChrist = [ 'Jesus in the Gospels',
@@ -250,13 +250,13 @@ function parables() {
   $bible = ['https://ebible.org/find/show.php?id=eng-web', 'World English Bible with Deuterocanon', 'Bible'];
 
   function theSower() {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Sower';
     $image = '../images/_JesusChrist/sower.webp';
     $imageAlt = 'The Sower Parable';
     $linked_image = '../images/_JesusChrist/sower.png';
     $figCaption = 'The Parable of the Sower';
-    $description = 'Describes different responses to the gospel message using the analogy of seeds falling on different types of soil';
+    $depiction = 'Describes different responses to the gospel message using the analogy of seeds falling on different types of soil';
     $paragraphDialogs = ["Imagine a farmer throwing seeds on the ground. That's kind of like when someone tells you about Jesus. The seeds are the message, and the ground is like your heart.",
       "Jesus told a story about this. He said some seeds fell on a path where birds ate them up. That's like people who hear the message but don't get it, and then it's just forgotten.",
       "Some seeds fell on rocky ground. They grew fast at first, but because the soil wasn't deep, they dried up and died. That's like people who are excited about the message at first, but when things get tough, they give up.",
@@ -269,13 +269,13 @@ function parables() {
   }
 
   function wheatAndTheWeeds() {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Parable of the Wheat and the Weeds';
     $image = '../images/_JesusChrist/wheatAndTheWeeds.webp';
     $imageAlt = 'Wheat and the Weeds Parable';
     $linked_image = '../images/_JesusChrist/wheatAndTheWeeds.png';
     $figCaption = 'The Parable of the Wheat and the Weeds';
-    $description = 'Illustrates the kingdom of God as a farmer planting wheat but His enemies plant weeds in His field. Jesus will separate the wheat from the weeds at harvest time';
+    $depiction = 'Illustrates the kingdom of God as a farmer planting wheat but His enemies plant weeds in His field. Jesus will separate the wheat from the weeds at harvest time';
     $paragraphDialogs = ['The Kingdom of Heaven is like a farmer who planted good seeds in his field.',
       'But one night, while everyone was asleep, his enemy came and secretly planted weeds among the wheat, then left.',
       'Later, when the plants grew tall and produced grain, the weeds also appeared.',
@@ -288,13 +288,13 @@ function parables() {
   }
 
   function mustardSeed() {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Mustard Seed';
     $image = '../images/_JesusChrist/mustardSeed.webp';
     $imageAlt = 'The Mustard Seed Parable';
     $linked_image = '../images/_JesusChrist/mustardSeed.png';
     $figCaption = 'The Parable of the Mustard Seed';
-    $description = "Illustrates how God's kingdom starts small but grows enormously";
+    $depiction = "Illustrates how God's kingdom starts small but grows enormously";
     $paragraphDialogs = ['A tiny round mustard seed. You know how small those are, right? Black mustard seeds are about 1mm, or about .05 inches in diameter.',
       "He said that the kingdom of God is like that little seed. When it's planted, it's one of the smallest seeds you can find.",
       'But guess what? When it grows up, it becomes the biggest of all garden plants! It gets so big that birds can even come and make nests in its branches.',
@@ -305,13 +305,13 @@ function parables() {
   }
 
   function leavenedFlour() {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Leaven';
     $image = '../images/_JesusChrist/leavenedFlour.webp';
     $imageAlt = 'The Leaven Parable';
     $linked_image = '../images/_JesusChrist/leavenedFlour.png';
     $figCaption = 'The Parable of the Leavened Flour';
-    $description = 'Shows how the kingdom of God works subtly but thoroughly transforms';
+    $depiction = 'Shows how the kingdom of God works subtly but thoroughly transforms';
     $paragraphDialogs = ['Imagine a woman making a whole bunch of bread. She takes a little bit of yeast (or leaven) and mixes it into a huge amount of flour – like, a really, really big bowl of it!',
       'Even though she only puts in a little bit of yeast, something amazing happens. Slowly but surely, the yeast spreads all the way through the dough, and it makes the whole thing rise and get bigger.',
       "So, what Jesus was saying is that even though God's kingdom might start with just a few people or seem like something small, it has this incredible power to spread and grow and affect everything around it.",
@@ -322,13 +322,13 @@ function parables() {
   }
 
   function hiddenTreasure() {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Hidden Treasure';
     $image = '../images/_JesusChrist/hiddenTreasure.webp';
     $imageAlt = 'The Hidden Treasure Parable';
     $linked_image = '../images/_JesusChrist/hiddenTreasure.png';
     $figCaption = 'The Parable of the Hidden Treasure';
-    $description = "Reveals the supreme value of God's kingdom, worth sacrificing everything to obtain";
+    $depiction = "Reveals the supreme value of God's kingdom, worth sacrificing everything to obtain";
     $paragraphDialogs = ["Jesus told a story about a man who was walking through someone else's field. While he was walking, he found a treasure that was hidden in the ground!",
       'The man was super excited about finding this treasure. He covered it back up really quick so nobody else would find it.',
       "Then he went and sold everything he owned - like all his stuff! That's how badly he wanted this treasure.",
@@ -340,13 +340,13 @@ function parables() {
   }
 
   function pearlOfGreatPrice() {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Pearl of Great Price';
     $image = '../images/_JesusChrist/pearlOfGreatPrice.webp';
     $imageAlt = 'The Pearl of Great Price Parable';
     $linked_image = '../images/_JesusChrist/pearlOfGreatPrice.png';
     $figCaption = 'The Parable of the Pearl of Great Price';
-    $description = "Similar to the Hidden Treasure, emphasizes the kingdom's incomparable worth";
+    $depiction = "Similar to the Hidden Treasure, emphasizes the kingdom's incomparable worth";
     $paragraphDialogs = ['Jesus told a story about a merchant, which is like a businessman who buys and sells valuable things. This merchant was looking for beautiful pearls to sell.',
       'One day, he found an amazing pearl - the most perfect and valuable pearl he had ever seen in his whole life!',
       'The merchant wanted this special pearl so badly that he went and sold absolutely everything he owned just to get enough money to buy it.',
@@ -357,13 +357,13 @@ function parables() {
   }
 
   function dragnet() {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Dragnet';
     $image = '../images/_JesusChrist/dragnet.webp';
     $imageAlt = 'The Dragnet Parable';
     $linked_image = '../images/_JesusChrist/dragnet.png';
     $figCaption = 'The Parable of the Dragnet';
-    $description = 'Describes the final judgment when the righteous will be separated from the wicked';
+    $depiction = 'Describes the final judgment when the righteous will be separated from the wicked';
     $paragraphDialogs = ['Jesus told a story about some fishermen who threw a big net into the lake. The net caught all kinds of fish - good ones and bad ones all mixed together.',
       'When the net was full, the fishermen pulled it up onto the shore. Then they sat down and began sorting through all the fish.',
       'They put the good fish into baskets to keep, but they threw the bad fish away because nobody would want to eat those.',
@@ -375,13 +375,13 @@ function parables() {
   }
 
   function goodSamaritan() {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Good Samaritan';
     $image = '../images/_JesusChrist/goodSamaritan.webp';
     $imageAlt = 'The Good Samaritan Parable';
     $linked_image = '../images/_JesusChrist/goodSamaritan.png';
     $figCaption = 'The Parable of the Good Samaritan';
-    $description = "Teaches about loving one's neighbor through the story of an unlikely hero helping a wounded stranger";
+    $depiction = "Teaches about loving one's neighbor through the story of an unlikely hero helping a wounded stranger";
     $paragraphDialogs = ['Jesus told a story about a Jewish man who was traveling on a road from Jerusalem to Jericho. While he was traveling, some robbers attacked him! They beat him up, took all his stuff, and left him hurt really badly on the side of the road.',
       "A priest (that's like a church leader) came walking down the same road. But when he saw the hurt man, he just crossed to the other side of the road and kept on walking!",
       'Then another religious leader called a Levite came by. He also saw the hurt man, but he did the same thing - he just walked on by without helping!',
@@ -394,13 +394,13 @@ function parables() {
   }
 
   function prodigalSon() {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Prodigal Son';
     $image = '../images/_JesusChrist/prodigalSon.webp';
     $imageAlt = 'The Prodigal Son Parable';
     $linked_image = '../images/_JesusChrist/prodigalSon.png';
     $figCaption = 'The Parable of the Prodigal Son';
-    $description = "Illustrates God's forgiveness and the joy of reconciliation through a father welcoming back his wayward son";
+    $depiction = "Illustrates God's forgiveness and the joy of reconciliation through a father welcoming back his wayward son";
     $paragraphDialogs = ["Jesus told a story about a father who had two sons. The younger son asked his father for his share of the family money, even though his father wasn't dead yet! This was super disrespectful, but the father gave him the money anyway.",
       'The younger son took all that money and moved far away from home. There, he wasted all his money on wild parties and doing whatever he wanted. He was having fun for a while, but then he ran out of money completely!',
       "Right at that time, there was a terrible famine in that country, which means there wasn't enough food. The son got so desperate and hungry that he took a job feeding pigs. He was so hungry that he even wanted to eat the gross pig food!",
@@ -415,13 +415,13 @@ function parables() {
   }
 
   function lostSheep()  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Lost Sheep';
     $image = '../images/_JesusChrist/lostSheep.webp';
     $imageAlt = 'The Lost Sheep Parable';
     $linked_image = '../images/_JesusChrist/lostSheep.png';
     $figCaption = 'The Parable of the Lost Sheep';
-    $description = "Shows God's concern for each individual through a shepherd seeking one lost sheep";
+    $depiction = "Shows God's concern for each individual through a shepherd seeking one lost sheep";
     $paragraphDialogs = ['Jesus told a story about a shepherd who had 100 sheep. Shepherds take care of sheep and protect them from wild animals and danger.',
       'One day, the shepherd noticed that one of his sheep was missing! What do you think he did? He left the 99 other sheep in a safe place and went searching for that one lost sheep.',
       'When the shepherd finally found his lost sheep, he was so happy! He put the sheep on his shoulders and carried it all the way home.',
@@ -434,13 +434,13 @@ function parables() {
   }
 
   function lostCoin()	{
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Lost Coin';
     $image = '../images/_JesusChrist/lostCoin.webp';
     $imageAlt = 'The Lost Coin Parable';
     $linked_image = '../images/_JesusChrist/lostCoin.png';
     $figCaption = 'The Parable of the Lost Coin';
-    $description = 'Emphasizes the value God places on finding those who are lost';
+    $depiction = 'Emphasizes the value God places on finding those who are lost';
     $paragraphDialogs = ['Jesus told a story about a woman who had ten silver coins. These coins were very important to her.',
       'One day, she realized that one of her coins was missing! She was so worried about finding it that she lit a lamp, swept the whole house, and searched carefully everywhere until she found it.',
       'When she finally found her lost coin, she was super happy! She called all her friends and neighbors together and said, "Come celebrate with me because I\'ve found my lost coin!"',
@@ -452,13 +452,13 @@ function parables() {
   }
 
   function unmercifulServant()	{
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Unmerciful Servant';
     $image = '../images/_JesusChrist/unmercifulServant.webp';
     $imageAlt = 'The Unmerciful Servant Parable';
     $linked_image = '../images/_JesusChrist/unmercifulServant.png';
     $figCaption = 'The Parable of the Unmerciful Servant';
-    $description = "Teaches about forgiveness by contrasting a king's mercy with a servant's harshness";
+    $depiction = "Teaches about forgiveness by contrasting a king's mercy with a servant's harshness";
     $paragraphDialogs = ['Jesus told a story about a king who wanted to settle accounts with his servants. One servant was brought to him who owed the king millions of dollars - way more money than the servant could ever pay back!',
       'The king ordered that the servant and his whole family should be sold as slaves to pay back some of the debt. The servant fell on his knees and begged, "Please be patient with me, and I will pay back everything!"',
       'The king felt sorry for the servant and did something amazing - he canceled the whole debt! He let the servant go free without having to pay back anything at all!',
@@ -473,13 +473,13 @@ function parables() {
   }
 
   function workersInVineyard()	{
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Workers in the Vineyard';
     $image = '../images/_JesusChrist/workersInVineyard.webp';
     $imageAlt = 'The Workers in the Vineyard Parable';
     $linked_image = '../images/_JesusChrist/workersInVineyard.png';
     $figCaption = 'The Parable of the Workers in the Vineyard';
-    $description = "Reveals God's generosity and grace that defies human expectations of fairness";
+    $depiction = "Reveals God's generosity and grace that defies human expectations of fairness";
     $paragraphDialogs = ['Jesus told a story about a landowner who needed workers for his vineyard. Early in the morning, around 6 AM, he went out and hired some workers. He agreed to pay them a denarius for the day, which was the normal daily wage.',
       'Later that morning, around 9 AM, the landowner saw more people standing in the marketplace with nothing to do. He told them, "You also go and work in my vineyard, and I will pay you whatever is right." So they went.',
       'The landowner did the same thing at noon, at 3 PM, and even at 5 PM when the workday was almost over! Each time, he sent more workers into his vineyard.',
@@ -494,13 +494,13 @@ function parables() {
   }
 
   function richManAndLazarus()	{
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Rich Man and Lazarus';
     $image = '../images/_JesusChrist/richManAndLazarus.webp';
     $imageAlt = 'The Rich Man and Lazarus Parable';
     $linked_image = '../images/_JesusChrist/richManAndLazarus.png';
     $figCaption = 'The Parable of the Rich Man and Lazarus';
-    $description = 'Warns about the dangers of wealth and ignoring those in need';
+    $depiction = 'Warns about the dangers of wealth and ignoring those in need';
     $paragraphDialogs = ['Jesus told a story about a rich man who lived in luxury every day. He wore expensive purple clothes and fine linen, and he feasted on delicious food all the time.',
       "At the rich man's gate was a poor beggar named Lazarus. His body was covered with sores, and he was so hungry that he wished he could eat just the crumbs that fell from the rich man's table. Even dogs came and licked his sores. The rich man didn't help Lazarus at all.",
       "Eventually, both men died. Lazarus was carried by angels to Abraham's side in heaven. The rich man went to Hades, where he was in terrible pain.",
@@ -515,13 +515,13 @@ function parables() {
   }
 
   function phariseeAndTaxCollector()	{
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Pharisee and the Tax Collector';
     $image = '../images/_JesusChrist/phariseeAndTaxCollector.webp';
     $imageAlt = 'The Pharisee and the Tax Collector Parable';
     $linked_image = '../images/_JesusChrist/phariseeAndTaxCollector.png';
     $figCaption = 'The Parable of the Pharisee and the Tax Collector';
-    $description = 'Contrasts self-righteous pride with humble repentance in prayer';
+    $depiction = 'Contrasts self-righteous pride with humble repentance in prayer';
     $paragraphDialogs = ['Jesus told a story about two men who went to the temple to pray. One was a Pharisee, which is like a religious leader who followed all the rules really carefully. The other was a tax collector, which most people disliked because tax collectors often cheated people.',
       'The Pharisee stood up by himself and prayed, "God, I thank you that I\'m not like other people—robbers, evildoers, adulterers—or even like this tax collector. I fast twice a week and give a tenth of all I get." He was basically bragging about how good he was!',
       'But the tax collector stood at a distance. He wouldn\'t even look up to heaven. Instead, he beat his chest and said, "God, have mercy on me, a sinner." He knew he had done wrong things and was asking God to forgive him.',
@@ -533,13 +533,13 @@ function parables() {
   }
 
   function persistentWidow()	{
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Persistent Widow';
     $image = '../images/_JesusChrist/persistentWidow.webp';
     $imageAlt = 'The Persistent Widow Parable';
     $linked_image = '../images/_JesusChrist/persistentWidow.png';
     $figCaption = 'The Parable of the Persistent Widow';
-    $description = 'Encourages persistent prayer through the story of a widow seeking justice';
+    $depiction = 'Encourages persistent prayer through the story of a widow seeking justice';
     $paragraphDialogs = ["Jesus told a story to teach his followers that they should always pray and never give up. The story was about a judge who didn't care about God or what people thought about him.",
       'In the same town was a widow who kept coming to this judge with the same request: "Grant me justice against my opponent." A widow is a woman whose husband has died, and in those days, widows often had a hard time taking care of themselves.',
       "For a long time, the judge refused to help her. But the widow didn't give up! She kept coming back again and again, asking for justice.",
@@ -552,13 +552,13 @@ function parables() {
   }
 
   function tenVirgins()	{
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Ten Virgins';
     $image = '../images/_JesusChrist/tenVirgins.webp';
     $imageAlt = 'The Ten Virgins Parable';
     $linked_image = '../images/_JesusChrist/tenVirgins.png';
     $figCaption = 'The Parable of the Ten Virgins';
-    $description = "Stresses readiness for Christ's return through the analogy of wedding attendants";
+    $depiction = "Stresses readiness for Christ's return through the analogy of wedding attendants";
     $paragraphDialogs = ["Jesus told a story comparing the kingdom of heaven to ten bridesmaids who took their lamps and went out to meet the bridegroom (that's the man getting married).",
       "Five of the bridesmaids were foolish, and five were wise. The foolish ones took their lamps but didn't bring any extra oil with them. The wise ones, however, took oil in jars along with their lamps. They were prepared!",
       'The bridegroom was a long time in coming, and all the bridesmaids got sleepy and fell asleep. But at midnight, someone shouted, "Here\'s the bridegroom! Come out to meet him!"',
@@ -573,13 +573,13 @@ function parables() {
   }
 
   function talents()  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Talents/Minas';
     $image = '../images/_JesusChrist/talents.webp';
     $imageAlt = 'The Talents Parable';
     $linked_image = '../images/_JesusChrist/talents.png';
     $figCaption = 'The Parable of the Talents';
-    $description = 'Teaches about stewardship and accountability for what God entrusts to us';
+    $depiction = 'Teaches about stewardship and accountability for what God entrusts to us';
     $paragraphDialogs = ['Jesus told a story about a man going on a journey. Before he left, he called his servants and entrusted his wealth to them. Talents were large amounts of money in those days.',
       'To one servant he gave five talents, to another two talents, and to another just one talent. He gave to each according to their ability. Then he went on his journey.',
       "The servant who received five talents went right away and put the money to work, earning five more talents. The one with two talents gained two more. But the servant who got one talent dug a hole in the ground and hid his master's money.",
@@ -596,13 +596,13 @@ function parables() {
   }
 
   function sheepAndGoats() {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Sheep and the Goats';
     $image = '../images/_JesusChrist/sheepAndGoats.webp';
     $imageAlt = 'Sheep and the goats';
     $linked_image = '../images/_JesusChrist/sheepAndGoats.png';
     $figCaption = 'The Parable of the Sheep and the Goats';
-    $description = 'Describes the final judgment based on how people treated "the least of these"';
+    $depiction = 'Describes the final judgment based on how people treated "the least of these"';
     $paragraphDialogs = ['Jesus says when He comes back, He will separate people like a shepherd separates sheep from goats.',
       'The sheep are the people who helped others when they were hungry, sick, or in trouble. Jesus says they were really helping Him.',
       'The goats are the people who didn’t help others. Jesus says they ignored Him by not caring for others.',
@@ -613,13 +613,13 @@ function parables() {
   }
 
   function twoDebtors() {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Two Debtors';
     $image = '../images/_JesusChrist/twoDebtors.webp';
     $imageAlt = 'Two people owe money to the same lender';
     $linked_image = '../images/_JesusChrist/twoDebtors.png';
     $figCaption = 'The Parable of the Two Debtors';
-    $description = 'Shows how gratitude flows from understanding the depth of forgiveness received';
+    $depiction = 'Shows how gratitude flows from understanding the depth of forgiveness received';
     $paragraphDialogs = ['Jesus tells a story about two people who owe money. One person owes a little, and the other owes a lot.',
       'The lender decides to forgive both of them and says they don’t have to pay it back.',
       'Jesus asks which person will love the lender more. The answer is the one who was forgiven the most.',
@@ -630,13 +630,13 @@ function parables() {
   }
 
   function wickedTenants()  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Wicked Tenants';
     $image = '../images/_JesusChrist/wickedTenants.webp';
     $imageAlt = "Vineyard workers attack the owner's messengers";
     $linked_image = '../images/_JesusChrist/wickedTenants.png';
     $figCaption = 'The Parable of the Wicked Tenants';
-    $description = "Foretells Jesus' rejection by religious leaders through the story of rebellious vineyard workers";
+    $depiction = "Foretells Jesus' rejection by religious leaders through the story of rebellious vineyard workers";
     $paragraphDialogs = ['A man owned a vineyard and rented it to some farmers. When it was time to collect fruit, he sent servants.',
       'The farmers beat the servants and sent them away. The man sent more, and they were treated badly too.',
       'Finally, he sent his son, thinking they would respect him. But the farmers killed the son.',
@@ -647,13 +647,13 @@ function parables() {
   }
 
   function weddingFeast() {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Wedding Feast';
     $image = '../images/_JesusChrist/weddingFeast.webp';
     $imageAlt = 'Guests are invited to a royal wedding';
     $linked_image = '../images/_JesusChrist/weddingFeast.png';
     $figCaption = 'The Parable of the Wedding Feast';
-    $description = "Illustrates the invitation to God's kingdom and the importance of proper response";
+    $depiction = "Illustrates the invitation to God's kingdom and the importance of proper response";
     $paragraphDialogs = ['A king planned a big wedding for his son and invited many guests.',
       'But the guests didn’t want to come. Some made excuses, and others were mean to the messengers.',
       'The king then invited people from the streets, both good and bad, and the wedding hall was filled.',
@@ -664,13 +664,13 @@ function parables() {
   }
 
   function richFool() {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Rich Fool';
     $image = '../images/_JesusChrist/richFool.webp';
     $imageAlt = 'A man builds bigger barns for his crops';
     $linked_image = '../images/_JesusChrist/richFool.png';
     $figCaption = 'The Parable of the Rich Fool';
-    $description = 'Warns against greed and storing up treasures on earth rather than being rich toward God';
+    $depiction = 'Warns against greed and storing up treasures on earth rather than being rich toward God';
     $paragraphDialogs = ['A rich man had a great harvest and didn’t know where to store all his crops.',
       'He decided to tear down his barns and build bigger ones to keep everything.',
       'He thought, ‘Now I can relax, eat, drink, and enjoy life!’',
@@ -681,13 +681,13 @@ function parables() {
   }
 
   function wiseAndFoolishBuilders() {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Wise and Foolish Builders';
     $image = '../images/_JesusChrist/wiseAndFoolishBuilders.webp';
     $imageAlt = 'The Wise and Foolish Builders Parable';
     $linked_image = '../images/_JesusChrist/wiseAndFoolishBuilders.png';
     $figCaption = 'The Parable of the Wise and Foolish Builders';
-    $description = "Contrasts those who hear Jesus' words and act on them versus those who don't";
+    $depiction = "Contrasts those who hear Jesus' words and act on them versus those who don't";
     $paragraphDialogs = ['Jesus told a story about two people who both built houses. One was wise, and one was foolish.',
       'The wise builder constructed his house on solid rock. He dug deep and made sure the foundation was strong.',
       'The foolish builder was lazy and built his house right on the sand, without any strong foundation at all.',
@@ -702,13 +702,13 @@ function parables() {
   }
 
   function growingSeed()  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Growing Seed';
     $image = '../images/_JesusChrist/growingSeed.webp';
     $imageAlt = 'The Growing Seed Parable';
     $linked_image = '../images/_JesusChrist/growingSeed.png';
     $figCaption = 'The Parable of the Growing Seed';
-    $description = "Shows how God's kingdom grows mysteriously by God's power, not human effort";
+    $depiction = "Shows how God's kingdom grows mysteriously by God's power, not human effort";
     $paragraphDialogs = ["Jesus told a story comparing God's kingdom to a man who scattered seed on the ground.",
       'Night and day, whether the man was asleep or awake, the seeds sprouted and grew. But the man had no idea how it happened!',
       'The soil produced grain all by itself - first the stalk, then the head, then the full kernel in the head.',
@@ -721,13 +721,13 @@ function parables() {
   }
 
   function newClothOnOldGarment() {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'New Cloth on Old Garment';
     $image = '../images/_JesusChrist/newClothOnOldGarment.webp';
     $imageAlt = 'The New Cloth on Old Garment Parable';
     $linked_image = '../images/_JesusChrist/newClothOnOldGarment.png';
     $figCaption = 'The Parable of the New Cloth on Old Garment';
-    $description = "Illustrates the incompatibility of the old religious system with Jesus' new teaching";
+    $depiction = "Illustrates the incompatibility of the old religious system with Jesus' new teaching";
     $paragraphDialogs = ['Jesus told a short story about clothes to help people understand something important. He asked, "Who would use a piece of new cloth to patch up an old garment?"',
       'He explained that if you did that, the new patch would shrink when you wash it. Then it would pull away from the old garment and make an even bigger tear than before!',
       'This might seem like just a practical sewing tip, but Jesus was actually teaching about something much bigger. The "old garment" stood for the old religious ways that people were used to.',
@@ -740,13 +740,13 @@ function parables() {
   }
 
   function newWineInOldWineskins()  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'New Wine in Old Wineskins';
     $image = '../images/_JesusChrist/newWineInOldWineskins.webp';
     $imageAlt = 'The New Wine in Old Wineskins Parable';
     $linked_image = '../images/_JesusChrist/newWineInOldWineskins.png';
     $figCaption = 'The Parable of the New Wine in Old Wineskins';
-    $description = "Similar to the cloth parable, shows how Jesus' message requires new structures";
+    $depiction = "Similar to the cloth parable, shows how Jesus' message requires new structures";
     $paragraphDialogs = ['Jesus told another short story about wine to help explain His ministry. He asked, "Does anyone pour new wine into old wineskins?"',
       'In those days, they used animal skins as containers for wine. When wine was new, it would still be fermenting and producing gases that would make the wineskin stretch.',
       "Old wineskins had already been stretched out and had become brittle. If you put new wine in them, they'd burst as the wine expanded! Then both the wine and wineskins would be ruined.",
@@ -760,13 +760,13 @@ function parables() {
   }
 
   function lampOnStand()  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Lamp on a Stand';
     $image = '../images/_JesusChrist/lampOnStand.webp';
     $imageAlt = 'The Lamp on a Stand Parable';
     $linked_image = '../images/_JesusChrist/lampOnStand.png';
     $figCaption = 'The Parable of the Lamp on a Stand';
-    $description = 'Teaches that spiritual truth is meant to illuminate, not be hidden';
+    $depiction = 'Teaches that spiritual truth is meant to illuminate, not be hidden';
     $paragraphDialogs = ['Jesus asked a simple question: "Do people light a lamp and then put it under a bowl or a bed? Of course not! They put it on a stand so it can give light to everyone in the house."',
       "In Jesus' time, they used oil lamps to light their homes at night. It would be silly to light a lamp and then hide it - that would defeat the whole purpose of having a lamp!",
       "Jesus explained that there's nothing hidden that won't eventually be revealed, and nothing kept secret that won't come to light.",
@@ -779,13 +779,13 @@ function parables() {
   }
 
   function twoSons()  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Two Sons';
     $image = '../images/_JesusChrist/twoSons.webp';
     $imageAlt = 'The Two Sons Parable';
     $linked_image = '../images/_JesusChrist/twoSons.png';
     $figCaption = 'The Parable of the Two Sons';
-    $description = 'Contrasts obedience with mere words, showing the importance of actual repentance';
+    $depiction = 'Contrasts obedience with mere words, showing the importance of actual repentance';
     $paragraphDialogs = ['Jesus told a story about a father who had two sons. The father went to the first son and said, "Son, go and work today in the vineyard."',
       'The first son answered, "I will not." But later he changed his mind and went to work in the vineyard after all.',
       'Then the father went to his second son and said the same thing. This son answered, "Yes, sir, I will," but he didn\'t actually go.',
@@ -799,13 +799,13 @@ function parables() {
   }
 
   function unjustSteward()  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Unjust Steward';
     $image = '../images/_JesusChrist/unjustSteward.webp';
     $imageAlt = 'The Unjust Steward Parable';
     $linked_image = '../images/_JesusChrist/unjustSteward.png';
     $figCaption = 'The Parable of the Unjust Steward';
-    $description = 'Encourages wise use of worldly resources with eternal perspective';
+    $depiction = 'Encourages wise use of worldly resources with eternal perspective';
     $paragraphDialogs = ['Jesus told a strange story about a manager (or steward) who worked for a rich man. The rich man found out that this manager was wasting his money, so he called him in and said, "What\'s this I hear about you? Give an account of your management, because you cannot be manager any longer."',
       "The manager thought to himself, \"Oh no! I'm going to lose my job! I'm not strong enough to dig, and I'm too proud to beg. What will I do?\" Then he came up with a clever plan to make friends who would help him after he lost his job.",
       'He called in each of his master\'s debtors. To the first he said, "How much do you owe my master?" The man replied, "Eight hundred gallons of olive oil." The manager told him, "Quick, take your bill and make it four hundred."',
@@ -820,13 +820,13 @@ function parables() {
   }
 
   function dishonestManager() {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Dishonest Manager';
     $image = '../images/_JesusChrist/dishonestManager.webp';
     $imageAlt = 'Illustration of a manager reducing debts owed to his master';
     $linked_image = '../images/_JesusChrist/dishonestManager.png';
     $figCaption = 'The Dishonest Manager';
-    $description = 'Teaches shrewd use of worldly resources for eternal purposes';
+    $depiction = 'Teaches shrewd use of worldly resources for eternal purposes';
     $paragraphDialogs = ["Jesus told one of His most surprising stories about a manager who was about to get fired for wasting his rich employer's money.",
       "Realizing he'd soon be unemployed, the manager quickly called in people who owed his master money and reduced their debts - cutting one bill from 800 gallons of olive oil to 400, and another from 1,000 bushels of wheat to 800. He did this so these people would welcome him into their homes after he lost his job.",
       'The weird part is that when the rich man found out, he actually praised the dishonest manager for being so clever!',
@@ -839,13 +839,13 @@ function parables() {
   }
 
   function friendAtMidnight() {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Friend at Midnight';
     $image = '../images/_JesusChrist/friendAtMidnight.webp';
     $imageAlt = 'Illustration of a person knocking on a door at night';
     $linked_image = '../images/_JesusChrist/friendAtMidnight.png';
     $figCaption = 'The Parable of the Friend at Midnight';
-    $description = 'Teaches persistence in prayer through a story about borrowing bread at night';
+    $depiction = 'Teaches persistence in prayer through a story about borrowing bread at night';
     $paragraphDialogs = ["In this parable, Jesus tells about a guy who had a friend come visit him late at night. The problem was, he didn't have any food to give his visitor! So he went to another friend's house at midnight to ask for some bread.",
       "The friend was already in bed with his family and didn't want to get up. But the first guy kept knocking and asking, and wouldn't stop.",
       'Finally, the friend got up and gave him what he needed - not because they were friends, but because the guy was so persistent!',
@@ -856,13 +856,13 @@ function parables() {
   }
 
   function barrenFigTree()  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Barren Fig Tree';
     $image = '../images/_JesusChrist/barrenFigTree.webp';
     $imageAlt = 'Illustration of a fig tree without fruit';
     $linked_image = '../images/_JesusChrist/barrenFigTree.png';
     $figCaption = 'The Parable of the Barren Fig Tree';
-    $description = "Warns about the consequences of unfruitfulness despite God's patience";
+    $depiction = "Warns about the consequences of unfruitfulness despite God's patience";
     $paragraphDialogs = ["Jesus told a story about a man who had a fig tree in his garden that wasn't growing any figs. For three whole years, the man came looking for fruit but found nothing!",
       'He told his gardener to just cut it down because it was wasting space and soil.',
       'But the gardener asked for one more chance - he would dig around it and put fertilizer on it. If it grew fruit next year, great! If not, then they could cut it down.',
@@ -874,13 +874,13 @@ function parables() {
   }
 
   function greatBanquet() {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Great Banquet';
     $image = '../images/_JesusChrist/greatBanquet.webp';
     $imageAlt = 'Illustration of a grand feast with empty seats and servants inviting new guests';
     $linked_image = '../images/_JesusChrist/greatBanquet.png';
     $figCaption = 'The Parable of the Great Banquet';
-    $description = "Shows how many reject God's invitation while the unlikely are welcomed";
+    $depiction = "Shows how many reject God's invitation while the unlikely are welcomed";
     $paragraphDialogs = ['Jesus told about a man who planned a huge dinner party and sent out invitations to lots of people. When everything was ready, he sent his servant to tell the guests it was time to come.',
       "But they all started making excuses! One guy said he bought a field and had to go see it. Another said he bought some oxen and needed to try them out. Another said he just got married so he couldn't come.",
       'The host got really upset and told his servant to go into the streets and bring in the poor, the disabled, the blind, and the lame instead.',
@@ -893,13 +893,13 @@ function parables() {
   }
 
   function buildingTowerAndKingGoingToWar() {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'Building a Tower and King Going to War';
     $image = '../images/_JesusChrist/buildingTower.webp';
     $imageAlt = 'Illustration of a person planning a tower and a king planning for battle';
     $linked_image = '../images/_JesusChrist/buildingTower.png';
     $figCaption = 'Building a Tower and King Going to War';
-    $description = 'Emphasizes counting the cost of discipleship before committing';
+    $depiction = 'Emphasizes counting the cost of discipleship before committing';
     $paragraphDialogs = ['Jesus shared two short stories to make people think carefully before deciding to follow Him.',
       'First, He talked about someone who wants to build a tower. A smart builder would sit down first and figure out how much it would cost to make sure they have enough money to finish it. Otherwise, they might lay the foundation but run out of money, and everyone would laugh at them!',
       "In the second story, Jesus described a king who's about to go to war against another king. Before fighting, he needs to figure out if his 10,000 soldiers can beat the other king's 20,000 soldiers. If not, he'd better send people to ask for peace terms!",
@@ -910,13 +910,13 @@ function parables() {
   }
 
   function unprofitableServants() {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Unprofitable Servants';
     $image = '../images/_JesusChrist/unprofitableServants.webp';
     $imageAlt = 'Illustration of servants working in a field';
     $linked_image = '../images/_JesusChrist/unprofitableServants.png';
     $figCaption = 'The Unprofitable Servants';
-    $description = 'Teaches humility in service, showing we only do our duty before God';
+    $depiction = 'Teaches humility in service, showing we only do our duty before God';
     $paragraphDialogs = ["Jesus asked His followers to imagine they had a servant who worked in their fields or took care of their sheep. When that servant comes in from working all day, would the master say, 'Hey, come sit down and eat'?",
       "No way! Instead, the master would tell the servant to make dinner, serve it, and only after the master finished eating could the servant eat. And the master wouldn't thank the servant for doing these things because that's just what servants are supposed to do.",
       "Jesus then told His disciples that they should have the same attitude. When they've done everything God has commanded them to do, they shouldn't expect special praise or rewards.",
@@ -928,13 +928,13 @@ function parables() {
   }
 
   function unjustJudge()  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Unjust Judge';
     $image = '../images/_JesusChrist/unjustJudge.webp';
     $imageAlt = 'Illustration of a widow persistently appearing before a judge';
     $linked_image = '../images/_JesusChrist/unjustJudge.png';
     $figCaption = 'The Unjust Judge';
-    $description = 'Encourages persistent prayer and faith until Jesus returns';
+    $depiction = 'Encourages persistent prayer and faith until Jesus returns';
     $paragraphDialogs = ["Jesus told this story to teach His followers to keep praying and never give up. There was a judge in a certain city who didn't care about God or what people thought about him.",
       "A widow in that city kept coming to him, asking for justice against someone who had wronged her. For a long time the judge ignored her. But she wouldn't stop asking!",
       "Finally, the judge thought, 'Even though I don't care about God or people, this woman is driving me crazy with her constant requests. I'll give her justice just to get her to leave me alone!'",
@@ -946,13 +946,13 @@ function parables() {
   }
 
   function blindLeadingTheBlind() {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'Blind Leading the Blind';
     $image = '../images/_JesusChrist/blindLeadingBlind.webp';
     $imageAlt = 'Illustration of two blind people where one is trying to lead the other';
     $linked_image = '../images/_JesusChrist/blindLeadingBlind.png';
     $figCaption = 'Blind Leading the Blind';
-    $description = 'Warns against following spiritually blind teachers';
+    $depiction = 'Warns against following spiritually blind teachers';
     $paragraphDialogs = ["Jesus asked a really good question: 'Can a blind person lead another blind person?' Of course not! They'd both fall into a ditch!",
       "This short parable has a simple but important message. If someone doesn't understand the truth about God themselves, they can't properly teach others about Him. It's like trying to give directions to a place you've never been.",
       "Jesus was warning people to be careful about who they listen to and learn from. Some religious teachers act like they know everything about God, but if they don't really understand God's truth, following them will lead to trouble.",
@@ -963,13 +963,13 @@ function parables() {
   }
 
   function faithfulAndWiseServant() {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Faithful and Wise Servant';
     $image = '../images/_JesusChrist/faithfulWiseServant.webp';
     $imageAlt = 'Illustration of a servant managing a household while the master is away';
     $linked_image = '../images/_JesusChrist/faithfulWiseServant.png';
     $figCaption = 'The Faithful and Wise Servant';
-    $description = "Contrasts faithful and unfaithful stewardship while waiting for the master's return";
+    $depiction = "Contrasts faithful and unfaithful stewardship while waiting for the master's return";
     $paragraphDialogs = ['Jesus told about a master who put a servant in charge of his household while he went away on a trip. The servant had one main job - to make sure all the other servants were fed at the right time.',
       "Jesus asked, 'Who is the faithful and wise servant that the master can trust to do this?' A good servant would be found doing his job when the master returned, and the master would reward him by giving him even more responsibility.",
       "But what if the servant was bad and thought, 'My master is taking a long time to come back,' and started beating the other servants and partying with troublemakers?",
@@ -982,13 +982,13 @@ function parables() {
   }
 
   function watchfulServants() {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Watchful Servants';
     $image = '../images/_JesusChrist/watchfulServants.webp';
     $imageAlt = "Illustration of servants with lamps lit waiting for their master's return";
     $linked_image = '../images/_JesusChrist/watchfulServants.png';
     $figCaption = 'The Watchful Servants';
-    $description = "Emphasizes staying alert and ready for Christ's return";
+    $depiction = "Emphasizes staying alert and ready for Christ's return";
     $paragraphDialogs = ['Jesus told His followers to be like servants waiting for their master to return from a wedding feast. These good servants would be dressed and ready for action, with their lamps lit even late at night. When the master knocked, they could immediately open the door.',
       'The master would be so happy with these watchful servants that he would do something amazing - he would have them sit down while he served them a meal!',
       "Jesus also compared His return to a thief breaking into a house at night - you don't know exactly when it will happen, so you need to be ready all the time.",
@@ -1000,13 +1000,13 @@ function parables() {
   }
 
   function childrenInTheMarketplace() {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'Children in the Marketplace';
     $image = '../images/_JesusChrist/childrenMarketplace.webp';
     $imageAlt = 'Illustration of children playing in a marketplace while others refuse to join';
     $linked_image = '../images/_JesusChrist/childrenMarketplace.png';
     $figCaption = 'Children in the Marketplace';
-    $description = 'Illustrates the inconsistent criticism Jesus and John the Baptist received';
+    $depiction = 'Illustrates the inconsistent criticism Jesus and John the Baptist received';
     $paragraphDialogs = ["Jesus noticed how people were never satisfied with God's messengers, no matter what they did. He compared them to kids sitting in the marketplace calling out to other kids: 'We played wedding music for you, but you wouldn't dance! We played funeral music, but you wouldn't cry!'",
       "Then Jesus explained what He meant. John the Baptist came living super strictly - not drinking wine and barely eating - and people said, 'He's crazy! He has a demon!'",
       "Then Jesus came, enjoying food and wine at parties with all kinds of people, and the same critics said, 'Look at him! He eats too much, drinks too much, and hangs out with tax collectors and sinners!'",
@@ -1018,13 +1018,13 @@ function parables() {
   }
 
   function speckAndLog()  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Speck and the Log';
     $image = '../images/_JesusChrist/speckAndLog.webp';
     $imageAlt = "Illustration of a person with a log in their eye trying to remove a speck from another's eye";
     $linked_image = '../images/_JesusChrist/speckAndLog.png';
     $figCaption = 'The Speck and the Log';
-    $description = 'Warns against hypocritical judgment of others';
+    $depiction = 'Warns against hypocritical judgment of others';
     $paragraphDialogs = ["Jesus used a funny picture to teach about judging others. He asked, 'Why do you notice the tiny speck of sawdust in your friend's eye, but completely ignore the massive log sticking out of your own eye?'",
       'Imagine trying to help someone get a tiny dust particle out of their eye when you have a huge wooden beam sticking out of yours!',
       "Jesus called people who do this 'hypocrites' - people who criticize others for small mistakes while ignoring their own big problems.",
@@ -1037,13 +1037,13 @@ function parables() {
   }
 
   function fishNet()  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Fish Net';
     $image = '../images/_JesusChrist/fishNet.webp';
     $imageAlt = 'Illustration of fishermen sorting good fish from bad after a catch';
     $linked_image = '../images/_JesusChrist/fishNet.png';
     $figCaption = 'The Fish Net';
-    $description = 'Describes the final separation of the righteous and wicked';
+    $depiction = 'Describes the final separation of the righteous and wicked';
     $paragraphDialogs = ["Jesus said God's kingdom is like a huge fishing net that was thrown into the lake and caught all kinds of fish. When it was full, the fishermen pulled it up on the shore.",
       'Then they sat down and sorted the good fish into containers, but threw the bad ones away.',
       'Jesus explained that this is how it will be at the end of the world. Angels will come and separate the wicked people from the righteous ones, and throw the wicked into a fiery furnace, where there will be weeping and gnashing of teeth.',
@@ -1055,13 +1055,13 @@ function parables() {
   }
 
   function householder()  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Householder';
     $image = '../images/_JesusChrist/householder.webp';
     $imageAlt = 'Illustration of a homeowner bringing out treasures from storage';
     $linked_image = '../images/_JesusChrist/householder.png';
     $figCaption = 'The Householder';
-    $description = 'Compares a teacher of scripture to a homeowner bringing out treasures old and new';
+    $depiction = 'Compares a teacher of scripture to a homeowner bringing out treasures old and new';
     $paragraphDialogs = ["After teaching several parables about God's kingdom, Jesus asked His disciples if they understood everything He said. When they answered yes, He gave them one more short comparison.",
       'He said that every teacher of religious law who has become a disciple in the kingdom of heaven is like the owner of a house who brings out of his storeroom new treasures as well as old.',
       "This mini-parable is about how Jesus' followers should teach others. A good teacher doesn't just stick to old familiar ideas or only chase after new trends.",
@@ -1074,13 +1074,13 @@ function parables() {
   }
 
   function goodShepherd() {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Good Shepherd';
     $image = '../images/_JesusChrist/goodShepherd.webp';
     $imageAlt = 'Illustration of a shepherd protecting his sheep';
     $linked_image = '../images/_JesusChrist/goodShepherd.png';
     $figCaption = 'The Good Shepherd';
-    $description = 'Depicts Jesus as the shepherd who knows, protects, and lays down his life for his sheep';
+    $depiction = 'Depicts Jesus as the shepherd who knows, protects, and lays down his life for his sheep';
     $paragraphDialogs = ["Jesus described Himself as the Good Shepherd who truly cares for His sheep. Unlike a hired worker who runs away when wolves come because the sheep don't really belong to him, Jesus actually lays down His life to protect His sheep.",
       "He explained that He knows His sheep personally, and they know His voice. When He calls, they follow Him because they recognize and trust Him, but they run from strangers whose voices they don't know.",
       "Jesus also said He has 'other sheep' (meaning non-Jewish believers) who will also become part of His one flock under one shepherd.",
@@ -1093,13 +1093,13 @@ function parables() {
   }
 
   function vineAndBranches()  {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Vine and the Branches';
     $image = '../images/_JesusChrist/vineAndBranches.webp';
     $imageAlt = 'Illustration of a grapevine with branches bearing fruit';
     $linked_image = '../images/_JesusChrist/vineAndBranches.png';
     $figCaption = 'The Vine and the Branches';
-    $description = 'Illustrates the necessity of remaining connected to Jesus to bear spiritual fruit';
+    $depiction = 'Illustrates the necessity of remaining connected to Jesus to bear spiritual fruit';
     $paragraphDialogs = ["Jesus used a picture that His followers would easily understand - a grapevine. He said, 'I am the true vine, and my Father is the gardener.' He explained that God removes branches that don't bear fruit, but prunes (cuts back) the fruitful ones so they'll produce even more.",
       "Then Jesus told His disciples the most important part: 'Remain in me, and I will remain in you. No branch can bear fruit by itself; it must remain in the vine.' Just like a branch can't grow grapes if it's cut off from the vine, we can't live truly good and meaningful lives if we're disconnected from Jesus.",
       "He said, 'Apart from me you can do nothing.' Jesus also warned that branches that don't stay connected get thrown away, wither, and are burned.",
@@ -1111,13 +1111,13 @@ function parables() {
   }
 
   function masterAndServant() {
-    global $title, $image, $imageAlt, $linked_image, $figCaption, $description, $paragraphDialogs, $gospel, $gospelLinks, $passage;
+    global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Master and Servant';
     $image = '../images/_JesusChrist/masterAndServant.webp';
     $imageAlt = 'Illustration of a servant working in a field then serving his master at the table';
     $linked_image = '../images/_JesusChrist/masterAndServant.png';
     $figCaption = 'The Master and Servant';
-    $description = 'Shows the proper relationship between God and his servants';
+    $depiction = 'Shows the proper relationship between God and his servants';
     $paragraphDialogs = ["Jesus asked His disciples to imagine they owned a servant who had been plowing fields or taking care of sheep all day. When that servant came in from the fields, would any master say, 'Come and sit down to eat'?",
       "No way! Instead, the master would say, 'Make my dinner, serve me while I eat and drink, and afterward you can eat and drink.' And the master wouldn't thank the servant for just doing what he was supposed to do.",
       'Jesus then told His followers that they should have the same attitude when serving God: \'When you have done everything you were told to do, you should say, "We are unworthy servants; we have only done our duty."\'',
@@ -1150,7 +1150,7 @@ function parabolas(){
                       'Las múltiples capas de significado a menudo contenían historias superficiales que cualquiera podía comprender, mientras ofrecían profundos conocimientos teológicos a quienes estaban dispuestos a reflexionarlas más a fondo.',
                       'La estructura narrativa de las parábolas las hacía más fáciles de recordar y compartir que los conceptos teológicos abstractos.',
                       'En lugar de imponer interpretaciones, las parábolas invitaban a los oyentes a descubrir el significado por sí mismos, involucrando sus mentes y corazones en el proceso.',
-                      ],'Parable', 'Description', 'Scripture Reference','Bible'];
+                      ],'Parabola', 'Descripcion', 'Referencia Biblica'];
   $biblia = ['https://ebible.org/find/details.php?id=spablm', 'Santa Biblia libre para el mundo', 'Biblia'];
 
 

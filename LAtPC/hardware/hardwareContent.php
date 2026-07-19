@@ -24,7 +24,7 @@ echo "<h1 class=\"fullbar\">" . ($content[105][$key] ?? '') . "</h1>";
     Make this image randomize with all the images from here, I really would like to build a fulls creen gallery page maybe, where the image has a right and a left button.
 	under the main image there is a carrousel of more images. Then the Gallery section will be right under This gallery section.
     -->
-            <!-- (-.-)Zzz...--|c[_]|--â˜ã€ãƒ„ã€‘â˜--|c[_]|--\(^-^)/--|c[_]|--(â•¯Â°â–¡Â°ï¼‰â•¯ ï¸µ â”»â”â”» **`áƒ¦Â´** Computer Parts-->
+            <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ Computer Parts-->
     </div>
 
     <ul>
