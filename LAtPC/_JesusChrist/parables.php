@@ -129,8 +129,8 @@ function content () {
   <article class="fullbar">
     <nav class="crumbs">
     <div class="bread-crumbs">
-      <a href="../#^" class="crumb-link">Jesus Christ</a>
-      <a href="#^" class="crumb-link"><b>Parables</b></a>
+      <a href="./#^" class="crumb-link"><?= !empty($_JesusChrist) ? "Jesus Christ" : "Jesucristo";?></a>
+      <a href="#^" class="crumb-link"><b><?= !empty($_JesusChrist) ? "Parables" : "Parábolas";?></b></a>
     </div>
   </nav>
     <div class="intro-section">
@@ -1150,7 +1150,7 @@ function parabolas(){
                       'Las múltiples capas de significado a menudo contenían historias superficiales que cualquiera podía comprender, mientras ofrecían profundos conocimientos teológicos a quienes estaban dispuestos a reflexionarlas más a fondo.',
                       'La estructura narrativa de las parábolas las hacía más fáciles de recordar y compartir que los conceptos teológicos abstractos.',
                       'En lugar de imponer interpretaciones, las parábolas invitaban a los oyentes a descubrir el significado por sí mismos, involucrando sus mentes y corazones en el proceso.',
-                      ],'Parabola', 'Descripcion', 'Referencia Biblica'];
+                      ],'Parábola', 'Descripción', 'Referencia Bíblica'];
   $biblia = ['https://ebible.org/find/details.php?id=spablm', 'Santa Biblia libre para el mundo', 'Biblia'];
 
 
