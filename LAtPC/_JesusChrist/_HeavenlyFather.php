@@ -320,8 +320,8 @@ function content()  {
     <div class="fullbar" id="title">
         <nav class="crumbs">
             <div class="bread-crumbs">
-                <a href="../#^" class="crumb-link">Jesus Christ</a>
-                <a href="#^" class="crumb-link"><b>Heavenly Father</b></a>
+                <a href="./#^" class="crumb-link"><?= !empty($titles) ? "Jesus Christ" : "Jesucristo";?></a>
+                <a href="#^" class="crumb-link"><b><?= !empty($titles) ? "Heavenly Father" : "Padre Celestial";?></b></a>
             </div>
         </nav>
         <div class="title" style="text-align:center" id="^"><?= empty($titles) ? $titulos[0] : $titles[0]; ?></div>
@@ -332,7 +332,7 @@ function content()  {
             <!--this is the image showing --><img
                 src="https://latinospc.com/images/artificialintelligence/our_lord_and_savior_jesus_christ/thumbnails/lamb1.webp"
                 title="Jesus holding a lamb" alt="Jesus holding a lamb" height="500px" width="303px" class="fl" />
-        </a>
+        </a><br />
         <h2 class="sub_title" style="overflow-wrap: normal;"><?= empty($titles) ? $titulos[1] : $titles[1]; ?></h2>
         <p><span class="dangers"><?= empty($titles) ? $titulos[2] : $titles[2]; ?>:</span>
             <?= empty($dangers) ? $peligros[0] : $dangers[0]; ?></p>

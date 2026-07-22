@@ -13,7 +13,7 @@
             title="Acts 9:3"><ruby>Acts<rt> 9:3</rt>
             </ruby></a></p>
     <!-- Scene-setting intro -->
-   
+
         <div class="carousel-group fl">
             <div class="multi-link-container">
                 <div class="thumbnail-container">
@@ -67,18 +67,39 @@
 </div>
 </section>
 
-<section data-section="Saul of Tarsus A Pharisee Shaped by Two Worlds">
-    <h2>Saul of Tarsus A Pharisee Shaped by Two Worlds</h2>
+<section data-section="Saul of Tarsus A Pharisee Shaped by Two Worlds" class="apostles-list">
 
-    SINCE THIS IS INVESTIGATIVE ANALYSIS I NEED SOME SOURCES TO SUPPORT THIS ANALYSIS. LOOK FOR THEM AND COME BACK TO THIS SECTION.
+    <div class="verse">
+    <h2 >Saul of Tarsus A Pharisee Shaped by Two Worlds</h2>
+    </div>
+<div class="carousel-group img_fl">
+            <div class="multi-link-container">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img">
+                        <img src="../../images/_JesusChrist/apostlePaul_PompeoBatoni_thumb.webp" alt="Paul the Apostle"
+                            data-author="Pompeo Batoni https://en.wikipedia.org/wiki/Pompeo_Batoni#Gallery" data-source-url="https://sdcason.com/content/images/2021/01/Pompeo_Batoni_-1708-1787-_-_Saint_Paul_-_266911_-_National_Trust.jpg" />
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="2"></div>
+            </div>
+        </div>
     <article>
     <h3>Name, Identity, and Social Position</h3>
+
     <p>
-      Saul of Tarsus was a Jew of the first century, known later by his Roman name, Paul.
-      His Hebrew name, “Saul,” likely honored Israel’s first king, who was also from the tribe of Benjamin.
-      Saul identified himself as a Hebrew, a Pharisee, and a strict observer of the ancestral traditions.
-      Socially, he occupied a respected position within Judaism as a rigorously trained scholar of the Law.
+      Saul of Tarsus was a <a href="https://en.wikipedia.org/wiki/History_of_the_Jews_in_the_Roman_Empire" title="History of Jews in the Roman Empire">Jew of the first century</a>,
+      known later by his Roman name, Paul.
+      His Hebrew name, “Saul,” likely honored <a href="https://en.wikipedia.org/wiki/Saul" title="Wikipedia">Israel’s first king</a>,
+      who was also from the <a href="https://en.wikipedia.org/wiki/Tribe_of_Benjamin" title="Wikipedia">tribe of Benjamin</a>.
+      Saul identified himself as a <a href="https://en.wikipedia.org/wiki/Hebrews" title="Wikipedia">Hebrew</a>,
+      a <a href="https://en.wikipedia.org/wiki/Pharisees" title="Wikipedia">Pharisee</a>, and a strict observer of the
+      <a href="https://www.debbielechtman.com/blogs/news/ancestors-in-jewish-culture" title="Ancestors in Jewish culture by Debbie Lechtman">ancestral traditions</a>.
+      Socially, he occupied a <a href="https://en.wikipedia.org/wiki/Rabbi" title="Wikipedia">respected position</a> within Judaism as a rigorously trained scholar of the
+      <a href="https://en.wikipedia.org/wiki/Law_of_Moses" title="Wikipedia Law of Moses">Law</a>.
     </p>
+
+      <p style="text-align: left;color:black;font-size:1.2rem;">Saul followed all the Jewish rules very carefully and studied them a lot. People respected him and saw him as a very smart teacher.
+      </p>
   </article>
 
   <article>
@@ -149,7 +170,7 @@
       His reputation was that of a rising, capable Pharisee, thoroughly committed to the Law and the traditions.
       Before his conversion, he was regarded as a fierce defender of Judaism against what he saw as dangerous innovation.
     </p>
-  
+
 </section>
 
          Paul (Apostle to the Gentiles) Then, again, the Church in Ephesus, founded by Paul, and
@@ -362,6 +383,10 @@ Legacy
         <div class="carousel-item" data-image-index="1">
             <a href="../../images/_JesusChrist/apostlePaul_conversion.jpg"><img src="../../images/_JesusChrist/apostlePaul_conversion.webp" alt="Conversion of Saint Paul" /></a>
             <h4><a class="img_link" href="https://youtu.be/rLZ67inPx-4?si=PXNWYsY5le9KL3zE&t=24"title="Conversion of Saint Paul">Conversion of Saint Paul</a></h4>
+        </div>
+        <div class="carousel-item" data-image-index="2">
+            <a href="../../images/_JesusChrist/apostlePaul_PompeoBatoni.jpg"><img src="../../images/_JesusChrist/apostlePaul_PompeoBatoni.webp" alt="Saint Paul" /></a>
+            <h4><a class="img_link" href="https://sdcason.com/saint-paul-by-pompeo-batoni-18th-century-public-domain-catholic-painting/"title="Paul the Apostle">Paul the Apostle</a></h4>
         </div>
     </template>
 </article>
