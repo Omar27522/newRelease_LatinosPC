@@ -165,6 +165,13 @@ function cssStyles(){
       list-style-type: none; /* or square, disc, etc. */
     }
 
+    .p_indent{
+      text-align: left;
+      color:black;
+      font-size:1.2rem;
+      text-indent:33%;
+    }
+
     /* Responsive Design */
     @media (max-width: 768px) {
       .apostles-lists {

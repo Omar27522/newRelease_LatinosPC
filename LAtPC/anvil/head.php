@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="<?= $page->getDir(); ?>anvil/mainStyle.css">
     <link rel="stylesheet" href="<?= $page->getDir(); ?>anvil/homepage.css">
     <link rel="stylesheet" href="<?= $page->getDir(); ?>anvil/navMenu.css">
-    <link rel="shortcut icon" href="<?= $page->getDir(); ?>favicon.ico" />
+    <link rel="shortcut icon" href="<?= $page->getDir(); ?>favicon.ico" type="image/x-icon" />
     <?php
     if (function_exists('cssStyles')) {
         cssStyles();
