@@ -1,4 +1,11 @@
 <?php
+function cssStyles(){
+	global $page;
+	$dir = isset($page) && method_exists($page, 'getDir') ? $page->getDir() : '';
+	?>
+	<link rel="stylesheet" href="<?= $dir ?>_JesusChrist/styles/_TheBelovedSon.css">
+	<?php
+}
 function _JesusChrist_King_of_kings(){
 try {
 	$dbPath = __DIR__ . '../../db/laTpc.db';

@@ -1,5 +1,6 @@
 <?php
 function _JesusChrist($sub_route){
+	global $page, $keywords, $description;
 	switch ($sub_route) {
 		case 'father_in_heaven_tell_me_about_web':
 			$page = new Structure('../../', 'english', 'Heavenly Father');

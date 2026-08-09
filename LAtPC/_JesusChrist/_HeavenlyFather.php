@@ -1,4 +1,11 @@
 <?php
+function cssStyles(){
+    global $page;
+    $dir = isset($page) && method_exists($page, 'getDir') ? $page->getDir() : '';
+    ?>
+    <link rel="stylesheet" href="<?= $dir ?>_JesusChrist/styles/_HeavenlyFather.css">
+    <?php
+}
 // Father in Heaven tell me about the web
 function fihtmatw() {
     global $titles, $dangers, $links, $browse, $browseS, $isAlwaysGod, $battle, $rejection, $responsibility;
@@ -274,49 +281,6 @@ function content()  {
     global $titles, $dangers, $links, $browse, $browseS, $isAlwaysGod, $battle, $rejection, $responsibility;
     global $titulos, $ligas, $peligros, $navegar, $navegarS, $siempreEsDios, $batalla, $rechazo, $responsabilidad;
     ?>
-        <style>
-    .dangers {
-        background-color: rgb(221, 126, 107);
-        font-size: 1.1em;
-        color: rgb(92, 90, 90)
-    }
-
-    .title {
-        font-size: 3rem;
-        text-shadow: .7px .7px;
-    }
-
-    .title:hover {
-        text-shadow: .1px .1px;
-        cursor: pointer;
-    }
-
-    .title {
-        line-height: 1.2;
-        text-align: justify;
-        margin-top: 0pt;
-        margin-bottom: 0pt;
-        font-weight: 700;
-    }
-
-    .sub_title {
-        font-size: 36pt;
-        font-weight: 2000;
-    }
-
-    .sub_title2 {
-        font-size: 24pt;
-        font-weight: 2000;
-        color: var(--background);
-        background-color: rgb(109, 158, 235);
-    }
-
-    .browse {
-        font-size: 1.3em;
-        color: var(--primary-dark);
-    }
-
-    </style>
     <div class="fullbar" id="title">
         <nav class="crumbs">
             <div class="bread-crumbs">

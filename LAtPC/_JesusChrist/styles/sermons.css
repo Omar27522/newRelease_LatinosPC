@@ -1,0 +1,27 @@
+section {
+    border: none;
+    width: fit-content;
+    padding: 10px;
+    margin: 10px;
+}
+
+section h2 {
+    font-size: 2rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+section a {
+    display: block;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+section a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-dark));
+}

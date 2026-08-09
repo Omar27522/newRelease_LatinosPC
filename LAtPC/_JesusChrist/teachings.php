@@ -1,317 +1,9 @@
     <?php
 function cssStyles(){
-        ?>
-    <style>
-.fullbar .nav-links a {
-    color: var(--dialog-text-highlight);
-}
-
-.fullbar a:hover {
-    border-radius: 25px;
-}
-
-.fullbar p a,
-h3 a,
-h4 a {
-    padding-left: .5%;
-    padding-right: .5%;
-}
-
-.nav-links {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-}
-
-.nav-link {
-    display: block;
-    padding: 12px 15px;
-    background: linear-gradient(45deg, var(--secondary-dark), var(--primary-dark));
-    color: white;
-    text-decoration: none;
-    border-radius: 25px;
-    text-align: center;
-    transition: all 0.3s ease;
-    font-weight: bold;
-}
-
-.nav-link:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(45deg, var(--primary-color), var(--secondary-dark));
-}
-
-.section {
-    margin-bottom: 40px;
-    padding: 25px;
-    background: var(--background-color);
-    border-radius: 15px;
-    border-left: 5px solid var(--bannerAndFooter-bg);
-    padding-top: 3px;
-
-}
-
-.section:hover {
-
-    box-shadow: var(--box-shadow);
-}
-
-.section h1 {
-    color: var(--primary-color);
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.section h2 {
-    color: var(--primary-color);
-    font-size: 2em;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.section h3 {
-    color: var(--primary-dark);
-    font-size: 1.5em;
-    margin: 25px 0 15px 0;
-    padding-left: 20px;
-    border-left: 3px solid var(--secondary-dark);
-}
-
-.section h4 {
-    color: var(--secondary-dark);
-    font-size: 1.3em;
-    margin: 20px 0 10px 0;
-}
-
-.section p {
-    margin-bottom: 15px;
-    font-size: 1.1em;
-    text-align: justify;
-}
-
-.highlight-box {
-    background: linear-gradient(135deg, #667eea20, #4ecdc420);
-    border: 2px solid var(--secondary-dark);
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px 0;
-    position: relative;
-}
-
-.highlight-box::before {
-    position: absolute;
-    top: -10px;
-    left: 20px;
-    background: white;
-    padding: 0 10px;
-    font-size: 1.5em;
-}
-
-.story-box {
-    background: linear-gradient(135deg, #ff6b6b20, #ffa50020);
-    border: 2px solid var(--primary-dark);
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px 0;
-    position: relative;
-}
-
-.story-box::before {
-    content: '📖';
-    position: absolute;
-    left: 20px;
-    background: transparent;
-    padding: 0 10px;
-    font-size: 1.5em;
-    margin: -2%;
-}
-
-.story-box:hover::before {
-    transform: translateY(-2px);
-    background-color: transparent;
-    cursor: grab;
-}
-
-.paragraphStoryBox {
-    margin-top: 1%;
-}
-
-.passage {
-    float: left;
-    display: inline;
-    margin-right: 1%;
-    font-size: 1.1rem;
-    font-weight: bold;
-    transform: translateY(7px);
-}
-
-.emoji {
-    font-size: 1.5em;
-    margin-right: 10px;
-}
-
-.emoji:hover {
-    transform: translateY(-2px);
-    background-color: transparent;
-    cursor: grab;
-}
-
-details {
-    background-color: var(--card-bg);
-    gap: 15px;
-    padding: 20px;
-}
-
-details:open {
-    background-color: var(--dialog-text-highlight);
-    color: var(--primary-dark);
-}
-
-summary {
-    border: var(--secondary-color) solid 10px;
-    background-color: var(--dialog-text-highlight);
-    color: var(--primary-dark);
-    list-style-type: '⬇ ';
-    cursor: pointer;
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-summary::marker {
-    color: var(--primary-dark);
-    font-size: 1.7rem;
-}
-
-.img_fl {
-    border-right: 4px solid skyblue;
-}
-
-.references-list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
-    background: linear-gradient(135deg, var(--dialog-text-highlight) 0%, var(--secondary-dark) 100%);
-    border-radius: 10px;
-    border-left: 4px solid var(--secondary-dark);
-    margin: 20px 0;
-}
-
-.reference {
-    padding: 12px;
-    background: var(--background);
-    border-radius: 8px;
-    box-shadow: var(--box-shadow);
-    border-left: 3px solid var(--secondary-color);
-}
-
-.reference:hover {
-    box-shadow: var(--box-shadow);
-}
-
-.reference strong {
-    color: var(--primary-dark);
-    font-size: 0.9em;
-}
-
-.reference a {
-    color: var(--secondary-dark);
-    text-decoration: none;
-    font-size: 0.9em;
-    word-break: break-all;
-}
-
-/* Dropdown Button */
-/* Hide the actual checkbox */
-.dropdown-toggle {
-    display: none;
-}
-
-/* Style the label to look like a button */
-.dropdown-label {
-    cursor: pointer;
-    color: var(--primary-color);
-}
-
-.dropdown-label b {
-    text-decoration: underline;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/* --- The Magic Rule --- */
-/* When the checkbox is checked, show the dropdown-content that is a sibling */
-.dropdown-toggle:checked~.dropdown-content {
-    display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover,
-.dropdown-content a:focus {
-    background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content,
-.dropdown:focus .dropdown-content {
-    display: block;
-}
-
-@media (max-width: 768px) {
-    .container {
-        margin: 10px;
-        border-radius: 10px;
-    }
-
-    .section {
-        padding: 20px;
-    }
-
-    .nav-links {
-        grid-template-columns: 1fr;
-    }
-
-    .paragraphStoryBox {
-        margin-top: 5%;
-    }
-}
-
-@media (min-width: 768px) {
-    pre {
-        font-size: 1.5rem;
-    }
-}
-
-@media (max-width: 500px) {
-    .dropdown-content a {
-        font-size: 1rem;
-    }
-}
-    </style>
+    global $page;
+    $dir = isset($page) && method_exists($page, 'getDir') ? $page->getDir() : '';
+    ?>
+    <link rel="stylesheet" href="<?= $dir ?>_JesusChrist/styles/teachings.css">
     <?php
 }
 
@@ -2255,7 +1947,7 @@ function teachings()  {
                 <div class="multi-link-container">
                     <div class="thumbnail-container">
                         <span tabindex="0" class="linked-text-img">
-                            <img src="../images/_JesusChrist/wiseAndFoolishBuilders_thumb.webp"
+                            <img src="../../images/_JesusChrist/wiseAndFoolishBuilders_thumb.webp"
                                 alt="Wise and Foolish Builders" height="150" width="auto">
                             <!-- <p>Primary Image</p> -->
                         </span>
@@ -2298,7 +1990,7 @@ function teachings()  {
                 <div class="multi-link-container">
                     <div class="thumbnail-container">
                         <span tabindex="0" class="linked-text-img">
-                            <img src="../images/_JesusChrist/goodSamaritan_thumb.webp" alt="Good Samaritan" width="200"
+                            <img src="../../images/_JesusChrist/goodSamaritan_thumb.webp" alt="Good Samaritan" width="200"
                                 height="200">
                             <!-- <p>Primary Image</p> -->
                         </span>
@@ -2384,7 +2076,7 @@ function teachings()  {
                 <div class="multi-link-container">
                     <div class="thumbnail-container">
                         <span tabindex="0" class="linked-text-img">
-                            <img src="../images/_JesusChrist/prodigalSon_thumb.webp" alt="Prodigal Son" width="200"
+                            <img src="../../images/_JesusChrist/prodigalSon_thumb.webp" alt="Prodigal Son" width="200"
                                 height="200">
                             <!-- <p>Primary Image</p> -->
                         </span>
@@ -2459,7 +2151,7 @@ function teachings()  {
                 <div class="multi-link-container">
                     <div class="thumbnail-container">
                         <span tabindex="0" class="linked-text-img">
-                            <img src="../images/_JesusChrist/richManAndLazarus_thumb.webp" alt="Rich Man and Lazarus"
+                            <img src="../../images/_JesusChrist/richManAndLazarus_thumb.webp" alt="Rich Man and Lazarus"
                                 width="200" height="200">
                             <!-- <p>Primary Image</p> -->
                         </span>
@@ -2556,7 +2248,7 @@ function teachings()  {
                 <div class="multi-link-container">
                     <div class="thumbnail-container">
                         <span tabindex="0" class="linked-text-img">
-                            <img src="../images/_JesusChrist/phariseeAndTaxCollector_thumb.webp"
+                            <img src="../../images/_JesusChrist/phariseeAndTaxCollector_thumb.webp"
                                 alt="Pharisee and Tax Collector" width="200" height="200">
                             <!-- <p>Primary Image</p> -->
                         </span>
@@ -2614,7 +2306,7 @@ function teachings()  {
                 <div class="multi-link-container">
                     <div class="thumbnail-container">
                         <span tabindex="0" class="linked-text-img">
-                            <img src="../images/_JesusChrist/twoDebtors_thumb.webp" alt="Two Debtors" width="200"
+                            <img src="../../images/_JesusChrist/twoDebtors_thumb.webp" alt="Two Debtors" width="200"
                                 height="200">
                             <!-- <p>Primary Image</p> -->
                         </span>
@@ -2682,7 +2374,7 @@ function teachings()  {
                 <div class="multi-link-container">
                     <div class="thumbnail-container">
                         <span tabindex="0" class="linked-text-img">
-                            <img src="../images/_JesusChrist/friendAtMidnight_thumb.webp" alt="Friend at Midnight"
+                            <img src="../../images/_JesusChrist/friendAtMidnight_thumb.webp" alt="Friend at Midnight"
                                 width="200" height="200">
                             <!-- <p>Primary Image</p> -->
                         </span>
@@ -2767,7 +2459,7 @@ function teachings()  {
                 <div class="multi-link-container">
                     <div class="thumbnail-container">
                         <span tabindex="0" class="linked-text-img">
-                            <img src="../images/_JesusChrist/richFool_thumb.webp" alt="Rich Fool" width="200"
+                            <img src="../../images/_JesusChrist/richFool_thumb.webp" alt="Rich Fool" width="200"
                                 height="200">
                             <!-- <p>Primary Image</p> -->
                         </span>
@@ -2866,7 +2558,7 @@ function teachings()  {
                 <div class="multi-link-container">
                     <div class="thumbnail-container">
                         <span tabindex="0" class="linked-text-img">
-                            <img src="../images/_JesusChrist/barrenFigTree_thumb.webp" alt="Barren Fig Tree" width="200"
+                            <img src="../../images/_JesusChrist/barrenFigTree_thumb.webp" alt="Barren Fig Tree" width="200"
                                 height="200">
                             <!-- <p>Primary Image</p> -->
                         </span>
@@ -2991,7 +2683,7 @@ function teachings()  {
                 <div class="multi-link-container">
                     <div class="thumbnail-container">
                         <span tabindex="0" class="linked-text-img">
-                            <img src="../images/_JesusChrist/greatBanquet_thumb.webp" alt="Great Banquet" width="200"
+                            <img src="../../images/_JesusChrist/greatBanquet_thumb.webp" alt="Great Banquet" width="200"
                                 height="200">
                             <!-- <p>Primary Image</p> -->
                         </span>
@@ -3031,7 +2723,7 @@ function teachings()  {
                 <div class="multi-link-container">
                     <div class="thumbnail-container">
                         <span tabindex="0" class="linked-text-img">
-                            <img src="../images/_JesusChrist/buildingTower_thumb.webp" alt="Building a Tower"
+                            <img src="../../images/_JesusChrist/buildingTower_thumb.webp" alt="Building a Tower"
                                 width="200" height="200">
                             <!-- <p>Primary Image</p> -->
                         </span>
@@ -3086,7 +2778,7 @@ function teachings()  {
                 <div class="multi-link-container">
                     <div class="thumbnail-container">
                         <span tabindex="0" class="linked-text-img">
-                            <img src="../images/_JesusChrist/lostCoin_thumb.webp" alt="Lost Coin" width="200"
+                            <img src="../../images/_JesusChrist/lostCoin_thumb.webp" alt="Lost Coin" width="200"
                                 height="200">
                             <!-- <p>Primary Image</p> -->
                         </span>
@@ -3123,7 +2815,7 @@ function teachings()  {
                 <div class="multi-link-container">
                     <div class="thumbnail-container">
                         <span tabindex="0" class="linked-text-img">
-                            <img src="../images/_JesusChrist/dishonestManager_thumb.webp" alt="Dishonest Manager"
+                            <img src="../../images/_JesusChrist/dishonestManager_thumb.webp" alt="Dishonest Manager"
                                 width="200" height="200">
                             <!-- <p>Primary Image</p> -->
                         </span>
@@ -3271,7 +2963,7 @@ function teachings()  {
                 <div class="multi-link-container">
                     <div class="thumbnail-container">
                         <span tabindex="0" class="linked-text-img">
-                            <img src="../images/_JesusChrist/unprofitableServants_thumb.webp"
+                            <img src="../../images/_JesusChrist/unprofitableServants_thumb.webp"
                                 alt="Unprofitable Servants" width="200" height="200">
                             <!-- <p>Primary Image</p> -->
                         </span>
@@ -3346,7 +3038,7 @@ function teachings()  {
                 <div class="multi-link-container">
                     <div class="thumbnail-container">
                         <span tabindex="0" class="linked-text-img">
-                            <img src="../images/_JesusChrist/persistentWidow_thumb.webp" alt="Persistent Widow"
+                            <img src="../../images/_JesusChrist/persistentWidow_thumb.webp" alt="Persistent Widow"
                                 width="200" height="200">
                             <!-- <p>Primary Image</p> -->
                         </span>
@@ -3566,93 +3258,93 @@ function teachings()  {
 -->
     <template id="carousel-images" data-section="Luke-Images">
         <div class="carousel-item" data-image-index="0">
-            <a href="../images/_JesusChrist/wiseAndFoolishBuilders.png">
-                <img src="../images/_JesusChrist/wiseAndFoolishBuilders.webp" alt="Wise and Foolish Builders" /></a>
+            <a href="../../images/_JesusChrist/wiseAndFoolishBuilders.png">
+                <img src="../../images/_JesusChrist/wiseAndFoolishBuilders.webp" alt="Wise and Foolish Builders" /></a>
             <p><a href="./parables#:~:text=The%20Wise%20and%20Foolish%20Builders">Wise and Foolish Builders</a></p>
         </div>
 
         <div class="carousel-item" data-image-index="1">
-            <a href="../images/_JesusChrist/goodSamaritan.png">
-                <img src="../images/_JesusChrist/goodSamaritan.webp" alt="Good Samaritan" /></a>
+            <a href="../../images/_JesusChrist/goodSamaritan.png">
+                <img src="../../images/_JesusChrist/goodSamaritan.webp" alt="Good Samaritan" /></a>
             <p><a href="./parables#:~:text=The%20Good%20Samaritan">Good Samaritan</a></p>
         </div>
 
         <div class="carousel-item" data-image-index="2">
-            <a href="../images/_JesusChrist/prodigalSon.png">
-                <img src="../images/_JesusChrist/prodigalSon.webp" alt="Prodigal Son" /></a>
+            <a href="../../images/_JesusChrist/prodigalSon.png">
+                <img src="../../images/_JesusChrist/prodigalSon.webp" alt="Prodigal Son" /></a>
             <p><a href="./parables#:~:text=The%20Prodigal%20Son">Prodigal Son</a></p>
         </div>
 
         <div class="carousel-item" data-image-index="3">
-            <a href="../images/_JesusChrist/richManAndLazarus.png">
-                <img src="../images/_JesusChrist/richManAndLazarus.webp" alt="Rich Man and Lazarus" /></a>
+            <a href="../../images/_JesusChrist/richManAndLazarus.png">
+                <img src="../../images/_JesusChrist/richManAndLazarus.webp" alt="Rich Man and Lazarus" /></a>
             <p><a href="./parables#:~:text=The%20Rich%20Man%20and%20Lazarus">Rich Man and Lazarus</a></p>
         </div>
 
         <div class="carousel-item" data-image-index="4">
-            <a href="../images/_JesusChrist/phariseeAndTaxCollector.png">
-                <img src="../images/_JesusChrist/phariseeAndTaxCollector.webp" alt="Pharisee and Tax Collector" /></a>
+            <a href="../../images/_JesusChrist/phariseeAndTaxCollector.png">
+                <img src="../../images/_JesusChrist/phariseeAndTaxCollector.webp" alt="Pharisee and Tax Collector" /></a>
             <p><a href="./parables#:~:text=The%20Pharisee%20and%20the%20Tax%20Collector">Pharisee and Tax Collector</a>
             </p>
         </div>
 
         <div class="carousel-item" data-image-index="5">
-            <a href="../images/_JesusChrist/twoDebtors.png">
-                <img src="../images/_JesusChrist/twoDebtors.webp" alt="Two Debtors" /></a>
+            <a href="../../images/_JesusChrist/twoDebtors.png">
+                <img src="../../images/_JesusChrist/twoDebtors.webp" alt="Two Debtors" /></a>
             <p><a href="./parables#:~:text=The%20Two%20Debtors">Two Debtors</a></p>
         </div>
 
         <div class="carousel-item" data-image-index="6">
-            <a href="../images/_JesusChrist/friendAtMidnight.png">
-                <img src="../images/_JesusChrist/friendAtMidnight.webp" alt="Friend at Midnight" /></a>
+            <a href="../../images/_JesusChrist/friendAtMidnight.png">
+                <img src="../../images/_JesusChrist/friendAtMidnight.webp" alt="Friend at Midnight" /></a>
             <p><a href="./parables#:~:text=The%20Friend%20at%20Midnight">Friend at Midnight</a></p>
         </div>
 
         <div class="carousel-item" data-image-index="7">
-            <a href="../images/_JesusChrist/richFool.png">
-                <img src="../images/_JesusChrist/richFool.webp" alt="Rich Fool" /></a>
+            <a href="../../images/_JesusChrist/richFool.png">
+                <img src="../../images/_JesusChrist/richFool.webp" alt="Rich Fool" /></a>
             <p><a href="./parables#:~:text=The%20Rich%20Fool">Rich Fool</a></p>
         </div>
 
         <div class="carousel-item" data-image-index="8">
-            <a href="../images/_JesusChrist/barrenFigTree.png">
-                <img src="../images/_JesusChrist/barrenFigTree.webp" alt="Barren Fig Tree" /></a>
+            <a href="../../images/_JesusChrist/barrenFigTree.png">
+                <img src="../../images/_JesusChrist/barrenFigTree.webp" alt="Barren Fig Tree" /></a>
             <p><a href="./parables#:~:text=The%20Barren%20Fig%20Tree">Barren Fig Tree</a></p>
         </div>
 
         <div class="carousel-item" data-image-index="9">
-            <a href="../images/_JesusChrist/greatBanquet.png">
-                <img src="../images/_JesusChrist/greatBanquet.webp" alt="Great Banquet" /></a>
+            <a href="../../images/_JesusChrist/greatBanquet.png">
+                <img src="../../images/_JesusChrist/greatBanquet.webp" alt="Great Banquet" /></a>
             <p><a href="./parables#:~:text=The%20Great%20Banquet">Great Banquet</a></p>
         </div>
 
         <div class="carousel-item" data-image-index="10">
-            <a href="../images/_JesusChrist/buildingTower.png">
-                <img src="../images/_JesusChrist/buildingTower.webp" alt="Building Tower" /></a>
+            <a href="../../images/_JesusChrist/buildingTower.png">
+                <img src="../../images/_JesusChrist/buildingTower.webp" alt="Building Tower" /></a>
             <p><a href="./parables#:~:text=Building%20a%20Tower%20and%20King%20Going%20to%20War">Building Tower</a></p>
         </div>
 
         <div class="carousel-item" data-image-index="11">
-            <a href="../images/_JesusChrist/lostCoin.png">
-                <img src="../images/_JesusChrist/lostCoin.webp" alt="Lost Coin" /></a>
+            <a href="../../images/_JesusChrist/lostCoin.png">
+                <img src="../../images/_JesusChrist/lostCoin.webp" alt="Lost Coin" /></a>
             <p><a href="./parables#:~:text=The%20Lost%20Coin">Lost Coin</a></p>
         </div>
 
         <div class="carousel-item" data-image-index="12">
-            <a href="../images/_JesusChrist/dishonestManager.png">
-                <img src="../images/_JesusChrist/dishonestManager.webp" alt="Dishonest Manager" /></a>
+            <a href="../../images/_JesusChrist/dishonestManager.png">
+                <img src="../../images/_JesusChrist/dishonestManager.webp" alt="Dishonest Manager" /></a>
             <p><a href="./parables#:~:text=The%20Dishonest%20Manager">Dishonest Manager</a></p>
         </div>
 
         <div class="carousel-item" data-image-index="13">
-            <a href="../images/_JesusChrist/unprofitableServants.png">
-                <img src="../images/_JesusChrist/unprofitableServants.webp" alt="Unprofitable Servants" /></a>
+            <a href="../../images/_JesusChrist/unprofitableServants.png">
+                <img src="../../images/_JesusChrist/unprofitableServants.webp" alt="Unprofitable Servants" /></a>
             <p><a href="./parables#:~:text=The%20Unprofitable%20Servants">Unprofitable Servants</a></p>
         </div>
 
         <div class="carousel-item" data-image-index="14">
-            <a href="../images/_JesusChrist/persistentWidow.png">
-                <img src="../images/_JesusChrist/persistentWidow.webp" alt="Persistent Widow" /></a>
+            <a href="../../images/_JesusChrist/persistentWidow.png">
+                <img src="../../images/_JesusChrist/persistentWidow.webp" alt="Persistent Widow" /></a>
             <p><a href="./parables#:~:text=The%20Persistent%20Widow">Persistent Widow</a></p>
         </div>
 
@@ -3780,7 +3472,7 @@ function teachings()  {
             <div class="multi-link-container">
                 <div class="thumbnail-container">
                     <span tabindex="0" class="linked-text-img">
-                        <img src="../../images/_JesusChrist/growingSeed.webp" width="150" height="150" alt="image"
+                        <img src="../../../images/_JesusChrist/growingSeed.webp" width="150" height="150" alt="image"
                             class="fl thumbnail" alt="Start with Blank Page" />
                     </span>
                 </div>
@@ -3791,17 +3483,17 @@ function teachings()  {
 
         <template id="carousel-images">
             <div class="carousel-item" data-image-index="0">
-                <img src="../../images/_JesusChrist/growingSeed.webp" alt="Image 1" />
+                <img src="../../../images/_JesusChrist/growingSeed.webp" alt="Image 1" />
                 <p><a href="./parables#:~:text=The%20Growing%20Seed">The Growing Seed</a> <a
                         href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MK4_26"
                         title="Mark 4:26-29">4:26-29</a></p>
             </div>
             <!-- <div class="carousel-item" data-image-index="1">
-                <img src="../images/_JesusChrist/phariseeAndTaxCollector_thumb.webp" alt="Image 2" />
+                <img src="../../images/_JesusChrist/phariseeAndTaxCollector_thumb.webp" alt="Image 2" />
                 <p>Image 2 Description</p>
             </div>
             <div class="carousel-item" data-image-index="2">
-                <img src="../images/_JesusChrist/richManAndLazarus_thumb.webp" alt="Image 3" />
+                <img src="../../images/_JesusChrist/richManAndLazarus_thumb.webp" alt="Image 3" />
                 <p>Image 3 Description</p>
             </div> -->
         </template>

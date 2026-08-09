@@ -1,6 +1,7 @@
 <?php
 
 function _Jesucristo($sub_route){
+	global $page, $keywords, $description;
 	switch ($sub_route) {
 		case 'padre_celestial_cuentame_sobre_el_internet':
 			$page = new Structure('../../', 'español', 'Padre Celestial');

@@ -14,10 +14,19 @@ class DialogEngine {
     this.carouselLoopCount = 0;
     this.maxLoops = 2; // Stop after second loop
 
+    // Touch swipe state
+    this.touchStartX = 0;
+    this.touchStartY = 0;
+    this.touchEndX = 0;
+    this.touchEndY = 0;
+    this.minSwipeDistance = 40; // Minimum horizontal distance (px) required for swipe
+
     // Bind methods that are used as event handlers to preserve 'this' context
     this._handleDocumentClick = this._handleDocumentClick.bind(this);
     this._handleKeydown = this._handleKeydown.bind(this);
     this._handleDialogTriggerClick = this._handleDialogTriggerClick.bind(this);
+    this._handleTouchStart = this._handleTouchStart.bind(this);
+    this._handleTouchEnd = this._handleTouchEnd.bind(this);
 
     // Lazy initialization - only initialize when DOM is ready
     if (document.readyState === 'loading') {
@@ -226,6 +235,39 @@ class DialogEngine {
     items[nextIndex].classList.add('active');
   }
 
+  _handleTouchStart(event) {
+    if (!this.currentlyOpenDialog || !this.currentlyOpenDialog.hasAttribute('data-carousel')) return;
+    if (event.touches && event.touches.length > 0) {
+      this.touchStartX = event.touches[0].clientX;
+      this.touchStartY = event.touches[0].clientY;
+    }
+  }
+
+  _handleTouchEnd(event) {
+    if (!this.currentlyOpenDialog || !this.currentlyOpenDialog.hasAttribute('data-carousel')) return;
+    if (event.changedTouches && event.changedTouches.length > 0) {
+      this.touchEndX = event.changedTouches[0].clientX;
+      this.touchEndY = event.changedTouches[0].clientY;
+      this._evaluateSwipe();
+    }
+  }
+
+  _evaluateSwipe() {
+    const deltaX = this.touchEndX - this.touchStartX;
+    const deltaY = this.touchEndY - this.touchStartY;
+
+    // Only process horizontal swipe if deltaX exceeds threshold and is larger than vertical movement
+    if (Math.abs(deltaX) >= this.minSwipeDistance && Math.abs(deltaX) > Math.abs(deltaY)) {
+      if (deltaX < 0) {
+        // Swiped left -> move to next slide
+        this._navigateCarousel(true);
+      } else {
+        // Swiped right -> move to previous slide
+        this._navigateCarousel(false);
+      }
+    }
+  }
+
   _showDialog(dialog, trigger = null) {
     // Use requestAnimationFrame for smoother visual changes
     requestAnimationFrame(() => {
@@ -254,6 +296,13 @@ class DialogEngine {
 
       // Handle carousel-specific behavior when opening
       if (dialog.hasAttribute('data-carousel')) {
+        // Attach touch listeners for mobile swiping if not already attached
+        if (!dialog._touchHandlersAttached) {
+          dialog.addEventListener('touchstart', this._handleTouchStart, { passive: true });
+          dialog.addEventListener('touchend', this._handleTouchEnd, { passive: true });
+          dialog._touchHandlersAttached = true;
+        }
+
         // Reset carousel loop count
         this.carouselLoopCount = 0;
 
@@ -299,12 +348,12 @@ class DialogEngine {
           // Don't reset the carousel position when closing
           // This allows the data-start-index to work properly when reopening
         }
-        
+
         // If dialog was moved to body, restore it to its original parent
         if (this.currentlyOpenDialog._originalParent) {
           const originalParent = this.currentlyOpenDialog._originalParent;
           const originalPosition = this.currentlyOpenDialog._originalPosition;
-          
+
           // If there are other children at the original position, insert before that child
           if (originalPosition >= 0 && originalPosition < originalParent.children.length) {
             originalParent.insertBefore(this.currentlyOpenDialog, originalParent.children[originalPosition]);
@@ -312,7 +361,7 @@ class DialogEngine {
             // Otherwise just append to the end
             originalParent.appendChild(this.currentlyOpenDialog);
           }
-          
+
           // Clear the references
           delete this.currentlyOpenDialog._originalParent;
           delete this.currentlyOpenDialog._originalPosition;

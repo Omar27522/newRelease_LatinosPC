@@ -1,0 +1,144 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 8px;
+    border-bottom: 1px solid var(--dialog-text-highlight);
+}
+
+tr:nth-child(even) {
+    background-color: var(--background);
+}
+
+tr:hover {
+    background-color: var(--background);
+}
+
+.parable-name {
+    font-weight: bold;
+}
+
+figcaption {
+    font-size: 1.7em;
+    text-align: center;
+    padding-right: 10%;
+}
+
+figcaption a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    margin-top: 2%;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+figcaption a:hover {
+    text-decoration: underline;
+    color: royalblue;
+}
+
+.gospel {
+    display: inline-block;
+}
+
+.link-dialog p {
+    font-size: 1.07em;
+}
+
+.link-dialog p:hover,
+.link-dialog p:focus {
+    background: black;
+    color: white;
+}
+
+.linked-text,
+.linked-text-img {
+    color: black;
+}
+
+.linked-text:active,
+.linked-text-img:active {
+    color: red;
+}
+
+.linked-text.focused,
+.linked-text-img.focused {
+    color: red;
+    transition: color 2s ease-out, border 2s ease-out;
+}
+
+figure {
+    padding-left: 10%;
+}
+
+figure img {
+    width: 90%;
+    height: auto;
+}
+
+.intro-section {
+    background: linear-gradient(135deg, var(--card-bg), var(--background));
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: var(--box-shadow);
+    border-left: 4px solid var(--primary-color);
+}
+
+.intro-section h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.intro-list {
+    list-style: none;
+    padding: 0;
+}
+
+.intro-list li {
+    background: var(--card-bg);
+    margin: 1rem 0;
+    padding: 1.2rem;
+    border-radius: 8px;
+    border-left: 3px solid var(--secondary-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    position: relative;
+}
+
+.intro-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    border-left-color: var(--primary-color);
+}
+
+.intro-list li::before {
+    content: "✓";
+    color: var(--secondary-dark);
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 0.8rem;
+}
+
+.section-title {
+    font-size: 2em;
+    color: var(--secondary-dark);
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    font-weight: 600;
+}
