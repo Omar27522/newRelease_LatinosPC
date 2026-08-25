@@ -48,6 +48,9 @@ class DialogEngine {
 
     // Initialize carousels by populating them with images from the template
     this._initializeCarousels();
+
+    // Initialize sticky breadcrumbs scroll hide/show behavior
+    this._initStickyCrumbs();
   }
 
   _initializeCarousels() {
@@ -378,6 +381,71 @@ class DialogEngine {
       this.currentlyOpenDialog = null;
       this.currentlyOpenTextLink = null;
     });
+  }
+
+  _initStickyCrumbs() {
+    const crumbs = document.querySelectorAll('.crumbs');
+    if (!crumbs.length) return;
+
+    // Helper to calculate element's natural top offset in the document
+    const getElementDocTop = (el) => {
+      let top = 0;
+      let current = el;
+      while (current) {
+        top += current.offsetTop || 0;
+        current = current.offsetParent;
+      }
+      return top;
+    };
+
+    let stickyThresholds = Array.from(crumbs).map(crumb => getElementDocTop(crumb));
+
+    // Update thresholds on resize or orientation change
+    window.addEventListener('resize', () => {
+      crumbs.forEach(crumb => crumb.classList.remove('crumbs-hidden'));
+      stickyThresholds = Array.from(crumbs).map(crumb => getElementDocTop(crumb));
+    }, { passive: true });
+
+    let lastScrollY = window.pageYOffset || document.documentElement.scrollTop;
+    let ticking = false;
+    const threshold = 5;
+
+    const updateCrumbs = () => {
+      const currentScrollY = window.pageYOffset || document.documentElement.scrollTop;
+      const isDropdownOpen = Array.from(document.querySelectorAll('.dropdown-toggle:checked')).length > 0;
+
+      crumbs.forEach((crumb, index) => {
+        const stickyPoint = stickyThresholds[index] || 0;
+
+        // If above or at the sticky location OR a dropdown is open, ALWAYS show in natural position
+        if (currentScrollY <= stickyPoint || isDropdownOpen) {
+          crumb.classList.remove('crumbs-hidden');
+          return;
+        }
+
+        // Past the sticky location: show or hide based on scroll direction
+        const diff = currentScrollY - lastScrollY;
+        if (Math.abs(diff) > threshold) {
+          if (diff > 0) {
+            // Scrolling down -> hide with subtle animation
+            crumb.classList.add('crumbs-hidden');
+          } else {
+            // Scrolling up -> show with subtle animation
+            crumb.classList.remove('crumbs-hidden');
+          }
+        }
+      });
+
+      lastScrollY = currentScrollY;
+      ticking = false;
+    };
+
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateCrumbs);
+        ticking = true;
+      }
+    }, { passive: true });
   }
 }
 

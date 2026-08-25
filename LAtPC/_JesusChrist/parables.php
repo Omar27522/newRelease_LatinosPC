@@ -1,5 +1,5 @@
 <?php
-function cssStyles(){
+function cssStyles() {
   global $page;
   $dir = isset($page) && method_exists($page, 'getDir') ? $page->getDir() : '';
   ?>
@@ -12,7 +12,7 @@ function content () {
   global $titulo, $imagen, $imagenAlt, $enlaceImagen, $figLeyenda, $descripcion, $dialogoParrafo, $evangelio, $enlaceEvangelio, $pasaje;
     global $introducion, $_Jesucristo, $lista, $biblia;
   // $gospelLinkPrefix = $gLP;
-  $gLP = 'https://ebible.org/study/';
+  $gLP = '';
  ?>
   <article class="fullbar">
     <nav class="crumbs">
@@ -146,7 +146,7 @@ function parables() {
               'Rather than forcing interpretations, parables invited listeners to discover meaning for themselves, engaging their minds and hearts in the process.',
              ],'Parable', 'Description', 'Scripture Reference','Bible'
 					];
-  $bible = ['https://ebible.org/find/show.php?id=eng-web', 'World English Bible with Deuterocanon', 'Bible'];
+  $bible = ['../../eng-web_html/index.htm', 'World English Bible with Deuterocanon', 'Bible'];
 
   function theSower() {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
@@ -163,7 +163,7 @@ function parables() {
       "But some seeds fell on good dirt. They grew really well and made lots more seeds. That's like people who really listen to the message, understand it, and let it change how they live. They end up doing good things because of it.",
       'So, the story is about how different people hear the same message in different ways, depending on what\'s going on in their hearts. Only the people with "good hearts" really let the message grow and make a difference.'];
     $gospel = ['Matthew', 'Mark', 'Luke'];
-    $gospelLinks = ['?v1=MT13_1&t1=local%3Aeng-web&w1=bible', '?v1=MK4_1&t1=local%3Aeng-web&w1=bible', '?v1=LK8_4&t1=local%3Aeng-web&w1=bible'];
+    $gospelLinks = ['../../eng-web_html/MAT13.htm#:~:text=On that day Jesus went out of the,times as much%2C some sixty%2C and some thirty.', '../../eng-web_html/MRK04.htm#:~:text=Again he began to teach by the seaside.,some sixty times%2C and some one hundred times.', '../../eng-web_html/LUK08.htm#:~:text=When a great multitude came together and people,hold it tightly%2C and produce fruit with perseverance.'];
     $passage = ['13:1-23,', '4:1-20,', '8:4-15'];
   }
 
@@ -182,7 +182,7 @@ function parables() {
       'He told them, "An enemy did this." The workers then asked, "Do you want us to go and pull them out?"',
       'But he replied, "No, because if you pull out the weeds, you might accidentally pull up the wheat too. Let both grow together until harvest time. When it\'s time to harvest, I\'ll tell the reapers:<br />\'First, gather the weeds and tie them in bundles to burn them. Then, put the good wheat into my barn.\'"'];
     $gospel = ['Matthew'];
-    $gospelLinks = ['?w1=bible&t1=local%3Aeng-web&v1=MT13_24'];
+    $gospelLinks = ['../../eng-web_html/MAT13.htm#:~:text=He set another parable before them%2C saying%2C “The,gather the wheat into my barn.'];
     $passage = ['13:24-30'];
   }
 
@@ -199,7 +199,7 @@ function parables() {
       'But guess what? When it grows up, it becomes the biggest of all garden plants! It gets so big that birds can even come and make nests in its branches.',
       "So, what Jesus was saying is that even though God's kingdom might seem really small or unimportant for people, But the kingdom is something huge and amazing. It starts small but ends up being big enough to help and shelter lots of people, just like the big mustard plant shelters the birds. It's like something little that has the potential to become something really, really big!"];
     $gospel = ['Matthew', 'Mark', 'Luke'];
-    $gospelLinks = ['?v1=MT13_31&t1=local%3Aeng-web&w1=bible', '?v1=MK4_30&t1=local%3Aeng-web&w1=bible', '?v1=LK13_18&t1=local%3Aeng-web&w1=bible'];
+    $gospelLinks = ['../../eng-web_html/MAT13.htm#:~:text=He set another parable before them%2C saying%2C “The,the air come and lodge in its branches.', '../../eng-web_html/MRK04.htm#:~:text=He said%2C “How will we liken God’s Kingdom?,of the sky can lodge under its shadow.', '../../eng-web_html/LUK13.htm#:~:text=He said%2C “What is God’s Kingdom like?,birds of the sky live in its branches.'];
     $passage = ['13:31-32,', '4:30-32,', '13:18-19'];
   }
 
@@ -216,7 +216,7 @@ function parables() {
       "So, what Jesus was saying is that even though God's kingdom might start with just a few people or seem like something small, it has this incredible power to spread and grow and affect everything around it.",
       "Just like a little bit of yeast can change a whole lot of dough, God's kingdom can start small but eventually touch and change many, many lives. It has this quiet but powerful way of growing and making a big difference!"];
     $gospel = ['Matthew', 'Luke'];
-    $gospelLinks = ['?v1=MT13_33&t1=local%3Aeng-web&w1=bible', '?v1=LK13_20&t1=local%3Aeng-web&w1=bible'];
+    $gospelLinks = ['../../eng-web_html/MAT13.htm#:~:text=He spoke another parable to them.,measures of meal%2C until it was all leavened.', '../../eng-web_html/LUK13.htm#:~:text=Again he said%2C “To what shall I compare God’s Kingdom?,measures of flour%2C until it was all leavened.'];
     $passage = ['13:33,', '13:20-21'];
   }
 
@@ -234,7 +234,7 @@ function parables() {
       'With all the money he got from selling his things, he bought the field where the treasure was hidden. Now the treasure was all his!',
       "Jesus was teaching that God's kingdom is like that treasure. When people realize how amazing God's kingdom is, they'll be willing to give up everything else just to be part of it. It's that valuable!"];
     $gospel = ['Matthew'];
-    $gospelLinks = ['?v1=MT13_44&t1=local%3Aeng-web&w1=bible'];
+    $gospelLinks = ['../../eng-web_html/MAT13.htm#:~:text=Again%2C the Kingdom of Heaven is like treasure,all that he has and buys that field.'];
     $passage = ['13:44'];
   }
 
@@ -251,7 +251,7 @@ function parables() {
       'The merchant wanted this special pearl so badly that he went and sold absolutely everything he owned just to get enough money to buy it.',
       "Jesus was showing us that God's kingdom is like that perfect pearl. When we truly understand how amazing God's kingdom is, we'll think it's worth giving up everything else we have just to be part of it!"];
     $gospel = ['Matthew'];
-    $gospelLinks = ['?v1=MT13_45&t1=local%3Aeng-web&w1=bible'];
+    $gospelLinks = ['../../eng-web_html/MAT13.htm#:~:text=Again%2C the Kingdom of Heaven is like a,sold all that he had and bought it.'];
     $passage = ['13:45-46'];
   }
 
@@ -269,7 +269,7 @@ function parables() {
       'Jesus said this is like what will happen at the end of the world. Angels will separate good people from bad people, just like the fishermen separated good fish from bad fish.',
       "The bad people will be thrown away into a fiery furnace where there will be crying and lots of sadness. But the good people, who follow God, will shine like the sun in God's kingdom!"];
     $gospel = ['Matthew'];
-    $gospelLinks = ['?v1=MT13_47&t1=local%3Aeng-web&w1=bible'];
+    $gospelLinks = ['../../eng-web_html/MAT13.htm#:~:text=Again%2C the Kingdom of Heaven is like a,There will be weeping and gnashing of teeth.'];
     $passage = ['13:47-50'];
   }
 
@@ -288,7 +288,7 @@ function parables() {
       "The Samaritan cleaned and bandaged the man's wounds. Then he put the hurt man on his own donkey and took him to an inn, which is like a hotel. The Samaritan even paid the innkeeper to take care of the hurt man until he got better!",
       'After telling this story, Jesus asked. Who was a real neighbor to the man who got hurt? The answer was the Samaritan - the one who showed kindness and mercy. Jesus told us to go and do the same thing - to show love to everyone, even people who might be different from us!'];
     $gospel = ['Luke'];
-    $gospelLinks = ['?w1=bible&t1=local%3Aeng-web&v1=LK10_25'];
+    $gospelLinks = ['../../eng-web_html/LUK10.htm#:~:text=Behold%2C a certain lawyer stood up and tested,Then Jesus said to him%2C “Go and do likewise.'];
     $passage = ['10:25-37'];
   }
 
@@ -309,11 +309,11 @@ function parables() {
       'The older brother got mad about this party. He complained that he had always obeyed his father, but never got a party. The father explained that everything he had already belonged to the older son, but they needed to celebrate because the lost brother had returned.',
       'Jesus told this story to show how much God loves us and is ready to forgive us. Like the father in the story, God eagerly waits for us to come back to Him when we mess up, and He celebrates when we do!'];
     $gospel = ['Luke'];
-    $gospelLinks = ['?v1=LK15_11&t1=local%3Aeng-web&w1=bible'];
+    $gospelLinks = ['../../eng-web_html/LUK15.htm#:~:text=He said%2C “A certain man had two sons.,He was lost%2C and is found.'];
     $passage = ['15:11-32'];
   }
 
-  function lostSheep()  {
+  function lostSheep() {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Lost Sheep';
     $image = '../../images/_JesusChrist/lostSheep.webp';
@@ -328,11 +328,11 @@ function parables() {
       "Jesus explained that this is how God feels about people who are lost and then found. He said there's more joy in heaven over one lost person who turns back to God than over 99 people who are already following God.",
       "This story shows that God cares about every single person. Just like the shepherd wasn't willing to lose even one sheep, God doesn't want to lose any of us. He will come looking for us when we wander away!"];
     $gospel = ['Matthew', 'Luke'];
-    $gospelLinks = ['?w1=bible&t1=local%3Aeng-web&v1=MT18_12', '?w1=bible&t1=local%3Aeng-web&v1=LK15_1'];
+    $gospelLinks = ['../../eng-web_html/MAT18.htm#:~:text=What do you think?,that one of these little ones should perish.', '../../eng-web_html/LUK15.htm#:~:text=Now all the tax collectors and sinners were,over ninety-nine righteous people who need no repentance.'];
     $passage = ['18:12-14,', '15:1-7'];
   }
 
-  function lostCoin()	{
+  function lostCoin() {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Lost Coin';
     $image = '../../images/_JesusChrist/lostCoin.webp';
@@ -346,11 +346,11 @@ function parables() {
       "Jesus explained that this is how God and the angels feel when one person who was doing wrong turns back to God. There's a big celebration in heaven!",
       'This story teaches us that God values each person so much. Just like the woman searched hard for one coin, God seeks out people who are lost. And just like she celebrated finding her coin, God celebrates when someone comes back to Him!'];
     $gospel = ['Luke'];
-    $gospelLinks = ['?w1=bible&t1=local%3Aeng-web&v1=LK15_8'];
+    $gospelLinks = ['../../eng-web_html/LUK15.htm#:~:text=Or what woman%2C if she had ten drachma,the angels of God over one sinner repenting.'];
     $passage = ['15:8-10'];
   }
 
-  function unmercifulServant()	{
+  function unmercifulServant() {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Unmerciful Servant';
     $image = '../../images/_JesusChrist/unmercifulServant.webp';
@@ -367,11 +367,11 @@ function parables() {
       'The angry king then handed the unmerciful servant over to the jailers to be punished until he could pay back all he owed.',
       "Jesus ended by saying that this is how God will treat us if we don't forgive others from our heart. The story teaches us that since God has forgiven us so much, we should also be willing to forgive others when they do wrong to us."];
     $gospel = ['Matthew'];
-    $gospelLinks = ['?v1=MT18_21&t1=local%3Aeng-web&w1=bible'];
+    $gospelLinks = ['../../eng-web_html/MAT18.htm#:~:text=Then Peter came and said to him%2C “Lord%2C,your brother from your hearts for his misdeeds.'];
     $passage = ['18:21-35'];
   }
 
-  function workersInVineyard()	{
+  function workersInVineyard() {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Workers in the Vineyard';
     $image = '../../images/_JesusChrist/workersInVineyard.webp';
@@ -388,11 +388,11 @@ function parables() {
       "The landowner replied to one of them, \"Friend, I'm not being unfair to you. Didn't you agree to work for a denarius? Take your pay and go. I want to give the one who was hired last the same as I gave you. Don't I have the right to do what I want with my own money? Or are you envious because I am generous?\"",
       "Jesus ended by saying, \"So the last will be first, and the first will be last.\" This story teaches us that God's way of rewarding people isn't based on how long or how much they work. Instead, God is generous and gives good gifts to everyone who follows Him, whether they've been following Him their whole life or just started recently."];
     $gospel = ['Matthew'];
-    $gospelLinks = ['?v1=MT20_1&t1=local%3Aeng-web&w1=bible'];
+    $gospelLinks = ['../../eng-web_html/MAT20.htm#:~:text=For the Kingdom of Heaven is like a,For many are called%2C but few are chosen.'];
     $passage = ['20:1-16'];
   }
 
-  function richManAndLazarus()	{
+  function richManAndLazarus() {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Rich Man and Lazarus';
     $image = '../../images/_JesusChrist/richManAndLazarus.webp';
@@ -409,11 +409,11 @@ function parables() {
       'The rich man argued, "No, father Abraham, but if someone from the dead goes to them, they will repent!" Abraham responded, "If they don\'t listen to Moses and the Prophets, they won\'t be convinced even if someone rises from the dead."',
       'Jesus told this story to warn people about the dangers of focusing on wealth and comfort while ignoring those in need. The story teaches us that how we treat others, especially people who are poor or suffering, matters a lot to God.'];
     $gospel = ['Luke'];
-    $gospelLinks = ['?w1=bible&t1=local%3Aeng-web&v1=LK16_19'];
+    $gospelLinks = ['../../eng-web_html/LUK16.htm#:~:text=Now there was a certain rich man%2C and,persuaded if one rises from the dead.'];
     $passage = ['16:19-31'];
   }
 
-  function phariseeAndTaxCollector()	{
+  function phariseeAndTaxCollector() {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Pharisee and the Tax Collector';
     $image = '../../images/_JesusChrist/phariseeAndTaxCollector.webp';
@@ -427,11 +427,11 @@ function parables() {
       'Jesus said that it was actually the tax collector, not the Pharisee, who went home right with God! Then Jesus explained, "For all those who make themselves important will become unimportant, and those who humble themselves will become important."',
       "This story teaches us that God doesn't want us to be proud or to think we're better than other people. Instead, God wants us to be honest about our mistakes and to ask for His forgiveness with a humble heart."];
     $gospel = ['Luke'];
-    $gospelLinks = ['?w1=bible&t1=local%3Aeng-web&v1=LK18_9'];
+    $gospelLinks = ['../../eng-web_html/LUK18.htm#:~:text=He also spoke this parable to certain people,but he who humbles himself will be exalted.'];
     $passage = ['18:9-14'];
   }
 
-  function persistentWidow()	{
+  function persistentWidow() {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Persistent Widow';
     $image = '../../images/_JesusChrist/persistentWidow.webp';
@@ -446,11 +446,11 @@ function parables() {
       'Then Jesus explained the point of the story. He said, "Listen to what the unfair judge said. And won\'t God bring justice for his chosen people, who cry out to him day and night? Will he keep putting them off? I tell you, he will give them justice quickly."',
       'The story teaches us that if even an unfair judge will eventually respond to someone who keeps asking, how much more will God - who is perfectly good and who loves us - respond to our prayers when we keep bringing our needs to Him!'];
     $gospel = ['Luke'];
-    $gospelLinks = ['?w1=bible&t1=local%3Aeng-web&v1=LK18_1'];
+    $gospelLinks = ['../../eng-web_html/LUK18.htm#:~:text=He also spoke a parable to them that,comes%2C will he find faith on the earth?'];
     $passage = ['18:1-8'];
   }
 
-  function tenVirgins()	{
+  function tenVirgins() {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Ten Virgins';
     $image = '../../images/_JesusChrist/tenVirgins.webp';
@@ -467,11 +467,11 @@ function parables() {
       'Later, the foolish bridesmaids came back and called out, "Sir! Sir! Open the door for us!" But the bridegroom answered, "Truly I tell you, I don\'t know you."',
       'Jesus ended the story by saying, "Therefore keep watch, because you do not know the day or the hour." He was teaching us to always be ready for when He comes back, because we don\'t know exactly when that will be!'];
     $gospel = ['Matthew'];
-    $gospelLinks = ['?v1=MT25_1&t1=local%3Aeng-web&w1=bible'];
+    $gospelLinks = ['../../eng-web_html/MAT25.htm#:~:text=Then the Kingdom of Heaven will be like,in which the Son of Man is coming.'];
     $passage = ['25:1-13'];
   }
 
-  function talents()  {
+  function talents() {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Talents/Minas';
     $image = '../../images/_JesusChrist/talents.webp';
@@ -490,7 +490,7 @@ function parables() {
       'The master took the one talent from him and gave it to the servant who had ten talents. He said, "Everyone who uses well what they are given will get more. But the one who does not use well what they are given will have everything taken away."',
       'Jesus told this story to teach that God expects us to use the gifts, abilities, and opportunities He gives us. When we use them well, He will give us more responsibilities and blessings!'];
     $gospel = ['Matthew', 'Luke'];
-    $gospelLinks = ['?v1=MT25_14&t1=local%3Aeng-web&w1=bible', '?v1=LK19_11&t1=local%3Aeng-web&w1=bible'];
+    $gospelLinks = ['../../eng-web_html/MAT25.htm#:~:text=For it is like a man going into,there will be weeping and gnashing of teeth.', '../../eng-web_html/LUK19.htm#:~:text=As they heard these things%2C he went on,them here%2C and kill them before me.'];
     $passage = ['25:14-30', '19:11-27'];
   }
 
@@ -507,7 +507,7 @@ function parables() {
       'The goats are the people who didn’t help others. Jesus says they ignored Him by not caring for others.',
       'This story teaches us that showing kindness to others is very important to God.'];
     $gospel = ['Matthew'];
-    $gospelLinks = ['?v1=MT25_31&t1=local%3Aeng-web&w1=bible'];
+    $gospelLinks = ['../../eng-web_html/MAT25.htm#:~:text=But when the Son of Man comes in,eternal punishment%2C but the righteous into eternal life.'];
     $passage = ['25:31-46'];
   }
 
@@ -524,11 +524,11 @@ function parables() {
       'Jesus asks which person will love the lender more. The answer is the one who was forgiven the most.',
       'This shows us that people who know they’ve been forgiven a lot by God will love Him more.'];
     $gospel = ['Luke'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=LK7_41'];
+    $gospelLinks = ['../../eng-web_html/LUK07.htm#:~:text=A certain lender had two debtors.,He said to him%2C “You have judged correctly.'];
     $passage = ['7:41-43'];
   }
 
-  function wickedTenants()  {
+  function wickedTenants() {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Wicked Tenants';
     $image = '../../images/_JesusChrist/wickedTenants.webp';
@@ -541,7 +541,7 @@ function parables() {
       'Finally, he sent his son, thinking they would respect him. But the farmers killed the son.',
       "Jesus told this story to show how people rejected God's messengers and even Jesus, God's Son."];
     $gospel = ['Matthew', 'Mark', 'Luke'];
-    $gospelLinks = ['?v1=MT21_33&w1=bible&t1=local%3Aeng-web', '?v1=MK12_1&w1=bible&t1=local%3Aeng-web', '?v1=LK20_9&w1=bible&t1=local%3Aeng-web'];
+    $gospelLinks = ['../../eng-web_html/MAT21.htm#:~:text=Hear another parable.,because they considered him to be a prophet.', '../../eng-web_html/MRK12.htm#:~:text=He began to speak to them in parables.,They left him and went away.', '../../eng-web_html/LUK20.htm#:~:text=He began to tell the people this parable:,knew he had spoken this parable against them.'];
     $passage = ['21:33-46', '12:1-12', '20:9-19'];
   }
 
@@ -558,7 +558,7 @@ function parables() {
       'The king then invited people from the streets, both good and bad, and the wedding hall was filled.',
       "Jesus says this is like God's kingdom—everyone is invited, but we must be ready and take it seriously."];
     $gospel = ['Matthew', 'Luke'];
-    $gospelLinks = ['?v1=MT22_1&w1=bible&t1=local%3Aeng-web', '?v1=LK14_16&w1=bible&t1=local%3Aeng-web'];
+    $gospelLinks = ['../../eng-web_html/MAT22.htm#:~:text=Jesus answered and spoke to them again in parables%2C saying%2C,For many are called%2C but few chosen.', '../../eng-web_html/LUK14.htm#:~:text=But he said to him%2C “A certain man,are called%2C but few are chosen.'];
     $passage = ['22:1-14,', '14:16-24'];
   }
 
@@ -575,7 +575,7 @@ function parables() {
       'He thought, ‘Now I can relax, eat, drink, and enjoy life!’',
       'But that night, he died. Jesus said this shows how foolish it is to only think about money and not about God.'];
     $gospel = ['Luke'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=LK12_13'];
+    $gospelLinks = ['../../eng-web_html/LUK12.htm#:~:text=One of the multitude said to him%2C “Teacher%2C,for himself%2C and is not rich toward God.'];
     $passage = ['12:13-21'];
   }
 
@@ -596,11 +596,11 @@ function parables() {
       "But people who hear His words and don't follow them are like the foolish builder who built on sand. When problems come, everything falls apart for them.",
       "This story teaches us that it's not enough to just listen to what Jesus says - we need to actually do what He teaches us!"];
     $gospel = ['Matthew', 'Luke'];
-    $gospelLinks = ['?v1=MT7_24&w1=bible&t1=local%3Aeng-web', '?v1=LK6_47&w1=bible&t1=local%3Aeng-web'];
+    $gospelLinks = ['../../eng-web_html/MAT07.htm#:~:text=Everyone therefore who hears these words of mine,house; and it fell—and its fall was great.', '../../eng-web_html/LUK06.htm#:~:text=Everyone who comes to me%2C and hears my,and the ruin of that house was great.'];
     $passage = ['7:24-27', '6:47-49'];
   }
 
-  function growingSeed()  {
+  function growingSeed() {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Growing Seed';
     $image = '../../images/_JesusChrist/growingSeed.webp';
@@ -615,7 +615,7 @@ function parables() {
       "Jesus was teaching that God's kingdom grows in ways we don't always understand. We might plant seeds by telling others about Jesus, but it's God who makes those seeds grow!",
       "This story shows us that we don't need to worry so much about making God's kingdom grow - that's God's job! Our job is to scatter the seeds and be ready for the harvest."];
     $gospel = ['Mark'];
-    $gospelLinks = ['?v1=MK4_26&w1=bible&t1=local%3Aeng-web'];
+    $gospelLinks = ['../../eng-web_html/MRK04.htm#:~:text=He said%2C “God’s Kingdom is as if a,in the sickle%2C because the harvest has come.'];
     $passage = ['4:26-29'];
   }
 
@@ -634,11 +634,11 @@ function parables() {
       "Jesus was saying that you can't just add His new teachings onto the old religious system - they wouldn't fit together right. His new way required a completely fresh start!",
       "This story helped people see that Jesus wasn't just fixing up the old way of doing things. He was bringing something totally new that would change everything!"];
     $gospel = ['Matthew', 'Mark', 'Luke'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=MT9_16', '?v1=MK2_21&w1=bible&t1=local%3Aeng-web', '?t1=local%3Aeng-web&w1=bible&v1=LK5_36'];
+    $gospelLinks = ['../../eng-web_html/MAT09.htm#:~:text=No one puts a piece of unshrunk cloth', '../../eng-web_html/MRK02.htm#:~:text=No one sews a piece of unshrunk cloth', '../../eng-web_html/LUK05.htm#:~:text=He also told a parable to them.,from the new will not match the old.'];
     $passage = ['9:16', '2:21', '5:36'];
   }
 
-  function newWineInOldWineskins()  {
+  function newWineInOldWineskins() {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'New Wine in Old Wineskins';
     $image = '../../images/_JesusChrist/newWineInOldWineskins.webp';
@@ -654,11 +654,11 @@ function parables() {
       'The "old wineskins" represented old religious systems and traditions that couldn\'t contain Jesus\' new way without breaking.',
       'Jesus was teaching that His message was so new and different that it needed new ways of thinking and new structures. People needed to be ready for completely new ways of relating to God!'];
     $gospel = ['Matthew', 'Mark', 'Luke'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=MT9_17', '?v1=MK2_22&w1=bible&t1=local%3Aeng-web', '?t1=local%3Aeng-web&w1=bible&v1=LK5_37'];
+    $gospelLinks = ['../../eng-web_html/MAT09.htm#:~:text=Neither do people put new wine into old,wine into fresh wineskins%2C and both are preserved.', '../../eng-web_html/MRK02.htm#:~:text=No one puts new wine into old wineskins;', '../../eng-web_html/LUK05.htm#:~:text=No one puts new wine into old wineskins%2C,for he says%2C ‘The old is better.'];
     $passage = ['9:17', '2:22', '5:37-39'];
   }
 
-  function lampOnStand()  {
+  function lampOnStand() {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Lamp on a Stand';
     $image = '../../images/_JesusChrist/lampOnStand.webp';
@@ -673,11 +673,11 @@ function parables() {
       'Jesus also said, "You are the light of the world." He wanted His followers to shine brightly for others to see, like a city on a hill that can\'t be hidden.',
       "This story reminds us that we shouldn't hide our faith or the things God has taught us. Instead, we should let our light shine so others can see it and give glory to God!"];
     $gospel = ['Matthew', 'Mark', 'Luke', 'Luke'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=MT5_14', '?v1=MK4_21&w1=bible&t1=local%3Aeng-web', '?t1=local%3Aeng-web&w1=bible&v1=LK8_16', '?t1=local%3Aeng-web&w1=bible&v1=LK11_33'];
+    $gospelLinks = ['../../eng-web_html/MAT05.htm#:~:text=You are the light of the world.,and glorify your Father who is in heaven.', '../../eng-web_html/MRK04.htm#:~:text=He said to them%2C “Is a lamp brought,secret but that it should come to light.', '../../eng-web_html/LUK08.htm#:~:text=No one%2C when he has lit a lamp%2C,will not be known and come to light.', '../../eng-web_html/LUK11.htm#:~:text=No one%2C when he has lit a lamp%2C,lamp with its bright shining gives you light.'];
     $passage = ['5:14-16', '4:21-22', '8:16-17', '11:33-36'];
   }
 
-  function twoSons()  {
+  function twoSons() {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Two Sons';
     $image = '../../images/_JesusChrist/twoSons.webp';
@@ -693,11 +693,11 @@ function parables() {
       'And He compared tax collectors and prostitutes (people everyone looked down on) to the first son. These people had said "no" to God at first through their sinful lives, but then they had changed their minds and truly repented when they heard John the Baptist\'s message.',
       "Jesus was teaching that it's not just what we say that matters to God, but what we actually do. God cares more about true repentance and obedience than about people who just say the right religious words but don't follow through with their actions."];
     $gospel = ['Matthew'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=MT21_28'];
+    $gospelLinks = ['../../eng-web_html/MAT21.htm#:~:text=But what do you think?,even repent afterward%2C that you might believe him.'];
     $passage = ['21:28-32'];
   }
 
-  function unjustSteward()  {
+  function unjustSteward() {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Unjust Steward';
     $image = '../../images/_JesusChrist/unjustSteward.webp';
@@ -714,7 +714,7 @@ function parables() {
       'Jesus then taught, "Use worldly wealth to gain friends for yourselves, so that when it is gone, you will be welcomed into eternal dwellings." He was saying we should use our money and possessions in ways that have eternal value - like helping others and advancing God\'s kingdom.',
       'Jesus ended with an important reminder: "Whoever can be trusted with very little can also be trusted with much." He taught that how we handle money shows a lot about our character, and we can\'t serve both God and money at the same time.'];
     $gospel = ['Luke'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=LK16_1'];
+    $gospelLinks = ['../../eng-web_html/LUK16.htm#:~:text=He also said to his disciples%2C “There was,You aren’t able to serve God and Mammon.'];
     $passage = ['16:1-13'];
   }
 
@@ -733,7 +733,7 @@ function parables() {
       "Then Jesus gave the real lesson: we should use our money ('worldly wealth') to help others and make friends, so that when earthly money is gone, these people will welcome us into 'eternal dwellings' (heaven).",
       'Jesus was teaching that we should be at least as clever about using our resources for eternal purposes as dishonest people are about using money for their temporary benefit on earth.'];
     $gospel = ['Luke'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=LK16_1'];
+    $gospelLinks = ['../../eng-web_html/LUK16.htm#:~:text=He also said to his disciples%2C “There was,they may receive you into the eternal tents.'];
     $passage = ['16:1-9'];
   }
 
@@ -750,11 +750,11 @@ function parables() {
       'Finally, the friend got up and gave him what he needed - not because they were friends, but because the guy was so persistent!',
       "Jesus used this story to teach us about prayer. God isn't like the grumpy friend who doesn't want to help. But Jesus wants us to understand that we should keep praying and not give up, even when it seems like no one is listening."];
     $gospel = ['Luke'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=LK11_5'];
+    $gospelLinks = ['../../eng-web_html/LUK11.htm#:~:text=He said to them%2C “Which of you%2C if,and give him as many as he needs.'];
     $passage = ['11:5-8'];
   }
 
-  function barrenFigTree()  {
+  function barrenFigTree() {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Barren Fig Tree';
     $image = '../../images/_JesusChrist/barrenFigTree.webp';
@@ -768,7 +768,7 @@ function parables() {
       "This parable teaches us that God is patient with us, but He does expect us to grow and change. He gives us chances to become better and produce 'good fruit' in our lives, but His patience won't last forever.",
       'We need to use the time He gives us to grow and become better people.'];
     $gospel = ['Luke'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=LK13_6'];
+    $gospelLinks = ['../../eng-web_html/LUK13.htm#:~:text=He spoke this parable.,after that%2C you can cut it down.'];
     $passage = ['13:6-9'];
   }
 
@@ -787,7 +787,7 @@ function parables() {
       "Jesus used this story to show how many people who should have accepted God's invitation to be part of His kingdom make excuses and miss out. So God welcomes those who society often ignores or looks down on.",
       "The point is that God's invitation is for everyone, but especially for those who recognize their need for Him."];
     $gospel = ['Luke'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=LK14_15'];
+    $gospelLinks = ['../../eng-web_html/LUK14.htm#:~:text=When one of those who sat at the,are called%2C but few are chosen.'];
     $passage = ['14:15-24'];
   }
 
@@ -804,7 +804,7 @@ function parables() {
       "In the second story, Jesus described a king who's about to go to war against another king. Before fighting, he needs to figure out if his 10,000 soldiers can beat the other king's 20,000 soldiers. If not, he'd better send people to ask for peace terms!",
       'Jesus used these examples to teach that following Him is a serious decision. We need to understand what it will cost us - like maybe losing friends or facing hard times - and be prepared to go all the way, not just start and then quit when things get tough.'];
     $gospel = ['Luke'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=LK14_28'];
+    $gospelLinks = ['../../eng-web_html/LUK14.htm#:~:text=For which of you%2C desiring to build a,that he has%2C he can’t be my disciple.'];
     $passage = ['14:28-33'];
   }
 
@@ -822,11 +822,11 @@ function parables() {
       "They should simply say, 'We are unprofitable servants; we have only done what was our duty to do.'",
       "This teaches us to be humble when we serve God and others. We shouldn't serve to get attention or praise, but because it's the right thing to do."];
     $gospel = ['Luke'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=LK17_7'];
+    $gospelLinks = ['../../eng-web_html/LUK17.htm#:~:text=But who is there among you%2C having a,We have done our duty.'];
     $passage = ['17:7-10'];
   }
 
-  function unjustJudge()  {
+  function unjustJudge() {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Unjust Judge';
     $image = '../../images/_JesusChrist/unjustJudge.webp';
@@ -840,7 +840,7 @@ function parables() {
       'Jesus explained that if even an unfair judge eventually helps because of persistence, how much more will God - who is perfectly good and loves us - answer His people who pray day and night?',
       "But then Jesus asked a sad question: 'When I come back, will I find people on earth who still have faith?' This reminds us to keep trusting God and praying even when it seems like He's not answering right away."];
     $gospel = ['Luke'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=LK18_1'];
+    $gospelLinks = ['../../eng-web_html/LUK18.htm#:~:text=He also spoke a parable to them that,comes%2C will he find faith on the earth?'];
     $passage = ['18:1-8'];
   }
 
@@ -857,7 +857,7 @@ function parables() {
       "Jesus was warning people to be careful about who they listen to and learn from. Some religious teachers act like they know everything about God, but if they don't really understand God's truth, following them will lead to trouble.",
       "Jesus also taught that a student isn't better than their teacher - at best, they'll know what their teacher knows. So if we want to grow in our understanding of God, we need to make sure we're learning from people who truly know Him."];
     $gospel = ['Matthew', 'Luke'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=MT15_14', '?t1=local%3Aeng-web&w1=bible&v1=LK6_39'];
+    $gospelLinks = ['../../eng-web_html/MAT15.htm#:~:text=Leave them alone.,the blind%2C both will fall into a pit.', '../../eng-web_html/LUK06.htm#:~:text=He spoke a parable to them.,Won’t they both fall into a pit?'];
     $passage = ['15:14', '6:39'];
   }
 
@@ -876,7 +876,7 @@ function parables() {
       "Jesus was teaching about how we should live while we wait for Him to return. We shouldn't get lazy or do wrong things just because Jesus hasn't come back yet.",
       "Instead, we should faithfully do what He's asked us to do, caring for others and living right, so we'll be ready whenever He returns."];
     $gospel = ['Matthew', 'Luke'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=MT24_45', '?t1=local%3Aeng-web&w1=bible&v1=LK12_42'];
+    $gospelLinks = ['../../eng-web_html/MAT24.htm#:~:text=Who then is the faithful and wise servant%2C,the weeping and grinding of teeth will be.', '../../eng-web_html/LUK12.htm#:~:text=The Lord said%2C “Who then is the faithful,was entrusted%2C of him more will be asked.'];
     $passage = ['24:45-51', '12:42-48'];
   }
 
@@ -894,7 +894,7 @@ function parables() {
       'In another version of this teaching, Jesus described a man going on a journey who puts his servants in charge of his house, giving each one a job to do. The doorkeeper especially needs to stay awake and watch because no one knows when the master will return - evening, midnight, when the rooster crows, or at dawn.',
       "Jesus was teaching us to live in a way that we'd be happy for Him to find us at any moment - not doing wrong things or being lazy, but actively doing what He's asked us to do."];
     $gospel = ['Mark', 'Luke'];
-    $gospelLinks = ['?v1=MK13_34&w1=bible&t1=local%3Aeng-web', '?t1=local%3Aeng-web&w1=bible&v1=LK12_35'];
+    $gospelLinks = ['../../eng-web_html/MRK13.htm#:~:text=It is like a man traveling to another,What I tell you%2C I tell all: Watch!', '../../eng-web_html/LUK12.htm#:~:text=Let your waist be dressed and your lamps burning.,in an hour that you don’t expect him.'];
     $passage = ['13:34-37', '12:35-40'];
   }
 
@@ -912,11 +912,11 @@ function parables() {
       "Jesus was pointing out how some people were just determined to find fault no matter what. These critics weren't being honest or fair - they just didn't want to listen to God's message, so they made excuses about the messengers.",
       "But Jesus said that wisdom is proved right by its results - both His way and John's way were part of God's plan and produced good fruit in the lives of those who actually listened."];
     $gospel = ['Matthew', 'Luke'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=MT11_16', '?t1=local%3Aeng-web&w1=bible&v1=LK7_31'];
+    $gospelLinks = ['../../eng-web_html/MAT11.htm#:~:text=But to what shall I compare this generation?,sinners!’ But wisdom is justified by her children.', '../../eng-web_html/LUK07.htm#:~:text=To what then should I compare the people,Wisdom is justified by all her children.'];
     $passage = ['11:16-19', '7:31-35'];
   }
 
-  function speckAndLog()  {
+  function speckAndLog() {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Speck and the Log';
     $image = '../../images/_JesusChrist/speckAndLog.webp';
@@ -931,11 +931,11 @@ function parables() {
       "This doesn't mean we should never help others improve - it means we need to be honest about our own faults first. We should deal with our own mistakes before pointing fingers at everyone else.",
       'Jesus wants us to help each other grow, but with humility and self-awareness, not with a judgmental attitude.'];
     $gospel = ['Matthew', 'Luke'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=MT7_3', '?t1=local%3Aeng-web&w1=bible&v1=LK6_41'];
+    $gospelLinks = ['../../eng-web_html/MAT07.htm#:~:text=Why do you see the speck that is,remove the speck out of your brother’s eye.', '../../eng-web_html/LUK06.htm#:~:text=Why do you see the speck of chaff,of chaff that is in your brother’s eye.'];
     $passage = ['7:3-5', '6:41-42'];
   }
 
-  function fishNet()  {
+  function fishNet() {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Fish Net';
     $image = '../../images/_JesusChrist/fishNet.webp';
@@ -949,11 +949,11 @@ function parables() {
       "This parable teaches that right now, both people who truly follow God and people who don't are mixed together in the world - just like different kinds of fish in the same net. But a time is coming when God will sort everyone out.",
       "It's a serious reminder that our choices now about whether to follow Jesus or not have big consequences for our future. Jesus wants everyone to be counted among the 'good fish' by believing in Him and living according to His teachings."];
     $gospel = ['Matthew'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=MT13_47'];
+    $gospelLinks = ['../../eng-web_html/MAT13.htm#:~:text=Again%2C the Kingdom of Heaven is like a,There will be weeping and gnashing of teeth.'];
     $passage = ['13:47-50'];
   }
 
-  function householder()  {
+  function householder() {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Householder';
     $image = '../../images/_JesusChrist/householder.webp';
@@ -968,7 +968,7 @@ function parables() {
       'Jesus was telling His disciples that they should use both the treasured wisdom from the Old Testament scriptures AND the new teachings He was giving them. Both are valuable!',
       "This teaches us that we should appreciate traditional wisdom while also being open to fresh insights about God's truth."];
     $gospel = ['Matthew'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=MT13_52'];
+    $gospelLinks = ['../../eng-web_html/MAT13.htm#:~:text=He said to them%2C “Therefore every scribe who'];
     $passage = ['13:52'];
   }
 
@@ -987,11 +987,11 @@ function parables() {
       'This beautiful word picture teaches us that Jesus loves us personally, protects us, guides us, and made the ultimate sacrifice for us.',
       'It also shows that Jesus is not just a good person or teacher - He claimed the authority to lay down His life and take it up again, something only God could do.'];
     $gospel = ['John'];
-    $gospelLinks = ['?v1=JN10_1&w1=bible&t1=local%3Aeng-web'];
+    $gospelLinks = ['../../eng-web_html/JHN10.htm#:~:text=Most certainly%2C I tell you%2C one who doesn’t,I received this commandment from my Father.'];
     $passage = ['10:1-18'];
   }
 
-  function vineAndBranches()  {
+  function vineAndBranches() {
     global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
     $title = 'The Vine and the Branches';
     $image = '../../images/_JesusChrist/vineAndBranches.webp';
@@ -1005,7 +1005,7 @@ function parables() {
       'But He gave an amazing promise too: if we stay connected to Him and His words stay in us, we can ask whatever we wish, and it will be done for us!',
       "The 'fruit' Jesus talked about includes things like love, joy, peace, patience, and kindness - the good qualities that naturally grow in our lives when we stay close to Him."];
     $gospel = ['John'];
-    $gospelLinks = ['?v1=JN15_1&w1=bible&t1=local%3Aeng-web'];
+    $gospelLinks = ['../../eng-web_html/JHN15.htm#:~:text=I am the true vine%2C and my Father,fruit; and so you will be my disciples.'];
     $passage = ['15:1-8'];
   }
 
@@ -1023,7 +1023,7 @@ function parables() {
       "This parable teaches us humility in our relationship with God. We shouldn't serve God expecting special praise or thinking we deserve rewards. Everything we have already comes from God, so when we serve Him, we're just doing what we ought to do.",
       "This doesn't mean God doesn't appreciate our service - other teachings show that He does reward faithfulness. But it reminds us that our attitude should be humble gratitude for the privilege of serving Him, not pride or a feeling that God owes us something."];
     $gospel = ['Luke'];
-    $gospelLinks = ['?t1=local%3Aeng-web&w1=bible&v1=LK17_7'];
+    $gospelLinks = ['../../eng-web_html/LUK17.htm#:~:text=But who is there among you%2C having a,We have done our duty.'];
     $passage = ['17:7-10'];
   }
     content();
@@ -1050,7 +1050,7 @@ function parabolas(){
                       'La estructura narrativa de las parábolas las hacía más fáciles de recordar y compartir que los conceptos teológicos abstractos.',
                       'En lugar de imponer interpretaciones, las parábolas invitaban a los oyentes a descubrir el significado por sí mismos, involucrando sus mentes y corazones en el proceso.',
                       ],'Parábola', 'Descripción', 'Referencia Bíblica'];
-  $biblia = ['https://ebible.org/find/details.php?id=spablm', 'Santa Biblia libre para el mundo', 'Biblia'];
+  $biblia = ['../../spablm_html/index.htm', 'Santa Biblia libre para el mundo', 'Biblia'];
 
 
   function elSembrador()  {
@@ -1068,7 +1068,7 @@ function parabolas(){
       "Pero algunas semillas cayeron en tierra buena. Crecieron muy bien y produjeron muchísimas más semillas. Eso es como la gente que realmente escucha el mensaje, lo entiende y deja que cambie su forma de vivir. Por eso, terminan haciendo cosas buenas.",
       "Así que, la historia trata de cómo diferentes personas escuchan el mismo mensaje de distintas maneras, dependiendo de lo que hay en sus corazones. Solo las personas con un 'corazón bueno' permiten que el mensaje crezca y haga una diferencia."];
     $evangelio = ['Mateo', 'Marcos', 'Lucas'];
-    $enlaceEvangelio = ['?v1=MT13_1&t1=local%3Aspablm&w1=bible', '?v1=MK4_1&t1=local%3Aspablm&w1=bible', '?v1=LK8_4&t1=local%3Aspablm&w1=bible'];
+    $enlaceEvangelio = ['../../spablm_html/MAT13.htm#:~:text=Aquel día%2C Jesús salió de casa y se,cien veces más%2C otros sesenta y otros treinta.', '../../spablm_html/MRK04.htm#:~:text=De nuevo se puso a enseñar a la,unos treinta veces%2C otros sesenta y otros cien.', '../../spablm_html/LUK08.htm#:~:text=Juntándose una gran multitud%2C y los que de,la palabra oída%2C y dan fruto con perseverancia.'];
     $pasaje = ['13:1-23,', '4:1-20,', '8:4-15'];
   }
 
@@ -1087,7 +1087,7 @@ function parabolas(){
       'Pero al final de los tiempos, que es como el tiempo de la cosecha, los ángeles harán una separación final.',
       'Entonces, las personas que siguen a Dios estarán en su reino, mientras que los que hicieron el mal enfrentarán un juicio.'];
     $evangelio = ['Mateo'];
-    $enlaceEvangelio = ['?v1=MT13_24&t1=local%3Aspablm&w1=bible'];
+    $enlaceEvangelio = ['../../spablm_html/MAT13.htm#:~:text=Les expuso otra parábola%2C diciendo:,quemarla; pero recoged el trigo en mi granero»”.'];
     $pasaje = ['13:24-30'];
   }
 
@@ -1104,7 +1104,7 @@ function parabolas(){
       "Pero, ¿adivina qué? Cuando crece, se convierte en la más grande de todas las plantas del jardín. Se hace tan grande que hasta los pájaros pueden venir a hacer nidos en sus ramas.",
       "Entonces, lo que Jesús decía es que aunque el reino de Dios pueda parecer muy pequeño o sin importancia para la gente, en realidad es algo enorme y asombroso. Empieza pequeño, pero termina siendo lo suficientemente grande como para ayudar y dar refugio a muchas personas, justo como la gran planta de mostaza protege a los pájaros. ¡Es como algo chiquito que tiene el potencial de convertirse en algo realmente, realmente grande!"];
     $evangelio = ['Mateo', 'Marcos', 'Lucas'];
-    $enlaceEvangelio = ['?v1=MT13_31&t1=local%3Aspablm&w1=bible', '?v1=MK4_30&t1=local%3Aspablm&w1=bible', '?v1=LK13_18&t1=local%3Aspablm&w1=bible'];
+    $enlaceEvangelio = ['../../spablm_html/MAT13.htm#:~:text=Les expuso otra parábola%2C diciendo:,del cielo vienen y anidan en sus ramas.', '../../spablm_html/MRK04.htm#:~:text=Dijo: «¿Cómo compararemos el Reino de Dios? ¿O,aves del cielo pueden alojarse bajo su sombra.', '../../spablm_html/LUK13.htm#:~:text=Dijo: «¿A qué es semejante el Reino de,las aves del cielo anidaron en sus ramas».'];
     $pasaje = ['13:31-32,', '4:30-32,', '13:18-19'];
   }
 
@@ -1121,11 +1121,11 @@ function parabolas(){
       "Entonces, lo que Jesús estaba diciendo es que, aunque el reino de Dios comienza con solo unas cuantas personas o parezca algo pequeño, tiene este increíble poder para esparcirse, crecer y afectar todo a su alrededor.",
       "Justo como un poco de levadura puede cambiar una gran cantidad de masa, el reino de Dios puede empezar pequeño, pero con el tiempo tocar y cambiar muchísimas vidas. ¡Tiene esta manera tranquila, pero poderosa, de crecer y hacer una gran diferencia!"];
     $evangelio = ['Mateo', 'Lucas'];
-    $enlaceEvangelio = ['?v1=MT13_33&t1=local%3Aspablm&w1=bible', '?v1=LK13_20&t1=local%3Aspablm&w1=bible'];
+    $enlaceEvangelio = ['../../spablm_html/MAT13.htm#:~:text=Les dijo otra parábola.,medidas de harina%2C hasta que todo quedó leudado».', '../../spablm_html/LUK13.htm#:~:text=Y volvió a decir:,medidas de harina%2C hasta que todo quedó leudado.'];
     $pasaje = ['13:33,', '13:20-21'];
   }
 
-  function tesoroEscondido()  {
+  function tesoroEscondido() {
     global $titulo, $imagen, $imagenAlt, $enlaceImagen, $figLeyenda, $descripcion, $dialogoParrafo, $evangelio, $enlaceEvangelio, $pasaje;
     $titulo = 'El Tesoro Escondido';
     $imagen = '../../images/_JesusChrist/hiddenTreasure.webp';
@@ -1139,11 +1139,11 @@ function parabolas(){
       "Con todo el dinero que obtuvo de la venta de sus cosas, compró el campo donde estaba escondido el tesoro. ¡Ahora el tesoro era todo suyo!",
       "Jesús estaba enseñando que el reino de Dios es como ese tesoro. Cuando las personas se dan cuenta de lo maravilloso que es el reino de Dios, están dispuestas a dejar todo lo demás con tal de ser parte de él. ¡Así de valioso es!"];
     $evangelio = ['Mateo'];
-    $enlaceEvangelio = ['?v1=MT13_44&t1=local%3Aspablm&w1=bible'];
+    $enlaceEvangelio = ['../../spablm_html/MAT13.htm#:~:text=Además%2C el Reino de los Cielos es como,todo lo que tiene y compra ese campo.'];
     $pasaje = ['13:44'];
   }
 
-  function perlaDeGranPrecio()  {
+  function perlaDeGranPrecio() {
     global $titulo, $imagen, $imagenAlt, $enlaceImagen, $figLeyenda, $descripcion, $dialogoParrafo, $evangelio, $enlaceEvangelio, $pasaje;
     $titulo = 'La Perla de Gran Precio';
     $imagen = '../../images/_JesusChrist/pearlOfGreatPrice.webp';
@@ -1156,11 +1156,11 @@ function parabolas(){
       "El comerciante deseaba tanto esta perla especial que fue y vendió absolutamente todo lo que tenía solo para conseguir el dinero suficiente para comprarla.",
       "Jesús nos estaba mostrando que el reino de Dios es como esa perla perfecta. Cuando de verdad entendemos lo maravilloso que es el reino de Dios, ¡pensaremos que vale la pena dejar todo lo demás que tenemos solo para ser parte de él!"];
     $evangelio = ['Mateo'];
-    $enlaceEvangelio = ['?v1=MT13_45&t1=local%3Aspablm&w1=bible'];
+    $enlaceEvangelio = ['../../spablm_html/MAT13.htm#:~:text=Además%2C el Reino de los Cielos se parece,vendió todo lo que tenía y la compró.'];
     $pasaje = ['13:45-46'];
   }
 
-  function red()  {
+  function red() {
     global $titulo, $imagen, $imagenAlt, $enlaceImagen, $figLeyenda, $descripcion, $dialogoParrafo, $evangelio, $enlaceEvangelio, $pasaje;
     $titulo = 'La Red';
     $imagen = '../../images/_JesusChrist/dragnet.webp';
@@ -1174,7 +1174,7 @@ function parabolas(){
       "Jesús dijo que esto es lo que pasará al final del mundo. Los ángeles separarán a la gente buena de la gente mala, tal como los pescadores separaron los peces buenos de los peces malos.",
       "La gente mala será echada en un horno de fuego donde habrá llanto y rechinar de dientes. Pero la gente buena, que sigue a Dios, ¡brillará como el sol en el reino de Dios!"];
     $evangelio = ['Mateo'];
-    $enlaceEvangelio = ['?v1=MT13_47&t1=local%3Aspablm&w1=bible'];
+    $enlaceEvangelio = ['../../spablm_html/MAT13.htm#:~:text=Además%2C el Reino de los Cielos es como,Allí será el llanto y el crujir de dientes».'];
     $pasaje = ['13:47-50'];
   }
 
@@ -1193,11 +1193,11 @@ function parabolas(){
       "El samaritano le limpió y vendó las heridas. Luego puso al hombre herido en su propio burro y lo llevó a una posada, que es como un hotel. ¡El samaritano incluso le pagó al encargado de la posada para que cuidara al hombre herido hasta que se recuperara!",
       "Después de contar esta historia, Jesús preguntó: ¿Quién fue un verdadero prójimo para el hombre que fue herido? La respuesta fue el samaritano, el que mostró bondad y misericordia. Jesús nos dijo que fuéramos e hiciéramos lo mismo: ¡mostrar amor a todos, incluso a la gente que podría ser diferente a nosotros!"];
     $evangelio = ['Lucas'];
-    $enlaceEvangelio = ['?w1=bible&t1=local%3Aspablm&w1=bible&v1=LK10_25'];
+    $enlaceEvangelio = ['../../spablm_html/LUK10.htm#:~:text=He aquí que un intérprete de la ley,Entonces Jesús le dijo: «Ve%2C y haz tú lo mismo».'];
     $pasaje = ['10:25-37'];
   }
 
-  function hijoProdigo()  {
+  function hijoProdigo() {
     global $titulo, $imagen, $imagenAlt, $enlaceImagen, $figLeyenda, $descripcion, $dialogoParrafo, $evangelio, $enlaceEvangelio, $pasaje;
     $titulo = 'El Hijo Prodigo';
     $imagen = '../../images/_JesusChrist/prodigalSon.webp';
@@ -1214,7 +1214,7 @@ function parabolas(){
       "El hermano mayor se enojó por esta fiesta. Se quejó de que él siempre había obedecido a su padre, pero nunca tuvo una fiesta. El padre le explicó que todo lo que tenía ya le pertenecía al hijo mayor, pero que necesitaban celebrar porque el hermano perdido había regresado.",
       "Jesús contó esta historia para mostrar cuánto nos ama Dios y lo listo que está para perdonarnos. Al igual que el padre en la historia, Dios nos espera ansiosamente para que volvamos a Él cuando nos equivocamos, ¡y Él celebra cuando lo hacemos!"];
     $evangelio = ['Lucas'];
-    $enlaceEvangelio = ['?v1=LK15_11&t1=local%3Aspablm&w1=bible'];
+    $enlaceEvangelio = ['../../spablm_html/LUK15.htm#:~:text=También dijo:,revivido; se había perdido%2C y es hallado’ ”.'];
     $pasaje = ['15:11-32'];
   }
 
@@ -1233,11 +1233,11 @@ function parabolas(){
       "Jesús explicó que así es como se siente Dios con respecto a las personas que están perdidas y luego son encontradas. Dijo que hay más alegría en el cielo por una persona perdida que se vuelve a Dios que por 99 personas que ya lo siguen.",
       "Esta historia muestra que Dios se preocupa por cada persona. Así como el pastor no estaba dispuesto a perder ni una sola oveja, Dios no quiere perder a ninguno de nosotros. ¡Él vendrá a buscarnos cuando nos alejemos!"];
     $evangelio = ['Mateo', 'Lucas'];
-    $enlaceEvangelio = ['?w1=bible&t1=local%3Aspablm&w1=bible&v1=MT18_12', '?w1=bible&t1=local%3Aspablm&w1=bible&v1=LK15_1'];
+    $enlaceEvangelio = ['../../spablm_html/MAT18.htm#:~:text=¿Qué os parece?,cielos que se pierda uno de estos pequeños.', '../../spablm_html/LUK15.htm#:~:text=Se acercaban a Jesús todos los recaudadores de,y nueve justos que no necesitan de arrepentimiento.'];
     $pasaje = ['18:12-14,', '15:1-7'];
   }
 
-  function monedaPerdida()  {
+  function monedaPerdida() {
     global $titulo, $imagen, $imagenAlt, $enlaceImagen, $figLeyenda, $descripcion, $dialogoParrafo, $evangelio, $enlaceEvangelio, $pasaje;
     $titulo = 'La Moneda Perdida';
     $imagen = '../../images/_JesusChrist/lostCoin.webp';
@@ -1251,11 +1251,11 @@ function parabolas(){
     "Jesús explicó que así es como se sienten Dios y los ángeles cuando una persona que estaba haciendo el mal se vuelve a Dios. ¡Hay una gran celebración en el cielo!",
     "Esta historia nos enseña que Dios valora muchísimo a cada persona. Así como la mujer buscó con tanto empeño una moneda, Dios busca a las personas que están perdidas. Y así como ella celebró al encontrar su moneda, ¡Dios celebra cuando alguien regresa a Él!"];
     $evangelio = ['Lucas'];
-    $enlaceEvangelio = ['?w1=bible&t1=local%3Aspablm&w1=bible&v1=LK15_8'];
+    $enlaceEvangelio = ['../../spablm_html/LUK15.htm#:~:text=¿O qué mujer que tiene diez monedas de,de Dios por un pecador que se arrepiente.'];
     $pasaje = ['15:8-10'];
   }
 
-  function siervoSinPiedad()  {
+  function siervoSinPiedad() {
     global $titulo, $imagen, $imagenAlt, $enlaceImagen, $figLeyenda, $descripcion, $dialogoParrafo, $evangelio, $enlaceEvangelio, $pasaje;
     $titulo = 'El Siervo Sin Piedad';
     $imagen = '../../images/_JesusChrist/unmercifulServant.webp';
@@ -1272,7 +1272,7 @@ function parabolas(){
     "Entonces el rey, enojado, entregó al siervo sin piedad a los carceleros para que fuera castigado hasta que pudiera pagar todo lo que debía.",
     "Jesús terminó diciendo que así es como Dios nos tratará si no perdonamos a los demás de corazón. La historia nos enseña que, ya que Dios nos ha perdonado tanto, nosotros también debemos estar dispuestos a perdonar a los demás cuando nos hacen algo malo."];
     $evangelio = ['Mateo'];
-    $enlaceEvangelio = ['?v1=MT18_21&t1=local%3Aspablm&w1=bible'];
+    $enlaceEvangelio = ['../../spablm_html/MAT18.htm#:~:text=Entonces Pedro se acercó y le dijo:,a vuestro hermano de corazón por sus fechorías.'];
     $pasaje = ['18:21-35'];
   }
 
@@ -1293,11 +1293,11 @@ function parabolas(){
     "El dueño le respondió a uno de ellos: 'Amigo, no estoy siendo injusto contigo. ¿No acordaste trabajar por un denario? Toma tu paga y vete. Yo quiero darle al que fue contratado al final lo mismo que te di a ti. ¿Acaso no tengo el derecho de hacer lo que quiera con mi propio dinero? ¿O tienes envidia porque soy generoso?'",
     "Jesús terminó diciendo: 'Así que los últimos serán los primeros, y los primeros serán los últimos.' Esta historia nos enseña que la manera en que Dios recompensa a las personas no se basa en cuánto o qué tanto trabajan. En cambio, Dios es generoso y le da buenos regalos a todos los que lo siguen, ya sea que lo hayan seguido toda su vida o que apenas hayan empezado hace poco."];
     $evangelio = ['Mateo'];
-    $enlaceEvangelio = ['?v1=MT20_1&t1=local%3Aspablm&w1=bible'];
+    $enlaceEvangelio = ['../../spablm_html/MAT20.htm#:~:text=Porque el Reino de los Cielos es semejante,Porque muchos son los llamados%2C pero pocos los elegidos”.'];
     $pasaje = ['20:1-16'];
   }
 
-  function hombreRicoYLazaro()  {
+  function hombreRicoYLazaro() {
     global $titulo, $imagen, $imagenAlt, $enlaceImagen, $figLeyenda, $descripcion, $dialogoParrafo, $evangelio, $enlaceEvangelio, $pasaje;
     $titulo = 'El Hombre Rico y Lazaro';
     $imagen = '../../images/_JesusChrist/richManAndLazarus.webp';
@@ -1314,11 +1314,11 @@ function parabolas(){
     "El hombre rico insistió: 'No, padre Abraham, pero si alguien de entre los muertos va a ellos, ¡se arrepentirán!' Abraham respondió: 'Si no escuchan a Moisés y a los Profetas, no se convencerán aunque alguien resucite de entre los muertos.'",
     "Jesús contó esta historia para advertir a la gente sobre los peligros de enfocarse en la riqueza y la comodidad mientras se ignora a los necesitados. La historia nos enseña que la forma en que tratamos a los demás, especialmente a la gente pobre o que sufre, le importa mucho a Dios."];
     $evangelio = ['Lucas'];
-    $enlaceEvangelio = ['?w1=bible&t1=local%3Aspablm&w1=bible&v1=LK16_19'];
+    $enlaceEvangelio = ['../../spablm_html/LUK16.htm#:~:text=Había un hombre rico%2C que se vestía de,aunque alguno se levantare de los muertos’ ”.'];
     $pasaje = ['16:19-31'];
   }
 
-  function fariseoYPublicano()  {
+  function fariseoYPublicano() {
     global $titulo, $imagen, $imagenAlt, $enlaceImagen, $figLeyenda, $descripcion, $dialogoParrafo, $evangelio, $enlaceEvangelio, $pasaje;
     $titulo = 'El Fariseo y el Publicano';
     $imagen = '../../images/_JesusChrist/phariseeAndTaxCollector.webp';
@@ -1332,7 +1332,7 @@ function parabolas(){
     "Jesús dijo que en realidad fue el publicano, y no el fariseo, ¡quien regresó a casa en buena relación con Dios! Luego Jesús explicó: 'Porque todo el que se ensalza será humillado, y el que se humilla será ensalzado.'",
     "Esta historia nos enseña que Dios no quiere que seamos orgullosos ni que pensemos que somos mejores que los demás. En cambio, Dios quiere que seamos honestos acerca de nuestros errores y que pidamos su perdón con un corazón humilde."];
     $evangelio = ['Lucas'];
-    $enlaceEvangelio = ['?w1=bible&t1=local%3Aspablm&w1=bible&v1=LK18_9'];
+    $enlaceEvangelio = ['../../spablm_html/LUK18.htm#:~:text=A unos que confiaban en sí mismos como,humillado%2C y el que se humilla será enaltecido.'];
     $pasaje = ['18:9-14'];
   }
 
@@ -1351,7 +1351,7 @@ function parabolas(){
     "Luego Jesús explicó el punto de la historia. Dijo: 'Oigan lo que dijo el juez injusto. Y, ¿acaso Dios no le hará justicia a su pueblo elegido, que clama a él día y noche? ¿Los hará esperar? Les digo que sí, les hará justicia rápidamente.'",
     "La historia nos enseña que si incluso un juez injusto eventualmente responde a alguien que sigue pidiendo, ¡cuánto más responderá Dios, que es perfectamente bueno y que nos ama, a nuestras oraciones cuando seguimos llevándole nuestras necesidades!"];
     $evangelio = ['Lucas'];
-    $enlaceEvangelio = ['?w1=bible&t1=local%3Aspablm&w1=bible&v1=LK18_1'];
+    $enlaceEvangelio = ['../../spablm_html/LUK18.htm#:~:text=También les refirió una parábola sobre la necesidad,Hijo del Hombre%2C ¿hallará fe en la tierra?'];
     $pasaje = ['18:1-8'];
   }
 
@@ -1372,7 +1372,7 @@ function parabolas(){
       'Más tarde, las vírgenes necias regresaron y llamaron: "¡Señor! ¡Señor! ¡Ábrenos la puerta!" Pero el novio respondió: "De cierto les digo, no las conozco."',
       'Jesús terminó la historia diciendo: "Por tanto, manténganse alerta, porque no saben el día ni la hora." Nos estaba enseñando a estar siempre listos para cuando Él regrese, ¡porque no sabemos exactamente cuándo será!'];
     $evangelio = ['Mateo'];
-    $enlaceEvangelio = ['?v1=MT25_1&t1=local%3Aspablm&w1=bible'];
+    $enlaceEvangelio = ['../../spablm_html/MAT25.htm#:~:text=Entonces el Reino de los Cielos será como,hora en que vendrá el Hijo del Hombre.'];
     $pasaje = ['25:1-13'];
   }
 
@@ -1395,7 +1395,7 @@ function parabolas(){
       'El señor le quitó el talento y se lo dio al siervo que tenía diez talentos. Dijo: "A todo el que usa bien lo que se le ha dado, se le dará más. Pero al que no usa bien lo que se le ha dado, hasta lo que tiene se le quitará."',
       '¡Jesús contó esta historia para enseñar que Dios espera que usemos los dones, habilidades y oportunidades que Él nos da. Cuando los usamos bien, Él nos dará más responsabilidades y bendiciones!'];
     $evangelio = ['Mateo', 'Lucas'];
-    $enlaceEvangelio = ['?v1=MT25_14&t1=local%3Aspablm&w1=bible', '?v1=LK19_11&t1=local%3Aspablm&w1=bible'];
+    $enlaceEvangelio = ['../../spablm_html/MAT25.htm#:~:text=Pues es como un hombre que%2C al ir,exteriores%2C donde habrá llanto y crujir de dientes”.', '../../spablm_html/LUK19.htm#:~:text=Oyendo ellos estas cosas%2C prosiguió Jesús y dijo,traedlos acá%2C y decapitadlos delante de mí.'];
     $pasaje = ['25:14-30', '19:11-27'];
   }
 
@@ -1412,7 +1412,7 @@ function parabolas(){
       'Los cabritos son las personas que no ayudaron a otros. Jesús dice que lo ignoraron a Él al no preocuparse por los demás.',
       'Esta historia nos enseña que mostrar bondad hacia los demás es muy importante para Dios.'];
     $evangelio = ['Mateo'];
-    $enlaceEvangelio = ['?v1=MT25_31&t1=local%3Aspablm&w1=bible'];
+    $enlaceEvangelio = ['../../spablm_html/MAT25.htm#:~:text=Pero cuando el Hijo del Hombre venga en,eterno%2C pero los justos a la vida eterna.'];
     $pasaje = ['25:31-46'];
   }
 
@@ -1429,7 +1429,7 @@ function parabolas(){
       'Jesús pregunta cuál de las personas amará más al prestamista. La respuesta es aquella a la que se le perdonó más.',
       'Esto nos muestra que las personas que saben que han sido perdonadas mucho por Dios lo amarán más.'];
     $evangelio = ['Lucas'];
-    $enlaceEvangelio = ['?t1=local%3Aspablm&w1=bible&v1=LK7_41'];
+    $enlaceEvangelio = ['../../spablm_html/LUK07.htm#:~:text=Un acreedor tenía dos deudores:,Y él le dijo: «Has juzgado rectamente».'];
     $pasaje = ['7:41-43'];
   }
 
@@ -1446,7 +1446,7 @@ function parabolas(){
       'Finalmente, envió a su hijo, pensando que lo respetarían. Pero los labradores mataron al hijo.',
       'Jesús contó esta historia para mostrar cómo la gente rechazó a los mensajeros de Dios e incluso a Jesús, el Hijo de Dios.'];
     $evangelio = ['Mateo', 'Marcos', 'Lucas'];
-    $enlaceEvangelio = ['?v1=MT21_33&w1=bible&t1=local%3Aspablm', '?v1=MK12_1&w1=bible&t1=local%3Aspablm', '?v1=LK20_9&w1=bible&t1=local%3Aspablm'];
+    $enlaceEvangelio = ['../../spablm_html/MAT21.htm#:~:text=Oíd otra parábola:,la multitud%2C porque ésta le tenía por profeta.', '../../spablm_html/MRK12.htm#:~:text=Se puso a hablarles en parábolas.,Lo dejaron y se fueron.', '../../spablm_html/LUK20.htm#:~:text=Comenzó luego a decir al pueblo esta parábola:,había dicho esta parábola; pero temieron al pueblo.'];
     $pasaje = ['21:33-46', '12:1-12', '20:9-19'];
   }
 
@@ -1463,7 +1463,7 @@ function parabolas(){
       'El rey entonces invitó a personas de las calles, tanto buenos como malos, y la sala de bodas se llenó.',
       "Jesús dice que esto es como el reino de Dios—todos están invitados, pero debemos estar preparados y tomarlo en serio."];
     $evangelio = ['Mateo', 'Lucas'];
-    $enlaceEvangelio = ['?v1=MT22_1&w1=bible&t1=local%3Aspablm', '?v1=LK14_16&w1=bible&t1=local%3Aspablm'];
+    $enlaceEvangelio = ['../../spablm_html/MAT22.htm#:~:text=Respondiendo Jesús%2C les volvió a hablar en parábolas%2C diciendo:,Porque muchos son llamados%2C y pocos escogidos».', '../../spablm_html/LUK14.htm#:~:text=Entonces él le dijo:,hombres que fueron invitados gustará mi cena’ ”.'];
     $pasaje = ['22:1-14', '14:16-24'];
   }
 
@@ -1480,7 +1480,7 @@ function parabolas(){
       'Pensó, "¡Ahora puedo relajarme, comer, beber y disfrutar la vida!"',
       'Pero esa noche, murió. Jesús dijo que esto muestra cuán insensato es pensar solo en el dinero y no en Dios.'];
     $evangelio = ['Lucas'];
-    $enlaceEvangelio = ['?t1=local%3Aspablm&w1=bible&v1=LK12_13'];
+    $enlaceEvangelio = ['../../spablm_html/LUK12.htm#:~:text=Le dijo uno de la multitud:,tesoro%2C y no es rico para con Dios.'];
     $pasaje = ['12:13-21'];
   }
 
@@ -1501,7 +1501,7 @@ function parabolas(){
       "Pero las personas que escuchan Sus palabras y no las siguen son como el constructor insensato que edificó sobre arena. Cuando vengan los problemas, todo se derrumbará para ellos.",
       "¡Esta historia nos enseña que no es suficiente solo escuchar lo que Jesús dice - necesitamos realmente hacer lo que Él nos enseña!"];
     $evangelio = ['Mateo', 'Lucas'];
-    $enlaceEvangelio = ['?t1=local%3Aspablm&w1=bible&v1=MT7_24', '?t1=local%3Aspablm&w1=bible&v1=LK6_47'];
+    $enlaceEvangelio = ['../../spablm_html/MAT07.htm#:~:text=Cualquiera%2C pues%2C que me oye estas palabras%2C y,casa; y cayó%2C y fue grande su ruina.', '../../spablm_html/LUK06.htm#:~:text=Todo el que viene a mí%2C y escucha,y la ruina de aquella casa fue grande.'];
     $pasaje = ['7:24-27', '6:47-49'];
   }
 
@@ -1520,7 +1520,7 @@ function parabolas(){
       "Jesús estaba enseñando que el reino de Dios crece de maneras que no siempre entendemos. Podemos plantar semillas al hablar a otros acerca de Jesús, ¡pero es Dios quien hace que esas semillas crezcan!",
       "Esta historia nos muestra que no necesitamos preocuparnos tanto por hacer crecer el reino de Dios - ¡ese es el trabajo de Dios! Nuestro trabajo es esparcir las semillas y estar listos para la cosecha."];
     $evangelio = ['Marcos'];
-    $enlaceEvangelio = ['?v1=MK4_26&w1=bible&t1=local%3Aspablm'];
+    $enlaceEvangelio = ['../../spablm_html/MRK04.htm#:~:text=Dijo: «El Reino de Dios es como si,mete la hoz%2C porque ha llegado la cosecha.'];
     $pasaje = ['4:26-29'];
   }
 
@@ -1539,7 +1539,7 @@ function parabolas(){
       "Jesús estaba diciendo que no puedes simplemente añadir Sus nuevas enseñanzas al antiguo sistema religioso - no encajarían bien juntos. ¡Su nueva forma requería un comienzo completamente nuevo!",
       "¡Esta historia ayudó a la gente a ver que Jesús no solo estaba arreglando la antigua manera de hacer las cosas. Él estaba trayendo algo totalmente nuevo que cambiaría todo!"];
     $evangelio = ['Mateo', 'Marcos', 'Lucas'];
-    $enlaceEvangelio = ['?v1=MT9_16&w1=bible&t1=local%3Aspablm', '?v1=MK2_21&w1=bible&t1=local%3Aspablm', '?v1=LK5_36&w1=bible&t1=local%3Aspablm'];
+    $enlaceEvangelio = ['../../spablm_html/MAT09.htm#:~:text=Nadie pone un trozo de tela sin remendar', '../../spablm_html/MRK02.htm#:~:text=Nadie cose un trozo de tela sin remendar', '../../spablm_html/LUK05.htm#:~:text=También les contó una parábola.,nueva no coincidirá con el de la vieja.'];
     $pasaje = ['9:16', '2:21', '5:36'];
   }
 
@@ -1559,7 +1559,7 @@ function parabolas(){
       'Los "odres viejos" representaban los antiguos sistemas religiosos y tradiciones que no podían contener la nueva forma de Jesús sin romperse.',
       '¡Jesús estaba enseñando que Su mensaje era tan nuevo y diferente que necesitaba nuevas formas de pensar y nuevas estructuras. La gente necesitaba estar lista para formas completamente nuevas de relacionarse con Dios!'];
     $evangelio = ['Mateo', 'Marcos', 'Lucas'];
-    $enlaceEvangelio = ['?t1=local%3Aspablm&w1=bible&v1=MT9_17', '?v1=MK2_22&w1=bible&t1=local%3Aspablm', '?t1=local%3Aspablm&w1=bible&v1=LK5_37'];
+    $enlaceEvangelio = ['../../spablm_html/MAT09.htm#:~:text=Tampoco se pone vino nuevo en odres viejos%2C,nuevo en odres frescos%2C y ambos se conservan».', '../../spablm_html/MRK02.htm#:~:text=Nadie pone vino nuevo en odres viejos; de', '../../spablm_html/LUK05.htm#:~:text=Nadie pone vino nuevo en odres viejos%2C porque,el nuevo%2C porque dice: ‘El viejo es mejor’.'];
     $pasaje = ['9:17', '2:22', '5:37-39'];
   }
 
@@ -1578,7 +1578,7 @@ function parabolas(){
       'Jesús también dijo: "Ustedes son la luz del mundo". Él quería que Sus seguidores brillaran intensamente para que otros pudieran ver, como una ciudad en una colina que no puede ocultarse.',
       "¡Esta historia nos recuerda que no debemos esconder nuestra fe o las cosas que Dios nos ha enseñado. En cambio, debemos dejar que nuestra luz brille para que otros puedan verla y dar gloria a Dios!"];
     $evangelio = ['Mateo', 'Marcos', 'Lucas', 'Lucas'];
-    $enlaceEvangelio = ['?t1=local%3Aspablm&w1=bible&v1=MT5_14', '?v1=MK4_21&w1=bible&t1=local%3Aspablm', '?t1=local%3Aspablm&w1=bible&v1=LK8_16', '?t1=local%3Aspablm&w1=bible&v1=LK11_33'];
+    $enlaceEvangelio = ['../../spablm_html/MAT05.htm#:~:text=Vosotros sois la luz del mundo.,a vuestro Padre que está en los cielos.', '../../spablm_html/MRK04.htm#:~:text=Les dijo:,no es para que salga a la luz.', '../../spablm_html/LUK08.htm#:~:text=Nadie que enciende una luz la cubre con,de ser conocido%2C y de salir a luz.', '../../spablm_html/LUK11.htm#:~:text=Nadie pone en oculto la luz encendida%2C ni,cuando una lámpara te alumbra con su resplandor.'];
     $pasaje = ['5:14-16', '4:21-22', '8:16-17', '11:33-36'];
   }
 
@@ -1598,7 +1598,7 @@ function parabolas(){
       'Y comparó a los recaudadores de impuestos y prostitutas (personas que todos despreciaban) con el primer hijo. Estas personas habían dicho "no" a Dios al principio a través de sus vidas pecaminosas, pero luego cambiaron de opinión y verdaderamente se arrepintieron cuando escucharon el mensaje de Juan el Bautista.',
       "Jesús estaba enseñando que no es solo lo que decimos lo que importa a Dios, sino lo que realmente hacemos. Dios se preocupa más por el verdadero arrepentimiento y la obediencia que por las personas que solo dicen las palabras religiosas correctas pero no cumplen con sus acciones."];
     $evangelio = ['Mateo'];
-    $enlaceEvangelio = ['?t1=local%3Aspablm&w1=bible&v1=MT21_28'];
+    $enlaceEvangelio = ['../../spablm_html/MAT21.htm#:~:text=Pero ¿qué os parece?,viendo esto%2C no os arrepentisteis después para creerle.'];
     $pasaje = ['21:28-32'];
   }
 
@@ -1619,7 +1619,7 @@ function parabolas(){
       'Jesús luego enseñó: "Gánense amigos por medio de las riquezas mundanas, para que cuando éstas se acaben, se les reciba en las moradas eternas." Estaba diciendo que deberíamos usar nuestro dinero y posesiones de maneras que tengan valor eterno - como ayudar a otros y avanzar el reino de Dios.',
       'Jesús terminó con un recordatorio importante: "El que es fiel en lo muy poco, también en lo más es fiel." Enseñó que la manera en que manejamos el dinero muestra mucho sobre nuestro carácter, y no podemos servir a Dios y al dinero al mismo tiempo.'];
     $evangelio = ['Lucas'];
-    $enlaceEvangelio = ['?t1=local%3Aspablm&w1=bible&v1=LK16_1'];
+    $enlaceEvangelio = ['../../spablm_html/LUK16.htm#:~:text=Dijo también a sus discípulos:,No podéis servir a Dios y a las riquezas».'];
     $pasaje = ['16:1-13'];
   }
 
@@ -1636,7 +1636,7 @@ function parabolas(){
       '¡Finalmente, el amigo se levantó y le dio lo que necesitaba - no porque fueran amigos, sino porque el hombre era tan persistente!',
       "Jesús usó esta historia para enseñarnos sobre la oración. Dios no es como el amigo malhumorado que no quiere ayudar. Pero Jesús quiere que entendamos que debemos seguir orando y no darnos por vencidos, incluso cuando parece que nadie está escuchando."];
     $evangelio = ['Lucas'];
-    $enlaceEvangelio = ['?t1=local%3Aspablm&w1=bible&v1=LK11_5'];
+    $enlaceEvangelio = ['../../spablm_html/LUK11.htm#:~:text=Les dijo también:,levantará y le dará todo lo que necesite.'];
     $pasaje = ['11:5-8'];
   }
 
@@ -1654,7 +1654,7 @@ function parabolas(){
       "Esta parábola nos enseña que Dios es paciente con nosotros, pero Él espera que crezcamos y cambiemos. Nos da oportunidades para ser mejores y producir 'buen fruto' en nuestras vidas, pero Su paciencia no durará para siempre.",
       'Necesitamos usar el tiempo que Él nos da para crecer y convertirnos en mejores personas.'];
     $evangelio = ['Lucas'];
-    $enlaceEvangelio = ['?t1=local%3Aspablm&w1=bible&v1=LK13_6'];
+    $enlaceEvangelio = ['../../spablm_html/LUK13.htm#:~:text=Dijo esta parábola:,bien; pero si no%2C después puedes cortarla’ ”.'];
     $pasaje = ['13:6-9'];
   }
 
@@ -1673,7 +1673,7 @@ function parabolas(){
       "Jesús usó esta historia para mostrar cómo muchas personas que deberían haber aceptado la invitación de Dios para ser parte de Su reino ponen excusas y se pierden. Así que Dios da la bienvenida a aquellos que la sociedad a menudo ignora o menosprecia.",
       "El punto es que la invitación de Dios es para todos, pero especialmente para aquellos que reconocen su necesidad de Él."];
     $evangelio = ['Lucas'];
-    $enlaceEvangelio = ['?t1=local%3Aspablm&w1=bible&v1=LK14_15'];
+    $enlaceEvangelio = ['../../spablm_html/LUK14.htm#:~:text=Oyendo esto uno de los que estaban sentados,hombres que fueron invitados gustará mi cena’ ”.'];
     $pasaje = ['14:15-24'];
   }
 
@@ -1690,7 +1690,7 @@ function parabolas(){
       "En la segunda historia, Jesús describió a un rey que está a punto de ir a la guerra contra otro rey. Antes de luchar, necesita averiguar si sus 10,000 soldados pueden vencer a los 20,000 soldados del otro rey. Si no, ¡mejor envía a alguien para pedir condiciones de paz!",
       'Jesús usó estos ejemplos para enseñar que seguirlo es una decisión seria. Necesitamos entender lo que nos costará - como tal vez perder amigos o enfrentar tiempos difíciles - y estar preparados para ir hasta el final, no solo comenzar y luego renunciar cuando las cosas se pongan difíciles.'];
     $evangelio = ['Lucas'];
-    $enlaceEvangelio = ['?t1=local%3Aspablm&w1=bible&v1=LK14_28'];
+    $enlaceEvangelio = ['../../spablm_html/LUK14.htm#:~:text=Porque ¿quién de vosotros%2C queriendo edificar una torre%2C,lo que posee%2C no puede ser mi discípulo.'];
     $pasaje = ['14:28-33'];
   }
 
@@ -1708,7 +1708,7 @@ function parabolas(){
       "Simplemente deberían decir: 'Somos siervos inútiles; solo hemos hecho lo que era nuestro deber hacer.'",
       "Esto nos enseña a ser humildes cuando servimos a Dios y a los demás. No deberíamos servir para obtener atención o elogios, sino porque es lo correcto."];
     $evangelio = ['Lucas'];
-    $enlaceEvangelio = ['?t1=local%3Aspablm&w1=bible&v1=LK17_7'];
+    $enlaceEvangelio = ['../../spablm_html/LUK17.htm#:~:text=Pero%2C ¿quién de vosotros que tenga un siervo,Hemos cumplido con nuestro deber’ ”.'];
     $pasaje = ['17:7-10'];
   }
 
@@ -1726,7 +1726,7 @@ function parabolas(){
       'Jesús explicó que si incluso un juez injusto eventualmente ayuda debido a la persistencia, cuánto más Dios - quien es perfectamente bueno y nos ama - responderá a Su pueblo que ora día y noche?',
       "Pero entonces Jesús hizo una triste pregunta: '¿Cuando regrese, encontraré personas en la tierra que todavía tengan fe?' Esto nos recuerda seguir confiando en Dios y orando incluso cuando parece que Él no está respondiendo de inmediato."];
     $evangelio = ['Lucas'];
-    $enlaceEvangelio = ['?t1=local%3Aspablm&w1=bible&v1=LK18_1'];
+    $enlaceEvangelio = ['../../spablm_html/LUK18.htm#:~:text=También les refirió una parábola sobre la necesidad,Hijo del Hombre%2C ¿hallará fe en la tierra?'];
     $pasaje = ['18:1-8'];
   }
 
@@ -1743,7 +1743,7 @@ function parabolas(){
       "Jesús estaba advirtiendo a la gente que tuviera cuidado con quién escucha y de quién aprende. Algunos maestros religiosos actúan como si lo supieran todo acerca de Dios, pero si realmente no entienden la verdad de Dios, seguirlos llevará a problemas.",
       "Jesús también enseñó que un estudiante no es mejor que su maestro - en el mejor de los casos, sabrá lo que su maestro sabe. Así que si queremos crecer en nuestro entendimiento de Dios, necesitamos asegurarnos de aprender de personas que realmente lo conocen."];
     $evangelio = ['Mateo', 'Lucas'];
-    $enlaceEvangelio = ['?t1=local%3Aspablm&w1=bible&v1=MT15_14', '?t1=local%3Aspablm&w1=bible&v1=LK6_39'];
+    $enlaceEvangelio = ['../../spablm_html/MAT15.htm#:~:text=Dejadlos; son ciegos guías de ciegos.,guiare al ciego%2C ambos caerán en el hoyo».', '../../spablm_html/LUK06.htm#:~:text=Les dijo una parábola.,¿No caerán ambos en un hoyo?'];
     $pasaje = ['15:14', '6:39'];
   }
 
@@ -1762,7 +1762,7 @@ function parabolas(){
       "Jesús estaba enseñando cómo debemos vivir mientras esperamos Su regreso. No debemos volvernos perezosos ni hacer cosas incorrectas solo porque Jesús aún no ha vuelto.",
       "En cambio, debemos hacer fielmente lo que Él nos ha pedido, cuidando a los demás y viviendo correctamente, para estar listos cuando Él regrese."];
     $evangelio = ['Mateo', 'Lucas'];
-    $enlaceEvangelio = ['?t1=local%3Aspablm&w1=bible&v1=MT24_45', '?t1=local%3Aspablm&w1=bible&v1=LK12_42'];
+    $enlaceEvangelio = ['../../spablm_html/MAT24.htm#:~:text=¿Quién es%2C pues%2C el siervo fiel y prudente%2C,será el lloro y el crujir de dientes.', '../../spablm_html/LUK12.htm#:~:text=Y dijo el Señor:,se le haya confiado%2C más se le pedirá.'];
     $pasaje = ['24:45-51', '12:42-48'];
   }
 
@@ -1780,7 +1780,7 @@ function parabolas(){
       'En otra versión de esta enseñanza, Jesús describió a un hombre que se va de viaje y pone a sus siervos a cargo de su casa, dando a cada uno un trabajo que hacer. El portero especialmente necesita permanecer despierto y vigilante porque nadie sabe cuándo regresará el señor - por la tarde, a medianoche, cuando cante el gallo, o al amanecer.',
       "Jesús nos estaba enseñando a vivir de manera que estaríamos felices de que Él nos encuentre en cualquier momento - no haciendo cosas incorrectas o siendo perezosos, sino haciendo activamente lo que Él nos ha pedido que hagamos."];
     $evangelio = ['Marcos', 'Lucas'];
-    $enlaceEvangelio = ['?v1=MK13_34&w1=bible&t1=local%3Aspablm', '?t1=local%3Aspablm&w1=bible&v1=LK12_35'];
+    $enlaceEvangelio = ['../../spablm_html/MRK13.htm#:~:text=Es como si un hombre que viaja a,Lo que os digo%2C lo digo a todos: ¡Velad!', '../../spablm_html/LUK12.htm#:~:text=Estén ceñidos vuestros lomos%2C y vuestras lámparas encendidas;,que no penséis%2C el Hijo del Hombre vendrá.'];
     $pasaje = ['13:34-37', '12:35-40'];
   }
 
@@ -1798,7 +1798,7 @@ function parabolas(){
       "Jesús estaba señalando cómo algunas personas estaban simplemente decididas a encontrar faltas sin importar qué. Estos críticos no estaban siendo honestos ni justos - simplemente no querían escuchar el mensaje de Dios, así que ponían excusas sobre los mensajeros.",
       "Pero Jesús dijo que la sabiduría se demuestra por sus resultados - tanto Su camino como el de Juan eran parte del plan de Dios y produjeron buenos frutos en las vidas de quienes realmente escucharon."];
     $evangelio = ['Mateo', 'Lucas'];
-    $enlaceEvangelio = ['?t1=local%3Aspablm&w1=bible&v1=MT11_16', '?t1=local%3Aspablm&w1=bible&v1=LK7_31'];
+    $enlaceEvangelio = ['../../spablm_html/MAT11.htm#:~:text=¿Pero con qué compararé a esta generación?,Pero la sabiduría se justifica por sus hijos.', '../../spablm_html/LUK07.htm#:~:text=¿A qué%2C pues%2C compararé a los hombres,Mas la sabiduría es justificada por todos sus hijos”.'];
     $pasaje = ['11:16-19', '7:31-35'];
   }
 
@@ -1817,7 +1817,7 @@ function parabolas(){
       "Esto no significa que nunca debamos ayudar a otros a mejorar - significa que necesitamos ser honestos sobre nuestros propios defectos primero. Debemos ocuparnos de nuestros propios errores antes de señalar con el dedo a los demás.",
       'Jesús quiere que nos ayudemos mutuamente a crecer, pero con humildad y autoconciencia, no con una actitud crítica.'];
     $evangelio = ['Mateo', 'Lucas'];
-    $enlaceEvangelio = ['?t1=local%3Aspablm&w1=bible&v1=MT7_3', '?t1=local%3Aspablm&w1=bible&v1=LK6_41'];
+    $enlaceEvangelio = ['../../spablm_html/MAT07.htm#:~:text=¿Y por qué miras la paja que está,sacar la paja del ojo de tu hermano.', '../../spablm_html/LUK06.htm#:~:text=¿Por qué miras la paja que está en,que está en el ojo de tu hermano.'];
     $pasaje = ['7:3-5', '6:41-42'];
   }
 
@@ -1835,7 +1835,7 @@ function parabolas(){
       "Esta parábola enseña que ahora mismo, tanto las personas que verdaderamente siguen a Dios como las que no, están mezcladas en el mundo - igual que diferentes tipos de peces en la misma red. Pero llegará un tiempo en que Dios separará a todos.",
       "Es un recordatorio serio de que nuestras decisiones ahora sobre si seguir a Jesús o no tienen grandes consecuencias para nuestro futuro. Jesús quiere que todos seamos contados entre los 'peces buenos' al creer en Él y vivir de acuerdo con Sus enseñanzas."];
     $evangelio = ['Mateo'];
-    $enlaceEvangelio = ['?t1=local%3Aspablm&w1=bible&v1=MT13_47'];
+    $enlaceEvangelio = ['../../spablm_html/MAT13.htm#:~:text=Además%2C el Reino de los Cielos es como,Allí será el llanto y el crujir de dientes».'];
     $pasaje = ['13:47-50'];
   }
 
@@ -1854,7 +1854,7 @@ function parabolas(){
       '¡Jesús estaba diciendo a Sus discípulos que debían usar tanto la sabiduría atesorada de las escrituras del Antiguo Testamento COMO las nuevas enseñanzas que Él les estaba dando. Ambas son valiosas!',
       "Esto nos enseña que debemos apreciar la sabiduría tradicional mientras permanecemos abiertos a nuevas perspectivas sobre la verdad de Dios."];
     $evangelio = ['Mateo'];
-    $enlaceEvangelio = ['?t1=local%3Aspablm&w1=bible&v1=MT13_52'];
+    $enlaceEvangelio = ['../../spablm_html/MAT13.htm#:~:text=Les dijo:,de su tesoro cosas nuevas y cosas viejas.'];
     $pasaje = ['13:52'];
   }
 
@@ -1873,7 +1873,7 @@ function parabolas(){
       "Luego Jesús dio la verdadera lección: debemos usar nuestro dinero ('riquezas injustas') para ayudar a otros y hacer amigos, para que cuando el dinero terrenal se acabe, estas personas nos reciban en las 'moradas eternas' (el cielo).",
       "Jesús estaba enseñando que debemos ser al menos tan inteligentes en el uso de nuestros recursos para propósitos eternos como lo son las personas deshonestas al usar el dinero para su beneficio temporal en la tierra."];
     $evangelio = ['Lucas'];
-    $enlaceEvangelio = ['?t1=local%3Aspablm&w1=bible&v1=LK16_1'];
+    $enlaceEvangelio = ['../../spablm_html/LUK16.htm#:~:text=Dijo también a sus discípulos:,éstas falten%2C os reciban en las moradas eternas.'];
     $pasaje = ['16:1-9'];
   }
 
@@ -1892,7 +1892,7 @@ function parabolas(){
       'Esta hermosa imagen nos enseña que Jesús nos ama personalmente, nos protege, nos guía y hizo el sacrificio máximo por nosotros.',
       'También muestra que Jesús no es solo una buena persona o maestro - Él reclamó la autoridad para entregar Su vida y tomarla de nuevo, algo que solo Dios podría hacer.'];
     $evangelio = ['Juan'];
-    $enlaceEvangelio = ['?v1=JN10_1&w1=bible&t1=local%3Aspablm'];
+    $enlaceEvangelio = ['../../spablm_html/JHN10.htm#:~:text=Os aseguro que el que no entra por,Este mandamiento lo recibí de mi Padre».'];
     $pasaje = ['10:1-18'];
   }
 
@@ -1910,7 +1910,7 @@ function parabolas(){
       '¡Pero también dio una promesa asombrosa: si permanecemos conectados a Él y Sus palabras permanecen en nosotros, podemos pedir lo que queramos, y nos será concedido!',
       "El 'fruto' del que Jesús habló incluye cosas como amor, gozo, paz, paciencia y bondad - las buenas cualidades que naturalmente crecen en nuestras vidas cuando permanecemos cerca de Él."];
     $evangelio = ['Juan'];
-    $enlaceEvangelio = ['?v1=JN15_1&w1=bible&t1=local%3Aspablm'];
+    $enlaceEvangelio = ['../../spablm_html/JHN15.htm#:~:text=Yo soy la verdadera vid%2C y mi Padre,deis mucho fruto; y así seréis mis discípulos.'];
     $pasaje = ['15:1-8'];
   }
 
@@ -1928,7 +1928,7 @@ function parabolas(){
       "Esta parábola nos enseña humildad en nuestra relación con Dios. No deberíamos servir a Dios esperando alabanzas especiales o pensando que merecemos recompensas. Todo lo que tenemos ya viene de Dios, así que cuando lo servimos, simplemente estamos haciendo lo que debemos hacer.",
       "Esto no significa que Dios no aprecie nuestro servicio - otras enseñanzas muestran que Él sí recompensa la fidelidad. Pero nos recuerda que nuestra actitud debe ser de humilde gratitud por el privilegio de servirle, no de orgullo o un sentimiento de que Dios nos debe algo."];
     $evangelio = ['Lucas'];
-    $enlaceEvangelio = ['?t1=local%3Aspablm&w1=bible&v1=LK17_7'];
+    $enlaceEvangelio = ['../../spablm_html/LUK17.htm#:~:text=Pero%2C ¿quién de vosotros que tenga un siervo,Hemos cumplido con nuestro deber’ ”.'];
     $pasaje = ['17:7-10'];
   }
     ?>

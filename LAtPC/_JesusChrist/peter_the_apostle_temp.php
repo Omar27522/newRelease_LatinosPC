@@ -25,7 +25,7 @@ They came and saw where he was staying, and they stayed with him that day. It wa
 <section data-section="The Rock Upon Which The Church Is Built">
   <h2>The Rock Upon Which The Church Is Built</h2>
   <p class="verse">"You are Peter, and on this rock I will build my church; and the gates of Hades will not overcome it." Lord and Savior Jesus Christ <a
-      href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT16_18"><ruby>Matthew<rt>16:18</rt>
+      href="../../eng-web_html/MAT16.htm#:~:text=I%20also%20tell%20you%20that%20you,it."><ruby>Matthew<rt>16:18</rt>
       </ruby></a></p>
   <!-- Carousel -->
   <div class="carousel-group fl">
@@ -42,13 +42,13 @@ They came and saw where he was staying, and they stayed with him that day. It wa
     friends to a place called Caesarea Philippi. It wasn’t a quiet park; it was at the foot of a massive, towering cliff of solid rock. In that cliff, there was a deep, dark cave
     that people back then called the "Gates of Hades" (or the Gates of Hell). They thought the cave was a doorway to the underworld. So, while Jesus is talking about "rocks" and
     "gates," his disciples were likely looking right at a giant rock wall and a scary-looking cave!</p>
-  <p>At the beginning of <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT16_13">Matthew 16:13</a>, Jesus asked this question: <strong>Who do men say that I, the
+  <p>At the beginning of <a href="../../eng-web_html/MAT16.htm#:~:text=Now when Jesus came into the,I%2C the Son of Man%2C am?">Matthew 16:13</a>, Jesus asked this question: <strong>Who do men say that I, the
       Son of Man, am?</strong> After hearing what other people claimed who He was, he asked the following question: <strong>Who do you say that I am?</strong> Simon Peter
     confessed, <strong>“You are the Christ, the Son of the living God.”</strong> Then Jeus Stated: <p class="verse"><strong>"Blessed are you, Simon Bar Jonah, for flesh and blood
         has not revealed this to you, but my Father who is in heaven. I also tell you that you are Peter, and on this rock I will build my assembly (church), and the gates of Hades
         will not prevail against it. I will give to you the keys of the Kingdom of Heaven, and whatever you bind on earth will have been bound in heaven; and whatever you release
         on earth will have been released in heaven."</strong>
-      <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT16_17"><ruby>Matthew<rt>16:17</rt>
+      <a href="../../eng-web_html/MAT16.htm#:~:text=Jesus answered him%2C “Blessed are you%2C,my Father who is in heaven."><ruby>Matthew<rt>16:17</rt>
         </ruby></a>
     </p>
     <p class="apostles-list"><a href="https://en.wikipedia.org/wiki/Banias" title="Wikipedia">Caesarea Philippi</a> sat at the base of a massive rock cliff, dominated by stone
@@ -58,15 +58,15 @@ They came and saw where he was staying, and they stayed with him that day. It wa
       <a href="https://en.wikipedia.org/wiki/Hell_in_Christianity" title="Wikipedia">underworld</a>, a place where death and dark spiritual powers were close at hand. </p>
     <p> Surrounded by towering rock, false gods, and symbols of earthly power, Jesus asked His disciples a startling question:<br />
       <strong>“<a href="https://www.gotquestions.org/who-do-you-say-that-I-am.html" title="GotQuestions">Who do people say that I am?</a>”</strong>
-      <small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT16_13"><ruby>Matthew<rt>16:13</rt>
+      <small><a href="../../eng-web_html/MAT16.htm#:~:text=Now when Jesus came into the,I%2C the Son of Man%2C am?"><ruby>Matthew<rt>16:13</rt>
           </ruby></a></small> They answered with respected names—<a href="https://en.wikipedia.org/wiki/John_the_Baptist" title="Wikipedia">John the Baptizer</a>, <a
         href="https://en.wikipedia.org/wiki/Elijah" title="wikipedia">Elijah</a>, <a href="https://en.wikipedia.org/wiki/Jeremiah" title="wikipedia">Jeremiah</a>, one of the <a
         href="https://en.wikipedia.org/wiki/Prophet#Judaism" title="wikipedia">prophets</a>. In other words, many thought Jesus was important, powerful, even sent by God—but still
       just another messenger. Then Jesus made it personal:<br /> “<a href="https://www.gotquestions.org/who-do-you-say-that-I-am.html" title="GotQuestions">But who do you say that
-        I am?</a>” <small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT16_15"><ruby>Matthew<rt>16:15</rt>
+        I am?</a>” <small><a href="../../eng-web_html/MAT16.htm#:~:text=He said to them%2C “But who,do you say that I am?"><ruby>Matthew<rt>16:15</rt>
           </ruby></a></small>
       <p>In front of that massive cliff and the so-called gates of the underworld, Simon Peter declared, “<strong>You are the Christ, the Son of the living God.</strong>”<a
-          href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT16_16"><ruby>Matthew<rt>16:16</rt>
+          href="../../eng-web_html/MAT16.htm#:~:text=Simon Peter answered%2C “You are the,the Son of the living God."><ruby>Matthew<rt>16:16</rt>
           </ruby></a></p>
       <p>This wasn’t said in a quiet synagogue or a peaceful field. It was spoken in a place saturated with claims of false divinity and the fear of death. Peter wasn’t just making
         a theological statement—he was confessing that Jesus is the true King, the true Son, and the true source of life, standing right in the shadow of death itself.</p>
@@ -194,18 +194,18 @@ They came and saw where he was staying, and they stayed with him that day. It wa
     <p>Simon wasn’t convinced, fishermen don’t believe things just because they sound good. But Andrew’s words stuck like a hook, nothing around Simon changed, the boat was still
       there, the nets still needed fixing, the lake still waited, but something inside Simon shifted.</p>
     <p>He didn’t know it yet, but that day—standing by the water, listening to his brother—would be the last normal day of his life.</p>
-    <h2>The Day the Nets Were Full <a href="https://ebible.org/study/?v1=LK5_1&w1=bible&t1=local%3Aeng-web" title="Luke 5:1-11">(Luke 5:1-11)</a></h2>
+    <h2>The Day the Nets Were Full <a href="../../eng-web_html/LUK05.htm#:~:text=Now while the multitude pressed on,they left everything%2C and followed him." title="Luke 5:1-11">(Luke 5:1-11)</a></h2>
     <h3 style="font-size: 1.2rem;border: 1.1px solid var(--secondary-color);width: 25%;" class="fl"><a href="?andrew#^">Andrew</a>, Simon's brother, seemed to be a follower of <a
         href="https://www.pbs.org/wgbh/pages/frontline/shows/religion/portrait/john.html">John the Baptist</a>. <small><a
-          href="https://ebible.org/study/?v1=LK3_4&w1=bible&t1=local%3Aeng-web"><ruby>Luke<rt>3:4-17</rt></ruby></a></small>
+          href="../../eng-web_html/LUK03.htm#:~:text=As it is written in the,up the chaff with unquenchable fire."><ruby>Luke<rt>3:4-17</rt></ruby></a></small>
       <hr style="margin-top:0;"><a href="?james#^">James</a> and <a href="?john#^">John</a> were fellow fishermen and friends of Simon.</h3>
     <p>Andrew couldn’t stop talking about the man John had baptized in the <a href="https://en.wikipedia.org/wiki/Jordan_River" title="Wikipedia">Jordan River</a>, and how the sky
       seemed to open when he came up from the water. Andrew said a voice came from heaven and said,<br /> <strong>“This is my Son, whom I love. I am very pleased with
         him.”</strong>
-      <small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT3_16" title="Matthew 3:16-17"><ruby>Matthew<rt>3:16-17</rt></ruby></a></small>
-      <small><a href="https://ebible.org/study/?v1=MK1_9&w1=bible&t1=local%3Aeng-web" title="Mark 3:9-11"><ruby>Mark<rt>3:9-11</rt></ruby></a></small>
-      <small><a href="https://ebible.org/study/?v1=LK3_22&w1=bible&t1=local%3Aeng-web" title="Luke 3:22"><ruby>Luke<rt>3:22</rt></ruby></a></small>
-      <small><a href="https://ebible.org/study/?v1=JN1_29&w1=bible&t1=local%3Aeng-web" title="John 1:29-34"><ruby>John<rt>1:29-34</rt></ruby></a></small>
+      <small><a href="../../eng-web_html/MAT03.htm#:~:text=Jesus%2C when he was baptized%2C went,with whom I am well pleased." title="Matthew 3:16-17"><ruby>Matthew<rt>3:16-17</rt></ruby></a></small>
+      <small><a href="../../eng-web_html/MRK01.htm#:~:text=In those days%2C Jesus came from,in whom I am well pleased." title="Mark 3:9-11"><ruby>Mark<rt>3:9-11</rt></ruby></a></small>
+      <small><a href="../../eng-web_html/LUK03.htm#:~:text=and the Holy Spirit descended in,In you I am well pleased." title="Luke 3:22"><ruby>Luke<rt>3:22</rt></ruby></a></small>
+      <small><a href="../../eng-web_html/JHN01.htm#:~:text=The next day%2C he saw Jesus,this is the Son of God." title="John 1:29-34"><ruby>John<rt>1:29-34</rt></ruby></a></small>
     </p>
     <p>He told Simon about a man by the river. A man who stepped into the water. A man Andrew believed was sent by God. Simon listened, but his hands stayed busy. Nets didn’t mend
       themselves. That morning, Simon was tired. Very tired.</p>
@@ -222,18 +222,18 @@ They came and saw where he was staying, and they stayed with him that day. It wa
     <p>The nets went into the water.</p>
     <p>Suddenly, they pulled hard.</p>
     <p>Fish filled them—too many. The nets began to tear. Simon shouted to James and John to help. Their boat rushed over. Fish poured in until both boats were so full they nearly
-      sank. Simon stared at the fish, then he looked at Jesus — fell to his knees and said: <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LK5_8"
+      sank. Simon stared at the fish, then he looked at Jesus — fell to his knees and said: <a href="../../eng-web_html/LUK05.htm#:~:text=But Simon Peter%2C when he saw,I am a sinful man%2C Lord."
         title="Luke 5:8"><strong>"Go away from me, Lord; I am a sinful man!"</strong></a> The lake had never done this before.</p>
     <p>Jesus looked at Simon, Andrew, James, and John. Then he told Simon and his helpers to not be afraid, from now on they would be catching men. Then they left the everything
-      and followed Jesus. <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=LK5_10" title="Luke 5:10-11"><small><ruby>Luke<rt>5:10-11</rt></ruby></small></a></p>
+      and followed Jesus. <a href="../../eng-web_html/LUK05.htm#:~:text=and so also were James and,they left everything%2C and followed him." title="Luke 5:10-11"><small><ruby>Luke<rt>5:10-11</rt></ruby></small></a></p>
   </div>
 </section>
 
     <h2 style="text-align: center;">Cephas's Journey</h2>
 <section data-section="Cephas's Journey">
-  <h3 class="verse">"Lord, if it is you, command me to come to you on the waters." <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT14_28"
+  <h3 class="verse">"Lord, if it is you, command me to come to you on the waters." <a href="../../eng-web_html/MAT14.htm#:~:text=Peter answered him and said%2C “Lord%2C,come to you on the waters."
       title="Matthew 14:28"><small>Matthew 14:28</small></a></h3>
-  <h3>Walking on Water <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT14_22" title="Matthew 14:22-33"><small>
+  <h3>Walking on Water <a href="../../eng-web_html/MAT14.htm#:~:text=Immediately Jesus made the disciples get,are truly the Son of God!" title="Matthew 14:22-33"><small>
         <ruby>Matthew<rt>14:22-33</rt></ruby>
       </small></a></h3>
   <div class="carousel-group fl">
@@ -249,15 +249,15 @@ They came and saw where he was staying, and they stayed with him that day. It wa
   </div>
   <p> One of the most famous stories of Peter's impulsiveness and faith is when he walked on water immediately after the <a
       href="https://en.wikipedia.org/wiki/Feeding_the_multitude#:~:text=The%20Feeding%20of%20the%205%2C000%20is%20also%20known%20as%20the,boy%20to%20feed%20a%20multitude."
-      title="Wikipedia"> Feeding of the Five Thousand</a> <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT14_13" title="Matthew 14:13–21"><small><ruby>Matthew
+      title="Wikipedia"> Feeding of the Five Thousand</a> <a href="../../eng-web_html/MAT14.htm#:~:text=Now when Jesus heard this%2C he,in addition to women and children." title="Matthew 14:13–21"><small><ruby>Matthew
           <rt>14:13–21</rt></ruby></small></a>. Jesus made the disciples get into a boat while He dismissed the crowd. Then He went up a mountain alone to pray. They were crossing
     the Sea of Galilee, heading to the other side, specifically toward the region of Gennesaret. Meanwhile, the disciples were already far from shore, struggling against strong
     winds. They were exhausted, alone, and fighting a storm—and Jesus had intentionally sent them into that situation. </p>
   <p> During a storm, Jesus came to the disciples' boat, walking on the sea. Peter, with his characteristic boldness, cried out, "<strong>Lord, if it is you, command me to come to
-      you on the water.</strong> <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT14_28" title="Matthew 14:28"><small><ruby>Matthew<rt>14:28</rt>
+      you on the water.</strong> <a href="../../eng-web_html/MAT14.htm#:~:text=Peter answered him and said%2C “Lord%2C,come to you on the waters." title="Matthew 14:28"><small><ruby>Matthew<rt>14:28</rt>
           </ruby></small></a>" Jesus told him to come, and Peter stepped out of the boat. For a moment, he walked on the water, but when he took his eyes off Jesus and saw the
     strong wind, he became afraid and began to sink. Jesus immediately reached out and saved him, asking, "<strong>You of little faith, why did you doubt?</strong> <a
-      href="https://ebible.org/study/?v1=MT14_31&w1=bible&t1=local%3Aeng-web" title="Matthew 14:31"><small><ruby>Matthew<rt>14:31</rt></ruby></small></a>" <aside
+      href="../../eng-web_html/MAT14.htm#:~:text=Immediately Jesus stretched out his hand%2C,little faith%2C why did you doubt?" title="Matthew 14:31"><small><ruby>Matthew<rt>14:31</rt></ruby></small></a>" <aside
       class="apostles-list">
       <h4 style="text-align: center;">Once Jesus rescued Peter and climbed into the boat, two major things happened:</h4>
       <hr style="width: 1%;margin-top:0;margin-bottom:1%;">
@@ -265,23 +265,23 @@ They came and saw where he was staying, and they stayed with him that day. It wa
       authority over nature.
       <hr style="width: 1%;margin-top:0;margin-bottom:1%;">
       <span style="font-size: 1.2em;display: block;color:var(--primary-dark)">The disciples worshiped Him.</span> They said, “<strong>Truly you are the Son of God.</strong>” <a
-        href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT14_33" title="Matthew 14:33"><small><ruby>Matthew<rt>14:33</rt></ruby></small></a> This is one of the first
+        href="../../eng-web_html/MAT14.htm#:~:text=Those who were in the boat,are truly the Son of God!" title="Matthew 14:33"><small><ruby>Matthew<rt>14:33</rt></ruby></small></a> This is one of the first
       moments in the Gospels where the disciples openly acknowledge Jesus’ divine identity.
     </aside>
-    <h3 style="padding-top: 2%;">The Transfiguration <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT17_1" title="Matthew 17:1-9"><small><ruby>Matthew<rt>17:1-9
+    <h3 style="padding-top: 2%;">The Transfiguration <a href="../../eng-web_html/MAT17.htm#:~:text=After six days%2C Jesus took with,Man has risen from the dead." title="Matthew 17:1-9"><small><ruby>Matthew<rt>17:1-9
             </rt></ruby></small></a></h3>
     <p> And it came to pass in those days that Jesus spoke to His disciples about the things that were to come. He asked them, “<strong>Who do you say that I am?</strong>” <a
-        href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT16_15" title="Matthew 16:15"><small><ruby>Matthew<rt>16:15</rt></ruby></small></a> And Simon Peter answered
-      and said, “<strong>You are the Messiah, the Son of the living God.</strong>” <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT16_16"
+        href="../../eng-web_html/MAT16.htm#:~:text=He said to them%2C “But who,do you say that I am?" title="Matthew 16:15"><small><ruby>Matthew<rt>16:15</rt></ruby></small></a> And Simon Peter answered
+      and said, “<strong>You are the Messiah, the Son of the living God.</strong>” <a href="../../eng-web_html/MAT16.htm#:~:text=Simon Peter answered%2C “You are the,the Son of the living God."
         title="Matthew 16:16"><small><ruby>Matthew<rt>16:16</rt></ruby></small></a> Though he spoke truly, he did not yet understand the weight of those words. After this, Jesus
       began to teach His disciples that He must suffer many things. Peter, troubled in heart, could not accept it. His thoughts were heavy, and his understanding was dim. Yet he
       followed Jesus still, for he loved him and believed that life was found in his words. And after six days, Jesus took Peter, James, and John and led them up a high mountain
       apart from the others. The air was quiet, and the path was steep, but the three followed him, not knowing what the Lord intended. <a
-        href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT17_1" title="Matthew 17:1">Matthew 17:1</a></p>
+        href="../../eng-web_html/MAT17.htm#:~:text=After six days%2C Jesus took with,into a high mountain by themselves." title="Matthew 17:1">Matthew 17:1</a></p>
     <aside class="verse" style="border-color: var(--primary-dark);">
       <p>In the Scriptures, mountains were often places where God revealed Himself in powerful ways. Long before Peter’s time, <a href="https://en.wikipedia.org/wiki/Moses"
           title="Wikipedia">Moses</a> met God on <a href="https://en.wikipedia.org/wiki/Mount_Sinai" title="Wikipedia">Mount Sinai</a>, where the mountain shook, a cloud covered
-        it, and God gave His people the Ten Commandments. <a href="https://ebible.org/study/?v1=EX19_16&w1=bible&t1=local%3Aeng-web" title="Exodus 19:16"><small><ruby>Exodus<rt>
+        it, and God gave His people the Ten Commandments. <a href="../../eng-web_html/EXO19.htm#:~:text=On the third day%2C when it,who were in the camp trembled." title="Exodus 19:16"><small><ruby>Exodus<rt>
                 19:16</rt></ruby></small></a></p>
       <p> The prophet <a href="https://en.wikipedia.org/wiki/Elijah" title="Wikipedia">Elijah</a> later heard God’s gentle whisper on <a
           href="https://en.wikipedia.org/wiki/Mount_Horeb" title="Wikipedia">Mount Horeb</a>, another sacred mountain. <a href="https://en.wikipedia.org/wiki/Abraham"
@@ -306,20 +306,20 @@ They came and saw where he was staying, and they stayed with him that day. It wa
       was changed before them. His face shone as the sun, and his garments became white as light, brighter than any earthly whiteness. And behold, Moses and Elijah appeared in
       glory, speaking with Jesus about the things he would accomplish in Jerusalem. When Peter saw this, fear and wonder filled him. Not knowing what he said, he spoke to Jesus,
       “<strong>Lord, it is good for us to be here. If you wish, let us make three shelters—one for you, one for Moses, and one for Elijah.</strong>”<a
-        href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT17_4" title="Matthew 17:4"><small><ruby>Matthew<rt>17:4</rt></ruby></small></a> While he yet spoke, a
+        href="../../eng-web_html/MAT17.htm#:~:text=Peter answered and said to Jesus%2C,for Moses%2C and one for Elijah." title="Matthew 17:4"><small><ruby>Matthew<rt>17:4</rt></ruby></small></a> While he yet spoke, a
       bright cloud overshadowed them, and from the cloud came a voice, saying, “<strong>This is my beloved Son, with whom I am well pleased; listen to him.</strong>”<a
-        href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT17_5" title="Matthew 17:5"><small><ruby>Matthew<rt>17:5</rt></ruby></small></a> Hearing this, Peter and the
+        href="../../eng-web_html/MAT17.htm#:~:text=While he was still speaking%2C behold%2C,am well pleased. Listen to him." title="Matthew 17:5"><small><ruby>Matthew<rt>17:5</rt></ruby></small></a> Hearing this, Peter and the
       others fell on their faces, trembling. But Jesus came and touched them, saying, “<strong>Rise, and do not be afraid.</strong>” <a
-        href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT17_7" title="Matthew 17:7"><small><ruby>Matthew<rt>17:7</rt></ruby></small></a> And when they lifted their
+        href="../../eng-web_html/MAT17.htm#:~:text=Jesus came and touched them and,“Get up%2C and don’t be afraid." title="Matthew 17:7"><small><ruby>Matthew<rt>17:7</rt></ruby></small></a> And when they lifted their
       eyes, they saw no one but Jesus alone. The glory had passed, yet its memory remained, burning in their hearts.</p>
     <p>As they descended the mountain, Jesus charged them, saying that they should tell no one of the vision until the Son of Man had risen from the dead. And they kept this word
       among themselves, wondering what “rising from the dead” might mean. In the days that followed, Peter remembered the brightness of the Lord’s face and the voice from the
       cloud. And later, when he wrote to the believers, he testified, “<strong>We were eyewitnesses of his majesty… we ourselves heard this voice that came from heaven.</strong>”<a
-        href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=P21_16" title="2 Peter 1:16"><small><ruby>2 Peter<rt>1:16-18</rt></ruby></small></a> For the vision on the
+        href="../../eng-web_html/2PE01.htm#:~:text=For we didn’t follow cunningly devised,with him on the holy mountain." title="2 Peter 1:16"><small><ruby>2 Peter<rt>1:16-18</rt></ruby></small></a> For the vision on the
       mountain strengthened him for the trials to come, and he understood that Jesus was not only the teacher he followed, but the very Son of God, sent to fulfill the Law and the
       Prophets.</p>
-    <h3 style="padding-top: 2%;">The Denial and Restoration <a href="https://ebible.org/study/?v1=LK22_54&w1=bible&t1=local%3Aeng-web" title="Luke 22:54-62">Luke 22:54-62</a>
-      <a href="https://ebible.org/study/?v1=JN21_15&w1=bible&t1=local%3Aeng-web" title="John 21:15-17">John 21:15-17</a></h3>
+    <h3 style="padding-top: 2%;">The Denial and Restoration <a href="../../eng-web_html/LUK22.htm#:~:text=They seized him and led him,He went out%2C and wept bitterly." title="Luke 22:54-62">Luke 22:54-62</a>
+      <a href="../../eng-web_html/JHN21.htm#:~:text=So when they had eaten their,said to him%2C “Feed my sheep." title="John 21:15-17">John 21:15-17</a></h3>
     <div class="carousel-group img_rtl">
       <div class="multi-link-container">
         <div class="thumbnail-container">
@@ -332,20 +332,20 @@ They came and saw where he was staying, and they stayed with him that day. It wa
       </div>
     </div>
     <p> Despite his bold promises of loyalty, Peter's greatest failure came on the night of <a href="./#I knew you come back to me">Jesus'trial.</a> Just as <a
-        href="./#King of kings Lord or lords">Jesus</a> had predicted, Peter denied three times <a href="https://ebible.org/study/?v1=LK22_57&w1=bible&t1=local%3Aeng-web"
-        title="Luke 22:57">[1]</a> <a href="https://ebible.org/study/?v1=LK22_58&w1=bible&t1=local%3Aeng-web" title="Luke 22:58">[2]</a> <a
-        href="https://ebible.org/study/?v1=LK22_60&w1=bible&t1=local%3Aeng-web" title="Luke 22:60">[3]</a> that he even knew Jesus. When the rooster crowed, Peter remembered Jesus'
-      words and wept bitterly. This moment of deep repentance was crucial to his transformation. <a href="https://ebible.org/study/?v1=LK22_61&w1=bible&t1=local%3Aeng-web"
+        href="./#King of kings Lord or lords">Jesus</a> had predicted, Peter denied three times <a href="../../eng-web_html/LUK22.htm#:~:text=He denied Jesus%2C saying%2C “Woman%2C I,saying%2C “Woman%2C I don’t know him."
+        title="Luke 22:57">[1]</a> <a href="../../eng-web_html/LUK22.htm#:~:text=After a little while someone else,Peter answered%2C “Man%2C I am not!" title="Luke 22:58">[2]</a> <a
+        href="../../eng-web_html/LUK22.htm#:~:text=But Peter said%2C “Man%2C I don’t,was still speaking%2C a rooster crowed." title="Luke 22:60">[3]</a> that he even knew Jesus. When the rooster crowed, Peter remembered Jesus'
+      words and wept bitterly. This moment of deep repentance was crucial to his transformation. <a href="../../eng-web_html/LUK22.htm#:~:text=The Lord turned and looked at,He went out%2C and wept bitterly."
         title="Luke 22:61-62">Luke 22:61-62</a></p>
     <p> After the Resurrection, Jesus met Peter by the Sea of Galilee. Three times, Jesus asked Peter, "<strong>Simon son of John, do you love me?</strong>"<a
-        href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=JN21_15" title="John 21:15-17"><small><ruby>John<rt>21:15-17</rt></ruby></small></a> Each time Peter answered
-      yes, and each time Jesus responded with a command: "<a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=JN21_15" title="John 21:15">Feed my lambs</a>" or "<a
-        href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=JN21_16" title="John 21:16">Tend my sheep</a>." This three-fold questioning and commissioning perfectly
+        href="../../eng-web_html/JHN21.htm#:~:text=So when they had eaten their,said to him%2C “Feed my sheep." title="John 21:15-17"><small><ruby>John<rt>21:15-17</rt></ruby></small></a> Each time Peter answered
+      yes, and each time Jesus responded with a command: "<a href="../../eng-web_html/JHN21.htm#:~:text=So when they had eaten their,said to him%2C “Feed my lambs." title="John 21:15">Feed my lambs</a>" or "<a
+        href="../../eng-web_html/JHN21.htm#:~:text=He said to him again a,said to him%2C “Tend my sheep." title="John 21:16">Tend my sheep</a>." This three-fold questioning and commissioning perfectly
       reversed Peter's three-fold denial, restoring him to his leadership role and entrusting him with the care of the new Christian community. <a
-        href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=JN21_15" title="John 21:15-19">John 21:15-19</a></p>
+        href="../../eng-web_html/JHN21.htm#:~:text=So when they had eaten their,he said to him%2C “Follow me." title="John 21:15-19">John 21:15-19</a></p>
 </section>
 
-<h2 class="total-count">Peter the Leader of the Early Church <small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC1_1"title="Acts 1" style="color: var(--dialog-text-highlight);"class="rtl">Holy Spirit praxis</a></small></h2>
+<h2 class="total-count">Peter the Leader of the Early Church <small><a href="../../eng-web_html/ACT01.htm#:~:text=The first book I wrote%2C Theophilus%2C concerned all that Jesus began both to do and to teach%2C until the day in which he was received up%2C after he had given commandment through the Holy Spirit to the apostles whom he had chosen."title="Acts 1" style="color: var(--dialog-text-highlight);"class="rtl">Holy Spirit praxis</a></small></h2>
 <section data-section="Peter the Leader of the Early Church">
   <ul style="list-style-type: none;padding-left: .3%;margin-left: 1%; border: 1.5px groove #a90d0dff;" class="rtl">
     <li style="text-align: center;"><strong><a href="https://www.st-peters-basilica-tickets.com/saint-peter-the-apostle/"
@@ -356,16 +356,16 @@ They came and saw where he was staying, and they stayed with him that day. It wa
     <li><strong>Burial:</strong> <a href="https://en.wikipedia.org/wiki/Vatican_Hill" title="Wikipedia">Vatican Hill</a></li>
     <li><strong>About:</strong> <a href="?#^">Apostle</a> of <a href="./">Jesus Christ</a>/<a href="https://en.wikipedia.org/wiki/Primacy_of_Peter#Catholic_view"
         title="Wikipedia">First Pope of Rome</a></li>
-    <li><strong>See</strong> <small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=MT16_18" title="Matthew 16:18–19">Matthew 16:18–19</a>; <a
-          href="https://ebible.org/study/?v1=LK22_31&w1=bible&t1=local%3Aeng-web" title="Luke 22:31–32">Luke 22:31–32</a>; <a
-          href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=JN21_15" title="John 21:15–17">John 21:15–17</a></small>
+    <li><strong>See</strong> <small><a href="../../eng-web_html/MAT16.htm#:~:text=I also tell you that you,will have been released in heaven." title="Matthew 16:18–19">Matthew 16:18–19</a>; <a
+          href="../../eng-web_html/LUK22.htm#:~:text=The Lord said%2C “Simon%2C Simon%2C behold%2C,have turned again%2C establish your brothers." title="Luke 22:31–32">Luke 22:31–32</a>; <a
+          href="../../eng-web_html/JHN21.htm#:~:text=So when they had eaten their,said to him%2C “Feed my sheep." title="John 21:15–17">John 21:15–17</a></small>
   </ul>
   <p> After Jesus died and came back to life, He didn’t just disappear right away. For forty days, He spent time with His followers to show them that He was truly alive. He let
-    them see Him, talk to Him, and even eat with Him so they could be completely sure it was really Him. <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC1_1"
+    them see Him, talk to Him, and even eat with Him so they could be completely sure it was really Him. <a href="../../eng-web_html/ACT01.htm#:~:text=Being assembled together with them%2C he,Father%2C which you heard from me."
       title="Acts 1:4">Acts 1</a></p>
   <p> During those days, Jesus taught them more about God’s Kingdom — what God is doing in the world and how they would be part of it. One day, when they were all together, Jesus
     gave them an important instruction. He told them:<br /><strong>Stay in Jerusalem</strong>.<br /><strong>Wait for the special gift God promised.</strong>
-    <small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC1_4" title="Acts 1:4">Acts 1:4</a></small><br />
+    <small><a href="../../eng-web_html/ACT01.htm#:~:text=Being assembled together with them%2C he,Father%2C which you heard from me." title="Acts 1:4">Acts 1:4</a></small><br />
     <div class="carousel-group img_fl">
       <div class="multi-link-container">
         <div class="thumbnail-container">
@@ -379,45 +379,45 @@ They came and saw where he was staying, and they stayed with him that day. It wa
     would soon baptize them with the Holy Spirit, filling them with strength to continue Jesus’ mission.
   </p>
   <p> The disciples were curious and still trying to understand everything. So they asked Jesus: “Lord, is this the time when You will make Israel a strong kingdom again?” They
-    were thinking about a political kingdom — like a powerful nation. <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC1_6" title="Acts 1:6">Acts 1:6</a> But
+    were thinking about a political kingdom — like a powerful nation. <a href="../../eng-web_html/ACT01.htm#:~:text=Therefore%2C when they had come together%2C,now restoring the kingdom to Israel?" title="Acts 1:6">Acts 1:6</a> But
     Jesus was preparing them for something much bigger: a worldwide mission powered by the Holy Spirit.</p> Following Jesus' ascension, Peter stepped into the role of the primary
-  leader of the apostles, just as Jesus had promised. <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC1_15" title="Acts 1:15">Acts 1:15</a>
+  leader of the apostles, just as Jesus had promised. <a href="../../eng-web_html/ACT01.htm#:~:text=In these days%2C Peter stood up,about one hundred twenty)%2C and said%2C" title="Acts 1:15">Acts 1:15</a>
   <hr>
   <section data-section="pentecost and Bold Preaching">
-    <h3> Pentecost and Bold Preaching ( <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC2_1" title="Acts 2:1">Acts 2:1</a> ) </h3>
+    <h3> Pentecost and Bold Preaching ( <a href="../../eng-web_html/ACT02.htm#:~:text=Now when the day of Pentecost,with one accord in one place." title="Acts 2:1">Acts 2:1</a> ) </h3>
     <aside style="padding:1%; padding-bottom:2.7%; border-right: 1.5px groove #a90d0dff;border-bottom: 1.5px groove #a90d0dff; width:43%;" class="fl apostles-list">
     Peter’s
       ministry quickly became known for miraculous signs that demonstrated God’s power working through him. One of the most memorable events occurred at the Gate of the Temple,
       where a man who had been lame from birth asked Peter and John for money. <small>
-        <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC3_1" title="Acts 3:1">
+        <a href="../../eng-web_html/ACT03.htm#:~:text=Peter and John were going up,to receive gifts for the needy." title="Acts 3:1">
           <ruby> Acts <rt>3:1-3</rt>
           </ruby>
         </a>
       </small> Peter said " <strong>Look at us.</strong> " <small>
-        <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC3_4" title="Acts 3:4">
+        <a href="../../eng-web_html/ACT03.htm#:~:text=Peter%2C fastening his eyes on him%2C,with John%2C said%2C “Look at us." title="Acts 3:4">
           <ruby> Acts <rt>3:4</rt>
           </ruby>
         </a>
       </small> Instead of giving him silver or gold, Peter declared, “ <strong>I have no silver or gold, but what I have, that I give you. In the name of Jesus Christ of Nazareth,
         get up and walk!</strong> ” <small>
-        <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC3_6" title="Acts 3:6">
+        <a href="../../eng-web_html/ACT03.htm#:~:text=But Peter said%2C “I have no,and his ankle bones received strength." title="Acts 3:6">
           <ruby> Acts <rt>3:6-7</rt>
           </ruby>
         </a>
       </small> and the man was instantly healed. The formerly lame man began walking, leaping, and praising God, drawing a crowd of astonished onlookers into <a
         href="https://biblehub.com/q/Solomon_s_Colonnade_s_biblical_role.htm" title="Bible Hub">Solomon’s Colonnade.</a>
       <small>
-        <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC3_8" title="Acts 3:8">
+        <a href="../../eng-web_html/ACT03.htm#:~:text=Leaping up%2C he stood and began,that is called Solomon’s%2C greatly wondering." title="Acts 3:8">
           <ruby> Acts <rt>3:8-11</rt>
           </ruby>
         </a>
       </small> Peter used the moment to preach again, explaining that the miracle had been done by the power of Jesus, whom God had raised from the dead. <small>
-        <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC3_12" title="Acts 3:12">
+        <a href="../../eng-web_html/ACT03.htm#:~:text=When Peter saw it%2C he responded,in the presence of you all." title="Acts 3:12">
           <ruby> Acts <rt>3:12-16</rt>
           </ruby>
         </a>
       </small> As a result, many more people believed, and the early church continued to grow in number and influence. <small>
-        <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC4_4" title="Acts 4:4">
+        <a href="../../eng-web_html/ACT04.htm#:~:text=But many of those who heard,came to be about five thousand." title="Acts 4:4">
           <ruby> Acts <rt>4:4</rt>
           </ruby>
         </a>
@@ -435,21 +435,21 @@ They came and saw where he was staying, and they stayed with him that day. It wa
 </aside>
     <p> The day of Pentecost is widely regarded as the birthday of the Christian Church, when the Holy Spirit descended on the gathered disciples with the sound of a rushing wind
       and tongues of fire resting on each of them. <small>
-        <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC2_1" title="Acts 2:1">
+        <a href="../../eng-web_html/ACT02.htm#:~:text=Now when the day of Pentecost,gave them the ability to speak." title="Acts 2:1">
           <ruby> Acts <rt>2:1-4</rt>
           </ruby>
         </a>
       </small> Empowered by the Spirit, they began speaking in languages understood by Jewish pilgrims from across the Roman world, drawing a large and astonished crowd in
       Jerusalem. <small>
-        <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC2_5" title="Acts 2:5">
+        <a href="../../eng-web_html/ACT02.htm#:~:text=Now there were dwelling in Jerusalem,one another%2C “What does this mean?" title="Acts 2:5">
           <ruby> Acts <rt>2:5-12</rt>
           </ruby>
         </a>
       </small> </p>
     <p> In this moment of confusion and curiosity, Peter stepped forward as the spokesman for the apostles. He boldly explained that the crowd was witnessing the fulfillment of the
-      <a href="https://ebible.org/study/?v1=JL2_28&w1=bible&t1=local%3Aeng-web" title="Joel 2:28">prophet Joel’s words</a> about God pouring out His Spirit in the last days.
+      <a href="../../eng-web_html/JOL02.htm#:~:text=It will happen afterward%2C that I,Your young men will see visions." title="Joel 2:28">prophet Joel’s words</a> about God pouring out His Spirit in the last days.
       <small>
-        <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC2_14" title="Acts 2:14">
+        <a href="../../eng-web_html/ACT02.htm#:~:text=But Peter%2C standing up with the,of the Lord will be saved." title="Acts 2:14">
           <ruby> Acts <rt>2:14-21</rt>
           </ruby>
         </a>
@@ -457,24 +457,24 @@ They came and saw where he was staying, and they stayed with him that day. It wa
         href="https://www.gods7000yearplan.com/promises-to-david#:~:text=God%E2%80%99s%20Promise%20to%20David,New%20Testament%20makes%20clear" title="Promises made to David">
         promises made to David. </a>
       <small>
-        <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC2_22" title="Acts 2:22">
+        <a href="../../eng-web_html/ACT02.htm#:~:text=Men of Israel%2C hear these words!,Christ%2C this Jesus whom you crucified." title="Acts 2:22">
           <ruby> Acts <rt>2:22-36</rt>
           </ruby>
         </a>
       </small> </p>
     <p> His message deeply moved the listeners, and when they asked what they should do, Peter urged them to repent and be baptized in the name of Jesus Christ for the forgiveness
       of their sins. <small>
-        <a href="https://ebible.org/study/?v1=AC2_37&w1=bible&t1=local%3Aeng-web" title="Acts 2:37">
+        <a href="../../eng-web_html/ACT02.htm#:~:text=Now when they heard this%2C they,the gift of the Holy Spirit." title="Acts 2:37">
           <ruby> Acts <rt>2:37-38</rt>
           </ruby>
         </a>
       </small> About 3,000 people responded that day, were baptized, and joined the community of believers, marking the beginning of the church’s rapid growth. <small>
-        <a href="https://ebible.org/study/?v1=AC2_41&w1=bible&t1=local%3Aeng-web" title="Acts 2:41">
+        <a href="../../eng-web_html/ACT02.htm#:~:text=Then those who gladly received his,that day about three thousand souls." title="Acts 2:41">
           <ruby> Acts <rt>2:41</rt>
           </ruby>
         </a>
       </small> </p>
-    <h3> Imprisonment and Escape <a href="https://ebible.org/study/?v1=AC12_1&w1=bible&t1=local%3Aeng-web" title="Acts 12:1-11">Acts 12:1-11</a>
+    <h3> Imprisonment and Escape <a href="../../eng-web_html/ACT12.htm#:~:text=Now about that time%2C King Herod,everything the Jewish people were expecting." title="Acts 12:1-11">Acts 12:1-11</a>
     </h3>
     <p> Peter’s growing influence made him a prime target for opposition. By this point, the <a href="https://en.wikipedia.org/wiki/Early_Christianity#Jerusalem_church"
         title="Wikipedia">Christian movement in Jerusalem</a> had become too visible to ignore. <a href="https://www.gotquestions.org/Herod-Agrippa-I.html"
@@ -496,8 +496,8 @@ They came and saw where he was staying, and they stayed with him that day. It wa
         href="https://www.gotquestions.org/Feast-of-Unleavened-Bread.html" title="Got Questions">Feast of Unleavened Bread</a> , when the city was crowded with pilgrims and public
       sentiment was heightened. </p>
     <p> Herod assigned four squads of soldiers to guard Peter, signaling both Peter’s importance and Herod’s determination to prevent another escape like the one recorded earlier
-      in <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC5_18" title="Acts 5 18-20">Acts 5</a>. The church, unable to intervene politically, gathered in homes
-      throughout Jerusalem—most notably the <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=AC12_12" title="Acts 12 12">house of Mary</a> , the mother of John
+      in <a href="../../eng-web_html/ACT05.htm#:~:text=But a certain man named Ananias%2C,teaching and preaching Jesus%2C the Christ." title="Acts 5 18-20">Acts 5</a>. The church, unable to intervene politically, gathered in homes
+      throughout Jerusalem—most notably the <a href="../../eng-web_html/ACT12.htm#:~:text=Thinking about that%2C he came to the house of Mary%2C the mother of John who was called Mark%2C where many were gathered together and were praying." title="Acts 12 12">house of Mary</a> , the mother of John
       Mark—to pray earnestly for Peter’s deliverance. </p>
     <p> The night before his scheduled execution, everything changed. An angel appeared in Peter’s cell, light filled the room, and the chains fell from his wrists. The angel led
       him past multiple guards and out through an iron gate leading into the city, which opened on its own. Once Peter found himself safely in the streets of Jerusalem, he realized
@@ -515,7 +515,7 @@ They came and saw where he was staying, and they stayed with him that day. It wa
     </ul>
     <hr style="width:33%; margin-left: 33%;" />
   </section>
-  <h2 class="total-count">The Council of Jerusalem <small><a href="https://ebible.org/study/?v1=AC15_1&w1=bible&t1=local%3Aeng-web" title="Acts 15" style="color:var(--dialog-text-highlight)">Acts 15</a></small></h2>
+  <h2 class="total-count">The Council of Jerusalem <small><a href="../../eng-web_html/ACT15.htm#:~:text=Some men came down from Judea and taught the brothers%2C “Unless you are circumcised after the custom of Moses%2C you can’t be saved.” Therefore when Paul and Barnabas had no small discord and discussion with them%2C they appointed Paul%2C Barnabas%2C and some others of them to go up to Jerusalem to the apostles and elders about this question." title="Acts 15" style="color:var(--dialog-text-highlight)">Acts 15</a></small></h2>
   <section data-section="council-of-jerusalem">
     <p style="text-align: center;font-size: 1.2em;border: .5px groove var(--light-text);padding: 7px;border-radius: 14px;"> As the Gospel spread, a major debate arose: did
       non-Jewish believers (Gentiles) have to follow all the Jewish laws? Peter played a crucial role at the <a
@@ -525,16 +525,16 @@ They came and saw where he was staying, and they stayed with him that day. It wa
     <p> As more and more people heard about Jesus, the message began spreading far beyond Jewish communities. Many new believers were Gentiles—people who were not Jewish and had
       never followed the <a href="https://en.wikipedia.org/wiki/Halakha#Commandments_(mitzvot)" title="Wikipedia">Jewish Law</a>. <strong>Some men came down from Judea and taught
         the brothers, “Unless you are circumcised after the custom of Moses, you can’t be saved.”</strong>
-      <small><a href="https://ebible.org/study/?v1=AC15_1&w1=bible&t1=local%3Aeng-web" title="Acts 15:1-2"><ruby>Acts<rt> 15:1-2</rt></ruby></a></small> To settle the issue, the
+      <small><a href="../../eng-web_html/ACT15.htm#:~:text=Some men came down from Judea,apostles and elders about this question." title="Acts 15:1-2"><ruby>Acts<rt> 15:1-2</rt></ruby></a></small> To settle the issue, the
       apostles and church leaders gathered in Jerusalem for an important meeting now called the <a
         href="https://www.vatican.va/various/basiliche/san_paolo/en/san_paolo/concilio.htm" title="THE COUNCIL OF JERUSALEM">Council of Jerusalem</a>. <small><a
-          href="https://ebible.org/study/?v1=AC15_4&w1=bible&t1=local%3Aeng-web" title="Acts 15:4-6"><ruby>Acts<rt> 15:4-6</rt></ruby></a></small>
+          href="../../eng-web_html/ACT15.htm#:~:text=When they had come to Jerusalem%2C,together to see about this matter." title="Acts 15:4-6"><ruby>Acts<rt> 15:4-6</rt></ruby></a></small>
     </p>
     <h3>What was the debate about?</h3>
     <p> Some believers argued that Gentiles <em>must</em> follow the <a href="https://en.wikipedia.org/wiki/Law_of_Moses" title="Wikipedia">Law of Moses</a> to truly belong to
-      God’s people. <small><a href="https://ebible.org/study/?v1=AC15_1&w1=bible&t1=local%3Aeng-web" title="Acts 15:1-2"><ruby>Acts<rt> 15:1-2</rt></ruby></a></small>
+      God’s people. <small><a href="../../eng-web_html/ACT15.htm#:~:text=Some men came down from Judea,apostles and elders about this question." title="Acts 15:1-2"><ruby>Acts<rt> 15:1-2</rt></ruby></a></small>
       <br />Others believed that Jesus had opened the way for everyone, without requiring them to become Jewish first. <br /><a href="?paul#^">Paul</a> later talks about this same
-      issue in his letter in. <small><a href="https://ebible.org/study/?v1=GL2_1&w1=bible&t1=local%3Aeng-web" title="Galatians 2:1-10"><ruby>Galatians<rt>2:1-10</rt>
+      issue in his letter in. <small><a href="../../eng-web_html/GAL02.htm#:~:text=Then after a period of fourteen,I was also zealous to do." title="Galatians 2:1-10"><ruby>Galatians<rt>2:1-10</rt>
           </ruby></a></small>
     </p>
     <aside class="apostles-list">
@@ -544,33 +544,33 @@ They came and saw where he was staying, and they stayed with him that day. It wa
           did to us.<br /> He made no distinction between us and them, cleansing their hearts by faith.<br /> Now therefore why do you tempt God, that you should put a yoke on the
           neck of the disciples which neither our fathers nor we were able to bear?<br /> But we believe that we are saved through the grace of the Lord Jesus, just as they
           are.”</strong>
-        <small><a href="https://ebible.org/study/?v1=AC15_7&w1=bible&t1=local%3Aeng-web" title="Acts 15:7-11"><ruby>Acts <rt>15:7-11</rt></ruby></a></small>: </p>
+        <small><a href="../../eng-web_html/ACT15.htm#:~:text=When there had been much discussion%2C,Lord Jesus%2C just as they are." title="Acts 15:7-11"><ruby>Acts <rt>15:7-11</rt></ruby></a></small>: </p>
       <ul style="list-style-type: none;">
         <li> God had already chosen Peter to share the Gospel with Gentiles, like the <a href="https://en.wikipedia.org/wiki/Cornelius_the_Centurion#Biblical_account"
-            title="Wikipedia">Roman centurion Cornelius</a>. <small><a href="https://ebible.org/study/?v1=AC10_1&w1=bible&t1=local%3Aeng-web" title="Acts 10:1-48"><ruby>Acts <rt>
+            title="Wikipedia">Roman centurion Cornelius</a>. <small><a href="../../eng-web_html/ACT10.htm#:~:text=Now there was a certain man,asked him to stay some days." title="Acts 10:1-48"><ruby>Acts <rt>
                   10:1-48</rt></ruby></a></small>
-          <br /> God gave the Holy Spirit to Gentile believers just as He did to Jewish believers. <small><a href="https://ebible.org/study/?v1=AC10_44&w1=bible&t1=local%3Aeng-web"
+          <br /> God gave the Holy Spirit to Gentile believers just as He did to Jewish believers. <small><a href="../../eng-web_html/ACT10.htm#:~:text=While Peter was still speaking these,asked him to stay some days."
               title="Acts 10:44-48"><ruby>Acts<rt>10:44-48</rt></ruby></a></small>
-          <br />God did not make a distinction between them—He accepted them by faith. <small><a href="https://ebible.org/study/?v1=AC15_8&w1=bible&t1=local%3Aeng-web"
+          <br />God did not make a distinction between them—He accepted them by faith. <small><a href="../../eng-web_html/ACT15.htm#:~:text=God%2C who knows the heart%2C testified,them%2C cleansing their hearts by faith."
               title="Acts 15:8-9"><ruby>Acts <rt>15:8-9</rt></ruby></a></small>
           <br /> Peter boldly said that salvation comes through the grace of the Lord Jesus, not by keeping the entire Mosaic Law. <small><a
-              href="https://ebible.org/study/?v1=AC15_11&w1=bible&t1=local%3Aeng-web" title="Acts 15:11"><ruby>Acts <rt>15:11</rt></ruby></a></small>
+              href="../../eng-web_html/ACT15.htm#:~:text=But we believe that we are,Lord Jesus%2C just as they are." title="Acts 15:11"><ruby>Acts <rt>15:11</rt></ruby></a></small>
         </li>
       </ul>
       <p> Peter’s words helped the whole group understand that God was doing something new: the church was meant for all people, not just one group. <a href="?paul#^">Paul</a>
         later explains this idea by saying that Jews and Gentiles are brought together as one in Christ in. <small><a
-            href="https://ebible.org/study/?v1=EF2_11&w1=bible&t1=local%3Aeng-web" title="Ephesians 2:11-22"><ruby>Ephesians<rt>2:11-22</rt></ruby></a></small>
+            href="../../eng-web_html/EPH02.htm#:~:text=Therefore remember that once you%2C the,habitation of God in the Spirit." title="Ephesians 2:11-22"><ruby>Ephesians<rt>2:11-22</rt></ruby></a></small>
       </p>
       <h3>The final decision</h3>
       <p> After Peter spoke, Paul and Barnabas shared stories of how God was working among the Gentiles. <small><a
-            href="https://ebible.org/study/?v1=AC15_12&w1=bible&t1=local%3Aeng-web" title="Acts 15:12"><ruby>Acts <rt>15:12</rt></ruby></a></small> Then James, the leader of the
-        Jerusalem church, agreed with Peter and suggested a solution <small><a href="https://ebible.org/study/?v1=AC15_13&w1=bible&t1=local%3Aeng-web"
+            href="../../eng-web_html/ACT15.htm#:~:text=All the multitude kept silence%2C and,done among the nations through them." title="Acts 15:12"><ruby>Acts <rt>15:12</rt></ruby></a></small> Then James, the leader of the
+        Jerusalem church, agreed with Peter and suggested a solution <small><a href="../../eng-web_html/ACT15.htm#:~:text=After they were silent%2C James answered%2C,read in the synagogues every Sabbath."
             title="Acts 15:13-21"><ruby>Acts <rt>15:13-21</rt></ruby></a></small>: </p>
       <ul>
         <li> Gentile believers did <strong>not</strong> need to follow the whole Jewish Law to be saved. </li>
         <li> They were asked only to avoid a few practices that would cause major conflict with Jewish Christians. <strong>"abstain from the pollution of idols, from sexual
             immorality, from what is strangled, and from blood."</strong>
-          <small><a href="https://ebible.org/study/?v1=AC15_19&w1=bible&t1=local%3Aeng-web" title="Acts 15:19-21"><ruby>Acts<rt>15:19-21</rt></ruby></a></small><br />
+          <small><a href="../../eng-web_html/ACT15.htm#:~:text=Therefore my judgment is that we,read in the synagogues every Sabbath." title="Acts 15:19-21"><ruby>Acts<rt>15:19-21</rt></ruby></a></small><br />
           <span style="display: block; text-align: center;font-size: 1.2em;">These guidelines helped everyone to:</span> Remain faithful to God.<br /> Avoid harmful
           practices.<br /> Live peacefully with each other.<br /> It wasn’t about making life harder—it was about helping the new Christian community grow strong and united.</li>
         </li>
@@ -587,14 +587,14 @@ They came and saw where he was staying, and they stayed with him that day. It wa
   </div>
       <p> A letter was written and sent to the Gentile churches, explaining this decision. When the believers read it, they were encouraged and filled with joy. <strong>“The
           apostles, the elders, and the brothers, to the brothers who are of the Gentiles in Antioch, Syria, and Cilicia: greetings...</strong>" <small><a
-            href="https://ebible.org/study/?v1=AC15_22&w1=bible&t1=local%3Aeng-web" title="Acts 15:22-31"><ruby>Acts <rt>15:22-31</rt></ruby></a></small>
+            href="../../eng-web_html/ACT15.htm#:~:text=Then it seemed good to the,it%2C they rejoiced over the encouragement." title="Acts 15:22-31"><ruby>Acts <rt>15:22-31</rt></ruby></a></small>
       </p>
       <h3>Why this moment matters</h3>
       <p> The Council of Jerusalem was a turning point in the history of the church. Because of Peter’s testimony and the agreement of the apostles, Christianity became a faith
         open to <strong>every nation</strong>, not just one culture. This decision helped the Gospel spread across the world and showed that anyone who trusts in Jesus can belong
         to God’s family.<span class="rtl">
-          <small><a href="https://ebible.org/study/?v1=AC15_14&w1=bible&t1=local%3Aeng-web" title="Acts 15:14, 17"><ruby>Acts<rt>15:14, 17</rt></ruby></a></small>; see also
-          <small><a href="https://ebible.org/study/?v1=EF2_19&w1=bible&t1=local%3Aeng-web" title="Ephesians 2:19-22"><ruby>Ephesians<rt>2:19-22</rt></ruby></a></small></span>
+          <small><a href="../../eng-web_html/ACT15.htm#:~:text=Simeon has reported how God first,them a people for his name." title="Acts 15:14, 17"><ruby>Acts<rt>15:14, 17</rt></ruby></a></small>; see also
+          <small><a href="../../eng-web_html/EPH02.htm#:~:text=So then you are no longer,habitation of God in the Spirit." title="Ephesians 2:19-22"><ruby>Ephesians<rt>2:19-22</rt></ruby></a></small></span>
       </p>
     </aside>
   </section>
@@ -603,42 +603,42 @@ They came and saw where he was staying, and they stayed with him that day. It wa
 <h2 class="total-count">Peter’s Writings</h2>
 <section data-section="Peter’s Writings 1 & 2">
   <h3 class="verse">because it is written, “You shall be holy, for I am holy.” Jesus Christ Lord and Savior <small><a
-        href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=P11_16" title="1 Peter 1:16"><ruby>1 Peter<rt>1:16</rt></ruby></a></small></h3>
-  <aside style="column-count:2"> Peter authored two letters in the New Testament, <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=P11_1" title="1 Peter"><strong>1
-        Peter</strong></a> and <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=P21_1" title="2 Peter"><strong>2 Peter</strong></a>. These letters were written to
+        href="../../eng-web_html/1PE01.htm#:~:text=because it is written%2C “You shall,be holy%2C for I am holy." title="1 Peter 1:16"><ruby>1 Peter<rt>1:16</rt></ruby></a></small></h3>
+  <aside style="column-count:2"> Peter authored two letters in the New Testament, <a href="../../eng-web_html/1PE01.htm#:~:text=Peter%2C an apostle of Jesus Christ%2C to the chosen ones who are living as foreigners in the Dispersion in Pontus%2C Galatia%2C Cappadocia%2C Asia%2C and Bithynia%2C according to the foreknowledge of God the Father%2C in sanctification of the Spirit%2C that you may obey Jesus Christ and be sprinkled with his blood: Grace to you and peace be multiplied." title="1 Peter"><strong>1
+        Peter</strong></a> and <a href="../../eng-web_html/2PE01.htm#:~:text=Simon Peter%2C a servant and apostle of Jesus Christ%2C to those who have obtained a like precious faith with us in the righteousness of our God and Savior%2C Jesus Christ: Grace to you and peace be multiplied in the knowledge of God and of Jesus our Lord%2C seeing that his divine power has granted to us all things that pertain to life and godliness%2C through the knowledge of him who called us by his own glory and virtue%2C by which he has granted to us his precious and exceedingly great promises; that through these you may become partakers of the divine nature%2C having escaped from the corruption that is in the world by lust." title="2 Peter"><strong>2 Peter</strong></a>. These letters were written to
     encourage Christians who were suffering persecution to stay strong in their faith. The letters emphasize hope, endurance, and the importance of living a holy life, even in
-    difficult times.</p> In <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=P11_1" title="1 Peter"><strong>1 Peter</strong></a>, he encourages believers to remain
-    hopeful even during suffering. <small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=P11_6" title="1 Peter 1:6-7"><ruby>1 Peter<rt>1:6-7</rt>
+    difficult times.</p> In <a href="../../eng-web_html/1PE01.htm#:~:text=Peter%2C an apostle of Jesus Christ%2C to the chosen ones who are living as foreigners in the Dispersion in Pontus%2C Galatia%2C Cappadocia%2C Asia%2C and Bithynia%2C according to the foreknowledge of God the Father%2C in sanctification of the Spirit%2C that you may obey Jesus Christ and be sprinkled with his blood: Grace to you and peace be multiplied." title="1 Peter"><strong>1 Peter</strong></a>, he encourages believers to remain
+    hopeful even during suffering. <small><a href="../../eng-web_html/1PE01.htm#:~:text=In this you greatly rejoice%2C though,at the revelation of Jesus Christ—" title="1 Peter 1:6-7"><ruby>1 Peter<rt>1:6-7</rt>
         </ruby></a></small> He reminds them that Jesus also suffered and that following Him sometimes means facing challenges. Peter teaches that Christians should live with
-    kindness, courage, and holiness. <small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=P11_13" title="1 Peter 1:13-16"><ruby>1 Peter<rt>1:13-16</rt>
+    kindness, courage, and holiness. <small><a href="../../eng-web_html/1PE01.htm#:~:text=Therefore prepare your minds for action.,be holy%2C for I am holy." title="1 Peter 1:13-16"><ruby>1 Peter<rt>1:13-16</rt>
         </ruby></a></small>
     </p>
   </aside>
   <h3 class="verse"> In him, though now you don’t see him, yet believing, you rejoice greatly with joy that is unspeakable and full of glory, receiving the result of your faith,
-    the salvation of your souls. <small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=P11_8" title="1 Peter 1:8-9"><ruby>1 Peter<rt>1:8-9</rt>
+    the salvation of your souls. <small><a href="../../eng-web_html/1PE01.htm#:~:text=whom%2C not having known%2C you love.,faith%2C the salvation of your souls." title="1 Peter 1:8-9"><ruby>1 Peter<rt>1:8-9</rt>
         </ruby></a></small></h3>
   <aside style="column-count:2; margin-bottom:1rem;">
     <div style="break-inside: avoid;border-right: 1.5px groove #a90d0dff;">
-     
+
     <h2 style="text-align: center;margin-top:0">1 Peter</h2>
       <ul style="margin-bottom:1rem">
         <li>Living differently</li>
         <ul>
-          <li>Christians are called to be holy and set apart <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=P12_9"><strong>1 Peter 2:9–12</strong></a>.</li>
+          <li>Christians are called to be holy and set apart <a href="../../eng-web_html/1PE02.htm#:~:text=But you are a chosen race%2C,God in the day of visitation."><strong>1 Peter 2:9–12</strong></a>.</li>
           <li><strong>In the past, you were not a people, but now are God’s people, who had not obtained mercy, but now have obtained mercy.</strong> <small><a
-                href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=P11_10" title="1 Peter 2:10"><ruby>1 Peter<rt>2:10</rt></ruby></a></small></li>
+                href="../../eng-web_html/1PE01.htm#:~:text=Concerning this salvation%2C the prophets sought,grace that would come to you%2C" title="1 Peter 2:10"><ruby>1 Peter<rt>2:10</rt></ruby></a></small></li>
         </ul>
         <li>Following Jesus’ example</li>
         <ul>
-          <li>Jesus suffered with patience and love <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=P12_21"><strong>1 Peter 2:21–23</strong></a>.</li>
+          <li>Jesus suffered with patience and love <a href="../../eng-web_html/1PE02.htm#:~:text=For you were called to this%2C,himself to him who judges righteously."><strong>1 Peter 2:21–23</strong></a>.</li>
           <li><strong>For you were called to this, because Christ also suffered for us, leaving us an example, that you should follow his steps,</strong> <small><a
-                href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=P12_21" title="1 Peter 2:21"><ruby>1 Peter<rt>2:21</rt></ruby></a></small></li>
+                href="../../eng-web_html/1PE02.htm#:~:text=For you were called to this%2C,that you should follow his steps%2C" title="1 Peter 2:21"><ruby>1 Peter<rt>2:21</rt></ruby></a></small></li>
         </ul>
         <li>Hope in suffering</li>
         <ul>
-          <li>God uses trials to strengthen faith <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=P14_12"><strong>1 Peter 4:12–16</strong></a>.</li>
+          <li>God uses trials to strengthen faith <a href="../../eng-web_html/1PE04.htm#:~:text=Beloved%2C don’t be astonished at the,him glorify God in this matter."><strong>1 Peter 4:12–16</strong></a>.</li>
           <li><strong>because you are partakers of Christ’s sufferings, rejoice, that at the revelation of his glory you also may rejoice with exceeding joy.</strong> <small><a
-                href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=P14_13" title="1 Peter 4:13"><ruby>1 Peter<rt>4:13</rt></ruby></a></small>
+                href="../../eng-web_html/1PE04.htm#:~:text=But because you are partakers of,also may rejoice with exceeding joy." title="1 Peter 4:13"><ruby>1 Peter<rt>4:13</rt></ruby></a></small>
           </li>
         </ul>
       </ul>
@@ -647,13 +647,13 @@ They came and saw where he was staying, and they stayed with him that day. It wa
     <h2 style="text-align: center;">2 Peter</h2>
     <p> Peter’s second letter focuses on staying faithful to the truth and encourages Christians to grow in their faith by adding qualities like goodness, knowledge, and
       self-control. <strong>"moral excellence, knowledge, self-control, perseverance, godliness, brotherly affection & love"</strong>
-      <small><a href="https://ebible.org/study/?v1=P21_5&w1=bible&t1=local%3Aeng-web" title="2 Peter 1:5"><ruby>2 Peter<rt>1:5-8</rt></ruby></a></small>. </p>
+      <small><a href="../../eng-web_html/2PE01.htm#:~:text=Yes%2C and for this very cause,knowledge of our Lord Jesus Christ." title="2 Peter 1:5"><ruby>2 Peter<rt>1:5-8</rt></ruby></a></small>. </p>
     <p>He warns believers to watch out for false teachers who try to lead people away from Jesus. <strong>"false teachers will also be among you"</strong>
-      <small><a href="https://ebible.org/study/?v1=P22_1&w1=bible&t1=local%3Aeng-web" title="2 Peter 2:1"><ruby>2 Peter<rt>2:1-3</rt></ruby></a></small>.</p>
+      <small><a href="../../eng-web_html/2PE02.htm#:~:text=But false prophets also arose among,and their destruction will not slumber." title="2 Peter 2:1"><ruby>2 Peter<rt>2:1-3</rt></ruby></a></small>.</p>
     <p> Peter ends the letter by reminding believers that Jesus will return one day, so they should live with purpose and stay close to God. <strong>"But the day of the Lord will
         come as a thief in the night, in which the heavens will pass away with a great noise, and the elements will be dissolved with fervent heat; and the earth and the works that
         are in it will be burned up."</strong>
-      <small><a href="https://ebible.org/study/?v1=P23_10&w1=bible&t1=local%3Aeng-web" title="2 Peter 3:10"><ruby>2 Peter<rt>3:10-14</rt></ruby></a></small>. </p>
+      <small><a href="../../eng-web_html/2PE03.htm#:~:text=But the day of the Lord,defect and blameless in his sight." title="2 Peter 3:10"><ruby>2 Peter<rt>3:10-14</rt></ruby></a></small>. </p>
   </aside>
   <h3>Why Peter’s Letters Still Matter Today</h3><p>
   <div class="carousel-group img_rtl">
@@ -694,11 +694,11 @@ They came and saw where he was staying, and they stayed with him that day. It wa
     after the apostles. </p>
   <h3>What the Bible Tells Us</h3>
   <div class="rtl" style="width:20%; margin-left: 4%;border:1px solid #ccc;padding:10px;">Peter was jailed and released by an act of God. <strong><a
-        href="https://ebible.org/study/?v1=AC12_17&w1=bible&t1=local%3Aeng-web" title="Acts 12:17">Acts 12:5-17</a></strong></div>
+        href="../../eng-web_html/ACT12.htm#:~:text=Peter therefore was kept in the,departed and went to another place." title="Acts 12:17">Acts 12:5-17</a></strong></div>
   <p> The New Testament shows that Peter continued traveling and teaching after Jesus’ resurrection. He leaves Jerusalem to minister elsewhere, and Paul mentions him as a
-    well-known leader among the churches (<strong>1 Corinthians <a href="https://ebible.org/study/?v1=C11_12&w1=bible&t1=local%3Aeng-web" title="1 Corinthians 1:12">1:12</a>; <a
-        href="https://ebible.org/study/?v1=C19_5&w1=bible&t1=local%3Aeng-web" title="1 Corinthians 9:5">9:5</a></strong>). Peter also sends greetings from “Babylon,” which many
-    scholars believe is a symbolic name for Rome (<strong>1 Peter <a href="https://ebible.org/study/?v1=P15_13&w1=bible&t1=local%3Aeng-web" title="1 Peter 5:13">5:13</a></strong>).
+    well-known leader among the churches (<strong>1 Corinthians <a href="../../eng-web_html/1CO01.htm#:~:text=Now I mean this%2C that each,follow Cephas%2C” and%2C “I follow Christ." title="1 Corinthians 1:12">1:12</a>; <a
+        href="../../eng-web_html/1CO09.htm#:~:text=Have we no right to take,brothers of the Lord%2C and Cephas?" title="1 Corinthians 9:5">9:5</a></strong>). Peter also sends greetings from “Babylon,” which many
+    scholars believe is a symbolic name for Rome (<strong>1 Peter <a href="../../eng-web_html/1PE05.htm#:~:text=She who is in Babylon%2C chosen,you. So does Mark%2C my son." title="1 Peter 5:13">5:13</a></strong>).
   </p>
   <h3>Peter’s Ministry in Rome (Early Christian Sources)</h3>
   <p> While the Bible does not directly say that Peter went to Rome, several early Christian writers record that he did: <small><a
@@ -729,7 +729,7 @@ They came and saw where he was staying, and they stayed with him that day. It wa
     <a href="https://en.wikipedia.org/wiki/Origen#" title="Wikipedia">Origen (AD 230)</a> and later by <a href="https://en.wikipedia.org/wiki/Eusebius" title="Wikipedia">Eusebius
       (AD 325)</a>. Although the Bible does not describe Peter’s death, Jesus predicted that Peter would die as a martyr. <strong>"Most certainly I tell you, when you were young,
       you dressed yourself and walked where you wanted to. But when you are old, you will stretch out your hands, and another will dress you and carry you where you don’t want to
-      go."</strong> <small><a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=JN21_18" title="John 21:18-19"><ruby>John<rt>21:18-19</rt></ruby></a></small></p>
+      go."</strong> <small><a href="../../eng-web_html/JHN21.htm#:~:text=Most certainly I tell you%2C when,he said to him%2C “Follow me." title="John 21:18-19"><ruby>John<rt>21:18-19</rt></ruby></a></small></p>
   <h3>Peter’s Legacy</h3>
 
   <div class="carousel-group img_fl">
@@ -743,7 +743,7 @@ They came and saw where he was staying, and they stayed with him that day. It wa
     </div>
   </div>
   <p> Peter’s final sacrifice became a powerful example of courage and humility. His life—from fisherman, to apostle, to martyr—made him one of the most influential leaders in
-    Christian history. Jesus’ words in <a href="https://ebible.org/study/?v1=MT16_18&w1=bible&t1=local%3Aeng-web" title="Matthew 16:18">Matthew 16:18</a> <strong>"You are Peter,
+    Christian history. Jesus’ words in <a href="../../eng-web_html/MAT16.htm#:~:text=I also tell you that you,Hades will not prevail against it." title="Matthew 16:18">Matthew 16:18</a> <strong>"You are Peter,
       and on this rock I will build my church; and the gates of Hades will not overcome it."</strong>, calling Peter the “<u>rock</u>,” are often connected to his faithful
     leadership and his role in strengthening the early church. Catholics understand this as Jesus establishing Peter as the visible <a
       href="https://www.vatican.va/content/vatican/en/holy-father.html" title="The Holy See"> leader of the early Christian community </a>, and the fundation (role model) for the
@@ -758,7 +758,7 @@ They came and saw where he was staying, and they stayed with him that day. It wa
   <hr style="width:33%; margin-left: 33%;">
   <h3>Peter’s Witness of Courage</h3>
   <p> Jesus foretold Peter’s martyrdom: <strong>"Most certainly I tell you, when you were young, you dressed yourself and walked where you wanted to. But when you are old, you will stretch out your hands, and another will dress you and carry you where you don’t want to go."</strong>
-    <a href="https://ebible.org/study/?t1=local%3Aeng-web&w1=bible&v1=JN21_18" title="John 21:18-19"><ruby>John<rt>21:18-19</rt></ruby></a>. Early Christian writers confirm
+    <a href="../../eng-web_html/JHN21.htm#:~:text=Most certainly I tell you%2C when,he said to him%2C “Follow me." title="John 21:18-19"><ruby>John<rt>21:18-19</rt></ruby></a>. Early Christian writers confirm
     that Peter fulfilled this prophecy by giving his life for the Gospel in Rome. </p>
   <ul>
     <li><strong><a href="https://en.wikipedia.org/wiki/Clement_of_Rome"title="Wikipedia">Clement of Rome</a> (AD 96)</strong> mentions Peter’s “<a href=" https://www.earlychristianwritings.com/text/1clement-lightfoot.html#:~:text=1Clem%205%3A1,of%20patient%20endurance."title="First Clement 5">noble example</a>” of martyrdom.</li>

@@ -39,8 +39,6 @@ try {
       </div>
     </nav>
     <section class="homepage-grid">
-   
-        
         <a href="../<?= htmlspecialchars($content[16]['content']);?>/#^"
             class="cta-button" style="color: white;"><?= $content[11]['content'];?></a> <!-- There is a bug here, I want to reuse what the database has, but this is a terrible workaround, the link disapears until hover whhen  ../ is added to the begining of the link. Like I am not even touhing the text why does this happen? I need a better way to add stuff from the BD that makes sense visually. the current implementation os very difficult to follow. It feels overengineered and code reader deterrent -->
         <a href="../<?= htmlspecialchars($content[17]['content']);?>/#^"
