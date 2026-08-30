@@ -106,18 +106,60 @@ function apostoles()  {
 }
 
 function peterApostle()    {
-    include 'peter_the_apostle_temp.php';
+    include '_Apostles/_Peter.php';
 }
 
 function andrewApostle()    {
-    echo'ANDREW JOHN 1:39
-                39 He said to them, “Come and see.”
-  They came and saw where he was staying, and they stayed with him that day. It was about the tenth hour.† 40 One of the two who heard John and followed him was Andrew, Simon Peter’s brother. 41 He first found his own brother, Simon, and said to him, “We have found the Messiah!” (which is, being interpreted, Christ‡). 42 He brought him to Jesus. Jesus looked at him and said, “You are Simon the son of Jonah. You shall be called Cephas” (which is by interpretation, Peter).§
-  ';
+   include '_Apostles/_Andrew.php';
 }
 
+function jamesApostle()    {
+   include '_Apostles/_James.php';
+}
+
+function johnApostle()    {
+   include '_Apostles/_John.php';
+}
+
+function philipApostle()    {
+   include '_Apostles/_Philip.php';
+}
+
+function bartholomewApostle()    {
+   include '_Apostles/_Bartholomew.php';
+}
+
+function thomasApostle()    {
+   include '_Apostles/_Thomas.php';
+}
+
+function matthewApostle()    {
+   include '_Apostles/_Matthew.php';
+}
+
+function little_jamesApostle()    {
+   include '_Apostles/_James_The_Less.php';
+}
+
+function thaddaeusApostle()    {
+   include '_Apostles/_Judas_Thaddaeus.php';
+}
+
+function simonApostle()    {
+   include '_Apostles/_Simon.php';
+}
+
+function judasApostle()    {
+   include '_Apostles/_Judas_Iscariot.php';
+}
+
+function matthiasApostle()    {
+   include '_Apostles/_Matthias.php';
+}
+
+
 function paulApostle () {
-  include 'paul_the_apostle_temp.php';
+  include '_Apostles/_Paul.php';
 }
 
 function content()    {
@@ -127,29 +169,28 @@ function content()    {
       peterApostle();
   elseif (isset($_GET['andrew'])):
       andrewApostle();
-      echo "<section class=\"fullbar\">Andrew</section>";
   elseif (isset($_GET['james'])):
-      echo "<section class=\"fullbar\">James</section>";
+      jamesApostle();
   elseif (isset($_GET['john'])):
-      echo "<section class=\"fullbar\">John</section>";
+      johnApostle();
   elseif (isset($_GET['philip'])):
-      echo "<section class=\"fullbar\">Philip</section>";
+      philipApostle();
   elseif (isset($_GET['bartholomew'])):
-      echo "<section class=\"fullbar\">Bartholomew</section>";
+      bartholomewApostle();
   elseif (isset($_GET['thomas'])):
-      echo "<section class=\"fullbar\">Thomas</section>";//https://en.wikipedia.org/wiki/Caravaggio#/media/File:The_Incredulity_of_Saint_Thomas-Caravaggio_(1601-2).jpg
+      thomasApostle();//https://en.wikipedia.org/wiki/Caravaggio#/media/File:The_Incredulity_of_Saint_Thomas-Caravaggio_(1601-2).jpg
   elseif (isset($_GET['matthew'])):
-      echo "<section class=\"fullbar\">Matthew</section>";
+      matthewApostle();
   elseif (isset($_GET['little_james'])):
-      echo "<section class=\"fullbar\">James (son of Alphaeus)</section>";
+      little_jamesApostle();
   elseif (isset($_GET['thaddaeus'])):
-      echo "<section class=\"fullbar\">Thaddaeus</section>";
+      thaddaeusApostle();
   elseif (isset($_GET['simon'])):
-      echo "<section class=\"fullbar\">Simon the Zealot</section>";
+      simonApostle();
   elseif (isset($_GET['judas'])):
-      echo "<section class=\"fullbar\">Judas Iscariot</section>";
+      judasApostle();
   elseif (isset($_GET['matthias'])):
-      echo "<section class=\"fullbar\">Matthias (replaced Judas)</section>";
+      matthiasApostle();
   elseif (isset($_GET['paul'])):
     paulApostle ();
   else:

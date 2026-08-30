@@ -105,12 +105,59 @@
                 <li><strong>A collision course with grace:</strong> The journey represents Saul’s attempt to suppress
                     the gospel, only to be overtaken by the very Christ he opposed.</li>
             </ul>
-            <h3> The journey flips from <i>mission of destruction</i> to <b>mission of calling</b>.</h3>
+            <h3 style="color: var(--secondary-color); padding-bottom:3.3%;"> The journey flips from <i>mission of destruction</i> to <b>mission of calling</b>.</h3>
+            <hr style="width:3%;margin:0 auto;">
+        <h3 style="font-size: 1.5rem;">Saul of Tarsus: A Pharisee of Pharisees</h3>
+        <p>(A Pre‑Conversion Biographical Reconstruction — mirroring “Simon bar Jonah: A Galilean Fisherman”)</p>
+        <ul>
+            <div class="homepage-grid" style="padding:1%; padding-bottom:2.7%; border-right: 1.5px groove #a90d0dff;border-bottom: 1.5px groove #a90d0dff;">
+            <h4>Name, Identity, and Social Position</h4>
+            <li>Hebrew name “Saul,” Roman name “Paulus”</li>
+            <li>Tribe of Benjamin</li>
+            <li>Born into a respected Jewish family</li>
+            <li>Roman citizen by birth</li>
+            <li>Social standing in both Jewish and Roman worlds</li>
         </div>
-    </section>
+        <div class="homepage-grid" style="padding:1%; padding-bottom:2.7%; border-left: 1.5px groove #a90d0dff;border-bottom: 1.5px groove #a90d0dff;">
+            <h4>Family Structure & Upbringing</h4>
+            <li>Raised in a devout Pharisaic household</li>
+            <li>Early exposure to Scripture, tradition, and synagogue life</li>
+            <li>Family likely involved in tent‑making or leatherwork</li>
+            <li>Strong emphasis on discipline, purity, and Torah observance</li>
+        </div>
+        <div class="homepage-grid" style="padding:1%; padding-bottom:2.7%; border-right: 1.5px groove #a90d0dff;border-bottom: 1.5px groove #a90d0dff;">
+            <h4>Tarsus: Cultural and Intellectual Environment</h4>
+            <li>A major Greco‑Roman city</li>
+            <li>Known for philosophy, rhetoric, and education</li>
+            <li>Exposure to Hellenistic culture while remaining deeply Jewish</li>
+            <li>Multilingual environment (Hebrew/Aramaic, Greek, Latin)</li>
+        </div>
+        <div class="homepage-grid" style="padding:1%; padding-bottom:2.7%; border-left: 1.5px groove #a90d0dff;border-bottom: 1.5px groove #a90d0dff;">
+            <h4>Education Under Gamaliel</h4>
+            <li>Formal training in Jerusalem</li>
+            <li>Studied Torah, oral law, and Pharisaic interpretation</li>
+            <li>Rigor, discipline, and mastery of Scripture</li>
+            <li>Reputation for intellectual sharpness</li>
+        </div>
+        <div class="homepage-grid" style="padding:1%; padding-bottom:2.7%; border-right: 1.5px groove #a90d0dff;border-bottom: 1.5px groove #a90d0dff;">
+            <h4>Pharisaic Zeal</h4>
+            <li>Commitment to purity and covenant faithfulness</li>
+            <li>Deep loyalty to ancestral traditions</li>
+            <li>Zeal as a defining personal trait</li>
+            <li>Identity shaped by defending the Law</li>
+        </div>
+        <div class="homepage-grid" style="padding:1%; padding-bottom:2.7%; border-left: 1.5px groove #a90d0dff;border-bottom: 1.5px groove #a90d0dff;">
+            <h4>Reputation in the Community</h4>
+            <li>Known for strictness and conviction</li>
+            <li>Trusted by religious authorities</li>
+            <li>Rising star among Pharisees</li>
+            <li>Seen as reliable, disciplined, and uncompromising</li>
+        </div>
+        </ul>
+        </div>
+</section>
 
     <section data-section="Saul of Tarsus A Pharisee Shaped by Two Worlds" class="apostles-list">
-
         <div class="verse">
             <h2 id="Saul of Tarsus A Pharisee Shaped by Two Worlds">Saul of Tarsus A Pharisee Shaped by Two Worlds</h2>
         </div>
