@@ -22,7 +22,7 @@
     <section data-section="Road to Damascus">
         <h2 id="Apostle to the Gentiles">Apostle to the Gentiles</h2>
         <p class="verse">“Saul, Saul, why are you persecuting Me?” Lord and Savior Jesus Christ
-           <a href="../../eng-web_html/ACT09.htm#:~:text=As he traveled%2C he got close to Damascus%2C and suddenly a light from the sky shone around him." title="Acts 9:3"><ruby>Acts<rt>
+           <a href="../../eng-web_html/ACT09.htm#:~:text=As he traveled%2C he got close to Damascus%2C and suddenly a light from the sky shone around him." title="Acts 9:3" target="_blank" rel="noopener"><ruby>Acts<rt>
     9:3</rt>
 </ruby></a>
 </p>
@@ -74,13 +74,13 @@
             Everything Saul thought he knew had just been turned upside down. The man who set out to destroy
             Christianity would go on to write nearly half the New Testament. <a
                 href="../../eng-web_html/ACT06.htm#:~:text=These words pleased the whole multitude.,of Cilicia and Asia arose%2C disputing with Stephen." title="Acts 6:5 - 9:9"
-                class="rtl">Acts 6:5 - 9:9</a></p>
+                class="rtl" target="_blank" rel="noopener">Acts 6:5 - 9:9</a></p>
         <p class="verse">As he traveled, he got close to Damascus, and suddenly a light from the sky shone around him.
             He fell on the earth, and heard a voice saying to him,
             <strong>“Saul, Saul, why do you persecute me?”</strong> He said, “Who are you, Lord?” The Lord said,
             <strong>“I am Jesus, whom you are persecuting. But rise up and enter
                 into the city, then you will be told what you must do.”</strong> <a
-                href="../../eng-web_html/ACT09.htm#:~:text=As he traveled%2C he got close to Damascus%2C,you will be told what you must do." title="Acts 9:3-6"><ruby>Acts
+                href="../../eng-web_html/ACT09.htm#:~:text=As he traveled%2C he got close to Damascus%2C,you will be told what you must do." title="Acts 9:3-6" target="_blank" rel="noopener"><ruby>Acts
                     <rt>9:3-6</rt>
                 </ruby></a>
         </p>
@@ -204,14 +204,14 @@
             <h3>Family Background &amp; Tribal Lineage</h3>
             <p>
                 Saul described himself as
-                “<a href="../../eng-web_html/PHP03.htm#:~:text=circumcised the eighth day%2C of the stock of Israel%2C of the tribe of Benjamin%2C a Hebrew of Hebrews; concerning the law%2C a Pharisee;" title="Philippians 3:5">of the
+                “<a href="../../eng-web_html/PHP03.htm#:~:text=circumcised the eighth day%2C of the stock of Israel%2C of the tribe of Benjamin%2C a Hebrew of Hebrews; concerning the law%2C a Pharisee;" title="Philippians 3:5" target="_blank" rel="noopener">of the
                     stock of Israel, of the tribe of Benjamin,</a>”
                 emphasizing pure Jewish lineage.
                 His family appears to have been devout, observant Jews who maintained their identity in a
                 <a href="https://en.wikipedia.org/wiki/Hellenistic_period"
                     title="Wikipedia Hellenistic period">Hellenistic</a> environment.
                 References to his “fathers” and “ancestors” <small><a
-                        href="../../eng-web_html/ACT22.htm#:~:text=Brothers and fathers%2C listen to the defense which,brought Paul down and set him before them." title="Acts 22-26"> link
+                        href="../../eng-web_html/ACT22.htm#:~:text=Brothers and fathers%2C listen to the defense which,brought Paul down and set him before them." title="Acts 22-26" target="_blank" rel="noopener"> link
                     </a></small> suggest a heritage that valued the
                 <a href="https://en.wikipedia.org/wiki/Law_of_Moses" title="Wikipedia Law of Moses">Law</a>, the
                 <a href="https://www.youtube.com/watch?v=sumaXbjP2Kg&t=3s" title="God's Story: Prophets">prophets</a>,
@@ -321,7 +321,7 @@
             <h3>Zeal for the Law</h3>
             <p>
                 Saul described himself as being “<strong>exceedingly zealous</strong>”
-                <a href="../../eng-web_html/GAL01.htm#:~:text=I advanced in the Jews’ religion beyond many of my own age among my countrymen%2C being more exceedingly zealous for the traditions of my fathers." title="Galatians 1:14">
+                <a href="../../eng-web_html/GAL01.htm#:~:text=I advanced in the Jews’ religion beyond many of my own age among my countrymen%2C being more exceedingly zealous for the traditions of my fathers." title="Galatians 1:14" target="_blank" rel="noopener">
                     <ruby>Galatians<rt> 1:14</rt></ruby></a> for the traditions of his ancestors.
                 <a href="https://en.wiktionary.org/wiki/zeal#Noun" title="Wiktionary">Zeal</a>, in this context, meant
                 passionate, even aggressive, defense of God’s honor and the Law.
@@ -343,20 +343,20 @@
                 Saul appears to have been known and trusted by the high priest and ruling authorities in Jerusalem.
                 He received letters of authorization to pursue believers beyond Judea, indicating confidence in his
                 loyalty and competence.
-                [<a href="../../eng-web_html/ACT09.htm#:~:text=But Saul%2C still breathing threats and slaughter against the disciples of the Lord%2C went to the high priest" title="Acts 9:1">Link 1</a> |
-                <a href="../../eng-web_html/ACT22.htm#:~:text=I persecuted this Way to the death%2C binding,there to Jerusalem in bonds to be punished." title="Acts 22:4-5">Link
+                [<a href="../../eng-web_html/ACT09.htm#:~:text=But Saul%2C still breathing threats and slaughter against the disciples of the Lord%2C went to the high priest" title="Acts 9:1" target="_blank" rel="noopener">Link 1</a> |
+                <a href="../../eng-web_html/ACT22.htm#:~:text=I persecuted this Way to the death%2C binding,there to Jerusalem in bonds to be punished." title="Acts 22:4-5" target="_blank" rel="noopener">Link
                     2</a>]
                 His reputation was that of a rising, capable Pharisee, thoroughly committed to the Law and the
                 traditions.
                 Before his conversion, he was regarded as a fierce defender of the Judeans against what he saw as
                 dangerous innovation.
-                in <a href="../../eng-web_html/ACT09.htm#:~:text=Here he has authority from the chief priests to bind all who call on your name." title="Acts 9:14">Acts
+                in <a href="../../eng-web_html/ACT09.htm#:~:text=Here he has authority from the chief priests to bind all who call on your name." title="Acts 9:14" target="_blank" rel="noopener">Acts
                     9:14</a>
                 Everyone knew about Saul's authority.
                 Extradition letters were official Sanhedrin documents used to enforce discipline among
                 <a href="https://www.gotquestions.org/the-Way.html" title="www.gotquestions.org">followers of the
                     way</a>.
-                [<a href="../../eng-web_html/ACT08.htm#:~:text=But Saul ravaged the assembly%2C entering into every house and dragged both men and women off to prison." title="Acts 8:3">Link</a>]
+                [<a href="../../eng-web_html/ACT08.htm#:~:text=But Saul ravaged the assembly%2C entering into every house and dragged both men and women off to prison." title="Acts 8:3" target="_blank" rel="noopener">Link</a>]
             </p>
             <div class="carousel-group" style="text-align:center;">
                 <div class="multi-link-container">
@@ -390,7 +390,7 @@
                 this vibrant assembly of believers was marked by apostolic teaching, fellowship, miracles,
                 and bold proclamation of Christ’s resurrection
                 <small><a href="../../eng-web_html/ACT02.htm#:~:text=They continued steadfastly in the apostles’ teaching and,day by day those who were being saved."
-                        title="Acts 2:42-47"><ruby>Acts<rt>2:42-47</rt></ruby></a></small>.
+                        title="Acts 2:42-47" target="_blank" rel="noopener"><ruby>Acts<rt>2:42-47</rt></ruby></a></small>.
                 As thousands of Jews embraced Jesus as the promised Messiah, the movement's explosive momentum stirred
                 intense anxiety
                 among Jerusalem’s religious authorities, creating the volatile environment in which Saul of Tarsus
@@ -401,7 +401,7 @@
                 His followers. Because of this, lots and lots of people in Jerusalem
                 started believing in Jesus. They called themselves “The Way” because they wanted to follow the way Jesus
                 taught them to live, also because
-                <a href="../../eng-web_html/JHN14.htm#:~:text=Jesus said to him%2C “I am the way%2C the truth%2C and the life." title="John 14:6">God is the
+                <a href="../../eng-web_html/JHN14.htm#:~:text=Jesus said to him%2C “I am the way%2C the truth%2C and the life." title="John 14:6" target="_blank" rel="noopener">God is the
                     way</a>, the truth, and the life, and what a better way to start than to
                 follow Him who is leading the way. So many people were joining them that the Jerusalem leaders became
                 scared and upset.
@@ -436,7 +436,7 @@
                 He entered homes, arrested believers, and tried to stop the movement before it spread.
                 Saul believed he was defending God’s honor by opposing what he saw as a false and
                 disruptive sect. <small><a href="../../eng-web_html/ACT09.htm#:~:text=But Saul%2C still breathing threats and slaughter against the disciples of the Lord%2C went to the high priest"
-                        title="Acts 9:1">
+                        title="Acts 9:1" target="_blank" rel="noopener">
                         <ruby>Acts<rt>9:1</rt></ruby>
                     </a></small>
             </p>
@@ -458,10 +458,10 @@
                     title="What is a deacon in the Catholic Church?">deacons</a>
                 of the early church, boldly preached about Jesus
                 and challenged the religious leaders of Jerusalem. His speech in
-                <a href="../../eng-web_html/ACT07.htm#:~:text=“You stiff-necked and uncircumcised in heart and ears%2C you always resist the Holy Spirit!" title="Acts 7:51">
+                <a href="../../eng-web_html/ACT07.htm#:~:text=“You stiff-necked and uncircumcised in heart and ears%2C you always resist the Holy Spirit!" title="Acts 7:51" target="_blank" rel="noopener">
                     <ruby>Acts<rt>7:51</rt></ruby>
                 </a> angered the council, leading to his execution by stoning.
-                <a href="../../eng-web_html/ACT07.htm#:~:text=They threw him out of the city and stoned him." title="Acts 7:58">
+                <a href="../../eng-web_html/ACT07.htm#:~:text=They threw him out of the city and stoned him." title="Acts 7:58" target="_blank" rel="noopener">
                     <ruby>Acts<rt>7:58</rt></ruby>
                 </a> notes that the witnesses laid their cloaks at Saul’s feet, showing he approved
                 of the killing. Stephen became the first Christian martyr, and his death sparked
@@ -508,7 +508,7 @@
             <p>
                 Saul’s persecution of Christians was not random, it was officially
                 supported by Jerusalem’s religious leadership.
-                <a href="../../eng-web_html/ACT09.htm#:~:text=and asked for letters from him to the synagogues of Damascus%2C that if he found any who were of the Way%2C whether men or women%2C he might bring them bound to Jerusalem." title="Acts 9:2">
+                <a href="../../eng-web_html/ACT09.htm#:~:text=and asked for letters from him to the synagogues of Damascus%2C that if he found any who were of the Way%2C whether men or women%2C he might bring them bound to Jerusalem." title="Acts 9:2" target="_blank" rel="noopener">
                     <ruby>Acts<rt>9:2</rt></ruby></a>
                 records that Saul received letters from the high priest giving him authority
                 to arrest followers of Jesus in Damascus and bring them back to Jerusalem.
@@ -525,7 +525,7 @@
                 became the turning point of his life. As he approached the city, a heavenly light
                 flashed around him, and he heard Jesus say,
                 “<strong>Saul, Saul, why do you persecute me?</strong>”
-                <a href="../../eng-web_html/ACT09.htm#:~:text=He fell on the earth%2C and heard a voice saying to him%2C “Saul%2C Saul%2C why do you persecute me?”" title="Acts 9:4">
+                <a href="../../eng-web_html/ACT09.htm#:~:text=He fell on the earth%2C and heard a voice saying to him%2C “Saul%2C Saul%2C why do you persecute me?”" title="Acts 9:4" target="_blank" rel="noopener">
                     <ruby>Acts<rt>9:4</rt></ruby>
                 </a>.
                 Blinded, Saul was led into Damascus, where the disciple <a
@@ -542,7 +542,7 @@
                 As Saul walked, the warm sun shone above him and birds flew through the bright blue sky. Suddenly, a
                 light brighter than the sun flashed all around him! It was so bright that Saul fell to the ground. Then
                 he heard a voice say, <strong>"Saul, Saul, why do you persecute me?"</strong> <a
-                    href="../../eng-web_html/ACT09.htm#:~:text=He fell on the earth%2C and heard a voice saying to him%2C “Saul%2C Saul%2C why do you persecute me?”" title="Acts 9:4">
+                    href="../../eng-web_html/ACT09.htm#:~:text=He fell on the earth%2C and heard a voice saying to him%2C “Saul%2C Saul%2C why do you persecute me?”" title="Acts 9:4" target="_blank" rel="noopener">
                     <ruby>Acts<rt>9:4</rt></ruby></a>
                 It was Jesus speaking to
                 him!</p>
@@ -618,11 +618,11 @@
                     Saul's journey to Damascus ended before he ever reached the city. The risen Jesus
                     confronted him with a brilliant heavenly light and a question that exposed the truth:
                     <strong>"Saul, Saul, why do you persecute Me?"</strong> <a
-                        href="../../eng-web_html/ACT09.htm#:~:text=He fell on the earth%2C and heard a voice saying to him%2C “Saul%2C Saul%2C why do you persecute me?”" title="Acts 9:4">
+                        href="../../eng-web_html/ACT09.htm#:~:text=He fell on the earth%2C and heard a voice saying to him%2C “Saul%2C Saul%2C why do you persecute me?”" title="Acts 9:4" target="_blank" rel="noopener">
                         <ruby>Acts<rt>9:4</rt></ruby></a> This confrontation perfectly illustrates a truth Jesus had
                     taught during His earthly ministry: <strong> 'Truly I tell you, whatever you did for one
                         of the least of these brothers and sisters of mine, you did for me.'</strong> <a
-                        href="../../eng-web_html/MAT25.htm#:~:text=“The King will answer them%2C ‘Most certainly I tell you%2C because you did it to one of the least of these my brothers%2C you did it to me.’" title="Matthew 25:40">
+                        href="../../eng-web_html/MAT25.htm#:~:text=“The King will answer them%2C ‘Most certainly I tell you%2C because you did it to one of the least of these my brothers%2C you did it to me.’" title="Matthew 25:40" target="_blank" rel="noopener">
                         <ruby>Matthew<rt>25:40</rt></ruby></a>
                     By identifying Himself with His
                     followers, Jesus revealed that every act against the Church was an act against Christ
@@ -632,7 +632,7 @@
                         The friend who attends the bridegroom waits and listens for him,
                         and is full of joy when he hears the bridegroom’s voice. That joy is mine, and it is now
                         complete."</strong>
-                    <a href="../../eng-web_html/JHN03.htm#:~:text=You yourselves testify that I said%2C ‘I am not the Christ%2C’ but%2C ‘I have been sent before him.’" title="John 3:28">
+                    <a href="../../eng-web_html/JHN03.htm#:~:text=You yourselves testify that I said%2C ‘I am not the Christ%2C’ but%2C ‘I have been sent before him.’" title="John 3:28" target="_blank" rel="noopener">
                         <ruby>John<rt>3:28</rt></ruby></a>
                     In a single moment, Saul's confidence in his own understanding gave way to the
                     authority of the One he had rejected.
@@ -652,10 +652,10 @@
                 <p>
                     Saul's blindness served as both a physical and spiritual lesson. The man who had traveled
                     with authority entered Damascus completely dependent upon others for guidance. <a
-                        href="../../eng-web_html/ACT09.htm#:~:text=Saul arose from the ground%2C and when his eyes were opened%2C he saw no one." title="Acts 9:8">
+                        href="../../eng-web_html/ACT09.htm#:~:text=Saul arose from the ground%2C and when his eyes were opened%2C he saw no one." title="Acts 9:8" target="_blank" rel="noopener">
                         <ruby>Acts<rt>9:8</rt></ruby></a> During
                     three days of darkness, fasting, and prayer, <a
-                        href="../../eng-web_html/ACT09.htm#:~:text=He was without sight for three days%2C and neither ate nor drank." title="Acts 9:9">
+                        href="../../eng-web_html/ACT09.htm#:~:text=He was without sight for three days%2C and neither ate nor drank." title="Acts 9:9" target="_blank" rel="noopener">
                         <ruby>Acts<rt>9:9</rt></ruby></a> God prepared Saul's heart before restoring
                     his sight. Before receiving a new mission, Saul first learned humility.
                 </p>
@@ -670,11 +670,11 @@
                 <p>
                     Rather than healing Saul directly, God chose a faithful disciple named <a
                         href="https://en.wikipedia.org/wiki/Ananias_of_Damascus" title="Wikipedia">Ananias</a>. <a
-                        href="../../eng-web_html/ACT09.htm#:~:text=Now there was a certain disciple at Damascus named Ananias." title="Acts 9:10">
+                        href="../../eng-web_html/ACT09.htm#:~:text=Now there was a certain disciple at Damascus named Ananias." title="Acts 9:10" target="_blank" rel="noopener">
                         <ruby>Acts<rt>9:10</rt></ruby></a> Although
                     Ananias knew Saul's reputation as a persecutor, he obeyed God's command and welcomed him
                     as a brother. <a href="../../eng-web_html/ACT09.htm#:~:text=Ananias departed and entered into the house."
-                        title="Acts 9:17">
+                        title="Acts 9:17" target="_blank" rel="noopener">
                         <ruby>Acts<rt>9:17</rt></ruby></a> His obedience reminds us that God often accomplishes His
                     greatest work
                     through ordinary believers who are willing to trust Him.
@@ -693,12 +693,12 @@
 
             <p>
                 When Ananias prayed, Saul's sight was restored and he was baptized <a
-                    href="../../eng-web_html/ACT09.htm#:~:text=Immediately something like scales fell from his eyes%2C and he received his sight." title="Acts 9:18">
+                    href="../../eng-web_html/ACT09.htm#:~:text=Immediately something like scales fell from his eyes%2C and he received his sight." title="Acts 9:18" target="_blank" rel="noopener">
                     <ruby>Acts<rt>9:18</rt></ruby></a> as a public
                 declaration of his faith in Jesus Christ. His conversion marked more than a personal
                 change of heart; it marked the beginning of a life devoted to proclaiming the Gospel.
                 The persecutor became a preacher <a
-                    href="../../eng-web_html/ACT09.htm#:~:text=Immediately in the synagogues he proclaimed the Christ%2C that he is the Son of God." title="Acts 9:20">
+                    href="../../eng-web_html/ACT09.htm#:~:text=Immediately in the synagogues he proclaimed the Christ%2C that he is the Son of God." title="Acts 9:20" target="_blank" rel="noopener">
                     <ruby>Acts<rt>9:20</rt></ruby></a>, demonstrating that God's grace can completely
                 transform a life surrendered to Him.
             </p>
@@ -725,11 +725,11 @@
             <h3>Preaching in Damascus</h3>
             <p>
                 Following his baptism, Saul did not retreat into silence. He immediately entered the synagogues of
-                Damascus, boldly proclaiming that Jesus is the Son of God <a href="../../eng-web_html/ACT09.htm#:~:text=Immediately in the synagogues he proclaimed the Christ%2C that he is the Son of God." title="Acts 9:20"><ruby>Acts.<rt>9:20</rt></ruby></a>
+                Damascus, boldly proclaiming that Jesus is the Son of God <a href="../../eng-web_html/ACT09.htm#:~:text=Immediately in the synagogues he proclaimed the Christ%2C that he is the Son of God." title="Acts 9:20" target="_blank" rel="noopener"><ruby>Acts.<rt>9:20</rt></ruby></a>
                 His message stunned the Jewish community, who remembered him as the relentless
-                persecutor from Jerusalem <a href="../../eng-web_html/ACT09.htm#:~:text=All who heard him were amazed%2C and said%2C “Isn’t this he who in Jerusalem made havoc of those who called on this name?" title="Acts 9:21"><ruby>Acts.<rt>9:21</rt></ruby></a> As his understanding deepened, Saul grew
+                persecutor from Jerusalem <a href="../../eng-web_html/ACT09.htm#:~:text=All who heard him were amazed%2C and said%2C “Isn’t this he who in Jerusalem made havoc of those who called on this name?" title="Acts 9:21" target="_blank" rel="noopener"><ruby>Acts.<rt>9:21</rt></ruby></a> As his understanding deepened, Saul grew
                 increasingly powerful in debate, proving from the Scriptures that Jesus was indeed the long-awaited Messiah <a
-                    href="../../eng-web_html/ACT09.htm#:~:text=But Saul increased more in strength%2C and confounded the Jews who lived at Damascus%2C proving that this is the Christ." title="Acts 9:22"><ruby>Acts.<rt>9:22</rt></ruby></a>
+                    href="../../eng-web_html/ACT09.htm#:~:text=But Saul increased more in strength%2C and confounded the Jews who lived at Damascus%2C proving that this is the Christ." title="Acts 9:22" target="_blank" rel="noopener"><ruby>Acts.<rt>9:22</rt></ruby></a>
             </p>
             <p class="p_indent">
                 After Saul was baptized, he did not stop talking about Jesus. He went into the synagogues in Damascus
@@ -746,11 +746,11 @@
         <article>
             <h3>Time in Arabia</h3>
             <p>
-                In <a href="../../eng-web_html/GAL01.htm#:~:text=nor did I go up to Jerusalem to those who were apostles before me%2C but I went away into Arabia." title="Galatians 1:17">Galatians 1:17</a>,
+                In <a href="../../eng-web_html/GAL01.htm#:~:text=nor did I go up to Jerusalem to those who were apostles before me%2C but I went away into Arabia." title="Galatians 1:17" target="_blank" rel="noopener">Galatians 1:17</a>,
                 Paul reveals a period omitted in the condensed narrative of Acts: immediately following his conversion,
                 he withdrew into the desert of <a href="https://en.wikipedia.org/wiki/Nabataean_Kingdom" title="Wikipedia Nabataean Kingdom">Arabia</a>
                 before returning to Damascus. This season of solitude provided vital time for spiritual reflection, unlearning Pharisaic legalism,
-                and receiving direct revelation of the Gospel from Jesus Christ <a href="../../eng-web_html/GAL01.htm#:~:text=But I make known to you%2C brothers%2C concerning,came to me through revelation of Jesus Christ." title="Galatians 1:11-12"><ruby>Galatians<rt>1:11-12</rt></ruby></a>.
+                and receiving direct revelation of the Gospel from Jesus Christ <a href="../../eng-web_html/GAL01.htm#:~:text=But I make known to you%2C brothers%2C concerning,came to me through revelation of Jesus Christ." title="Galatians 1:11-12" target="_blank" rel="noopener"><ruby>Galatians<rt>1:11-12</rt></ruby></a>.
             </p>
             <p class="p_indent">
                 The <a href="https://youtu.be/CQ1J_bjW7bo?si=1m-oL1z0iZx4MX0P&t=36" title="Bible Class Topics">Bible</a>
@@ -766,11 +766,11 @@
             <p>
                 Saul’s powerful preaching provoked intense hostility among opposition leaders and local authorities
                 under King <a href="https://en.wikipedia.org/wiki/Aretas_IV_Philopatris#Defeat_of_Herod_Antipas:~:text=The%20Christian%20Apostle,Damascus%20after%2037%20AD" title="Wikipedia Aretas IV">Aretas IV</a>
-                <a href="../../eng-web_html/2CO11.htm#:~:text=In Damascus the governor under King Aretas guarded,window by the wall%2C and escaped his hands." title="2 Corinthians 11:32-33"><ruby>2 Corinthians<rt>11:32-33</rt></ruby></a>.
+                <a href="../../eng-web_html/2CO11.htm#:~:text=In Damascus the governor under King Aretas guarded,window by the wall%2C and escaped his hands." title="2 Corinthians 11:32-33" target="_blank" rel="noopener"><ruby>2 Corinthians<rt>11:32-33</rt></ruby></a>.
                 When guards were stationed at the city gates to assassinate him
-                <a href="../../eng-web_html/ACT09.htm#:~:text=but their plot became known to Saul." title="Acts 9:24"><ruby>Acts<rt>9:24</rt></ruby></a>,
+                <a href="../../eng-web_html/ACT09.htm#:~:text=but their plot became known to Saul." title="Acts 9:24" target="_blank" rel="noopener"><ruby>Acts<rt>9:24</rt></ruby></a>,
                     Saul’s disciples lowered him down through an opening in the city wall inside a large woven basket under cover of night
-                <a href="../../eng-web_html/ACT09.htm#:~:text=but his disciples took him by night and let him down through the wall%2C lowering him in a basket." title="Acts 9:25"><ruby>Acts<rt>9:25</rt></ruby></a>.
+                <a href="../../eng-web_html/ACT09.htm#:~:text=but his disciples took him by night and let him down through the wall%2C lowering him in a basket." title="Acts 9:25" target="_blank" rel="noopener"><ruby>Acts<rt>9:25</rt></ruby></a>.
             </p>
              <div class="carousel-group img_fl">
                 <div class="multi-link-container">
@@ -798,10 +798,10 @@
         <article>
                 <h3>Return to Jerusalem</h3>
                 <p> Three years after his conversion, Saul returned to Jerusalem to visit Cephas (Peter), staying with him for fifteen days <a
-                        href="../../eng-web_html/GAL01.htm#:~:text=Then after three years I went up to Jerusalem to visit Peter%2C and stayed with him fifteen days." title="Galatians 1:18"><small><ruby>Galatians<rt>1:18</rt></ruby></small></a>. Paul also met James,
-                    the Lord’s brother, during this visit <a href="../../eng-web_html/GAL01.htm#:~:text=But of the other apostles I saw no one except James%2C the Lord’s brother." title="Galatians 1:19"><small><ruby>Galatians<rt>1:19
+                        href="../../eng-web_html/GAL01.htm#:~:text=Then after three years I went up to Jerusalem to visit Peter%2C and stayed with him fifteen days." title="Galatians 1:18" target="_blank" rel="noopener"><small><ruby>Galatians<rt>1:18</rt></ruby></small></a>. Paul also met James,
+                    the Lord’s brother, during this visit <a href="../../eng-web_html/GAL01.htm#:~:text=But of the other apostles I saw no one except James%2C the Lord’s brother." title="Galatians 1:19" target="_blank" rel="noopener"><small><ruby>Galatians<rt>1:19
                             </rt></ruby></small></a>. However, when Saul attempted to join the disciples, they were deeply afraid of him, doubting that his conversion was genuine <a
-                        href="../../eng-web_html/ACT09.htm#:~:text=When Saul had come to Jerusalem%2C he tried to join himself to the disciples; but they were all afraid of him%2C not believing that he was a disciple." title="Acts 9:26"><small><ruby>Acts.<rt>9:26</rt></ruby></small></a> Their fear was understandable
+                        href="../../eng-web_html/ACT09.htm#:~:text=When Saul had come to Jerusalem%2C he tried to join himself to the disciples; but they were all afraid of him%2C not believing that he was a disciple." title="Acts 9:26" target="_blank" rel="noopener"><small><ruby>Acts.<rt>9:26</rt></ruby></small></a> Their fear was understandable
                     because Saul had once violently persecuted the followers of Jesus, arresting believers and seeking to destroy the church. It was difficult for those who
                     remembered his former actions to believe that the man who had once hunted Christians had truly become one of them.</p>
                 <div class="p_indent">About three years after Saul began following Jesus, he went to Jerusalem. He wanted to visit Peter, one of Jesus’ apostles, and stayed with him for fifteen
@@ -822,12 +822,12 @@
                 <h3>Barnabas’s Advocacy</h3>
                 <p> Where others saw danger, Joseph—a Levite named <a href="https://en.wikipedia.org/wiki/Barnabas" title="Wikipedia Barnabas">Barnabas</a>, meaning <b>“Son of
                         Encouragement”</b>
-                    <a href="../../eng-web_html/ACT04.htm#:~:text=Joses%2C who by the apostles was also called Barnabas (which is%2C being interpreted%2C Son of Encouragement)%2C a Levite%2C a man of Cyprus by race%2C" title="Acts 4:36"><small><ruby>Acts<rt>4:36</rt></ruby></small></a>—saw God's grace at
+                    <a href="../../eng-web_html/ACT04.htm#:~:text=Joses%2C who by the apostles was also called Barnabas (which is%2C being interpreted%2C Son of Encouragement)%2C a Levite%2C a man of Cyprus by race%2C" title="Acts 4:36" target="_blank" rel="noopener"><small><ruby>Acts<rt>4:36</rt></ruby></small></a>—saw God's grace at
                     work. While many believers remembered Saul as the man who had persecuted the church, Barnabas was willing to listen to Saul's testimony and recognize that
                     something truly remarkable had happened. He took Saul and brought him before the apostles, helping to bridge the gap between the former persecutor and the
                     frightened believers who were still unsure whether they could trust him <a href="../../eng-web_html/ACT09.htm#:~:text=But Barnabas took him and brought him to the apostles%2C and declared to them how he had seen the Lord on the way%2C and that he had spoken to him%2C and how at Damascus he had preached boldly in the name of Jesus."
-                        title="Acts 9:27"><small><ruby>Acts<rt>9:27</rt></ruby></small></a>. During this visit, Saul met Peter and also saw James, the Lord's brother <a
-                        href="../../eng-web_html/GAL01.htm#:~:text=But of the other apostles I saw no one except James%2C the Lord’s brother." title="Galatians 1:19"><small><ruby>Galatians<rt>1:19</rt></ruby></small></a>.
+                        title="Acts 9:27" target="_blank" rel="noopener"><small><ruby>Acts<rt>9:27</rt></ruby></small></a>. During this visit, Saul met Peter and also saw James, the Lord's brother <a
+                        href="../../eng-web_html/GAL01.htm#:~:text=But of the other apostles I saw no one except James%2C the Lord’s brother." title="Galatians 1:19" target="_blank" rel="noopener"><small><ruby>Galatians<rt>1:19</rt></ruby></small></a>.
                     Barnabas's willingness to stand beside Saul was more than an act of kindness; it was an act of courage and faith. He was willing to look beyond Saul's terrible
                     past and believe that God's grace could completely change a person. His encouragement helped open the door for Saul to be received among the believers and begin
                     serving Christ openly in Jerusalem. </p>
@@ -843,11 +843,11 @@
                 Saul’s early years of ministry transformed his theology from rigid legalism to the proclamation of
                 salvation by
                 grace through faith in Christ <a href="../../eng-web_html/GAL02.htm#:~:text=yet knowing that a man is not justified by the works of the law but through faith in Jesus Christ%2C even we believed in Christ Jesus%2C that we might be justified by faith in Christ and not by the works of the law%2C because no flesh will be justified by the works of the law."
-                    title="Galatians 2:16"><ruby>Galatians<rt>2:16</rt></ruby></a>. He realized that through the cross,
+                    title="Galatians 2:16" target="_blank" rel="noopener"><ruby>Galatians<rt>2:16</rt></ruby></a>. He realized that through the cross,
                 God broke
                 down the barrier between Jews and Gentiles, inviting all believers into a single covenant family <a
                     href="../../eng-web_html/EPH03.htm#:~:text=that the Gentiles are fellow heirs and fellow members of the body%2C and fellow partakers of his promise in Christ Jesus through the Good News%2C"
-                    title="Ephesians 3:6"><ruby>Ephesians<rt>
+                    title="Ephesians 3:6" target="_blank" rel="noopener"><ruby>Ephesians<rt>
                             3:6</rt></ruby></a>. This growing insight formed the core of his future missionary calling.
             </p>
             <p class="p_indent">Before he followed Jesus, Saul thought that obeying God's Law was the way people showed they were right with God. But as Saul learned about Jesus, he discovered
@@ -869,11 +869,11 @@
         <h3>The Call to the Gentiles</h3>
         <article class="homepage-grid">
      <p>Following his conversion and a period of preparation, Saul received a distinct divine calling to serve as the “Apostle to the Gentiles” <a
-             href="../../eng-web_html/ACT09.htm#:~:text=But the Lord said to him%2C “Go your way%2C for he is my chosen vessel to bear my name before the nations and kings%2C and the children of Israel." title="Acts 9:15"><small><ruby>Acts<rt>9:15</rt></ruby></a></small>. While the other
+             href="../../eng-web_html/ACT09.htm#:~:text=But the Lord said to him%2C “Go your way%2C for he is my chosen vessel to bear my name before the nations and kings%2C and the children of Israel." title="Acts 9:15" target="_blank" rel="noopener"><small><ruby>Acts<rt>9:15</rt></ruby></a></small>. While the other
          apostles continued to focus much of their ministry among the Jewish people, Paul was entrusted with carrying the Good News to the Gentile nations of the
-         Greco-Roman world <a href="../../eng-web_html/GAL02.htm#:~:text=but to the contrary%2C when they saw that I had been entrusted with the Good News for the uncircumcised%2C even as Peter with the Good News for the circumcised—" title="Galatians 2:7"><small><ruby>Galatians<rt>2:7</rt>
+         Greco-Roman world <a href="../../eng-web_html/GAL02.htm#:~:text=but to the contrary%2C when they saw that I had been entrusted with the Good News for the uncircumcised%2C even as Peter with the Good News for the circumcised—" title="Galatians 2:7" target="_blank" rel="noopener"><small><ruby>Galatians<rt>2:7</rt>
                  </ruby></a></small>, His message emphasized that through Christ’s death on the cross, the barrier separating Jew and Gentile had been broken down <a
-             href="../../eng-web_html/EPH02.htm#:~:text=For he is our peace%2C who made both one%2C and broke down the middle wall of separation%2C" title="Ephesians 2:14"><small><ruby>Ephesians<rt>2:14</rt>
+             href="../../eng-web_html/EPH02.htm#:~:text=For he is our peace%2C who made both one%2C and broke down the middle wall of separation%2C" title="Ephesians 2:14" target="_blank" rel="noopener"><small><ruby>Ephesians<rt>2:14</rt>
                  </ruby></a></small>, Gentiles who placed their faith in Christ were therefore welcomed as full members of God’s covenant.</p>
      <p class="p_indent">After Saul met Jesus and his life was changed, God gave him a very important job. God told Ananias that Paul would carry the Good News of Jesus to many different nations and peoples.
         Paul was given a special mission, he traveled far beyond the land of Israel to teach Gentiles about Jesus, and His message of salvation. He wanted
@@ -886,8 +886,8 @@
         <h3>Partnership with Barnabas</h3>
         <p>Recognizing Paul’s unique calling, <a href="https://en.wikipedia.org/wiki/Barnabas" title="Wikipedia Barnabas">Barnabas</a> traveled to Tarsus to bring Saul to <a
                 href="https://en.wikipedia.org/wiki/Antioch" title="Wikipedia Antioch">Antioch</a>, which quickly became the central hub for Gentile Christianity <a
-                href="../../eng-web_html/ACT11.htm#:~:text=Barnabas went out to Tarsus to look for Saul.,The disciples were first called Christians in Antioch." title="Acts 11:25-26"><ruby>Acts<rt>11:25-26</rt></ruby></a>. Commissioned by the Holy Spirit
-            through prayer and fasting <a href="../../eng-web_html/ACT13.htm#:~:text=As they served the Lord and fasted%2C the,their hands on them%2C they sent them away." title="Acts 13:2-3"><ruby>Acts<rt>13:2-3</rt></ruby></a>, Paul and
+                href="../../eng-web_html/ACT11.htm#:~:text=Barnabas went out to Tarsus to look for Saul.,The disciples were first called Christians in Antioch." title="Acts 11:25-26" target="_blank" rel="noopener"><ruby>Acts<rt>11:25-26</rt></ruby></a>. Commissioned by the Holy Spirit
+            through prayer and fasting <a href="../../eng-web_html/ACT13.htm#:~:text=As they served the Lord and fasted%2C the,their hands on them%2C they sent them away." title="Acts 13:2-3" target="_blank" rel="noopener"><ruby>Acts<rt>13:2-3</rt></ruby></a>, Paul and
             Barnabas set out as co-laborers. Their partnership combined Barnabas’s respected character and encouragement with Paul’s bold theological defense of the Gospel.</p>
         <p class="p_indent">Barnabas knew that Saul had important work to do for God. So Barnabas traveled to Tarsus to find Saul and invited him to come to Antioch. Antioch was a busy
             city where many people were learning about Jesus, including people who were not Jewish. Barnabas and Saul spent a whole year there teaching the new believers and helping
@@ -903,11 +903,11 @@
             to carry the message of Jesus beyond the places where it was already known. Their journey
             began with a voyage across the sea to <a href="https://en.wikipedia.org/wiki/Cyprus" title="Wikipedia Cyprus">Cyprus</a>, Barnabas’s home island, before they continued
             northward into Asia Minor. From there, they traveled through cities such as Pisidian Antioch, Iconium, Lystra, and Derbe, following the busy roads that connected communities
-            across the region <a href="../../eng-web_html/ACT13.htm#:~:text=So%2C being sent out by the Holy Spirit%2C,synagogue on the Sabbath day and sat down." title="Acts 13:4-14:28"><ruby>Acts<rt>13–14</rt></ruby></a>.
+            across the region <a href="../../eng-web_html/ACT13.htm#:~:text=So%2C being sent out by the Holy Spirit%2C" title="Acts 13:4-14:28" target="_blank" rel="noopener"><ruby>Acts<rt>13–14</rt></ruby></a>.
             For Paul and Barnabas, these were not simply stops along a road. Each city brought new people, unfamiliar customs, difficult conversations, and opportunities to tell people
             about Jesus. They commonly began in the local synagogues, speaking first to Jews and to Gentiles known as “God-fearers”—people who respected the God of Israel and were
             interested in Jewish faith—before taking the message more broadly to the Gentile population <a href="../../eng-web_html/ACT13.htm#:~:text=Paul and Barnabas spoke out boldly%2C and said%2C “It was necessary that God’s word should be spoken to you first."
-            title="Acts 13:46"><ruby>Acts<rt>13:46</rt></ruby></a>. Along these roads, friendships were formed, believers gathered, and new churches began to take root.</p>
+            title="Acts 13:46" target="_blank" rel="noopener"><ruby>Acts<rt>13:46</rt></ruby></a>. Along these roads, friendships were formed, believers gathered, and new churches began to take root.</p>
         <div class="carousel-group" style="margin:0 auto;">
                 <div class="multi-link-container">
                     <div class="thumbnail-container">
@@ -935,39 +935,51 @@
 
         <article>
      <h3>Conflict and Perseverance</h3>
+     <div class="carousel-group img_rtl">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img">
+                            <img src="../../images/_JesusChrist/apostlePaul_Stoning_thumb.webp"
+                                alt="Jean-Baptiste de Champaigne - The Stoning of St. Paul - Arnot Art Museum" data-author="Jean-Baptiste de Champaigne"
+                                data-source-url="https://commons.wikimedia.org/wiki/File:Jean-Baptiste_de_Champaigne_-_The_Stoning_of_St._Paul_-_Arnot_Art_Museum.jpg" />
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="11"></div>
+                </div>
+            </div>
      <p>Paul’s missionary work brought both joyful response and fierce opposition. As he and Barnabas moved from city to city, their message challenged established religious
          practices and, at times, disrupted the expectations of local communities. Some Jewish opponents rejected Paul’s preaching and stirred up resistance, while Gentile crowds
          could also react strongly when the apostles’ message challenged the worship of local gods and customs. In <a href="https://en.wikipedia.org/wiki/Lystra#Roman_period"title="Wikipedia">Lystra</a>, this opposition eventually turned violent when Paul’s
          opponents persuaded the crowd against him.</p>
      <p>The crowd stoned Paul and dragged him outside the city, leaving him there because they believed he was dead <a
-             href="../../eng-web_html/ACT14.htm#:~:text=But some Jews from Antioch and Iconium came there" title="Acts 14:19"><ruby>Acts<rt>14:19</rt></ruby></a>. Yet Paul survived. When the
+             href="../../eng-web_html/ACT14.htm#:~:text=But some Jews from Antioch and Iconium came there,was dead." title="Acts 14:19" target="_blank" rel="noopener"><ruby>Acts<rt>14:19</rt></ruby></a>. Yet Paul survived. When the
          disciples gathered around him, he got up and, remarkably, returned to Lystra rather than immediately fleeing the city. His return was not simply an act of physical
          courage; he went back to strengthen the very believers who had witnessed his suffering.</p>
      <p>As Paul and Barnabas later revisited the believers in the region, they encouraged them to remain faithful, explaining that hardship was not unexpected for those following
          Christ: <i>“we must through much tribulation enter into the kingdom of God”</i> <a href="../../eng-web_html/ACT14.htm#:~:text=we must enter into God’s Kingdom."
-             title="Acts 14:22"><ruby>Acts<rt>14:22</rt></ruby></a>. Paul’s experience at Lystra therefore became more than an account of persecution. His suffering demonstrated
+             title="Acts 14:22" target="_blank" rel="noopener"><ruby>Acts<rt>14:22</rt></ruby></a>. Paul’s experience at Lystra therefore became more than an account of persecution. His suffering demonstrated
          the cost of his calling and the depth of his commitment to Christ and to the believers he had come to serve.</p>
-     <p class="p_indent">Sharing the good news was not easy. Some angry crowds threw stones at Paul and tried to stop him from preaching. But even when he was hurt or in danger,
+     <p style="font-size: 1.2rem;">Sharing the good news was not easy for Paul and Barnabas. Some angry crowds in <a href="https://www.youtube.com/watch?v=_PpxnDvI4nA" title="Youtube Paul and Barnabas in Lystra">Lystra</a> threw stones at Paul and tried to stop him from preaching. But even when he was hurt or in danger,
          Paul never gave up. He got back up and kept helping the new believers stay strong, showing everyone that trusting in God gives us courage even during hard times. </p>
  </article>
 
         <article>
         <h3>Council of Jerusalem</h3>
         <p>Following the First Journey, a major dispute broke out when legalistic teachers insisted that Gentile converts must observe Mosaic law and circumcision to be saved <a
-                href="../../eng-web_html/ACT15.htm#:~:text=Some men came down from Judea and taught the brothers%2C “Unless you are circumcised after the custom of Moses%2C you can’t be saved.”" title="Acts 15:1"><ruby>Acts<rt>15:1</rt></ruby></a>. Paul and Barnabas traveled to Judea for the
+                href="../../eng-web_html/ACT15.htm#:~:text=Some men,.”" title="Acts 15:1" target="_blank" rel="noopener"><ruby>Acts<rt>15:1</rt></ruby></a>. Paul and Barnabas traveled to Judea for the
             landmark <a href="https://en.wikipedia.org/wiki/Council_of_Jerusalem" title="Wikipedia Council of Jerusalem">Council of Jerusalem</a> <a
-                href="../../eng-web_html/ACT15.htm#:~:text=The apostles and the elders were gathered together,yourselves%2C it will be well with you. Farewell." title="Acts 15:6-29"><ruby>Acts<rt>15:6-29</rt></ruby></a>. Together with Peter and James, the
+                href="../../eng-web_html/ACT15.htm#:~:text=The apostles and the elders were gathered together,yourselves%2C it will be well with you. Farewell." title="Acts 15:6-29" target="_blank" rel="noopener"><ruby>Acts<rt>15:6-29</rt></ruby></a>. Together with Peter and James, the
             council concluded that salvation is by grace through faith alone, affirming Gentile inclusion and preserving the unity of the global Church <a
-                href="../../eng-web_html/GAL02.htm#:~:text=yet knowing that a man is not justified by the works of the law but through faith in Jesus Christ%2C even we believed in Christ Jesus%2C that we might be justified by faith in Christ and not by the works of the law%2C because no flesh will be justified by the works of the law." title="Galatians 2:16"><ruby>Galatians<rt>2:16</rt></ruby></a>. </p>
+                href="../../eng-web_html/GAL02.htm#:~:text=yet knowing that a man is not justified by the works of the law but through faith in Jesus Christ%2C even we believed in Christ Jesus%2C that we might be justified by faith in Christ and not by the works of the law%2C because no flesh will be justified by the works of the law." title="Galatians 2:16" target="_blank" rel="noopener"><ruby>Galatians<rt>2:16</rt></ruby></a>. </p>
         <p class="p_indent"> When people from different cultures became Christians, some leaders wondered if they needed to follow old rules and rituals first. Paul and the apostles
             gathered in Jerusalem to talk about it. They agreed that God saves everyone who trusts in Jesus by His grace alone, so new believers didn't need to adopt old ritual laws to
             belong to God's family. </p>
         </article>
         <article>
         <h3>Second and Third Missionary Journeys</h3>
-        <p> On his <b>Second Journey</b> <a href="../../eng-web_html/ACT15.htm#:~:text=After some days Paul said to Barnabas%2C “Let’s,“All of God’s works are known to him from eternity." title="Acts 15:36–18:22"><ruby>Acts<rt>15:36–18:22</rt></ruby></a>,
+        <p> On his <b>Second Journey</b> <a href="../../eng-web_html/ACT15.htm#:~:text=After some days Paul said to Barnabas%2C “Let’s,“All of God’s works are known to him from eternity." title="Acts 15:36–18:22" target="_blank" rel="noopener"><ruby>Acts<rt>15:36–18:22</rt></ruby></a>,
             Paul crossed into Europe after receiving the Macedonian vision, planting key churches in Philippi, Thessalonica, Berea, Athens, and Corinth. On his <b>Third Journey</b> <a
-                href="../../eng-web_html/ACT18.htm#:~:text=Having spent some time there%2C he departed and,Then he set sail from Ephesus." title="Acts 18:23–21:17"><ruby>Acts<rt>18:23–21:17</rt></ruby></a>, he spent over two years
+                href="../../eng-web_html/ACT18.htm#:~:text=Having spent some time there%2C he departed and,Then he set sail from Ephesus." title="Acts 18:23–21:17" target="_blank" rel="noopener"><ruby>Acts<rt>18:23–21:17</rt></ruby></a>, he spent over two years
             teaching in Ephesus—a city whose church, as <a href="https://www.earlychristianwritings.com/text/irenaeus-book3.html" title="Irenaeus Against Heresies Book 3">Saint
                 Irenaeus</a> wrote, was <i>“founded by Paul, and having John remaining among them permanently until the times of Trajan, is a true witness of the tradition of the
                 apostles.”</i>
@@ -979,9 +991,9 @@
         <article>
         <h3>Church Planting and Leadership Development</h3>
         <p> Paul’s missionary methodology extended beyond initial evangelism to sustainable church governance and spiritual formation. He appointed qualified elders in every church <a
-                href="../../eng-web_html/ACT14.htm#:~:text=When they had appointed elders for them in every assembly%2C and had prayed with fasting%2C they commended them to the Lord on whom they had believed." title="Acts 14:23"><ruby>Acts<rt>14:23</rt></ruby></a>, mentored young leaders like <a
+                href="../../eng-web_html/ACT14.htm#:~:text=When they had appointed elders for them in every assembly%2C and had prayed with fasting%2C they commended them to the Lord on whom they had believed." title="Acts 14:23" target="_blank" rel="noopener"><ruby>Acts<rt>14:23</rt></ruby></a>, mentored young leaders like <a
                 href="https://en.wikipedia.org/wiki/Saint_Timothy" title="Wikipedia Saint Timothy">Timothy</a> and <a href="https://en.wikipedia.org/wiki/Saint_Titus"
-                title="Wikipedia Saint Titus">Titus</a> <a href="../../eng-web_html/2TI02.htm#:~:text=The things which you have heard from me among many witnesses%2C commit the same things to faithful men who will be able to teach others also." title="2 Timothy 2:2"><ruby>2 Timothy<rt>2:2</rt>
+                title="Wikipedia Saint Titus">Titus</a> <a href="../../eng-web_html/2TI02.htm#:~:text=The things which you have heard from me among many witnesses%2C commit the same things to faithful men who will be able to teach others also." title="2 Timothy 2:2" target="_blank" rel="noopener"><ruby>2 Timothy<rt>2:2</rt>
                     </ruby></a>, and maintained contact through pastoral epistles. This strategy built self-sustaining, gospel-centered communities capable of reproducing and
             discipling future generations across the Roman Empire. </p>
         <p class="p_indent"> Paul didn't just start a church and leave it on its own. He chose wise leaders in each city to care for the believers, and he spent time training younger
@@ -1325,6 +1337,12 @@ $carouselItems = [
         'webp'                 => 'apostlePaul_FirstMissionaryJourney.webp',
         'imgAlt_Title_heading' => 'First Missionary Journey',
         'headingLink_href'     => 'https://uasvbible.org/2025/11/15/the-apostle-pauls-first-missionary-journey/'
+    ],
+    [
+        'originalImage_href'   => 'apostlePaul_Stoning.jpg',
+        'webp'                 => 'apostlePaul_Stoning.webp',
+        'imgAlt_Title_heading' => 'Paul is stoned in Lystra',
+        'headingLink_href'     => 'https://www.pruittcares.org/articles/stoned-and-left-for-dead'
     ],
 ];
 

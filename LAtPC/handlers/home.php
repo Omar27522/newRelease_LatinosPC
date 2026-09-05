@@ -108,7 +108,7 @@ global $page; //this is the page object brought in from initial load. It contain
         <div class="multi-link-container">
             <h3 class="linked-text"><?= $softwareHeading = $content[69][$key] ?? 'Software';?></h3>
             <div class="link-dialog">
-                <p tabindex="0"><?= $softwareDialog = $content[70][$key] ?? '';?></p>
+                <p tabindex="0"><?= $softwareDialog = $content[70][$key] ?? '';?><a href="<?= $content[126][$key]?>" style="text-align:center;display:block;margin-top:10px;font-size:1.5rem;"><?= $content[69][$key] ?? 'SOFTWARE';?></a></p>
             </div>
         </div>
         <a href="<?= $softwareAntiVirus = $content[97][$key] ?? '#';?>" class="cta-button"><?= $softwareB_AntiVirus = $content[71][$key] ?? 'Button';?></a>

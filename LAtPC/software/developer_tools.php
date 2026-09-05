@@ -48,7 +48,7 @@
         <li>
             <a href="https://www.softwareadvice.com/categories/">
                 <button tabindex="0" class="card2 selection">
-                    <img src="https://latinospc.com/latinospc/articles/software/softwareadvice.svg" alt="SoftwareAdvice"
+                    <img src="../images/programs/thumbs/softwareadvice.svg" alt="SoftwareAdvice"
                         title="SoftwareAdvice">
                     <br>Software Advice
                 </button>
@@ -57,7 +57,7 @@
         <li>
             <a href="https://filehippo.com/popular/">
                 <button tabindex="0" class="card2 selection">
-                    <img src="https://latinospc.com/latinospc/articles/software/filehippo.png" alt="FileHippo"
+                    <img src="../images/programs/thumbs/filehippo.png" alt="FileHippo"
                         title="FileHippo">
                     <br>FileHippo
                 </button>
@@ -66,7 +66,7 @@
         <li>
             <a href="https://www.majorgeeks.com/mg/sortdate/internet_tools.html">
                 <button tabindex="0" class="card2 selection">
-                    <img src="https://latinospc.com/latinospc/articles/software/majorgeeks.gif" alt="MajorGeeks"
+                    <img src="../images/programs/thumbs/majorgeeks.gif" alt="MajorGeeks"
                         title="MajorGeeks">
                     <br>MajorGeeks
                 </button>
@@ -75,7 +75,7 @@
         <li>
             <a href="https://ninite.com/">
                 <button tabindex="0" class="card2 selection">
-                    <img src="https://latinospc.com/latinospc/articles/software/ninite.png" alt="Ninite" title="Ninite">
+                    <img src="../images/programs/thumbs/ninite.png" alt="Ninite" title="Ninite">
                     <br>Ninite
                 </button>
             </a>
@@ -83,7 +83,7 @@
         <li>
             <a href="https://www.filehorse.com/">
                 <button tabindex="0" class="card2 selection">
-                    <img src="https://latinospc.com/latinospc/articles/software/filehorse.png" alt="FileHorse"
+                    <img src="../images/programs/thumbs/filehorse.png" alt="FileHorse"
                         title="FileHorse">
                     <br>FileHorse
                 </button>
@@ -92,7 +92,7 @@
         <li>
             <a href="https://win.softpedia.com/index.free.shtml?scroll_flt">
                 <button tabindex="0" class="card2 selection">
-                    <img src="https://latinospc.com/latinospc/articles/software/softpedia3x2HGBW9_400x400.png"
+                    <img src="../images/programs/thumbs/softpedia3x2HGBW9_400x400.png"
                         alt="Softpedia" title="Softpedia">
                     <br>Softpedia
                 </button>
@@ -101,7 +101,7 @@
         <li>
             <a href="https://en.softonic.com/">
                 <button tabindex="0" class="card2 selection">
-                    <img src="https://latinospc.com/latinospc/articles/software/softonic.jpg" alt="Softonic"
+                    <img src="../images/programs/thumbs/softonic.jpg" alt="Softonic"
                         title="Softonic">
                     <br>Softonic
                 </button>
@@ -110,7 +110,7 @@
         <li>
             <a href="https://www.snapfiles.com/topdownloads/">
                 <button tabindex="0" class="card2 selection">
-                    <img src="https://latinospc.com/latinospc/articles/software/snapfileslogo-smaller.png"
+                    <img src="../images/programs/thumbs/snapfileslogo-smaller.png"
                         alt="Snapfiles" title="Snapfiles">
                     <br>Snapfiles
                 </button>
@@ -119,7 +119,7 @@
         <li>
             <a href="https://www.filepuma.com/">
                 <button tabindex="0" class="card2 selection">
-                    <img src="https://latinospc.com/latinospc/articles/software/filepuma.png" alt="FilePuma"
+                    <img src="../images/programs/thumbs/filepuma.png" alt="FilePuma"
                         title="FilePuma">
                     <br>Filepuma
                 </button>
@@ -128,7 +128,7 @@
         <li>
             <a href="https://sourceforge.net/directory/windows/?developmentstatus=5-production-stable">
                 <button tabindex="0" class="card2 selection">
-                    <img src="https://latinospc.com/latinospc/articles/software/sourgeforge-logo-full.svg"
+                    <img src="../images/programs/thumbs/sourgeforge-logo-full.svg"
                         alt="SourceForge" title="SourceForge">
                     <br>Sourgeforge
                 </button>
@@ -137,7 +137,7 @@
         <li>
             <a href="https://www.donationcoder.com/software">
                 <button tabindex="0" class="card2 selection">
-                    <img src="https://latinospc.com/latinospc/articles/software/donationcoder.jpg" alt="Donation Coder"
+                    <img src="../images/programs/thumbs/donationcoder.jpg" alt="Donation Coder"
                         title="Donation Coder">
                     <br>Donation Coder
                 </button>
@@ -146,7 +146,7 @@
         <li>
             <a href="https://www.fosshub.com/">
                 <button tabindex="0" class="card2 selection">
-                    <img src="https://latinospc.com/latinospc/articles/software/fosshub5b7e46590c200816f7b796df.png"
+                    <img src="../images/programs/thumbs/fosshub5b7e46590c200816f7b796df.png"
                         alt="Foss Hub" title="Foss Hub">
                     <br>Foss Hub
                 </button>

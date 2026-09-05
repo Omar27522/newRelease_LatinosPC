@@ -105,94 +105,37 @@ function apostoles()  {
   content();
 }
 
-function peterApostle()    {
-    include '_Apostles/_Peter.php';
-}
-
-function andrewApostle()    {
-   include '_Apostles/_Andrew.php';
-}
-
-function jamesApostle()    {
-   include '_Apostles/_James.php';
-}
-
-function johnApostle()    {
-   include '_Apostles/_John.php';
-}
-
-function philipApostle()    {
-   include '_Apostles/_Philip.php';
-}
-
-function bartholomewApostle()    {
-   include '_Apostles/_Bartholomew.php';
-}
-
-function thomasApostle()    {
-   include '_Apostles/_Thomas.php';
-}
-
-function matthewApostle()    {
-   include '_Apostles/_Matthew.php';
-}
-
-function little_jamesApostle()    {
-   include '_Apostles/_James_The_Less.php';
-}
-
-function thaddaeusApostle()    {
-   include '_Apostles/_Judas_Thaddaeus.php';
-}
-
-function simonApostle()    {
-   include '_Apostles/_Simon.php';
-}
-
-function judasApostle()    {
-   include '_Apostles/_Judas_Iscariot.php';
-}
-
-function matthiasApostle()    {
-   include '_Apostles/_Matthias.php';
-}
-
-
-function paulApostle () {
-  include '_Apostles/_Paul.php';
-}
-
 function content()    {
     global $titles, $names, $subTitles, $adicionalNames, $_Jesus;
     global $titulos, $nombres, $subTitulos, $nombresAdicionales, $_Jesus;
     if (isset($_GET['peter'])):
-      peterApostle();
+      include '_Apostles/_Peter.php';
   elseif (isset($_GET['andrew'])):
-      andrewApostle();
+      include '_Apostles/_Andrew.php';
   elseif (isset($_GET['james'])):
-      jamesApostle();
+      include '_Apostles/_James.php';
   elseif (isset($_GET['john'])):
-      johnApostle();
+      include '_Apostles/_John.php';
   elseif (isset($_GET['philip'])):
-      philipApostle();
+      include '_Apostles/_Philip.php';
   elseif (isset($_GET['bartholomew'])):
-      bartholomewApostle();
+      include '_Apostles/_Bartholomew.php';
   elseif (isset($_GET['thomas'])):
-      thomasApostle();//https://en.wikipedia.org/wiki/Caravaggio#/media/File:The_Incredulity_of_Saint_Thomas-Caravaggio_(1601-2).jpg
+      include '_Apostles/_Thomas.php';//https://en.wikipedia.org/wiki/Caravaggio#/media/File:The_Incredulity_of_Saint_Thomas-Caravaggio_(1601-2).jpg
   elseif (isset($_GET['matthew'])):
-      matthewApostle();
+      include '_Apostles/_Matthew.php';
   elseif (isset($_GET['little_james'])):
-      little_jamesApostle();
+      include '_Apostles/_James_The_Less.php';
   elseif (isset($_GET['thaddaeus'])):
-      thaddaeusApostle();
+      include '_Apostles/_Judas_Thaddaeus.php';
   elseif (isset($_GET['simon'])):
-      simonApostle();
+      include '_Apostles/_Simon.php';
   elseif (isset($_GET['judas'])):
-      judasApostle();
+      include '_Apostles/_Judas_Iscariot.php';
   elseif (isset($_GET['matthias'])):
-      matthiasApostle();
+      include '_Apostles/_Matthias.php';
   elseif (isset($_GET['paul'])):
-    paulApostle ();
+    include '_Apostles/_Paul.php';
   else:
 
   ?>

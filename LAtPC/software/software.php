@@ -25,21 +25,21 @@ function cssStyles() {
 
 function sw_breadCrumbs() {
     $breadCrumbs = [
-        "<a href=\"./\">Software</a>",
-        "<a href=\"./anti_virus\">Anti-Virus</a>",
-        "<a href=\"./malware_cleaner\">Malware Cleaners</a>",
-        "<a href=\"./web_browsers\">Web Browsers</a>",
-        "<a href=\"./messaging\">Messaging</a>",
-        "<a href=\"./media\">Media</a>",
-        "<a href=\"./runtimes\">Runtimes</a>",
-        "<a href=\"./imaging\">Imaging</a>",
-        "<a href=\"./documents\">Documents</a>",
-        "<a href=\"./file_sharing\">File Sharing</a>",
-        "<a href=\"./online_storage\">Online Storage</a>",
-        "<a href=\"./other\">Other</a>",
-        "<a href=\"./utilities\">Utilities</a>",
-        "<a href=\"./compression\">Compression</a>",
-        "<a href=\"./developer_tools\">Developer Tools</a>"
+        "<a href=\"../software_options#^\">Software</a>",
+        "<a href=\"../software_options/anti_virus#^\">Anti-Virus</a>",
+        "<a href=\"../software_options/malware_cleaner#^\">Malware Cleaners</a>",
+        "<a href=\"../software_options/web_browsers#^\">Web Browsers</a>",
+        "<a href=\"../software_options/messaging#^\">Messaging</a>",
+        "<a href=\"../software_options/media#^\">Media</a>",
+        "<a href=\"../software_options/runtimes#^\">Runtimes</a>",
+        "<a href=\"../software_options/imaging#^\">Imaging</a>",
+        "<a href=\"../software_options/documents#^\">Documents</a>",
+        "<a href=\"../software_options/file_sharing#^\">File Sharing</a>",
+        "<a href=\"../software_options/online_storage#^\">Online Storage</a>",
+        "<a href=\"../software_options/other#^\">Other</a>",
+        "<a href=\"../software_options/utilities#^\">Utilities</a>",
+        "<a href=\"../software_options/compression#^\">Compression</a>",
+        "<a href=\"../software_options/developer_tools#^\">Developer Tools</a>"
     ];
 
     // Get current URI path
@@ -67,7 +67,7 @@ function sw_breadCrumbs() {
         }
     }
 
-    echo "</nav> <hr style=\"margin: 0; margin-bottom: 10px;\">";
+    echo "</nav> <hr id=\"^\" style=\"margin: 0; margin-bottom: 10px;\">";
 }
 
 function sw_software() {
