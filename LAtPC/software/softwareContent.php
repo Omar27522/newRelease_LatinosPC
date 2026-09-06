@@ -150,7 +150,7 @@
             <h2><?= empty($titles) ? $titulos[0] : $titles[0];
         #<!-- script checks if the english $variable is empty. if it is, the Spanish version will be displayed otherwise the English version will be displayed =0k= -->
         ?></h2>
-            <a href="#title"><img src="https://latinospc.com/images/programs/code.jpg" width="263" height="146"
+            <a href="#title"><img src="../images/programs/code.jpg" width="263" height="146"
                     alt="image" class="fl" /></a>
             <?= empty($description) ? $descripcion[0] : $description[0];?>
              <a href="#title" style="padding-left:10%;"><?= empty($programs) ? $programas[15] : $programs[15];?></a>
@@ -207,7 +207,7 @@
                 endif;
             ?>
             <a href="<?php if(!empty($link)){echo$link;}else{echo"#title";} ?>">
-                <img src="https://latinospc.com/images/programs/<?= $imag; ?>.jpg" width="50% height="70%"
+                <img src="../images/programs/<?= $imag; ?>.jpg" width="50%" height="70%"
                     alt="<?php if(!empty(key($_GET))){echo (key($_GET));}else{echo "Code Image";} ?>" /></a>
             <h2>&uarr;
                 <?= empty($programs) ? $programas[0] : $programs[0];?>
@@ -267,8 +267,11 @@
     <article class="fullbar" id="programs"><br />
     <?php if (key($_GET)){
         //<!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|-Short Descriptions -\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ -->
+        $id = $id ?? '';
+        $title = $title ?? '';
+        $titulo = $titulo ?? '';
     ?>
-    <div id="<?= $id ?>" class="hero4 blurb" style="padding-bottom: 3em;background-color:rgba(245, 245, 245, 0.41);">
+    <div id="<?= $id; ?>" class="hero4 blurb" style="padding-bottom: 3em;background-color:rgba(245, 245, 245, 0.41);">
         <h2><?php if ($sw == 'en'){echo $title;} elseif ($sw == 'es'){echo $titulo;}?></h2>
         <section tabindex="0" class="hero4 readMore">
             <p>
@@ -462,4 +465,4 @@
             </div>
         </div>
     </div>
-    </article>
+    </article>

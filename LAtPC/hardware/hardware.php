@@ -85,9 +85,10 @@ function hw_output_devices() {
     echo "<h1 class=\"fullbar\">Output Devices</h1>";
 }
 
+/* DELETE FUNCTION NO LONGER IN USE
 function hw_peripherals_and_gear() {
     include_once ('hardware/peripherals.php');
-}
+}*/
 
 function hw_mouse(){
     include_once('hardware/mouse.php');
