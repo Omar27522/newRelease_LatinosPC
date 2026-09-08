@@ -3,8 +3,8 @@ function cssStyles() {
   global $page;
   $dir = isset($page) && method_exists($page, 'getDir') ? $page->getDir() : '';
   ?>
-  <link rel="stylesheet" href="<?= $dir ?>../_JesusChrist/styles/parables.css">
-  <?php
+<link rel="stylesheet" href="<?= $dir ?>../_JesusChrist/styles/parables.css">
+<?php
 }
 function content () {
   global $title, $image, $imageAlt, $linked_image, $figCaption, $depiction, $paragraphDialogs, $gospel, $gospelLinks, $passage;
@@ -14,36 +14,38 @@ function content () {
   // $gospelLinkPrefix = $gLP;
   $gLP = '';
  ?>
-  <article class="fullbar">
+<article class="fullbar">
     <nav class="crumbs">
-    <div class="bread-crumbs">
-      <a href="./#^" class="crumb-link"><?= !empty($_JesusChrist) ? "Jesus Christ" : "Jesucristo";?></a>
-      <a href="#^" class="crumb-link"><b><?= !empty($_JesusChrist) ? "Parables" : "Parábolas";?></b></a>
-    </div>
-  </nav>
+        <div class="bread-crumbs">
+            <a href="../#^" class="crumb-link"><?= !empty($_JesusChrist) ? "Jesus Christ" : "Jesucristo";?></a>
+            <a href="#^" class="crumb-link"><b><?= !empty($_JesusChrist) ? "Parables" : "Parábolas";?></b></a>
+        </div>
+    </nav>
     <div class="intro-section">
-    <h1 class="section-title" style="box-shadow:none;"><?= !empty ($_JesusChrist) ? $_JesusChrist[0] : $_Jesucristo[0]; ?></h1>
-      <ul class="intro-list">
-          <li><?= !empty ($introduction) ? $introduction[$list][0] : $introducion[$lista][0];?></li>
-          <li><?= !empty ($introduction) ? $introduction[$list][1] : $introducion[$lista][1];?></li>
-          <li><?= !empty ($introduction) ? $introduction[$list][2] : $introducion[$lista][2];?></li>
-          <li><?= !empty ($introduction) ? $introduction[$list][3] : $introducion[$lista][3];?></li>
-          <li><?= !empty ($introduction) ? $introduction[$list][4] : $introducion[$lista][4];?></li>
-      </ul>
+        <h1 class="section-title" style="box-shadow:none;">
+            <?= !empty ($_JesusChrist) ? $_JesusChrist[0] : $_Jesucristo[0]; ?></h1>
+        <ul class="intro-list">
+            <li><?= !empty ($introduction) ? $introduction[$list][0] : $introducion[$lista][0];?></li>
+            <li><?= !empty ($introduction) ? $introduction[$list][1] : $introducion[$lista][1];?></li>
+            <li><?= !empty ($introduction) ? $introduction[$list][2] : $introducion[$lista][2];?></li>
+            <li><?= !empty ($introduction) ? $introduction[$list][3] : $introducion[$lista][3];?></li>
+            <li><?= !empty ($introduction) ? $introduction[$list][4] : $introducion[$lista][4];?></li>
+        </ul>
     </div>
     <h2 id="^" class="section-title"><?= !empty ($_JesusChrist) ? $_JesusChrist[1] : $_Jesucristo[1]; ?></h2>
     <table>
-      <tr>
-        <th><?= !empty ($introduction) ? $introduction[0] : $introducion[0];?></th>
-        <th><?= !empty ($introduction) ? $introduction[1] : $introducion[1];?></th>
-        <th><?= !empty ($introduction) ? $introduction[2] : $introducion[2];?>
-          <span style="float:right;margin-right:10%;">
-            <a href="<?= !empty ($bible) ? $bible[0] : $biblia[0];?>" title="<?= !empty ($bible) ? $bible[1] : $biblia[1];?>" style="color:white;"><ruby>
-              [1] <rt> <?= !empty ($bible) ? $bible[2] : $biblia[2];?> </rt></ruby>
-            </a>
-          </span>
-          </th>
-      </tr>
+        <tr>
+            <th><?= !empty ($introduction) ? $introduction[0] : $introducion[0];?></th>
+            <th><?= !empty ($introduction) ? $introduction[1] : $introducion[1];?></th>
+            <th><?= !empty ($introduction) ? $introduction[2] : $introducion[2];?>
+                <span style="float:right;margin-right:10%;">
+                    <a href="<?= !empty ($bible) ? $bible[0] : $biblia[0];?>"
+                        title="<?= !empty ($bible) ? $bible[1] : $biblia[1];?>" style="color:white;"><ruby>
+                            [1] <rt> <?= !empty ($bible) ? $bible[2] : $biblia[2];?> </rt></ruby>
+                    </a>
+                </span>
+            </th>
+        </tr>
         <?php
         if (!empty($introduction)) {
           $parableFunctions = ['theSower', 'wheatAndTheWeeds', 'mustardSeed', 'leavenedFlour', 'hiddenTreasure', 'pearlOfGreatPrice', 'dragnet', 'goodSamaritan', 'prodigalSon', 'lostSheep', 'lostCoin', 'unmercifulServant', 'workersInVineyard', 'richManAndLazarus', 'phariseeAndTaxCollector', 'persistentWidow', 'tenVirgins', 'talents', 'sheepAndGoats', 'twoDebtors', 'wickedTenants', 'weddingFeast', 'richFool', 'wiseAndFoolishBuilders', 'growingSeed', 'newClothOnOldGarment', 'newWineInOldWineskins', 'lampOnStand', 'speckAndLog', 'unjustSteward', 'dishonestManager', 'friendAtMidnight', 'barrenFigTree', 'greatBanquet', 'buildingTowerAndKingGoingToWar', 'unprofitableServants', 'masterAndServant', 'unjustJudge', 'blindLeadingTheBlind', 'faithfulAndWiseServant', 'watchfulServants', 'childrenInTheMarketplace', 'twoSons', 'fishNet', 'householder', 'goodShepherd', 'vineAndBranches'];
@@ -64,18 +66,20 @@ function content () {
           ];
           /* The code below is the Main Table row the loop will iterate over each function */
           ?>
-          <tr>
+        <tr>
             <td>
                 <div class="multi-link-container">
-                  <span tabindex="0" class="linked-text-img parable-name"><?= !empty($title) ? $title : $titulo; ?></span>
-                  <div class="image-dialog" data-carousel="true" data-start-index="<?= $index; ?>"></div>
+                    <span tabindex="0"
+                        class="linked-text-img parable-name"><?= !empty($title) ? $title : $titulo; ?></span>
+                    <div class="image-dialog" data-carousel="true" data-start-index="<?= $index; ?>"></div>
                 </div>
             </td>
             <td>
                 <div class="multi-link-container">
-                  <span tabindex="0" class="linked-text"><?= !empty ($depiction) ? $depiction : $descripcion; ?></span>
-                  <div class="link-dialog">
-                    <?php
+                    <span tabindex="0"
+                        class="linked-text"><?= !empty ($depiction) ? $depiction : $descripcion; ?></span>
+                    <div class="link-dialog">
+                        <?php
                     echo '<h2 class="section-title" style="box-shadow:none;">'.(!empty ($title) ? $title : $titulo).'</h2>';
                     if (!empty($paragraphDialogs)) {
                     foreach ($paragraphDialogs as $pText) {
@@ -95,29 +99,34 @@ function content () {
                 <?php if (!empty($gospel)) {
                 foreach ($gospel as $gIndex => $text):
                   ?>
-                  <div class="gospel"><?= $text ?> <a href="<?= $gLP . $gospelLinks[$gIndex] ?>" target="_blank"><?= $passage[$gIndex] ?></a></div>
-                  <?php endforeach; }?>
-                  <?php if (!empty($evangelio)) {
+                <div class="gospel"><?= $text ?> <a href="<?= $gLP . $gospelLinks[$gIndex] ?>"
+                        target="_blank"><?= $passage[$gIndex] ?></a></div>
+                <?php endforeach; }?>
+                <?php if (!empty($evangelio)) {
                 foreach ($evangelio as $gIndex => $text):
                   ?>
-                  <div class="gospel"><?= $text ?> <a href="<?= $gLP . $enlaceEvangelio[$gIndex] ?>" target="_blank"><?= $pasaje[$gIndex] ?></a></div>
-                  <?php endforeach; }?>
+                <div class="gospel"><?= $text ?> <a href="<?= $gLP . $enlaceEvangelio[$gIndex] ?>"
+                        target="_blank"><?= $pasaje[$gIndex] ?></a></div>
+                <?php endforeach; }?>
             </td>
-          </tr>
-            <?php
+        </tr>
+        <?php
           } //END LOOP foreach($parableFunctions as $functionTableRow);
         ?>
     </table>
     <template id="carousel-images">
         <?php foreach ($carouselItems as $index => $item): ?>
         <div class="carousel-item" data-image-index="<?= $index; ?>">
-            <a href="<?= $item['linked_image']; ?>"><img src="<?= $item['image']; ?>" alt="<?= htmlspecialchars($item['imageAlt']); ?>"></a>
-            <h4 class="img_link"><a href="<?= htmlspecialchars($item['linked_image']); ?>" title="<?= htmlspecialchars($item['figCaption']); ?>"><?= htmlspecialchars($item['figCaption']); ?></a></h4>
+            <a href="<?= $item['linked_image']; ?>"><img src="<?= $item['image']; ?>"
+                    alt="<?= htmlspecialchars($item['imageAlt']); ?>"></a>
+            <h4 class="img_link"><a href="<?= htmlspecialchars($item['linked_image']); ?>"
+                    title="<?= htmlspecialchars($item['figCaption']); ?>"><?= htmlspecialchars($item['figCaption']); ?></a>
+            </h4>
         </div>
         <?php endforeach; ?>
     </template>
-  </article>
-  <?php
+</article>
+<?php
 } //END FUNCTION content();
 /*
                                                   ‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵
@@ -1932,8 +1941,8 @@ function parabolas(){
     $pasaje = ['17:7-10'];
   }
     ?>
-   </article>
-    <?php
+</article>
+<?php
     content();
 }// función parabolas() {bracket termina aqui}
 include './anvil/structure.php';
