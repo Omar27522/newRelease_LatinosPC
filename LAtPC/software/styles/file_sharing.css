@@ -1,114 +1,470 @@
+/* ===================================================
+   LatinosPC - Software Section: File Sharing (file_sharing.css)
+   Aesthetic aligned with Anvil design system
+   Preserving & elevating the file sharing uniqueness
+   =================================================== */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+:root {
+  /* Anvil Theme Palette Tokens */
+  --primary-color: #0056b3;
+  --primary-dark: #082d45;
+  --secondary-color: #218838;
+  --secondary-dark: #155724;
+  --text-color: #1a1e21;
+  --light-text: #343a40;
+  --dialog-text-highlight: #dee2e6;
+  --dialog-background: rgba(0, 0, 0, 0.9);
+  --background: #ffffff;
+  --card-bg: #f8f9fa;
+  --border-radius: 12px;
+  --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  --transition: all 0.25s ease-in-out;
+  --link-bg: rgba(0, 86, 179, 0.1);
+  --bannerAndFooter-bg: #daedfb;
+  --text-hover: #bd2130;
+  --button-color: #ffffff;
+}
+
+/* ---------------------------------------------------
+   Main Container Layout
+--------------------------------------------------- */
 .blurb {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem 2rem 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color, #1a1e21);
+}
+
+/* ---------------------------------------------------
+   Page Title
+--------------------------------------------------- */
+#title {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary-dark, #082d45);
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  font-size: 2.3rem;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+#title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: var(--primary-color, #0056b3);
+  border-radius: 3px;
+}
+
+/* ---------------------------------------------------
+   Introductory Paragraph
+--------------------------------------------------- */
+.blurb > p.selection {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--light-text, #343a40);
+  background-color: var(--card-bg, #f8f9fa);
+  border-left: 4px solid var(--primary-color, #0056b3);
+  border-radius: 0 10px 10px 0;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1.8rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: var(--transition, all 0.25s ease-in-out);
+}
+
+.blurb > p.selection:hover {
+  background-color: #ffffff;
+  border-left-color: var(--secondary-color, #218838);
+  box-shadow: 0 6px 16px rgba(0, 86, 179, 0.09);
+  transform: translateX(3px);
+}
+
+/* ---------------------------------------------------
+   Accordion Details & Summary
+--------------------------------------------------- */
+.blurb details {
+  background-color: var(--card-bg, #f8f9fa);
+  border: 1px solid rgba(0, 86, 179, 0.14);
+  border-radius: var(--border-radius, 12px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.8rem;
+  overflow: hidden;
+  transition: var(--transition, all 0.25s ease-in-out);
+}
+
+.blurb details:hover {
+  border-color: rgba(0, 86, 179, 0.35);
+  box-shadow: 0 6px 18px rgba(0, 86, 179, 0.12);
+  transform: translateY(-2px);
+}
+
+.blurb details[open] {
+  background-color: #ffffff;
+  border-color: var(--primary-color, #0056b3);
+  box-shadow: 0 8px 22px rgba(0, 86, 179, 0.14);
 }
 
 .blurb summary {
-    padding: 20px;
-    font-size: 1.2rem;
-    margin: 10px 0;
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.15rem 1.4rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--primary-dark, #082d45);
+  background-color: var(--card-bg, #f8f9fa);
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  outline: none;
+}
+
+.blurb summary::-webkit-details-marker {
+  display: none;
 }
 
 .blurb summary:hover,
 .blurb summary:focus {
-    background-color: #f8f9fa;
-    border-color: #007bff;
-    color: #007bff;
-    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.15);
-    cursor: pointer;
-    font-weight: 600;
-    transform: translateY(-2px);
+  background-color: var(--bannerAndFooter-bg, #daedfb);
+  color: var(--primary-color, #0056b3);
+  font-weight: 600;
 }
 
-.blurb details {
-    margin-bottom: 20px;
+/* Animated chevron arrow */
+.blurb summary::after {
+  content: '';
+  width: 9px;
+  height: 9px;
+  border-right: 2.5px solid var(--primary-color, #0056b3);
+  border-bottom: 2.5px solid var(--primary-color, #0056b3);
+  transform: rotate(45deg);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.25s ease;
+  flex-shrink: 0;
+  margin-left: auto;
 }
 
 .blurb details[open] summary {
-    margin-bottom: 15px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+  background-color: var(--bannerAndFooter-bg, #daedfb);
+  border-bottom: 1px solid rgba(0, 86, 179, 0.15);
+  color: var(--primary-dark, #082d45);
 }
 
-.blurb details[open]>p {
-    padding: 20px;
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-top: none;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    margin: 0;
-    line-height: 1.6;
+.blurb details[open] summary::after {
+  transform: rotate(-135deg);
+  border-color: var(--primary-dark, #082d45);
 }
 
+.blurb details[open] > p {
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border: none;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ---------------------------------------------------
+   Buttons Kit Grid (Popular Services)
+--------------------------------------------------- */
 .buttonskit {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  padding: 1.25rem 1.4rem;
 }
 
 .buttonskit button {
-    margin: 0;
-    padding: 0;
-    border: none;
-    background: none;
-    width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  width: 100%;
 }
 
 .bttn {
-    display: block;
-    padding: 15px 25px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-    text-align: center;
-    font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.2rem;
+  background-color: var(--primary-dark, #082d45);
+  color: var(--button-color, #ffffff);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  transition: var(--transition, all 0.25s ease-in-out);
+  text-align: center;
 }
 
 .bttn:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+  background-color: var(--text-hover, #bd2130);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(189, 33, 48, 0.25);
 }
 
+/* ---------------------------------------------------
+   Content Sections (Fieldsets & Legends)
+--------------------------------------------------- */
+fieldset {
+  background-color: var(--card-bg, #f8f9fa);
+  border: 1px solid rgba(0, 86, 179, 0.14);
+  border-radius: var(--border-radius, 12px);
+  padding: 1.5rem 1.6rem 1.4rem;
+  margin-bottom: 1.6rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: var(--transition, all 0.25s ease-in-out);
+  position: relative;
+}
+
+fieldset:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 86, 179, 0.1);
+  border-color: rgba(0, 86, 179, 0.35);
+  background-color: #ffffff;
+}
+
+legend {
+  float: none;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 1.1rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--primary-dark, #082d45);
+  background-color: var(--bannerAndFooter-bg, #daedfb);
+  border-radius: 8px;
+  border: 1px solid rgba(0, 86, 179, 0.18);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  transition: var(--transition, all 0.25s ease-in-out);
+}
+
+fieldset:hover > legend {
+  background-color: var(--primary-dark, #082d45);
+  color: #ffffff;
+  border-color: var(--primary-dark, #082d45);
+}
+
+fieldset p {
+  margin: 0;
+  line-height: 1.75;
+  font-size: 1rem;
+  color: var(--text-color, #1a1e21);
+}
+
+/* Links inside fieldset paragraphs (interactive pill badges) */
+fieldset p a {
+  color: var(--primary-color, #0056b3);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 2px 8px;
+  border-radius: 5px;
+  background-color: rgba(0, 86, 179, 0.07);
+  transition: all 0.2s ease;
+  display: inline-block;
+  margin: 2px 2px;
+}
+
+fieldset p a:hover {
+  background-color: var(--primary-dark, #082d45);
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+}
+
+/* ---------------------------------------------------
+   Illustration & Figure
+--------------------------------------------------- */
 figure {
-    text-align: center;
-    margin: 30px 0;
+  text-align: center;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--card-bg, #f8f9fa);
+  border-radius: var(--border-radius, 12px);
+  padding: 1.5rem;
+  border: 1px solid rgba(0, 86, 179, 0.1);
+  max-width: 480px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 figcaption {
-    font-size: 1.1rem;
-    color: #666;
-    margin-bottom: 15px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--primary-dark, #082d45);
+  margin-bottom: 1.1rem;
+  letter-spacing: 0.3px;
 }
 
 iframe {
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(0, 86, 179, 0.15);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  transition: var(--transition, all 0.25s ease-in-out);
 }
 
-.selection {
-    line-height: 1.6;
-    color: #333;
+iframe:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 86, 179, 0.14);
 }
 
+/* ---------------------------------------------------
+   Credentials Numbered Safety Tips (.colms2)
+--------------------------------------------------- */
+.colms2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.colms2 fieldset {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 86, 179, 0.12);
+  border-radius: 10px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition, all 0.25s ease-in-out);
+  margin-bottom: 0;
+}
+
+.colms2 fieldset:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  border-color: rgba(0, 86, 179, 0.3);
+}
+
+/* Numbered circular badge in safety tips */
+.colms2 legend {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #ffffff;
+  background-color: var(--primary-dark, #082d45);
+  margin-bottom: 0.6rem;
+  padding: 0;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Enhanced colored border tip cards */
 [style*="border"] {
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 6px;
+  padding: 1rem 1.15rem;
+  margin: 0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  background-color: var(--card-bg, #f8f9fa);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.02);
 }
 
-#title {
-    text-align: center;
-    color: #2c3e50;
-    margin-bottom: 30px;
-    font-size: 2.5rem;
+/* Harmonized color tints matching borders */
+p[style*="green"] {
+  background-color: rgba(33, 136, 56, 0.06);
+  border-color: var(--secondary-color, #218838) !important;
+}
+
+p[style*="red"] {
+  background-color: rgba(189, 33, 48, 0.06);
+  border-color: var(--text-hover, #bd2130) !important;
+}
+
+p[style*="purple"] {
+  background-color: rgba(111, 66, 193, 0.06);
+  border-color: #6f42c1 !important;
+}
+
+p[style*="orange"] {
+  background-color: rgba(230, 126, 34, 0.06);
+  border-color: #e67e22 !important;
+}
+
+p[style*="yellow"] {
+  background-color: rgba(241, 196, 15, 0.08);
+  border-color: #d4ac0d !important;
+}
+
+/* ---------------------------------------------------
+   Divider & Footer Spacer
+--------------------------------------------------- */
+.spacer hr {
+  border: none;
+  height: 1px;
+  width: 100%;
+  background-color: var(--bannerAndFooter-bg, #daedfb);
+  margin: 2.5rem 0;
+}
+
+/* ---------------------------------------------------
+   Accessibility Focus Styles
+--------------------------------------------------- */
+*:focus-visible {
+  outline: 2px solid var(--primary-color, #0056b3);
+  outline-offset: 2px;
+}
+
+.selection:focus {
+  background-color: var(--dialog-text-highlight, #dee2e6);
+  outline: none;
+  border-radius: 4px;
+}
+
+/* ---------------------------------------------------
+   Responsive Design
+--------------------------------------------------- */
+@media (max-width: 768px) {
+  .blurb {
+    padding: 0.5rem 1rem 1.5rem;
+  }
+
+  #title {
+    font-size: 1.85rem;
+  }
+
+  .buttonskit {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+
+  .bttn {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  fieldset {
+    padding: 1.25rem 1.15rem 1.15rem;
+  }
+
+  .colms2 {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  figure {
+    max-width: 100%;
+    padding: 1rem;
+  }
 }

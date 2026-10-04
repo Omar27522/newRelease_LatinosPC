@@ -1,3 +1,290 @@
-fieldset {
-    margin-bottom: 20px;
+/* ===================================================
+   LatinosPC - Software Section: Online Storage (online_storage.css)
+   Aesthetic aligned with Anvil design system
+   =================================================== */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+:root {
+  /* Anvil Theme Palette Tokens */
+  --primary-color: #0056b3;
+  --primary-dark: #082d45;
+  --secondary-color: #218838;
+  --secondary-dark: #155724;
+  --text-color: #1a1e21;
+  --light-text: #343a40;
+  --dialog-text-highlight: #dee2e6;
+  --dialog-background: rgba(0, 0, 0, 0.9);
+  --background: #ffffff;
+  --card-bg: #f8f9fa;
+  --border-radius: 12px;
+  --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  --transition: all 0.25s ease-in-out;
+  --link-bg: rgba(0, 86, 179, 0.1);
+  --bannerAndFooter-bg: #daedfb;
+  --text-hover: #bd2130;
+  --button-color: #ffffff;
+}
+
+/* ---------------------------------------------------
+   Main Container Layout
+--------------------------------------------------- */
+.blurb.fullbar {
+  max-width: 1200px;
+  margin: 0 auto 2.5rem auto;
+  padding: 0.5rem 2rem 2rem;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color, #1a1e21);
+}
+
+/* ---------------------------------------------------
+   Page Title
+--------------------------------------------------- */
+#title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--primary-dark, #082d45);
+  margin: 0.5rem 0 1.5rem 0;
+  position: relative;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid var(--bannerAndFooter-bg, #daedfb);
+  display: block;
+}
+
+#title::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 55px;
+  height: 3px;
+  background-color: var(--primary-color, #0056b3);
+  border-radius: 3px;
+}
+
+#title a {
+  color: var(--primary-dark, #082d45);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+#title a:hover {
+  color: var(--primary-color, #0056b3);
+}
+
+/* ---------------------------------------------------
+   Introductory Paragraphs
+--------------------------------------------------- */
+.blurb p.selection {
+  background-color: var(--card-bg, #f8f9fa);
+  border-left: 4px solid var(--primary-color, #0056b3);
+  border-radius: 0 10px 10px 0;
+  padding: 1.15rem 1.4rem;
+  margin-bottom: 1.25rem;
+  font-size: 1.04rem;
+  line-height: 1.75;
+  color: var(--light-text, #343a40);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: var(--transition, all 0.25s ease-in-out);
+}
+
+.blurb p.selection:hover {
+  background-color: #ffffff;
+  border-left-color: var(--secondary-color, #218838);
+  box-shadow: 0 6px 16px rgba(0, 86, 179, 0.09);
+  transform: translateX(3px);
+}
+
+.blurb p.selection a {
+  color: var(--primary-color, #0056b3);
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.blurb p.selection a:hover {
+  color: var(--text-hover, #bd2130);
+}
+
+/* ---------------------------------------------------
+   Section Subheading
+--------------------------------------------------- */
+.blurb h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--primary-color, #0056b3);
+  margin: 2.2rem 0 1.4rem 0;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.blurb h2::before {
+  content: '☁';
+  font-size: 1.25rem;
+  color: var(--primary-color, #0056b3);
+}
+
+/* ---------------------------------------------------
+   Storage Provider Cards Grid
+--------------------------------------------------- */
+.colms {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Provider Fieldset Card */
+fieldset.card2 {
+  background-color: var(--card-bg, #f8f9fa);
+  border: 1px solid rgba(0, 86, 179, 0.14);
+  border-radius: var(--border-radius, 12px);
+  padding: 1.5rem 1.5rem 1.35rem;
+  margin: 0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: var(--transition, all 0.25s ease-in-out);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 0.98rem;
+  line-height: 1.68;
+  color: var(--text-color, #1a1e21);
+  position: relative;
+}
+
+fieldset.card2:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0, 86, 179, 0.13);
+  border-color: rgba(0, 86, 179, 0.35);
+  background-color: #ffffff;
+}
+
+/* Legend Header Badge */
+legend.card2 {
+  float: none;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.95rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--primary-dark, #082d45);
+  background-color: var(--bannerAndFooter-bg, #daedfb);
+  border-radius: 8px;
+  border: 1px solid rgba(0, 86, 179, 0.18);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  transition: var(--transition, all 0.25s ease-in-out);
+}
+
+legend.card2 a {
+  color: var(--primary-dark, #082d45);
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+
+legend.card2 a:hover {
+  color: var(--text-hover, #bd2130);
+}
+
+fieldset.card2:hover legend.card2 {
+  background-color: var(--primary-dark, #082d45);
+  border-color: var(--primary-dark, #082d45);
+  color: #ffffff;
+  box-shadow: 0 3px 8px rgba(8, 45, 69, 0.2);
+}
+
+fieldset.card2:hover legend.card2 a {
+  color: #ffffff;
+}
+
+/* ---------------------------------------------------
+   Featured Full-Width Card (e.g. Mega)
+--------------------------------------------------- */
+.blurb > fieldset.card2 {
+  margin-top: 1.5rem;
+  background: linear-gradient(135deg, #ffffff 0%, var(--card-bg, #f8f9fa) 100%);
+  border-left: 5px solid var(--secondary-color, #218838);
+}
+
+.blurb > fieldset.card2:hover {
+  border-left-color: var(--primary-color, #0056b3);
+}
+
+.blurb > fieldset.card2 legend.card2 {
+  background-color: #e8f5e9;
+  border-color: rgba(33, 136, 56, 0.25);
+  color: var(--secondary-dark, #155724);
+}
+
+.blurb > fieldset.card2 legend.card2 a {
+  color: var(--secondary-dark, #155724);
+}
+
+.blurb > fieldset.card2:hover legend.card2 {
+  background-color: var(--secondary-dark, #155724);
+  border-color: var(--secondary-dark, #155724);
+  color: #ffffff;
+}
+
+.blurb > fieldset.card2:hover legend.card2 a {
+  color: #ffffff;
+}
+
+/* ---------------------------------------------------
+   Divider & Footer Spacer
+--------------------------------------------------- */
+.spacer hr {
+  border: none;
+  height: 1px;
+  width: 100%;
+  background-color: var(--bannerAndFooter-bg, #daedfb);
+  margin: 2.5rem 0;
+}
+
+/* ---------------------------------------------------
+   Accessibility Focus Styles
+--------------------------------------------------- */
+*:focus-visible {
+  outline: 2px solid var(--primary-color, #0056b3);
+  outline-offset: 2px;
+}
+
+.selection:focus {
+  background-color: var(--dialog-text-highlight, #dee2e6);
+  outline: none;
+  border-radius: 4px;
+}
+
+/* ---------------------------------------------------
+   Responsive Design
+--------------------------------------------------- */
+@media (max-width: 900px) {
+  .colms {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .blurb.fullbar {
+    padding: 0.5rem 1rem 1.5rem;
+  }
+
+  #title {
+    font-size: 1.8rem;
+  }
+
+  .colms {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  fieldset.card2 {
+    padding: 1.25rem 1.15rem 1.15rem;
+  }
 }

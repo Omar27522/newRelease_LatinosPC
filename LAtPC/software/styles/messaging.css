@@ -1,0 +1,536 @@
+/* ===================================================
+   LatinosPC - Software Section: Messaging (messaging.css)
+   Aesthetic aligned with Anvil design system
+   =================================================== */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+:root {
+  /* Anvil Theme Palette Tokens */
+  --primary-color: #0056b3;
+  --primary-dark: #082d45;
+  --secondary-color: #218838;
+  --secondary-dark: #155724;
+  --text-color: #1a1e21;
+  --light-text: #343a40;
+  --dialog-text-highlight: #dee2e6;
+  --dialog-background: rgba(0, 0, 0, 0.9);
+  --background: #ffffff;
+  --card-bg: #f8f9fa;
+  --border-radius: 12px;
+  --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  --transition: all 0.25s ease-in-out;
+  --link-bg: rgba(0, 86, 179, 0.1);
+  --bannerAndFooter-bg: #daedfb;
+  --text-hover: #bd2130;
+  --button-color: #ffffff;
+}
+
+/* ---------------------------------------------------
+   Main Container Layout
+--------------------------------------------------- */
+.hero4.fullbar.messaging-container,
+.messaging-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem 2rem 2.5rem;
+  font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text-color, #1a1e21);
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ---------------------------------------------------
+   Page Title
+--------------------------------------------------- */
+#title {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary-dark, #082d45);
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  font-size: 2.3rem;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+#title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 64px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color, #0056b3), var(--secondary-color, #218838));
+  border-radius: 4px;
+}
+
+/* ---------------------------------------------------
+   Hero Grid Section (Intro Text + Image)
+--------------------------------------------------- */
+.messaging-hero-wrapper {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 2rem;
+  align-items: start;
+  margin: 1.5rem 0 2rem;
+}
+
+.messaging-intro-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.messaging-intro-text .selection,
+.messaging-intro-text blockquote.intro-quote {
+  margin-bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.messaging-intro-text .wiki-source-container {
+  margin: 0.25rem 0 0;
+}
+
+.messaging-hero-media {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: sticky;
+  top: 1rem;
+}
+
+.messaging-hero-img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  max-height: 380px;
+  object-fit: contain;
+  border-radius: var(--border-radius, 12px);
+  border: 2px solid rgba(0, 86, 179, 0.15);
+  box-shadow: 0 8px 24px rgba(8, 45, 69, 0.12);
+  background-color: #ffffff;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  transition: var(--transition, all 0.25s ease-in-out);
+}
+
+.messaging-hero-img:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 12px 28px rgba(0, 86, 179, 0.2);
+}
+
+/* ---------------------------------------------------
+   Intro Paragraphs & Quote
+--------------------------------------------------- */
+.selection {
+  background-color: #ffffff;
+  border-left: 4px solid var(--primary-color, #0056b3);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 0 10px 10px 0;
+  padding: 1.15rem 1.4rem;
+  margin-bottom: 1.25rem;
+  font-size: 1.02rem;
+  line-height: 1.75;
+  color: #2c3e50;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: var(--transition, all 0.25s ease-in-out);
+}
+
+.selection:hover,
+.selection:focus {
+  transform: translateX(4px);
+  box-shadow: 0 6px 16px rgba(0, 86, 179, 0.12);
+  background-color: #fbfdff;
+  outline: none;
+}
+
+.selection a {
+  color: var(--primary-color, #0056b3);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px dashed var(--primary-color, #0056b3);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.selection a:hover {
+  color: var(--text-hover, #bd2130);
+  border-bottom-color: var(--text-hover, #bd2130);
+}
+
+/* Quote Callout */
+blockquote.intro-quote {
+  background: linear-gradient(135deg, rgba(218, 237, 251, 0.5) 0%, rgba(248, 249, 250, 0.9) 100%);
+  border-left: 4px solid var(--primary-dark, #082d45);
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  font-style: italic;
+}
+
+blockquote.intro-quote .quote-icon {
+  color: var(--primary-color, #0056b3);
+  font-size: 1.35rem;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+blockquote.intro-quote .quote-text {
+  line-height: 1.7;
+  color: var(--light-text, #343a40);
+}
+
+/* ---------------------------------------------------
+   Wikipedia Reference Button
+--------------------------------------------------- */
+.wiki-source-container {
+  margin: 1.25rem 0 2rem;
+  display: flex;
+}
+
+.wiki-source-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.65rem 1.25rem;
+  background-color: #ffffff;
+  color: var(--primary-dark, #082d45);
+  border: 1.5px solid rgba(0, 86, 179, 0.2);
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.92rem;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: var(--transition, all 0.25s ease-in-out);
+}
+
+.wiki-source-btn:hover,
+.wiki-source-btn:focus {
+  background-color: var(--bannerAndFooter-bg, #daedfb);
+  color: var(--primary-color, #0056b3);
+  border-color: var(--primary-color, #0056b3);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 86, 179, 0.15);
+  outline: none;
+}
+
+/* ---------------------------------------------------
+   Section Headings & Dividers
+--------------------------------------------------- */
+.section-divider,
+hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 86, 179, 0.25), rgba(33, 136, 56, 0.25), transparent);
+  margin: 2.5rem 0;
+}
+
+.messaging-section {
+  margin-bottom: 2rem;
+}
+
+h2,
+.section-heading {
+  font-size: 1.55rem;
+  color: var(--primary-dark, #082d45);
+  font-weight: 700;
+  margin: 1.75rem 0 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.heading-icon {
+  color: var(--primary-color, #0056b3);
+  font-size: 1.25rem;
+}
+
+/* ---------------------------------------------------
+   Messaging Apps Grid
+--------------------------------------------------- */
+.newspaper2,
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+  gap: 0.85rem;
+  list-style: none;
+  padding: 0;
+  margin: 1.25rem 0;
+}
+
+.newspaper2 li,
+.app-grid .app-item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.newspaper2 li a,
+.app-grid .app-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1rem;
+  background: #ffffff;
+  border: 1.5px solid rgba(0, 86, 179, 0.12);
+  border-radius: var(--border-radius, 12px);
+  color: var(--primary-dark, #082d45);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: var(--transition, all 0.25s ease-in-out);
+  min-height: 48px;
+  box-sizing: border-box;
+}
+
+.newspaper2 li a:hover,
+.newspaper2 li a:focus,
+.app-grid .app-item a:hover,
+.app-grid .app-item a:focus {
+  background: linear-gradient(135deg, var(--primary-color, #0056b3) 0%, var(--primary-dark, #082d45) 100%);
+  color: #ffffff !important;
+  border-color: transparent;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 86, 179, 0.25);
+  outline: none;
+}
+
+/* App Link Icon Base */
+.newspaper2 li a::before,
+.app-grid .app-item a::before {
+  content: '\f075';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  font-size: 0.95rem;
+  color: var(--primary-color, #0056b3);
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.newspaper2 li a:hover::before,
+.newspaper2 li a:focus::before,
+.app-grid .app-item a:hover::before,
+.app-grid .app-item a:focus::before {
+  color: #ffffff !important;
+  transform: scale(1.15);
+  -webkit-text-stroke: 0;
+}
+
+/* App-Specific Brand Icons */
+a[href*="whatsapp"]::before { content: '\f232'; font-family: 'Font Awesome 6 Brands'; color: #25d366; }
+a[href*="messenger"]::before { content: '\f39f'; font-family: 'Font Awesome 6 Brands'; color: #0084ff; }
+a[href*="wechat"]::before { content: '\f1d7'; font-family: 'Font Awesome 6 Brands'; color: #07c160; }
+a[href*="telegram"]::before { content: '\f2c6'; font-family: 'Font Awesome 6 Brands'; color: #229ed9; }
+a[href*="signal"]::before { content: '\f3ed'; font-family: 'Font Awesome 6 Free'; font-weight: 900; color: #3a76f0; }
+a[href*="IMessage"]::before, a[href*="apple"]::before { content: '\f179'; font-family: 'Font Awesome 6 Brands'; color: #555555; }
+a[href*="google"]::before { content: '\f1a0'; font-family: 'Font Awesome 6 Brands'; color: #ea4335; }
+a[href*="slack"]::before { content: '\f198'; font-family: 'Font Awesome 6 Brands'; color: #4a154b; }
+a[href*="teams"]::before, a[href*="microsoft"]::before { content: '\f17a'; font-family: 'Font Awesome 6 Brands'; color: #5059c9; }
+a[href*="discord"]::before { content: '\f392'; font-family: 'Font Awesome 6 Brands'; color: #5865f2; }
+a[href*="snapchat"]::before { content: '\f2ab'; font-family: 'Font Awesome 6 Brands'; color: #d4b800; }
+a[href*="viber"]::before { content: '\f409'; font-family: 'Font Awesome 6 Brands'; color: #7360f2; }
+a[href*="line.me"]::before { content: '\f3c0'; font-family: 'Font Awesome 6 Brands'; color: #06c755; }
+a[href*="skype"]::before { content: '\f17e'; font-family: 'Font Awesome 6 Brands'; color: #00aff0; }
+a[href*="SMS"]::before, a[href*="sms"]::before { content: '\f0e0'; font-family: 'Font Awesome 6 Free'; font-weight: 900; color: #0056b3; }
+
+/* ---------------------------------------------------
+   Security & Privacy Section
+--------------------------------------------------- */
+.security-card {
+  background: linear-gradient(135deg, rgba(8, 45, 69, 0.03) 0%, rgba(0, 86, 179, 0.05) 100%);
+  border-radius: var(--border-radius, 12px);
+  border: 1.5px solid rgba(0, 86, 179, 0.15);
+  padding: 1.4rem 1.6rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.security-card .selection {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  font-size: 1.02rem;
+  line-height: 1.8;
+  color: var(--light-text, #343a40);
+  transform: none !important;
+}
+
+/* ---------------------------------------------------
+   Advanced Features Section
+--------------------------------------------------- */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.border-li {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  background: #ffffff;
+  border-left: 4px solid var(--secondary-color, #218838);
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  border-right: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  color: var(--primary-dark, #082d45);
+  font-weight: 500;
+  font-size: 0.98rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: var(--transition, all 0.25s ease-in-out);
+  box-sizing: border-box;
+}
+
+.border-li:hover,
+.border-li:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(33, 136, 56, 0.15);
+  border-left-color: var(--primary-color, #0056b3);
+  background-color: #fcfefe;
+  outline: none;
+}
+
+.feature-check {
+  color: var(--secondary-color, #218838);
+  font-size: 1.15rem;
+  flex-shrink: 0;
+  transition: color 0.25s ease;
+}
+
+.border-li:hover .feature-check,
+.border-li:focus .feature-check {
+  color: var(--primary-color, #0056b3);
+}
+
+/* ---------------------------------------------------
+   Trends & Market Insights
+--------------------------------------------------- */
+.trends-card {
+  background: linear-gradient(135deg, rgba(33, 136, 56, 0.04) 0%, rgba(218, 237, 251, 0.3) 100%);
+  border-radius: var(--border-radius, 12px);
+  border: 1.5px solid rgba(33, 136, 56, 0.2);
+  padding: 1.4rem 1.6rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.trends-card .selection {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  font-size: 1.02rem;
+  line-height: 1.8;
+  color: var(--light-text, #343a40);
+  transform: none !important;
+}
+
+.market-stats-card {
+  background: linear-gradient(135deg, #082d45 0%, #0056b3 100%);
+  color: #ffffff;
+  border-radius: var(--border-radius, 12px);
+  padding: 1.6rem 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 8px 24px rgba(8, 45, 69, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.stats-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(4px);
+  padding: 0.35rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 0.85rem;
+  color: #daedfb;
+}
+
+.market-stats-card .stats-content {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  color: #f8f9fa !important;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+/* ---------------------------------------------------
+   Responsive Breakpoints
+--------------------------------------------------- */
+@media (max-width: 768px) {
+  .hero4.fullbar.messaging-container,
+  .messaging-container {
+    padding: 0.5rem 1rem 2rem;
+  }
+
+  #title {
+    font-size: 1.85rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .messaging-hero-wrapper {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .messaging-hero-media {
+    order: -1;
+  }
+
+  .messaging-hero-img {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  .newspaper2,
+  .app-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 0.65rem;
+  }
+
+  .newspaper2 li a,
+  .app-grid .app-item a {
+    padding: 0.75rem 0.85rem;
+    font-size: 0.88rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .market-stats-card {
+    padding: 1.25rem 1.4rem;
+  }
+}

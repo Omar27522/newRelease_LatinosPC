@@ -7,7 +7,7 @@
 echo "<div class=\"fullbar\">";
 sw_breadCrumbs();
 echo "</div>";
-
+$subTitulo="";
 $title = "Digital Media";
 $links = [
     'mediaFormats' => ['https://www.loc.gov/preservation/digital/formats/fdd/browse_list.shtml', 'Library of Congress (.gov)'],
@@ -93,10 +93,10 @@ $learn = ['Learn more about Internet Media Types →'];
                     $linkKey = empty($links) ? $enlaces[$spanishKey] : $links[$englishKey];
                     $statKey = empty($stats) ? $estadisticas[$spanishKey] : $stats[$englishKey];
                 ?>
-                    <a class="stat-card" href="<?= $linkKey[0] ?>" title="<?= $linkKey[1] ?>">
-                        <div class="stat-number"><?= $statKey[0] ?></div>
-                        <div class="stat-label"><?= $statKey[1] ?></div>
-                    </a>
+                <a class="stat-card" href="<?= $linkKey[0] ?>" title="<?= $linkKey[1] ?>">
+                    <div class="stat-number"><?= $statKey[0] ?></div>
+                    <div class="stat-label"><?= $statKey[1] ?></div>
+                </a>
                 <?php
                 endforeach;
                 ?>
@@ -107,19 +107,27 @@ $learn = ['Learn more about Internet Media Types →'];
             <div class="media-types media-card">
                 <h3><?= empty($subSubtitle) ? $subTitulo[1] : $subTitle[1]; ?></h3>
                 <div class="tech-grid">
-                    <a href="<?= empty($links) ? $enlaces['centro']['imagen'][0] : $links['core']['image'][0]; ?>" title="<?= empty($links) ? $enlaces['centro']['imagen'][1] : $links['core']['image'][1]; ?>" class="tech-item">
+                    <a href="<?= empty($links) ? $enlaces['centro']['imagen'][0] : $links['core']['image'][0]; ?>"
+                        title="<?= empty($links) ? $enlaces['centro']['imagen'][1] : $links['core']['image'][1]; ?>"
+                        class="tech-item">
                         <div class="media-icon"><?= empty($core) ? $centro['imagen'][0] : $core['image'][0]; ?></div>
                         <strong><?= empty($core) ? $centro['imagen'][1] : $core['image'][1]; ?></strong>
                     </a>
-                    <a href="<?= empty($links) ? $enlaces['centro']['audio'][0] : $links['core']['audio'][0]; ?>" title="<?= empty($links) ? $enlaces['centro']['audio'][1] : $links['core']['audio'][1]; ?>" class="tech-item">
+                    <a href="<?= empty($links) ? $enlaces['centro']['audio'][0] : $links['core']['audio'][0]; ?>"
+                        title="<?= empty($links) ? $enlaces['centro']['audio'][1] : $links['core']['audio'][1]; ?>"
+                        class="tech-item">
                         <div class="media-icon"><?= empty($core) ? $centro['audio'][0] : $core['audio'][0]; ?></div>
                         <strong><?= empty($core) ? $centro['audio'][1] : $core['audio'][1]; ?></strong>
                     </a>
-                    <a href="<?= empty($links) ? $enlaces['video'][0] : $links['core']['video'][0]; ?>" title="<?= empty($links) ? $enlaces['centro']['video'][1] : $links['core']['video'][1]; ?>" class="tech-item">
+                    <a href="<?= empty($links) ? $enlaces['video'][0] : $links['core']['video'][0]; ?>"
+                        title="<?= empty($links) ? $enlaces['centro']['video'][1] : $links['core']['video'][1]; ?>"
+                        class="tech-item">
                         <div class="media-icon"><?= empty($core) ? $centro['video'][0] : $core['video'][0]; ?></div>
                         <strong><?= empty($core) ? $centro['video'][1] : $core['video'][1]; ?></strong>
                     </a>
-                    <a href="<?= empty($links) ? $enlaces['centro']['texto'][0] : $links['core']['text'][0]; ?>" title="<?= empty($links) ? $enlaces['centro']['texto'][1] : $links['core']['text'][1]; ?>" class="tech-item">
+                    <a href="<?= empty($links) ? $enlaces['centro']['texto'][0] : $links['core']['text'][0]; ?>"
+                        title="<?= empty($links) ? $enlaces['centro']['texto'][1] : $links['core']['text'][1]; ?>"
+                        class="tech-item">
                         <div class="media-icon"><?= empty($core) ? $centro['texto'][0] : $core['text'][0]; ?></div>
                         <strong><?= empty($core) ? $centro['texto'][1] : $core['text'][1]; ?></strong>
                     </a>
@@ -165,32 +173,32 @@ $learn = ['Learn more about Internet Media Types →'];
                     $baseKey = empty($core) ? $centro['evolucion'] : $core['evolution'];
                     $linkBase = empty($links) ? $enlaces['evolucion'] : $links['evolution'];
                 ?>
-                    <div class="timeline-item">
-                        <?php if ($item['specialFormat']) { // Special case for 80s entry
+                <div class="timeline-item">
+                    <?php if ($item['specialFormat']) { // Special case for 80s entry
                         ?>
-                            <strong><?= empty($core) ? $baseKey[$item['key']][0] : $core['evolution'][$item['englishKey']][0]; ?>:</strong>
-                            <?= empty($core) ? $baseKey[$item['key']][1] : $core['evolution'][$item['englishKey']][1]; ?>
-                            <a href="<?= $linkBase[$decade][0] ?>" title="<?= $linkBase[$decade][1] ?>">
-                                <?= $baseKey[$decade][0] ?>
-                            </a>
-                            <?= $baseKey[$decade][1] ?>
-                            <a href="<?= $linkBase[$decade][2] ?>" title="<?= $linkBase[$decade][3] ?>">
-                                <?= $baseKey[$decade][2] ?>
-                            </a>
-                        <?php } else { // Standard format for other entries 
+                    <strong><?= empty($core) ? $baseKey[$item['key']][0] : $core['evolution'][$item['englishKey']][0]; ?>:</strong>
+                    <?= empty($core) ? $baseKey[$item['key']][1] : $core['evolution'][$item['englishKey']][1]; ?>
+                    <a href="<?= $linkBase[$decade][0] ?>" title="<?= $linkBase[$decade][1] ?>">
+                        <?= $baseKey[$decade][0] ?>
+                    </a>
+                    <?= $baseKey[$decade][1] ?>
+                    <a href="<?= $linkBase[$decade][2] ?>" title="<?= $linkBase[$decade][3] ?>">
+                        <?= $baseKey[$decade][2] ?>
+                    </a>
+                    <?php } else { // Standard format for other entries 
                         ?>
-                            <strong>
-                                <?php if ($item['hasLink']) { ?>
-                                    <a href="<?= $linkBase[$decade][0] ?>" title="<?= $linkBase[$decade][1] ?>">
-                                    <?php } ?>
-                                    <?= empty($core) ? $baseKey[$item['key']][0] : $core['evolution'][$item['englishKey']][0]; ?>
-                                    <?php if ($item['hasLink']) { ?>
-                                    </a>
-                                <?php } ?>
-                            </strong>:
-                            <?= empty($core) ? $baseKey[$item['key']][1] : $core['evolution'][$item['englishKey']][1] ?>
+                    <strong>
+                        <?php if ($item['hasLink']) { ?>
+                        <a href="<?= $linkBase[$decade][0] ?>" title="<?= $linkBase[$decade][1] ?>">
+                            <?php } ?>
+                            <?= empty($core) ? $baseKey[$item['key']][0] : $core['evolution'][$item['englishKey']][0]; ?>
+                            <?php if ($item['hasLink']) { ?>
+                        </a>
                         <?php } ?>
-                    </div>
+                    </strong>:
+                    <?= empty($core) ? $baseKey[$item['key']][1] : $core['evolution'][$item['englishKey']][1] ?>
+                    <?php } ?>
+                </div>
                 <?php endforeach; ?>
 
 
@@ -213,9 +221,9 @@ $learn = ['Learn more about Internet Media Types →'];
                             ? $formatos[$index]
                             : $popularMediaFormats[$index];
                     ?>
-                        <a href="<?= $href ?>" title="<?= $title ?>" class="tech-item">
-                            <?= $text ?>
-                        </a>
+                    <a href="<?= $href ?>" title="<?= $title ?>" class="tech-item">
+                        <?= $text ?>
+                    </a>
                     <?php
                     endforeach;
                     ?>
@@ -226,17 +234,19 @@ $learn = ['Learn more about Internet Media Types →'];
                 <p><?= empty($role) ? $rol[0] : $role[0]; ?><br><b><?= empty($role) ? $rol[1] : $role[1]; ?></b></p>
                 <ul>
                     <?php for ($i = 2; $i < 7; $i++) : ?>
-                        <li><?= empty($role) ? $rol[$i] : $role[$i]; ?></li>
+                    <li><?= empty($role) ? $rol[$i] : $role[$i]; ?></li>
                     <?php endfor; ?>
                 </ul>
             </div>
             <blockquote class="expert-quote">
                 <p><?= empty($modernMedia) ? $multimediaModerna['cita'] : $modernMedia['quote']; ?></p>
-                <footer>— <cite><a href="<?= empty($links) ? $enlaces['aACR'][0] : $links['aACR'][0]; ?>"><?= empty($modernMedia) ? $multimediaModerna['aACR'] : $modernMedia['aACR']; ?></a></cite>
+                <footer>— <cite><a
+                            href="<?= empty($links) ? $enlaces['aACR'][0] : $links['aACR'][0]; ?>"><?= empty($modernMedia) ? $multimediaModerna['aACR'] : $modernMedia['aACR']; ?></a></cite>
                 </footer>
             </blockquote>
             <p class="learn-more">
-                <a href="<?= empty($links) ? $enlaces['tiposMultimedia'] : $links['mediaType']; ?>" class="reference-link"><?= empty($learn) ? $aprender[0] : $learn[0]; ?></a>
+                <a href="<?= empty($links) ? $enlaces['tiposMultimedia'] : $links['mediaType']; ?>"
+                    class="reference-link"><?= empty($learn) ? $aprender[0] : $learn[0]; ?></a>
             </p>
         </div>
     </div>

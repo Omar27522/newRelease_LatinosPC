@@ -1,24 +1,631 @@
- summary {
-                display:inline;
-                margin-bottom  : 10px;
-            }
+/* ===================================================
+   LatinosPC - Software Section: Other (other.css)
+   Aesthetic aligned with Anvil design system
+   =================================================== */
 
-        summary{
-            cursor: pointer;
-            font-size: 1.2rem;
-        }
-        summary:hover{
-            border: 2px solid #3498db;
-        }
-        details{
-            padding-bottom  : 10px;
-        }
-        p{
-            margin-bottom  : 10px; margin-top: 10px;
-        }
-        .main-section {
-            background-color: var(--background-color);
-            box-shadow: var(--box-shadow);
-            border-radius: var(--border-radius);
-            padding: 15px;
-        }
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+:root {
+  /* Anvil Theme Palette Tokens */
+  --primary-color: #0056b3;
+  --primary-dark: #082d45;
+  --secondary-color: #218838;
+  --secondary-dark: #155724;
+  --text-color: #1a1e21;
+  --light-text: #343a40;
+  --dialog-text-highlight: #dee2e6;
+  --dialog-background: rgba(0, 0, 0, 0.9);
+  --background: #ffffff;
+  --card-bg: #f8f9fa;
+  --border-radius: 12px;
+  --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  --transition: all 0.25s ease-in-out;
+  --link-bg: rgba(0, 86, 179, 0.1);
+  --bannerAndFooter-bg: #daedfb;
+  --text-hover: #bd2130;
+  --button-color: #ffffff;
+}
+
+/* ---------------------------------------------------
+   Page Headings
+--------------------------------------------------- */
+.fullbar h1 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary-dark, #082d45);
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0.5rem 0 1rem;
+  letter-spacing: -0.5px;
+}
+
+#title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: var(--primary-color, #0056b3);
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid var(--bannerAndFooter-bg, #daedfb);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+#title::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary-color, #0056b3);
+  border-radius: 3px;
+}
+
+/* ---------------------------------------------------
+   Main Container & Accordion Stack
+--------------------------------------------------- */
+.content-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  max-width: 1200px;
+  margin: 0 auto 3rem auto;
+}
+
+/* Main Section Details Card */
+details.main-section {
+  background-color: var(--card-bg, #f8f9fa);
+  border: 1px solid rgba(0, 86, 179, 0.14);
+  border-radius: var(--border-radius, 12px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: var(--transition, all 0.25s ease-in-out);
+  overflow: hidden;
+  position: relative;
+}
+
+details.main-section:hover {
+  border-color: rgba(0, 86, 179, 0.35);
+  box-shadow: 0 6px 18px rgba(0, 86, 179, 0.12);
+  transform: translateY(-2px);
+}
+
+details.main-section[open] {
+  background-color: #ffffff;
+  border-color: var(--primary-color, #0056b3);
+  box-shadow: 0 8px 22px rgba(0, 86, 179, 0.14);
+}
+
+/* Accordion Summary Header */
+summary.section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 1.15rem 1.4rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--primary-dark, #082d45);
+  background-color: var(--card-bg, #f8f9fa);
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  list-style: none;
+  outline: none;
+}
+
+summary.section-title::-webkit-details-marker,
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary.section-title:hover {
+  background-color: var(--bannerAndFooter-bg, #daedfb);
+  color: var(--primary-color, #0056b3);
+}
+
+summary.section-title i {
+  font-size: 1.25rem;
+  color: var(--primary-color, #0056b3);
+  min-width: 24px;
+  text-align: center;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+details.main-section:hover summary.section-title i {
+  color: var(--secondary-color, #218838);
+  transform: scale(1.1);
+}
+
+/* Animated chevron arrow on right side */
+summary.section-title::after {
+  content: '';
+  margin-left: auto;
+  width: 9px;
+  height: 9px;
+  border-right: 2.5px solid var(--primary-color, #0056b3);
+  border-bottom: 2.5px solid var(--primary-color, #0056b3);
+  transform: rotate(45deg);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.25s ease;
+  flex-shrink: 0;
+}
+
+details.main-section[open] > summary.section-title {
+  background-color: var(--bannerAndFooter-bg, #daedfb);
+  color: var(--primary-dark, #082d45);
+  border-bottom: 1px solid rgba(0, 86, 179, 0.15);
+}
+
+details.main-section[open] > summary.section-title::after {
+  transform: rotate(-135deg);
+  border-color: var(--primary-dark, #082d45);
+}
+
+/* ---------------------------------------------------
+   Section Content
+--------------------------------------------------- */
+.section-content {
+  padding: 1.5rem 1.6rem;
+  color: var(--text-color, #1a1e21);
+  line-height: 1.7;
+  animation: smoothFadeIn 0.3s ease;
+}
+
+@keyframes smoothFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-intro {
+  font-size: 1.05rem;
+  color: var(--light-text, #343a40);
+  margin-bottom: 1.25rem;
+  line-height: 1.7;
+}
+
+.section-intro cite {
+  display: block;
+  font-style: normal;
+  background-color: var(--card-bg, #f8f9fa);
+  border-left: 4px solid var(--primary-color, #0056b3);
+  padding: 1rem 1.25rem;
+  border-radius: 0 8px 8px 0;
+  color: var(--text-color, #1a1e21);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+  line-height: 1.7;
+}
+
+.section-intro a {
+  color: var(--primary-color, #0056b3);
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.section-intro a:hover {
+  color: var(--text-hover, #bd2130);
+}
+
+/* ---------------------------------------------------
+   Computer Repair Guide (Troubleshooting Steps)
+--------------------------------------------------- */
+.troubleshooting-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin: 1.25rem 0 1.5rem 0;
+}
+
+.step-item {
+  background-color: var(--card-bg, #f8f9fa);
+  border: 1px solid rgba(0, 86, 179, 0.12);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: var(--transition, all 0.25s ease-in-out);
+}
+
+.step-item:hover {
+  border-color: var(--primary-color, #0056b3);
+  background-color: #ffffff;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  transform: translateX(4px);
+}
+
+.step-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 1.2rem;
+  font-weight: 600;
+  font-size: 1.02rem;
+  color: var(--primary-dark, #082d45);
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  background: transparent;
+  outline: none;
+}
+
+.step-item summary::after {
+  content: '+';
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--primary-color, #0056b3);
+  transition: transform 0.2s ease;
+}
+
+.step-item[open] summary::after {
+  content: '−';
+  color: var(--primary-dark, #082d45);
+}
+
+.step-item[open] {
+  background-color: #ffffff;
+  border-color: var(--primary-color, #0056b3);
+  box-shadow: 0 4px 12px rgba(0, 86, 179, 0.08);
+}
+
+.step-item[open] summary {
+  border-bottom: 1px solid rgba(0, 86, 179, 0.1);
+  color: var(--primary-color, #0056b3);
+  background-color: var(--bannerAndFooter-bg, #daedfb);
+}
+
+.step-item div {
+  padding: 1rem 1.25rem;
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.step-item p {
+  margin: 0;
+}
+
+/* ---------------------------------------------------
+   Windows Shortcuts Section
+--------------------------------------------------- */
+.shortcuts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1.35rem;
+  padding: 1.25rem 1.5rem 1.5rem;
+  animation: smoothFadeIn 0.3s ease;
+}
+
+.shortcut-category {
+  background-color: var(--card-bg, #f8f9fa);
+  border: 1px solid rgba(0, 86, 179, 0.12);
+  border-radius: 10px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: var(--transition, all 0.25s ease-in-out);
+  display: flex;
+  flex-direction: column;
+}
+
+.shortcut-category:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 86, 179, 0.1);
+  border-color: rgba(0, 86, 179, 0.3);
+  background-color: #ffffff;
+}
+
+.category-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--primary-dark, #082d45);
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.45rem;
+  border-bottom: 2px solid var(--bannerAndFooter-bg, #daedfb);
+  position: relative;
+}
+
+.shortcut-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.shortcut-list section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+  padding: 0.6rem 0.85rem;
+  transition: var(--transition, all 0.25s ease-in-out);
+  cursor: default;
+}
+
+.shortcut-list section:hover {
+  background-color: var(--bannerAndFooter-bg, #daedfb);
+  border-color: var(--primary-color, #0056b3);
+  transform: translateX(4px);
+}
+
+/* Keyboard key combo badge */
+.shortcut-list section p:first-child {
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: #ffffff;
+  background-color: var(--primary-dark, #082d45);
+  padding: 0.32rem 0.65rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.shortcut-list section p:last-child {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--text-color, #1a1e21);
+  text-align: right;
+}
+
+/* ---------------------------------------------------
+   Styled Lists: Remote Support, MSP, Backups, Best Practices
+--------------------------------------------------- */
+.service-list,
+.msp-services,
+.backups,
+.best-practices {
+  list-style: none;
+  padding: 0;
+  margin: 1.2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.service-list li,
+.msp-services li,
+.backups li,
+.best-practices li {
+  position: relative;
+  padding: 0.8rem 1.1rem 0.8rem 2.6rem;
+  background-color: var(--card-bg, #f8f9fa);
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-color, #0056b3);
+  font-size: 1rem;
+  color: var(--text-color, #1a1e21);
+  line-height: 1.6;
+  transition: var(--transition, all 0.25s ease-in-out);
+}
+
+.service-list li::before,
+.msp-services li::before,
+.backups li::before {
+  content: '✓';
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--secondary-color, #218838);
+  font-weight: 800;
+  font-size: 1.05rem;
+}
+
+.best-practices li {
+  border-left-color: var(--secondary-color, #218838);
+}
+
+.best-practices li::before {
+  content: '★';
+  position: absolute;
+  left: 0.95rem;
+  top: 0.85rem;
+  color: #d97706;
+  font-size: 0.95rem;
+}
+
+.service-list li:hover,
+.msp-services li:hover,
+.backups li:hover,
+.best-practices li:hover {
+  background-color: #ffffff;
+  transform: translateX(4px);
+  box-shadow: 0 3px 10px rgba(0, 86, 179, 0.08);
+}
+
+/* ---------------------------------------------------
+   Action Buttons (CTA)
+--------------------------------------------------- */
+.service-link {
+  margin-top: 1.5rem;
+}
+
+.service-link a.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: var(--primary-dark, #082d45);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.75rem 1.4rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  transition: var(--transition, all 0.25s ease-in-out);
+}
+
+.service-link a.button:hover {
+  background-color: var(--text-hover, #bd2130);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(189, 33, 48, 0.25);
+  color: #ffffff;
+}
+
+.service-link a.button i {
+  transition: transform 0.25s ease;
+}
+
+.service-link a.button:hover i {
+  transform: translateX(4px);
+}
+
+/* ---------------------------------------------------
+   Passwords Section & Grid Links
+--------------------------------------------------- */
+.passwords {
+  list-style: none;
+  padding: 0;
+  margin: 1.2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.passwords details {
+  background-color: var(--card-bg, #f8f9fa);
+  border: 1px solid rgba(0, 86, 179, 0.12);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: var(--transition, all 0.25s ease-in-out);
+}
+
+.passwords details:hover {
+  border-color: var(--primary-color, #0056b3);
+  background-color: #ffffff;
+}
+
+.passwords details[open] {
+  background-color: #ffffff;
+  border-color: var(--primary-color, #0056b3);
+  box-shadow: 0 3px 10px rgba(0, 86, 179, 0.08);
+}
+
+.passwords details summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1.2rem;
+  font-weight: 600;
+  font-size: 1.02rem;
+  color: var(--primary-dark, #082d45);
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  text-transform: capitalize;
+  outline: none;
+}
+
+.passwords details summary::after {
+  content: '+';
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--primary-color, #0056b3);
+}
+
+.passwords details[open] summary::after {
+  content: '−';
+  color: var(--primary-dark, #082d45);
+}
+
+.passwords details[open] summary {
+  border-bottom: 1px solid rgba(0, 86, 179, 0.1);
+  background-color: var(--bannerAndFooter-bg, #daedfb);
+  color: var(--primary-dark, #082d45);
+}
+
+.passwords details p {
+  padding: 0.9rem 1.2rem;
+  margin: 0;
+  line-height: 1.7;
+  color: var(--light-text, #343a40);
+}
+
+/* Password managers & generators link buttons grid */
+.passwords details ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+  gap: 0.75rem;
+  list-style: none;
+  padding: 1rem 1.2rem;
+  margin: 0;
+}
+
+.passwords details ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.passwords details ul li a {
+  display: block;
+  text-align: center;
+  padding: 0.65rem 0.9rem;
+  background-color: var(--card-bg, #f8f9fa);
+  border: 1px solid rgba(0, 86, 179, 0.16);
+  border-radius: 6px;
+  color: var(--primary-color, #0056b3);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.92rem;
+  transition: var(--transition, all 0.25s ease-in-out);
+}
+
+.passwords details ul li a:hover {
+  background-color: var(--primary-dark, #082d45);
+  color: #ffffff;
+  border-color: var(--primary-dark, #082d45);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(8, 45, 69, 0.2);
+}
+
+/* ---------------------------------------------------
+   Accessibility & Selection Styles
+--------------------------------------------------- */
+*:focus-visible {
+  outline: 2px solid var(--primary-color, #0056b3);
+  outline-offset: 2px;
+}
+
+.selection_2:focus {
+  background-color: var(--dialog-text-highlight, #dee2e6);
+  outline: none;
+  border-radius: 3px;
+}
+
+/* ---------------------------------------------------
+   Responsive Design
+--------------------------------------------------- */
+@media (max-width: 768px) {
+  .shortcuts-grid {
+    grid-template-columns: 1fr;
+    padding: 0.85rem 1rem;
+  }
+
+  summary.section-title {
+    padding: 1rem 1.15rem;
+    font-size: 1.05rem;
+  }
+
+  .section-content {
+    padding: 1.15rem;
+  }
+
+  .passwords details ul {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+
+  .service-list li,
+  .msp-services li,
+  .backups li,
+  .best-practices li {
+    padding-left: 2.3rem;
+    font-size: 0.95rem;
+  }
+}

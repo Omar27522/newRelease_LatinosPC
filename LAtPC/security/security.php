@@ -1,565 +1,1281 @@
 <?php
-function security(){
-  ?>
-  <article class="fullbar">
-  <h1>Security</h1>
-    <div class="clr"></div>
-    <p><span class="date">Febuary 1st, 2023</span> &nbsp;|&nbsp Posted by <a href="../about/?omar#scroll">Omar
-            Garcia</a>&nbsp;|&nbsp; site <a href="?security#navi">Security</a>, <a href="?best_practices#navi">Best
-            Practices</a></p>
-    <h1 id="title">Valuable Implementable Measures.</h1>
-    <h2>Keep your Security in check</h2><img src="../../images/gallery/secty.jpg" class="fl" width="300px">
-    <ul>
-        <li>Your operating system and software must be kept up to date, installed with the latest security patches.</li>
-        <li>Use a strong, unique password for each device and account, also enable two-factor authentication when available.</li>
-        <li>Avoid clicking on links or downloading attachments from unknown or suspicious sources.</li>
-        <li>Use anti-virus and anti-malware software to protect against known threats.</li>
-        <li>Keep a backup of important files to an external drive or cloud service in case they are lost or stolen.</li>
-        <li>Use encryption to protect sensitive data stored on your devices. Be cautious when connecting to public Wi-Fi
-            networks, and use a virtual private network (VPN) when possible.</li>
-        <li>Use a firewall to block unauthorized access to your devices. Use a lockout policy to automatically lock your
-            device after a period of inactivity.</li>
-        <li>Log out of accounts and lock your device when you're not using it. Be aware of social engineering tactics,
-            such as phishing scams, and do not provide personal information or login credentials to anyone you do not
-            trust. Use a pop-up blocker to prevent unwanted advertisements and pop-ups from appearing on your device.
-        </li>
-        <li>Limit the number of users with administrative access to your devices, and restrict access to sensitive data
-            and settings.</li>
-        <li>Regularly review and audit user accounts and permissions to ensure that only authorized individuals have
-            access.</li>
-        <li>Use parental controls to limit access to inappropriate or harmful content on your devices.</li>
-        <li>Regularly review your device's security settings and configurations to ensure they are up to date and
-            appropriate for your needs.</li>
-        <li>When discarding or selling old devices, securely erase all data and restore the device to its factory
-            settings.</li>
-    </ul>
-    </article>
-  <?php
+/* ============================================================
+   Security page - CSS injected via the cssStyles() hook
+   ============================================================ */
+function cssStyles() {
+    ?>
+<style>
+/* ── Hero ── */
+.sec-hero {
+    background:
+        radial-gradient(circle at 86% 50%, rgba(96, 165, 250, 0.42) 0%, rgba(30, 58, 95, 0.2) 42%, transparent 68%),
+        linear-gradient(135deg, #0a192f 0%, #112844 40%, #16365c 75%, #1d4674 100%);
+    color: #fff;
+    border-radius: 20px;
+    padding: 3rem 2.5rem 2.5rem;
+    margin: 1.5rem auto;
+    max-width: 1200px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 24px 64px rgba(0, 0, 0, .22);
 }
+
+.sec-hero::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255, 255, 255, .07) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.sec-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    left: -60px;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(59, 130, 246, .12) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.sec-hero-inner {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+}
+
+.sec-hero-bg-art {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 440px;
+    max-width: 45%;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.95;
+    filter: contrast(1.05) brightness(1.02);
+    mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 55%, rgba(172, 162, 162, 0.42) 88%);
+    -webkit-mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 55%, rgba(0, 0, 0, 0) 88%);
+}
+
+.sec-hero-bg-art img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sec-shield {
+    font-size: 4.5rem;
+    animation: shieldPulse 2.4s ease-in-out infinite;
+    filter: drop-shadow(0 0 18px rgba(96, 165, 250, .55));
+    flex-shrink: 0;
+}
+
+@keyframes shieldPulse {
+
+    0%,
+    100% {
+        transform: scale(1) rotate(-2deg);
+    }
+
+    50% {
+        transform: scale(1.08) rotate(2deg);
+    }
+}
+
+.sec-hero h1 {
+    color: #fff !important;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    margin: 0 0 .4rem;
+    letter-spacing: -.03em;
+    font-weight: 800;
+}
+
+.sec-hero p {
+    color: rgba(255, 255, 255, .82);
+    font-size: .95rem;
+    margin: 0;
+}
+
+.sec-hero .sec-meta {
+    font-size: .78rem;
+    color: rgba(255, 255, 255, .55);
+    margin-top: .6rem;
+}
+
+.sec-hero .sec-meta a {
+    color: rgba(255, 255, 255, .85);
+    text-decoration: underline;
+}
+
+/* ── Checklist: clean floating tiles, full-width responsive grid ── */
+.sec-checklist {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.1rem;
+    margin: 1.8rem 0;
+}
+
+@media (max-width: 860px) {
+    .sec-hero-bg-art {
+        opacity: 0.22;
+        width: 280px;
+        max-width: 65%;
+        right: -15px;
+    }
+
+    .sec-hero-inner {
+        max-width: 100%;
+    }
+}
+
+.sec-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 1.25rem 1.4rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .05), 0 8px 24px rgba(0, 0, 0, .07);
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    transition: box-shadow .22s ease, transform .22s ease;
+    cursor: default;
+}
+
+.sec-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .04), 0 16px 40px rgba(0, 30, 80, .12);
+}
+
+.sec-card-num {
+    background: #f0f4ff;
+    color: #1e3a5f;
+    font-weight: 700;
+    font-size: .78rem;
+    letter-spacing: .02em;
+    border-radius: 8px;
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: .05rem;
+    flex-shrink: 0;
+}
+
+.sec-card p {
+    margin: 0;
+    font-size: .9rem;
+    color: #374151;
+    line-height: 1.6;
+}
+
+.sec-card-icon {
+    font-size: 1.35rem;
+    flex-shrink: 0;
+    margin-top: .05rem;
+}
+
+/* ── Section titles: editorial, no underline rule ── */
+.sec-section-title {
+    font-size: clamp(1.25rem, 2.5vw, 1.65rem);
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -.03em;
+    margin: 2.8rem 0 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
+
+.sec-section-title span {
+    font-size: 1.4rem;
+}
+
+/* ── Threat cards: dark glass chips ── */
+.threat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+    margin: 1.2rem 0 2.2rem;
+}
+
+.threat-card {
+    border-radius: 18px;
+    padding: 1.4rem 1.3rem;
+    color: #fff;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, .16);
+    transition: transform .22s ease, box-shadow .22s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.threat-card::before {
+    content: attr(data-icon);
+    position: absolute;
+    right: -8px;
+    bottom: -8px;
+    font-size: 5.5rem;
+    opacity: .09;
+    line-height: 1;
+    pointer-events: none;
+}
+
+.threat-card:hover {
+    transform: translateY(-5px) scale(1.015);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, .22);
+}
+
+.threat-card h2 {
+    font-size: .93rem;
+    font-weight: 700;
+    margin: 0 0 .45rem;
+    letter-spacing: -.01em;
+}
+
+.threat-card h3 {
+    font-size: .83rem;
+    font-weight: 400;
+    margin: 0;
+    opacity: .85;
+    line-height: 1.55;
+}
+
+.threat-card.physical {
+    background: linear-gradient(140deg, #7f1d1d, #991b1b);
+}
+
+.threat-card.sidechan {
+    background: linear-gradient(140deg, #4c1d95, #5b21b6);
+}
+
+.threat-card.remote {
+    background: linear-gradient(140deg, #1e3a5f, #1e4d7b);
+}
+
+.threat-card.supply {
+    background: linear-gradient(140deg, #7c2d12, #9a3412);
+}
+
+.threat-card.pwcrack {
+    background: linear-gradient(140deg, #064e3b, #065f46);
+}
+
+.threat-card.social {
+    background: linear-gradient(140deg, #78350f, #92400e);
+}
+
+.threat-card.quantum {
+    background: linear-gradient(140deg, #0c3257, #0f4270);
+}
+
+.threat-card.ai {
+    background: linear-gradient(140deg, #14532d, #166534);
+}
+
+/* ── Password strength demo ── */
+.pw-strength-demo {
+    background: #fff;
+    border-radius: 18px;
+    padding: 1.8rem;
+    margin: 1.4rem 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .05), 0 8px 28px rgba(0, 0, 0, .07);
+}
+
+.pw-strength-demo label {
+    font-weight: 700;
+    font-size: .9rem;
+    color: #0f172a;
+    display: block;
+    margin-bottom: .65rem;
+    letter-spacing: -.01em;
+}
+
+.pw-input-field {
+    width: 100%;
+    padding: .8rem 1.1rem;
+    background: #f8fafc;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    outline: none;
+    color: #0f172a;
+    transition: border-color .2s, box-shadow .2s;
+}
+
+.pw-input-field:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, .12);
+}
+
+.pw-meter-bar {
+    height: 6px;
+    border-radius: 99px;
+    background: #f1f5f9;
+    margin: .9rem 0 .4rem;
+    overflow: hidden;
+}
+
+.pw-meter-label {
+    font-size: .82rem;
+    font-weight: 600;
+    color: #64748b;
+    letter-spacing: .01em;
+}
+
+/* ── Auth method tiles ── */
+.auth-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 1rem;
+    margin: 1.2rem 0 1.8rem;
+}
+
+.auth-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .05), 0 6px 20px rgba(0, 0, 0, .07);
+    transition: transform .22s ease, box-shadow .22s ease;
+    cursor: default;
+}
+
+.auth-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .04), 0 16px 40px rgba(0, 30, 80, .12);
+}
+
+.auth-card .auth-icon {
+    font-size: 2.2rem;
+    display: block;
+    margin-bottom: .6rem;
+}
+
+.auth-card h3 {
+    font-size: .9rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0 0 .35rem;
+    letter-spacing: -.01em;
+}
+
+.auth-card p {
+    font-size: .79rem;
+    color: #64748b;
+    margin: 0;
+    line-height: 1.45;
+}
+
+/* ── Backup type tiles: white surface, hairline top accent, no border frame ── */
+.backup-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 1rem;
+    margin: 1.4rem 0;
+}
+
+.backup-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 1.5rem 1.2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .05), 0 8px 24px rgba(0, 0, 0, .07);
+    text-align: center;
+    transition: transform .22s ease, box-shadow .22s ease;
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+}
+
+.backup-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    border-radius: 18px 18px 0 0;
+}
+
+.backup-card.full::before {
+    background: #3b82f6;
+}
+
+.backup-card.incr::before {
+    background: #10b981;
+}
+
+.backup-card.diff::before {
+    background: #f59e0b;
+}
+
+.backup-card.mirr::before {
+    background: #8b5cf6;
+}
+
+.backup-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .04), 0 16px 40px rgba(0, 30, 80, .11);
+}
+
+.backup-card .bk-icon {
+    font-size: 2.4rem;
+    display: block;
+    margin-bottom: .65rem;
+}
+
+.backup-card h3 {
+    font-size: .95rem;
+    font-weight: 700;
+    margin: 0 0 .45rem;
+    color: #0f172a;
+    letter-spacing: -.01em;
+}
+
+.backup-card p {
+    font-size: .81rem;
+    color: #475569;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* ── Storage location cards ── */
+.storage-trio {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1.2rem 0 1.8rem;
+}
+
+.storage-card {
+    flex: 1 1 200px;
+    background: #fff;
+    border-radius: 18px;
+    padding: 1.4rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .05), 0 8px 24px rgba(0, 0, 0, .07);
+    transition: transform .22s ease, box-shadow .22s ease;
+}
+
+.storage-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .04), 0 16px 40px rgba(0, 30, 80, .11);
+}
+
+.storage-card .st-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.storage-card h3 {
+    font-size: .95rem;
+    font-weight: 700;
+    margin: 0 0 .4rem;
+    color: #0f172a;
+    letter-spacing: -.01em;
+}
+
+.storage-card p {
+    font-size: .83rem;
+    margin: 0;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+/* ── PM risk cards: clean elevated white, no side border ── */
+.pm-risk-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 1rem;
+    margin: 1.2rem 0 1.8rem;
+}
+
+.pm-risk-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 1.15rem 1.2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .05), 0 6px 20px rgba(0, 0, 0, .07);
+    transition: transform .22s ease, box-shadow .22s ease;
+}
+
+.pm-risk-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .04), 0 12px 32px rgba(0, 30, 80, .10);
+}
+
+.pm-risk-card h3 {
+    font-size: .9rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0 0 .3rem;
+    letter-spacing: -.01em;
+}
+
+.pm-risk-card p {
+    font-size: .82rem;
+    margin: 0;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+/* ── PPP terminal block ── */
+.ppp-box {
+    background: #0d1117;
+    color: #79c0ff;
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    border-radius: 14px;
+    padding: 1.4rem 1.6rem;
+    font-size: .88rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, .3);
+    overflow-x: auto;
+    margin: 1.2rem 0;
+    line-height: 1.75;
+    white-space: pre;
+}
+
+.ppp-box .ppp-header {
+    color: #cdd9e5;
+    font-weight: 700;
+    margin-bottom: .3rem;
+    display: block;
+}
+
+/* ── Tip / info box: elevated card, no left border ── */
+.sec-tip {
+    background: #f8fafc;
+    border-radius: 14px;
+    padding: 1.1rem 1.4rem;
+    margin: 1.4rem 0;
+    font-size: .9rem;
+    color: #374151;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .05), 0 4px 16px rgba(0, 0, 0, .06);
+    line-height: 1.6;
+}
+
+.sec-tip strong {
+    color: #0f172a;
+}
+
+/* ── Utility ── */
+.sec-divider {
+    border: none;
+    border-top: 1px solid #f1f5f9;
+    margin: 2.5rem 0;
+}
+
+.back-top-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    margin: 1rem 0 .5rem;
+    padding: .55rem 1.2rem;
+    background: #0f172a;
+    color: #fff !important;
+    border-radius: 99px;
+    font-size: .84rem;
+    font-weight: 700;
+    letter-spacing: .01em;
+    text-decoration: none !important;
+    transition: background .2s ease, transform .2s ease;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, .18);
+}
+
+.back-top-btn:hover {
+    background: #1e3a5f;
+    transform: translateY(-2px);
+}
+</style>
+<?php
+}
+
+/* ============================================================
+   ENGLISH FUNCTIONS
+   ============================================================ */
+
+function security() { 
+    $imgDir = (isset($page) && method_exists($page, 'getDir')) ? $page->getDir() : '../../';
+?>
+<article class="fullbar">
+    <div class="sec-hero">
+        <div class="sec-hero-inner">
+            <span class="sec-shield" role="img" aria-label="shield">&#x1F6E1;&#xFE0F;</span>
+            <div>
+                <h1>Security</h1>
+                <p>Valuable Implementable Measures &mdash; keep your digital life locked down.</p>
+                <p class="sec-meta">
+                    &#x1F4C5; February 1, 2023 &nbsp;|&nbsp; Posted by
+                    <a href="../about/?omar#scroll">Omar Garcia</a> &nbsp;|&nbsp;
+                    <a href="?security#navi">Security</a>,
+                    <a href="?best_practices#navi">Best Practices</a>
+                </p>
+            </div>
+        </div>
+        <div class="sec-hero-bg-art" aria-hidden="true">
+            <img src="<?= $imgDir; ?>images/gallery/secty.jpg"
+                onerror="this.src='https://latinospc.com/images/gallery/secty.jpg'" alt="" width="600" height="451">
+        </div>
+    </div>
+
+    <h2 class="sec-section-title"><span>&#x1F512;</span> Keep Your Security in Check</h2>
+    <div class="sec-checklist" role="list">
+        <?php
+        $tips = [
+            ["&#x1F5A5;&#xFE0F;",  "Your operating system and software must be kept up to date, installed with the latest security patches."],
+            ["&#x1F511;",  "Use a strong, unique password for each device and account, also enable two-factor authentication (2FA) everywhere possible."],
+            ["&#x1F6AB;",  "Avoid clicking on links or downloading attachments from unknown or suspicious sources."],
+            ["&#x1F9A0;",  "Use anti-virus and anti-malware software to protect against known threats."],
+            ["&#x1F4BE;",  "Keep a backup of important files to an external drive or cloud service &mdash; so you are never caught off guard."],
+            ["&#x1F510;",  "Use encryption to protect sensitive data stored on your devices. Be cautious when connecting to public Wi-Fi networks, and use a virtual private network (VPN) when possible."],
+            ["&#x1F525;",  "Use a firewall to block unauthorized access to your devices. Use a lockout policy to automatically lock your device after a period of inactivity."],
+            ["&#x1F6AA;",  "Log out and lock your device when stepping away. Watch out for phishing &amp; social engineering."],
+            ["&#x1F464;",  "Limit the number of admin users. Restrict access to sensitive data and settings."],
+            ["&#x1F4CB;",  "Regularly review user accounts and permissions &mdash; only authorized people should have access."],
+            ["&#x1F46A;",  "Use parental controls to block harmful content on family devices."],
+            ["&#x2699;&#xFE0F;",   "Regularly review your device's security settings and configurations to ensure they are up to date and appropriate for your needs."],
+            ["&#x1F5D1;&#xFE0F;",  "When discarding or selling old devices, securely erase all data and restore the device to its factory settings."],
+        ];
+        foreach ($tips as $i => [$icon, $text]): ?>
+        <div class="sec-card" role="listitem">
+            <span class="sec-card-icon"><?= $icon ?></span>
+            <div class="sec-card-num"><?= $i + 1 ?></div>
+            <p><?= $text ?></p>
+        </div>
+        <?php endforeach; ?>
+    </div>
+</article>
+<?php }
 
 function best_practices() {
+    $icons = ['physical'=>'&#x1FAB9;','sidechan'=>'&#x1F4E1;','remote'=>'&#x1F310;','supply'=>'&#x1F4E6;','pwcrack'=>'&#x1F513;','social'=>'&#x1F3AD;','quantum'=>'&#x269B;&#xFE0F;','ai'=>'&#x1F916;'];
+    $threats = [
+        ['physical', 'Physical Attacks',          'A bad actor may steal your device or use an "evil maid" attack &mdash; tampering with it while unattended in places like a hotel room.'],
+        ['sidechan', 'Side-Channel Attacks',       'Attackers extract sensitive info by measuring power consumption, electromagnetic emissions, or other physical device characteristics.'],
+        ['remote',   'Remote Access Attacks',      'Exploiting vulnerabilities in remote-access software or planting malware backdoors to silently access your system.'],
+        ['supply',   'Supply-Chain Attacks',       'Compromising a device before it reaches you &mdash; e.g., pre-installing malware during manufacturing or shipping.'],
+        ['pwcrack',  'Password Cracking',          'Brute-force, dictionary attacks, or known algorithm weaknesses used to crack account or device passwords.'],
+        ['social',   'Social Engineering',         'Disguising as a trusted entity (bank, government) to trick users into handing over credentials or sensitive data.'],
+        ['quantum',  'Quantum Computing Attacks',  'Future quantum computers may crack today\'s encryption keys, exposing data that feels safe right now.'],
+        ['ai',       'AI-Based Attacks',           'Malicious AI scans for system vulnerabilities at machine speed, discovering and exploiting weaknesses faster than humans can respond.'],
+    ];
+    $physTips = [
+        "&#x1F512;" => "Keep computers in a secure, locked room or cabinet when not in use.",
+        "&#x26D3;&#xFE0F;" => "Use a cable lock (e.g., Kensington lock) to physically secure computers to a desk.",
+        "&#x1F4F7;" => "Use a privacy screen or webcam cover to block unwanted camera access.",
+        "&#x26A1;" => "Plug into a surge protector to guard against power spikes.",
+        "&#x1F32C;&#xFE0F;" => "Clean dust from fans and vents regularly to prevent overheating.",
+        "&#x1F4BB;" => "Use a laptop lock when working in public spaces.",
+        "&#x1F392;" => "Always use a protective case when transporting any device.",
+        "&#x1F697;" => "Never leave devices visible inside a vehicle or in public areas.",
+        "&#x1F440;" => "Stay aware of your surroundings in public &mdash; be ready to close your laptop quickly.",
+    ];
+    $risks = [
+        ["&#x1F513;", "Security Breaches",      "All passwords live in one place. If that database is breached, everything is exposed."],
+        ["&#x1F6AA;", "Loss of Access",          "Forget your master password? You lose access to every stored credential."],
+        ["&#x1F3A3;", "Phishing",                "A successful phishing attack against you hands the attacker your entire vault."],
+        ["&#x2601;&#xFE0F;",  "Cloud-Based Risks",       "Cloud PM providers can potentially access your data &mdash; or be hit by a breach themselves."],
+        ["&#x1F4A5;", "Single Point of Failure", "If the service shuts down or goes offline, you may be locked out of everything at once."],
+    ];
     ?>
-
-
-    <div class="fullbar">
-    <h2 id="p3s"><a href="?best_practices#navi" title="Best Practices">Train yourself and your employees on best
-            practices for device security. Regularly remind emplyees to be vigilant and aware of potential threats,
-            these include:</a></h2>
-    <img src="https://latinospc.com/images/s_teal.jpg" class="rtl" width="300px">
-    <h2>Physical attacks:</h2>
-    <h3>A bad actor may try to gain physical access to a device by stealing it or by using a technique called "evil
-        maid" attack, where they tamper with a device while it is unattended in a public place such as a hotel room.
-    </h3>
-    <h2>Side-channel attacks:</h2>
-    <h3>A bad actor may attempt to extract sensitive information from a device by measuring its power consumption,
-        electromagnetic emissions or other physical characteristics.</h3>
-    <h2>Remote access attacks:</h2>
-    <h3>A bad actor may try to gain unauthorized access to a device by exploiting vulnerabilities in remote access
-        software or by using malware to establish a backdoor into the device.</h3>
-    <h2>Supply-chain attacks:</h2>
-    <h3>A bad actor may try to compromise a device by tampering with it before it is delivered to the end user, for
-        example by installing malware on the device during manufacturing.</h3>
-    <h2>Password cracking:</h2>
-    <h3>A bad actor may try to crack the password of an account or device by using a brute-force attack, a dictionary
-        attack or by exploiting known vulnerabilities in the password-hashing algorithm.</h3>
-    <h2>Social engineering attacks:</h2>
-    <h3>A bad actor may try to trick users into providing sensitive information or login credentials by disguising
-        themselves as a trusted entity, such as a bank or a government agency.</h3>
-    <h2>Quantum computing attacks:</h2>
-    <h3>A bad actor may try to use the power of quantum computing to crack encryption keys and gain access to sensitive
-        information.</h3>
-    <h2>AI-based attacks:</h2>
-    <h3>A bad actor may try to use Artificial intelligence to identify vulnerabilities on the system and exploit them.
-    </h3>
+<div class="fullbar">
+    <h2 class="sec-section-title" id="p3s"><span>&#x26A0;&#xFE0F;</span> Train Yourself &amp; Your Team &mdash; Know the
+        Threats</h2>
+    <p><a href="?best_practices#navi" title="Best Practices">Stay vigilant and aware of potential attack vectors,
+            including:</a></p>
+    <div class="threat-grid">
+        <?php foreach ($threats as [$cls, $title, $desc]): ?>
+        <div class="threat-card <?= $cls ?>" data-icon="<?= $icons[$cls] ?>">
+            <h2><?= $icons[$cls] ?> <?= $title ?></h2>
+            <h3><?= $desc ?></h3>
+        </div>
+        <?php endforeach; ?>
     </div>
-    <div class="article fullbar">
-    <h1 id="p4s"><a href="?security#navi">It's important to note that the threat landscape is constantly evolving, so
-            it's essential to stay informed and adapt security measures accordingly.</a></h1>
-    <h3>
-        <li>Keep the computers in a secure location when not in use, such as a locked room or cabinet.</li>
-    </h3>
-    <h3>
-        <li>Use a cable lock to physically secure the computers to a desk or other immovable object.</li>
-    </h3>
-    <h3>
-        <li>Use a privacy screen or webcam cover to prevent unwanted access to the computer's camera.</li>
-    </h3>
-    <h3>
-        <li>Use a surge protector to protect the computer from power surges and voltage spikes.</li>
-    </h3>
-    <h3>
-        <li>Keep the computer and its peripherals in good condition, such as cleaning dust from fans and vents to
-            prevent overheating.</li>
-    </h3>
-    <h3>
-        <li>Use a laptop lock to physically secure the computer to a desk or other immovable object.</li>
-    </h3>
-    <h3>
-        <li>Always use a protective carrying case when transporting a portable device, laptop or desktop computer.</li>
-    </h3>
-    <h3>
-        <li>Avoid leaving portable devices in plain sight in vehicles or other public places.</li>
-    </h3>
-    <h3>
-        <li>Be aware of your surroundings when using a portable computer in public, and be prepared to close and secure
-            it quickly if necessary.</li>
-    </h3>
-    <h1><a href="?security#navi" title="click here to select text">Pass-words managers for passwords:</a></h1>
-    <h3>password managers have inherited problems and risks in exchange for convenience to the user.</h3>
-    <h2>These problems include:</h2>
-    <h3>Security breaches:</h3>Password managers store all of your passwords in a single location, so if a hacker gains
-    access to the password manager's database, they will have access to all of your stored passwords.
-    <h3>Loss of access:</h3>If you lose access to your password manager account (e.g. if you forget your master
-    password), you will lose access to all of your stored passwords.
-    <h3>Phishing:</h3>If a user falls for a phishing attack, the attacker may gain access to the user's password manager
-    account, including all the stored passwords.
-    <h3>Cloud-based password manager:</h3>If the password manager is cloud-based, the company that runs the service
-    could potentially access your stored passwords, or they could be compromised in a data breach.
-    <h3>Single point of failure:</h3>If the password manager software or service goes down or out of business, you may
-    lose access to all of your stored passwords.To mitigate risks, your password manager should be set up with strong
-    and unique master password, enabled multi-factor authentication (2FA) and regularly updated software. Additionally,
-    it's important to backup the password manager's data to a safe place and keep an offline copy of your important
-    passwords in a secure location.
+    <div class="sec-tip">
+        <strong>&#x1F30D; The threat landscape is constantly evolving.</strong>
+        Stay informed and adapt your security measures regularly.
+        <a href="?security#navi">Back to Security overview &rarr;</a>
     </div>
-    <?php
-}
+</div>
+<div class="fullbar">
+    <h2 class="sec-section-title"><span>&#x1F3E0;</span> Physical Device Best Practices</h2>
+    <div class="sec-checklist">
+        <?php foreach ($physTips as $ico => $tip): ?>
+        <div class="sec-card">
+            <span class="sec-card-icon"><?= $ico ?></span>
+            <p><?= $tip ?></p>
+        </div>
+        <?php endforeach; ?>
+    </div>
+    <hr class="sec-divider">
+    <h2 class="sec-section-title"><span>&#x1F5C4;&#xFE0F;</span> Password Managers &mdash; Convenience vs. Risk</h2>
+    <p>Password managers offer great convenience, but come with inherited risks you should know:</p>
+    <div class="pm-risk-list">
+        <?php foreach ($risks as [$ico, $title, $desc]): ?>
+        <div class="pm-risk-card">
+            <h3><?= "$ico $title" ?></h3>
+            <p><?= $desc ?></p>
+        </div>
+        <?php endforeach; ?>
+    </div>
+    <div class="sec-tip">
+        <strong>&#x2705; Mitigation:</strong> Use a strong unique master password, enable 2FA, keep the software
+        updated,
+        back up your vault, and keep an offline copy of critical passwords in a secure location.
+    </div>
+</div>
+<?php }
 
-function passwords(){
+function passwords() {
+    $methods = [
+        ['&#x1F511;', '2-Factor Auth',        'Two passwords / factors. Something you know + something you have or are.'],
+        ['&#x261D;&#xFE0F;',  'Fingerprint',   'Biometric login using your unique fingerprint &mdash; fast and hard to fake.'],
+        ['&#x1F600;', 'Facial Recognition',    'Uses your unique facial geometry to verify identity without typing anything.'],
+        ['&#x1F310;', 'Social Login',           'Uses your social media credentials (Google, Facebook) to authenticate ownership.'],
+        ['&#x1F52E;', 'Future of Passwords',   'Passkeys, FIDO2, and hardware tokens are reshaping how we prove identity online.'],
+    ];
     ?>
-    <div class="article fullbar">
-    <h2 id="top"><span>Passwords</span></h2>
-    <div class="clr"></div>
-    <p><span class="date">November 14, 2020</span>
-        &nbsp;|&nbsp
-        Posted by
-        <a href="?team#scroll">Omar Garcia</a>
-        &nbsp;|&nbsp;
-        site
-        <a href="?about#scroll">About Us</a>,
-        <a href="?team#scroll">Team members</a>
+<div class="fullbar">
+    <h2 class="sec-section-title" id="top"><span>&#x1F511;</span> Passwords</h2>
+    <p><span class="date">November 14, 2020</span> &nbsp;|&nbsp;
+        Posted by <a href="?team#scroll">Omar Garcia</a> &nbsp;|&nbsp;
+        <a href="?about#scroll">About Us</a>, <a href="?team#scroll">Team</a>
     </p>
-    <p>“When the claimant successfully demonstrates knowledge
-        of the password to the verifier through an established
-        authentication protocol,[4] the verifier is able to infer
-        the claimant's identity. “ <a href="https://en.wikipedia.org/wiki/Password">Wikipedia</a></p>
+    <blockquote class="sec-tip" style="font-style:italic">
+        &ldquo;When the claimant successfully demonstrates knowledge of the password to the verifier through an
+        established authentication protocol, the verifier is able to infer the claimant&rsquo;s identity.&rdquo;
+        &mdash; <a href="https://en.wikipedia.org/wiki/Password" target="_blank" rel="noopener">Wikipedia</a>
+    </blockquote>
+    <p>Traditional advice: a strong password is <strong>12+ characters</strong>, mixes uppercase, lowercase,
+        numbers, and symbols &mdash; and is <em>never</em> a dictionary word or obvious substitution.</p>
 
-    <p>Traditional Advice tells us that a strong and secure
-        password is 12 characters, minimum. Includes special
-        characters, and a mix of lower and upper case letters.
-        The password is not a dictionary word, or many. And
-        doesn’t use obvious substitution, like a letter for a
-        number or vice versa. </p>
-    <ul>
-        <li>
-            <p>
-                <a href="https://en.wikipedia.org/wiki/Multi-factor_authentication">Two factor authentication:</a>
-                Is an added extra security layer, that in simplest terms is two passwords (factors).
-                The user is granted access by presenting the passwords and a second piece of evidence (factor). Knowledge (something the user only knows), possession(something the user has), and (who the user is) Inheritance is presented to the authentication mechanism.
+    <div class="pw-strength-demo">
+        <label for="pw-input-en">&#x1F50D; Try it &mdash; type a password to see its strength:</label>
+        <input type="password" id="pw-input-en" class="pw-input-field" placeholder="Type a password..."
+            autocomplete="new-password">
+        <div class="pw-meter-bar">
+            <div class="pw-meter-fill" id="pw-fill-en"></div>
+        </div>
+        <p class="pw-meter-label" id="pw-label-en">Start typing&hellip;</p>
+        <p style="font-size:.78rem;color:var(--light-text);margin-top:.4rem">
+            &#x2139;&#xFE0F; Nothing is sent anywhere &mdash; this runs 100% in your browser.
+            <a href="https://www.security.org/how-secure-is-my-password/" target="_blank" rel="noopener">Check it
+                further &rarr;</a>
+        </p>
+    </div>
+    <script>
+    (function() {
+        var cfg = [{
+            id: 'pw-input-en',
+            fill: 'pw-fill-en',
+            lbl: 'pw-label-en',
+            empty: 'Start typing\u2026',
+            levels: [{
+                max: 4,
+                pct: 15,
+                color: '#e74c3c',
+                text: '\uD83D\uDD34 Very Weak'
+            }, {
+                max: 7,
+                pct: 35,
+                color: '#e67e22',
+                text: '\uD83D\uDFE0 Weak'
+            }, {
+                max: 10,
+                pct: 58,
+                color: '#f1c40f',
+                text: '\uD83D\uDFE1 Fair'
+            }, {
+                max: 13,
+                pct: 78,
+                color: '#2ecc71',
+                text: '\uD83D\uDFE2 Strong'
+            }, {
+                max: Infinity,
+                pct: 100,
+                color: '#27ae60',
+                text: '\uD83D\uDCAA Very Strong!'
+            }]
+        }];
+        cfg.forEach(function(c) {
+            var inp = document.getElementById(c.id),
+                fill = document.getElementById(c.fill),
+                lbl = document.getElementById(c.lbl);
+            if (!inp) return;
+            inp.addEventListener('input', function() {
+                var v = this.value,
+                    len = v.length,
+                    score = len + (/[A-Z]/.test(v) ? 2 : 0) + (/[a-z]/.test(v) ? 1 : 0) + (/[0-9]/
+                        .test(v) ? 2 : 0) + (/[^A-Za-z0-9]/.test(v) ? 4 : 0);
+                if (!len) {
+                    fill.style.width = '0%';
+                    lbl.textContent = c.empty;
+                    return;
+                }
+                for (var i = 0; i < c.levels.length; i++) {
+                    if (score <= c.levels[i].max) {
+                        fill.style.width = c.levels[i].pct + '%';
+                        fill.style.background = c.levels[i].color;
+                        lbl.textContent = c.levels[i].text;
+                        break;
+                    }
+                }
+            });
+        });
+    })();
+    </script>
+
+    <h2 class="sec-section-title" style="margin-top:2rem"><span>&#x1F6E1;&#xFE0F;</span> Authentication Methods</h2>
+    <div class="auth-grid">
+        <?php foreach ($methods as [$ico, $name, $desc]): ?>
+        <div class="auth-card">
+            <span class="auth-icon"><?= $ico ?></span>
+            <h3><?= $name ?></h3>
+            <p><?= $desc ?></p>
+        </div>
+        <?php endforeach; ?>
+    </div>
+
+    <hr class="sec-divider">
+    <h2 class="sec-section-title"><span>&#x1F0CF;</span> Perfect Paper Passwords (PPP)</h2>
+    <p><span class="date">November 11, 2020</span> &nbsp;|&nbsp; Posted by <a href="?omar#scroll">Omar Garcia</a></p>
+    <p>Instead of memorizing a long password, memorize a <strong>pattern</strong> on a printed card. Each cell is read
+        like coordinates: <code>C3|G7|B10|E5|A1</code></p>
+    <div class="ppp-box"><span class="ppp-header"> A B C D E</span>
+        1: \.=who b%$@dh v9$hn? ddy6?q oyxd8f
+        2: .c.3;3 %ytqm1 n$4uz] f84tj~ dw6scw
+        3: ,~k_tk e5#4a. @9e4bm cgcib. 9%$"#!
+        4: 7&amp;oan- [:ri&gt;w +jk3,! a=bvr' u:]&amp;|=
+        5: [etwvj 9k/xew rjl4p7 ds"k|n fw!odn
+        6: ?7cpxv nj^gy] /wxfrk ixspk&gt; {@mm:}
+        7: zf/s6t zbaa&gt;7 wcc$.^ !^teg? 2q7{\&lt;
+        8: |afn:8 ,rvb34 xrym4! 6*^!z% u.]6r6
+        9: !;ar~j f_@x2k s,6v5t &gt;cbud5 4yaroz
+        10: od[/s" res.r] d\h%y, u}o3oz rkzsut</div>
+    <div class="sec-tip">
+        <strong>How to use:</strong> Memorize a grid pattern (e.g., C3&rarr;G7&rarr;B10) and read those cell characters
+        as your password.
+        Change patterns per site. Never write the pattern &mdash; only keep the card.
+        <br><a href="https://grc.com/ppp.htm" target="_blank" rel="noopener">Learn more at GRC.com/ppp &rarr;</a>
+    </div>
+    <div style="text-align:right;margin-top:1.5rem">
+        <a href="?contact" class="back-top-btn">&#x1F4EC; Get in touch with us</a>
+    </div>
+</div>
+<?php }
+
+function security_backups() {
+    $types = [
+        ['full','&#x1F4E6;','Full Backup',        'A complete copy of all data. Slowest to create &amp; restore, but gives total protection for disaster recovery.'],
+        ['incr','&#x1F4C8;','Incremental Backup', 'Only saves changes since the last backup. Fast and light, but recovery requires chaining multiple backups.'],
+        ['diff','&#x1F4CA;','Differential Backup','All changes since the last full backup. Faster recovery than incremental, more storage than incremental.'],
+        ['mirr','&#x1FA9E;','Mirror Backup',       'An exact real-time copy of data. Instant restore, but accidental deletions mirror instantly too.'],
+    ];
+    ?>
+<div class="fullbar">
+    <h2 class="sec-section-title" id="top"><span>&#x1F4BE;</span> Backups</h2>
+    <p>A backup is a copy of data you can restore if the original is lost or damaged. Choose the right strategy for your
+        needs:</p>
+    <div class="backup-grid">
+        <?php foreach ($types as [$cls,$ico,$name,$desc]): ?>
+        <div class="backup-card <?= $cls ?>">
+            <span class="bk-icon"><?= $ico ?></span>
+            <h3><?= $name ?></h3>
+            <p><?= $desc ?></p>
+        </div>
+        <?php endforeach; ?>
+    </div>
+    <div class="sec-tip">
+        &#x1F4A1; <strong>Best practice:</strong> Follow the <strong>3-2-1 Rule</strong> &mdash; keep 3 copies of your
+        data,
+        on 2 different media types, with 1 copy stored offsite.
+    </div>
+    <h2 class="sec-section-title"><span>&#x1F4CD;</span> Where to Store Your Backups</h2>
+    <div class="storage-trio">
+        <div class="storage-card">
+            <span class="st-icon">&#x1F3E0;</span>
+            <h3><a href="#onsite_b">Onsite Backup</a></h3>
+            <p>Easy to set up. Fast access. No internet required to back up or restore. Best for day-to-day recovery.
             </p>
-        </li>
-
-        <li>
-            <p>
-                <a href="https://www.fbi.gov/services/cjis/fingerprints-and-other-biometrics">Fingerprint</a> is a
-                <a href="https://www.csoonline.com/article/3339565/what-is-biometrics-and-why-collecting-biometric-data-is-risky.html">biometric authentication;</a>
-                lets users use hand's fingerprints to verify their identity.
-            </p>
-        </li>
-
-        <li>
-            <p>Facial recognition is a biometric authentication; lets users use unique facial features to verify ones identity.</p>
-        </li>
-
-        <li>
-            <p>Social Log in is an authentication method that lets users use their social media credentials to verify ownership, partnership, or other. </p>
-        </li>
-
-        <li>
-            <p>Future of passwords...</p>
-        </li>
-    </ul>
-
-    </p>
-    <p class="spec">
-    <div style="text-align:right">
-        <a href="?contact">Get in contact with us.</a>
-        <!-- more links here -->
+        </div>
+        <div class="storage-card" style="border-top-color:var(--secondary-color)">
+            <span class="st-icon">&#x1F697;</span>
+            <h3><a href="#offsite_b">Offsite Backup</a></h3>
+            <p>A physical copy stored at a different location. Protects against local disasters like fire or theft.</p>
+        </div>
+        <div class="storage-card" style="border-top-color:#8e44ad">
+            <span class="st-icon">&#x2601;&#xFE0F;</span>
+            <h3><a href="#online_b">Cloud Backup</a></h3>
+            <p>Automatic, accessible from anywhere with internet. Great as a third redundant layer of protection.</p>
+        </div>
     </div>
-    </p>
+    <hr class="sec-divider">
+    <h3 id="onsite_b" style="color:var(--primary-dark);margin-bottom:.5rem">&#x1F3E0; Onsite Backup</h3>
+    <p>Storing data on local physical media &mdash; portable hard drives or flash drives. A second internal drive can
+        serve as a live backup; if the primary fails, downtime is minimal because drives typically warn of failure ahead
+        of time.</p>
+    <h3 id="offsite_b" style="color:var(--primary-dark);margin:1.5rem 0 .5rem">&#x1F697; Offsite Backup</h3>
+    <p>Same physical media concept, but the drive is taken to a separate building. Protects against scenarios where both
+        the computer and a local backup could be lost at the same time (fire, flood, theft).</p>
+    <h3 id="online_b" style="color:var(--primary-dark);margin:1.5rem 0 .5rem">&#x2601;&#xFE0F; Cloud Storage</h3>
+    <p>Data is stored on remote servers accessed via the internet. Log in from anywhere to retrieve files. Many services
+        offer automatic syncing. Free tiers have limited space &mdash; choose a paid plan for full coverage.</p>
+    <div style="margin-top:1.5rem"><a href="#top" class="back-top-btn">&#x2B06; Back to top</a></div>
+</div>
+<?php }
 
+/* ============================================================
+   SPANISH FUNCTIONS
+   ============================================================ */
 
-
-    <div class="clr"></div>
-    <h2><span>Computer Solutions; Passwords</span></h2>
-    <div class="clr"></div>
-    <p><span class="date">November 11, 2020</span>
-        &nbsp;|&nbsp
-        Posted by
-        <a href="?team#scroll">Omar Garcia</a>
-        &nbsp;|&nbsp;
-        site
-        <a href="?about#scroll">About Us</a>,
-        <a href="?team#scroll">Team members</a>
-    </p>
-    <img src="https://latinospc.com/images/websites/passcard.gif" width="263" height="146" alt="image" class="fl" />
-
-    <h3>Passwords will have to be secured and should have a combination of alphanumeric numbers,
-        (a-z, 1-9) and other character symbols(!@#$%^&*{}|`). Also secure passwords should be at least
-        12 characters in length.<br /> </h3>
-    <p>#note; capitalized letters are recognized different from lowercase,
-        a T is different from t.</p>
-    <div class="clr"></div>
-    <img src="https://latinospc.com/images/websites/ppp.jpg" width="400" height="850" alt="image" class="rtl" />
-    <h2>Print the <a href="?perfect_paper_passwords#navi">PassCard:</a></h2>
-
-    <p><strong>How to use the <a href="?perfect_paper_passwords#navi">pass card:</a> </strong>
-        By default the passcard generates a block of four characters (password piece)
-        A-G, 1-10. A strong secure password should be of at least 12 characters long.
-        Instead of memorizing a long password, is much simpler for a human to memorize a pattern.</p>
-    <a href="https://latinospc.com/images/websites/passcard_animation.gif"><img src="https://latinospc.com/images/websites/passcard_animation.gif" width="400"
-            height="200" alt="image" class="rtl" /></a>
-    For this password, the sequence will be C3|G7|B10|E5|A1<br />
-    The second password's sequence, will be A7|C9|D3|F4<br />
-    <p>Check your password by going to.
-        <a
-            href="https://www.security.org/how-secure-is-my-password/">https://www.security.org/how-secure-is-my-password/</a>
-    </p>
+function seguridad() { 
+    $imgDir = (isset($page) && method_exists($page, 'getDir')) ? $page->getDir() : '../../';
+?>
+<article class="fullbar">
+    <div class="sec-hero">
+        <div class="sec-hero-inner">
+            <span class="sec-shield" role="img" aria-label="escudo">&#x1F6E1;&#xFE0F;</span>
+            <div>
+                <h1>Seguridad</h1>
+                <p>Medidas valiosas y aplicables &mdash; mant&eacute;n tu vida digital bajo llave.</p>
+                <p class="sec-meta">
+                    &#x1F4C5; 1 de febrero de 2023 &nbsp;|&nbsp; Publicado por
+                    <a href="../about/?omar#scroll">Omar Garc&iacute;a</a> &nbsp;|&nbsp;
+                    <a href="?security#navi">Seguridad</a>,
+                    <a href="?best_practices#navi">Mejores Pr&aacute;cticas</a>
+                </p>
+            </div>
+        </div>
+        <div class="sec-hero-bg-art" aria-hidden="true">
+            <img src="<?= $imgDir; ?>images/gallery/secty.jpg"
+                onerror="this.src='https://latinospc.com/images/gallery/secty.jpg'" alt="" width="600" height="451">
+        </div>
     </div>
-
-    <div class="article fullbar">
-    <h2><span>Perfect Paper Passwords</span></h2>
-    <div class="clr"></div>
-    <p><span class="date">November 11, 2020</span>
-        &nbsp;|&nbsp;
-        Posted by
-        <a href="?omar#scroll">Omar Garcia</a>
-        &nbsp;|&nbsp;
-        site
-        <a href="?about#scroll">About Us</a>,
-        <a href="?team#scroll">Team members</a>
-    </p>
-    <h2><strong> Use perfect paper passwords</strong></h2>
-    <img src="https://latinospc.com/images/websites/passcard.gif" width="263" height="146" alt="image" class="fl" />
-    <h3>
-        “Almost without exception, today's Internet users prove
-        their identity online using a fixed account name and password.
-        In the past, this simple system provided sufficient security.
-        But with the growing popularity of online banking and eCommerce,
-        the value of stealing online identities has skyrocketed. And the
-        increasing presence and "spyware" and "malware" on innocent users'
-        computers means that users can be "watched" while logging onto their
-        banking and other eCommerce sites. Once their logon credentials have
-        been "captured" and stolen, Internet criminals can easily assume their identity.
-        The trouble with a username and password is that they never change.
-        We create them, write them down or memorize them, then use them over
-        and over again. What has been needed is an inexpensive system that
-        provides something which changes everytime it is used. GRC's Perfect
-        Paper Passwords system offers a simple, safe and secure, free and well
-        documented solution that is being adopted by a growing number of
-        security-conscious Internet facilities to provide their users with
-        state-of-the-art cryptographic logon security.” <a href="https://grc.com/ppp.htm">https://grc.com/</a><br />
-
-        <div class="clr"></div>
-        <pre class="fl">
-      A      B      C      D      E
- 1: \.=who b%$@dh v9$hn? ddy6?q oyxd8f
- 2: .c.3;3 %ytqm1 n$4uz] f84tj~ dw6scw
- 3: ,~k_tk e5#4a. @9e4bm cgcib. 9%$"#!
- 4: 7&oan- [:ri>w +jk3,! a=bvr' u:]&|=
- 5: [etwvj 9k/xew rjl4p7 ds"k|n fw!odn
- 6: ?7cpxv nj^gy] /wxfrk ixspk> {@mm:}
- 7: zf/s6t zbaa>7 wcc$.^ !^teg? 2q7{\<
- 8: |afn:8 ,rvb34 xrym4! 6*^!z% u.]6r6
- 9: !;ar~j f_@x2k s,6v5t >cbud5 4yaroz
-    10: od[/s" res.r] d\h%y, u}o3oz rkzsut
-    </pre>
-        <ol align="right"><a href="https://grc.com/ppp.htm">Go to grc.com/ppp</a></ol>
-        <p>Sequence Key: Every-time the page refreshes the sequence key changes. You can copy and paste your key to
-            later reprint the same card .
-        </p>
-        <p>Passcode character set: 64, 88, or your own. The alphabet that your password will have is the passcode
-            character set. The default option offers 64 conservative characters, the second option however is much more
-            visually aggressive, and therefore much more secure.
-        </p>
-        <p>Passcode length: The length of the block in characters; the minimum is two the maximum is sixteen.
-        </p>
-        <p>Passcard label:The name of your passcard, e.g. email,Social media, entertainment,Work etc.
-        </p>
-        <p>First passcard to generate: by default the fist passcard is the first to generate, but for example you could
-            choose the hundreth passcard to be the one you want to display first.
-        </p>
-        <p>Passcard size: is the size of the passcard when printed. The deafult size is 14 which is the size of a
-            “credit card” when printed.
-        </p>
-        <p>click on generate passcards and Print the desired passcard.</p>
-        <p>Done! You now have a chance to improve your overall online experience, with the piece of mind that the
-            password you are using is in fact a secure strong password.</p>
-
+    <h2 class="sec-section-title"><span>&#x1F512;</span> Mant&eacute;n tu Seguridad al D&iacute;a</h2>
+    <div class="sec-checklist" role="list">
+        <?php
+        $tips = [
+            ["&#x1F5A5;&#xFE0F;",  "Tu sistema operativo y software deben mantenerse actualizados con los &uacute;ltimos parches de seguridad."],
+            ["&#x1F511;",  "Usa una contrase&ntilde;a segura y &uacute;nica para cada cuenta. Activa la autenticaci&oacute;n de dos factores (2FA) donde sea posible."],
+            ["&#x1F6AB;",  "Evita hacer clic en enlaces o descargar archivos de fuentes desconocidas o sospechosas."],
+            ["&#x1F9A0;",  "Instala software antivirus y antimalware de confianza para protegerte contra amenazas conocidas."],
+            ["&#x1F4BE;",  "Respalda tus archivos importantes en una unidad externa o servicio en la nube."],
+            ["&#x1F510;",  "Cifra los datos sensibles en tus dispositivos. Usa una VPN en redes Wi-Fi p&uacute;blicas."],
+            ["&#x1F525;",  "Activa un firewall para bloquear accesos no autorizados. Configura el bloqueo autom&aacute;tico tras inactividad."],
+            ["&#x1F6AA;",  "Cierra sesi&oacute;n y bloquea tu dispositivo cuando no lo uses. Mant&eacute;nte alerta ante phishing e ingenier&iacute;a social."],
+            ["&#x1F464;",  "Limita el n&uacute;mero de usuarios administradores y restringe el acceso a datos sensibles."],
+            ["&#x1F4CB;",  "Revisa peri&oacute;dicamente las cuentas y permisos de usuario. Solo personas autorizadas deben tener acceso."],
+            ["&#x1F46A;",  "Usa controles parentales para bloquear contenido inapropiado en dispositivos familiares."],
+            ["&#x2699;&#xFE0F;",   "Revisa regularmente la configuraci&oacute;n de seguridad de tus dispositivos para mantenerla al d&iacute;a."],
+            ["&#x1F5D1;&#xFE0F;",  "Antes de vender o desechar un dispositivo, borra todos los datos de forma segura y restaura la configuraci&oacute;n de f&aacute;brica."],
+        ];
+        foreach ($tips as $i => [$icon, $text]): ?>
+        <div class="sec-card" role="listitem">
+            <span class="sec-card-icon"><?= $icon ?></span>
+            <div class="sec-card-num"><?= $i + 1 ?></div>
+            <p><?= $text ?></p>
+        </div>
+        <?php endforeach; ?>
     </div>
+</article>
+<?php }
 
-    <?php
-}
-
-function security_backups(){
+function mejores_practicas() {
+    $icons = ['physical'=>'&#x1FAB9;','sidechan'=>'&#x1F4E1;','remote'=>'&#x1F310;','supply'=>'&#x1F4E6;','pwcrack'=>'&#x1F513;','social'=>'&#x1F3AD;','quantum'=>'&#x269B;&#xFE0F;','ai'=>'&#x1F916;'];
+    $threats = [
+        ['physical', 'Ataques f&iacute;sicos',              'Un actor malicioso puede robar tu dispositivo o usar el ataque "evil maid": manipularlo mientras est&aacute; desatendido en un lugar p&uacute;blico.'],
+        ['sidechan', 'Ataques de canal lateral',            'Extraen informaci&oacute;n midiendo consumo de energ&iacute;a, emisiones electromagn&eacute;ticas u otras caracter&iacute;sticas f&iacute;sicas del dispositivo.'],
+        ['remote',   'Ataques de acceso remoto',            'Explotan vulnerabilidades en software de acceso remoto o instalan malware con backdoors para acceder silenciosamente al sistema.'],
+        ['supply',   'Ataques a la cadena de suministro',   'Comprometen el dispositivo antes de que llegue al usuario final &mdash; por ejemplo, instalando malware durante la fabricaci&oacute;n.'],
+        ['pwcrack',  'Descifrado de contrase&ntilde;as',    'Ataques de fuerza bruta, diccionario o vulnerabilidades conocidas en algoritmos de hash para crackear contrase&ntilde;as.'],
+        ['social',   'Ingenier&iacute;a social',            'Se disfrazan de una entidad confiable (banco, gobierno) para enga&ntilde;arte y obtener credenciales o informaci&oacute;n sensible.'],
+        ['quantum',  'Ataques de computaci&oacute;n cu&aacute;ntica', 'Computadoras cu&aacute;nticas futuras podr&iacute;an descifrar claves de encriptaci&oacute;n actuales, exponiendo datos que hoy parecen seguros.'],
+        ['ai',       'Ataques basados en IA',               'La IA maliciosa escanea vulnerabilidades a velocidad de m&aacute;quina, descubri&eacute;ndolas y explot&aacute;ndolas m&aacute;s r&aacute;pido que los humanos.'],
+    ];
+    $physTips = [
+        "&#x1F512;" => "Mant&eacute;n las computadoras en un lugar seguro con llave cuando no se usen.",
+        "&#x26D3;&#xFE0F;" => "Usa un cable de seguridad (candado Kensington) para fijar el equipo al escritorio.",
+        "&#x1F4F7;" => "Usa un protector de privacidad o cubierta para la webcam.",
+        "&#x26A1;" => "Conecta a un supresor de picos para protegerte de variaciones de voltaje.",
+        "&#x1F32C;&#xFE0F;" => "Limpia el polvo de ventiladores y rejillas regularmente para evitar sobrecalentamiento.",
+        "&#x1F4BB;" => "Usa un candado para laptop cuando trabajes en espacios p&uacute;blicos.",
+        "&#x1F392;" => "Usa siempre una funda protectora al transportar cualquier dispositivo.",
+        "&#x1F697;" => "Nunca dejes dispositivos a la vista dentro de un veh&iacute;culo o en lugares p&uacute;blicos.",
+        "&#x1F440;" => "Permanece atento a tu entorno en p&uacute;blico &mdash; prep&aacute;rate para cerrar la laptop r&aacute;pidamente.",
+    ];
+    $risks = [
+        ["&#x1F513;", "Brechas de seguridad",       "Todas tus contrase&ntilde;as est&aacute;n en un solo lugar. Si esa base de datos es comprometida, todo queda expuesto."],
+        ["&#x1F6AA;", "P&eacute;rdida de acceso",   "&iquest;Olvidaste la contrase&ntilde;a maestra? Pierdes acceso a todas tus credenciales almacenadas."],
+        ["&#x1F3A3;", "Phishing",                    "Un ataque de phishing exitoso le entrega al atacante toda tu b&oacute;veda de contrase&ntilde;as."],
+        ["&#x2601;&#xFE0F;",  "Riesgos en la nube", "Los proveedores en la nube pueden potencialmente acceder a tus datos o sufrir una brecha."],
+        ["&#x1F4A5;", "Punto &uacute;nico de falla", "Si el servicio cierra o queda fuera de l&iacute;nea, podr&iacute;as perder el acceso a todo de golpe."],
+    ];
     ?>
-    <div class="article fullbar">
-    <h2 id="top"> Backup
-        <!-- Tittle goes here between the h2 tag -->
+<div class="fullbar">
+    <h2 class="sec-section-title" id="p3s"><span>&#x26A0;&#xFE0F;</span> Cap&aacute;citate &mdash; Conoce las Amenazas
     </h2>
-    <h3>A backup is a copy of data that can be used to restore the original data in the event that it is lost or damaged. Backups are important because they allow you to recover
-        from data loss due to accidents, hardware failures, software corruption, or other causes. There are many different approaches to backing up data, and the best approach will
-        depend on your specific needs and resources.<br /> Some common types of backups include:<br /><br />
-        <span class="box2">Full backups:</span> These backups include a complete copy of all data. Full backups can be time-consuming to create and restore, but they provide a
-        complete record of all data and are useful for disaster recovery.<br /><br />
-        <span class="box2">Incremental backups:</span> These backups only include changes made since the last backup. Incremental backups are faster to create and restore than full
-        backups, but they may not provide as much protection in the event of a disaster.<br /><br />
-        <span class="box2">Differential backups:</span> These backups include all changes made since the last full backup. Differential backups are similar to incremental backups
-        in that they only include changes, but they provide more protection than incremental backups because they include all changes made since the last full backup.<br />
-        <span class="box2">Mirror backups:</span> These backups create an exact copy of the data being backed up. Mirror backups are useful for quickly restoring data, but they may
-        not be as comprehensive as other types of backups.<br /><br /> It is generally recommended to create backups on a regular basis and to store them in a secure location, such
-        as an external hard drive or a cloud-based storage service. This will ensure that you have access to your data in case of an emergency.</h3>
-    <div class="clr"></div>
-    <!-- Content goes here -->
-    <img src="../images/backup.png" alt="usbbackup" class="fl" />
-    <h3>
-        <strong><a href="#onsite_b">Onsite</a></strong> backup is easy to set up, data is convenient to access and no Internet connection is required to backup or restore data.
+    <p><a href="?best_practices#navi" title="Mejores Pr&aacute;cticas">Mant&eacute;nte alerta ante posibles vectores de
+            ataque, los cuales incluyen:</a></p>
+    <div class="threat-grid">
+        <?php foreach ($threats as [$cls, $title, $desc]): ?>
+        <div class="threat-card <?= $cls ?>" data-icon="<?= $icons[$cls] ?>">
+            <h2><?= $icons[$cls] ?> <?= $title ?></h2>
+            <h3><?= $desc ?></h3>
+        </div>
+        <?php endforeach; ?>
+    </div>
+    <div class="sec-tip">
+        <strong>&#x1F30D; El panorama de amenazas evoluciona constantemente.</strong>
+        Mant&eacute;nte informado y adapta tus medidas de seguridad con regularidad.
+        <a href="?security#navi">Volver a Seguridad &rarr;</a>
+    </div>
+</div>
+<div class="fullbar">
+    <h2 class="sec-section-title"><span>&#x1F3E0;</span> Mejores Pr&aacute;cticas F&iacute;sicas</h2>
+    <div class="sec-checklist">
+        <?php foreach ($physTips as $ico => $tip): ?>
+        <div class="sec-card">
+            <span class="sec-card-icon"><?= $ico ?></span>
+            <p><?= $tip ?></p>
+        </div>
+        <?php endforeach; ?>
+    </div>
+    <hr class="sec-divider">
+    <h2 class="sec-section-title"><span>&#x1F5C4;&#xFE0F;</span> Gestores de Contrase&ntilde;as &mdash; Comodidad vs.
+        Riesgo</h2>
+    <p>Los gestores de contrase&ntilde;as ofrecen comodidad, pero conllevan riesgos inherentes que debes conocer:</p>
+    <div class="pm-risk-list">
+        <?php foreach ($risks as [$ico, $title, $desc]): ?>
+        <div class="pm-risk-card">
+            <h3><?= "$ico $title" ?></h3>
+            <p><?= $desc ?></p>
+        </div>
+        <?php endforeach; ?>
+    </div>
+    <div class="sec-tip">
+        <strong>&#x2705; Mitigaci&oacute;n:</strong> Usa una contrase&ntilde;a maestra fuerte y &uacute;nica, activa
+        2FA, mant&eacute;n el software actualizado,
+        respalda tu b&oacute;veda y conserva una copia offline de tus contrase&ntilde;as m&aacute;s importantes en un
+        lugar seguro.
+    </div>
+</div>
+<?php }
+
+function respaldos() {
+    $types = [
+        ['full','&#x1F4E6;','Respaldo completo',       'Copia total de todos los datos. M&aacute;s lento de crear y restaurar, pero ofrece protecci&oacute;n total ante desastres.'],
+        ['incr','&#x1F4C8;','Respaldo incremental',    'Solo guarda los cambios desde el &uacute;ltimo respaldo. R&aacute;pido y liviano, pero la recuperaci&oacute;n encadena m&uacute;ltiples archivos.'],
+        ['diff','&#x1F4CA;','Respaldo diferencial',    'Todos los cambios desde el &uacute;ltimo respaldo completo. Recuperaci&oacute;n m&aacute;s r&aacute;pida que el incremental.'],
+        ['mirr','&#x1FA9E;','Respaldo espejo (Mirror)','Copia exacta en tiempo real. Restauraci&oacute;n inmediata, pero eliminaciones accidentales tambi&eacute;n se reflejan al instante.'],
+    ];
+    ?>
+<div class="fullbar">
+    <h2 class="sec-section-title" id="top"><span>&#x1F4BE;</span> Respaldo (Backup)</h2>
+    <p>Un respaldo es una copia de datos que puedes restaurar si el original se pierde o da&ntilde;a. Elige la
+        estrategia correcta:</p>
+    <div class="backup-grid">
+        <?php foreach ($types as [$cls,$ico,$name,$desc]): ?>
+        <div class="backup-card <?= $cls ?>">
+            <span class="bk-icon"><?= $ico ?></span>
+            <h3><?= $name ?></h3>
+            <p><?= $desc ?></p>
+        </div>
+        <?php endforeach; ?>
+    </div>
+    <div class="sec-tip">
+        &#x1F4A1; <strong>Regla 3-2-1:</strong> Mant&eacute;n 3 copias de tus datos, en 2 medios diferentes, con 1 copia
+        almacenada fuera del lugar principal.
+    </div>
+    <h2 class="sec-section-title"><span>&#x1F4CD;</span> &iquest;D&oacute;nde Guardar tus Respaldos?</h2>
+    <div class="storage-trio">
+        <div class="storage-card">
+            <span class="st-icon">&#x1F3E0;</span>
+            <h3><a href="#onsite_b">Local (Onsite)</a></h3>
+            <p>F&aacute;cil de configurar. Acceso r&aacute;pido. No requiere internet. Ideal para recuperaci&oacute;n
+                diaria.</p>
+        </div>
+        <div class="storage-card" style="border-top-color:var(--secondary-color)">
+            <span class="st-icon">&#x1F697;</span>
+            <h3><a href="#offsite_b">Externo (Offsite)</a></h3>
+            <p>Una copia f&iacute;sica en un lugar diferente. Protege ante desastres locales como incendio o robo.</p>
+        </div>
+        <div class="storage-card" style="border-top-color:#8e44ad">
+            <span class="st-icon">&#x2601;&#xFE0F;</span>
+            <h3><a href="#online_b">Nube (Cloud)</a></h3>
+            <p>Autom&aacute;tico, accesible desde cualquier lugar con internet. Excelente como tercera capa de
+                protecci&oacute;n.</p>
+        </div>
+    </div>
+    <hr class="sec-divider">
+    <h3 id="onsite_b" style="color:var(--primary-dark);margin-bottom:.5rem">&#x1F3E0; Respaldo local</h3>
+    <p>Almacenar datos en medios f&iacute;sicos locales &mdash; discos duros port&aacute;tiles o memorias USB. Un
+        segundo disco interno puede funcionar como respaldo en vivo; si el primario falla, el tiempo de inactividad es
+        m&iacute;nimo.</p>
+    <h3 id="offsite_b" style="color:var(--primary-dark);margin:1.5rem 0 .5rem">&#x1F697; Respaldo externo</h3>
+    <p>Misma l&oacute;gica f&iacute;sica, pero el dispositivo se lleva a otro edificio. Protege contra escenarios donde
+        tanto la computadora como un respaldo local podr&iacute;an perderse al mismo tiempo (incendio,
+        inundaci&oacute;n, robo).</p>
+    <h3 id="online_b" style="color:var(--primary-dark);margin:1.5rem 0 .5rem">&#x2601;&#xFE0F; Almacenamiento en la nube
     </h3>
-    <h3>
-        <strong><a href="#offsite_b">Offsite</a></strong> backup is essentially saving the data on a memory drive or other device, and taking the device to a different place away
-        from the primary location.</h3>
-    <h3>
-        <strong><a href="#online_b">Cloud</a></strong> backup requires an Internet connection to access cloud space where data is stored, it's simple, and data can be accessed from
-        anywhere.</h3>
-    <div class="clr"></div>
-    <h2 id="onsite_b">Onsite backup &nbsp;</h2>
-    <div class="clr"></div>
-    <h3> Storing data on a physical media, now days portable hard drives and flash drives are the most common ways to backup data. say, you had 2 hard rives on your computer, one
-        can be your main hard drive and the other can be your backup, if your hard drive were to fail, then all there is to do is to restore the data onto a new hard drive from the
-        backup. and this way the downtime you will experience will be minimum the last example was a worst case scenario, hard drives are smart enough to tell the computer when
-        they have errors and that they might fail.</h3>
-    <h2 id="offsite_b">Offsite backup &nbsp;</h2>
-    <div class="clr"></div>
-    <h3> Storing data on a physical media, now days portable hard drives and flash drives are the most common ways to backup data. say, you had 2 hard drives on your computer, and
-        the information is so important that one backup is not enough, because all of the data is in one place there is a risk of losing the data and the backup at the same time,
-        one can prevent this by taking the backup away from the building to make it more secure in case of a disaster that can take your main data with it. the advantage of the
-        off-site backup is that one can restore the data onto a new computer from the off-site backup. and this way the downtime you will experience will be minimum. the last
-        example was a worst case scenario, h-drives are smart enough to tell the computer when they have errors and that they might fail, and to keep in mind that a replacement
-        drive will be needed.</h3>
-    <h2 id="online_b">Cloud storage &nbsp;</h2>
-    <div class="clr"></div>
-    <h3> Storing data on the internet, that way if you were to need a file, you can simply log in and retrieve the file from your online backup account. there are services that
-        backup your data automatically online, most of the free ones have limited space and capabilities.</h3>
-    <div class="clr"></div>
-    <a href="#top"><i class="fa fa-caret-square-o-up"> back to the top</i></a>
-    </div>
-    <?php
-}
+    <p>Los datos se almacenan en servidores remotos accesibles por internet. Inicia sesi&oacute;n desde cualquier lugar.
+        Muchos servicios sincronizan autom&aacute;ticamente. Los planes gratuitos tienen espacio limitado.</p>
+    <div style="margin-top:1.5rem"><a href="#top" class="back-top-btn">&#x2B06; Volver al inicio</a></div>
+</div>
+<?php }
 
-function seguridad(){
-	?>
-    <article class="fullbar">
-  <h1>Seguridad</h1>
-  <div class="clr"></div>
-  <p>
-    <span class="date">1 de febrero de 2023</span> &nbsp;|&nbsp; Publicado por <a href="../about/?omar#scroll">Omar García</a>&nbsp;|&nbsp; sitio <a href="?security#navi">Seguridad</a>, <a href="?best_practices#navi">Mejores Prácticas</a>
-  </p>
-  <h1 id="title">Medidas valiosas y aplicables.</h1>
-  <h2>Mantén tu seguridad al día</h2>
-  <img src="../../images/gallery/secty.jpg" class="fl" width="300px">
-  <ul>
-    <li>Tu sistema operativo y software deben mantenerse actualizados, con los últimos parches de seguridad instalados.</li>
-    <li>Usa una contraseña segura y única para cada dispositivo y cuenta; también activa la autenticación de dos factores cuando esté disponible.</li>
-    <li>Evita hacer clic en enlaces o descargar archivos adjuntos de fuentes desconocidas o sospechosas.</li>
-    <li>Utiliza software antivirus y antimalware para protegerte contra amenazas conocidas.</li>
-    <li>Mantén un respaldo de tus archivos importantes en una unidad externa o servicio en la nube en caso de pérdida o robo.</li>
-    <li>Usa cifrado para proteger los datos sensibles almacenados en tus dispositivos. Ten cuidado al conectarte a redes Wi-Fi públicas y usa una red privada virtual (VPN) cuando sea posible.</li>
-    <li>Utiliza un firewall para bloquear el acceso no autorizado a tus dispositivos. Implementa una política de bloqueo para que tu dispositivo se bloquee automáticamente tras un periodo de inactividad.</li>
-    <li>Cierra sesión en tus cuentas y bloquea tu dispositivo cuando no lo estés usando. Mantente alerta ante tácticas de ingeniería social, como el phishing, y no proporciones información personal ni credenciales de acceso a nadie en quien no confíes. Usa un bloqueador de ventanas emergentes para evitar anuncios no deseados.</li>
-    <li>Limita el número de usuarios con acceso de administrador en tus dispositivos y restringe el acceso a configuraciones y datos sensibles.</li>
-    <li>Revisa y audita regularmente las cuentas de usuario y sus permisos para asegurar que solo personas autorizadas tengan acceso.</li>
-    <li>Usa controles parentales para limitar el acceso a contenido inapropiado o dañino en tus dispositivos.</li>
-    <li>Revisa periódicamente los ajustes y configuraciones de seguridad de tu dispositivo para asegurar que estén actualizados y sean adecuados para tus necesidades.</li>
-    <li>Al desechar o vender dispositivos viejos, borra de forma segura todos los datos y restaura el dispositivo a sus ajustes de fábrica.</li>
-  </ul>
-    </article>
-
-    <?php
-}
-
-function mejores_practicas(){
-	?>
-    <div class="fullbar">
-  <h2 id="p3s"><a href="?best_practices#navi" title="Mejores Prácticas">Capacítese usted y a sus empleados en las mejores prácticas de seguridad para dispositivos. Recuérdeles regularmente mantenerse alertas ante posibles amenazas, las cuales incluyen:</a></h2>
-  <img src="https://latinospc.com/images/s_teal.jpg" class="rtl" width="300px">
-
-  <h2>Ataques físicos:</h2>
-  <h3>Un actor malicioso puede intentar obtener acceso físico a un dispositivo robándolo o utilizando una técnica llamada ataque de "sirvienta malvada" (evil maid), donde manipulan el dispositivo mientras se queda desatendido en un lugar público, como la habitación de un hotel.</h3>
-
-  <h2>Ataques de canal lateral:</h2>
-  <h3>Un actor malicioso puede intentar extraer información sensible de un dispositivo midiendo su consumo de energía, emisiones electromagnéticas u otras características físicas.</h3>
-
-  <h2>Ataques de acceso remoto:</h2>
-  <h3>Un actor malicioso puede intentar obtener acceso no autorizado a un dispositivo explotando vulnerabilidades en el software de acceso remoto o utilizando malware para establecer una "puerta trasera" (backdoor) en el sistema.</h3>
-
-  <h2>Ataques a la cadena de suministro:</h2>
-  <h3>Un actor malicioso puede intentar comprometer un dispositivo manipulándolo antes de que sea entregado al usuario final; por ejemplo, instalando malware durante su fabricación.</h3>
-
-  <h2>Descifrado de contraseñas:</h2>
-  <h3>Un actor malicioso puede intentar descifrar la contraseña de una cuenta o dispositivo mediante un ataque de fuerza bruta, un ataque de diccionario o explotando vulnerabilidades conocidas en el algoritmo de hash de la contraseña.</h3>
-
-  <h2>Ataques de ingeniería social:</h2>
-  <h3>Un actor malicioso puede intentar engañar a los usuarios para que proporcionen información sensible o credenciales de acceso haciéndose pasar por una entidad de confianza, como un banco o una agencia gubernamental.</h3>
-
-  <h2>Ataques de computación cuántica:</h2>
-  <h3>Un actor malicioso puede intentar usar el poder de la computación cuántica para descifrar claves de encriptación y obtener acceso a información confidencial.</h3>
-
-  <h2>Ataques basados en IA:</h2>
-  <h3>Un actor malicioso puede intentar utilizar Inteligencia Artificial para identificar vulnerabilidades en el sistema y explotarlas.</h3>
-    </div>
-
-    <div class="article fullbar">
-  <h1 id="p4s"><a href="?security#navi">Es importante notar que el panorama de amenazas evoluciona constantemente, por lo que es esencial mantenerse informado y adaptar las medidas de seguridad según sea necesario.</a></h1>
-
-  <h3> <li>Mantenga las computadoras en un lugar seguro cuando no estén en uso, como una habitación o gabinete con llave.</li> </h3>
-  <h3> <li>Use un cable de seguridad (candado Kensington) para asegurar físicamente las computadoras a un escritorio u otro objeto inamovible.</li> </h3>
-  <h3> <li>Use un protector de privacidad o una cubierta para la cámara web para evitar el acceso no deseado a la cámara de la computadora.</li> </h3>
-  <h3> <li>Use un supresor de picos para proteger la computadora de variaciones de energía y picos de voltaje.</li> </h3>
-  <h3> <li>Mantenga la computadora y sus periféricos en buen estado, como limpiar el polvo de los ventiladores y rejillas para evitar el sobrecalentamiento.</li> </h3>
-  <h3> <li>Utilice un candado para laptop para asegurar físicamente el equipo a un escritorio u objeto fijo.</li> </h3>
-  <h3> <li>Use siempre un maletín o funda protectora al transportar un dispositivo portátil, laptop o computadora de escritorio.</li> </h3>
-  <h3> <li>Evite dejar dispositivos portátiles a la vista dentro de vehículos o en otros lugares públicos.</li> </h3>
-  <h3> <li>Esté atento a su entorno cuando use una computadora portátil en público y prepárese para cerrarla y guardarla rápidamente si es necesario.</li> </h3>
-
-  <h1><a href="?security#navi" title="haga clic aquí para seleccionar texto">Gestores de contraseñas:</a></h1>
-  <h3>Los gestores de contraseñas conllevan problemas y riesgos inherentes a cambio de la comodidad para el usuario.</h3>
-
-  <h2>Estos problemas incluyen:</h2>
-  <h3>Brechas de seguridad:</h3>Los gestores de contraseñas almacenan todas sus claves en un solo lugar; si un hacker logra acceder a la base de datos del gestor, tendrá acceso a todas sus contraseñas guardadas.
-  <h3>Pérdida de acceso:</h3>Si pierde el acceso a su cuenta del gestor de contraseñas (por ejemplo, si olvida su contraseña maestra), perderá el acceso a todas sus claves almacenadas.
-  <h3>Phishing:</h3>Si un usuario cae en un ataque de phishing, el atacante podría obtener acceso a la cuenta del gestor de contraseñas, incluyendo toda la información guardada.
-  <h3>Gestores basados en la nube:</h3>Si el gestor de contraseñas está en la nube, la empresa que opera el servicio podría potencialmente acceder a sus claves o estas podrían verse comprometidas en una filtración de datos masiva.
-  <h3>Punto único de falla:</h3>Si el software o servicio del gestor de contraseñas deja de funcionar o desaparece el negocio, usted podría perder el acceso a todas sus contraseñas. Para mitigar los riesgos, su gestor debe configurarse con una contraseña maestra sólida y única, tener activa la autenticación de múltiples factores (2FA) y mantener el software actualizado. Además, es importante respaldar los datos del gestor en un lugar seguro y mantener una copia fuera de línea de sus contraseñas más importantes.
-    </div>
-
-    <?php
-
-}
-
-function respaldos(){
+function clave() {
+    $methods = [
+        ['&#x1F511;', 'Autenticaci&oacute;n de 2 Factores', 'Dos contrase&ntilde;as / factores. Algo que sabes + algo que tienes o que eres.'],
+        ['&#x261D;&#xFE0F;',  'Huella dactilar',              'Inicio biom&eacute;trico usando tu huella &uacute;nica &mdash; r&aacute;pido y dif&iacute;cil de falsificar.'],
+        ['&#x1F600;', 'Reconocimiento facial',        'Usa tu geometr&iacute;a facial &uacute;nica para verificar identidad sin escribir nada.'],
+        ['&#x1F310;', 'Inicio de sesi&oacute;n social', 'Usa credenciales de redes sociales (Google, Facebook) para autenticarte.'],
+        ['&#x1F52E;', 'El futuro de las contrase&ntilde;as', 'Passkeys, FIDO2 y tokens de hardware est&aacute;n redefiniendo c&oacute;mo probamos identidad.'],
+    ];
     ?>
-    <div class="article fullbar">
-      <h2 id="top"> Respaldo (Backup) <!-- Tittle goes here between the h2 tag --> </h2>
-      <h3>Un respaldo es una copia de datos que puede utilizarse para restaurar la información original en caso de que se pierda o se dañe. Los respaldos son importantes porque permiten recuperarse de la pérdida de datos debida a accidentes, fallas de hardware, daños en el software u otras causas. Existen muchos enfoques diferentes para respaldar datos, y la mejor opción dependerá de sus necesidades y recursos específicos.<br /> Algunos tipos comunes de respaldos incluyen:<br /><br />
-      <span class="box2">Respaldos completos:</span> Estos respaldos incluyen una copia completa de todos los datos. Crear y restaurar respaldos completos puede llevar mucho tiempo, pero proporcionan un registro total de toda la información y son útiles para la recuperación ante desastres.<br /><br />
-      <span class="box2">Respaldos incrementales:</span> Estos respaldos solo incluyen los cambios realizados desde el último respaldo. Los respaldos incrementales son más rápidos de crear y restaurar que los completos, pero podrían no ofrecer tanta protección en caso de un desastre.<br /><br />
-      <span class="box2">Respaldos diferenciales:</span> Estos respaldos incluyen todos los cambios realizados desde el último respaldo completo. Son similares a los incrementales en que solo incluyen cambios, pero ofrecen más protección porque contienen todas las modificaciones hechas desde el último respaldo completo.<br />
-      <span class="box2">Respaldos espejo (Mirror):</span> Estos respaldos crean una copia exacta de los datos que se están respaldando. Son útiles para restaurar datos rápidamente, pero podrían no ser tan integrales como otros tipos de respaldo.<br /><br /> Por lo general, se recomienda crear respaldos de forma regular y almacenarlos en un lugar seguro, como un disco duro externo o un servicio de almacenamiento en la nube. Esto garantizará que tenga acceso a sus datos en caso de una emergencia.</h3>
+<div class="fullbar">
+    <h2 class="sec-section-title" id="top"><span>&#x1F511;</span> Contrase&ntilde;as</h2>
+    <p><span class="date">14 de noviembre de 2020</span> &nbsp;|&nbsp;
+        Publicado por <a href="?team#scroll">Omar Garc&iacute;a</a> &nbsp;|&nbsp;
+        <a href="?about#scroll">Nosotros</a>, <a href="?team#scroll">Integrantes</a>
+    </p>
+    <blockquote class="sec-tip" style="font-style:italic">
+        &ldquo;Cuando el solicitante demuestra con &eacute;xito el conocimiento de la contrase&ntilde;a al verificador a
+        trav&eacute;s
+        de un protocolo de autenticaci&oacute;n establecido, el verificador puede inferir la identidad del
+        solicitante.&rdquo;
+        &mdash; <a href="https://en.wikipedia.org/wiki/Password" target="_blank" rel="noopener">Wikipedia</a>
+    </blockquote>
+    <p>El consejo tradicional: una contrase&ntilde;a fuerte tiene <strong>12+ caracteres</strong>, combina
+        may&uacute;sculas,
+        min&uacute;sculas, n&uacute;meros y s&iacute;mbolos &mdash; y <em>nunca</em> es una palabra del diccionario ni
+        una sustituci&oacute;n obvia.</p>
 
-      <div class="clr"></div> <!-- Content goes here -->
-      <img src="../images/backup.png" alt="usbbackup" class="fl" />
-
-      <h3> <strong><a href="#onsite_b">Local (Onsite)</a></strong>: El respaldo local es fácil de configurar, el acceso a los datos es conveniente y no se requiere conexión a Internet para respaldar o restaurar información. </h3>
-      <h3> <strong><a href="#offsite_b">Externo (Offsite)</a></strong>: El respaldo externo consiste básicamente en guardar los datos en una unidad de memoria u otro dispositivo y llevarlo a un lugar distinto fuera de la ubicación principal.</h3>
-      <h3> <strong><a href="#online_b">Nube (Cloud)</a></strong>: El respaldo en la nube requiere una conexión a Internet para acceder al espacio donde se almacenan los datos; es sencillo y se puede acceder a la información desde cualquier lugar.</h3>
-
-      <div class="clr"></div>
-      <h2 id="onsite_b">Respaldo local &nbsp;</h2>
-      <div class="clr"></div>
-      <h3> Almacenamiento de datos en un medio físico; hoy en día, los discos duros portátiles y las memorias USB son las formas más comunes de respaldar datos. Por ejemplo, si tuviera 2 discos duros en su computadora, uno puede ser su disco principal y el otro su respaldo; si su disco duro llegara a fallar, lo único que tendría que hacer es restaurar los datos en un disco nuevo desde el respaldo. De esta manera, el tiempo de inactividad que experimentará será mínimo. El ejemplo anterior fue un escenario extremo; los discos duros son lo suficientemente inteligentes como para avisar a la computadora cuando tienen errores y podrían fallar.</h3>
-
-      <h2 id="offsite_b">Respaldo externo &nbsp;</h2>
-      <div class="clr"></div>
-      <h3> Almacenamiento de datos en un medio físico; hoy en día, los discos duros portátiles y las memorias USB son las formas más comunes de respaldar datos. Supongamos que tiene 2 discos duros en su computadora y la información es tan importante que un solo respaldo no es suficiente; debido a que todos los datos están en un mismo lugar, existe el riesgo de perder la información y el respaldo al mismo tiempo. Esto se puede prevenir llevando el respaldo fuera del edificio para hacerlo más seguro en caso de un desastre que pueda afectar sus datos principales. La ventaja del respaldo externo es que se pueden restaurar los datos en una computadora nueva. De esta manera, el tiempo de inactividad será mínimo. El último ejemplo fue un caso extremo; los discos duros son lo suficientemente inteligentes para avisar cuando hay errores y que se necesitará un disco de repuesto.</h3>
-
-      <h2 id="online_b">Almacenamiento en la nube &nbsp;</h2>
-      <div class="clr"></div>
-      <h3> Consiste en guardar datos en Internet; de esa forma, si llegara a necesitar un archivo, simplemente puede iniciar sesión y recuperarlo desde su cuenta de respaldo en línea. Existen servicios que respaldan sus datos automáticamente en línea; la mayoría de los gratuitos tienen espacio y funciones limitadas.</h3>
-
-      <div class="clr"></div>
-      <a href="#top"><i class="fa fa-caret-square-o-up"> volver al inicio</i></a>
+    <div class="pw-strength-demo">
+        <label for="pw-input-es">&#x1F50D; Pru&eacute;balo &mdash; escribe una contrase&ntilde;a para ver su
+            fortaleza:</label>
+        <input type="password" id="pw-input-es" class="pw-input-field"
+            placeholder="Escribe una contrase&ntilde;a&hellip;" autocomplete="new-password">
+        <div class="pw-meter-bar">
+            <div class="pw-meter-fill" id="pw-fill-es"></div>
+        </div>
+        <p class="pw-meter-label" id="pw-label-es">Empieza a escribir&hellip;</p>
+        <p style="font-size:.78rem;color:var(--light-text);margin-top:.4rem">
+            &#x2139;&#xFE0F; Nada se env&iacute;a a ning&uacute;n lado &mdash; funciona 100% en tu navegador.
+            <a href="https://www.security.org/how-secure-is-my-password/" target="_blank" rel="noopener">Verifica
+                m&aacute;s &rarr;</a>
+        </p>
     </div>
-    <?php
-}
+    <script>
+    (function() {
+        var cfg = [{
+            id: 'pw-input-es',
+            fill: 'pw-fill-es',
+            lbl: 'pw-label-es',
+            empty: 'Empieza a escribir\u2026',
+            levels: [{
+                max: 4,
+                pct: 15,
+                color: '#e74c3c',
+                text: '\uD83D\uDD34 Muy d\u00e9bil'
+            }, {
+                max: 7,
+                pct: 35,
+                color: '#e67e22',
+                text: '\uD83D\uDFE0 D\u00e9bil'
+            }, {
+                max: 10,
+                pct: 58,
+                color: '#f1c40f',
+                text: '\uD83D\uDFE1 Regular'
+            }, {
+                max: 13,
+                pct: 78,
+                color: '#2ecc71',
+                text: '\uD83D\uDFE2 Fuerte'
+            }, {
+                max: Infinity,
+                pct: 100,
+                color: '#27ae60',
+                text: '\uD83D\uDCAA \u00a1Muy fuerte!'
+            }]
+        }];
+        cfg.forEach(function(c) {
+            var inp = document.getElementById(c.id),
+                fill = document.getElementById(c.fill),
+                lbl = document.getElementById(c.lbl);
+            if (!inp) return;
+            inp.addEventListener('input', function() {
+                var v = this.value,
+                    len = v.length,
+                    score = len + (/[A-Z]/.test(v) ? 2 : 0) + (/[a-z]/.test(v) ? 1 : 0) + (/[0-9]/
+                        .test(v) ? 2 : 0) + (/[^A-Za-z0-9]/.test(v) ? 4 : 0);
+                if (!len) {
+                    fill.style.width = '0%';
+                    lbl.textContent = c.empty;
+                    return;
+                }
+                for (var i = 0; i < c.levels.length; i++) {
+                    if (score <= c.levels[i].max) {
+                        fill.style.width = c.levels[i].pct + '%';
+                        fill.style.background = c.levels[i].color;
+                        lbl.textContent = c.levels[i].text;
+                        break;
+                    }
+                }
+            });
+        });
+    })();
+    </script>
 
-function clave(){
-    ?>
-    <div class="article fullbar">
-  <h2 id="top"><span>Contraseñas</span></h2>
-  <div class="clr"></div>
-  <p><span class="date">14 de noviembre de 2020</span> &nbsp;|&nbsp; Publicado por <a href="?team#scroll">Omar García</a> &nbsp;|&nbsp; sitio <a href="?about#scroll">Nosotros</a>, <a href="?team#scroll">Integrantes del equipo</a> </p>
-  <p>“Cuando el solicitante demuestra con éxito el conocimiento de la contraseña al verificador a través de un protocolo de autenticación establecido,[4] el verificador puede inferir la identidad del solicitante.” <a href="https://en.wikipedia.org/wiki/Password">Wikipedia</a></p>
-  <p>El consejo tradicional nos dice que una contraseña fuerte y segura debe tener 12 caracteres como mínimo. Debe incluir caracteres especiales y una mezcla de letras mayúsculas y minúsculas. La contraseña no debe ser una palabra de diccionario, ni varias de ellas. Y no debe usar sustituciones obvias, como una letra por un número o viceversa. </p>
-  <ul>
-    <li>
-      <p> <a href="https://en.wikipedia.org/wiki/Multi-factor_authentication">Autenticación de dos factores:</a> Es una capa de seguridad adicional que, en términos simples, son dos contraseñas (factores). Al usuario se le concede el acceso al presentar las contraseñas y una segunda pieza de evidencia (factor). Se presenta al mecanismo de autenticación el conocimiento (algo que solo el usuario sabe), la posesión (algo que el usuario tiene) y la herencia (quién es el usuario). </p>
-    </li>
-    <li>
-      <p> <a href="https://www.fbi.gov/services/cjis/fingerprints-and-other-biometrics">La huella dactilar</a> es una <a href="https://www.csoonline.com/article/3339565/what-is-biometrics-and-why-collecting-biometric-data-is-risky.html">autenticación biométrica;</a> permite a los usuarios usar sus huellas digitales para verificar su identidad. </p>
-    </li>
-    <li>
-      <p>El reconocimiento facial es una autenticación biométrica; permite a los usuarios usar rasgos faciales únicos para verificar su identidad.</p>
-    </li>
-    <li>
-      <p>El inicio de sesión social (Social Login) es un método de autenticación que permite a los usuarios usar sus credenciales de redes sociales para verificar la propiedad, asociación u otros. </p>
-    </li>
-    <li>
-      <p>El futuro de las contraseñas...</p>
-    </li>
-  </ul>
-  <p class="spec">
-    <div style="text-align:right">
-      <a href="?contact">Ponte en contacto con nosotros.</a> <!-- more links here -->
+    <h2 class="sec-section-title" style="margin-top:2rem"><span>&#x1F6E1;&#xFE0F;</span> M&eacute;todos de
+        Autenticaci&oacute;n</h2>
+    <div class="auth-grid">
+        <?php foreach ($methods as [$ico, $name, $desc]): ?>
+        <div class="auth-card">
+            <span class="auth-icon"><?= $ico ?></span>
+            <h3><?= $name ?></h3>
+            <p><?= $desc ?></p>
+        </div>
+        <?php endforeach; ?>
     </div>
-  </p>
-  <div class="clr"></div>
-  <h2><span>Soluciones Informáticas; Contraseñas</span></h2>
-  <div class="clr"></div>
-  <p><span class="date">11 de noviembre de 2020</span> &nbsp;|&nbsp; Publicado por <a href="?team#scroll">Omar García</a> &nbsp;|&nbsp; sitio <a href="?about#scroll">Nosotros</a>, <a href="?team#scroll">Integrantes del equipo</a> </p>
-  <img src="https://latinospc.com/images/websites/passcard.gif" width="263" height="146" alt="imagen" class="fl" />
-  <h3>Las contraseñas deberán estar protegidas y deben tener una combinación de caracteres alfanuméricos (a-z, 1-9) y otros símbolos (!@#$%^&*{}|`). Además, las contraseñas seguras deben tener al menos 12 caracteres de longitud.<br /> </h3>
-  <p>#nota: las letras mayúsculas se reconocen de forma distinta a las minúsculas, una T es diferente de una t.</p>
-  <div class="clr"></div>
-  <img src="https://latinospc.com/images/websites/ppp.jpg" width="400" height="850" alt="imagen" class="rtl" />
-  <h2>Imprime la <a href="?perfect_paper_passwords#navi">PassCard:</a></h2>
-  <p><strong>Cómo usar la <a href="?perfect_paper_passwords#navi">tarjeta de contraseñas (pass card):</a> </strong> Por defecto, la tarjeta genera un bloque de cuatro caracteres (pieza de contraseña) de la A a la G y del 1 al 10. Una contraseña fuerte y segura debe tener al menos 12 caracteres de largo. En lugar de memorizar una contraseña larga, es mucho más sencillo para un humano memorizar un patrón.</p>
-  <a href="https://latinospc.com/images/websites/passcard_animation.gif"><img src="https://latinospc.com/images/websites/passcard_animation.gif" width="400" height="200" alt="imagen" class="rtl" /></a> Para esta contraseña, la secuencia será C3|G7|B10|E5|A1<br /> La secuencia de la segunda contraseña será A7|C9|D3|F4<br />
-  <p>Comprueba tu contraseña entrando a: <a href="https://www.security.org/how-secure-is-my-password/">https://www.security.org/how-secure-is-my-password/</a> </p>
+    <hr class="sec-divider">
+    <h2 class="sec-section-title"><span>&#x1F0CF;</span> Perfect Paper Passwords (PPP)</h2>
+    <p><span class="date">11 de noviembre de 2020</span> &nbsp;|&nbsp; Publicado por <a href="?omar#scroll">Omar
+            Garc&iacute;a</a></p>
+    <p>En vez de memorizar una contrase&ntilde;a larga, memoriza un <strong>patr&oacute;n</strong> en una tarjeta
+        impresa. Cada celda se lee como coordenadas: <code>C3|G7|B10|E5|A1</code></p>
+    <div class="ppp-box"><span class="ppp-header"> A B C D E</span>
+        1: \.=who b%$@dh v9$hn? ddy6?q oyxd8f
+        2: .c.3;3 %ytqm1 n$4uz] f84tj~ dw6scw
+        3: ,~k_tk e5#4a. @9e4bm cgcib. 9%$"#!
+        4: 7&amp;oan- [:ri&gt;w +jk3,! a=bvr' u:]&amp;|=
+        5: [etwvj 9k/xew rjl4p7 ds"k|n fw!odn
+        6: ?7cpxv nj^gy] /wxfrk ixspk&gt; {@mm:}
+        7: zf/s6t zbaa&gt;7 wcc$.^ !^teg? 2q7{\&lt;
+        8: |afn:8 ,rvb34 xrym4! 6*^!z% u.]6r6
+        9: !;ar~j f_@x2k s,6v5t &gt;cbud5 4yaroz
+        10: od[/s" res.r] d\h%y, u}o3oz rkzsut</div>
+    <div class="sec-tip">
+        <strong>C&oacute;mo usarla:</strong> Memoriza un patr&oacute;n de cuadr&iacute;cula (ej. C3&rarr;G7&rarr;B10) y
+        lee los caracteres de esa celda como tu contrase&ntilde;a.
+        Cambia el patr&oacute;n por sitio. Nunca escribas el patr&oacute;n &mdash; solo conserva la tarjeta.
+        <br><a href="https://grc.com/ppp.htm" target="_blank" rel="noopener">Aprende m&aacute;s en GRC.com/ppp
+            &rarr;</a>
     </div>
-
-    <div class="article fullbar">
-  <h2><span>Perfect Paper Passwords</span></h2>
-  <div class="clr"></div>
-  <p><span class="date">11 de noviembre de 2020</span> &nbsp;|&nbsp; Publicado por <a href="?omar#scroll">Omar García</a> &nbsp;|&nbsp; sitio <a href="?about#scroll">Nosotros</a>, <a href="?team#scroll">Integrantes del equipo</a> </p>
-  <h2><strong>Usa contraseñas de papel perfectas (Perfect Paper Passwords)</strong></h2>
-  <img src="https://latinospc.com/images/websites/passcard.gif" width="263" height="146" alt="imagen" class="fl" />
-  <h3> “Casi sin excepción, los usuarios de Internet de hoy demuestran su identidad en línea utilizando un nombre de cuenta y una contraseña fijos. En el pasado, este sistema simple proporcionaba suficiente seguridad. Pero con la creciente popularidad de la banca en línea y el comercio electrónico, el valor de robar identidades en línea se ha disparado. Y la presencia cada vez mayor de 'spyware' y 'malware' en las computadoras de usuarios inocentes significa que los usuarios pueden ser 'vigilados' mientras inician sesión en sus sitios bancarios y otros sitios de comercio electrónico. Una vez que sus credenciales de inicio de sesión han sido 'capturadas' y robadas, los delincuentes de Internet pueden asumir fácilmente su identidad. El problema con un nombre de usuario y una contraseña es que nunca cambian. Los creamos, los anotamos o los memorizamos, y luego los usamos una y otra vez. Lo que se ha necesitado es un sistema económico que proporcione algo que cambie cada vez que se use. El sistema Perfect Paper Passwords de GRC ofrece una solución simple, confiable y segura, gratuita y bien documentada que está siendo adoptada por un número creciente de instalaciones de Internet preocupadas por la seguridad para brindar a sus usuarios una seguridad de inicio de sesión criptográfica de vanguardia.” <a href="https://grc.com/ppp.htm">https://grc.com/</a><br />
-  <div class="clr"></div>
-  <pre class="fl">
-      A      B      C      D      E
-  1: \.=who b%$@dh v9$hn? ddy6?q oyxd8f
-  2: .c.3;3 %ytqm1 n$4uz] f84tj~ dw6scw
-  3: ,~k_tk e5#4a. @9e4bm cgcib. 9%$"#!
-  4: 7&oan- [:ri>w +jk3,! a=bvr' u:]&|=
-  5: [etwvj 9k/xew rjl4p7 ds"k|n fw!odn
-  6: ?7cpxv nj^gy] /wxfrk ixspk> {@mm:}
-  7: zf/s6t zbaa>7 wcc$.^ !^teg? 2q7{\<
-  8: |afn:8 ,rvb34 xrym4! 6*^!z% u.]6r6
-  9: !;ar~j f_@x2k s,6v5t >cbud5 4yaroz
-  10: od[/s" res.r] d\h%y, u}o3oz rkzsut
-  </pre>
-  <ol align="right"><a href="https://grc.com/ppp.htm">Ir a grc.com/ppp</a></ol>
-  <p>Llave de secuencia: Cada vez que la página se actualiza, la llave de secuencia cambia. Puedes copiar y pegar tu llave para reimprimir la misma tarjeta más tarde.</p>
-  <p>Juego de caracteres del código: 64, 88 o el tuyo propio. El alfabeto que tendrá tu contraseña es el juego de caracteres del código. La opción por defecto ofrece 64 caracteres conservadores; la segunda opción, sin embargo, es mucho más agresiva visualmente y, por lo tanto, mucho más segura.</p>
-  <p>Longitud del código: La longitud del bloque en caracteres; el mínimo es dos y el máximo es dieciséis.</p>
-  <p>Etiqueta de la tarjeta: El nombre de tu tarjeta de contraseñas, por ejemplo: correo, redes sociales, entretenimiento, trabajo, etc.</p>
-  <p>Primera tarjeta a generar: por defecto se genera la primera tarjeta, pero podrías elegir, por ejemplo, que la tarjeta número cien sea la que se muestre primero.</p>
-  <p>Tamaño de la tarjeta: es el tamaño de la tarjeta al imprimirse. El tamaño por defecto es 14, que es el tamaño de una “tarjeta de crédito” al imprimirse.</p>
-  <p>Haz clic en generar tarjetas e imprime la tarjeta deseada.</p>
-  <p>¡Listo! Ahora tienes la oportunidad de mejorar tu experiencia general en línea con la tranquilidad de que la contraseña que estás usando es, de hecho, una contraseña segura y fuerte.</p>
+    <div style="text-align:right;margin-top:1.5rem">
+        <a href="?contact" class="back-top-btn">&#x1F4EC; Ponte en contacto</a>
     </div>
-
-    <?php
-}
+</div>
+<?php }
 
 
 include dirname(__DIR__) . '/anvil/structure.php';

@@ -10,9 +10,13 @@ function cssStyles() {
         'runtimes' => 'runtimes.css',
         'imaging' => 'imaging.css',
         'web_browsers' => 'web_browsers.css',
+        'messaging' => 'messaging.css',
         'documents' => 'documents.css',
         'file_sharing' => 'file_sharing.css',
         'online_storage' => 'online_storage.css',
+        'malware_cleaner' => 'malware_cleaner.css',
+        'mlwcleaner' => 'malware_cleaner.css',
+        'limpiador_malware' => 'malware_cleaner.css',
         'softwareContent' => 'software_content.css',
     ];
 
