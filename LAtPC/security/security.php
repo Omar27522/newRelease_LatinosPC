@@ -547,8 +547,7 @@ function cssStyles() {
 .ppp-box .ppp-header {
     color: #cdd9e5;
     font-weight: 700;
-    margin-bottom: .3rem;
-    display: block;
+    display: inline-block;
 }
 
 /* ── Tip / info box: elevated card, no left border ── */
@@ -850,17 +849,17 @@ function passwords() {
     <p><span class="date">November 11, 2020</span> &nbsp;|&nbsp; Posted by <a href="?omar#scroll">Omar Garcia</a></p>
     <p>Instead of memorizing a long password, memorize a <strong>pattern</strong> on a printed card. Each cell is read
         like coordinates: <code>C3|G7|B10|E5|A1</code></p>
-    <div class="ppp-box"><span class="ppp-header"> A B C D E</span>
-        1: \.=who b%$@dh v9$hn? ddy6?q oyxd8f
-        2: .c.3;3 %ytqm1 n$4uz] f84tj~ dw6scw
-        3: ,~k_tk e5#4a. @9e4bm cgcib. 9%$"#!
-        4: 7&amp;oan- [:ri&gt;w +jk3,! a=bvr' u:]&amp;|=
-        5: [etwvj 9k/xew rjl4p7 ds"k|n fw!odn
-        6: ?7cpxv nj^gy] /wxfrk ixspk&gt; {@mm:}
-        7: zf/s6t zbaa&gt;7 wcc$.^ !^teg? 2q7{\&lt;
-        8: |afn:8 ,rvb34 xrym4! 6*^!z% u.]6r6
-        9: !;ar~j f_@x2k s,6v5t &gt;cbud5 4yaroz
-        10: od[/s" res.r] d\h%y, u}o3oz rkzsut</div>
+    <div class="ppp-box"><span class="ppp-header">      A      B      C      D      E</span>
+ 1: \.=who b%$@dh v9$hn? ddy6?q oyxd8f
+ 2: .c.3;3 %ytqm1 n$4uz] f84tj~ dw6scw
+ 3: ,~k_tk e5#4a. @9e4bm cgcib. 9%$"#!
+ 4: 7&amp;oan- [:ri&gt;w +jk3,! a=bvr' u:]&amp;|=
+ 5: [etwvj 9k/xew rjl4p7 ds"k|n fw!odn
+ 6: ?7cpxv nj^gy] /wxfrk ixspk&gt; {@mm:}
+ 7: zf/s6t zbaa&gt;7 wcc$.^ !^teg? 2q7{\&lt;
+ 8: |afn:8 ,rvb34 xrym4! 6*^!z% u.]6r6
+ 9: !;ar~j f_@x2k s,6v5t &gt;cbud5 4yaroz
+10: od[/s" res.r] d\h%y, u}o3oz rkzsut</div>
     <div class="sec-tip">
         <strong>How to use:</strong> Memorize a grid pattern (e.g., C3&rarr;G7&rarr;B10) and read those cell characters
         as your password.
@@ -1253,17 +1252,17 @@ function clave() {
             Garc&iacute;a</a></p>
     <p>En vez de memorizar una contrase&ntilde;a larga, memoriza un <strong>patr&oacute;n</strong> en una tarjeta
         impresa. Cada celda se lee como coordenadas: <code>C3|G7|B10|E5|A1</code></p>
-    <div class="ppp-box"><span class="ppp-header"> A B C D E</span>
-        1: \.=who b%$@dh v9$hn? ddy6?q oyxd8f
-        2: .c.3;3 %ytqm1 n$4uz] f84tj~ dw6scw
-        3: ,~k_tk e5#4a. @9e4bm cgcib. 9%$"#!
-        4: 7&amp;oan- [:ri&gt;w +jk3,! a=bvr' u:]&amp;|=
-        5: [etwvj 9k/xew rjl4p7 ds"k|n fw!odn
-        6: ?7cpxv nj^gy] /wxfrk ixspk&gt; {@mm:}
-        7: zf/s6t zbaa&gt;7 wcc$.^ !^teg? 2q7{\&lt;
-        8: |afn:8 ,rvb34 xrym4! 6*^!z% u.]6r6
-        9: !;ar~j f_@x2k s,6v5t &gt;cbud5 4yaroz
-        10: od[/s" res.r] d\h%y, u}o3oz rkzsut</div>
+    <div class="ppp-box"><span class="ppp-header">      A      B      C      D      E</span>
+ 1: \.=who b%$@dh v9$hn? ddy6?q oyxd8f
+ 2: .c.3;3 %ytqm1 n$4uz] f84tj~ dw6scw
+ 3: ,~k_tk e5#4a. @9e4bm cgcib. 9%$"#!
+ 4: 7&amp;oan- [:ri&gt;w +jk3,! a=bvr' u:]&amp;|=
+ 5: [etwvj 9k/xew rjl4p7 ds"k|n fw!odn
+ 6: ?7cpxv nj^gy] /wxfrk ixspk&gt; {@mm:}
+ 7: zf/s6t zbaa&gt;7 wcc$.^ !^teg? 2q7{\&lt;
+ 8: |afn:8 ,rvb34 xrym4! 6*^!z% u.]6r6
+ 9: !;ar~j f_@x2k s,6v5t &gt;cbud5 4yaroz
+10: od[/s" res.r] d\h%y, u}o3oz rkzsut</div>
     <div class="sec-tip">
         <strong>C&oacute;mo usarla:</strong> Memoriza un patr&oacute;n de cuadr&iacute;cula (ej. C3&rarr;G7&rarr;B10) y
         lee los caracteres de esa celda como tu contrase&ntilde;a.
@@ -1281,7 +1280,7 @@ function clave() {
 include dirname(__DIR__) . '/anvil/structure.php';
 
 /*
-   A      B      C      D      E
+      A      B      C      D      E
  1: \.=who b%$<dh +v9hn? ddy6?q oyxd8f
  2: .c.};{ %ytqm{ n<4uz] f84tj~ dw6scw
  3: ,~k_tk e5#4a. @9e)bm cgcib. 9%$"#!

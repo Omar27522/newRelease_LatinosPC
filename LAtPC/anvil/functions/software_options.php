@@ -110,4 +110,141 @@ function software_options($sub_route){
 			break;
 		}
 }
+function software_options_spanish($sub_route){
+    global $page, $keywords, $description;
+	switch ($sub_route){
+		case 'anti_virus':
+		case 'antivirus':
+			$page = new Structure('../../', 'español', 'SW Anti-Virus');
+			$keywords = 'software antivirus, protección contra virus, protección contra malware, instalación de antivirus, protección en tiempo real, escáner de virus, detección de amenazas, seguridad informática, Windows Defender, Norton, McAfee, Bitdefender, Kaspersky, AVG, Avast, eliminación de virus';
+			$description = 'Servicios de instalación y configuración de software antivirus en Pomona, CA. Protege tu computadora contra virus, malware y amenazas en línea con análisis en tiempo real y actualizaciones automáticas. Te ayudamos a elegir la mejor opción gratuita o de paga.';
+			include 'software/software.php';
+			break;
+
+		case 'malware_cleaner':
+		case 'limpiador_malware':
+		case 'limpiadores_malware':
+		case 'mlwcleaner':
+			$page = new Structure('../../', 'español', 'SW Limpiador de Malware');
+			$keywords = 'eliminación de malware, limpiador de malware, eliminación de spyware, adware, PUP, escáner de malware, Malwarebytes, desinfección de sistema, limpieza de virus, seguridad de PC';
+			$description = 'Servicios profesionales de limpieza y eliminación de malware en Pomona, CA. Eliminamos spyware, adware, troyanos y programas no deseados con herramientas especializadas como Malwarebytes. Dejamos tu equipo seguro y funcionando al 100%.';
+			include 'software/software.php';
+			break;
+
+		case 'web_browsers':
+		case 'navegadores':
+		case 'navegadores_web':
+			$page = new Structure('../../', 'español', 'SW Navegadores');
+			$keywords = 'navegador web, navegadores de internet, Chrome, Firefox, Edge, Safari, Opera, Brave, instalación de navegadores, navegación segura, bloqueador de anuncios, extensiones de navegador';
+			$description = 'Instalación y configuración de navegadores web en Pomona, CA. Configuramos Chrome, Firefox, Edge o Brave con las mejores opciones de privacidad, seguridad, bloqueadores de anuncios y sincronización de cuentas.';
+			include 'software/software.php';
+			break;
+
+		case 'media':
+		case 'multimedia':
+			$page = new Structure('../../', 'español', 'SW Multimedia');
+			$keywords = 'reproductor multimedia, reproductor de video, reproductor de audio, VLC, Windows Media Player, códecs de video, música, Spotify, iTunes, formatos de video';
+			$description = 'Instalación y configuración de reproductores multimedia en Pomona, CA. Reproduce cualquier formato de video o audio con VLC y paquetes de códecs esenciales. Organización de bibliotecas de música y video.';
+			include 'software/software.php';
+			break;
+
+		case 'runtimes':
+			$page = new Structure('../../', 'español', 'SW Runtimes');
+			$keywords = 'entorno runtime, Java Runtime, .NET Framework, Visual C++ redistributable, DirectX, librerías de sistema, dependencias de software, componentes de Windows, errores de dll';
+			$description = 'Instalación de paquetes runtime y librerías esenciales en Pomona, CA. Java Runtime, .NET Framework, Visual C++ y DirectX para garantizar que todos tus programas y juegos abran sin errores de compatibilidad.';
+			include 'software/software.php';
+			break;
+
+		case 'imaging':
+		case 'imagenes':
+		case 'diseno':
+			$page = new Structure('../../', 'español', 'SW Imágenes');
+			$keywords = 'software de edición de fotos, diseño gráfico, Photoshop, GIMP, Paint.NET, visor de imágenes, retoque fotográfico, optimización de imágenes, arte digital';
+			$description = 'Software de edición y administración de imágenes en Pomona, CA. Instalamos y configuramos herramientas como Photoshop, GIMP y Paint.NET para diseño gráfico, edición de fotos y optimización visual.';
+			include 'software/software.php';
+			break;
+
+		case 'messaging':
+		case 'mensajeria':
+			$page = new Structure('../../', 'español', 'SW Mensajería');
+			$keywords = 'programas de mensajería, chat, videollamadas, WhatsApp, Telegram, Signal, Zoom, Microsoft Teams, Skype, Slack, Discord, comunicación empresarial';
+			$description = 'Instalación y configuración de aplicaciones de mensajería y videollamadas en Pomona, CA. WhatsApp, Telegram, Zoom, Teams, Discord y Skype para mantenerte comunicado con tu familia o tu equipo de trabajo.';
+			include 'software/software.php';
+			break;
+
+		case 'documents':
+		case 'documentos':
+			$page = new Structure('../../', 'español', 'SW Documentos');
+			$keywords = 'paquetería de oficina, Microsoft Office, Word, Excel, PowerPoint, LibreOffice, Google Docs, lector de PDF, Adobe Acrobat, edición de documentos, hojas de cálculo';
+			$description = 'Instalación y soporte de software de oficina y documentos en Pomona, CA. Configuramos Microsoft Office, LibreOffice y lectores/editores de PDF como Adobe Acrobat para máxima productividad en el hogar y la oficina.';
+			include 'software/software.php';
+			break;
+
+		case 'file_sharing':
+		case 'compartir_archivos':
+			$page = new Structure('../../', 'español', 'SW Compartir Archivos');
+			$keywords = 'compartir archivos, transferencia de archivos, enviar archivos pesados, red local, cliente FTP, transferencia segura, sincronización de archivos';
+			$description = 'Configuración de software para compartir y transferir archivos en Pomona, CA. Herramientas seguras para enviar archivos de gran tamaño, redes locales y clientes FTP para el hogar y negocios.';
+			include 'software/software.php';
+			break;
+
+		case 'online_storage':
+		case 'almacenamiento_en_linea':
+		case 'almacenamiento_nube':
+			$page = new Structure('../../', 'español', 'SW Almacenamiento en Línea');
+			$keywords = 'almacenamiento en la nube, respaldo en línea, Dropbox, Google Drive, OneDrive, iCloud, sincronización en la nube, copia de seguridad automática';
+			$description = 'Configuración de almacenamiento y respaldos en la nube en Pomona, CA. Sincroniza y protege tus fotos y documentos importantes con Dropbox, Google Drive, OneDrive o iCloud con acceso desde cualquier dispositivo.';
+			include 'software/software.php';
+			break;
+
+		case 'other':
+		case 'otro':
+		case 'otros':
+			$page = new Structure('../../', 'español', 'SW Otro');
+			$keywords = 'software especializado, programas personalizados, aplicaciones de nicho, instalación de programas específicos, soporte de software';
+			$description = 'Instalación de software especializado y a la medida en Pomona, CA. Te ayudamos a instalar y configurar aplicaciones profesionales, programas de nicho y herramientas personalizadas para tu trabajo.';
+			include 'software/software.php';
+			break;
+
+		case 'utilities':
+		case 'utilidades':
+		case 'herramientas':
+			$page = new Structure('../../', 'español', 'SW Utilidades');
+			$keywords = 'utilidades del sistema, optimización de PC, limpieza de disco, CCleaner, desfragmentación, monitoreo de rendimiento, mantenimiento de computadora';
+			$description = 'Herramientas de optimización y mantenimiento del sistema en Pomona, CA. Instalamos utilidades para acelerar el arranque, limpiar archivos basura y mantener tu computadora rápida y estable.';
+			include 'software/software.php';
+			break;
+
+		case 'compression':
+		case 'compresion':
+			$page = new Structure('../../', 'español', 'SW Compresión');
+			$keywords = 'compresión de archivos, descompresor, WinRAR, 7-Zip, archivos zip, comprimir archivos, extraer archivos, descompresión, respaldo comprimido';
+			$description = 'Software de compresión y descompresión de archivos en Pomona, CA. Instalamos WinRAR, 7-Zip y herramientas para crear y extraer archivos ZIP o RAR, ahorrando espacio en disco y facilitando el envío por correo.';
+			include 'software/software.php';
+			break;
+
+		case 'developer_tools':
+		case 'herramientas_de_desarrollo':
+			$page = new Structure('../../', 'español', 'SW Herramientas de Desarrollo');
+			$keywords = 'herramientas de desarrollo, programación, editor de código, Visual Studio Code, IDE, Git, control de versiones, entorno de desarrollo';
+			$description = 'Instalación y configuración de herramientas para programadores en Pomona, CA. VS Code, Git, compiladores y entornos de desarrollo listos para programar páginas web, software y aplicaciones.';
+			include 'software/software.php';
+			break;
+
+		case '':
+			$page = new Structure('../../', 'español', 'Software');
+			$keywords = 'software de computadora, instalación de programas, sistemas operativos, instalación de Windows, configuración de programas, antivirus, licenciamiento de software, Pomona CA';
+			$description = 'Servicios de instalación y configuración de software en Pomona, CA. Instalamos sistemas operativos, programas de oficina, antivirus y herramientas de productividad para hogares y negocios.';
+			include 'software/software.php';
+			break;
+
+		default:
+			show404();
+			break;
+	}
+}
+
+function software_spanish($sub_route){
+	software_options_spanish($sub_route);
+}
 ?>

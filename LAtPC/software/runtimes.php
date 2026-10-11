@@ -2,172 +2,151 @@
 /**
  * Runtimes Component
  * Modularized from software.php
+ * Powered by SQLite laTpc.db ($content pool for 'software')
  */
 
+include_once dirname(__DIR__) . '/handlers/databaseConnection.php';
+databaseConnection('software');
+global $content, $key, $page;
+
+$isSpanish = ($key === 'contenido');
+
+// Dynamic Content & Links Resolver from SQLite laTpc.db ($content pool)
+$rt = [];
+$links = [];
+foreach ($content as $item) {
+    if (isset($item['name']) && str_starts_with($item['name'], 'rt_')) {
+        $val = !empty($item[$key]) ? $item[$key] : ($item['content'] ?? '');
+        if (str_starts_with($item['name'], 'rt_link_')) {
+            $linkKey = str_replace('rt_link_', '', $item['name']);
+            $links[$linkKey] = $val;
+        } else {
+            $rtKey = str_replace('rt_', '', $item['name']);
+            $rt[$rtKey] = $val;
+        }
+    }
+}
+
 echo "<div class=\"fullbar\">";
-sw_breadCrumbs();
-echo "<h1>Runtimes</h1>";
+if (function_exists('sw_breadCrumbs')) {
+    sw_breadCrumbs();
+}
+echo "<h1>" . htmlspecialchars($rt['main_title'] ?? 'Runtimes') . "</h1>";
 echo "</div>";
 
-$title = "Understanding Program Runtimes:<br />The Magic Behind Your Apps";
-
-$question = "Ever wondered why some apps run smoothly while others feel sluggish? Or why the same game might run perfectly on your friend's phone but struggle on yours? The answer lies in something called \"runtime\" - the invisible conductor orchestrating everything your apps do.";
-
-$links = [
-    'programming' => 'https://en.wikipedia.org/wiki/History_of_programming_languages#Current_trends',
-    'mobile' => 'https://en.wikipedia.org/wiki/Mobile_game',
-    'next100Years' => 'https://www.nyas.org/ideas-insights/blog/imagining-the-next-100-years-of-science-and-technology/',
-    'technicalDetails' => 'https://www.techtarget.com/searchsoftwarequality/definition/runtime'
+// Kitchen elements
+$kitchen_elements = [
+    ['label' => $rt['chef_label'] ?? 'The chef', 'paren' => $rt['chef_paren'] ?? '(runtime environment)', 'desc' => $rt['chef_desc'] ?? 'coordinates everything'],
+    ['label' => $rt['recipe_label'] ?? 'The recipe', 'paren' => $rt['recipe_paren'] ?? '(program code)', 'desc' => $rt['recipe_desc'] ?? 'tells what needs to be done'],
+    ['label' => $rt['ingred_label'] ?? 'The ingredients', 'paren' => $rt['ingred_paren'] ?? '(data)', 'desc' => $rt['ingred_desc'] ?? "are what you're working with"],
+    ['label' => $rt['tools_label'] ?? 'The kitchen tools', 'paren' => $rt['tools_paren'] ?? '(system resources)', 'desc' => $rt['tools_desc'] ?? 'help get the job done'],
 ];
 
-$subtitles = [
-    'What is Runtime? — Think of it as a Kitchen',
-    'How Does Runtime Work?',
-    '🌟 Fun Fact:',
-    'Why Some Apps Run Better Than Others'
+// Device power list
+$devices_list = [
+    ['label' => $rt['dev_desktop_label'] ?? '🖥️ Desktop Computers:', 'desc' => $rt['dev_desktop_desc'] ?? 'Like a professional kitchen - lots of power and space'],
+    ['label' => $rt['dev_laptop_label'] ?? '💻 Laptops:', 'desc' => $rt['dev_laptop_desc'] ?? 'Like a home kitchen - good for most tasks'],
+    ['label' => $rt['dev_mobile_label'] ?? '📱 Mobile Devices:', 'desc' => $rt['dev_mobile_desc'] ?? 'Like a food truck kitchen - smaller but surprisingly capable!'],
 ];
 
-$kitchen = [
-    'Imagine your computer as a busy restaurant kitchen:',
-    'the' => 'The',
-    'chef' => ['The chef', '(runtime environment)', 'coordinates everything'],
-    'recipe' => ['The recipe', '(program code)', 'tells what needs to be done'],
-    'ingredients' => ['The ingredients', '(data)', 'are what you\'re working with'],
-    'tools' => ['The kitchen tools', '(system resources)', 'help get the job done'],
-    'just' => 'Just like a kitchen needs all these elements working together to serve a meal, your apps need runtime to function!',
-    'how' => 'Every <a href="' . $links['programming'] . '">programming language</a> needs its own special runtime environment. Think of it as different types of kitchens - a sushi restaurant needs different tools than a pizzeria, but they both make delicious food!'
+// Learn more items
+$learn_items = [
+    $rt['learn_item1'] ?? 'How programming languages work',
+    $rt['learn_item2'] ?? 'What makes some computers faster than others',
+    $rt['learn_item3'] ?? 'How games and apps are made',
+    $rt['learn_item4'] ?? 'The latest in computer chip technology',
 ];
 
-$funFact = 'When you\'re playing a mobile game, the runtime is handling millions of tiny tasks every second - from making sure your character jumps when you tap, to keeping track of your score, all while making sure your phone\'s battery isn\'t drained too quickly!';
-
-$complexity = [
-    '1. App Complexity',
-    'Simple apps (like a calculator) are like making toast - quick and easy. Complex games are like preparing a five-course meal - they need more time and resources!'
+// Pro tips
+$pro_tips = [
+    $rt['protips_item1'] ?? "Keep your device's operating system updated",
+    $rt['protips_item2'] ?? "Close apps you're not using",
+    $rt['protips_item3'] ?? "Make sure you have enough free storage space",
+    $rt['protips_item4'] ?? "Choose apps that match your device's capabilities",
 ];
-
-$devicePower = [
-    '2. Your Device\'s Power',
-    'Different devices have different capabilities:',
-    'desktop' => ['🖥️ Desktop Computers:', 'Like a professional kitchen - lots of power and space'],
-    'laptop' => ['💻 Laptops:', 'Like a home kitchen - good for most tasks'],
-    'mobile' => ['📱 Mobile Devices:', 'Like a food truck kitchen - smaller but surprisingly capable!']
-];
-
-$future = [
-    '🚀 The <a href="' . $links['next100Years'] . '">Future</a> is Exciting!',
-    'Technology keeps getting better - imagine having the power of today\'s desktop computer in tomorrow\'s smartwatch! Many tech-companies are constantly developing new ways to pack more processing power into smaller spaces.'
-];
-
-$learnMore = [
-    'Want to Learn More?',
-    'If you\'re curious about how computers work, runtime is just the beginning! You might also be interested in:',
-    'How programming languages work',
-    'What makes some computers faster than others',
-    'How games and apps are made',
-    'The latest in computer chip technology'
-];
-
-$proTips = [
-    '💡 Pro Tips for Better Runtime Performance',
-    'Keep your device\'s operating system updated',
-    'Close apps you\'re not using',
-    'Make sure you have enough free storage space',
-    'Choose apps that match your device\'s capabilities'
-];
-
-$deepDive = [
-    'Want to Dive Deeper?',
-    '<a href="' . $links['technicalDetails'] . '">Understanding Runtime (Technical Details)</a>',
-    'Check out our other <a href="../#ps2">articles</a> about computer basics and advanced topics!'
-];
-
 ?>
+
 <article class="hero4">
     <div class="content_resize">
         <div class="fullbar">
-            <h2 id="title"><?= empty($title) ? $titulo : $title; ?></h2>
+            <h2 id="title"><?= $rt['sub_hero'] ?? 'Understanding Program Runtimes:<br />The Magic Behind Your Apps'; ?></h2>
 
             <div class="highlight-box">
-                <p><?= empty($question) ? $pregunta : $question ?></p>
+                <p><?= htmlspecialchars($rt['question'] ?? ''); ?></p>
             </div>
 
-            <h2><?= empty($title) ? $subtitulos[0] : $subtitles[0]; ?></h2>
-            <p><?= empty($kitchen) ? $cocina[0] : $kitchen[0]; ?></p>
+            <h2><?= htmlspecialchars($rt['sub_kitchen'] ?? 'What is Runtime? — Think of it as a Kitchen'); ?></h2>
+            <p><?= htmlspecialchars($rt['kitchen_intro'] ?? ''); ?></p>
             <ul class="kitchen-analogy">
-                <?php
-                $activeArray = empty($kitchen) ? $cocina : $kitchen;
-                $keys = empty($kitchen) ? ['chef', 'receta', 'ingredientes', 'herramientas'] : ['chef', 'recipe', 'ingredients', 'tools'];
-                foreach ($keys as $key) :
-                    echo '<li>';
-                    echo $activeArray[$key][0] . ' '; // Article
-                    echo '<strong>' . $activeArray[$key][1] . '</strong> '; // Parenthetical term
-                    echo $activeArray[$key][2]; // Description
-                    echo '</li>';
-                endforeach;
-                ?></ul>
-            <p><?= empty($kitchen) ? $cocina['justo'] : $kitchen['just']; ?></p>
+                <?php foreach ($kitchen_elements as $el) : ?>
+                    <li>
+                        <?= htmlspecialchars($el['label']); ?>
+                        <strong><?= htmlspecialchars($el['paren']); ?></strong>
+                        <?= htmlspecialchars($el['desc']); ?>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+            <p><?= htmlspecialchars($rt['kitchen_just'] ?? ''); ?></p>
 
-            <h2><?= empty($title) ? $subtitulos[1] : $subtitles[1]; ?></h2>
-            <p><?= empty($kitchen) ? $cocina['como'] : $kitchen['how']; ?></p>
+            <h2><?= htmlspecialchars($rt['sub_how'] ?? 'How Does Runtime Work?'); ?></h2>
+            <p><?= str_replace('{PROG_LINK}', htmlspecialchars($links['programming'] ?? '#'), $rt['kitchen_how'] ?? ''); ?></p>
 
             <div class="fun-fact">
-                <h3><?= empty($title) ? $subtitulos[2] : $subtitles[2]; ?></h3>
-                <p><?= empty($funFact) ? $datoCurioso : $funFact; ?></p>
+                <h3><?= htmlspecialchars($rt['sub_funfact'] ?? '🌟 Fun Fact:'); ?></h3>
+                <p><?= htmlspecialchars($rt['funfact'] ?? ''); ?></p>
             </div>
 
-            <h2><?= empty($title) ? $subtitulos[3] : $subtitles[3]; ?></h2>
-            <h3><?= empty($complexity) ? $complejidad[0] : $complexity[0]; ?></h3>
+            <h2><?= htmlspecialchars($rt['sub_why'] ?? 'Why Some Apps Run Better Than Others'); ?></h2>
+            <h3><?= htmlspecialchars($rt['complexity_title'] ?? '1. App Complexity'); ?></h3>
             <div class="highlight-box">
-                <p><?= empty($complexity) ? $complejidad[1] : $complexity[1]; ?></p>
+                <p><?= htmlspecialchars($rt['complexity_text'] ?? ''); ?></p>
             </div>
 
-            <h3><?= empty($devicePower) ? $dispositivoPotencia[0] : $devicePower[0]; ?></h3>
-            <p><?= empty($devicePower) ? $dispositivoPotencia[1] : $devicePower[1]; ?></p>
+            <h3><?= htmlspecialchars($rt['device_title'] ?? "2. Your Device's Power"); ?></h3>
+            <p><?= htmlspecialchars($rt['device_intro'] ?? ''); ?></p>
 
             <ul class="device-list">
-                <?php $devices = ['desktop', 'laptop', 'mobile'];
-                foreach ($devices as $device) : ?>
+                <?php foreach ($devices_list as $device) : ?>
                     <li>
-                        <strong><?= empty($devicePower) ? $dispositivoPotencia[$device][0] : $devicePower[$device][0]; ?></strong>
-                        <?= empty($devicePower) ? $dispositivoPotencia[$device][1] : $devicePower[$device][1]; ?>
+                        <strong><?= htmlspecialchars($device['label']); ?></strong>
+                        <?= htmlspecialchars($device['desc']); ?>
                     </li>
                 <?php endforeach; ?>
             </ul>
 
-
             <div class="future-section">
-                <h3><?= empty($future) ? $futuro[0] : $future[0]; ?></h3>
-                <p><?= empty($future) ? $futuro[1] : $future[1]; ?></p>
+                <h3><?= str_replace('{FUTURE_LINK}', htmlspecialchars($links['next100Years'] ?? '#'), $rt['future_title'] ?? ''); ?></h3>
+                <p><?= htmlspecialchars($rt['future_text'] ?? ''); ?></p>
             </div>
 
             <div class="learn-more">
-                <h2><?= empty($learnMore) ? $aprendeMas[0] : $learnMore[0]; ?></h2>
-                <p><?= empty($learnMore) ? $aprendeMas[1] : $learnMore[1]; ?></p>
+                <h2><?= htmlspecialchars($rt['learn_title'] ?? 'Want to Learn More?'); ?></h2>
+                <p><?= htmlspecialchars($rt['learn_intro'] ?? ''); ?></p>
                 <ul>
-                    <?php $learnMoreToShow = array_slice(empty($learnMore) ? $aprendeMas : $learnMore, 2);
-                    foreach ($learnMoreToShow as $learn) : ?>
-                        <li><?= $learn; ?></li>
+                    <?php foreach ($learn_items as $learn) : ?>
+                        <li><?= htmlspecialchars($learn); ?></li>
                     <?php endforeach; ?>
                 </ul>
             </div>
 
             <div class="pro-tip">
-                <h3><?= empty($proTips) ? $consejosPro[0] : $proTips[0]; ?></h3>
+                <h3><?= htmlspecialchars($rt['protips_title'] ?? '💡 Pro Tips for Better Runtime Performance'); ?></h3>
                 <ul>
-                    <?php
-                    $proTipsToShow = array_slice(empty($proTips) ? $consejosPro : $proTips, 1);
-                    foreach ($proTipsToShow as $tip) : ?>
-                        <li><?= $tip; ?></li>
+                    <?php foreach ($pro_tips as $tip) : ?>
+                        <li><?= htmlspecialchars($tip); ?></li>
                     <?php endforeach; ?>
-
                 </ul>
             </div>
 
             <div class="references">
-                <h3><?= empty($deepDive) ? $chapuzon[0] : $deepDive[0]; ?></h3>
+                <h3><?= htmlspecialchars($rt['deepdive_title'] ?? 'Want to Dive Deeper?'); ?></h3>
                 <ul>
-                    <li><?= empty($deepDive) ? $chapuzon[1] : $deepDive[1]; ?></li>
-                    <li><?= empty($deepDive) ? $chapuzon[2] : $deepDive[2]; ?></li>
+                    <li>
+                        <a href="<?= htmlspecialchars($links['technicalDetails'] ?? '#'); ?>" target="_blank" rel="noopener noreferrer">
+                            <?= htmlspecialchars($rt['deepdive_link_label'] ?? 'Understanding Runtime (Technical Details)'); ?>
+                        </a>
+                    </li>
+                    <li><?= $rt['deepdive_articles'] ?? 'Check out our other <a href="../#ps2">articles</a> about computer basics and advanced topics!'; ?></li>
                 </ul>
             </div>
         </div>

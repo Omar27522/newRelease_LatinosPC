@@ -40,7 +40,7 @@ class ContentManager {
         }
     }
 
-    public function getAllGrouped() {
+    public function getAllGrouped($sortBy = 'index') {
         // 1. Fetch in original stable order to calculate true_index (used by site offsets)
         $stmt = $this->pdo->query("SELECT * FROM content ORDER BY page_id, id ASC");
         $grouped = [];
@@ -51,24 +51,58 @@ class ContentManager {
             $grouped[$pid][] = $row;
         }
 
-        // 2. Sort rows within each group by latest action first
-        foreach ($grouped as $pid => &$rows) {
-            usort($rows, function($a, $b) {
-                if (($a['updated_at'] ?? '') === ($b['updated_at'] ?? '')) {
-                    return $b['id'] - $a['id'];
-                }
-                return strcmp($b['updated_at'] ?? '', $a['updated_at'] ?? '');
-            });
+        // 2. Sort rows within each group if 'recent' sorting requested
+        if ($sortBy === 'recent') {
+            foreach ($grouped as $pid => &$rows) {
+                usort($rows, function($a, $b) {
+                    if (($a['updated_at'] ?? '') === ($b['updated_at'] ?? '')) {
+                        return $b['id'] - $a['id'];
+                    }
+                    return strcmp($b['updated_at'] ?? '', $a['updated_at'] ?? '');
+                });
+            }
         }
 
-        // 3. Sort the page groups (tabs) by the latest activity in that page
-        uasort($grouped, function($a, $b) {
-            $latestA = $a[0]['updated_at'] ?? '';
-            $latestB = $b[0]['updated_at'] ?? '';
-            return strcmp($latestB, $latestA);
+        // 3. Keep tab order stable and predictable (e.g., home, services, hardware, about)
+        $preferredOrder = ['home', 'services', 'hardware', 'about'];
+        uksort($grouped, function($a, $b) use ($preferredOrder) {
+            $posA = array_search(strtolower($a), $preferredOrder);
+            $posB = array_search(strtolower($b), $preferredOrder);
+            if ($posA !== false && $posB !== false) return $posA - $posB;
+            if ($posA !== false) return -1;
+            if ($posB !== false) return 1;
+            return strcmp($a, $b);
         });
 
         return $grouped;
+    }
+
+    public function getPageCounts() {
+        $stmt = $this->pdo->query("SELECT page_id, COUNT(*) as count FROM content GROUP BY page_id");
+        $counts = [];
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            $counts[$row['page_id']] = (int)$row['count'];
+        }
+        $preferredOrder = ['home', 'services', 'hardware', 'about'];
+        uksort($counts, function($a, $b) use ($preferredOrder) {
+            $posA = array_search(strtolower($a), $preferredOrder);
+            $posB = array_search(strtolower($b), $preferredOrder);
+            if ($posA !== false && $posB !== false) return $posA - $posB;
+            if ($posA !== false) return -1;
+            if ($posB !== false) return 1;
+            return strcmp($a, $b);
+        });
+        return $counts;
+    }
+
+    public function getByPageId($pageId) {
+        $stmt = $this->pdo->prepare("SELECT * FROM content WHERE page_id = :pid ORDER BY id ASC");
+        $stmt->execute([':pid' => $pageId]);
+        $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        foreach ($rows as $idx => &$row) {
+            $row['true_index'] = $idx;
+        }
+        return $rows;
     }
 
     public function getById($id) {
@@ -182,7 +216,8 @@ class ContentManager {
 
     public function delete($id) {
         $stmt = $this->pdo->prepare("DELETE FROM content WHERE id = :id");
-        return $stmt->execute([':id' => $id]);
+        $stmt->execute([':id' => $id]);
+        return $stmt->rowCount() > 0;
     }
 
     public function getDistinct($column) {

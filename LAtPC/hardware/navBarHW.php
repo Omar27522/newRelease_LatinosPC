@@ -90,3 +90,29 @@ $items = $navItems[$lang] ?? $navItems['en'];
         <?php endforeach; ?>
     </ul>
 </nav>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const ul = document.querySelector('.hardware-breadcrumbs ul');
+    const active = ul?.querySelector('a.active');
+    if (!ul || !active) return;
+
+    const centerActiveItem = (behavior = 'smooth') => {
+        const li = active.closest('li') || active;
+        const ulRect = ul.getBoundingClientRect();
+        const itemRect = li.getBoundingClientRect();
+        const offset = itemRect.left - ulRect.left;
+        const targetScroll = ul.scrollLeft + offset - (ul.clientWidth / 2) + (li.offsetWidth / 2);
+
+        ul.scrollTo({
+            left: Math.max(0, targetScroll),
+            behavior: behavior
+        });
+    };
+
+    // Position immediately once DOM is ready
+    requestAnimationFrame(() => centerActiveItem('smooth'));
+    // Re-verify position once all assets/fonts have loaded
+    window.addEventListener('load', () => centerActiveItem('smooth'), { once: true });
+});
+</script>

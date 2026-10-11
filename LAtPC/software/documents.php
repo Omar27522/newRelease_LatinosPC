@@ -3,234 +3,234 @@
  * Documents Component
  * Modularized from software.php
  */
-
-echo "<div class=\"fullbar\">";
-sw_breadCrumbs();
-echo "</div>";
+include_once dirname(__DIR__) . '/handlers/databaseConnection.php';
+databaseConnection('software');
+global $content, $key, $page;
 ?>
+<div class="fullbar">
+    <?php if (function_exists('sw_breadCrumbs')) { sw_breadCrumbs(); } ?>
+</div>
 <div class="blurb">
-    <h1 id="title">Understanding Documents in the Modern World</h1>
+    <h1 id="title"><?= $content[226][$key] ?? ''; ?></h1>
     <section class="intro">
-        <p>Documents are fundamental tools for storing, sharing, and preserving information. As we bridge the gap between traditional and digital worlds, understanding both physical and electronic documents becomes increasingly important.</p>
+        <p><?= $content[227][$key] ?? ''; ?></p>
     </section>
 
     <section class="electronic-documents">
-        <h2>Electronic Documents</h2>
+        <h2><?= $content[228][$key] ?? ''; ?></h2>
         <div class="document-section">
-            <h3>Common File Formats</h3>
+            <h3><?= $content[229][$key] ?? ''; ?></h3>
             <div class="format-grid">
                 <div class="format-item">
                     <i class="fas fa-file-word"></i>
-                    <h4>Text Documents</h4>
+                    <h4><?= $content[230][$key] ?? ''; ?></h4>
                     <ul>
-                        <li>DOC/DOCX (Microsoft Word)</li>
-                        <li>TXT (Plain Text)</li>
-                        <li>RTF (Rich Text Format)</li>
-                        <li>ODT (OpenDocument Text)</li>
+                        <li><?= $content[231][$key] ?? ''; ?></li>
+                        <li><?= $content[232][$key] ?? ''; ?></li>
+                        <li><?= $content[233][$key] ?? ''; ?></li>
+                        <li><?= $content[234][$key] ?? ''; ?></li>
                     </ul>
                 </div>
                 <div class="format-item">
                     <i class="fas fa-file-excel"></i>
-                    <h4>Spreadsheets</h4>
+                    <h4><?= $content[235][$key] ?? ''; ?></h4>
                     <ul>
-                        <li>XLS/XLSX (Microsoft Excel)</li>
-                        <li>CSV (Comma Separated Values)</li>
-                        <li>ODS (OpenDocument Spreadsheet)</li>
+                        <li><?= $content[236][$key] ?? ''; ?></li>
+                        <li><?= $content[237][$key] ?? ''; ?></li>
+                        <li><?= $content[238][$key] ?? ''; ?></li>
                     </ul>
                 </div>
                 <div class="format-item">
                     <i class="fas fa-file-powerpoint"></i>
-                    <h4>Presentations</h4>
+                    <h4><?= $content[239][$key] ?? ''; ?></h4>
                     <ul>
-                        <li>PPT/PPTX (Microsoft PowerPoint)</li>
-                        <li>ODP (OpenDocument Presentation)</li>
-                        <li>KEY (Apple Keynote)</li>
+                        <li><?= $content[240][$key] ?? ''; ?></li>
+                        <li><?= $content[241][$key] ?? ''; ?></li>
+                        <li><?= $content[242][$key] ?? ''; ?></li>
                     </ul>
                 </div>
                 <div class="format-item">
                     <i class="fas fa-file-pdf"></i>
-                    <h4>PDF Documents</h4>
+                    <h4><?= $content[243][$key] ?? ''; ?></h4>
                     <ul>
-                        <li>Portable Document Format</li>
-                        <li>Universal compatibility</li>
-                        <li>Print-ready format</li>
+                        <li><?= $content[244][$key] ?? ''; ?></li>
+                        <li><?= $content[245][$key] ?? ''; ?></li>
+                        <li><?= $content[246][$key] ?? ''; ?></li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <div class="advantages-section">
-            <h3>Advantages of Electronic Documents</h3>
+            <h3><?= $content[247][$key] ?? ''; ?></h3>
             <ul class="feature-list">
-                <li><strong>Easy Storage:</strong> Store thousands of documents in minimal space</li>
-                <li><strong>Searchability:</strong> Find content instantly with search functions</li>
-                <li><strong>Sharing:</strong> Send documents worldwide instantly</li>
-                <li><strong>Version Control:</strong> Track changes and maintain document history</li>
-                <li><strong>Environmental Impact:</strong> Reduce paper waste and storage space</li>
+                <li><strong><?= $content[248][$key] ?? ''; ?>:</strong> <?= $content[249][$key] ?? ''; ?></li>
+                <li><strong><?= $content[250][$key] ?? ''; ?>:</strong> <?= $content[251][$key] ?? ''; ?></li>
+                <li><strong><?= $content[252][$key] ?? ''; ?>:</strong> <?= $content[253][$key] ?? ''; ?></li>
+                <li><strong><?= $content[254][$key] ?? ''; ?>:</strong> <?= $content[255][$key] ?? ''; ?></li>
+                <li><strong><?= $content[256][$key] ?? ''; ?>:</strong> <?= $content[257][$key] ?? ''; ?></li>
             </ul>
         </div>
 
         <div class="security-section">
-            <h3>Security Considerations</h3>
+            <h3><?= $content[258][$key] ?? ''; ?></h3>
             <ul class="security-features">
-                <li>Digital signatures for authentication</li>
-                <li>Encryption for sensitive information</li>
-                <li>Access control and permissions</li>
-                <li>Regular backup strategies</li>
+                <li><?= $content[259][$key] ?? ''; ?></li>
+                <li><?= $content[260][$key] ?? ''; ?></li>
+                <li><?= $content[261][$key] ?? ''; ?></li>
+                <li><?= $content[262][$key] ?? ''; ?></li>
             </ul>
         </div>
     </section>
 
     <section class="physical-documents">
-        <h2>Physical Documents</h2>
+        <h2><?= $content[263][$key] ?? ''; ?></h2>
 
         <div class="document-types">
-            <h3>Common Physical Document Types</h3>
+            <h3><?= $content[264][$key] ?? ''; ?></h3>
             <ul class="type-list">
-                <li>Legal contracts and agreements</li>
-                <li>Certificates and diplomas</li>
-                <li>Government-issued identification</li>
-                <li>Historical records and archives</li>
-                <li>Handwritten notes and documents</li>
+                <li><?= $content[265][$key] ?? ''; ?></li>
+                <li><?= $content[266][$key] ?? ''; ?></li>
+                <li><?= $content[267][$key] ?? ''; ?></li>
+                <li><?= $content[268][$key] ?? ''; ?></li>
+                <li><?= $content[269][$key] ?? ''; ?></li>
             </ul>
         </div>
 
         <div class="storage-section">
-            <h3>Storage and Preservation</h3>
+            <h3><?= $content[270][$key] ?? ''; ?></h3>
             <ul class="storage-tips">
-                <li>Temperature and humidity control</li>
-                <li>Proper filing systems</li>
-                <li>Protection from light and environmental damage</li>
-                <li>Regular maintenance and inspection</li>
+                <li><?= $content[271][$key] ?? ''; ?></li>
+                <li><?= $content[272][$key] ?? ''; ?></li>
+                <li><?= $content[273][$key] ?? ''; ?></li>
+                <li><?= $content[274][$key] ?? ''; ?></li>
             </ul>
         </div>
 
         <div class="physical-advantages">
-            <h3>Advantages of Physical Documents</h3>
+            <h3><?= $content[275][$key] ?? ''; ?></h3>
             <ul class="advantage-list">
-                <li>Legal validity in certain situations</li>
-                <li>No technology dependence</li>
-                <li>Tangible proof of existence</li>
-                <li>Long-term preservation potential</li>
+                <li><?= $content[276][$key] ?? ''; ?></li>
+                <li><?= $content[277][$key] ?? ''; ?></li>
+                <li><?= $content[278][$key] ?? ''; ?></li>
+                <li><?= $content[279][$key] ?? ''; ?></li>
             </ul>
         </div>
     </section>
 
     <section class="best-practices">
-        <h2>Document Management Best Practices</h2>
+        <h2><?= $content[280][$key] ?? ''; ?></h2>
         <div class="practice-grid">
             <div class="practice-item">
-                <h4>Organization</h4>
-                <p>Implement consistent naming conventions and folder structures</p>
+                <h4><?= $content[281][$key] ?? ''; ?></h4>
+                <p><?= $content[282][$key] ?? ''; ?></p>
             </div>
             <div class="practice-item">
-                <h4>Backup</h4>
-                <p>Maintain regular backups of both digital and physical documents</p>
+                <h4><?= $content[283][$key] ?? ''; ?></h4>
+                <p><?= $content[284][$key] ?? ''; ?></p>
             </div>
             <div class="practice-item">
-                <h4>Security</h4>
-                <p>Implement appropriate security measures for both formats</p>
+                <h4><?= $content[285][$key] ?? ''; ?></h4>
+                <p><?= $content[286][$key] ?? ''; ?></p>
             </div>
             <div class="practice-item">
-                <h4>Accessibility</h4>
-                <p>Ensure quick and easy access while maintaining security</p>
+                <h4><?= $content[287][$key] ?? ''; ?></h4>
+                <p><?= $content[288][$key] ?? ''; ?></p>
             </div>
         </div>
     </section>
 
     <section class="future-trends">
-        <h2>Future of Document Management</h2>
+        <h2><?= $content[289][$key] ?? ''; ?></h2>
 
         <div class="future-intro">
-            <p>The landscape of document management is rapidly evolving with technological advancements. Understanding these trends is crucial for organizations and individuals to stay ahead in the digital age.</p>
+            <p><?= $content[290][$key] ?? ''; ?></p>
         </div>
 
         <div class="trend-categories">
             <div class="trend-category">
-                <h3>Artificial Intelligence and Machine Learning</h3>
+                <h3><?= $content[291][$key] ?? ''; ?></h3>
                 <div class="trend-content">
                     <ul class="trend-list">
-                        <li><strong>Automated Document Classification:</strong> AI systems will automatically categorize and tag documents based on content, making organization effortless</li>
-                        <li><strong>Intelligent Data Extraction:</strong> ML algorithms will extract and analyze key information from documents without human intervention</li>
-                        <li><strong>Natural Language Processing:</strong> Advanced systems will understand and summarize document content, creating automated reports and insights</li>
-                        <li><strong>Predictive Analytics:</strong> AI will predict document lifecycle stages and suggest optimal storage and retention strategies</li>
+                        <li><strong><?= $content[292][$key] ?? ''; ?>:</strong> <?= $content[293][$key] ?? ''; ?></li>
+                        <li><strong><?= $content[294][$key] ?? ''; ?>:</strong> <?= $content[295][$key] ?? ''; ?></li>
+                        <li><strong><?= $content[296][$key] ?? ''; ?>:</strong> <?= $content[297][$key] ?? ''; ?></li>
+                        <li><strong><?= $content[298][$key] ?? ''; ?>:</strong> <?= $content[299][$key] ?? ''; ?></li>
                     </ul>
                 </div>
             </div>
 
             <div class="trend-category">
-                <h3>Blockchain Technology</h3>
+                <h3><?= $content[300][$key] ?? ''; ?></h3>
                 <div class="trend-content">
                     <ul class="trend-list">
-                        <li><strong>Document Authenticity:</strong> Blockchain will provide immutable proof of document existence and authenticity</li>
-                        <li><strong>Smart Contracts:</strong> Self-executing contracts will automate document-based transactions and agreements</li>
-                        <li><strong>Decentralized Storage:</strong> Documents will be stored across distributed networks, increasing security and accessibility</li>
-                        <li><strong>Version Control:</strong> Blockchain will maintain transparent, tamper-proof version histories of documents</li>
+                        <li><strong><?= $content[301][$key] ?? ''; ?>:</strong> <?= $content[302][$key] ?? ''; ?></li>
+                        <li><strong><?= $content[303][$key] ?? ''; ?>:</strong> <?= $content[304][$key] ?? ''; ?></li>
+                        <li><strong><?= $content[305][$key] ?? ''; ?>:</strong> <?= $content[306][$key] ?? ''; ?></li>
+                        <li><strong><?= $content[307][$key] ?? ''; ?>:</strong> <?= $content[308][$key] ?? ''; ?></li>
                     </ul>
                 </div>
             </div>
 
             <div class="trend-category">
-                <h3>Advanced Security Measures</h3>
+                <h3><?= $content[309][$key] ?? ''; ?></h3>
                 <div class="trend-content">
                     <ul class="trend-list">
-                        <li><strong>Biometric Authentication:</strong> Access to documents will be controlled through fingerprints, facial recognition, and other biometric data</li>
-                        <li><strong>Quantum Encryption:</strong> Next-generation encryption will protect documents from future security threats</li>
-                        <li><strong>Zero-Trust Architecture:</strong> Security systems will verify every access attempt, regardless of location or network</li>
-                        <li><strong>Dynamic Access Control:</strong> AI-powered systems will adjust access permissions based on context and behavior patterns</li>
+                        <li><strong><?= $content[310][$key] ?? ''; ?>:</strong> <?= $content[311][$key] ?? ''; ?></li>
+                        <li><strong><?= $content[312][$key] ?? ''; ?>:</strong> <?= $content[313][$key] ?? ''; ?></li>
+                        <li><strong><?= $content[314][$key] ?? ''; ?>:</strong> <?= $content[315][$key] ?? ''; ?></li>
+                        <li><strong><?= $content[316][$key] ?? ''; ?>:</strong> <?= $content[317][$key] ?? ''; ?></li>
                     </ul>
                 </div>
             </div>
 
             <div class="trend-category">
-                <h3>Collaborative Technologies</h3>
+                <h3><?= $content[318][$key] ?? ''; ?></h3>
                 <div class="trend-content">
                     <ul class="trend-list">
-                        <li><strong>Real-time Collaboration:</strong> Multiple users will work on documents simultaneously with zero latency</li>
-                        <li><strong>Augmented Reality Integration:</strong> AR will enable interactive document experiences and spatial document management</li>
-                        <li><strong>Cross-platform Compatibility:</strong> Documents will be seamlessly accessible across all devices and platforms</li>
-                        <li><strong>Voice-controlled Interfaces:</strong> Natural language commands will simplify document management tasks</li>
+                        <li><strong><?= $content[319][$key] ?? ''; ?>:</strong> <?= $content[320][$key] ?? ''; ?></li>
+                        <li><strong><?= $content[321][$key] ?? ''; ?>:</strong> <?= $content[322][$key] ?? ''; ?></li>
+                        <li><strong><?= $content[323][$key] ?? ''; ?>:</strong> <?= $content[324][$key] ?? ''; ?></li>
+                        <li><strong><?= $content[325][$key] ?? ''; ?>:</strong> <?= $content[326][$key] ?? ''; ?></li>
                     </ul>
                 </div>
             </div>
 
             <div class="trend-category">
-                <h3>Environmental Sustainability</h3>
+                <h3><?= $content[327][$key] ?? ''; ?></h3>
                 <div class="trend-content">
                     <ul class="trend-list">
-                        <li><strong>Zero-paper Initiatives:</strong> Organizations will completely transition to digital documents to reduce environmental impact</li>
-                        <li><strong>Energy-efficient Storage:</strong> Green data centers will optimize document storage while minimizing energy consumption</li>
-                        <li><strong>Sustainable Formats:</strong> New document formats will be designed to minimize digital carbon footprint</li>
-                        <li><strong>Lifecycle Management:</strong> Automated systems will optimize document retention and deletion to save resources</li>
+                        <li><strong><?= $content[328][$key] ?? ''; ?>:</strong> <?= $content[329][$key] ?? ''; ?></li>
+                        <li><strong><?= $content[330][$key] ?? ''; ?>:</strong> <?= $content[331][$key] ?? ''; ?></li>
+                        <li><strong><?= $content[332][$key] ?? ''; ?>:</strong> <?= $content[333][$key] ?? ''; ?></li>
+                        <li><strong><?= $content[334][$key] ?? ''; ?>:</strong> <?= $content[335][$key] ?? ''; ?></li>
                     </ul>
                 </div>
             </div>
 
             <div class="trend-category">
-                <h3>Integration and Automation</h3>
+                <h3><?= $content[336][$key] ?? ''; ?></h3>
                 <div class="trend-content">
                     <ul class="trend-list">
-                        <li><strong>IoT Integration:</strong> Documents will automatically update based on real-world sensor data and events</li>
-                        <li><strong>Workflow Automation:</strong> End-to-end document processes will be automated with minimal human intervention</li>
-                        <li><strong>API-first Architecture:</strong> Documents will be easily integrated into any business system or application</li>
-                        <li><strong>Metadata Enhancement:</strong> Rich metadata will enable advanced search and analytics capabilities</li>
+                        <li><strong><?= $content[337][$key] ?? ''; ?>:</strong> <?= $content[338][$key] ?? ''; ?></li>
+                        <li><strong><?= $content[339][$key] ?? ''; ?>:</strong> <?= $content[340][$key] ?? ''; ?></li>
+                        <li><strong><?= $content[341][$key] ?? ''; ?>:</strong> <?= $content[342][$key] ?? ''; ?></li>
+                        <li><strong><?= $content[343][$key] ?? ''; ?>:</strong> <?= $content[344][$key] ?? ''; ?></li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <div class="future-implications">
-            <h3>Preparing for the Future</h3>
-            <p>Organizations and individuals should consider these steps to prepare for the future of document management:</p>
+            <h3><?= $content[345][$key] ?? ''; ?></h3>
+            <p><?= $content[346][$key] ?? ''; ?></p>
             <ul class="preparation-list">
-                <li>Invest in scalable and flexible document management systems</li>
-                <li>Train staff in emerging technologies and best practices</li>
-                <li>Develop clear policies for digital transformation</li>
-                <li>Stay informed about regulatory changes and compliance requirements</li>
-                <li>Prioritize security and privacy in document management strategies</li>
+                <li><?= $content[347][$key] ?? ''; ?></li>
+                <li><?= $content[348][$key] ?? ''; ?></li>
+                <li><?= $content[349][$key] ?? ''; ?></li>
+                <li><?= $content[350][$key] ?? ''; ?></li>
+                <li><?= $content[351][$key] ?? ''; ?></li>
             </ul>
         </div>
     </section>
-
-
 </div>

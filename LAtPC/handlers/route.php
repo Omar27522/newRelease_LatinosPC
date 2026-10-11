@@ -58,6 +58,11 @@ switch ($main_route) {
 		exit;
 		break;
 
+	case 'opciones_software':
+		software_options_spanish($sub_route);
+		exit;
+		break;
+
 	case 'tutorials':
 		tutorial();
 		exit;

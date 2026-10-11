@@ -5,7 +5,7 @@
 $batchMessage = null;
 $batchError = null;
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['batch_action'])) {
+if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST' && isset($_POST['batch_action'])) {
     verifyCSRF();
 
     if ($_POST['batch_action'] === 'save') {
@@ -84,7 +84,7 @@ if ($batchCurrentPageId && $isBatchLoad) {
     <div class="alert alert-error" style="margin-top: 20px;"><?= htmlspecialchars($batchError) ?></div>
 <?php endif; ?>
 
-<div class="glass-card" id="batch-manager" style="margin-top: 20px; border-top: 4px solid #10b981;">
+<div class="glass-card" id="batch-manager" style="border-top: 4px solid #10b981; <?= ($isBatchLoad || isset($batchMessage) || isset($batchError)) ? '' : 'display: none;' ?>">
     <div class="section-header" style="margin-bottom: 15px;">
         <h2 class="section-title" style="margin-bottom: 0;">Batch Table Editor</h2>
         <span style="color: var(--text-light); font-size: 0.85rem;">Lock Page ID/Section to load and edit multiple entries simultaneously</span>
@@ -197,24 +197,22 @@ function toggleEditorMode() {
 document.addEventListener('DOMContentLoaded', () => {
     const singleEditor = document.getElementById('editor');
     const batchEditor = document.getElementById('batch-manager');
-    const mode = localStorage.getItem('preferredEditorMode') || 'single';
+    const modal = document.getElementById('editor-modal-overlay');
 
     if (!singleEditor || !batchEditor) return;
 
     <?php if ($isBatchLoad || isset($batchMessage) || isset($batchError)): ?>
         singleEditor.style.display = 'none';
         batchEditor.style.display = 'block';
+        if (modal) modal.classList.remove('is-hidden');
     <?php elseif (isset($editData) && $editData): ?>
         singleEditor.style.display = 'block';
         batchEditor.style.display = 'none';
+        if (modal) modal.classList.remove('is-hidden');
     <?php else: ?>
-        if (mode === 'batch') {
-            singleEditor.style.display = 'none';
-            batchEditor.style.display = 'block';
-        } else {
-            singleEditor.style.display = 'block';
-            batchEditor.style.display = 'none';
-        }
+        singleEditor.style.display = 'block';
+        batchEditor.style.display = 'none';
+        if (modal) modal.classList.add('is-hidden');
     <?php endif; ?>
 });
 

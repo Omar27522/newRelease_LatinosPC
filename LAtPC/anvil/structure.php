@@ -1,8 +1,9 @@
 <?php
 include_once __DIR__ . '/head.php';
 ?>
+
 <body>
-<?php
+    <?php
 include_once __DIR__ . '/header.php';
 ?>
 
@@ -148,6 +149,22 @@ include_once __DIR__ . '/header.php';
                 'HW Escritorios' => 'hw_desks',
                 'HW Tapetes Antideslizantes' => 'hw_anti_slip_mats',
                 'HW Altavoces y Subwoofers' => 'hw_speakers_and_subwoofers',
+                'Software' => 'sw_software',
+                'SW Anti-Virus' => 'sw_anti_virus',
+                'SW Limpiador de Malware' => 'sw_mlwcleaner',
+                'SW Navegadores' => 'sw_webBrowsers',
+                'SW Mensajería' => 'sw_messaging',
+                'SW Multimedia' => 'sw_media',
+                'SW Runtimes' => 'sw_runtimes',
+                'SW Imágenes' => 'sw_imaging',
+                'SW Documentos' => 'sw_documents',
+                'SW Compartir Archivos' => 'sw_fileSharing',
+                'SW Almacenamiento en Línea' => 'sw_onlineStorage',
+                'SW Otro' => 'sw_other',
+                'SW Utilidades' => 'sw_utilities',
+                'SW Compresión' => 'sw_compression',
+                'SW Herramientas de Desarrollo' => 'sw_developerTools',
+                'Tutoriales' => 'tutorials',
             ]
         ];
 
@@ -166,9 +183,9 @@ include_once __DIR__ . '/header.php';
 
     </main>
 
-<?php
+    <?php
 include_once __DIR__ . '/footer.php';
 ?>
 </body>
-</html>
 
+</html>

@@ -1,144 +1,130 @@
 <?php
-/**
- * Compression Component
- * Modularized from software.php
- */
+include_once dirname(__DIR__) . '/handlers/databaseConnection.php';
+databaseConnection('software');
+global $content, $key, $page;
 ?>
 <article class="fullbar">
-    <?php sw_breadCrumbs(); ?>
-    <h1>Compression</h1>
+    <?php if (function_exists('sw_breadCrumbs')) { sw_breadCrumbs(); } ?>
+    <h1><?= $content[116][$key] ?? ''; ?></h1>
     <div class="blurb">
         <section class="intro">
             <p tabindex="0" class="selection">
-                File compression is a fundamental technology that revolutionized digital storage and transmission by
-                reducing file sizes while preserving their content. This essential process enables efficient storage
-                utilization and faster data transmission across networks.
+                <?= $content[117][$key] ?? ''; ?>
             </p>
         </section>
 
         <section class="timeline">
-            <h2>Evolution of File Compression</h2>
+            <h2><?= $content[118][$key] ?? ''; ?></h2>
             <div class="timeline-grid">
                 <div class="timeline-item" tabindex="0">
-                    <h3>1960s: The Beginning</h3>
+                    <h3><?= $content[119][$key] ?? ''; ?></h3>
                     <p class="selection">
-                        The era of run-length encoding marked the dawn of file compression. This pioneering method was
-                        primarily used for compressing data on magnetic tapes by consolidating repeated data values.
+                        <?= $content[120][$key] ?? ''; ?>
                     </p>
                 </div>
 
                 <div class="timeline-item" tabindex="0">
-                    <h3>1980s: The PC Revolution</h3>
+                    <h3><?= $content[121][$key] ?? ''; ?></h3>
                     <p class="selection">
-                        The personal computer boom sparked the development of more sophisticated compression algorithms.
-                        The groundbreaking Lempel-Ziv-Welch (LZW) algorithm emerged, powering popular formats like GIF
-                        and ZIP.
+                        <?= $content[122][$key] ?? ''; ?>
                     </p>
                 </div>
 
                 <div class="timeline-item" tabindex="0">
-                    <h3>1990s: The Internet Age</h3>
+                    <h3><?= $content[123][$key] ?? ''; ?></h3>
                     <p class="selection">
-                        The rise of the internet and multimedia content drove the creation of specialized compression
-                        formats. Revolutionary standards like MP3 for audio and JPEG for images transformed digital
-                        media distribution.
+                        <?= $content[124][$key] ?? ''; ?>
                     </p>
                 </div>
 
                 <div class="timeline-item" tabindex="0">
-                    <h3>Today: Modern Compression</h3>
+                    <h3><?= $content[125][$key] ?? ''; ?></h3>
                     <p class="selection">
-                        Modern compression technology offers diverse solutions for different data types, balancing
-                        compression efficiency with processing speed and compatibility.
+                        <?= $content[126][$key] ?? ''; ?>
                     </p>
                 </div>
             </div>
         </section>
 
         <section class="compression-formats">
-            <h2>Popular Compression Directory Formats</h2>
+            <h2><?= $content[127][$key] ?? ''; ?></h2>
             <div class="formats-grid">
                 <details class="format-card">
-                    <summary tabindex="0" class="selection">ZIP Format</summary>
+                    <summary tabindex="0" class="selection"><?= $content[129][$key] ?? ''; ?></summary>
                     <fieldset tabindex="0" class="selection">
                         <div class="format-content">
-                            <h4>Features:</h4>
+                            <h4><?= $content[128][$key] ?? ''; ?></h4>
                             <ul>
-                                <li>Multi-file archiving</li>
-                                <li>Password protection</li>
-                                <li>Universal compatibility</li>
-                                <li>Industry standard format</li>
+                                <li><?= $content[130][$key] ?? ''; ?></li>
+                                <li><?= $content[131][$key] ?? ''; ?></li>
+                                <li><?= $content[132][$key] ?? ''; ?></li>
+                                <li><?= $content[133][$key] ?? ''; ?></li>
                             </ul>
-                            <p>The most widely used compression format, perfect for general-purpose file compression and
-                                archiving.</p>
+                            <p><?= $content[134][$key] ?? ''; ?></p>
                         </div>
                     </fieldset>
                 </details>
 
                 <details class="format-card">
-                    <summary tabindex="0" class="selection">RAR Format</summary>
+                    <summary tabindex="0" class="selection"><?= $content[135][$key] ?? ''; ?></summary>
                     <fieldset tabindex="0" class="selection">
                         <div class="format-content">
-                            <h4>Features:</h4>
+                            <h4><?= $content[128][$key] ?? ''; ?></h4>
                             <ul>
-                                <li>Advanced compression</li>
-                                <li>Archive splitting</li>
-                                <li>Error recovery</li>
-                                <li>Strong encryption</li>
+                                <li><?= $content[136][$key] ?? ''; ?></li>
+                                <li><?= $content[137][$key] ?? ''; ?></li>
+                                <li><?= $content[138][$key] ?? ''; ?></li>
+                                <li><?= $content[139][$key] ?? ''; ?></li>
                             </ul>
-                            <p>A powerful format offering advanced features and superior compression ratios for complex
-                                archiving needs.</p>
+                            <p><?= $content[140][$key] ?? ''; ?></p>
                         </div>
                     </fieldset>
                 </details>
 
                 <details class="format-card">
-                    <summary tabindex="0" class="selection">TAR Format</summary>
+                    <summary tabindex="0" class="selection"><?= $content[141][$key] ?? ''; ?></summary>
                     <fieldset tabindex="0" class="selection">
                         <div class="format-content">
-                            <h4>Features:</h4>
+                            <h4><?= $content[128][$key] ?? ''; ?></h4>
                             <ul>
-                                <li>Unix-style archiving</li>
-                                <li>Metadata preservation</li>
-                                <li>Combinable with compression</li>
-                                <li>Perfect for backups</li>
+                                <li><?= $content[142][$key] ?? ''; ?></li>
+                                <li><?= $content[143][$key] ?? ''; ?></li>
+                                <li><?= $content[144][$key] ?? ''; ?></li>
+                                <li><?= $content[145][$key] ?? ''; ?></li>
                             </ul>
-                            <p>Commonly used in Unix-like systems, often combined with compression algorithms like gzip
-                                or bzip2.</p>
+                            <p><?= $content[146][$key] ?? ''; ?></p>
                         </div>
                     </fieldset>
                 </details>
 
                 <details class="format-card">
-                    <summary tabindex="0" class="selection">GZ Format</summary>
+                    <summary tabindex="0" class="selection"><?= $content[147][$key] ?? ''; ?></summary>
                     <fieldset tabindex="0" class="selection">
                         <div class="format-content">
-                            <h4>Features:</h4>
+                            <h4><?= $content[128][$key] ?? ''; ?></h4>
                             <ul>
-                                <li>DEFLATE algorithm</li>
-                                <li>Fast compression</li>
-                                <li>Single-file focus</li>
-                                <li>Cross-platform support</li>
+                                <li><?= $content[148][$key] ?? ''; ?></li>
+                                <li><?= $content[149][$key] ?? ''; ?></li>
+                                <li><?= $content[150][$key] ?? ''; ?></li>
+                                <li><?= $content[151][$key] ?? ''; ?></li>
                             </ul>
-                            <p>Efficient single-file compression using the DEFLATE algorithm, ideal for quick
-                                compression tasks.</p>
+                            <p><?= $content[152][$key] ?? ''; ?></p>
                         </div>
                     </fieldset>
                 </details>
 
                 <details class="format-card">
-                    <summary tabindex="0" class="selection">BZ2 Format</summary>
+                    <summary tabindex="0" class="selection"><?= $content[153][$key] ?? ''; ?></summary>
                     <fieldset tabindex="0" class="selection">
                         <div class="format-content">
-                            <h4>Features:</h4>
+                            <h4><?= $content[128][$key] ?? ''; ?></h4>
                             <ul>
-                                <li>High compression ratio</li>
-                                <li>Block-sorting compression</li>
-                                <li>Data integrity checks</li>
-                                <li>Open-source format</li>
+                                <li><?= $content[154][$key] ?? ''; ?></li>
+                                <li><?= $content[155][$key] ?? ''; ?></li>
+                                <li><?= $content[156][$key] ?? ''; ?></li>
+                                <li><?= $content[157][$key] ?? ''; ?></li>
                             </ul>
-                            <p>Offers superior compression ratios using the bzip2 algorithm, perfect for text-based
-                                content.</p>
+                            <p><?= $content[158][$key] ?? ''; ?></p>
                         </div>
                     </fieldset>
                 </details>
@@ -146,106 +132,100 @@
         </section>
 
         <section class="other-compression">
-            <h2>Other Compression Technologies</h2>
+            <h2><?= $content[159][$key] ?? ''; ?></h2>
             <div class="formats-grid">
                 <details class="format-card">
-                    <summary tabindex="0" class="selection">Image Compression</summary>
+                    <summary tabindex="0" class="selection"><?= $content[165][$key] ?? ''; ?></summary>
                     <fieldset tabindex="0" class="selection">
                         <div class="format-content">
-                            <h4>Popular Formats:</h4>
+                            <h4><?= $content[160][$key] ?? ''; ?></h4>
                             <ul>
-                                <li>JPEG - Lossy compression for photos</li>
-                                <li>PNG - Lossless with transparency support</li>
-                                <li>WebP - Modern format with superior compression</li>
-                                <li>AVIF - Next-gen format with excellent quality</li>
+                                <li><?= $content[166][$key] ?? ''; ?></li>
+                                <li><?= $content[167][$key] ?? ''; ?></li>
+                                <li><?= $content[168][$key] ?? ''; ?></li>
+                                <li><?= $content[169][$key] ?? ''; ?></li>
                             </ul>
-                            <p>Image compression balances visual quality with file size, using specialized algorithms
-                                optimized for visual data.</p>
+                            <p><?= $content[170][$key] ?? ''; ?></p>
                         </div>
                     </fieldset>
                 </details>
 
                 <details class="format-card">
-                    <summary tabindex="0" class="selection">Audio Compression</summary>
+                    <summary tabindex="0" class="selection"><?= $content[171][$key] ?? ''; ?></summary>
                     <fieldset tabindex="0" class="selection">
                         <div class="format-content">
-                            <h4>Popular Formats:</h4>
+                            <h4><?= $content[160][$key] ?? ''; ?></h4>
                             <ul>
-                                <li>MP3 - Universal lossy audio format</li>
-                                <li>AAC - Advanced audio coding</li>
-                                <li>FLAC - Lossless audio compression</li>
-                                <li>Opus - Modern low-latency codec</li>
+                                <li><?= $content[172][$key] ?? ''; ?></li>
+                                <li><?= $content[173][$key] ?? ''; ?></li>
+                                <li><?= $content[174][$key] ?? ''; ?></li>
+                                <li><?= $content[175][$key] ?? ''; ?></li>
                             </ul>
-                            <p>Audio compression leverages psychoacoustic models to remove imperceptible sounds,
-                                achieving significant size reduction.</p>
+                            <p><?= $content[176][$key] ?? ''; ?></p>
                         </div>
                     </fieldset>
                 </details>
 
                 <details class="format-card">
-                    <summary tabindex="0" class="selection">Video Compression</summary>
+                    <summary tabindex="0" class="selection"><?= $content[177][$key] ?? ''; ?></summary>
                     <fieldset tabindex="0" class="selection">
                         <div class="format-content">
-                            <h4>Popular Codecs:</h4>
+                            <h4><?= $content[161][$key] ?? ''; ?></h4>
                             <ul>
-                                <li>H.264/AVC - Industry standard codec</li>
-                                <li>H.265/HEVC - High efficiency video coding</li>
-                                <li>VP9 - Open-source alternative</li>
-                                <li>AV1 - Royalty-free next-gen codec</li>
+                                <li><?= $content[178][$key] ?? ''; ?></li>
+                                <li><?= $content[179][$key] ?? ''; ?></li>
+                                <li><?= $content[180][$key] ?? ''; ?></li>
+                                <li><?= $content[181][$key] ?? ''; ?></li>
                             </ul>
-                            <p>Video compression uses temporal and spatial redundancy reduction, enabling efficient
-                                streaming and storage of video content.</p>
+                            <p><?= $content[182][$key] ?? ''; ?></p>
                         </div>
                     </fieldset>
                 </details>
 
                 <details class="format-card">
-                    <summary tabindex="0" class="selection">Modern Algorithms</summary>
+                    <summary tabindex="0" class="selection"><?= $content[183][$key] ?? ''; ?></summary>
                     <fieldset tabindex="0" class="selection">
                         <div class="format-content">
-                            <h4>Advanced Technologies:</h4>
+                            <h4><?= $content[162][$key] ?? ''; ?></h4>
                             <ul>
-                                <li>Zstandard (zstd) - Fast with high compression</li>
-                                <li>Brotli - Web-optimized compression</li>
-                                <li>LZMA - Extreme compression ratios</li>
-                                <li>7-Zip - Multi-algorithm archiver</li>
+                                <li><?= $content[184][$key] ?? ''; ?></li>
+                                <li><?= $content[185][$key] ?? ''; ?></li>
+                                <li><?= $content[186][$key] ?? ''; ?></li>
+                                <li><?= $content[187][$key] ?? ''; ?></li>
                             </ul>
-                            <p>Modern compression algorithms offer improved speed and efficiency, optimized for
-                                contemporary hardware and use cases.</p>
+                            <p><?= $content[188][$key] ?? ''; ?></p>
                         </div>
                     </fieldset>
                 </details>
 
                 <details class="format-card">
-                    <summary tabindex="0" class="selection">Database Compression</summary>
+                    <summary tabindex="0" class="selection"><?= $content[189][$key] ?? ''; ?></summary>
                     <fieldset tabindex="0" class="selection">
                         <div class="format-content">
-                            <h4>Key Features:</h4>
+                            <h4><?= $content[163][$key] ?? ''; ?></h4>
                             <ul>
-                                <li>Columnar compression for analytics</li>
-                                <li>Dictionary encoding</li>
-                                <li>Run-length encoding (RLE)</li>
-                                <li>Transparent compression layers</li>
+                                <li><?= $content[190][$key] ?? ''; ?></li>
+                                <li><?= $content[191][$key] ?? ''; ?></li>
+                                <li><?= $content[192][$key] ?? ''; ?></li>
+                                <li><?= $content[193][$key] ?? ''; ?></li>
                             </ul>
-                            <p>Database compression reduces storage costs while maintaining query performance through
-                                specialized compression techniques.</p>
+                            <p><?= $content[194][$key] ?? ''; ?></p>
                         </div>
                     </fieldset>
                 </details>
 
                 <details class="format-card">
-                    <summary tabindex="0" class="selection">Network Compression</summary>
+                    <summary tabindex="0" class="selection"><?= $content[195][$key] ?? ''; ?></summary>
                     <fieldset tabindex="0" class="selection">
                         <div class="format-content">
-                            <h4>Technologies:</h4>
+                            <h4><?= $content[164][$key] ?? ''; ?></h4>
                             <ul>
-                                <li>HTTP compression (gzip, Brotli)</li>
-                                <li>VPN compression protocols</li>
-                                <li>TCP/IP header compression</li>
-                                <li>Real-time streaming compression</li>
+                                <li><?= $content[196][$key] ?? ''; ?></li>
+                                <li><?= $content[197][$key] ?? ''; ?></li>
+                                <li><?= $content[198][$key] ?? ''; ?></li>
+                                <li><?= $content[199][$key] ?? ''; ?></li>
                             </ul>
-                            <p>Network compression reduces bandwidth usage and improves transmission speeds for web
-                                content and data transfers.</p>
+                            <p><?= $content[200][$key] ?? ''; ?></p>
                         </div>
                     </fieldset>
                 </details>

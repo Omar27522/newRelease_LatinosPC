@@ -2,66 +2,81 @@
 /**
  * Utilities Component
  * Modularized from software.php
+ * Powered by SQLite laTpc.db ($content pool for 'software')
  */
+
+include_once dirname(__DIR__) . '/handlers/databaseConnection.php';
+databaseConnection('software');
+global $content, $key, $page;
+
+$isSpanish = ($key === 'contenido');
+
+// Dynamic Content & Links Resolver from SQLite laTpc.db ($content pool)
+$util = [];
+$links = [];
+foreach ($content as $item) {
+    if (isset($item['name']) && str_starts_with($item['name'], 'util_')) {
+        $val = !empty($item[$key]) ? $item[$key] : ($item['content'] ?? '');
+        if (str_starts_with($item['name'], 'util_link_')) {
+            $linkKey = str_replace('util_link_', '', $item['name']);
+            $links[$linkKey] = $val;
+        } else {
+            $utilKey = str_replace('util_', '', $item['name']);
+            $util[$utilKey] = $val;
+        }
+    }
+}
 ?>
+
 <article class="fullbar">
-    <?php sw_breadCrumbs(); ?>
-    <h1>Utilities</h1>
+    <?php if (function_exists('sw_breadCrumbs')) { sw_breadCrumbs(); } ?>
+    <h1><?= htmlspecialchars($util['title'] ?? 'Utilities'); ?></h1>
     <div class="blurb">
         <section class="intro">
             <p tabindex="0" class="selection">
-                Computer utilities are essential programs that help manage, maintain, and enhance your computer's
-                performance. These powerful tools can perform various tasks, from cleaning up your hard drive to
-                ensuring optimal system security. Whether built into your operating system or available as standalone
-                applications, utilities play a crucial role in keeping your computer running at its best.
+                <?= htmlspecialchars($util['intro'] ?? ''); ?>
             </p>
         </section>
 
         <section class="windows-optimization">
-            <h2 tabindex="0">Windows System Optimization</h2>
+            <h2 tabindex="0"><?= htmlspecialchars($util['opt_heading'] ?? 'Windows System Optimization'); ?></h2>
             <p tabindex="0" class="selection">
-                Windows system optimizers are specialized programs designed to enhance the performance of Windows-based
-                computers. These tools offer a comprehensive suite of features to clean, optimize, and maintain your
-                system for peak efficiency.
+                <?= htmlspecialchars($util['opt_intro'] ?? ''); ?>
             </p>
 
             <div class="features-grid">
                 <details class="feature-card">
-                    <summary tabindex="0" class="selection">Disk Cleanup</summary>
+                    <summary tabindex="0" class="selection"><?= htmlspecialchars($util['feat_disk_sum'] ?? 'Disk Cleanup'); ?></summary>
                     <fieldset tabindex="0" class="selection">
-                        <p>Efficiently removes temporary files, system logs, and unnecessary data to free up valuable
-                            disk space and improve overall system performance.</p>
+                        <p><?= htmlspecialchars($util['feat_disk_desc'] ?? ''); ?></p>
                     </fieldset>
                 </details>
 
                 <details class="feature-card">
-                    <summary tabindex="0" class="selection">Registry Cleanup</summary>
+                    <summary tabindex="0" class="selection"><?= htmlspecialchars($util['feat_reg_sum'] ?? 'Registry Cleanup'); ?></summary>
                     <fieldset tabindex="0" class="selection">
-                        <p>Scans and repairs invalid Windows registry entries to enhance system stability and prevent
-                            common errors.</p>
+                        <p><?= htmlspecialchars($util['feat_reg_desc'] ?? ''); ?></p>
                     </fieldset>
                 </details>
 
                 <details class="feature-card">
-                    <summary tabindex="0" class="selection">Startup Optimization</summary>
+                    <summary tabindex="0" class="selection"><?= htmlspecialchars($util['feat_start_sum'] ?? 'Startup Optimization'); ?></summary>
                     <fieldset tabindex="0" class="selection">
-                        <p>Manages and optimizes startup programs to significantly reduce boot times and improve initial
-                            system responsiveness.</p>
+                        <p><?= htmlspecialchars($util['feat_start_desc'] ?? ''); ?></p>
                     </fieldset>
                 </details>
 
                 <details class="feature-card">
-                    <summary tabindex="0" class="selection">Service Optimization</summary>
+                    <summary tabindex="0" class="selection"><?= htmlspecialchars($util['feat_serv_sum'] ?? 'Service Optimization'); ?></summary>
                     <fieldset tabindex="0" class="selection">
-                        <p>Intelligently manages system services to optimize resource allocation and enhance overall
-                            system performance.</p>
+                        <p><?= htmlspecialchars($util['feat_serv_desc'] ?? ''); ?></p>
                     </fieldset>
                 </details>
 
                 <details class="feature-card">
-                    <summary tabindex="0" class="selection">Internet Optimization</summary>
+                    <summary tabindex="0" class="selection"><?= htmlspecialchars($util['feat_net_sum'] ?? 'Internet Optimization'); ?></summary>
                     <fieldset tabindex="0" class="selection">
-                        <p>Fine-tunes network settings to maximize internet connection speed and reliability.</p>
+                        <p><?= htmlspecialchars($util['feat_net_desc'] ?? ''); ?></p>
                     </fieldset>
                 </details>
             </div>
@@ -69,27 +84,23 @@
 
         <section class="warning">
             <div class="warning-box">
-                <h3 tabindex="0">⚠️ Important Note</h3>
+                <h3 tabindex="0"><?= htmlspecialchars($util['warn_heading'] ?? '⚠️ Important Note'); ?></h3>
                 <p tabindex="0" class="selection">
-                    While optimization tools can significantly improve your computer's performance, it's crucial to use
-                    them carefully. Always create a system restore point before making any system modifications. This
-                    precaution ensures you can revert changes if needed.
+                    <?= htmlspecialchars($util['warn_desc'] ?? ''); ?>
                 </p>
             </div>
         </section>
+
         <section class="intro" style="margin-top: 1rem;">
-        <h3>This is what I do on a typical new installation</h3>
-        <p>
-            After having installed windows on with latest updates:<br />
-             I use a windows debloater tool, and I make sure to not have any unwanted software installed.
-        </p>
-        <p>I run a banchmark or two on BrowserBench.org so I know what the system is capable of.</p>
-        <p>Then I install the following:</p>
-        <ul>
-            <li><a href="https://ninite.com/">Ninite</a></li>
-            <li><a href="https://www.ccleaner.com/speccy">Speccy</a></li>
-            <li><a href="https://www.nirsoft.net/utils/battery_information_view.html">BatteyInfoView</a></li>
-        </ul>
+            <h3><?= htmlspecialchars($util['proto_heading'] ?? 'This is what I do on a typical new installation'); ?></h3>
+            <p><?= $util['proto_p1'] ?? ''; ?></p>
+            <p><?= str_replace('{BENCH_LINK}', htmlspecialchars($links['browserbench'] ?? 'https://browserbench.org/'), $util['proto_p2'] ?? ''); ?></p>
+            <p><?= htmlspecialchars($util['proto_p3'] ?? 'Then I install the following:'); ?></p>
+            <ul>
+                <li><a href="<?= htmlspecialchars($links['ninite'] ?? 'https://ninite.com/'); ?>" target="_blank" rel="noopener noreferrer"><?= htmlspecialchars($util['app_ninite_label'] ?? 'Ninite'); ?></a></li>
+                <li><a href="<?= htmlspecialchars($links['speccy'] ?? 'https://www.ccleaner.com/speccy'); ?>" target="_blank" rel="noopener noreferrer"><?= htmlspecialchars($util['app_speccy_label'] ?? 'Speccy'); ?></a></li>
+                <li><a href="<?= htmlspecialchars($links['batteryinfo'] ?? 'https://www.nirsoft.net/utils/battery_information_view.html'); ?>" target="_blank" rel="noopener noreferrer"><?= htmlspecialchars($util['app_battery_label'] ?? 'BatteryInfoView'); ?></a></li>
+            </ul>
         </section>
     </div>
 </article>

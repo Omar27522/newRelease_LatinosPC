@@ -370,7 +370,7 @@ iframe:hover {
 }
 
 /* Enhanced colored border tip cards */
-[style*="border"] {
+.colms2 p[style*="border"] {
   padding: 1rem 1.15rem;
   margin: 0;
   border-radius: 8px;

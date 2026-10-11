@@ -72,7 +72,7 @@ global $page; //this is the page object brought in from initial load. It contain
             <h3 class="linked-text"><?= $securityHeading = $content[45][$key] ?? 'Security';?></h3>
             <div class="link-dialog">
                 <p tabindex="0"><?= $securityDialog = $content[46][$key] ?? '';?></p>
-                <a href="<?= $securityDialogMainLink = $content[128][$key] ?? '#';?>"><?=$content[3][$key] ?? '';?></a>
+                <a href="<?= $securityDialogMainLink = $content[115][$key] ?? '#';?>"><?=$content[3][$key] ?? '';?></a>
             </div>
         </div>
         <a href="<?= $securityButtonBestPractices = $content[86][$key] ?? '#';?>"
@@ -135,7 +135,7 @@ global $page; //this is the page object brought in from initial load. It contain
         <div class="multi-link-container">
             <h3 class="linked-text"><?= $softwareHeading = $content[69][$key] ?? 'Software';?></h3>
             <div class="link-dialog">
-                <p tabindex="0"><?= $softwareDialog = $content[70][$key] ?? '';?><a href="<?= $content[126][$key]?>"
+                <p tabindex="0"><?= $softwareDialog = $content[70][$key] ?? '';?><a href="<?= $content[114][$key]?>"
                         style="text-align:center;display:block;margin-top:10px;font-size:1.5rem;"><?= $content[69][$key] ?? 'SOFTWARE';?></a>
                 </p>
             </div>

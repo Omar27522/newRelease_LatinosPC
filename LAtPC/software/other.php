@@ -2,57 +2,120 @@
 /**
  * Other Component
  * Modularized from software.php
+ * Powered by SQLite laTpc.db ($content pool for 'software')
  */
 
+include_once dirname(__DIR__) . '/handlers/databaseConnection.php';
+databaseConnection('software');
+global $content, $key, $page;
+
+$isSpanish = ($key === 'contenido');
+
+// Dynamic Content & Links Resolver from SQLite laTpc.db ($content pool)
+$other = [];
+$links = [];
+foreach ($content as $item) {
+    if (isset($item['name']) && str_starts_with($item['name'], 'other_')) {
+        $val = !empty($item[$key]) ? $item[$key] : ($item['content'] ?? '');
+        if (str_starts_with($item['name'], 'other_link_')) {
+            $linkKey = str_replace('other_link_', '', $item['name']);
+            $links[$linkKey] = $val;
+        } else {
+            $otherKey = str_replace('other_', '', $item['name']);
+            $other[$otherKey] = $val;
+        }
+    }
+}
+
 echo "<div class=\"fullbar\">";
-sw_breadCrumbs();
-echo "<h1>Other</h1>";
+if (function_exists('sw_breadCrumbs')) {
+    sw_breadCrumbs();
+}
+echo "<h1>" . htmlspecialchars($other['title'] ?? 'Other') . "</h1>";
 echo "</div>";
+
+// Password managers list
+$pwd_managers = [
+    ['key' => 'mgr_1password', 'name' => '1Password'],
+    ['key' => 'mgr_bitwarden', 'name' => 'Bitwarden'],
+    ['key' => 'mgr_dashlane', 'name' => 'Dashlane'],
+    ['key' => 'mgr_lastpass', 'name' => 'LastPass'],
+    ['key' => 'mgr_nordpass', 'name' => 'NordPass'],
+    ['key' => 'mgr_roboform', 'name' => 'RoboForm'],
+    ['key' => 'mgr_enpass', 'name' => 'Enpass'],
+    ['key' => 'mgr_keeper', 'name' => 'Keeper'],
+    ['key' => 'mgr_intuitive', 'name' => 'Intuitive Password'],
+    ['key' => 'mgr_sticky', 'name' => 'Sticky Password'],
+];
+
+// Password generators list
+$pwd_generators = [
+    ['key' => 'gen_1password', 'name' => '1Password Generator'],
+    ['key' => 'gen_avast', 'name' => 'Avast Password Generator'],
+    ['key' => 'gen_bitwarden', 'name' => 'Bitwarden Password Generator'],
+    ['key' => 'gen_bulk', 'name' => 'Bulk Password Generator'],
+    ['key' => 'gen_dashlane', 'name' => 'Dashlane Password Generator'],
+    ['key' => 'gen_expressvpn', 'name' => 'ExpressVPN Password Generator'],
+    ['key' => 'gen_keeper', 'name' => 'Keeper Password Generator'],
+    ['key' => 'gen_lastpass', 'name' => 'LastPass Password Generator'],
+    ['key' => 'gen_manytools', 'name' => 'ManyTools Password Generator'],
+    ['key' => 'gen_nordpass', 'name' => 'NordPass Password Generator'],
+    ['key' => 'gen_norton', 'name' => 'Norton Password Generator'],
+    ['key' => 'gen_passwordsnet', 'name' => 'PasswordsGenerator.net'],
+    ['key' => 'gen_roboform', 'name' => 'RoboForm Password Generator'],
+];
 ?>
+
 <div class="content-grid fullbar">
-<h2 id="title">Computer Tools & Resources</h2>
+    <h2 id="title"><?= htmlspecialchars($other['subtitle'] ?? 'Computer Tools & Resources'); ?></h2>
+
     <!-- Computer Repair Section -->
     <details tabindex="0" class="main-section">
         <summary class="section-title">
-            <i class="fas fa-tools"></i> Computer Repair Guide
+            <i class="fas fa-tools"></i> <?= htmlspecialchars($other['repair_summary'] ?? 'Computer Repair Guide'); ?>
         </summary>
         <div class="section-content">
-            <p class="section-intro">Troubleshooting computer issues can be challenging, but following these systematic steps can help identify and resolve common problems quickly and effectively.</p>
+            <p class="section-intro"><?= htmlspecialchars($other['repair_intro'] ?? ''); ?></p>
             <div class="troubleshooting-steps">
                 <details tabindex="0" class="step-item">
-                    <summary>1. Check Physical Connections</summary>
+                    <summary><?= htmlspecialchars($other['repair_step1_sum'] ?? '1. Check Physical Connections'); ?></summary>
                     <div>
-                        <p><span tabindex="0" class="selection_2">• Verify all cables are properly connected (power, monitor, keyboard, mouse)</span><br/>
-                           <span tabindex="0" class="selection_2">• Ensure connections are secure and not loose</span>
+                        <p>
+                            <span tabindex="0" class="selection_2"><?= htmlspecialchars($other['repair_step1_p1'] ?? ''); ?></span><br/>
+                            <span tabindex="0" class="selection_2"><?= htmlspecialchars($other['repair_step1_p2'] ?? ''); ?></span>
                         </p>
                     </div>
                 </details>
 
                 <details tabindex="0" class="step-item">
-                    <summary>2. Power Supply Verification</summary>
+                    <summary><?= htmlspecialchars($other['repair_step2_sum'] ?? '2. Power Supply Verification'); ?></summary>
                     <div>
-                        <p><span tabindex="0" class="selection_2">• Confirm power switch is ON</span><br/>
-                           <span tabindex="0" class="selection_2">• Test power outlet functionality</span><br/>
-                           <span tabindex="0" class="selection_2">• Check for proper power cord connection</span>
+                        <p>
+                            <span tabindex="0" class="selection_2"><?= htmlspecialchars($other['repair_step2_p1'] ?? ''); ?></span><br/>
+                            <span tabindex="0" class="selection_2"><?= htmlspecialchars($other['repair_step2_p2'] ?? ''); ?></span><br/>
+                            <span tabindex="0" class="selection_2"><?= htmlspecialchars($other['repair_step2_p3'] ?? ''); ?></span>
                         </p>
                     </div>
                 </details>
 
                 <details tabindex="0" class="step-item">
-                    <summary>3. Hardware Component Check</summary>
+                    <summary><?= htmlspecialchars($other['repair_step3_sum'] ?? '3. Hardware Component Check'); ?></summary>
                     <div>
-                        <p><span tabindex="0" class="selection_2">• Verify fan operation</span><br/>
-                           <span tabindex="0" class="selection_2">• Check RAM module seating</span><br/>
-                           <span tabindex="0" class="selection_2">• Inspect for loose components</span>
+                        <p>
+                            <span tabindex="0" class="selection_2"><?= htmlspecialchars($other['repair_step3_p1'] ?? ''); ?></span><br/>
+                            <span tabindex="0" class="selection_2"><?= htmlspecialchars($other['repair_step3_p2'] ?? ''); ?></span><br/>
+                            <span tabindex="0" class="selection_2"><?= htmlspecialchars($other['repair_step3_p3'] ?? ''); ?></span>
                         </p>
                     </div>
                 </details>
             </div>
 
-            <p class="section-intro">If issues persist after following these steps, consider contacting a
-                <a href="https://www.google.com/search?q=computer+repair+technician+near+me"
-                   title="Google search: Computer Repair Technician Near Me">professional computer repair technician</a>
-                for expert diagnosis and resolution.
+            <p class="section-intro">
+                <?= str_replace(
+                    ['{SEARCH_LINK}', '{SEARCH_ATTR}'],
+                    [htmlspecialchars($links['repair_search'] ?? '#'), htmlspecialchars($other['repair_search_attr'] ?? '')],
+                    $other['repair_note'] ?? ''
+                ); ?>
             </p>
         </div>
     </details>
@@ -60,70 +123,70 @@ echo "</div>";
     <!-- Windows Shortcuts Section -->
     <details tabindex="0" class="main-section">
         <summary class="section-title">
-            <i class="fab fa-windows"></i> Essential Windows Shortcuts
+            <i class="fab fa-windows"></i> <?= htmlspecialchars($other['sc_summary'] ?? 'Essential Windows Shortcuts'); ?>
         </summary>
         <div class="shortcuts-grid">
             <!-- File Operations -->
             <div class="shortcut-category">
-                <h3 class="category-title">File Operations</h3>
+                <h3 class="category-title"><?= htmlspecialchars($other['sc_cat1'] ?? 'File Operations'); ?></h3>
                 <div class="shortcut-list">
                     <section tabindex="0">
                         <p>Ctrl + C</p>
-                        <p><span tabindex="0" class="selection_2">Copy selected item</span></p>
+                        <p><span tabindex="0" class="selection_2"><?= htmlspecialchars($other['sc_cat1_1'] ?? 'Copy selected item'); ?></span></p>
                     </section>
                     <section tabindex="0">
                         <p>Ctrl + X</p>
-                        <p><span tabindex="0" class="selection_2">Cut selected item</span></p>
+                        <p><span tabindex="0" class="selection_2"><?= htmlspecialchars($other['sc_cat1_2'] ?? 'Cut selected item'); ?></span></p>
                     </section>
                     <section tabindex="0">
                         <p>Ctrl + V</p>
-                        <p><span tabindex="0" class="selection_2">Paste selected item</span></p>
+                        <p><span tabindex="0" class="selection_2"><?= htmlspecialchars($other['sc_cat1_3'] ?? 'Paste selected item'); ?></span></p>
                     </section>
                     <section tabindex="0">
                         <p>Ctrl + S</p>
-                        <p><span tabindex="0" class="selection_2">Save current file</span></p>
+                        <p><span tabindex="0" class="selection_2"><?= htmlspecialchars($other['sc_cat1_4'] ?? 'Save current file'); ?></span></p>
                     </section>
                 </div>
             </div>
 
             <!-- System Navigation -->
             <div class="shortcut-category">
-                <h3 class="category-title">System Navigation</h3>
+                <h3 class="category-title"><?= htmlspecialchars($other['sc_cat2'] ?? 'System Navigation'); ?></h3>
                 <div class="shortcut-list">
                     <section tabindex="0">
                         <p>Win + E</p>
-                        <p><span tabindex="0" class="selection_2">Open File Explorer</span></p>
+                        <p><span tabindex="0" class="selection_2"><?= htmlspecialchars($other['sc_cat2_1'] ?? 'Open File Explorer'); ?></span></p>
                     </section>
                     <section tabindex="0">
                         <p>Win + D</p>
-                        <p><span tabindex="0" class="selection_2">Show desktop</span></p>
+                        <p><span tabindex="0" class="selection_2"><?= htmlspecialchars($other['sc_cat2_2'] ?? 'Show desktop'); ?></span></p>
                     </section>
                     <section tabindex="0">
                         <p>Win + L</p>
-                        <p><span tabindex="0" class="selection_2">Lock computer</span></p>
+                        <p><span tabindex="0" class="selection_2"><?= htmlspecialchars($other['sc_cat2_3'] ?? 'Lock computer'); ?></span></p>
                     </section>
                     <section tabindex="0">
                         <p>Alt + Tab</p>
-                        <p><span tabindex="0" class="selection_2">Switch between programs</span></p>
+                        <p><span tabindex="0" class="selection_2"><?= htmlspecialchars($other['sc_cat2_4'] ?? 'Switch between programs'); ?></span></p>
                     </section>
                 </div>
             </div>
 
             <!-- Window Management -->
             <div class="shortcut-category">
-                <h3 class="category-title">Window Management</h3>
+                <h3 class="category-title"><?= htmlspecialchars($other['sc_cat3'] ?? 'Window Management'); ?></h3>
                 <div class="shortcut-list">
                     <section tabindex="0">
-                        <p>Win + ←/→</p>
-                        <p><span tabindex="0" class="selection_2">Snap window left/right</span></p>
+                        <p>Win + &larr;/&rarr;</p>
+                        <p><span tabindex="0" class="selection_2"><?= htmlspecialchars($other['sc_cat3_1'] ?? 'Snap window left/right'); ?></span></p>
                     </section>
                     <section tabindex="0">
-                        <p>Win + ↑/↓</p>
-                        <p><span tabindex="0" class="selection_2">Maximize/minimize window</span></p>
+                        <p>Win + &uarr;/&darr;</p>
+                        <p><span tabindex="0" class="selection_2"><?= htmlspecialchars($other['sc_cat3_2'] ?? 'Maximize/minimize window'); ?></span></p>
                     </section>
                     <section tabindex="0">
                         <p>Alt + F4</p>
-                        <p><span tabindex="0" class="selection_2">Close active window</span></p>
+                        <p><span tabindex="0" class="selection_2"><?= htmlspecialchars($other['sc_cat3_3'] ?? 'Close active window'); ?></span></p>
                     </section>
                 </div>
             </div>
@@ -133,19 +196,19 @@ echo "</div>";
     <!-- Remote Support Section -->
     <details tabindex="0" class="main-section">
         <summary class="section-title">
-            <i class="fas fa-desktop"></i> Remote Support Services
+            <i class="fas fa-desktop"></i> <?= htmlspecialchars($other['remote_summary'] ?? 'Remote Support Services'); ?>
         </summary>
         <div class="section-content">
-            <p class="section-intro"><span tabindex="0" class="selection_2">Professional technical support delivered remotely through secure internet connections, providing:</span></p>
-                <ul class="service-list">
-                    <li><span tabindex="0" class="selection_2">Software installation and configuration</span></li>
-                    <li><span tabindex="0" class="selection_2">Virus removal and security solutions</span></li>
-                    <li><span tabindex="0" class="selection_2">Hardware diagnostics and troubleshooting</span></li>
-                    <li><span tabindex="0" class="selection_2">Network configuration and optimization</span></li>
-                </ul>
+            <p class="section-intro"><span tabindex="0" class="selection_2"><?= htmlspecialchars($other['remote_intro'] ?? ''); ?></span></p>
+            <ul class="service-list">
+                <li><span tabindex="0" class="selection_2"><?= htmlspecialchars($other['remote_item1'] ?? ''); ?></span></li>
+                <li><span tabindex="0" class="selection_2"><?= htmlspecialchars($other['remote_item2'] ?? ''); ?></span></li>
+                <li><span tabindex="0" class="selection_2"><?= htmlspecialchars($other['remote_item3'] ?? ''); ?></span></li>
+                <li><span tabindex="0" class="selection_2"><?= htmlspecialchars($other['remote_item4'] ?? ''); ?></span></li>
+            </ul>
             <div class="service-link">
-                <a href="../offered_services/remoteSupport" title="Learn more about our remote support services" class="button">
-                    <i class="fas fa-arrow-right"></i> Explore Our Remote Support Services
+                <a href="../offered_services/remoteSupport" title="<?= htmlspecialchars($other['remote_btn'] ?? ''); ?>" class="button">
+                    <i class="fas fa-arrow-right"></i> <?= htmlspecialchars($other['remote_btn'] ?? 'Explore Our Remote Support Services'); ?>
                 </a>
             </div>
         </div>
@@ -154,133 +217,112 @@ echo "</div>";
     <!-- MSP Section -->
     <details tabindex="0" class="main-section">
         <summary class="section-title">
-            <i class="fas fa-network-wired"></i> Managed Service Providers (MSP)
+            <i class="fas fa-network-wired"></i> <?= htmlspecialchars($other['msp_summary'] ?? 'Managed Service Providers (MSP)'); ?>
         </summary>
         <div class="section-content">
-            <p class="section-intro"><cite>
-                MSPs are professional IT service providers that manage and assume responsibility for providing a defined set of services to their clients either proactively or as needed. They specialize in:
-            </cite></p>
+            <p class="section-intro"><cite><?= htmlspecialchars($other['msp_intro'] ?? ''); ?></cite></p>
             <ul class="msp-services">
-                    <li>Network infrastructure management</li>
-                    <li>Security monitoring and management</li>
-                    <li>Cloud services and solutions</li>
-                    <li>Help desk and technical support</li>
-                    <li>Data backup and disaster recovery</li>
+                <li><?= htmlspecialchars($other['msp_item1'] ?? ''); ?></li>
+                <li><?= htmlspecialchars($other['msp_item2'] ?? ''); ?></li>
+                <li><?= htmlspecialchars($other['msp_item3'] ?? ''); ?></li>
+                <li><?= htmlspecialchars($other['msp_item4'] ?? ''); ?></li>
+                <li><?= htmlspecialchars($other['msp_item5'] ?? ''); ?></li>
             </ul>
         </div>
     </details>
 
+    <!-- Backups Section -->
     <details tabindex="0" class="main-section">
         <summary class="section-title">
-            <i class="fas fa-network-wired"></i> Backups
+            <i class="fas fa-database"></i> <?= htmlspecialchars($other['backup_summary'] ?? 'Backups'); ?>
         </summary>
         <div class="section-content">
-            <p class="section-intro"><cite>
-                Backups are copies of data that are stored in a safe location, such as a different computer or a cloud storage service. Backups are important because they allow you to recover from data loss due to hardware failures, software corruption, or other causes. Backups are also important for disaster recovery, as they allow you to restore your data in the event of a natural disaster or other emergency.
-            </cite></p>
+            <p class="section-intro"><cite><?= htmlspecialchars($other['backup_intro'] ?? ''); ?></cite></p>
             <ul class="backups">
-                    <li>Full backups</li>
-                    <li>Incremental backups</li>
-                    <li>Differential backups</li>
-                    <li>Cloud backups</li>
-                    <li>Local backups</li>
+                <li><?= htmlspecialchars($other['backup_item1'] ?? ''); ?></li>
+                <li><?= htmlspecialchars($other['backup_item2'] ?? ''); ?></li>
+                <li><?= htmlspecialchars($other['backup_item3'] ?? ''); ?></li>
+                <li><?= htmlspecialchars($other['backup_item4'] ?? ''); ?></li>
+                <li><?= htmlspecialchars($other['backup_item5'] ?? ''); ?></li>
             </ul>
             <div class="service-link">
-                <a href="../offered_security/backups" title="Learn more about our backup services" class="button">
-                    <i class="fas fa-arrow-right"></i>Explore more
+                <a href="../offered_security/backups" title="<?= htmlspecialchars($other['backup_btn'] ?? 'Explore more'); ?>" class="button">
+                    <i class="fas fa-arrow-right"></i> <?= htmlspecialchars($other['backup_btn'] ?? 'Explore more'); ?>
                 </a>
             </div>
         </div>
     </details>
+
+    <!-- Best Practices Section -->
     <details tabindex="0" class="main-section">
         <summary class="section-title">
-            <i class="fas fa-network-wired"></i>Best Practices
+            <i class="fas fa-shield-halved"></i> <?= htmlspecialchars($other['bp_summary'] ?? 'Best Practices'); ?>
         </summary>
         <div class="section-content">
-            <p class="section-intro"><cite>
-                Best practices are guidelines and recommendations for performing a task or achieving a goal. Best practices are important because they help ensure that a task is performed correctly and efficiently. Best practices are also important for maintaining consistency and quality, as they provide a standard for evaluating the performance of a task.
-            </cite></p>
+            <p class="section-intro"><cite><?= htmlspecialchars($other['bp_intro'] ?? ''); ?></cite></p>
             <ul class="best-practices">
-                    <li>Keep the computers in a secure location when not in use, such as a locked room or cabinet.</li>
-                    <li>Use a cable lock to physically secure the computers to a desk or other immovable object.</li>
-                    <li>Use a privacy screen or webcam cover to prevent unwanted access to the computer's camera.</li>
-                    <li>Use a surge protector to protect the computer from power surges and voltage spikes.</li>
-                    <li>Keep the computer and its peripherals in good condition, such as cleaning dust from fans and vents to prevent overheating.</li>
-                    <li>Use a laptop lock to physically secure the computer to a desk or other immovable object.</li>
-                    <li>Always use a protective carrying case when transporting a portable device, laptop or desktop computer.</li>
-                    <li>Avoid leaving portable devices in plain sight in vehicles or other public places.</li>
-                    <li>Be aware of your surroundings when using a portable computer in public, and be prepared to close and secure it quickly if necessary.</li>
+                <li><?= htmlspecialchars($other['bp_item1'] ?? ''); ?></li>
+                <li><?= htmlspecialchars($other['bp_item2'] ?? ''); ?></li>
+                <li><?= htmlspecialchars($other['bp_item3'] ?? ''); ?></li>
+                <li><?= htmlspecialchars($other['bp_item4'] ?? ''); ?></li>
+                <li><?= htmlspecialchars($other['bp_item5'] ?? ''); ?></li>
+                <li><?= htmlspecialchars($other['bp_item6'] ?? ''); ?></li>
+                <li><?= htmlspecialchars($other['bp_item7'] ?? ''); ?></li>
+                <li><?= htmlspecialchars($other['bp_item8'] ?? ''); ?></li>
+                <li><?= htmlspecialchars($other['bp_item9'] ?? ''); ?></li>
             </ul>
             <div class="service-link">
-                <a href="../offered_security/best_practices" title="Learn more about our backup services" class="button">
-                    <i class="fas fa-arrow-right"></i>Explore more
+                <a href="../offered_security/best_practices" title="<?= htmlspecialchars($other['bp_btn'] ?? 'Explore more'); ?>" class="button">
+                    <i class="fas fa-arrow-right"></i> <?= htmlspecialchars($other['bp_btn'] ?? 'Explore more'); ?>
                 </a>
             </div>
         </div>
     </details>
+
+    <!-- Passwords Section -->
     <details tabindex="0" class="main-section">
         <summary class="section-title">
-            <i class="fas fa-network-wired"></i>Passwords
+            <i class="fas fa-key"></i> <?= htmlspecialchars($other['pwd_summary'] ?? 'Passwords'); ?>
         </summary>
         <div class="section-content">
-            <p class="section-intro"><cite>
-                Passwords are a security measure that are used to protect access to a computer, network, or other system. Passwords are important because they help ensure that only authorized users have access to a system, and they prevent unauthorized access to sensitive information. Passwords are also important for maintaining security, as they provide a way to control access to a system and prevent unauthorized access to sensitive information.
-            </cite></p>
-            <ul class="passwords">
+            <p class="section-intro"><cite><?= htmlspecialchars($other['pwd_intro'] ?? ''); ?></cite></p>
+            <div class="passwords">
                 <details>
-                    <summary>Use strong passwords</summary>
-                    <p>Strong passwords are passwords that are difficult to guess or crack. They are typically made up of a combination of uppercase and lowercase letters, numbers, and special characters. Strong passwords are important because they help ensure that only authorized users have access to a system, and they prevent unauthorized access to sensitive information.</p>
+                    <summary><?= htmlspecialchars($other['pwd_strong_sum'] ?? 'Use strong passwords'); ?></summary>
+                    <p><?= htmlspecialchars($other['pwd_strong_text'] ?? ''); ?></p>
                 </details>
                 <details>
-                    <summary>Use unique passwords</summary>
-                    <p>Unique passwords are passwords that are different from each other. They are important because they help ensure that only authorized users have access to a system, and they prevent unauthorized access to sensitive information.</p>
+                    <summary><?= htmlspecialchars($other['pwd_unique_sum'] ?? 'Use unique passwords'); ?></summary>
+                    <p><?= htmlspecialchars($other['pwd_unique_text'] ?? ''); ?></p>
                 </details>
                 <details>
-<summary>password managers</summary>
-<p>
-<ul>
-  <li><a href="https://www.1password.com" target="_blank">1Password</a></li>
-  <li><a href="https://bitwarden.com" target="_blank">Bitwarden</a></li>
-  <li><a href="https://www.dashlane.com" target="_blank">Dashlane</a></li>
-  <li><a href="https://www.lastpass.com" target="_blank">LastPass</a></li>
-  <li><a href="https://www.nordpass.com" target="_blank">NordPass</a></li>
-  <li><a href="https://www.roboform.com" target="_blank">RoboForm</a></li>
-  <li><a href="https://www.enpass.io" target="_blank">Enpass</a></li>
-  <li><a href="https://keepersecurity.com" target="_blank">Keeper</a></li>
-  <li><a href="https://www.intuitivepassword.com" target="_blank">Intuitive Password</a></li>
-  <li><a href="https://www.stickypassword.com" target="_blank">Sticky Password</a></li>
-</ul>
-</p>
-</details>
-
-                <details>
-<summary>password generators</summary>
-                <ul>
-                    <!-- Verified and updated list -->
-                    <li><a href="https://1password.com/password-generator/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">1Password Generator</a></li>
-                    <li><a href="https://www.avast.com/random-password-generator" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">Avast Password Generator</a></li>
-                    <li><a href="https://bitwarden.com/password-generator/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">Bitwarden Password Generator</a></li>
-                    <li><a href="https://passwords-generator.org/bulk" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">Bulk Password Generator</a></li>
-                    <li><a href="https://www.dashlane.com/features/password-generator" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">Dashlane Password Generator</a></li>
-                    <li><a href="https://www.expressvpn.com/password-generator" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">ExpressVPN Password Generator</a></li>
-                    <li><a href="https://www.keepersecurity.com/password-generator" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">Keeper Password Generator</a></li>
-                    <li><a href="https://www.lastpass.com/password-generator" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">LastPass Password Generator</a></li>
-                    <li><a href="https://manytools.org/network/password-generator/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">ManyTools Password Generator</a></li>
-                    <li><a href="https://nordpass.com/password-generator/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">NordPass Password Generator</a></li>
-                    <li><a href="https://norton.com/password-generator" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">Norton Password Generator</a></li>
-                    <li><a href="https://passwordsgenerator.net/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">PasswordsGenerator.net</a></li>
-                    <li><a href="https://www.roboform.com/password-generator" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">RoboForm Password Generator</a></li>
-                </ul>
-</details>
-
-                <details>
-                    <summary>Password vaults</summary>
-                    <p></p>
+                    <summary><?= htmlspecialchars($other['pwd_mgr_sum'] ?? 'password managers'); ?></summary>
+                    <ul class="mgr-list">
+                        <?php foreach ($pwd_managers as $mgr) : 
+                            $href = htmlspecialchars($links[$mgr['key']] ?? '#');
+                        ?>
+                            <li><a href="<?= $href; ?>" target="_blank" rel="noopener noreferrer"><?= htmlspecialchars($mgr['name']); ?></a></li>
+                        <?php endforeach; ?>
+                    </ul>
                 </details>
-            </ul>
+                <details>
+                    <summary><?= htmlspecialchars($other['pwd_gen_sum'] ?? 'password generators'); ?></summary>
+                    <ul class="gen-list">
+                        <?php foreach ($pwd_generators as $gen) : 
+                            $href = htmlspecialchars($links[$gen['key']] ?? '#');
+                        ?>
+                            <li><a href="<?= $href; ?>" target="_blank" rel="noopener noreferrer"><?= htmlspecialchars($gen['name']); ?></a></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </details>
+                <details>
+                    <summary><?= htmlspecialchars($other['pwd_vault_sum'] ?? 'Password vaults'); ?></summary>
+                    <p><?= htmlspecialchars($other['pwd_vault_text'] ?? ''); ?></p>
+                </details>
+            </div>
             <div class="service-link">
-                <a href="../offered_security/passwords" title="Learn more about our backup services" class="button">
-                    <i class="fas fa-arrow-right"></i>Explore more
+                <a href="../offered_security/passwords" title="<?= htmlspecialchars($other['pwd_btn'] ?? 'Explore more'); ?>" class="button">
+                    <i class="fas fa-arrow-right"></i> <?= htmlspecialchars($other['pwd_btn'] ?? 'Explore more'); ?>
                 </a>
             </div>
         </div>

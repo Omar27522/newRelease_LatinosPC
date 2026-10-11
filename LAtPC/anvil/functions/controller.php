@@ -19,6 +19,6 @@ include_once __DIR__ . '/_Jesucristo.php';
 
 include_once __DIR__ . '/tutorial.php';
 
-include_once __DIR__ . '/fullPageTemplate.php';
+include_once __DIR__ .'../fullPageTemplate.php';
 
 ?>
