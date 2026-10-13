@@ -1,6 +1,7 @@
 <?php
 
 function offered_security($sub_route){
+    global $page, $keywords, $description, $sub_route;
 
 	switch ($sub_route) {
 		case 'best_practices':
@@ -18,14 +19,14 @@ function offered_security($sub_route){
 		case 'passwords':
 			$page = new Structure('../../', 'english', 'Passwords');
 			$keywords = 'password security, strong passwords, password management, password manager, secure passwords, password best practices, password protection, password recovery, password reset, two-factor authentication, password vault, credential management, password tips, account security, password strength';
-			$description = 'Password security services and guidance in Pomona, CA. Learn to create strong passwords, use password managers, and protect your accounts. offered help with password setup, recovery, and implementing best practices for maximum security.';
+			$description = 'Password security services and guidance in Pomona, CA. Learn to create strong passwords, use password managers, and protect your accounts. Expert help with password setup, recovery, and implementing best practices for maximum security.';
 			include 'security/security.php';
 			break;
 
 		case '':
 			$page = new Structure('../../', 'english', 'Security');
-			$keywords = 'Security Keywords';
-			$description = 'Security Description';
+			$keywords = 'computer security, cybersecurity Pomona, PC protection, network security, digital safety, malware prevention, data privacy, secure computing';
+			$description = 'Expert computer security and cybersecurity services in Pomona, CA. Safeguard your devices, data, and network with proven protection measures from LatinosPC.';
 			include 'security/security.php';
 			break;
 		default:
@@ -35,8 +36,10 @@ function offered_security($sub_route){
 }
 
 function seguridad_subninistrable($sub_route){
-		switch ($sub_route) {
-	case '':
+    global $page, $keywords, $description, $sub_route;
+
+	switch ($sub_route) {
+		case '':
 			$page = new Structure('../../', 'español', 'Seguridad');
 			$keywords = 'password security, strong passwords, password management, password manager, secure passwords, password best practices, password protection, password recovery, password reset, two-factor authentication, password vault, credential management, password tips, account security, password strength';
 			$description = 'Password security services and guidance in Pomona, CA. Learn to create strong passwords, use password managers, and protect your accounts. offered help with password setup, recovery, and implementing best practices for maximum security.';
@@ -58,6 +61,8 @@ function seguridad_subninistrable($sub_route){
 			break;
 
 		case 'clave':
+		case 'contrasenas':
+		case 'contraseñas':
 			$page = new Structure('../../', 'español', 'Contraseñas');
 			$keywords = 'password security, strong passwords, password management, password manager, secure passwords, password best practices, password protection, password recovery, password reset, two-factor authentication, password vault, credential management, password tips, account security, password strength';
 			$description = 'Password security services and guidance in Pomona, CA. Learn to create strong passwords, use password managers, and protect your accounts. offered help with password setup, recovery, and implementing best practices for maximum security.';

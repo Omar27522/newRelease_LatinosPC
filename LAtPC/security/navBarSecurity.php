@@ -1,8 +1,20 @@
 <?php
-global $page, $sub_route;
+global $page, $sub_route, $main_route;
 
-$lang = (isset($page) && method_exists($page, 'getLang')) ? $page->getLang() : 'en';
-$basePath = ($lang == 'en') ? 'offered_security' : 'seguridad';
+// Robust language detection
+$isSpanish = false;
+if (isset($page) && method_exists($page, 'getLang') && $page->getLang() === 'es-419') {
+    $isSpanish = true;
+} elseif (isset($page) && isset($page->lang) && in_array(strtolower($page->lang), ['español', 'es', 'es-419'])) {
+    $isSpanish = true;
+} elseif (($main_route ?? '') === 'seguridad') {
+    $isSpanish = true;
+} elseif (str_contains($_SERVER['REQUEST_URI'] ?? '', 'seguridad')) {
+    $isSpanish = true;
+}
+
+$lang = $isSpanish ? 'es-419' : 'en';
+$basePath = $isSpanish ? 'seguridad' : 'offered_security';
 $dir = (isset($page) && method_exists($page, 'getDir')) ? $page->getDir() : '../../';
 
 $navItems = [
@@ -20,28 +32,36 @@ $navItems = [
     ]
 ];
 
-$items = $navItems[$lang] ?? $navItems['en'];
+$items = $navItems[$lang];
 $currentTitle = (isset($page) && method_exists($page, 'getTitle')) ? $page->getTitle() : '';
+$currentSub = $sub_route ?? '';
 ?>
 
-<nav class="security-breadcrumbs" aria-label="Security Navigation">
+<nav class="security-breadcrumbs" aria-label="<?= $isSpanish ? 'Navegación de Seguridad' : 'Security Navigation' ?>">
     <ul>
         <?php foreach ($items as $slug => $data): ?>
             <?php
                 $label = $data['label'];
                 $icon = $data['icon'];
-                // Match active state by slug or page title
+
+                // Active state detection
                 $isActive = false;
-                if ($slug === '' && in_array($currentTitle, ['Security', 'Seguridad'])) {
-                    $isActive = true;
-                } elseif ($slug === 'best_practices' && in_array($currentTitle, ['Best Practices', 'Mejores Prácticas'])) {
-                    $isActive = true;
-                } elseif (($slug === 'passwords' || $slug === 'clave') && in_array($currentTitle, ['Passwords', 'Contraseñas'])) {
-                    $isActive = true;
-                } elseif (($slug === 'backups' || $slug === 'respaldos') && in_array($currentTitle, ['Backups', 'Respaldos'])) {
-                    $isActive = true;
-                } elseif (($sub_route ?? '') === $slug) {
-                    $isActive = true;
+                if ($slug === '') {
+                    if (($currentSub === '' || $currentSub === null) && in_array($currentTitle, ['Security', 'Seguridad'])) {
+                        $isActive = true;
+                    }
+                } elseif ($slug === 'best_practices' || $slug === 'mejores_practicas') {
+                    if ($currentSub === $slug || in_array($currentTitle, ['Best Practices', 'Mejores Prácticas'])) {
+                        $isActive = true;
+                    }
+                } elseif ($slug === 'passwords' || $slug === 'clave') {
+                    if ($currentSub === $slug || in_array($currentSub, ['passwords', 'clave', 'contrasenas', 'contraseñas']) || in_array($currentTitle, ['Passwords', 'Contraseñas'])) {
+                        $isActive = true;
+                    }
+                } elseif ($slug === 'backups' || $slug === 'respaldos') {
+                    if ($currentSub === $slug || in_array($currentTitle, ['Backups', 'Respaldos'])) {
+                        $isActive = true;
+                    }
                 }
 
                 $activeClass = $isActive ? 'active' : '';
