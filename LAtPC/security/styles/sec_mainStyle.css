@@ -1,0 +1,380 @@
+/* ==========================================================================
+   LatinosPC Security - Core Stylesheet (sec_mainStyle.css)
+   Hero banner, breadcrumbs navigation, security checklist & shared utilities
+   ========================================================================== */
+
+/* ── Breadcrumbs Navigation Bar ── */
+.security-breadcrumbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.85rem 1.6rem;
+    margin: 1.5rem auto 2.2rem;
+    width: fit-content;
+    max-width: 95%;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(14, 165, 233, 0.28);
+    border-radius: 50px;
+    box-shadow: 0 8px 24px rgba(10, 25, 47, 0.08), 0 2px 6px rgba(14, 165, 233, 0.08);
+}
+
+.security-breadcrumbs ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.security-breadcrumbs li {
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.security-breadcrumbs li a {
+    text-decoration: none;
+    color: #1e293b;
+    padding: 0.5rem 1.25rem;
+    border-radius: 26px;
+    transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    border: 1px solid transparent;
+}
+
+.security-breadcrumbs li a:hover {
+    background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(2, 132, 199, 0.35);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.security-breadcrumbs li:not(:last-child)::after {
+    content: "\203A";
+    margin: 0 0.4rem 0 0.5rem;
+    color: #94a3b8;
+    font-size: 1.35rem;
+    line-height: 1;
+}
+
+.security-breadcrumbs li a.active {
+    font-weight: 800;
+    color: #0284c7;
+    background: rgba(2, 132, 199, 0.12);
+    border-color: rgba(2, 132, 199, 0.3);
+    box-shadow: 0 3px 10px rgba(2, 132, 199, 0.15);
+}
+
+/* ── Hero Banner: High-Impact Cyber Presence ── */
+.sec-hero {
+    background:
+        radial-gradient(circle at 86% 45%, rgba(56, 189, 248, 0.45) 0%, rgba(30, 58, 95, 0.3) 40%, transparent 70%),
+        radial-gradient(circle at 15% 90%, rgba(14, 165, 233, 0.2) 0%, transparent 55%),
+        linear-gradient(135deg, #050e1d 0%, #0a1e38 35%, #0f2e52 70%, #154374 100%);
+    color: #ffffff;
+    border-radius: 24px;
+    padding: 3.5rem 3rem 3rem;
+    margin: 1.5rem auto 2.5rem;
+    max-width: 1200px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 24px 64px rgba(5, 14, 29, 0.35), 0 0 0 1px rgba(56, 189, 248, 0.2);
+}
+
+.sec-hero::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 360px;
+    height: 360px;
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.sec-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -120px;
+    left: -80px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(14, 165, 233, 0.16) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.sec-hero-inner {
+    display: flex;
+    align-items: center;
+    gap: 2.2rem;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    max-width: 680px;
+}
+
+.sec-shield {
+    font-size: 5rem;
+    animation: shieldPulse 2.6s ease-in-out infinite;
+    filter: drop-shadow(0 0 24px rgba(56, 189, 248, 0.65)) drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+@keyframes shieldPulse {
+    0%, 100% {
+        transform: scale(1) rotate(-2deg);
+        filter: drop-shadow(0 0 20px rgba(56, 189, 248, 0.55));
+    }
+    50% {
+        transform: scale(1.08) rotate(2deg);
+        filter: drop-shadow(0 0 32px rgba(56, 189, 248, 0.85));
+    }
+}
+
+.sec-hero h1 {
+    color: #ffffff !important;
+    font-size: clamp(2rem, 4.5vw, 3rem);
+    margin: 0 0 0.5rem;
+    letter-spacing: -0.035em;
+    font-weight: 900;
+    line-height: 1.15;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.sec-hero p {
+    color: rgba(241, 245, 249, 0.9);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.sec-hero .sec-meta {
+    font-size: 0.84rem;
+    color: rgba(203, 213, 225, 0.75);
+    margin-top: 0.85rem;
+}
+
+.sec-hero .sec-meta a {
+    color: #38bdf8;
+    text-decoration: underline;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.sec-hero .sec-meta a:hover {
+    color: #ffffff;
+}
+
+.sec-hero-bg-art {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 460px;
+    max-width: 45%;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.95;
+    filter: contrast(1.08) brightness(1.05);
+    mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 55%, rgba(0, 0, 0, 0) 88%);
+    -webkit-mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 55%, rgba(0, 0, 0, 0) 88%);
+}
+
+.sec-hero-bg-art img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 860px) {
+    .sec-hero {
+        padding: 2.5rem 1.8rem;
+    }
+    .sec-hero-bg-art {
+        opacity: 0.18;
+        width: 280px;
+        max-width: 65%;
+        right: -15px;
+    }
+    .sec-hero-inner {
+        max-width: 100%;
+    }
+}
+
+/* ── Section Titles: Editorial & Authoritative ── */
+.sec-section-title {
+    font-size: clamp(1.4rem, 2.8vw, 1.9rem);
+    font-weight: 850;
+    color: #0f172a;
+    letter-spacing: -0.03em;
+    margin: 3.2rem 0 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.sec-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    border-radius: 99px;
+    background: linear-gradient(90deg, #0284c7 0%, rgba(2, 132, 199, 0) 100%);
+}
+
+.sec-section-title span {
+    font-size: 1.6rem;
+}
+
+/* ── Checklist: High-Presence Floating Tiles ── */
+.sec-checklist {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.25rem;
+    margin: 2rem 0 3rem;
+}
+
+.sec-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 1.4rem 1.5rem;
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 10px 24px -2px rgba(15, 23, 42, 0.06);
+    display: flex;
+    gap: 1.1rem;
+    align-items: flex-start;
+    transition: all 0.26s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+}
+
+.sec-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, #0284c7 0%, #38bdf8 100%);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.sec-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(2, 132, 199, 0.35);
+    box-shadow: 0 16px 36px -4px rgba(15, 30, 60, 0.12), 0 4px 12px rgba(2, 132, 199, 0.08);
+}
+
+.sec-card:hover::before {
+    opacity: 1;
+}
+
+.sec-card-num {
+    background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+    color: #0369a1;
+    font-weight: 800;
+    font-size: 0.82rem;
+    letter-spacing: 0.02em;
+    border-radius: 10px;
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.1rem;
+    flex-shrink: 0;
+    box-shadow: 0 2px 6px rgba(2, 132, 199, 0.15);
+}
+
+.sec-card-icon {
+    font-size: 1.55rem;
+    flex-shrink: 0;
+    margin-top: 0.05rem;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.sec-card p {
+    margin: 0;
+    font-size: 0.94rem;
+    color: #334155;
+    line-height: 1.65;
+}
+
+/* ── Callout / Tip Box ── */
+.sec-tip {
+    background: linear-gradient(135deg, #f8fafc 0%, #f0fdf4 100%);
+    border: 1px solid rgba(34, 197, 94, 0.25);
+    border-left: 5px solid #16a34a;
+    border-radius: 16px;
+    padding: 1.3rem 1.6rem;
+    margin: 1.8rem 0;
+    font-size: 0.95rem;
+    color: #1e293b;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+    line-height: 1.65;
+}
+
+.sec-tip strong {
+    color: #0f172a;
+}
+
+.sec-tip a {
+    color: #0284c7;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.sec-tip a:hover {
+    color: #0369a1;
+}
+
+/* ── Utilities ── */
+.sec-divider {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 3rem 0;
+}
+
+.back-top-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1.2rem 0 0.8rem;
+    padding: 0.65rem 1.4rem;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #ffffff !important;
+    border-radius: 99px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    text-decoration: none !important;
+    transition: all 0.24s ease;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.25);
+}
+
+.back-top-btn:hover {
+    background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(2, 132, 199, 0.35);
+}

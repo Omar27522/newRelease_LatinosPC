@@ -14,8 +14,8 @@ global $content, $key;
 <div class="spacer_shape"><h2><?= $content[2231][$key] ?? ''; ?></h2>
 <p>
 <?= $content[2232][$key] ?? ''; ?>
-<a rel="example_group" href="https://latinospc.com/images/hardware/hw/controllers/orchestra.jpg" title="Controllers Orchestra" style="float:left;">
-    <img src="https://latinospc.com/images/hardware/hw/controllers/orchestra.webp" alt="Orchestra" class="fl">
+<a rel="example_group" href="../images/hardware/hw/controllers/orchestra.jpg" title="Controllers Orchestra" style="float:left;">
+    <img src="../images/hardware/hw/controllers/orchestra.webp" alt="Orchestra" class="fl">
 </a>
 <?= $content[2233][$key] ?? ''; ?></p>
 </div>
@@ -160,40 +160,40 @@ global $content, $key;
 <p class="modern_list ml2"><?= $content[2311][$key] ?? ''; ?></p><ul class="segment colms">
 <li><?= $content[2312][$key] ?? ''; ?></li>
 <li><?= $content[2313][$key] ?? ''; ?></li>
-<img src="https://latinospc.com/images/hardware/hw/controllers/orchestra.webp" class="push">
+<img src="../images/hardware/hw/controllers/orchestra.webp" class="push">
 <p class="modern_list ml2"><?= $content[2314][$key] ?? ''; ?></p>
 </ul>
 <div class="spacer"></div>
 <p class="modern_list ml2"><?= $content[2315][$key] ?? ''; ?></p><ul class="segment colms">
 <li><?= $content[2316][$key] ?? ''; ?></li>
 <li><?= $content[2317][$key] ?? ''; ?></li>
-<img src="https://latinospc.com/images/hardware/hw/controllers/orchestra.webp" class="push">
+<img src="../images/hardware/hw/controllers/orchestra.webp" class="push">
 <p class="modern_list ml2"><?= $content[2318][$key] ?? ''; ?></p>
 </ul>
 <div class="spacer"></div>
-<p class="modern_list ml2"><?= $content[2319][$key] ?? ''; ?></p><ul class="segment colms"><img src="https://latinospc.com/images/hardware/hw/controllers/orchestra.webp" class="push">
+<p class="modern_list ml2"><?= $content[2319][$key] ?? ''; ?></p><ul class="segment colms"><img src="../images/hardware/hw/controllers/orchestra.webp" class="push">
 <li><?= $content[2320][$key] ?? ''; ?></li>
-<img src="https://latinospc.com/images/hardware/hw/controllers/orchestra.webp" class="push">
+<img src="../images/hardware/hw/controllers/orchestra.webp" class="push">
 <p class="modern_list ml2"><?= $content[2321][$key] ?? ''; ?></p>
 </ul>
 <div class="spacer"></div>
-<p class="modern_list ml2"><?= $content[2322][$key] ?? ''; ?></p><ul class="segment colms"><img src="https://latinospc.com/images/hardware/hw/controllers/orchestra.webp" class="push">
-    <img src="https://latinospc.com/images/hardware/hw/controllers/orchestra.webp" class="push">
+<p class="modern_list ml2"><?= $content[2322][$key] ?? ''; ?></p><ul class="segment colms"><img src="../images/hardware/hw/controllers/orchestra.webp" class="push">
+    <img src="../images/hardware/hw/controllers/orchestra.webp" class="push">
 <li><?= $content[2323][$key] ?? ''; ?></li>
 <p class="modern_list ml2"><?= $content[2324][$key] ?? ''; ?></p>
 </ul>
 <div class="spacer"></div>
 <p class="modern_list ml2"><?= $content[2325][$key] ?? ''; ?></p><ul class="segment colms">
 <li><?= $content[2326][$key] ?? ''; ?></li>
-<img src="https://latinospc.com/images/hardware/hw/controllers/orchestra.webp" class="push">
-<img src="https://latinospc.com/images/hardware/hw/controllers/orchestra.webp" class="push">
+<img src="../images/hardware/hw/controllers/orchestra.webp" class="push">
+<img src="../images/hardware/hw/controllers/orchestra.webp" class="push">
 <p class="modern_list ml2"><?= $content[2327][$key] ?? ''; ?></p>
 </ul>
 <div class="spacer"></div>
 <p class="modern_list ml2"><?= $content[2328][$key] ?? ''; ?></p><ul class="segment colms">
-    <img src="https://latinospc.com/images/hardware/hw/controllers/orchestra.webp" class="push">
+    <img src="../images/hardware/hw/controllers/orchestra.webp" class="push">
     <li><?= $content[2329][$key] ?? ''; ?></li>
-    <a rel="example_group" href="https://latinospc.com/images/hardware/hw/controllers/orchestra.jpg"><img src="https://latinospc.com/images/hardware/hw/controllers/orchestra.webp" class="push"></a>
+    <a rel="example_group" href="../images/hardware/hw/controllers/orchestra.jpg"><img src="../images/hardware/hw/controllers/orchestra.webp" class="push"></a>
 <p class="modern_list ml2"><?= $content[2330][$key] ?? ''; ?></p>
 </ul>
 <div class="spacer"></div>

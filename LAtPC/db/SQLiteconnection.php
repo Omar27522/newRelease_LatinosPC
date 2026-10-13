@@ -63,6 +63,58 @@ if (isset($_GET['api']) || isset($_POST['api'])) {
         }
         exit;
     }
+
+    if ($apiAction === 'save') {
+        // Validate CSRF if provided
+        $clientCsrf = $_REQUEST['csrf_token'] ?? '';
+        if ($clientCsrf && (!isset($_SESSION['csrf_token']) || $clientCsrf !== $_SESSION['csrf_token'])) {
+            echo json_encode(['success' => false, 'error' => 'CSRF verification failed.']);
+            exit;
+        }
+
+        $id = !empty($_POST['id']) ? (int)$_POST['id'] : null;
+        $data = [
+            'page_id' => trim($_POST['page_id'] ?? ''),
+            'name' => trim($_POST['name'] ?? ''),
+            'section' => trim($_POST['section'] ?? ''),
+            'content' => trim($_POST['content'] ?? ''),
+            'contenido' => trim($_POST['contenido'] ?? '')
+        ];
+
+        if (!$data['page_id'] || !$data['name'] || !$data['content']) {
+            echo json_encode(['success' => false, 'error' => 'Please fill in all required fields (Page ID, Name, Content).']);
+            exit;
+        }
+
+        if ($id) {
+            $updated = $db->update($id, $data);
+            if ($updated) {
+                $savedItem = $db->getById($id);
+                echo json_encode([
+                    'success' => true,
+                    'action' => 'update',
+                    'item' => $savedItem,
+                    'message' => "Entry #{$savedItem['id']} updated successfully."
+                ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+            } else {
+                echo json_encode(['success' => false, 'error' => "Failed to update entry #$id."]);
+            }
+        } else {
+            $newId = $db->add($data);
+            if ($newId) {
+                $savedItem = $db->getById($newId);
+                echo json_encode([
+                    'success' => true,
+                    'action' => 'create',
+                    'item' => $savedItem,
+                    'message' => "Entry #$newId added successfully."
+                ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+            } else {
+                echo json_encode(['success' => false, 'error' => 'Failed to create new entry.']);
+            }
+        }
+        exit;
+    }
 }
 
 // --- CONTROLLER LOGIC ---

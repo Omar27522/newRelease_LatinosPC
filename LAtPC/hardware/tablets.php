@@ -16,9 +16,9 @@ global $content, $key;
 <section class="tablet">
     <a href="#scroll"><h2><?= $content[1196][$key] ?? ''; ?></h2></a>
     <p>
-    <a rel="example_group" href="https://latinospc.com/images/hardware/hw/tablets/sci-fi-tablet.jpg" title="Sci Fi Tablet"><img src="https://latinospc.com/images/hardware/hw/tablets/sci-fi-tablet.webp"  height="100px" alt="Sci-Fi device" class="fl"></a>
+    <a rel="example_group" href="../images/hardware/hw/tablets/sci-fi-tablet.jpg" title="Sci Fi Tablet"><img src="../images/hardware/hw/tablets/sci-fi-tablet.webp"  height="100px" alt="Sci-Fi device" class="fl"></a>
     <?= $content[1197][$key] ?? ''; ?> <a href="https://en.wikipedia.org/wiki/History_of_tablet_computers"><?= $content[1198][$key] ?? ''; ?></a> <?= $content[1199][$key] ?? ''; ?>
-    <a rel="example_group" href="https://latinospc.com/images/hardware/hw/tablets/dynabook.jpg" title="https://www.computerhistory.org/revolution/mobile-computing/18/315"><img src="https://latinospc.com/images/hardware/hw/tablets/dynabook.webp" height="100px" width="40%" alt="Alan Kay's Dynabook" class="rtl"></a>
+    <a rel="example_group" href="../images/hardware/hw/tablets/dynabook.jpg" title="https://www.computerhistory.org/revolution/mobile-computing/18/315"><img src="../images/hardware/hw/tablets/dynabook.webp" height="100px" width="40%" alt="Alan Kay's Dynabook" class="rtl"></a>
     <?= $content[1200][$key] ?? ''; ?><a href="https://blogthinkbig.com/dynabook-2/"><?= $content[1201][$key] ?? ''; ?></a><?= $content[1202][$key] ?? ''; ?> <a href="https://youtu.be/r36NNGzNvjo?si=Q0Knnb9ghDn5rRXI"><?= $content[1203][$key] ?? ''; ?></a> <?= $content[1204][$key] ?? ''; ?>
     </p>
 </section>
@@ -27,9 +27,9 @@ global $content, $key;
         <h2><?= $content[1205][$key] ?? ''; ?></h2>
     </a>
     <p>
-    <a rel="example_group" href="https://latinospc.com/images/hardware/hw/tablets/gridpad.jpg" title="GRiDPad"><img src="https://latinospc.com/images/hardware/hw/tablets/gridpad.webp" alt="GRiDPad" height="100px" title="GRiDPad" class="fl"></a>
+    <a rel="example_group" href="../images/hardware/hw/tablets/gridpad.jpg" title="GRiDPad"><img src="../images/hardware/hw/tablets/gridpad.webp" alt="GRiDPad" height="100px" title="GRiDPad" class="fl"></a>
     <?= $content[1206][$key] ?? ''; ?> <a href="https://oldcomputers.net/gridpad.html"><?= $content[1207][$key] ?? ''; ?></a> <?= $content[1208][$key] ?? ''; ?>
-    <a rel="example_group" href="https://latinospc.com/images/hardware/hw/tablets/windows_pen.jpg" title="Windows Pen"><img src="https://latinospc.com/images/hardware/hw/tablets/windows_pen.webp" alt="Windows Pen" height="100px" class="rtl"></a>
+    <a rel="example_group" href="../images/hardware/hw/tablets/windows_pen.jpg" title="Windows Pen"><img src="../images/hardware/hw/tablets/windows_pen.webp" alt="Windows Pen" height="100px" class="rtl"></a>
     <?= $content[1209][$key] ?? ''; ?> <a href="https://socket3.wordpress.com/2019/07/31/windows-for-pen-computing-1-0/"><?= $content[1210][$key] ?? ''; ?></a> <?= $content[1211][$key] ?? ''; ?>
     </p>
 </section>
@@ -42,7 +42,7 @@ global $content, $key;
     </a>
     <p>
     <?= $content[1213][$key] ?? ''; ?> <a href="https://appleinsider.com/articles/18/04/03/a-brief-history-of-the-ipad-apples-once-and-future-tablet"><?= $content[1214][$key] ?? ''; ?></a> <?= $content[1215][$key] ?? ''; ?>
-    <a rel="example_group" href="https://latinospc.com/images/hardware/hw/tablets/ipad1stgen.jpg"title="1st Gen iPad"><img src="https://latinospc.com/images/hardware/hw/tablets/ipad1stgen.jpg" alt="image" height="100px" title="1st Gen iPad" class="fl"></a>
+    <a rel="example_group" href="../images/hardware/hw/tablets/ipad1stgen.jpg"title="1st Gen iPad"><img src="../images/hardware/hw/tablets/ipad1stgen.jpg" alt="image" height="100px" title="1st Gen iPad" class="fl"></a>
     <?= $content[1216][$key] ?? ''; ?>
     </p>
 </section>
@@ -52,7 +52,7 @@ global $content, $key;
         <h2><?= $content[1217][$key] ?? ''; ?></h2>
     </a></legend>
     <p>
-        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/tablets/friends.jpg"><img src="https://latinospc.com/images/hardware/hw/tablets/friends.webp" alt="image" height="100px" alt="Tablet Friends" class="rtl"style="margin-left: 1.5px;"></a>
+        <a rel="example_group" href="../images/hardware/hw/tablets/friends.jpg"><img src="../images/hardware/hw/tablets/friends.webp" alt="image" height="100px" alt="Tablet Friends" class="rtl"style="margin-left: 1.5px;"></a>
     <?= $content[1218][$key] ?? ''; ?> <a href="https://en.wikipedia.org/wiki/IPad"><?= $content[1219][$key] ?? ''; ?></a>, <a href="https://www.gadgets360.com/tablets/all-brands"><?= $content[1220][$key] ?? ''; ?></a> <?= $content[1221][$key] ?? ''; ?> <a href="https://www.android.com/what-is-android/"><?= $content[1222][$key] ?? ''; ?></a> <?= $content[1223][$key] ?? ''; ?> <a href="https://www.microsoft.com/en-us/windows/windows-11"><?= $content[1224][$key] ?? ''; ?></a>. <h3><?= $content[1225][$key] ?? ''; ?></h3>
         <dl>
     <dt><strong>2011:</strong></dt>
@@ -133,7 +133,7 @@ global $content, $key;
             </p>
             </section>
         </article><section class="container">
-        <figure><a rel="example_group" href="https://latinospc.com/images/hardware/hw/tablets/ipad.jpg" title="https://unsplash.com/photos/a-tablet-computer-sitting-on-top-of-a-table-p1B6G7acvZ8"><img src="https://latinospc.com/images/hardware/hw/tablets/ipad.webp"alt="Ipad Series"></a><figcaption><?= $content[1281][$key] ?? ''; ?></figcaption></figure>
+        <figure><a rel="example_group" href="../images/hardware/hw/tablets/ipad.jpg" title="https://unsplash.com/photos/a-tablet-computer-sitting-on-top-of-a-table-p1B6G7acvZ8"><img src="../images/hardware/hw/tablets/ipad.webp"alt="Ipad Series"></a><figcaption><?= $content[1281][$key] ?? ''; ?></figcaption></figure>
         </section><article class="container">
             <section class="tablet">
             <p>
@@ -153,13 +153,13 @@ global $content, $key;
             <section class="tablet">
             <p>
                 <strong><a href="https://www.lenovo.com/il/en/tablets/android-tablets/yoga-tablet/YOGA-Tablet-2-Pro-1380/p/ZZITZTB0003?orgRef=https%253A%252F%252Fwww.google.com%252F#galleryPhoto"><?= $content[1287][$key] ?? ''; ?></a> (2014):</strong>
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/tablets/yoga.jpg" title="Lenovo Yoga Tablet 2 Pro 2014"><img src="https://latinospc.com/images/hardware/hw/tablets/yoga.webp" alt="Yoga Tablet 2 Pro" width="90px"class="fl"></a><?= $content[1288][$key] ?? ''; ?>
+                <a rel="example_group" href="../images/hardware/hw/tablets/yoga.jpg" title="Lenovo Yoga Tablet 2 Pro 2014"><img src="../images/hardware/hw/tablets/yoga.webp" alt="Yoga Tablet 2 Pro" width="90px"class="fl"></a><?= $content[1288][$key] ?? ''; ?>
             </p>
             </section>
             <section class="tablet">
             <p>
                 <strong><a href="https://www.nvidia.com/content/newsletters/web/shield/shield-sept2014-web-v3.html"><?= $content[1289][$key] ?? ''; ?></a> (2014):</strong>
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/tablets/shield.jpg" title="Nvidia SHIELD Tablet"><img src="https://latinospc.com/images/hardware/hw/tablets/shield.webp" alt="SHIELD Tablet"width="90px"class="rtl"></a><?= $content[1290][$key] ?? ''; ?>
+                <a rel="example_group" href="../images/hardware/hw/tablets/shield.jpg" title="Nvidia SHIELD Tablet"><img src="../images/hardware/hw/tablets/shield.webp" alt="SHIELD Tablet"width="90px"class="rtl"></a><?= $content[1290][$key] ?? ''; ?>
             </p>
             </section>
         </article>
@@ -167,13 +167,13 @@ global $content, $key;
             <section class="tablet">
             <p>
                 <strong><a href="https://www.dell.com/en-us/blog/venue-8-7000-innovates-with-software-as-well-as-hardware/"><?= $content[1291][$key] ?? ''; ?></a> (2014):</strong>
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/tablets/venue8.jpg" title="Dell Venue 8 7000"><img src="https://latinospc.com/images/hardware/hw/tablets/venue8.webp" alt="Venue 8 7000" width="90px" class="rtl"></a><?= $content[1292][$key] ?? ''; ?>
+                <a rel="example_group" href="../images/hardware/hw/tablets/venue8.jpg" title="Dell Venue 8 7000"><img src="../images/hardware/hw/tablets/venue8.webp" alt="Venue 8 7000" width="90px" class="rtl"></a><?= $content[1292][$key] ?? ''; ?>
             </p>
             </section>
             <section class="tablet">
             <p>
                 <strong><a href="https://www.sony.com/en/SonyInfo/design/gallery/XperiaTabletZ/"><?= $content[1293][$key] ?? ''; ?></a> (2013):</strong>
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/tablets/xperiatabletz.jpg" title="Sony Xperia Tablet Z"><img src="https://latinospc.com/images/hardware/hw/tablets/xperiatabletz.webp" alt="Xperia Tablet Z" width="90px"class="fl"></a><?= $content[1294][$key] ?? ''; ?>
+                <a rel="example_group" href="../images/hardware/hw/tablets/xperiatabletz.jpg" title="Sony Xperia Tablet Z"><img src="../images/hardware/hw/tablets/xperiatabletz.webp" alt="Xperia Tablet Z" width="90px"class="fl"></a><?= $content[1294][$key] ?? ''; ?>
             </p>
             </section>
         </article>
@@ -181,7 +181,7 @@ global $content, $key;
             <section class="tablet">
             <p>
                 <strong><a href="https://www.oneplus.com/us/oneplus-pad"><?= $content[1295][$key] ?? ''; ?></a> (2023):</strong>
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/tablets/onepluspad.jpg" title="OnePlus Pad"><img src="https://latinospc.com/images/hardware/hw/tablets/onepluspad.webp" alt="OnePlus Pad" width="90px" class="rtl"></a><?= $content[1296][$key] ?? ''; ?> <a href="https://www.qualcomm.com/products/mobile/snapdragon/smartphones/snapdragon-8-series-mobile-platforms/snapdragon-8-gen-1-mobile-platform"><?= $content[1297][$key] ?? ''; ?></a><?= $content[1298][$key] ?? ''; ?>
+                <a rel="example_group" href="../images/hardware/hw/tablets/onepluspad.jpg" title="OnePlus Pad"><img src="../images/hardware/hw/tablets/onepluspad.webp" alt="OnePlus Pad" width="90px" class="rtl"></a><?= $content[1296][$key] ?? ''; ?> <a href="https://www.qualcomm.com/products/mobile/snapdragon/smartphones/snapdragon-8-series-mobile-platforms/snapdragon-8-gen-1-mobile-platform"><?= $content[1297][$key] ?? ''; ?></a><?= $content[1298][$key] ?? ''; ?>
             </p>
             </section>
         </article>
@@ -201,7 +201,7 @@ global $content, $key;
             </p>
             </section>
         </article>
-        <figure><a rel="example_group" href="https://latinospc.com/images/hardware/hw/tablets/surface.jpg" title="Microsoft Surface"><img src="https://latinospc.com/images/hardware/hw/tablets/surface.webp" alt="Surface Series"></a><figcaption><?= $content[1304][$key] ?? ''; ?></figcaption></figure>
+        <figure><a rel="example_group" href="../images/hardware/hw/tablets/surface.jpg" title="Microsoft Surface"><img src="../images/hardware/hw/tablets/surface.webp" alt="Surface Series"></a><figcaption><?= $content[1304][$key] ?? ''; ?></figcaption></figure>
         <article class="container">
         <section class="tablet">
             <p>
@@ -230,7 +230,7 @@ global $content, $key;
                 <?= $content[1313][$key] ?? ''; ?>
             </p>
             </section></article>
-            <section class="container"><figure><a rel="example_group" href="https://latinospc.com/images/hardware/hw/tablets/galaxytab.jpg" title="https://www.samsung.com/us/mobile/tablets/galaxy-tab-s/"><img src="https://latinospc.com/images/hardware/hw/tablets/galaxytab.webp" alt="Galaxy Tab Series"></a><figcaption><?= $content[1314][$key] ?? ''; ?></figcaption></figure>
+            <section class="container"><figure><a rel="example_group" href="../images/hardware/hw/tablets/galaxytab.jpg" title="https://www.samsung.com/us/mobile/tablets/galaxy-tab-s/"><img src="../images/hardware/hw/tablets/galaxytab.webp" alt="Galaxy Tab Series"></a><figcaption><?= $content[1314][$key] ?? ''; ?></figcaption></figure>
         </section>
         </details>
     <details><summary class="card2"><?= $content[1315][$key] ?? ''; ?></summary>
@@ -249,7 +249,7 @@ global $content, $key;
             </section>
         </article>
         <section class="container">
-            <figure><a rel="example_group" href="https://latinospc.com/images/hardware/hw/tablets/amazonfire.jpg" title="Amazon Fire Tablet lineup"><img src="https://latinospc.com/images/hardware/hw/tablets/amazonfire.webp"alt="Amazon Fire Tablet lineup"></a><figcaption><?= $content[1320][$key] ?? ''; ?></figcaption></figure>
+            <figure><a rel="example_group" href="../images/hardware/hw/tablets/amazonfire.jpg" title="Amazon Fire Tablet lineup"><img src="../images/hardware/hw/tablets/amazonfire.webp"alt="Amazon Fire Tablet lineup"></a><figcaption><?= $content[1320][$key] ?? ''; ?></figcaption></figure>
         </section>
         <article class="container">
             <section class="tablet">
@@ -282,7 +282,7 @@ global $content, $key;
             </section>
         </article>
         <section class="container">
-            <figure><a rel="example_group" href="https://latinospc.com/images/hardware/hw/tablets/googletablet.jpg" title="Pixel Tablet 2023"><img src="https://latinospc.com/images/hardware/hw/tablets/googletablet.webp"alt="Google Pixel Tablet"></a><figcaption><?= $content[1330][$key] ?? ''; ?></figcaption></figure>
+            <figure><a rel="example_group" href="../images/hardware/hw/tablets/googletablet.jpg" title="Pixel Tablet 2023"><img src="../images/hardware/hw/tablets/googletablet.webp"alt="Google Pixel Tablet"></a><figcaption><?= $content[1330][$key] ?? ''; ?></figcaption></figure>
         </section>
         <article class="container">
             <section class="tablet">
@@ -380,10 +380,10 @@ global $content, $key;
 <p><span style="font-size: xx-large;font-weight: bold;color:#007bff"><?= $content[1377][$key] ?? ''; ?></span><?= $content[1378][$key] ?? ''; ?> <a href="https://www.linkedin.com/pulse/exploring-versatile-applications-future-trends-stylus-%E5%BB%BA-%E9%82%93-habwc#:~:text=Enhanced%20Sensitivity%20and%20Precision%3A%20Future,between%20traditional%20and%20digital%20mediums."><?= $content[1379][$key] ?? ''; ?></a> <?= $content[1380][$key] ?? ''; ?></p>
 <p class="tablet"><?= $content[1381][$key] ?? ''; ?> <a href="https://www.sap.com/products/scm/industry-4-0/what-is-augmented-reality.html#:~:text=Augmented%20reality%20definition,real%2Dlife%20environments%20and%20objects."><?= $content[1382][$key] ?? ''; ?></a> <?= $content[1383][$key] ?? ''; ?> <a href="https://www.techtarget.com/whatis/definition/virtual-reality"><?= $content[1384][$key] ?? ''; ?></a><?= $content[1385][$key] ?? ''; ?></p>
 </section><section class="trend">
-<a rel="example_group" href="https://latinospc.com/images/hardware/hw/tablets/arvr.jpg"title="AR VR Tablets" class="poss"><img src="https://latinospc.com/images/hardware/hw/tablets/arvr.webp" alt="AR VR Tablets" width="100px"></a><?= $content[1386][$key] ?? ''; ?>
-<a rel="example_group" href="https://latinospc.com/images/hardware/hw/tablets/futuretablet.jpg"title="Future Tablets"><img src="https://latinospc.com/images/hardware/hw/tablets/futuretablet.webp" alt="Future of Tablets"  width="100px"></a><?= $content[1387][$key] ?? ''; ?>
-<a rel="example_group" href="https://latinospc.com/images/hardware/hw/tablets/futuretablet2.jpg"title="Future of Tablets" class="poss"><img src="https://latinospc.com/images/hardware/hw/tablets/futuretablet2.webp" alt="Future of tablets" width="100px"></a><?= $content[1388][$key] ?? ''; ?>
-<a rel="example_group" href="https://latinospc.com/images/hardware/hw/tablets/futuretablet3.jpg"title="Tablets" class="poss"><img src="https://latinospc.com/images/hardware/hw/tablets/futuretablet3.webp" alt="Tablets" width="100px"></a>
+<a rel="example_group" href="../images/hardware/hw/tablets/arvr.jpg"title="AR VR Tablets" class="poss"><img src="../images/hardware/hw/tablets/arvr.webp" alt="AR VR Tablets" width="100px"></a><?= $content[1386][$key] ?? ''; ?>
+<a rel="example_group" href="../images/hardware/hw/tablets/futuretablet.jpg"title="Future Tablets"><img src="../images/hardware/hw/tablets/futuretablet.webp" alt="Future of Tablets"  width="100px"></a><?= $content[1387][$key] ?? ''; ?>
+<a rel="example_group" href="../images/hardware/hw/tablets/futuretablet2.jpg"title="Future of Tablets" class="poss"><img src="../images/hardware/hw/tablets/futuretablet2.webp" alt="Future of tablets" width="100px"></a><?= $content[1388][$key] ?? ''; ?>
+<a rel="example_group" href="../images/hardware/hw/tablets/futuretablet3.jpg"title="Tablets" class="poss"><img src="../images/hardware/hw/tablets/futuretablet3.webp" alt="Tablets" width="100px"></a>
 </section><section class="container">
 <p><?= $content[1389][$key] ?? ''; ?></p>
 <p class="tablet trend"><?= $content[1390][$key] ?? ''; ?></p>
@@ -392,13 +392,13 @@ global $content, $key;
 
 <article class="article fullbar"><section>
     <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ -->
-    <p class="container tablet"><a rel="example_group" href="https://latinospc.com/images/hardware/hw/tablets/usa.jpg"><img src="https://latinospc.com/images/hardware/hw/tablets/usa.webp" alt="Tablet Market" class="fl"></a>
+    <p class="container tablet"><a rel="example_group" href="../images/hardware/hw/tablets/usa.jpg"><img src="../images/hardware/hw/tablets/usa.webp" alt="Tablet Market" class="fl"></a>
     <?= $content[1391][$key] ?? ''; ?>
 </p></section><section>
-<p class="container tablet"><a rel="example_group" href="https://latinospc.com/images/hardware/hw/tablets/america.jpg"><img src="https://latinospc.com/images/hardware/hw/tablets/america.webp" alt="Tablet Market" class="rtl"></a>
+<p class="container tablet"><a rel="example_group" href="../images/hardware/hw/tablets/america.jpg"><img src="../images/hardware/hw/tablets/america.webp" alt="Tablet Market" class="rtl"></a>
     <?= $content[1392][$key] ?? ''; ?>
 </p></section><section>
-<p class="container tablet"><a rel="example_group" href="https://latinospc.com/images/hardware/hw/tablets/world.jpg"><img src="https://latinospc.com/images/hardware/hw/tablets/world.webp" alt="Tablet Market" class="fl"></a>
+<p class="container tablet"><a rel="example_group" href="../images/hardware/hw/tablets/world.jpg"><img src="../images/hardware/hw/tablets/world.webp" alt="Tablet Market" class="fl"></a>
 <?= $content[1393][$key] ?? ''; ?>
     </p></section>
 

@@ -1,135 +1,171 @@
-# Hardware Migration Roadmap
+# Progressive High-Resolution Image Management Roadmap
 
-This document outlines the systematic process to migrate all remaining hardware page contents into the SQLite database (`laTpc.db`), resolving language translation issues and establishing a clean, unified template system.
+This roadmap establishes the site-wide architecture to mirror and optimize the image management system modeled in [`_JesusChrist/_Apostles/_Paul.php`](file:///c:/Users/Laptop/Documents/newRelease_LatinosPC/LAtPC/_JesusChrist/_Apostles/_Paul.php).
 
-## 1. Database Schema Guidelines
-For each hardware part, the database entries must follow these rules:
-* **Page ID**: Always set to `'hardware'`.
-* **Unique Names**: Every entry must have a unique `name` prefixed with the part's name to avoid collisions:
-  - `ram_...` for RAM
-  - `gpu_...` for GPU
-  - `motherboard_...` for Motherboard
-  - `chassis_...` for Chassis, etc.
-* **HTML Element Mapping (Section)**: The `section` column must store the tag name or layout hint for humans (e.g. `heading`, `paragraph`, `span`, `list-item`, `anchor`, `button`).
-
-## 2. Order of Migration (The Hardware Parts)
-For each part, follow the checklist to extract, translate, seed, and refactor:
-
-- [x] **RAM** (`ram.php`)
-- [x] **GPU** (`gpu.php`)
-- [x] **Motherboard** (`motherboard.php`)
-- [x] **Power Supply** (`powerSupply.php`)
-- [x] **Storage** (`storage.php`)
-- [x] **Chassis** (`chassis.php`)
-- [x] **Coolers** (`coolers.php`)
-- [x] **Portable Memory** (`portableMemory.php`)
+The goal is to serve **ultra-lightweight, high-speed thumbnails on initial page load** (sub-10 KB), deferring the request and rendering of **high-resolution images until the user explicitly clicks on the image**, opening an interactive dialog/carousel modal with direct access to master original assets.
 
 ---
 
-## 3. Migration Workflow Checklist (Per File)
+## 1. System Architecture: The 3-Tier Image Model
 
-For each hardware part file (e.g., `hardware/ram.php`):
+Based on the benchmark in [`_Paul.php`](file:///c:/Users/Laptop/Documents/newRelease_LatinosPC/LAtPC/_JesusChrist/_Apostles/_Paul.php) (e.g., reducing `apostlePaul_Ferraz_Conversao_de_Sao_Paulo.jpg` from **5.2 MB** down to a **5.9 KB** thumbnail — a **99.9% initial payload reduction**), every image across LatinosPC will follow this 3-tier hierarchy:
 
-### Phase A: Extraction & Translation
-1. Open the target PHP file and identify all static English text, headings, links, and lists.
-2. Translate all extracted text accurately into Spanish.
-3. Prepare a Python seeding script inside the `.gemini/.../scratch/` directory (e.g. `seed_hardware_ram.py`).
-
-### Phase B: Database Seeding
-1. Run the Python seeding script to insert both the English (`text_en`) and Spanish (`text_es`) entries into `laTpc.db`.
-2. Ensure the seeding script tracks the starting index and total row count inserted.
-
-### Phase C: Code Refactoring
-1. Edit the target file to:
-   - Import the database helper function `databaseConnection('hardware');`.
-   - Remove the hardcoded text and arrays.
-   - Dynamically render the content using lookups from the global `$content` array (e.g., `echo $content[154]['text'];`).
-   - Retain the local PHP `$links` array format if applicable to keep external hyperlinks organized.
-
-### Phase D: Verification
-1. Open the page locally in both English and Spanish mode.
-2. Confirm all texts display correctly in the active language without any undefined variables or layout breakage.
+| Tier | Filename Pattern | Resolution / Specs | Format | Purpose | When Loaded |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Tier 1: Page Thumbnail** | `<name>_thumb.webp` | Compact thumbnail (70x70px or 120–150px, sub-10 KB) | WebP | Inline page preview / right-aligned float icon | **Initial page load** (instant paint, lightweight) |
+| **Tier 2: Modal High-Res** | `<name>.webp` | High-resolution image (900–1440px, 85% quality, 40–80 KB) | WebP | Full crisp display inside dialog / carousel modal | **Only upon clicking thumbnail** |
+| **Tier 3: Master Original** | `<name>.<ext>` (`.jpg`, `.png`) | Native uncompressed master asset (900–2500px) | Original | Full-fidelity downloadable link in modal wrapper | **Only when user clicks modal link** |
 
 ---
 
-# Software Migration Roadmap
+## 2. Component Markup Pattern (Mirroring `_Paul.php`)
 
-This roadmap tracks the step-by-step migration of the `software/` directory into the SQLite database (`laTpc.db`), unifying bilingual templates under `databaseConnection('software')`.
+### A. Inline Trigger Component (In Page Flow)
+Placed directly in the HTML where the image appears (e.g., inside card grids or articles):
 
-## 1. Database Schema Guidelines (Software)
-* **Page ID**: Always set to `'software'`.
-* **Unique Names**: Prefixed by module (e.g., `sw_main_heading`, `sw_blurb_...`, `sw_step_...`, `antivirus_...`).
-* **Side-by-Side Content**: English stored in `content`, Mexican Spanish stored in `contenido`.
+```html
+<div class="carousel-group [fl | img_rtl]">
+    <div class="multi-link-container">
+        <div class="thumbnail-container">
+            <span tabindex="0" class="linked-text-img" role="button" aria-label="Open image preview">
+                <img src="../../images/<module>/<name>_thumb.webp"
+                     alt="Descriptive Alt Text"
+                     loading="lazy"
+                     data-author="Attribution / Author Info"
+                     data-source-url="https://source-or-credit.url" />
+            </span>
+        </div>
+        <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
+    </div>
+</div>
+```
 
-## 2. Order of Migration (Software Directory)
-- [x] **Software Main Page** (`software/softwareContent.php`) - *(Database Seeded with 68 entries & Refactored)*
-- [x] **Anti-Virus** (`software/antivirus.php`) - *(Database Seeded with 48 entries & Refactored)*
-- [x] **Malware Cleaner** (`software/malware_cleaner.php`) - *(Database Seeded with 108 educational entries + 73 DB-driven bilingual threat links [offsets 501–681], Timeline Refactored into Clean Structured Architecture)*
-- [x] **Web Browsers** (`software/web_browsers.php`) - *(Database Seeded with 101 educational entries + 2 DB-driven bilingual links [offsets 802–904] & Refactored)*
-- [x] **Messaging** (`software/messaging.php`) - *(Database Seeded with 24 educational entries + 33 DB-driven bilingual links [offsets 745–801] & Refactored)*
-- [x] **Media** (`software/media.php`) - *(Database Seeded with 40 educational entries + 23 DB-driven bilingual format links [offsets 682–744] & Refactored)*
-- [x] **Runtimes** (`software/runtimes.php`) - *(Database Seeded with 49 educational entries + 4 DB-driven bilingual links [offsets 905–957] & Refactored)*
-- [x] **Imaging** (`software/imaging.php`) - *(Database Seeded with 77 entries & Refactored with Bilingual Links)*
-- [x] **Documents** (`software/documents.php`) - *(Database Seeded with 126 entries & Refactored)*
-- [x] **File Sharing** (`software/file_sharing.php`) - *(Database Seeded with 23 text entries + 29 DB-driven bilingual links [offsets 472–500] & Reworked with Spanish fallbacks)*
-- [x] **Online Storage** (`software/online_storage.php`) - *(Database Seeded with 19 educational entries + 8 DB-driven bilingual links [offsets 958–984] & Refactored)*
-- [x] **Other** (`software/other.php`) - *(Database Seeded with 77 educational entries + 24 DB-driven bilingual links [offsets 985–1085] & Refactored)*
-- [x] **Utilities** (`software/utilities.php`) - *(Database Seeded with 23 educational entries + 4 DB-driven bilingual links [offsets 1086–1112] & Refactored)*
-- [x] **Compression** (`software/compression.php`) - *(Database Seeded with 85 entries & Refactored)*
-- [x] **Developer Tools** (`software/developer_tools.php`) - *(Database Seeded with 25 text entries + 20 DB-driven bilingual links [offsets 452–471] & Reworked with Spanish fallbacks)*
+### B. Template Data Registry (End of File)
+Placed at the bottom of the page inside `<template id="carousel-images">`. The browser parses but **does not download** image assets within `<template>` tags until cloned:
+
+```php
+<template id="carousel-images">
+    <?php
+    $carouselItems = [
+        [
+            'originalImage_href'   => 'component_master.png',
+            'webp'                 => 'component_highres.webp',
+            'imgAlt_Title_heading' => 'Component Title',
+            'headingLink_href'     => 'https://external-resource-link'
+        ],
+        // Additional items indexed 1..N
+    ];
+
+    foreach($carouselItems as $index => $item):
+    ?>
+    <div class="carousel-item" data-image-index="<?= $index; ?>">
+        <a href="../../images/<module>/<?= $item['originalImage_href']; ?>" target="_blank" rel="noopener">
+            <img data-src="../../images/<module>/<?= $item['webp']; ?>"
+                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+                 alt="<?= htmlspecialchars($item['imgAlt_Title_heading']); ?>">
+        </a>
+        <h4 class="img_link">
+            <a href="<?= htmlspecialchars($item['headingLink_href']); ?>" title="<?= htmlspecialchars($item['imgAlt_Title_heading']); ?>">
+                <?= htmlspecialchars($item['imgAlt_Title_heading']); ?>
+            </a>
+        </h4>
+    </div>
+    <?php endforeach; ?>
+</template>
+```
 
 ---
 
-## 3. Process Ruleset: Monolithic HTML Ingestion & Mexican Scholar Translation
+## 3. Strict On-Demand Loading Engine (`anvil/dialogEngine.js`)
 
-When converting a monolithic HTML software document (such as `compression.php`, `web_browsers.php`, etc.) into the database architecture:
+To enforce the requirement: **"high quality images are only loaded when the user clicks"**:
 
-### Rule 1: Monolithic Content Extraction to Database
-1. **Never embed raw Spanish text blocks directly into PHP templates**: Every user-facing string must reside in `laTpc.db` under `page_id = 'software'`.
-2. **Side-by-Side Ingestion**: Store English in `content` and Spanish in `contenido` at the exact same row index.
-3. **Semantic Tagging**: Assign accurate HTML semantic markers in the `section` column (`heading`, `paragraph`, `summary`, `list-item`, `anchor`, `code`, etc.).
-4. **Distinct Prefixes**: Every entry must carry a namespaced identifier (e.g. `compression_zip_title`, `compression_net_desc`) to prevent collisions across the 200+ software rows.
+1. **Lazy Template Instantiation**:
+   - Rather than cloning `<template id="carousel-images">` into every `[data-carousel="true"]` container on `DOMContentLoaded`, the engine clones only when the user clicks a `.linked-text-img`.
+2. **`data-src` Swapping**:
+   - When the dialog opens, the engine sets `src = data-src` on the active carousel item image (and preloads adjacent items `index - 1` and `index + 1`).
+   - High-resolution network requests remain at **0 bytes** until the user clicks.
+3. **Modal Interactions**:
+   - Keyboard: `ArrowLeft` / `ArrowRight` navigate; `Escape` closes dialog.
+   - Touch: Swipe left / right gestures for mobile devices.
+   - Backdrop click: Dismisses modal with smooth opacity fade.
 
-### Rule 2: Mexican Scholar Translation Register (*Español Culto / Erudito Mexicano*)
-1. **Zero Anglicisms or Loanwords**: Ban untranslated English computer buzzwords. Every technical concept must be rendered into its formal, academic Spanish / Mexican equivalent.
-2. **Canonical Academic Terminology Reference**:
-   * *Computer / PC* &rarr; **Equipo de cómputo** / **Ordenador personal**
-   * *File / Archive* &rarr; **Fichero** / **Archivo digital**
-   * *Loop* &rarr; **Bucle** / **Ciclo iterativo**
-   * *Buffer / Cache* &rarr; **Memoria intermedia** / **Memoria de acceso ultrarrápido**
-   * *Firewall* &rarr; **Muro cortafuegos**
-   * *Malware* &rarr; **Software malicioso** / **Código nocivo**
-   * *Ransomware* &rarr; **Secuestro extorsivo de datos**
-   * *Lossless compression* &rarr; **Compresión sin merma / sin pérdida de información**
-   * *Lossy compression* &rarr; **Compresión con atenuación de fidelidad**
-   * *Streaming* &rarr; **Transmisión telemática continua en tiempo real**
-   * *Cross-platform* &rarr; **Capacidad multiplataforma / interoperabilidad de sistemas**
-   * *Open source* &rarr; **Código fuente abierto / especificación pública sin regalías**
-   * *Metadata preservation* &rarr; **Preservación meticulosa de metadatos**
-3. **Tone and Rhetoric**: Eloquent, encyclopedic, professorial tone worthy of an academic scholar (*estilo de cátedra universitaria y rigor formal*).
+---
 
-### Rule 3: Dynamic Template Substitution
-1. Include database handler at top of file:
-   ```php
-   <?php
-   include_once dirname(__DIR__) . '/handlers/databaseConnection.php';
-   databaseConnection('software');
-   global $content, $key, $page;
-   ?>
-   ```
-2. Replace static text nodes with dynamic references: `<?= $content[$offset][$key] ?? ''; ?>`.
-3. Wrap breadcrumbs defensively: `<?php if (function_exists('sw_breadCrumbs')) { sw_breadCrumbs(); } ?>`.
-4. Validate with `php -l` and live bilingual test scripts in `scratch/`.
+## 4. Automated Image Pipeline (Python + Pillow)
 
-### Rule 4: External Software Links in SQLite Database
-1. **Never Hardcode Hyperlinks**: Hyperlinks for software, platforms, and download buttons must reside in `laTpc.db` under `page_id = 'software'`.
-2. **Standardized Names**: Every link entry must use a prefix identifying the component and purpose (e.g. `dev_tools_link_<slug>`).
-3. **Bilingual URLs with Graceful Fallback**:
-   - Provide the English URL in `content`.
-   - If an official Spanish site/documentation exists, store it in `contenido`.
-   - If no Spanish edition exists, store the English URL in `contenido` (and defensively fallback in PHP using `!empty($item[$key]) ? $item[$key] : ($item['content'] ?? '#')`).
-4. **Token-Efficient Batch Seeding**:
-   - Do not query or dump whole tables into LLM contexts.
-   - Use targeted Python scripts with `executemany` or the ContentManager / DbManager (`/db/SQLiteconnection.php`) to insert rows rapidly in a single transaction.
+To process existing and new images without manual photo editing:
+- Script: `scripts/process_progressive_images.py`
+- Inputs: Directory containing raw `.jpg`, `.png`, `.webp` files.
+- Outputs:
+  1. `<filename>_thumb.webp`: Thumbnail resized to fit within 360x360 px, compressed at quality 75.
+  2. `<filename>.webp`: Optimized high-res display image resized to max 1600px width, quality 85.
+  3. Original master file preserved intact.
 
+---
 
+## 5. Implementation Roadmap & Checklist
+
+### Phase 1: Engine Optimization (On-Demand Loading)
+- [ ] Refactor [`anvil/dialogEngine.js`](file:///c:/Users/Laptop/Documents/newRelease_LatinosPC/LAtPC/anvil/dialogEngine.js):
+  - [ ] Implement lazy dialog instantiation on click rather than on `DOMContentLoaded`.
+  - [ ] Implement `data-src` &rarr; `src` image activation for carousel dialogs to prevent premature network fetching.
+  - [ ] Ensure mobile swipe and keyboard controls are fully responsive across all screen sizes.
+- [ ] Verify global CSS coverage in [`anvil/mainStyle.css`](file:///c:/Users/Laptop/Documents/newRelease_LatinosPC/LAtPC/anvil/mainStyle.css) for `.linked-text-img`, `.thumbnail-container`, `.image-dialog`, and `.dialog-backdrop`.
+
+### Phase 2: Pipeline Script Development
+- [ ] Create `scripts/process_progressive_images.py` with Python Pillow (PIL):
+  - [ ] Automatic aspect-ratio preservation.
+  - [ ] Generation of `*_thumb.webp` (low-payload).
+  - [ ] Generation of high-res `.webp` (sharp modal display).
+  - [ ] Batch processing capability across target directories (`images/hardware/`, `images/software/`, etc.).
+
+### Phase 3: Hardware Section Migration
+Migrate all hardware pages to the progressive thumbnail & modal system:
+
+- [ ] **Main Hardware Directory** (`hardware/hardwareContent.php`):
+  - [ ] Process and generate thumbnails for all 24+ peripheral and component images in `images/hardware/hw/`.
+  - [ ] Wrap hardware grid cards with `.linked-text-img` & `.image-dialog`.
+  - [ ] Add `<template id="carousel-images">` at the bottom of `hardwareContent.php`.
+- [ ] **Individual Hardware Subpages**:
+  - [ ] `hardware/cpu.php`
+  - [ ] `hardware/ram.php`
+  - [ ] `hardware/storage.php`
+  - [ ] `hardware/motherboard.php`
+  - [ ] `hardware/powerSupply.php`
+  - [ ] `hardware/gpu.php`
+  - [ ] `hardware/chassis.php`
+  - [ ] `hardware/coolers.php`
+  - [ ] `hardware/mouse.php`
+  - [ ] `hardware/keyboard.php`
+  - [ ] `hardware/monitor.php`
+  - [ ] `hardware/portableMemory.php`
+  - [ ] `hardware/pci_cards.php`
+  - [ ] `hardware/scanners.php`
+  - [ ] `hardware/printers.php`
+  - [x] [`hardware/console_controllers.php`](file:///c:/Users/Laptop/Documents/newRelease_LatinosPC/LAtPC/hardware/console_controllers.php) *(Completed: 43 compact 70x70 thumbnails on page, 900px high-resolution WebPs in modal carousel, linked to original 900px JPGs)*
+  - [ ] `hardware/joysticks.php`
+  - [ ] `hardware/tablets.php`
+  - [ ] `hardware/microphones.php`
+  - [ ] `hardware/headsets.php`
+  - [ ] `hardware/headphones.php`
+  - [ ] `hardware/audio_mixers.php`
+  - [ ] `hardware/controllers.php`
+  - [ ] `hardware/gaming_uniforms.php`
+  - [ ] `hardware/pens_pencils_tablets.php`
+  - [ ] `hardware/chairs.php`
+  - [ ] `hardware/desks.php`
+  - [ ] `hardware/anti_slip_mats.php`
+  - [ ] `hardware/speakers_and_subwoofers.php`
+
+### Phase 4: Software, Services & General Pages Migration
+- [ ] `software/softwareContent.php` and software subpages (`antivirus.php`, `malware_cleaner.php`, etc.).
+- [ ] `handlers/home.php` and homepage banners.
+- [ ] `services/services.php` and service offering cards.
+- [ ] `about/aboutUs.php`.
+
+### Phase 5: Verification & Performance Audit
+- [ ] Verify **Zero High-Res Network Requests** on initial page load via DevTools Network tab.
+- [ ] Verify instant modal pop-up and sharp image delivery upon clicking any thumbnail.
+- [ ] Test keyboard navigation (`Left`, `Right`, `Escape`) and mobile touch gestures.
+- [ ] Run Lighthouse audits on migrated pages to verify 95+ performance scores and sub-second FCP/LCP.

@@ -55,7 +55,7 @@ figcaption a:hover {
         <span class="linked-text">Click to see an image</span>
         <div class="link-dialog">
             <figure>
-                <img src="https://latinospc.com/images/artificialintelligence/our_lord_and_savior_jesus_christ/lamb9.webp"
+                <img src="../images/artificialintelligence/our_lord_and_savior_jesus_christ/lamb9.webp"
                     width="90%" height="auto" alt="JesusChrist">
                 <figcaption>cool image <a href="#">link</a></figcaption>
             </figure>
@@ -69,7 +69,7 @@ figcaption a:hover {
                 <div class="multi-link-container">
                         <div class="thumbnail-container">
                             <span tabindex="0" class="linked-text-img">
-                                <img src="https://latinospc.com/images/clouds.webp" width="263" height="186" alt="image" class="fr" alt="Start with Blank Page" class="thumbnail" />
+                                <img src="../images/clouds.webp" width="263" height="186" alt="image" class="fr" alt="Start with Blank Page" class="thumbnail" />
                                 <p>Primary Image</p>
                             </span>
                             </div>

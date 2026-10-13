@@ -20,7 +20,7 @@ function content_services(){
 
         ?> <div class="container">
             <h2><?= $heading = $content[58][$key]; ?></h2>
-            <button><a href="tel:+19092767214"><img src="https://latinospc.com/images/number.jpeg" height="150px" width="auto"></a></button>
+            <button><a href="tel:+19092767214"><img src="../images/number.jpeg" height="150px" width="auto"></a></button>
             <p style="padding-left: 50px;"><?= $message = $content[59][$key]; ?></p>
         </div>
     </section>
@@ -35,7 +35,7 @@ function content_services(){
         <!-- Special Offers Section -->
         <section id="offers" class="offers">
             <div class="container">
-                <img src="https://latinospc.com/images/storefront.png" width="25%" class="rtl">
+                <img src="../images/storefront.png" width="25%" class="rtl">
                 <h2><?= $specialOffersHeading = $content[62][$key]; ?></h2>
                 <ul><?= $specialOffersList = $content[63][$key]; ?></ul>
             </div>

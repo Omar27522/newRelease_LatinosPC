@@ -1,0 +1,148 @@
+/* ==========================================================================
+   LatinosPC Security - Best Practices Stylesheet (bestPractices.css)
+   Threat matrix grid, physical security best practices, and password manager risks
+   ========================================================================== */
+
+/* ── Threat Matrix Grid ── */
+.threat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 1.35rem;
+    margin: 1.5rem 0 2.5rem;
+}
+
+.threat-card {
+    border-radius: 20px;
+    padding: 1.6rem 1.5rem;
+    color: #ffffff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+    transition: all 0.26s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.threat-card::before {
+    content: attr(data-icon);
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    font-size: 6rem;
+    opacity: 0.12;
+    line-height: 1;
+    pointer-events: none;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.threat-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 20px 42px rgba(0, 0, 0, 0.32);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.threat-card:hover::before {
+    transform: scale(1.1) rotate(5deg);
+    opacity: 0.18;
+}
+
+.threat-card h2 {
+    font-size: 1.05rem;
+    font-weight: 800;
+    margin: 0 0 0.6rem;
+    letter-spacing: -0.015em;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+}
+
+.threat-card h3 {
+    font-size: 0.88rem;
+    font-weight: 400;
+    margin: 0;
+    color: rgba(248, 250, 252, 0.9);
+    line-height: 1.6;
+}
+
+/* Category Colorways with High Contrast */
+.threat-card.physical {
+    background: linear-gradient(140deg, #7f1d1d 0%, #991b1b 60%, #b91c1c 100%);
+    box-shadow: 0 8px 24px rgba(185, 28, 28, 0.25);
+}
+
+.threat-card.sidechan {
+    background: linear-gradient(140deg, #4c1d95 0%, #5b21b6 60%, #6d28d9 100%);
+    box-shadow: 0 8px 24px rgba(109, 40, 217, 0.25);
+}
+
+.threat-card.remote {
+    background: linear-gradient(140deg, #0c2d48 0%, #145da0 60%, #2e8bc0 100%);
+    box-shadow: 0 8px 24px rgba(20, 93, 160, 0.25);
+}
+
+.threat-card.supply {
+    background: linear-gradient(140deg, #7c2d12 0%, #9a3412 60%, #c2410c 100%);
+    box-shadow: 0 8px 24px rgba(194, 65, 12, 0.25);
+}
+
+.threat-card.pwcrack {
+    background: linear-gradient(140deg, #064e3b 0%, #065f46 60%, #047857 100%);
+    box-shadow: 0 8px 24px rgba(4, 120, 87, 0.25);
+}
+
+.threat-card.social {
+    background: linear-gradient(140deg, #78350f 0%, #92400e 60%, #b45309 100%);
+    box-shadow: 0 8px 24px rgba(180, 83, 9, 0.25);
+}
+
+.threat-card.quantum {
+    background: linear-gradient(140deg, #0f172a 0%, #1e3a5f 60%, #0284c7 100%);
+    box-shadow: 0 8px 24px rgba(2, 132, 199, 0.25);
+}
+
+.threat-card.ai {
+    background: linear-gradient(140deg, #14532d 0%, #15803d 60%, #16a34a 100%);
+    box-shadow: 0 8px 24px rgba(22, 163, 74, 0.25);
+}
+
+/* ── Password Manager Risk Cards ── */
+.pm-risk-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.25rem;
+    margin: 1.5rem 0 2rem;
+}
+
+.pm-risk-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 1.35rem 1.4rem;
+    border: 1px solid rgba(226, 232, 240, 0.85);
+    border-top: 4px solid #f59e0b;
+    box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05);
+    transition: all 0.26s ease;
+}
+
+.pm-risk-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.1);
+    border-color: rgba(245, 158, 11, 0.4);
+}
+
+.pm-risk-card h3 {
+    font-size: 0.98rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 0 0 0.45rem;
+    letter-spacing: -0.015em;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.pm-risk-card p {
+    font-size: 0.87rem;
+    margin: 0;
+    color: #475569;
+    line-height: 1.6;
+}

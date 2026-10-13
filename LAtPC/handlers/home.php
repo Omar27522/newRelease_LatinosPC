@@ -49,8 +49,8 @@ global $page; //this is the page object brought in from initial load. It contain
                 <p tabindex="0"><?= $servicesDialog1 = $content[31][$key] ?? '';?></p>
                 <p tabindex="0"><?= $servicesDialog2 = $content[32][$key] ?? '';?></p>
                 <p tabindex="0"><?= $servicesDialog3 = $content[33][$key] ?? '';?></p>
-                <a href="<?= $servicesDialog4 = $content[127][$key] ?? '#';?>"><?= $content[2][$key] ?? '';?></a>
-                <img src="https://latinospc.com/images/number.jpg" width="auto" height="auto" alt="number"
+                <a href="<?= $servicesDialog4 = $content[116][$key] ?? '#';?>"><?= $content[2][$key] ?? '';?></a>
+                <img src="../images/number.jpg" width="auto" height="auto" alt="number"
                     style="display: block; margin: 0 auto;">
             </div>
         </div>
@@ -117,6 +117,7 @@ global $page; //this is the page object brought in from initial load. It contain
             class="cta-button"><?= $hardwareButtons = $content[63][$key] ?? 'Button';?></a>
         <a href="<?= $hardwarearticle = $content[95][$key] ?? '#';?>"
             class="cta-button"><?= $hardwareButtons = $content[64][$key] ?? 'Button';?></a>
+        <a href="<?= '#Laptops';?>" class="cta-button">Laptops</a>
         <aside>
             <hr>
             <div class="multi-link-container">

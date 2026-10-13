@@ -35,8 +35,8 @@ $links = [
         </p>
         <div class="container fullbar">
             <div class="rtl">
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/cooling/coolers.jpg" title="Chilling Cooler">
-                    <img src="https://latinospc.com/images/hardware/hw/cooling/coolers.webp" alt="Chilling Cooler">
+                <a rel="example_group" href="../images/hardware/hw/cooling/coolers.jpg" title="Chilling Cooler">
+                    <img src="../images/hardware/hw/cooling/coolers.webp" alt="Chilling Cooler">
                 </a>
             </div>
             <p>
@@ -75,8 +75,8 @@ $links = [
                 </h2>
             </summary>
             <fieldset class="container card2">
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/cooling/lasers.jpg" title="Laser Cooling" class="rtl">
-                    <img src="https://latinospc.com/images/hardware/hw/cooling/lasers.webp" alt="Laser Cooling" height="120px" width="120px">
+                <a rel="example_group" href="../images/hardware/hw/cooling/lasers.jpg" title="Laser Cooling" class="rtl">
+                    <img src="../images/hardware/hw/cooling/lasers.webp" alt="Laser Cooling" height="120px" width="120px">
                 </a>
                 <p>
                     <?= $content[434][$key] ?? ''; ?>
@@ -123,24 +123,24 @@ $links = [
                 <li class="card2">
                     <h2 id="fans"><?= $content[444][$key] ?? ''; ?></h2>
                     <p><?= $content[445][$key] ?? ''; ?></p>
-                    <a rel="example_group" href="https://latinospc.com/images/hardware/hw/cooling/aircool.jpg" class="fl" title="Air Cooling">
-                        <img src="https://latinospc.com/images/hardware/hw/cooling/aircool.webp" height="100px" alt="Air Cooling">
+                    <a rel="example_group" href="../images/hardware/hw/cooling/aircool.jpg" class="fl" title="Air Cooling">
+                        <img src="../images/hardware/hw/cooling/aircool.webp" height="100px" alt="Air Cooling">
                     </a>
                     <p><?= $content[446][$key] ?? ''; ?></p>
                 </li>
                 <li class="card2">
                     <h2 id="liquid-coolers"><?= $content[447][$key] ?? ''; ?></h2>
                     <p><?= $content[448][$key] ?? ''; ?></p>
-                    <a rel="example_group" href="https://latinospc.com/images/hardware/hw/cooling/liquid.jpg" class="fl" title="Liquid Cooling">
-                        <img src="https://latinospc.com/images/hardware/hw/cooling/liquid.webp" height="100px" alt="Liquid Cooling">
+                    <a rel="example_group" href="../images/hardware/hw/cooling/liquid.jpg" class="fl" title="Liquid Cooling">
+                        <img src="../images/hardware/hw/cooling/liquid.webp" height="100px" alt="Liquid Cooling">
                     </a>
                     <p><?= $content[449][$key] ?? ''; ?></p>
                 </li>
                 <li class="card2">
                     <h2 id="solid-state-coolers"><?= $content[450][$key] ?? ''; ?></h2>
                     <p><?= $content[451][$key] ?? ''; ?></p>
-                    <a rel="example_group" href="https://latinospc.com/images/hardware/hw/cooling/ssc.jpg" class="fl" title="Solid-State Cooling">
-                        <img src="https://latinospc.com/images/hardware/hw/cooling/ssc.webp" height="100px" alt="Solid-State Cooling">
+                    <a rel="example_group" href="../images/hardware/hw/cooling/ssc.jpg" class="fl" title="Solid-State Cooling">
+                        <img src="../images/hardware/hw/cooling/ssc.webp" height="100px" alt="Solid-State Cooling">
                     </a>
                     <p><?= $content[452][$key] ?? ''; ?></p>
                 </li>
@@ -151,24 +151,24 @@ $links = [
                         <a href="<?= $links[7]; ?>"><?= $content[455][$key] ?? ''; ?></a>
                         <?= $content[456][$key] ?? ''; ?>
                     </p>
-                    <a rel="example_group" href="https://latinospc.com/images/hardware/hw/cooling/tec.jpg" class="rtl" title="Thermoelectric Coolers">
-                        <img src="https://latinospc.com/images/hardware/hw/cooling/tec.webp" height="100px" alt="TECs">
+                    <a rel="example_group" href="../images/hardware/hw/cooling/tec.jpg" class="rtl" title="Thermoelectric Coolers">
+                        <img src="../images/hardware/hw/cooling/tec.webp" height="100px" alt="TECs">
                     </a>
                     <p><?= $content[457][$key] ?? ''; ?></p>
                 </li>
                 <li class="card2">
                     <h2 id="hybrid-coolers"><?= $content[458][$key] ?? ''; ?></h2>
                     <p><?= $content[459][$key] ?? ''; ?></p>
-                    <a rel="example_group" href="https://latinospc.com/images/hardware/hw/cooling/hybrid.jpg" class="rtl" title="Hybrid Cooling">
-                        <img src="https://latinospc.com/images/hardware/hw/cooling/hybrid.webp" height="100px" alt="Hybrid Cooling">
+                    <a rel="example_group" href="../images/hardware/hw/cooling/hybrid.jpg" class="rtl" title="Hybrid Cooling">
+                        <img src="../images/hardware/hw/cooling/hybrid.webp" height="100px" alt="Hybrid Cooling">
                     </a>
                     <p><?= $content[460][$key] ?? ''; ?></p>
                 </li>
                 <li class="card2">
                     <h2 id="phase-change-cooling"><?= $content[461][$key] ?? ''; ?></h2>
                     <p><?= $content[462][$key] ?? ''; ?></p>
-                    <a rel="example_group" href="https://latinospc.com/images/hardware/hw/cooling/pcc.jpg" class="rtl" title="Phase Change Cooling">
-                        <img src="https://latinospc.com/images/hardware/hw/cooling/pcc.webp" height="100px" alt="Phase Change Cooling">
+                    <a rel="example_group" href="../images/hardware/hw/cooling/pcc.jpg" class="rtl" title="Phase Change Cooling">
+                        <img src="../images/hardware/hw/cooling/pcc.webp" height="100px" alt="Phase Change Cooling">
                     </a>
                     <p><?= $content[463][$key] ?? ''; ?></p>
                 </li>

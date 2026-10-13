@@ -29,7 +29,7 @@ global $content, $key;
     <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
     <h3>
         <?= $content[3894][$key] ?? ''; ?>
-    </h3><img src="https://latinospc.com/images/artificialintelligence/hw/display/thumbs/cathode.png" class="rtl">
+    </h3><img src="../images/artificialintelligence/hw/display/thumbs/cathode.png" class="rtl">
     <h2>
         <?= $content[3895][$key] ?? ''; ?>
     </h2>
@@ -44,7 +44,7 @@ global $content, $key;
     </h3><br />
     <h2>
         <?= $content[3899][$key] ?? ''; ?>
-    </h2><img src="https://latinospc.com/images/programs/thumbs/tealLED.jpg" class="fl">
+    </h2><img src="../images/programs/thumbs/tealLED.jpg" class="fl">
     <h3>
         <?= $content[3900][$key] ?? ''; ?>
     </h3>
@@ -59,7 +59,7 @@ global $content, $key;
     </h2>
     <h3>
         <?= $content[3904][$key] ?? ''; ?>
-    </h3><img src="https://latinospc.com/images/artificialintelligence/hw/display/thumbs/michael-maasen-AkYGy_ymFqo-unsplash.jpg"
+    </h3><img src="../images/artificialintelligence/hw/display/thumbs/michael-maasen-AkYGy_ymFqo-unsplash.jpg"
         class="fl">
     <h3>
         <?= $content[3905][$key] ?? ''; ?>
@@ -126,7 +126,7 @@ global $content, $key;
     </h2>
     <h3>
         <?= $content[3924][$key] ?? ''; ?>
-    </h3><img src="https://latinospc.com/images/artificialintelligence/hw/display/thumbs/ultrahd.jpg" class="rtl">
+    </h3><img src="../images/artificialintelligence/hw/display/thumbs/ultrahd.jpg" class="rtl">
     <h2>
         <?= $content[3925][$key] ?? ''; ?>
     </h2>
@@ -173,9 +173,9 @@ global $content, $key;
     <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
     <article class="article fullbar"><a href="#monitor">
         <h1 id="future" class="purple"><?= $content[3939][$key] ?? ''; ?></h1>
-    </a><img src="https://latinospc.com/images/artificialintelligence/hw/display/thumbs/future-display.jpg">
+    </a><img src="../images/artificialintelligence/hw/display/thumbs/future-display.jpg">
     <?= $content[3940][$key] ?? ''; ?>
-    <img src="https://latinospc.com/images/artificialintelligence/hw/display/thumbs/future-display2.jpg">
+    <img src="../images/artificialintelligence/hw/display/thumbs/future-display2.jpg">
     <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
     <h3>
         <?= $content[3941][$key] ?? ''; ?>
@@ -212,7 +212,7 @@ global $content, $key;
     </h3>
     <h2>
         <?= $content[3952][$key] ?? ''; ?>
-    </h2><img src="https://latinospc.com/images/artificialintelligence/hw/display/thumbs/advanced.jpg" class="rtl">
+    </h2><img src="../images/artificialintelligence/hw/display/thumbs/advanced.jpg" class="rtl">
     <h3>
         <?= $content[3953][$key] ?? ''; ?>
     </h3>
@@ -308,7 +308,7 @@ global $content, $key;
     <h3><a href="https://www.eizoglobal.com/products/coloredge/" title="Color Management">
             <?= $content[3989][$key] ?? ''; ?></a> <?= $content[3990][$key] ?? ''; ?>
     </h3>
-    <h1><img src="https://latinospc.com/images/artificialintelligence/hw/display/thumbs/others.jpg" class="fl">
+    <h1><img src="../images/artificialintelligence/hw/display/thumbs/others.jpg" class="fl">
         <?= $content[3991][$key] ?? ''; ?>
     </h1>
     <p>
@@ -384,7 +384,7 @@ global $content, $key;
         </h1>
     </a>
     <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
-    <img src="https://latinospc.com/images/artificialintelligence/hw/display/thumbs/integrated.jpg" class="fl">
+    <img src="../images/artificialintelligence/hw/display/thumbs/integrated.jpg" class="fl">
     <h2>
         <?= $content[4014][$key] ?? ''; ?>
     </h2>
@@ -459,7 +459,7 @@ global $content, $key;
     <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
     <h2>
         <?= $content[4037][$key] ?? ''; ?>
-    </h2><img src="https://latinospc.com/images/artificialintelligence/hw/display/thumbs/calibrate.jpg" class="fl">
+    </h2><img src="../images/artificialintelligence/hw/display/thumbs/calibrate.jpg" class="fl">
     <h3>
         <?= $content[4038][$key] ?? ''; ?>
     </h3><br />
@@ -534,7 +534,7 @@ global $content, $key;
     </h2>
     <h3>
         <?= $content[4062][$key] ?? ''; ?>
-    </h3><img src="https://latinospc.com/images/artificialintelligence/hw/display/thumbs/lastdisplay.jpg" width="600px" class="fl">
+    </h3><img src="../images/artificialintelligence/hw/display/thumbs/lastdisplay.jpg" width="600px" class="fl">
     <h2>
         <?= $content[4063][$key] ?? ''; ?>
     </h2>

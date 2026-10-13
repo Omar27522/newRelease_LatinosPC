@@ -20,7 +20,7 @@ $links = ['https://www.pcmag.com/encyclopedia/term/gpu'];
         <h4 style="text-align:right; padding-right: 250px;"><?= $content[173][$key] ?? ''; ?></h4>
     </a>
     <video controls width="623" height="623" autoplay muted>
-        <source src="https://latinospc.com/images/video/wavesgpu.mp4" type="video/mp4">
+        <source src="../images/video/wavesgpu.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
     <h4><?= $content[174][$key] ?? ''; ?></h4>
@@ -38,7 +38,7 @@ $links = ['https://www.pcmag.com/encyclopedia/term/gpu'];
 
 
 <div class="fullbar article">
-<img alt="GPU Grid" src="https://latinospc.com/images/hardware/hw/gpu-graphics1.jpg" title="GPU graphics" /></p>
+<img alt="GPU Grid" src="../images/hardware/hw/gpu-graphics1.jpg" title="GPU graphics" /></p>
 <h2><a href="https://www.intel.com/content/www/us/en/products/docs/processors/what-is-a-gpu.html"
         title="Modern GPU technology powers traditional graphics applications—and much more."><?= $content[185][$key] ?? ''; ?></a></h2>
 <p><?= $content[186][$key] ?? ''; ?></p>

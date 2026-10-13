@@ -622,7 +622,7 @@ function security() {
         </div>
         <div class="sec-hero-bg-art" aria-hidden="true">
             <img src="<?= $imgDir; ?>images/gallery/secty.jpg"
-                onerror="this.src='https://latinospc.com/images/gallery/secty.jpg'" alt="" width="600" height="451">
+                onerror="this.src='../images/gallery/secty.jpg'" alt="" width="600" height="451">
         </div>
     </div>
 
@@ -956,7 +956,7 @@ function seguridad() {
         </div>
         <div class="sec-hero-bg-art" aria-hidden="true">
             <img src="<?= $imgDir; ?>images/gallery/secty.jpg"
-                onerror="this.src='https://latinospc.com/images/gallery/secty.jpg'" alt="" width="600" height="451">
+                onerror="this.src='../images/gallery/secty.jpg'" alt="" width="600" height="451">
         </div>
     </div>
     <h2 class="sec-section-title"><span>&#x1F512;</span> Mant&eacute;n tu Seguridad al D&iacute;a</h2>

@@ -22,8 +22,8 @@ global $content, $key;
     <h1><a href="./#peripherals"><?= $content[653][$key] ?? ''; ?></a></h1>
     
     <h2>
-        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/printer0.jpg" title="Printer">
-            <img src="https://latinospc.com/images/hardware/hw/printer/printer0.webp" width="250px" class="fl">
+        <a rel="example_group" href="../images/hardware/hw/lightbox/printer0.jpg" title="Printer">
+            <img src="../images/hardware/hw/printer/printer0.webp" width="250px" class="fl">
         </a>
         <?= $content[654][$key] ?? ''; ?>
     </h2>
@@ -33,8 +33,8 @@ global $content, $key;
         <span class="card2">
             <h2 id="history"><?= $content[655][$key] ?? ''; ?></h2>
             <a href="https://en.wikipedia.org/wiki/Ink#History"><span class="center"><?= $content[656][$key] ?? ''; ?></span></a><br />
-            <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/printer3.jpg" title="Ancient Printing">
-                <img src="https://latinospc.com/images/hardware/hw/printer/printer3.webp" width="150px" class="rtl">
+            <a rel="example_group" href="../images/hardware/hw/lightbox/printer3.jpg" title="Ancient Printing">
+                <img src="../images/hardware/hw/printer/printer3.webp" width="150px" class="rtl">
             </a>
             <?= $content[657][$key] ?? ''; ?>
         </span>
@@ -43,8 +43,8 @@ global $content, $key;
         <span class="card2">
             <h2><?= $content[658][$key] ?? ''; ?></h2>
             <a href="https://en.wikipedia.org/wiki/Printing_press"><span class="center"><?= $content[659][$key] ?? ''; ?></span></a><br />
-            <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/printer16.jpg" title="Printing Press">
-                <img src="https://latinospc.com/images/hardware/hw/printer/printer16.webp" width="150px" class="rtl">
+            <a rel="example_group" href="../images/hardware/hw/lightbox/printer16.jpg" title="Printing Press">
+                <img src="../images/hardware/hw/printer/printer16.webp" width="150px" class="rtl">
             </a>
             <?= $content[660][$key] ?? ''; ?>
         </span>
@@ -55,8 +55,8 @@ global $content, $key;
             <a href="https://ageofrevolution.org/200-object/koenigs-steam-powered-printing-press/">
                 <span class="center"><?= $content[662][$key] ?? ''; ?></span>
             </a><br />
-            <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/printer17.jpg" title="Steam Press">
-                <img src="https://latinospc.com/images/hardware/hw/printer/printer17.webp" width="150px" class="rtl">
+            <a rel="example_group" href="../images/hardware/hw/lightbox/printer17.jpg" title="Steam Press">
+                <img src="../images/hardware/hw/printer/printer17.webp" width="150px" class="rtl">
             </a>
             <?= $content[663][$key] ?? ''; ?>
         </span>
@@ -65,8 +65,8 @@ global $content, $key;
         <span class="card2">
             <h2><?= $content[664][$key] ?? ''; ?></h2>
             <a href="https://en.wikipedia.org/wiki/Teleprinter"><span class="center"><?= $content[665][$key] ?? ''; ?></span></a><br />
-            <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/printer18.jpg" title="Electric Typewriter">
-                <img src="https://latinospc.com/images/hardware/hw/printer/printer18.webp" width="150px" class="rtl">
+            <a rel="example_group" href="../images/hardware/hw/lightbox/printer18.jpg" title="Electric Typewriter">
+                <img src="../images/hardware/hw/printer/printer18.webp" width="150px" class="rtl">
             </a>
             <?= $content[666][$key] ?? ''; ?>
         </span>
@@ -75,17 +75,17 @@ global $content, $key;
         <span class="card2">
             <h2><?= $content[667][$key] ?? ''; ?></h2>
             <span class="center"><a href="https://en.wikipedia.org/wiki/Laser_printing"><?= $content[668][$key] ?? ''; ?></a></span><br />
-            <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/printer19_0.jpg" title="Dot Matrix Printer">
-                <img src="https://latinospc.com/images/hardware/hw/printer/printer19_0.webp" width="150px" class="rtl">
+            <a rel="example_group" href="../images/hardware/hw/lightbox/printer19_0.jpg" title="Dot Matrix Printer">
+                <img src="../images/hardware/hw/printer/printer19_0.webp" width="150px" class="rtl">
             </a>
             <?= $content[669][$key] ?? ''; ?>
-            <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/printer19_1.jpg" title="Laser Printer">
-                <img src="https://latinospc.com/images/hardware/hw/printer/printer19_1.webp" width="150px" class="fl">
+            <a rel="example_group" href="../images/hardware/hw/lightbox/printer19_1.jpg" title="Laser Printer">
+                <img src="../images/hardware/hw/printer/printer19_1.webp" width="150px" class="fl">
             </a>
             <br /><br />
             <span class="center"><?= $content[670][$key] ?? ''; ?></span><br />
-            <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/printer19.jpg" title="InkJet Printer">
-                <img src="https://latinospc.com/images/hardware/hw/printer/printer19.webp" width="150px" class="rtl">
+            <a rel="example_group" href="../images/hardware/hw/lightbox/printer19.jpg" title="InkJet Printer">
+                <img src="../images/hardware/hw/printer/printer19.webp" width="150px" class="rtl">
             </a>
             <?= $content[671][$key] ?? ''; ?>
         </span>
@@ -94,8 +94,8 @@ global $content, $key;
         <span class="card2">
             <h2><?= $content[672][$key] ?? ''; ?></h2>
             <span class="center"><a href="https://en.wikipedia.org/wiki/3D_printing"><?= $content[673][$key] ?? ''; ?></a></span><br />
-            <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/printer20.jpg" title="3D Print">
-                <img src="https://latinospc.com/images/hardware/hw/printer/printer20.webp" width="150px" class="rtl">
+            <a rel="example_group" href="../images/hardware/hw/lightbox/printer20.jpg" title="3D Print">
+                <img src="../images/hardware/hw/printer/printer20.webp" width="150px" class="rtl">
             </a>
             <?= $content[674][$key] ?? ''; ?>
         </span>
@@ -104,8 +104,8 @@ global $content, $key;
         <span class="card2">
             <h2><?= $content[675][$key] ?? ''; ?></h2>
             <span class="center"><?= $content[676][$key] ?? ''; ?></span><br />
-            <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/printer21.jpg" title="Eco Friendly">
-                <img src="https://latinospc.com/images/hardware/hw/printer/printer21.webp" width="150px" class="rtl">
+            <a rel="example_group" href="../images/hardware/hw/lightbox/printer21.jpg" title="Eco Friendly">
+                <img src="../images/hardware/hw/printer/printer21.webp" width="150px" class="rtl">
             </a>
             <?= $content[677][$key] ?? ''; ?>
             <div class="crl"></div>
@@ -115,8 +115,8 @@ global $content, $key;
         <span class="card2">
             <h2><?= $content[678][$key] ?? ''; ?></h2>
             <span class="center"><?= $content[679][$key] ?? ''; ?></span><br />
-            <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/printer22.jpg" title="Printers in the Future">
-                <img src="https://latinospc.com/images/hardware/hw/printer/printer22.webp" width="150px" class="rtl">
+            <a rel="example_group" href="../images/hardware/hw/lightbox/printer22.jpg" title="Printers in the Future">
+                <img src="../images/hardware/hw/printer/printer22.webp" width="150px" class="rtl">
             </a>
             <?= $content[680][$key] ?? ''; ?>
             <div class="spacer"></div>
@@ -186,7 +186,7 @@ global $content, $key;
         <hr>
         <ul class="ex_menu"><li class="print">3. <a href="https://en.wikipedia.org/wiki/Multi-function_printer">All-in-One (Multifunction) Printers:</a></li></ul>
         <?= substr($content[701][$key] ?? '', 35); ?>
-        <img src="https://latinospc.com/images/clouds.webp" height="" class="rtl">
+        <img src="../images/clouds.webp" height="" class="rtl">
     </h3>
     <hr>
     
@@ -297,8 +297,8 @@ global $content, $key;
 
     <h2><?= $content[737][$key] ?? ''; ?></h2>
     <h3>
-        <a rel="efxample_group" href="https://latinospc.com/images/artificialintelligence/printer/2.jpg" title="LAPC 3d Print">
-            <img src="https://latinospc.com/images/hardware/hw/printer/printer3d.webp" class="fl" alt="3d Printed Image">
+        <a rel="efxample_group" href="../images/artificialintelligence/printer/2.jpg" title="LAPC 3d Print">
+            <img src="../images/hardware/hw/printer/printer3d.webp" class="fl" alt="3d Printed Image">
         </a>
         <?= $content[738][$key] ?? ''; ?>
         <div class="spacer"></div>
@@ -306,8 +306,8 @@ global $content, $key;
         <div class="spacer"></div>
         <?= $content[740][$key] ?? ''; ?>
         <div class="spacer"></div>
-        <a rel="efxample_group" href="https://latinospc.com/images/artificialintelligence/printer/4.jpg" title="LAPC 3d Print">
-            <img src="https://latinospc.com/images/hardware/hw/printer/printer3d_3.webp" class="rtl" alt="3d Printed Image">
+        <a rel="efxample_group" href="../images/artificialintelligence/printer/4.jpg" title="LAPC 3d Print">
+            <img src="../images/hardware/hw/printer/printer3d_3.webp" class="rtl" alt="3d Printed Image">
         </a>
         <?= $content[741][$key] ?? ''; ?>
         <div class="spacer"></div>
@@ -315,8 +315,8 @@ global $content, $key;
         <div class="spacer"></div>
         <?= $content[743][$key] ?? ''; ?>
         <div class="spacer"></div>
-        <a rel="efxample_group" href="https://latinospc.com/images/artificialintelligence/printer/1.jpg" title="LAPC 3d Print">
-            <img src="https://latinospc.com/images/hardware/hw/printer/printer3d_1.webp" class="fl" alt="3d Printed Image">
+        <a rel="efxample_group" href="../images/artificialintelligence/printer/1.jpg" title="LAPC 3d Print">
+            <img src="../images/hardware/hw/printer/printer3d_1.webp" class="fl" alt="3d Printed Image">
         </a>
         <?= $content[744][$key] ?? ''; ?>
         <div class="spacer"></div>
@@ -324,8 +324,8 @@ global $content, $key;
         <div class="spacer"></div>
         <?= $content[746][$key] ?? ''; ?>
         <div class="spacer"></div>
-        <a rel="efxample_group" href="https://latinospc.com/images/artificialintelligence/printer/3.jpg" title="LAPC 3d Print">
-            <img src="https://latinospc.com/images/hardware/hw/printer/printer3d_2.webp" class="rtl" alt="3d Printed Image">
+        <a rel="efxample_group" href="../images/artificialintelligence/printer/3.jpg" title="LAPC 3d Print">
+            <img src="../images/hardware/hw/printer/printer3d_2.webp" class="rtl" alt="3d Printed Image">
         </a>
         <?= $content[747][$key] ?? ''; ?>
         <div class="spacer"></div>
@@ -344,7 +344,7 @@ global $content, $key;
         <a href="https://en.wikipedia.org/wiki/Printing_press" class="print">Gutenberg Printing Press</a> (1440s) - 
         <a href="https://www.britannica.com/biography/Johannes-Gutenberg" class="print">Johannes Gutenberg:</a>
         <a href="https://en.wikipedia.org/wiki/Printing_press#/media/File:Chodowiecki_Basedow_Tafel_21_c_Z.jpg" title="Printing Press">
-            <img src="https://latinospc.com/images/hardware/hw/printer/printer4.webp" class="rtl" alt="Printing Press">
+            <img src="../images/hardware/hw/printer/printer4.webp" class="rtl" alt="Printing Press">
         </a>
         <br />- <?= $content[751][$key] ?? ''; ?>
         <hr><br />
@@ -352,7 +352,7 @@ global $content, $key;
         <a href="https://en.wikipedia.org/wiki/Linotype_machine" class="print">Linotype Machine</a> (1886) - 
         <a href="https://en.wikipedia.org/wiki/Ottmar_Mergenthaler" class="print">Ottmar Mergenthaler</a>:
         <a href="https://en.wikipedia.org/wiki/Linotype_machine#/media/File:Linotype_machines,_Anthony_Hordern_and_Sons_department_store,_c._1935.jpg">
-            <img src="https://latinospc.com/images/hardware/hw/printer/printer5.webp" class="rtl" alt="Linotype Machine" width="300px">
+            <img src="../images/hardware/hw/printer/printer5.webp" class="rtl" alt="Linotype Machine" width="300px">
         </a>
         <br />- <?= $content[752][$key] ?? ''; ?>
         <hr><br />
@@ -360,7 +360,7 @@ global $content, $key;
         <a href="https://en.wikipedia.org/wiki/Monotype_system" class="print">Monotype System</a> (1887) - 
         <a href="https://en.wikipedia.org/wiki/Tolbert_Lanston" class="print">Tolbert Lanston:</a>
         <a href="https://en.wikipedia.org/wiki/Monotype_system#/media/File:Matrixcase-bembo-16pts.jpg">
-            <img src="https://latinospc.com/images/hardware/hw/printer/printer6.webp" alt="Monotype matrix case" class="rtl" width="300px">
+            <img src="../images/hardware/hw/printer/printer6.webp" alt="Monotype matrix case" class="rtl" width="300px">
         </a>
         <br />- <?= $content[753][$key] ?? ''; ?>
         <hr><br />
@@ -368,7 +368,7 @@ global $content, $key;
         <a href="https://en.wikipedia.org/wiki/Original_Heidelberg_Platen_Press" class="print">Heidelberg Windmill</a> (1913) - 
         <a href="https://en.wikipedia.org/wiki/Heidelberger_Druckmaschinen" class="print">Heidelberger Druckmaschinen AG:</a>
         <a href="https://en.wikipedia.org/wiki/Original_Heidelberg_Platen_Press#/media/File:Heidelberg_Platen_Press_front-left.jpg">
-            <img src="https://latinospc.com/images/hardware/hw/printer/printer7.webp" alt="Heidelberg Platen Press" class="rtl" width="300px">
+            <img src="../images/hardware/hw/printer/printer7.webp" alt="Heidelberg Platen Press" class="rtl" width="300px">
         </a>
         <br />- <?= $content[754][$key] ?? ''; ?>
         <hr><br />
@@ -376,7 +376,7 @@ global $content, $key;
         <a href="https://en.wikipedia.org/wiki/Xerox_914" class="print">Xerox 914</a> (1959) - 
         <br /> <a href="https://en.wikipedia.org/wiki/Xerox#History" class="print">Xerox Corporation:</a>
         <a href="https://en.wikipedia.org/wiki/Xerox_914#/media/File:Xerox_914.jpg">
-            <img src="https://latinospc.com/images/hardware/hw/printer/printer8.webp" alt="Xerox 914" class="rtl" width="300px">
+            <img src="../images/hardware/hw/printer/printer8.webp" alt="Xerox 914" class="rtl" width="300px">
         </a>
         <br />- <?= $content[755][$key] ?? ''; ?>
         <hr><br />
@@ -384,7 +384,7 @@ global $content, $key;
         <a href="https://www.hp.com/hpinfo/abouthp/histnfacts/museum/imagingprinting/0018/index.html" class="print">HP LaserJet Printer</a> (1984) - 
         <a href="https://www.hp.com/hpinfo/abouthp/histnfacts/museum/imagingprinting/0018/0018threeqtr.html" class="print">Hewlett-Packard (HP):</a>
         <a href="https://www.computerhistory.org/revolution/input-output/14/351/1680">
-            <img src="https://latinospc.com/images/hardware/hw/printer/printer9.webp" alt="HP Laser Jet" class="rtl" width="300px">
+            <img src="../images/hardware/hw/printer/printer9.webp" alt="HP Laser Jet" class="rtl" width="300px">
         </a>
         <br />- <?= $content[756][$key] ?? ''; ?>
         <hr><br />
@@ -392,7 +392,7 @@ global $content, $key;
         <a href="https://spectrum.ieee.org/the-consumer-electronics-hall-of-fame-epson-stylus-color" class="print">Epson Stylus Color</a> (1994) - 
         <a href="https://corporate.epson/en/about/history/milestone-products/1994-5-stylus-color.html" class="print">Seiko Epson Corporation:</a>
         <a href="https://corporate.epson/en/about/history/milestone-products/" title="Epson milestone-products">
-            <img src="https://latinospc.com/images/hardware/hw/printer/printer10.webp" alt="Epson Stylus Color" class="fl" width="300px">
+            <img src="../images/hardware/hw/printer/printer10.webp" alt="Epson Stylus Color" class="fl" width="300px">
         </a>
         <br />- <?= $content[757][$key] ?? ''; ?>
         <hr><br />
@@ -400,7 +400,7 @@ global $content, $key;
         <a href="https://en.wikipedia.org/wiki/RepRap" class="print" style="margin-left: 50px;">RepRap</a> (2005) - 
         <br /> <a href="https://en.wikipedia.org/wiki/Adrian_Bowyer" class="print" style="margin-left: 50px;">Dr. Adrian Bowyer:</a>
         <a href="https://en.wikipedia.org/wiki/RepRap#/media/File:Extrusion_of_hexagon_2nd_layer_closeup.jpg">
-            <img src="https://latinospc.com/images/hardware/hw/printer/printer11.webp" alt="RepRap" class="fl" width="300px">
+            <img src="../images/hardware/hw/printer/printer11.webp" alt="RepRap" class="fl" width="300px">
         </a>
         <br />- <?= $content[758][$key] ?? ''; ?>
         <hr><br />
@@ -408,7 +408,7 @@ global $content, $key;
         <a href="https://en.wikipedia.org/wiki/MakerBot" class="print" style="margin-left: 50px;">MakerBot Replicator</a> (2009) - 
         <a href="https://www.makerbot.com/resources/3d-printing-news/" class="print" style="margin-left: 50px;">MakerBot Industries:</a>
         <a href="https://en.wikipedia.org/wiki/MakerBot#/media/File:MakerBot_ThingOMatic_Bre_Pettis.jpg">
-            <img src="https://latinospc.com/images/hardware/hw/printer/printer12.webp" alt="Maker Bot Replicator" width="300px">
+            <img src="../images/hardware/hw/printer/printer12.webp" alt="Maker Bot Replicator" width="300px">
         </a>
         <br />- <?= $content[759][$key] ?? ''; ?>
         <hr><br />
@@ -416,7 +416,7 @@ global $content, $key;
         <a href="https://en.wikipedia.org/wiki/Formlabs" class="print" style="margin-left: 50px;">Formlabs Form 1</a> (2012) - 
         <br /> <a href="https://formlabs.com/resources/" class="print" style="margin-left: 50px;">Formlabs:</a>
         <a href="https://en.wikipedia.org/wiki/Formlabs#/media/File:Formlabs_Form2_Bild11_5184x2912_(24203075010).jpg">
-            <img src="https://latinospc.com/images/hardware/hw/printer/printer13.webp" alt="Form1" class="fl" width="300px">
+            <img src="../images/hardware/hw/printer/printer13.webp" alt="Form1" class="fl" width="300px">
         </a>
         <br />- <?= $content[760][$key] ?? ''; ?>
         <hr><br />
@@ -424,7 +424,7 @@ global $content, $key;
         <a href="https://en.wikipedia.org/wiki/Ultimaker" class="print" style="margin-left: 50px;">Ultimaker Original</a> (2011) - 
         <br /> <a href="https://ultimaker.com/" class="print" style="margin-left: 50px;">Ultimaker:</a>
         <a href="https://en.wikipedia.org/wiki/Ultimaker#/media/File:Ultimaker_History_-_5_Ultimaker_Original_(28127007460).jpg">
-            <img src="https://latinospc.com/images/hardware/hw/printer/printer14.webp" alt="The Ultimaker Original" class="fl" width="300px">
+            <img src="../images/hardware/hw/printer/printer14.webp" alt="The Ultimaker Original" class="fl" width="300px">
         </a>
         <br />- <?= $content[761][$key] ?? ''; ?>
         <hr><br />
@@ -432,26 +432,26 @@ global $content, $key;
         <a href="https://en.wikipedia.org/wiki/Aleph_Objects" class="print" style="margin-left: 50px;">LulzBot TAZ</a> (2012) - 
         <br /> <a href="https://lulzbot.com/explore/printers-for-creatives" class="print" style="margin-left: 50px;">lulzbot.com:</a>
         <a href="https://en.wikipedia.org/wiki/Aleph_Objects#/media/File:LulzBot_Mini_3D_Printer.jpg">
-            <img src="https://latinospc.com/images/hardware/hw/printer/printer15.webp" alt="LulBot Mini" class="fl" width="300px">
+            <img src="../images/hardware/hw/printer/printer15.webp" alt="LulBot Mini" class="fl" width="300px">
         </a>
         <br />- <?= $content[762][$key] ?? ''; ?>
     </h3>
     
     <h2><?= $content[763][$key] ?? ''; ?></h2>
     
-    <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/printer4.jpg" title="Gutenberg Printing Press"></a>
-    <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/printer5.jpg" title="Linotype Machine"></a>
-    <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/printer6.jpg" title="Monotype System"></a>
-    <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/printer7.jpg" title="Heidelberg Windmill"></a>
-    <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/printer8.jpg" title="Xerox 914"></a>
-    <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/printer9.jpg" title="HP LaserJet Printer"></a>
-    <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/printer10.jpg" title="Epson Stylus Color"></a>
-    <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/printer11.jpg" title="RepRap"></a>
-    <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/printer12.jpg" title="MakerBot Replicator"></a>
-    <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/printer13.jpg" title="Formlabs Form 1"></a>
-    <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/printer14.jpg" title="The Ultimaker Original"></a>
-    <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/printer15.jpg" title="LulBot Mini"></a>
-    <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/printer00.jpg" title="Happy Printing"></a>
+    <a rel="example_group" href="../images/hardware/hw/lightbox/printer4.jpg" title="Gutenberg Printing Press"></a>
+    <a rel="example_group" href="../images/hardware/hw/lightbox/printer5.jpg" title="Linotype Machine"></a>
+    <a rel="example_group" href="../images/hardware/hw/lightbox/printer6.jpg" title="Monotype System"></a>
+    <a rel="example_group" href="../images/hardware/hw/lightbox/printer7.jpg" title="Heidelberg Windmill"></a>
+    <a rel="example_group" href="../images/hardware/hw/lightbox/printer8.jpg" title="Xerox 914"></a>
+    <a rel="example_group" href="../images/hardware/hw/lightbox/printer9.jpg" title="HP LaserJet Printer"></a>
+    <a rel="example_group" href="../images/hardware/hw/lightbox/printer10.jpg" title="Epson Stylus Color"></a>
+    <a rel="example_group" href="../images/hardware/hw/lightbox/printer11.jpg" title="RepRap"></a>
+    <a rel="example_group" href="../images/hardware/hw/lightbox/printer12.jpg" title="MakerBot Replicator"></a>
+    <a rel="example_group" href="../images/hardware/hw/lightbox/printer13.jpg" title="Formlabs Form 1"></a>
+    <a rel="example_group" href="../images/hardware/hw/lightbox/printer14.jpg" title="The Ultimaker Original"></a>
+    <a rel="example_group" href="../images/hardware/hw/lightbox/printer15.jpg" title="LulBot Mini"></a>
+    <a rel="example_group" href="../images/hardware/hw/lightbox/printer00.jpg" title="Happy Printing"></a>
 </article>
 
 <article class="article fullbar">
@@ -459,7 +459,7 @@ global $content, $key;
     <hr id="future">
     <a href="#nav" title="Top">
         <h2 class="spacer_shape">
-            <img src="https://latinospc.com/images/hardware/hw/printer/printer.webp" class="fl">
+            <img src="../images/hardware/hw/printer/printer.webp" class="fl">
             <?= $content[764][$key] ?? ''; ?>
         </h2>
     </a>

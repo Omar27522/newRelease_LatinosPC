@@ -208,7 +208,7 @@ global $content, $key;
     <fieldset tabindex="0" class="selection_2">
         <legend tabindex="0" class="center card2 selection" style="translate: 0 -45px;"><h2><?= $content[3506][$key] ?? ''; ?></h2></legend>
         <h3 style="translate: 0 -65px;"><?= $content[3507][$key] ?? ''; ?></h3>
-            <span tabindex="0" class="selection_2"><a rel="example_group" href="https://latinospc.com/images/hardware/hw/speakers.jpg"><img src="https://latinospc.com/images/hardware/hw/speakers.jpg" alt="phone and tablet" width="200" height="472" title="phone and tablet"></a></span>
+            <span tabindex="0" class="selection_2"><a rel="example_group" href="../images/hardware/hw/speakers.jpg"><img src="../images/hardware/hw/speakers.jpg" alt="phone and tablet" width="200" height="472" title="phone and tablet"></a></span>
 
     </fieldset>
 

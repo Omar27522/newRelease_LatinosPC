@@ -196,7 +196,7 @@ global $content, $key;
             <?= $content[628][$key] ?? ''; ?><br />
             <?= $content[629][$key] ?? ''; ?>
         </h3>
-        <img src="https://latinospc.com/images/hardware/hw/123.jpg" height="280px">
+        <img src="../images/hardware/hw/123.jpg" height="280px">
         <hr>
         <h3>
             <div class="com"><?= $content[630][$key] ?? ''; ?></div><br />

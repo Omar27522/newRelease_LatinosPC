@@ -11,26 +11,26 @@ global $content, $key;
     </a>
     <h2><?= $content[289][$key] ?? ''; ?></h2>
     <p>
-        <img src="https://latinospc.com/images/hardware/icons/80_Plus_Standard.png" class="rtl">
-        <img src="https://latinospc.com/images/hardware/icons/80_Plus_Bronze.png" class="rtl">
-        <img src="https://latinospc.com/images/hardware/icons/80_Plus_Silver.png" class="rtl">
-        <img src="https://latinospc.com/images/hardware/icons/80_Plus_Gold.png" class="rtl">
-        <img src="https://latinospc.com/images/hardware/icons/80_Plus_Platinum.png" class="rtl">
-        <img src="https://latinospc.com/images/hardware/icons/80_Plus_Titanium.png" class="rtl">
+        <img src="../images/hardware/icons/80_Plus_Standard.png" class="rtl">
+        <img src="../images/hardware/icons/80_Plus_Bronze.png" class="rtl">
+        <img src="../images/hardware/icons/80_Plus_Silver.png" class="rtl">
+        <img src="../images/hardware/icons/80_Plus_Gold.png" class="rtl">
+        <img src="../images/hardware/icons/80_Plus_Platinum.png" class="rtl">
+        <img src="../images/hardware/icons/80_Plus_Titanium.png" class="rtl">
     </p>
     <h2><a href="https://en.wikipedia.org/wiki/Category:Computer_power_supply_unit_manufacturers" class="psu"><?= $content[290][$key] ?? ''; ?></a></h2>
     <p><?= $content[291][$key] ?? ''; ?></p>
-    <img src="https://latinospc.com/images/hardware/hw/psu.jpg" class="fl">
+    <img src="../images/hardware/hw/psu.jpg" class="fl">
     <p><?= $content[292][$key] ?? ''; ?></p>
-    <img src="https://latinospc.com/images/hardware/hw/psu2.png" class="rtl">
+    <img src="../images/hardware/hw/psu2.png" class="rtl">
     <h2><?= $content[293][$key] ?? ''; ?></h2>
 </article>
 
 <article class="fullbar article">
     <p><?= $content[294][$key] ?? ''; ?></p>
-    <img src="https://latinospc.com/images/hardware/hw/portablepower.png" class="rtl">
+    <img src="../images/hardware/hw/portablepower.png" class="rtl">
     <p><?= $content[295][$key] ?? ''; ?></p>
-    <img src="https://latinospc.com/images/hardware/hw/slimpower.png" class="fl">
+    <img src="../images/hardware/hw/slimpower.png" class="fl">
     <p><?= $content[296][$key] ?? ''; ?></p>
     <div class="spacer_shape">
         <p><?= $content[297][$key] ?? ''; ?></p>

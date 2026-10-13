@@ -13,7 +13,7 @@ global $content, $key;
 </h2>
 <fieldset><legend class="center"><?= $content[1636][$key] ?? ''; ?></legend>
     <div class="container">
-        <div class="card2"><?= $content[1637][$key] ?? ''; ?> <a href="https://www.wsj.com/articles/the-history-of-headphones-1473274924"><em><?= $content[1638][$key] ?? ''; ?></em></a><?= $content[1639][$key] ?? ''; ?><a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/bulky.jpg" title="https://www.smithsonianmag.com/arts-culture/a-partial-history-of-headphones-4693742/"><img src="https://latinospc.com/images/hardware/hw/headsets/bulky.webp" alt="19th century headsets" class="fl"></a></div>
+        <div class="card2"><?= $content[1637][$key] ?? ''; ?> <a href="https://www.wsj.com/articles/the-history-of-headphones-1473274924"><em><?= $content[1638][$key] ?? ''; ?></em></a><?= $content[1639][$key] ?? ''; ?><a rel="example_group" href="../images/hardware/hw/headsets/bulky.jpg" title="https://www.smithsonianmag.com/arts-culture/a-partial-history-of-headphones-4693742/"><img src="../images/hardware/hw/headsets/bulky.webp" alt="19th century headsets" class="fl"></a></div>
         <div class="card2"><?= $content[1640][$key] ?? ''; ?> <a href="https://www.servercake.blog/invention-headphone/"><em><?= $content[1641][$key] ?? ''; ?></em></a> <?= $content[1642][$key] ?? ''; ?></div>
         <div class="card2"> <?= $content[1643][$key] ?? ''; ?></div>
     </div>
@@ -21,33 +21,33 @@ global $content, $key;
 
 <fieldset><legend class="center"><?= $content[1644][$key] ?? ''; ?></legend>
     <div class="container">
-        <div class="card2"><a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/radio.jpg" title="https://www.reddit.com/r/OldSchoolCool/comments/lo56r5/kids_listening_to_radio_using_headphones_1920s/?rdt=40654"><img src="https://latinospc.com/images/hardware/hw/headsets/radio.webp" class="rtl" alt="radio listeners"></a><?= $content[1645][$key] ?? ''; ?><br /><br /></div>
-        <div class="card2"><a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/electrostatic.jpg" title="https://www.reddit.com/r/headphones/comments/7xtwwz/just_picked_up_these_vintage_electrostatic/"><img src="https://latinospc.com/images/hardware/hw/headsets/electrostatic.webp" class="fl" alt="radio listeners"></a><?= $content[1646][$key] ?? ''; ?> <a href="https://imgur.com/a/Jp0zF"><em>1.</em></a></div>
-        <div class="card2"><a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/pilot1930.jpg"title="http://www.303rdbg.com/uniforms-gear8.html"><img src="https://latinospc.com/images/hardware/hw/headsets/pilot1930.webp" alt="Pilots WWII" class="rtl"></a><?= $content[1647][$key] ?? ''; ?> <a href="http://www.303rdbg.com/uniforms-gear8.html"><em><?= $content[1648][$key] ?? ''; ?></em></a> <?= $content[1649][$key] ?? ''; ?> <a href="https://www.alamy.com/stock-photo/world-war-ii-radio-operator.html?sortBy=relevant"><em><?= $content[1650][$key] ?? ''; ?></em></a> <?= $content[1651][$key] ?? ''; ?></div>
+        <div class="card2"><a rel="example_group" href="../images/hardware/hw/headsets/radio.jpg" title="https://www.reddit.com/r/OldSchoolCool/comments/lo56r5/kids_listening_to_radio_using_headphones_1920s/?rdt=40654"><img src="../images/hardware/hw/headsets/radio.webp" class="rtl" alt="radio listeners"></a><?= $content[1645][$key] ?? ''; ?><br /><br /></div>
+        <div class="card2"><a rel="example_group" href="../images/hardware/hw/headsets/electrostatic.jpg" title="https://www.reddit.com/r/headphones/comments/7xtwwz/just_picked_up_these_vintage_electrostatic/"><img src="../images/hardware/hw/headsets/electrostatic.webp" class="fl" alt="radio listeners"></a><?= $content[1646][$key] ?? ''; ?> <a href="https://imgur.com/a/Jp0zF"><em>1.</em></a></div>
+        <div class="card2"><a rel="example_group" href="../images/hardware/hw/headsets/pilot1930.jpg"title="http://www.303rdbg.com/uniforms-gear8.html"><img src="../images/hardware/hw/headsets/pilot1930.webp" alt="Pilots WWII" class="rtl"></a><?= $content[1647][$key] ?? ''; ?> <a href="http://www.303rdbg.com/uniforms-gear8.html"><em><?= $content[1648][$key] ?? ''; ?></em></a> <?= $content[1649][$key] ?? ''; ?> <a href="https://www.alamy.com/stock-photo/world-war-ii-radio-operator.html?sortBy=relevant"><em><?= $content[1650][$key] ?? ''; ?></em></a> <?= $content[1651][$key] ?? ''; ?></div>
     </div>
 </fieldset>
 
 <fieldset><legend class="center"><?= $content[1652][$key] ?? ''; ?></legend>
     <div class="container">
-        <div class="card2"><a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/transistorsandintegratedcircuits.jpg" title="https://www.mikroe.com/ebooks/components-of-electronic-devices/introduction-integrated-circuits"><img src="https://latinospc.com/images/hardware/hw/headsets/transistorsandintegratedcircuits.webp" class="rtl" alt="transistors and integrated circuit"></a><?= $content[1653][$key] ?? ''; ?> <a href="https://quantumzeitgeist.com/a-brief-history-of-the-transistor-and-integrated-circuit/#google_vignette"><em><?= $content[1654][$key] ?? ''; ?></em></a></div>
-        <div class="card2"><a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/kosssp3.jpg" title="https://koss.com/products/sp3"><img src="https://latinospc.com/images/hardware/hw/headsets/kosssp3.webp" alt="Koss SP/3" class="rtl"></a><?= $content[1655][$key] ?? ''; ?> <a href="https://koss.com/products/sp3"><em><?= $content[1656][$key] ?? ''; ?></em></a> <?= $content[1657][$key] ?? ''; ?></div>
-        <div class="card2"><a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/bose1978.jpg" title="Dr. Bose is disappointed with current sound quality headphones in 1978"><img src="https://latinospc.com/images/hardware/hw/headsets/bose1978.webp" alt="Bose in 1978" class="rtl"></a><?= $content[1658][$key] ?? ''; ?> <a href="https://www.thebroadcastbridge.com/content/entry/1946/how-a-genius-engineer-designed-the-first-noise-cancelling-headsets"><em><?= $content[1659][$key] ?? ''; ?></em></a><?= $content[1660][$key] ?? ''; ?> <a href="https://boseaviation.com/about/history/"><em>1</em></a></div>
+        <div class="card2"><a rel="example_group" href="../images/hardware/hw/headsets/transistorsandintegratedcircuits.jpg" title="https://www.mikroe.com/ebooks/components-of-electronic-devices/introduction-integrated-circuits"><img src="../images/hardware/hw/headsets/transistorsandintegratedcircuits.webp" class="rtl" alt="transistors and integrated circuit"></a><?= $content[1653][$key] ?? ''; ?> <a href="https://quantumzeitgeist.com/a-brief-history-of-the-transistor-and-integrated-circuit/#google_vignette"><em><?= $content[1654][$key] ?? ''; ?></em></a></div>
+        <div class="card2"><a rel="example_group" href="../images/hardware/hw/headsets/kosssp3.jpg" title="https://koss.com/products/sp3"><img src="../images/hardware/hw/headsets/kosssp3.webp" alt="Koss SP/3" class="rtl"></a><?= $content[1655][$key] ?? ''; ?> <a href="https://koss.com/products/sp3"><em><?= $content[1656][$key] ?? ''; ?></em></a> <?= $content[1657][$key] ?? ''; ?></div>
+        <div class="card2"><a rel="example_group" href="../images/hardware/hw/headsets/bose1978.jpg" title="Dr. Bose is disappointed with current sound quality headphones in 1978"><img src="../images/hardware/hw/headsets/bose1978.webp" alt="Bose in 1978" class="rtl"></a><?= $content[1658][$key] ?? ''; ?> <a href="https://www.thebroadcastbridge.com/content/entry/1946/how-a-genius-engineer-designed-the-first-noise-cancelling-headsets"><em><?= $content[1659][$key] ?? ''; ?></em></a><?= $content[1660][$key] ?? ''; ?> <a href="https://boseaviation.com/about/history/"><em>1</em></a></div>
     </div>
 </fieldset>
 
 <fieldset><legend class="center"><?= $content[1661][$key] ?? ''; ?></legend>
     <div class="container">
-        <div class="card2"><a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/portable.jpg" title="Portable Music Device"><img src="https://latinospc.com/images/hardware/hw/headsets/portable.webp" alt="personal audio devices" class="fl"></a><?= $content[1662][$key] ?? ''; ?> <a href="https://en.wikipedia.org/wiki/Portable_audio_player"><em><?= $content[1663][$key] ?? ''; ?></em></a> <?= $content[1664][$key] ?? ''; ?></div><!--Photo by Sanket  Mishra from Pexels: https://www.pexels.com/photo/youtube-music-stream-songs-and-music-videos-app-on-the-display-of-smartphone-or-tablet-16773548/ -->
-        <div class="card2"><a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/earbuds.jpg" title="Earbuds"><img src="https://latinospc.com/images/hardware/hw/headsets/earbuds.webp" alt="Sony Earbuds" class="fl"></a><?= $content[1665][$key] ?? ''; ?> <a href="https://www.sony.com/en/SonyInfo/CorporateInfo/History/sonyhistory-h.html#year1982"><em><?= $content[1666][$key] ?? ''; ?></em></a><?= $content[1667][$key] ?? ''; ?></div>
-        <div class="card2"><a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/bluetooth2000.jpg"><img src="https://latinospc.com/images/hardware/hw/headsets/bluetooth2000.webp" alt="Bluetooth" class="fl"></a><?= $content[1668][$key] ?? ''; ?> <a href="https://www.nature.com/articles/s41928-018-0186-x#:~:text=The%20technology%20was%20publicly%20announced,not%20yet%20have%20Bluetooth%20embedded."><em><?= $content[1669][$key] ?? ''; ?></em></a> <?= $content[1670][$key] ?? ''; ?></div>
+        <div class="card2"><a rel="example_group" href="../images/hardware/hw/headsets/portable.jpg" title="Portable Music Device"><img src="../images/hardware/hw/headsets/portable.webp" alt="personal audio devices" class="fl"></a><?= $content[1662][$key] ?? ''; ?> <a href="https://en.wikipedia.org/wiki/Portable_audio_player"><em><?= $content[1663][$key] ?? ''; ?></em></a> <?= $content[1664][$key] ?? ''; ?></div><!--Photo by Sanket  Mishra from Pexels: https://www.pexels.com/photo/youtube-music-stream-songs-and-music-videos-app-on-the-display-of-smartphone-or-tablet-16773548/ -->
+        <div class="card2"><a rel="example_group" href="../images/hardware/hw/headsets/earbuds.jpg" title="Earbuds"><img src="../images/hardware/hw/headsets/earbuds.webp" alt="Sony Earbuds" class="fl"></a><?= $content[1665][$key] ?? ''; ?> <a href="https://www.sony.com/en/SonyInfo/CorporateInfo/History/sonyhistory-h.html#year1982"><em><?= $content[1666][$key] ?? ''; ?></em></a><?= $content[1667][$key] ?? ''; ?></div>
+        <div class="card2"><a rel="example_group" href="../images/hardware/hw/headsets/bluetooth2000.jpg"><img src="../images/hardware/hw/headsets/bluetooth2000.webp" alt="Bluetooth" class="fl"></a><?= $content[1668][$key] ?? ''; ?> <a href="https://www.nature.com/articles/s41928-018-0186-x#:~:text=The%20technology%20was%20publicly%20announced,not%20yet%20have%20Bluetooth%20embedded."><em><?= $content[1669][$key] ?? ''; ?></em></a> <?= $content[1670][$key] ?? ''; ?></div>
     </div>
 </fieldset>
 <!-- <a rel="example_group" href="" title=""><img src="" alt="" class=""></a> -->
 <fieldset><legend class="center"><?= $content[1671][$key] ?? ''; ?></legend>
     <div class="container">
-        <div class="card2"><a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/aiheadphones.jpg" title="AI Headphones"><img src="https://latinospc.com/images/hardware/hw/headsets/aiheadphones.webp" alt="AI Headsets" class="rtl"></a><a href="https://en.wikipedia.org/wiki/Audio_headset"><em><?= $content[1672][$key] ?? ''; ?></em></a> <?= $content[1673][$key] ?? ''; ?></div>
-        <div class="card2"><a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/dubsfilters.jpg" title="Dubs Acoustic Filters"><img src="https://latinospc.com/images/hardware/hw/headsets/dubsfilters.webp" alt="DUBS Acoustic Filters" class="rtl"></a><?= $content[1674][$key] ?? ''; ?> <a href="https://en.wikipedia.org/wiki/DUBS_Acoustic_Filters"><em><?= $content[1675][$key] ?? ''; ?></em></a> <?= $content[1676][$key] ?? ''; ?></div>
-        <div class="card2"><a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/amazonbuds.jpg" title="Amazon Echo Buds"><img src="https://latinospc.com/images/hardware/hw/headsets/amazonbuds.webp" alt="Amazon Echo Buds" class="rtl"></a><?= $content[1677][$key] ?? ''; ?> <a href="https://www.amazon.com/Echo-Buds-Wireless-immersive-reduction-previous-generation/product-reviews/B07F6VM1S3"><em><?= $content[1678][$key] ?? ''; ?></em></a> <?= $content[1679][$key] ?? ''; ?></div>
+        <div class="card2"><a rel="example_group" href="../images/hardware/hw/headsets/aiheadphones.jpg" title="AI Headphones"><img src="../images/hardware/hw/headsets/aiheadphones.webp" alt="AI Headsets" class="rtl"></a><a href="https://en.wikipedia.org/wiki/Audio_headset"><em><?= $content[1672][$key] ?? ''; ?></em></a> <?= $content[1673][$key] ?? ''; ?></div>
+        <div class="card2"><a rel="example_group" href="../images/hardware/hw/headsets/dubsfilters.jpg" title="Dubs Acoustic Filters"><img src="../images/hardware/hw/headsets/dubsfilters.webp" alt="DUBS Acoustic Filters" class="rtl"></a><?= $content[1674][$key] ?? ''; ?> <a href="https://en.wikipedia.org/wiki/DUBS_Acoustic_Filters"><em><?= $content[1675][$key] ?? ''; ?></em></a> <?= $content[1676][$key] ?? ''; ?></div>
+        <div class="card2"><a rel="example_group" href="../images/hardware/hw/headsets/amazonbuds.jpg" title="Amazon Echo Buds"><img src="../images/hardware/hw/headsets/amazonbuds.webp" alt="Amazon Echo Buds" class="rtl"></a><?= $content[1677][$key] ?? ''; ?> <a href="https://www.amazon.com/Echo-Buds-Wireless-immersive-reduction-previous-generation/product-reviews/B07F6VM1S3"><em><?= $content[1678][$key] ?? ''; ?></em></a> <?= $content[1679][$key] ?? ''; ?></div>
     </div>
 </fieldset>
 
@@ -81,11 +81,11 @@ global $content, $key;
     <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
     <h2><?= $content[1698][$key] ?? ''; ?></h2>
 
-<fieldset><legend class="card2"><a href="https://en.wikipedia.org/wiki/Virtual_reality_headset"><?= $content[1699][$key] ?? ''; ?></a></legend><a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/vr.jpg" title="Virtual Reality headsets"><img src="https://latinospc.com/images/hardware/hw/headsets/vr.webp" alt="Virtual Reality headsets" class="fl"></a>
+<fieldset><legend class="card2"><a href="https://en.wikipedia.org/wiki/Virtual_reality_headset"><?= $content[1699][$key] ?? ''; ?></a></legend><a rel="example_group" href="../images/hardware/hw/headsets/vr.jpg" title="Virtual Reality headsets"><img src="../images/hardware/hw/headsets/vr.webp" alt="Virtual Reality headsets" class="fl"></a>
     <section class="centercenter"><?= $content[1700][$key] ?? ''; ?></section>
 </fieldset>
 
-<fieldset><legend class="card2"><a href="https://en.wikipedia.org/wiki/Augmented_reality"><?= $content[1701][$key] ?? ''; ?></a> <?= $content[1702][$key] ?? ''; ?></legend><a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/ar.jpg" title="Augmented Reality headsets"><img src="https://latinospc.com/images/hardware/hw/headsets/ar.webp" alt="Augmented Reality headsets" class="rtl"></a>
+<fieldset><legend class="card2"><a href="https://en.wikipedia.org/wiki/Augmented_reality"><?= $content[1701][$key] ?? ''; ?></a> <?= $content[1702][$key] ?? ''; ?></legend><a rel="example_group" href="../images/hardware/hw/headsets/ar.jpg" title="Augmented Reality headsets"><img src="../images/hardware/hw/headsets/ar.webp" alt="Augmented Reality headsets" class="rtl"></a>
     <section class="centercenter2"><?= $content[1703][$key] ?? ''; ?></section>
 </fieldset>
 <fieldset><legend class="card2"><?= $content[1704][$key] ?? ''; ?></legend><?= $content[1705][$key] ?? ''; ?><br />
@@ -111,8 +111,8 @@ global $content, $key;
 <article class="article fullbar">
     <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
     <!--
-        <a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/sod.jpg" title="">
-            <img src="https://latinospc.com/images/hardware/hw/headsets/sod.jpg" alt="" class="">
+        <a rel="example_group" href="../images/hardware/hw/headsets/sod.jpg" title="">
+            <img src="../images/hardware/hw/headsets/sod.jpg" alt="" class="">
         </a>
     -->
     <!-- <span class="linky"><a href=""><?= $content[1720][$key] ?? ''; ?></a></span>   -->
@@ -122,8 +122,8 @@ global $content, $key;
             <summary><?= $content[1722][$key] ?? ''; ?></summary>
             <section class="card2">
                 <?= $content[1723][$key] ?? ''; ?>
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/sod.jpg" title="The Sword of Damocles"style="display: inline;">
-                    <img src="https://latinospc.com/images/hardware/hw/headsets/sod.webp" alt="The Sword of Damocles" class="fl">
+                <a rel="example_group" href="../images/hardware/hw/headsets/sod.jpg" title="The Sword of Damocles"style="display: inline;">
+                    <img src="../images/hardware/hw/headsets/sod.webp" alt="The Sword of Damocles" class="fl">
                 </a>
                 <?= $content[1724][$key] ?? ''; ?>
                 <div class="linky">
@@ -135,8 +135,8 @@ global $content, $key;
         <details class="container arvsvr">
             <summary><?= $content[1726][$key] ?? ''; ?></summary>
             <section class="card2">
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/view.jpg" title="Virtual Interface Environment Workstation" style="display: inline;">
-                    <img src="https://latinospc.com/images/hardware/hw/headsets/view.webp" alt="VIEW" class="fl">
+                <a rel="example_group" href="../images/hardware/hw/headsets/view.jpg" title="Virtual Interface Environment Workstation" style="display: inline;">
+                    <img src="../images/hardware/hw/headsets/view.webp" alt="VIEW" class="fl">
                 </a>
                 <?= $content[1727][$key] ?? ''; ?>
                 <div class="linky">
@@ -148,8 +148,8 @@ global $content, $key;
         <details class="container arvsvr left">
             <summary><?= $content[1729][$key] ?? ''; ?></summary>
             <section class="card2">
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/segavr.jpg" title="Sega VR" style="display: inline;">
-                    <img src="https://latinospc.com/images/hardware/hw/headsets/segavr.webp" alt="Sega VR" class="fl">
+                <a rel="example_group" href="../images/hardware/hw/headsets/segavr.jpg" title="Sega VR" style="display: inline;">
+                    <img src="../images/hardware/hw/headsets/segavr.webp" alt="Sega VR" class="fl">
                 </a>
                 <?= $content[1730][$key] ?? ''; ?>
                 <br />
@@ -162,8 +162,8 @@ global $content, $key;
         <details class="container arvsvr">
             <summary><?= $content[1733][$key] ?? ''; ?></summary>
             <section class="card2">
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/virtualboy.jpg" title="Virtual Boy" style="display: inline;">
-                    <img src="https://latinospc.com/images/hardware/hw/headsets/virtualboy.webp" alt="Virtual Boy" class="fl">
+                <a rel="example_group" href="../images/hardware/hw/headsets/virtualboy.jpg" title="Virtual Boy" style="display: inline;">
+                    <img src="../images/hardware/hw/headsets/virtualboy.webp" alt="Virtual Boy" class="fl">
                 </a>
                 <?= $content[1734][$key] ?? ''; ?>
                 <br />
@@ -176,8 +176,8 @@ global $content, $key;
         <details class="container arvsvr left">
             <summary><?= $content[1736][$key] ?? ''; ?></summary>
             <section class="card2">
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/vfx1.jpg" title="VFX1 Headgear" style="display: inline;">
-                    <img src="https://latinospc.com/images/hardware/hw/headsets/vfx1.webp" alt="VFX1 Headgear" class="fl">
+                <a rel="example_group" href="../images/hardware/hw/headsets/vfx1.jpg" title="VFX1 Headgear" style="display: inline;">
+                    <img src="../images/hardware/hw/headsets/vfx1.webp" alt="VFX1 Headgear" class="fl">
                 </a>
                 <?= $content[1737][$key] ?? ''; ?>
                 <br />
@@ -190,8 +190,8 @@ global $content, $key;
         <details class="container arvsvr">
             <summary><?= $content[1739][$key] ?? ''; ?></summary>
             <section class="card2">
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/cave.jpg" title="CAVE Automatic Virtual Environment" style="display: inline;">
-                    <img src="https://latinospc.com/images/hardware/hw/headsets/cave.webp" alt="CAVE" class="fl">
+                <a rel="example_group" href="../images/hardware/hw/headsets/cave.jpg" title="CAVE Automatic Virtual Environment" style="display: inline;">
+                    <img src="../images/hardware/hw/headsets/cave.webp" alt="CAVE" class="fl">
                 </a>
                 <?= $content[1740][$key] ?? ''; ?>
                 <br />
@@ -204,8 +204,8 @@ global $content, $key;
         <details class="container arvsvr left">
             <summary><?= $content[1742][$key] ?? ''; ?></summary>
             <section class="card2">
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/glasstron.jpg" title="Sony Glassron" style="display: inline;">
-                    <img src="https://latinospc.com/images/hardware/hw/headsets/glasstron.webp" alt="Sony Glassron" class="fl">
+                <a rel="example_group" href="../images/hardware/hw/headsets/glasstron.jpg" title="Sony Glassron" style="display: inline;">
+                    <img src="../images/hardware/hw/headsets/glasstron.webp" alt="Sony Glassron" class="fl">
                 </a>
                 <?= $content[1743][$key] ?? ''; ?>
                 <br />
@@ -218,8 +218,8 @@ global $content, $key;
         <details class="container arvsvr">
             <summary><?= $content[1746][$key] ?? ''; ?></summary>
             <section class="card2">
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/glass.jpg" title="Google Glass" style="display: inline;">
-                    <img src="https://latinospc.com/images/hardware/hw/headsets/glass.webp" alt="Google Glass" class="fl">
+                <a rel="example_group" href="../images/hardware/hw/headsets/glass.jpg" title="Google Glass" style="display: inline;">
+                    <img src="../images/hardware/hw/headsets/glass.webp" alt="Google Glass" class="fl">
                 </a>
                 <?= $content[1747][$key] ?? ''; ?>
                 <br />
@@ -232,8 +232,8 @@ global $content, $key;
         <details class="container arvsvr">
             <summary><?= $content[1750][$key] ?? ''; ?></summary>
             <section class="card2">
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/cardboard.jpg" title="Google Cardboard" style="display: inline;">
-                    <img src="https://latinospc.com/images/hardware/hw/headsets/cardboard.webp" alt="Google Cardboard" class="fl">
+                <a rel="example_group" href="../images/hardware/hw/headsets/cardboard.jpg" title="Google Cardboard" style="display: inline;">
+                    <img src="../images/hardware/hw/headsets/cardboard.webp" alt="Google Cardboard" class="fl">
                 </a>
                 <?= $content[1751][$key] ?? ''; ?>
                 <br />
@@ -246,8 +246,8 @@ global $content, $key;
         <details class="container arvsvr left">
             <summary><?= $content[1754][$key] ?? ''; ?></summary>
             <section class="card2">
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/gearvr.jpg" title="Samsung Gear VR" style="display: inline;">
-                    <img src="https://latinospc.com/images/hardware/hw/headsets/gearvr.webp" alt="Samsung Gear VR" class="fl">
+                <a rel="example_group" href="../images/hardware/hw/headsets/gearvr.jpg" title="Samsung Gear VR" style="display: inline;">
+                    <img src="../images/hardware/hw/headsets/gearvr.webp" alt="Samsung Gear VR" class="fl">
                 </a>
                 <?= $content[1755][$key] ?? ''; ?>
                 <br />
@@ -260,8 +260,8 @@ global $content, $key;
         <details class="container arvsvr">
             <summary><?= $content[1758][$key] ?? ''; ?></summary>
             <section class="card2">
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/psvr.jpg" title="PlayStation VR" style="display: inline;">
-                    <img src="https://latinospc.com/images/hardware/hw/headsets/psvr.webp" alt="PlayStation VR" class="fl">
+                <a rel="example_group" href="../images/hardware/hw/headsets/psvr.jpg" title="PlayStation VR" style="display: inline;">
+                    <img src="../images/hardware/hw/headsets/psvr.webp" alt="PlayStation VR" class="fl">
                 </a>
                 <?= $content[1759][$key] ?? ''; ?> <a href="https://industrial-ia.com/what-are-the-6-degrees-of-freedom-6dof-explained/#:~:text=The%206%20degrees%20of%20freedom,pitch%2C%20roll%2C%20or%20yaw."><?= $content[1760][$key] ?? ''; ?></a> <?= $content[1761][$key] ?? ''; ?>
                 <br />
@@ -274,8 +274,8 @@ global $content, $key;
         <details class="container arvsvr left">
             <summary><?= $content[1764][$key] ?? ''; ?></summary>
             <section class="card2">
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/vive.jpg" title="HTC Vive" style="display: inline;">
-                    <img src="https://latinospc.com/images/hardware/hw/headsets/vive.webp" alt="HTC Vive" class="fl">
+                <a rel="example_group" href="../images/hardware/hw/headsets/vive.jpg" title="HTC Vive" style="display: inline;">
+                    <img src="../images/hardware/hw/headsets/vive.webp" alt="HTC Vive" class="fl">
                 </a>
                 <?= $content[1765][$key] ?? ''; ?> <a href="https://industrial-ia.com/what-are-the-6-degrees-of-freedom-6dof-explained/#:~:text=The%206%20degrees%20of%20freedom,pitch%2C%20roll%2C%20or%20yaw."><?= $content[1766][$key] ?? ''; ?></a> <?= $content[1767][$key] ?? ''; ?>
                 <br />
@@ -288,8 +288,8 @@ global $content, $key;
         <details class="container arvsvr">
             <summary><?= $content[1770][$key] ?? ''; ?></summary>
             <section class="card2">
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/hololens.jpg" title="Microsoft HoloLens" style="display: inline;">
-                    <img src="https://latinospc.com/images/hardware/hw/headsets/hololens.webp" alt="Microsoft HoloLens" class="fl">
+                <a rel="example_group" href="../images/hardware/hw/headsets/hololens.jpg" title="Microsoft HoloLens" style="display: inline;">
+                    <img src="../images/hardware/hw/headsets/hololens.webp" alt="Microsoft HoloLens" class="fl">
                 </a>
                 <?= $content[1771][$key] ?? ''; ?>
                 <br />
@@ -302,8 +302,8 @@ global $content, $key;
         <details class="container arvsvr left">
             <summary><?= $content[1773][$key] ?? ''; ?></summary>
             <section class="card2">
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/meta2.jpg" title="Meta 2" style="display: inline;">
-                    <img src="https://latinospc.com/images/hardware/hw/headsets/meta2.webp" alt="Meta 2" class="fl">
+                <a rel="example_group" href="../images/hardware/hw/headsets/meta2.jpg" title="Meta 2" style="display: inline;">
+                    <img src="../images/hardware/hw/headsets/meta2.webp" alt="Meta 2" class="fl">
                 </a>
                 <?= $content[1774][$key] ?? ''; ?>
                 <br />
@@ -316,8 +316,8 @@ global $content, $key;
         <details class="container arvsvr">
             <summary><?= $content[1776][$key] ?? ''; ?></summary>
             <section class="card2">
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/rift.jpg" title="Oculus Rift" style="display: inline;">
-                    <img src="https://latinospc.com/images/hardware/hw/headsets/rift.webp" alt="Oculus Rift" class="fl">
+                <a rel="example_group" href="../images/hardware/hw/headsets/rift.jpg" title="Oculus Rift" style="display: inline;">
+                    <img src="../images/hardware/hw/headsets/rift.webp" alt="Oculus Rift" class="fl">
                 </a>
                 <?= $content[1777][$key] ?? ''; ?> <a href="https://industrial-ia.com/what-are-the-6-degrees-of-freedom-6dof-explained/#:~:text=The%206%20degrees%20of%20freedom,pitch%2C%20roll%2C%20or%20yaw."><?= $content[1778][$key] ?? ''; ?></a> <?= $content[1779][$key] ?? ''; ?>
                 <br />
@@ -329,8 +329,8 @@ global $content, $key;
         <details class="container arvsvr left">
             <summary><?= $content[1781][$key] ?? ''; ?></summary>
             <section class="card2">
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/magic.jpg" title="Magic Leap One" style="display: inline;">
-                    <img src="https://latinospc.com/images/hardware/hw/headsets/magic.webp" alt="Magic Leap One" class="fl">
+                <a rel="example_group" href="../images/hardware/hw/headsets/magic.jpg" title="Magic Leap One" style="display: inline;">
+                    <img src="../images/hardware/hw/headsets/magic.webp" alt="Magic Leap One" class="fl">
                 </a>
                 <?= $content[1782][$key] ?? ''; ?>
                 <br />
@@ -344,8 +344,8 @@ global $content, $key;
         <details class="container arvsvr">
             <summary><?= $content[1786][$key] ?? ''; ?></summary>
             <section class="card2">
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/mirage.jpg" title="Lenovo Mirage Solo" style="display: inline;">
-                    <img src="https://latinospc.com/images/hardware/hw/headsets/mirage.webp" alt="Lenovo Mirage Solo" class="fl">
+                <a rel="example_group" href="../images/hardware/hw/headsets/mirage.jpg" title="Lenovo Mirage Solo" style="display: inline;">
+                    <img src="../images/hardware/hw/headsets/mirage.webp" alt="Lenovo Mirage Solo" class="fl">
                 </a>
                 <?= $content[1787][$key] ?? ''; ?>
                 <br />
@@ -358,8 +358,8 @@ global $content, $key;
         <details class="container arvsvr left">
             <summary><?= $content[1790][$key] ?? ''; ?></summary>
             <section class="card2">
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/index.jpg" title="Valve Index" style="display: inline;">
-                    <img src="https://latinospc.com/images/hardware/hw/headsets/index.webp" alt="Valve Index" class="fl">
+                <a rel="example_group" href="../images/hardware/hw/headsets/index.jpg" title="Valve Index" style="display: inline;">
+                    <img src="../images/hardware/hw/headsets/index.webp" alt="Valve Index" class="fl">
                 </a>
                 <?= $content[1791][$key] ?? ''; ?>
                 <br />
@@ -372,8 +372,8 @@ global $content, $key;
         <details class="container arvsvr">
             <summary><?= $content[1793][$key] ?? ''; ?></summary>
             <section class="card2">
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/varjo.jpg" title="Varjo VR-1" style="display: inline;">
-                    <img src="https://latinospc.com/images/hardware/hw/headsets/varjo.webp" alt="Varjo VR-1" class="fl">
+                <a rel="example_group" href="../images/hardware/hw/headsets/varjo.jpg" title="Varjo VR-1" style="display: inline;">
+                    <img src="../images/hardware/hw/headsets/varjo.webp" alt="Varjo VR-1" class="fl">
                 </a>
                 <?= $content[1794][$key] ?? ''; ?>
                 <br />
@@ -386,8 +386,8 @@ global $content, $key;
         <details class="container arvsvr left">
             <summary><?= $content[1796][$key] ?? ''; ?></summary>
             <section class="card2">
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/nreal.jpg" title="Nreal Light" style="display: inline;">
-                    <img src="https://latinospc.com/images/hardware/hw/headsets/nreal.webp" alt="Nreal Light" class="fl">
+                <a rel="example_group" href="../images/hardware/hw/headsets/nreal.jpg" title="Nreal Light" style="display: inline;">
+                    <img src="../images/hardware/hw/headsets/nreal.webp" alt="Nreal Light" class="fl">
                 </a>
                 <?= $content[1797][$key] ?? ''; ?>
                 <br />
@@ -400,8 +400,8 @@ global $content, $key;
         <details class="container arvsvr">
             <summary><?= $content[1800][$key] ?? ''; ?></summary>
             <section class="card2">
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/quest.jpg" title="Meta Quest 1" style="display: inline;">
-                    <img src="https://latinospc.com/images/hardware/hw/headsets/quest.webp" alt="Meta Quest 1" class="fl">
+                <a rel="example_group" href="../images/hardware/hw/headsets/quest.jpg" title="Meta Quest 1" style="display: inline;">
+                    <img src="../images/hardware/hw/headsets/quest.webp" alt="Meta Quest 1" class="fl">
                 </a>
                 <?= $content[1801][$key] ?? ''; ?>
                 <br />
@@ -414,8 +414,8 @@ global $content, $key;
         <details class="container arvsvr">
             <summary><?= $content[1804][$key] ?? ''; ?></summary>
             <section class="card2">
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/quest2.jpg" title="Meta Quest 2" style="display: inline;">
-                    <img src="https://latinospc.com/images/hardware/hw/headsets/quest2.webp" alt="Meta Quest 1" class="fl">
+                <a rel="example_group" href="../images/hardware/hw/headsets/quest2.jpg" title="Meta Quest 2" style="display: inline;">
+                    <img src="../images/hardware/hw/headsets/quest2.webp" alt="Meta Quest 1" class="fl">
                 </a>
                 <?= $content[1805][$key] ?? ''; ?>
                 <div class="linky">
@@ -427,8 +427,8 @@ global $content, $key;
         <details class="container arvsvr left">
             <summary><?= $content[1808][$key] ?? ''; ?></summary>
             <section class="card2">
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/reverb.jpg" title="HP Reverb G2" style="display: inline;">
-                    <img src="https://latinospc.com/images/hardware/hw/headsets/reverb.webp" alt="HP Reverb G2" class="fl">
+                <a rel="example_group" href="../images/hardware/hw/headsets/reverb.jpg" title="HP Reverb G2" style="display: inline;">
+                    <img src="../images/hardware/hw/headsets/reverb.webp" alt="HP Reverb G2" class="fl">
                 </a>
                 <?= $content[1809][$key] ?? ''; ?>
                 <br />
@@ -442,8 +442,8 @@ global $content, $key;
         <details class="container arvsvr">
             <summary><?= $content[1812][$key] ?? ''; ?></summary>
             <section class="card2">
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/quest3.jpg" title="Meta Quest 3" style="display: inline;">
-                    <img src="https://latinospc.com/images/hardware/hw/headsets/quest3.webp" alt="Meta Quest 3" class="fl">
+                <a rel="example_group" href="../images/hardware/hw/headsets/quest3.jpg" title="Meta Quest 3" style="display: inline;">
+                    <img src="../images/hardware/hw/headsets/quest3.webp" alt="Meta Quest 3" class="fl">
                 </a>
                 <?= $content[1813][$key] ?? ''; ?>
                 <br />
@@ -456,8 +456,8 @@ global $content, $key;
         <details class="container arvsvr left">
             <summary><?= $content[1816][$key] ?? ''; ?></summary>
             <section class="card2">
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/playstation.jpg" title="Playstation VR2" style="display: inline;">
-                    <img src="https://latinospc.com/images/hardware/hw/headsets/playstation.webp" alt="Playstation VR2" class="fl">
+                <a rel="example_group" href="../images/hardware/hw/headsets/playstation.jpg" title="Playstation VR2" style="display: inline;">
+                    <img src="../images/hardware/hw/headsets/playstation.webp" alt="Playstation VR2" class="fl">
                 </a>
                 <?= $content[1817][$key] ?? ''; ?>
                 <br />
@@ -470,8 +470,8 @@ global $content, $key;
         <details class="container arvsvr">
             <summary><?= $content[1820][$key] ?? ''; ?> </summary>
             <section class="card2">
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/pico4.jpg" title="Pico4" style="display: inline;">
-                    <img src="https://latinospc.com/images/hardware/hw/headsets/pico4.webp" alt="Pico4" class="fl">
+                <a rel="example_group" href="../images/hardware/hw/headsets/pico4.jpg" title="Pico4" style="display: inline;">
+                    <img src="../images/hardware/hw/headsets/pico4.webp" alt="Pico4" class="fl">
                 </a>
                 <?= $content[1821][$key] ?? ''; ?> <a href="https://industrial-ia.com/what-are-the-6-degrees-of-freedom-6dof-explained/#:~:text=The%206%20degrees%20of%20freedom,pitch%2C%20roll%2C%20or%20yaw."><?= $content[1822][$key] ?? ''; ?></a> <?= $content[1823][$key] ?? ''; ?>
                 <br />
@@ -484,8 +484,8 @@ global $content, $key;
         <details class="container arvsvr left">
             <summary><?= $content[1826][$key] ?? ''; ?> </summary>
             <section class="card2">
-                <a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/vision.jpg" title="Apple Vision Pro" style="display: inline;">
-                    <img src="https://latinospc.com/images/hardware/hw/headsets/vision.webp" alt="Apple Vision Pro" class="fl">
+                <a rel="example_group" href="../images/hardware/hw/headsets/vision.jpg" title="Apple Vision Pro" style="display: inline;">
+                    <img src="../images/hardware/hw/headsets/vision.webp" alt="Apple Vision Pro" class="fl">
                 </a>
                 <?= $content[1827][$key] ?? ''; ?>
                 <br />
@@ -540,33 +540,33 @@ global $content, $key;
 <p class="big" tabindex="0">
 <a href="https://www.gutenberg.org/ebooks/11" title="Alice's Adventures in Wonderland by Lewis Carroll">
     <?= $content[1857][$key] ?? ''; ?></a> <?= $content[1858][$key] ?? ''; ?>
-<a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/xruser.jpg" title="Alice an XR User in 2030">
-    <img src="https://latinospc.com/images/hardware/hw/headsets/xruser.webp" class="fl" alt="Alice an XR User in 2030"></a>
+<a rel="example_group" href="../images/hardware/hw/headsets/xruser.jpg" title="Alice an XR User in 2030">
+    <img src="../images/hardware/hw/headsets/xruser.webp" class="fl" alt="Alice an XR User in 2030"></a>
 <?= $content[1859][$key] ?? ''; ?></p>
 <p class="big" tabindex="0">
 <?= $content[1860][$key] ?? ''; ?>
-<a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/xruser2.jpg" title="Alice an AR Glasses User in 2030">
-    <img src="https://latinospc.com/images/hardware/hw/headsets/xruser2.webp" class="rtl" alt="Alice an AR Glasses User in 2030"></a>
+<a rel="example_group" href="../images/hardware/hw/headsets/xruser2.jpg" title="Alice an AR Glasses User in 2030">
+    <img src="../images/hardware/hw/headsets/xruser2.webp" class="rtl" alt="Alice an AR Glasses User in 2030"></a>
 <?= $content[1861][$key] ?? ''; ?></p>
 <p class="big" tabindex="0">
 <?= $content[1862][$key] ?? ''; ?>
-<a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/xruser3.jpg" title="Alice a coffee shop patron in 2030">
-    <img src="https://latinospc.com/images/hardware/hw/headsets/xruser3.webp" class="fl" alt="Alice a coffee shop patron in 2030"></a><!-- I don't like how this Alice looks, I gotta change all these images later -->
+<a rel="example_group" href="../images/hardware/hw/headsets/xruser3.jpg" title="Alice a coffee shop patron in 2030">
+    <img src="../images/hardware/hw/headsets/xruser3.webp" class="fl" alt="Alice a coffee shop patron in 2030"></a><!-- I don't like how this Alice looks, I gotta change all these images later -->
 <?= $content[1863][$key] ?? ''; ?></p>
 <p class="big" tabindex="0">
 <?= $content[1864][$key] ?? ''; ?>
-<a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/xruser4.jpg" title="Alice an XR teacher in 2030">
-    <img src="https://latinospc.com/images/hardware/hw/headsets/xruser4.webp" class="rtl" alt="Alice an XR teacher in 2030"></a>
+<a rel="example_group" href="../images/hardware/hw/headsets/xruser4.jpg" title="Alice an XR teacher in 2030">
+    <img src="../images/hardware/hw/headsets/xruser4.webp" class="rtl" alt="Alice an XR teacher in 2030"></a>
 <?= $content[1865][$key] ?? ''; ?></p>
 <p class="big" tabindex="0">
 <?= $content[1866][$key] ?? ''; ?>
-<a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/xruser5.jpg" title="5">
-    <img src="https://latinospc.com/images/hardware/hw/headsets/xruser5.webp" class="rtl" alt="5"></a>
+<a rel="example_group" href="../images/hardware/hw/headsets/xruser5.jpg" title="5">
+    <img src="../images/hardware/hw/headsets/xruser5.webp" class="rtl" alt="5"></a>
 <?= $content[1867][$key] ?? ''; ?></p>
 <p class="big" tabindex="0">
 <?= $content[1868][$key] ?? ''; ?>
-<a rel="example_group" href="https://latinospc.com/images/hardware/hw/headsets/xruser6.jpg" title="6">
-    <img src="https://latinospc.com/images/hardware/hw/headsets/xruser6.webp" class="rtl" alt="6"></a>
+<a rel="example_group" href="../images/hardware/hw/headsets/xruser6.jpg" title="6">
+    <img src="../images/hardware/hw/headsets/xruser6.webp" class="rtl" alt="6"></a>
 </p>
 </details>
 

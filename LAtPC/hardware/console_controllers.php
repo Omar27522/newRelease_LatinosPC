@@ -19,19 +19,27 @@ global $content, $key;
     <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ -->
     <h2><?= $content[839][$key] ?? ''; ?>
     </h2><!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ -->
-    <a href="#scroll"><img src="https://latinospc.com/images/up.gif" class="rtl" alt="Go to Top" title="Go to Top"></a>
+    <a href="#scroll"><img src="../images/up.gif" class="rtl" alt="Go to Top" title="Go to Top"></a>
     <h2 class="game" id="adoa"><a
             href="https://en.wikipedia.org/wiki/History_of_video_games#1970s"><?= $content[840][$key] ?? ''; ?></a>
         <?= $content[841][$key] ?? ''; ?></h2>
     <h3 class="spacer_shape">
         <div style=" margin-bottom: 1px;"><a href="https://en.wikipedia.org/wiki/Magnavox_Odyssey" class="game">
                 <?= $content[842][$key] ?? ''; ?></a>
-            <a rel="example_group" href="https://latinospc.com/images/hardware/hw/c_controllers/MagnavoxOdyssey.jpg"
-                title="Magnavox Odyssey (1972)
-
-        https://americanhistory.si.edu/collections/"><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/MagnavoxOdyssey.webp"
-                    alt="Magnavox Odyssey (1972)" class="rtl"></a>
+            <div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/MagnavoxOdyssey_thumb.webp"
+                        alt="Magnavox Odyssey (1972)"
+                        title="Magnavox Odyssey (1972)"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
+        </div>
+    </div>
             <?= $content[843][$key] ?? ''; ?> <a href="https://youtu.be/jLGBtkKPj2U?si=dgvGCBw5IYe22I3j"
                 title="Promotional Video" class="textlink"><?= $content[844][$key] ?? ''; ?></a></li>
             <?= $content[845][$key] ?? ''; ?>
@@ -41,11 +49,20 @@ global $content, $key;
 
         <div style="margin-bottom: 10px;"><a href="https://en.wikipedia.org/wiki/Pong" class="game">
                 <?= $content[847][$key] ?? ''; ?></a>
-            <div><a rel="example_group" href="https://latinospc.com/images/hardware/hw/c_controllers/pong.jpg" title="Atari Pong (1972)
-
-        https://atari.com/collections/pong-collection"><img
-                        src="https://latinospc.com/images/hardware/hw/c_controllers/pong.webp" alt="Atari Pong (1972)"
-                        class="rtl"></a></div>
+            <div><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/pong_thumb.webp"
+                        alt="Atari Pong (1972)"
+                        title="Atari Pong (1972)"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="1"></div>
+        </div>
+    </div></div>
             <?= $content[848][$key] ?? ''; ?> <a href="https://youtu.be/ut6Rh-rmGAo?si=13PoD35feJAai2Z8&t=1180"
                 title="Arcade Video" class="textlink"><?= $content[849][$key] ?? ''; ?></a>
             <?= $content[850][$key] ?? ''; ?>
@@ -54,12 +71,20 @@ global $content, $key;
         </div>
         <div style="margin-bottom: 10px;">
             <a href="https://en.wikipedia.org/wiki/Space_Invaders" class="game">
-                <?= $content[852][$key] ?? ''; ?></a><a rel="example_group"
-                href="https://latinospc.com/images/hardware/hw/c_controllers/spaceinvaders.jpg" title="Space Invaders (1978)
-
-        https://landofozarcades.com/product/space-invaders-full-size-arcade-brand-new/"><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/spaceinvaders.webp"
-                    alt="Space Invaders (1978)" class="rtl"></a>
+                <?= $content[852][$key] ?? ''; ?></a><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/spaceinvaders_thumb.webp"
+                        alt="Space Invaders (1978)"
+                        title="Space Invaders (1978)"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="2"></div>
+        </div>
+    </div>
             <?= $content[853][$key] ?? ''; ?> <a href="https://youtu.be/waY3svOHGGI?si=RE9HU2XMSKnF66ND&t=231"
                 title="Arcade Video" class="textlink"><?= $content[854][$key] ?? ''; ?></a>
             <?= $content[855][$key] ?? ''; ?>
@@ -69,12 +94,20 @@ global $content, $key;
         </div>
         <div style="margin-bottom: 10px; padding-bottom: 20px;">
             <a href="https://en.wikipedia.org/wiki/Pac-Man" class="game">
-                <?= $content[857][$key] ?? ''; ?></a><a rel="example_group"
-                href="https://latinospc.com/images/hardware/hw/c_controllers/pacman.jpg" title="Pacman (1980)
-
-        https://www.pacman.com/en/history/" alt="Pac-Man (1980)"><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/pacman.webp" alt="Pac-Man (1980)"
-                    class="rtl"></a>
+                <?= $content[857][$key] ?? ''; ?></a><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/pacman_thumb.webp"
+                        alt="Pacman (1980)"
+                        title="Pacman (1980)"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="3"></div>
+        </div>
+    </div>
             <a href="https://youtu.be/a0I9uaJW3qE?si=BQRiREKw8eO1SLOi&t=596" title="Arcade Video"
                 class="textlink"><?= $content[858][$key] ?? ''; ?></a> <?= $content[859][$key] ?? ''; ?>
             <div class="pacman"><a href="https://www.pacman.com/en/history/"
@@ -84,18 +117,26 @@ global $content, $key;
     <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ -->
     <h2 class="game" id="golden_age"><a
             href="https://en.wikipedia.org/wiki/History_of_video_games#1980s"><?= $content[861][$key] ?? ''; ?></a><a
-            href="#scroll"><img src="https://latinospc.com/images/up.gif" class="rtl" alt="Go to Top"
+            href="#scroll"><img src="../images/up.gif" class="rtl" alt="Go to Top"
                 title="Go to Top"></a><br /><?= $content[862][$key] ?? ''; ?></h2>
     <h3 class="spacer_shape">
         <div style="margin-bottom: 10px;"><a href="https://en.wikipedia.org/wiki/Street_Fighter_(video_game)"
                 class="game">
                 <?= $content[863][$key] ?? ''; ?>
-            </a><a rel="example_group" href="https://latinospc.com/images/hardware/hw/c_controllers/streetfighter.jpg"
-                title="Street Fighter
-
-        https://www.streetfighter.com/en/35th/history.html" alt="Street Fighter (1987)"><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/streetfighter.webp"
-                    alt="Street Fighter (1987)" class="rtl"></a>
+            </a><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/streetfighter_thumb.webp"
+                        alt="Street Fighter"
+                        title="Street Fighter"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="4"></div>
+        </div>
+    </div>
             <a href="https://youtu.be/c0rdmLjxL7U?si=_hl3tbRtlP58UACK&t=269" title="Arcade Video"
                 class="textlink"><?= $content[864][$key] ?? ''; ?></a> <?= $content[865][$key] ?? ''; ?>
             <div class="streetfighter"><a href="https://www.streetfighter.com/en/35th/history.html"
@@ -104,12 +145,20 @@ global $content, $key;
         <div style="margin-bottom: 10px;"><a href="https://en.wikipedia.org/wiki/Nintendo_Entertainment_System"
                 class="game">
                 <?= $content[867][$key] ?? ''; ?>
-            </a><a rel="example_group" href="https://latinospc.com/images/hardware/hw/c_controllers/nes.jpg" title="Nintendo Entertainment System (NES)
-
-        https://nintendo.fandom.com/wiki/Nintendo_Entertainment_System"
-                alt="Nintendo Entertainment System (NES) (1985)"><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/nes.webp"
-                    alt="Nintendo Entertainment System (NES) (1985)" class="rtl"></a>
+            </a><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/nes_thumb.webp"
+                        alt="Nintendo Entertainment System (NES)"
+                        title="Nintendo Entertainment System (NES)"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="5"></div>
+        </div>
+    </div>
             <?= $content[868][$key] ?? ''; ?> <a href="https://www.youtube.com/watch?v=jbijYdtApRg&t=2s"
                 title="Console Video" class="textlink"><?= $content[869][$key] ?? ''; ?></a>
             <?= $content[870][$key] ?? ''; ?> <a
@@ -121,12 +170,20 @@ global $content, $key;
         </div>
         <div style="margin-bottom: 10px;"><a href="https://en.wikipedia.org/wiki/Sega_Genesis" class="game">
                 <?= $content[874][$key] ?? ''; ?>
-            </a><a rel="example_group" href="https://latinospc.com/images/hardware/hw/c_controllers/segagenesis.jpg"
-                title="Sega Genesis
-
-        https://genesismini.sega.com/" alt="Sega Genesis (1989)">
-                <img src="https://latinospc.com/images/hardware/hw/c_controllers/segagenesis.webp"
-                    alt="Sega Genesis (1989)" class="rtl"></a>
+            </a><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/segagenesis_thumb.webp"
+                        alt="Sega Genesis"
+                        title="Sega Genesis"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="6"></div>
+        </div>
+    </div>
             <?= $content[875][$key] ?? ''; ?> <a href="https://youtu.be/PRVr1heimY8?si=SUJwu2jdPdf-qypB&t=118"
                 title="RETRO TECH: SEGA GENESIS" class="textlink"><?= $content[876][$key] ?? ''; ?></a>
             <?= $content[877][$key] ?? ''; ?>
@@ -137,7 +194,7 @@ global $content, $key;
     <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ -->
     <h2 id="3dimensions">
         <a href="https://en.wikipedia.org/wiki/History_of_video_games#1990s"><?= $content[879][$key] ?? ''; ?></a><a
-            href="#scroll"><img src="https://latinospc.com/images/up.gif" class="rtl" alt="Go to Top"
+            href="#scroll"><img src="../images/up.gif" class="rtl" alt="Go to Top"
                 title="Go to Top"></a><br /><?= $content[880][$key] ?? ''; ?> <a
             href="https://en.wikipedia.org/wiki/History_of_video_games#2000s"><?= $content[881][$key] ?? ''; ?></a>):
     </h2>
@@ -145,11 +202,20 @@ global $content, $key;
         <div style=" margin-bottom: 10px;">
             <a href="https://en.wikipedia.org/wiki/PlayStation_(console)" class="game">
                 <?= $content[882][$key] ?? ''; ?></a>
-            <a rel="example_group" href="https://latinospc.com/images/hardware/hw/c_controllers/sonyps1.jpg" title="Sony PlayStation
-
-        https://www.giantbomb.com/playstation/3045-22/" alt="Sony PlayStation (1994)">
-                <img src="https://latinospc.com/images/hardware/hw/c_controllers/sonyps1.webp"
-                    alt="Sony PlayStation (1994)" class="rtl"></a>
+            <div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/sonyps1_thumb.webp"
+                        alt="Sony PlayStation"
+                        title="Sony PlayStation"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="7"></div>
+        </div>
+    </div>
             <?= $content[883][$key] ?? ''; ?> <a href="https://youtu.be/5dxszTGsMcs?si=PrZALcCySenWH8pU&t=30"
                 title="Console Video" class="textlink"><?= $content[884][$key] ?? ''; ?></a>
             <?= $content[885][$key] ?? ''; ?>
@@ -160,11 +226,20 @@ global $content, $key;
         <div style=" margin-bottom: 10px;">
             <a href="https://en.wikipedia.org/wiki/Nintendo_64" class="game">
                 <?= $content[887][$key] ?? ''; ?></a>
-            <a rel="example_group" href="https://latinospc.com/images/hardware/hw/c_controllers/n64.jpg" title="Nintendo 64
-
-        https://gametyrant.com/news/bqcybvbpu82ic8y59gg4ymvnclevmx">
-                <img src="https://latinospc.com/images/hardware/hw/c_controllers/n64.webp" alt="Nintendo 64 (1996)"
-                    class="rtl"></a>
+            <div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/n64_thumb.webp"
+                        alt="Nintendo 64"
+                        title="Nintendo 64"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="8"></div>
+        </div>
+    </div>
             <?= $content[888][$key] ?? ''; ?>
             <div class="nintendo64"><a href="https://gametyrant.com/news/bqcybvbpu82ic8y59gg4ymvnclevmx"
                     class="link"><?= $content[889][$key] ?? ''; ?></a></div>
@@ -172,11 +247,20 @@ global $content, $key;
         <div style=" margin-bottom: 10px;">
             <a href="https://en.wikipedia.org/wiki/Dreamcast" class="game">
                 <?= $content[890][$key] ?? ''; ?></a>
-            <a rel="example_group" href="https://latinospc.com/images/hardware/hw/c_controllers/dreamcast.jpg" title="Sega Dreamcast
-
-        https://wallpapersafari.com/w/6ABr74">
-                <img src="https://latinospc.com/images/hardware/hw/c_controllers/dreamcast.webp"
-                    alt="Sega Dreamcast (1999)" class="rtl"></a>
+            <div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/dreamcast_thumb.webp"
+                        alt="Sega Dreamcast"
+                        title="Sega Dreamcast"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="9"></div>
+        </div>
+    </div>
             <?= $content[891][$key] ?? ''; ?>
             <div class="segadreamcast"><a href="https://wallpapersafari.com/w/6ABr74"
                     class="link"><?= $content[892][$key] ?? ''; ?></a></div>
@@ -185,7 +269,7 @@ global $content, $key;
     <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ -->
     <h2 class="game" id="modern_era">
         <a href="https://en.wikipedia.org/wiki/History_of_video_games#2020s"><?= $content[893][$key] ?? ''; ?></a><a
-            href="#scroll"><img src="https://latinospc.com/images/up.gif" class="rtl" alt="Go to Top"
+            href="#scroll"><img src="../images/up.gif" class="rtl" alt="Go to Top"
                 title="Go to Top"></a><br />(<a
             href="https://en.wikipedia.org/wiki/History_of_video_games#2010s"><?= $content[894][$key] ?? ''; ?></a>
         <?= $content[895][$key] ?? ''; ?>
@@ -193,12 +277,20 @@ global $content, $key;
     <h3 class="spacer_shape">
         <!----☁_☁_☁_☁_☁_☁_☁_☁_☁_☁---->
         <div style=" margin-bottom: 10px;"><a href="https://en.wikipedia.org/wiki/PlayStation_2" class="game">
-                <?= $content[896][$key] ?? ''; ?></a><a rel="example_group"
-                href="https://latinospc.com/images/hardware/hw/c_controllers/ps2.jpg" title="PlayStation2
-
-        https://playstation.fandom.com/wiki/PlayStation_2"><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/ps2.webp"
-                    alt="Sony PlayStation 2 (2000)" class="rtl"></a>
+                <?= $content[896][$key] ?? ''; ?></a><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/ps2_thumb.webp"
+                        alt="PlayStation2"
+                        title="PlayStation2"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="10"></div>
+        </div>
+    </div>
             <?= $content[897][$key] ?? ''; ?>
             <div class="sonyplaystation2"><a href="https://playstation.fandom.com/wiki/PlayStation_2"
                     class="link"><?= $content[898][$key] ?? ''; ?></a></div>
@@ -206,12 +298,20 @@ global $content, $key;
         <!----☁_☁_☁_☁_☁_☁_☁_☁_☁_☁---->
         <div style=" margin-bottom: 10px;"><a href="https://en.wikipedia.org/wiki/Xbox#First_generation:_Xbox"
                 class="game">
-                <?= $content[899][$key] ?? ''; ?></a><a rel="example_group"
-                href="https://latinospc.com/images/hardware/hw/c_controllers/xbox.jpg" title="Microsoft Xbox
-
-        https://www.xbox.com/en-US/power-on"><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/xbox.webp" alt="Microsoft Xbox (2001)"
-                    class="rtl"></a>
+                <?= $content[899][$key] ?? ''; ?></a><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/xbox_thumb.webp"
+                        alt="Microsoft Xbox"
+                        title="Microsoft Xbox"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="11"></div>
+        </div>
+    </div>
             <?= $content[900][$key] ?? ''; ?>
             <div class="microsoftxbox"><a href="https://www.xbox.com/en-US/power-on"
                     class="link"><?= $content[901][$key] ?? ''; ?></a></div>
@@ -219,11 +319,20 @@ global $content, $key;
         <!----☁_☁_☁_☁_☁_☁_☁_☁_☁_☁---->
         <div style=" margin-bottom: 10px;"><a href="https://en.wikipedia.org/wiki/GameCube" class="game">
                 <?= $content[902][$key] ?? ''; ?></a>
-            <a rel="example_group" href="https://latinospc.com/images/hardware/hw/c_controllers/gamecube.jpg" title="Nintendo GameCube
-
-        https://nintendo.fandom.com/wiki/Nintendo_GameCube"><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/gamecube.webp"
-                    alt="Nintendo GameCube (2001)" class="rtl"></a>
+            <div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/gamecube_thumb.webp"
+                        alt="Nintendo GameCube"
+                        title="Nintendo GameCube"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="12"></div>
+        </div>
+    </div>
             <?= $content[903][$key] ?? ''; ?>
             <div class="nintendogamecube"><a href="https://nintendo.fandom.com/wiki/Nintendo_GameCube"
                     class="link"><?= $content[904][$key] ?? ''; ?></a></div>
@@ -231,23 +340,40 @@ global $content, $key;
         <!----☁_☁_☁_☁_☁_☁_☁_☁_☁_☁---->
         <div style=" margin-bottom: 10px;"><a href="https://en.wikipedia.org/wiki/Wii_Remote" class="game">
                 <?= $content[905][$key] ?? ''; ?></a>
-            <a rel="example_group" href="https://latinospc.com/images/hardware/hw/c_controllers/wiiremote.jpg" title="Wii Remote
-
-        https://nintendo.fandom.com/wiki/Wii_Remote"><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/wiiremote.webp" alt="Wii Remote (2006)"
-                    class="rtl"></a>
+            <div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/wiiremote_thumb.webp"
+                        alt="Wii Remote"
+                        title="Wii Remote"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="13"></div>
+        </div>
+    </div>
             <?= $content[906][$key] ?? ''; ?>
             <div class="nintendowii"><a href="https://nintendo.fandom.com/wiki/Wii_Remote"
                     class="link"><?= $content[907][$key] ?? ''; ?></a></div>
         </div>
         <!----☁_☁_☁_☁_☁_☁_☁_☁_☁_☁---->
         <div style=" margin-bottom: 10px;"><a href="https://en.wikipedia.org/wiki/PlayStation_3" class="game">
-                <?= $content[908][$key] ?? ''; ?></a><a rel="example_group"
-                href="https://latinospc.com/images/hardware/hw/c_controllers/ps3.jpg" title="Sony PlayStation 3
-
-        https://www.copetti.org/writings/consoles/playstation-3/"><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/ps3.webp"
-                    alt="Sony PlayStation 3 (2006)" class="rtl"></a>
+                <?= $content[908][$key] ?? ''; ?></a><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/ps3_thumb.webp"
+                        alt="Sony PlayStation 3"
+                        title="Sony PlayStation 3"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="14"></div>
+        </div>
+    </div>
             <?= $content[909][$key] ?? ''; ?>
             <div class="sonyplaystation3"><a href="https://www.copetti.org/writings/consoles/playstation-3/"
                     class="link"><?= $content[910][$key] ?? ''; ?></a></div>
@@ -257,36 +383,60 @@ global $content, $key;
                 class="game">
                 <?= $content[911][$key] ?? ''; ?></a><a
                 href="https://en.wikipedia.org/wiki/Xbox#Third_generation:_Xbox_One" class="game">
-                <?= $content[912][$key] ?? ''; ?></a><a rel="example_group"
-                href="https://latinospc.com/images/hardware/hw/c_controllers/xbox360one.jpg" title="Microsoft Xbox 360, One
-
-        https://youtu.be/glYSnb_uY-o?si=JtUXmAz-CEpyu-cj&t=7"><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/xbox360one.webp"
-                    alt="Microsoft Xbox 360 (2005) and Xbox One (2013)" class="rtl"></a>
+                <?= $content[912][$key] ?? ''; ?></a><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/xbox360one_thumb.webp"
+                        alt="Microsoft Xbox 360, One"
+                        title="Microsoft Xbox 360, One"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="15"></div>
+        </div>
+    </div>
             <?= $content[913][$key] ?? ''; ?>
             <div class="microsoftxboxone"><a href="https://youtu.be/glYSnb_uY-o?si=JtUXmAz-CEpyu-cj&t=7"
                     class="link"><?= $content[914][$key] ?? ''; ?></a></div>
         </div>
         <!----☁_☁_☁_☁_☁_☁_☁_☁_☁_☁---->
         <div style=" margin-bottom: 10px;"><a href="https://en.wikipedia.org/wiki/Nintendo_Switch" class="game">
-                <?= $content[915][$key] ?? ''; ?></a><a rel="example_group"
-                href="https://latinospc.com/images/hardware/hw/c_controllers/switch.jpg" title="Nintendo Switch
-
-        https://www.nintendo.com/us/switch/"><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/switch.webp"
-                    alt="Nintendo Switch (2017)" class="rtl"></a>
+                <?= $content[915][$key] ?? ''; ?></a><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/switch_thumb.webp"
+                        alt="Nintendo Switch"
+                        title="Nintendo Switch"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="16"></div>
+        </div>
+    </div>
             <?= $content[916][$key] ?? ''; ?>
             <div class="nintendoswitch"><a href="https://www.nintendo.com/us/switch/"
                     class="link"><?= $content[917][$key] ?? ''; ?></a></div>
         </div>
         <!----☁_☁_☁_☁_☁_☁_☁_☁_☁_☁---->
         <div style=" margin-bottom: 10px;"><a href="https://en.wikipedia.org/wiki/PlayStation_4" class="game">
-                <?= $content[918][$key] ?? ''; ?></a><a rel="example_group"
-                href="https://latinospc.com/images/hardware/hw/c_controllers/ps4.jpg" title="Sony PlayStation 4
-
-        https://www.playstation.com/en-us/ps4/"><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/ps4.webp"
-                    alt="Sony PlayStation 4 (2013)" class="rtl"></a>
+                <?= $content[918][$key] ?? ''; ?></a><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/ps4_thumb.webp"
+                        alt="Sony PlayStation 4"
+                        title="Sony PlayStation 4"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="17"></div>
+        </div>
+    </div>
             <?= $content[919][$key] ?? ''; ?>
             <div class="sonyplaystation4"><a href="https://www.playstation.com/en-us/ps4/"
                     class="link"><?= $content[920][$key] ?? ''; ?></a></div>
@@ -294,11 +444,20 @@ global $content, $key;
         <!----☁_☁_☁_☁_☁_☁_☁_☁_☁_☁---->
         <div style=" margin-bottom: 10px;"><a href="https://en.wikipedia.org/wiki/PlayStation_5" class="game">
                 <?= $content[921][$key] ?? ''; ?></a>
-            <a rel="example_group" href="https://latinospc.com/images/hardware/hw/c_controllers/ps5.jpg" title="Sony PlayStation 5
-
-        https://www.playstation.com/en-us/ps5/"><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/ps5.webp"
-                    alt="Sony PlayStation 5 (2020)" class="rtl"></a>
+            <div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/ps5_thumb.webp"
+                        alt="Sony PlayStation 5"
+                        title="Sony PlayStation 5"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="18"></div>
+        </div>
+    </div>
             <?= $content[922][$key] ?? ''; ?>
             <div class="sonyplaystation5"><a href="https://www.playstation.com/en-us/ps5/"
                     class="link"><?= $content[923][$key] ?? ''; ?></a></div>
@@ -306,19 +465,27 @@ global $content, $key;
         <!----☁_☁_☁_☁_☁_☁_☁_☁_☁_☁---->
         <div style=" margin-bottom: 10px;">
             <a href="https://en.wikipedia.org/wiki/Xbox#Fourth_generation:_Xbox_Series_X_and_Series_S" class="game">
-                <?= $content[924][$key] ?? ''; ?></a><a rel="example_group"
-                href="https://latinospc.com/images/hardware/hw/c_controllers/xboxsx.jpg" title="Microsoft Xbox Series X
-
-        https://www.xbox.com/en-US/consoles/xbox-series-x"><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/xboxsx.webp"
-                    alt="Microsoft Xbox Series X (2020)" class="rtl"></a>
+                <?= $content[924][$key] ?? ''; ?></a><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/xboxsx_thumb.webp"
+                        alt="Microsoft Xbox Series X"
+                        title="Microsoft Xbox Series X"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="19"></div>
+        </div>
+    </div>
             <?= $content[925][$key] ?? ''; ?>
             <div class="microsoftxboxseriesx"><a href="https://www.xbox.com/en-US/consoles/xbox-series-x"
                     class="link"><?= $content[926][$key] ?? ''; ?></a></div>
         </div>
     </h3>
     <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ -->
-    <a href="#scroll"><img src="https://latinospc.com/images/up.gif" class="rtl" alt="Go to Top" title="Go to Top"
+    <a href="#scroll"><img src="../images/up.gif" class="rtl" alt="Go to Top" title="Go to Top"
             style="transform: translateY(1em);"></a>
     <h2 class="game">
         <div class="center">
@@ -333,10 +500,20 @@ global $content, $key;
                 <div class="card2" id="card">
                     <div class="game">
                         <?= $content[928][$key] ?? ''; ?>
-                    </div><a rel="example_group" href="https://latinospc.com/images/hardware/hw/c_controllers/jab.jpg"
-                        title="Joysticks and Buttons"><img
-                            src="https://latinospc.com/images/hardware/hw/c_controllers/jab.webp"
-                            alt="Joysticks and Buttons" class="fl"></a>
+                    </div><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/jab_thumb.webp"
+                        alt="Joysticks and Buttons"
+                        title="Joysticks and Buttons"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="20"></div>
+        </div>
+    </div>
                     <?= $content[929][$key] ?? ''; ?> <a href="#" class="textlink"><?= $content[930][$key] ?? ''; ?></a>
                     <?= $content[931][$key] ?? ''; ?>
                 </div>
@@ -344,11 +521,20 @@ global $content, $key;
             <div class="container fullbar">
                 <div class="card2" id="card">
                     <div class="game" style="text-align: center;">
-                        <?= $content[932][$key] ?? ''; ?></div><a rel="example_group"
-                        href="https://latinospc.com/images/hardware/hw/c_controllers/fightersticks.jpg"
-                        title="Fighter Sticks"><img
-                            src="https://latinospc.com/images/hardware/hw/c_controllers/fightersticks.webp"
-                            alt="Fighter Sticks" class="fl"></a>
+                        <?= $content[932][$key] ?? ''; ?></div><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/fightersticks_thumb.webp"
+                        alt="Fighter Sticks"
+                        title="Fighter Sticks"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="21"></div>
+        </div>
+    </div>
                     <!--https://www.pexels.com/photo/closeup-photography-of-board-game-374914/ -->
                     <?= $content[933][$key] ?? ''; ?>
                 </div>
@@ -359,11 +545,20 @@ global $content, $key;
                 <div class="card2" id="card">
                     <div class="game">
                         <?= $content[934][$key] ?? ''; ?>
-                    </div><a rel="example_group"
-                        href="https://latinospc.com/images/hardware/hw/c_controllers/lightgun.jpg"
-                        title="Light Guns"><img
-                            src="https://latinospc.com/images/hardware/hw/c_controllers/lightgun.webp" alt="Light Guns"
-                            class="fl"></a>
+                    </div><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/lightgun_thumb.webp"
+                        alt="Light Guns"
+                        title="Light Guns"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="22"></div>
+        </div>
+    </div>
                     <!--https://unsplash.com/photos/person-holding-red-and-black-corded-device-OqpvXzg4R6U-->
                     <?= $content[935][$key] ?? ''; ?>
                 </div>
@@ -371,10 +566,20 @@ global $content, $key;
             <div class="container fullbar">
                 <div class="card2" id="card">
                     <div class="game" style="text-align: center;">
-                        <?= $content[936][$key] ?? ''; ?></div><a rel="example_group"
-                        href="https://latinospc.com/images/hardware/hw/c_controllers/dance.jpg" title="Dance Pads"><img
-                            src="https://latinospc.com/images/hardware/hw/c_controllers/dance.webp" alt="Dance Pads"
-                            class="fl"></a>
+                        <?= $content[936][$key] ?? ''; ?></div><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/dance_thumb.webp"
+                        alt="Dance Pads"
+                        title="Dance Pads"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="23"></div>
+        </div>
+    </div>
                     <?= $content[937][$key] ?? ''; ?>
                 </div>
             </div>
@@ -384,11 +589,20 @@ global $content, $key;
                 <div class="card2" id="card">
                     <div class="game">
                         <?= $content[938][$key] ?? ''; ?>
-                    </div><a rel="example_group"
-                        href="https://latinospc.com/images/hardware/hw/c_controllers/racingwheels.jpg"
-                        title="Racing Wheel"><img
-                            src="https://latinospc.com/images/hardware/hw/c_controllers/racingwheels.webp"
-                            alt="Racing Wheel" class="fl"></a>
+                    </div><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/racingwheels_thumb.webp"
+                        alt="Racing Wheel"
+                        title="Racing Wheel"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="24"></div>
+        </div>
+    </div>
                     <!--https://pixabay.com/photos/girls-playing-car-game-girls-1967833/-->
                     <?= $content[939][$key] ?? ''; ?>
                 </div>
@@ -397,11 +611,20 @@ global $content, $key;
                 <div class="card2" id="card">
                     <div class="game" style="text-align: center;">
                         <?= $content[940][$key] ?? ''; ?>
-                    </div><a rel="example_group"
-                        href="https://latinospc.com/images/hardware/hw/c_controllers/trackball.jpg"
-                        title="Trackballs and Spinners"><img
-                            src="https://latinospc.com/images/hardware/hw/c_controllers/centipede-animated-1.webp"
-                            alt="Trackballs and Spinners" class="fl" height="70px" width="70px"></a>
+                    </div><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/centipede-animated-1_thumb.webp"
+                        alt="Trackballs and Spinners"
+                        title="Trackballs and Spinners"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="25"></div>
+        </div>
+    </div>
                     <!--https://atari.com/products/centipede-legacy-edition-arcade-->
                     <?= $content[941][$key] ?? ''; ?> <a
                         href="https://atari.com/products/centipede-legacy-edition-arcade"><?= $content[942][$key] ?? ''; ?></a>
@@ -415,11 +638,20 @@ global $content, $key;
             <div class="card2" id="card" style="padding-bottom:20px ;">
                 <div class="game" style="text-align: center;">
                     <?= $content[946][$key] ?? ''; ?>
-                </div><a rel="example_group"
-                    href="https://latinospc.com/images/hardware/hw/c_controllers/multiplayer.jpg"
-                    title="Multiplayer Cabinets"><img
-                        src="https://latinospc.com/images/hardware/hw/c_controllers/multiplayer.webp"
-                        alt="Multiplayer Cabinet" class="rtl"></a>
+                </div><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/multiplayer_thumb.webp"
+                        alt="Multiplayer Cabinets"
+                        title="Multiplayer Cabinets"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="26"></div>
+        </div>
+    </div>
                 <!--https://www.pexels.com/photo/video-arcade-games-5883539/-->
                 <?= $content[947][$key] ?? ''; ?>
             </div>
@@ -429,6 +661,10 @@ global $content, $key;
     <h2 class="spacer_shape">
         <?= $content[948][$key] ?? ''; ?>
     </h2>
+
+
+
+
 </article>
 <!----☁_☁_☁_☁_☁_☁_☁_☁_☁_☁---->
 <article class="fullbar">
@@ -440,21 +676,40 @@ global $content, $key;
         <div class="game"><a href="https://en.wikipedia.org/wiki/Arcade_controller">
                 <?= $content[950][$key] ?? ''; ?>
             </a></div>
-        <div class="spacer_shape"><a rel="example_group"
-                href="https://latinospc.com/images/hardware/hw/c_controllers/knobs.jpg" title="Spinner Controllers"><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/knobs.webp" alt="spinner controllers"
-                    class="fl"></a><span class="game"><a href="https://youtu.be/HOnc-F2bvWI?si=-TZP6tzXYiGlVvG3&t=624"
+        <div class="spacer_shape"><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/knobs_thumb.webp"
+                        alt="Spinner Controllers"
+                        title="Spinner Controllers"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="27"></div>
+        </div>
+    </div><span class="game"><a href="https://youtu.be/HOnc-F2bvWI?si=-TZP6tzXYiGlVvG3&t=624"
                     title="Arcade Video">
                     <?= $content[951][$key] ?? ''; ?>
                 </a></span> <span class="arcade">
                 <?= $content[952][$key] ?? ''; ?><a href="https://en.wikipedia.org/wiki/Arkanoid">
                     <?= $content[953][$key] ?? ''; ?></a><?= $content[954][$key] ?? ''; ?>
             </span>
-            <hr><a rel="example_group"
-                href="https://latinospc.com/images/hardware/hw/c_controllers/cockpit_cabinets.jpg"
-                title="Cockpit Cabinets Battlezone"><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/cockpit_cabinets.webp"
-                    alt="Cockpit Cabinets" class="fl"></a><span class="game"><a
+            <hr><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/cockpit_cabinets_thumb.webp"
+                        alt="Cockpit Cabinets Battlezone"
+                        title="Cockpit Cabinets Battlezone"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="28"></div>
+        </div>
+    </div><span class="game"><a
                     href="https://www.bing.com/images/search?q=arcade+cockpit+cabinets&qpvt=arcade+cockpit+cabinets&form=IGRE&first=1"
                     title="images of cockpit cabinets">
                     <?= $content[955][$key] ?? ''; ?>
@@ -463,10 +718,20 @@ global $content, $key;
                     href="https://en.wikipedia.org/wiki/Battlezone_(1980_video_game)"><?= $content[957][$key] ?? ''; ?></a><?= $content[958][$key] ?? ''; ?><a
                     href="https://en.wikipedia.org/wiki/After_Burner"><?= $content[959][$key] ?? ''; ?></a><?= $content[960][$key] ?? ''; ?>
             </span>
-            <hr><a rel="example_group" href="https://latinospc.com/images/hardware/hw/c_controllers/lightgunevo.jpg"
-                title="https://arcadeclassics.com.au/arcade_games/gun_games/time-crisis-1/"><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/lightgunevo.webp"
-                    alt="Light Gun Evolution" class="fl" height="100px"></a><span class="game"><a
+            <hr><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/lightgunevo_thumb.webp"
+                        alt="Light Gun Evolution"
+                        title="Light Gun Evolution"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="29"></div>
+        </div>
+    </div><span class="game"><a
                     href="https://youtu.be/2OB_f48Hm3c?si=K60t8H9MEG0qrSrD" title="Video">
                     <?= $content[961][$key] ?? ''; ?>
                 </a></span><span class="arcadeb">
@@ -475,14 +740,33 @@ global $content, $key;
                 <a href="https://en.wikipedia.org/wiki/Light_gun_shooter"><?= $content[965][$key] ?? ''; ?></a>
                 <?= $content[966][$key] ?? ''; ?>
             </span>
-            <hr><a rel="example_group" href="https://latinospc.com/images/hardware/hw/c_controllers/customcabinets1.jpg"
-                title="https://www.etsy.com/listing/784602871/unique-wall-mounted-arcade-cabinet"><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/customcabinets1.webp"
-                    alt="Custom Cabinets" class="fl"></a><a rel="example_group"
-                href="https://latinospc.com/images/hardware/hw/c_controllers/customcabinet2.jpg"
-                title="https://www.pinterest.com/pin/278378820697207023/"><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/customcabinet2.webp"
-                    alt="Custom Cabinets" class="rtl"></a><span class="game"><a
+            <hr><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/customcabinets1_thumb.webp"
+                        alt="Custom Cabinets"
+                        title="Custom Cabinets"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="30"></div>
+        </div>
+    </div><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/customcabinet2_thumb.webp"
+                        alt="Custom Cabinets"
+                        title="Custom Cabinets"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="31"></div>
+        </div>
+    </div><span class="game"><a
                     href="https://www.bing.com/images/search?q=custom+arcade+cabinet&form=HDRSC3&first=1"
                     title="images">
                     <?= $content[967][$key] ?? ''; ?></a></span><span
@@ -491,11 +775,20 @@ global $content, $key;
                     href="https://en.wikipedia.org/wiki/Dance_Dance_Revolution"><?= $content[971][$key] ?? ''; ?></a><?= $content[972][$key] ?? ''; ?>
                 <!-- Maybe link to an image on the lightbox so it looks cool when pressed and then another in dancing games--><?= $content[973][$key] ?? ''; ?>
             </span>
-            <hr><a rel="example_group"
-                href="https://latinospc.com/images/hardware/hw/c_controllers/trackballrevival.jpg"
-                title="https://youtu.be/HpaUXE8tj_E?si=XVtmhCVlvFjRwfHM&t=110"><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/trackballrevival.webp"
-                    alt="Trackball Revival" class="fl"></a><span class="game"><a
+            <hr><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/trackballrevival_thumb.webp"
+                        alt="Trackball Revival"
+                        title="Trackball Revival"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="32"></div>
+        </div>
+    </div><span class="game"><a
                     href="https://8bitpickle.com/video-games/best-arcade-trackball-games"
                     title="20 Best Arcade Trackball Games">
                     <?= $content[974][$key] ?? ''; ?>
@@ -514,41 +807,78 @@ global $content, $key;
         </div>
         <div class="crl"><span class="game"><a href="https://en.wikipedia.org/wiki/Power_Glove">
                     <?= $content[981][$key] ?? ''; ?>
-                </a></span><br /><a rel="example_group"
-                href="https://latinospc.com/images/hardware/hw/c_controllers/nintendopowerglove.jpg"
-                title="Nintendo Power Glove (1989)"><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/nintendopowerglove.webp" alt="test"
-                    class="fl" height="70px" width="140px"></a>
+                </a></span><br /><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/nintendopowerglove_thumb.webp"
+                        alt="Nintendo Power Glove (1989)"
+                        title="Nintendo Power Glove (1989)"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="33"></div>
+        </div>
+    </div>
             <?= $content[982][$key] ?? ''; ?>
         </div><br />
         <hr>
         <div class="crl"><span class="game"><a href="https://en.wikipedia.org/wiki/Nintendo_64_controller">
                     <?= $content[983][$key] ?? ''; ?>
-                </a></span><a rel="example_group"
-                href="https://latinospc.com/images/hardware/hw/c_controllers/nintendo64controller.jpg"
-                title="https://www.nintendo.com/us/store/products/nintendo-64-controller/"><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/nintendo64controller.webp"
-                    alt="Nintendo 64 Controller Design" class="rtl"></a>
+                </a></span><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/nintendo64controller_thumb.webp"
+                        alt="Nintendo 64 Controller Design"
+                        title="Nintendo 64 Controller Design"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="34"></div>
+        </div>
+    </div>
             <?= $content[984][$key] ?? ''; ?>
         </div><br />
         <hr>
         <div class="crl"><span class="game"><a href="https://en.wikipedia.org/wiki/Dual_Analog_Controller">
                     <?= $content[985][$key] ?? ''; ?></a></span>
-            <a rel="example_group" href="https://latinospc.com/images/hardware/hw/c_controllers/psdualshock.jpg"
-                title="https://www.fullyretro.com/product/ps1-official-dual-analog-controller-scph-1180-grey,45211571"><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/psdualshock.webp"
-                    alt="PlayStation Analog Controller" class="fl"></a>
+            <div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/psdualshock_thumb.webp"
+                        alt="PlayStation Analog Controller"
+                        title="PlayStation Analog Controller"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="35"></div>
+        </div>
+    </div>
             <?= $content[986][$key] ?? ''; ?>
         </div><br />
         <hr>
         <div class="crl"><span class="game"><a href="https://www.youtube.com/watch?v=t48-FhXNmSo"
                     title="The Short History of Pressure Sensitive Buttons">
                     <?= $content[987][$key] ?? ''; ?>
-                </a></span><a rel="example_group"
-                href="https://latinospc.com/images/hardware/hw/c_controllers/psdualshock2.jpg"
-                title="Pressure-Sensitive Buttons"><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/psdualshock2.webp" alt="Ps2 Controller"
-                    class="rtl"></a>
+                </a></span><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/psdualshock2_thumb.webp"
+                        alt="Pressure-Sensitive Buttons"
+                        title="Pressure-Sensitive Buttons"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="36"></div>
+        </div>
+    </div>
             <a href="https://en.wikipedia.org/wiki/DualShock#DualShock_2"><?= $content[988][$key] ?? ''; ?></a>
             <?= $content[989][$key] ?? ''; ?>
             <br />
@@ -557,69 +887,124 @@ global $content, $key;
         <div class="crl"><span class="game"><a
                     href="https://www.videogameconsolelibrary.com/art-controller.htm#page=wireless1">
                     <?= $content[990][$key] ?? ''; ?>
-                </a></span><a rel="example_group"
-                href="https://latinospc.com/images/hardware/hw/c_controllers/xboxwireless.jpg"
-                title="Wireless Xbox 360 Controller"><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/xboxwireless.webp"
-                    alt="Xbox 360 Wireless Controller" class="fl"></a><a
+                </a></span><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/xboxwireless_thumb.webp"
+                        alt="Wireless Xbox 360 Controller"
+                        title="Wireless Xbox 360 Controller"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="37"></div>
+        </div>
+    </div><a
                 href="https://en.wikipedia.org/wiki/Xbox_Wireless_Controller#Original_version_(2013)">
                 <?= $content[991][$key] ?? ''; ?></a> <?= $content[992][$key] ?? ''; ?>
         </div><br />
         <hr>
         <div class="crl"><span class="game"><a href="https://en.wikipedia.org/wiki/Wii_Remote">
                     <?= $content[993][$key] ?? ''; ?>
-                </a></span><a rel="example_group"
-                href="https://latinospc.com/images/hardware/hw/c_controllers/wiiremote.jpg"
-                title="https://www.ign.com/wikis/wii-u/Wii%20Remote"><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/wiiremote.webp"
-                    alt="Nintendo Wii Motion Controls" class="rtl"></a>
+                </a></span><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/wiiremote_thumb.webp"
+                        alt="Nintendo Wii Motion Controls"
+                        title="Nintendo Wii Motion Controls"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="38"></div>
+        </div>
+    </div>
             <?= $content[994][$key] ?? ''; ?>
         </div><br />
         <hr>
         <div class="crl"><span class="game"><a href="https://www.thegamer.com/early-gaming-consoles-touch-controls/"
                     title="Top 10">
                     <?= $content[995][$key] ?? ''; ?>
-                </a></span><a rel="example_group"
-                href="https://latinospc.com/images/hardware/hw/c_controllers/nintendo_ds.jpg"
-                title="https://nintendoeverything.com/nintendo-ds-is-now-10-years-old/"><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/nintendo_ds.webp" alt="Nintendo DS"
-                    class="fl"></a>
+                </a></span><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/nintendo_ds_thumb.webp"
+                        alt="Nintendo DS"
+                        title="Nintendo DS"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="39"></div>
+        </div>
+    </div>
             <?= $content[996][$key] ?? ''; ?>
         </div><br />
         <hr>
         <div class="crl"><span class="game"><a
                     href="https://en.wikipedia.org/wiki/The_Sword_of_Damocles_(virtual_reality)">
                     <?= $content[997][$key] ?? ''; ?></a></span>
-            <a rel="example_group" href="https://latinospc.com/images/hardware/hw/c_controllers/vr_controller.jpg"
-                title="https://www.shacknews.com/article/95559/beyond-gamepads-8-alternative-control-options-for-vr">
-                <img src="https://latinospc.com/images/hardware/hw/c_controllers/vr_controller.webp"
-                    alt="Virtual Reality" class="rtl"></a>
+            <div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/vr_controller_thumb.webp"
+                        alt="Virtual Reality"
+                        title="Virtual Reality"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="40"></div>
+        </div>
+    </div>
             <?= $content[998][$key] ?? ''; ?>
         </div><br />
         <hr>
         <div class="crl"><span class="game"><a href="https://en.wikipedia.org/wiki/Game_accessibility#Controllers">
                     <?= $content[999][$key] ?? ''; ?>
-                </a></span><a rel="example_group"
-                href="https://latinospc.com/images/hardware/hw/c_controllers/adaptive360.jpg"
-                title="https://www.pcworld.com/article/402000/microsoft-xbox-adaptive-controller.html"><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/adaptive360.webp"
-                    alt="Adaptive Controllers" class="fl"></a>
+                </a></span><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/adaptive360_thumb.webp"
+                        alt="Adaptive Controllers"
+                        title="Adaptive Controllers"
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="41"></div>
+        </div>
+    </div>
             <?= $content[1000][$key] ?? ''; ?>
         </div><br />
         <hr>
         <div class="crl"><span class="game"><a href="https://www.youtube.com/watch?v=9_AE21WqhU4&t=39s" title="Video">
                     <?= $content[1001][$key] ?? ''; ?>
-                </a></span><a rel="example_group"
-                href="https://latinospc.com/images/hardware/hw/c_controllers/ps5haptic.jpg"
-                title="https://www.techradar.com/news/why-the-ps5-controller-is-all-about-haptic-feedback-according-to-the-techs-creator"><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/ps5haptic.webp" alt="Haptic Feedback "
-                    class="rtl"></a>
+                </a></span><div class="carousel-group img_rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img">
+                    <img src="../images/hardware/hw/c_controllers/ps5haptic_thumb.webp"
+                        alt="Haptic Feedback "
+                        title="Haptic Feedback "
+                        class="rtl"
+                        loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="42"></div>
+        </div>
+    </div>
             <?= $content[1002][$key] ?? ''; ?>
         </div><br />
         <hr><span class="game"><a href="https://youtu.be/f3sDTdsYoMM?si=E57KhwkIRO_LwwfW&t=67"
                 title="The History of Custom GameCube Controllers">
                 <?= $content[1003][$key] ?? ''; ?></a></span> <?= $content[1004][$key] ?? ''; ?>
-        <a href="#scroll"><img src="https://latinospc.com/images/up.gif" class="rtl" alt="Go to Top" title="Go to Top"
+        <a href="#scroll"><img src="../images/up.gif" class="rtl" alt="Go to Top" title="Go to Top"
                 style="transform: translateY(2.5em);"></a>
         <div class="container fullbar"><span class="center" style="width: fit-content; padding: 20px;" id="trends">
                 <?= $content[1005][$key] ?? ''; ?>
@@ -673,7 +1058,7 @@ global $content, $key;
                 </span><span class="game">
                     <?= $content[1033][$key] ?? ''; ?></span><span class="arcadey"><?= $content[1034][$key] ?? ''; ?>
                 </span></div>
-        </div><img src="https://latinospc.com/images/hardware/hw/c_controllers/c_controllers.jpg" class="rtl"
+        </div><img src="../images/hardware/hw/c_controllers/c_controllers.jpg" class="rtl"
             height="145px">
         <div class="game" id="card">
             <?= $content[1035][$key] ?? ''; ?></div> <?= $content[1036][$key] ?? ''; ?>
@@ -740,7 +1125,7 @@ global $content, $key;
     <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ -->
     <h2 class="spacer_shape" id="brands">
         <?= $content[1066][$key] ?? ''; ?>
-        <a href="#scroll"><img src="https://latinospc.com/images/up.gif" class="rtl" alt="Go to Top"
+        <a href="#scroll"><img src="../images/up.gif" class="rtl" alt="Go to Top"
                 title="Go to Top"></a>
     </h2>
     <h3>
@@ -748,9 +1133,9 @@ global $content, $key;
             <details>
                 <summary class="tnk bars"><span><a href="https://www.playstation.com/en-us/" class="game">
                             <?= $content[1067][$key] ?? ''; ?>
-                        </a><img src="https://latinospc.com/images/hardware/hw/c_controllers/sonylogo.png"
+                        </a><img src="../images/hardware/hw/c_controllers/sonylogo.png"
                             alt="Sony Logo" height="20" class="rtl"><br /></span></summary><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/sonylogo.webp" alt="Sony Logo"
+                    src="../images/hardware/hw/c_controllers/sonylogo.webp" alt="Sony Logo"
                     height="150" class="fl">
                 <?= $content[1068][$key] ?? ''; ?> <a
                     href="https://www.playstation.com/en-us/accessories/"><?= $content[1069][$key] ?? ''; ?></a>
@@ -766,9 +1151,9 @@ global $content, $key;
             <details>
                 <summary class="tnk bars"><span><a href="https://www.xbox.com/en-US/" class="game">
                             <?= $content[1076][$key] ?? ''; ?>
-                        </a><img src="https://latinospc.com/images/hardware/hw/c_controllers/microsoftlogo.png"
+                        </a><img src="../images/hardware/hw/c_controllers/microsoftlogo.png"
                             alt="Microsoft Logo" height="20" class="rtl"><br /></span></summary><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/microsoftlogo.webp" alt="Microsoft Logo"
+                    src="../images/hardware/hw/c_controllers/microsoftlogo.webp" alt="Microsoft Logo"
                     height="150" class="rtl"><br />
                 <?= $content[1077][$key] ?? ''; ?> <a
                     href="https://www.xbox.com/en-US/consoles"><?= $content[1078][$key] ?? ''; ?></a>
@@ -788,9 +1173,9 @@ global $content, $key;
             <details>
                 <summary class="tnk bars"><span><a href="https://www.nintendo.com/us/" class="game">
                             <?= $content[1088][$key] ?? ''; ?>
-                        </a><img src="https://latinospc.com/images/hardware/hw/c_controllers/nintendo_logo.png"
+                        </a><img src="../images/hardware/hw/c_controllers/nintendo_logo.png"
                             alt="Nintendo Logo" height="20" class="rtl"><br /></span></summary><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/nintendo_logo.webp" alt="Nintendo Logo"
+                    src="../images/hardware/hw/c_controllers/nintendo_logo.webp" alt="Nintendo Logo"
                     height="150" class="fl"><br />
                 <?= $content[1089][$key] ?? ''; ?> <a
                     href="https://www.nintendo.com/us/store/hardware/joy-con-and-controllers/"><?= $content[1090][$key] ?? ''; ?></a><?= $content[1091][$key] ?? ''; ?>
@@ -805,9 +1190,9 @@ global $content, $key;
             <details>
                 <summary class="tnk bars"><span><a href="https://www.razer.com/" class="game">
                             <?= $content[1096][$key] ?? ''; ?>
-                        </a><img src="https://latinospc.com/images/hardware/hw/c_controllers/razerlogo.png"
+                        </a><img src="../images/hardware/hw/c_controllers/razerlogo.png"
                             alt="Razer Logo" height="20" class="rtl"><br /></span></summary><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/razerlogo.webp" alt="Razer Logo"
+                    src="../images/hardware/hw/c_controllers/razerlogo.webp" alt="Razer Logo"
                     height="150" class="rtl"><br />
                 <?= $content[1097][$key] ?? ''; ?> <a
                     href="https://www.razer.com/gaming-peripheral-accessories"><?= $content[1098][$key] ?? ''; ?></a><?= $content[1099][$key] ?? ''; ?>
@@ -825,9 +1210,9 @@ global $content, $key;
             <details>
                 <summary class="tnk bars"><span><a href="https://www.logitechg.com/en-us" class="game">
                             <?= $content[1106][$key] ?? ''; ?>
-                        </a><img src="https://latinospc.com/images/hardware/hw/c_controllers/logitechlogo.png"
+                        </a><img src="../images/hardware/hw/c_controllers/logitechlogo.png"
                             alt="Logitech Logo" height="20" class="rtl"><br /></span></summary><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/logitechlogo.webp" alt="Logitech Logo"
+                    src="../images/hardware/hw/c_controllers/logitechlogo.webp" alt="Logitech Logo"
                     height="150" class="rtl"><br />
                 <?= $content[1107][$key] ?? ''; ?> <a
                     href="https://www.logitechg.com/en-us/products/gamepads.html"><?= $content[1108][$key] ?? ''; ?></a>
@@ -845,9 +1230,9 @@ global $content, $key;
             <details>
                 <summary class="tnk bars"><span><a href="https://stores.horiusa.com/" class="game">
                             <?= $content[1118][$key] ?? ''; ?>
-                        </a><img src="https://latinospc.com/images/hardware/hw/c_controllers/horilogo.png"
+                        </a><img src="../images/hardware/hw/c_controllers/horilogo.png"
                             alt="Hori Logo" height="20" class="rtl"><br /></span></summary><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/horilogo.webp" alt="Hori Logo"
+                    src="../images/hardware/hw/c_controllers/horilogo.webp" alt="Hori Logo"
                     height="150" class="fl"><br />
                 <?= $content[1119][$key] ?? ''; ?> <a
                     href="https://stores.horiusa.com/controller/pc"><?= $content[1120][$key] ?? ''; ?></a><?= $content[1121][$key] ?? ''; ?>
@@ -862,9 +1247,9 @@ global $content, $key;
             <details>
                 <summary class="tnk bars"><span><a href="https://scufgaming.com/" class="game">
                             <?= $content[1126][$key] ?? ''; ?>
-                        </a><img src="https://latinospc.com/images/hardware/hw/c_controllers/scufgaminglogo.png"
+                        </a><img src="../images/hardware/hw/c_controllers/scufgaminglogo.png"
                             alt="Scuf Gaming Logo" height="20" class="rtl"><br /></span></summary><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/scufgaminglogo.webp" alt="Logo"
+                    src="../images/hardware/hw/c_controllers/scufgaminglogo.webp" alt="Logo"
                     height="150" class="rtl">
                 <?= $content[1127][$key] ?? ''; ?> <a
                     href="https://scufgaming.com/gaming/why-scuf/what-we-do"><?= $content[1128][$key] ?? ''; ?></a><?= $content[1129][$key] ?? ''; ?>
@@ -874,9 +1259,9 @@ global $content, $key;
             <details>
                 <summary class="tnk bars"><span><a href="https://www.astrogaming.com/en-us" class="game">
                             <?= $content[1130][$key] ?? ''; ?>
-                        </a><img src="https://latinospc.com/images/hardware/hw/c_controllers/astrogaminglogo.png"
+                        </a><img src="../images/hardware/hw/c_controllers/astrogaminglogo.png"
                             alt="Astro Gaming Logo" height="20" class="rtl"><br /></span></summary><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/astrogaminglogo.webp"
+                    src="../images/hardware/hw/c_controllers/astrogaminglogo.webp"
                     alt="Astro Gaming Logo" height="150" class="fl">
                 <?= $content[1131][$key] ?? ''; ?> <a
                     href="https://www.astrogaming.com/en-us/products.html"><?= $content[1132][$key] ?? ''; ?></a><?= $content[1133][$key] ?? ''; ?>
@@ -886,9 +1271,9 @@ global $content, $key;
             <details>
                 <summary class="tnk bars"><span><a href="https://www.nacongaming.com/en-US/" class="game">
                             <?= $content[1134][$key] ?? ''; ?>
-                        </a><img src="https://latinospc.com/images/hardware/hw/c_controllers/naconlogo.png"
+                        </a><img src="../images/hardware/hw/c_controllers/naconlogo.png"
                             alt="Nacon Logo" height="20" class="rtl"><br /></span></summary><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/naconlogo.webp" alt="Nacon Logo"
+                    src="../images/hardware/hw/c_controllers/naconlogo.webp" alt="Nacon Logo"
                     height="150" class="rtl">
                 <?= $content[1135][$key] ?? ''; ?> <a
                     href="https://www.nacongaming.com/en-US/peripherals"><?= $content[1136][$key] ?? ''; ?></a><?= $content[1137][$key] ?? ''; ?>
@@ -898,9 +1283,9 @@ global $content, $key;
             <details>
                 <summary class="tnk bars"><span><a href="https://www.8bitdo.com/" class="game">
                             <?= $content[1138][$key] ?? ''; ?>
-                        </a><img src="https://latinospc.com/images/hardware/hw/c_controllers/8bitdologo.png"
+                        </a><img src="../images/hardware/hw/c_controllers/8bitdologo.png"
                             alt="8BitDo Logo" height="20" class="rtl"><br /></span></summary><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/8bitdologo.webp" alt="8BitDo Logo"
+                    src="../images/hardware/hw/c_controllers/8bitdologo.webp" alt="8BitDo Logo"
                     height="150" class="fl">
                 <?= $content[1139][$key] ?? ''; ?> <a
                     href="https://www.8bitdo.com/#Products"><?= $content[1140][$key] ?? ''; ?></a>
@@ -911,9 +1296,9 @@ global $content, $key;
             <details>
                 <summary class="tnk bars"><span><a href="https://www.powera.com/" class="game">
                             <?= $content[1142][$key] ?? ''; ?>
-                        </a><img src="https://latinospc.com/images/hardware/hw/c_controllers/poweralogo.png"
+                        </a><img src="../images/hardware/hw/c_controllers/poweralogo.png"
                             alt="PowerA Logo" height="20" class="rtl"><br /></span></summary><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/poweralogo.webp" alt="PowerA Logo"
+                    src="../images/hardware/hw/c_controllers/poweralogo.webp" alt="PowerA Logo"
                     height="150" class="rtl">
                 <?= $content[1143][$key] ?? ''; ?> <a
                     href="https://www.powera.com/blog/"><?= $content[1144][$key] ?? ''; ?></a>
@@ -931,9 +1316,9 @@ global $content, $key;
             <details>
                 <summary class="tnk bars"><span><a href="https://www.madcatz.com/" class="game">
                             <?= $content[1148][$key] ?? ''; ?>
-                        </a><img src="https://latinospc.com/images/hardware/hw/c_controllers/madcatzlogo.png"
+                        </a><img src="../images/hardware/hw/c_controllers/madcatzlogo.png"
                             alt="Mad Catz Logo" height="20" class="rtl"><br /></span></summary><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/madcatzlogo.webp" alt="Mad Catz Logo"
+                    src="../images/hardware/hw/c_controllers/madcatzlogo.webp" alt="Mad Catz Logo"
                     height="150" class="rtl">
                 <?= $content[1149][$key] ?? ''; ?> <a
                     href="https://www.madcatz.com/En/Product/Filter/CONTROLLERS"><?= $content[1150][$key] ?? ''; ?></a>.
@@ -942,9 +1327,9 @@ global $content, $key;
             <details>
                 <summary class="tnk bars"><span><a href="https://pdp.com/" class="game">
                             <?= $content[1151][$key] ?? ''; ?>
-                        </a><img src="https://latinospc.com/images/hardware/hw/c_controllers/pdplogo.png" alt="PDP Logo"
+                        </a><img src="../images/hardware/hw/c_controllers/pdplogo.png" alt="PDP Logo"
                             height="20" class="rtl"><br /></span></summary><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/pdplogo.webp" alt="PDP Logo"
+                    src="../images/hardware/hw/c_controllers/pdplogo.webp" alt="PDP Logo"
                     height="150" class="fl">
                 <?= $content[1152][$key] ?? ''; ?> <a
                     href="https://pdp.com/pages/about"><?= $content[1153][$key] ?? ''; ?></a>
@@ -954,9 +1339,9 @@ global $content, $key;
             <details>
                 <summary class="tnk bars"><span><a href="https://steelseries.com/" class="game">
                             <?= $content[1155][$key] ?? ''; ?>
-                        </a><img src="https://latinospc.com/images/hardware/hw/c_controllers/steelserieslogo.png"
+                        </a><img src="../images/hardware/hw/c_controllers/steelserieslogo.png"
                             alt="SteelSeries Logo" height="20" class="rtl"><br /></span></summary><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/steelserieslogo.webp"
+                    src="../images/hardware/hw/c_controllers/steelserieslogo.webp"
                     alt="SteelSeries Logo" height="150" class="rtl">
                 <?= $content[1156][$key] ?? ''; ?> <a
                     href="https://steelseries.com/gaming-controllers"><?= $content[1157][$key] ?? ''; ?></a><?= $content[1158][$key] ?? ''; ?>
@@ -965,9 +1350,9 @@ global $content, $key;
             <details>
                 <summary class="tnk bars"><span><a href="https://shop.beboncool.com/" class="game">
                             <?= $content[1159][$key] ?? ''; ?>
-                        </a><img src="https://latinospc.com/images/hardware/hw/c_controllers/beboncoollogo.png"
+                        </a><img src="../images/hardware/hw/c_controllers/beboncoollogo.png"
                             alt="Beboncool Logo" height="20" class="rtl"><br /></span></summary><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/beboncoollogo.webp" alt="Beboncool Logo"
+                    src="../images/hardware/hw/c_controllers/beboncoollogo.webp" alt="Beboncool Logo"
                     height="150" class="fl">
                 <?= $content[1160][$key] ?? ''; ?> <a
                     href="https://shop.beboncool.com/collections/switch"><?= $content[1161][$key] ?? ''; ?></a>.
@@ -977,9 +1362,9 @@ global $content, $key;
                 <summary class="tnk bars"><span><a href="https://www.thrustmaster.com/en-gb/universe/controllers/"
                             class="game">
                             <?= $content[1162][$key] ?? ''; ?>
-                        </a><img src="https://latinospc.com/images/hardware/hw/c_controllers/thrustmasterlogo.png"
+                        </a><img src="../images/hardware/hw/c_controllers/thrustmasterlogo.png"
                             alt="Thrustmaster Logo" height="20" class="rtl"><br /></span></summary>
-                <img src="https://latinospc.com/images/hardware/hw/c_controllers/thrustmasterlogo.webp"
+                <img src="../images/hardware/hw/c_controllers/thrustmasterlogo.webp"
                     alt="Thrustmaster Logo" height="150" class="rtl">
                 <?= $content[1163][$key] ?? ''; ?> <a
                     href="https://www.thrustmaster.com/en-us/universe/racing/"><?= $content[1164][$key] ?? ''; ?></a>
@@ -991,9 +1376,9 @@ global $content, $key;
             <details>
                 <summary class="tnk bars"><span><a href="https://hyperkin.com/" class="game">
                             <?= $content[1168][$key] ?? ''; ?>
-                        </a><img src="https://latinospc.com/images/hardware/hw/c_controllers/hyperkinlogo.png"
+                        </a><img src="../images/hardware/hw/c_controllers/hyperkinlogo.png"
                             alt="Hyperkin Logo" height="20" class="rtl"><br /></span></summary><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/hyperkinlogo.webp" alt="Hyperkin Logo"
+                    src="../images/hardware/hw/c_controllers/hyperkinlogo.webp" alt="Hyperkin Logo"
                     height="150" class="fl">
                 <?= $content[1169][$key] ?? ''; ?> <a
                     href="https://hyperkin.com/new.html"><?= $content[1170][$key] ?? ''; ?></a><?= $content[1171][$key] ?? ''; ?>
@@ -1002,9 +1387,9 @@ global $content, $key;
             <details>
                 <summary class="tnk bars"><span><a href="https://gioteck.com/" class="game">
                             <?= $content[1172][$key] ?? ''; ?>
-                        </a><img src="https://latinospc.com/images/hardware/hw/c_controllers/gioteklogo.png"
+                        </a><img src="../images/hardware/hw/c_controllers/gioteklogo.png"
                             alt="Gioteck Logo" height="20" class="rtl"><br /></span></summary><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/gioteklogo.webp" alt="Gioteck Logo"
+                    src="../images/hardware/hw/c_controllers/gioteklogo.webp" alt="Gioteck Logo"
                     height="150" class="rtl">
                 <?= $content[1173][$key] ?? ''; ?> <a
                     href="https://gioteck.com/product-type/controllers/"><?= $content[1174][$key] ?? ''; ?></a>
@@ -1015,9 +1400,9 @@ global $content, $key;
             <details>
                 <summary class="tnk bars"><span><a href="https://www.gamesir.hk/" class="game">
                             <?= $content[1176][$key] ?? ''; ?>
-                        </a><img src="https://latinospc.com/images/hardware/hw/c_controllers/gamesirlogo.png"
+                        </a><img src="../images/hardware/hw/c_controllers/gamesirlogo.png"
                             alt="GameSir Logo" height="20" class="rtl"><br /></span></summary><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/gamesirlogo.webp" alt="GameSir Logo"
+                    src="../images/hardware/hw/c_controllers/gamesirlogo.webp" alt="GameSir Logo"
                     height="150" class="fl">
                 <?= $content[1177][$key] ?? ''; ?> <a
                     href="https://www.gamesir.hk/collections/all-products"><?= $content[1178][$key] ?? ''; ?></a>
@@ -1028,9 +1413,9 @@ global $content, $key;
             <details>
                 <summary class="tnk bars"><span><a href="https://www.snakebyte.com/" class="game">
                             <?= $content[1180][$key] ?? ''; ?>
-                        </a><img src="https://latinospc.com/images/hardware/hw/c_controllers/snakebytelogo.png"
+                        </a><img src="../images/hardware/hw/c_controllers/snakebytelogo.png"
                             alt="Snakebyte Logo" height="20" class="rtl"><br /></span></summary><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/snakebytelogo.webp" alt="Snakebyte Logo"
+                    src="../images/hardware/hw/c_controllers/snakebytelogo.webp" alt="Snakebyte Logo"
                     height="150" class="rtl">
                 <?= $content[1181][$key] ?? ''; ?> <a
                     href="https://www.snakebyte.com/en/collections/controller"><?= $content[1182][$key] ?? ''; ?></a>
@@ -1041,9 +1426,9 @@ global $content, $key;
             <details>
                 <summary class="tnk bars"><span><a href="https://nyko.com/" class="game">
                             <?= $content[1184][$key] ?? ''; ?>
-                        </a><img src="https://latinospc.com/images/hardware/hw/c_controllers/nykologo.png"
+                        </a><img src="../images/hardware/hw/c_controllers/nykologo.png"
                             alt="Nyko Logo" height="20" class="rtl"><br /></span></summary><img
-                    src="https://latinospc.com/images/hardware/hw/c_controllers/nykologo.webp" alt="Nyko Logo"
+                    src="../images/hardware/hw/c_controllers/nykologo.webp" alt="Nyko Logo"
                     height="150" class="fl">
                 <?= $content[1185][$key] ?? ''; ?> <a
                     href="https://nyko.com/pages/about-us"><?= $content[1186][$key] ?? ''; ?></a><?= $content[1187][$key] ?? ''; ?>
@@ -1053,7 +1438,7 @@ global $content, $key;
     <h2>
         <?= $content[1188][$key] ?? ''; ?>
     </h2>
-    <table style="table-layout:fixed;width:468pt"><a href="#scroll"><img src="https://latinospc.com/images/up.gif"
+    <table style="table-layout:fixed;width:468pt"><a href="#scroll"><img src="../images/up.gif"
                 class="rtl" alt="Go to Top" title="Go to Top"
                 style="position:absolute;transform:translate(540px, 50px);"></a>
 </article>
@@ -1071,3 +1456,286 @@ global $content, $key;
     </tr>
 </tbody>
 </table>
+
+    <template id="carousel-images">
+        <?php
+$carouselItems = [
+    [
+        'originalImage_href'   => 'MagnavoxOdyssey.jpg',
+        'webp'                 => 'MagnavoxOdyssey.webp',
+        'imgAlt_Title_heading' => 'Magnavox Odyssey (1972)',
+        'headingLink_href'     => 'https://americanhistory.si.edu/collections/'
+    ],
+    [
+        'originalImage_href'   => 'pong.jpg',
+        'webp'                 => 'pong.webp',
+        'imgAlt_Title_heading' => 'Atari Pong (1972)',
+        'headingLink_href'     => 'https://atari.com/collections/pong-collection'
+    ],
+    [
+        'originalImage_href'   => 'spaceinvaders.jpg',
+        'webp'                 => 'spaceinvaders.webp',
+        'imgAlt_Title_heading' => 'Space Invaders (1978)',
+        'headingLink_href'     => 'https://landofozarcades.com/product/space-invaders-full-size-arcade-brand-new/'
+    ],
+    [
+        'originalImage_href'   => 'pacman.jpg',
+        'webp'                 => 'pacman.webp',
+        'imgAlt_Title_heading' => 'Pacman (1980)',
+        'headingLink_href'     => 'https://www.pacman.com/en/history/'
+    ],
+    [
+        'originalImage_href'   => 'streetfighter.jpg',
+        'webp'                 => 'streetfighter.webp',
+        'imgAlt_Title_heading' => 'Street Fighter',
+        'headingLink_href'     => 'https://www.streetfighter.com/en/35th/history.html'
+    ],
+    [
+        'originalImage_href'   => 'nes.jpg',
+        'webp'                 => 'nes.webp',
+        'imgAlt_Title_heading' => 'Nintendo Entertainment System (NES)',
+        'headingLink_href'     => 'https://nintendo.fandom.com/wiki/Nintendo_Entertainment_System'
+    ],
+    [
+        'originalImage_href'   => 'segagenesis.jpg',
+        'webp'                 => 'segagenesis.webp',
+        'imgAlt_Title_heading' => 'Sega Genesis',
+        'headingLink_href'     => 'https://genesismini.sega.com/'
+    ],
+    [
+        'originalImage_href'   => 'sonyps1.jpg',
+        'webp'                 => 'sonyps1.webp',
+        'imgAlt_Title_heading' => 'Sony PlayStation',
+        'headingLink_href'     => 'https://www.giantbomb.com/playstation/3045-22/'
+    ],
+    [
+        'originalImage_href'   => 'n64.jpg',
+        'webp'                 => 'n64.webp',
+        'imgAlt_Title_heading' => 'Nintendo 64',
+        'headingLink_href'     => 'https://gametyrant.com/news/bqcybvbpu82ic8y59gg4ymvnclevmx'
+    ],
+    [
+        'originalImage_href'   => 'dreamcast.jpg',
+        'webp'                 => 'dreamcast.webp',
+        'imgAlt_Title_heading' => 'Sega Dreamcast',
+        'headingLink_href'     => 'https://wallpapersafari.com/w/6ABr74'
+    ],
+    [
+        'originalImage_href'   => 'ps2.jpg',
+        'webp'                 => 'ps2.webp',
+        'imgAlt_Title_heading' => 'PlayStation2',
+        'headingLink_href'     => 'https://playstation.fandom.com/wiki/PlayStation_2'
+    ],
+    [
+        'originalImage_href'   => 'xbox.jpg',
+        'webp'                 => 'xbox.webp',
+        'imgAlt_Title_heading' => 'Microsoft Xbox',
+        'headingLink_href'     => 'https://www.xbox.com/en-US/power-on'
+    ],
+    [
+        'originalImage_href'   => 'gamecube.jpg',
+        'webp'                 => 'gamecube.webp',
+        'imgAlt_Title_heading' => 'Nintendo GameCube',
+        'headingLink_href'     => 'https://nintendo.fandom.com/wiki/Nintendo_GameCube'
+    ],
+    [
+        'originalImage_href'   => 'wiiremote.jpg',
+        'webp'                 => 'wiiremote.webp',
+        'imgAlt_Title_heading' => 'Wii Remote',
+        'headingLink_href'     => 'https://nintendo.fandom.com/wiki/Wii_Remote'
+    ],
+    [
+        'originalImage_href'   => 'ps3.jpg',
+        'webp'                 => 'ps3.webp',
+        'imgAlt_Title_heading' => 'Sony PlayStation 3',
+        'headingLink_href'     => 'https://www.copetti.org/writings/consoles/playstation-3/'
+    ],
+    [
+        'originalImage_href'   => 'xbox360one.jpg',
+        'webp'                 => 'xbox360one.webp',
+        'imgAlt_Title_heading' => 'Microsoft Xbox 360, One',
+        'headingLink_href'     => 'https://youtu.be/glYSnb_uY-o?si=JtUXmAz-CEpyu-cj&t=7'
+    ],
+    [
+        'originalImage_href'   => 'switch.jpg',
+        'webp'                 => 'switch.webp',
+        'imgAlt_Title_heading' => 'Nintendo Switch',
+        'headingLink_href'     => 'https://www.nintendo.com/us/switch/'
+    ],
+    [
+        'originalImage_href'   => 'ps4.jpg',
+        'webp'                 => 'ps4.webp',
+        'imgAlt_Title_heading' => 'Sony PlayStation 4',
+        'headingLink_href'     => 'https://www.playstation.com/en-us/ps4/'
+    ],
+    [
+        'originalImage_href'   => 'ps5.jpg',
+        'webp'                 => 'ps5.webp',
+        'imgAlt_Title_heading' => 'Sony PlayStation 5',
+        'headingLink_href'     => 'https://www.playstation.com/en-us/ps5/'
+    ],
+    [
+        'originalImage_href'   => 'xboxsx.jpg',
+        'webp'                 => 'xboxsx.webp',
+        'imgAlt_Title_heading' => 'Microsoft Xbox Series X',
+        'headingLink_href'     => 'https://www.xbox.com/en-US/consoles/xbox-series-x'
+    ],
+    [
+        'originalImage_href'   => 'jab.jpg',
+        'webp'                 => 'jab.webp',
+        'imgAlt_Title_heading' => 'Joysticks and Buttons',
+        'headingLink_href'     => '#controllers'
+    ],
+    [
+        'originalImage_href'   => 'fightersticks.jpg',
+        'webp'                 => 'fightersticks.webp',
+        'imgAlt_Title_heading' => 'Fighter Sticks',
+        'headingLink_href'     => '#controllers'
+    ],
+    [
+        'originalImage_href'   => 'lightgun.jpg',
+        'webp'                 => 'lightgun.webp',
+        'imgAlt_Title_heading' => 'Light Guns',
+        'headingLink_href'     => '#controllers'
+    ],
+    [
+        'originalImage_href'   => 'dance.jpg',
+        'webp'                 => 'dance.webp',
+        'imgAlt_Title_heading' => 'Dance Pads',
+        'headingLink_href'     => '#controllers'
+    ],
+    [
+        'originalImage_href'   => 'racingwheels.jpg',
+        'webp'                 => 'racingwheels.webp',
+        'imgAlt_Title_heading' => 'Racing Wheel',
+        'headingLink_href'     => '#controllers'
+    ],
+    [
+        'originalImage_href'   => 'trackball.jpg',
+        'webp'                 => 'centipede-animated-1.webp',
+        'imgAlt_Title_heading' => 'Trackballs and Spinners',
+        'headingLink_href'     => '#controllers'
+    ],
+    [
+        'originalImage_href'   => 'multiplayer.jpg',
+        'webp'                 => 'multiplayer.webp',
+        'imgAlt_Title_heading' => 'Multiplayer Cabinets',
+        'headingLink_href'     => '#controllers'
+    ],
+    [
+        'originalImage_href'   => 'knobs.jpg',
+        'webp'                 => 'knobs.webp',
+        'imgAlt_Title_heading' => 'Spinner Controllers',
+        'headingLink_href'     => '#controllers'
+    ],
+    [
+        'originalImage_href'   => 'cockpit_cabinets.jpg',
+        'webp'                 => 'cockpit_cabinets.webp',
+        'imgAlt_Title_heading' => 'Cockpit Cabinets Battlezone',
+        'headingLink_href'     => '#controllers'
+    ],
+    [
+        'originalImage_href'   => 'lightgunevo.jpg',
+        'webp'                 => 'lightgunevo.webp',
+        'imgAlt_Title_heading' => 'Light Gun Evolution',
+        'headingLink_href'     => 'https://arcadeclassics.com.au/arcade_games/gun_games/time-crisis-1/'
+    ],
+    [
+        'originalImage_href'   => 'customcabinets1.jpg',
+        'webp'                 => 'customcabinets1.webp',
+        'imgAlt_Title_heading' => 'Custom Cabinets',
+        'headingLink_href'     => 'https://www.etsy.com/listing/784602871/unique-wall-mounted-arcade-cabinet'
+    ],
+    [
+        'originalImage_href'   => 'customcabinet2.jpg',
+        'webp'                 => 'customcabinet2.webp',
+        'imgAlt_Title_heading' => 'Custom Cabinets',
+        'headingLink_href'     => 'https://www.pinterest.com/pin/278378820697207023/'
+    ],
+    [
+        'originalImage_href'   => 'trackballrevival.jpg',
+        'webp'                 => 'trackballrevival.webp',
+        'imgAlt_Title_heading' => 'Trackball Revival',
+        'headingLink_href'     => 'https://youtu.be/HpaUXE8tj_E?si=XVtmhCVlvFjRwfHM&t=110'
+    ],
+    [
+        'originalImage_href'   => 'nintendopowerglove.jpg',
+        'webp'                 => 'nintendopowerglove.webp',
+        'imgAlt_Title_heading' => 'Nintendo Power Glove (1989)',
+        'headingLink_href'     => '#controllers'
+    ],
+    [
+        'originalImage_href'   => 'nintendo64controller.jpg',
+        'webp'                 => 'nintendo64controller.webp',
+        'imgAlt_Title_heading' => 'Nintendo 64 Controller Design',
+        'headingLink_href'     => 'https://www.nintendo.com/us/store/products/nintendo-64-controller/'
+    ],
+    [
+        'originalImage_href'   => 'psdualshock.jpg',
+        'webp'                 => 'psdualshock.webp',
+        'imgAlt_Title_heading' => 'PlayStation Analog Controller',
+        'headingLink_href'     => 'https://www.fullyretro.com/product/ps1-official-dual-analog-controller-scph-1180-grey,45211571'
+    ],
+    [
+        'originalImage_href'   => 'psdualshock2.jpg',
+        'webp'                 => 'psdualshock2.webp',
+        'imgAlt_Title_heading' => 'Pressure-Sensitive Buttons',
+        'headingLink_href'     => '#controllers'
+    ],
+    [
+        'originalImage_href'   => 'xboxwireless.jpg',
+        'webp'                 => 'xboxwireless.webp',
+        'imgAlt_Title_heading' => 'Wireless Xbox 360 Controller',
+        'headingLink_href'     => '#controllers'
+    ],
+    [
+        'originalImage_href'   => 'wiiremote.jpg',
+        'webp'                 => 'wiiremote.webp',
+        'imgAlt_Title_heading' => 'Nintendo Wii Motion Controls',
+        'headingLink_href'     => 'https://www.ign.com/wikis/wii-u/Wii%20Remote'
+    ],
+    [
+        'originalImage_href'   => 'nintendo_ds.jpg',
+        'webp'                 => 'nintendo_ds.webp',
+        'imgAlt_Title_heading' => 'Nintendo DS',
+        'headingLink_href'     => 'https://nintendoeverything.com/nintendo-ds-is-now-10-years-old/'
+    ],
+    [
+        'originalImage_href'   => 'vr_controller.jpg',
+        'webp'                 => 'vr_controller.webp',
+        'imgAlt_Title_heading' => 'Virtual Reality',
+        'headingLink_href'     => 'https://www.shacknews.com/article/95559/beyond-gamepads-8-alternative-control-options-for-vr'
+    ],
+    [
+        'originalImage_href'   => 'adaptive360.jpg',
+        'webp'                 => 'adaptive360.webp',
+        'imgAlt_Title_heading' => 'Adaptive Controllers',
+        'headingLink_href'     => 'https://www.pcworld.com/article/402000/microsoft-xbox-adaptive-controller.html'
+    ],
+    [
+        'originalImage_href'   => 'ps5haptic.jpg',
+        'webp'                 => 'ps5haptic.webp',
+        'imgAlt_Title_heading' => 'Haptic Feedback ',
+        'headingLink_href'     => 'https://www.techradar.com/news/why-the-ps5-controller-is-all-about-haptic-feedback-according-to-the-techs-creator'
+    ],
+
+];
+
+foreach($carouselItems as $index => $item) {
+?>
+        <div class="carousel-item" data-image-index="<?= $index; ?>">
+            <a href="../images/hardware/hw/c_controllers/<?= $item['originalImage_href']; ?>" target="_blank" rel="noopener">
+                <img src="../images/hardware/hw/c_controllers/<?= $item['webp']; ?>"
+                    alt="<?= htmlspecialchars($item['imgAlt_Title_heading']); ?>">
+            </a>
+            <h4 class="img_link">
+                <a href="<?= htmlspecialchars($item['headingLink_href']); ?>"
+                    title="<?= htmlspecialchars($item['imgAlt_Title_heading']); ?>" target="_blank" rel="noopener">
+                    <?= htmlspecialchars($item['imgAlt_Title_heading']); ?>
+                </a>
+            </h4>
+        </div>
+        <?php
+}
+?>
+    </template>

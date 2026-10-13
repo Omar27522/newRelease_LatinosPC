@@ -11,8 +11,8 @@ $links = [
 <?php include_once('navBarHW.php'); ?>
 <article class="hero4 container article fullbar">
     <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
-    <a rel="example_group" href="https://latinospc.com/images/bg_lapc.png" title="LAtinosPC Icon Computer" alt="LAPChassisIcon">
-        <img src="https://latinospc.com/images/lapc.png" class="image rtl">
+    <a rel="example_group" href="../images/bg_lapc.png" title="LAtinosPC Icon Computer" alt="LAPChassisIcon">
+        <img src="../images/lapc.png" class="image rtl">
     </a>
     <h1><a href="./#cpu">
         <?= $content[300][$key] ?? ''; ?>
@@ -29,8 +29,8 @@ $links = [
         <?= $content[305][$key] ?? ''; ?>
     </h2>
 
-    <a rel="example_group" href="https://latinospc.com/images/hardware/case/1600393471697.png" title="LAtinosPC Main Computer" alt="LAPChassis">
-        <img src="https://latinospc.com/images/cs_chassis.webp" width="263" alt="image" class="image fl" />
+    <a rel="example_group" href="../images/hardware/case/1600393471697.png" title="LAtinosPC Main Computer" alt="LAPChassis">
+        <img src="../images/cs_chassis.webp" width="263" alt="image" class="image fl" />
     </a>
 
     <h2><?= $content[306][$key] ?? ''; ?></h2>

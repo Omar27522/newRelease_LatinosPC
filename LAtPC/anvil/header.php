@@ -35,7 +35,7 @@
                         elseif($page->getLang() == "es-419"):
                             echo "https://www.vatican.va/roman_curia/pontifical_councils/interelg/documents/rc_pc_interelg_doc_20030203_new-age_sp.html";
                         endif; ?>" target="_blank">
-                            <img src="https://latinospc.com/images/artificialintelligence/our_lord_and_savior_jesus_christ/lamb9.webp"
+                            <img src="../images/artificialintelligence/our_lord_and_savior_jesus_christ/lamb9.webp"
                                 width="100%" height="auto" alt="JesusChrist">
                         </a>
                     </li>

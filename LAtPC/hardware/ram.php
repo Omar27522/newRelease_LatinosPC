@@ -19,7 +19,7 @@ $links = [
         <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
         <h2 id="ram"><a href="?hw/sw#cpu" title="Random Access Memory ">
             <?= $content[153][$key] ?? ''; ?>
-        <img src="https://latinospc.com/images/fz/hw-ram.jpg" alt="" class="fl" height="60" width="60" /></a></h2>
+        <img src="../images/fz/hw-ram.jpg" alt="" class="fl" height="60" width="60" /></a></h2>
         <h3><?= $content[154][$key] ?? ''; ?></h3>
         <h2><?= $content[155][$key] ?? ''; ?></h2>
         <h3><?= $content[156][$key] ?? ''; ?></h3>
@@ -54,7 +54,7 @@ $links = [
             </ul>
         </h3><br />
         <h3><?= $content[168][$key] ?? ''; ?></h3>
-        <img src="https://latinospc.com/images/artificialintelligence/Introduction.jpg" alt="Image" width="270px" title="image"
+        <img src="../images/artificialintelligence/Introduction.jpg" alt="Image" width="270px" title="image"
             class="rtl">
         <h3>
             <ul class="col c1">

@@ -126,12 +126,12 @@
 }
 
 .tnk:hover {
-    background: url(https://latinospc.com/images/blue_rectangle.png) repeat-x top;
+    background: url(../images/blue_rectangle.png) repeat-x top;
     transition: all 0.5s ease-in-out;
 }
 
 .tnk:focus {
-    background: url(https://latinospc.com/images/blue_rectangle.png) repeat-y right;
+    background: url(../images/blue_rectangle.png) repeat-y right;
     transition: all 0.3s ease-in-out;
 }
 

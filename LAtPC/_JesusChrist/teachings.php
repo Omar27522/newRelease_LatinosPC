@@ -3248,7 +3248,7 @@ function teachings()  {
     <div class="multi-link-container">
         <div class="thumbnail-container">
             <span tabindex="0" class="linked-text-img">
-                <img src="https://latinospc.com/images/clouds.webp" width="263" height="186" alt="image" class="fr" alt="Start with Blank Page" class="thumbnail" />
+                <img src="../images/clouds.webp" width="263" height="186" alt="image" class="fr" alt="Start with Blank Page" class="thumbnail" />
                 <p>Primary Image</p>
             </span>
         </div>

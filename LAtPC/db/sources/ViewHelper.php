@@ -91,10 +91,12 @@ function renderTabContainer($pageId, $count = 0) {
             <table id="<?= $safeTableId ?>" class="interactive-content-table">
                 <thead>
                     <tr>
-                        <th width="75">Index</th>
-                        <th width="190">Name & Section</th>
-                        <th>Content (English & Español)</th>
-                        <th width="170" style="text-align: right;">Actions</th>
+                        <th width="70" title="Template Array Index (#0..#N) as used in $content[index][$key]">Index</th>
+                        <th width="75" style="text-align: center;">Actions</th>
+                        <th width="180">Name</th>
+                        <th width="110">Section</th>
+                        <th>Content (English &amp; Español)</th>
+                        <th width="60" style="text-align: right;" title="Database Record ID">ID</th>
                     </tr>
                 </thead>
                 <tbody id="tbody-<?= $safeTableId ?>">
@@ -142,7 +144,7 @@ function renderSearchResults($rows) {
                     <th width="110">Page ID</th>
                     <th width="180">Name & Section</th>
                     <th>Content Preview</th>
-                    <th width="160" style="text-align: right;">Actions</th>
+                    <th width="75" style="text-align: right;">Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -184,10 +186,9 @@ function renderSearchResults($rows) {
                         </div>
                     </td>
                     <td style="text-align: right;" onclick="event.stopPropagation();">
-                        <div class="actions" style="justify-content: flex-end;">
-                            <button type="button" class="btn btn-sm btn-ghost btn-copy-code" onclick="copySnippet(<?= $idx ?>, event)">📋 Copy</button>
-                            <a href="?edit_id=<?= $row['id'] ?>&tab=<?= urlencode($currPage) ?>#editor" class="btn btn-sm btn-edit">Edit</a>
-                            <a href="?delete_id=<?= $row['id'] ?>&tab=<?= urlencode($currPage) ?><?= isset($_GET['q']) ? '&q=' . urlencode($_GET['q']) : '' ?>" onclick="return confirm('Delete entry #<?= $idx ?> (<?= htmlspecialchars(addslashes($row['name'] ?? ''), ENT_QUOTES) ?>) [ID: <?= $row['id'] ?>]?\n\nThis cannot be undone.');" class="btn btn-sm btn-danger" title="Delete entry #<?= $idx ?> (ID: <?= $row['id'] ?>)">✕</a>
+                        <div class="actions-compact" style="justify-content: flex-end;">
+                            <a href="?edit_id=<?= $row['id'] ?>&tab=<?= urlencode($currPage) ?>#editor" class="btn-action-icon btn-action-edit btn-edit" title="Edit entry #<?= $idx ?>">✏️</a>
+                            <a href="?delete_id=<?= $row['id'] ?>&tab=<?= urlencode($currPage) ?><?= isset($_GET['q']) ? '&q=' . urlencode($_GET['q']) : '' ?>" onclick="return confirm('Delete entry #<?= $idx ?> (<?= htmlspecialchars(addslashes($row['name'] ?? ''), ENT_QUOTES) ?>) [ID: <?= $row['id'] ?>]?\n\nThis cannot be undone.');" class="btn-action-icon btn-action-delete btn-danger" title="Delete entry #<?= $idx ?> (ID: <?= $row['id'] ?>)">🗑️</a>
                         </div>
                     </td>
                 </tr>

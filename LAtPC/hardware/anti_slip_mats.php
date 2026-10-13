@@ -23,49 +23,49 @@ global $content, $key;
             <ul>
                 <li tabindex="0" class="selection card2"><strong><?= $content[3355][$key] ?? ''; ?></strong>
                     <span tabindex="0" class="selection_2 card2"><?= $content[3356][$key] ?? ''; ?></span>
-                    <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]1.jpeg" class="fl card2"
+                    <img src="../images/artificialintelligence/[4]/cyber[4]1.jpeg" class="fl card2"
                         alt="Surface Grip" width="100px">
                     <span tabindex="0" class="selection_2 card2"><?= $content[3357][$key] ?? ''; ?></span>
                 </li>
 
                 <li tabindex="0" class="selection card2"><strong><?= $content[3358][$key] ?? ''; ?></strong>
                     <span tabindex="0" class="selection_2 card2"><?= $content[3359][$key] ?? ''; ?></span>
-                    <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]2.jpeg" class="fl card2"
+                    <img src="../images/artificialintelligence/[4]/cyber[4]2.jpeg" class="fl card2"
                         alt="Protection" width="100px">
                     <span tabindex="0" class="selection_2 card2"><?= $content[3360][$key] ?? ''; ?></span>
                 </li>
 
                 <li tabindex="0" class="selection card2"><strong><?= $content[3361][$key] ?? ''; ?></strong>
                     <span tabindex="0" class="selection_2 card2"><?= $content[3362][$key] ?? ''; ?></span>
-                    <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]3.jpeg" class="fl card2"
+                    <img src="../images/artificialintelligence/[4]/cyber[4]3.jpeg" class="fl card2"
                         alt="Stability" width="100px">
                     <span tabindex="0" class="selection_2 card2"><?= $content[3363][$key] ?? ''; ?></span>
                 </li>
 
                 <li tabindex="0" class="selection card2"><strong><?= $content[3364][$key] ?? ''; ?></strong>
                     <span tabindex="0" class="selection_2 card2"><?= $content[3365][$key] ?? ''; ?> <img
-                            src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]4.jpeg"
+                            src="../images/artificialintelligence/[4]/cyber[4]4.jpeg"
                             class="fl card2" alt="Reduced Strain"
                             width="100px"><?= $content[3366][$key] ?? ''; ?></span>
                 </li>
 
                 <li tabindex="0" class="selection card2"><strong><?= $content[3367][$key] ?? ''; ?></strong>
                     <span tabindex="0" class="selection_2 card2"><?= $content[3368][$key] ?? ''; ?></span>
-                    <img src="https://latinospc.com/images/artificialintelligence/[4]/cyber[4]5.jpeg" class="fl card2"
+                    <img src="../images/artificialintelligence/[4]/cyber[4]5.jpeg" class="fl card2"
                         alt="Noise Reduction" width="100px">
                     <span tabindex="0" class="selection_2 card2"><?= $content[3369][$key] ?? ''; ?></span>
                 </li>
 
                 <li tabindex="0" class="selection card2"><strong><?= $content[3370][$key] ?? ''; ?></strong>
                     <span tabindex="0" class="selection_2 card2"><?= $content[3371][$key] ?? ''; ?></span>
-                    <img src="https://latinospc.com/images/artificialintelligence/[4][1]/cyber[4][1]2.jpeg"
+                    <img src="../images/artificialintelligence/[4][1]/cyber[4][1]2.jpeg"
                         class="fl card2" alt="Customization" width="100px">
                     <span tabindex="0" class="selection_2 card2"><?= $content[3372][$key] ?? ''; ?></span>
                 </li>
 
                 <li tabindex="0" class="selection card2"><strong><?= $content[3373][$key] ?? ''; ?></strong>
                     <span tabindex="0" class="selection_2 card2"><?= $content[3374][$key] ?? ''; ?></span>
-                    <img src="https://latinospc.com/images/artificialintelligence/[4][1]/cyber[4][1]2.jpeg"
+                    <img src="../images/artificialintelligence/[4][1]/cyber[4][1]2.jpeg"
                         class="fl card2" alt="Easy to Clean" width="100px">
                     <span tabindex="0" class="selection_2 card2"><?= $content[3375][$key] ?? ''; ?></span>
                 </li>

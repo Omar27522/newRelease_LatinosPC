@@ -368,8 +368,11 @@ class FastTableManager {
                             #${idx}
                         </button>
                     </td>
-                    <td class="font-mono text-muted" style="font-size: 0.8rem;">
-                        ${item.id}
+                    <td style="text-align: center;" onclick="event.stopPropagation();">
+                        <div class="actions-compact">
+                            <button type="button" class="btn-action-icon btn-action-edit btn-edit" onclick="tableManagers['${this.tableId}'].openEditModalById(${item.id})" title="Edit entry #${idx}">✏️</button>
+                            <button type="button" class="btn-action-icon btn-action-delete btn-danger btn-delete-row" onclick="tableManagers['${this.tableId}'].deleteEntry(${item.id}, event)" title="Delete entry #${idx} (ID: ${item.id})">🗑️</button>
+                        </div>
                     </td>
                     <td class="font-mono" style="font-weight: 500;">
                         ${name}
@@ -391,12 +394,8 @@ class FastTableManager {
                             `}
                         </div>
                     </td>
-                    <td style="text-align: right;" onclick="event.stopPropagation();">
-                        <div class="actions" style="justify-content: flex-end;">
-                            <button type="button" class="btn btn-sm btn-ghost btn-copy-code" onclick="DataHubApp.copySnippet(${idx}, event)" title="Copy snippet to clipboard">📋 Copy</button>
-                            <button type="button" class="btn btn-sm btn-edit" onclick="tableManagers['${this.tableId}'].openEditModalById(${item.id})" title="Edit entry #${idx}">Edit</button>
-                            <button type="button" class="btn btn-sm btn-danger btn-delete-row" onclick="tableManagers['${this.tableId}'].deleteEntry(${item.id}, event)" title="Delete entry #${idx} (ID: ${item.id})">✕</button>
-                        </div>
+                    <td class="font-mono text-muted" style="text-align: right; font-size: 0.8rem;" title="Database Record ID: ${item.id}">
+                        ${item.id}
                     </td>
                 </tr>
             `;
@@ -488,8 +487,12 @@ class FastTableManager {
         const targetItem = this.rawItems.find(it => String(it.id) === String(targetId));
         if (!targetItem) return;
 
-        this.clearAllFilters();
-        const rowPos = this.filteredItems.findIndex(it => String(it.id) === String(targetId));
+        // Only clear filters if target item is not visible in current filtered set
+        let rowPos = this.filteredItems.findIndex(it => String(it.id) === String(targetId));
+        if (rowPos === -1) {
+            this.clearAllFilters();
+            rowPos = this.filteredItems.findIndex(it => String(it.id) === String(targetId));
+        }
         if (rowPos !== -1) {
             this.currentPage = Math.floor(rowPos / this.pageSize) + 1;
             this.renderRows();
@@ -877,14 +880,65 @@ class DataHubApp {
         // Keyboard navigation
         document.addEventListener('keydown', ModalManager.handleKeyDown);
 
-        // Form submit save state
-        document.getElementById('entryForm')?.addEventListener('submit', () => {
-            const pageId = document.querySelector('input[name="page_id"]')?.value;
-            const name = document.querySelector('input[name="name"]')?.value;
-            const section = document.querySelector('input[name="section"]')?.value;
-            if (pageId) localStorage.setItem('last_page_id', pageId);
-            if (name) localStorage.setItem('last_name', name);
-            if (section) localStorage.setItem('last_section', section);
+        // Form submit: asynchronous zero-reload save with active filter preservation
+        document.getElementById('entryForm')?.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const form = e.target;
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalBtnHtml = submitBtn ? submitBtn.innerHTML : 'Save';
+
+            const formData = new FormData(form);
+            formData.append('api', 'save');
+
+            const csrfToken = DataHubApp.config?.csrfToken || '';
+            if (csrfToken && !formData.has('csrf_token')) {
+                formData.append('csrf_token', csrfToken);
+            }
+
+            // Save last used state to localStorage
+            const pageIdVal = formData.get('page_id');
+            const nameVal = formData.get('name');
+            const sectionVal = formData.get('section');
+            if (pageIdVal) localStorage.setItem('last_page_id', pageIdVal);
+            if (nameVal) localStorage.setItem('last_name', nameVal);
+            if (sectionVal) localStorage.setItem('last_section', sectionVal);
+
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '⏳ Saving...';
+            }
+
+            try {
+                const resp = await fetch('SQLiteconnection.php', {
+                    method: 'POST',
+                    body: formData
+                });
+                const result = await resp.json();
+
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalBtnHtml;
+                }
+
+                if (!result || !result.success) {
+                    DataHubApp.showTopToast(result?.error || 'Failed to save entry.', 'error');
+                    return;
+                }
+
+                // Close editor modal cleanly
+                ModalManager.closeEditorModal();
+
+                // Handle in-place update with filter preservation
+                DataHubApp.handleSaveSuccess(result);
+
+            } catch (err) {
+                console.error('Save error:', err);
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalBtnHtml;
+                }
+                DataHubApp.showTopToast('A network error occurred while saving.', 'error');
+            }
         });
 
         // Determine initial active tab safely:
@@ -1048,6 +1102,130 @@ class DataHubApp {
         toast.classList.add('show');
         clearTimeout(window._toastTimeout);
         window._toastTimeout = setTimeout(() => toast.classList.remove('show'), 2800);
+    }
+
+    /**
+     * Shows non-blocking top-right toast notification cleanly below header bar
+     * @param {string} message
+     * @param {'success'|'error'} [type='success']
+     */
+    static showTopToast(message, type = 'success') {
+        let toast = document.getElementById('auto-dismiss-message');
+        if (!toast) {
+            toast = document.createElement('div');
+            toast.id = 'auto-dismiss-message';
+            document.body.appendChild(toast);
+        }
+        toast.className = `toast-alert alert-${type}`;
+        const escaped = document.createElement('div');
+        escaped.textContent = message;
+        toast.innerHTML = `
+            <span>${type === 'success' ? '✅' : '⚠️'} ${escaped.innerHTML}</span>
+            <button type="button" onclick="this.parentElement.remove()" class="toast-close">✕</button>
+        `;
+        toast.style.display = 'flex';
+        toast.style.opacity = '1';
+
+        clearTimeout(window._topToastTimeout);
+        window._topToastTimeout = setTimeout(() => {
+            if (toast) {
+                toast.style.transition = 'opacity 0.3s ease';
+                toast.style.opacity = '0';
+                setTimeout(() => toast.remove(), 320);
+            }
+        }, 3500);
+    }
+
+    /**
+     * Handles in-place updates after an AJAX save without reloading the page.
+     * Preserves active filters, search queries, pagination, and scroll position.
+     * @param {Object} result - Response from server
+     */
+    static handleSaveSuccess(result) {
+        if (!result || !result.item) return;
+
+        const item = result.item;
+        const targetTab = (item.page_id || 'home').toLowerCase();
+        const currentTab = (DataHubApp.activeTab || 'home').toLowerCase();
+        const isCurrentTab = targetTab === currentTab;
+
+        const currentTableId = 'tbl_' + currentTab.replace(/[^a-zA-Z0-9_]/g, '_');
+        const mgr = window.tableManagers[currentTableId];
+
+        if (isCurrentTab && mgr) {
+            const existingIdx = mgr.rawItems.findIndex(it => String(it.id) === String(item.id));
+            let targetTrueIndex = 0;
+
+            if (existingIdx !== -1) {
+                // Update existing item in place, keeping its sequential array offset (true_index)
+                targetTrueIndex = mgr.rawItems[existingIdx].true_index;
+                mgr.rawItems[existingIdx] = Object.assign({}, mgr.rawItems[existingIdx], item, { true_index: targetTrueIndex });
+            } else {
+                // Newly added item to current tab
+                targetTrueIndex = mgr.rawItems.length;
+                item.true_index = targetTrueIndex;
+                mgr.rawItems.push(item);
+            }
+
+            // Sync memory cache for this tab
+            if (window.tabCache) {
+                window.tabCache[currentTab] = mgr.rawItems;
+            }
+
+            // Update tab badge counter in header (e.g. "Home 117")
+            const tabBtn = document.getElementById('tab-btn-' + currentTab);
+            if (tabBtn) {
+                const countBadge = tabBtn.querySelector('.tab-count');
+                if (countBadge) countBadge.textContent = mgr.rawItems.length;
+            }
+
+            // Re-analyze sections and update pill counters (e.g. "link 41")
+            mgr.analyzeSections();
+            mgr.renderSectionPills();
+
+            // Re-apply filters while strictly PRESERVING user's active section ('link'), search, and status
+            mgr.applyFilterAndSort();
+
+            // Highlight the edited row
+            setTimeout(() => {
+                const rowEl = document.getElementById(`row-${mgr.tableId}-${targetTrueIndex}`);
+                if (rowEl) {
+                    rowEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    rowEl.classList.remove('row-highlight');
+                    void rowEl.offsetWidth;
+                    rowEl.classList.add('row-highlight');
+                    setTimeout(() => rowEl.classList.remove('row-highlight'), 3000);
+                }
+            }, 60);
+
+        } else if (!isCurrentTab) {
+            // If item was moved to a different tab or created in a different tab
+            if (mgr) {
+                const oldIdx = mgr.rawItems.findIndex(it => String(it.id) === String(item.id));
+                if (oldIdx !== -1) {
+                    mgr.rawItems.splice(oldIdx, 1);
+                    mgr.rawItems.forEach((it, i) => it.true_index = i);
+                    mgr.analyzeSections();
+                    mgr.renderSectionPills();
+                    mgr.applyFilterAndSort();
+                }
+            }
+
+            // Update destination tab cache
+            if (window.tabCache && window.tabCache[targetTab]) {
+                const destCache = window.tabCache[targetTab];
+                const destIdx = destCache.findIndex(it => String(it.id) === String(item.id));
+                if (destIdx !== -1) {
+                    destCache[destIdx] = Object.assign({}, destCache[destIdx], item);
+                } else {
+                    item.true_index = destCache.length;
+                    destCache.push(item);
+                }
+            }
+        }
+
+        // Show non-blocking top-right toast
+        DataHubApp.showTopToast(result.message || 'Saved successfully.', 'success');
     }
 
     /**

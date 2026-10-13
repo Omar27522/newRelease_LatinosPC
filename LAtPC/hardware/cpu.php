@@ -65,7 +65,7 @@ $links = [
                         <?= $content[2][$key] ?? '';?>
                     </a></li>
             </ul>
-            <img src="https://latinospc.com/images/computer%20CPU.jpg" alt="" class="fl" height="60" width="60" />
+            <img src="../images/computer%20CPU.jpg" alt="" class="fl" height="60" width="60" />
             <p>
                 <?= $content[13][$key] ?? '';?></p>
             <span><?= $content[104][$key] ?? '';?></span>
@@ -126,7 +126,7 @@ $links = [
                         <?= $content[20][$key] ?? '';?>
                     </p>
                 </ul>
-            </div><img src="https://latinospc.com/images/artificialintelligence/hw/cpu/thumbs/cpu.jpg" height="280px"
+            </div><img src="../images/artificialintelligence/hw/cpu/thumbs/cpu.jpg" height="280px"
                 class="fl" title="Central Processing Unit" alt="CPU stiker">
         </div>
     </section>
@@ -141,7 +141,7 @@ $links = [
             <div class="spacer_shape" id="intel"><a href="<?=$links['intel'] ?>" title="intel Processors"><button
                         style="padding:40px;font-size:xx-large">
                         intel
-                    </button></a><a href="#scroll"><img src="https://latinospc.com/images/computer%20CPU.jpg" alt=""
+                    </button></a><a href="#scroll"><img src="../images/computer%20CPU.jpg" alt=""
                         class="rtl" height="60" width="60" /></a></div>
             <h2>
                 <?= $content[10][$key] ?? '';?>
@@ -232,7 +232,7 @@ $links = [
             <hr>
             <div class="spacer_shape hero4">
                 <p><?= $content[37][$key] ?? ''; ?> <a href="<?=$links['LGA'] ?>" title="Digital Trends"><?= $content[38][$key] ?? ''; ?></a></p>
-                <p><img src="https://latinospc.com/images/artificialintelligence/hw/cpu/thumbs/socket.jpg" title="Socket"
+                <p><img src="../images/artificialintelligence/hw/cpu/thumbs/socket.jpg" title="Socket"
                         class="rtl">
                     <?= $content[39][$key] ?? ''; ?></p>
             </div>
@@ -270,7 +270,7 @@ $links = [
             <div class="spacer_shape" id="amd"><a href="https://www.amd.com/en.html" title="AMD Processors">
                     <button style="padding:40px;font-size:xx-large">
                         <?= $content[2][$key] ?? '';?>
-                    </button></a><a href="#content"><img src="https://latinospc.com/images/computer%20CPU.jpg"
+                    </button></a><a href="#content"><img src="../images/computer%20CPU.jpg"
                         alt="CPU Image" class="rtl" height="60" width="60" /></a></div>
             <div class="colms2">
                 <p><a href="<?=$links['AMD_epyc'] ?>" title="Epyc™"><button>

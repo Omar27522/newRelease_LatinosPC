@@ -22,7 +22,7 @@ echo "</div>";
         </div>
 
         <p tabindex="0" class=""><?= $content[69][$key] ?? ''; ?><br />
-            <img tabindex="0" src="https://latinospc.com/images/programs/av.jpg" height="210" width="240"
+            <img tabindex="0" src="../images/programs/av.jpg" height="210" width="240"
                 alt="First Image" class="rtl selection_2 card2"
                 style="background-color: darkgray;color: whitesmoke;text-align: center;font-size: 2rem;">
             <br /><?= $content[70][$key] ?? ''; ?><br /><br /><?= $content[71][$key] ?? ''; ?>

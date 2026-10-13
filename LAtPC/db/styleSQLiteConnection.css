@@ -382,6 +382,82 @@ tr:hover td {
     gap: 6px;
 }
 
+/* Compact Table Actions Toolbar */
+.actions-compact {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    padding: 2px 4px;
+    background: var(--pill-bg);
+    border: 1px solid var(--pill-border);
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.15s ease;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.actions-compact:hover {
+    border-color: var(--primary-light);
+    box-shadow: 0 2px 8px var(--primary-glow);
+}
+
+.btn-action-icon {
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    background: transparent;
+    cursor: pointer;
+    font-size: 0.85rem;
+    line-height: 1;
+    color: var(--text-light);
+    transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.btn-action-icon:hover {
+    transform: translateY(-1px);
+}
+
+.btn-action-icon:active {
+    transform: translateY(0);
+}
+
+.btn-action-icon.btn-action-copy:hover {
+    background: var(--card-bg);
+    border-color: var(--border);
+    color: var(--text);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.btn-action-icon.btn-action-edit {
+    color: var(--primary);
+}
+
+.btn-action-icon.btn-action-edit:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #ffffff;
+    box-shadow: 0 2px 6px var(--primary-glow);
+}
+
+.btn-action-icon.btn-action-delete {
+    color: var(--danger);
+}
+
+.btn-action-icon.btn-action-delete:hover {
+    background: var(--danger);
+    border-color: var(--danger);
+    color: #ffffff;
+    box-shadow: 0 2px 6px rgba(239, 68, 68, 0.3);
+}
+
 /* Alerts */
 .alert {
     padding: 14px 18px;
@@ -985,21 +1061,32 @@ mark.search-match {
     scrollbar-color: rgba(255, 255, 255, 0.22) transparent;
 }
 
-/* Floating Toast Notifications (Zero Height in Flow) */
+/* Floating Toast Notifications (Zero Height in Flow, cleanly positioned below header bar) */
 .toast-alert {
     position: fixed;
-    top: 16px;
-    right: 20px;
+    top: 72px;
+    right: 24px;
     z-index: 10000;
-    padding: 10px 16px;
-    border-radius: 8px;
+    padding: 11px 18px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     gap: 12px;
-    box-shadow: var(--shadow-lg);
-    animation: toastSlideIn 0.2s ease-out;
+    box-shadow: 0 10px 25px -4px rgba(0, 0, 0, 0.25), 0 0 15px rgba(16, 185, 129, 0.15);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    animation: toastSlideIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     font-weight: 600;
     font-size: 0.88rem;
+    pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+    .toast-alert {
+        top: 86px;
+        right: 12px;
+        max-width: calc(100vw - 24px);
+    }
 }
 .toast-close {
     background: transparent;

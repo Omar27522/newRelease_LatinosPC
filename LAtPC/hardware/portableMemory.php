@@ -12,9 +12,9 @@ global $content, $key;
     <!--☁【ツ】☁--┻━┻ **`ღ´**☁ Portable Memory ☁☁【ツ】☁--┻━┻ **`ღ´**-->
     <h3 class="container fullbar"><a href="https://csrc.nist.gov/glossary/term/portable_storage_device"><?= $content[4181][$key] ?? ''; ?></a> <?= $content[4182][$key] ?? ''; ?> <a href="https://latinospc.com/hardware/?ssd#ssd"><?= $content[4183][$key] ?? ''; ?></a><?= $content[4184][$key] ?? ''; ?> <a
             href="https://www.enablingusb.org/"><?= $content[4185][$key] ?? ''; ?></a> <?= $content[4186][$key] ?? ''; ?></h3>
-    <a rel="example_group" href="https://latinospc.com/images/hardware/hw/p_memory/portablehdd.jpg"
+    <a rel="example_group" href="../images/hardware/hw/p_memory/portablehdd.jpg"
         style="margin:4px 16px 4px 0; float:left;" title="Portable Hard Disk Drive"><img
-            src="https://latinospc.com/images/hardware/hw/p_memory/portablehdd.webp" alt="90's porable drive"></a>
+            src="../images/hardware/hw/p_memory/portablehdd.webp" alt="90's porable drive"></a>
     <div class="container fullbar">
         <h3><?= $content[4187][$key] ?? ''; ?> <a
                 href="https://www.dpbestflow.org/data-storage-hardware/hard-drive-101#capacity"><?= $content[4188][$key] ?? ''; ?></a> <?= $content[4189][$key] ?? ''; ?><a
@@ -25,16 +25,16 @@ global $content, $key;
                 href="https://www.pcmag.com/picks/the-best-rugged-hard-drives-and-ssds"><?= $content[4198][$key] ?? ''; ?></a><?= $content[4199][$key] ?? ''; ?><br /><a
                 href="https://exascend.com/technologies/mil-std-810/" style="font-size: large;"><?= $content[4200][$key] ?? ''; ?></a><?= $content[4201][$key] ?? ''; ?></h3>
     </div>
-    <div class="container fullbar"><a rel="example_group" href="https://latinospc.com/images/hardware/hw/p_memory/ssd.jpg"
+    <div class="container fullbar"><a rel="example_group" href="../images/hardware/hw/p_memory/ssd.jpg"
             style="margin:4px 4px 16px 0; float:right;" title="Portable Solid State Drive"><img
-                src="https://latinospc.com/images/hardware/hw/p_memory/ssd.webp" alt="SSD"></a>
+                src="../images/hardware/hw/p_memory/ssd.webp" alt="SSD"></a>
         <h3><span style="font-size: large;"><?= $content[4202][$key] ?? ''; ?></span> <?= $content[4203][$key] ?? ''; ?> <a href="https://tripplite.eaton.com/products/usb-connectivity-types-standards"><?= $content[4204][$key] ?? ''; ?></a> <?= $content[4205][$key] ?? ''; ?>
             <div class="spacer" style="margin-bottom:30px ;"></div>
         </h3>
     </div>
-    <h3 class="container fullbar"><a rel="example_group" href="https://latinospc.com/images/hardware/hw/p_memory/usb.jpg"
+    <h3 class="container fullbar"><a rel="example_group" href="../images/hardware/hw/p_memory/usb.jpg"
             style="margin:4px 16px 4px 0; float:left;" title="USB Powerred Memory Drives"><img
-                src="https://latinospc.com/images/hardware/hw/p_memory/usb.webp" height="130px" alt="USB Powerred Memory Drives"></a><span
+                src="../images/hardware/hw/p_memory/usb.webp" height="130px" alt="USB Powerred Memory Drives"></a><span
             style="font-size: large;"><?= $content[4206][$key] ?? ''; ?></span><?= $content[4207][$key] ?? ''; ?> <a
             href="https://www.omnicharge.co/blogs/blog/what-is-usb-power-and-how-does-it-work-exactly"><?= $content[4208][$key] ?? ''; ?></a> <?= $content[4209][$key] ?? ''; ?></h3>
     <!--☁【ツ】☁--┻━┻ **`ღ´**☁ Memory Cards ☁【ツ】☁--┻━┻ **`ღ´**-->
@@ -51,9 +51,9 @@ global $content, $key;
             <ul>
                 <h3>
                     <li><strong><?= $content[4217][$key] ?? ''; ?></strong> <?= $content[4218][$key] ?? ''; ?></li>
-                    <a rel="example_group" href="https://latinospc.com/images/hardware/hw/p_memory/memory.jpg"
+                    <a rel="example_group" href="../images/hardware/hw/p_memory/memory.jpg"
                         style="margin:4px 4px 16px 0; float:right;" title="Memory Card"><img
-                            src="https://latinospc.com/images/hardware/hw/p_memory/memory.webp" alt="Memory Card" class="rtl"></a>
+                            src="../images/hardware/hw/p_memory/memory.webp" alt="Memory Card" class="rtl"></a>
                     <li><strong><?= $content[4219][$key] ?? ''; ?></strong> <?= $content[4220][$key] ?? ''; ?><a
                             href="https://www.sdcard.org/developers/sd-standard-overview/capacity-sd-sdhc-sdxc-sduc/"><?= $content[4221][$key] ?? ''; ?></a><?= $content[4222][$key] ?? ''; ?></li>
                     <li><strong><?= $content[4223][$key] ?? ''; ?></strong> <a
@@ -86,9 +86,9 @@ global $content, $key;
                     href="https://en.wikipedia.org/wiki/USB_flash_drive"><?= $content[4242][$key] ?? ''; ?></a><?= $content[4243][$key] ?? ''; ?> <a
                     href="https://en.wikipedia.org/wiki/USB_hardware#Connectors"><?= $content[4244][$key] ?? ''; ?></a><?= $content[4245][$key] ?? ''; ?></h3>
             <h2 style="text-align: right;"><?= $content[4246][$key] ?? ''; ?></h2>
-            <a rel="example_group" href="https://latinospc.com/images/hardware/hw/p_memory/usb_stick.jpg"
+            <a rel="example_group" href="../images/hardware/hw/p_memory/usb_stick.jpg"
                 style="margin:4px 30px 4px 4px; float:left;" title="USB"><img
-                    src="https://latinospc.com/images/hardware/hw/p_memory/usb_stick.webp" alt=""></a>
+                    src="../images/hardware/hw/p_memory/usb_stick.webp" alt=""></a>
             <ul>
                 <h3>
                     <li class="card2"><strong><?= $content[4247][$key] ?? ''; ?></strong> <a
