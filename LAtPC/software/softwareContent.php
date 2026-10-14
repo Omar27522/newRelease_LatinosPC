@@ -24,8 +24,16 @@ echo "</div>";
     <section class="hero3" id="software">
         <div class="container" style="background-color:rgba(245, 245, 245, 0.41);padding-bottom:.6%;">
             <h2><?= $content[1][$key] ?? ''; ?></h2>
-            <a href="#title"><img src="../images/programs/code.jpg" width="263" height="146" alt="image"
-                    class="fl" /></a>
+            <div class="carousel-group fl" style="margin: 0 20px 15px 0;">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img" role="button" aria-label="Software Architecture &amp; Code">
+                            <img src="../images/programs/code_thumb.webp" width="263" height="146" alt="Software Architecture &amp; Code" loading="lazy" style="max-height: 146px; width: auto;" />
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
+                </div>
+            </div>
             <p style="margin-left:20%;margin-bottom:2%; width:68%;">
                 <?= $content[2][$key] ?? ''; ?>
             </p>
@@ -48,32 +56,32 @@ echo "</div>";
             style="column-count: 3; border: 1px solid royalblue;border-radius: 15%;background-color: rgba(245, 245, 245, 0.76);">
             <?php
                 $categoryMeta = [
-                    'antivirus'                   => ['idx' => 8,  'img' => 'av',    'id' => 'Anti-Virus'],
-                    'malwarecleaner'              => ['idx' => 9,  'img' => 'mwc',   'id' => 'MalwareCleaner'],
-                    'limpiadordemalware'          => ['idx' => 9,  'img' => 'mwc',   'id' => 'MalwareCleaner'],
-                    'webbrowsers'                 => ['idx' => 10, 'img' => 'wb',    'id' => 'WebBrowsers'],
-                    'navegadoresweb'              => ['idx' => 10, 'img' => 'wb',    'id' => 'WebBrowsers'],
-                    'messaging'                   => ['idx' => 11, 'img' => 'msg',   'id' => 'Messaging'],
-                    'mensajeria'                  => ['idx' => 11, 'img' => 'msg',   'id' => 'Messaging'],
-                    'media'                       => ['idx' => 12, 'img' => 'media', 'id' => 'Media'],
-                    'multimedia'                  => ['idx' => 12, 'img' => 'media', 'id' => 'Media'],
-                    'runtimes'                    => ['idx' => 13, 'img' => 'rt',    'id' => 'Runtimes'],
-                    'imaging'                     => ['idx' => 14, 'img' => 'img',   'id' => 'Imaging'],
-                    'imagenes'                    => ['idx' => 14, 'img' => 'img',   'id' => 'Imaging'],
-                    'documents'                   => ['idx' => 15, 'img' => 'docs',  'id' => 'Documents'],
-                    'documentos'                  => ['idx' => 15, 'img' => 'docs',  'id' => 'Documents'],
-                    'filesharing'                 => ['idx' => 16, 'img' => 'filsha','id' => 'FileSharing'],
-                    'archivosparacompartir'       => ['idx' => 16, 'img' => 'filsha','id' => 'FileSharing'],
-                    'onlinestorage'               => ['idx' => 17, 'img' => 'ons',   'id' => 'OnlineStorage'],
-                    'almacenamientoenlinea'       => ['idx' => 17, 'img' => 'ons',   'id' => 'OnlineStorage'],
-                    'other'                       => ['idx' => 18, 'img' => 'ot',    'id' => 'Other'],
-                    'otros'                       => ['idx' => 18, 'img' => 'ot',    'id' => 'Other'],
-                    'utilities'                   => ['idx' => 19, 'img' => 'utl',   'id' => 'Utilities'],
-                    'utilidades'                  => ['idx' => 19, 'img' => 'utl',   'id' => 'Utilities'],
-                    'compression'                 => ['idx' => 20, 'img' => 'press', 'id' => 'Compression'],
-                    'compresion'                  => ['idx' => 20, 'img' => 'press', 'id' => 'Compression'],
-                    'developertools'              => ['idx' => 21, 'img' => 'dv',    'id' => 'DeveloperTools'],
-                    'herramientasparadesarrollar' => ['idx' => 21, 'img' => 'dv',    'id' => 'DeveloperTools'],
+                    'antivirus'                   => ['idx' => 8,  'img' => 'av',    'id' => 'Anti-Virus',    'carouselIdx' => 1],
+                    'malwarecleaner'              => ['idx' => 9,  'img' => 'mwc',   'id' => 'MalwareCleaner', 'carouselIdx' => 2],
+                    'limpiadordemalware'          => ['idx' => 9,  'img' => 'mwc',   'id' => 'MalwareCleaner', 'carouselIdx' => 2],
+                    'webbrowsers'                 => ['idx' => 10, 'img' => 'wb',    'id' => 'WebBrowsers',    'carouselIdx' => 3],
+                    'navegadoresweb'              => ['idx' => 10, 'img' => 'wb',    'id' => 'WebBrowsers',    'carouselIdx' => 3],
+                    'messaging'                   => ['idx' => 11, 'img' => 'msg',   'id' => 'Messaging',      'carouselIdx' => 4],
+                    'mensajeria'                  => ['idx' => 11, 'img' => 'msg',   'id' => 'Messaging',      'carouselIdx' => 4],
+                    'media'                       => ['idx' => 12, 'img' => 'media', 'id' => 'Media',          'carouselIdx' => 5],
+                    'multimedia'                  => ['idx' => 12, 'img' => 'media', 'id' => 'Media',          'carouselIdx' => 5],
+                    'runtimes'                    => ['idx' => 13, 'img' => 'rt',    'id' => 'Runtimes',       'carouselIdx' => 6],
+                    'imaging'                     => ['idx' => 14, 'img' => 'img',   'id' => 'Imaging',        'carouselIdx' => 7],
+                    'imagenes'                    => ['idx' => 14, 'img' => 'img',   'id' => 'Imaging',        'carouselIdx' => 7],
+                    'documents'                   => ['idx' => 15, 'img' => 'docs',  'id' => 'Documents',      'carouselIdx' => 8],
+                    'documentos'                  => ['idx' => 15, 'img' => 'docs',  'id' => 'Documents',      'carouselIdx' => 8],
+                    'filesharing'                 => ['idx' => 16, 'img' => 'filsha','id' => 'FileSharing',    'carouselIdx' => 9],
+                    'archivosparacompartir'       => ['idx' => 16, 'img' => 'filsha','id' => 'FileSharing',    'carouselIdx' => 9],
+                    'onlinestorage'               => ['idx' => 17, 'img' => 'ons',   'id' => 'OnlineStorage',  'carouselIdx' => 10],
+                    'almacenamientoenlinea'       => ['idx' => 17, 'img' => 'ons',   'id' => 'OnlineStorage',  'carouselIdx' => 10],
+                    'other'                       => ['idx' => 18, 'img' => 'ot',    'id' => 'Other',          'carouselIdx' => 11],
+                    'otros'                       => ['idx' => 18, 'img' => 'ot',    'id' => 'Other',          'carouselIdx' => 11],
+                    'utilities'                   => ['idx' => 19, 'img' => 'utl',   'id' => 'Utilities',      'carouselIdx' => 12],
+                    'utilidades'                  => ['idx' => 19, 'img' => 'utl',   'id' => 'Utilities',      'carouselIdx' => 12],
+                    'compression'                 => ['idx' => 20, 'img' => 'press', 'id' => 'Compression',    'carouselIdx' => 13],
+                    'compresion'                  => ['idx' => 20, 'img' => 'press', 'id' => 'Compression',    'carouselIdx' => 13],
+                    'developertools'              => ['idx' => 21, 'img' => 'dv',    'id' => 'DeveloperTools', 'carouselIdx' => 14],
+                    'herramientasparadesarrollar' => ['idx' => 21, 'img' => 'dv',    'id' => 'DeveloperTools', 'carouselIdx' => 14],
                 ];
 
                 $activeKey = key($_GET) ?? '';
@@ -83,16 +91,26 @@ echo "</div>";
                     $id = $selected['id'];
                     $link = '#' . $id;
                     $titleText = $content[$selected['idx']][$key] ?? '';
+                    $carouselIdx = $selected['carouselIdx'];
                 } else {
                     $imag = 'code';
                     $link = '#title';
                     $id = '';
                     $titleText = '';
+                    $carouselIdx = 0;
                 }
             ?>
-            <a href="<?= !empty($link) ? $link : '#title'; ?>">
-                <img src="../images/programs/<?= $imag; ?>.jpg" width="50%" height="70%"
-                    alt="<?= !empty($activeKey) ? htmlspecialchars($activeKey) : 'Code Image'; ?>" /></a>
+            <div class="carousel-group" style="margin: 10px auto; text-align: center;">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img" role="button" aria-label="<?= !empty($titleText) ? htmlspecialchars($titleText) : 'Software Architecture &amp; Code'; ?>">
+                            <img src="../images/programs/<?= $imag; ?>_thumb.webp"
+                                alt="<?= !empty($activeKey) ? htmlspecialchars($activeKey) : 'Code Image'; ?>" loading="lazy" style="max-height: 200px; width: auto;" />
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="<?= $carouselIdx; ?>"></div>
+                </div>
+            </div>
             <h2>&uarr;
                 <?= $content[7][$key] ?? ''; ?>
             </h2>
@@ -258,3 +276,116 @@ echo "</div>";
         </div>
     </div>
 </article>
+
+<!-- Carousel Modal Data Template -->
+<template id="carousel-images">
+    <?php
+    $carouselItems = [
+        [
+            'original' => '../images/programs/code.jpg',
+            'webp'     => '../images/programs/code.webp',
+            'title'    => 'Software Engineering & Open Source Architecture',
+            'link'     => '#title'
+        ],
+        [
+            'original' => '../images/programs/av.jpg',
+            'webp'     => '../images/programs/av.webp',
+            'title'    => 'Antivirus & Threat Protection',
+            'link'     => '#Anti-Virus'
+        ],
+        [
+            'original' => '../images/programs/mwc.jpg',
+            'webp'     => '../images/programs/mwc.webp',
+            'title'    => 'Malware Cleaner & Rootkit Removal',
+            'link'     => '#MalwareCleaner'
+        ],
+        [
+            'original' => '../images/programs/wb.jpg',
+            'webp'     => '../images/programs/wb.webp',
+            'title'    => 'Web Browsers & Privacy Sandboxes',
+            'link'     => '#WebBrowsers'
+        ],
+        [
+            'original' => '../images/programs/msg.jpg',
+            'webp'     => '../images/programs/msg.webp',
+            'title'    => 'Secure Messaging & Collaboration',
+            'link'     => '#Messaging'
+        ],
+        [
+            'original' => '../images/programs/media.jpg',
+            'webp'     => '../images/programs/media.webp',
+            'title'    => 'Media Production & Streaming Suites',
+            'link'     => '#Media'
+        ],
+        [
+            'original' => '../images/programs/rt.jpg',
+            'webp'     => '../images/programs/rt.webp',
+            'title'    => 'System Runtimes & Framework Environments',
+            'link'     => '#Runtimes'
+        ],
+        [
+            'original' => '../images/programs/img.jpg',
+            'webp'     => '../images/programs/img.webp',
+            'title'    => 'Digital Imaging & Vector Graphics',
+            'link'     => '#Imaging'
+        ],
+        [
+            'original' => '../images/programs/docs.jpg',
+            'webp'     => '../images/programs/docs.webp',
+            'title'    => 'Document Processors & Office Suites',
+            'link'     => '#Documents'
+        ],
+        [
+            'original' => '../images/programs/filsha.jpg',
+            'webp'     => '../images/programs/filsha.webp',
+            'title'    => 'P2P & Distributed File Sharing',
+            'link'     => '#FileSharing'
+        ],
+        [
+            'original' => '../images/programs/ons.jpg',
+            'webp'     => '../images/programs/ons.webp',
+            'title'    => 'Encrypted Online Storage & Cloud Sync',
+            'link'     => '#OnlineStorage'
+        ],
+        [
+            'original' => '../images/programs/ot.jpg',
+            'webp'     => '../images/programs/ot.webp',
+            'title'    => 'Specialized Productivity & Utilities',
+            'link'     => '#Other'
+        ],
+        [
+            'original' => '../images/programs/utl.jpg',
+            'webp'     => '../images/programs/utl.webp',
+            'title'    => 'System Diagnostics & Maintenance Utilities',
+            'link'     => '#Utilities'
+        ],
+        [
+            'original' => '../images/programs/press.jpg',
+            'webp'     => '../images/programs/press.webp',
+            'title'    => 'High-Ratio Archive & Data Compression',
+            'link'     => '#Compression'
+        ],
+        [
+            'original' => '../images/programs/dv.jpg',
+            'webp'     => '../images/programs/dv.webp',
+            'title'    => 'Developer IDEs, Compilers & SDK Tools',
+            'link'     => '#DeveloperTools'
+        ]
+    ];
+
+    foreach($carouselItems as $index => $item):
+    ?>
+    <div class="carousel-item" data-image-index="<?= $index; ?>">
+        <a href="<?= $item['original']; ?>" target="_blank" rel="noopener">
+            <img data-src="<?= $item['webp']; ?>"
+                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+                 alt="<?= htmlspecialchars($item['title']); ?>">
+        </a>
+        <h4 class="img_link">
+            <a href="<?= htmlspecialchars($item['link']); ?>" title="<?= htmlspecialchars($item['title']); ?>">
+                <?= htmlspecialchars($item['title']); ?>
+            </a>
+        </h4>
+    </div>
+    <?php endforeach; ?>
+</template>

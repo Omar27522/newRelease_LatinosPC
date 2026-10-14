@@ -22,9 +22,17 @@ echo "</div>";
         </div>
 
         <p tabindex="0" class=""><?= $content[69][$key] ?? ''; ?><br />
-            <img tabindex="0" src="../images/programs/av.jpg" height="210" width="240"
-                alt="First Image" class="rtl selection_2 card2"
-                style="background-color: darkgray;color: whitesmoke;text-align: center;font-size: 2rem;">
+            <div class="carousel-group rtl" style="margin: 0 0 15px 15px;">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img selection_2 card2" role="button" aria-label="Anti-Virus Protection &amp; Real-Time Scanning">
+                            <img src="../images/programs/av_thumb.webp" height="210" width="240"
+                                alt="Anti-Virus Protection &amp; Real-Time Scanning" loading="lazy" style="max-height: 210px; width: auto;" />
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
+                </div>
+            </div>
             <br /><?= $content[70][$key] ?? ''; ?><br /><br /><?= $content[71][$key] ?? ''; ?>
         </p>
 
@@ -35,9 +43,17 @@ echo "</div>";
                 <?= $content[75][$key] ?? ''; ?></p>
             <p><strong><?= $content[76][$key] ?? ''; ?>:</strong>
                 <?= $content[77][$key] ?? ''; ?></p>
-            <img tabindex="0" src="../../../images/ostore.jpg" height="150" width="350" alt="Second Image"
-                class="fl selection_2 card2"
-                style="background-color: darkcyan;color: whitesmoke;text-align: center;font-size: 2rem;">
+            <div class="carousel-group fl" style="margin: 0 15px 15px 0;">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img selection_2 card2" role="button" aria-label="App Store &amp; Cloud Distribution Security">
+                            <img src="../images/ostore_thumb.webp" height="150" width="350"
+                                alt="App Store &amp; Cloud Distribution Security" loading="lazy" style="max-height: 150px; width: auto;" />
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="1"></div>
+                </div>
+            </div>
             <p><strong><?= $content[78][$key] ?? ''; ?>:</strong>
                 <?= $content[79][$key] ?? ''; ?></p>
         </section>
@@ -59,9 +75,17 @@ echo "</div>";
             <div tabindex="0" class="">
                 <p><strong><?= $content[86][$key] ?? ''; ?>:</strong>
                     <?= $content[87][$key] ?? ''; ?></p>
-                <img tabindex="0" src="../../../images/artificialintelligence/[4][4]/cyberfauna[4][4]1.jpeg"
-                    height="315" width="440" alt="Second to Last Image" class="rtl selection_2 card2"
-                    style="background-color: burlywood;color: whitesmoke;text-align: center;font-size: 2rem;">
+                <div class="carousel-group rtl" style="margin: 0 0 15px 15px;">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img selection_2 card2" role="button" aria-label="AI-Powered Heuristic Threat Detection">
+                            <img src="../images/artificialintelligence/[4][4]/cyberfauna[4][4]1_thumb.webp" height="315" width="440"
+                                alt="AI-Powered Heuristic Threat Detection" loading="lazy" style="max-height: 315px; width: auto;" />
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="2"></div>
+                </div>
+            </div>
                 <p><strong><?= $content[88][$key] ?? ''; ?>:</strong>
                     <?= $content[89][$key] ?? ''; ?></p>
                 <p><strong><?= $content[90][$key] ?? ''; ?>:</strong>
@@ -93,9 +117,17 @@ echo "</div>";
                 <?= $content[107][$key] ?? ''; ?></p>
             <p><strong><?= $content[108][$key] ?? ''; ?></strong>
                 <?= $content[109][$key] ?? ''; ?></p>
-            <img tabindex="0" src="../../../images/storefront.png" height="150" width="250" alt="Last Image"
-                class="fl selection_2 card2"
-                style="background-color: darkred;color: whitesmoke;text-align: center;font-size: 2rem;">
+            <div class="carousel-group fl" style="margin: 0 15px 15px 0;">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img selection_2 card2" role="button" aria-label="Enterprise Endpoint &amp; System Protection">
+                            <img src="../images/storefront_thumb.webp" height="150" width="250"
+                                alt="Enterprise Endpoint &amp; System Protection" loading="lazy" style="max-height: 150px; width: auto;" />
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="3"></div>
+                </div>
+            </div>
             <p><strong><?= $content[110][$key] ?? ''; ?></strong>
                 <?= $content[111][$key] ?? ''; ?></p>
             <p><strong><?= $content[112][$key] ?? ''; ?></strong>
@@ -105,3 +137,50 @@ echo "</div>";
         </section>
     </div>
 </article>
+
+<!-- Carousel Modal Data Template -->
+<template id="carousel-images">
+    <?php
+    $carouselItems = [
+        [
+            'original' => '../images/programs/av.jpg',
+            'webp'     => '../images/programs/av.webp',
+            'title'    => 'Anti-Virus Protection & Real-Time Scanning',
+            'link'     => '#title'
+        ],
+        [
+            'original' => '../images/ostore.jpg',
+            'webp'     => '../images/ostore.webp',
+            'title'    => 'App Store & Cloud Distribution Security',
+            'link'     => '#title'
+        ],
+        [
+            'original' => '../images/artificialintelligence/[4][4]/cyberfauna[4][4]1.jpeg',
+            'webp'     => '../images/artificialintelligence/[4][4]/cyberfauna[4][4]1.webp',
+            'title'    => 'AI-Powered Heuristic Threat Detection',
+            'link'     => '#title'
+        ],
+        [
+            'original' => '../images/storefront.png',
+            'webp'     => '../images/storefront.webp',
+            'title'    => 'Enterprise Endpoint & System Protection',
+            'link'     => '#title'
+        ]
+    ];
+
+    foreach($carouselItems as $index => $item):
+    ?>
+    <div class="carousel-item" data-image-index="<?= $index; ?>">
+        <a href="<?= $item['original']; ?>" target="_blank" rel="noopener">
+            <img data-src="<?= $item['webp']; ?>"
+                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+                 alt="<?= htmlspecialchars($item['title']); ?>">
+        </a>
+        <h4 class="img_link">
+            <a href="<?= htmlspecialchars($item['link']); ?>" title="<?= htmlspecialchars($item['title']); ?>">
+                <?= htmlspecialchars($item['title']); ?>
+            </a>
+        </h4>
+    </div>
+    <?php endforeach; ?>
+</template>

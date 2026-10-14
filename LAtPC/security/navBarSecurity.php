@@ -13,53 +13,68 @@ if (isset($page) && method_exists($page, 'getLang') && $page->getLang() === 'es-
     $isSpanish = true;
 }
 
+include_once dirname(__DIR__) . '/handlers/databaseConnection.php';
+databaseConnection('security');
+global $content, $key;
+
 $lang = $isSpanish ? 'es-419' : 'en';
 $basePath = $isSpanish ? 'seguridad' : 'offered_security';
 $dir = (isset($page) && method_exists($page, 'getDir')) ? $page->getDir() : '../../';
 
-$navItems = [
-    'en' => [
-        '' => ['label' => 'Overview', 'icon' => '&#x1F6E1;&#xFE0F;'],
-        'best_practices' => ['label' => 'Best Practices', 'icon' => '&#x26A0;&#xFE0F;'],
-        'passwords' => ['label' => 'Passwords', 'icon' => '&#x1F511;'],
-        'backups' => ['label' => 'Backups', 'icon' => '&#x1F4BE;'],
+$items = [
+    '' => [
+        'slug'  => '',
+        'label' => $content[0][$key] ?? ($isSpanish ? 'Seguridad' : 'Overview'),
+        'icon'  => '&#x1F6E1;&#xFE0F;',
+        'key'   => 'overview'
     ],
-    'es-419' => [
-        '' => ['label' => 'Seguridad', 'icon' => '&#x1F6E1;&#xFE0F;'],
-        'mejores_practicas' => ['label' => 'Mejores Pr&aacute;cticas', 'icon' => '&#x26A0;&#xFE0F;'],
-        'clave' => ['label' => 'Contrase&ntilde;as', 'icon' => '&#x1F511;'],
-        'respaldos' => ['label' => 'Respaldos', 'icon' => '&#x1F4BE;'],
-    ]
+    'best_practices' => [
+        'slug'  => $isSpanish ? 'mejores_practicas' : 'best_practices',
+        'label' => $content[1][$key] ?? ($isSpanish ? 'Mejores Prácticas' : 'Best Practices'),
+        'icon'  => '&#x26A0;&#xFE0F;',
+        'key'   => 'best_practices'
+    ],
+    'passwords' => [
+        'slug'  => $isSpanish ? 'clave' : 'passwords',
+        'label' => $content[2][$key] ?? ($isSpanish ? 'Contraseñas' : 'Passwords'),
+        'icon'  => '&#x1F511;',
+        'key'   => 'passwords'
+    ],
+    'backups' => [
+        'slug'  => $isSpanish ? 'respaldos' : 'backups',
+        'label' => $content[3][$key] ?? ($isSpanish ? 'Respaldos' : 'Backups'),
+        'icon'  => '&#x1F4BE;',
+        'key'   => 'backups'
+    ],
 ];
-
-$items = $navItems[$lang];
 $currentTitle = (isset($page) && method_exists($page, 'getTitle')) ? $page->getTitle() : '';
 $currentSub = $sub_route ?? '';
 ?>
 
 <nav class="security-breadcrumbs" aria-label="<?= $isSpanish ? 'Navegación de Seguridad' : 'Security Navigation' ?>">
     <ul>
-        <?php foreach ($items as $slug => $data): ?>
-            <?php
+        <?php foreach ($items as $itemKey => $data): ?>
+        <?php
                 $label = $data['label'];
                 $icon = $data['icon'];
+                $slug = $data['slug'];
 
                 // Active state detection
                 $isActive = false;
-                if ($slug === '') {
+                if ($itemKey === '') {
                     if (($currentSub === '' || $currentSub === null) && in_array($currentTitle, ['Security', 'Seguridad'])) {
                         $isActive = true;
                     }
-                } elseif ($slug === 'best_practices' || $slug === 'mejores_practicas') {
-                    if ($currentSub === $slug || in_array($currentTitle, ['Best Practices', 'Mejores Prácticas'])) {
+                } elseif ($itemKey === 'best_practices') {
+                    if (in_array($currentSub, ['best_practices', 'mejores_practicas']) || in_array($currentTitle, ['Best Practices', 'Mejores Prácticas'])) {
                         $isActive = true;
                     }
-                } elseif ($slug === 'passwords' || $slug === 'clave') {
-                    if ($currentSub === $slug || in_array($currentSub, ['passwords', 'clave', 'contrasenas', 'contraseñas']) || in_array($currentTitle, ['Passwords', 'Contraseñas'])) {
+                } elseif ($itemKey === 'passwords') {
+                    if (in_array($currentSub, ['passwords', 'clave', 'contrasenas', 'contraseñas']) || in_array($currentTitle, ['Passwords', 'Contraseñas'])) {
                         $isActive = true;
                     }
-                } elseif ($slug === 'backups' || $slug === 'respaldos') {
-                    if ($currentSub === $slug || in_array($currentTitle, ['Backups', 'Respaldos'])) {
+                } elseif ($itemKey === 'backups') {
+                    if (in_array($currentSub, ['backups', 'respaldos']) || in_array($currentTitle, ['Backups', 'Respaldos'])) {
                         $isActive = true;
                     }
                 }
@@ -67,12 +82,12 @@ $currentSub = $sub_route ?? '';
                 $activeClass = $isActive ? 'active' : '';
                 $url = $dir . $basePath . ($slug ? '/' . $slug : '');
             ?>
-            <li>
-                <a href="<?= htmlspecialchars($url); ?>" class="<?= $activeClass ?>">
-                    <span><?= $icon ?></span>
-                    <span><?= $label; ?></span>
-                </a>
-            </li>
+        <li>
+            <a href="<?= htmlspecialchars($url); ?>" class="<?= $activeClass ?>">
+                <span><?= $icon ?></span>
+                <span><?= $label; ?></span>
+            </a>
+        </li>
         <?php endforeach; ?>
     </ul>
 </nav>

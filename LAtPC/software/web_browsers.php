@@ -78,8 +78,15 @@ for ($i = 1; $i <= 10; $i++) {
             <p tabindex="0" class="selection"><?= htmlspecialchars($wb['intro_p1'] ?? ''); ?></p>
             <p tabindex="0" class="selection"><?= htmlspecialchars($wb['intro_p2'] ?? ''); ?></p>
         </div>
-        <div class="browser-hero-media">
-            <img tabindex="0" src="../images/programs/wb.jpg" alt="<?= htmlspecialchars($wb['img_alt'] ?? 'Web Browsers on PC'); ?>" class="browser-hero-img">
+        <div class="browser-hero-media carousel-group">
+            <div class="multi-link-container">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img" role="button" aria-label="<?= htmlspecialchars($wb['img_alt'] ?? 'Web Browsers on PC'); ?>">
+                        <img src="../images/programs/wb_thumb.webp" alt="<?= htmlspecialchars($wb['img_alt'] ?? 'Web Browsers on PC'); ?>" class="browser-hero-img" loading="lazy">
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
+            </div>
         </div>
     </div>
 
@@ -194,3 +201,18 @@ for ($i = 1; $i <= 10; $i++) {
         </div>
     </div>
 </article>
+
+<template id="carousel-images">
+    <div class="carousel-item">
+        <a href="<?= htmlspecialchars($links['ranking'] ?? '#'); ?>" target="_blank" rel="noopener">
+            <img data-src="../images/programs/wb.webp"
+                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+                 alt="<?= htmlspecialchars($wb['img_alt'] ?? 'Web Browsers on PC'); ?>">
+        </a>
+        <h4 class="img_link">
+            <a href="<?= htmlspecialchars($links['ranking'] ?? '#'); ?>" target="_blank" rel="noopener">
+                <?= htmlspecialchars($wb['img_alt'] ?? 'Web Browsers on PC'); ?>
+            </a>
+        </h4>
+    </div>
+</template>

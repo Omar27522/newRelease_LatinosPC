@@ -1,6 +1,6 @@
 /**
  * Dialog Engine - Handles all dialog functionality for image and text links
- * Optimized for performance
+ * Strictly optimized for on-demand progressive loading and zero initial network overhead.
  */
 
 class DialogEngine {
@@ -26,9 +26,11 @@ class DialogEngine {
     this._handleKeydown = this._handleKeydown.bind(this);
     this._handleDialogTriggerClick = this._handleDialogTriggerClick.bind(this);
     this._handleTouchStart = this._handleTouchStart.bind(this);
+    this._handleTouchMove = this._handleTouchMove.bind(this);
     this._handleTouchEnd = this._handleTouchEnd.bind(this);
+    this._handleTouchCancel = this._handleTouchCancel.bind(this);
 
-    // Lazy initialization - only initialize when DOM is ready
+    // Lazy initialization - initialize when DOM is ready
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', () => this.init());
     } else {
@@ -37,72 +39,34 @@ class DialogEngine {
   }
 
   init() {
-    // Create backdrop only once when needed
+    // Create backdrop once
     this._createBackdrop();
 
-    // Use event delegation instead of multiple event listeners
+    // Setup global event delegation
     this._setupEventDelegation();
 
-    // Cache DOM elements after DOM is ready (more efficient than in constructor)
+    // Cache existing DOM elements
     this._cacheElements();
-
-    // Initialize carousels by populating them with images from the template
-    this._initializeCarousels();
 
     // Initialize sticky breadcrumbs scroll hide/show behavior
     this._initStickyCrumbs();
   }
 
-  _initializeCarousels() {
-    // Get the template with carousel images
-    const template = document.getElementById('carousel-images');
-    if (!template) return;
-
-    // Find all carousel dialogs
-    const carousels = document.querySelectorAll('[data-carousel="true"]');
-
-    carousels.forEach(carousel => {
-      // Get the starting index for this carousel
-      const startIndex = parseInt(carousel.getAttribute('data-start-index') || '0', 10);
-
-      // Clone the template content for each carousel
-      const content = template.content.cloneNode(true);
-
-      // Append the cloned content to the carousel
-      carousel.appendChild(content);
-
-      // Set the active item based on the start index
-      const items = carousel.querySelectorAll('.carousel-item');
-      items.forEach(item => item.classList.remove('active'));
-
-      const activeItem = carousel.querySelector(`.carousel-item[data-image-index="${startIndex}"]`);
-      if (activeItem) {
-        activeItem.classList.add('active');
-      } else if (items.length > 0) {
-        // If specified index doesn't exist, default to the first item
-        items[0].classList.add('active');
-      }
-    });
-  }
-
   _cacheElements() {
-    // Cache selectors - only query DOM once
     this.linkDialogs = Array.from(document.querySelectorAll('.link-dialog'));
     this.imageDialogs = Array.from(document.querySelectorAll('.image-dialog'));
   }
 
   _createBackdrop() {
-    // Only create backdrop if it doesn't exist
     this.backdrop = document.getElementById('dialogBackdrop');
     if (!this.backdrop) {
       this.backdrop = document.createElement('div');
       this.backdrop.className = 'dialog-backdrop';
       this.backdrop.id = 'dialogBackdrop';
 
-      // Add click event to backdrop
+      // Click on backdrop dismisses dialog
       this.backdrop.addEventListener('click', () => this.closeAnyOpenDialogs());
 
-      // Use document fragment for better performance
       const fragment = document.createDocumentFragment();
       fragment.appendChild(this.backdrop);
       document.body.appendChild(fragment);
@@ -110,132 +74,193 @@ class DialogEngine {
   }
 
   _setupEventDelegation() {
-    // Event delegation for document click
+    // Dialog trigger delegation
+    document.addEventListener('click', this._handleDialogTriggerClick);
+
+    // Document click to close outside
     document.addEventListener('click', this._handleDocumentClick);
 
-    // Global keyboard handler
+    // Global keyboard navigation & escape
     document.addEventListener('keydown', this._handleKeydown);
-
-    // Event delegation for all dialog triggers
-    document.addEventListener('click', this._handleDialogTriggerClick);
   }
 
   _handleDialogTriggerClick(event) {
     const target = event.target;
-    const imgParent = target.tagName === 'IMG' ? target.parentElement : null;
 
     // Handle text links
-    if (target.classList.contains('linked-text')) {
+    const textTrigger = target.closest('.linked-text');
+    if (textTrigger) {
       event.stopPropagation();
-      const correspondingDialog = target.nextElementSibling;
+      const correspondingDialog = textTrigger.nextElementSibling;
 
       if (correspondingDialog && correspondingDialog.classList.contains('link-dialog')) {
         if (this.currentlyOpenDialog === correspondingDialog) {
-          // Close if re-clicked
           this.closeAnyOpenDialogs();
         } else {
           this.closeAnyOpenDialogs();
-          this._showDialog(correspondingDialog, target);
+          this._showDialog(correspondingDialog, textTrigger);
         }
       }
+      return;
     }
 
-    // Handle image links - either direct click on the span or on an image inside the span
-    else if (target.classList.contains('linked-text-img') ||
-             (imgParent && imgParent.classList.contains('linked-text-img'))) {
+    // Handle image links
+    const imgTrigger = target.closest('.linked-text-img');
+    if (imgTrigger) {
       event.stopPropagation();
-
-      // Use the appropriate element to find the container
-      const clickedElement = target.classList.contains('linked-text-img') ? target : imgParent;
-
-      // Find the closest container and then the image dialog within it
-      const container = clickedElement.closest('.multi-link-container');
+      const container = imgTrigger.closest('.multi-link-container');
       if (container) {
-        const imageDialog = container.querySelector('.image-dialog');
+        const imageDialog = container.querySelector('.image-dialog') ||
+                            document.querySelector(`[data-dialog-for="${imgTrigger.id}"]`);
         if (imageDialog) {
-          this.closeAnyOpenDialogs();
-          this._showDialog(imageDialog);
+          if (this.currentlyOpenDialog === imageDialog) {
+            this.closeAnyOpenDialogs();
+          } else {
+            this.closeAnyOpenDialogs();
+            this._showDialog(imageDialog, imgTrigger);
+          }
         }
       }
+      return;
     }
 
-    // Prevent propagation for dialog clicks
-    else if (target.closest('.image-dialog') || target.closest('.link-dialog')) {
+    // Prevent propagation for clicks inside the dialog content
+    if (target.closest('.image-dialog .carousel-item') || target.closest('.link-dialog')) {
       event.stopPropagation();
     }
   }
 
   _handleDocumentClick(event) {
-    // Close dialogs when clicking outside
     if (this.currentlyOpenDialog &&
         !this.currentlyOpenDialog.contains(event.target) &&
-        event.target !== this.currentlyOpenTextLink) {
+        event.target !== this.currentlyOpenTextLink &&
+        !event.target.closest('.linked-text-img, .linked-text')) {
       this.closeAnyOpenDialogs();
     }
   }
 
   _handleKeydown(event) {
-    // If no dialog is open, do nothing
-    if (!this.currentlyOpenDialog) return;
+    // If no dialog is open, allow Enter/Space to trigger focused buttons
+    if (!this.currentlyOpenDialog) {
+      if ((event.key === 'Enter' || event.key === ' ') && event.target) {
+        const trigger = event.target.closest('.linked-text-img, .linked-text');
+        if (trigger) {
+          event.preventDefault();
+          trigger.click();
+        }
+      }
+      return;
+    }
 
     // Close on Escape key
     if (event.key === 'Escape') {
+      event.preventDefault();
       this.closeAnyOpenDialogs();
       return;
     }
 
     // Handle carousel navigation with arrow keys
-    if (this.currentlyOpenDialog.hasAttribute('data-carousel') &&
-        (event.key === 'ArrowLeft' || event.key === 'ArrowRight')) {
-      event.preventDefault();
-      this._navigateCarousel(event.key === 'ArrowRight');
+    if (this.currentlyOpenDialog.hasAttribute('data-carousel')) {
+      if (event.key === 'ArrowLeft') {
+        event.preventDefault();
+        this._navigateCarousel(false);
+      } else if (event.key === 'ArrowRight') {
+        event.preventDefault();
+        this._navigateCarousel(true);
+      }
     }
   }
 
+  _ensureCarouselInstantiated(dialog) {
+    // Skip if already instantiated with items
+    if (dialog._isInstantiated || dialog.querySelector('.carousel-item')) {
+      return;
+    }
+
+    // Locate matching template: by data-template-id attribute or standard carousel-images
+    const templateId = dialog.getAttribute('data-template-id') || 'carousel-images';
+    let template = document.getElementById(templateId);
+    if (!template) {
+      template = document.querySelector('template[id^="carousel"]');
+    }
+
+    if (!template) {
+      console.warn(`[DialogEngine] Carousel template '${templateId}' not found.`);
+      return;
+    }
+
+    // Clone template content on-demand
+    const content = template.content.cloneNode(true);
+    dialog.appendChild(content);
+    dialog._isInstantiated = true;
+  }
+
+  _activateCarouselImages(dialog, targetIndex) {
+    const items = dialog.querySelectorAll('.carousel-item');
+    if (!items.length) return;
+
+    const total = items.length;
+    let activeIdx = parseInt(targetIndex, 10);
+    if (isNaN(activeIdx) || activeIdx < 0) activeIdx = 0;
+
+    // Load active image immediately and pre-load adjacent items for smooth navigation
+    const indicesToActivate = new Set([
+      activeIdx % total,
+      (activeIdx + 1) % total,
+      (activeIdx - 1 + total) % total
+    ]);
+
+    indicesToActivate.forEach(idx => {
+      const item = dialog.querySelector(`.carousel-item[data-image-index="${idx}"]`);
+      if (!item) return;
+
+      const img = item.querySelector('img');
+      if (img) {
+        const dataSrc = img.getAttribute('data-src');
+        if (dataSrc) {
+          img.src = dataSrc;
+          img.removeAttribute('data-src');
+        }
+      }
+    });
+  }
+
   _navigateCarousel(isNext) {
-    // Get all carousel items in the current dialog
+    if (!this.currentlyOpenDialog) return;
+
     const items = this.currentlyOpenDialog.querySelectorAll('.carousel-item');
     if (!items.length) return;
 
-    // Find the currently active item
-    const activeItem = this.currentlyOpenDialog.querySelector('.carousel-item.active');
-    if (!activeItem) return;
-
-    // Get the current index
-    const currentIndex = parseInt(activeItem.getAttribute('data-image-index'), 10);
+    const activeItem = this.currentlyOpenDialog.querySelector('.carousel-item.active') || items[0];
+    const currentIndex = parseInt(activeItem.getAttribute('data-image-index') || '0', 10);
     let nextIndex;
 
     if (isNext) {
-      // Move to next item
       nextIndex = (currentIndex + 1) % items.length;
-
-      // Check if we've completed a loop
       if (nextIndex === 0) {
         this.carouselLoopCount++;
-
-        // Stop after reaching max loops
         if (this.carouselLoopCount >= this.maxLoops) {
-          return; // Don't navigate further
+          return;
         }
       }
     } else {
-      // Move to previous item
       nextIndex = (currentIndex - 1 + items.length) % items.length;
-
-      // Check if we've completed a backward loop
       if (nextIndex === items.length - 1 && currentIndex === 0) {
         this.carouselLoopCount++;
-
-        // Stop after reaching max loops
         if (this.carouselLoopCount >= this.maxLoops) {
-          return; // Don't navigate further
+          return;
         }
       }
     }
 
-    // Update active class
     activeItem.classList.remove('active');
-    items[nextIndex].classList.add('active');
+    const targetItem = this.currentlyOpenDialog.querySelector(`.carousel-item[data-image-index="${nextIndex}"]`) || items[nextIndex];
+    if (targetItem) {
+      targetItem.classList.add('active');
+    }
+
+    // Activate on-demand high-res image and pre-fetch adjacent
+    this._activateCarouselImages(this.currentlyOpenDialog, nextIndex);
   }
 
   _handleTouchStart(event) {
@@ -243,7 +268,24 @@ class DialogEngine {
     if (event.touches && event.touches.length > 0) {
       this.touchStartX = event.touches[0].clientX;
       this.touchStartY = event.touches[0].clientY;
+      this.touchEndX = event.touches[0].clientX;
+      this.touchEndY = event.touches[0].clientY;
     }
+  }
+
+  _handleTouchMove(event) {
+    if (!this.currentlyOpenDialog || !this.currentlyOpenDialog.hasAttribute('data-carousel')) return;
+    if (event.touches && event.touches.length > 0) {
+      this.touchEndX = event.touches[0].clientX;
+      this.touchEndY = event.touches[0].clientY;
+    }
+  }
+
+  _handleTouchCancel() {
+    this.touchStartX = 0;
+    this.touchStartY = 0;
+    this.touchEndX = 0;
+    this.touchEndY = 0;
   }
 
   _handleTouchEnd(event) {
@@ -251,143 +293,118 @@ class DialogEngine {
     if (event.changedTouches && event.changedTouches.length > 0) {
       this.touchEndX = event.changedTouches[0].clientX;
       this.touchEndY = event.changedTouches[0].clientY;
-      this._evaluateSwipe();
     }
+    this._evaluateSwipe();
   }
 
   _evaluateSwipe() {
     const deltaX = this.touchEndX - this.touchStartX;
     const deltaY = this.touchEndY - this.touchStartY;
 
-    // Only process horizontal swipe if deltaX exceeds threshold and is larger than vertical movement
-    if (Math.abs(deltaX) >= this.minSwipeDistance && Math.abs(deltaX) > Math.abs(deltaY)) {
+    if (Math.abs(deltaX) >= this.minSwipeDistance && Math.abs(deltaX) > Math.abs(deltaY) * 1.2) {
       if (deltaX < 0) {
-        // Swiped left -> move to next slide
         this._navigateCarousel(true);
       } else {
-        // Swiped right -> move to previous slide
         this._navigateCarousel(false);
       }
     }
   }
 
   _showDialog(dialog, trigger = null) {
-    // Use requestAnimationFrame for smoother visual changes
-    requestAnimationFrame(() => {
-      dialog.classList.add('visible');
+    if (!dialog) return;
+
+    // 1. Lazy carousel instantiation & data-src activation
+    if (dialog.hasAttribute('data-carousel')) {
+      this._ensureCarouselInstantiated(dialog);
+
+      if (!dialog._touchHandlersAttached) {
+        dialog.addEventListener('touchstart', this._handleTouchStart, { passive: true });
+        dialog.addEventListener('touchmove', this._handleTouchMove, { passive: true });
+        dialog.addEventListener('touchend', this._handleTouchEnd, { passive: true });
+        dialog.addEventListener('touchcancel', this._handleTouchCancel, { passive: true });
+        dialog._touchHandlersAttached = true;
+      }
+
+      this.carouselLoopCount = 0;
+      const startIndex = parseInt(dialog.getAttribute('data-start-index') || '0', 10);
+      const items = dialog.querySelectorAll('.carousel-item');
+      items.forEach(item => item.classList.remove('active'));
+
+      const activeItem = dialog.querySelector(`.carousel-item[data-image-index="${startIndex}"]`) || items[0];
+      if (activeItem) {
+        activeItem.classList.add('active');
+      }
+
+      // Activate high-resolution image on demand
+      this._activateCarouselImages(dialog, startIndex);
+    }
+
+    // 2. Safely hoist dialog to document.body so it breaks out of any parent CSS transforms/masks
+    if (dialog.parentElement && dialog.parentElement !== document.body) {
+      dialog._originalParent = dialog.parentElement;
+      dialog._originalPosition = Array.from(dialog.parentElement.children).indexOf(dialog);
+      document.body.appendChild(dialog);
+    }
+
+    // 3. Attach click handler to close on background click
+    if (!dialog._backgroundClickHandler) {
+      dialog._backgroundClickHandler = (event) => {
+        if (event.target === dialog || event.target.classList.contains('image-dialog')) {
+          this.closeAnyOpenDialogs();
+        }
+      };
+      dialog.addEventListener('click', dialog._backgroundClickHandler);
+    }
+
+    // 4. Make dialog and backdrop visible
+    dialog.classList.add('visible');
+    if (this.backdrop) {
       this.backdrop.classList.add('active');
+    }
 
-      // Ensure dialog is appended to body to avoid grid container issues
-      if (dialog.parentElement && dialog.parentElement.closest('.homepage-grid')) {
-        // Store original parent for when we close
-        dialog._originalParent = dialog.parentElement;
-        dialog._originalPosition = Array.from(dialog.parentElement.children).indexOf(dialog);
-        // Move to body temporarily
-        document.body.appendChild(dialog);
-      }
-
-      // Add click handler to close on background click
-      if (!dialog._backgroundClickHandler) {
-        dialog._backgroundClickHandler = (event) => {
-          // Only close if clicking directly on the dialog background, not on content
-          if (event.target === dialog) {
-            this.closeAnyOpenDialogs();
-          }
-        };
-        dialog.addEventListener('click', dialog._backgroundClickHandler);
-      }
-
-      // Handle carousel-specific behavior when opening
-      if (dialog.hasAttribute('data-carousel')) {
-        // Attach touch listeners for mobile swiping if not already attached
-        if (!dialog._touchHandlersAttached) {
-          dialog.addEventListener('touchstart', this._handleTouchStart, { passive: true });
-          dialog.addEventListener('touchend', this._handleTouchEnd, { passive: true });
-          dialog._touchHandlersAttached = true;
-        }
-
-        // Reset carousel loop count
-        this.carouselLoopCount = 0;
-
-        // Set the active item based on the start-index attribute
-        const startIndex = parseInt(dialog.getAttribute('data-start-index') || '0', 10);
-
-        // Set the active item for any valid start index (including 0)
-        const items = dialog.querySelectorAll('.carousel-item');
-        items.forEach(item => item.classList.remove('active'));
-
-        const activeItem = dialog.querySelector(`.carousel-item[data-image-index="${startIndex}"]`);
-        if (activeItem) {
-          activeItem.classList.add('active');
-        } else if (items.length > 0) {
-          // If specified index doesn't exist, default to the first item
-          items[0].classList.add('active');
-        }
-      }
-
-      this.currentlyOpenDialog = dialog;
-      this.currentlyOpenTextLink = trigger;
-
-      // Prevent body scroll when dialog is open
-      document.body.style.overflow = 'hidden';
-
-    });
+    this.currentlyOpenDialog = dialog;
+    this.currentlyOpenTextLink = trigger;
+    document.body.style.overflow = 'hidden';
   }
 
   closeAnyOpenDialogs() {
     if (!this.currentlyOpenDialog) return;
 
-    // Use requestAnimationFrame for visual changes
-    requestAnimationFrame(() => {
-      // Only modify the currently open dialog instead of all dialogs
-      if (this.currentlyOpenDialog) {
-        this.currentlyOpenDialog.classList.remove('visible');
+    const dialog = this.currentlyOpenDialog;
+    dialog.classList.remove('visible');
 
-        // Reset carousel state if this was a carousel
-        if (this.currentlyOpenDialog.hasAttribute('data-carousel')) {
-          // Reset loop count
-          this.carouselLoopCount = 0;
+    if (dialog.hasAttribute('data-carousel')) {
+      this.carouselLoopCount = 0;
+    }
 
-          // Don't reset the carousel position when closing
-          // This allows the data-start-index to work properly when reopening
-        }
+    // Restore dialog to its original parent location
+    if (dialog._originalParent) {
+      const originalParent = dialog._originalParent;
+      const originalPosition = dialog._originalPosition;
 
-        // If dialog was moved to body, restore it to its original parent
-        if (this.currentlyOpenDialog._originalParent) {
-          const originalParent = this.currentlyOpenDialog._originalParent;
-          const originalPosition = this.currentlyOpenDialog._originalPosition;
-
-          // If there are other children at the original position, insert before that child
-          if (originalPosition >= 0 && originalPosition < originalParent.children.length) {
-            originalParent.insertBefore(this.currentlyOpenDialog, originalParent.children[originalPosition]);
-          } else {
-            // Otherwise just append to the end
-            originalParent.appendChild(this.currentlyOpenDialog);
-          }
-
-          // Clear the references
-          delete this.currentlyOpenDialog._originalParent;
-          delete this.currentlyOpenDialog._originalPosition;
-        }
+      if (originalPosition >= 0 && originalPosition < originalParent.children.length) {
+        originalParent.insertBefore(dialog, originalParent.children[originalPosition]);
+      } else {
+        originalParent.appendChild(dialog);
       }
 
-      // Hide backdrop
+      delete dialog._originalParent;
+      delete dialog._originalPosition;
+    }
+
+    if (this.backdrop) {
       this.backdrop.classList.remove('active');
+    }
 
-      // Restore body scroll when dialog is closed
-      document.body.style.overflow = '';
-
-      // Reset state
-      this.currentlyOpenDialog = null;
-      this.currentlyOpenTextLink = null;
-    });
+    document.body.style.overflow = '';
+    this.currentlyOpenDialog = null;
+    this.currentlyOpenTextLink = null;
   }
 
   _initStickyCrumbs() {
     const crumbs = document.querySelectorAll('.crumbs');
     if (!crumbs.length) return;
 
-    // Helper to calculate element's natural top offset in the document
     const getElementDocTop = (el) => {
       let top = 0;
       let current = el;
@@ -400,7 +417,6 @@ class DialogEngine {
 
     let stickyThresholds = Array.from(crumbs).map(crumb => getElementDocTop(crumb));
 
-    // Update thresholds on resize or orientation change
     window.addEventListener('resize', () => {
       crumbs.forEach(crumb => crumb.classList.remove('crumbs-hidden'));
       stickyThresholds = Array.from(crumbs).map(crumb => getElementDocTop(crumb));
@@ -417,20 +433,16 @@ class DialogEngine {
       crumbs.forEach((crumb, index) => {
         const stickyPoint = stickyThresholds[index] || 0;
 
-        // If above or at the sticky location OR a dropdown is open, ALWAYS show in natural position
         if (currentScrollY <= stickyPoint || isDropdownOpen) {
           crumb.classList.remove('crumbs-hidden');
           return;
         }
 
-        // Past the sticky location: show or hide based on scroll direction
         const diff = currentScrollY - lastScrollY;
         if (Math.abs(diff) > threshold) {
           if (diff > 0) {
-            // Scrolling down -> hide with subtle animation
             crumb.classList.add('crumbs-hidden');
           } else {
-            // Scrolling up -> show with subtle animation
             crumb.classList.remove('crumbs-hidden');
           }
         }
@@ -449,5 +461,5 @@ class DialogEngine {
   }
 }
 
-// Create a single instance when needed
+// Create singleton instance
 window.dialogEngine = new DialogEngine();

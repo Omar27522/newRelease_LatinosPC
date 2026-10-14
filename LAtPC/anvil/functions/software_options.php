@@ -1,6 +1,7 @@
 <?php
 function software_options($sub_route){
 	switch ($sub_route){
+		case 'antivirus':
 		case 'anti_virus':
     		$page = new Structure('../../', 'english', 'SW Anti-Virus');
     		$keywords = 'antivirus software, virus protection, malware protection, antivirus installation, real-time protection, virus scanner, threat detection, computer security software, Windows Defender, Norton, McAfee, Bitdefender, Kaspersky, AVG, Avast, antivirus updates, virus removal, endpoint protection, cybersecurity software, PC protection';

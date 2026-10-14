@@ -79,10 +79,17 @@ echo "</div>";
         <legend><?= $content[366][$key] ?? ''; ?></legend>
         <p tabindex="0" class="selection"><?= $content[367][$key] ?? ''; ?></p>
         <br />
-        <figure>
+        <figure class="carousel-group">
             <figcaption>
                 <?= $content[368][$key] ?? ''; ?><br /></figcaption>
-            <iframe src="../images/gallery/thumbnail/mail.png" title="Share" width="263px" height="263px"></iframe>
+            <div class="multi-link-container" style="display:inline-block;">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img" role="button" aria-label="Share">
+                        <img src="../images/gallery/mail_thumb.webp" title="Share" alt="Share" width="263" height="263" loading="lazy">
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
+            </div>
         </figure>
         <div class="colms2">
             <fieldset>
@@ -112,3 +119,16 @@ echo "</div>";
 <div class="spacer">
     <hr />
 </div>
+
+<template id="carousel-images">
+    <div class="carousel-item">
+        <a href="#title">
+            <img data-src="../images/gallery/mail.webp"
+                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+                 alt="Share">
+        </a>
+        <h4 class="img_link">
+            <a href="#title">Share</a>
+        </h4>
+    </div>
+</template>

@@ -16,4 +16,4 @@
    echo $meses[date("F")] . " " . date("Y");} else{ echo date("F Y"); }?></p>
     </footer>
 
-    <script src="<?= $page->getDir(); ?>anvil/dialogEngine.js"></script>
+    <script src="<?= $page->getDir(); ?>anvil/dialogEngine.js?v=<?= filemtime(__DIR__ . '/dialogEngine.js'); ?>"></script>

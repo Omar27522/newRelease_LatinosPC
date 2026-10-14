@@ -159,7 +159,7 @@ global $content, $key;
     </p>
 </div>                                    <!--This Button is called [button_common_types in css]-->
 <a href="#common_types_of_computer_desk"><button class="card2 button_common_types" id="openDetailsButton">
-    <img src="../images/artificialintelligence/pixel.jpeg" alt="Standard Computer Desk" width="17px" title="Open -View all desks">
+    <img src="../images/artificialintelligence/pixel_thumb.webp" loading="lazy" alt="Standard Computer Desk" width="17px" title="Open -View all desks" loading="lazy">
     <!-- for align to the left_---<-> <?= $content[3059][$key] ?? ''; ?><-> <?= $content[3060][$key] ?? ''; ?><->   <?= $content[3061][$key] ?? ''; ?>
 </button>
 </a>
@@ -174,8 +174,20 @@ global $content, $key;
         <li>
             <span tabindex="0" class="selection_2"><?= $content[3063][$key] ?? ''; ?></span>
         </li>
-        <img src="../images/artificialintelligence/[4]/cyber[4]0.jpeg" class="rtl card2 img_in-colms2"
-            alt="Standard Computer Desk" width="100px">
+        <div class="carousel-group rtl" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Standard Computer Desk">
+                    <img src="../images/artificialintelligence/[4]/cyber[4]0_thumb.webp"
+                         alt="Standard Computer Desk"
+                         title="Standard Computer Desk"
+                         loading="lazy"
+                         style="max-height: 100px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
+        </div>
+    </div>
         <br /><?= $content[3064][$key] ?? ''; ?> <li>
             <span tabindex="0" class="selection_2"><?= $content[3065][$key] ?? ''; ?></span>
         </li>
@@ -186,7 +198,7 @@ global $content, $key;
     </details>
     </li>
     <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁ 
-<img src="../images/artificialintelligence/pixel.jpeg" class="fl" style="float: right;"  alt="Standard Computer Desk">
+<img src="../images/artificialintelligence/pixel_thumb.webp" loading="lazy" class="fl" style="float: right;"  alt="Standard Computer Desk">
 <?= $content[3068][$key] ?? ''; ?>
     <li><div class="spacer"></div></li>
     <li>
@@ -201,7 +213,7 @@ global $content, $key;
             <span tabindex="0" class="selection_2"><?= $content[3072][$key] ?? ''; ?></span>
         </li>
         </ul>
-        <img src="../images/artificialintelligence/[4]/cyber[4]0.jpeg" class="rtl card2 img_in-colms2"
+        <img src="../images/artificialintelligence/[4]/cyber[4]0_thumb.webp" loading="lazy" class="rtl card2 img_in-colms2"
             alt="Standard Computer Desk" width="100px">
     </details>
     </li>
@@ -218,7 +230,7 @@ global $content, $key;
             <span tabindex="0" class="selection_2"><?= $content[3076][$key] ?? ''; ?></span>
         </li>
         </ul>
-        <img src="../images/artificialintelligence/[4]/cyber[4]1.jpeg" class="rtl card2 img_in-colms2"
+        <img src="../images/artificialintelligence/[4]/cyber[4]1_thumb.webp" loading="lazy" class="rtl card2 img_in-colms2"
             alt="Standard Computer Desk" width="100px">
     </details>
     </li>
@@ -235,7 +247,7 @@ global $content, $key;
             <span tabindex="0" class="selection_2"><?= $content[3080][$key] ?? ''; ?></span>
         </li>
         </ul>
-        <img src="../images/artificialintelligence/[4]/cyber[4]2.jpeg" class="rtl card2 img_in-colms2"
+        <img src="../images/artificialintelligence/[4]/cyber[4]2_thumb.webp" loading="lazy" class="rtl card2 img_in-colms2"
             alt="Standard Computer Desk" width="100px">
     </details>
     </li>
@@ -252,7 +264,7 @@ global $content, $key;
             <span tabindex="0" class="selection_2"><?= $content[3084][$key] ?? ''; ?></span>
         </li>
         </ul>
-        <img src="../images/artificialintelligence/[4]/cyber[4]3.jpeg" class="rtl card2 img_in-colms2"
+        <img src="../images/artificialintelligence/[4]/cyber[4]3_thumb.webp" loading="lazy" class="rtl card2 img_in-colms2"
             alt="Standard Computer Desk" width="100px">
     </details>
     </li>
@@ -269,7 +281,7 @@ global $content, $key;
             <span tabindex="0" class="selection_2"><?= $content[3088][$key] ?? ''; ?></span>
         </li>
         </ul>
-        <img src="../images/artificialintelligence/[4]/cyber[4]4.jpeg" class="rtl card2 img_in-colms2"
+        <img src="../images/artificialintelligence/[4]/cyber[4]4_thumb.webp" loading="lazy" class="rtl card2 img_in-colms2"
             alt="Standard Computer Desk" width="100px">
     </details>
     </li>
@@ -286,7 +298,7 @@ global $content, $key;
             <span tabindex="0" class="selection_2"><?= $content[3092][$key] ?? ''; ?></span>
         </li>
         </ul>
-        <img src="../images/artificialintelligence/[4][1]/cyber[4][1]1.jpeg" class="rtl card2 img_in-colms2"
+        <img src="../images/artificialintelligence/[4][1]/cyber[4][1]1_thumb.webp" loading="lazy" class="rtl card2 img_in-colms2"
             alt="Standard Computer Desk" width="100px">
     </details>
     </li>
@@ -303,7 +315,7 @@ global $content, $key;
             <span tabindex="0" class="selection_2"><?= $content[3096][$key] ?? ''; ?></span>
         </li>
         </ul>
-        <img src="../images/artificialintelligence/[4][1]/cyber[4][1]2.jpeg" class="rtl card2 img_in-colms2"
+        <img src="../images/artificialintelligence/[4][1]/cyber[4][1]2_thumb.webp" loading="lazy" class="rtl card2 img_in-colms2"
             alt="Standard Computer Desk" width="100px">
     </details>
     </li>
@@ -320,7 +332,7 @@ global $content, $key;
             <span tabindex="0" class="selection_2"><?= $content[3100][$key] ?? ''; ?></span>
         </li>
         </ul>
-        <img src="../images/artificialintelligence/[4][1]/cyber[4][1]0.jpeg" class="rtl card2 img_in-colms2"
+        <img src="../images/artificialintelligence/[4][1]/cyber[4][1]0_thumb.webp" loading="lazy" class="rtl card2 img_in-colms2"
             alt="Standard Computer Desk" width="100px">
     </details>
     </li>
@@ -337,7 +349,7 @@ global $content, $key;
             <span tabindex="0" class="selection_2"><?= $content[3104][$key] ?? ''; ?></span>
         </li>
         </ul>
-        <img src="../images/artificialintelligence/[4][4]/cyber[4][4]2.jpeg" class="rtl card2 img_in-colms2"
+        <img src="../images/artificialintelligence/[4][4]/cyber[4][4]2_thumb.webp" loading="lazy" class="rtl card2 img_in-colms2"
             alt="Standard Computer Desk" width="100px">
     </details>
     </li>
@@ -615,7 +627,7 @@ global $content, $key;
 <div class="spacer_double_lines" style="margin-bottom: -20px;"><hr><hr></div>
 <!--DETAILS button-->
 <a href="#intriguingPointsDesk"><button class="card2 button_common_types" id="openDetailsButton2">
-    <img src="../images/artificialintelligence/pixel.jpeg" alt="Standard Computer Desk" width="17px" title="Open -View all desks">
+    <img src="../images/artificialintelligence/pixel_thumb.webp" loading="lazy" alt="Standard Computer Desk" width="17px" title="Open -View all desks" loading="lazy">
     <!-- for align to the left_---<-> <?= $content[3294][$key] ?? ''; ?><-> <?= $content[3295][$key] ?? ''; ?><->   <?= $content[3296][$key] ?? ''; ?>
 </button></a>
 <!--^^^ DETAILS button ^^^-->
@@ -633,7 +645,20 @@ global $content, $key;
     <br /><?= $content[3299][$key] ?? ''; ?> <li>
         <span tabindex="0" class="selection_2"><?= $content[3300][$key] ?? ''; ?></span>
     </li>
-    <img src="../images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Cultural Influences on Desk Design" height="100px">
+    <div class="carousel-group rtl" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Cultural Influences on Desk Design">
+                    <img src="../images/artificialintelligence/[4]/cyber[4]_thumb.webp"
+                         alt="Cultural Influences on Desk Design"
+                         title="Cultural Influences on Desk Design"
+                         loading="lazy"
+                         style="max-height: 100px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="1"></div>
+        </div>
+    </div>
 </details>
 
 
@@ -646,7 +671,20 @@ global $content, $key;
 <br /><?= $content[3303][$key] ?? ''; ?> <li>
     <span tabindex="0" class="selection_2"><?= $content[3304][$key] ?? ''; ?></span>
 </li>
-<img src="../images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Wireless Connectivity Desk" height="100px">
+<div class="carousel-group rtl" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Wireless Connectivity Desk">
+                    <img src="../images/artificialintelligence/[4]/cyber[4]_thumb.webp"
+                         alt="Wireless Connectivity Desk"
+                         title="Wireless Connectivity Desk"
+                         loading="lazy"
+                         style="max-height: 100px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="2"></div>
+        </div>
+    </div>
 </details>
 
 <details tabindex="0" id="23" class="selection half_size card2" style="display: inline;">
@@ -658,7 +696,20 @@ global $content, $key;
 <br /><?= $content[3307][$key] ?? ''; ?> <li>
     <span tabindex="0" class="selection_2"><?= $content[3308][$key] ?? ''; ?></span>
 </li>
-<img src="../images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Collapsible and Portable Desk" height="100px">
+<div class="carousel-group rtl" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Collapsible and Portable Desk">
+                    <img src="../images/artificialintelligence/[4]/cyber[4]_thumb.webp"
+                         alt="Collapsible and Portable Desk"
+                         title="Collapsible and Portable Desk"
+                         loading="lazy"
+                         style="max-height: 100px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="3"></div>
+        </div>
+    </div>
 </details>
 
 <details tabindex="0" id="24" class="selection half_size card2" style="display: inline;">
@@ -670,7 +721,20 @@ global $content, $key;
 <br /><?= $content[3311][$key] ?? ''; ?> <li>
     <span tabindex="0" class="selection_2"><?= $content[3312][$key] ?? ''; ?></span>
 </li>
-<img src="../images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Collaborative Workspace Desk" height="100px">
+<div class="carousel-group rtl" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Collaborative Workspace Desk">
+                    <img src="../images/artificialintelligence/[4]/cyber[4]_thumb.webp"
+                         alt="Collaborative Workspace Desk"
+                         title="Collaborative Workspace Desk"
+                         loading="lazy"
+                         style="max-height: 100px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="4"></div>
+        </div>
+    </div>
 </details>
 
 <details tabindex="0" id="25" class="selection half_size card2" style="display: inline;">
@@ -682,7 +746,20 @@ global $content, $key;
 <br /><?= $content[3315][$key] ?? ''; ?> <li>
     <span tabindex="0" class="selection_2"><?= $content[3316][$key] ?? ''; ?></span>
 </li>
-<img src="../images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Minimal Footprint Desk" height="100px">
+<div class="carousel-group rtl" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Minimal Footprint Desk">
+                    <img src="../images/artificialintelligence/[4]/cyber[4]_thumb.webp"
+                         alt="Minimal Footprint Desk"
+                         title="Minimal Footprint Desk"
+                         loading="lazy"
+                         style="max-height: 100px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="5"></div>
+        </div>
+    </div>
 </details>
 
 <details tabindex="0" id="26" class="selection half_size card2" style="display: inline;">
@@ -694,7 +771,20 @@ global $content, $key;
 <br /><?= $content[3319][$key] ?? ''; ?> <li>
     <span tabindex="0" class="selection_2"><?= $content[3320][$key] ?? ''; ?></span>
 </li>
-<img src="../images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Digital Nomad Desk" height="100px">
+<div class="carousel-group rtl" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Digital Nomad Desk">
+                    <img src="../images/artificialintelligence/[4]/cyber[4]_thumb.webp"
+                         alt="Digital Nomad Desk"
+                         title="Digital Nomad Desk"
+                         loading="lazy"
+                         style="max-height: 100px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="6"></div>
+        </div>
+    </div>
 </details>
 
 <details tabindex="0" id="27" class="selection half_size card2" style="display: inline;">
@@ -706,7 +796,20 @@ global $content, $key;
 <br /><?= $content[3323][$key] ?? ''; ?> <li>
     <span tabindex="0" class="selection_2"><?= $content[3324][$key] ?? ''; ?></span>
 </li>
-<img src="../images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Historical Desk Collection" height="100px">
+<div class="carousel-group rtl" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Historical Desk Collection">
+                    <img src="../images/artificialintelligence/[4]/cyber[4]_thumb.webp"
+                         alt="Historical Desk Collection"
+                         title="Historical Desk Collection"
+                         loading="lazy"
+                         style="max-height: 100px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="7"></div>
+        </div>
+    </div>
 </details>
 
 <details tabindex="0" id="28" class="selection half_size card2" style="display: inline;">
@@ -718,7 +821,20 @@ global $content, $key;
 <br /><?= $content[3327][$key] ?? ''; ?> <li>
     <span tabindex="0" class="selection_2"><?= $content[3328][$key] ?? ''; ?></span>
 </li>
-<img src="../images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="DIY Desk Community" height="100px">
+<div class="carousel-group rtl" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="DIY Desk Community">
+                    <img src="../images/artificialintelligence/[4]/cyber[4]_thumb.webp"
+                         alt="DIY Desk Community"
+                         title="DIY Desk Community"
+                         loading="lazy"
+                         style="max-height: 100px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="8"></div>
+        </div>
+    </div>
 </details>
 
 <details tabindex="0" id="29" class="selection half_size card2" style="display: inline;">
@@ -730,7 +846,20 @@ global $content, $key;
 <br /><?= $content[3331][$key] ?? ''; ?> <li>
     <span tabindex="0" class="selection_2"><?= $content[3332][$key] ?? ''; ?></span>
 </li>
-<img src="../images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Feng Shui Desk Arrangement" height="100px">
+<div class="carousel-group rtl" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Feng Shui Desk Arrangement">
+                    <img src="../images/artificialintelligence/[4]/cyber[4]_thumb.webp"
+                         alt="Feng Shui Desk Arrangement"
+                         title="Feng Shui Desk Arrangement"
+                         loading="lazy"
+                         style="max-height: 100px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="9"></div>
+        </div>
+    </div>
 </details>
 
 <details tabindex="0" id="210" class="selection half_size card2" style="display: inline;">
@@ -742,7 +871,20 @@ global $content, $key;
 <br /><?= $content[3335][$key] ?? ''; ?> <li>
     <span tabindex="0" class="selection_2"><?= $content[3336][$key] ?? ''; ?></span>
 </li>
-<img src="../images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Personalized Desk" height="100px">
+<div class="carousel-group rtl" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Personalized Desk Workstation">
+                    <img src="../images/artificialintelligence/[4]/cyber[4]_thumb.webp"
+                         alt="Personalized Desk Workstation"
+                         title="Personalized Desk Workstation"
+                         loading="lazy"
+                         style="max-height: 100px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="10"></div>
+        </div>
+    </div>
 </details>
 
 <details tabindex="0" id="211" class="selection half_size card2" style="display: inline;">
@@ -754,7 +896,20 @@ global $content, $key;
 <br /><?= $content[3339][$key] ?? ''; ?> <li>
     <span tabindex="0" class="selection_2"><?= $content[3340][$key] ?? ''; ?></span>
 </li>
-<img src="../images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Psychology of Desk Design" height="100px">
+<div class="carousel-group rtl" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Psychology of Desk Design">
+                    <img src="../images/artificialintelligence/[4]/cyber[4]_thumb.webp"
+                         alt="Psychology of Desk Design"
+                         title="Psychology of Desk Design"
+                         loading="lazy"
+                         style="max-height: 100px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="11"></div>
+        </div>
+    </div>
 </details>
 
 <details tabindex="0" id="212" class="selection half_size card2" style="display: inline;">
@@ -766,7 +921,20 @@ global $content, $key;
 <br /><?= $content[3343][$key] ?? ''; ?> <li>
     <span tabindex="0" class="selection_2"><?= $content[3344][$key] ?? ''; ?></span>
 </li>
-<img src="../images/artificialintelligence/[4]/cyber[4].jpeg" class="rtl card2 img_in-colms2" alt="Social Media Desk Trend" height="100px">
+<div class="carousel-group rtl" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Social Media Desk Trends & Battlestations">
+                    <img src="../images/artificialintelligence/[4]/cyber[4]_thumb.webp"
+                         alt="Social Media Desk Trends & Battlestations"
+                         title="Social Media Desk Trends & Battlestations"
+                         loading="lazy"
+                         style="max-height: 100px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="12"></div>
+        </div>
+    </div>
 </details>
 </div>
 <div class="spacer blurb half_size selection" tabindex="0">
@@ -786,3 +954,104 @@ global $content, $key;
 <script>
 <?= $content[3348][$key] ?? ''; ?>
 </script>
+
+    <!-- Carousel Modal Data Template -->
+    <template id="carousel-images">
+        <?php
+        $carouselItems = [
+            [
+                'original' => '../images/artificialintelligence/[4]/cyber[4]0.jpeg',
+                'webp'     => '../images/artificialintelligence/[4]/cyber[4]0.webp',
+                'title'    => 'Standard Computer Desk',
+                'link'     => 'https://en.wikipedia.org/wiki/Computer_desk'
+            ],
+            [
+                'original' => '../images/artificialintelligence/[4]/cyber[4].jpeg',
+                'webp'     => '../images/artificialintelligence/[4]/cyber[4].webp',
+                'title'    => 'Cultural Influences on Desk Design',
+                'link'     => 'https://en.wikipedia.org/wiki/Desk'
+            ],
+            [
+                'original' => '../images/artificialintelligence/[4]/cyber[4].jpeg',
+                'webp'     => '../images/artificialintelligence/[4]/cyber[4].webp',
+                'title'    => 'Wireless Connectivity Desk',
+                'link'     => 'https://en.wikipedia.org/wiki/Wireless_power_transfer'
+            ],
+            [
+                'original' => '../images/artificialintelligence/[4]/cyber[4].jpeg',
+                'webp'     => '../images/artificialintelligence/[4]/cyber[4].webp',
+                'title'    => 'Collapsible and Portable Desk',
+                'link'     => 'https://en.wikipedia.org/wiki/Folding_table'
+            ],
+            [
+                'original' => '../images/artificialintelligence/[4]/cyber[4].jpeg',
+                'webp'     => '../images/artificialintelligence/[4]/cyber[4].webp',
+                'title'    => 'Collaborative Workspace Desk',
+                'link'     => 'https://en.wikipedia.org/wiki/Coworking'
+            ],
+            [
+                'original' => '../images/artificialintelligence/[4]/cyber[4].jpeg',
+                'webp'     => '../images/artificialintelligence/[4]/cyber[4].webp',
+                'title'    => 'Minimal Footprint Desk',
+                'link'     => 'https://en.wikipedia.org/wiki/Standing_desk'
+            ],
+            [
+                'original' => '../images/artificialintelligence/[4]/cyber[4].jpeg',
+                'webp'     => '../images/artificialintelligence/[4]/cyber[4].webp',
+                'title'    => 'Digital Nomad Desk',
+                'link'     => 'https://en.wikipedia.org/wiki/Digital_nomad'
+            ],
+            [
+                'original' => '../images/artificialintelligence/[4]/cyber[4].jpeg',
+                'webp'     => '../images/artificialintelligence/[4]/cyber[4].webp',
+                'title'    => 'Historical Desk Collection',
+                'link'     => 'https://en.wikipedia.org/wiki/Antique_furniture'
+            ],
+            [
+                'original' => '../images/artificialintelligence/[4]/cyber[4].jpeg',
+                'webp'     => '../images/artificialintelligence/[4]/cyber[4].webp',
+                'title'    => 'DIY Desk Community',
+                'link'     => 'https://en.wikipedia.org/wiki/Do_it_yourself'
+            ],
+            [
+                'original' => '../images/artificialintelligence/[4]/cyber[4].jpeg',
+                'webp'     => '../images/artificialintelligence/[4]/cyber[4].webp',
+                'title'    => 'Feng Shui Desk Arrangement',
+                'link'     => 'https://en.wikipedia.org/wiki/Feng_shui'
+            ],
+            [
+                'original' => '../images/artificialintelligence/[4]/cyber[4].jpeg',
+                'webp'     => '../images/artificialintelligence/[4]/cyber[4].webp',
+                'title'    => 'Personalized Desk Workstation',
+                'link'     => 'https://en.wikipedia.org/wiki/Ergonomics'
+            ],
+            [
+                'original' => '../images/artificialintelligence/[4]/cyber[4].jpeg',
+                'webp'     => '../images/artificialintelligence/[4]/cyber[4].webp',
+                'title'    => 'Psychology of Desk Design',
+                'link'     => 'https://en.wikipedia.org/wiki/Environmental_psychology'
+            ],
+            [
+                'original' => '../images/artificialintelligence/[4]/cyber[4].jpeg',
+                'webp'     => '../images/artificialintelligence/[4]/cyber[4].webp',
+                'title'    => 'Social Media Desk Trends & Battlestations',
+                'link'     => 'https://en.wikipedia.org/wiki/Social_media'
+            ],
+        ];
+
+        foreach($carouselItems as $index => $item):
+        ?>
+        <div class="carousel-item" data-image-index="<?= $index; ?>">
+            <a href="<?= $item['original']; ?>" target="_blank" rel="noopener">
+                <img data-src="<?= $item['webp']; ?>"
+                     src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+                     alt="<?= htmlspecialchars($item['title']); ?>">
+            </a>
+            <h4 class="img_link">
+                <a href="<?= htmlspecialchars($item['link']); ?>" title="<?= htmlspecialchars($item['title']); ?>" target="_blank" rel="noopener">
+                    <?= htmlspecialchars($item['title']); ?>
+                </a>
+            </h4>
+        </div>
+        <?php endforeach; ?>
+    </template>

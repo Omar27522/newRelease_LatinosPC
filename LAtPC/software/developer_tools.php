@@ -47,7 +47,7 @@ foreach ($content as $item) {
             <a href="<?= $links['softwareadvice']; ?>" target="_blank" rel="noopener noreferrer">
                 <button tabindex="0" class="card2 selection">
                     <img src="../images/programs/thumbs/softwareadvice.svg" alt="SoftwareAdvice"
-                        title="SoftwareAdvice">
+                        title="SoftwareAdvice" loading="lazy">
                     <br><?= $content[214][$key] ?? ''; ?>
                 </button>
             </a>
@@ -56,7 +56,7 @@ foreach ($content as $item) {
             <a href="<?= $links['filehippo']; ?>" target="_blank" rel="noopener noreferrer">
                 <button tabindex="0" class="card2 selection">
                     <img src="../images/programs/thumbs/filehippo.png" alt="FileHippo"
-                        title="FileHippo">
+                        title="FileHippo" loading="lazy">
                     <br><?= $content[215][$key] ?? ''; ?>
                 </button>
             </a>
@@ -65,7 +65,7 @@ foreach ($content as $item) {
             <a href="<?= $links['majorgeeks']; ?>" target="_blank" rel="noopener noreferrer">
                 <button tabindex="0" class="card2 selection">
                     <img src="../images/programs/thumbs/majorgeeks.gif" alt="MajorGeeks"
-                        title="MajorGeeks">
+                        title="MajorGeeks" loading="lazy">
                     <br><?= $content[216][$key] ?? ''; ?>
                 </button>
             </a>
@@ -73,7 +73,7 @@ foreach ($content as $item) {
         <li>
             <a href="<?= $links['ninite']; ?>" target="_blank" rel="noopener noreferrer">
                 <button tabindex="0" class="card2 selection">
-                    <img src="../images/programs/thumbs/ninite.png" alt="Ninite" title="Ninite">
+                    <img src="../images/programs/thumbs/ninite.png" alt="Ninite" title="Ninite" loading="lazy">
                     <br><?= $content[217][$key] ?? ''; ?>
                 </button>
             </a>
@@ -82,7 +82,7 @@ foreach ($content as $item) {
             <a href="<?= $links['filehorse']; ?>" target="_blank" rel="noopener noreferrer">
                 <button tabindex="0" class="card2 selection">
                     <img src="../images/programs/thumbs/filehorse.png" alt="FileHorse"
-                        title="FileHorse">
+                        title="FileHorse" loading="lazy">
                     <br><?= $content[218][$key] ?? ''; ?>
                 </button>
             </a>
@@ -91,7 +91,7 @@ foreach ($content as $item) {
             <a href="<?= $links['softpedia']; ?>" target="_blank" rel="noopener noreferrer">
                 <button tabindex="0" class="card2 selection">
                     <img src="../images/programs/thumbs/softpedia3x2HGBW9_400x400.png"
-                        alt="Softpedia" title="Softpedia">
+                        alt="Softpedia" title="Softpedia" loading="lazy">
                     <br><?= $content[219][$key] ?? ''; ?>
                 </button>
             </a>
@@ -100,7 +100,7 @@ foreach ($content as $item) {
             <a href="<?= $links['softonic']; ?>" target="_blank" rel="noopener noreferrer">
                 <button tabindex="0" class="card2 selection">
                     <img src="../images/programs/thumbs/softonic.jpg" alt="Softonic"
-                        title="Softonic">
+                        title="Softonic" loading="lazy">
                     <br><?= $content[220][$key] ?? ''; ?>
                 </button>
             </a>
@@ -109,7 +109,7 @@ foreach ($content as $item) {
             <a href="<?= $links['snapfiles']; ?>" target="_blank" rel="noopener noreferrer">
                 <button tabindex="0" class="card2 selection">
                     <img src="../images/programs/thumbs/snapfileslogo-smaller.png"
-                        alt="Snapfiles" title="Snapfiles">
+                        alt="Snapfiles" title="Snapfiles" loading="lazy">
                     <br><?= $content[221][$key] ?? ''; ?>
                 </button>
             </a>
@@ -118,7 +118,7 @@ foreach ($content as $item) {
             <a href="<?= $links['filepuma']; ?>" target="_blank" rel="noopener noreferrer">
                 <button tabindex="0" class="card2 selection">
                     <img src="../images/programs/thumbs/filepuma.png" alt="FilePuma"
-                        title="FilePuma">
+                        title="FilePuma" loading="lazy">
                     <br><?= $content[222][$key] ?? ''; ?>
                 </button>
             </a>
@@ -127,7 +127,7 @@ foreach ($content as $item) {
             <a href="<?= $links['sourceforge']; ?>" target="_blank" rel="noopener noreferrer">
                 <button tabindex="0" class="card2 selection">
                     <img src="../images/programs/thumbs/sourgeforge-logo-full.svg"
-                        alt="SourceForge" title="SourceForge">
+                        alt="SourceForge" title="SourceForge" loading="lazy">
                     <br><?= $content[223][$key] ?? ''; ?>
                 </button>
             </a>
@@ -136,7 +136,7 @@ foreach ($content as $item) {
             <a href="<?= $links['donationcoder']; ?>" target="_blank" rel="noopener noreferrer">
                 <button tabindex="0" class="card2 selection">
                     <img src="../images/programs/thumbs/donationcoder.jpg" alt="Donation Coder"
-                        title="Donation Coder">
+                        title="Donation Coder" loading="lazy">
                     <br><?= $content[224][$key] ?? ''; ?>
                 </button>
             </a>
@@ -145,7 +145,7 @@ foreach ($content as $item) {
             <a href="<?= $links['fosshub']; ?>" target="_blank" rel="noopener noreferrer">
                 <button tabindex="0" class="card2 selection">
                     <img src="../images/programs/thumbs/fosshub5b7e46590c200816f7b796df.png"
-                        alt="Foss Hub" title="Foss Hub">
+                        alt="Foss Hub" title="Foss Hub" loading="lazy">
                     <br><?= $content[225][$key] ?? ''; ?>
                 </button>
             </a>

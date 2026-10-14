@@ -29,7 +29,20 @@ global $content, $key;
     <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
     <h3>
         <?= $content[3894][$key] ?? ''; ?>
-    </h3><img src="../images/artificialintelligence/hw/display/thumbs/cathode.png" class="rtl">
+    </h3>
+    <div class="carousel-group rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Cathode Ray Tube (CRT)">
+                    <img src="../images/artificialintelligence/hw/display/cathode_thumb.webp"
+                         alt="Cathode Ray Tube (CRT)"
+                         title="Cathode Ray Tube (CRT)"
+                         loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
+        </div>
+    </div>
     <h2>
         <?= $content[3895][$key] ?? ''; ?>
     </h2>
@@ -44,7 +57,20 @@ global $content, $key;
     </h3><br />
     <h2>
         <?= $content[3899][$key] ?? ''; ?>
-    </h2><img src="../images/programs/thumbs/tealLED.jpg" class="fl">
+    </h2>
+    <div class="carousel-group fl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Light Emitting Diode (LED)">
+                    <img src="../images/programs/tealLED_thumb.webp"
+                         alt="Light Emitting Diode (LED)"
+                         title="Light Emitting Diode (LED)"
+                         loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="1"></div>
+        </div>
+    </div>
     <h3>
         <?= $content[3900][$key] ?? ''; ?>
     </h3>
@@ -59,8 +85,20 @@ global $content, $key;
     </h2>
     <h3>
         <?= $content[3904][$key] ?? ''; ?>
-    </h3><img src="../images/artificialintelligence/hw/display/thumbs/michael-maasen-AkYGy_ymFqo-unsplash.jpg"
-        class="fl">
+    </h3>
+    <div class="carousel-group fl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Liquid Crystal Display (LCD)">
+                    <img src="../images/artificialintelligence/hw/display/michael-maasen-AkYGy_ymFqo-unsplash_thumb.webp"
+                         alt="Liquid Crystal Display (LCD)"
+                         title="Liquid Crystal Display (LCD)"
+                         loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="2"></div>
+        </div>
+    </div>
     <h3>
         <?= $content[3905][$key] ?? ''; ?>
     </h3><br />
@@ -126,7 +164,20 @@ global $content, $key;
     </h2>
     <h3>
         <?= $content[3924][$key] ?? ''; ?>
-    </h3><img src="../images/artificialintelligence/hw/display/thumbs/ultrahd.jpg" class="rtl">
+    </h3>
+    <div class="carousel-group rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Ultra High Definition Display">
+                    <img src="../images/artificialintelligence/hw/display/ultrahd_thumb.webp"
+                         alt="Ultra High Definition Display"
+                         title="Ultra High Definition Display"
+                         loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="3"></div>
+        </div>
+    </div>
     <h2>
         <?= $content[3925][$key] ?? ''; ?>
     </h2>
@@ -173,9 +224,34 @@ global $content, $key;
     <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
     <article class="article fullbar"><a href="#monitor">
         <h1 id="future" class="purple"><?= $content[3939][$key] ?? ''; ?></h1>
-    </a><img src="../images/artificialintelligence/hw/display/thumbs/future-display.jpg">
-    <?= $content[3940][$key] ?? ''; ?>
-    <img src="../images/artificialintelligence/hw/display/thumbs/future-display2.jpg">
+    </a>
+    <div class="carousel-group fl" style="margin: 10px 15px 10px 0;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Future Display Technology">
+                    <img src="../images/artificialintelligence/hw/display/future-display_thumb.webp"
+                         alt="Future Display Technology"
+                         title="Future Display Technology"
+                         loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="4"></div>
+        </div>
+    </div>
+    <p><?= $content[3940][$key] ?? ''; ?></p>
+    <div class="carousel-group fl" style="margin: 10px 15px 10px 0;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Holographic & Curved Displays">
+                    <img src="../images/artificialintelligence/hw/display/future-display2_thumb.webp"
+                         alt="Holographic & Curved Displays"
+                         title="Holographic & Curved Displays"
+                         loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="5"></div>
+        </div>
+    </div>
     <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
     <h3>
         <?= $content[3941][$key] ?? ''; ?>
@@ -212,7 +288,20 @@ global $content, $key;
     </h3>
     <h2>
         <?= $content[3952][$key] ?? ''; ?>
-    </h2><img src="../images/artificialintelligence/hw/display/thumbs/advanced.jpg" class="rtl">
+    </h2>
+    <div class="carousel-group rtl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Advanced Quantum Dot & OLED Displays">
+                    <img src="../images/artificialintelligence/hw/display/advanced_thumb.webp"
+                         alt="Advanced Quantum Dot & OLED Displays"
+                         title="Advanced Quantum Dot & OLED Displays"
+                         loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="6"></div>
+        </div>
+    </div>
     <h3>
         <?= $content[3953][$key] ?? ''; ?>
     </h3>
@@ -308,7 +397,20 @@ global $content, $key;
     <h3><a href="https://www.eizoglobal.com/products/coloredge/" title="Color Management">
             <?= $content[3989][$key] ?? ''; ?></a> <?= $content[3990][$key] ?? ''; ?>
     </h3>
-    <h1><img src="../images/artificialintelligence/hw/display/thumbs/others.jpg" class="fl">
+    <div class="carousel-group fl" style="margin-right: 15px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Specialized Display Manufacturers">
+                    <img src="../images/artificialintelligence/hw/display/others_thumb.webp"
+                         alt="Specialized Display Manufacturers"
+                         title="Specialized Display Manufacturers"
+                         loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="7"></div>
+        </div>
+    </div>
+    <h1>
         <?= $content[3991][$key] ?? ''; ?>
     </h1>
     <p>
@@ -384,7 +486,19 @@ global $content, $key;
         </h1>
     </a>
     <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
-    <img src="../images/artificialintelligence/hw/display/thumbs/integrated.jpg" class="fl">
+    <div class="carousel-group fl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Integrated Display Features">
+                    <img src="../images/artificialintelligence/hw/display/integrated_thumb.webp"
+                         alt="Integrated Display Features"
+                         title="Integrated Display Features"
+                         loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="8"></div>
+        </div>
+    </div>
     <h2>
         <?= $content[4014][$key] ?? ''; ?>
     </h2>
@@ -459,7 +573,20 @@ global $content, $key;
     <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
     <h2>
         <?= $content[4037][$key] ?? ''; ?>
-    </h2><img src="../images/artificialintelligence/hw/display/thumbs/calibrate.jpg" class="fl">
+    </h2>
+    <div class="carousel-group fl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Color Calibration & Display Optimization">
+                    <img src="../images/artificialintelligence/hw/display/calibrate_thumb.webp"
+                         alt="Color Calibration & Display Optimization"
+                         title="Color Calibration & Display Optimization"
+                         loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="9"></div>
+        </div>
+    </div>
     <h3>
         <?= $content[4038][$key] ?? ''; ?>
     </h3><br />
@@ -534,7 +661,21 @@ global $content, $key;
     </h2>
     <h3>
         <?= $content[4062][$key] ?? ''; ?>
-    </h3><img src="../images/artificialintelligence/hw/display/thumbs/lastdisplay.jpg" width="600px" class="fl">
+    </h3>
+    <div class="carousel-group fl">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Ergonomic Setup & Dual Monitors">
+                    <img src="../images/artificialintelligence/hw/display/lastdisplay_thumb.webp"
+                         alt="Ergonomic Setup & Dual Monitors"
+                         title="Ergonomic Setup & Dual Monitors"
+                         loading="lazy"
+                         style="max-width: 600px; width: 100%; height: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="10"></div>
+        </div>
+    </div>
     <h2>
         <?= $content[4063][$key] ?? ''; ?>
     </h2>
@@ -578,3 +719,92 @@ global $content, $key;
         <?= $content[4076][$key] ?? ''; ?>
     </h3>
     </article>
+
+    <!-- Carousel Modal Data Template -->
+    <template id="carousel-images">
+        <?php
+        $carouselItems = [
+            [
+                'original' => '../images/artificialintelligence/hw/display/cathode.png',
+                'webp'     => '../images/artificialintelligence/hw/display/cathode.webp',
+                'title'    => 'Cathode Ray Tube (CRT)',
+                'link'     => 'https://en.wikipedia.org/wiki/Cathode-ray_tube'
+            ],
+            [
+                'original' => '../images/programs/tealLED.jpg',
+                'webp'     => '../images/programs/tealLED.webp',
+                'title'    => 'Light Emitting Diode (LED)',
+                'link'     => 'https://en.wikipedia.org/wiki/Light-emitting_diode'
+            ],
+            [
+                'original' => '../images/artificialintelligence/hw/display/michael-maasen-AkYGy_ymFqo-unsplash.jpg',
+                'webp'     => '../images/artificialintelligence/hw/display/michael-maasen-AkYGy_ymFqo-unsplash.webp',
+                'title'    => 'Liquid Crystal Display (LCD)',
+                'link'     => 'https://en.wikipedia.org/wiki/Liquid-crystal_display'
+            ],
+            [
+                'original' => '../images/artificialintelligence/hw/display/ultrahd.jpg',
+                'webp'     => '../images/artificialintelligence/hw/display/ultrahd.webp',
+                'title'    => 'Ultra High Definition Display',
+                'link'     => 'https://en.wikipedia.org/wiki/Ultra-high-definition_television'
+            ],
+            [
+                'original' => '../images/artificialintelligence/hw/display/future-display.jpg',
+                'webp'     => '../images/artificialintelligence/hw/display/future-display.webp',
+                'title'    => 'Future Display Technology',
+                'link'     => 'https://en.wikipedia.org/wiki/Flexible_display'
+            ],
+            [
+                'original' => '../images/artificialintelligence/hw/display/future-display2.jpg',
+                'webp'     => '../images/artificialintelligence/hw/display/future-display2.webp',
+                'title'    => 'Holographic & Curved Displays',
+                'link'     => 'https://en.wikipedia.org/wiki/Holographic_display'
+            ],
+            [
+                'original' => '../images/artificialintelligence/hw/display/advanced.jpg',
+                'webp'     => '../images/artificialintelligence/hw/display/advanced.webp',
+                'title'    => 'Advanced Quantum Dot & OLED Displays',
+                'link'     => 'https://en.wikipedia.org/wiki/Quantum_dot_display'
+            ],
+            [
+                'original' => '../images/artificialintelligence/hw/display/others.jpg',
+                'webp'     => '../images/artificialintelligence/hw/display/others.webp',
+                'title'    => 'Specialized Display Manufacturers',
+                'link'     => 'https://en.wikipedia.org/wiki/Computer_monitor'
+            ],
+            [
+                'original' => '../images/artificialintelligence/hw/display/integrated.jpg',
+                'webp'     => '../images/artificialintelligence/hw/display/integrated.webp',
+                'title'    => 'Integrated Display Features',
+                'link'     => 'https://en.wikipedia.org/wiki/Computer_monitor'
+            ],
+            [
+                'original' => '../images/artificialintelligence/hw/display/calibrate.jpg',
+                'webp'     => '../images/artificialintelligence/hw/display/calibrate.webp',
+                'title'    => 'Color Calibration & Display Optimization',
+                'link'     => 'https://en.wikipedia.org/wiki/Color_calibration'
+            ],
+            [
+                'original' => '../images/artificialintelligence/hw/display/lastdisplay.jpg',
+                'webp'     => '../images/artificialintelligence/hw/display/lastdisplay.webp',
+                'title'    => 'Ergonomic Setup & Dual Monitors',
+                'link'     => 'https://en.wikipedia.org/wiki/Multi-monitor'
+            ]
+        ];
+
+        foreach($carouselItems as $index => $item):
+        ?>
+        <div class="carousel-item" data-image-index="<?= $index; ?>">
+            <a href="<?= $item['original']; ?>" target="_blank" rel="noopener">
+                <img data-src="<?= $item['webp']; ?>"
+                     src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+                     alt="<?= htmlspecialchars($item['title']); ?>">
+            </a>
+            <h4 class="img_link">
+                <a href="<?= htmlspecialchars($item['link']); ?>" title="<?= htmlspecialchars($item['title']); ?>" target="_blank" rel="noopener">
+                    <?= htmlspecialchars($item['title']); ?>
+                </a>
+            </h4>
+        </div>
+        <?php endforeach; ?>
+    </template>

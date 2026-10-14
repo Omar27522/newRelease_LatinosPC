@@ -65,7 +65,7 @@ $links = [
                         <?= $content[2][$key] ?? '';?>
                     </a></li>
             </ul>
-            <img src="../images/computer%20CPU.jpg" alt="" class="fl" height="60" width="60" />
+            <img src="../images/computer%20CPU_thumb.webp" alt="Computer CPU" class="fl" height="60" width="60" loading="lazy" />
             <p>
                 <?= $content[13][$key] ?? '';?></p>
             <span><?= $content[104][$key] ?? '';?></span>
@@ -126,8 +126,21 @@ $links = [
                         <?= $content[20][$key] ?? '';?>
                     </p>
                 </ul>
-            </div><img src="../images/artificialintelligence/hw/cpu/thumbs/cpu.jpg" height="280px"
-                class="fl" title="Central Processing Unit" alt="CPU stiker">
+            </div>
+            <div class="carousel-group fl" style="margin-top: 15px;">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img" role="button" aria-label="Central Processing Unit">
+                            <img src="../images/artificialintelligence/hw/cpu/cpu_thumb.webp"
+                                 alt="CPU sticker"
+                                 title="Central Processing Unit"
+                                 loading="lazy"
+                                 style="max-height: 280px; width: auto;" />
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -141,8 +154,8 @@ $links = [
             <div class="spacer_shape" id="intel"><a href="<?=$links['intel'] ?>" title="intel Processors"><button
                         style="padding:40px;font-size:xx-large">
                         intel
-                    </button></a><a href="#scroll"><img src="../images/computer%20CPU.jpg" alt=""
-                        class="rtl" height="60" width="60" /></a></div>
+                    </button></a><a href="#scroll"><img src="../images/computer%20CPU_thumb.webp" alt="Go to Top"
+                        class="rtl" height="60" width="60" loading="lazy" /></a></div>
             <h2>
                 <?= $content[10][$key] ?? '';?>
             </h2>
@@ -232,9 +245,21 @@ $links = [
             <hr>
             <div class="spacer_shape hero4">
                 <p><?= $content[37][$key] ?? ''; ?> <a href="<?=$links['LGA'] ?>" title="Digital Trends"><?= $content[38][$key] ?? ''; ?></a></p>
-                <p><img src="../images/artificialintelligence/hw/cpu/thumbs/socket.jpg" title="Socket"
-                        class="rtl">
-                    <?= $content[39][$key] ?? ''; ?></p>
+                <div class="carousel-group img_rtl" style="margin-left: 15px; margin-bottom: 10px;">
+                    <div class="multi-link-container">
+                        <div class="thumbnail-container">
+                            <span tabindex="0" class="linked-text-img" role="button" aria-label="CPU Socket">
+                                <img src="../images/artificialintelligence/hw/cpu/socket_thumb.webp"
+                                     alt="CPU Socket"
+                                     title="Socket"
+                                     loading="lazy"
+                                     style="max-height: 200px; width: auto;" />
+                            </span>
+                        </div>
+                        <div class="image-dialog" data-carousel="true" data-start-index="1"></div>
+                    </div>
+                </div>
+                <p><?= $content[39][$key] ?? ''; ?></p>
             </div>
 
             <p>
@@ -270,8 +295,8 @@ $links = [
             <div class="spacer_shape" id="amd"><a href="https://www.amd.com/en.html" title="AMD Processors">
                     <button style="padding:40px;font-size:xx-large">
                         <?= $content[2][$key] ?? '';?>
-                    </button></a><a href="#content"><img src="../images/computer%20CPU.jpg"
-                        alt="CPU Image" class="rtl" height="60" width="60" /></a></div>
+                    </button></a><a href="#content"><img src="../images/computer%20CPU_thumb.webp"
+                        alt="CPU Image" class="rtl" height="60" width="60" loading="lazy" /></a></div>
             <div class="colms2">
                 <p><a href="<?=$links['AMD_epyc'] ?>" title="Epyc™"><button>
                             <p class="button_red">Epyc
@@ -449,3 +474,37 @@ $links = [
         <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
         </div>
     </section>
+
+    <template id="carousel-images">
+        <?php
+        $carouselItems = [
+            [
+                'original' => '../images/artificialintelligence/hw/cpu/cpu.jpg',
+                'webp'     => '../images/artificialintelligence/hw/cpu/cpu.webp',
+                'title'    => 'Central Processing Unit',
+                'link'     => 'https://en.wikipedia.org/wiki/Central_processing_unit'
+            ],
+            [
+                'original' => '../images/artificialintelligence/hw/cpu/socket.jpg',
+                'webp'     => '../images/artificialintelligence/hw/cpu/socket.webp',
+                'title'    => 'CPU Socket Architecture',
+                'link'     => $links['LGA'] ?? 'https://www.digitaltrends.com/computing/what-are-intels-lga-processor-sockets/'
+            ]
+        ];
+
+        foreach($carouselItems as $index => $item):
+        ?>
+        <div class="carousel-item" data-image-index="<?= $index; ?>">
+            <a href="<?= $item['original']; ?>" target="_blank" rel="noopener">
+                <img data-src="<?= $item['webp']; ?>"
+                     src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+                     alt="<?= htmlspecialchars($item['title']); ?>">
+            </a>
+            <h4 class="img_link">
+                <a href="<?= htmlspecialchars($item['link']); ?>" title="<?= htmlspecialchars($item['title']); ?>" target="_blank" rel="noopener">
+                    <?= htmlspecialchars($item['title']); ?>
+                </a>
+            </h4>
+        </div>
+        <?php endforeach; ?>
+    </template>

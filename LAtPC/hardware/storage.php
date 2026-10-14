@@ -31,7 +31,20 @@ global $content, $key;
     <section>
         <h2><?= $content[235][$key] ?? ''; ?></h2>
         <div class="spacer_shape">
-            <img src="http://latinospc.com/images/hardware/hw/ssdm2install.jpg" width="380px" class="fl">
+            <div class="carousel-group fl" style="margin-right: 15px; margin-bottom: 10px;">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img" role="button" aria-label="M.2 SSD Installation">
+                            <img src="../images/hardware/hw/ssdm2install_thumb.webp"
+                                 alt="M.2 SSD Installation"
+                                 title="M.2 SSD Installation"
+                                 style="max-width: 380px; width: 100%; height: auto;"
+                                 loading="lazy">
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
+                </div>
+            </div>
             <p><?= $content[236][$key] ?? ''; ?></p>
         </div>
     </section>
@@ -55,17 +68,37 @@ global $content, $key;
         <p><?= $content[244][$key] ?? ''; ?></p>
     </section>
     <section>
-        <a href="https://commons.wikimedia.org/wiki/File:RAMAC_305_disk.JPG" title="IBM 305 RAMAC">
-            <img src="http://latinospc.com/images/hardware/hw/RAMAC_305.jpg" class="fl" title="single disk">
-        </a>
+        <div class="carousel-group fl" style="margin-right: 15px; margin-bottom: 10px;">
+            <div class="multi-link-container">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img" role="button" aria-label="IBM 305 RAMAC Disk">
+                        <img src="../images/hardware/hw/RAMAC_305_thumb.webp"
+                             alt="IBM 305 RAMAC Disk"
+                             title="single disk"
+                             loading="lazy">
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="1"></div>
+            </div>
+        </div>
         <h2><?= $content[245][$key] ?? ''; ?></h2>
         <p>
             <?= $content[246][$key] ?? ''; ?>
             <div style="text-indent: 25px;"><?= $content[247][$key] ?? ''; ?></div>
             <?= $content[248][$key] ?? ''; ?>
-            <a href="https://commons.wikimedia.org/wiki/File:Intel_DC_S3700_SSD_series,_bottom_side_of_a_100_GB_SATA_3.0_model.jpg">
-                <img src="http://latinospc.com/images/hardware/hw/ssdsata.jpg" title="Intel DC S3700 SSD series, bottom side of a 100 GB SATA 3.0 model" class="rtl">
-            </a>
+            <div class="carousel-group img_rtl" style="margin-left: 15px; margin-bottom: 10px;">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img" role="button" aria-label="Intel DC S3700 SSD SATA 3.0">
+                            <img src="../images/hardware/hw/ssdsata_thumb.webp"
+                                 alt="Intel DC S3700 SSD series, bottom side of a 100 GB SATA 3.0 model"
+                                 title="Intel DC S3700 SSD series, bottom side of a 100 GB SATA 3.0 model"
+                                 loading="lazy">
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="2"></div>
+                </div>
+            </div>
         </p>
     </section>
 </article>
@@ -94,4 +127,44 @@ global $content, $key;
         <strong class="ssd">Security:</strong> <?= $content[267][$key] ?? ''; ?>
     </div>
     <div class="spacer"></div>
+
+    <template id="carousel-images">
+        <?php
+        $carouselItems = [
+            [
+                'original' => '../images/hardware/hw/ssdm2install.jpg',
+                'webp'     => '../images/hardware/hw/ssdm2install.webp',
+                'title'    => 'M.2 SSD Installation',
+                'link'     => 'https://thefutureofthings.com/3819-2009-ssd-year-of-revolution/'
+            ],
+            [
+                'original' => '../images/hardware/hw/RAMAC_305.jpg',
+                'webp'     => '../images/hardware/hw/RAMAC_305.webp',
+                'title'    => 'IBM 305 RAMAC Disk',
+                'link'     => 'https://commons.wikimedia.org/wiki/File:RAMAC_305_disk.JPG'
+            ],
+            [
+                'original' => '../images/hardware/hw/ssdsata.jpg',
+                'webp'     => '../images/hardware/hw/ssdsata.webp',
+                'title'    => 'Intel DC S3700 SSD SATA 3.0',
+                'link'     => 'https://commons.wikimedia.org/wiki/File:Intel_DC_S3700_SSD_series,_bottom_side_of_a_100_GB_SATA_3.0_model.jpg'
+            ]
+        ];
+
+        foreach($carouselItems as $index => $item):
+        ?>
+        <div class="carousel-item" data-image-index="<?= $index; ?>">
+            <a href="<?= $item['original']; ?>" target="_blank" rel="noopener">
+                <img data-src="<?= $item['webp']; ?>"
+                     src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+                     alt="<?= htmlspecialchars($item['title']); ?>">
+            </a>
+            <h4 class="img_link">
+                <a href="<?= htmlspecialchars($item['link']); ?>" title="<?= htmlspecialchars($item['title']); ?>" target="_blank" rel="noopener">
+                    <?= htmlspecialchars($item['title']); ?>
+                </a>
+            </h4>
+        </div>
+        <?php endforeach; ?>
+    </template>
 </article>

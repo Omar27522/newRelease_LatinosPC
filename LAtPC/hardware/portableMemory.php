@@ -10,11 +10,21 @@ global $content, $key;
         <h1 id="portable"><?= $content[4180][$key] ?? ''; ?></h1>
     </a>
     <!--☁【ツ】☁--┻━┻ **`ღ´**☁ Portable Memory ☁☁【ツ】☁--┻━┻ **`ღ´**-->
-    <h3 class="container fullbar"><a href="https://csrc.nist.gov/glossary/term/portable_storage_device"><?= $content[4181][$key] ?? ''; ?></a> <?= $content[4182][$key] ?? ''; ?> <a href="https://latinospc.com/hardware/?ssd#ssd"><?= $content[4183][$key] ?? ''; ?></a><?= $content[4184][$key] ?? ''; ?> <a
+    <h3 class="container fullbar"><a href="https://csrc.nist.gov/glossary/term/portable_storage_device"><?= $content[4181][$key] ?? ''; ?></a> <?= $content[4182][$key] ?? ''; ?> <a href="./storage.php#ssd"><?= $content[4183][$key] ?? ''; ?></a><?= $content[4184][$key] ?? ''; ?> <a
             href="https://www.enablingusb.org/"><?= $content[4185][$key] ?? ''; ?></a> <?= $content[4186][$key] ?? ''; ?></h3>
-    <a rel="example_group" href="../images/hardware/hw/p_memory/portablehdd.jpg"
-        style="margin:4px 16px 4px 0; float:left;" title="Portable Hard Disk Drive"><img
-            src="../images/hardware/hw/p_memory/portablehdd.webp" alt="90's porable drive"></a>
+    <div class="carousel-group fl" style="margin:4px 16px 4px 0;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Portable Hard Disk Drive">
+                    <img src="../images/hardware/hw/p_memory/portablehdd_thumb.webp"
+                         alt="90's portable drive"
+                         title="Portable Hard Disk Drive"
+                         loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
+        </div>
+    </div>
     <div class="container fullbar">
         <h3><?= $content[4187][$key] ?? ''; ?> <a
                 href="https://www.dpbestflow.org/data-storage-hardware/hard-drive-101#capacity"><?= $content[4188][$key] ?? ''; ?></a> <?= $content[4189][$key] ?? ''; ?><a
@@ -25,18 +35,42 @@ global $content, $key;
                 href="https://www.pcmag.com/picks/the-best-rugged-hard-drives-and-ssds"><?= $content[4198][$key] ?? ''; ?></a><?= $content[4199][$key] ?? ''; ?><br /><a
                 href="https://exascend.com/technologies/mil-std-810/" style="font-size: large;"><?= $content[4200][$key] ?? ''; ?></a><?= $content[4201][$key] ?? ''; ?></h3>
     </div>
-    <div class="container fullbar"><a rel="example_group" href="../images/hardware/hw/p_memory/ssd.jpg"
-            style="margin:4px 4px 16px 0; float:right;" title="Portable Solid State Drive"><img
-                src="../images/hardware/hw/p_memory/ssd.webp" alt="SSD"></a>
+    <div class="container fullbar">
+        <div class="carousel-group rtl" style="margin:4px 4px 16px 0;">
+            <div class="multi-link-container">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img" role="button" aria-label="Portable Solid State Drive">
+                        <img src="../images/hardware/hw/p_memory/ssd_thumb.webp"
+                             alt="SSD"
+                             title="Portable Solid State Drive"
+                             loading="lazy" />
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="1"></div>
+            </div>
+        </div>
         <h3><span style="font-size: large;"><?= $content[4202][$key] ?? ''; ?></span> <?= $content[4203][$key] ?? ''; ?> <a href="https://tripplite.eaton.com/products/usb-connectivity-types-standards"><?= $content[4204][$key] ?? ''; ?></a> <?= $content[4205][$key] ?? ''; ?>
             <div class="spacer" style="margin-bottom:30px ;"></div>
         </h3>
     </div>
-    <h3 class="container fullbar"><a rel="example_group" href="../images/hardware/hw/p_memory/usb.jpg"
-            style="margin:4px 16px 4px 0; float:left;" title="USB Powerred Memory Drives"><img
-                src="../images/hardware/hw/p_memory/usb.webp" height="130px" alt="USB Powerred Memory Drives"></a><span
-            style="font-size: large;"><?= $content[4206][$key] ?? ''; ?></span><?= $content[4207][$key] ?? ''; ?> <a
+    <div class="container fullbar">
+        <div class="carousel-group fl" style="margin:4px 16px 4px 0;">
+            <div class="multi-link-container">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img" role="button" aria-label="USB Powered Memory Drives">
+                        <img src="../images/hardware/hw/p_memory/usb_thumb.webp"
+                             height="130px"
+                             alt="USB Powered Memory Drives"
+                             title="USB Powered Memory Drives"
+                             loading="lazy" />
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="2"></div>
+            </div>
+        </div>
+        <h3><span style="font-size: large;"><?= $content[4206][$key] ?? ''; ?></span><?= $content[4207][$key] ?? ''; ?> <a
             href="https://www.omnicharge.co/blogs/blog/what-is-usb-power-and-how-does-it-work-exactly"><?= $content[4208][$key] ?? ''; ?></a> <?= $content[4209][$key] ?? ''; ?></h3>
+    </div>
     <!--☁【ツ】☁--┻━┻ **`ღ´**☁ Memory Cards ☁【ツ】☁--┻━┻ **`ღ´**-->
     <section class="container fullbar">
         <details>
@@ -51,9 +85,19 @@ global $content, $key;
             <ul>
                 <h3>
                     <li><strong><?= $content[4217][$key] ?? ''; ?></strong> <?= $content[4218][$key] ?? ''; ?></li>
-                    <a rel="example_group" href="../images/hardware/hw/p_memory/memory.jpg"
-                        style="margin:4px 4px 16px 0; float:right;" title="Memory Card"><img
-                            src="../images/hardware/hw/p_memory/memory.webp" alt="Memory Card" class="rtl"></a>
+                    <div class="carousel-group rtl" style="margin:4px 4px 16px 0;">
+                        <div class="multi-link-container">
+                            <div class="thumbnail-container">
+                                <span tabindex="0" class="linked-text-img" role="button" aria-label="Memory Card">
+                                    <img src="../images/hardware/hw/p_memory/memory_thumb.webp"
+                                         alt="Memory Card"
+                                         title="Memory Card"
+                                         loading="lazy" />
+                                </span>
+                            </div>
+                            <div class="image-dialog" data-carousel="true" data-start-index="3"></div>
+                        </div>
+                    </div>
                     <li><strong><?= $content[4219][$key] ?? ''; ?></strong> <?= $content[4220][$key] ?? ''; ?><a
                             href="https://www.sdcard.org/developers/sd-standard-overview/capacity-sd-sdhc-sdxc-sduc/"><?= $content[4221][$key] ?? ''; ?></a><?= $content[4222][$key] ?? ''; ?></li>
                     <li><strong><?= $content[4223][$key] ?? ''; ?></strong> <a
@@ -86,9 +130,19 @@ global $content, $key;
                     href="https://en.wikipedia.org/wiki/USB_flash_drive"><?= $content[4242][$key] ?? ''; ?></a><?= $content[4243][$key] ?? ''; ?> <a
                     href="https://en.wikipedia.org/wiki/USB_hardware#Connectors"><?= $content[4244][$key] ?? ''; ?></a><?= $content[4245][$key] ?? ''; ?></h3>
             <h2 style="text-align: right;"><?= $content[4246][$key] ?? ''; ?></h2>
-            <a rel="example_group" href="../images/hardware/hw/p_memory/usb_stick.jpg"
-                style="margin:4px 30px 4px 4px; float:left;" title="USB"><img
-                    src="../images/hardware/hw/p_memory/usb_stick.webp" alt=""></a>
+            <div class="carousel-group fl" style="margin:4px 30px 4px 4px;">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img" role="button" aria-label="USB Flash Drive">
+                            <img src="../images/hardware/hw/p_memory/usb_stick_thumb.webp"
+                                 alt="USB Flash Drive"
+                                 title="USB Flash Drive"
+                                 loading="lazy" />
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="4"></div>
+                </div>
+            </div>
             <ul>
                 <h3>
                     <li class="card2"><strong><?= $content[4247][$key] ?? ''; ?></strong> <a
@@ -149,3 +203,56 @@ global $content, $key;
         </details>
     </section>
     </article>
+
+    <!-- Carousel Modal Data Template -->
+    <template id="carousel-images">
+        <?php
+        $carouselItems = [
+            [
+                'original' => '../images/hardware/hw/p_memory/portablehdd.jpg',
+                'webp'     => '../images/hardware/hw/p_memory/portablehdd.webp',
+                'title'    => 'Portable Hard Disk Drive',
+                'link'     => 'https://en.wikipedia.org/wiki/External_hard_drive'
+            ],
+            [
+                'original' => '../images/hardware/hw/p_memory/ssd.jpg',
+                'webp'     => '../images/hardware/hw/p_memory/ssd.webp',
+                'title'    => 'Portable Solid State Drive',
+                'link'     => 'https://tripplite.eaton.com/products/usb-connectivity-types-standards'
+            ],
+            [
+                'original' => '../images/hardware/hw/p_memory/usb.jpg',
+                'webp'     => '../images/hardware/hw/p_memory/usb.webp',
+                'title'    => 'USB Powered Memory Drives',
+                'link'     => 'https://www.omnicharge.co/blogs/blog/what-is-usb-power-and-how-does-it-work-exactly'
+            ],
+            [
+                'original' => '../images/hardware/hw/p_memory/memory.jpg',
+                'webp'     => '../images/hardware/hw/p_memory/memory.webp',
+                'title'    => 'Memory Card (SD/MicroSD)',
+                'link'     => 'https://en.wikipedia.org/wiki/SD_card'
+            ],
+            [
+                'original' => '../images/hardware/hw/p_memory/usb_stick.jpg',
+                'webp'     => '../images/hardware/hw/p_memory/usb_stick.webp',
+                'title'    => 'USB Flash Drive',
+                'link'     => 'https://en.wikipedia.org/wiki/USB_flash_drive'
+            ]
+        ];
+
+        foreach($carouselItems as $index => $item):
+        ?>
+        <div class="carousel-item" data-image-index="<?= $index; ?>">
+            <a href="<?= $item['original']; ?>" target="_blank" rel="noopener">
+                <img data-src="<?= $item['webp']; ?>"
+                     src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+                     alt="<?= htmlspecialchars($item['title']); ?>">
+            </a>
+            <h4 class="img_link">
+                <a href="<?= htmlspecialchars($item['link']); ?>" title="<?= htmlspecialchars($item['title']); ?>" target="_blank" rel="noopener">
+                    <?= htmlspecialchars($item['title']); ?>
+                </a>
+            </h4>
+        </div>
+        <?php endforeach; ?>
+    </template>

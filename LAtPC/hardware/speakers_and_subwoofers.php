@@ -208,7 +208,20 @@ global $content, $key;
     <fieldset tabindex="0" class="selection_2">
         <legend tabindex="0" class="center card2 selection" style="translate: 0 -45px;"><h2><?= $content[3506][$key] ?? ''; ?></h2></legend>
         <h3 style="translate: 0 -65px;"><?= $content[3507][$key] ?? ''; ?></h3>
-            <span tabindex="0" class="selection_2"><a rel="example_group" href="../images/hardware/hw/speakers.jpg"><img src="../images/hardware/hw/speakers.jpg" alt="phone and tablet" width="200" height="472" title="phone and tablet"></a></span>
+        <div class="carousel-group center" style="margin: 10px auto; text-align: center;">
+            <div class="multi-link-container" style="display: inline-block;">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img" role="button" aria-label="Audio Speakers and Subwoofers">
+                        <img src="../images/hardware/hw/speakers_thumb.webp"
+                             alt="Speakers and Subwoofers"
+                             title="Audio Speakers and Subwoofers"
+                             loading="lazy"
+                             style="max-width: 200px; height: auto;" />
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
+            </div>
+        </div>
 
     </fieldset>
 
@@ -544,3 +557,32 @@ global $content, $key;
             <h3><?= $content[3627][$key] ?? ''; ?></h3>
             <hr /></td></tr></tbody></table>
 </article>
+
+    <!-- Carousel Modal Data Template -->
+    <template id="carousel-images">
+        <?php
+        $carouselItems = [
+            [
+                'original' => '../images/hardware/hw/lightbox/speakers.jpg',
+                'webp'     => '../images/hardware/hw/lightbox/speakers.webp',
+                'title'    => 'Audio Speakers and Subwoofers',
+                'link'     => 'https://en.wikipedia.org/wiki/Loudspeaker'
+            ]
+        ];
+
+        foreach($carouselItems as $index => $item):
+        ?>
+        <div class="carousel-item" data-image-index="<?= $index; ?>">
+            <a href="<?= $item['original']; ?>" target="_blank" rel="noopener">
+                <img data-src="<?= $item['webp']; ?>"
+                     src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+                     alt="<?= htmlspecialchars($item['title']); ?>">
+            </a>
+            <h4 class="img_link">
+                <a href="<?= htmlspecialchars($item['link']); ?>" title="<?= htmlspecialchars($item['title']); ?>" target="_blank" rel="noopener">
+                    <?= htmlspecialchars($item['title']); ?>
+                </a>
+            </h4>
+        </div>
+        <?php endforeach; ?>
+    </template>

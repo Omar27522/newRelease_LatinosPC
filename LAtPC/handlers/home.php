@@ -50,8 +50,8 @@ global $page; //this is the page object brought in from initial load. It contain
                 <p tabindex="0"><?= $servicesDialog2 = $content[32][$key] ?? '';?></p>
                 <p tabindex="0"><?= $servicesDialog3 = $content[33][$key] ?? '';?></p>
                 <a href="<?= $servicesDialog4 = $content[116][$key] ?? '#';?>"><?= $content[2][$key] ?? '';?></a>
-                <img src="../images/number.jpg" width="auto" height="auto" alt="number"
-                    style="display: block; margin: 0 auto;">
+                <img src="../images/number_thumb.webp" width="auto" height="auto" alt="Contact Phone Number"
+                    loading="lazy" style="display: block; margin: 0 auto;">
             </div>
         </div>
         <a href="<?= $servicesCleanUpsButton = $content[85][$key] ?? '#';?>"

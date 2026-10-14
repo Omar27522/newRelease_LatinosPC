@@ -11,8 +11,18 @@ global $content, $key;
             <h1 id="mouse"><?= $content[476][$key] ?? ''; ?></h1>
         </a>
         <div class="colms2">
-            <img class="fl" alt="" width="200" src="../images/artificialintelligence/mouse/thumbs/left.png"
-                title="Your best friend" />
+            <div class="carousel-group fl" style="margin-right: 20px;">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img" role="button"
+                            aria-label="Computer Mouse - Your Best Friend">
+                            <img src="../images/artificialintelligence/mouse/left_thumb.webp" alt="Your best friend"
+                                title="Your best friend" loading="lazy" style="max-width: 200px; width: auto;" />
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
+                </div>
+            </div>
             <ul class="ex_menu">
                 <li><a href="#sensor_technology"><?= $content[477][$key] ?? ''; ?></a></li>
                 <li><a href="#ergonomics"><?= $content[478][$key] ?? ''; ?></a></li>
@@ -30,8 +40,8 @@ global $content, $key;
             <h3><?= $content[485][$key] ?? ''; ?></h3>
             <h3>
                 <a href="#mouse" id="Inception and Evolution of Computer Mouse Technology">
-                    <img alt="A small green rectangle to divide sections of the document" height="3"
-                        src="../images/green_rectangle.png" style="margin-left:0px;margin-top:0px;" title="Divider Line"
+                    <img alt="A small green rectangle to divide sections of the document"
+                        src="../images/green_rectangle.png" style="width:fit-content; border:none;" title="Divider Line"
                         width="44" />
                 </a>
             </h3>
@@ -41,9 +51,10 @@ global $content, $key;
             <h3><?= $content[488][$key] ?? ''; ?></h3>
             <h3><?= $content[489][$key] ?? ''; ?></h3>
             <a href="#mouse">
-                <h3><img alt="A small green rectangle to divide sections of the document" height="3"
-                        src="../images/green_rectangle.png" style="margin-left:0px;margin-top:0px;" title="Divider Line"
-                        width="44" /></h3>
+                <h3><img alt="A small green rectangle to divide sections of the document"
+                        src="../images/green_rectangle.png" style="width:fit-content; border:none;" title="Divider Line"
+                        width="44" />
+                </h3>
             </a>
         </section>
 
@@ -84,8 +95,8 @@ global $content, $key;
             <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--Trabajo3.text--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
             <h3>
                 <a href="#mouse">
-                    <img alt="A small green rectangle to divide sections of the document" height="3"
-                        src="../images/green_rectangle.png" style="margin-left:0px;margin-top:0px;" title="Divider Line"
+                    <img alt="A small green rectangle to divide sections of the document"
+                        src="../images/green_rectangle.png" style="width:fit-content; border:none;" title="Divider Line"
                         width="44" />
                 </a>
             </h3>
@@ -108,14 +119,14 @@ global $content, $key;
                     <h3><?= $content[507][$key] ?? ''; ?></h3>
                 </li>
             </ol>
-            <a href="#mouse"><img alt="A small green rectangle to divide sections of the document" height="3"
-                    src="../images/green_rectangle.png" style="margin-left:0px;margin-top:0px;" title="Divider Line"
+            <a href="#mouse"><img alt="A small green rectangle to divide sections of the document"
+                    src="../images/green_rectangle.png" style="width:fit-content; border:none;" title="Divider Line"
                     width="44" /></a>
-            <a href="#mouse"><img alt="A small green rectangle to divide sections of the document" height="3"
-                    src="../images/green_rectangle.png" style="margin-left:0px;margin-top:0px;" title="Divider Line"
+            <a href="#mouse"><img alt="A small green rectangle to divide sections of the document"
+                    src="../images/green_rectangle.png" style="width:fit-content; border:none;" title="Divider Line"
                     width="44" /></a>
-            <a href="#mouse"><img alt="A small green rectangle to divide sections of the document" height="3"
-                    src="../images/green_rectangle.png" style="margin-left:0px;margin-top:0px;" title="Divider Line"
+            <a href="#mouse"><img alt="A small green rectangle to divide sections of the document"
+                    src="../images/green_rectangle.png" style="width:fit-content; border:none;" title="Divider Line"
                     width="44" /></a>
         </section>
     </article>
@@ -142,11 +153,59 @@ global $content, $key;
         <h3><?= $content[515][$key] ?? ''; ?></h3>
         <h3>
             <a href="#mouse">
-                <img alt="A small green rectangle to divide sections of the document" height="3"
-                    src="../images/green_rectangle.png" style="margin-left:0px;margin-top:0px;" title="Divider Line"
+                <img alt="A small green rectangle to divide sections of the document"
+                    src="../images/green_rectangle.png" style="width:fit-content; border:none;" title="Divider Line"
                     width="44" />
             </a>
         </h3>
     </article>
     <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** MOUSE-->
 </section>
+
+<!-- Carousel Modal Data Template -->
+<template id="carousel-images">
+    <?php
+        $carouselItems = [
+            [
+                'original' => '../images/artificialintelligence/mouse/left.png',
+                'webp'     => '../images/artificialintelligence/mouse/left.webp',
+                'title'    => 'Computer Mouse - Ergonomic Left View',
+                'link'     => 'https://en.wikipedia.org/wiki/Computer_mouse'
+            ],
+            [
+                'original' => '../images/artificialintelligence/mouse/right.png',
+                'webp'     => '../images/artificialintelligence/mouse/right.webp',
+                'title'    => 'Computer Mouse - Ergonomic Right View',
+                'link'     => 'https://en.wikipedia.org/wiki/Computer_mouse'
+            ],
+            [
+                'original' => '../images/artificialintelligence/mouse/mouse.png',
+                'webp'     => '../images/artificialintelligence/mouse/mouse.webp',
+                'title'    => 'Computer Mouse - Top Profile',
+                'link'     => 'https://en.wikipedia.org/wiki/Computer_mouse'
+            ],
+            [
+                'original' => '../images/artificialintelligence/mouse/DALL%C2%B7E%202023-04-13%2018.07.46%20-%20this%20is%20a%20computer%20mouse,%20make%20it%20look%20more%20inorganic..png',
+                'webp'     => '../images/artificialintelligence/mouse/DALL%C2%B7E%202023-04-13%2018.07.46%20-%20this%20is%20a%20computer%20mouse,%20make%20it%20look%20more%20inorganic..webp',
+                'title'    => 'AI Concept Mouse - Inorganic Design',
+                'link'     => 'https://en.wikipedia.org/wiki/Computer_mouse'
+            ]
+        ];
+
+        foreach($carouselItems as $index => $item):
+        ?>
+    <div class="carousel-item" data-image-index="<?= $index; ?>">
+        <a href="<?= $item['original']; ?>" target="_blank" rel="noopener">
+            <img data-src="<?= $item['webp']; ?>"
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+                alt="<?= htmlspecialchars($item['title']); ?>">
+        </a>
+        <h4 class="img_link">
+            <a href="<?= htmlspecialchars($item['link']); ?>" title="<?= htmlspecialchars($item['title']); ?>"
+                target="_blank" rel="noopener">
+                <?= htmlspecialchars($item['title']); ?>
+            </a>
+        </h4>
+    </div>
+    <?php endforeach; ?>
+</template>

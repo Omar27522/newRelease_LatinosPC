@@ -66,36 +66,36 @@ function servicios($sub_route){
 
 		case 'proteccion':
 			$page = new Structure('../../', 'español', 'Protección');
-			$keywords = 'protección de computadoras Pomona, protección de PC Pomona, eliminación de virus, eliminación de malware, eliminación de spyware, optimización de computadoras, reparación de computadoras lentas, tune-up de PC, limpieza de sistema, eliminación de archivos basura, limpieza de registro, optimización de rendimiento, mantenimiento de computadoras, optimización de inicio, limpieza de disco';
-			$description = 'Servicios profesionales de protección de computadoras en Pomona, CA. virus y malware, y eliminación de archivos basura para mejorar el rendimiento de la PC. Limpieza en sitio y remota disponible para los condados de LA, San Bernardino, Riverside y Orange.';
+			$keywords = 'protección de computadoras, software antivirus, protección contra malware, ciberseguridad, configuración de firewall, protección de datos, seguridad en internet, protección contra virus Pomona, servicios de seguridad para PC, protección contra ransomware, protección contra spyware, seguridad de redes, navegación segura, protección contra robo de identidad, soluciones de seguridad informática';
+			$description = 'Servicios integrales de protección de computadoras en Pomona, CA. Consejos de instalación de software y hardware, cortafuegos (firewalls), protección contra malware y soluciones de ciberseguridad para mantener su PC protegida. Sirviendo a los condados de LA, San Bernardino, Riverside y Orange.';
 			include 'services/protection.php';
 			break;
 
 		case 'consultas':
 			$page = new Structure('../../', 'español', 'Consultas');
-			$keywords = 'computer consultation, IT consultation Pomona, technology consulting, computer advice, PC buying guide, tech support consultation, business IT consulting, network consultation, software recommendations, hardware consultation, computer setup consultation, technology planning, IT assessment, computer system evaluation';
-			$description = 'Expert computer consultation services in Pomona, CA. professional advice on PC purchases, upgrades, software selection, and technology planning for your home or business. Serving LA, San Bernardino, Riverside, and Orange counties.';
+			$keywords = 'consultoría de computadoras, consultoría de TI Pomona, consultoría tecnológica, asesoría informática, guía de compra de PC, consulta de soporte técnico, consultoría de TI empresarial, consulta de redes, recomendaciones de software, consultoría de hardware, asesoría para configuración de computadoras, planeación tecnológica, evaluación de TI, diagnóstico de sistemas computacionales';
+			$description = 'Servicios expertos de consultoría en computación en Pomona, CA. Asesoría profesional en compra de equipos, actualizaciones de PC, selección de software y planeación tecnológica para su hogar o negocio. Atendiendo los condados de LA, San Bernardino, Riverside y Orange.';
 			include 'services/consultations.php';
 			break;
 
 		case 'serviciosGestionados':
 			$page = new Structure('../../', 'español', 'Servicios Gestionados');
-			$keywords = 'managed IT services Pomona, IT support for small business, remote IT management, network monitoring, proactive IT support, IT maintenance services, managed cybersecurity, IT support contracts, business IT services, outsourced IT support, IT management services, remote monitoring and management, IT support packages, proactive IT maintenance, managed IT solutions';
-			$description = 'Professional managed IT services in Pomona, CA. proactive IT support provided, network monitoring, cybersecurity, and remote management for small businesses. Serving LA, San Bernardino, Riverside, and Orange counties.';
+			$keywords = 'servicios de TI gestionados Pomona, soporte de TI para pequeñas empresas, administración remota de TI, monitoreo de redes, soporte técnico proactivo, servicios de mantenimiento de TI, ciberseguridad administrada, contratos de soporte de TI, servicios de TI para empresas, soporte de TI tercerizado, servicios de administración informática, monitoreo y gestión remota, paquetes de soporte de TI, mantenimiento proactivo de TI, soluciones de TI gestionadas';
+			$description = 'Servicios profesionales de TI gestionados en Pomona, CA. Soporte técnico proactivo, monitoreo de redes, ciberseguridad y administración remota para pequeñas empresas. Brindando servicio a los condados de Los Ángeles, San Bernardino, Riverside y Orange.';
 			include 'services/managedServices.php';
 			break;
 
 		case 'sitiosWeb':
 			$page = new Structure('../../', 'español', 'Paginas Web');
-			$keywords = 'website design Pomona, small business website, affordable website design, professional website, local business website, e-commerce website, website development Pomona, custom website design, business website design, website design packages, responsive website, modern website design, website design services, business website development, website design for small business';
-			$description = 'Affordable website design services in Pomona, CA. professional, custom websites for small businesses with packages starting at $750. Serving LA, San Bernardino, Riverside, and Orange counties.';
+			$keywords = 'diseño de páginas web Pomona, páginas web para pequeñas empresas, diseño web económico, sitios web profesionales, páginas web para negocios locales, comercio electrónico, desarrollo web Pomona, diseño de páginas web personalizadas, diseño web para empresas, paquetes de diseño web, páginas web responsivas, diseño web moderno, servicios de diseño web, desarrollo de páginas web comerciales, diseño web para pequeñas empresas';
+			$description = 'Servicios accesibles de diseño de páginas web en Pomona, CA. Sitios web profesionales y personalizados para pequeñas empresas con paquetes desde $750. Sirviendo a los condados de LA, San Bernardino, Riverside y Orange.';
 			include 'services/websites.php';
 			break;
 
 		case 'soporteRemoto':
 			$page = new Structure('../../', 'español', 'Soporte Remoto');
-			$keywords = 'remote computer repair, remote IT support Pomona, remote PC help, remote technical support, remote computer assistance, online computer repair, remote software support, remote troubleshooting, remote IT services, remote computer helpdesk, remote PC support, remote technical assistance, remote computer maintenance, remote IT help, remote computer services';
-			$description = 'Professional remote computer repair services in Pomona, CA. fast and secure remote IT support for PCs and Macs, including troubleshooting, software installation, and technical assistance. Serving LA, San Bernardino, Riverside, and Orange counties.';
+			$keywords = 'reparación remota de computadoras, soporte técnico remoto Pomona, ayuda informática remota, asistencia técnica remota, reparación de computadoras en línea, soporte remoto de software, resolución de problemas a distancia, servicios remotos de TI, mesa de ayuda remota, soporte de PC a distancia, asistencia técnica de cómputo, mantenimiento remoto de computadoras, ayuda técnica remota, servicios informáticos remotos';
+			$description = 'Servicios profesionales de reparación remota de computadoras en Pomona, CA. Soporte técnico a distancia rápido y seguro para PC y Mac, incluyendo solución de problemas, instalación de software y asistencia técnica. Atendiendo los condados de LA, San Bernardino, Riverside y Orange.';
 			include 'services/remoteSupport.php';
 			break;
 

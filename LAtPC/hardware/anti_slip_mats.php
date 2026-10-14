@@ -21,52 +21,143 @@ global $content, $key;
         <div class="colms2">
             <p class="sub_sub_title spacer_shape"><?= $content[3354][$key] ?? ''; ?></p>
             <ul>
-                <li tabindex="0" class="selection card2"><strong><?= $content[3355][$key] ?? ''; ?></strong>
+                <li tabindex="0" class="selection card2">
+                    <strong><?= $content[3355][$key] ?? ''; ?></strong>
                     <span tabindex="0" class="selection_2 card2"><?= $content[3356][$key] ?? ''; ?></span>
-                    <img src="../images/artificialintelligence/[4]/cyber[4]1.jpeg" class="fl card2"
-                        alt="Surface Grip" width="100px">
+                    <div class="carousel-group fl" style="margin: 5px 10px 5px 0;">
+                        <div class="multi-link-container">
+                            <div class="thumbnail-container">
+                                <span tabindex="0" class="linked-text-img" role="button" aria-label="Surface Grip">
+                                    <img src="../images/artificialintelligence/[4]/cyber[4]1_thumb.webp"
+                                         alt="Surface Grip"
+                                         title="Surface Grip"
+                                         loading="lazy"
+                                         style="max-width: 100px; height: auto;" />
+                                </span>
+                            </div>
+                            <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
+                        </div>
+                    </div>
                     <span tabindex="0" class="selection_2 card2"><?= $content[3357][$key] ?? ''; ?></span>
                 </li>
 
-                <li tabindex="0" class="selection card2"><strong><?= $content[3358][$key] ?? ''; ?></strong>
+                <li tabindex="0" class="selection card2">
+                    <strong><?= $content[3358][$key] ?? ''; ?></strong>
                     <span tabindex="0" class="selection_2 card2"><?= $content[3359][$key] ?? ''; ?></span>
-                    <img src="../images/artificialintelligence/[4]/cyber[4]2.jpeg" class="fl card2"
-                        alt="Protection" width="100px">
+                    <div class="carousel-group fl" style="margin: 5px 10px 5px 0;">
+                        <div class="multi-link-container">
+                            <div class="thumbnail-container">
+                                <span tabindex="0" class="linked-text-img" role="button" aria-label="Desk Protection">
+                                    <img src="../images/artificialintelligence/[4]/cyber[4]2_thumb.webp"
+                                         alt="Protection"
+                                         title="Desk Protection"
+                                         loading="lazy"
+                                         style="max-width: 100px; height: auto;" />
+                                </span>
+                            </div>
+                            <div class="image-dialog" data-carousel="true" data-start-index="1"></div>
+                        </div>
+                    </div>
                     <span tabindex="0" class="selection_2 card2"><?= $content[3360][$key] ?? ''; ?></span>
                 </li>
 
-                <li tabindex="0" class="selection card2"><strong><?= $content[3361][$key] ?? ''; ?></strong>
+                <li tabindex="0" class="selection card2">
+                    <strong><?= $content[3361][$key] ?? ''; ?></strong>
                     <span tabindex="0" class="selection_2 card2"><?= $content[3362][$key] ?? ''; ?></span>
-                    <img src="../images/artificialintelligence/[4]/cyber[4]3.jpeg" class="fl card2"
-                        alt="Stability" width="100px">
+                    <div class="carousel-group fl" style="margin: 5px 10px 5px 0;">
+                        <div class="multi-link-container">
+                            <div class="thumbnail-container">
+                                <span tabindex="0" class="linked-text-img" role="button" aria-label="Equipment Stability">
+                                    <img src="../images/artificialintelligence/[4]/cyber[4]3_thumb.webp"
+                                         alt="Stability"
+                                         title="Equipment Stability"
+                                         loading="lazy"
+                                         style="max-width: 100px; height: auto;" />
+                                </span>
+                            </div>
+                            <div class="image-dialog" data-carousel="true" data-start-index="2"></div>
+                        </div>
+                    </div>
                     <span tabindex="0" class="selection_2 card2"><?= $content[3363][$key] ?? ''; ?></span>
                 </li>
 
-                <li tabindex="0" class="selection card2"><strong><?= $content[3364][$key] ?? ''; ?></strong>
-                    <span tabindex="0" class="selection_2 card2"><?= $content[3365][$key] ?? ''; ?> <img
-                            src="../images/artificialintelligence/[4]/cyber[4]4.jpeg"
-                            class="fl card2" alt="Reduced Strain"
-                            width="100px"><?= $content[3366][$key] ?? ''; ?></span>
+                <li tabindex="0" class="selection card2">
+                    <strong><?= $content[3364][$key] ?? ''; ?></strong>
+                    <span tabindex="0" class="selection_2 card2"><?= $content[3365][$key] ?? ''; ?></span>
+                    <div class="carousel-group fl" style="margin: 5px 10px 5px 0;">
+                        <div class="multi-link-container">
+                            <div class="thumbnail-container">
+                                <span tabindex="0" class="linked-text-img" role="button" aria-label="Reduced Strain">
+                                    <img src="../images/artificialintelligence/[4]/cyber[4]4_thumb.webp"
+                                         alt="Reduced Strain"
+                                         title="Reduced Strain"
+                                         loading="lazy"
+                                         style="max-width: 100px; height: auto;" />
+                                </span>
+                            </div>
+                            <div class="image-dialog" data-carousel="true" data-start-index="3"></div>
+                        </div>
+                    </div>
+                    <span tabindex="0" class="selection_2 card2"><?= $content[3366][$key] ?? ''; ?></span>
                 </li>
 
-                <li tabindex="0" class="selection card2"><strong><?= $content[3367][$key] ?? ''; ?></strong>
+                <li tabindex="0" class="selection card2">
+                    <strong><?= $content[3367][$key] ?? ''; ?></strong>
                     <span tabindex="0" class="selection_2 card2"><?= $content[3368][$key] ?? ''; ?></span>
-                    <img src="../images/artificialintelligence/[4]/cyber[4]5.jpeg" class="fl card2"
-                        alt="Noise Reduction" width="100px">
+                    <div class="carousel-group fl" style="margin: 5px 10px 5px 0;">
+                        <div class="multi-link-container">
+                            <div class="thumbnail-container">
+                                <span tabindex="0" class="linked-text-img" role="button" aria-label="Noise Reduction">
+                                    <img src="../images/artificialintelligence/[4]/cyber[4]5_thumb.webp"
+                                         alt="Noise Reduction"
+                                         title="Noise Reduction"
+                                         loading="lazy"
+                                         style="max-width: 100px; height: auto;" />
+                                </span>
+                            </div>
+                            <div class="image-dialog" data-carousel="true" data-start-index="4"></div>
+                        </div>
+                    </div>
                     <span tabindex="0" class="selection_2 card2"><?= $content[3369][$key] ?? ''; ?></span>
                 </li>
 
-                <li tabindex="0" class="selection card2"><strong><?= $content[3370][$key] ?? ''; ?></strong>
+                <li tabindex="0" class="selection card2">
+                    <strong><?= $content[3370][$key] ?? ''; ?></strong>
                     <span tabindex="0" class="selection_2 card2"><?= $content[3371][$key] ?? ''; ?></span>
-                    <img src="../images/artificialintelligence/[4][1]/cyber[4][1]2.jpeg"
-                        class="fl card2" alt="Customization" width="100px">
+                    <div class="carousel-group fl" style="margin: 5px 10px 5px 0;">
+                        <div class="multi-link-container">
+                            <div class="thumbnail-container">
+                                <span tabindex="0" class="linked-text-img" role="button" aria-label="Workspace Customization">
+                                    <img src="../images/artificialintelligence/[4][1]/cyber[4][1]2_thumb.webp"
+                                         alt="Customization"
+                                         title="Workspace Customization"
+                                         loading="lazy"
+                                         style="max-width: 100px; height: auto;" />
+                                </span>
+                            </div>
+                            <div class="image-dialog" data-carousel="true" data-start-index="5"></div>
+                        </div>
+                    </div>
                     <span tabindex="0" class="selection_2 card2"><?= $content[3372][$key] ?? ''; ?></span>
                 </li>
 
-                <li tabindex="0" class="selection card2"><strong><?= $content[3373][$key] ?? ''; ?></strong>
+                <li tabindex="0" class="selection card2">
+                    <strong><?= $content[3373][$key] ?? ''; ?></strong>
                     <span tabindex="0" class="selection_2 card2"><?= $content[3374][$key] ?? ''; ?></span>
-                    <img src="../images/artificialintelligence/[4][1]/cyber[4][1]2.jpeg"
-                        class="fl card2" alt="Easy to Clean" width="100px">
+                    <div class="carousel-group fl" style="margin: 5px 10px 5px 0;">
+                        <div class="multi-link-container">
+                            <div class="thumbnail-container">
+                                <span tabindex="0" class="linked-text-img" role="button" aria-label="Easy to Clean">
+                                    <img src="../images/artificialintelligence/[4][1]/cyber[4][1]0_thumb.webp"
+                                         alt="Easy to Clean"
+                                         title="Easy to Clean"
+                                         loading="lazy"
+                                         style="max-width: 100px; height: auto;" />
+                                </span>
+                            </div>
+                            <div class="image-dialog" data-carousel="true" data-start-index="6"></div>
+                        </div>
+                    </div>
                     <span tabindex="0" class="selection_2 card2"><?= $content[3375][$key] ?? ''; ?></span>
                 </li>
             </ul>
@@ -254,3 +345,68 @@ global $content, $key;
         </tbody>
     </table>
 </article>
+
+    <!-- Carousel Modal Data Template -->
+    <template id="carousel-images">
+        <?php
+        $carouselItems = [
+            [
+                'original' => '../images/artificialintelligence/[4]/cyber[4]1.jpeg',
+                'webp'     => '../images/artificialintelligence/[4]/cyber[4]1.webp',
+                'title'    => 'Surface Grip & Anti-Slip Texture',
+                'link'     => 'https://en.wikipedia.org/wiki/Mousepad'
+            ],
+            [
+                'original' => '../images/artificialintelligence/[4]/cyber[4]2.jpeg',
+                'webp'     => '../images/artificialintelligence/[4]/cyber[4]2.webp',
+                'title'    => 'Desk Protection & Durability',
+                'link'     => 'https://en.wikipedia.org/wiki/Desk_pad'
+            ],
+            [
+                'original' => '../images/artificialintelligence/[4]/cyber[4]3.jpeg',
+                'webp'     => '../images/artificialintelligence/[4]/cyber[4]3.webp',
+                'title'    => 'Equipment Stability',
+                'link'     => 'https://en.wikipedia.org/wiki/Mousepad'
+            ],
+            [
+                'original' => '../images/artificialintelligence/[4]/cyber[4]4.jpeg',
+                'webp'     => '../images/artificialintelligence/[4]/cyber[4]4.webp',
+                'title'    => 'Ergonomic Strain Reduction',
+                'link'     => 'https://en.wikipedia.org/wiki/Ergonomics'
+            ],
+            [
+                'original' => '../images/artificialintelligence/[4]/cyber[4]5.jpeg',
+                'webp'     => '../images/artificialintelligence/[4]/cyber[4]5.webp',
+                'title'    => 'Noise Dampening & Acoustics',
+                'link'     => 'https://en.wikipedia.org/wiki/Acoustic_quieting'
+            ],
+            [
+                'original' => '../images/artificialintelligence/[4][1]/cyber[4][1]2.jpeg',
+                'webp'     => '../images/artificialintelligence/[4][1]/cyber[4][1]2.webp',
+                'title'    => 'Workspace Customization',
+                'link'     => 'https://en.wikipedia.org/wiki/Desk_pad'
+            ],
+            [
+                'original' => '../images/artificialintelligence/[4][1]/cyber[4][1]0.jpeg',
+                'webp'     => '../images/artificialintelligence/[4][1]/cyber[4][1]0.webp',
+                'title'    => 'Easy Maintenance & Cleaning',
+                'link'     => 'https://en.wikipedia.org/wiki/Desk_pad'
+            ]
+        ];
+
+        foreach($carouselItems as $index => $item):
+        ?>
+        <div class="carousel-item" data-image-index="<?= $index; ?>">
+            <a href="<?= $item['original']; ?>" target="_blank" rel="noopener">
+                <img data-src="<?= $item['webp']; ?>"
+                     src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+                     alt="<?= htmlspecialchars($item['title']); ?>">
+            </a>
+            <h4 class="img_link">
+                <a href="<?= htmlspecialchars($item['link']); ?>" title="<?= htmlspecialchars($item['title']); ?>" target="_blank" rel="noopener">
+                    <?= htmlspecialchars($item['title']); ?>
+                </a>
+            </h4>
+        </div>
+        <?php endforeach; ?>
+    </template>

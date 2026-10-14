@@ -34,10 +34,18 @@ $links = [
             <?= $content[418][$key] ?? ''; ?>
         </p>
         <div class="container fullbar">
-            <div class="rtl">
-                <a rel="example_group" href="../images/hardware/hw/cooling/coolers.jpg" title="Chilling Cooler">
-                    <img src="../images/hardware/hw/cooling/coolers.webp" alt="Chilling Cooler">
-                </a>
+            <div class="carousel-group rtl">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img" role="button" aria-label="Chilling Cooler">
+                            <img src="../images/hardware/hw/cooling/coolers_thumb.webp"
+                                 alt="Chilling Cooler"
+                                 title="Chilling Cooler"
+                                 loading="lazy" />
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
+                </div>
             </div>
             <p>
                 <span style="font-size: x-large;"><?= $content[419][$key] ?? ''; ?></span>
@@ -75,9 +83,20 @@ $links = [
                 </h2>
             </summary>
             <fieldset class="container card2">
-                <a rel="example_group" href="../images/hardware/hw/cooling/lasers.jpg" title="Laser Cooling" class="rtl">
-                    <img src="../images/hardware/hw/cooling/lasers.webp" alt="Laser Cooling" height="120px" width="120px">
-                </a>
+                <div class="carousel-group rtl">
+                    <div class="multi-link-container">
+                        <div class="thumbnail-container">
+                            <span tabindex="0" class="linked-text-img" role="button" aria-label="Laser Cooling">
+                                <img src="../images/hardware/hw/cooling/lasers_thumb.webp"
+                                     alt="Laser Cooling"
+                                     title="Laser Cooling"
+                                     loading="lazy"
+                                     style="max-height: 120px; width: auto;" />
+                            </span>
+                        </div>
+                        <div class="image-dialog" data-carousel="true" data-start-index="1"></div>
+                    </div>
+                </div>
                 <p>
                     <?= $content[434][$key] ?? ''; ?>
                 </p>
@@ -123,25 +142,58 @@ $links = [
                 <li class="card2">
                     <h2 id="fans"><?= $content[444][$key] ?? ''; ?></h2>
                     <p><?= $content[445][$key] ?? ''; ?></p>
-                    <a rel="example_group" href="../images/hardware/hw/cooling/aircool.jpg" class="fl" title="Air Cooling">
-                        <img src="../images/hardware/hw/cooling/aircool.webp" height="100px" alt="Air Cooling">
-                    </a>
+                    <div class="carousel-group fl">
+                        <div class="multi-link-container">
+                            <div class="thumbnail-container">
+                                <span tabindex="0" class="linked-text-img" role="button" aria-label="Air Cooling">
+                                    <img src="../images/hardware/hw/cooling/aircool_thumb.webp"
+                                         alt="Air Cooling"
+                                         title="Air Cooling"
+                                         loading="lazy"
+                                         style="max-height: 100px; width: auto;" />
+                                </span>
+                            </div>
+                            <div class="image-dialog" data-carousel="true" data-start-index="2"></div>
+                        </div>
+                    </div>
                     <p><?= $content[446][$key] ?? ''; ?></p>
                 </li>
                 <li class="card2">
                     <h2 id="liquid-coolers"><?= $content[447][$key] ?? ''; ?></h2>
                     <p><?= $content[448][$key] ?? ''; ?></p>
-                    <a rel="example_group" href="../images/hardware/hw/cooling/liquid.jpg" class="fl" title="Liquid Cooling">
-                        <img src="../images/hardware/hw/cooling/liquid.webp" height="100px" alt="Liquid Cooling">
-                    </a>
+                    <div class="carousel-group fl">
+                        <div class="multi-link-container">
+                            <div class="thumbnail-container">
+                                <span tabindex="0" class="linked-text-img" role="button" aria-label="Liquid Cooling">
+                                    <img src="../images/hardware/hw/cooling/liquid_thumb.webp"
+                                         alt="Liquid Cooling"
+                                         title="Liquid Cooling"
+                                         loading="lazy"
+                                         style="max-height: 100px; width: auto;" />
+                                </span>
+                            </div>
+                            <div class="image-dialog" data-carousel="true" data-start-index="3"></div>
+                        </div>
+                    </div>
                     <p><?= $content[449][$key] ?? ''; ?></p>
                 </li>
                 <li class="card2">
                     <h2 id="solid-state-coolers"><?= $content[450][$key] ?? ''; ?></h2>
                     <p><?= $content[451][$key] ?? ''; ?></p>
-                    <a rel="example_group" href="../images/hardware/hw/cooling/ssc.jpg" class="fl" title="Solid-State Cooling">
-                        <img src="../images/hardware/hw/cooling/ssc.webp" height="100px" alt="Solid-State Cooling">
-                    </a>
+                    <div class="carousel-group fl">
+                        <div class="multi-link-container">
+                            <div class="thumbnail-container">
+                                <span tabindex="0" class="linked-text-img" role="button" aria-label="Solid-State Cooling">
+                                    <img src="../images/hardware/hw/cooling/ssc_thumb.webp"
+                                         alt="Solid-State Cooling"
+                                         title="Solid-State Cooling"
+                                         loading="lazy"
+                                         style="max-height: 100px; width: auto;" />
+                                </span>
+                            </div>
+                            <div class="image-dialog" data-carousel="true" data-start-index="4"></div>
+                        </div>
+                    </div>
                     <p><?= $content[452][$key] ?? ''; ?></p>
                 </li>
                 <li class="card2">
@@ -151,25 +203,58 @@ $links = [
                         <a href="<?= $links[7]; ?>"><?= $content[455][$key] ?? ''; ?></a>
                         <?= $content[456][$key] ?? ''; ?>
                     </p>
-                    <a rel="example_group" href="../images/hardware/hw/cooling/tec.jpg" class="rtl" title="Thermoelectric Coolers">
-                        <img src="../images/hardware/hw/cooling/tec.webp" height="100px" alt="TECs">
-                    </a>
+                    <div class="carousel-group rtl">
+                        <div class="multi-link-container">
+                            <div class="thumbnail-container">
+                                <span tabindex="0" class="linked-text-img" role="button" aria-label="Thermoelectric Coolers">
+                                    <img src="../images/hardware/hw/cooling/tec_thumb.webp"
+                                         alt="TECs"
+                                         title="Thermoelectric Coolers"
+                                         loading="lazy"
+                                         style="max-height: 100px; width: auto;" />
+                                </span>
+                            </div>
+                            <div class="image-dialog" data-carousel="true" data-start-index="5"></div>
+                        </div>
+                    </div>
                     <p><?= $content[457][$key] ?? ''; ?></p>
                 </li>
                 <li class="card2">
                     <h2 id="hybrid-coolers"><?= $content[458][$key] ?? ''; ?></h2>
                     <p><?= $content[459][$key] ?? ''; ?></p>
-                    <a rel="example_group" href="../images/hardware/hw/cooling/hybrid.jpg" class="rtl" title="Hybrid Cooling">
-                        <img src="../images/hardware/hw/cooling/hybrid.webp" height="100px" alt="Hybrid Cooling">
-                    </a>
+                    <div class="carousel-group rtl">
+                        <div class="multi-link-container">
+                            <div class="thumbnail-container">
+                                <span tabindex="0" class="linked-text-img" role="button" aria-label="Hybrid Cooling">
+                                    <img src="../images/hardware/hw/cooling/hybrid_thumb.webp"
+                                         alt="Hybrid Cooling"
+                                         title="Hybrid Cooling"
+                                         loading="lazy"
+                                         style="max-height: 100px; width: auto;" />
+                                </span>
+                            </div>
+                            <div class="image-dialog" data-carousel="true" data-start-index="6"></div>
+                        </div>
+                    </div>
                     <p><?= $content[460][$key] ?? ''; ?></p>
                 </li>
                 <li class="card2">
                     <h2 id="phase-change-cooling"><?= $content[461][$key] ?? ''; ?></h2>
                     <p><?= $content[462][$key] ?? ''; ?></p>
-                    <a rel="example_group" href="../images/hardware/hw/cooling/pcc.jpg" class="rtl" title="Phase Change Cooling">
-                        <img src="../images/hardware/hw/cooling/pcc.webp" height="100px" alt="Phase Change Cooling">
-                    </a>
+                    <div class="carousel-group rtl">
+                        <div class="multi-link-container">
+                            <div class="thumbnail-container">
+                                <span tabindex="0" class="linked-text-img" role="button" aria-label="Phase Change Cooling">
+                                    <img src="../images/hardware/hw/cooling/pcc_thumb.webp"
+                                         alt="Phase Change Cooling"
+                                         title="Phase Change Cooling"
+                                         loading="lazy"
+                                         style="max-height: 100px; width: auto;" />
+                                </span>
+                            </div>
+                            <div class="image-dialog" data-carousel="true" data-start-index="7"></div>
+                        </div>
+                    </div>
                     <p><?= $content[463][$key] ?? ''; ?></p>
                 </li>
             </ul>
@@ -202,3 +287,74 @@ $links = [
         <p><?= $content[475][$key] ?? ''; ?></p>
     </section>
 </article>
+
+    <!-- Carousel Modal Data Template -->
+    <template id="carousel-images">
+        <?php
+        $carouselItems = [
+            [
+                'original' => '../images/hardware/hw/cooling/coolers.jpg',
+                'webp'     => '../images/hardware/hw/cooling/coolers.webp',
+                'title'    => 'Chilling Cooler',
+                'link'     => $links[0]
+            ],
+            [
+                'original' => '../images/hardware/hw/cooling/lasers.jpg',
+                'webp'     => '../images/hardware/hw/cooling/lasers.webp',
+                'title'    => 'Laser Cooling',
+                'link'     => $links[4]
+            ],
+            [
+                'original' => '../images/hardware/hw/cooling/aircool.jpg',
+                'webp'     => '../images/hardware/hw/cooling/aircool.webp',
+                'title'    => 'Air Cooling',
+                'link'     => 'https://en.wikipedia.org/wiki/Computer_cooling#Air_cooling'
+            ],
+            [
+                'original' => '../images/hardware/hw/cooling/liquid.jpg',
+                'webp'     => '../images/hardware/hw/cooling/liquid.webp',
+                'title'    => 'Liquid Cooling',
+                'link'     => 'https://en.wikipedia.org/wiki/Water_cooling'
+            ],
+            [
+                'original' => '../images/hardware/hw/cooling/ssc.jpg',
+                'webp'     => '../images/hardware/hw/cooling/ssc.webp',
+                'title'    => 'Solid-State Cooling',
+                'link'     => 'https://en.wikipedia.org/wiki/Thermoelectric_cooling'
+            ],
+            [
+                'original' => '../images/hardware/hw/cooling/tec.jpg',
+                'webp'     => '../images/hardware/hw/cooling/tec.webp',
+                'title'    => 'Thermoelectric Coolers',
+                'link'     => $links[7]
+            ],
+            [
+                'original' => '../images/hardware/hw/cooling/hybrid.jpg',
+                'webp'     => '../images/hardware/hw/cooling/hybrid.webp',
+                'title'    => 'Hybrid Cooling',
+                'link'     => 'https://en.wikipedia.org/wiki/Computer_cooling'
+            ],
+            [
+                'original' => '../images/hardware/hw/cooling/pcc.jpg',
+                'webp'     => '../images/hardware/hw/cooling/pcc.webp',
+                'title'    => 'Phase Change Cooling',
+                'link'     => 'https://en.wikipedia.org/wiki/Phase-change_cooling'
+            ]
+        ];
+
+        foreach($carouselItems as $index => $item):
+        ?>
+        <div class="carousel-item" data-image-index="<?= $index; ?>">
+            <a href="<?= $item['original']; ?>" target="_blank" rel="noopener">
+                <img data-src="<?= $item['webp']; ?>"
+                     src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+                     alt="<?= htmlspecialchars($item['title']); ?>">
+            </a>
+            <h4 class="img_link">
+                <a href="<?= htmlspecialchars($item['link']); ?>" title="<?= htmlspecialchars($item['title']); ?>" target="_blank" rel="noopener">
+                    <?= htmlspecialchars($item['title']); ?>
+                </a>
+            </h4>
+        </div>
+        <?php endforeach; ?>
+    </template>

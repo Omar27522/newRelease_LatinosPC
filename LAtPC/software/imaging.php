@@ -74,7 +74,16 @@ echo "</div>";
                 <p class="selection" tabindex="0">
                     <?= $content[402][$key] ?? ''; ?>
                 </p>
-                <img src="https://www.w3schools.com/w3images/photographer.jpg" alt="Photographer" style="width:100%;max-width:400px;margin-top:16px;">
+                <div class="carousel-group" style="margin-top:16px;">
+                    <div class="multi-link-container">
+                        <div class="thumbnail-container">
+                            <span tabindex="0" class="linked-text-img" role="button" aria-label="Digital Photography and Imaging">
+                                <img src="../images/gallery/35mm_thumb.webp" alt="Photographer" style="width:100%;max-width:400px;" loading="lazy">
+                            </span>
+                        </div>
+                        <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
+                    </div>
+                </div>
             </div>
             <div class="item">
                 <h3><?= $content[403][$key] ?? ''; ?></h3>
@@ -174,3 +183,16 @@ echo "</div>";
         </aside>
     </div>
 </article>
+
+<template id="carousel-images">
+    <div class="carousel-item">
+        <a href="#ps2">
+            <img data-src="../images/gallery/35mm.webp"
+                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+                 alt="Digital Photography and Imaging">
+        </a>
+        <h4 class="img_link">
+            <a href="#ps2">Digital Photography and Imaging</a>
+        </h4>
+    </div>
+</template>

@@ -1,9 +1,12 @@
 :root {
-  --primary-color: #0056b3; /* Darkened for better contrast */
-  --primary-dark: #082d45; /* Standardized to hex */
+  --primary-color: #0056b3;
+  /* Darkened for better contrast */
+  --primary-dark: #082d45;
+  /* Standardized to hex */
 
   --secondary-color: #218838;
-  --secondary-dark: #155724; /* Darker green for AA contrast */
+  --secondary-dark: #155724;
+  /* Darker green for AA contrast */
 
   --text-color: #1a1e21;
   --light-text: #343a40;
@@ -18,7 +21,8 @@
   --transition: all 0.25s ease-in-out;
   --link-bg: rgba(0, 86, 179, 0.1);
 
-  --bannerAndFooter-bg: #daedfb; /* Slightly darker blue for contrast */
+  --bannerAndFooter-bg: #daedfb;
+  /* Slightly darker blue for contrast */
 }
 
 * {
@@ -51,6 +55,10 @@ body {
   color: var(--text-color);
   background-color: var(--background);
   padding-top: 20px;
+}
+
+H2 {
+  font-family: manuscript;
 }
 
 header {
@@ -87,102 +95,112 @@ header p {
   text-decoration: none;
   transition: color 0.3s ease;
 }
+
 .fullbar a:link {
   color: var(--primary-dark);
 }
+
 .fullbar a:visited {
   color: var(--primary-color);
 }
+
 .fullbar a:hover {
   color: var(--secondary-dark);
   background-color: var(--link-bg);
   border-radius: 25%;
   box-decoration-break: clone;
 }
+
 .fullbar a:active {
   color: var(--secondary-dark);
 }
+
 .fullbar a:focus {
   color: var(--secondary-color);
 }
+
 /* ===================================
    Logo, phone, and banner STYLES
                                     ~Refer to navMenu.css for nav menu~
 =================================== */
 @font-face {
-    font-family: manuscript;
-    src: url(../anvil/font.ttf);
+  font-family: manuscript;
+  src: url(../anvil/font.ttf);
 }
+
 .logos {
-    color: var(--light-text);
-    /* Light text color */
-    font-family: manuscript;
-    position: relative;
-    /* For potential absolute positioning of elements inside */
-    overflow: hidden;
-    /* To contain any potential animations */
+  color: var(--light-text);
+  /* Light text color */
+  font-family: manuscript;
+  position: relative;
+  /* For potential absolute positioning of elements inside */
+  overflow: hidden;
+  /* To contain any potential animations */
 }
 
 .logos span {
-    font-weight: bold;
-    letter-spacing: 2px;
-    /* Add some letter spacing */
-    text-shadow: 1px 1px 2px (var(--secondary-dark));
-    /* Text shadow for depth */
+  font-weight: bold;
+  letter-spacing: 2px;
+  /* Add some letter spacing */
+  text-shadow: 1px 1px 2px (var(--secondary-dark));
+  /* Text shadow for depth */
 }
 
 .logos span:first-child {
-    color: var(--primary-dark);
-    /* Highlight the "LA" part with a vibrant color */
+  color: var(--primary-dark);
+  /* Highlight the "LA" part with a vibrant color */
 }
 
 .logos span:nth-child(2) {
-    color: var(--primary-dark);
-    /* Highlight the "tinos" part with another color */
+  color: var(--primary-dark);
+  /* Highlight the "tinos" part with another color */
 }
 
 .logos small {
-    display: block;
-    /* Make the small text appear on a new line */
-    font-size: 0.5em;
-    color: var(--light-text);
-    /* Muted color for the small text */
-    font-style: italic;
-    padding-right: 10%;
+  display: block;
+  /* Make the small text appear on a new line */
+  font-size: 0.5em;
+  color: var(--light-text);
+  /* Muted color for the small text */
+  font-style: italic;
+  padding-right: 10%;
 }
 
 header .logo {
-    font-size: calc(3vw + 3vh);
-    display: inline;
-    float: left;
-    width: 100%;
+  font-size: calc(3vw + 3vh);
+  display: inline;
+  float: left;
+  width: 100%;
 }
 
 header small.rtl {
-    margin:4px 4px 16px 0;
-    float:right;
-    max-width: 100%;
+  margin: 4px 4px 16px 0;
+  float: right;
+  max-width: 100%;
 }
 
 .phone {
-    color: var(--secondary-dark);
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    right: 5%
+  color: var(--secondary-dark);
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  right: 5%
 }
+
 /* ===================================
    IMAGES STYLES
 =================================== */
 img {
-    background-color: var(--background);
-    padding: 10px;
-    border: 1px solid #b7b7b7;
+  background-color: var(--background);
+  padding: 10px;
+  border: 1px solid #b7b7b7;
 }
+
 .fl {
   margin: 4px 16px 4px 0;
   float: left;
 }
+
 .img_fl {
   margin: 4px 16px 4px 0;
   float: left;
@@ -193,6 +211,7 @@ img {
   margin: 4px 4px 16px 0;
   float: right;
 }
+
 .img_rtl {
   margin: 4px 4px 16px 0;
   float: right;
@@ -214,6 +233,51 @@ img {
 
 .linked-text {
   cursor: pointer;
+}
+
+.linked-text-img {
+  display: inline-block;
+  cursor: pointer;
+  line-height: 0;
+  border-radius: var(--border-radius);
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s ease, opacity 0.2s ease;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.linked-text-img:hover {
+  transform: translateY(-2px) scale(1.02);
+  opacity: 0.95;
+}
+
+.linked-text-img:focus-visible {
+  outline: 2px solid var(--primary-color, #0284c7);
+  outline-offset: 3px;
+  border-radius: var(--border-radius);
+}
+
+.linked-text-img:active {
+  transform: scale(0.97);
+}
+
+.thumbnail-container {
+  display: inline-block;
+  position: relative;
+  line-height: 0;
+  max-width: 100%;
+}
+
+.thumbnail-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  transition: opacity 0.3s ease;
+}
+
+.carousel-group {
+  display: inline-block;
+  position: relative;
 }
 
 .link-dialog {
@@ -246,8 +310,8 @@ img {
 }
 
 .link-dialog p {
-    margin-bottom: 1rem;
-    display: inline-block;
+  margin-bottom: 1rem;
+  display: inline-block;
 }
 
 .link-dialog p:hover,
@@ -264,12 +328,17 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--dialog-background);
+  background: rgba(10, 15, 29, 0.78);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   z-index: 999;
+  opacity: 0;
+  transition: opacity 0.24s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .dialog-backdrop.active {
   display: block;
+  opacity: 1;
 }
 
 /* ===================================
@@ -279,22 +348,9 @@ img {
 template {
   display: none !important;
 }
+
 /* Hide carousel items in image-dialog until dialog is opened */
 .image-dialog .carousel-item {
-  display: none;
-}
-
-/* Show carousel items only when dialog is visible */
-.image-dialog.visible .carousel-item {
-  display: block;
-}
-
-/* Show only the active carousel item */
-.image-dialog.visible .carousel-item.active {
-  display: block;
-}
-
-.image-dialog.visible .carousel-item:not(.active) {
   display: none;
 }
 
@@ -306,11 +362,15 @@ template {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   z-index: 1000;
   justify-content: center;
   align-items: center;
-  cursor: pointer; /* Show pointer cursor on background */
+  cursor: pointer;
+  padding: 1.5rem;
+  box-sizing: border-box;
 }
 
 .image-dialog.visible {
@@ -319,45 +379,99 @@ template {
 
 .image-dialog .carousel-item {
   text-align: center;
-  color: var(--card-bg);
-  cursor: default; /* Reset cursor for content area */
-  pointer-events: auto; /* Allow interactions with content */
+  color: var(--card-bg, #ffffff);
+  cursor: default;
+  pointer-events: auto;
+  max-width: 92vw;
+  max-height: 90vh;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: dialogFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Show only the active carousel item when dialog is visible */
+.image-dialog.visible .carousel-item.active {
+  display: flex;
+}
+
+.image-dialog.visible .carousel-item:not(.active) {
+  display: none;
 }
 
 .image-dialog .carousel-item img {
-  max-width: 90%;
-  max-height: 80vh;
+  max-width: 90vw;
+  max-height: 78vh;
+  width: auto;
+  height: auto;
   object-fit: contain;
-  cursor: default; /* Normal cursor on image */
+  border-radius: var(--border-radius);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
+  cursor: default;
+  display: block;
+  margin: 0 auto;
 }
 
+.image-dialog .carousel-item h4.img_link,
 .image-dialog .carousel-item p {
-  margin-top: 10px;
-  cursor: default; /* Normal cursor on text */
+  margin-top: 14px;
+  font-size: 1rem;
+  cursor: default;
   text-align: center;
 }
 
-.image-dialog .carousel-item p a{
-  background-color: var(--dialog-background);
-  padding: 5px;
+.image-dialog .carousel-item h4.img_link a,
+.image-dialog .carousel-item p a {
+  background-color: rgba(15, 23, 42, 0.88);
+  color: #ffffff;
+  padding: 7px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.92rem;
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
 }
+
+.image-dialog .carousel-item h4.img_link a:hover,
+.image-dialog .carousel-item p a:hover {
+  background-color: var(--primary-color, #0284c7);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-1px);
+}
+
+@keyframes dialogFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 /* ===================================
    FOOTER STYLES
 =================================== */
 footer p {
-    text-align: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: var(--bannerAndFooter-bg);
-    color: var(--secondary-dark);
-    box-shadow: var(--box-shadow);
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--bannerAndFooter-bg);
+  color: var(--secondary-dark);
+  box-shadow: var(--box-shadow);
 }
 
 .footer-link-content {
-  text-decoration:none;
-color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
-.footer-link-content:visited  {
+
+.footer-link-content:visited {
   color: inherit;
 }
 
@@ -366,13 +480,13 @@ color: inherit;
    ANIMATIONS
 =================================== */
 @keyframes changePosition {
-    0% {
-        position: absolute;
-    }
+  0% {
+    position: absolute;
+  }
 
-    100% {
-        position: fixed;
-    }
+  100% {
+    position: fixed;
+  }
 }
 
 
@@ -388,26 +502,26 @@ color: inherit;
 /* ===================================
    Breadcrumb Navigation Styles
 =================================== */
-  .crumbs {
-      border-radius: 7px;
-      border-right: 4px solid var(--primary-color);
-      padding-top: -20px;
-  }
+.crumbs {
+  border-radius: 7px;
+  border-right: 4px solid var(--primary-color);
+  padding-top: -20px;
+}
 
-  .bread-crumbs {
-      display: flex;
-      font-family: manuscript;
-      gap: 10px;
-      justify-content: flex-end;
-  }
+.bread-crumbs {
+  display: flex;
+  font-family: manuscript;
+  gap: 10px;
+  justify-content: flex-end;
+}
 
-  .crumb-link {
-      padding: 10px;
-  }
+.crumb-link {
+  padding: 10px;
+}
 
-  .crumb-link b {
-      text-decoration: underline;
-  }
+.crumb-link b {
+  text-decoration: underline;
+}
 
 
 /* ===================================
@@ -425,7 +539,8 @@ color: inherit;
     padding: 1rem;
   }
 
-  header, .intro {
+  header,
+  .intro {
     padding: 1.5rem 1rem;
   }
 
@@ -468,24 +583,48 @@ color: inherit;
     padding: 0;
   }
 
+  /* Responsive image carousel & float reset for mobile */
+  .fl, .rtl, .img_fl, .img_rtl, .carousel-group {
+    float: none !important;
+    margin: 1rem auto !important;
+    display: block !important;
+    text-align: center;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .fl img, .rtl img, .img_fl img, .img_rtl img, .thumbnail-container img {
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 auto;
+  }
+
+  .image-dialog .carousel-item img {
+    max-width: 95vw;
+    max-height: 72vh;
+  }
+
   .bread-crumbs {
-        font-size: .85rem; /* Increased slightly for mobile */
-        gap: 12px; /* Restored healthy gap */
-    }
+    font-size: .85rem;
+    /* Increased slightly for mobile */
+    gap: 12px;
+    /* Restored healthy gap */
+  }
 
-    .crumb-link {
-        padding: 12px 15px; /* Increased touch target size */
-    }
+  .crumb-link {
+    padding: 12px 15px;
+    /* Increased touch target size */
+  }
 
-    .crumbs {
-        border-right: none;
-    }
+  .crumbs {
+    border-right: none;
+  }
 }
 
 @media (max-width: 500px) {
-    .bread-crumbs {
-        font-size: .5rem;
-        gap: 0;
+  .bread-crumbs {
+    font-size: .5rem;
+    gap: 0;
 
-    }
+  }
 }

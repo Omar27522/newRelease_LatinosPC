@@ -41,22 +41,22 @@ function seguridad_subninistrable($sub_route){
 	switch ($sub_route) {
 		case '':
 			$page = new Structure('../../', 'español', 'Seguridad');
-			$keywords = 'password security, strong passwords, password management, password manager, secure passwords, password best practices, password protection, password recovery, password reset, two-factor authentication, password vault, credential management, password tips, account security, password strength';
-			$description = 'Password security services and guidance in Pomona, CA. Learn to create strong passwords, use password managers, and protect your accounts. offered help with password setup, recovery, and implementing best practices for maximum security.';
+			$keywords = 'seguridad informática, ciberseguridad Pomona, protección de PC, seguridad de redes, seguridad digital, prevención de malware, privacidad de datos, computación segura';
+			$description = 'Servicios expertos de seguridad informática y ciberseguridad en Pomona, CA. Proteja sus dispositivos, datos y redes con medidas de protección comprobadas de LatinosPC.';
 			include 'security/security.php';
 			break;
 
 		case 'mejores_practicas':
 			$page = new Structure('../../', 'español', 'Mejores Prácticas');
-			$keywords = 'password security, strong passwords, password management, password manager, secure passwords, password best practices, password protection, password recovery, password reset, two-factor authentication, password vault, credential management, password tips, account security, password strength';
-			$description = 'Password security services and guidance in Pomona, CA. Learn to create strong passwords, use password managers, and protect your accounts. offered help with password setup, recovery, and implementing best practices for maximum security.';
+			$keywords = 'mejores prácticas de seguridad informática, consejos de ciberseguridad, pautas de seguridad para PC, seguridad en internet, buenas prácticas con contraseñas, navegación segura, protección de datos, prevención de malware, protección contra phishing, higiene digital, concientización de seguridad';
+			$description = 'Aprenda las mejores prácticas esenciales de seguridad informática para proteger su PC e información. Consejos expertos sobre contraseñas, navegación segura y prevención de malware de LatinosPC en Pomona, CA.';
 			include 'security/security.php';
 			break;
 
 		case 'respaldos':
 			$page = new Structure('../../', 'español', 'Respaldos');
-			$keywords = 'password security, strong passwords, password management, password manager, secure passwords, password best practices, password protection, password recovery, password reset, two-factor authentication, password vault, credential management, password tips, account security, password strength';
-			$description = 'Password security services and guidance in Pomona, CA. Learn to create strong passwords, use password managers, and protect your accounts. offered help with password setup, recovery, and implementing best practices for maximum security.';
+			$keywords = 'respaldo de computadoras, servicios de respaldo de datos, copia de seguridad en la nube, respaldo local, respaldos automáticos, recuperación de datos, soluciones de respaldo Pomona, respaldo en disco duro externo, recuperación ante desastres, protección de datos, respaldo seguro';
+			$description = 'Servicios profesionales de respaldo de computadoras en Pomona, CA. Proteja sus archivos y datos importantes con soluciones de respaldo locales, automáticas y en la nube. Prevención ante desastres y recuperación de datos.';
 			include 'security/security.php';
 			break;
 
@@ -64,8 +64,8 @@ function seguridad_subninistrable($sub_route){
 		case 'contrasenas':
 		case 'contraseñas':
 			$page = new Structure('../../', 'español', 'Contraseñas');
-			$keywords = 'password security, strong passwords, password management, password manager, secure passwords, password best practices, password protection, password recovery, password reset, two-factor authentication, password vault, credential management, password tips, account security, password strength';
-			$description = 'Password security services and guidance in Pomona, CA. Learn to create strong passwords, use password managers, and protect your accounts. offered help with password setup, recovery, and implementing best practices for maximum security.';
+			$keywords = 'seguridad de contraseñas, contraseñas seguras, gestor de contraseñas, mejores prácticas para contraseñas, protección de contraseñas, recuperación de contraseñas, autenticación de dos factores, 2FA, boveda de contraseñas, consejos de seguridad, seguridad de cuentas';
+			$description = 'Servicios y orientación sobre seguridad de contraseñas en Pomona, CA. Aprenda a crear contraseñas seguras, utilizar gestores de contraseñas y proteger sus cuentas con autenticación multifactor.';
 			include 'security/security.php';
 			break;
 

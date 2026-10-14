@@ -10,7 +10,19 @@ global $content, $key;
     <h2><?= $content[269][$key] ?? ''; ?></h2>
     <h3>
         <div class="spacer_shape">
-            <img src="http://latinospc.com/images/hardware/hw/mobo.webp" class="fl">
+            <div class="carousel-group fl" style="margin-right: 15px; margin-bottom: 10px;">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img" role="button" aria-label="<?= htmlspecialchars($content[268][$key] ?? 'Motherboard'); ?>">
+                            <img src="../images/hardware/hw/mobo_thumb.webp"
+                                 alt="<?= htmlspecialchars($content[268][$key] ?? 'Motherboard'); ?>"
+                                 title="Motherboard"
+                                 loading="lazy">
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
+                </div>
+            </div>
             <ul class="colms">
                 <ol><a href="https://www.hp.com/us-en/shop/tech-takes/how-to-choose-a-motherboard" title="Tech-Takes">HP</a></ol>
                 <ol><a href="https://www.dell.com/en-us/shop/motherboard-processor-bundles/ar/7960" title="Motherboard/Processor Bundles">Dell</a></ol>
@@ -86,4 +98,32 @@ global $content, $key;
         </div>
     </h3>
     <h2><?= $content[287][$key] ?? ''; ?></h2>
+
+    <template id="carousel-images">
+        <?php
+        $carouselItems = [
+            [
+                'original' => '../images/hardware/hw/mobo.jpg',
+                'webp'     => '../images/hardware/hw/mobo.webp',
+                'title'    => $content[268][$key] ?? 'Motherboard',
+                'link'     => 'https://en.wikipedia.org/wiki/Motherboard'
+            ]
+        ];
+
+        foreach($carouselItems as $index => $item):
+        ?>
+        <div class="carousel-item" data-image-index="<?= $index; ?>">
+            <a href="<?= $item['original']; ?>" target="_blank" rel="noopener">
+                <img data-src="<?= $item['webp']; ?>"
+                     src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+                     alt="<?= htmlspecialchars($item['title']); ?>">
+            </a>
+            <h4 class="img_link">
+                <a href="<?= htmlspecialchars($item['link']); ?>" title="<?= htmlspecialchars($item['title']); ?>" target="_blank" rel="noopener">
+                    <?= htmlspecialchars($item['title']); ?>
+                </a>
+            </h4>
+        </div>
+        <?php endforeach; ?>
+    </template>
 </article>

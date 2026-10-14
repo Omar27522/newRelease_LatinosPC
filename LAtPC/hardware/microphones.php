@@ -13,34 +13,138 @@ global $content, $key;
 <section class="colms2">
 <div class="container">
 <h3 class="center"><?= $content[1406][$key] ?? ''; ?></h3><p class="card2 cent">
-<a rel="example_group" href="../images/hardware/hw/mics/kaleidophone.jpg" title="https://www.halrammel.com/views-through-a-kaleidophone"><img src="../images/hardware/hw/mics/kaleidophone.webp" alt="Kaleidophone" class="flt"></a>
+<div class="carousel-group flt" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Charles Wheatstone's Kaleidophone (1827)">
+                    <img src="../images/hardware/hw/mics/kaleidophone_thumb.webp"
+                         alt="Charles Wheatstone's Kaleidophone (1827)"
+                         title="Charles Wheatstone's Kaleidophone (1827)"
+                         loading="lazy"
+                         style="max-height: 120px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
+        </div>
+    </div>
 <strong>1827</strong><br /><a href="https://en.wikipedia.org/wiki/Charles_Wheatstone"><?= $content[1407][$key] ?? ''; ?></a> <?= $content[1408][$key] ?? ''; ?> <a href="https://alienocene.com/2019/03/01/views-through-a-kaleidophone/"><?= $content[1409][$key] ?? ''; ?></a><?= $content[1410][$key] ?? ''; ?>
 </p><p class="card2 cent">
-    <a rel="example_group" href="../images/hardware/hw/mics/liquid-transmitter.jpg" title="https://americanhistory.si.edu/collections/nmah_1195712"><img src="../images/hardware/hw/mics/liquid-transmitter.webp" alt="liquid Transmitter" class="flt"></a>
+    <div class="carousel-group flt" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Alexander Graham Bell Liquid Transmitter (1876)">
+                    <img src="../images/hardware/hw/mics/liquid-transmitter_thumb.webp"
+                         alt="Alexander Graham Bell Liquid Transmitter (1876)"
+                         title="Alexander Graham Bell Liquid Transmitter (1876)"
+                         loading="lazy"
+                         style="max-height: 120px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="1"></div>
+        </div>
+    </div>
 <strong>1876</strong><br /><a href="https://en.wikipedia.org/wiki/Elisha_Gray"><?= $content[1411][$key] ?? ''; ?></a> <?= $content[1412][$key] ?? ''; ?> <a href="https://en.wikipedia.org/wiki/Elisha_Gray_and_Alexander_Bell_telephone_controversy#Use_of_liquid_transmitters_for_telephone_experiments.2C_1873-1876"><?= $content[1413][$key] ?? ''; ?></a> <?= $content[1414][$key] ?? ''; ?></p>
 </div>
 <div class="container">
 <h3 class="center"><a href="https://en.wikipedia.org/wiki/Carbon_microphone"><?= $content[1415][$key] ?? ''; ?></a> <?= $content[1416][$key] ?? ''; ?></h3><p class="card2 cent">
-<a rel="example_group" href="../images/hardware/hw/mics/carbonmicrophone.jpg" title="https://www.wired.com/2011/01/birth-of-the-microphone/"><img src="../images/hardware/hw/mics/carbonmicrophone.webp" alt="Carbon microphone" class="flt"></a>
+<div class="carousel-group flt" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Thomas Edison Carbon Microphone (1877)">
+                    <img src="../images/hardware/hw/mics/carbonmicrophone_thumb.webp"
+                         alt="Thomas Edison Carbon Microphone (1877)"
+                         title="Thomas Edison Carbon Microphone (1877)"
+                         loading="lazy"
+                         style="max-height: 120px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="2"></div>
+        </div>
+    </div>
 <strong>1877</strong><br /><a href="https://en.wikipedia.org/wiki/Emile_Berliner"><?= $content[1417][$key] ?? ''; ?></a> <?= $content[1418][$key] ?? ''; ?> <a href="https://www.invent.org/inductees/emile-berliner"><?= $content[1419][$key] ?? ''; ?></a><?= $content[1420][$key] ?? ''; ?>
 </p><p class="card2 cent">
-    <a rel="example_group" href="../images/hardware/hw/mics/hugescarbonmicrophone.jpg" title="https://www.voices.com/blog/carbon-button-microphones/"><img src="../images/hardware/hw/mics/hugescarbonmicrophone.webp" alt="/#/" class="flt"><!--https://www.sciencephoto.com/media/140507/view/hughes-carbon-microphone-19th-century--></a>
+    <div class="carousel-group flt" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="David Edward Hughes Carbon Microphone (1878)">
+                    <img src="../images/hardware/hw/mics/hugescarbonmicrophone_thumb.webp"
+                         alt="David Edward Hughes Carbon Microphone (1878)"
+                         title="David Edward Hughes Carbon Microphone (1878)"
+                         loading="lazy"
+                         style="max-height: 120px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="3"></div>
+        </div>
+    </div>
 <strong>1878</strong><br /><a href="https://en.wikipedia.org/wiki/David_Edward_Hughes"><?= $content[1421][$key] ?? ''; ?></a> <?= $content[1422][$key] ?? ''; ?> <a href="https://en.wikipedia.org/wiki/Carbon_microphone"><?= $content[1423][$key] ?? ''; ?></a><?= $content[1424][$key] ?? ''; ?></p>
 </div>
 <div class="container">
 <h3 class="center"><a href="https://www.teachmeaudio.com/recording/microphones/condenser-microphone"><?= $content[1425][$key] ?? ''; ?></a> <?= $content[1426][$key] ?? ''; ?></h3><p class="card2 cent">
-<a rel="example_group" href="../images/hardware/hw/mics/ECWente.jpg" title="https://soyuzmicrophones.com/articles/history-condenser-microphones"><img src="../images/hardware/hw/mics/ECWente.webp" alt="E.C. Wente" class="rtls"></a>
+<div class="carousel-group rtls" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="E.C. Wente Condenser Microphone (1916)">
+                    <img src="../images/hardware/hw/mics/ECWente_thumb.webp"
+                         alt="E.C. Wente Condenser Microphone (1916)"
+                         title="E.C. Wente Condenser Microphone (1916)"
+                         loading="lazy"
+                         style="max-height: 120px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="4"></div>
+        </div>
+    </div>
 <strong>1916</strong><br /><a href="https://coutant.org/ecwente.html"><?= $content[1427][$key] ?? ''; ?></a> <?= $content[1428][$key] ?? ''; ?> <a href="https://soyuzmicrophones.com/articles/history-condenser-microphones"><?= $content[1429][$key] ?? ''; ?></a><?= $content[1430][$key] ?? ''; ?>
 </p><p class="card2 cent">
-    <a rel="example_group" href="../images/hardware/hw/mics/georgneuman.jpg" title="https://www.soundandcommunications.com/industry-pioneers-8-georg-neumann-microphone-pioneer/"><img src="../images/hardware/hw/mics/georgneuman.webp" alt="Georg Neumann" class="rtls"></a><!--https://www.funky-junk.com/behind-the-brand-neumann/-->
+    <div class="carousel-group rtls" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Georg Neumann CMV3 Pioneer (1928)">
+                    <img src="../images/hardware/hw/mics/georgneuman_thumb.webp"
+                         alt="Georg Neumann CMV3 Pioneer (1928)"
+                         title="Georg Neumann CMV3 Pioneer (1928)"
+                         loading="lazy"
+                         style="max-height: 120px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="5"></div>
+        </div>
+    </div>
 <strong>1931</strong><br /><a href="https://en-de.neumann.com/newsroom/the-humble-genius"><?= $content[1431][$key] ?? ''; ?></a> <?= $content[1432][$key] ?? ''; ?> <a href="https://www.musicradar.com/news/the-best-microphones-for-recording"><?= $content[1433][$key] ?? ''; ?></a>.</p>
 </div>
 <div class="container">
 <h3 class="center"><a href="https://www.audiotechnology.com/tutorials/dynamic-microphones"><?= $content[1434][$key] ?? ''; ?></a> <?= $content[1435][$key] ?? ''; ?></h3><p class="card2 cent">
-<a rel="example_group" href="../images/hardware/hw/mics/ribbonmicrophone.jpg" title="https://www.shure.com/en-US/performance-production/louder/the-history-of-ribbon-microphones-and-artifacts-from-the-shure-archives"><img src="../images/hardware/hw/mics/ribbonmicrophone.webp" alt="Ribbon Microphone" class="rtls"></a>
+<div class="carousel-group rtls" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Harry F. Olson Ribbon Microphone (1931)">
+                    <img src="../images/hardware/hw/mics/ribbonmicrophone_thumb.webp"
+                         alt="Harry F. Olson Ribbon Microphone (1931)"
+                         title="Harry F. Olson Ribbon Microphone (1931)"
+                         loading="lazy"
+                         style="max-height: 120px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="6"></div>
+        </div>
+    </div>
 <strong>1931</strong><br /><a href="https://en.wikipedia.org/wiki/Walter_H._Schottky"><?= $content[1436][$key] ?? ''; ?></a> <?= $content[1437][$key] ?? ''; ?> <a href="https://en.wikipedia.org/wiki/Ribbon_microphone"><?= $content[1438][$key] ?? ''; ?></a><?= $content[1439][$key] ?? ''; ?>
 </p><p class="card2 cent">
-<strong>1937</strong><br /><a href="https://en.wikipedia.org/wiki/Kelly_Johnson_(engineer)"><?= $content[1440][$key] ?? ''; ?></a> <?= $content[1441][$key] ?? ''; ?> <a href="https://en.wikipedia.org/wiki/Jack_Mullin"><?= $content[1442][$key] ?? ''; ?></a><a rel="example_group" href="../images/hardware/hw/mics/ClarenceKellyJohnsonandjackmullin.jpg" title="Clarence 'Kelly' Johnson and Jack Mullin"><img src="../images/hardware/hw/mics/ClarenceKellyJohnsonandjackmullin.webp" alt="Clarence 'Kelly' Johnson and Jack Mullin" class="rtls"></a> <?= $content[1443][$key] ?? ''; ?>
+<strong>1937</strong><br /><a href="https://en.wikipedia.org/wiki/Kelly_Johnson_(engineer)"><?= $content[1440][$key] ?? ''; ?></a> <?= $content[1441][$key] ?? ''; ?> <a href="https://en.wikipedia.org/wiki/Jack_Mullin"><?= $content[1442][$key] ?? ''; ?></a><div class="carousel-group rtls" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Clarence Kelly Johnson & Jack Mullin (1937)">
+                    <img src="../images/hardware/hw/mics/ClarenceKellyJohnsonandjackmullin_thumb.webp"
+                         alt="Clarence Kelly Johnson & Jack Mullin (1937)"
+                         title="Clarence Kelly Johnson & Jack Mullin (1937)"
+                         loading="lazy"
+                         style="max-height: 120px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="7"></div>
+        </div>
+    </div> <?= $content[1443][$key] ?? ''; ?>
 </p>
 </div>
 </section><div class="crl spacer"></div><section>
@@ -53,16 +157,81 @@ global $content, $key;
 
 <div class="container">
 <h3 class="center"><?= $content[1452][$key] ?? ''; ?></h3>
-<p class="card2"> <a rel="example_group" href="../images/hardware/hw/mics/ecm.jpg" title="US Patent 3118022"><img src="../images/hardware/hw/mics/ecm.webp" alt="ECM" class="rtls"></a>
+<p class="card2"> <div class="carousel-group rtls" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Gerhard Sessler & James West Electret Foil Microphone (1964)">
+                    <img src="../images/hardware/hw/mics/ecm_thumb.webp"
+                         alt="Gerhard Sessler & James West Electret Foil Microphone (1964)"
+                         title="Gerhard Sessler & James West Electret Foil Microphone (1964)"
+                         loading="lazy"
+                         style="max-height: 110px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="8"></div>
+        </div>
+    </div>
 <strong>1964: </strong><a href="https://en.wikipedia.org/wiki/Bell_Labs"><?= $content[1453][$key] ?? ''; ?></a> <?= $content[1454][$key] ?? ''; ?> <a href="https://en.wikipedia.org/wiki/Electret_microphone#History"><?= $content[1455][$key] ?? ''; ?></a><?= $content[1456][$key] ?? ''; ?></p><p class="card2">
-    <a rel="example_group" href="../images/hardware/hw/mics/miniturization.jpg" title="Miniaturization Representation"><img src="../images/hardware/hw/mics/miniturization.webp" alt="Miniaturization" class="rtls"></a>
+    <div class="carousel-group rtls" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Transistor & IC Miniaturization">
+                    <img src="../images/hardware/hw/mics/miniturization_thumb.webp"
+                         alt="Transistor & IC Miniaturization"
+                         title="Transistor & IC Miniaturization"
+                         loading="lazy"
+                         style="max-height: 110px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="9"></div>
+        </div>
+    </div>
 <strong><?= $content[1457][$key] ?? ''; ?></strong> <?= $content[1458][$key] ?? ''; ?> <a href="https://en.wikipedia.org/wiki/Integrated_circuit"><?= $content[1459][$key] ?? ''; ?></a> <?= $content[1460][$key] ?? ''; ?> <a href="https://en.wikipedia.org/wiki/Transistor"><?= $content[1461][$key] ?? ''; ?></a> <?= $content[1462][$key] ?? ''; ?> <a href="https://en.wikipedia.org/wiki/Miniaturization"><?= $content[1463][$key] ?? ''; ?></a> <?= $content[1464][$key] ?? ''; ?></p><p class="card2">
 <strong><?= $content[1465][$key] ?? ''; ?> </strong><?= $content[1466][$key] ?? ''; ?> <a href="https://pro.sony/s3/2018/01/23101755/a_1175_a_LavalierMics.pdf"><?= $content[1467][$key] ?? ''; ?></a><?= $content[1468][$key] ?? ''; ?>
-<a rel="example_group" href="../images/hardware/hw/mics/ecm-50.jpg" title="Sony Lavalier Microphone Representation"><img src="../images/hardware/hw/mics/ecm-50.webp" alt="Miniaturization" class="cent"></a>
-</p><img src="../images/hardware/hw/mics/materials.webp" class="rtls" style="margin-top:30px;"><a rel="example_group" href="../images/hardware/hw/mics/materials.jpg" title="Materials and Manufacturing Technology"></a><p class="card2">
+<div class="carousel-group cent" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Sony ECM-50 Lavalier Microphone">
+                    <img src="../images/hardware/hw/mics/ecm-50_thumb.webp"
+                         alt="Sony ECM-50 Lavalier Microphone"
+                         title="Sony ECM-50 Lavalier Microphone"
+                         loading="lazy"
+                         style="max-height: 110px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="10"></div>
+        </div>
+    </div>
+</p><div class="carousel-group rtls" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Materials & Manufacturing Technology">
+                    <img src="../images/hardware/hw/mics/materials_thumb.webp"
+                         alt="Materials & Manufacturing Technology"
+                         title="Materials & Manufacturing Technology"
+                         loading="lazy"
+                         style="max-height: 110px; width: auto; margin-top: 10px;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="11"></div>
+        </div>
+    </div><p class="card2">
 <strong><?= $content[1469][$key] ?? ''; ?></strong> <?= $content[1470][$key] ?? ''; ?> <a href="https://www.fcusd.org/cms/lib/CA01001934/Centricity/Domain/4529/Fundamentals%20of%20Modern%20Manufacturing%20Materials%20%20Processes%20and%20Systems%20%204th%20Edition.pdf"><?= $content[1471][$key] ?? ''; ?></a> <?= $content[1472][$key] ?? ''; ?></p><p class="card2">
 <strong><?= $content[1473][$key] ?? ''; ?></strong> <?= $content[1474][$key] ?? ''; ?> <a href="https://en.wikipedia.org/wiki/MEMS"><?= $content[1475][$key] ?? ''; ?></a> <?= $content[1476][$key] ?? ''; ?></p><p class="card2">
-<strong><?= $content[1477][$key] ?? ''; ?></strong> <a rel="example_group" href="../images/hardware/hw/mics/present.jpg" title="Microphone Representation in IoT devices"><img src="../images/hardware/hw/mics/present.webp" class="rtls" alt="Microphone Representation in IoT devices"></a><?= $content[1478][$key] ?? ''; ?> <a href="https://www.prnewswire.com/news-releases/the-future-of-microphone-technology-has-arrived-soundskrit-debuts-the-skr0400-the-worlds-first-directional-mems-microphone-built-for-today-and-tomorrows-connected-consumer-devices-301614561.html">1</a> <a href="https://medium.com/@thakrerahul331/mems-microphone-market-2023-innovation-future-technology-top-key-companies-to-2030-8bbf3c6e4ed2">2</a></p></div>
+<strong><?= $content[1477][$key] ?? ''; ?></strong> <div class="carousel-group rtls" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="MEMS Microphones in IoT & Connected Devices">
+                    <img src="../images/hardware/hw/mics/present_thumb.webp"
+                         alt="MEMS Microphones in IoT & Connected Devices"
+                         title="MEMS Microphones in IoT & Connected Devices"
+                         loading="lazy"
+                         style="max-height: 110px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="12"></div>
+        </div>
+    </div><?= $content[1478][$key] ?? ''; ?> <a href="https://www.prnewswire.com/news-releases/the-future-of-microphone-technology-has-arrived-soundskrit-debuts-the-skr0400-the-worlds-first-directional-mems-microphone-built-for-today-and-tomorrows-connected-consumer-devices-301614561.html">1</a> <a href="https://medium.com/@thakrerahul331/mems-microphone-market-2023-innovation-future-technology-top-key-companies-to-2030-8bbf3c6e4ed2">2</a></p></div>
 </section><h2 class="spacer_shape">
 <?= $content[1479][$key] ?? ''; ?></h2>
 </article>
@@ -73,7 +242,20 @@ global $content, $key;
 <div class="container"><details class="card2">
 <summary class="center"><?= $content[1482][$key] ?? ''; ?></summary><p>
 <?= $content[1483][$key] ?? ''; ?> <a href="https://www.coutant.org/u47/index.html"><?= $content[1484][$key] ?? ''; ?></a><?= $content[1485][$key] ?? ''; ?></p>
-<a rel="example_group" href="../images/hardware/hw/mics/neumann-u47.jpg" title="Neumann U47 Microphone"><img src="../images/hardware/hw/mics/neumann-u47.webp" alt="Neumann U47"></a>
+<div class="carousel-group center" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Neumann U47 (1949)">
+                    <img src="../images/hardware/hw/mics/neumann-u47_thumb.webp"
+                         alt="Neumann U47 (1949)"
+                         title="Neumann U47 (1949)"
+                         loading="lazy"
+                         style="max-height: 180px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="13"></div>
+        </div>
+    </div>
 <p>
 <?= $content[1486][$key] ?? ''; ?> <a href="https://www.neumann.com/en-in/products/historical/u-47/"><?= $content[1487][$key] ?? ''; ?></a> <?= $content[1488][$key] ?? ''; ?></p>
 </details></div><div class="container">
@@ -82,7 +264,20 @@ global $content, $key;
     <p>
     <?= $content[1490][$key] ?? ''; ?> <a href="https://www.coutant.org/sm58/index.html"><?= $content[1491][$key] ?? ''; ?></a><?= $content[1492][$key] ?? ''; ?>
     </p>
-    <a rel="example_group" href="../images/hardware/hw/mics/shuresm58.jpg" title="Shure SM58"><img src="../images/hardware/hw/mics/shuresm58.webp" alt="Shure SM58"></a>
+    <div class="carousel-group center" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Shure SM58 (1966)">
+                    <img src="../images/hardware/hw/mics/shuresm58_thumb.webp"
+                         alt="Shure SM58 (1966)"
+                         title="Shure SM58 (1966)"
+                         loading="lazy"
+                         style="max-height: 180px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="14"></div>
+        </div>
+    </div>
     <p>
     <?= $content[1493][$key] ?? ''; ?>
     </p>
@@ -95,7 +290,20 @@ global $content, $key;
     <p>
     <?= $content[1495][$key] ?? ''; ?> <a href="https://www.coutant.org/rca77dx/index.html"><?= $content[1496][$key] ?? ''; ?></a><?= $content[1497][$key] ?? ''; ?>
     </p>
-    <a rel="example_group" href="../images/hardware/hw/mics/rca77DX.jpg" title="RCA 77-DX"><img src="../images/hardware/hw/mics/rca77DX.webp" alt="RCA 77-DX"></a>
+    <div class="carousel-group center" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="RCA 77-DX (1954)">
+                    <img src="../images/hardware/hw/mics/rca77DX_thumb.webp"
+                         alt="RCA 77-DX (1954)"
+                         title="RCA 77-DX (1954)"
+                         loading="lazy"
+                         style="max-height: 180px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="15"></div>
+        </div>
+    </div>
     <p>
     <?= $content[1498][$key] ?? ''; ?>
     </p>
@@ -108,7 +316,20 @@ global $content, $key;
     <p>
     <?= $content[1500][$key] ?? ''; ?> <a href="https://www.coutant.org/evre20/index.html"><?= $content[1501][$key] ?? ''; ?></a> <a href="https://www.coutant.org/re2075se/index.html"><?= $content[1502][$key] ?? ''; ?></a><?= $content[1503][$key] ?? ''; ?>
     </p>
-    <a rel="example_group" href="../images/hardware/hw/mics/electrovoicere20.jpg" title="Electro-Voice RE20"><img src="../images/hardware/hw/mics/electrovoicere20.webp" alt="Electro-Voice RE20"></a>
+    <div class="carousel-group center" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Electro-Voice RE20 (1968)">
+                    <img src="../images/hardware/hw/mics/electrovoicere20_thumb.webp"
+                         alt="Electro-Voice RE20 (1968)"
+                         title="Electro-Voice RE20 (1968)"
+                         loading="lazy"
+                         style="max-height: 180px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="16"></div>
+        </div>
+    </div>
     <p>
     <?= $content[1504][$key] ?? ''; ?> <a href="https://electrovoice.com/technology/variable-d/"><?= $content[1505][$key] ?? ''; ?></a> <?= $content[1506][$key] ?? ''; ?>
     </p>
@@ -121,7 +342,20 @@ global $content, $key;
     <p>
     <?= $content[1508][$key] ?? ''; ?> <a href="https://www.coutant.org/akgc414uls/index.html"><?= $content[1509][$key] ?? ''; ?></a><?= $content[1510][$key] ?? ''; ?>
     </p>
-    <a rel="example_group" href="../images/hardware/hw/mics/akgc414.jpg" title="7AKG C414"><img src="../images/hardware/hw/mics/akgc414.webp" alt="AKG C414"></a>
+    <div class="carousel-group center" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="AKG C414 (1971)">
+                    <img src="../images/hardware/hw/mics/akgc414_thumb.webp"
+                         alt="AKG C414 (1971)"
+                         title="AKG C414 (1971)"
+                         loading="lazy"
+                         style="max-height: 180px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="17"></div>
+        </div>
+    </div>
     <p>
     <?= $content[1511][$key] ?? ''; ?> <a href="https://www.sweetwater.com/insync/history-akg-c414/"><?= $content[1512][$key] ?? ''; ?></a> <?= $content[1513][$key] ?? ''; ?>
     </p>
@@ -134,7 +368,20 @@ global $content, $key;
     <p>
     <?= $content[1515][$key] ?? ''; ?> <a href="https://www.coutant.org/md421u4/index.html"><?= $content[1516][$key] ?? ''; ?></a><?= $content[1517][$key] ?? ''; ?>
     </p>
-    <a rel="example_group" href="../images/hardware/hw/mics/sennheisermd421.jpg" title="Sennheiser MD 421"><img src="../images/hardware/hw/mics/sennheisermd421.webp" alt="Sennheiser MD 421"></a>
+    <div class="carousel-group center" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Sennheiser MD 421 (1960)">
+                    <img src="../images/hardware/hw/mics/sennheisermd421_thumb.webp"
+                         alt="Sennheiser MD 421 (1960)"
+                         title="Sennheiser MD 421 (1960)"
+                         loading="lazy"
+                         style="max-height: 180px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="18"></div>
+        </div>
+    </div>
     <p>
     <?= $content[1518][$key] ?? ''; ?>
     </p>
@@ -147,7 +394,20 @@ global $content, $key;
     <p>
     <?= $content[1520][$key] ?? ''; ?> <a href="https://www.coutant.org/rca44bx/index.html"><?= $content[1521][$key] ?? ''; ?></a><?= $content[1522][$key] ?? ''; ?>
     </p>
-    <a rel="example_group" href="../images/hardware/hw/mics/rca44bx.jpg" title="RCA 44-BX"><img src="../images/hardware/hw/mics/rca44bx.webp" alt="RCA 44-BX"></a>
+    <div class="carousel-group center" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="RCA 44-BX (1932)">
+                    <img src="../images/hardware/hw/mics/rca44bx_thumb.webp"
+                         alt="RCA 44-BX (1932)"
+                         title="RCA 44-BX (1932)"
+                         loading="lazy"
+                         style="max-height: 180px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="19"></div>
+        </div>
+    </div>
     <p>
     <?= $content[1523][$key] ?? ''; ?> <a href="https://www.coutant.org/rca74b/index.html"><?= $content[1524][$key] ?? ''; ?></a>
     </p>
@@ -256,7 +516,20 @@ global $content, $key;
 <?= $content[1628][$key] ?? ''; ?>
 </p></div>
 </div><p class=""><span class="center"style="text-align:left;"><?= $content[1629][$key] ?? ''; ?>
-<br /><a rel="example_group" href="../images/hardware/hw/mics/futuremic.jpg" title="Future of Microphones"><img src="../images/hardware/hw/mics/futuremic.webp" class="rtls"></a><?= $content[1630][$key] ?? ''; ?>
+<br /><div class="carousel-group rtls" style="margin: 5px 10px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Future of Microphones - Quantum & Laser Sensing">
+                    <img src="../images/hardware/hw/mics/futuremic_thumb.webp"
+                         alt="Future of Microphones - Quantum & Laser Sensing"
+                         title="Future of Microphones - Quantum & Laser Sensing"
+                         loading="lazy"
+                         style="max-height: 120px; width: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="20"></div>
+        </div>
+    </div><?= $content[1630][$key] ?? ''; ?>
 </span></p>
 <table style="table-layout:fixed;width:468pt">
 <colgroup><col /><col /></colgroup><tbody>
@@ -268,3 +541,152 @@ global $content, $key;
 <script>
 <?= $content[1632][$key] ?? ''; ?>
 </script>
+
+    <!-- Carousel Modal Data Template -->
+    <template id="carousel-images">
+        <?php
+        $carouselItems = [
+            [
+                'original' => '../images/hardware/hw/mics/kaleidophone.jpg',
+                'webp'     => '../images/hardware/hw/mics/kaleidophone.webp',
+                'title'    => 'Charles Wheatstone\'s Kaleidophone (1827)',
+                'link'     => 'https://www.halrammel.com/views-through-a-kaleidophone'
+            ],
+            [
+                'original' => '../images/hardware/hw/mics/liquid-transmitter.jpg',
+                'webp'     => '../images/hardware/hw/mics/liquid-transmitter.webp',
+                'title'    => 'Alexander Graham Bell Liquid Transmitter (1876)',
+                'link'     => 'https://americanhistory.si.edu/collections/nmah_1195712'
+            ],
+            [
+                'original' => '../images/hardware/hw/mics/carbonmicrophone.jpg',
+                'webp'     => '../images/hardware/hw/mics/carbonmicrophone.webp',
+                'title'    => 'Thomas Edison Carbon Microphone (1877)',
+                'link'     => 'https://www.wired.com/2011/01/birth-of-the-microphone/'
+            ],
+            [
+                'original' => '../images/hardware/hw/mics/hugescarbonmicrophone.jpg',
+                'webp'     => '../images/hardware/hw/mics/hugescarbonmicrophone.webp',
+                'title'    => 'David Edward Hughes Carbon Microphone (1878)',
+                'link'     => 'https://www.voices.com/blog/carbon-button-microphones/'
+            ],
+            [
+                'original' => '../images/hardware/hw/mics/ECWente.jpg',
+                'webp'     => '../images/hardware/hw/mics/ECWente.webp',
+                'title'    => 'E.C. Wente Condenser Microphone (1916)',
+                'link'     => 'https://soyuzmicrophones.com/articles/history-condenser-microphones'
+            ],
+            [
+                'original' => '../images/hardware/hw/mics/georgneuman.jpg',
+                'webp'     => '../images/hardware/hw/mics/georgneuman.webp',
+                'title'    => 'Georg Neumann CMV3 Pioneer (1928)',
+                'link'     => 'https://www.soundandcommunications.com/industry-pioneers-8-georg-neumann-microphone-pioneer/'
+            ],
+            [
+                'original' => '../images/hardware/hw/mics/ribbonmicrophone.jpg',
+                'webp'     => '../images/hardware/hw/mics/ribbonmicrophone.webp',
+                'title'    => 'Harry F. Olson Ribbon Microphone (1931)',
+                'link'     => 'https://www.shure.com/en-US/performance-production/louder/the-history-of-ribbon-microphones-and-artifacts-from-the-shure-archives'
+            ],
+            [
+                'original' => '../images/hardware/hw/mics/ClarenceKellyJohnsonandjackmullin.jpg',
+                'webp'     => '../images/hardware/hw/mics/ClarenceKellyJohnsonandjackmullin.webp',
+                'title'    => 'Clarence Kelly Johnson & Jack Mullin (1937)',
+                'link'     => 'https://en.wikipedia.org/wiki/Jack_Mullin'
+            ],
+            [
+                'original' => '../images/hardware/hw/mics/ecm.jpg',
+                'webp'     => '../images/hardware/hw/mics/ecm.webp',
+                'title'    => 'Gerhard Sessler & James West Electret Foil Microphone (1964)',
+                'link'     => 'https://en.wikipedia.org/wiki/Electret_microphone#History'
+            ],
+            [
+                'original' => '../images/hardware/hw/mics/miniturization.jpg',
+                'webp'     => '../images/hardware/hw/mics/miniturization.webp',
+                'title'    => 'Transistor & IC Miniaturization',
+                'link'     => 'https://en.wikipedia.org/wiki/Miniaturization'
+            ],
+            [
+                'original' => '../images/hardware/hw/mics/ecm-50.jpg',
+                'webp'     => '../images/hardware/hw/mics/ecm-50.webp',
+                'title'    => 'Sony ECM-50 Lavalier Microphone',
+                'link'     => 'https://pro.sony/s3/2018/01/23101755/a_1175_a_LavalierMics.pdf'
+            ],
+            [
+                'original' => '../images/hardware/hw/mics/materials.jpg',
+                'webp'     => '../images/hardware/hw/mics/materials.webp',
+                'title'    => 'Materials & Manufacturing Technology',
+                'link'     => 'https://en.wikipedia.org/wiki/MEMS'
+            ],
+            [
+                'original' => '../images/hardware/hw/mics/present.jpg',
+                'webp'     => '../images/hardware/hw/mics/present.webp',
+                'title'    => 'MEMS Microphones in IoT & Connected Devices',
+                'link'     => 'https://www.prnewswire.com/news-releases/the-future-of-microphone-technology-has-arrived-soundskrit-debuts-the-skr0400-the-worlds-first-directional-mems-microphone-built-for-today-and-tomorrows-connected-consumer-devices-301614561.html'
+            ],
+            [
+                'original' => '../images/hardware/hw/mics/neumann-u47.jpg',
+                'webp'     => '../images/hardware/hw/mics/neumann-u47.webp',
+                'title'    => 'Neumann U47 (1949)',
+                'link'     => 'https://www.neumann.com/en-in/products/historical/u-47/'
+            ],
+            [
+                'original' => '../images/hardware/hw/mics/shuresm58.jpg',
+                'webp'     => '../images/hardware/hw/mics/shuresm58.webp',
+                'title'    => 'Shure SM58 (1966)',
+                'link'     => 'https://www.shure.com/'
+            ],
+            [
+                'original' => '../images/hardware/hw/mics/rca77DX.jpg',
+                'webp'     => '../images/hardware/hw/mics/rca77DX.webp',
+                'title'    => 'RCA 77-DX (1954)',
+                'link'     => 'https://www.coutant.org/rca77dx/index.html'
+            ],
+            [
+                'original' => '../images/hardware/hw/mics/electrovoicere20.jpg',
+                'webp'     => '../images/hardware/hw/mics/electrovoicere20.webp',
+                'title'    => 'Electro-Voice RE20 (1968)',
+                'link'     => 'https://electrovoice.com/technology/variable-d/'
+            ],
+            [
+                'original' => '../images/hardware/hw/mics/akgc414.jpg',
+                'webp'     => '../images/hardware/hw/mics/akgc414.webp',
+                'title'    => 'AKG C414 (1971)',
+                'link'     => 'https://www.sweetwater.com/insync/history-akg-c414/'
+            ],
+            [
+                'original' => '../images/hardware/hw/mics/sennheisermd421.jpg',
+                'webp'     => '../images/hardware/hw/mics/sennheisermd421.webp',
+                'title'    => 'Sennheiser MD 421 (1960)',
+                'link'     => 'https://www.coutant.org/md421u4/index.html'
+            ],
+            [
+                'original' => '../images/hardware/hw/mics/rca44bx.jpg',
+                'webp'     => '../images/hardware/hw/mics/rca44bx.webp',
+                'title'    => 'RCA 44-BX (1932)',
+                'link'     => 'https://www.coutant.org/rca44bx/index.html'
+            ],
+            [
+                'original' => '../images/hardware/hw/mics/futuremic.jpg',
+                'webp'     => '../images/hardware/hw/mics/futuremic.webp',
+                'title'    => 'Future of Microphones - Quantum & Laser Sensing',
+                'link'     => 'https://www.prnewswire.com/news-releases/the-future-of-microphone-technology-has-arrived-soundskrit-debuts-the-skr0400-the-worlds-first-directional-mems-microphone-built-for-today-and-tomorrows-connected-consumer-devices-301614561.html'
+            ],
+        ];
+
+        foreach($carouselItems as $index => $item):
+        ?>
+        <div class="carousel-item" data-image-index="<?= $index; ?>">
+            <a href="<?= $item['original']; ?>" target="_blank" rel="noopener">
+                <img data-src="<?= $item['webp']; ?>"
+                     src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+                     alt="<?= htmlspecialchars($item['title']); ?>">
+            </a>
+            <h4 class="img_link">
+                <a href="<?= htmlspecialchars($item['link']); ?>" title="<?= htmlspecialchars($item['title']); ?>" target="_blank" rel="noopener">
+                    <?= htmlspecialchars($item['title']); ?>
+                </a>
+            </h4>
+        </div>
+        <?php endforeach; ?>
+    </template>

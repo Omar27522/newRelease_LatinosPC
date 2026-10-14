@@ -22,9 +22,20 @@ global $content, $key;
     <h1><a href="./#peripherals"><?= $content[653][$key] ?? ''; ?></a></h1>
     
     <h2>
-        <a rel="example_group" href="../images/hardware/hw/lightbox/printer0.jpg" title="Printer">
-            <img src="../images/hardware/hw/printer/printer0.webp" width="250px" class="fl">
-        </a>
+        <div class="carousel-group fl" style="margin-right: 15px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Modern Multifunction Printer">
+                    <img src="../images/hardware/hw/printer/printer0_thumb.webp"
+                         alt="Printer"
+                         title="Modern Multifunction Printer"
+                         loading="lazy"
+                         style="max-width: 250px; width: 100%; height: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
+        </div>
+    </div>
         <?= $content[654][$key] ?? ''; ?>
     </h2>
     <div class="spacer"><hr></div>
@@ -33,9 +44,20 @@ global $content, $key;
         <span class="card2">
             <h2 id="history"><?= $content[655][$key] ?? ''; ?></h2>
             <a href="https://en.wikipedia.org/wiki/Ink#History"><span class="center"><?= $content[656][$key] ?? ''; ?></span></a><br />
-            <a rel="example_group" href="../images/hardware/hw/lightbox/printer3.jpg" title="Ancient Printing">
-                <img src="../images/hardware/hw/printer/printer3.webp" width="150px" class="rtl">
-            </a>
+            <div class="carousel-group rtl" style="margin-left: 15px;">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img" role="button" aria-label="Ancient Woodblock Printing">
+                            <img src="../images/hardware/hw/printer/printer3_thumb.webp"
+                                 alt="Ancient Printing"
+                                 title="Ancient Woodblock Printing"
+                                 loading="lazy"
+                                 style="max-width: 150px; width: 100%; height: auto;" />
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="1"></div>
+                </div>
+            </div>
             <?= $content[657][$key] ?? ''; ?>
         </span>
         <div class="spacer"><hr></div>
@@ -43,9 +65,20 @@ global $content, $key;
         <span class="card2">
             <h2><?= $content[658][$key] ?? ''; ?></h2>
             <a href="https://en.wikipedia.org/wiki/Printing_press"><span class="center"><?= $content[659][$key] ?? ''; ?></span></a><br />
-            <a rel="example_group" href="../images/hardware/hw/lightbox/printer16.jpg" title="Printing Press">
-                <img src="../images/hardware/hw/printer/printer16.webp" width="150px" class="rtl">
-            </a>
+            <div class="carousel-group rtl" style="margin-left: 15px;">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img" role="button" aria-label="Gutenberg Movable Type Press">
+                            <img src="../images/hardware/hw/printer/printer16_thumb.webp"
+                                 alt="Printing Press"
+                                 title="Gutenberg Movable Type Press"
+                                 loading="lazy"
+                                 style="max-width: 150px; width: 100%; height: auto;" />
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="2"></div>
+                </div>
+            </div>
             <?= $content[660][$key] ?? ''; ?>
         </span>
         <div class="spacer"><hr></div>
@@ -55,9 +88,20 @@ global $content, $key;
             <a href="https://ageofrevolution.org/200-object/koenigs-steam-powered-printing-press/">
                 <span class="center"><?= $content[662][$key] ?? ''; ?></span>
             </a><br />
-            <a rel="example_group" href="../images/hardware/hw/lightbox/printer17.jpg" title="Steam Press">
-                <img src="../images/hardware/hw/printer/printer17.webp" width="150px" class="rtl">
-            </a>
+            <div class="carousel-group rtl" style="margin-left: 15px;">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img" role="button" aria-label="Steam-Powered Printing Press">
+                            <img src="../images/hardware/hw/printer/printer17_thumb.webp"
+                                 alt="Steam Press"
+                                 title="Steam-Powered Printing Press"
+                                 loading="lazy"
+                                 style="max-width: 150px; width: 100%; height: auto;" />
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="3"></div>
+                </div>
+            </div>
             <?= $content[663][$key] ?? ''; ?>
         </span>
         <div class="spacer"><hr></div>
@@ -65,9 +109,20 @@ global $content, $key;
         <span class="card2">
             <h2><?= $content[664][$key] ?? ''; ?></h2>
             <a href="https://en.wikipedia.org/wiki/Teleprinter"><span class="center"><?= $content[665][$key] ?? ''; ?></span></a><br />
-            <a rel="example_group" href="../images/hardware/hw/lightbox/printer18.jpg" title="Electric Typewriter">
-                <img src="../images/hardware/hw/printer/printer18.webp" width="150px" class="rtl">
-            </a>
+            <div class="carousel-group rtl" style="margin-left: 15px;">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img" role="button" aria-label="Electric Typewriter & Teleprinter">
+                            <img src="../images/hardware/hw/printer/printer18_thumb.webp"
+                                 alt="Electric Typewriter"
+                                 title="Electric Typewriter & Teleprinter"
+                                 loading="lazy"
+                                 style="max-width: 150px; width: 100%; height: auto;" />
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="4"></div>
+                </div>
+            </div>
             <?= $content[666][$key] ?? ''; ?>
         </span>
         <div class="spacer"><hr></div>
@@ -75,18 +130,51 @@ global $content, $key;
         <span class="card2">
             <h2><?= $content[667][$key] ?? ''; ?></h2>
             <span class="center"><a href="https://en.wikipedia.org/wiki/Laser_printing"><?= $content[668][$key] ?? ''; ?></a></span><br />
-            <a rel="example_group" href="../images/hardware/hw/lightbox/printer19_0.jpg" title="Dot Matrix Printer">
-                <img src="../images/hardware/hw/printer/printer19_0.webp" width="150px" class="rtl">
-            </a>
+            <div class="carousel-group rtl" style="margin-left: 15px;">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img" role="button" aria-label="Dot Matrix Impact Printer">
+                            <img src="../images/hardware/hw/printer/printer19_0_thumb.webp"
+                                 alt="Dot Matrix Printer"
+                                 title="Dot Matrix Impact Printer"
+                                 loading="lazy"
+                                 style="max-width: 150px; width: 100%; height: auto;" />
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="5"></div>
+                </div>
+            </div>
             <?= $content[669][$key] ?? ''; ?>
-            <a rel="example_group" href="../images/hardware/hw/lightbox/printer19_1.jpg" title="Laser Printer">
-                <img src="../images/hardware/hw/printer/printer19_1.webp" width="150px" class="fl">
-            </a>
+            <div class="carousel-group fl" style="margin-right: 15px;">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img" role="button" aria-label="Early Laser Printer">
+                            <img src="../images/hardware/hw/printer/printer19_1_thumb.webp"
+                                 alt="Laser Printer"
+                                 title="Early Laser Printer"
+                                 loading="lazy"
+                                 style="max-width: 150px; width: 100%; height: auto;" />
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="6"></div>
+                </div>
+            </div>
             <br /><br />
             <span class="center"><?= $content[670][$key] ?? ''; ?></span><br />
-            <a rel="example_group" href="../images/hardware/hw/lightbox/printer19.jpg" title="InkJet Printer">
-                <img src="../images/hardware/hw/printer/printer19.webp" width="150px" class="rtl">
-            </a>
+            <div class="carousel-group rtl" style="margin-left: 15px;">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img" role="button" aria-label="Thermal & InkJet Printing">
+                            <img src="../images/hardware/hw/printer/printer19_thumb.webp"
+                                 alt="InkJet Printer"
+                                 title="Thermal & InkJet Printing"
+                                 loading="lazy"
+                                 style="max-width: 150px; width: 100%; height: auto;" />
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="7"></div>
+                </div>
+            </div>
             <?= $content[671][$key] ?? ''; ?>
         </span>
         <div class="spacer"><hr></div>
@@ -94,9 +182,20 @@ global $content, $key;
         <span class="card2">
             <h2><?= $content[672][$key] ?? ''; ?></h2>
             <span class="center"><a href="https://en.wikipedia.org/wiki/3D_printing"><?= $content[673][$key] ?? ''; ?></a></span><br />
-            <a rel="example_group" href="../images/hardware/hw/lightbox/printer20.jpg" title="3D Print">
-                <img src="../images/hardware/hw/printer/printer20.webp" width="150px" class="rtl">
-            </a>
+            <div class="carousel-group rtl" style="margin-left: 15px;">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img" role="button" aria-label="3D Additive Manufacturing Printer">
+                            <img src="../images/hardware/hw/printer/printer20_thumb.webp"
+                                 alt="3D Print"
+                                 title="3D Additive Manufacturing Printer"
+                                 loading="lazy"
+                                 style="max-width: 150px; width: 100%; height: auto;" />
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="8"></div>
+                </div>
+            </div>
             <?= $content[674][$key] ?? ''; ?>
         </span>
         <div class="spacer"><hr></div>
@@ -104,9 +203,20 @@ global $content, $key;
         <span class="card2">
             <h2><?= $content[675][$key] ?? ''; ?></h2>
             <span class="center"><?= $content[676][$key] ?? ''; ?></span><br />
-            <a rel="example_group" href="../images/hardware/hw/lightbox/printer21.jpg" title="Eco Friendly">
-                <img src="../images/hardware/hw/printer/printer21.webp" width="150px" class="rtl">
-            </a>
+            <div class="carousel-group rtl" style="margin-left: 15px;">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img" role="button" aria-label="Eco-Friendly Sustainable Printing">
+                            <img src="../images/hardware/hw/printer/printer21_thumb.webp"
+                                 alt="Eco Friendly"
+                                 title="Eco-Friendly Sustainable Printing"
+                                 loading="lazy"
+                                 style="max-width: 150px; width: 100%; height: auto;" />
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="9"></div>
+                </div>
+            </div>
             <?= $content[677][$key] ?? ''; ?>
             <div class="crl"></div>
         </span>
@@ -115,9 +225,20 @@ global $content, $key;
         <span class="card2">
             <h2><?= $content[678][$key] ?? ''; ?></h2>
             <span class="center"><?= $content[679][$key] ?? ''; ?></span><br />
-            <a rel="example_group" href="../images/hardware/hw/lightbox/printer22.jpg" title="Printers in the Future">
-                <img src="../images/hardware/hw/printer/printer22.webp" width="150px" class="rtl">
-            </a>
+            <div class="carousel-group rtl" style="margin-left: 15px;">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img" role="button" aria-label="Next-Generation Future Printing">
+                            <img src="../images/hardware/hw/printer/printer22_thumb.webp"
+                                 alt="Printers in the Future"
+                                 title="Next-Generation Future Printing"
+                                 loading="lazy"
+                                 style="max-width: 150px; width: 100%; height: auto;" />
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="10"></div>
+                </div>
+            </div>
             <?= $content[680][$key] ?? ''; ?>
             <div class="spacer"></div>
         </span>
@@ -186,7 +307,7 @@ global $content, $key;
         <hr>
         <ul class="ex_menu"><li class="print">3. <a href="https://en.wikipedia.org/wiki/Multi-function_printer">All-in-One (Multifunction) Printers:</a></li></ul>
         <?= substr($content[701][$key] ?? '', 35); ?>
-        <img src="../images/clouds.webp" height="" class="rtl">
+        <img src="../images/clouds.webp" loading="lazy" height="" class="rtl">
     </h3>
     <hr>
     
@@ -218,25 +339,25 @@ global $content, $key;
         <div>
             <span class="print">1.<a href="https://www.hp.com/us-en/printers/deskjet-printers.html">HP DeskJet Series:</a></span> 
             <a href="https://www.hp.com/us-en/home.html">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/HP_logo_2012.svg" class="fl" width="10%">
+                <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/a/ad/HP_logo_2012.svg" class="fl" width="10%">
             </a>
             <?= substr($content[712][$key] ?? '', 19); ?>
             <div class="spacer"></div>
             <span class="print">2. <a href="https://epson.com/For-Home/Printers/Inkjet/c/h110?q=%3Aname-asc%3AdiscontinuedFlag%3Afalse%3APrinters+Facets%2CPrinter+Series%3AExpression&text=#scrollTgt_onRefresh">Epson Expression Home Series:</a></span> 
             <a href="https://epson.com/usa">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Epson_logo.svg" class="fl" width="10%">
+                <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/5/59/Epson_logo.svg" class="fl" width="10%">
             </a>
             <?= substr($content[713][$key] ?? '', 30); ?>
             <div class="spacer"></div>
             <span class="print">3. <a href="https://www.brother-usa.com/products/hll2300d">Brother HL-L2300D:</a></span> 
             <a href="https://www.brother-usa.com/home">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Brother_logo.svg" class="fl" width="10%">
+                <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/8/87/Brother_logo.svg" class="fl" width="10%">
             </a>
             <?= substr($content[714][$key] ?? '', 18); ?>
             <div class="spacer"></div>
             <span class="print">4. <a href="https://www.usa.canon.com/shop/printers?facet_printers_printer_series=634">Canon PIXMA Series:</a></span> 
             <a href="https://www.usa.canon.com/">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Canon_wordmark.svg" class="fl" width="10%">
+                <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Canon_wordmark.svg" class="fl" width="10%">
             </a>
             <?= substr($content[715][$key] ?? '', 19); ?>
         </div>
@@ -297,36 +418,76 @@ global $content, $key;
 
     <h2><?= $content[737][$key] ?? ''; ?></h2>
     <h3>
-        <a rel="efxample_group" href="../images/artificialintelligence/printer/2.jpg" title="LAPC 3d Print">
-            <img src="../images/hardware/hw/printer/printer3d.webp" class="fl" alt="3d Printed Image">
-        </a>
+        <div class="carousel-group fl" style="margin-right: 15px;">
+            <div class="multi-link-container">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img" role="button" aria-label="LAPC 3D Print - Complex Lattice">
+                        <img src="../images/hardware/hw/printer/printer3d_thumb.webp"
+                             alt="3d Printed Image"
+                             title="LAPC 3D Print - Complex Lattice"
+                             loading="lazy" />
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="11"></div>
+            </div>
+        </div>
         <?= $content[738][$key] ?? ''; ?>
         <div class="spacer"></div>
         <?= $content[739][$key] ?? ''; ?>
         <div class="spacer"></div>
         <?= $content[740][$key] ?? ''; ?>
         <div class="spacer"></div>
-        <a rel="efxample_group" href="../images/artificialintelligence/printer/4.jpg" title="LAPC 3d Print">
-            <img src="../images/hardware/hw/printer/printer3d_3.webp" class="rtl" alt="3d Printed Image">
-        </a>
+        <div class="carousel-group rtl" style="margin-left: 15px;">
+            <div class="multi-link-container">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img" role="button" aria-label="LAPC 3D Print - Geometric Sculpture">
+                        <img src="../images/hardware/hw/printer/printer3d_3_thumb.webp"
+                             alt="3d Printed Image"
+                             title="LAPC 3D Print - Geometric Sculpture"
+                             loading="lazy" />
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="12"></div>
+            </div>
+        </div>
         <?= $content[741][$key] ?? ''; ?>
         <div class="spacer"></div>
         <?= $content[742][$key] ?? ''; ?>
         <div class="spacer"></div>
         <?= $content[743][$key] ?? ''; ?>
         <div class="spacer"></div>
-        <a rel="efxample_group" href="../images/artificialintelligence/printer/1.jpg" title="LAPC 3d Print">
-            <img src="../images/hardware/hw/printer/printer3d_1.webp" class="fl" alt="3d Printed Image">
-        </a>
+        <div class="carousel-group fl" style="margin-right: 15px;">
+            <div class="multi-link-container">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img" role="button" aria-label="LAPC 3D Print - Mechanical Prototype">
+                        <img src="../images/hardware/hw/printer/printer3d_1_thumb.webp"
+                             alt="3d Printed Image"
+                             title="LAPC 3D Print - Mechanical Prototype"
+                             loading="lazy" />
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="13"></div>
+            </div>
+        </div>
         <?= $content[744][$key] ?? ''; ?>
         <div class="spacer"></div>
         <?= $content[745][$key] ?? ''; ?>
         <div class="spacer"></div>
         <?= $content[746][$key] ?? ''; ?>
         <div class="spacer"></div>
-        <a rel="efxample_group" href="../images/artificialintelligence/printer/3.jpg" title="LAPC 3d Print">
-            <img src="../images/hardware/hw/printer/printer3d_2.webp" class="rtl" alt="3d Printed Image">
-        </a>
+        <div class="carousel-group rtl" style="margin-left: 15px;">
+            <div class="multi-link-container">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img" role="button" aria-label="LAPC 3D Print - Architectural Model">
+                        <img src="../images/hardware/hw/printer/printer3d_2_thumb.webp"
+                             alt="3d Printed Image"
+                             title="LAPC 3D Print - Architectural Model"
+                             loading="lazy" />
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="14"></div>
+            </div>
+        </div>
         <?= $content[747][$key] ?? ''; ?>
         <div class="spacer"></div>
         <?= $content[748][$key] ?? ''; ?>
@@ -343,123 +504,253 @@ global $content, $key;
     <h3 class="colms2">
         <a href="https://en.wikipedia.org/wiki/Printing_press" class="print">Gutenberg Printing Press</a> (1440s) - 
         <a href="https://www.britannica.com/biography/Johannes-Gutenberg" class="print">Johannes Gutenberg:</a>
-        <a href="https://en.wikipedia.org/wiki/Printing_press#/media/File:Chodowiecki_Basedow_Tafel_21_c_Z.jpg" title="Printing Press">
-            <img src="../images/hardware/hw/printer/printer4.webp" class="rtl" alt="Printing Press">
-        </a>
+        <div class="carousel-group rtl" style="margin-left: 15px;">
+            <div class="multi-link-container">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img" role="button" aria-label="Gutenberg Printing Press (1440s)">
+                        <img src="../images/hardware/hw/printer/printer4_thumb.webp"
+                             alt="Printing Press"
+                             title="Gutenberg Printing Press (1440s)"
+                             loading="lazy" />
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="15"></div>
+            </div>
+        </div>
         <br />- <?= $content[751][$key] ?? ''; ?>
         <hr><br />
         
         <a href="https://en.wikipedia.org/wiki/Linotype_machine" class="print">Linotype Machine</a> (1886) - 
         <a href="https://en.wikipedia.org/wiki/Ottmar_Mergenthaler" class="print">Ottmar Mergenthaler</a>:
-        <a href="https://en.wikipedia.org/wiki/Linotype_machine#/media/File:Linotype_machines,_Anthony_Hordern_and_Sons_department_store,_c._1935.jpg">
-            <img src="../images/hardware/hw/printer/printer5.webp" class="rtl" alt="Linotype Machine" width="300px">
-        </a>
+        <div class="carousel-group rtl" style="margin-left: 15px;">
+            <div class="multi-link-container">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img" role="button" aria-label="Linotype Machine (1886)">
+                        <img src="../images/hardware/hw/printer/printer5_thumb.webp"
+                             alt="Linotype Machine"
+                             title="Linotype Machine (1886)"
+                             loading="lazy"
+                             style="max-width: 300px; width: 100%; height: auto;" />
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="16"></div>
+            </div>
+        </div>
         <br />- <?= $content[752][$key] ?? ''; ?>
         <hr><br />
         
         <a href="https://en.wikipedia.org/wiki/Monotype_system" class="print">Monotype System</a> (1887) - 
         <a href="https://en.wikipedia.org/wiki/Tolbert_Lanston" class="print">Tolbert Lanston:</a>
-        <a href="https://en.wikipedia.org/wiki/Monotype_system#/media/File:Matrixcase-bembo-16pts.jpg">
-            <img src="../images/hardware/hw/printer/printer6.webp" alt="Monotype matrix case" class="rtl" width="300px">
-        </a>
+        <div class="carousel-group rtl" style="margin-left: 15px;">
+            <div class="multi-link-container">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img" role="button" aria-label="Monotype System (1887)">
+                        <img src="../images/hardware/hw/printer/printer6_thumb.webp"
+                             alt="Monotype matrix case"
+                             title="Monotype System (1887)"
+                             loading="lazy"
+                             style="max-width: 300px; width: 100%; height: auto;" />
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="17"></div>
+            </div>
+        </div>
         <br />- <?= $content[753][$key] ?? ''; ?>
         <hr><br />
         
         <a href="https://en.wikipedia.org/wiki/Original_Heidelberg_Platen_Press" class="print">Heidelberg Windmill</a> (1913) - 
         <a href="https://en.wikipedia.org/wiki/Heidelberger_Druckmaschinen" class="print">Heidelberger Druckmaschinen AG:</a>
-        <a href="https://en.wikipedia.org/wiki/Original_Heidelberg_Platen_Press#/media/File:Heidelberg_Platen_Press_front-left.jpg">
-            <img src="../images/hardware/hw/printer/printer7.webp" alt="Heidelberg Platen Press" class="rtl" width="300px">
-        </a>
+        <div class="carousel-group rtl" style="margin-left: 15px;">
+            <div class="multi-link-container">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img" role="button" aria-label="Heidelberg Windmill (1913)">
+                        <img src="../images/hardware/hw/printer/printer7_thumb.webp"
+                             alt="Heidelberg Platen Press"
+                             title="Heidelberg Windmill (1913)"
+                             loading="lazy"
+                             style="max-width: 300px; width: 100%; height: auto;" />
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="18"></div>
+            </div>
+        </div>
         <br />- <?= $content[754][$key] ?? ''; ?>
         <hr><br />
         
         <a href="https://en.wikipedia.org/wiki/Xerox_914" class="print">Xerox 914</a> (1959) - 
         <br /> <a href="https://en.wikipedia.org/wiki/Xerox#History" class="print">Xerox Corporation:</a>
-        <a href="https://en.wikipedia.org/wiki/Xerox_914#/media/File:Xerox_914.jpg">
-            <img src="../images/hardware/hw/printer/printer8.webp" alt="Xerox 914" class="rtl" width="300px">
-        </a>
+        <div class="carousel-group rtl" style="margin-left: 15px;">
+            <div class="multi-link-container">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img" role="button" aria-label="Xerox 914 (1959)">
+                        <img src="../images/hardware/hw/printer/printer8_thumb.webp"
+                             alt="Xerox 914"
+                             title="Xerox 914 (1959)"
+                             loading="lazy"
+                             style="max-width: 300px; width: 100%; height: auto;" />
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="19"></div>
+            </div>
+        </div>
         <br />- <?= $content[755][$key] ?? ''; ?>
         <hr><br />
         
         <a href="https://www.hp.com/hpinfo/abouthp/histnfacts/museum/imagingprinting/0018/index.html" class="print">HP LaserJet Printer</a> (1984) - 
         <a href="https://www.hp.com/hpinfo/abouthp/histnfacts/museum/imagingprinting/0018/0018threeqtr.html" class="print">Hewlett-Packard (HP):</a>
-        <a href="https://www.computerhistory.org/revolution/input-output/14/351/1680">
-            <img src="../images/hardware/hw/printer/printer9.webp" alt="HP Laser Jet" class="rtl" width="300px">
-        </a>
+        <div class="carousel-group rtl" style="margin-left: 15px;">
+            <div class="multi-link-container">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img" role="button" aria-label="HP LaserJet Printer (1984)">
+                        <img src="../images/hardware/hw/printer/printer9_thumb.webp"
+                             alt="HP Laser Jet"
+                             title="HP LaserJet Printer (1984)"
+                             loading="lazy"
+                             style="max-width: 300px; width: 100%; height: auto;" />
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="20"></div>
+            </div>
+        </div>
         <br />- <?= $content[756][$key] ?? ''; ?>
         <hr><br />
         
         <a href="https://spectrum.ieee.org/the-consumer-electronics-hall-of-fame-epson-stylus-color" class="print">Epson Stylus Color</a> (1994) - 
         <a href="https://corporate.epson/en/about/history/milestone-products/1994-5-stylus-color.html" class="print">Seiko Epson Corporation:</a>
-        <a href="https://corporate.epson/en/about/history/milestone-products/" title="Epson milestone-products">
-            <img src="../images/hardware/hw/printer/printer10.webp" alt="Epson Stylus Color" class="fl" width="300px">
-        </a>
+        <div class="carousel-group fl" style="margin-right: 15px;">
+            <div class="multi-link-container">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img" role="button" aria-label="Epson Stylus Color (1994)">
+                        <img src="../images/hardware/hw/printer/printer10_thumb.webp"
+                             alt="Epson Stylus Color"
+                             title="Epson Stylus Color (1994)"
+                             loading="lazy"
+                             style="max-width: 300px; width: 100%; height: auto;" />
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="21"></div>
+            </div>
+        </div>
         <br />- <?= $content[757][$key] ?? ''; ?>
         <hr><br />
         
         <a href="https://en.wikipedia.org/wiki/RepRap" class="print" style="margin-left: 50px;">RepRap</a> (2005) - 
         <br /> <a href="https://en.wikipedia.org/wiki/Adrian_Bowyer" class="print" style="margin-left: 50px;">Dr. Adrian Bowyer:</a>
-        <a href="https://en.wikipedia.org/wiki/RepRap#/media/File:Extrusion_of_hexagon_2nd_layer_closeup.jpg">
-            <img src="../images/hardware/hw/printer/printer11.webp" alt="RepRap" class="fl" width="300px">
-        </a>
+        <div class="carousel-group fl" style="margin-right: 15px;">
+            <div class="multi-link-container">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img" role="button" aria-label="RepRap 3D Printer (2005)">
+                        <img src="../images/hardware/hw/printer/printer11_thumb.webp"
+                             alt="RepRap"
+                             title="RepRap 3D Printer (2005)"
+                             loading="lazy"
+                             style="max-width: 300px; width: 100%; height: auto;" />
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="22"></div>
+            </div>
+        </div>
         <br />- <?= $content[758][$key] ?? ''; ?>
         <hr><br />
         
         <a href="https://en.wikipedia.org/wiki/MakerBot" class="print" style="margin-left: 50px;">MakerBot Replicator</a> (2009) - 
         <a href="https://www.makerbot.com/resources/3d-printing-news/" class="print" style="margin-left: 50px;">MakerBot Industries:</a>
-        <a href="https://en.wikipedia.org/wiki/MakerBot#/media/File:MakerBot_ThingOMatic_Bre_Pettis.jpg">
-            <img src="../images/hardware/hw/printer/printer12.webp" alt="Maker Bot Replicator" width="300px">
-        </a>
+        <div class="carousel-group fl" style="margin-right: 15px;">
+            <div class="multi-link-container">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img" role="button" aria-label="MakerBot Replicator (2009)">
+                        <img src="../images/hardware/hw/printer/printer12_thumb.webp"
+                             alt="Maker Bot Replicator"
+                             title="MakerBot Replicator (2009)"
+                             loading="lazy"
+                             style="max-width: 300px; width: 100%; height: auto;" />
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="23"></div>
+            </div>
+        </div>
         <br />- <?= $content[759][$key] ?? ''; ?>
         <hr><br />
         
         <a href="https://en.wikipedia.org/wiki/Formlabs" class="print" style="margin-left: 50px;">Formlabs Form 1</a> (2012) - 
         <br /> <a href="https://formlabs.com/resources/" class="print" style="margin-left: 50px;">Formlabs:</a>
-        <a href="https://en.wikipedia.org/wiki/Formlabs#/media/File:Formlabs_Form2_Bild11_5184x2912_(24203075010).jpg">
-            <img src="../images/hardware/hw/printer/printer13.webp" alt="Form1" class="fl" width="300px">
-        </a>
+        <div class="carousel-group fl" style="margin-right: 15px;">
+            <div class="multi-link-container">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img" role="button" aria-label="Formlabs Form 1 (2012)">
+                        <img src="../images/hardware/hw/printer/printer13_thumb.webp"
+                             alt="Form1"
+                             title="Formlabs Form 1 (2012)"
+                             loading="lazy"
+                             style="max-width: 300px; width: 100%; height: auto;" />
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="24"></div>
+            </div>
+        </div>
         <br />- <?= $content[760][$key] ?? ''; ?>
         <hr><br />
         
         <a href="https://en.wikipedia.org/wiki/Ultimaker" class="print" style="margin-left: 50px;">Ultimaker Original</a> (2011) - 
         <br /> <a href="https://ultimaker.com/" class="print" style="margin-left: 50px;">Ultimaker:</a>
-        <a href="https://en.wikipedia.org/wiki/Ultimaker#/media/File:Ultimaker_History_-_5_Ultimaker_Original_(28127007460).jpg">
-            <img src="../images/hardware/hw/printer/printer14.webp" alt="The Ultimaker Original" class="fl" width="300px">
-        </a>
+        <div class="carousel-group fl" style="margin-right: 15px;">
+            <div class="multi-link-container">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img" role="button" aria-label="Ultimaker Original (2011)">
+                        <img src="../images/hardware/hw/printer/printer14_thumb.webp"
+                             alt="The Ultimaker Original"
+                             title="Ultimaker Original (2011)"
+                             loading="lazy"
+                             style="max-width: 300px; width: 100%; height: auto;" />
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="25"></div>
+            </div>
+        </div>
         <br />- <?= $content[761][$key] ?? ''; ?>
         <hr><br />
         
         <a href="https://en.wikipedia.org/wiki/Aleph_Objects" class="print" style="margin-left: 50px;">LulzBot TAZ</a> (2012) - 
         <br /> <a href="https://lulzbot.com/explore/printers-for-creatives" class="print" style="margin-left: 50px;">lulzbot.com:</a>
-        <a href="https://en.wikipedia.org/wiki/Aleph_Objects#/media/File:LulzBot_Mini_3D_Printer.jpg">
-            <img src="../images/hardware/hw/printer/printer15.webp" alt="LulBot Mini" class="fl" width="300px">
-        </a>
+        <div class="carousel-group fl" style="margin-right: 15px;">
+            <div class="multi-link-container">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img" role="button" aria-label="LulzBot TAZ / Mini (2012)">
+                        <img src="../images/hardware/hw/printer/printer15_thumb.webp"
+                             alt="LulBot Mini"
+                             title="LulzBot TAZ / Mini (2012)"
+                             loading="lazy"
+                             style="max-width: 300px; width: 100%; height: auto;" />
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="26"></div>
+            </div>
+        </div>
         <br />- <?= $content[762][$key] ?? ''; ?>
     </h3>
     
     <h2><?= $content[763][$key] ?? ''; ?></h2>
     
-    <a rel="example_group" href="../images/hardware/hw/lightbox/printer4.jpg" title="Gutenberg Printing Press"></a>
-    <a rel="example_group" href="../images/hardware/hw/lightbox/printer5.jpg" title="Linotype Machine"></a>
-    <a rel="example_group" href="../images/hardware/hw/lightbox/printer6.jpg" title="Monotype System"></a>
-    <a rel="example_group" href="../images/hardware/hw/lightbox/printer7.jpg" title="Heidelberg Windmill"></a>
-    <a rel="example_group" href="../images/hardware/hw/lightbox/printer8.jpg" title="Xerox 914"></a>
-    <a rel="example_group" href="../images/hardware/hw/lightbox/printer9.jpg" title="HP LaserJet Printer"></a>
-    <a rel="example_group" href="../images/hardware/hw/lightbox/printer10.jpg" title="Epson Stylus Color"></a>
-    <a rel="example_group" href="../images/hardware/hw/lightbox/printer11.jpg" title="RepRap"></a>
-    <a rel="example_group" href="../images/hardware/hw/lightbox/printer12.jpg" title="MakerBot Replicator"></a>
-    <a rel="example_group" href="../images/hardware/hw/lightbox/printer13.jpg" title="Formlabs Form 1"></a>
-    <a rel="example_group" href="../images/hardware/hw/lightbox/printer14.jpg" title="The Ultimaker Original"></a>
-    <a rel="example_group" href="../images/hardware/hw/lightbox/printer15.jpg" title="LulBot Mini"></a>
-    <a rel="example_group" href="../images/hardware/hw/lightbox/printer00.jpg" title="Happy Printing"></a>
-</article>
+    </article>
 
 <article class="article fullbar">
     <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ -->
     <hr id="future">
     <a href="#nav" title="Top">
         <h2 class="spacer_shape">
-            <img src="../images/hardware/hw/printer/printer.webp" class="fl">
+            <div class="carousel-group fl" style="margin-right: 15px;">
+                <div class="multi-link-container">
+                    <div class="thumbnail-container">
+                        <span tabindex="0" class="linked-text-img" role="button" aria-label="Future of Digital Printing">
+                            <img src="../images/hardware/hw/printer/printer_thumb.webp"
+                                 alt="Future of Digital Printing"
+                                 title="Future of Digital Printing"
+                                 loading="lazy" />
+                        </span>
+                    </div>
+                    <div class="image-dialog" data-carousel="true" data-start-index="27"></div>
+                </div>
+            </div>
             <?= $content[764][$key] ?? ''; ?>
         </h2>
     </a>
@@ -608,3 +899,194 @@ global $content, $key;
         </tbody>
     </table>
 </article>
+
+    <!-- Carousel Modal Data Template -->
+    <template id="carousel-images">
+        <?php
+        $carouselItems = [
+            [
+                'original' => '../images/hardware/hw/lightbox/printer0.jpg',
+                'webp'     => '../images/hardware/hw/lightbox/printer0.webp',
+                'title'    => 'Modern Multifunction Printer',
+                'link'     => 'https://en.wikipedia.org/wiki/Multi-function_printer'
+            ],
+            [
+                'original' => '../images/hardware/hw/lightbox/printer3.jpg',
+                'webp'     => '../images/hardware/hw/lightbox/printer3.webp',
+                'title'    => 'Ancient Woodblock Printing',
+                'link'     => 'https://en.wikipedia.org/wiki/Woodblock_printing'
+            ],
+            [
+                'original' => '../images/hardware/hw/lightbox/printer16.jpg',
+                'webp'     => '../images/hardware/hw/lightbox/printer16.webp',
+                'title'    => 'Gutenberg Movable Type Press',
+                'link'     => 'https://en.wikipedia.org/wiki/Printing_press'
+            ],
+            [
+                'original' => '../images/hardware/hw/lightbox/printer17.jpg',
+                'webp'     => '../images/hardware/hw/lightbox/printer17.webp',
+                'title'    => 'Steam-Powered Printing Press',
+                'link'     => 'https://ageofrevolution.org/200-object/koenigs-steam-powered-printing-press/'
+            ],
+            [
+                'original' => '../images/hardware/hw/lightbox/printer18.jpg',
+                'webp'     => '../images/hardware/hw/lightbox/printer18.webp',
+                'title'    => 'Electric Typewriter & Teleprinter',
+                'link'     => 'https://en.wikipedia.org/wiki/Teleprinter'
+            ],
+            [
+                'original' => '../images/hardware/hw/lightbox/printer19_0.jpg',
+                'webp'     => '../images/hardware/hw/lightbox/printer19_0.webp',
+                'title'    => 'Dot Matrix Impact Printer',
+                'link'     => 'https://en.wikipedia.org/wiki/Dot_matrix_printing'
+            ],
+            [
+                'original' => '../images/hardware/hw/lightbox/printer19_1.jpg',
+                'webp'     => '../images/hardware/hw/lightbox/printer19_1.webp',
+                'title'    => 'Early Laser Printer',
+                'link'     => 'https://en.wikipedia.org/wiki/Laser_printing'
+            ],
+            [
+                'original' => '../images/hardware/hw/lightbox/printer19.jpg',
+                'webp'     => '../images/hardware/hw/lightbox/printer19.webp',
+                'title'    => 'Thermal & InkJet Printing',
+                'link'     => 'https://en.wikipedia.org/wiki/Inkjet_printing'
+            ],
+            [
+                'original' => '../images/hardware/hw/lightbox/printer20.jpg',
+                'webp'     => '../images/hardware/hw/lightbox/printer20.webp',
+                'title'    => '3D Additive Manufacturing Printer',
+                'link'     => 'https://en.wikipedia.org/wiki/3D_printing'
+            ],
+            [
+                'original' => '../images/hardware/hw/lightbox/printer21.jpg',
+                'webp'     => '../images/hardware/hw/lightbox/printer21.webp',
+                'title'    => 'Eco-Friendly Sustainable Printing',
+                'link'     => 'https://en.wikipedia.org/wiki/Sustainable_printing'
+            ],
+            [
+                'original' => '../images/hardware/hw/lightbox/printer22.jpg',
+                'webp'     => '../images/hardware/hw/lightbox/printer22.webp',
+                'title'    => 'Next-Generation Future Printing',
+                'link'     => 'https://en.wikipedia.org/wiki/Bioprinting'
+            ],
+            [
+                'original' => '../images/artificialintelligence/printer/2.jpg',
+                'webp'     => '../images/artificialintelligence/printer/2.webp',
+                'title'    => 'LAPC 3D Print - Complex Lattice',
+                'link'     => 'https://en.wikipedia.org/wiki/3D_printing'
+            ],
+            [
+                'original' => '../images/artificialintelligence/printer/4.jpg',
+                'webp'     => '../images/artificialintelligence/printer/4.webp',
+                'title'    => 'LAPC 3D Print - Geometric Sculpture',
+                'link'     => 'https://en.wikipedia.org/wiki/3D_printing'
+            ],
+            [
+                'original' => '../images/artificialintelligence/printer/1.jpg',
+                'webp'     => '../images/artificialintelligence/printer/1.webp',
+                'title'    => 'LAPC 3D Print - Mechanical Prototype',
+                'link'     => 'https://en.wikipedia.org/wiki/3D_printing'
+            ],
+            [
+                'original' => '../images/artificialintelligence/printer/3.jpg',
+                'webp'     => '../images/artificialintelligence/printer/3.webp',
+                'title'    => 'LAPC 3D Print - Architectural Model',
+                'link'     => 'https://en.wikipedia.org/wiki/3D_printing'
+            ],
+            [
+                'original' => '../images/hardware/hw/lightbox/printer4.jpg',
+                'webp'     => '../images/hardware/hw/lightbox/printer4.webp',
+                'title'    => 'Gutenberg Printing Press (1440s)',
+                'link'     => 'https://en.wikipedia.org/wiki/Printing_press'
+            ],
+            [
+                'original' => '../images/hardware/hw/lightbox/printer5.jpg',
+                'webp'     => '../images/hardware/hw/lightbox/printer5.webp',
+                'title'    => 'Linotype Machine (1886)',
+                'link'     => 'https://en.wikipedia.org/wiki/Linotype_machine'
+            ],
+            [
+                'original' => '../images/hardware/hw/lightbox/printer6.jpg',
+                'webp'     => '../images/hardware/hw/lightbox/printer6.webp',
+                'title'    => 'Monotype System (1887)',
+                'link'     => 'https://en.wikipedia.org/wiki/Monotype_system'
+            ],
+            [
+                'original' => '../images/hardware/hw/lightbox/printer7.jpg',
+                'webp'     => '../images/hardware/hw/lightbox/printer7.webp',
+                'title'    => 'Heidelberg Windmill Platen Press (1913)',
+                'link'     => 'https://en.wikipedia.org/wiki/Original_Heidelberg_Platen_Press'
+            ],
+            [
+                'original' => '../images/hardware/hw/lightbox/printer8.jpg',
+                'webp'     => '../images/hardware/hw/lightbox/printer8.webp',
+                'title'    => 'Xerox 914 Plain Paper Copier (1959)',
+                'link'     => 'https://en.wikipedia.org/wiki/Xerox_914'
+            ],
+            [
+                'original' => '../images/hardware/hw/lightbox/printer9.jpg',
+                'webp'     => '../images/hardware/hw/lightbox/printer9.webp',
+                'title'    => 'HP LaserJet Desktop Printer (1984)',
+                'link'     => 'https://www.hp.com/hpinfo/abouthp/histnfacts/museum/imagingprinting/0018/index.html'
+            ],
+            [
+                'original' => '../images/hardware/hw/lightbox/printer10.jpg',
+                'webp'     => '../images/hardware/hw/lightbox/printer10.webp',
+                'title'    => 'Epson Stylus Color 720 dpi (1994)',
+                'link'     => 'https://spectrum.ieee.org/the-consumer-electronics-hall-of-fame-epson-stylus-color'
+            ],
+            [
+                'original' => '../images/hardware/hw/lightbox/printer11.jpg',
+                'webp'     => '../images/hardware/hw/lightbox/printer11.webp',
+                'title'    => 'RepRap Open-Source 3D Printer (2005)',
+                'link'     => 'https://en.wikipedia.org/wiki/RepRap'
+            ],
+            [
+                'original' => '../images/hardware/hw/lightbox/printer12.jpg',
+                'webp'     => '../images/hardware/hw/lightbox/printer12.webp',
+                'title'    => 'MakerBot Replicator Desktop 3D (2009)',
+                'link'     => 'https://en.wikipedia.org/wiki/MakerBot'
+            ],
+            [
+                'original' => '../images/hardware/hw/lightbox/printer13.jpg',
+                'webp'     => '../images/hardware/hw/lightbox/printer13.webp',
+                'title'    => 'Formlabs Form 1 SLA 3D Printer (2012)',
+                'link'     => 'https://en.wikipedia.org/wiki/Formlabs'
+            ],
+            [
+                'original' => '../images/hardware/hw/lightbox/printer14.jpg',
+                'webp'     => '../images/hardware/hw/lightbox/printer14.webp',
+                'title'    => 'Ultimaker Original FDM 3D Printer (2011)',
+                'link'     => 'https://en.wikipedia.org/wiki/Ultimaker'
+            ],
+            [
+                'original' => '../images/hardware/hw/lightbox/printer15.jpg',
+                'webp'     => '../images/hardware/hw/lightbox/printer15.webp',
+                'title'    => 'LulzBot TAZ / Mini (2012)',
+                'link'     => 'https://en.wikipedia.org/wiki/Aleph_Objects'
+            ],
+            [
+                'original' => '../images/hardware/hw/lightbox/printer.jpg',
+                'webp'     => '../images/hardware/hw/lightbox/printer.webp',
+                'title'    => 'Future of Digital Printing',
+                'link'     => 'https://en.wikipedia.org/wiki/Digital_printing'
+            ]
+        ];
+
+        foreach($carouselItems as $index => $item):
+        ?>
+        <div class="carousel-item" data-image-index="<?= $index; ?>">
+            <a href="<?= $item['original']; ?>" target="_blank" rel="noopener">
+                <img data-src="<?= $item['webp']; ?>"
+                     src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+                     alt="<?= htmlspecialchars($item['title']); ?>">
+            </a>
+            <h4 class="img_link">
+                <a href="<?= htmlspecialchars($item['link']); ?>" title="<?= htmlspecialchars($item['title']); ?>" target="_blank" rel="noopener">
+                    <?= htmlspecialchars($item['title']); ?>
+                </a>
+            </h4>
+        </div>
+        <?php endforeach; ?>
+    </template>

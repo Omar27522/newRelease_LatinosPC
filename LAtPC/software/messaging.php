@@ -107,8 +107,15 @@ $additional_apps_list = [
                 </a>
             </div>
         </div>
-        <div class="messaging-hero-media">
-            <img src="../images/programs/msg.jpg" alt="<?= htmlspecialchars($msg['img_alt'] ?? 'Instant Messaging Applications'); ?>" class="messaging-hero-img" tabindex="0">
+        <div class="messaging-hero-media carousel-group">
+            <div class="multi-link-container">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img" role="button" aria-label="<?= htmlspecialchars($msg['img_alt'] ?? 'Instant Messaging Applications'); ?>">
+                        <img src="../images/programs/msg_thumb.webp" alt="<?= htmlspecialchars($msg['img_alt'] ?? 'Instant Messaging Applications'); ?>" class="messaging-hero-img" loading="lazy">
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
+            </div>
         </div>
     </div>
 
@@ -180,3 +187,19 @@ $additional_apps_list = [
         </ul>
     </section>
 </div>
+
+<!-- Carousel Modal Data Template -->
+<template id="carousel-images">
+    <div class="carousel-item" data-image-index="0">
+        <a href="../images/programs/msg.jpg" target="_blank" rel="noopener">
+            <img data-src="../images/programs/msg.webp"
+                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+                 alt="<?= htmlspecialchars($msg['img_alt'] ?? 'Instant Messaging Applications'); ?>">
+        </a>
+        <h4 class="img_link">
+            <a href="<?= htmlspecialchars($links['wiki'] ?? 'https://en.wikipedia.org/wiki/Instant_messaging'); ?>" target="_blank" rel="noopener">
+                <?= htmlspecialchars($msg['img_alt'] ?? 'Instant Messaging Applications'); ?>
+            </a>
+        </h4>
+    </div>
+</template>

@@ -38,8 +38,20 @@ $links = ['https://www.pcmag.com/encyclopedia/term/gpu'];
 
 
 <div class="fullbar article">
-<img alt="GPU Grid" src="../images/hardware/hw/gpu-graphics1.jpg" title="GPU graphics" /></p>
-<h2><a href="https://www.intel.com/content/www/us/en/products/docs/processors/what-is-a-gpu.html"
+    <div class="carousel-group fl" style="margin-right: 15px; margin-bottom: 15px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="GPU Graphics Grid">
+                    <img src="../images/hardware/hw/gpu-graphics1_thumb.webp"
+                         alt="GPU Grid"
+                         title="GPU graphics"
+                         loading="lazy">
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
+        </div>
+    </div>
+    <h2><a href="https://www.intel.com/content/www/us/en/products/docs/processors/what-is-a-gpu.html"
         title="Modern GPU technology powers traditional graphics applications—and much more."><?= $content[185][$key] ?? ''; ?></a></h2>
 <p><?= $content[186][$key] ?? ''; ?></p>
 <p><strong class="gpu">Gaming:</strong> <?= $content[187][$key] ?? ''; ?></p>
@@ -122,3 +134,31 @@ $links = ['https://www.pcmag.com/encyclopedia/term/gpu'];
 <p><?= $content[226][$key] ?? ''; ?></p>
 <p><?= $content[227][$key] ?? ''; ?></p>
 </div>
+
+<template id="carousel-images">
+    <?php
+    $carouselItems = [
+        [
+            'original' => '../images/hardware/hw/gpu-graphics1.jpg',
+            'webp'     => '../images/hardware/hw/gpu-graphics1.webp',
+            'title'    => 'Graphics Processing Unit Architecture',
+            'link'     => 'https://www.intel.com/content/www/us/en/products/docs/processors/what-is-a-gpu.html'
+        ]
+    ];
+
+    foreach($carouselItems as $index => $item):
+    ?>
+    <div class="carousel-item" data-image-index="<?= $index; ?>">
+        <a href="<?= $item['original']; ?>" target="_blank" rel="noopener">
+            <img data-src="<?= $item['webp']; ?>"
+                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+                 alt="<?= htmlspecialchars($item['title']); ?>">
+        </a>
+        <h4 class="img_link">
+            <a href="<?= htmlspecialchars($item['link']); ?>" title="<?= htmlspecialchars($item['title']); ?>" target="_blank" rel="noopener">
+                <?= htmlspecialchars($item['title']); ?>
+            </a>
+        </h4>
+    </div>
+    <?php endforeach; ?>
+</template>

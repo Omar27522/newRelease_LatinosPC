@@ -63,8 +63,8 @@ class ContentManager {
             }
         }
 
-        // 3. Keep tab order stable and predictable (e.g., home, services, hardware, about)
-        $preferredOrder = ['home', 'services', 'hardware', 'about'];
+        // 3. Keep tab order stable and predictable (e.g., home, services, hardware, about, software, security)
+        $preferredOrder = ['home', 'services', 'hardware', 'about', 'software', 'security'];
         uksort($grouped, function($a, $b) use ($preferredOrder) {
             $posA = array_search(strtolower($a), $preferredOrder);
             $posB = array_search(strtolower($b), $preferredOrder);
@@ -83,7 +83,7 @@ class ContentManager {
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             $counts[$row['page_id']] = (int)$row['count'];
         }
-        $preferredOrder = ['home', 'services', 'hardware', 'about'];
+        $preferredOrder = ['home', 'services', 'hardware', 'about', 'software', 'security'];
         uksort($counts, function($a, $b) use ($preferredOrder) {
             $posA = array_search(strtolower($a), $preferredOrder);
             $posB = array_search(strtolower($b), $preferredOrder);

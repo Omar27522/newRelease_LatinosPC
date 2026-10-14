@@ -11,8 +11,20 @@ global $content, $key;
             <?= $content[516][$key] ?? ''; ?>
         </h1>
     </a>
-    <img alt="Keyboard image with orange, white, and dark gray Key-caps" src="../images/keys.jpg" title="Keyboards"
-        width="621">
+    <div class="carousel-group center" style="margin: 15px auto; text-align: center;">
+        <div class="multi-link-container" style="display: inline-block;">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Keyboards">
+                    <img src="../images/hardware/hw/lightbox/keys_thumb.webp"
+                         alt="Keyboard image with orange, white, and dark gray Key-caps"
+                         title="Keyboards"
+                         loading="lazy"
+                         style="max-width: 621px; width: 100%; height: auto;" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
+        </div>
+    </div>
     <p style="line-height: 1.2; margin-top: 16pt; text-align: center;">
         <span style="font-size: 42pt; color: rgb(105, 93, 70); font-weight: 700;">
             <?= $content[516][$key] ?? ''; ?>
@@ -118,3 +130,32 @@ global $content, $key;
 
     <h2 class="oranges"><?= $content[564][$key] ?? ''; ?></h2>
 </section>
+
+    <!-- Carousel Modal Data Template -->
+    <template id="carousel-images">
+        <?php
+        $carouselItems = [
+            [
+                'original' => '../images/hardware/hw/lightbox/keys.jpg',
+                'webp'     => '../images/hardware/hw/lightbox/keys.webp',
+                'title'    => 'Keyboards',
+                'link'     => 'https://en.wikipedia.org/wiki/Computer_keyboard'
+            ]
+        ];
+
+        foreach($carouselItems as $index => $item):
+        ?>
+        <div class="carousel-item" data-image-index="<?= $index; ?>">
+            <a href="<?= $item['original']; ?>" target="_blank" rel="noopener">
+                <img data-src="<?= $item['webp']; ?>"
+                     src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+                     alt="<?= htmlspecialchars($item['title']); ?>">
+            </a>
+            <h4 class="img_link">
+                <a href="<?= htmlspecialchars($item['link']); ?>" title="<?= htmlspecialchars($item['title']); ?>" target="_blank" rel="noopener">
+                    <?= htmlspecialchars($item['title']); ?>
+                </a>
+            </h4>
+        </div>
+        <?php endforeach; ?>
+    </template>

@@ -19,7 +19,7 @@ $links = [
         <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
         <h2 id="ram"><a href="?hw/sw#cpu" title="Random Access Memory ">
             <?= $content[153][$key] ?? ''; ?>
-        <img src="../images/fz/hw-ram.jpg" alt="" class="fl" height="60" width="60" /></a></h2>
+        <img src="../images/fz/hw-ram_thumb.webp" alt="RAM" class="fl" height="60" width="60" loading="lazy" /></a></h2>
         <h3><?= $content[154][$key] ?? ''; ?></h3>
         <h2><?= $content[155][$key] ?? ''; ?></h2>
         <h3><?= $content[156][$key] ?? ''; ?></h3>
@@ -54,8 +54,20 @@ $links = [
             </ul>
         </h3><br />
         <h3><?= $content[168][$key] ?? ''; ?></h3>
-        <img src="../images/artificialintelligence/Introduction.jpg" alt="Image" width="270px" title="image"
-            class="rtl">
+        <div class="carousel-group img_rtl" style="margin-left: 15px; margin-bottom: 10px;">
+            <div class="multi-link-container">
+                <div class="thumbnail-container">
+                    <span tabindex="0" class="linked-text-img" role="button" aria-label="Random Access Memory Architecture">
+                        <img src="../images/artificialintelligence/Introduction_thumb.webp"
+                             alt="RAM Image"
+                             title="Random Access Memory"
+                             width="270"
+                             loading="lazy" />
+                    </span>
+                </div>
+                <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
+            </div>
+        </div>
         <h3>
             <ul class="col c1">
                 <li>5500 MHz</li>
@@ -71,3 +83,31 @@ $links = [
         <h3><?= $content[170][$key] ?? ''; ?></h3>
         <h2><?= $content[171][$key] ?? ''; ?></h2><br />
     </article>
+
+    <template id="carousel-images">
+        <?php
+        $carouselItems = [
+            [
+                'original' => '../images/artificialintelligence/Introduction.jpg',
+                'webp'     => '../images/artificialintelligence/Introduction.webp',
+                'title'    => 'Random Access Memory Architecture',
+                'link'     => 'https://en.wikipedia.org/wiki/Random-access_memory'
+            ]
+        ];
+
+        foreach($carouselItems as $index => $item):
+        ?>
+        <div class="carousel-item" data-image-index="<?= $index; ?>">
+            <a href="<?= $item['original']; ?>" target="_blank" rel="noopener">
+                <img data-src="<?= $item['webp']; ?>"
+                     src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+                     alt="<?= htmlspecialchars($item['title']); ?>">
+            </a>
+            <h4 class="img_link">
+                <a href="<?= htmlspecialchars($item['link']); ?>" title="<?= htmlspecialchars($item['title']); ?>" target="_blank" rel="noopener">
+                    <?= htmlspecialchars($item['title']); ?>
+                </a>
+            </h4>
+        </div>
+        <?php endforeach; ?>
+    </template>

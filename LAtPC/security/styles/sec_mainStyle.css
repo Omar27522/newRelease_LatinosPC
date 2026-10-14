@@ -200,6 +200,12 @@
     display: block;
 }
 
+.sec-hero-bg-art .multi-link-container,
+.sec-hero-bg-art .linked-text-img,
+.sec-hero-bg-art .carousel-group {
+    pointer-events: auto;
+}
+
 @media (max-width: 860px) {
     .sec-hero {
         padding: 2.5rem 1.8rem;

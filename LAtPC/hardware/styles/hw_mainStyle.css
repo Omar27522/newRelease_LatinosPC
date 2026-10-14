@@ -20,6 +20,8 @@
             overflow: hidden;
             position: relative;
             height: 100%;
+            display: flex;
+            flex-direction: column;
         }
 
         .hardware-card:hover {
@@ -35,6 +37,11 @@
             display: block;
             text-decoration: none;
             color: #383a3b;
+            padding: 1.5rem 1.5rem 0.5rem;
+        }
+
+        .hardware-card[data-component="io"] .card-link,
+        .hardware-card[data-component="peripherals"] .card-link {
             height: 100%;
             padding: 1.5rem;
         }
@@ -67,6 +74,7 @@
         .card-image {
             margin-top: auto;
             text-align: center;
+            padding: 0.5rem 1.5rem 1.5rem;
         }
 
         .card-image img {
@@ -77,6 +85,22 @@
 
         .hardware-card:hover .card-image img {
             transform: scale(1.05);
+        }
+
+        .card-image .linked-text-img,
+        .peripheral-image .linked-text-img {
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-image .multi-link-container,
+        .peripheral-image .multi-link-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
         }
 
         .hardware-logo {
@@ -246,7 +270,6 @@
             text-decoration: none;
             color: inherit;
             display: block;
-            height: 100%;
         }
 
         .peripheral-content {

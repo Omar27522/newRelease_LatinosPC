@@ -11,9 +11,7 @@ $links = [
 <?php include_once('navBarHW.php'); ?>
 <article class="hero4 container article fullbar">
     <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
-    <a rel="example_group" href="../images/bg_lapc.png" title="LAtinosPC Icon Computer" alt="LAPChassisIcon">
-        <img src="../images/lapc.png" class="image rtl">
-    </a>
+    <img src="../images/lapc_thumb.webp" class="image rtl" alt="LAPChassisIcon" loading="lazy">
     <h1><a href="./#cpu">
         <?= $content[300][$key] ?? ''; ?>
     </a></h1>
@@ -29,9 +27,21 @@ $links = [
         <?= $content[305][$key] ?? ''; ?>
     </h2>
 
-    <a rel="example_group" href="../images/hardware/case/1600393471697.png" title="LAtinosPC Main Computer" alt="LAPChassis">
-        <img src="../images/cs_chassis.webp" width="263" alt="image" class="image fl" />
-    </a>
+    <div class="carousel-group fl" style="margin-right: 20px; margin-bottom: 15px;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="LatinosPC Main Computer Chassis">
+                    <img src="../images/hardware/case/1600393471697_thumb.webp"
+                         width="263"
+                         alt="LAtinosPC Main Computer Chassis"
+                         title="LatinosPC Main Computer"
+                         class="image"
+                         loading="lazy" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
+        </div>
+    </div>
 
     <h2><?= $content[306][$key] ?? ''; ?></h2>
     <p><?= $content[307][$key] ?? ''; ?></p>
@@ -282,5 +292,33 @@ $links = [
             </tr>
         </tbody>
     </table>
+
+    <template id="carousel-images">
+        <?php
+        $carouselItems = [
+            [
+                'original' => '../images/hardware/case/1600393471697.png',
+                'webp'     => '../images/hardware/case/1600393471697.webp',
+                'title'    => 'LatinosPC Main Computer Chassis',
+                'link'     => $links['computerCase'] ?? 'https://en.wikipedia.org/wiki/Computer_case'
+            ]
+        ];
+
+        foreach($carouselItems as $index => $item):
+        ?>
+        <div class="carousel-item" data-image-index="<?= $index; ?>">
+            <a href="<?= $item['original']; ?>" target="_blank" rel="noopener">
+                <img data-src="<?= $item['webp']; ?>"
+                     src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+                     alt="<?= htmlspecialchars($item['title']); ?>">
+            </a>
+            <h4 class="img_link">
+                <a href="<?= htmlspecialchars($item['link']); ?>" title="<?= htmlspecialchars($item['title']); ?>" target="_blank" rel="noopener">
+                    <?= htmlspecialchars($item['title']); ?>
+                </a>
+            </h4>
+        </div>
+        <?php endforeach; ?>
+    </template>
 </article>
 <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** Chassis-->

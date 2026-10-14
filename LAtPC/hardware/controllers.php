@@ -14,9 +14,19 @@ global $content, $key;
 <div class="spacer_shape"><h2><?= $content[2231][$key] ?? ''; ?></h2>
 <p>
 <?= $content[2232][$key] ?? ''; ?>
-<a rel="example_group" href="../images/hardware/hw/controllers/orchestra.jpg" title="Controllers Orchestra" style="float:left;">
-    <img src="../images/hardware/hw/controllers/orchestra.webp" alt="Orchestra" class="fl">
-</a>
+<div class="carousel-group fl" style="margin: 0 15px 10px 0;">
+    <div class="multi-link-container">
+        <div class="thumbnail-container">
+            <span tabindex="0" class="linked-text-img" role="button" aria-label="Controllers Orchestra">
+                <img src="../images/hardware/hw/controllers/orchestra_thumb.webp"
+                     alt="Orchestra"
+                     title="Controllers Orchestra"
+                     loading="lazy" />
+            </span>
+        </div>
+        <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
+    </div>
+</div>
 <?= $content[2233][$key] ?? ''; ?></p>
 </div>
 <div class="spacer"></div>
@@ -160,40 +170,53 @@ global $content, $key;
 <p class="modern_list ml2"><?= $content[2311][$key] ?? ''; ?></p><ul class="segment colms">
 <li><?= $content[2312][$key] ?? ''; ?></li>
 <li><?= $content[2313][$key] ?? ''; ?></li>
-<img src="../images/hardware/hw/controllers/orchestra.webp" class="push">
+<img src="../images/hardware/hw/controllers/orchestra_thumb.webp" loading="lazy" class="push">
 <p class="modern_list ml2"><?= $content[2314][$key] ?? ''; ?></p>
 </ul>
 <div class="spacer"></div>
 <p class="modern_list ml2"><?= $content[2315][$key] ?? ''; ?></p><ul class="segment colms">
 <li><?= $content[2316][$key] ?? ''; ?></li>
 <li><?= $content[2317][$key] ?? ''; ?></li>
-<img src="../images/hardware/hw/controllers/orchestra.webp" class="push">
+<img src="../images/hardware/hw/controllers/orchestra_thumb.webp" loading="lazy" class="push">
 <p class="modern_list ml2"><?= $content[2318][$key] ?? ''; ?></p>
 </ul>
 <div class="spacer"></div>
-<p class="modern_list ml2"><?= $content[2319][$key] ?? ''; ?></p><ul class="segment colms"><img src="../images/hardware/hw/controllers/orchestra.webp" class="push">
+<p class="modern_list ml2"><?= $content[2319][$key] ?? ''; ?></p><ul class="segment colms"><img src="../images/hardware/hw/controllers/orchestra_thumb.webp" loading="lazy" class="push">
 <li><?= $content[2320][$key] ?? ''; ?></li>
-<img src="../images/hardware/hw/controllers/orchestra.webp" class="push">
+<img src="../images/hardware/hw/controllers/orchestra_thumb.webp" loading="lazy" class="push">
 <p class="modern_list ml2"><?= $content[2321][$key] ?? ''; ?></p>
 </ul>
 <div class="spacer"></div>
-<p class="modern_list ml2"><?= $content[2322][$key] ?? ''; ?></p><ul class="segment colms"><img src="../images/hardware/hw/controllers/orchestra.webp" class="push">
-    <img src="../images/hardware/hw/controllers/orchestra.webp" class="push">
+<p class="modern_list ml2"><?= $content[2322][$key] ?? ''; ?></p><ul class="segment colms"><img src="../images/hardware/hw/controllers/orchestra_thumb.webp" loading="lazy" class="push">
+    <img src="../images/hardware/hw/controllers/orchestra_thumb.webp" loading="lazy" class="push">
 <li><?= $content[2323][$key] ?? ''; ?></li>
 <p class="modern_list ml2"><?= $content[2324][$key] ?? ''; ?></p>
 </ul>
 <div class="spacer"></div>
 <p class="modern_list ml2"><?= $content[2325][$key] ?? ''; ?></p><ul class="segment colms">
 <li><?= $content[2326][$key] ?? ''; ?></li>
-<img src="../images/hardware/hw/controllers/orchestra.webp" class="push">
-<img src="../images/hardware/hw/controllers/orchestra.webp" class="push">
+<img src="../images/hardware/hw/controllers/orchestra_thumb.webp" loading="lazy" class="push">
+<img src="../images/hardware/hw/controllers/orchestra_thumb.webp" loading="lazy" class="push">
 <p class="modern_list ml2"><?= $content[2327][$key] ?? ''; ?></p>
 </ul>
 <div class="spacer"></div>
 <p class="modern_list ml2"><?= $content[2328][$key] ?? ''; ?></p><ul class="segment colms">
-    <img src="../images/hardware/hw/controllers/orchestra.webp" class="push">
+    <img src="../images/hardware/hw/controllers/orchestra_thumb.webp" loading="lazy" class="push">
     <li><?= $content[2329][$key] ?? ''; ?></li>
-    <a rel="example_group" href="../images/hardware/hw/controllers/orchestra.jpg"><img src="../images/hardware/hw/controllers/orchestra.webp" class="push"></a>
+    <div class="carousel-group inline" style="display:inline-block;">
+        <div class="multi-link-container">
+            <div class="thumbnail-container">
+                <span tabindex="0" class="linked-text-img" role="button" aria-label="Controllers Orchestra">
+                    <img src="../images/hardware/hw/controllers/orchestra_thumb.webp"
+                         alt="Controllers Orchestra"
+                         title="Controllers Orchestra"
+                         loading="lazy"
+                         class="push" />
+                </span>
+            </div>
+            <div class="image-dialog" data-carousel="true" data-start-index="0"></div>
+        </div>
+    </div>
 <p class="modern_list ml2"><?= $content[2330][$key] ?? ''; ?></p>
 </ul>
 <div class="spacer"></div>
@@ -207,3 +230,32 @@ global $content, $key;
             <h3><?= $content[2333][$key] ?? ''; ?></h3>
             <hr /></td></tr></tbody></table>
 </article>
+
+    <!-- Carousel Modal Data Template -->
+    <template id="carousel-images">
+        <?php
+        $carouselItems = [
+            [
+                'original' => '../images/hardware/hw/controllers/orchestra.jpg',
+                'webp'     => '../images/hardware/hw/controllers/orchestra.webp',
+                'title'    => 'Controllers Orchestra',
+                'link'     => 'https://en.wikipedia.org/wiki/Game_controller'
+            ]
+        ];
+
+        foreach($carouselItems as $index => $item):
+        ?>
+        <div class="carousel-item" data-image-index="<?= $index; ?>">
+            <a href="<?= $item['original']; ?>" target="_blank" rel="noopener">
+                <img data-src="<?= $item['webp']; ?>"
+                     src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+                     alt="<?= htmlspecialchars($item['title']); ?>">
+            </a>
+            <h4 class="img_link">
+                <a href="<?= htmlspecialchars($item['link']); ?>" title="<?= htmlspecialchars($item['title']); ?>" target="_blank" rel="noopener">
+                    <?= htmlspecialchars($item['title']); ?>
+                </a>
+            </h4>
+        </div>
+        <?php endforeach; ?>
+    </template>
